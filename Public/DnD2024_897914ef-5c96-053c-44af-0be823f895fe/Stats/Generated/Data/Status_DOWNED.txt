@@ -1,0 +1,6 @@
+new entry "RELENTLESS_ENDURANCE_DOWNED"
+type "StatusData"
+data "StatusType" "DOWNED"
+using "RELENTLESS_ENDURANCE_DOWNED"
+data "OnApplyFunctors" "RemoveStatus(RELENTLESS_ENDURANCE);RegainHitPoints(ClassLevel(Barbarian)*2,Guaranteed)"
+

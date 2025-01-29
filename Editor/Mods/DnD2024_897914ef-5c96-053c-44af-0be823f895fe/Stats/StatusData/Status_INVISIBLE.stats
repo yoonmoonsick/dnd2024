@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="47014da6-a81c-40a9-9f3c-4a74b6ddc574">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7661b7a-dc45-41a8-8c59-03bed3ab84bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="INVISIBILITY_GS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="054f65fc-e741-4222-9668-39bf86941cd9" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INVISIBILITY_GS" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEntityPickUp;OnEntityDrop;OnEntityDrag;OnLockpickingFinished;OnDisarmingFinished;OnObscurityChanged" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (not HasObscuredState(ObscuredState.HeavilyObscured,context.Source))) and not IsStatusEvent(StatusEvent.OnDamage)) " />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d66ce66b-35db-42d0-bf65-afec276200c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (HasObscuredState(ObscuredState.Clear,context.Source))) or (not IsStatusEvent(StatusEvent.OnSpellCast) and not IsStatusEvent(StatusEvent.OnDamage) and not IsStatusEvent(StatusEvent.OnObscurityChanged) and not IsStatusEvent(StatusEvent.OnMove)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and (HasStatus('SEE_INVISIBILITY_REVEAL') or HasStatus('FAERIE_FIRE') or HasStatus('BRANDING_SMITE')))" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

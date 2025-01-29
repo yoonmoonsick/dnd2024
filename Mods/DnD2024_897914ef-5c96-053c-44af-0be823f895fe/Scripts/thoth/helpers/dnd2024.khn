@@ -1,0 +1,323 @@
+local __util = require 'larian.util'
+
+function GreatWeaponMaster(entity)
+    local entity = entity or context.Source
+    local weapon = context.AttackWeapon
+
+    local isHeavy = HasWeaponProperty(WeaponProperties.Heavy, weapon)
+    local isTwoHanded = HasWeaponProperty(WeaponProperties.Twohanded, weapon)
+    local isVersatile = HasWeaponProperty(WeaponProperties.Versatile, weapon)
+    local isOffhandMelee = WieldingWeapon('Melee', true, false, entity)
+    local isOffhandAmmunition = WieldingWeapon('Ammunition', true, false, entity)
+    local hasShield = HasShieldEquipped(entity)
+
+    return IsProficientWith(entity, weapon) & ((isTwoHanded) | (isVersatile & ~isOffhandMelee & ~isOffhandAmmunition & ~hasShield))
+end
+
+function PsionicSorcerySpells()
+    return 
+    SpellId('Shout_ArmsOfHadar') | SpellId('Shout_ArmsOfHadar_2') | SpellId('Shout_ArmsOfHadar_3') | SpellId('Shout_ArmsOfHadar_4') | SpellId('Shout_ArmsOfHadar_5') | SpellId('Shout_ArmsOfHadar_6') | SpellId('Target_CalmEmotions') | SpellId('Target_CalmEmotions_3') | SpellId('Target_CalmEmotions_4') | SpellId('Target_CalmEmotions_5') | SpellId('Target_CalmEmotions_6') | SpellId('Shout_DetectThoughts') | SpellId('Shout_DetectThoughts_3') | SpellId('Shout_DetectThoughts_4') | SpellId('Shout_DetectThoughts_5') | SpellId('Shout_DetectThoughts_6') | SpellId('Target_HungerOfHadar') | SpellId('Target_HungerOfHadar_4') | SpellId('Target_HungerOfHadar_5') | SpellId('Target_HungerOfHadar_6') | SpellId('Target_BlackTentacles') | SpellId('Target_BlackTentacles_5') | SpellId('Target_BlackTentacles_6') | SpellId('Target_SummonAberration') | SpellId('Target_SummonAberration_5') | SpellId('Target_SummonAberration_6') | SpellId('Throw_Telekinesis') | SpellId('Throw_Telekinesis_6')
+end
+
+function HasMediumArmor(entity)
+    entity = entity or context.Target
+    local armor = GetActiveArmor(entity)
+    local hasMediumArmor = armor.ArmorType == ArmorType.Hide or armor.ArmorType == ArmorType.ChainShirt or armor.ArmorType == ArmorType.ScaleMail or armor.ArmorType == ArmorType.BreastPlate or armor.ArmorType == ArmorType.HalfPlate
+    return ConditionResult(hasMediumArmor)
+end
+
+function MagicInitiateBardSpell()
+    return SpellId('Target_AnimalFriendship') | SpellId('Target_Bane') | SpellId('Target_CharmPerson') | SpellId('Zone_ColorSpray') | SpellId('Target_Command_Container') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Grovel') | SpellId('Target_CureWounds') | SpellId('Shout_DisguiseSelf') | SpellId('Target_DissonantWhispers') | SpellId('Target_FaerieFire') | SpellId('Shout_FeatherFall') | SpellId('Target_HealingWord') | SpellId('Target_Heroism') | SpellId('Target_Longstrider') | SpellId('Target_Sleep') | SpellId('Shout_SpeakWithAnimals') | SpellId('Target_HideousLaughter') | SpellId('Zone_Thunderwave')
+end
+
+function MagicInitiateClericSpell()
+    return SpellId('Target_Bane') | SpellId('Target_Bless') | SpellId('Target_Command_Container') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Grovel') | SpellId('Target_CreateDestroyWater') | SpellId('Target_CureWounds') | SpellId('Projectile_GuidingBolt') | SpellId('Target_HealingWord') | SpellId('Target_InflictWounds') | SpellId('Target_ProtectionFromEvilAndGood') | SpellId('Target_Sanctuary') | SpellId('Target_ShieldOfFaith')
+end
+
+function MagicInitiateWarlockSpell()
+    return SpellId('Shout_ArmorOfAgathys') | SpellId('Shout_ArmsOfHadar') | SpellId('Target_CharmPerson') | SpellId('Shout_ExpeditiousRetreat') | SpellId('Shout_HellishRebuke') | SpellId('Target_Hex') | SpellId('Target_ProtectionFromEvilAndGood') | SpellId('Projectile_WitchBolt')
+end
+
+function MagicInitiateWizardSpell()
+    return SpellId('Zone_BurningHands') | SpellId('Target_CharmPerson') | SpellId('Projectile_ChromaticOrb') | SpellId('Zone_ColorSpray') | SpellId('Shout_DisguiseSelf') | SpellId('Target_Jump') | SpellId('Shout_ExpeditiousRetreat') | SpellId('Shout_FalseLife') | SpellId('Shout_FeatherFall') | SpellId('Target_FindFamiliar') | SpellId('Target_FogCloud') | SpellId('Target_Grease') | SpellId('Projectile_IceKnife') | SpellId('Target_Longstrider') | SpellId('Target_MageArmor') | SpellId('Projectile_MagicMissile') | SpellId('Target_ProtectionFromEvilAndGood') | SpellId('Projectile_RayOfSickness') | SpellId('Shout_Shield_Wizard') | SpellId('Target_Sleep') | SpellId('Target_HideousLaughter') | SpellId('Zone_Thunderwave') | SpellId('Projectile_WitchBolt')
+end
+
+function MagicInitiateDruidSpell()
+    return SpellId('Target_AnimalFriendship') | SpellId('Target_CharmPerson') | SpellId('Target_CreateDestroyWater') | SpellId('Target_CureWounds') | SpellId('Target_Jump') | SpellId('Target_Entangle') | SpellId('Target_FaerieFire') | SpellId('Target_FogCloud') | SpellId('Target_Goodberry') | SpellId('Target_HealingWord') | SpellId('Projectile_IceKnife') | SpellId('Target_Longstrider') | SpellId('Shout_SpeakWithAnimals') | SpellId('Zone_Thunderwave')
+end
+
+function MagicInitiateSorcererSpell()
+    return SpellId('Zone_BurningHands') | SpellId('Target_CharmPerson') | SpellId('Projectile_ChromaticOrb') | SpellId('Zone_ColorSpray') | SpellId('Shout_DisguiseSelf') | SpellId('Target_Jump') | SpellId('Shout_ExpeditiousRetreat') | SpellId('Target_FaerieFire') | SpellId('Shout_FalseLife') | SpellId('Target_FogCloud') | SpellId('Target_InflictWounds') | SpellId('Target_MageArmor') | SpellId('Projectile_MagicMissile') | SpellId('Projectile_RayOfSickness') | SpellId('Shout_Shield_Wizard') | SpellId('Target_Sleep') | SpellId('Zone_Thunderwave') | SpellId('Projectile_WitchBolt')
+end
+
+function MagicInitiateSpell()
+    return SpellId('Shout_MI_AcidSplash') | SpellId('Shout_MI_BladeWard') | SpellId('Shout_MI_BoneChill') | SpellId('Shout_MI_BoomingBlade') | SpellId('Shout_MI_DancingLights') | SpellId('Shout_MI_EldritchBlast') | SpellId('Shout_MI_FireBolt') | SpellId('Shout_MI_Friends') | SpellId('Shout_MI_GreenFlameBlade') | SpellId('Shout_MI_Guidance') | SpellId('Shout_MI_Light') | SpellId('Shout_MI_LightningLure') | SpellId('Shout_MI_MageHand') | SpellId('Shout_MI_MagicStone') | SpellId('Shout_MI_MindSliver') | SpellId('Shout_MI_MinorIllusion') | SpellId('Shout_MI_PoisonSpray') | SpellId('Shout_MI_RayofFrost') | SpellId('Shout_MI_ProduceFlame') | SpellId('Shout_MI_Resistance') | SpellId('Shout_MI_SacredFlame') | SpellId('Shout_MI_Shillelagh') | SpellId('Shout_MI_ShockingGrasp') | SpellId('Shout_MI_SorcerousBurst') | SpellId('Shout_MI_StarryWisp') | SpellId('Shout_MI_Thaumaturgy') | SpellId('Shout_MI_ThornWhip') | SpellId('Shout_MI_ThunderClap') | SpellId('Shout_MI_TollTheDead') | SpellId('Shout_MI_TrueStrike') | SpellId('Shout_MI_ViciousMockery') | SpellId('Shout_MI_WordOfRadiance') | SpellId('Shout_MI_AnimalFriendship') | SpellId('Shout_MI_Bless') | SpellId('Shout_MI_Bane') | SpellId('Shout_MI_BurningHands') | SpellId('Shout_MI_CharmPerson') | SpellId('Shout_MI_ChromaticOrb') | SpellId('Shout_MI_ColorSpray') | SpellId('Shout_MI_Command') | SpellId('Shout_MI_CreateDestroyWater') | SpellId('Shout_MI_DisguiseSelf') | SpellId('Shout_MI_CureWounds') | SpellId('Shout_MI_Jump') | SpellId('Shout_MI_Entangle') | SpellId('Shout_MI_ExpeditiousRetreat') | SpellId('Shout_MI_FaerieFire') | SpellId('Shout_MI_FalseLife') | SpellId('Shout_MI_FeatherFall') | SpellId('Shout_MI_FindFamiliar') | SpellId('Shout_MI_FogCloud') | SpellId('Shout_MI_Goodberry') | SpellId('Shout_MI_Grease') | SpellId('Shout_MI_GuidingBolt') | SpellId('Shout_MI_HealingWord') | SpellId('Shout_MI_HellishRebuke') | SpellId('Shout_MI_IceKnife') | SpellId('Shout_MI_InflictWounds') | SpellId('Shout_MI_Longstrider') | SpellId('Shout_MI_MageArmor') | SpellId('Shout_MI_MagicMissile') | SpellId('Shout_MI_ProtectionFromEvilAndGood') | SpellId('Shout_MI_RayOfSickness') | SpellId('Shout_MI_Sanctuary') | SpellId('Shout_MI_Shield') | SpellId('Shout_MI_ShieldOfFaith') | SpellId('Shout_MI_Sleep') | SpellId('Shout_MI_SpeakWithAnimals') | SpellId('Shout_MI_HideousLaughter') | SpellId('Shout_MI_Thunderwave') | SpellId('Shout_MI_WitchBolt')
+end
+
+function PoisonerSaveDC()
+    return 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Intelligence), GetModifier(context.Source.Dexterity))
+end
+
+function HexCheck()
+    return SpellId('Target_Hex') | SpellId('Target_Hex_2') | SpellId('Target_Hex_3') | SpellId('Target_Hex_4') | SpellId('Target_Hex_5') | SpellId('Target_Hex_6')
+end
+
+function HuntersMarkCheck()
+    return SpellId('Target_HuntersMark') | SpellId('Target_HuntersMark_2') | SpellId('Target_HuntersMark_3') | SpellId('Target_HuntersMark_4') | SpellId('Target_HuntersMark_5') | SpellId('Target_HuntersMark_6') | SpellId('Target_FavoredEnemy')
+end
+
+function ConcenstrationSpellCheck()
+    return HasSpellFlag(SpellFlags.Concentration)
+end
+
+function TwinnedSpellCheck()
+    return SpellId('Target_EnhanceAbility') | SpellId('Target_Fly') | SpellId('Target_Fly_2') | SpellId('Target_Fly_3') | SpellId('Target_Fly_4') | SpellId('Target_Fly_5') | SpellId('Target_Fly_6') | SpellId('Target_Heroism') | SpellId('Target_Heroism_2') | SpellId('Target_Heroism_3') | SpellId('Target_Heroism_4') | SpellId('Target_Heroism_5') | SpellId('Target_Heroism_6') | SpellId('Target_Invisibility') | SpellId('Target_Invisibility_2') | SpellId('Target_Invisibility_3') | SpellId('Target_Invisibility_4') | SpellId('Target_Invisibility_5') | SpellId('Target_Invisibility_6') | SpellId('Target_AnimalFriendship') | SpellId('Target_AnimalFriendship_2') | SpellId('Target_AnimalFriendship_3') | SpellId('Target_AnimalFriendship_4') | SpellId('Target_AnimalFriendship_5') | SpellId('Target_AnimalFriendship_6') | SpellId('Target_Bane') | SpellId('Target_Bane_2') | SpellId('Target_Bane_3') | SpellId('Target_Bane_4') | SpellId('Target_Bane_5') | SpellId('Target_Bane_6') | SpellId('Target_Bless') | SpellId('Target_Bless_2') | SpellId('Target_Bless_3') | SpellId('Target_Bless_4') | SpellId('Target_Bless_5') | SpellId('Target_Bless_6') | SpellId('Target_Blindness') | SpellId('Target_Blindness_2') | SpellId('Target_Blindness_3') | SpellId('Target_Blindness_4') | SpellId('Target_Blindness_5') | SpellId('Target_Blindness_6') | SpellId('Target_CharmPerson') | SpellId('Target_CharmPerson_2') | SpellId('Target_CharmPerson_3') | SpellId('Target_CharmPerson_4') | SpellId('Target_CharmPerson_5') | SpellId('Target_CharmPerson_6') | SpellId('Target_Command_Container') | SpellId('Target_HoldPerson') | SpellId('Target_HoldPerson_2') | SpellId('Target_HoldPerson_3') | SpellId('Target_HoldPerson_4') | SpellId('Target_HoldPerson_5') | SpellId('Target_HoldPerson_6') | SpellId('Target_Banishment') | SpellId('Target_Banishment_5') | SpellId('Target_Banishment_6') | SpellId('Target_HoldMonster') | SpellId('Target_HoldMonster_6') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Halt_2') | SpellId('Target_Command_Halt_3') | SpellId('Target_Command_Halt_4') | SpellId('Target_Command_Halt_5') | SpellId('Target_Command_Halt_6') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Approach_2') | SpellId('Target_Command_Approach_3') | SpellId('Target_Command_Approach_4') | SpellId('Target_Command_Approach_5') | SpellId('Target_Command_Approach_6') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Drop_2') | SpellId('Target_Command_Drop_3') | SpellId('Target_Command_Drop_4') | SpellId('Target_Command_Drop_5') | SpellId('Target_Command_Drop_6') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Flee_2') | SpellId('Target_Command_Flee_3') | SpellId('Target_Command_Flee_4') | SpellId('Target_Command_Flee_5') | SpellId('Target_Command_Flee_6') | SpellId('Target_Command_Grovel') | SpellId('Target_Command_Grovel_2') | SpellId('Target_Command_Grovel_3') | SpellId('Target_Command_Grovel_4') | SpellId('Target_Command_Grovel_5') | SpellId('Target_Command_Grovel_6') | SpellId('Target_EnhanceAbility_BearsEndurance') | SpellId('Target_EnhanceAbility_BearsEndurance_2') | SpellId('Target_EnhanceAbility_BearsEndurance_3') | SpellId('Target_EnhanceAbility_BearsEndurance_4') | SpellId('Target_EnhanceAbility_BearsEndurance_5') | SpellId('Target_EnhanceAbility_BearsEndurance_6') | SpellId('Target_EnhanceAbility_BullsStrength') | SpellId('Target_EnhanceAbility_BullsStrength_2') | SpellId('Target_EnhanceAbility_BullsStrength_3') | SpellId('Target_EnhanceAbility_BullsStrength_4') | SpellId('Target_EnhanceAbility_BullsStrength_5') | SpellId('Target_EnhanceAbility_BullsStrength_6') | SpellId('Target_EnhanceAbility_CatsGrace') | SpellId('Target_EnhanceAbility_CatsGrace_2') | SpellId('Target_EnhanceAbility_CatsGrace_3') | SpellId('Target_EnhanceAbility_CatsGrace_4') | SpellId('Target_EnhanceAbility_CatsGrace_5') | SpellId('Target_EnhanceAbility_CatsGrace_6') | SpellId('Target_EnhanceAbility_EaglesSplendor') | SpellId('Target_EnhanceAbility_EaglesSplendor_2') | SpellId('Target_EnhanceAbility_EaglesSplendor_3') | SpellId('Target_EnhanceAbility_EaglesSplendor_4') | SpellId('Target_EnhanceAbility_EaglesSplendor_5') | SpellId('Target_EnhanceAbility_EaglesSplendor_6') | SpellId('Target_EnhanceAbility_FoxsCunning') | SpellId('Target_EnhanceAbility_FoxsCunning_2') | SpellId('Target_EnhanceAbility_FoxsCunning_3') | SpellId('Target_EnhanceAbility_FoxsCunning_4') | SpellId('Target_EnhanceAbility_FoxsCunning_5') | SpellId('Target_EnhanceAbility_FoxsCunning_6') | SpellId('Target_EnhanceAbility_OwlsWisdom') | SpellId('Target_EnhanceAbility_OwlsWisdom_2') | SpellId('Target_EnhanceAbility_OwlsWisdom_3') | SpellId('Target_EnhanceAbility_OwlsWisdom_4') | SpellId('Target_EnhanceAbility_OwlsWisdom_5') | SpellId('Target_EnhanceAbility_OwlsWisdom_6') | SpellId('Target_HideousLaughter') | SpellId('Target_HideousLaughter_2') | SpellId('Target_HideousLaughter_3') | SpellId('Target_HideousLaughter_4') | SpellId('Target_HideousLaughter_5') | SpellId('Target_HideousLaughter_6') 
+end
+
+function ExtendedSpellCheck()
+	return ~(SpellId('Zone_BurningHands') | SpellId('Zone_BurningHands_2') | SpellId('Target_Command_Container') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Halt_2') | SpellId('Target_Command_Halt_3') | SpellId('Target_Command_Halt_4') | SpellId('Target_Command_Halt_5') | SpellId('Target_Command_Halt_6') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Approach_2') | SpellId('Target_Command_Approach_3') | SpellId('Target_Command_Approach_4') | SpellId('Target_Command_Approach_5') | SpellId('Target_Command_Approach_6') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Drop_2') | SpellId('Target_Command_Drop_3') | SpellId('Target_Command_Drop_4') | SpellId('Target_Command_Drop_5') | SpellId('Target_Command_Drop_6') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Flee_2') | SpellId('Target_Command_Flee_3') | SpellId('Target_Command_Flee_4') | SpellId('Target_Command_Flee_5') | SpellId('Target_Command_Flee_6') | SpellId('Target_Command_Grovel') | SpellId('Target_Command_Grovel_2') | SpellId('Target_Command_Grovel_3') | SpellId('Target_Command_Grovel_4') | SpellId('Target_Command_Grovel_5') | SpellId('Target_Command_Grovel_6') | SpellId('Target_Banishment') | SpellId('Target_Banishment_5') | SpellId('Target_Banishment_6') | SpellId('Zone_Fear') | SpellId('Zone_Fear_4') | SpellId('Zone_Fear_5') | SpellId('Zone_Fear_6') | SpellId('Target_HypnoticPattern')  | SpellId('Target_HypnoticPattern_4') | SpellId('Target_HypnoticPattern_5') | SpellId('Target_HypnoticPattern_6') | SpellId('Target_Confusion') | SpellId('Target_Confusion_5') | SpellId('Target_Confusion_6') | SpellId('Target_ResilientSphere') | SpellId('Target_ResilientSphere_5') | SpellId('Target_ResilientSphere_6') | SpellId('Target_Polymorph') | SpellId('Target_Polymorph_5') | SpellId('Target_Polymorph_6') | SpellId('Target_Projectile_Smite_Banishing_Container')  | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Projectile_Smite_Banishing') | SpellId('Projectile_Smite_Banishing_6') | SpellId('Target_GlobeOfInvulnerability') ) & ((HasExtendableStatus() & HasDuration(StatsFunctorType.Status, 0)) | HasDuration(StatsFunctorType.Summon, 0) | HasDuration(StatsFunctorType.SummonInInventory, 0) | HasDuration(StatsFunctorType.CreateSurface, 0)) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())
+end
+
+function QuickenedSpellBlockCheck()
+    return ~IsCantrip() & ( HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot') ) & (HasSpellFlag(SpellFlags.Spell) | NonSpellMetamagicAbilities())  
+end
+
+function LevelSpellCheck()
+    return ~IsCantrip() & (HasSpellFlag(SpellFlags.Spell))  
+end
+
+function HasHelpableCondition()
+    result = HasAnyStatus({'SG_Helpable_Condition','DOWNED','HAG_DOWNED','SCL_DOWNED','SG_Prone','PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','PRONE_THUNDEROUS_SMITE','SG_Restrained','PRONE','SLEEPING','SLEEP','SLEEP_2','ENSNARING_STRIKE','WEB','BURNING','HYPNOTIC_PATTERN','COL_NIGHTSONG_SOULCAGE'}, {}, {})
+    return ConditionResult(result.Result, {ConditionError("HasNotHelpableCondition")})
+end
+
+function IsImprovedPactOfTheChain()
+    return HasPassive('ChainMaster',context.Source) & HasPassive('PactOfTheChain',context.Source)
+end
+
+function HasPactWeapon(entity, mainHand)
+    local entity = entity or context.Source
+    local weaponEntity = GetActiveWeapon(entity, true)
+    if weaponEntity.IsValid then
+        result = Character(entity) & (HasStatus('PACT_BLADE', weaponEntity) | HasStatus('PACT_BLADE_NECROTIC', weaponEntity) | HasStatus('PACT_BLADE_PSYCHIC', weaponEntity) | HasStatus('PACT_BLADE_RADIANT', weaponEntity))
+        return ConditionResult(result.Result, {ConditionError("HasNotPactWeapon")}, {ConditionError("HasPactWeapon")})
+    end
+    return ConditionResult(false, {ConditionError("HasNotPactWeapon")}, {ConditionError("HasPactWeapon")})
+end
+
+function WeaponMasteryCheck()
+    return Tagged('FIGHTER', context.Source) | Tagged('ROGUE', context.Source) | Tagged('PALADIN', context.Source) | Tagged('RANGER', context.Source) | Tagged('BARBARIAN', context.Source) | Tagged('WEAPONMASTER', context.Source) 
+end
+
+function HeatConvergenceFireSpellCheck()
+    return SpellDamageTypeIs(DamageType.Fire)
+end
+
+function PsychicSpell()
+    return (IsSpellOfSchool(SpellSchool.Enchantment) | IsSpellOfSchool(SpellSchool.Illusion)) & (HasSpellFlag(SpellFlags.Spell) )
+end
+
+function CommandSpellCheck()
+    return (SpellId('Target_Command_Container') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Grovel'))
+end
+
+function ChromaticOrbSpellCheck()
+    return (SpellId('Projectile_ChromaticOrb') | SpellId('Projectile_ChromaticOrb_Acid') | SpellId('Projectile_ChromaticOrb_Cold') | SpellId('Projectile_ChromaticOrb_Fire') | SpellId('Projectile_ChromaticOrb_Lightning') | SpellId('Projectile_ChromaticOrb_Poison') | SpellId('Projectile_ChromaticOrb_Thunder'))
+end
+
+function CreateDestroyWaterCheck()
+    return (SpellId('Target_CreateDestroyWater') | SpellId('Target_CreateWater') | SpellId('Target_DestroyWater'))
+end
+
+function ChaLvlLessOrEqualThan(value, entity)
+    entity = entity or context.Source
+    return ConditionResult(entity.Level <= value, {ConditionError("IsNotCharacterLevelGreaterThan")})
+end
+
+function IsWarlockCantrip()
+    return SpellId('Target_GreenFlameBlade_Strike') | SpellId('Target_BoomingBlade_Strike') | SpellId('Shout_Thunderclap') | SpellId('Projectile_MagicStone') | SpellId('Target_SacredFlame') | SpellId('Target_MindSliver') | SpellId('Target_TollTheDead') | SpellId('Target_ChillTouch') | SpellId('Projectile_EldritchBlast') | SpellId('Projectile_PoisonSpray') | SpellId('Target_TrueStrike_Radiant') | SpellId('Target_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Target_LightningLure')
+end
+
+function DeflectAttackCheck(damageType, entity)
+    local entity = entity or context.Target
+    if (damageType == DamageType.Bludgeoning
+        or damageType == DamageType.Slashing
+        or damageType == DamageType.Piercing
+    ) then
+        return ConditionResult(true)
+    end
+    return ConditionResult(false)
+end
+
+function DeflectAttackBludgeoning(damageType, entity)
+    local entity = entity or context.Target
+    if (damageType == DamageType.Bludgeoning) then
+        return ConditionResult(true)
+    end
+    return ConditionResult(false)
+end
+
+function DeflectAttackSlashing(damageType, entity)
+    local entity = entity or context.Target
+    if (damageType == DamageType.Slashing) then
+        return ConditionResult(true)
+    end
+    return ConditionResult(false)
+end
+
+function DeflectAttackPiercing(damageType, entity)
+    local entity = entity or context.Target
+    if (damageType == DamageType.Piercing) then
+        return ConditionResult(true)
+    end
+    return ConditionResult(false)
+end
+
+function IllusionSpellCheck()
+    return IsSpellOfSchool(SpellSchool.Illusion)
+end
+
+function ExtraAttackSpellCheck()
+    return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArrowOfDetonation') | SpellId('Projectile_ArrowOfFire') | SpellId('Projectile_ArrowOfDarkness') | SpellId('Projectile_ArrowOfIce') | SpellId('Projectile_ArrowOfAcid') | SpellId('Projectile_ArrowOfLightning') | SpellId('Projectile_ArrowOfPiercing') | SpellId('Projectile_ArrowOfRicochet') | SpellId('Projectile_ArrowOfDispelling') | SpellId('Projectile_ArrowOfAntimagic') | SpellId('Projectile_ArrowOfTeleportation') | SpellId('Projectile_ArrowOfWraithsEmbrace') | SpellId('Projectile_ArrowOfAberrationSlaying') | SpellId('Projectile_ArrowOfBeastSlaying') | SpellId('Projectile_ArrowOfCelestialSlaying') | SpellId('Projectile_ArrowOfConstructSlaying') | SpellId('Projectile_ArrowOfDragonSlaying') | SpellId('Projectile_ArrowOfElementalSlaying') | SpellId('Projectile_ArrowOfFeySlaying') | SpellId('Projectile_ArrowOfFiendSlaying') | SpellId('Projectile_ArrowOfGiantSlaying') | SpellId('Projectile_ArrowOfHumanoidSlaying') | SpellId('Projectile_ArrowOfMonstrositySlaying') | SpellId('Projectile_ArrowOfOozeSlaying') | SpellId('Projectile_ArrowOfPlantSlaying') | SpellId('Projectile_ArrowOfUndeadSlaying') | SpellId('Target_Shove') | SpellId('Target_Trip') | SpellId('Zone_BreathWeapon_Acid_Line')  | SpellId('Zone_BreathWeapon_Acid')  | SpellId('Zone_BreathWeapon_Poison_Line')  | SpellId('Zone_BreathWeapon_Poison')  | SpellId('Zone_BreathWeapon_Lightning_Line')  | SpellId('Zone_BreathWeapon_Lightning')  | SpellId('Zone_BreathWeapon_Fire_Line')  | SpellId('Zone_BreathWeapon_Fire_Cone')  | SpellId('Zone_BreathWeapon_Cold_Line')  | SpellId('Zone_BreathWeapon_Cold') 
+end
+
+function NotTrueStrikeCheck()
+    return (~SpellId('Target_TrueStrike_Weapon') & ~SpellId('Target_TrueStrike_Radiant') & ~SpellId('Projectile_TrueStrike_Weapon') & ~SpellId('Projectile_TrueStrike_Radiant') ) & HasUseCosts('ActionPoint')
+end
+
+function TrueStrikeCheck()
+    return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant')
+end
+
+function NotBoomingBladeCheck()
+    return (~SpellId('Target_BoomingBlade_Strike')) & HasUseCosts('ActionPoint')
+end
+
+function BoomingBladeCheck()
+    return SpellId('Target_BoomingBlade_Strike')
+end
+
+function NotGreenFlameBladeCheck()
+    return (~SpellId('Target_GreenFlameBlade_Strike')) & HasUseCosts('ActionPoint')
+end
+
+function GreenFlameBladeCheck()
+    return SpellId('Target_GreenFlameBlade_Strike')
+end
+
+function SniperCheck()
+    return HasStringInSpellRoll('Attack')
+end
+
+function HasHexStatus()
+    return HasAnyStatus({'HEX_STRENGTH','HEX_DEXTERITY','HEX_CONSTITUTION','HEX_INTELLIGENCE','HEX_WISDOM','HEX_CHARISMA','HEX_STRENGTH_ELDRITCH'}, {}, {},context.Target,context.Source)
+end
+
+function MeleeWeaponAttackCheck()
+    return HasStringInSpellRoll('AttackType.MeleeWeaponAttack')
+end
+
+function RangedWeaponAttackCheck()
+    return HasStringInSpellRoll('AttackType.RangedWeaponAttack')
+end
+
+function RangedOffHandWeaponAttackCheck()
+    return HasStringInSpellRoll('AttackType.RangedOffHandWeaponAttack')
+end
+
+function TidesOfChaosCheck()
+    return IsSpell() & (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot'))
+end
+
+function IsClericCantrip()
+	return SpellId('Target_SacredFlame') | SpellId('Target_TollTheDead')
+end
+
+function IsThrowCantrip()
+	return SpellId('Projectile_MagicStone')
+end
+
+function IsDarknessSpell()
+	return SpellId('Target_Darkness') | SpellId('Target_Darkness_3') | SpellId('Target_Darkness_4') | SpellId('Target_Darkness_5') | SpellId('Target_Darkness_6')
+end
+
+function FeatRequirementAbilityGreaterEqualSD(value)
+    return ConditionResult(context.Source.Strength >= value) | ConditionResult(context.Source.Dexterity >= value)
+end
+
+function FeatRequirementAbilityGreaterEqualDC(value)
+    return ConditionResult(context.Source.Dexterity >= value) | ConditionResult(context.Source.Constitution >= value)
+end
+
+function FeatRequirementWarlock()
+    return ConditionResult(context.Source.GetClassLevel('Warlock') >= 1)
+end
+
+function MagicalAmbushCheck()
+    return ((HasStringInSpellRoll('SavingThrow') | HasStringInFunctorConditions('SavingThrow')) & HasSpellFlag(SpellFlags.Spell)) | SpellId('Throw_Telekinesis') | SpellId('Throw_MAG_Throw_Githborn_Telekinesis') | SpellId('Throw_MAG_Throw_Telekinesis')
+end
+
+function DeceptionCheck()
+    local skillCheck = SkillCheck(Skill.Deception,context.Target.GetPassiveSkill(Skill.Insight))
+    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+end
+
+function SmiteSpellCheck()
+    return SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Blinding_4') | SpellId('Target_Smite_Blinding_5') | SpellId('Target_Smite_Blinding_6') | SpellId('Target_Smite_Branding') | SpellId('Target_Smite_Branding_3') | SpellId('Target_Smite_Branding_4') | SpellId('Target_Smite_Branding_5') | SpellId('Target_Smite_Branding_6') | SpellId('Target_Smite_Searing') | SpellId('Target_Smite_Searing_2') | SpellId('Target_Smite_Searing_3') | SpellId('Target_Smite_Searing_4') | SpellId('Target_Smite_Searing_5') | SpellId('Target_Smite_Searing_6') | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Divine') | SpellId('Target_Smite_Divine_2') | SpellId('Target_Smite_Divine_3') | SpellId('Target_Smite_Divine_4') | SpellId('Target_Smite_Divine_5') | SpellId('Target_Smite_Divine_6') | SpellId('Target_Smite_Divine_Free') | SpellId('Target_Smite_Divine_Free_2') | SpellId('Target_Smite_Divine_Free_3') | SpellId('Target_Smite_Thunderous') | SpellId('Target_Smite_Thunderous_2') | SpellId('Target_Smite_Thunderous_3') | SpellId('Target_Smite_Thunderous_4') | SpellId('Target_Smite_Thunderous_5') | SpellId('Target_Smite_Thunderous_6') | SpellId('Target_Smite_Wrathful') | SpellId('Target_Smite_Wrathful_2') | SpellId('Target_Smite_Wrathful_3') | SpellId('Target_Smite_Wrathful_4') | SpellId('Target_Smite_Wrathful_5') | SpellId('Target_Smite_Wrathful_6') | SpellId('Target_EldritchSmite') | SpellId('Target_EldritchSmite_2') | SpellId('Target_EldritchSmite_3') | SpellId('Target_EldritchSmite_4') | SpellId('Target_EldritchSmite_5') | SpellId('Target_EldritchSmite_6')
+end
+
+function IsDivineSmite()
+    return SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Blinding_4') | SpellId('Target_Smite_Blinding_5') | SpellId('Target_Smite_Blinding_6') | SpellId('Target_Smite_Branding') | SpellId('Target_Smite_Branding_3') | SpellId('Target_Smite_Branding_4') | SpellId('Target_Smite_Branding_5') | SpellId('Target_Smite_Branding_6') | SpellId('Target_Smite_Searing') | SpellId('Target_Smite_Searing_2') | SpellId('Target_Smite_Searing_3') | SpellId('Target_Smite_Searing_4') | SpellId('Target_Smite_Searing_5') | SpellId('Target_Smite_Searing_6') | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Divine') | SpellId('Target_Smite_Divine_2') | SpellId('Target_Smite_Divine_3') | SpellId('Target_Smite_Divine_4') | SpellId('Target_Smite_Divine_5') | SpellId('Target_Smite_Divine_6') | SpellId('Target_Smite_Divine_Free') | SpellId('Target_Smite_Divine_Free_2') | SpellId('Target_Smite_Divine_Free_3') | SpellId('Target_Smite_Thunderous') | SpellId('Target_Smite_Thunderous_2') | SpellId('Target_Smite_Thunderous_3') | SpellId('Target_Smite_Thunderous_4') | SpellId('Target_Smite_Thunderous_5') | SpellId('Target_Smite_Thunderous_6') | SpellId('Target_Smite_Wrathful') | SpellId('Target_Smite_Wrathful_2') | SpellId('Target_Smite_Wrathful_3') | SpellId('Target_Smite_Wrathful_4') | SpellId('Target_Smite_Wrathful_5') | SpellId('Target_Smite_Wrathful_6') | SpellId('Target_EldritchSmite') | SpellId('Target_EldritchSmite_2') | SpellId('Target_EldritchSmite_3') | SpellId('Target_EldritchSmite_4') | SpellId('Target_EldritchSmite_5') | SpellId('Target_EldritchSmite_6')
+end
+
+function DivineSmiteCheck()
+    return SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Blinding_4') | SpellId('Target_Smite_Blinding_5') | SpellId('Target_Smite_Blinding_6') | SpellId('Target_Smite_Branding') | SpellId('Target_Smite_Branding_3') | SpellId('Target_Smite_Branding_4') | SpellId('Target_Smite_Branding_5') | SpellId('Target_Smite_Branding_6') | SpellId('Target_Smite_Searing') | SpellId('Target_Smite_Searing_2') | SpellId('Target_Smite_Searing_3') | SpellId('Target_Smite_Searing_4') | SpellId('Target_Smite_Searing_5') | SpellId('Target_Smite_Searing_6') | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Divine') | SpellId('Target_Smite_Divine_2') | SpellId('Target_Smite_Divine_3') | SpellId('Target_Smite_Divine_4') | SpellId('Target_Smite_Divine_5') | SpellId('Target_Smite_Divine_6') | SpellId('Target_Smite_Divine_Free') | SpellId('Target_Smite_Divine_Free_2') | SpellId('Target_Smite_Divine_Free_3') | SpellId('Target_Smite_Thunderous') | SpellId('Target_Smite_Thunderous_2') | SpellId('Target_Smite_Thunderous_3') | SpellId('Target_Smite_Thunderous_4') | SpellId('Target_Smite_Thunderous_5') | SpellId('Target_Smite_Thunderous_6') | SpellId('Target_Smite_Wrathful') | SpellId('Target_Smite_Wrathful_2') | SpellId('Target_Smite_Wrathful_3') | SpellId('Target_Smite_Wrathful_4') | SpellId('Target_Smite_Wrathful_5') | SpellId('Target_Smite_Wrathful_6') | SpellId('Target_EldritchSmite') | SpellId('Target_EldritchSmite_2') | SpellId('Target_EldritchSmite_3') | SpellId('Target_EldritchSmite_4') | SpellId('Target_EldritchSmite_5') | SpellId('Target_EldritchSmite_6')
+end
+
+function BlackTentaclesCheck(entity)
+    local entity = entity or context.Target
+    local res = ~HasStatus('BLACK_TENTACLES')
+    if res.Result then
+        st = ~SavingThrow(Ability.Strength,SourceSpellDC(12),AdvantageOnRestrained())
+        return ConditionResult(st.Result,{},{},st.Chance)
+    end
+    return ConditionResult(true)
+end
+
+function IsAbleToReact(entity)
+    local entity = entity or context.Target
+
+    return (~IsCrowdControlled(entity) & ~Dead(entity) & ~(Self(context.Target, entity) & IsKillingBlow()) ) & (~HasAnyStatus({'PRONE', 'PRONE_GREASE', 'PRONE_SEWER', 'PRONE_ICE', 'PRONE_FALLEN', 'COMMAND_GROVEL', 'PRONE_THUNDEROUS_SMITE'}, {}, {}, entity))
+end
+
+function StatusDoesNotInvokeOnStatusApply()
+    return StatusId('PERFORM_POSITIVE_DOS2_1')
+    | StatusId('PERFORM_POSITIVE_DOS2_2')
+    | StatusId('PERFORM_POSITIVE_DOS2_3')
+    | StatusId('DOS2_JOIN_1')
+    | StatusId('DOS2_JOIN_2')
+    | StatusId('DOS2_JOIN_3')
+    | StatusId('PERFORM_POSITIVE')
+    | StatusId('PERFORM_POSITIVE_THEPOWER')
+    | StatusId('PERFORM_POSITIVE_STARGAZING')
+    | StatusId('PERFORM_POSITIVE_BARDDANCE')
+    | StatusId('PERFORM_NEGATIVE')
+    | StatusId('DASH')
+    | StatusId('DASH_STACKED')
+    | StatusId('DASH_STACKED_2')
+    | StatusId('SNEAKING') 
+    | StatusId('SNEAKING_CLEAR')
+    | StatusId('SNEAKING_LIGHTLY_OBSCURED')
+    | StatusId('SNEAKING_HEAVILY_OBSCURED')
+    | StatusId('DISENGAGE') 
+    | StatusId('NON_LETHAL')
+    | StatusId('MONK_SOUND_SWITCH')
+    | StatusId('FLANKED')
+    | StatusId('MAG_FROST_DURATION_TECHNICAL')
+    | StatusId('MAG_FROST_FROZEN_CHECK_TECHNICAL') 
+    | StatusId('MAG_RADIANT_RADIATING_ORB_DURATION_TECHNICAL')
+    | StatusId('MAG_ZOC_FORCE_CONDUIT_DURATION_TECHNICAL')
+    | StatusId('MAG_FIRE_HEAT_DURATION_TECHNICAL')
+    | StatusId('MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL')
+    | StatusId('MAG_PSYCHIC_MENTAL_FATIGUE_DURATION_TECHNICAL')
+end

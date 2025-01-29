@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bbe0e72e-fa2a-41d2-be9a-c604af561421">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e62355c6-2ff4-40fb-86a1-e5e794943f9c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Charger_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bae6edf6-7900-476d-9407-418702fd5d54" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="281b66d5-7da4-4bd1-a337-ec363c025f73" />
+        <field name="Name" type="NameTableFieldDefinition" value="Charger_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5fc6ba07-b41b-4e83-8c2b-408ce704398e" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(not Ally()):Force(ShoveDistance,OriginToEntity,Aggressive);IF(Ally()):Force(ShoveDistance,OriginToEntity,Friendly)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af047324-2447-4e02-adc7-659301553a74" />
+        <field name="Name" type="NameTableFieldDefinition" value="Primal_Stampede" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18d9b6dd-27cf-4d63-8c4c-b863dfd6bfb3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;AddFallDamageOnLand;CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
