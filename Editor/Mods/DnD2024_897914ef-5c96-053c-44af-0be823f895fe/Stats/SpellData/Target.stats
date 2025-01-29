@@ -7292,6 +7292,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8084c4d-7553-4d5b-bd13-a2405c31ea67" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladeEx" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76337b67-cf36-4955-8f52-711ae89eb390" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d7e4b6c-86a7-4b55-be09-5738d225c05d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0dd7564-72ef-4d50-bea9-08fcf2e24865" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1b40eb2b-bc5d-4817-974d-b55835c45f44" />
         <field name="Name" type="NameTableFieldDefinition" value="Guidance" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c64ba536-9a1a-4f17-b16e-94fd6c9b85cb" />
@@ -7454,75 +7469,6 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('TRUE_STRIKE_OWNER', context.Source)" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="efbd2c87-105c-46da-8501-8a47a85d20f9" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="59f8ec6a-59c1-44d1-9281-8a9eb9463633" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BOOMINGBLADE,100,-1);ApplyStatus(SELF,BOOMING_BLADE_OWNER,100, 1);GROUND:ApplyStatus(SELF,BOOMING_BLADE_OWNER,100, 1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14f347e7g7e38g47d2g9556g331a81181c45" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3af0fca3ge3d3gcc6eg670fg62233fe34010" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(LevelMapValue(BoomingBladeStrike),Thunder);DealDamage(LevelMapValue(BoomingBladeStatus),Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(BoomingBladeStrike),Thunder)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE,100,1)" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Thunder_ThunderousSmite_L1to3" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsSpell;Stealth;NoSurprise;Invisible" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="288e0f80-7d7c-4f36-b748-17182318180e" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="aec764bd-7542-462d-bd73-9d048fea33f8" />
-        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e3faa4ab-3c09-456d-997a-23a48eac2b09" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4413f80d-4989-4dc4-9c1f-e70606de1818" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_Strike" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BOOMING_BLADE_OWNER)" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBladeStrike),Thunder,Magical);ApplyStatus(BOOMING_BLADE,100,1);IF(CharacterLevelGreaterThan(4)):ApplyStatus(BOOMING_BLADE_5,100,1);IF(CharacterLevelGreaterThan(9)):ApplyStatus(BOOMING_BLADE_10,100,1);IF(CharacterLevelGreaterThan(16)):ApplyStatus(BOOMING_BLADE_17,100,1);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(BoomingBladeStrike),Thunder)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE,100,1)" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Thunder_ThunderousSmite_L1to3" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;HasSomaticComponent;IsDefaultWeaponAction;Temporary;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="288e0f80-7d7c-4f36-b748-17182318180e" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
-        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Melee" />
-        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="79f8640c-612a-4b13-aac7-bdc1b90458c2,,;655f5d8e-39c7-45b4-8a36-fdd3358a448c,,;c07a9d83-9a39-464a-b281-15c67c528ffb,,;32c33123-7962-4d95-b497-532b1a897e85,,;7f20e242-be7c-4fd1-a2bd-5715b2adca03,,;7465f7f7-67ea-41f2-8dd4-3c97f1089a54,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ace58a8f-d031-444e-bb6a-8ab92ecda053" />
-        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('BOOMING_BLADE_OWNER', context.Source)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14f347e7g7e38g47d2g9556g331a81181c45" version="1" />
         <field name="RitualCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>

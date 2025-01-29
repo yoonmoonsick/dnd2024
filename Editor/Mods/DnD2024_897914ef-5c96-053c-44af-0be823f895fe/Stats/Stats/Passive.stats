@@ -1458,35 +1458,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b686872b-f2f5-48db-a5b8-0009ab86ba67" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bladesong" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cb271e4g25c0g753cg3852gf53a9a8f2d93" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0951250cg1a21g278bg1af8ge1fd82629086" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PhalarAluve_Sing" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharacterLevelGreaterThan(4)):ActionResource(BladesongCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(BladesongCharge,1,0)" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b98a680a-5d00-43a4-afb8-1ce029127aed" />
-        <field name="Name" type="NameTableFieldDefinition" value="SongDefense" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha376cacdg256ag083fgd5ddgc06572428a3b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8c8ff270g7159g8626gbcf4gb37369e0a0d6" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PhalarAluve_Sing" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SongDefense);UnlockInterrupt(Interrupt_SongDefense_2);UnlockInterrupt(Interrupt_SongDefense_3);UnlockInterrupt(Interrupt_SongDefense_4);UnlockInterrupt(Interrupt_SongDefense_5);UnlockInterrupt(Interrupt_SongDefense_6)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="87dbc63b-b20d-4f1b-aa74-b105677e4981" />
         <field name="Name" type="NameTableFieldDefinition" value="SongVictory" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heafab62eg9d7fg57d9g4a46g8ef200546d58" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0006edeg5f2eg35bagdcd7gdadec3bee06c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PhalarAluve_Shriek" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack() and HasStatus('BLADESONG',context.Source) and not HasStatus('FIRST_ATTACK_TURN',context.Source)):CharacterWeaponDamage(IntelligenceModifier);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FIRST_ATTACK_TURN,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3735,76 +3716,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0f2ca88c-2209-4195-ac30-83912f78153c" />
         <field name="Name" type="NameTableFieldDefinition" value="Cantrip" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF8A2BE2" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="273e3458-b46e-45fd-9bf2-1c2343633d62" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14f347e7g7e38g47d2g9556g331a81181c45" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdcce4269g1ac6g9a8ega8a7g1a8102c17d39" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,1d8,Thunder,Magical);RemoveStatus(SELF,BOOMING_BLADE)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="33dd39e8-9395-4bab-a4c3-52ddc68bca87" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="273e3458-b46e-45fd-9bf2-1c2343633d62" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,2d8,Thunder,Magical);RemoveStatus(SELF,BOOMING_BLADE_5)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0ede33b9-7a3f-435b-9855-006a9884bdae" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_10" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="273e3458-b46e-45fd-9bf2-1c2343633d62" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,3d8,Thunder,Magical);RemoveStatus(SELF,BOOMING_BLADE_10)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="99a40a7e-094d-4220-8143-2ec60fa1f8be" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_17" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="273e3458-b46e-45fd-9bf2-1c2343633d62" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,4d8,Thunder,Magical);RemoveStatus(SELF,BOOMING_BLADE_17)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="560d98f2-a544-4c7f-9eb6-8ead2a7ef45d" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_Spell_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="33dd39e8-9395-4bab-a4c3-52ddc68bca87" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump') " />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,2d8,Thunder,Magical)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f4d5af52-161f-43ce-ab86-59898e681532" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_Spell_10" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0ede33b9-7a3f-435b-9855-006a9884bdae" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump') " />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,3d8,Thunder,Magical)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cffd0737-3811-4771-b2e1-60abf07b598d" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladePassive_Spell_17" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="99a40a7e-094d-4220-8143-2ec60fa1f8be" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump') " />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOOMING_BLADE_EFFECT,100,0);IF(not Dead()):DealDamage(SELF,4d8,Thunder,Magical)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
