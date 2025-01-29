@@ -1,0 +1,11 @@
+new entry "PASSIVE_HUNTERS_MARK"
+type "StatusData"
+data "StatusType" "EFFECT"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "INTERRUPT_LEGENDARY_RESISTANCE"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "INTERRUPT_LEGENDARY_RESISTANCE"
+data "OnApplyFunctors" "IF(RollDieAgainstDC(DiceType.d20,11)):RestoreResource(LegendaryResistanceCharge,1,0);IF(RollDieAgainstDC(DiceType.d20,20)):RestoreResource(LegendaryResistanceCharge,2,0)"
+

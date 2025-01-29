@@ -1,0 +1,36 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_IDENTIFIER_Initialized_DnD2024(0);
+KBSECTION
+IF
+LevelLoaded(_)
+AND
+DB_IDENTIFIER_Initialized_DnD2024(0)
+THEN
+TimerLaunch("IDENTIFIER_InitDelay", 0);
+
+IF
+TimerFinished("IDENTIFIER_InitDelay")
+THEN
+NOT DB_IDENTIFIER_Initialized_DnD2024(0);
+DB_IDENTIFIER_Initialized_DnD2024(1);
+
+IF
+CastedSpell(_Caster,"Shout_YMS_Resotre_Oath",_,_,_)
+THEN
+StartRespecRestore(_Caster);
+
+IF
+CastedSpell(_Caster,"Shout_YMS_Respec",_,_,_)
+THEN
+StartRespec(_Caster);
+ApplyStatus(_Caster,"RESPEC_TECHNICAL",1.0,1,NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusApplied(_Player, "GAIN_INSPIRATION", _, _)
+THEN
+GiveInspirationPoints((CHARACTER)_Player, 1.0, "", "");
+EXITSECTION
+
+ENDEXITSECTION

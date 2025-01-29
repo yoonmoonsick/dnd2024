@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="b25e092b-5372-4008-b900-a2f52b6b903b">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c90f3855-b536-46f8-9440-7500551e9dcb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SNEAKING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f5ba2bd-25d9-44c1-ac25-e62f17f57dcd" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="( (not HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) ) or ( HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) and not IsMiss() ) ) and not HasSpellFlag(SpellFlags.Stealth, context.Source) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0))" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

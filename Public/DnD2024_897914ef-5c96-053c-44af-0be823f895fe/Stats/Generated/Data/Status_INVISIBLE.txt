@@ -1,0 +1,13 @@
+new entry "INVISIBILITY_GS"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "StackId" "INVISIBILITY_GS"
+data "RemoveEvents" "OnSpellCast;OnDamage;OnEntityPickUp;OnEntityDrop;OnEntityDrag;OnLockpickingFinished;OnDisarmingFinished;OnObscurityChanged"
+data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (not HasObscuredState(ObscuredState.HeavilyObscured,context.Source))) and not IsStatusEvent(StatusEvent.OnDamage)) "
+
+new entry "New_Stat_0"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (HasObscuredState(ObscuredState.Clear,context.Source))) or (not IsStatusEvent(StatusEvent.OnSpellCast) and not IsStatusEvent(StatusEvent.OnDamage) and not IsStatusEvent(StatusEvent.OnObscurityChanged) and not IsStatusEvent(StatusEvent.OnMove)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and (HasStatus('SEE_INVISIBILITY_REVEAL') or HasStatus('FAERIE_FIRE') or HasStatus('BRANDING_SMITE')))"
+

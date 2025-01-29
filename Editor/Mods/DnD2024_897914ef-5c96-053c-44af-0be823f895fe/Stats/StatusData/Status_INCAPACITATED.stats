@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="459eef32-65eb-4350-97d3-e38efef70ae4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SLEEP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e043fcd-bcd0-4962-bd61-04aa9acd4955" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SLEEP" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(SLEEP_2,100,9)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(SLEEP)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56e0f2d1-fe3c-49d4-98ac-5331748bce30" />
+        <field name="Name" type="NameTableFieldDefinition" value="SLEEP_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="459eef32-65eb-4350-97d3-e38efef70ae4" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value=";" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value=";" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value=";" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e02169b-e262-4777-89dd-652ef6ae2753" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLINK_VANISH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a09b9305-d34d-4a19-9bcf-7065406cf655" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition;SG_Invisible" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="462e2bf1-9f09-4938-9bed-8bbff162cda4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_GREATER_DND2024" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd568e2a-1109-49d2-859c-0de8131c5bb6" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_GREATER_DND2024" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(ALCH_POTION_REST_SLEEP_GREATER_RESTORATION_DND2024,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f050db63-48b4-4e59-afc2-a48e4f86dc12" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_GREATER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd568e2a-1109-49d2-859c-0de8131c5bb6" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.TimeOut)):ApplyStatus(ALCH_POTION_REST_SLEEP_GREATER_RESTORATION,100,1);ApplyStatus(ALCH_POTION_REST_SLEEP_GREATER_RESTORATION_DND2024,100,1)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
