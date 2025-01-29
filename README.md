@@ -771,6 +771,7 @@ All subclasses are obtained at class LvL 3.
     - You can use it twice, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Wizard LvL 5, you gain 1 additional use of this feature. At LvL 9, you gain 4 uses.
 - LvL 6: Extra Attack: You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
 - LvL 10: Song of Defense: You can direct your magic to absorb damage while your Bladesong is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot’s LvL.
+- LvL 12: Song of Victory: While your Bladesong is active, you can add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks. This applies only to the first attack on your turn.
 
 ## Enemies
 

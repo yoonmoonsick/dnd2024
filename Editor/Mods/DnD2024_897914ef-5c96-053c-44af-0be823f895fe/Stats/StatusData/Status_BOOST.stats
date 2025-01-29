@@ -679,80 +679,6 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8A2BE2" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0403c5cd-bbef-4ec0-8b2e-6817e23630d9" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE_OWNER" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BOOMING_BLADE_OWNER" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BladeCantripDismiss);AttackSpellOverride(Target_BoomingBlade_Strike, Target_MainHandAttack);UnlockSpellVariant(NotBoomingBladeCheck(),ModifyUseCosts(Add,BoomingBladePoint,1,0));UnlockSpellVariant(BoomingBladeCheck(),ModifyIconGlow())" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="BoomingBladeCheck()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d20b857b-89dd-4c63-a2ba-1765a5703a9c" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14f347e7g7e38g47d2g9556g331a81181c45" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha7ab4e31g6ae8g1514g435cg734f43e43aec" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(1d8,Thunder)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
-        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Purple" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BOOMING_BLADE" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder)" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="b3732b26-dc9b-4fb1-80a5-7b24efc0bf55" />
-        <field name="Passives" type="StringTableFieldDefinition" value="BoomingBladePassive" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4821bd51-7a3e-4eb7-b705-d95887e5eab2" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d20b857b-89dd-4c63-a2ba-1765a5703a9c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(2d8,Thunder)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="BoomingBladePassive_5;BoomingBladePassive_Spell_5" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0ba2874e-b812-4fca-97d3-f4e2cb3409ee" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE_10" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d20b857b-89dd-4c63-a2ba-1765a5703a9c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(3d8,Thunder)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="BoomingBladePassive_10;BoomingBladePassive_Spell_10" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="592dc9d5-4d5c-4346-9124-9cf1b036fa4e" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE_17" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d20b857b-89dd-4c63-a2ba-1765a5703a9c" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(4d8,Thunder)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="17" />
-        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="BoomingBladePassive_17;BoomingBladePassive_Spell_17" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ec6730d4-eaa5-424e-a827-6d3a5932972b" />
-        <field name="Name" type="NameTableFieldDefinition" value="BOOMING_BLADE_EFFECT" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="80e5c40d-531d-4aa2-8b2c-3eb4dc645892" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="80e5c40d-531d-4aa2-8b2c-3eb4dc645892" />
-      </fields>
-    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2be265e-916f-4ca3-938e-59f211ecfee2" />
@@ -1744,22 +1670,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="TAVERN_BRAWLER_COOLDOWN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d367b01b-c567-4358-82e3-c69253023fbb" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cb271e4g25c0g753cg3852gf53a9a8f2d93" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0951250cg1a21g278bg1af8ge1fd82629086" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PhalarAluve_Sing" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BLADESONG" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,Performance);ActionResource(Movement,3,0);AC(1);IF(AbilityGreaterThan('Intelligence',13,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',15,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',21,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',23,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',25,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',27,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',29,context.Source)):AC(1);RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',13,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',15,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',17,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',19,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',21,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(AbilityGreaterThan('Intelligence',23,context.Source)):RollBonus(SavingThrow,1,Constitution);IF(HasPassive('SongVictory',context.Source)):CharacterWeaponDamage(IntelligenceModifier)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasShieldEquipped(context.Source) or HasHeavyArmor(context.Source) or HasMediumArmor(context.Source)" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
