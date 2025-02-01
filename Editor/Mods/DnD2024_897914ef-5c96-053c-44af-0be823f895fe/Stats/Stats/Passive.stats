@@ -2941,9 +2941,13 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a98ab75f-a858-456f-985d-e8ed3a7df7e3" />
-        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Hex" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="994479cb-1a74-4f93-bfb4-e49491b307fc" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h140ca3c1g2759g2aa0g6abcgf795b831db4d" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):UnlockSpell(Shout_PactOfTheBlade);IF(not HasPassive('HexWarrior',context.Source)):UnlockSpell(Shout_PactOfTheBlade_Bind);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('HexWarrior',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PACTOFTHEBLADE_HEXBLADE,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
