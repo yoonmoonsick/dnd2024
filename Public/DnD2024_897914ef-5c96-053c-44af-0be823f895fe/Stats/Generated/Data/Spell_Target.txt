@@ -1638,7 +1638,7 @@ data "SpellAnimation" "554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;463e2894-de95-4
 data "VerbalIntent" "Control"
 data "SpellFlags" "Temporary"
 
-new entry "Target_MantleOfInspiration"
+new entry "Target_MantleOfInspiration_YMS"
 type "SpellData"
 data "SpellType" "Target"
 data "SpellProperties" "ApplyStatus(MANTLE_OF_INSPIRATION, 100, -1);ApplyStatus(MANTLE_OF_INSPIRATION_DISENGAGE, 100, -1)"
@@ -6060,6 +6060,18 @@ data "SpellSuccess" "DealDamage(max(1,1d4+UnarmedMeleeAbilityModifier+Owner.Char
 new entry "Target_Cantrip"
 type "SpellData"
 data "SpellType" "Target"
+
+new entry "Target_BoomingBlade_ClassSpell"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BoomingBladeEx"
+
+new entry "Target_BoomingBlade_ClassSpell"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BoomingBlade"
+data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BOOMINGBLADE,100,-1);"
+data "Icon" "Spell_Evocation_BoomingBlade"
 
 new entry "Target_Guidance"
 type "SpellData"
