@@ -7293,14 +7293,14 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c8084c4d-7553-4d5b-bd13-a2405c31ea67" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBladeEx" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_ClassSpell" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="76337b67-cf36-4955-8f52-711ae89eb390" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3d7e4b6c-86a7-4b55-be09-5738d225c05d" />
-        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_ClassSpell" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0dd7564-72ef-4d50-bea9-08fcf2e24865" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BOOMINGBLADE,100,-1);" />
@@ -7610,34 +7610,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_MINDSLIVER,100,-1)" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ec7a5d61-2cb6-4fa5-8c85-35ba7f0900f1" />
-        <field name="Name" type="NameTableFieldDefinition" value="TollTheDead" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Necrotic,Magical);IF(HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Necrotic,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and HasMaxHP()):DealDamage((LevelMapValue(D8Cantrip))/2,Necrotic,Magical); IF(HasPassive('PotentCantrip',context.Source) and not HasMaxHP()):DealDamage((LevelMapValue(D12Cantrip))/2,Necrotic,Magical); IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_TollOfTheDead" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h138d5804g40ebg443ag848bg34cd50e9119c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd9250a36g0b22g4072gaa56ga280f7046d16" version="2" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D12Cantrip),Necrotic)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Cleric_DeathDomain_Gen" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Cleric_DeathDomain_Gen" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Cleric_DeathDomain_Gen" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Cleric_DeathDomain_TollOfTheDead" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;09ae2f11-f5b4-42f5-ae16-687a5b57d500,,;10caea0e-c949-4d91-8ab7-3b50019dd054,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="0aae35fb-4e0f-4ecd-b8c9-8929e89a257b" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a1b229db-954a-466b-bfeb-0536dc17d673" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="2862e2ca-f448-4366-b814-3f92686b4709" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="aa9ec639-90aa-4461-9b4e-9e11c732082a" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
