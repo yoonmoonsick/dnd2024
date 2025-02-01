@@ -1486,12 +1486,6 @@ data "Icon" "Spell_Evocation_BrandingSmite_Ranged"
 data "SpellFlags" "IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction;Temporary;IsSpell"
 data "DamageType" "Radiant"
 
-new entry "Projectile_WarMagic_Githyanki_Attack"
-type "SpellData"
-data "SpellType" "Projectile"
-using "Projectile_WarMagic_Githyanki_Attack"
-data "SpellSuccess" "DealDamage(max(1,MainRangedWeapon), Radiant);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);ExecuteWeaponFunctors(MainHand)"
-
 new entry "Projectile_GreenFlameBlade"
 type "SpellData"
 data "SpellType" "Projectile"
