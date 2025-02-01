@@ -1029,6 +1029,13 @@ data "StatsFunctorContext" "OnAttack"
 data "Conditions" "(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source)"
 data "StatsFunctors" "ApplyStatus(PUSH_SHIELD,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)"
 
+new entry "TrainingWarSong"
+type "PassiveData"
+data "DisplayName" "haa5d83e1g592eg7c20gfcf7g8ef4ecce6f23;1"
+data "Description" "h6415e68bgaba8gd2b5gead6g4da877b91aa7;1"
+data "Icon" "Action_Mag_PhalarAluve_Sing"
+data "Properties" "Highlighted"
+
 new entry "SongVictory"
 type "PassiveData"
 data "DisplayName" "heafab62eg9d7fg57d9g4a46g8ef200546d58;1"
@@ -1885,7 +1892,8 @@ data "Boosts" "ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThr
 new entry "AuraExpansion"
 type "PassiveData"
 data "DisplayName" "h7358d771gdd81gd8f3g3ed5gb565313ff9c7;1"
-data "Description" "h5d4329d1g22bbg6fb0g4ca2g06a21df70895;1"
+data "Description" "h5d4329d1g22bbg6fb0g4ca2g06a21df70895;2"
+data "DescriptionParams" "Distance(9)"
 data "Icon" "Action_Paladin_AuraOfProtection"
 data "Properties" "Highlighted"
 
