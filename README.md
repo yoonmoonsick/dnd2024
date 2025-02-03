@@ -256,11 +256,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Tandem Footwork: When you roll Initiative, you can expend one use of your Bardic Inspiration if you don’t have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.    
 - LvL 12: Leading Evasion: When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.
 
-#### ![alt text](https://i.imgur.com/A8EI9Fq.png) College of Glamour
+#### ![alt text](https://i.imgur.com/fz85hD5.png) College of Glamour
 
 - LvL 3: Beguiling Magic: You always have the Charm Person and Mirror Image spells prepared. Additionally, immediately after casting an Enchantment or Illusion spell using a spell slot, you can expend one use of your Bardic Inspiration to force a creature you can see within 60 feet to make a Wisdom saving throw against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.
-- LvL 3: Mantle of Inspiration: You can weave fey magic into a song or dance to invigorate others. As a bonus action, you can expend one use of your Bardic Inspiration. Choose a number of creatures within 60 feet of you, up to a maximum equal to your Charisma modifier (with a minimum of one creature). Each chosen creature gains temporary hit points equal to twice your proficiency bonus, and each can immediately use its reaction to move up to its speed without provoking opportunity attacks.
-- LvL 6: Mantle of Majesty: You always have the Command spell prepared. As an Action, You take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot. Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.
 - LvL 12: Unbreakable Majesty: You can assume a magically majestic presence for 1 minute. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead.
 
 #### ![alt text](https://i.imgur.com/eJQGfE7.png) College of Lore
@@ -277,7 +275,7 @@ All subclasses are obtained at class LvL 3.
 
 - LvL 3: The range of ranged flourish is reduced to 3m.
 
-### ![alt text](https://i.imgur.com/V2EltIB.png)  Cleric
+### ![alt text](https://i.imgur.com/V2EltIB.png) Cleric
 
 - LvL 1: Divine Order: You have dedicated yourself to one of the following sacred roles of your choice.
     - Protector: Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.
@@ -760,7 +758,7 @@ All subclasses are obtained at class LvL 3.
 - LvL 2: Improved Illusions: You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
 - LvL 6: Phantasmal Creatures: You always have the Summon Beast and Summon Fey spells prepared. you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.
 
-#### Bladesinging
+#### ![alt text](https://i.imgur.com/GtXWEph.png) Bladesinging
 
 - LvL 2: Training in War and Song: You gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice. You also gain proficiency in the Performance skill if you don’t already have it.
 - LvL 2: Bladesong: You can invoke an elven magic called the Bladesong, provided that you aren’t wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus. You can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. While your Bladesong is active, you gain the following benefits:
