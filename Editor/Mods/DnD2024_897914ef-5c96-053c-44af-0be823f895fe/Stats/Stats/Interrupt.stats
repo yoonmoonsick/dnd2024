@@ -769,34 +769,9 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cbe21a9d-8450-4517-83a9-daac7df50ee2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and (WieldingFinesseWeaponInSpecificHand(context.Source, false) or WieldingFinesseWeaponInSpecificHand(context.Source, true) or WieldingWeapon('Ammunition', false, true, context.Source) or SpellTypeIs(SpellType.Throw))" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',2)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack')) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(ClassLevelHigherOrEqualThan(11,'Rogue')):ApplyStatus(SELF,PATIENT_DEFENCE,100,1);IF(ClassLevelHigherOrEqualThan(11,'Rogue')):ApplyStatus(SELF,DISENGAGE,100,1);IF(ClassLevelHigherOrEqualThan(11,'Rogue')):ApplyStatus(SELF,DASH_HALF,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="68ad2f50-d478-4750-86e4-f5b5a7f65805" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Rakish" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65030d75gbed6g4271g905eg9faa0a1a91f4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1365754g4f79g4a78g93acgcab60d3acc30" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(2);Distance(5)" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha3a08c23g045eg455cg8365g0aab1c2fccd0" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_RakishAudacity_SneakAttack_Melee" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and not IsKillingBlow() and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',2)) or (not HasEnemyWithinRange('SG_Incapacitated',2, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',2, nil,false,context.Source,context.Target))) and not (SpellId('Projectile_SneakAttack') or SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack_Rakish') or SpellId('Target_SneakAttack_Rakish')) and not AnyEntityIsItem();" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Poison" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cbe21a9d-8450-4517-83a9-daac7df50ee2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9cbe3dbeg192cg9810g7ad6gc71d84fce093" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()))" />
