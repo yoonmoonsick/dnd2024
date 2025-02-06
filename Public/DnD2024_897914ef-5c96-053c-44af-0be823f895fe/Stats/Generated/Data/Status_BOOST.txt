@@ -548,18 +548,6 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "OnApplyFunctors" "ApplyEquipmentStatus(MeleeMainHand, TRUE_STRIKE_WEAPON,100, 1);ApplyEquipmentStatus(RangedMainHand, TRUE_STRIKE_WEAPON,100, 1)"
 data "StatusGroups" "SG_RemoveOnRespec"
 
-new entry "GREENFLAME_BLADE_OWNER"
-type "StatusData"
-data "StatusType" "BOOST"
-using "TRUE_STRIKE_OWNER"
-data "DisplayName" "h9ff193f1g12c5gfe3bg8af2g07639475694c;1"
-data "Icon" "GenericIcon_DamageType_Fire"
-data "FormatColor" "Fire"
-data "StackId" "GREENFLAME_BLADE_OWNER"
-data "Boosts" "UnlockSpell(Shout_BladeCantripDismiss);AttackSpellOverride(Target_GreenFlameBlade_Strike, Target_MainHandAttack);UnlockSpellVariant(NotGreenFlameBladeCheck(),ModifyUseCosts(Add,GreenFlameBladePoint,1,0));UnlockSpellVariant(GreenFlameBladeCheck(),ModifyIconGlow())"
-data "RemoveConditions" "GreenFlameBladeCheck()"
-data "OnApplyFunctors" ";"
-
 new entry "HAIL_OF_THORNS"
 type "StatusData"
 data "StatusType" "BOOST"
