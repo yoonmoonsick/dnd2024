@@ -149,9 +149,13 @@ If you choose a newly added background, you gain a spell that can be used once p
 
 ### ![alt text](https://i.imgur.com/bDSBj4l.png) Githyanki
 - Psychic Resilience: You have resistance to psychic damage.
+- LvL 10: Githyanki Parry
 
 ### ![alt text](https://i.imgur.com/bDSBj4l.png) Githzerai
 - Mental Discipline: Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself.
+- LvL 3: Obtain the Way of the Four Elements Monk's novice spells in vanilla Baldur's Gate 3.
+- LvL 5: Obtain the Way of the Four Elements Monk's Intermediate spells in vanilla Baldur's Gate 3.
+- LvL 10: Obtain the Way of the Four Elements Monk's Advanced spells in vanilla Baldur's Gate 3.
 
 ### ![alt text](https://i.imgur.com/SQ6TGl5.png) Gnome
 - Speed: 30 feet
@@ -794,7 +798,7 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Durable: As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
 - Great Weapon Master  
     - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
-- Healer: When casting a healing spell, the target regains additional hit points equal to Proficiency Bonus. Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus.
+- Healer: When casting a healing spell, the target regains additional hit points equal to Proficiency Bonus. Learn Battle Medic Bonus Action that heals a creature 1d8 + Proficiency Bonus.
 - Heavy Armor Master 
     - Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
 - Lightly Armored
@@ -876,10 +880,6 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Prone
     - Attacks Affected. You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
     - Do not break the concentraion.
-- Vines
-    - Plant-based surfaces are non-flammable.
-- Web
-    - Webs are non-flammable.
 - Wet
     - The status is removed when taking cold, fire, or lightning damage.
 
