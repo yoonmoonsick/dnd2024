@@ -178,7 +178,11 @@ function IllusionSpellCheck()
 end
 
 function ExtraAttackSpellCheck()
-    return HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArrowOfDetonation') | SpellId('Projectile_ArrowOfFire') | SpellId('Projectile_ArrowOfDarkness') | SpellId('Projectile_ArrowOfIce') | SpellId('Projectile_ArrowOfAcid') | SpellId('Projectile_ArrowOfLightning') | SpellId('Projectile_ArrowOfPiercing') | SpellId('Projectile_ArrowOfRicochet') | SpellId('Projectile_ArrowOfDispelling') | SpellId('Projectile_ArrowOfAntimagic') | SpellId('Projectile_ArrowOfTeleportation') | SpellId('Projectile_ArrowOfWraithsEmbrace') | SpellId('Projectile_ArrowOfAberrationSlaying') | SpellId('Projectile_ArrowOfBeastSlaying') | SpellId('Projectile_ArrowOfCelestialSlaying') | SpellId('Projectile_ArrowOfConstructSlaying') | SpellId('Projectile_ArrowOfDragonSlaying') | SpellId('Projectile_ArrowOfElementalSlaying') | SpellId('Projectile_ArrowOfFeySlaying') | SpellId('Projectile_ArrowOfFiendSlaying') | SpellId('Projectile_ArrowOfGiantSlaying') | SpellId('Projectile_ArrowOfHumanoidSlaying') | SpellId('Projectile_ArrowOfMonstrositySlaying') | SpellId('Projectile_ArrowOfOozeSlaying') | SpellId('Projectile_ArrowOfPlantSlaying') | SpellId('Projectile_ArrowOfUndeadSlaying') | SpellId('Target_Shove') | SpellId('Target_Trip') | SpellId('Zone_BreathWeapon_Acid_Line')  | SpellId('Zone_BreathWeapon_Acid')  | SpellId('Zone_BreathWeapon_Poison_Line')  | SpellId('Zone_BreathWeapon_Poison')  | SpellId('Zone_BreathWeapon_Lightning_Line')  | SpellId('Zone_BreathWeapon_Lightning')  | SpellId('Zone_BreathWeapon_Fire_Line')  | SpellId('Zone_BreathWeapon_Fire_Cone')  | SpellId('Zone_BreathWeapon_Cold_Line')  | SpellId('Zone_BreathWeapon_Cold') 
+    return ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArrowOfDetonation') | SpellId('Projectile_ArrowOfFire') | SpellId('Projectile_ArrowOfDarkness') | SpellId('Projectile_ArrowOfIce') | SpellId('Projectile_ArrowOfAcid') | SpellId('Projectile_ArrowOfLightning') | SpellId('Projectile_ArrowOfPiercing') | SpellId('Projectile_ArrowOfRicochet') | SpellId('Projectile_ArrowOfDispelling') | SpellId('Projectile_ArrowOfAntimagic') | SpellId('Projectile_ArrowOfTeleportation') | SpellId('Projectile_ArrowOfWraithsEmbrace') | SpellId('Projectile_ArrowOfAberrationSlaying') | SpellId('Projectile_ArrowOfBeastSlaying') | SpellId('Projectile_ArrowOfCelestialSlaying') | SpellId('Projectile_ArrowOfConstructSlaying') | SpellId('Projectile_ArrowOfDragonSlaying') | SpellId('Projectile_ArrowOfElementalSlaying') | SpellId('Projectile_ArrowOfFeySlaying') | SpellId('Projectile_ArrowOfFiendSlaying') | SpellId('Projectile_ArrowOfGiantSlaying') | SpellId('Projectile_ArrowOfHumanoidSlaying') | SpellId('Projectile_ArrowOfMonstrositySlaying') | SpellId('Projectile_ArrowOfOozeSlaying') | SpellId('Projectile_ArrowOfPlantSlaying') | SpellId('Projectile_ArrowOfUndeadSlaying') | SpellId('Target_Shove') | SpellId('Target_Trip') | SpellId('Zone_BreathWeapon_Acid_Line')  | SpellId('Zone_BreathWeapon_Acid')  | SpellId('Zone_BreathWeapon_Poison_Line')  | SpellId('Zone_BreathWeapon_Poison')  | SpellId('Zone_BreathWeapon_Lightning_Line')  | SpellId('Zone_BreathWeapon_Lightning')  | SpellId('Zone_BreathWeapon_Fire_Line')  | SpellId('Zone_BreathWeapon_Fire_Cone')  | SpellId('Zone_BreathWeapon_Cold_Line')  | SpellId('Zone_BreathWeapon_Cold') 
+end
+
+function ExtraAttackCheck()
+    return ExtraAttackSpellCheck() & HasUseCosts('ActionPoint',false)
 end
 
 function NotTrueStrikeCheck()
@@ -187,22 +191,6 @@ end
 
 function TrueStrikeCheck()
     return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant')
-end
-
-function NotBoomingBladeCheck()
-    return (~SpellId('Target_BoomingBlade_Strike')) & HasUseCosts('ActionPoint')
-end
-
-function BoomingBladeCheck()
-    return SpellId('Target_BoomingBlade_Strike')
-end
-
-function NotGreenFlameBladeCheck()
-    return (~SpellId('Target_GreenFlameBlade_Strike')) & HasUseCosts('ActionPoint')
-end
-
-function GreenFlameBladeCheck()
-    return SpellId('Target_GreenFlameBlade_Strike')
 end
 
 function SniperCheck()
