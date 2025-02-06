@@ -176,6 +176,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -191,7 +192,7 @@
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Acid;Zone_BreathWeapon_Acid_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1)" />
       </fields>
@@ -210,6 +211,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -229,6 +231,7 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Poison;Zone_BreathWeapon_Poison_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -242,6 +245,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Electrify)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -259,6 +263,7 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning;ZoneBreathWeapon_Lightning_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Electrify)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -275,6 +280,7 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone;Zone_BreathWeapon_Fire_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);TARGET:IF(Item()):ApplyStatus(BURNING,100,2)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -291,6 +297,7 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone;Zone_BreathWeapon_Fire_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);TARGET:IF(Item()):ApplyStatus(BURNING,100,2)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -307,6 +314,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);RemoveStatus(BURNING)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -325,6 +333,7 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Cold;Zone_BreathWeapon_Cold_Line" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('ExtraAttack',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK,100,1);IF(HasPassive('ExtraAttack_2',context.Source)):ApplyStatus(SELF,EXTRA_ATTACK_2,100,1);GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);RemoveStatus(BURNING)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -340,7 +349,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
         <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="5" />
@@ -394,7 +403,7 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);RemoveStatus(BURNING)" />
         <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
@@ -449,7 +458,7 @@
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify)" />
         <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
@@ -501,7 +510,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d6/2,Fire,Magical)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Fire)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);TARGET:IF(Item()):ApplyStatus(BURNING,100,2)" />
         <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
@@ -554,7 +563,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d6/2,Poison,Magical)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6, Poison)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
         <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="5" />
@@ -656,6 +665,32 @@
         <field name="Name" type="NameTableFieldDefinition" value="StrongWind_GiantEagle_Summon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9643a9e1-0779-4d5b-ad08-ed6b391e5104" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ed37b40-59fd-490a-9a79-c617f6e1880a" />
+        <field name="Name" type="NameTableFieldDefinition" value="StarryForm_Dragon_BreathWeapon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0c453c-c96d-4d36-880d-4775cd7cf93b" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StarryBreath)+SpellCastingAbilityModifier,Radiant,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StarryBreath)/2, Radiant,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DragonForm_ScintillatingBreath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd34c48egae67g42d6gb806g2676b08b5e84" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92f30e6bgbd7eg4419ga4b4gce1ba6d8441b" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StarryBreath)+SpellCastingAbilityModifier,Radiant,Magical)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Druid_DazzlingBreath" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Druid_DazzlingBreath" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Druid_DazzlingBreath" />
+        <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="60" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="bddd5f51-494f-4a20-9d2e-d0e30d62a923" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ed62b5a8-2589-46a7-8778-52efcebcbe34" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="eee55347-697f-41fb-9f3a-52ffc419c51c" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
   </stat_objects>
