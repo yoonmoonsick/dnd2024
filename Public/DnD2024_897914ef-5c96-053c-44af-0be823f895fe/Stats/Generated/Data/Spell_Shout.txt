@@ -2912,6 +2912,13 @@ new entry "Shout_YMS_Barbarian"
 type "SpellData"
 data "SpellType" "Shout"
 
+new entry "Shout_Rage_Giant"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Rage_Giant"
+data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_GIANT,100,100);ApplyStatus(RAGE_MUTE,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);"
+data "TooltipStatusApply" "ApplyStatus(RAGE_GIANT,100,100)"
+
 new entry "Shout_WarriorOfTheGods"
 type "SpellData"
 data "SpellType" "Shout"
