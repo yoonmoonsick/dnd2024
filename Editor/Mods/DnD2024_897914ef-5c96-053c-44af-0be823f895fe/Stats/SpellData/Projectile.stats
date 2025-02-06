@@ -1,6 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
   <stat_objects>
+    <stat_object color="#FF483D8B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a51f673-1ac6-47ea-8b8a-cc641c6afa8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Rogue" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="324b7bfb-6674-4c5a-940b-1dd261bb5efd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a3ee454-7f4e-4a48-ac31-756e8d28a024" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bbb1590-b9cc-4c9a-84dd-0f90f405cd78" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Rakish" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e950a0a4-276f-404a-a5d2-ffd55ebdba6b" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c46e0a3d-a899-4110-b488-ee5dad1178f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Swarm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c5f578ad-ecee-4423-ad44-e7a0288c0ba5" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
@@ -1237,34 +1273,6 @@
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);GROUND:CreateSurface(6,1,Fire);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5c8f15ec-edb1-41f4-80ef-73c351e87f14" />
-        <field name="Name" type="NameTableFieldDefinition" value="CunningStrike" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1a3ee454-7f4e-4a48-ac31-756e8d28a024" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)]" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon+ LevelMapValue(CunningStrike), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(HasStatus('CUNNING_STRIKE_POISON', context.Source)):ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()));IF(HasStatus('CUNNING_STRIKE_TRIP', context.Source)):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()))" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h150848e4g70f8gab13g57b1g75047d00cf57" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon+ LevelMapValue(CunningStrike), MainRangedWeaponDamageType)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_SneakAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_CunningStrike_Ranged" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetItems;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="797f5d6e-61be-4485-85bd-3fe8eff62739" />
-        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1a3ee454-7f4e-4a48-ac31-756e8d28a024" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetItems;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
