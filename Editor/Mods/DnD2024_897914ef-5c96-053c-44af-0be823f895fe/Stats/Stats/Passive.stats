@@ -4084,12 +4084,12 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5870bec4g6420g4ea8ga493g5121992156c3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8053a868gf1aeg0321ge90bg0c3ff639de9a" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateCleric" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MagicInitiateCleric)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateCleric);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_CLERIC_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_CLERIC)" />
         <field name="Conditions" type="StringTableFieldDefinition" value="MagicInitiateSpell()" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source)" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4099,9 +4099,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="286c3dfd-0175-4506-8194-ce38ef88f0d6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h520bba07g4665g4ef0gb7e0g2550a2cf7d35" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateDruid" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MagicInitiateDruid)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateDruid);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_DRUID_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_DRUID)" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source)" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4111,9 +4111,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="286c3dfd-0175-4506-8194-ce38ef88f0d6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02a9497eg703cg40edg9469gd538dab475e1" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateWizard" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MagicInitiateWizard)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateWizard);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_WIZARD_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_WIZARD)" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source)" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
