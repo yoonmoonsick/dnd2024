@@ -1640,38 +1640,20 @@
         <field name="UUID" type="IdTableFieldDefinition" value="16aaf972-9a0f-46fc-860e-b83f458e5ecf" />
         <field name="Name" type="NameTableFieldDefinition" value="StarryWisp" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant,Magical);ApplyStatus(STARRY_WISP,100,2)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Radiant,Magical)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="c63c4527-1bdf-4635-ad59-7d7e2f666fa3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle_Elemental" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STARRY_WISP,100,2)" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Radiant_GuidingBolt_L1to3" />
-        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Radiant_SacredFlame_L1to3" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2f784038-2bea-49ba-b7c1-7b128b16b167" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Radiant_Gen_L1to3" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Radiant_Gen_L1to3_Loop" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_STARRYWISP,100,-1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0c324f8g0e20g88ebg29ddga4e4139e905f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81feb6f9ga343g15d3g17c1g958173a6a020" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21ced5ea-35c7-44d2-af54-6219a50ca455" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
