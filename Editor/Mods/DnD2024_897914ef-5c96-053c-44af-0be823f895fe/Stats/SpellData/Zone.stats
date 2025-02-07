@@ -702,5 +702,40 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ce0aa392-7d13-45a2-8a59-e6786830265d,,;,,;bd10df60-20c2-4711-a1b0-cef708fa0f11,bd10df60-20c2-4711-a1b0-cef708fa0f11,bd10df60-20c2-4711-a1b0-cef708fa0f11;af7ebc22-2ad5-4a39-ad4f-4e93e45f88c1,,;4354d3c1-ffc2-4da2-9840-d8c5f0932cbf,,;,,;c6951776-8830-4d97-9286-35899fe08d0b,,;,,;,," />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="775a7a28-7c04-4e7e-bcc9-2de7abaf998d" />
+        <field name="Name" type="NameTableFieldDefinition" value="GravityBreath" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
+        <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="10" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(5, OriginToTarget);DealDamage(ProficiencyBonus*2,Force,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DragonForm_ScintillatingBreath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9abb9092g13deg5ae8g53ddg2ae1d516c15d" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(ProficiencyBonus*2,Force,Magical);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_RedDragon_FireBreath" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
+        <field name="Range" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="60" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e1ea033-bdac-4dff-94c9-482102632c06,,;13b7fbd2-dbce-4f25-8670-d08df8efa021,,;d25e89c9-2785-4ed2-abbc-5eee6f2785db,,;669703db-5624-41e4-af99-db768c26c9b4,,;e2376226-8b50-4023-b59c-5604016de454,,;,,;,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="AddFallDamageOnLand;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="54d12e90-23ce-4f2b-af51-c50be6e9c6a9" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="0b00a02b-1df0-46de-9b5d-f4afe9f5f715" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="a9cafd50-d3a0-4c55-9cc6-2c088c17df5f" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf862006cg34a9g7207gf4a6g2c10cf7b7d79" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(5)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
