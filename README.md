@@ -446,8 +446,8 @@ All subclasses are obtained at class LvL 3.
 #### ![alt text](https://i.imgur.com/yxMAjPk.png) Purple Dragon Knight
 
 - LvL 3: Rallying Cry: When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter LvL, provided that the creature can see or hear you.
-- LvL 7: Royal Envoy: You gain proficiency in the Persuasion skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance. Your proficiency bonus is doubled for any ability check you make that uses Persuasion. You receive this benefit regardless of the skill proficiency you gain from this feature.
-- LvL 10: Inspiring Surge: When you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
+- LvL 3: Knightly Envoy: You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.
+- LvL 10: Rallying Surge: When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
 - LvL 12: Bulwark: You can extend the benefit of your Indomitable feature to an ally. 
 
 ### ![alt text](https://i.imgur.com/OlSG02G.png) Monk
