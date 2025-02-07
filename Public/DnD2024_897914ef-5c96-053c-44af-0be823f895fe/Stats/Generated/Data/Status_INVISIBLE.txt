@@ -1,8 +1,0 @@
-new entry "INVISIBILITY_GS"
-type "StatusData"
-data "StatusType" "INVISIBLE"
-using "INVISIBILITY"
-data "StackId" "INVISIBILITY_GS"
-data "RemoveEvents" "OnSpellCast;OnDamage;OnEntityPickUp;OnEntityDrop;OnEntityDrag;OnLockpickingFinished;OnDisarmingFinished;OnObscurityChanged"
-data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (not HasObscuredState(ObscuredState.HeavilyObscured,context.Source))) and not IsStatusEvent(StatusEvent.OnDamage)) "
-
