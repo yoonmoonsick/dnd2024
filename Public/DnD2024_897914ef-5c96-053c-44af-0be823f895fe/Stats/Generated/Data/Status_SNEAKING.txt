@@ -1,0 +1,6 @@
+new entry "SNEAKING"
+type "StatusData"
+data "StatusType" "SNEAKING"
+using "SNEAKING"
+data "RemoveConditions" "( (not HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) ) or ( HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) and not IsMiss() ) ) and not HasSpellFlag(SpellFlags.Stealth, context.Source) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0))"
+
