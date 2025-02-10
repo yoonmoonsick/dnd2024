@@ -6920,10 +6920,10 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7a5b19df-0015-44ce-9a06-199d8e681e94" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ae89577b-9458-4ca0-9d37-07d1f381c830" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="SecondWindCharge:1" />
-        <field name="Requirements" type="StringTableFieldDefinition" value="Combat;" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20a316afg12beg6efbg8c2dg2c2912b170d3" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha7717172ga020gc0ccgb569gb4e45d5d851b" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha7717172ga020gc0ccgb569gb4e45d5d851b" version="2" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="1a34e89b-4685-4dfc-a7ea-6efc03e448cc" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6956,19 +6956,20 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="59703a88-f576-41f7-9837-6acfa3c69a84" />
         <field name="Name" type="NameTableFieldDefinition" value="PurpleDragonCompanion_Fly" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();AOE:Force(2.0,TargetToEntity);CreateExplosion(Projectile_AiHelper_Fly_SkeletalDragon);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Fly" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h125be5ecg5c57g4001gadfagcb1c5ca5ee06" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h125be5ecg5c57g4001gadfagcb1c5ca5ee06" version="2" />
         <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_RedDragon_Fly" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_RedDragon_Fly" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:6" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="24ca7042-fcbd-45a2-86bc-cfbe9ebd1db0,,;2b83de89-ce8b-4e64-95a9-0be378cb78d9,,;51590072-32d2-4d56-962a-a87685538e56,,;5c4cb3d6-2d3b-4f70-9ad5-d6ef58f658cf,,;b719b67b-a530-43a2-b9a4-95f56a681fc7,,;,,;,,;,,;,," />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;Invisible;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c51c542f-e2d1-46fe-ac33-2dfd0f057bd7" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="4ae31d59-2d6c-4a68-8bc1-928cf2f9e37c" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
