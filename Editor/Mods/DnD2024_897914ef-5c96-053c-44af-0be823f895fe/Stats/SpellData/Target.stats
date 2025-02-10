@@ -1094,22 +1094,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fe947f94-8514-40b2-be52-06c2aec4f757" />
-        <field name="Name" type="NameTableFieldDefinition" value="ChillTouch" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5e50c4cc-22cf-4748-997d-e0a914ba5805" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(CHILL_TOUCH,100,2);DealDamage(LevelMapValue(D10Cantrip), Necrotic,Magical)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D10Cantrip), Necrotic)" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHILL_TOUCH,100,2)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2, Necrotic,Magical)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_CHILLTOUCH,100,-1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="78b6e9ba-d4c5-4fc2-b586-371a747c2c32" />
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c5c14e47-5792-4ed6-8204-3e0c70bb6c48" />
@@ -7035,6 +7019,39 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="57d3a626-fc77-4733-891a-0a157b9f3737" />
         <field name="Name" type="NameTableFieldDefinition" value="Cantrip" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0609e62-0737-4acb-be14-164b76b8359f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BurstingSinew" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f908542d-e979-48a1-9e9f-623854c926b8" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasSomaticComponent;HasVerbalComponent;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bfbe5b30-8ad2-423a-a02a-7b9fdfdba658" />
+        <field name="Name" type="NameTableFieldDefinition" value="TollTheDead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d139555e-88d3-4365-aff5-cbf20e380e44" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe947f94-8514-40b2-be52-06c2aec4f757" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChillTouch" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5e50c4cc-22cf-4748-997d-e0a914ba5805" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(CHILL_TOUCH,100,2);DealDamage(LevelMapValue(D10Cantrip), Necrotic,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D10Cantrip), Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHILL_TOUCH,100,2)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2, Necrotic,Magical)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_CHILLTOUCH,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
