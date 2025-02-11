@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="e988a674-28fe-49d2-a6ce-c5c1e0141f4c">
   <stat_objects>
     <stat_object color="#FF000000" is_substat="false">
@@ -4569,14 +4569,25 @@
         <field name="Name" type="NameTableFieldDefinition" value="SummonDragon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="91758d1e-e409-45e9-81f3-b55b0fe96115" />
         <field name="Level" type="IntegerTableFieldDefinition" value="5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(5d89155e-5dad-43dd-bce6-1188cb91b31a, -1,,,'SummonDragonStack',UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('5d89155e-5dad-43dd-bce6-1188cb91b31a') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Dragonborn_Male" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(995058fc-797b-43d5-97b7-50ec406b0d7e, -1,,,'SummonDragonStack',UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('995058fc-797b-43d5-97b7-50ec406b0d7e') and not Character() and not Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="SummonDragon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5316925bg044fg8a16g6996g470bfc1021b2" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h82b6d800g68f1gc19eg74a2gae20dda92db7" version="1" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="59762aea-3c49-492f-9acd-78b90355c5bc" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;CannotTargetCharacter;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cc900b1-dfb1-4ba4-af1f-a08423846d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_Rend" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9640f53b-06e7-4d8c-8304-4e92b16c9ab7" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);Cast2[DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Fire);ApplyStatus(BURNING,100,2)];" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier,Slashing);DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Fire);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsEnemySpell;CannotTargetTerrain;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6592,7 +6603,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6424b296-15ba-42fe-a51f-857795b393cc" />
         <field name="Name" type="NameTableFieldDefinition" value="PurpleDragonCompanion_Rend" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier, Force);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
@@ -6612,6 +6623,11 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_JugularBite" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_JugularBite" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b54ff1fa-121d-474b-bb07-1f63833e6442" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b6872eac-5766-405f-8524-678a77f8e8a0" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="9e367dc4-a982-4169-9b31-69c58e9b92a6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

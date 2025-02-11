@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="a8098c1a-f86e-11da-bd1a-00112444be1e">
   <stat_objects>
     <stat_object is_substat="false">
@@ -495,9 +495,9 @@
         <field name="Charisma" type="IntegerTableFieldDefinition" value="10" />
         <field name="Armor" type="IntegerTableFieldDefinition" value="17" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="4" />
-        <field name="Weight" type="FloatTableFieldDefinition" value="60" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="100" />
         <field name="GameSize" type="EnumerationTableFieldDefinition" value="Medium" enumeration_type_name="ObjectSize" version="1" />
-        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating;FloatingWhileMoving" enumeration_type_name="AttributeFlags" version="1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow, Constitution);ProficiencyBonus(SavingThrow, Wisdom);ProficiencyBonus(SavingThrow, Charisma);" />
         <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="AI_STATUS_FAKE" />
         <field name="ProficiencyBonus" type="IntegerTableFieldDefinition" value="3" />
@@ -505,6 +505,7 @@
         <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -602,7 +603,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c054ea0d-9840-41ad-b55c-752e677eb0b3" />
-        <field name="Name" type="NameTableFieldDefinition" value="Dragonborn_Melee_SummonDragon" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="057f438c-84e7-4214-9884-5d126c9c85c0" />
         <field name="Strength" type="IntegerTableFieldDefinition" value="19" />
         <field name="Dexterity" type="IntegerTableFieldDefinition" value="14" />
@@ -611,31 +612,35 @@
         <field name="Charisma" type="IntegerTableFieldDefinition" value="14" />
         <field name="XPReward" type="GuidObjectTableFieldDefinition" value="40806669-8c6b-4068-8bc4-07e4981bb020" />
         <field name="Weight" type="FloatTableFieldDefinition" value="200" />
-        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;SuperiorDarkvision;ImmuneToDisarm;SummonDragon;Summon_Unarmed_Damage_5" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;SuperiorDarkvision;Summon_Unarmed_Damage_5" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
         <field name="Level" type="IntegerTableFieldDefinition" value="9" />
-        <field name="Armor" type="IntegerTableFieldDefinition" value="18" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="19" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="50" />
-        <field name="Flags" type="EnumerationListTableFieldDefinition" value="InventoryBound" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating;FloatingWhileMoving" enumeration_type_name="AttributeFlags" version="1" />
         <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Charmed;SG_Frightened;SG_Poisoned;CRUSHER_PUSH;PUSH;PUSH_SHIELD;TAVERN_BRAWLER_PUSH_TOGGLE" />
-        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:2;BonusActionPoint:1;Movement:12;ReactionActionPoint:1" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1" />
         <field name="AcidResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="ColdResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Resistant" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Large" enumeration_type_name="ObjectSize" version="1" />
+        <field name="StepsType" type="EnumerationTableFieldDefinition" value="Clawed" enumeration_type_name="StepsType" version="1" />
+        <field name="ProficiencyBonus" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="87954829-2d46-4fd6-97c3-1a12d6304c1a" />
-        <field name="Name" type="NameTableFieldDefinition" value="Dragonborn_Melee_SummonDragon_6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c054ea0d-9840-41ad-b55c-752e677eb0b3" />
         <field name="Level" type="IntegerTableFieldDefinition" value="11" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="60" />
-        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:3;BonusActionPoint:1;Movement:12;ReactionActionPoint:1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;SuperiorDarkvision;ImmuneToDisarm;SummonDragon;Summon_Unarmed_Damage_6" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;SuperiorDarkvision;Summon_Unarmed_Damage_6" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="20" />
+        <field name="PersonalStatusImmunities" type="StatusIdsTableFieldDefinition" value="SG_Charmed;SG_Frightened;SG_Poisoned;CRUSHER_PUSH;PUSH;PUSH_SHIELD;TAVERN_BRAWLER_PUSH_TOGGLE" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

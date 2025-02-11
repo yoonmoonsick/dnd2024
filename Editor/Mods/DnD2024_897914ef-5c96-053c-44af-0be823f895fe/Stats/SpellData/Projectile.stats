@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
   <stat_objects>
     <stat_object color="#FF483D8B" is_substat="false">
@@ -2300,6 +2300,19 @@
         <field name="Name" type="NameTableFieldDefinition" value="StarryForm_Archer_Damage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d16effaa-6cbe-4299-989e-a6b315a37e90" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f70ae2ed-7b1a-4bfb-a0f1-95c5c32c34ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_Fireball" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38745705-df3d-497d-8bf7-bd8c46e95d3f" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire,Magical);ApplyStatus(BURNING,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d6)/2,Fire,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
       </fields>
     </stat_object>
   </stat_objects>
