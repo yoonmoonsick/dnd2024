@@ -1,4 +1,4 @@
-# DnD 2024 All in One
+# DnD PHB 2024 All in One
 
 **Introduction**
 - Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Races, Rules, Spells and more.
