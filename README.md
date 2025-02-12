@@ -26,7 +26,9 @@
 
 **Changelog**
 
-Please Visit: https://mod.io/g/baldursgate3/m/dnd-2024-class-spell-feats-and-more
+Please Visit: https://github.com/yoonmoonsick/dnd2024/commits/master/
+
+or https://mod.io/g/baldursgate3/m/dnd-2024
 
 ![Full Changelog](https://i.imgur.com/9goI97j.png)
 
