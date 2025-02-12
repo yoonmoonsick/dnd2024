@@ -1,4 +1,4 @@
-## DnD 2024 All in One
+# DnD 2024 All in One
 
 **Introduction**
 - Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Races, Rules, Spells and more.
@@ -30,86 +30,86 @@ Please Visit: https://mod.io/g/baldursgate3/m/dnd-2024-class-spell-feats-and-mor
 
 ![Full Changelog](https://i.imgur.com/9goI97j.png)
 
-## Background 
+# Background 
 
 An origin feat is added to the background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to gain inspiration.
 
-### ![alt text](https://i.imgur.com/G1SM08n.png) Acolyte
+## ![alt text](https://i.imgur.com/G1SM08n.png) Acolyte
 - Feat: Magic Initiate: Cleric
 
-### ![alt text](https://i.imgur.com/AGRnGA5.png) Charlatan
+## ![alt text](https://i.imgur.com/AGRnGA5.png) Charlatan
 - Feat: Charlatan's Trick (Homebrew)
     - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
     - You add your Intelligence modifier to your Deception skill checks.
 
-### ![alt text](https://i.imgur.com/bEanuMf.png) Criminal
+## ![alt text](https://i.imgur.com/bEanuMf.png) Criminal
 - Feat: Alert
 - Skill Proficiencies: Sleight of Hand and Stealth
 
-### ![alt text](https://i.imgur.com/bGnvazh.png) Entertainer
+## ![alt text](https://i.imgur.com/bGnvazh.png) Entertainer
 - Feat: Performer
 
-### ![alt text](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
+## ![alt text](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
 - Feat: Tough
 - Skill Proficiencies: Animal Handling and Nature
 
-### ![alt text](https://i.imgur.com/qD084Ff.png) Folk Hero
+## ![alt text](https://i.imgur.com/qD084Ff.png) Folk Hero
 - Feat: Tough
 
-### ![alt text](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
+## ![alt text](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
 - Feat: Alert
 - Skill Proficiencies: Athletics and Perception
 
-### ![alt text](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
+## ![alt text](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
 - Feat: Magic Initiate: Druid
 - Skill Proficiencies: Stealth and Survival
 
-### ![alt text](https://i.imgur.com/iiB78kT.png) Guild Artisan
+## ![alt text](https://i.imgur.com/iiB78kT.png) Guild Artisan
 - Feat: Skilled
 
-### ![alt text](https://i.imgur.com/1BCPAmY.png) Haunted One
+## ![alt text](https://i.imgur.com/1BCPAmY.png) Haunted One
 - Feat: Alert
 
-### ![alt text](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
+## ![alt text](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
 - Feat: Healer
 - Skill Proficiencies: Medicine and Religion
 
-### ![alt text](https://i.imgur.com/sjbygvI.png) Noble
+## ![alt text](https://i.imgur.com/sjbygvI.png) Noble
 - Feat: Skilled
 
-### ![alt text](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
+## ![alt text](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
 - Feat: Lucky
 - Skill Proficiencies: Animal Handling and Persuasion
 
-### ![alt text](https://i.imgur.com/tNbDQEF.png) Outlander
+## ![alt text](https://i.imgur.com/tNbDQEF.png) Outlander
 - Feat: Tough
 
-### ![alt text](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
+## ![alt text](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
 - Feat: Tavern Brawler
 - Skill Proficiencies: Acrobatics and Perception
 
-### ![alt text](https://i.imgur.com/3tIlUHd.png) Sage
+## ![alt text](https://i.imgur.com/3tIlUHd.png) Sage
 - Feat: Magic Initiate: Wizard
 
-### ![alt text](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
+## ![alt text](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
 - Feat: Skilled
 - Skill Proficiencies: Investigation and Perception
 
-### ![alt text](https://i.imgur.com/WpDgTUN.png) Soldier
+## ![alt text](https://i.imgur.com/WpDgTUN.png) Soldier
 - Feat: Savage Attacker
 
-### ![alt text](https://i.imgur.com/3bdAAA4.png) Urchin
+## ![alt text](https://i.imgur.com/3bdAAA4.png) Urchin
 - Feat: Savage Attacker
 
-### ![alt text](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
+## ![alt text](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
-## Races 
+# Races 
 
-### ![alt text](https://i.imgur.com/pP4f0p7.png) Aasimar 
+## ![alt text](https://i.imgur.com/pP4f0p7.png) Aasimar 
 
 - Celestial Resistance: You have Resistance to Necrotic damage and Radiant damage.
 - Darkvision: You have Darkvision with a range of 60 feet.
@@ -120,47 +120,47 @@ If you choose a newly added background, you gain a spell that can be used once p
     - Inner Radiance: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.
     - Necrotic Shroud: Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.
 
-### ![alt text](https://i.imgur.com/0XLTw3S.png) Dragonborn
+## ![alt text](https://i.imgur.com/0XLTw3S.png) Dragonborn
 
 - Darkvision
 - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character LvLs 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
 - LvL 5: Draconic Flight: You can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
-### ![alt text](https://i.imgur.com/omrOUzB.png) Drow
+## ![alt text](https://i.imgur.com/omrOUzB.png) Drow
 
 - LvL 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-### ![alt text](https://i.imgur.com/zGZWcVr.png) Dwarf
+## ![alt text](https://i.imgur.com/zGZWcVr.png) Dwarf
 - Speed: 30 feet
 - Superior Darkvision
 
-### ![alt text](https://i.imgur.com/hdJ45yB.png) Elf
+## ![alt text](https://i.imgur.com/hdJ45yB.png) Elf
 - LvL 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-#### ![alt text](https://i.imgur.com/QzWVnPx.png) High Elf
+## ![alt text](https://i.imgur.com/QzWVnPx.png) High Elf
 - LvL 1: Wizard Cantrip
 - LvL 3: Faerie Fire
 - LvL 5: Misty Step
 
-#### ![alt text](https://i.imgur.com/zAIW6FO.png) Wood Elf
+## ![alt text](https://i.imgur.com/zAIW6FO.png) Wood Elf
 - LvL 1: Your Speed increases to 35 feet
 - LvL 3: Longstrider
 - LvL 5: Pass without Trace
 
-### ![alt text](https://i.imgur.com/bDSBj4l.png) Githyanki
+## ![alt text](https://i.imgur.com/bDSBj4l.png) Githyanki
 - Psychic Resilience: You have resistance to psychic damage.
 - LvL 10: Githyanki Parry
 
-### ![alt text](https://i.imgur.com/bDSBj4l.png) Githzerai
+## ![alt text](https://i.imgur.com/bDSBj4l.png) Githzerai
 - Mental Discipline: Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself.
 - LvL 3: Obtain the Way of the Four Elements Monk's novice spells in vanilla Baldur's Gate 3.
 - LvL 5: Obtain the Way of the Four Elements Monk's Intermediate spells in vanilla Baldur's Gate 3.
 - LvL 10: Obtain the Way of the Four Elements Monk's Advanced spells in vanilla Baldur's Gate 3.
 
-### ![alt text](https://i.imgur.com/SQ6TGl5.png) Gnome
+## ![alt text](https://i.imgur.com/SQ6TGl5.png) Gnome
 - Speed: 30 feet
 
-### ![alt text](https://i.imgur.com/vdd9l9T.png) Goliath 
+## ![alt text](https://i.imgur.com/vdd9l9T.png) Goliath 
 - Speed: 35 feet
 - LvL 1: Giant Ancestry: You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
     - Cloud’s Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
@@ -172,50 +172,52 @@ If you choose a newly added background, you gain a spell that can be used once p
 - LvL 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
 
-### ![alt text](https://i.imgur.com/bG5Zplf.png) Half-Elf
+## ![alt text](https://i.imgur.com/bG5Zplf.png) Half-Elf
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Gain racial spells corresponding to your elven bloodline.
 
-### ![alt text](https://i.imgur.com/bMfuE6u.png) Half-Orc
+## ![alt text](https://i.imgur.com/bMfuE6u.png) Half-Orc
 
 - Superior Darkvision
 - Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
-### ![alt text](https://i.imgur.com/cllZm5T.png) Halfling
+## ![alt text](https://i.imgur.com/cllZm5T.png) Halfling
 
 - Speed: 30 feet
 
-### ![alt text](https://i.imgur.com/VP8nBud.png) Human
+## ![alt text](https://i.imgur.com/VP8nBud.png) Human
 
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - LvL 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
-### ![alt text](https://i.imgur.com/mdPxMdD.png) Tiefling
+## ![alt text](https://i.imgur.com/mdPxMdD.png) Tiefling
 
 
-#### ![alt text](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
+## ![alt text](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
 
 - LvL 1: Thaumaturgy, Resistance to Poison, Poison Spray
 - LvL 3: Ray of Sickness
 - LvL 5: Hold Person
 
-#### ![alt text](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
+## ![alt text](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
 
 - LvL 1: Thaumaturgy, Resistance to Necrotic, Chill Touch
 - LvL 3: False Life
 - LvL 5: Ray of Enfeeblement
 
-#### ![alt text](https://i.imgur.com/485otPl.png) Zariel Tiefling
+## ![alt text](https://i.imgur.com/485otPl.png) Zariel Tiefling
 
 - LvL 1: Thaumaturgy, Resistance to Fire, Fire Bolt
 - LvL 3: Hellish Rebuke
 - LvL 5: Darkness
 
-## Class 
+# Class 
 
 All subclasses are obtained at class LvL 3.
 
-### ![alt text](https://i.imgur.com/8wLNkgY.png) Barbarian 
+## Barbarian 
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)
 
 - LvL 1: Rage: You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. Take a Bonus Action to extend your Rage.
 - LvL 2: Reckless Attack: You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
@@ -226,15 +228,21 @@ All subclasses are obtained at class LvL 3.
 - LvL 11: Relentless Rage: Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don’t die outright, your Hit Points instead change to a number equal to twice your Barbarian LvL.   
 - LvL 12: Persistent Rage: Your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.
 
-#### ![alt text](https://i.imgur.com/ttnehWT.png) Path of the Berserker
+### Path of the Berserker
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BerserkerPath.png?raw=true)
 
 - LvL 3: Frenzy: If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
 
-#### ![alt text](https://i.imgur.com/fqlzJ6y.png) Path of the Wild Heart
+### Path of the Wild Heart
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TotemWarriorPath.png?raw=true)
 
 - LvL 3: Rage of the Wilds: Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the follwing options of your choice.
 
-#### ![alt text](https://i.imgur.com/R1jMplY.png) Path of the World Tree
+### Path of the World Tree
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
 
 - LvL 3: Vitality of the Tree: Your Rage taps into the life force of the World Tree. You gain the following benefits.
     - Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian LvL.
@@ -242,44 +250,61 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Branches of the Tree: Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be pulled it closer to the caster. After the target pulled, you can reduce its Speed to 0 until the end of the current turn.
 - LvL 10: Battering Roots: During your turn, your reach is doubled with any Melee weapon, as tendrils of the World Tree extend from you. When you hit with such a weapon on your turn, you can activate the Push and Topple mastery property in addition to a different mastery property you’re using with that weapon.
 
-#### ![alt text](https://i.imgur.com/cucxZdF.png) Path of the Zealot
+### Path of the Zealot
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ZealotPath.png?raw=true)
+
 - LvL 3: Divine Fury: You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian LvL (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.
 - LvL 3: Warrior of the Gods: A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll’s total. Your pool regains all expended dice when you finish a Long Rest. The pool’s maximum number of dice increases by one when you reach Barbarian LvLs 6 (5 dice), 12 (6 dice), and 17 (7 dice).
 - LvL 6: Fanatical Focus: Once per active Rage, if you fail a saving throw, you can reroll it with a bonus equal to your Rage Damage bonus, and you must use the new roll.
 - LvL 10: Zealous Presence: As a Bonus Action, you unleash a battle cry infused with divine energy. Creatures within 60 feet of you gain Advantage on attack rolls and saving throws for 2 turns. Once you use this feature, you can’t use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.
 
-### ![alt text](https://i.imgur.com/Is4QHsz.png) Bard 
+## Bard 
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Bard.png?raw=true)
 
 - LvL 5: Font of Inspiration: You can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.
 - LvL 10: Magical Secrets: You’ve learned secrets from various magical traditions. Whenever you reach a Bard LvL (including this LvL) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class’s section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists.
 
-#### ![alt text](https://i.imgur.com/j0ujOg8.png) College of Dance
+### College of Dance
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DanceCollege.png?raw=true)
 
 - LvL 3: Dazzling Footwork: While you aren’t wearing armor or wielding a Shield, you gain the following benefits. You have Advantage on Performance check. Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction. You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike’s normal damage. This roll doesn’t expend the die.    
 - LvL 6: Inspiring Movement: When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction. None of this feature’s movement provokes Opportunity Attacks.
 - LvL 6: Tandem Footwork: When you roll Initiative, you can expend one use of your Bardic Inspiration if you don’t have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.    
 - LvL 12: Leading Evasion: When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.
 
-#### ![alt text](https://i.imgur.com/fz85hD5.png) College of Glamour
+### College of Glamour
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GlamourCollege.png?raw=true)
 
 - LvL 3: Beguiling Magic: You always have the Charm Person and Mirror Image spells prepared. Additionally, immediately after casting an Enchantment or Illusion spell using a spell slot, you can expend one use of your Bardic Inspiration to force a creature you can see within 60 feet to make a Wisdom saving throw against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.
 - LvL 12: Unbreakable Majesty: You can assume a magically majestic presence for 1 minute. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead.
 
-#### ![alt text](https://i.imgur.com/eJQGfE7.png) College of Lore
+### College of Lore
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LoreCollege.png?raw=true)
 
 - LvL 6: Magical Discoveries: You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class’s section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard LvL, you can replace one of the spells with another spell that meets these requirements.
 - LvL 12: Peerless Skill: Restores 1 Bardic Inspiration at the start of combat.
 
-#### ![alt text](https://i.imgur.com/FKjAHxx.png) College of Valor
+### College of Valor
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ValorCollege.png?raw=true)
 
 - LvL 6: Extra Attack: You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
 - LvL 12: Battle Magic: After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
-#### ![alt text](https://i.imgur.com/koBH4cN.png) College of Sword
+### College of Sword
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SwordsCollege.png?raw=true)
 
 - LvL 3: The range of ranged flourish is reduced to 3m.
 
-### ![alt text](https://i.imgur.com/V2EltIB.png) Cleric
+## Cleric
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Cleric.png?raw=true)
 
 - LvL 1: Divine Order: You have dedicated yourself to one of the following sacred roles of your choice.
     - Protector: Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.
@@ -293,7 +318,15 @@ All subclasses are obtained at class LvL 3.
     - Divine Strike. The extra damage of your Divine Strike increases to 2d8.
     - Potent Spellcasting. When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting 10 Temporary Hit Points.
 
-#### ![alt text](https://i.imgur.com/FTAmpsf.png) Life Domain
+### Death Domain
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DeathDomain.png?raw=true)
+
+- LvL 3: Reaper: The same object cannot be selected as an additional target.
+
+### Life Domain
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LifeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
     - LvL 1: Bless, Cure Wounds
@@ -303,7 +336,9 @@ All subclasses are obtained at class LvL 3.
     - LvL 9: Greater Restoration, Mass Cure Wounds
 - LvL 3: Disciple of Life: When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot’s LvL.
 
-#### ![alt text](https://i.imgur.com/17tidwa.png) Light Domain
+### Light Domain
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LightDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
     - LvL 1: Burning Hands, Faerie Fire
@@ -314,7 +349,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Warding Flare: When a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 - LvL 6: Improved Warding Flare: You regain all expended uses of your Warding Flare when you finish a Short or Long Rest. In addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to 2d6 plus your Wisdom modifier.
 
-#### ![alt text](https://i.imgur.com/e3boluk.png) Trickery Domain
+### Trickery Domain
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickeryDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
     - LvL 1: Charm Person, Disguise Self
@@ -326,7 +363,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Blessing of the Trickster: No concentration required. You can target yourself.
 - LvL 6: Trickster’s Transposition: Whenever you take the Bonus Action to create or move the illusion of your Invoke Duplicity, you can teleport, swapping places with the illusion.
 
-#### ![alt text](https://i.imgur.com/2BkQQwY.png) War Domain
+### War Domain
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WarDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
     - LvL 1: Guiding Bolt, Shield of Faith
@@ -339,7 +378,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: War Priest: As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this Bonus Action a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest.
 - LvL 6: War God’s Blessing: You can expend a use of your Channel Divinity to cast Shield of Faith or Spiritual Weapon rather than expending a spell slot. When you cast either spell in this way, the spell doesn’t require Concentration.
 
-### ![alt text](https://i.imgur.com/a9Pehow.png) Druid
+## Druid
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Druid.png?raw=true)
 
 - LvL 1: Druidic: You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always can speak with Animals.
 - LvL 1: Primal Order: You have dedicated yourself to one of the following sacred roles of your choice.
@@ -355,7 +396,9 @@ All subclasses are obtained at class LvL 3.
     - Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet.
     - Primal Strike. The extra damage of your Primal Strike increases to 2d8.
 
-#### ![alt text](https://i.imgur.com/ebLpmAu.png) Circle of the Land
+### Circle of the Land
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheLand.png?raw=true)
 
 - Circle of the Land Spells: Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid LvL and lower prepared.
     - Arid Land 
@@ -389,7 +432,9 @@ All subclasses are obtained at class LvL 3.
     - Temperate Land: Lightning
     - Tropical Land: Poison
 
-#### ![alt text](https://i.imgur.com/TkorCsW.png) Circle of the Moon
+### Circle of the Moon
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheMoon.png?raw=true)
 
 - Circle of the Moon Spells: When you reach a Druid LvL specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared. In addition, you can cast the spells from this feature while you’re in a Wild Shape form. 
     - LvL 1: Starry Wisp, Cure Wounds
@@ -400,18 +445,24 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Improved Circle Forms: While in a Wild Shape form, You can add your Wisdom modifier to your Constitution saving throws.
 - LvL 10: Moonlight Step: You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
-### ![alt text](https://i.imgur.com/wEEhr0h.png) Fighter
+## Fighter
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
 
 - LvL 1: Second Wind: You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Fighter LvL 4, you gain 1 additional use of this feature. At LvL 10, you gain 4 uses.
 - LvL 2: Tactical Mind: You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success.
 - LvL 5: Tactical Shift: Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.    
 - LvL 9: Indomitable: If you fail a saving throw, add a bonus equal to your Fighter LvL. You can’t use this feature again until you finish a Long Rest.
 
-#### ![alt text](https://i.imgur.com/xwCp3j7.png) Battle Master
+### Battle Master
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleMaster.png?raw=true)
 
 - LvL 12: Relentless: Once per turn, you regain expended a Superiority Die.
 
-#### ![alt text](https://i.imgur.com/28v0LvR.png) Champion
+### Champion
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Champion.png?raw=true)
 
 - LvL 3: Remarkable Athlete:
     - Immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.
@@ -420,13 +471,17 @@ All subclasses are obtained at class LvL 3.
 - LvL 10: Heroic Warrior: During combat, you can give yourself Heroic Inspiration whenever you start your turn. You can expend it to reroll any die immediately after rolling it, and you must use the new roll.
 - LvL 12: Superior Critical: Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit on a roll of 18–20 on the d20.
 
-#### ![alt text](https://i.imgur.com/Patpwr4.png) Eldritch Knight
+### Eldritch Knight
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
 
 - LvL 3: War Bond: You can have up to two bonded weapons.
 - LvL 7: War Magic: When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
 - LvL 12: Arcane Charge: When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see.
 
-#### ![alt text](https://i.imgur.com/kbY3crx.png) Psi Warrior
+### Psi Warrior
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PsiWarrior.png?raw=true)
 
 - LvL 3: Psionic Power: You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter LvL. You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
     - Protective Field. When you or another creature you can see within 30 feet of you takes damage, you can take a Reaction to expend one Psionic Energy Die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.
@@ -443,7 +498,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 10: Guarded Mind: You have Resistance to Psychic damage. Moreover, if you start your turn with the Charmed or Frightened condition, you can expend a Psionic Energy Die (no action required) and end every effect on yourself giving you those conditions.
 - LvL 12: Bulwark of Force: You can shield yourself and others with telekinetic force. As a Bonus Action, you can choose creatures, including yourself, within 30 feet of yourself, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures has +2 bonus to AC and Dexterity saving throws for 1 minute or until you have the Incapacitated condition. Once you use this feature, you can’t do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.
 
-#### ![alt text](https://i.imgur.com/yxMAjPk.png) Purple Dragon Knight
+### Purple Dragon Knight
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PurpleDragonKnight.png?raw=true)
 
 - LvL 3: Rallying Cry: When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter LvL, provided that the creature can see or hear you.
 - LvL 3: Knightly Envoy: You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.
@@ -451,7 +508,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 10: Rallying Surge: When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
 - LvL 12: Bulwark: You can extend the benefit of your Indomitable feature to an ally. 
 
-### ![alt text](https://i.imgur.com/OlSG02G.png) Monk
+## Monk
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Monk.png?raw=true)
 
 - LvL 1: Martial Arts: You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren’t wearing armor or wielding a Shield.
     - Bonus Unarmed Strike. You can make an Unarmed Strike as a Bonus Action.
@@ -468,7 +527,9 @@ All subclasses are obtained at class LvL 3.
     - Patient Defense. When you expend a Focus Point to use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.
 - LvL 12: Disciplined Survivor: Your physical and mental discipline grant you proficiency in all saving throws.
 
-#### ![alt text](https://i.imgur.com/zsM2d5k.png) Warrior of Mercy
+### Warrior of Mercy
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Mercy.png?raw=true)
 
 - LvL 3: Hand of Harm: Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
 - LvL 3: Hand of Healing: As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.
@@ -476,14 +537,18 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Physician’s Touch: Your Hand of Harm and Hand of Healing improve, as detailed below. Hand of Harm. When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn. Hand of Healing. When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Paralyzed, Poisoned, or Stunned.
 - LvL 11: Flurry of Healing and Harm: When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing. In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn. You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 
-#### ![alt text](https://i.imgur.com/UoxDbwu.png) Warrior of Shadow
+### Warrior of Shadow
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadow.png?raw=true)
 
 - LvL 3: Shadow Arts 
     - Darkness. You can expend 1 Focus Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
     - Darkvision. You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet. 
 - LvL 11: Improved Shadow Step: You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.      
 
-#### ![alt text](https://i.imgur.com/49RJ974.png) Warrior of the Elements
+### Warrior of the Elements
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FourElements.png?raw=true)
 
 - LvL 3: Elemental Attunement: You can expend 1 Ki Point to imbue yourself with elemental energy. The energy lasts for 10 minutes. You gain the following benefits while this feature is active.
     - Reach. When you make an Unarmed Strike, your reach is 10 feet greater than normal, as elemental energy extends from you.
@@ -494,7 +559,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 11: Stride of the Elements 
     - While your Elemental Attunement is active, you also have a Fly Speed equal to your Speed.
 
-### ![alt text](https://i.imgur.com/mI3zTKr.png) Paladin
+## Paladin
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Paladin.png?raw=true)
 
 - LvL 1: Spell Casting 
 - LvL 1: Lay On Hands: As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature.
@@ -504,18 +571,25 @@ All subclasses are obtained at class LvL 3.
     - Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.  
 - LvL 12: Aura Expansion: Your Aura of Protection is now a 30-foot Emanation.
 
-#### ![alt text](https://i.imgur.com/7IOMd36.png) Oath of Devotion
+### Oath of Devotion
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
 
 - LvL 3: Holy Rebuke
 - LvL 3: Sacred Weapon: When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage. The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.
 
-#### ![alt text](https://i.imgur.com/oGn8rdy.png) Oath of the Ancients
+### Oath of the Ancients
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ancients.png?raw=true)
 
 - LvL 3: Healing Radiance
 - LvL 3: Nature’s Wrath: 5m, Maximum amount of Target: 6
 - LvL 7: Aura of Warding: Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have Resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.
 
-#### ![alt text](https://i.imgur.com/nDQSTlL.png) Oath of Glory
+### Oath of Glory
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Glory.png?raw=true)
+
 - LvL 3: Oath of Glory Spells
     - LvL 3: Guiding Bolt, Heroism
     - LvL 5: Enhance Ability, Magic Weapon
@@ -524,12 +598,16 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Peerless Athlete: As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks, and the distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal).
 - LvL 7: Aura of Alacrity: Your Speed increases by 10 feet. In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn there, the ally’s Speed increases by 10 feet until the end of their next turn.
 
-#### ![alt text](https://i.imgur.com/egmizfz.png) Oath of Vengeance
+### Oath of Vengeance
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Vengeance.png?raw=true)
 
 - LvL 3: Inquisitors Might
 - LvL 3: Vow of Enmity: When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again. If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).
 
-### ![alt text](https://i.imgur.com/btaTwsQ.png) Ranger
+## Ranger
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ranger.png?raw=true)
 
 - LvL 1: Spell Casting: You can now learn all Ranger spells and prepare them for use. 
 - LvL 1: Favored Enemy: You always have the Hunter’s Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Ranger LvL 5, you gain 1 additional use of this feature. At LvL 9, you gain 4 uses.
@@ -539,7 +617,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 10: Tireless: Temporary Hit Points. You can give yourself 10 Temporary Hit Points. You can use this action 3 times, and you regain all expended uses when you finish a Long Rest.
 - LvL 12: Precise Hunter: You have Advantage on attack rolls against the creature currently marked by your Hunter’s Mark.
 
-#### ![alt text](https://i.imgur.com/pcOoosw.png) Fey Wanderer
+### Fey Wanderer
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FeyWanderer.png?raw=true)
 
 - LvL 3: Fey Wanderer Spells: When you reach a Ranger LvL specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.
     - LvL 3: Charm Person
@@ -550,7 +630,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 7: Beguiling Twist: The magic of the Feywild guards your mind. You have Advantage on saving throws to avoid or end the Charmed or Frightened condition. You gain a +1 bonus to mental saving throws.
 - LvL 11: Fey Reinforcements: You can cast Summon Fey without a Material component. You can also cast it once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest. Whenever you start casting the spell, you can modify it so that it doesn’t require Concentration.
 
-#### ![alt text](https://i.imgur.com/ISham1j.png) Gloom Stalker
+### Gloom Stalker
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GloomStalker.png?raw=true)
 
 - LvL 3: Dread Ambusher: You have mastered the art of creating fearsome ambushes, granting you the following benefits.
     - Ambusher’s Leap. At the start of your first turn of each combat, your Speed increases by 10 feet until the end of that turn.
@@ -559,14 +641,24 @@ All subclasses are obtained at class LvL 3.
 - Lvl 3: Umbral Sight: You gain Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.You are also adept at evading creatures that rely on Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.
 - LvL 11: Stalker’s Flurry: The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, the target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.
 
-#### ![alt text](https://i.imgur.com/kS8BQS0.png) Hunter
+### Hunter
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hunter.png?raw=true)
 
 - LvL 3: Hunter’s Prey: You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.
 - LvL 7: Defensive Tactics: You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.
     - Escape the Horde: Opportunity Attacks have Disadvantage against you.
     - Multiattack Defense:When a creature hits you with an attack roll, that creature has Disadvantage on all other attack rolls against you this turn.
 
-### ![alt text](https://i.imgur.com/sF2S5wR.png) Rogue
+### Swarmkeeper
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Swarmkeeper.png?raw=true)
+
+- Lvl 3: Gathered Swarm: You can replace the swarm you are interacting with after each long rest.
+
+## Rogue
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Rogue.png?raw=true)
 
 - LvL 3: Steady Aim:  As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven’t moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
 - LvL 5: Cunning Strike: When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect.
@@ -577,7 +669,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 11: Improved Cunning Strike: You always benefit from the effect of "Withdraw" from Cunning Strike without spending any damage dice.
 - LvL 12: Slippery Mind: Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.
 
-#### ![alt text](https://i.imgur.com/sVXOVpS.png) Assassin
+### Assassin
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
 
 - LvL 3: Assassinate
     - Initiative. You have +5 Bonus on Initiative rolls.
@@ -585,7 +679,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Assassin’s Tools: You gain a Disguise Self and Virulent Venom.
 - LvL 9: Roving Aim: Your Speed isn’t reduced to 0 by using Steady Aim. 
 
-#### ![alt text](https://i.imgur.com/i8qM0Ju.png) Thief
+### Thief
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Thief.png?raw=true)
 
 - LvL 3: Fast Hands
     - You gain expertise in Sleight of Hand and have advantage on your Sleight of Hand checks. Additionally, you do not critically fail on skill checks in which you are proficient.
@@ -596,7 +692,9 @@ All subclasses are obtained at class LvL 3.
     - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
 - LvL 9: Supreme Sneak: Once per turn, you can try to hide without any action point or bonus action point.
 
-### ![alt text](https://i.imgur.com/7cYI7k7.png) Sorcerer
+## Sorcerer
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Sorcerer.png?raw=true)
 
 - LvL 1: Innate Sorcery: As a Bonus Action, you can unleash the magic for 1 minute, during which you gain the following benefits:
     - The spell save DC of your Sorcerer spells increases by 1.
@@ -615,7 +713,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 7: Sorcery Incarnate 
     - If you have no uses of Innate Sorcery left, you can spend 2 Sorcery Points to regain one charge.
 
-#### ![alt text](https://i.imgur.com/9OaOnJH.png) Aberrant Sorcery
+### Aberrant Sorcery
+
+![Aberrant Sorcery](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/AberrantSorcery.png?raw=true) 
 
 - Psionic Spells (Always prepared) 
     - LvL 1: Arms of Hadar
@@ -630,7 +730,9 @@ All subclasses are obtained at class LvL 3.
     - See the Invisible. You can see any Invisible creature within 60 feet of yourself that isn’t behind Total Cover. Your eyes also turn black or become writhing sensory tendrils.
     - Wormlike Movement. Your body, along with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch, and you can spend 5 feet of movement to escape from nonmagical restraints or the Grappled condition.
 
-#### ![alt text](https://i.imgur.com/gyHvvjD.png) Clockwork Sorcery
+### Clockwork Sorcery
+
+![Clockwork Sorcery](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ClockworkSorcery.png?raw=true)
 
 - Clockwork  Spells (Always prepared) 
     - LvL 1: Protection from Evil and Good
@@ -642,7 +744,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Bastion of Law: You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As a Magic action, you can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet of yourself. The ward is represented by a number of d8s equal to the number of Sorcery Points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice. The ward lasts until you finish a Long Rest or until you use this feature again.
 - LvL 11: Trance of Order: You gain the ability to align your consciousness with the endless calculations of Mechanus. As a Bonus Action, you can enter this state for 1 minute. For the duration, attack rolls against you can’t benefit from Advantage, and whenever you make a D20 Test, you can treat a roll of 9 or lower on the d20 as a 10. Once you use this feature, you can’t use it again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it.
 
-#### ![alt text](https://i.imgur.com/HzVymve.png) Draconic Sorcery
+### Draconic Sorcery
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DraconicBloodline.png?raw=true)
 
 - Draconic Spells (Always prepared) 
     - LvL 1: Chromatic Orb, Command
@@ -653,7 +757,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Draconic Resilience: While you aren’t wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.
 - LvL 6: Elemental Affinity: Resistance: You gain Resistance to that damage type associated with your draconic ancestry.
 
-#### ![alt text](https://i.imgur.com/AWzIlNs.png) Wildmagic Sorcery
+### Wildmagic Sorcery
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WildMagic.png?raw=true)
 
 - Wildmagic Spells (Always prepared) 
     - LvL 1: Magic Missile, Entangle	
@@ -664,7 +770,9 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Wild Magic Surge: It has been modified so that it applies beneficial effects to allies and detrimental effects to enemies as much as possible.
 - LvL 3: Tides of Chaos: Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.
 
-#### ![alt text](https://i.imgur.com/24uKwWz.png) Storm Sorcery
+### Storm Sorcery
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/StormSorcery.png?raw=true)
 
 - Storm Spells (Always prepared) 
     - LvL 1: Thunderwave, Create or Destroy Water
@@ -674,9 +782,11 @@ All subclasses are obtained at class LvL 3.
     - LvL 9: Desctructive Wave, Cone of Cold
 - LvL 3: Tempestuous Magic
 
-### ![alt text](https://i.imgur.com/MoQiczQ.png) Warlock
+## Warlock
 
-- Eldritch Invocations LvL 1 (1)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Warlock.png?raw=true)
+
+- Eldritch Invocations LvL 1
     - Armor Of Shadows: Don't need to cast the spell to get benefit.
     - Beast Speech: Don't need to cast the spell to get benefit.
     - Beguiling Influence
@@ -684,25 +794,27 @@ All subclasses are obtained at class LvL 3.
     - Pact of the Blade: Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.
     - Pact of The Chain
     - Pact of the Tome: Learn three cantrips from any class’s spell list.
-- Eldritch Invocations LvL 2 (2)
+- Eldritch Invocations LvL 2
     - Book of Ancient Secrets: The spell power LvL is equal to the LvL of the opened Warlock spell slot.
     - Eldritch Spear: The range of your Eldritch Blast increases by half.
     - Otherworldly Leap: You can cast Jump on yourself without expending a spell slot.
-- Eldritch Invocations LvL 5 (2)
+- Eldritch Invocations LvL 5
     - Investment of the Chain Master: When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, your familiar gains Extra Attack trait. Also it gains additional Hit Points, Saving throw, Armor Class and Damage bonus equal to your Charisma Modifier.
     - Thirsting Blade: You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.
     - Gift of the Depths: You can cast Animate Dead, Haste, and Call Lightning once per Long Rest.
     - Ascendant Step: You can cast Fly on yourself without expending a spell slot.
     - Eldritch Smite: Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per LvL of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.
     - One with Shadows: While you’re in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.
-- Eldritch Invocations LvL 9 (1)
+- Eldritch Invocations LvL 9
     - Gift of theProtectors: When any creature you selected is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead.
     - Lifedrinker: Once per turn when you hit a creature with your weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you regain 1d8 + Constitution Modifier.
-- Eldritch Invocations LvL 12 (1)
+- Eldritch Invocations LvL 12
     - Devouring Blade: The Extra Attack of your invocation confers two extra attacks rather than one.
 - LvL 2: Magical Cunning: You regain expended a Pact Magic spell slots. Once you use this feature, you can’t do so again until you finish a Long Rest.
 
-#### ![alt text](https://i.imgur.com/QqEUPEI.png) Archfey Patron
+### Archfey Patron
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Archfey.png?raw=true)
 
 - Archfey Spells (Always prepared)
     - LvL 1: Faerie Fire, Sleep
@@ -717,7 +829,10 @@ All subclasses are obtained at class LvL 3.
     - Disappearing Step: You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell.
     - Dreadful Step: Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.
 
-#### ![alt text](https://i.imgur.com/dA2b3K1.png) Celestial Patron
+### Celestial Patron
+
+![Celestial Patron](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Celestial.png?raw=true)
+
 - Celestial Spells (Always prepared)
     - LvL 1: Cure Wounds, Guiding Bolt, Light, Sacred Flame
     - LvL 3: Aid, Lesser Restoration
@@ -728,16 +843,21 @@ All subclasses are obtained at class LvL 3.
 - LvL 6: Radiant Soul: You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell’s damage against one of the spell’s targets.
 - LvL 10: Celestial Resilience: You and nearby allies gain 15 Temporary Hit Points.
 
-#### ![alt text](https://i.imgur.com/YBY5uUN.png) Fiend Patron
+### Fiend Patron
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fiend.png?raw=true)
+
 - Fiend Spells (Always prepared)
     - LvL 1: Burning Hands, Command
     - LvL 3: Scorching Ray
     - LvL 5: Fireball, Stinking Cloud
     - LvL 7: Fire Shield, Wall of Fire
     - LvL 9: Insect Plague
-- LvL 1: Dark One’s Blessing: When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock LvL (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.
+- LvL 3: Dark One’s Blessing: When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock LvL (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.
 
-#### ![alt text](https://i.imgur.com/4iOax4I.png) Great Old One Patron
+### Great Old One Patron
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GreatOldOne.png?raw=true)
 
 - Great Old One Spells (Always prepared)
     - LvL 1: Tasha’s Hideous Laughter
@@ -745,44 +865,44 @@ All subclasses are obtained at class LvL 3.
     - LvL 5: Clairvoyance, Hunger of Hadar
     - LvL 7: Confusion, Summon Aberration
     - LvL 9: Modify Memory, Telekinesis
-- LvL 1: Psychic Spells: When you cast a Warlock LvL 1+ spell slot that deals damage, you can add 1d4 Psychic damage. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
+- LvL 3: Psychic Spells: When you cast a Warlock LvL 1+ spell slot that deals damage, you can add 1d4 Psychic damage. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
 - LvL 6: Clairvoyant Combatant: You can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
 - LvL 10: Eldritch Hex: Your alien patron grants you a powerful curse. You always have the Eldritch Hex spell prepared. And the target also has Disadvantage on saving throws of all ability for the duration of the spell.
 
-### ![alt text](https://i.imgur.com/y8fVoBo.png) Wizard
+## Wizard
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Wizard.png?raw=true)
 
 - LvL 12: Spell Mastery: You gain two LvL 1 spell slots and one LvL 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
 
-#### ![alt text](https://i.imgur.com/Nl8f9Zs.png) Evocation School
+### Evocation School
 
-- LvL 2: Potent Cantrip: Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantrip’s damage.
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EvocationSchool.png?raw=true)
+
+- LvL 3: Potent Cantrip: Your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantrip’s damage.
 - LvL 6: Sculpt Spells
 
-#### ![alt text](https://i.imgur.com/bGb47Bx.png) Illusion School
+### Illusion School
 
-- LvL 2: Improved Illusions: You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/IllusionSchool.png?raw=true)
+
+- LvL 3: Improved Illusions: You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
 - LvL 6: Phantasmal Creatures: You always have the Summon Beast and Summon Fey spells prepared. you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.
 
-#### ![alt text](https://i.imgur.com/GtXWEph.png) Bladesinging
+### Bladesinging School
 
-- LvL 2: Training in War and Song: You gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice. You also gain proficiency in the Performance skill if you don’t already have it.
-- LvL 2: Bladesong: You can invoke an elven magic called the Bladesong, provided that you aren’t wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus. You can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. While your Bladesong is active, you gain the following benefits:
-    - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1).
-    - Your walking speed increases by 10 feet.
-    - You have advantage on Dexterity (Acrobatics) checks.
-    - You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Intelligence modifier (minimum of +1).
-    - You can use it twice, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Wizard LvL 5, you gain 1 additional use of this feature. At LvL 9, you gain 4 uses.
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BladesingingSchool.png?raw=true)
+
 - LvL 6: Extra Attack: You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
-- LvL 10: Song of Defense: You can direct your magic to absorb damage while your Bladesong is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot’s LvL.
 - LvL 12: Song of Victory: While your Bladesong is active, you can add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks. This applies only to the first attack on your turn.
 
-## Enemies
+# Enemies
 
 As player characters become stronger, some enemies will be enhanced to maintain balance.
 
-## Feat 
+# Feat 
 
-### General
+## General
 - Alert: When you roll Initiative, you can add your Proficiency Bonus to the roll.
 - Athlete: Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
 - Charger 
@@ -847,7 +967,7 @@ As player characters become stronger, some enemies will be enhanced to maintain 
     - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
 - Weapon Master: You gain proficiency with Martial Weapons. and get Weapon Masteries.
 
-### Fighting Styles 
+## Fighting Styles 
 - Thrown Weapon Fighting: When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
 - Blind Fighting: You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
 - Interception: When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a shield or a weapon to use this reaction.
@@ -859,25 +979,25 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Druidic Warrior (Ranger): You learn Guidance and one Druid cantrips of your choice.
 - Blessed Warrior (Paladin): You learn Guidance and one Cleric cantrips of your choice.
 
-## Items
+# Items
 - The effects of certain equipment items will be adjusted to align with the above changes.  
 - Items that exist in the data but do not appear in the game will now be available in Acts 1 to 3 through specific merchants, locations, or boss loot.
 
-## Rules 
+# Rules 
 
-### Actions 
+## Actions 
 - Attack
-    - Shove (Cost: 1 Action Point, Extra Attack)
+    - Shove (Cost: 1 Action Point, Extra Attack) ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Shove_Action.png?raw=true)
     - Trip (Cost: 1 Action Point, Extra Attack)
 - Break Free: Attempt to escape from conditions such as restraint or webs.
-- Dodge
-- Distraction
+- Distract ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Distract.png?raw=true)
+- Dodge ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Dodge.png?raw=true)
 - Jump
     - Cost: 1 Bonus Action Point and 3m movement speed -> movement distance
 - Spell Casting
     - You can only cast a spell of LvL 1 or higher once per turn.
 
-### Condition
+## Condition
 - Prone
     - Attacks Affected. You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
     - Do not break the concentraion.
@@ -888,10 +1008,10 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 > This change not only enhances realism but also aims to increase the utility of lesser-used spells like Entangle and Web. Previously, these spells were situational and underutilized, primarily because of their vulnerability to fire. By making them more resistant to burning, players can now take full advantage of their potential in a variety of tactical scenarios.
 > Ultimately, this adjustment enhances immersion while providing players with more strategic options and opportunities to incorporate these spells effectively into their gameplay.
 
-### Initiative 
+## Initiative 
 - 1d4 -> 1d20
 
-### Weapon Mastery Properties
+## Weapon Mastery Properties
 
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
 
@@ -904,11 +1024,11 @@ Each weapon has a mastery property, which is usable only by a character who has 
 - Topple (Quarterstaff, Battleaxe, Maul, Trident): If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
 - Vex (Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow): If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
-## Spells 
+# Spells 
 
 Appropriate spells have been added to the spell list for each class.
 
-### Cantrips 
+## Cantrips 
 - Acid Splash 
     - School: Evocation 
 - Blade Ward 
@@ -919,10 +1039,7 @@ Appropriate spells have been added to the spell list for each class.
     - Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.
     - Cantrip Upgrade. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
 - Booming Blade
-    - Sorcerer, Warlock, Wizard Cantrip
-    - School: Evocation 
-    - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.
-    - This spell’s damage increases when you reach certain LvLs. At 5th LvL, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th LvL (2d8 and 3d8) and again at 17th LvL (3d8 and 4d8).
+    - Cannot be affected by extra attack.
 - Dancing Lights 
     - School: Illusion 
     - Casting Time: Bonus action
@@ -985,7 +1102,7 @@ Appropriate spells have been added to the spell list for each class.
     - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Radiant damage.
     - Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
 
-### LvL 1 spells
+## LvL 1 spells
 - Armour of Agathys 
     - Casting Time: Bonus Action 
 - Chromatic Orb 
@@ -1039,7 +1156,7 @@ Appropriate spells have been added to the spell list for each class.
     - Necrotic Damage 
     - Casting Time: Common cooldown for smite spells
     - Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
-### LvL 2 spells
+## LvL 2 spells
 - Barkskin 
     - No concentration required.
     - Casting Time: Bonus Action
@@ -1081,7 +1198,7 @@ Appropriate spells have been added to the spell list for each class.
 - Web
     - Radius: 6m
 
-### LvL 3 spells
+## LvL 3 spells
 - Conjure Barrage 
     - 5d8 Force
 - Fireball 
@@ -1103,7 +1220,7 @@ Appropriate spells have been added to the spell list for each class.
 - Warden of Vitality 
     - School: Abjuration 
     - An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
-### LvL 4 spells
+## LvL 4 spells
 - Conjure Minor Elementals
     - Duration: Concentration
 - Conjure Woodland Beings
@@ -1138,7 +1255,7 @@ Appropriate spells have been added to the spell list for each class.
     - Power LvL 4: Animated Armor
     - Power LvL 5: Automaton
     - Power LvL 6: Steel Watcher
-### LvL 5 spells
+## LvL 5 spells
 - Banishing Smite 
     - School: Conjuration 
 - Cloudkill 
@@ -1153,12 +1270,12 @@ Appropriate spells have been added to the spell list for each class.
 - Steel Wind Strike
     - School: Conjuration (Wizard, War Domain)
     - You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
-- Summon Dragon 
+- Summon Dragon ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Spell_SummonDragon.png?raw=true)
     - School: Conjuration (Wizard, Draconic Sorcery)
 - Wall of Force
     - School: Evocation (Wizard, Clockwork Sorcery)
 
-### LvL 6 spells
+## LvL 6 spells
 - Circle of Death 
     - 8d8
 - Globe of Invulnerability 
