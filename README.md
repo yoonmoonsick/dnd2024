@@ -1006,10 +1006,6 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Wet
     - The status is removed when taking cold, fire, or lightning damage.
 
-> The reason for making vines and webs less flammable is to balance both realism and strategic enjoyment in the game. Realistically, fresh vines or webs do not instantly burn entirely just because a single spark lands on them. For example, when a flame touches a spider web, only the affected area burns away while the rest remains intact. Reflecting this, summoned vines and webs have been adjusted to prevent complete destruction by fire.
-> This change not only enhances realism but also aims to increase the utility of lesser-used spells like Entangle and Web. Previously, these spells were situational and underutilized, primarily because of their vulnerability to fire. By making them more resistant to burning, players can now take full advantage of their potential in a variety of tactical scenarios.
-> Ultimately, this adjustment enhances immersion while providing players with more strategic options and opportunities to incorporate these spells effectively into their gameplay.
-
 ## Initiative 
 - 1d4 -> 1d20
 
@@ -1123,8 +1119,6 @@ Appropriate spells have been added to the spell list for each class.
 - Enhance Leap
     - Casting Time: Bonus Action
     - Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
-- False Life 
-    - 12 Temporary Hit Points
 - Hail of thorns 
     - Can receives extra attack benefit.
 - Healing Word 
