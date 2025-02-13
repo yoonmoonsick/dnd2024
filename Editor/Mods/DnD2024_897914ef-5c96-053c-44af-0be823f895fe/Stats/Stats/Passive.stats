@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
   <stat_objects>
     <stat_object color="#FF000000" is_substat="false">
@@ -3663,72 +3663,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d804a05-5960-45e6-a470-6d1cfb3fcdc3" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Warlock" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0f2ca88c-2209-4195-ac30-83912f78153c" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cantrip" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3497c023-d6ec-4d06-a2f4-ae1e722d6ccc" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_CombatStart" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2a2240cf-7ada-4e97-a0b9-0f703607fff8" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_BladeWard" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e0d642cd-779d-4a96-91e9-7e4f5fb7e33c" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77b9ae20ge545g4842gbe2fg8096e232c118" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_BladeWard" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SURPRISED',context.Source) and not IsConcentrating(context.Source)):UseSpell(Shout_BladeWard,false,true,true)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="58423160-3c03-4069-aca1-774ea6ec7c5a" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_Resistance" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2a2240cf-7ada-4e97-a0b9-0f703607fff8" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1afac00ag5f88g47d9gb095g54fd18427730" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Resistance" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SURPRISED',context.Source) and not IsConcentrating(context.Source)):UseSpell(SELF,Target_Resistance,false,true,true)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e0d642cd-779d-4a96-91e9-7e4f5fb7e33c" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_Shillelagh" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88189f48ga78cg4a13ga52fg9c789a31c49e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6870c0c6g7822g3dc2g57d2g04abe6902cde" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SURPRISED',context.Source)):UseSpell(Shout_Shillelagh_Force,false,true,true)" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="QoL_CombatStart" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="61b21a5e-1e23-4220-aa63-c4bf429ba169" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_Jump" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e0d642cd-779d-4a96-91e9-7e4f5fb7e33c" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c0fe5c6gc340g4194g9503gf50b57c1d075" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SURPRISED',context.Source)):UseSpell(SELF,Target_Jump,false,true,true)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c6be0343-7d87-4ca4-84c9-e556f274801f" />
-        <field name="Name" type="NameTableFieldDefinition" value="QoL_FeatherFall" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="61b21a5e-1e23-4220-aa63-c4bf429ba169" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h831c2782g1cdfg4dd3gb834gbeb143bb3b69" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_FeatherFall" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SURPRISED',context.Source)):UseSpell(Shout_FeatherFall,false,true,true)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
