@@ -678,7 +678,7 @@ All subclasses are obtained at class LvL 3.
 - LvL 3: Assassinate
     - Initiative. You have +5 Bonus on Initiative rolls.
     - Surprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue LvL.
-- LvL 3: Assassin’s Tools: You gain a Disguise Self and Virulent Venom.
+- LvL 3: Assassin’s Tools: You gain a Disguise Self and Brew Poison.
 - LvL 9: Roving Aim: Your Speed isn’t reduced to 0 by using Steady Aim. 
 
 ### Thief
