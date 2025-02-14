@@ -1035,7 +1035,7 @@ Appropriate spells have been added to the spell list for each class.
 ### Bone Chill 
 - Range: Touch 
 - Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.
-- Cantrip Upgrade. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
+- ***Cantrip Upgrade***. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
 ### Booming Blade
 > **Note** Cannot be affected by extra attack.
 ### Dancing Lights 
@@ -1069,38 +1069,40 @@ Appropriate spells have been added to the spell list for each class.
 ### Produce Flame 
 - A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
 - Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
-- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 11 (3d8), and 17 (4d8).
+- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach LvLs 5 (2d8), 11 (3d8), and 17 (4d8).
 ### Shillelagh
 - If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
-- Cantrip Upgrade: The weapon's damage die changes when you reach LvLs 5 (d10), 10 (d12), and 17 (2d6).
-### Sorcerous Burst 
-- Sorcerer Cantrip
+- ***Cantrip Upgrade***: The weapon's damage die changes when you reach LvLs 5 (d10), 10 (d12), and 17 (2d6).
+
+### [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_SorcerousBurst.png?raw=true)
 - You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
 - If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
-- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
+- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
+
 ### Starry Wisp 
 - Bard, Druid Cantrip
 - You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
-- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
+- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
 ### Toll the Dead 
 - Cleric, Warlock, Wizard Cantrip
 - You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.
-- Cantrip Upgrade. The damage increases by one die when you reach LvLs 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).
+- ***Cantrip Upgrade***. The damage increases by one die when you reach LvLs 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).
 ### Thunderclap
 - Bard, Druid, Sorcerer, Warlock, Wizard
 - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away.
-- Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
+- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
 ### Resistance 
 - You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.
 ### True Strike 
 - Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
-- Cantrip Upgrade. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach LvLs 5 (1d6), 10 (2d6), and 17 (3d6).
+- ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach LvLs 5 (1d6), 10 (2d6), and 17 (3d6).
 ### Vicious Mockery 
 - 1d6 Cantrip
 ### Word of Radiance
 - Cleric
 - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Radiant damage.
-- Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
+- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
 
 ## LvL 1 spells
 ### Armour of Agathys 
@@ -1142,7 +1144,7 @@ Appropriate spells have been added to the spell list for each class.
 ### Thunderous Smite 
 - No concentration required.
 - Casting Time: Common cooldown for smite spells
-- Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
+- ***Using a Higher-LvL Spell Slot***. The damage increases by 1d6 for each spell slot LvL above 1.
 ### Ray of Sickness 
 - On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
 ### Witch Bolt 
@@ -1153,7 +1155,7 @@ Appropriate spells have been added to the spell list for each class.
 - No concentration required.
 - Necrotic Damage 
 - Casting Time: Common cooldown for smite spells
-- Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
+- ***Using a Higher-LvL Spell Slot***. The damage increases by 1d6 for each spell slot LvL above 1.
 
 ## LvL 2 spells
 
@@ -1222,7 +1224,7 @@ Appropriate spells have been added to the spell list for each class.
 ### Fireball 
 - Area: 20 feet
 ### Gaseous Form 
-- Using a Higher-LvL Spell Slot. You can target one additional creature for each spell slot LvL above 3.     
+- ***Using a Higher-LvL Spell Slot***. You can target one additional creature for each spell slot LvL above 3.     
 ### Glyph of Warding 
 - Damage application mechanism has been improved to allow the application of related magic item effects.  
 ### Hypnotic Pattern
