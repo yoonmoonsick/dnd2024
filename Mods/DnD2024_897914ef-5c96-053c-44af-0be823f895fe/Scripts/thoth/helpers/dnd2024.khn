@@ -15,8 +15,24 @@ function GreatWeaponMaster(entity)
 end
 
 function PsionicSorcerySpells()
-    return 
-    SpellId('Shout_ArmsOfHadar') | SpellId('Shout_ArmsOfHadar_2') | SpellId('Shout_ArmsOfHadar_3') | SpellId('Shout_ArmsOfHadar_4') | SpellId('Shout_ArmsOfHadar_5') | SpellId('Shout_ArmsOfHadar_6') | SpellId('Target_CalmEmotions') | SpellId('Target_CalmEmotions_3') | SpellId('Target_CalmEmotions_4') | SpellId('Target_CalmEmotions_5') | SpellId('Target_CalmEmotions_6') | SpellId('Shout_DetectThoughts') | SpellId('Shout_DetectThoughts_3') | SpellId('Shout_DetectThoughts_4') | SpellId('Shout_DetectThoughts_5') | SpellId('Shout_DetectThoughts_6') | SpellId('Target_HungerOfHadar') | SpellId('Target_HungerOfHadar_4') | SpellId('Target_HungerOfHadar_5') | SpellId('Target_HungerOfHadar_6') | SpellId('Target_BlackTentacles') | SpellId('Target_BlackTentacles_5') | SpellId('Target_BlackTentacles_6') | SpellId('Target_SummonAberration') | SpellId('Target_SummonAberration_5') | SpellId('Target_SummonAberration_6') | SpellId('Throw_Telekinesis') | SpellId('Throw_Telekinesis_6')
+    return SpellId('Shout_ArmsOfHadar') | SpellId('Shout_ArmsOfHadar_2') | SpellId('Shout_ArmsOfHadar_3') | SpellId('Shout_ArmsOfHadar_4') | SpellId('Shout_ArmsOfHadar_5') | SpellId('Shout_ArmsOfHadar_6') | SpellId('Target_CalmEmotions') | SpellId('Target_CalmEmotions_3') | SpellId('Target_CalmEmotions_4') | SpellId('Target_CalmEmotions_5') | SpellId('Target_CalmEmotions_6') | SpellId('Shout_DetectThoughts') | SpellId('Shout_DetectThoughts_3') | SpellId('Shout_DetectThoughts_4') | SpellId('Shout_DetectThoughts_5') | SpellId('Shout_DetectThoughts_6') | SpellId('Target_HungerOfHadar') | SpellId('Target_HungerOfHadar_4') | SpellId('Target_HungerOfHadar_5') | SpellId('Target_HungerOfHadar_6') | SpellId('Target_BlackTentacles') | SpellId('Target_BlackTentacles_5') | SpellId('Target_BlackTentacles_6') | SpellId('Target_SummonAberration') | SpellId('Target_SummonAberration_5') | SpellId('Target_SummonAberration_6') | SpellId('Throw_Telekinesis') | SpellId('Throw_Telekinesis_6')
+end
+
+function MindMagicLevel3()
+    return SpellId('Target_Command_Container') | SpellId('Target_Command_Halt') | SpellId('Target_Command_Approach') | SpellId('Target_Command_Drop') | SpellId('Target_Command_Flee') | SpellId('Target_Command_Grovel') | SpellId('Target_Sleep') | SpellId('Target_CalmEmotions') | SpellId('Target_HoldPerson') | SpellId('Target_MindSpike')
+end
+
+function MindMagicLevel5()
+    return MindMagicLevel3() | SpellId('Target_Slow')
+end
+
+function MindMagicLevel7()
+    return MindMagicLevel5() | SpellId('Target_Confusion') | SpellId('Target_Banishment')
+
+end
+
+function MindMagicLevel9()
+    return MindMagicLevel7() | SpellId('Throw_Telekinesis')| SpellId('Target_SynapticStatic')
 end
 
 function HasMediumArmor(entity)

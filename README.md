@@ -365,6 +365,19 @@ The option you chose for Blessed Strikes grows more powerful.
 #### Level 3: Reaper
 The same object cannot be selected as an additional target.
 
+### Knowledge Domain
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/KnowledgeDomain.png?raw=true)
+
+#### Domain Spells (Always prepared)
+- Level 1: Command, Sleep
+- Level 3: Calm Emotions, Mind Spike
+- Level 5: Counter Spell, Slow
+- Level 7: Confusion, Banishment
+- Level 9: Telekinesis, Synaptic Static
+
+#### Level 3: Mind Magic
+You can expend one use of Channel Divinity to cast a prepared spell from the Knowledge Domain Spells table without using a spell slot.
+
 ### Life Domain
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LifeDomain.png?raw=true)
