@@ -1410,9 +1410,10 @@ Appropriate spells have been added to the spell list for each class.
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d8 for each spell slot level above 2.
 - Available For: Sorcerer, Warlock, Wizard
 
-### Summon Fey
-- School: Conjuration (Druid, Ranger, Warlock, Wizard)
+### [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - Summon a Blink Dog to fight by your side.
+- Available For: Druid, Ranger, Warlock, Wizard, Fey Wanderer
+
 ### Warden of Vitality 
 - School: Abjuration 
 - An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
@@ -1478,6 +1479,12 @@ Appropriate spells have been added to the spell list for each class.
 ### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
 - Available For: Wizard, Draconic Sorcery
+
+### [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Enchantment_SynapticStatic.png?raw=true)
+- You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.
+- On a failed save, a target also has muddled thoughts for 3 turns. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration.
+- Available For: Bard, Sorcerer, Warlock, Wizard, Knowledge Domain
 
 ### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
