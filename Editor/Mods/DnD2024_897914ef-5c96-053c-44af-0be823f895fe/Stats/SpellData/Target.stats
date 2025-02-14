@@ -53,7 +53,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PolearmMaster_BonusAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d49ada2d-b5e8-418e-a99b-1596d60e4d05" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK);RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK_OVERRIDE);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="(HasWeaponProperty(WeaponProperties.Reach, GetActiveWeapon(context.Source)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, true) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, true))) " />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasWeaponProperty(WeaponProperties.Reach, GetActiveWeapon(context.Source)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, true)) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, true))" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
