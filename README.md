@@ -1251,7 +1251,7 @@ Appropriate spells have been added to the spell list for each class.
 ### Grasping Vine 
 - Range: 60 feet
 - Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine 4d8 
-- Using a Higher-LvL Spell Slot. The number of the vines increases by one for each spell slot LvL above 4.
+- ***Using a Higher-LvL Spell Slot***. The number of the vines increases by one for each spell slot LvL above 4.
 ### Ice Storm 
 - 2d10 Bludgeoning damage and 4d6 Cold
 - The Bludgeoning damage increases by 1d10 for each spell slot LvL above 4.
@@ -1259,11 +1259,14 @@ Appropriate spells have been added to the spell list for each class.
 - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
 ### Stoneskin 
 - Now provides resistance to B/P/S instead of to nonmagical B/P/S.
-### Storm Sphere
-- School: Evocation (Sorcerer, Wizard, Storm Sorcery)
-- Each creature in the storm when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 Bludgeoning Damage.. The sphere’s space is difficult terrain.
-- Until the spell ends, Sphere can shoot a bolt of lightning to one creature you choose within 60 feet of the center. It has advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 Lightning Damage.
-- When you cast this spell using a spell slot of 5th LvL or higher, the damage increases for each of its effects by 1d6 for each slot LvL above 4th.
+
+### [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StormSphere.png?raw=true)
+- A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.
+- Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.
+- Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
+- ***At Higher Levels.*** When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th.
+
 ### Summon Aberration 
 - School: Conjuration (Warlock, Wizard, Aberrant Sorcery)
 - Power LvL 4: Intellect Devourer
@@ -1295,11 +1298,13 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Ranger, Wizard, War Domain
 
 ### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Spell_SummonDragon.png?raw=true)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
 - Available For: Wizard Wizard Draconic Sorcery
 
-### Wall of Force
-- School: Evocation (Wizard, Clockwork Sorcery)
+### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
+- An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (you choose which side).
+- Nothing can physically pass through the wall.
+- Available For: Wizard, Oath of Redemption, Clockwork Sorcery
 
 ## LvL 6 spells
 ### Circle of Death 
