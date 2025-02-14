@@ -16,7 +16,7 @@
 
 **Caution**
 - Might be a crash when respec or Level up your character after installing or updating a mod.
-- This mod cannot be used with `Dynamic Sidebar` mod.
+- If custom resource icons are not visible when using the [dynamic](https://www.nexusmods.com/baldursgate3/mods/2668) [sidebar](https://mod.io/g/baldursgate3/m/dynamic-sidebar), install Requires [Better Inve](https://www.nexusmods.com/baldursgate3/mods/4597)[ntory UI](https://mod.io/g/baldursgate3/m/better-inventory-ui1) or [BC](https://www.nexusmods.com/baldursgate3/mods/1580)[PP](https://mod.io/g/baldursgate3/m/bcpp-16x9-6chars).
 
 **Credit**
 - Druid Features: ChefReg (https://www.nexusmods.com/baldursgate3/mods/13575)
@@ -38,80 +38,80 @@ An origin feat is added to the background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to gain inspiration.
 
-## ![alt text](https://i.imgur.com/G1SM08n.png) Acolyte
+## ![](https://i.imgur.com/G1SM08n.png) Acolyte
 - Feat: Magic Initiate: Cleric
 
-## ![alt text](https://i.imgur.com/AGRnGA5.png) Charlatan
+## ![](https://i.imgur.com/AGRnGA5.png) Charlatan
 - Feat: Charlatan's Trick (Homebrew)
     - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
     - You add your Intelligence modifier to your Deception skill checks.
 
-## ![alt text](https://i.imgur.com/bEanuMf.png) Criminal
+## ![](https://i.imgur.com/bEanuMf.png) Criminal
 - Feat: Alert
 - Skill Proficiencies: Sleight of Hand and Stealth
 
-## ![alt text](https://i.imgur.com/bGnvazh.png) Entertainer
+## ![](https://i.imgur.com/bGnvazh.png) Entertainer
 - Feat: Performer
 
-## ![alt text](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
+## ![](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
 - Feat: Tough
 - Skill Proficiencies: Animal Handling and Nature
 
-## ![alt text](https://i.imgur.com/qD084Ff.png) Folk Hero
+## ![](https://i.imgur.com/qD084Ff.png) Folk Hero
 - Feat: Tough
 
-## ![alt text](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
+## ![](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
 - Feat: Alert
 - Skill Proficiencies: Athletics and Perception
 
-## ![alt text](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
+## ![](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
 - Feat: Magic Initiate: Druid
 - Skill Proficiencies: Stealth and Survival
 
-## ![alt text](https://i.imgur.com/iiB78kT.png) Guild Artisan
+## ![](https://i.imgur.com/iiB78kT.png) Guild Artisan
 - Feat: Skilled
 
-## ![alt text](https://i.imgur.com/1BCPAmY.png) Haunted One
+## ![](https://i.imgur.com/1BCPAmY.png) Haunted One
 - Feat: Alert
 
-## ![alt text](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
+## ![](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
 - Feat: Healer
 - Skill Proficiencies: Medicine and Religion
 
-## ![alt text](https://i.imgur.com/sjbygvI.png) Noble
+## ![](https://i.imgur.com/sjbygvI.png) Noble
 - Feat: Skilled
 
-## ![alt text](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
+## ![](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
 - Feat: Lucky
 - Skill Proficiencies: Animal Handling and Persuasion
 
-## ![alt text](https://i.imgur.com/tNbDQEF.png) Outlander
+## ![](https://i.imgur.com/tNbDQEF.png) Outlander
 - Feat: Tough
 
-## ![alt text](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
+## ![](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
 - Feat: Tavern Brawler
 - Skill Proficiencies: Acrobatics and Perception
 
-## ![alt text](https://i.imgur.com/3tIlUHd.png) Sage
+## ![](https://i.imgur.com/3tIlUHd.png) Sage
 - Feat: Magic Initiate: Wizard
 
-## ![alt text](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
+## ![](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
 - Feat: Skilled
 - Skill Proficiencies: Investigation and Perception
 
-## ![alt text](https://i.imgur.com/WpDgTUN.png) Soldier
+## ![](https://i.imgur.com/WpDgTUN.png) Soldier
 - Feat: Savage Attacker
 
-## ![alt text](https://i.imgur.com/3bdAAA4.png) Urchin
+## ![](https://i.imgur.com/3bdAAA4.png) Urchin
 - Feat: Savage Attacker
 
-## ![alt text](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
+## ![](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
 # Races 
 
-## ![alt text](https://i.imgur.com/pP4f0p7.png) Aasimar 
+## ![](https://i.imgur.com/pP4f0p7.png) Aasimar 
 
 - Celestial Resistance: You have Resistance to Necrotic damage and Radiant damage.
 - Darkvision: You have Darkvision with a range of 60 feet.
@@ -122,48 +122,48 @@ If you choose a newly added background, you gain a spell that can be used once p
     - Inner Radiance: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.
     - Necrotic Shroud: Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.
 
-## ![alt text](https://i.imgur.com/0XLTw3S.png) Dragonborn
+## ![](https://i.imgur.com/0XLTw3S.png) Dragonborn
 
 - Darkvision
 - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
 #### Level 5: Draconic Flight
 You can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
-## ![alt text](https://i.imgur.com/omrOUzB.png) Drow
+## ![](https://i.imgur.com/omrOUzB.png) Drow
 
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## ![alt text](https://i.imgur.com/zGZWcVr.png) Dwarf
+## ![](https://i.imgur.com/zGZWcVr.png) Dwarf
 - Speed: 30 feet
 - Superior Darkvision
 
-## ![alt text](https://i.imgur.com/hdJ45yB.png) Elf
+## ![](https://i.imgur.com/hdJ45yB.png) Elf
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## ![alt text](https://i.imgur.com/QzWVnPx.png) High Elf
+## ![](https://i.imgur.com/QzWVnPx.png) High Elf
 #### Level 1: Wizard Cantrip
 #### Level 3: Faerie Fire
 #### Level 5: Misty Step
 
-## ![alt text](https://i.imgur.com/zAIW6FO.png) Wood Elf
+## ![](https://i.imgur.com/zAIW6FO.png) Wood Elf
 #### Level 1: Your Speed increases to 35 feet
 #### Level 3: Longstrider
 #### Level 5: Pass without Trace
 
-## ![alt text](https://i.imgur.com/bDSBj4l.png) Githyanki
+## ![](https://i.imgur.com/bDSBj4l.png) Githyanki
 - Psychic Resilience: You have resistance to psychic damage.
 #### Level 10: Githyanki Parry
 
-## ![alt text](https://i.imgur.com/bDSBj4l.png) Githzerai
+## ![](https://i.imgur.com/bDSBj4l.png) Githzerai
 - Mental Discipline: Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself.
 #### Level 3: Obtain the Way of the Four Elements Monk's novice spells in vanilla Baldur's Gate 3.
 #### Level 5: Obtain the Way of the Four Elements Monk's Intermediate spells in vanilla Baldur's Gate 3.
 #### Level 10: Obtain the Way of the Four Elements Monk's Advanced spells in vanilla Baldur's Gate 3.
 
-## ![alt text](https://i.imgur.com/SQ6TGl5.png) Gnome
+## ![](https://i.imgur.com/SQ6TGl5.png) Gnome
 - Speed: 30 feet
 
-## ![alt text](https://i.imgur.com/vdd9l9T.png) Goliath 
+## ![](https://i.imgur.com/vdd9l9T.png) Goliath 
 - Speed: 35 feet
 #### Level 1: Giant Ancestry: You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
     - Cloud’s Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
@@ -175,40 +175,40 @@ You can channel draconic magic to give yourself temporary flight. As a Bonus Act
 #### Level 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
 
-## ![alt text](https://i.imgur.com/bG5Zplf.png) Half-Elf
+## ![](https://i.imgur.com/bG5Zplf.png) Half-Elf
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Gain racial spells corresponding to your elven bloodline.
 
-## ![alt text](https://i.imgur.com/bMfuE6u.png) Half-Orc
+## ![](https://i.imgur.com/bMfuE6u.png) Half-Orc
 
 - Superior Darkvision
 - Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
-## ![alt text](https://i.imgur.com/cllZm5T.png) Halfling
+## ![](https://i.imgur.com/cllZm5T.png) Halfling
 
 - Speed: 30 feet
 
-## ![alt text](https://i.imgur.com/VP8nBud.png) Human
+## ![](https://i.imgur.com/VP8nBud.png) Human
 
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 #### Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
-## ![alt text](https://i.imgur.com/mdPxMdD.png) Tiefling
+## ![](https://i.imgur.com/mdPxMdD.png) Tiefling
 
 
-## ![alt text](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
+## ![](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
 #### Level 3: Ray of Sickness
 #### Level 5: Hold Person
 
-## ![alt text](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
+## ![](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Necrotic, Chill Touch
 #### Level 3: False Life
 #### Level 5: Ray of Enfeeblement
 
-## ![alt text](https://i.imgur.com/485otPl.png) Zariel Tiefling
+## ![](https://i.imgur.com/485otPl.png) Zariel Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Fire, Fire Bolt
 #### Level 3: Hellish Rebuke
@@ -220,7 +220,7 @@ All subclasses are obtained at class Level 3.
 
 ## Barbarian 
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)
 
 #### Level 1: Rage
 You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. Take a Bonus Action to extend your Rage.
@@ -239,21 +239,21 @@ Your Rage is so fierce that it now lasts for 10 minutes without you needing to d
 
 ### Path of the Berserker
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BerserkerPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BerserkerPath.png?raw=true)
 
 #### Level 3: Frenzy
 If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
 
 ### Path of the Wild Heart
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TotemWarriorPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TotemWarriorPath.png?raw=true)
 
 #### Level 3: Rage of the Wilds
 Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the follwing options of your choice.
 
 ### Path of the World Tree
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
 
 #### Level 3: Vitality of the Tree: Your Rage taps into the life force of the World Tree. You gain the following benefits.
   - Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian Level.
@@ -265,7 +265,7 @@ During your turn, your reach is doubled with any Melee weapon, as tendrils of th
 
 ### Path of the Zealot
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ZealotPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ZealotPath.png?raw=true)
 
 #### Level 3: Divine Fury
 You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian Level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.
@@ -278,7 +278,7 @@ As a Bonus Action, you unleash a battle cry infused with divine energy. Creature
 
 ## Bard 
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Bard.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Bard.png?raw=true)
 
 #### Level 5: Font of Inspiration
 You can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.
@@ -287,7 +287,7 @@ You’ve learned secrets from various magical traditions. Whenever you reach a B
 
 ### College of Dance
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DanceCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DanceCollege.png?raw=true)
 
 #### Level 3: Dazzling Footwork
 While you aren’t wearing armor or wielding a Shield, you gain the following benefits. You have Advantage on Performance check. Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction. You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike’s normal damage. This roll doesn’t expend the die.    
@@ -300,7 +300,7 @@ When you are subjected to an effect that allows you to make a Dexterity saving t
 
 ### College of Glamour
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GlamourCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GlamourCollege.png?raw=true)
 
 #### Level 3: Beguiling Magic
 You always have the Charm Person and Mirror Image spells prepared. Additionally, immediately after casting an Enchantment or Illusion spell using a spell slot, you can expend one use of your Bardic Inspiration to force a creature you can see within 60 feet to make a Wisdom saving throw against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.
@@ -309,7 +309,7 @@ You can assume a magically majestic presence for 1 minute. For the duration, whe
 
 ### College of Lore
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LoreCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LoreCollege.png?raw=true)
 
 #### Level 6: Magical Discoveries
 You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class’s section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard Level, you can replace one of the spells with another spell that meets these requirements.
@@ -318,7 +318,7 @@ Restores 1 Bardic Inspiration at the start of combat.
 
 ### College of Valor
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ValorCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ValorCollege.png?raw=true)
 
 #### Level 6: Extra Attack
 You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
@@ -327,13 +327,13 @@ After you cast a spell that has a casting time of an action, you can make one at
 
 ### College of Sword
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SwordsCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SwordsCollege.png?raw=true)
 
 #### Level 3: The range of ranged flourish is reduced to 3m.
 
 ## Cleric
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Cleric.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Cleric.png?raw=true)
 
 #### Level 1 Divine Order
 You have dedicated yourself to one of the following sacred roles of your choice.
@@ -345,7 +345,7 @@ You can use this class’s Channel Divinity twice. You regain one of its expende
 
 #### Level 2 Divine Spark
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Cleric_DivineSpark.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Cleric_DivineSpark.png?raw=true)
 
 You point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage. You roll an additional d8 when you reach Levels 5 (2d8) and 10 (3d8).
 
@@ -360,14 +360,14 @@ The option you chose for Blessed Strikes grows more powerful.
 
 ### Death Domain
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DeathDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DeathDomain.png?raw=true)
 
 #### Level 3: Reaper
 The same object cannot be selected as an additional target.
 
 ### Life Domain
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LifeDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LifeDomain.png?raw=true)
 
 #### Domain Spells (Always prepared)
 - Level 1: Bless, Cure Wounds
@@ -379,7 +379,7 @@ The same object cannot be selected as an additional target.
 
 ### Light Domain
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LightDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LightDomain.png?raw=true)
 
 #### Domain Spells (Always prepared)
 - Level 1: Burning Hands, Faerie Fire
@@ -394,7 +394,7 @@ You regain all expended uses of your Warding Flare when you finish a Short or Lo
 
 ### Trickery Domain
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickeryDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickeryDomain.png?raw=true)
 
 #### Domain Spells (Always prepared)
 - Level 1: Charm Person, Disguise Self
@@ -411,7 +411,7 @@ Whenever you take the Bonus Action to create or move the illusion of your Invoke
 
 ### War Domain
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WarDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WarDomain.png?raw=true)
 
 #### Domain Spells (Always prepared)
 - Level 1: Guiding Bolt, Shield of Faith
@@ -430,7 +430,7 @@ You can expend a use of your Channel Divinity to cast Shield of Faith or Spiritu
 
 ## Druid
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Druid.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Druid.png?raw=true)
 
 #### Level 1: Primal Order: You have dedicated yourself to one of the following sacred roles of your choice.
   - Warden. Trained for battle, you gain proficiency with Martial weapons and training with Medium armor.
@@ -452,7 +452,7 @@ The option you chose for Elemental Fury grows more powerful, as detailed below.
 
 ### Circle of the Land
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheLand.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheLand.png?raw=true)
 
 #### Circle of the Land Spells: Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid Level and lower prepared.
 ##### Arid Land 
@@ -490,7 +490,7 @@ You are immune to the Poisoned condition, and you have Resistance to a damage ty
 
 ### Circle of the Moon
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheMoon.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheMoon.png?raw=true)
 
 #### Circle of the Moon Spells
 When you reach a Druid Level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared. In addition, you can cast the spells from this feature while you’re in a Wild Shape form. 
@@ -506,7 +506,7 @@ You magically transport yourself, reappearing amid a burst of moonlight. As a Bo
 
 ## Fighter
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
 
 #### Level 1: Second Wind
 You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Fighter Level 4, you gain 1 additional use of this feature. At Level 10, you gain 4 uses.
@@ -519,14 +519,14 @@ If you fail a saving throw, add a bonus equal to your Fighter Level. You can’t
 
 ### Battle Master
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleMaster.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleMaster.png?raw=true)
 
 #### Level 12: Relentless
 Once per turn, you regain expended a Superiority Die.
 
 ### Champion
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Champion.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Champion.png?raw=true)
 
 #### Level 3: Remarkable Athlete
 - Immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.
@@ -540,7 +540,7 @@ Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit 
 
 ### Eldritch Knight
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
 
 #### Level 3: War Bond
 You can have up to two bonded weapons.
@@ -553,7 +553,7 @@ When you use your Action Surge, you can teleport up to 30 feet to an unoccupied 
 
 ### Psi Warrior
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PsiWarrior.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PsiWarrior.png?raw=true)
 
 #### Level 3: Psionic Power
 You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter Level. You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
@@ -576,7 +576,7 @@ You can shield yourself and others with telekinetic force. As a Bonus Action, yo
 
 ### Purple Dragon Knight
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PurpleDragonKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PurpleDragonKnight.png?raw=true)
 
 #### Level 3: Rallying Cry
 When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter Level, provided that the creature can see or hear you.
@@ -595,7 +595,7 @@ You can extend the benefit of your Indomitable feature to an ally.
 
 ## Monk
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Monk.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Monk.png?raw=true)
 
 #### Level 1: Martial Arts
 You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren’t wearing armor or wielding a Shield.
@@ -606,7 +606,8 @@ You gain the following benefits while you are unarmed or wielding only Monk weap
 - Flurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.
 - Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.
 - Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
-#### Level 3: Deflect Attacks: When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack’s total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk Level. If you reduce the damage to 0, you can expend 1 Focus Point to return the attack to the attacker. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier.
+#### Level 3: Deflect Attacks
+When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack’s total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk Level. If you reduce the damage to 0, you can expend 1 Focus Point to return the attack to the attacker. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier.
 #### Level 10: Heightened Focus
 - Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.
 - Flurry of Blows. You can expend 1 Focus Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.
@@ -616,7 +617,7 @@ Your physical and mental discipline grant you proficiency in all saving throws.
 
 ### Warrior of Mercy
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Mercy.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Mercy.png?raw=true)
 
 #### Level 3: Hand of Harm
 Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
@@ -631,7 +632,7 @@ When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a
 
 ### Warrior of Shadow
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadow.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadow.png?raw=true)
 
 #### Level 3: Shadow Arts 
 - Darkness. You can expend 1 Focus Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
@@ -641,7 +642,7 @@ You can draw on your Shadowfell connection to empower your teleportation. When y
 
 ### Warrior of the Elements
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FourElements.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FourElements.png?raw=true)
 
 #### Level 3: Elemental Attunement
 You can expend 1 Ki Point to imbue yourself with elemental energy. The energy lasts for 10 minutes. You gain the following benefits while this feature is active.
@@ -655,7 +656,7 @@ You can expend 1 Ki Point to imbue yourself with elemental energy. The energy la
 
 ## Paladin
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Paladin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Paladin.png?raw=true)
 
 #### Level 1: Spell Casting 
 #### Level 1: Lay On Hands
@@ -670,7 +671,7 @@ Your strikes now carry supernatural power. When you hit a target with an attack 
 
 ### Oath of Devotion
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
 
 #### Level 3: Holy Rebuke
 #### Level 3: Sacred Weapon
@@ -678,7 +679,7 @@ When you take the Attack action, you can expend one use of your Channel Divinity
 
 ### Oath of the Ancients
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ancients.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ancients.png?raw=true)
 
 #### Level 3: Healing Radiance
 #### Level 3: Nature’s Wrath
@@ -688,7 +689,7 @@ Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting 
 
 ### Oath of Glory
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Glory.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Glory.png?raw=true)
 
 #### Oath of Glory Spells
 - Level 3: Guiding Bolt, Heroism
@@ -703,7 +704,7 @@ Your Speed increases by 10 feet. In addition, whenever an ally enters your Aura 
 
 ### Oath of Vengeance
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Vengeance.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Vengeance.png?raw=true)
 
 #### Level 3: Inquisitors Might
 #### Level 3: Vow of Enmity
@@ -711,7 +712,7 @@ When you take the Attack action, you can expend one use of your Channel Divinity
 
 ## Ranger
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ranger.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ranger.png?raw=true)
 
 #### Level 1: Spell Casting
 You can now learn all Ranger spells and prepare them for use. 
@@ -730,7 +731,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Fey Wanderer
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FeyWanderer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FeyWanderer.png?raw=true)
 
 #### Fey Wanderer Spells: When you reach a Ranger Level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.
 - Level 3: Charm Person
@@ -747,7 +748,7 @@ You can cast Summon Fey without a Material component. You can also cast it once 
 
 ### Gloom Stalker
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GloomStalker.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GloomStalker.png?raw=true)
 
 #### Level 3: Dread Ambusher
 You have mastered the art of creating fearsome ambushes, granting you the following benefits.
@@ -761,7 +762,7 @@ The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you us
 
 ### Hunter
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hunter.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hunter.png?raw=true)
 
 #### Level 3: Hunter’s Prey
 You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.
@@ -770,14 +771,14 @@ You gain one of the following feature options of your choice. Whenever you finis
 
 ### Swarmkeeper
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Swarmkeeper.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Swarmkeeper.png?raw=true)
 
 #### Level 3: Gathered Swarm
 You can replace the swarm you are interacting with after each long rest.
 
 ## Rogue
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Rogue.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Rogue.png?raw=true)
 
 #### Level 3: Steady Aim
 As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven’t moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
@@ -795,7 +796,7 @@ Your cunning mind is exceptionally difficult to control. You gain proficiency in
 
 ### Assassin
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
 
 #### Level 3: Assassinate
 - Initiative. You have +5 Bonus on Initiative rolls.
@@ -807,7 +808,7 @@ Your Speed isn’t reduced to 0 by using Steady Aim.
 
 ### Thief
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Thief.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Thief.png?raw=true)
 
 #### Level 3: Fast Hands
 - You gain expertise in Sleight of Hand and have advantage on your Sleight of Hand checks. Additionally, you do not critically fail on skill checks in which you are proficient.
@@ -821,7 +822,7 @@ Once per turn, you can try to hide without any action point or bonus action poin
 
 ## Sorcerer
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Sorcerer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Sorcerer.png?raw=true)
 
 #### Level 1: Innate Sorcery
 As a Bonus Action, you can unleash the magic for 1 minute, during which you gain the following benefits:
@@ -881,7 +882,7 @@ You gain the ability to align your consciousness with the endless calculations o
 
 ### Draconic Sorcery
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DraconicBloodline.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DraconicBloodline.png?raw=true)
 
 #### Draconic Spells (Always prepared) 
 - Level 1: Chromatic Orb, Command
@@ -896,7 +897,7 @@ You gain Resistance to that damage type associated with your draconic ancestry.
 
 ### Wildmagic Sorcery
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WildMagic.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WildMagic.png?raw=true)
 
 #### Wildmagic Spells (Always prepared) 
 - Level 1: Magic Missile, Entangle	
@@ -911,7 +912,7 @@ Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Lon
 
 ### Storm Sorcery
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/StormSorcery.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/StormSorcery.png?raw=true)
 
 #### Storm Spells (Always prepared) 
 - Level 1: Thunderwave, Create or Destroy Water
@@ -923,7 +924,7 @@ Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Lon
 
 ## Warlock
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Warlock.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Warlock.png?raw=true)
 
 #### Eldritch Invocations Level 1
 - Armor Of Shadows: Don't need to cast the spell to get benefit.
@@ -953,7 +954,7 @@ Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Lon
 
 ### Archfey Patron
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Archfey.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Archfey.png?raw=true)
 
 #### Archfey Spells (Always prepared)
 - Level 1: Faerie Fire, Sleep
@@ -988,7 +989,7 @@ You and nearby allies gain 15 Temporary Hit Points.
 
 ### Fiend Patron
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fiend.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fiend.png?raw=true)
 
 #### Fiend Spells (Always prepared)
 - Level 1: Burning Hands, Command
@@ -1001,7 +1002,7 @@ When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to
 
 ### Great Old One Patron
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GreatOldOne.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GreatOldOne.png?raw=true)
 
 #### Great Old One Spells (Always prepared)
 - Level 1: Tasha’s Hideous Laughter
@@ -1018,14 +1019,14 @@ Your alien patron grants you a powerful curse. You always have the Eldritch Hex 
 
 ## Wizard
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Wizard.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Wizard.png?raw=true)
 
 #### Level 12: Spell Mastery
 You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
 
 ### Evocation School
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EvocationSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EvocationSchool.png?raw=true)
 
 #### Level 3: Potent Cantrip
 
@@ -1033,7 +1034,7 @@ You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap be
 
 ### Illusion School
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/IllusionSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/IllusionSchool.png?raw=true)
 
 #### Level 3: Improved Illusions
 You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
@@ -1042,7 +1043,7 @@ You always have the Summon Beast and Summon Fey spells prepared. you can change 
 
 ### Bladesinging School
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BladesingingSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BladesingingSchool.png?raw=true)
 
 #### Level 6: Extra Attack
 You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
@@ -1140,11 +1141,11 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 
 ## Actions 
 - Attack
-    - Shove (Cost: 1 Action Point, Extra Attack) ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Shove_Action.png?raw=true)
+    - Shove (Cost: 1 Action Point, Extra Attack) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Shove_Action.png?raw=true)
     - Trip (Cost: 1 Action Point, Extra Attack)
 - Break Free: Attempt to escape from conditions such as restraint or webs.
-- Distract ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Distract.png?raw=true)
-- Dodge ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Dodge.png?raw=true)
+- Distract ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Distract.png?raw=true)
+- Dodge ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Dodge.png?raw=true)
 - Jump
     - Cost: 1 Bonus Action Point and 3m movement speed -> movement distance
 - Spell Casting
@@ -1199,13 +1200,13 @@ Appropriate spells have been added to the spell list for each class.
 - Casting Time: Bonus action
 
 ### [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_GreenFlameBlade.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_GreenFlameBlade.png?raw=true)
 - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.
 - This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
 - Available For: Sorcerer, Warlock, Wizard
 
 ### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
 - You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 - Available For: Sorcerer, Warlock, Wizard
@@ -1237,14 +1238,14 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Druid
 
 ### [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_SorcerousBurst.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_SorcerousBurst.png?raw=true)
 - You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
 - If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 - Available For: Sorcerer
   
 ### [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StarryWisp.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StarryWisp.png?raw=true)
 - You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 - Available For: Bard, Druid
@@ -1261,7 +1262,7 @@ Appropriate spells have been added to the spell list for each class.
 ### [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
 ### [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WordofRadiance.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WordofRadiance.png?raw=true)
 - Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach Levels 5 (2d6), 11 (3d6), and 17 (4d6).
 - Available For: Cleric
@@ -1425,7 +1426,7 @@ Appropriate spells have been added to the spell list for each class.
 - Now provides resistance to B/P/S instead of to nonmagical B/P/S.
 
 ### [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StormSphere.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StormSphere.png?raw=true)
 - A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.
 - Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.
 - Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
@@ -1456,17 +1457,17 @@ Appropriate spells have been added to the spell list for each class.
 - 5d8 + spellcasting ability modifier
 
 ### [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SteelWindStrike.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SteelWindStrike.png?raw=true)
 - You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
 - You then teleport to an unoccupied space you can see within 5 feet of one of the targets.
 - Available For: Ranger, Wizard, War Domain
 
 ### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
 - Available For: Wizard, Draconic Sorcery
 
 ### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
 - An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (you choose which side).
 - Nothing can physically pass through the wall.
 - Available For: Wizard, Oath of Redemption, Clockwork Sorcery
