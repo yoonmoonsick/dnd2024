@@ -164,6 +164,13 @@ data "RemoveConditions" "IsWeaponAttack()"
 data "RemoveEvents" "OnAttack"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "SYNAPTIC_STATIC"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BANE"
+data "StackId" "SYNAPTIC_STATIC"
+data "Boosts" "RollBonus(Attack,-1d6);RollBonus(SavingThrow,-1d6);RollBonus(DeathSavingThrow,-1d6);"
+
 new entry "PHANTASMAL_FORCE"
 type "StatusData"
 data "StatusType" "BOOST"
