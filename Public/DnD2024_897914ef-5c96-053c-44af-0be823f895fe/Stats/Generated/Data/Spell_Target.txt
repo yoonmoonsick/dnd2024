@@ -65,7 +65,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_PolearmMaster_BonusAttack"
 data "SpellProperties" "RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK);RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK_OVERRIDE);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)"
-data "RequirementConditions" "(HasWeaponProperty(WeaponProperties.Reach, GetActiveWeapon(context.Source)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, true) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, true))) "
+data "RequirementConditions" "HasWeaponProperty(WeaponProperties.Reach, GetActiveWeapon(context.Source)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, true)) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, true))"
 data "SpellFlags" "IsMelee;IsHarmful;Temporary;IsAttack"
 
 new entry "Target_YMS_Divination"
