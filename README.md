@@ -1028,130 +1028,132 @@ Appropriate spells have been added to the spell list for each class.
 
 ## Cantrip
 ### Acid Splash 
-    - School: Evocation 
+- School: Evocation 
 ### Blade Ward 
-    - Duration: Concentration, up to 1 minute
-    - Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.
+- Duration: Concentration, up to 1 minute
+- Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.
 ### Bone Chill 
-    - Range: Touch 
-    - Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.
-    - Cantrip Upgrade. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
+- Range: Touch 
+- Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.
+- Cantrip Upgrade. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
 ### Booming Blade
-    - Cannot be affected by extra attack.
+> **Note** Cannot be affected by extra attack.
 ### Dancing Lights 
-    - School: Illusion 
-    - Casting Time: Bonus action
-### Green-Flame Blade
-    - Sorcerer, Warlock, Wizard Cantrip
-    - School: Evocation 
-    - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.
-    - This spell’s damage increases when you reach certain LvLs. At 5th LvL, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th LvL (2d8 and 2d8) and 17th LvL (3d8 and 3d8).
-### Lightning Lure
-    - Sorcerer, Warlock, Wizard Cantrip
-    - School: Evocation 
-    - You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage.
-    - This spell’s damage increases by 1d8 when you reach 5th LvL (2d8), 11th LvL (3d8), and 17th LvL (4d8).
+- School: Illusion 
+- Casting Time: Bonus action
+
+### [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_GreenFlameBlade.png?raw=true)
+- You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.
+- This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
+- Available For: Sorcerer, Warlock, Wizard
+
+### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
+- You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
+- This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+- Available For: Sorcerer, Warlock, Wizard
 ### Magic Stone
-    - Druid, Warlock Cantrip
-    - School: Trasmutation
-    - You touch pebbles and imbue them with magic. You can make a ranged spell attack with one of the pebbles by throwing it. If thrown, it has a range of 60 feet. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier.
-    - Gains the effect of items that increase throwing damage.
+- Druid, Warlock Cantrip
+- School: Trasmutation
+- You touch pebbles and imbue them with magic. You can make a ranged spell attack with one of the pebbles by throwing it. If thrown, it has a range of 60 feet. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier.
+- Gains the effect of items that increase throwing damage.
 ### Mind Sliver 
-    - Sorcerer, Warlock, Wizard Cantrip
-    - School: Enchantment 
-    - You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.
+- Sorcerer, Warlock, Wizard Cantrip
+- School: Enchantment 
+- You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.
 ### Poison Spray 
-    - School: Necromancy 
-    - Range: 9 m
-    - Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.  
+- School: Necromancy 
+- Range: 9 m
+- Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.  
 ### Produce Flame 
-    - A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
-    - Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
-    - Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 11 (3d8), and 17 (4d8).
+- A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
+- Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
+- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 11 (3d8), and 17 (4d8).
 ### Shillelagh
-    - If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
-    - Cantrip Upgrade: The weapon's damage die changes when you reach LvLs 5 (d10), 10 (d12), and 17 (2d6).
+- If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
+- Cantrip Upgrade: The weapon's damage die changes when you reach LvLs 5 (d10), 10 (d12), and 17 (2d6).
 ### Sorcerous Burst 
-    - Sorcerer Cantrip
-    - You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
-    - If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
-    - Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
+- Sorcerer Cantrip
+- You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
+- If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
+- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
 ### Starry Wisp 
-    - Bard, Druid Cantrip
-    - You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
-    - Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
+- Bard, Druid Cantrip
+- You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
+- Cantrip Upgrade. The damage increases by 1d8 when you reach LvLs 5 (2d8), 10 (3d8), and 17 (4d8).
 ### Toll the Dead 
-    - Cleric, Warlock, Wizard Cantrip
-    - You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.
-    - Cantrip Upgrade. The damage increases by one die when you reach LvLs 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).
+- Cleric, Warlock, Wizard Cantrip
+- You point at one creature you can see within range, and the single chime of a dolorous bell is audible within 10 feet of the target. The target must succeed on a Wisdom saving throw or take 1d8 Necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 Necrotic damage.
+- Cantrip Upgrade. The damage increases by one die when you reach LvLs 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).
 ### Thunderclap
-    - Bard, Druid, Sorcerer, Warlock, Wizard
-    - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away.
-    - Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
+- Bard, Druid, Sorcerer, Warlock, Wizard
+- Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away.
+- Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
 ### Resistance 
-    - You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.
+- You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.
 ### True Strike 
-    - Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
-    - Cantrip Upgrade. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach LvLs 5 (1d6), 10 (2d6), and 17 (3d6).
+- Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
+- Cantrip Upgrade. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach LvLs 5 (1d6), 10 (2d6), and 17 (3d6).
 ### Vicious Mockery 
-    - 1d6 Cantrip
+- 1d6 Cantrip
 ### Word of Radiance
-    - Cleric
-    - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Radiant damage.
-    - Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
+- Cleric
+- Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Radiant damage.
+- Cantrip Upgrade. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
 
 ## LvL 1 spells
 ### Armour of Agathys 
-    - Casting Time: Bonus Action 
+- Casting Time: Bonus Action 
 ### Chromatic Orb 
-    - No surface creation, but all variant types deal 3d8 damage.
-    - If you roll the same number on two or more of the d8s, the orb leaps to a different target, and deals reduced damage. The orb can’t leap again unless you cast the spell with a LvL 2+ spell slot.
+- No surface creation, but all variant types deal 3d8 damage.
+- If you roll the same number on two or more of the d8s, the orb leaps to a different target, and deals reduced damage. The orb can’t leap again unless you cast the spell with a LvL 2+ spell slot.
 ### Color Spray 
-    - You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn.   
+- You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn.   
 ### Cure Wounds 
-    - School: Abjuration 
-    - 2d8 + spellcasting ability modifier
-    - The healing increases by 2d8 for each spell slot LvL above 1.
+- School: Abjuration 
+- 2d8 + spellcasting ability modifier
+- The healing increases by 2d8 for each spell slot LvL above 1.
 ### Divine Favor 
-    - No concentration required.
+- No concentration required.
 ### Divine Smite 
-    - Casting Time: Common cooldown for smite spells, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike (using interrupt)
+- Casting Time: Common cooldown for smite spells, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike (using interrupt)
 ### Enhance Leap
-    - Casting Time: Bonus Action
-    - Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
+- Casting Time: Bonus Action
+- Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
 ### Hail of thorns 
-    - Can receives extra attack benefit.
+- Can receives extra attack benefit.
 ### Healing Word 
-    - School: Abjuration 
-    - 2d4 + spellcasting ability modifier
-    - The healing increases by 2d4 for each spell slot LvL above 1.
+- School: Abjuration 
+- 2d4 + spellcasting ability modifier
+- The healing increases by 2d4 for each spell slot LvL above 1.
 ### Hunter's Mark 
-    - 1d6 Force damage
+- 1d6 Force damage
 ### Inflict Wounds 
-    - A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.   
+- A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.   
 ### Searing Smite 
-    - No concentration required.
-    - Casting Time: Common cooldown for smite spells
+- No concentration required.
+- Casting Time: Common cooldown for smite spells
 ### Sleep 
-    - Duration: Concentration, up to 1 minutes
-    - If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
+- Duration: Concentration, up to 1 minutes
+- If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
 ### Tasha's Hideous Laughter  
-    - You can target one additional creature for each spell slot LvL above 2.
+- You can target one additional creature for each spell slot LvL above 2.
 ### Thunderous Smite 
-    - No concentration required.
-    - Casting Time: Common cooldown for smite spells
-    - Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
+- No concentration required.
+- Casting Time: Common cooldown for smite spells
+- Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
 ### Ray of Sickness 
-    - On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
+- On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
 ### Witch Bolt 
-    - On a hit, the target takes 2d12 Lightning damage. 
-    - On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.   ,   
+- On a hit, the target takes 2d12 Lightning damage. 
+- On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.   ,   
 ### Wrathful Smite 
-    - School: Necromancy 
-    - No concentration required.
-    - Necrotic Damage 
-    - Casting Time: Common cooldown for smite spells
-    - Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
+- School: Necromancy 
+- No concentration required.
+- Necrotic Damage 
+- Casting Time: Common cooldown for smite spells
+- Using a Higher-LvL Spell Slot. The damage increases by 1d6 for each spell slot LvL above 1.
 
 ## LvL 2 spells
 
@@ -1170,9 +1172,7 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
 - You summon an otherworldly being that appears as a loyal steed. The steed enhances your attack, defense, and movement speed.
-
-> **Note**
-> It is possible to improve the implementation method.
+> **Note** The implementation method may change in the future.
 
 ### [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
 - Duration: Concentration, 10 Minutes
@@ -1180,17 +1180,17 @@ Appropriate spells have been added to the spell list for each class.
 - ***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
 
 ### [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
-- Casting Time: 1 Bonus Action
+> **Note** Casting Time: 1 Bonus Action
 
 ### [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
 - You touch a weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.
 - ***Using a Higher-Level Spell Slot.*** The bonus increases to +2 with a level 3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
 
 ### [Mirror Image](https://www.dndbeyond.com/spells/2619060-mirror-image)
-- Improve the mechanism to be more faithful to the rulebook.
+> **Note** Improve the mechanism to be more faithful to the rulebook.
 
 ### [Moonbeam](https://www.dndbeyond.com/spells/2619134-moonbeam)
-- A creature makes save only once per turn.
+> **Note** A creature makes save only once per turn.
 
 ### [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
 - An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm’s area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion.
@@ -1211,91 +1211,100 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Summon Beast](https://www.dndbeyond.com/spells/2619106-summon-beast)
 - Summon an Eagle to fight by your side.
+- Available For: Druid, Ranger
 
 ### [Web](https://www.dndbeyond.com/spells/2619208-web)
 - When the spell is cast, flames in the area covered by spider webs are extinguished.
 
 ## LvL 3 spells
-- Conjure Barrage 
-    - 5d8 Force
-- Fireball 
-    - Area: 20 feet
-- Gaseous Form 
-    - Using a Higher-LvL Spell Slot. You can target one additional creature for each spell slot LvL above 3.     
-- Glyph of Warding 
-    - Damage application mechanism has been improved to allow the application of related magic item effects.  
-- Hypnotic Pattern
-    - 10 Turns
-- Lightning arrow 
-    - The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.
-- Mass Healing Word  
-    - School: Abjuration 
-    - 2d4 + spellcasting ability modifier
-- Summon Fey
-    - School: Conjuration (Druid, Ranger, Warlock, Wizard)
-    - Summon a Blink Dog to fight by your side.
-- Warden of Vitality 
-    - School: Abjuration 
-    - An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
+### Conjure Barrage 
+- 5d8 Force
+### Fireball 
+- Area: 20 feet
+### Gaseous Form 
+- Using a Higher-LvL Spell Slot. You can target one additional creature for each spell slot LvL above 3.     
+### Glyph of Warding 
+- Damage application mechanism has been improved to allow the application of related magic item effects.  
+### Hypnotic Pattern
+- 10 Turns
+### Lightning arrow 
+- The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.
+### Mass Healing Word  
+- School: Abjuration 
+- 2d4 + spellcasting ability modifier
+### Summon Fey
+- School: Conjuration (Druid, Ranger, Warlock, Wizard)
+- Summon a Blink Dog to fight by your side.
+### Warden of Vitality 
+- School: Abjuration 
+- An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
+
 ## LvL 4 spells
-- Conjure Minor Elementals
-    - Duration: Concentration
-- Conjure Woodland Beings
-    - Duration: Concentration
-- Fount of Moonlight 
-    - School: Evocation (Bard, Druid)
-    - Duration: Concentration, up to 10 minutes
-    - Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
-- Grasping Vine 
-    - Range: 60 feet
-    - Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine 4d8 
-    - Using a Higher-LvL Spell Slot. The number of the vines increases by one for each spell slot LvL above 4.
-- Ice Storm 
-    - 2d10 Bludgeoning damage and 4d6 Cold
-    - The Bludgeoning damage increases by 1d10 for each spell slot LvL above 4.
-- Phantasmal Killer 
-    - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
-- Stoneskin 
-    - Now provides resistance to B/P/S instead of to nonmagical B/P/S.
-- Storm Sphere
-    - School: Evocation (Sorcerer, Wizard, Storm Sorcery)
-    - Each creature in the storm when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 Bludgeoning Damage.. The sphere’s space is difficult terrain.
-    - Until the spell ends, Sphere can shoot a bolt of lightning to one creature you choose within 60 feet of the center. It has advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 Lightning Damage.
-    - When you cast this spell using a spell slot of 5th LvL or higher, the damage increases for each of its effects by 1d6 for each slot LvL above 4th.
-- Summon Aberration 
-    - School: Conjuration (Warlock, Wizard, Aberrant Sorcery)
-    - Power LvL 4: Intellect Devourer
-    - Power LvL 5: Spectator
-    - Power LvL 6: Mindflayer
-- Summon Construct 
-    - School: Conjuration (Wizard, Clockwork Sorcery)
-    - Power LvL 4: Animated Armor
-    - Power LvL 5: Automaton
-    - Power LvL 6: Steel Watcher
+### Conjure Minor Elementals
+- Duration: Concentration
+### Conjure Woodland Beings
+- Duration: Concentration
+### Fount of Moonlight 
+- School: Evocation (Bard, Druid)
+- Duration: Concentration, up to 10 minutes
+- Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
+### Grasping Vine 
+- Range: 60 feet
+- Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine 4d8 
+- Using a Higher-LvL Spell Slot. The number of the vines increases by one for each spell slot LvL above 4.
+### Ice Storm 
+- 2d10 Bludgeoning damage and 4d6 Cold
+- The Bludgeoning damage increases by 1d10 for each spell slot LvL above 4.
+### Phantasmal Killer 
+- The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
+### Stoneskin 
+- Now provides resistance to B/P/S instead of to nonmagical B/P/S.
+### Storm Sphere
+- School: Evocation (Sorcerer, Wizard, Storm Sorcery)
+- Each creature in the storm when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 Bludgeoning Damage.. The sphere’s space is difficult terrain.
+- Until the spell ends, Sphere can shoot a bolt of lightning to one creature you choose within 60 feet of the center. It has advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 Lightning Damage.
+- When you cast this spell using a spell slot of 5th LvL or higher, the damage increases for each of its effects by 1d6 for each slot LvL above 4th.
+### Summon Aberration 
+- School: Conjuration (Warlock, Wizard, Aberrant Sorcery)
+- Power LvL 4: Intellect Devourer
+- Power LvL 5: Spectator
+- Power LvL 6: Mindflayer
+### Summon Construct 
+- School: Conjuration (Wizard, Clockwork Sorcery)
+- Power LvL 4: Animated Armor
+- Power LvL 5: Automaton
+- Power LvL 6: Steel Watcher
+
 ## LvL 5 spells
-- Banishing Smite 
-    - School: Conjuration 
-- Cloudkill 
-    - Damage application mechanism has been improved to allow the application of related magic item effects.  
-- Contagion 
-    - The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition
-- Conjure Elementals
-    - Duration: Concentration
-- Mass Cure Wounds  
-    - School: Abjuration 
-    - 5d8 + spellcasting ability modifier
-- Steel Wind Strike
-    - School: Conjuration (Wizard, War Domain)
-    - You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
-- Summon Dragon ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Spell_SummonDragon.png?raw=true)
-    - School: Conjuration (Wizard, Draconic Sorcery)
-- Wall of Force
-    - School: Evocation (Wizard, Clockwork Sorcery)
+### Banishing Smite 
+- School: Conjuration 
+### Cloudkill 
+- Damage application mechanism has been improved to allow the application of related magic item effects.  
+### Contagion 
+- The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition
+### Conjure Elementals
+- Duration: Concentration
+### Mass Cure Wounds  
+- School: Abjuration 
+- 5d8 + spellcasting ability modifier
+
+### [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SteelWindStrike.png?raw=true)
+- You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
+- You then teleport to an unoccupied space you can see within 5 feet of one of the targets.
+- Available For: Ranger, Wizard, War Domain
+
+### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Spell_SummonDragon.png?raw=true)
+- Available For: Wizard Wizard Draconic Sorcery
+
+### Wall of Force
+- School: Evocation (Wizard, Clockwork Sorcery)
 
 ## LvL 6 spells
-- Circle of Death 
-    - 8d8
-- Globe of Invulnerability 
-    - Create a barrier that makes creatures and objects inside it Immune to magical damage.
-- Heal 
-    - School: Abjuration
+### Circle of Death 
+- 8d8
+### Globe of Invulnerability 
+- Create a barrier that makes creatures and objects inside it Immune to magical damage.
+### Heal 
+- School: Abjuration
