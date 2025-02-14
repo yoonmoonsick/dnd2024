@@ -1024,6 +1024,13 @@ Your alien patron grants you a powerful curse. You always have the Eldritch Hex 
 #### Level 12: Spell Mastery
 You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
 
+### Divination School
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DivinationSchool.png?raw=true)
+
+#### Level 6: Expert Divination
+Casting Divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a Divination spell using a level 2+ spell slot, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can’t be higher than level 5.
+
 ### Evocation School
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EvocationSchool.png?raw=true)
@@ -1397,6 +1404,12 @@ Appropriate spells have been added to the spell list for each class.
 ### Mass Healing Word  
 - School: Abjuration 
 - 2d4 + spellcasting ability modifier
+### [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Divination_MindSpike.png?raw=true)
+- You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking 3d8 Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target’s location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can’t become hidden from you, and if it has the Invisible condition, it gains no benefit from that condition against you.
+- ***Using a Higher-Level Spell Slot***. The damage increases by 1d8 for each spell slot level above 2.
+- Available For: Sorcerer, Warlock, Wizard
+
 ### Summon Fey
 - School: Conjuration (Druid, Ranger, Warlock, Wizard)
 - Summon a Blink Dog to fight by your side.
