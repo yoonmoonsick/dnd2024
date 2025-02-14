@@ -1302,6 +1302,7 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Wizard Wizard Draconic Sorcery
 
 ### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
 - An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (you choose which side).
 - Nothing can physically pass through the wall.
 - Available For: Wizard, Oath of Redemption, Clockwork Sorcery
