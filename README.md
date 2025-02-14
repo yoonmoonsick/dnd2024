@@ -1027,17 +1027,22 @@ Each weapon has a mastery property, which is usable only by a character who has 
 Appropriate spells have been added to the spell list for each class.
 
 ## Cantrip
+
 ### Acid Splash 
-- School: Evocation 
+- School: Evocation
+
 ### Blade Ward 
 - Duration: Concentration, up to 1 minute
 - Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.
-### Bone Chill 
-- Range: Touch 
-- Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.
-- ***Cantrip Upgrade***. The damage increases by 1d10 when you reach LvLs 5 (2d10), 11 (3d10), and 17 (4d10).
+
+### [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
+- Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.
+- ***Cantrip Upgrade***. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
+- Available For: Sorcerer, Warlock, Wizard, Illrigger
+
 ### Booming Blade
 > **Note** Cannot be affected by extra attack.
+
 ### Dancing Lights 
 - School: Illusion 
 - Casting Time: Bonus action
@@ -1051,28 +1056,34 @@ Appropriate spells have been added to the spell list for each class.
 ### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
 - You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
-- This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 - Available For: Sorcerer, Warlock, Wizard
-### Magic Stone
-- Druid, Warlock Cantrip
-- School: Trasmutation
-- You touch pebbles and imbue them with magic. You can make a ranged spell attack with one of the pebbles by throwing it. If thrown, it has a range of 60 feet. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier.
-- Gains the effect of items that increase throwing damage.
-### Mind Sliver 
-- Sorcerer, Warlock, Wizard Cantrip
-- School: Enchantment 
+
+### [Magic Stone](https://www.dndbeyond.com/spells/2391-magic-stone)
+- You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.
+- If you cast this spell again, the spell ends early on any pebbles still affected by it.
+- Available For: Druid, Warlock, Artificer
+
+### [Mind Sliver](https://www.dndbeyond.com/spells/2619037-mind-sliver)
 - You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.
+- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
+- Available For: Sorcerer, Warlock, Wizard, Aberrant Sorcery
+
 ### Poison Spray 
 - School: Necromancy 
 - Range: 9 m
 - Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.  
+
 ### Produce Flame 
 - A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
 - Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach LvLs 5 (2d8), 11 (3d8), and 17 (4d8).
-### Shillelagh
-- If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
-- ***Cantrip Upgrade***: The weapon's damage die changes when you reach LvLs 5 (d10), 10 (d12), and 17 (2d6).
+
+### [Shillelagh](https://www.dndbeyond.com/spells/2618984-shillelagh)
+- A Club or Quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
+- The spell ends early if you cast it again or if you let go of the weapon.
+- ***Cantrip Upgrade***. The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).
+- Available For: Druid
 
 ### [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_SorcerousBurst.png?raw=true)
@@ -1300,7 +1311,7 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
-- Available For: Wizard Wizard Draconic Sorcery
+- Available For: Wizard, Draconic Sorcery
 
 ### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
