@@ -308,18 +308,28 @@ All subclasses are obtained at class LvL 3.
 
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Cleric.png?raw=true)
 
-- LvL 1: Divine Order: You have dedicated yourself to one of the following sacred roles of your choice.
-    - Protector: Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.
-    - Thaumaturge: You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you +3 bonus to your Arcana and Religion checks.
-- LvL 2: Channel Divinity: You can use this class’s Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach LvL 6.
-- LvL 2: Divine Spark ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Cleric_DivineSpark.png?raw=true): You point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage. You roll an additional d8 when you reach LvLs 5 (2d8) and 10 (3d8).
+#### Level 1 Divine Order
+You have dedicated yourself to one of the following sacred roles of your choice.
+- Protector: Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.
+- Thaumaturge: You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you +3 bonus to your Arcana and Religion checks.
 
-- LvL 7: Blessed Strikes: Divine power infuses you in battle. You gain one of the following options of your choice.
-    - Divine Strike: Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).
-    - Potent Spellcasting: Add your Wisdom modifier to the damage you deal with any Cleric cantrip.
-- LvL 12: Improved Blessed Strikes: The option you chose for Blessed Strikes grows more powerful.
-    - Divine Strike. The extra damage of your Divine Strike increases to 2d8.
-    - Potent Spellcasting. When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting 10 Temporary Hit Points.
+#### Level 2 Channel Divinity
+You can use this class’s Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach LvL 6.
+
+#### Level 2 Divine Spark
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Cleric_DivineSpark.png?raw=true)
+
+You point your Holy Symbol at another creature you can see within 30 feet of yourself and focus divine energy at it. Roll 1d8 and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant damage (your choice) equal to that total. On a successful save, the creature takes half as much damage. You roll an additional d8 when you reach LvLs 5 (2d8) and 10 (3d8).
+
+#### Level 7 Blessed Strikes
+Divine power infuses you in battle. You gain one of the following options of your choice.
+  - Divine Strike: Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).
+  - Potent Spellcasting: Add your Wisdom modifier to the damage you deal with any Cleric cantrip.
+#### Level 12 Improved Blessed Strikes
+The option you chose for Blessed Strikes grows more powerful.
+  - Divine Strike. The extra damage of your Divine Strike increases to 2d8.
+  - Potent Spellcasting. When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting 10 Temporary Hit Points.
 
 ### Death Domain
 
@@ -478,9 +488,14 @@ All subclasses are obtained at class LvL 3.
 
 ![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
 
-- LvL 3: War Bond: You can have up to two bonded weapons.
-- LvL 7: War Magic: When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
-- LvL 12: Arcane Charge: When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see.
+#### Level 3: War Bond
+You can have up to two bonded weapons.
+
+#### Level 7: War Magic
+When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
+
+#### Level 12: Arcane Charge
+When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see.
 
 ### Psi Warrior
 
@@ -1108,12 +1123,13 @@ Appropriate spells have been added to the spell list for each class.
 ### True Strike 
 - Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
 - ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach LvLs 5 (1d6), 10 (2d6), and 17 (3d6).
-### Vicious Mockery 
-- 1d6 Cantrip
-### Word of Radiance
-- Cleric
-- Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Radiant damage.
+### [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
+- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
+### [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WordofRadiance.png?raw=true)
+- Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach LvLs 5 (2d6), 11 (3d6), and 17 (4d6).
+- Available For: Cleric
 
 ## LvL 1 spells
 ### Armour of Agathys 
