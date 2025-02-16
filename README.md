@@ -1080,7 +1080,7 @@ These archdevils’ elite operatives are the illriggers. Knights, assassins, mag
 
 ### Architect of Ruin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectOfRuin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectsOfRuin.png?raw=true)
 
 ### Hellspeaker
 
