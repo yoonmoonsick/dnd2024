@@ -1070,6 +1070,34 @@ You can attack twice, instead of once, whenever you take the Attack action on yo
 #### Level 12: Song of Victory
 While your Bladesong is active, you can add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks. This applies only to the first attack on your turn.
 
+## [Illrigger](https://www.dndbeyond.com/sources/dnd/tir/the-illrigger-revised#TheIllrigger)
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Illrigger.png?raw=true)
+
+The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.
+
+These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
+
+### Architect of Ruin
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectOfRuin.png?raw=true)
+
+### Hellspeaker
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hellspeaker.png?raw=true)
+
+### Painkiller
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Painkiller.png?raw=true)
+
+### Sanguine Knight
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SanguineKnight.png?raw=true)
+
+### Shadowmaster
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadowmaster.png?raw=true)
+
 # Enemies
 
 As player characters become stronger, some enemies will be enhanced to maintain balance.
@@ -1225,6 +1253,12 @@ Appropriate spells have been added to the spell list for each class.
 - This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
 - Available For: Sorcerer, Warlock, Wizard
 
+### [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_Hellfire.png?raw=true)
+- You create an eruption of smoldering hellfire around a creature you can see within range. The target must succeed on a Charisma saving throw or take 1d4 fire damage plus 1d4 necrotic damage.
+- ***At Higher Levels***. Both of the spell’s damage types increase by 1d4 when you reach 5th level (2d4 each), 11th level (3d4 each), and 17th level (4d4 each).
+- Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
+
 ### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
 - You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
@@ -1279,6 +1313,13 @@ Appropriate spells have been added to the spell list for each class.
 ### True Strike 
 - Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
 - ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach Levels 5 (1d6), 10 (2d6), and 17 (3d6).
+
+### [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_VengefulBlade.png?raw=true)
+- You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes 1d8 necrotic damage and the spell ends.
+- This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).
+- Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
+
 ### [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
 ### [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)

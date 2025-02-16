@@ -137,10 +137,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7bb9d629g469fg6b29g7b0fg8540ec2be221" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h822a0e37g5382g25c4g6291g41f7c1135bfb" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Riposte" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( HasShieldEquipped(context.Observer) or not Unarmed(context.Observer)) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and not InterruptHasDisadvantage() and IsFlatValueInterruptInteresting(1, context.Source)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_SOURCE,INTERRUPT_FIGHTINGSTYLE_INTERCEPTION,100,0)" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="(not Unarmed(context.Observer) or HasShieldEquipped(context.Source) ) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER'))" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer)) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and ( HasShieldEquipped(context.Observer) or not Unarmed(context.Observer));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_MainHandAttack_Dummy,true,true,true);AdjustRoll(OBSERVER_TARGET,-(1d10),All);" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded')" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1085,6 +1086,106 @@
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-5d8);RemoveStatus(BASTION_OF_LAW_5)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFF0000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f56edb32-0342-4b64-8672-6e5b1c1da727" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Illrigger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64235909-b6f2-4383-82a0-5d69aa42ffd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BurningSeals" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f2c7e1c-0d0c-4e6e-9092-0885ddd2ef40" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf519a10g7b2ag93b4g58ccg4467a4633541" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9297da3ag0e62g5b3bgfd2bgcda0d9dd87b3" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(4)):ApplyStatus(BEDEVIL_3,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(10):ApplyStatus(BEDEVIL_4,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="BurningSeals" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38046631-9bfe-4a5c-a747-3be50f9fd359" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BurningSeals_Necrotic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64235909-b6f2-4383-82a0-5d69aa42ffd8" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Necrotic,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(4)):ApplyStatus(BEDEVIL_3,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(10):ApplyStatus(BEDEVIL_4,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a57a3ca-8328-424e-8919-8afa492b57e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AbatingSeal" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he1925c4age68ag9ab5gdd19g3e50c3e9b01b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a496dd4gd8cdgfb64gd00fg937bc5c62fc6" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( Self(context.Target,context.Observer) or Ally(context.Target, context.Observer) ) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_HellishRebuke_Dummy,true,true,true);AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2),All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="AbatingSeal" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38bce9cc-8b24-4a16-a12e-2094e5f8c843" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SwiftRetribution" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16bde696gb7e9ge39dgb90agb04809a2cd35" version="1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_SwiftRetribution:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07ef9059-76e9-47f6-8c6f-f2f27b1bdfd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_VengefulShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7444d60-f45a-4dbf-8bf6-203acf40af5b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h31cf575dg53f6gd376g1878g201c7e306591" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0f47907g9262g3233gd564g7d304c27834f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_BlindingShot" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsRangedAttack() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(10, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Projectile_VengefulShot,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c8ae97a-ce3c-453f-98e0-517052955f95" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodPrice" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f5f5454-f19e-49aa-9a53-66837ea4aa99" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h963cbd9agac3ag2e98g07d3ga218b1c5aea9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc468fafdg0527g4cd7gc2e9g1b4260a5cf56" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_Bloodfeeding_ScarletTrance" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,1d10);DealDamage(SELF,10,Necrotic,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0dacb55-baf6-43df-bb00-ff4b54fb4771" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EnervatingSpell" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec275a23-8e7f-4e5a-b173-f8a15ef6cc56" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57cd3731g4674g8860g5ae8gfd695a3597ee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h767b980cg5a95g13c4g43bdgc186f031e85b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IllriggerSpellCheck() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a8893a9-db5f-49cd-ba05-0aebdfe5bfba" />
@@ -1281,6 +1382,16 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h740541adg30d0g4f5egb930g36eb89a7033b" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_LightningLure" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_LightningLure,true,true,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4140e114-ebde-41b6-96d3-fd94bca9a433" />
+        <field name="Name" type="NameTableFieldDefinition" value="Itrp_WC_VengefulBlade" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7b4665d-cadb-42f5-a1a8-a4eccf0eb6e6" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="had097423g94d7g9ae0g2a54gc390ffa7ee6f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VengefulBlade" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_VengefulBlade,true,true,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
