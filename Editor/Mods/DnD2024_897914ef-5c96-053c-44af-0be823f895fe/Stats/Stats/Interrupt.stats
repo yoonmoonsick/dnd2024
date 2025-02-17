@@ -1178,10 +1178,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f0dacb55-baf6-43df-bb00-ff4b54fb4771" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EnervatingSpell" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ec275a23-8e7f-4e5a-b173-f8a15ef6cc56" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73492150g4b0fgcd04g64a0g8f2061aa0a79" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73492150g4b0fgcd04g64a0g8f2061aa0a79" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h767b980cg5a95g13c4g43bdgc186f031e85b" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IllriggerSpellCheck() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellDamageTypeIs(DamageType.Slashing) or SpellDamageTypeIs(DamageType.Piercing) or SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Acid) or SpellDamageTypeIs(DamageType.Thunder) or SpellDamageTypeIs(DamageType.Necrotic) or SpellDamageTypeIs(DamageType.Fire) or SpellDamageTypeIs(DamageType.Lightning) or SpellDamageTypeIs(DamageType.Cold) or SpellDamageTypeIs(DamageType.Psychic) or SpellDamageTypeIs(DamageType.Poison) or SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Force);) and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
       </fields>
