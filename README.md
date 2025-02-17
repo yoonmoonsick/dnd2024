@@ -1347,8 +1347,10 @@ Appropriate spells have been added to the spell list for each class.
 
 ### Divine Favor 
 - No concentration required.
-### Divine Smite 
-- Casting Time: Common cooldown for smite spells, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike (using interrupt)
+
+### [Divine Smite](https://www.dndbeyond.com/spells/2618833-divine-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+
 ### Enhance Leap
 - Casting Time: Bonus Action
 - Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
@@ -1364,7 +1366,6 @@ Appropriate spells have been added to the spell list for each class.
 - A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.   
 ### Searing Smite 
 - No concentration required.
-- Casting Time: Common cooldown for smite spells
 ### Sleep 
 - Duration: Concentration, up to 1 minutes
 - If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
@@ -1372,7 +1373,6 @@ Appropriate spells have been added to the spell list for each class.
 - You can target one additional creature for each spell slot Level above 2.
 ### Thunderous Smite 
 - No concentration required.
-- Casting Time: Common cooldown for smite spells
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
 ### Ray of Sickness 
 - On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
@@ -1383,7 +1383,6 @@ Appropriate spells have been added to the spell list for each class.
 - School: Necromancy 
 - No concentration required.
 - Necrotic Damage 
-- Casting Time: Common cooldown for smite spells
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
 
 ## Level 2 spells
