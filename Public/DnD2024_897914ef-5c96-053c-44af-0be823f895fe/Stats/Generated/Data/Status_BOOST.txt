@@ -4011,6 +4011,15 @@ data "TickType" "EndTurn"
 data "Boosts" "ActionResource(BonusActionPoint,1,0)"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "YMS_DRUID"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "GRASPINGVINE_SURFACE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Boosts" "ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);Invulnerable();Attribute(Grounded);"
+
 new entry "YMS_FIGHTER"
 type "StatusData"
 data "StatusType" "BOOST"

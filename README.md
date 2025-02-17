@@ -1340,6 +1340,11 @@ Appropriate spells have been added to the spell list for each class.
 - School: Abjuration 
 - 2d8 + spellcasting ability modifier
 - The healing increases by 2d8 for each spell slot Level above 1.
+
+### [Dissonant Whispers](https://www.dndbeyond.com/spells/2619104-dissonant-whispers)
+- One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.
+- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot level above 1.
+
 ### Divine Favor 
 - No concentration required.
 ### Divine Smite 
@@ -1473,23 +1478,33 @@ Appropriate spells have been added to the spell list for each class.
 - An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
 
 ## Level 4 spells
+
 ### Conjure Minor Elementals
 - Duration: Concentration
+
 ### Conjure Woodland Beings
 - Duration: Concentration
+
 ### Fount of Moonlight 
 - School: Evocation (Bard, Druid)
 - Duration: Concentration, up to 10 minutes
 - Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
-### Grasping Vine 
-- Range: 60 feet
-- Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine 4d8 
-- ***Using a Higher-Level Spell Slot***. The number of the vines increases by one for each spell slot Level above 4.
-### Ice Storm 
-- 2d10 Bludgeoning damage and 4d6 Cold
-- The Bludgeoning damage increases by 1d10 for each spell slot Level above 4.
+
+### [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
+- Duration: Concentration, 1 Minute
+- You conjure a vine that sprouts from a surface in an unoccupied space that you can see within range. The vine lasts for the duration.
+- Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine; if the target is Huge or smaller, it has the Grappled condition (escape DC equal to your spell save DC). The vine can grapple only one creature at a time, and you can cause the vine to release a Grappled creature (no action required).
+- As a Bonus Action on your later turns, you can repeat the attack against a creature within 30 feet of the vine.
+- ***Using a Higher-Level Spell Slot***. The number of creatures the vine can grapple increases by one for each spell slot level above 4.
+
+### [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm)
+- Each creature in the Cylinder makes a Dexterity saving throw. A creature takes 2d10 Bludgeoning damage and 4d6 Cold damage on a failed save or half as much damage on a successful one.
+- Hailstones turn ground in the Cylinder into Difficult Terrain until the end of your next turn.
+- ***Using a Higher-Level Spell Slot***. The Bludgeoning damage increases by 1d10 for each spell slot level above 4.
+
 ### Phantasmal Killer 
 - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
+
 ### Stoneskin 
 - Now provides resistance to B/P/S instead of to nonmagical B/P/S.
 
