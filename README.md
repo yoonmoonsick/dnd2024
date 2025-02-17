@@ -1350,6 +1350,7 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Divine Smite](https://www.dndbeyond.com/spells/2618833-divine-smite)
 - Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.
 
 ### Enhance Leap
 - Casting Time: Bonus Action
@@ -1364,25 +1365,32 @@ Appropriate spells have been added to the spell list for each class.
 - 1d6 Force damage
 ### Inflict Wounds 
 - A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.   
-### Searing Smite 
-- No concentration required.
+
+### [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.
+- ***Using a Higher-Level Spell Slot***. All the damage increases by 1d6 for each spell slot level above 1.
+
 ### Sleep 
 - Duration: Concentration, up to 1 minutes
 - If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
 ### Tasha's Hideous Laughter  
 - You can target one additional creature for each spell slot Level above 2.
-### Thunderous Smite 
-- No concentration required.
+
+### [Thunderous Smite](https://www.dndbeyond.com/spells/2619182-thunderous-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition.
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
+
 ### Ray of Sickness 
 - On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
 ### Witch Bolt 
 - On a hit, the target takes 2d12 Lightning damage. 
 - On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.   ,   
-### Wrathful Smite 
-- School: Necromancy 
-- No concentration required.
-- Necrotic Damage 
+
+### [Wrathful Smite ](https://www.dndbeyond.com/spells/2619220-wrathful-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
 
 ## Level 2 spells
@@ -1390,6 +1398,11 @@ Appropriate spells have been added to the spell list for each class.
 ### [Barkskin](https://www.dndbeyond.com/spells/2618907-barkskin)
 - Casting Time: 1 Bonus Action
 - Duration: 1 Hour
+
+### [Branding Smite](https://www.dndbeyond.com/spells/2618838-shining-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can’t benefit from the Invisible condition.
+- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 2.
 
 ### [Cloud of Daggers](https://www.dndbeyond.com/spells/2618974-cloud-of-daggers)
 - You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn.
@@ -1447,6 +1460,12 @@ Appropriate spells have been added to the spell list for each class.
 - When the spell is cast, flames in the area covered by spider webs are extinguished.
 
 ## Level 3 spells
+
+### [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success.
+- ***Using a Higher-Level Spell Slot***. The extra damage increases by 1d8 for each spell slot level above 3.
+
 ### Conjure Barrage 
 - 5d8 Force
 ### Fireball 
@@ -1503,6 +1522,11 @@ Appropriate spells have been added to the spell list for each class.
 
 ### Phantasmal Killer 
 - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
+
+### [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
+- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
+- The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.
+- ***Using a Higher-Level Spell Slot***. The extra damage increases by 1d6 for each spell slot level above 4.
 
 ### Stoneskin 
 - Now provides resistance to B/P/S instead of to nonmagical B/P/S.
