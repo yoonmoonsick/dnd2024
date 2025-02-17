@@ -28,7 +28,6 @@ end
 
 function MindMagicLevel7()
     return MindMagicLevel5() | SpellId('Target_Confusion') | SpellId('Target_Banishment')
-
 end
 
 function MindMagicLevel9()
@@ -280,10 +279,6 @@ end
 function DeceptionCheck()
     local skillCheck = SkillCheck(Skill.Deception,context.Target.GetPassiveSkill(Skill.Insight))
     return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
-end
-
-function SmiteSpellCheck()
-    return SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Blinding_4') | SpellId('Target_Smite_Blinding_5') | SpellId('Target_Smite_Blinding_6') | SpellId('Target_Smite_Branding') | SpellId('Target_Smite_Branding_3') | SpellId('Target_Smite_Branding_4') | SpellId('Target_Smite_Branding_5') | SpellId('Target_Smite_Branding_6') | SpellId('Target_Smite_Searing') | SpellId('Target_Smite_Searing_2') | SpellId('Target_Smite_Searing_3') | SpellId('Target_Smite_Searing_4') | SpellId('Target_Smite_Searing_5') | SpellId('Target_Smite_Searing_6') | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Divine') | SpellId('Target_Smite_Divine_2') | SpellId('Target_Smite_Divine_3') | SpellId('Target_Smite_Divine_4') | SpellId('Target_Smite_Divine_5') | SpellId('Target_Smite_Divine_6') | SpellId('Target_Smite_Divine_Free') | SpellId('Target_Smite_Divine_Free_2') | SpellId('Target_Smite_Divine_Free_3') | SpellId('Target_Smite_Thunderous') | SpellId('Target_Smite_Thunderous_2') | SpellId('Target_Smite_Thunderous_3') | SpellId('Target_Smite_Thunderous_4') | SpellId('Target_Smite_Thunderous_5') | SpellId('Target_Smite_Thunderous_6') | SpellId('Target_Smite_Wrathful') | SpellId('Target_Smite_Wrathful_2') | SpellId('Target_Smite_Wrathful_3') | SpellId('Target_Smite_Wrathful_4') | SpellId('Target_Smite_Wrathful_5') | SpellId('Target_Smite_Wrathful_6') | SpellId('Target_EldritchSmite') | SpellId('Target_EldritchSmite_2') | SpellId('Target_EldritchSmite_3') | SpellId('Target_EldritchSmite_4') | SpellId('Target_EldritchSmite_5') | SpellId('Target_EldritchSmite_6')
 end
 
 function IsDivineSmite()

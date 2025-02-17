@@ -13,7 +13,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c791d73f-d69d-4ca3-969a-f7bfb68424e4" />
         <field name="Name" type="NameTableFieldDefinition" value="DeathSavingThrows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="190c08b9-8dc1-4d67-b2b7-65cb85c5aeb8" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(SmiteSpellCheck(),ModifyUseCosts(Add,Interrupt_Smite,1,0));ActionResource(Interrupt_Smite,1,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5217,7 +5217,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1404b9d7gce2cgff51ge396g83a04b6194ad" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EldritchStrike" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Interrupt_Smite,1,0);UnlockSpell(Target_EldritchSmite,MostPowerful,e9127b70-22b7-42a1-b172-d02f828f260a,,Charisma);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_3);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_4);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_5);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value=";UnlockSpell(Target_EldritchSmite,MostPowerful,e9127b70-22b7-42a1-b172-d02f828f260a,,Charisma);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_3);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_4);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_5);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_5)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8, Force)" />
