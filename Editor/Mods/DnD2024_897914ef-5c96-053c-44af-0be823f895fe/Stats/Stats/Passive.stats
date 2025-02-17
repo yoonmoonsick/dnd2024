@@ -4119,7 +4119,74 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b04a518d-51a3-48f9-b36f-72bbc5d59178" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Name" type="NameTableFieldDefinition" value="CharmEnemy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd373cb7bgcd22g59f8g24ecgc0f23c79cbac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2b63deddg3294ga627g0254ga9ed94393be4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Charm" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d74415c3-787f-4d5e-a2cf-2b4eaf25a4f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="InvokeHell_HoneySweetBlades" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9e7e4c4-89df-4e56-88a4-08582a0b4b56" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70def6e3g10d6g9acfg5241g13f02655fcb4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2430f6e5g5b9fgafd6g0c5bg49f27ca491c7" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="InvokeHellCharge:1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_HoneySweetBlades);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2fb23e82-2cae-4fb6-a456-3ee6e84b8b08" />
+        <field name="Name" type="NameTableFieldDefinition" value="InvokeHell_Turncoat" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9995020g6495g7332g44f1g7639f593afea" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ecb6c1dg6df7g9e76g3dc1g7ccad689f495" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InvokeHellCharge:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CrownOfMadness" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Turncoat);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fc65abc-215d-4e7f-b51e-9bdc83c25eca" />
+        <field name="Name" type="NameTableFieldDefinition" value="RedCant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4e09a56ag1f8dga181gd8f1g6e5bf7c68706" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4bf3bb0fg4af0g39dag6a6eg1f3a3c3f4b7d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Cambion_FiendishCharm" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(RedCantCheck()):MinimumRollResult(RawAbility,10);IF(RedCantCheck()):MinimumRollResult(SkillCheck,10);IF(HasSavingThrowWithAbility(Ability.Charisma)):MinimumRollResult(SavingThrow,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae1b18b2-cae2-4a1d-9ce6-ad3430200c49" />
+        <field name="Name" type="NameTableFieldDefinition" value="Intransigent" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7bd1eeebg369fgc60cgdafag37c52c73b7ff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h607185b2g37fcg3cafgbca6gfd47a6986658" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_Countercharm" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('SG_Incapacitated',context.Source) and not HasStatus('SG_Unconscious',context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,INTRANSIGENT,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67b27050-7bbc-4e0c-b873-6b2e9f1bf86c" />
+        <field name="Name" type="NameTableFieldDefinition" value="LetsMakeADeal" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6059ad37g0f6ag34e7g6c87ge17ceb55e989" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e16b7e7gf7a8g1502g3972g9be37da46d05" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;LetsMakeADealCharge:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_BendLuck" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LetsMakeADeal);ActionResource(LetsMakeADealCharge,4,0);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
