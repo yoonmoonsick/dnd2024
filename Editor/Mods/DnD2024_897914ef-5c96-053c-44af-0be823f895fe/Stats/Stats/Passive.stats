@@ -365,6 +365,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="984514e4-86d3-4c22-9af1-5f94b687552a" />
+        <field name="Name" type="NameTableFieldDefinition" value="CrossbowExpert_Wounding" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ad66ea82-7b55-4e7e-8922-a06571a65ba7" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_PiercingShot);UnlockSpellVariant(SpellId('Projectile_PiercingShot'), ModifyTooltipDescription());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e1cdffcc-b9d9-43b3-817a-2996813658b9" />
         <field name="Name" type="NameTableFieldDefinition" value="DefensiveDuelist" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="466e7f83-05a2-486c-9088-5105f1417718" />
@@ -3628,6 +3636,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ba576f8g61fcgdb36g81b5g32198f76d5a4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c9e501egeff4g85e3gb718g79002ea765ae" version="2" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE,100,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Combat(context.Source) and not Combat()):CharacterWeaponDamage(ClassLevel(Rogue));IF(not Combat(context.Source) and not Combat()):CharacterUnarmedDamage(ClassLevel(Rogue));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
