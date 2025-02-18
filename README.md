@@ -1074,9 +1074,9 @@ While your Bladesong is active, you can add your Intelligence modifier (minimum 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Illrigger.png?raw=true)
 
-The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.
-
-These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
+>The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.
+>
+>These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
 
 #### Level 1: Baleful Interdict
 
@@ -1105,17 +1105,136 @@ Your archdevil grants you uncanny skill in a certain form of combat. Choose one 
 - **Lissome**: When you hit a creature with a melee weapon attack, you can move without provoking opportunity attacks.
 - **Unfettered**: When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch. In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.
 
+#### Level 2: Interdiction
+
+You can infuse your seals with hellish magical power, enhancing their effects.
+
+**Interdict Boons Known**. You learn one interdict boon of your choice from the “Interdict Boons” section at the end of the class’s description. As you gain levels in this class, you gain additional boons of your choice, as shown in the Interdict Boons column of the Illrigger table. Each new boon must be of a level you can learn. When you reach 7th level, for example, you learn one new boon of 2nd or 7th level.
+- **2nd-Level Interdict Boons**: You can choose from these boons when you gain the Interdiction feature at 2nd level, or whenever you gain a new boon.
+  - **Abating Seal**: When a creature you can see damages you or an ally within 30 feet of you, you can expend a seal as a reaction to reduce the damage taken by the target by an amount equal to 1d10 + half of your illrigger level (rounded down).
+  - **Bedevil**: When you burn a seal on an interdicted creature, you can activate this boon (no action required). The target must subtract a number equal to your proficiency bonus from the result of the next saving throw they make before the end of their next turn.
+  - **Soul Eater**: When you burn a seal on an interdicted creature, you can activate this boon (no action required) to regain hit points equal to your illrigger level.
+  - **Styx’s Apathy**: When you burn a seal on an interdicted creature, you can use your reaction to flood the target with an otherworldly chill. Until the end of the target’s next turn, they can’t take reactions.
+  - **Swift Retribution (Passive)**: When an interdicted creature provokes an opportunity attack from you, you can make that attack without using your reaction, provided you’re not incapacitated. Once you benefit from this boon, you can’t do so again until the start of your next turn.
+- **7th-Level Interdict Boons**: When you reach 7th level, the following interdict boons are added to your list of Interdiction options.
+  - **Acheron’s Chain**: When you use a bonus action to place or move a seal on a Large or smaller creature, you can activate this boon (no action required). You conjure infernal chains to grasp the target, forcing them to make a Strength saving throw. On a failed save, you can cause them to be restrained until the end of your next turn (escape DC equal to your interdict save DC).
+  - **Conflagrant Channel**: You can expend a seal as a bonus action to teleport up to 60 feet to an unoccupied space you can see.
+  - **Shadow Shroud**: You can expend a seal as a bonus action to weave a mantle of semisolid shadows around yourself or a creature you touch. The target gains a +2 bonus to AC for 1 minute.
+  - **Unleash Hell**: When you burn one or more seals on an interdicted creature, you can use your reaction to unleash an explosion of hellish energy around them. Each creature of your choice within 5 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes the same amount and type of damage as the seals dealt to the interdicted creature. On a successful save, a creature takes half as much damage.
+  - **Vengeful Shot**: When a creature makes a ranged attack against you or an ally you can see within 30 feet of you, you can expend a seal as a reaction to make a ranged weapon attack against the attacker. If your attack hits, it deals extra damage equal to half your illrigger level (rounded down).
+
+#### Level 3: Invoke Hell
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ActionResources_c%2080/InvokeHellCharge.png?raw=true)
+
+Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.
+
+When you use your Invoke Hell, you choose which option to use. You must then finish a short or long rest to use your Invoke Hell again.
+
+Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals your interdict save DC.
+
+#### Level 5: Extra Attack
+
+#### Level 6: Infernal Conduit
+
+You can strengthen your allies at the cost of yourself—or drain your enemy’s life force for your own gain. You have a pool of Infernal Conduit dice, which are d10s. The number of Infernal Conduit dice in your pool increase as you gain illrigger levels, as shown in the Infernal Conduit Dice column of the Illrigger table.
+
+As an action, you can touch another creature and spend one or more dice from your pool. The target must make a Constitution saving throw against your interdict save DC. A creature can willingly fail this saving throw. Roll the spent dice and choose one of the following effects:
+
+Invigorate. On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can’t be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.
+
+Devour. On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can’t be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can’t suffer more than three levels of exhaustion combined from all illriggers’ Infernal Conduit features.
+
+You regain any spent Infernal Conduit dice when you finish a long rest.
+
+#### Level 10: Blood Price
+
+You can strengthen your defenses at the cost of your vitality. Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.
+
+#### Level 11: Terrorizing Force
+
+Your attacks are empowered with devastating might. When you gain this feature, choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type.
+
 ### Architect of Ruin
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectsOfRuin.png?raw=true)
+
+>Architects of Ruin are cool and calculating arcane knights who serve Asmodeus, deploying spells, steel, and subterfuge to win at any cost.
+>
+>Asmodeus rules Acheron, the City of Fear. His illriggers scour the timescape, collecting secrets and spells designed to deceive and terrify his opponents. The war he fights against the other archdevils is one of deception and information.
+>
+>His Architects of Ruin work to make Hell’s enemies seem outnumbered and outmaneuvered. These illriggers are skillful spellblades on the battlefield, though some employ tactics such as research, infiltration, and propaganda to play mind games with their quarry. When an Architect of Ruin finally confronts an enemy, the advantage is theirs—they have studied, prepared, and gripped fate within their gauntlet, forcing it to favor them. They hungrily seek the dark arts to arm both themselves and Asmodeus with the impossible.
+
+#### Level 3: Spellcasting (1/3 Caster)
+
+#### Level 3: Invoke Hell
+- **Destructive Spell**: When you deal damage to a creature with an Illrigger spell of 1st level or higher, you can expend a seal (no action required) to maximize the damage.
+- **Spellblade**: You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.
+
+#### Level 7: Hellish Versatility
+Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.
+
+#### Level 7: Axiomatic Seals
+Asmodeus’s secrets allow you to infuse your seals with manifest power. When you burn one or more seals to deal damage to a creature, you can activate this boon (no action required) to add your Charisma modifier (minimum of 1) to each seal’s damage roll.
+
+#### Level 11: Submit
+When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.
 
 ### Hellspeaker
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hellspeaker.png?raw=true)
 
+>The charismatic and manipulative Hellspeakers serve Moloch as they slip about the battlefield, coercing enemies into becoming unwitting allies.
+>
+>Moloch rules Styx, the City of Lies, but his reach extends far beyond it. Hell’s greatest politicians and diplomats rise to prominence through Moloch’s subtle manipulations. They follow him with great loyalty, for they know they are nothing without him—and thus his power echoes through all of Hell.
+>
+>Moloch’s illriggers are silver-tongued enchanters, lulling his foes to complacency with sorcery and subterfuge until they wake and find themselves under the command of the Order of Desolation. These Hellspeakers train in the art known as the Red Cant or Hell’s Cant. By understanding their enemy and through weaving subtle sorceries into normal speech, Hellspeakers can make their foes feel, think, or do nearly anything to accelerate Hell’s victory.
+>
+>Across the timescape, Hellspeakers enjoy a reputation as smiling rogues and swashbuckling villains. An asset in any negotiation, Hellspeakers know that in a world of lies, the truth can be as potent a weapon as steel.
+
+#### Level 3: Charm Enemy
+When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them.
+
+#### Level 3: Invoke Hell
+- **Honey-Sweet Blades**: When you make a weapon attack against an interdicted creature, If the attack hits, it becomes a critical hit.
+- **Turncoat**: You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or be driven into madness for 2 turns.
+
+#### Level 7: Red Cant
+When you make a Charisma check, you can expend a seal to treat a d20 roll of 9 or lower as a 10.
+
+#### Level 11: Intransigent
+You and your allies within 10 feet of you are immune to the charmed condition while you are conscious.
+
+#### Level 11: Let’s Make a Deal
+As a bonus action, you can offer a willing ally within 60 feet a deal. Within the next 10 minutes, they gain advantage on one attack roll or saving throw. After using this effect, there is a 50% chance they receive a blessing, gaining 12 temporary hit points, or a curse, suffering disadvantage on their next attack roll or saving throw.
+
 ### Painkiller
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Painkiller.png?raw=true)
+
+>The heavily armored death troopers of Hell, Painkillers serve Dispater, leading from the front of every major infernal battle.
+>
+>Dispater rules Dis, the City of War. When Hell invades another world, Dispater’s army does the fighting and dying. His Painkillers are master strategists who lead from the front, inspiring terror and awe in their soldiers. The imperious Painkillers are full of pride and hubris, and they often obsess over their personal appearance.
+>
+>Though among the most chivalrous of the illriggers, a Painkiller’s gallantry is twisted. They accept and honor challenges to single combat, and swiftly punish any who try to interfere—but if losing, they don’t hesitate to cheat, and if winning, they arrogantly toy with an enemy before finishing them.
+>
+>In a moment of weakness or desperation, a ruler in another world might see their army facing certain defeat and call on Dispater. Ever eager to sow strife and discord, Dispater often responds to these pleas by sending a Painkiller to lead the desperate ruler’s armies.
+
+#### Level 3: Dispater’s Blessing
+When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.
+
+#### Level 3: Devastator
+You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
+
+#### Level 3: Invoke Hell
+- **Grand Strategist**: You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target can immediately move up to half their speed without provoking opportunity attacks.
+- **Punishment**: When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
+
+#### Level 7: Telekinetic Seal
+When a creature you can see moves within 5 feet of you, you can use your reaction to place a seal on them. When you do, the target must succeed on a Wisdom saving throw or be either pushed back 15 feet.
+
+#### Level 11: You Die on My Command!
+When an ally within 30 feet of you who can hear you is killed, you can use your reaction to shout an order at them, causing them to be revived and regain 1 hit point. Once you use this reaction, you can’t do so again until you finish a short or long rest.
 
 ### Sanguine Knight
 
@@ -1132,81 +1251,140 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 # Feat 
 
 ## General
-- Alert: When you roll Initiative, you can add your Proficiency Bonus to the roll.
-- Athlete: Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
-- Charger 
-    - Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
-    - Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
-- Crossbow Expert 
-    - Dual Wielding. When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property.
-- Crusher 
-    - Push. Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.
-    - Enhanced Critical. When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.
-- Defensive Duelist 
-    - Parry. If you are holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.    
-- Dual Wielder: You can deliver additional Offhand attack for free once per turn.
-- Durable: As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
-- Great Weapon Master  
-    - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
-- Healer: When casting a healing spell, the target regains additional hit points equal to Proficiency Bonus. Learn Battle Medic Bonus Action that heals a creature 1d8 + Proficiency Bonus.
-- Heavy Armor Master 
-    - Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
-- Lightly Armored
-    - Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
-    - Armor Training. You gain training with Light armor and Shields.
-- Mage Slayer 
-    - Guarded Mind. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest. ,
-- Magic Initiate: Learn 2 Cantrips and a Level 1 Spell. You can cast the Level 1 Spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
-- Metamagic Adept: You’ve learned how to exert your will on your spells to alter how they function.
-    - You learn two Metamagic options of your choice from the sorcerer class.
-    - You gain 2 sorcery points to spend on Metamagic.
-- Mobile 
-    - Agile Movement. Opportunity Attacks have Disadvantage against you.
-- Performer: Encouraging Song. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
-- Piercer 
-    - Puncture. Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack’s damage dice, and you must use the new roll.
-    - Enhanced Critical. When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.
-- Poisoner 
-    - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
-    - Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
-- Savage Attacker: Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.
-- Sharpshooter
-    - Firing in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.      
-    - Long Shots. Increases the range of actions with Ranged weapons by 1.5 times.
-- Shield Master
-    - Shield Bash. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it’s equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
-    - Interpose Shield. If you’re subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.
-- Skill Expert 
-    - Skill Proficiency. You gain proficiency in one skill of your choice.
-    - Expertise. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.
-- Skulker 
-    - Blindsight. You have Blindsight with a range of 10 feet.
-    - Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
-    - Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
-- Slasher 
-    - Hamstring. Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.
-    - Enhanced Critical. When you score a Critical Hit that deals Slashing damage to a creature , it has Disadvantage on attack rolls until the start of your next turn.   
-- Spell Sniper 
-    - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
-- Tavern Brawler 
-    - Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4.
-    - Damage Rerolls. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.
-    - Push. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.
-- War Caster 
-    - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
-- Weapon Master: You gain proficiency with Martial Weapons. and get Weapon Masteries.
+
+#### Alert
+When you roll Initiative, you can add your Proficiency Bonus to the roll.
+
+#### Athlete
+Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
+
+#### Charger 
+- Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
+- Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
+
+#### Crossbow Expert 
+- Dual Wielding. When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property.
+
+#### Crusher 
+- Push. Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.
+- Enhanced Critical. When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.
+
+#### Defensive Duelist 
+Parry. If you are holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.    
+
+#### Dual Wielder
+You can deliver additional Offhand attack for free once per turn.
+
+#### Durable
+As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
+
+#### Great Weapon Master  
+When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
+
+#### Healer
+When casting a healing spell, the target regains additional hit points equal to Proficiency Bonus. Learn Battle Medic Bonus Action that heals a creature 1d8 + Proficiency Bonus.
+
+#### Heavy Armor Master 
+Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
+
+#### Lightly Armored
+- Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+- Armor Training. You gain training with Light armor and Shields.
+
+#### Mage Slayer 
+Guarded Mind. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest. ,
+
+#### Magic Initiate
+Learn 2 Cantrips and a Level 1 Spell. You can cast the Level 1 Spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
+
+#### Metamagic Adept: You’ve learned how to exert your will on your spells to alter how they function.
+- You learn two Metamagic options of your choice from the sorcerer class.
+- You gain 2 sorcery points to spend on Metamagic.
+
+#### Mobile 
+Agile Movement. Opportunity Attacks have Disadvantage against you.
+
+#### Performer: Encouraging Song. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
+
+#### Piercer 
+- Puncture. Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack’s damage dice, and you must use the new roll.
+- Enhanced Critical. When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.
+
+#### Poisoner 
+- Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
+- Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
+
+#### Savage Attacker
+Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.
+
+#### Sharpshooter
+- Firing in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.      
+- Long Shots. Increases the range of actions with Ranged weapons by 1.5 times.
+
+#### Shield Master
+- Shield Bash. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it’s equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
+- Interpose Shield. If you’re subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.
+
+#### Skill Expert 
+- Skill Proficiency. You gain proficiency in one skill of your choice.
+- Expertise. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.
+
+#### Skulker 
+- Blindsight. You have Blindsight with a range of 10 feet.
+- Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
+- Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
+
+#### Slasher 
+- Hamstring. Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.
+- Enhanced Critical. When you score a Critical Hit that deals Slashing damage to a creature , it has Disadvantage on attack rolls until the start of your next turn.   
+
+#### Spell Sniper 
+- Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
+
+#### Tavern Brawler 
+- Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4.
+- Damage Rerolls. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.
+- Push. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.
+
+#### War Caster 
+Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
+
+#### Weapon Master
+You gain proficiency with Martial Weapons. And get Weapon Masteries.
 
 ## Fighting Styles 
-- Thrown Weapon Fighting: When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
-- Blind Fighting: You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
-- Interception: When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a shield or a weapon to use this reaction.
-- Unarmed Fighting: Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.
-- Tunnel Fighter: As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.   .
-- Close Quarters Shooter: When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. You have a +1 bonus to attack rolls on ranged attacks.
-- Mariner: As long as you are not wearing heavy armor or using a shield, your movement speed increases by 10 feet, and you gain a +1 bonus to armor class.
-- Superior Technique (Fighter): Learn a maneuver from the Battle Master Fighter subclass and receive 1 (additional) Superiority Die.
-- Druidic Warrior (Ranger): You learn Guidance and one Druid cantrips of your choice.
-- Blessed Warrior (Paladin): You learn Guidance and one Cleric cantrips of your choice.
+#### Thrown Weapon Fighting
+When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
+
+#### Blind Fighting
+You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
+
+#### Interception
+When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a 
+shield or a weapon to use this reaction.
+
+#### Unarmed Fighting
+Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a 
+d8.
+
+#### Tunnel Fighter
+As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, 
+and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.
+
+#### Close Quarters Shooter
+When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. You have a +1 bonus to attack rolls on ranged attacks.
+
+#### Mariner
+As long as you are not wearing heavy armor or using a shield, your movement speed increases by 10 feet, and you gain a +1 bonus to armor class.
+
+#### Superior Technique (Fighter)
+Learn a maneuver from the Battle Master Fighter subclass and receive 1 (additional) Superiority Die.
+
+#### Druidic Warrior (Ranger)
+You learn Guidance and one Druid cantrips of your choice.
+
+#### Blessed Warrior (Paladin)
+You learn Guidance and one Cleric cantrips of your choice.
 
 # Items
 - The effects of certain equipment items will be adjusted to align with the above changes.  
@@ -1216,11 +1394,11 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 
 ## Actions 
 - Attack
-    - Shove (Cost: 1 Action Point, Extra Attack) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Shove_Action.png?raw=true)
+    - Shove (Cost: 1 Action Point, Extra Attack)
     - Trip (Cost: 1 Action Point, Extra Attack)
 - Break Free: Attempt to escape from conditions such as restraint or webs.
-- Distract ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Distract.png?raw=true)
-- Dodge ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/Action_Dodge.png?raw=true)
+- Distract
+- Dodge
 - Jump
     - Cost: 1 Bonus Action Point and 3m movement speed -> movement distance
 - Spell Casting
@@ -1240,14 +1418,14 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
 
-- Cleave (Greataxe, Halberd): If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
-- Graze (Glaive, Greatsword): If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.
-- Nick (Dagger, Light hammer, Sickle, Scimitar): When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.
-- Push (Greatclub, Pike, Warhammer, Heavy Crossbow): If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
-- Sap (Mace, Spear, Flail, Longsword, Morningstar, War Pick): If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
-- Slow (Club, Javelin, Light Crossbow, Longbow): If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.
-- Topple (Quarterstaff, Battleaxe, Maul, Trident): If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
-- Vex (Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow): If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
+- **Cleave** (Greataxe, Halberd): If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
+- **Graze** (Glaive, Greatsword): If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.
+- **Nick** (Dagger, Light hammer, Sickle, Scimitar): When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.
+- **Push** (Greatclub, Pike, Warhammer, Heavy Crossbow): If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
+- **Sap** (Mace, Spear, Flail, Longsword, Morningstar, War Pick): If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
+- **Slow** (Club, Javelin, Light Crossbow, Longbow): If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.
+- **Topple** (Quarterstaff, Battleaxe, Maul, Trident): If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
+- **Vex** (Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow): If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
 # Spells 
 
