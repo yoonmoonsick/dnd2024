@@ -30,7 +30,7 @@ Please Visit: https://github.com/yoonmoonsick/dnd2024/commits/master/
 
 or https://mod.io/g/baldursgate3/m/dnd-2024
 
-![Full Changelog](https://i.imgur.com/9goI97j.png)
+![](https://i.imgur.com/9goI97j.png)
 
 # Background 
 
@@ -38,80 +38,101 @@ An origin feat is added to the background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to gain inspiration.
 
-## ![](https://i.imgur.com/G1SM08n.png) Acolyte
+## Acolyte
+ ![](https://i.imgur.com/G1SM08n.png)
 - Feat: Magic Initiate: Cleric
 
-## ![](https://i.imgur.com/AGRnGA5.png) Charlatan
+## Charlatan
+ ![](https://i.imgur.com/AGRnGA5.png)
 - Feat: Charlatan's Trick (Homebrew)
     - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
     - You add your Intelligence modifier to your Deception skill checks.
 
-## ![](https://i.imgur.com/bEanuMf.png) Criminal
+## Criminal
+ ![](https://i.imgur.com/bEanuMf.png)
 - Feat: Alert
 - Skill Proficiencies: Sleight of Hand and Stealth
 
-## ![](https://i.imgur.com/bGnvazh.png) Entertainer
+## Entertainer
+ ![](https://i.imgur.com/bGnvazh.png)
 - Feat: Performer
 
-## ![](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
+## Farmer (Tag: Folk Hero)
+ ![](https://i.imgur.com/nZV1TpT.png)
 - Feat: Tough
 - Skill Proficiencies: Animal Handling and Nature
 
-## ![](https://i.imgur.com/qD084Ff.png) Folk Hero
+## Folk Hero
+ ![](https://i.imgur.com/qD084Ff.png)
 - Feat: Tough
 
-## ![](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
+## Guard (Tag: Soldier)
+ ![](https://i.imgur.com/thXzv0m.png)
 - Feat: Alert
 - Skill Proficiencies: Athletics and Perception
 
-## ![](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
+## Guide (Tag: Outlander)
+ ![](https://i.imgur.com/rdNxenE.png)
 - Feat: Magic Initiate: Druid
 - Skill Proficiencies: Stealth and Survival
 
-## ![](https://i.imgur.com/iiB78kT.png) Guild Artisan
+## Guild Artisan
+ ![](https://i.imgur.com/iiB78kT.png)
 - Feat: Skilled
 
-## ![](https://i.imgur.com/1BCPAmY.png) Haunted One
+## Haunted One
+ ![](https://i.imgur.com/1BCPAmY.png)
 - Feat: Alert
 
-## ![](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
+## Hermit (Tag: Sage)
+ ![](https://i.imgur.com/YDiCkju.png)
 - Feat: Healer
 - Skill Proficiencies: Medicine and Religion
 
-## ![](https://i.imgur.com/sjbygvI.png) Noble
+## Noble
+ ![](https://i.imgur.com/sjbygvI.png)
 - Feat: Skilled
 
-## ![](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
+## Merchant (Tag: Guild Artisan)
+ ![](https://i.imgur.com/QgT6mpK.png)
 - Feat: Lucky
 - Skill Proficiencies: Animal Handling and Persuasion
 
-## ![](https://i.imgur.com/tNbDQEF.png) Outlander
+## Outlander
+ ![](https://i.imgur.com/tNbDQEF.png)
 - Feat: Tough
 
-## ![](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
+## Sailor (Tag: Urchin)
+ ![](https://i.imgur.com/wFa8ZT4.png)
 - Feat: Tavern Brawler
 - Skill Proficiencies: Acrobatics and Perception
 
-## ![](https://i.imgur.com/3tIlUHd.png) Sage
+## Sage
+ ![](https://i.imgur.com/3tIlUHd.png)
 - Feat: Magic Initiate: Wizard
 
-## ![](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
+## Scribe (Tag: Acolyte)
+ ![](https://i.imgur.com/wUPA9Bc.png)
 - Feat: Skilled
 - Skill Proficiencies: Investigation and Perception
 
-## ![](https://i.imgur.com/WpDgTUN.png) Soldier
+## Soldier
+ ![](https://i.imgur.com/WpDgTUN.png)
 - Feat: Savage Attacker
 
-## ![](https://i.imgur.com/3bdAAA4.png) Urchin
+## Urchin
+ ![](https://i.imgur.com/3bdAAA4.png)
 - Feat: Savage Attacker
 
-## ![](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
+## Wayfarer (Tag: Criminal)
+ ![](https://i.imgur.com/1BCPAmY.png)
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
 # Races 
 
-## ![](https://i.imgur.com/pP4f0p7.png) Aasimar 
+## Aasimar 
+ ![](https://i.imgur.com/pP4f0p7.png)
 
 - Celestial Resistance: You have Resistance to Necrotic damage and Radiant damage.
 - Darkvision: You have Darkvision with a range of 60 feet.
@@ -122,48 +143,58 @@ If you choose a newly added background, you gain a spell that can be used once p
     - Inner Radiance: Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.
     - Necrotic Shroud: Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.
 
-## ![](https://i.imgur.com/0XLTw3S.png) Dragonborn
+## Dragonborn
+ ![](https://i.imgur.com/0XLTw3S.png)
 
 - Darkvision
 - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
 #### Level 5: Draconic Flight
 You can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
-## ![](https://i.imgur.com/omrOUzB.png) Drow
+## Drow
+ ![](https://i.imgur.com/omrOUzB.png)
 
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## ![](https://i.imgur.com/zGZWcVr.png) Dwarf
+## Dwarf
+ ![](https://i.imgur.com/zGZWcVr.png)
 - Speed: 30 feet
 - Superior Darkvision
 
-## ![](https://i.imgur.com/hdJ45yB.png) Elf
+## Elf
+ ![](https://i.imgur.com/hdJ45yB.png)
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## ![](https://i.imgur.com/QzWVnPx.png) High Elf
+## High Elf
+ ![](https://i.imgur.com/QzWVnPx.png)
 #### Level 1: Wizard Cantrip
 #### Level 3: Faerie Fire
 #### Level 5: Misty Step
 
-## ![](https://i.imgur.com/zAIW6FO.png) Wood Elf
+## Wood Elf
+ ![](https://i.imgur.com/zAIW6FO.png)
 #### Level 1: Your Speed increases to 35 feet
 #### Level 3: Longstrider
 #### Level 5: Pass without Trace
 
-## ![](https://i.imgur.com/bDSBj4l.png) Githyanki
+## Githyanki
+ ![](https://i.imgur.com/bDSBj4l.png)
 - Psychic Resilience: You have resistance to psychic damage.
 #### Level 10: Githyanki Parry
 
-## ![](https://i.imgur.com/bDSBj4l.png) Githzerai
+## Githzerai
+ ![](https://i.imgur.com/bDSBj4l.png)
 - Mental Discipline: Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the charmed and frightened conditions on yourself.
 #### Level 3: Obtain the Way of the Four Elements Monk's novice spells in vanilla Baldur's Gate 3.
 #### Level 5: Obtain the Way of the Four Elements Monk's Intermediate spells in vanilla Baldur's Gate 3.
 #### Level 10: Obtain the Way of the Four Elements Monk's Advanced spells in vanilla Baldur's Gate 3.
 
-## ![](https://i.imgur.com/SQ6TGl5.png) Gnome
+## Gnome
+ ![](https://i.imgur.com/SQ6TGl5.png)
 - Speed: 30 feet
 
-## ![](https://i.imgur.com/vdd9l9T.png) Goliath 
+## Goliath 
+ ![](https://i.imgur.com/vdd9l9T.png)
 - Speed: 35 feet
 #### Level 1: Giant Ancestry: You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
     - Cloud’s Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
@@ -175,40 +206,48 @@ You can channel draconic magic to give yourself temporary flight. As a Bonus Act
 #### Level 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
 
-## ![](https://i.imgur.com/bG5Zplf.png) Half-Elf
+## Half-Elf
+ ![](https://i.imgur.com/bG5Zplf.png)
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Gain racial spells corresponding to your elven bloodline.
 
-## ![](https://i.imgur.com/bMfuE6u.png) Half-Orc
+## Half-Orc
+ ![](https://i.imgur.com/bMfuE6u.png)
 
 - Superior Darkvision
 - Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
-## ![](https://i.imgur.com/cllZm5T.png) Halfling
+## Halfling
+ ![](https://i.imgur.com/cllZm5T.png)
 
 - Speed: 30 feet
 
-## ![](https://i.imgur.com/VP8nBud.png) Human
+## Human
+ ![](https://i.imgur.com/VP8nBud.png)
 
 - Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 #### Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
-## ![](https://i.imgur.com/mdPxMdD.png) Tiefling
+## Tiefling
+ ![](https://i.imgur.com/mdPxMdD.png)
 
 
-## ![](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
+## Asmodeus Tiefling
+ ![](https://i.imgur.com/CzBc2oc.png)
 
 #### Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
 #### Level 3: Ray of Sickness
 #### Level 5: Hold Person
 
-## ![](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
+## Mephistopheles Tiefling
+ ![](https://i.imgur.com/NrG1DxF.png)
 
 #### Level 1: Thaumaturgy, Resistance to Necrotic, Chill Touch
 #### Level 3: False Life
 #### Level 5: Ray of Enfeeblement
 
-## ![](https://i.imgur.com/485otPl.png) Zariel Tiefling
+## Zariel Tiefling
+ ![](https://i.imgur.com/485otPl.png)
 
 #### Level 1: Thaumaturgy, Resistance to Fire, Fire Bolt
 #### Level 3: Hellish Rebuke
@@ -1082,7 +1121,7 @@ While your Bladesong is active, you can add your Intelligence modifier (minimum 
 
 You gain the ability to censure creatures with the power of Hell.
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Illrigger_BurningSeals.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Illrigger_BurningSeals.png?raw=true)
 
 You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range. This seal lasts for 1 minute or until burned (see "Burning Seals" below). A creature with one or more of your seals is referred to as an interdicted creature. Seals you place are invisible to other creatures, and when you can see an interdicted creature, the seals appear to you as glowing glyphs on the creature’s body.
 
@@ -1125,7 +1164,7 @@ You can infuse your seals with hellish magical power, enhancing their effects.
 
 #### Level 3: Invoke Hell
 
-![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ActionResources_c%2080/InvokeHellCharge.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ActionResources_c%2080/InvokeHellCharge.png?raw=true)
 
 Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.
 
