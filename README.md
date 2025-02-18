@@ -1078,6 +1078,33 @@ The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternall
 
 These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
 
+#### Level 1: Baleful Interdict
+
+You gain the ability to censure creatures with the power of Hell.
+
+![alt text](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Illrigger_BurningSeals.png?raw=true)
+
+You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range. This seal lasts for 1 minute or until burned (see "Burning Seals" below). A creature with one or more of your seals is referred to as an interdicted creature. Seals you place are invisible to other creatures, and when you can see an interdicted creature, the seals appear to you as glowing glyphs on the creature’s body.
+
+You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels, as indicated in the Seals column of the Illrigger table.
+
+If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them. Each seal’s duration continues to elapse when an interdicted creature dies and when that seal is moved to a new creature.
+
+Burning Seals. When an interdicted creature you can see within 30 feet of you takes damage from any source other than a seal burned by an illrigger, you can burn any number of seals you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn’t require an action from you, but you can’t do so while incapacitated. Once a seal is burned, it immediately vanishes.
+
+Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 11th level (for a total of 3d6) and 20th level (for a total of 4d6) in this class, as indicated in the Seal Damage column of the Illrigger table.
+
+#### Level 2: Combat Mastery
+
+Your archdevil grants you uncanny skill in a certain form of combat. Choose one of the following illrigger combat masteries:
+
+- **Bravado**: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.
+- **Brutal**: Once per turn, when you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 5 feet horizontally.
+- **Inexorable**: You gain a +1 bonus to saving throws for each hostile creature within 5 feet of you, to a maximum bonus of +5.
+- **Lies**: When you attack with a melee weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+- **Lissome**: When you hit a creature with a melee weapon attack, you can move without provoking opportunity attacks.
+- **Unfettered**: When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch. In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.
+
 ### Architect of Ruin
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectsOfRuin.png?raw=true)
