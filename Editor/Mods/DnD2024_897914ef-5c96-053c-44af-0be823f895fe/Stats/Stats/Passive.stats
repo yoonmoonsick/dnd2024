@@ -2046,7 +2046,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()));IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character() and not Ally()):ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()));" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Ranged" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value=";" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
@@ -3809,11 +3809,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7e891f3ge6eag499dgb8deg6cfb9c39c765" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h769445b8gf3dfg12d9g6497gbb0d5a132095" version="1" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="FightingStyle_GreatWeapon(context.Source);" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss();" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn;Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_SHIELD,100,0);ApplyStatus(SELF, MAG_MOMENTUM, 100, 1);ApplyStatus(SELF, MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3847,9 +3846,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h58c6a8b3g64bdg643fgeecegcc7f85f6a3ab" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf513e10cg82b0gd7c5g288cg506fa857cd5d" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_CounterAttackOfOpportunity" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RANGED_ALIKE_MELEE_SPELL)" />
-        <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
-        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
