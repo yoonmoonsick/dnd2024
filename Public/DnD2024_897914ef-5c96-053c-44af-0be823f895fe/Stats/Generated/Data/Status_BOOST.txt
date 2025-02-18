@@ -4577,6 +4577,43 @@ data "StackPriority" "3"
 data "Boosts" "Disadvantage(AttackRoll);Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);Disadvantage(SavingThrow, Constitution);Disadvantage(SavingThrow, Intelligence);Disadvantage(SavingThrow, Wisdom);Disadvantage(SavingThrow, Charisma);"
 data "RemoveEvents" "OnAttack;OnDamage"
 
+new entry "DEVASTATOR_STRIKE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "COMMANDERS_STRIKE_D8"
+data "DisplayName" "h08f966b8g70bege28fg6053gd60fe1c3896f;1"
+data "Description" "h40984bdag8b57g2436gaeb2g1db1f86eaeae;2"
+data "DescriptionParams" "Distance(9);"
+data "StackId" "DEVASTATOR_STRIKE"
+data "Boosts" "UnlockSpell(Target_Devastator_Attack);UnlockSpellVariant(SpellId('Target_Devastator_Attack'),ModifyIconGlow());UnlockSpell(Projectile_Devastator_Attack);UnlockSpellVariant(SpellId('Projectile_Devastator_Attack'),ModifyIconGlow());UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());"
+data "RemoveConditions" "SpellId('Target_Devastator_Attack') or SpellId('Projectile_Devastator_Attack') or IsCantrip()"
+
+new entry "GRAND_STRATEGIST"
+type "StatusData"
+data "StatusType" "BOOST"
+using "STEP_OF_THE_WIND"
+data "DisplayName" "h31a4c81egae95gc271g0fa9g29f00202961e;1"
+data "Description" "h79fcc2eeg54f9g6d1eg01aag1a4fdd7151b6;1"
+data "DescriptionParams" "Distance(18);"
+data "Icon" "Action_Monk_StepOfTheWind_Disengage"
+data "StackId" "GRAND_STRATEGIST"
+data "Boosts" "IgnoreLeaveAttackRange();ActionResource(Movement, 4.5, 0);"
+
+new entry "YOUDIEONMYCOMMAND"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hff8852ebg6b3egeb6ag0f18gf2e11a94194c;1"
+data "Description" "h4c2fd106gec74ge45fgf9e0g81b944a89dc7;1"
+data "DescriptionParams" "Distance(9);"
+data "Icon" "Action_Paladin_DivineGuardian"
+data "StatusPropertyFlags" "ApplyToDead"
+data "OnApplyFunctors" "RegainHitPoints(1);
+Resurrect(100,1);
+RestoreResource(Movement, 100%, 0);
+UseActionResource(ActionPoint,100%,0);
+UseActionResource(BonusActionPoint,100%,0);
+ApplyStatus(RESURRECTING, 100, 1);"
+
 new entry "YMS_RULE"
 type "StatusData"
 data "StatusType" "BOOST"

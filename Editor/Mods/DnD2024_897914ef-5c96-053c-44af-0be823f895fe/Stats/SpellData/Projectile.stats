@@ -37,7 +37,7 @@
         <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4b6085a0-2fc0-47a5-8d7a-ef9c3a38e77c" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Illrigger" />
@@ -52,6 +52,16 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon)+ClassLevel(Illrigger)/2, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_BlindingShot" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value=";" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5ec59a1-dba1-4774-bd17-0ceb484f3333" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devastator_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];RemoveStatus(SELF,DEVASTATOR_STRIKE);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

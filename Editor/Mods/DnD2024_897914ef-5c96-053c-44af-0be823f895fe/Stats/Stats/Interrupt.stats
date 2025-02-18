@@ -1198,6 +1198,67 @@
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('InvokeHellCharge', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6999114-b01d-4f98-b3a7-af32f4bf9105" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Punishment" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fdf7e50d-e034-4c27-858f-e54fe857944b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23b51794gb3cfgc094g47e7gd140d1f2b821" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4e161c9cg0b04g0926g451bgff0d8ea7f899" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Punishment),Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HellishRebuke" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Ally(context.Source,context.Observer) and HasLastAttackTriggered() and HasActionResource('ReactionActionPoint',1,0, false) and not IsMiss();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_InvokeHell_Punishment,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;InvokeHellCharge:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('InvokeHellCharge', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'));" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af1b8698-03ba-4725-adfe-1febbe8802ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TelekineticSeal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e4da948d-80d8-4011-bfa2-4a8cf4f1ae73" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54568a83g80bcge12dg3a7bg9c37e564da74" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6bb12d09gd173g5045gdb6bg8e972d734737" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(4.5)" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnLeaveAttackRange;OnEnterAttackRange" enumeration_type_name="InterruptContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Observer, context.Source) and not Self(context.Observer, context.Target) and Enemy() and not HasStatus('SG_Incapacitated', context.Source) and not HasStatus('SG_Unconscious', context.Source) and not (not Player(context.Source) and Tagged('AI_IGNORED_TARGET')  and not HasStatus('GNOLL_SUDDENRUSH')) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Target) and not HasStatus('SG_Ignore_AOO',context.Target) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(4)):ApplyStatus(BEDEVIL_3,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(10):ApplyStatus(BEDEVIL_4,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));ApplyStatus(CRUSHER_PUSH, 100, 0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f68f7bf0-4a6b-4117-919a-4779c200eb03" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TelekineticSeal_Necrotic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="af1b8698-03ba-4725-adfe-1febbe8802ad" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Necrotic,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(4)):ApplyStatus(BEDEVIL_3,100,2);IF(HasPassive('Interdict_2_Bedevil',context.Source) and CharacterLevelGreaterThan(10):ApplyStatus(BEDEVIL_4,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));ApplyStatus(CRUSHER_PUSH, 100, 0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9464834-3a75-4107-b416-09f0bc4993c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_YouDieOnMyCommand" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbe3c74dgfb68g58ecgba97g96d8a01ffa48" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h47a016e4g2442g9c66ga3b8gb2f05f217dc0" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineGuardian" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnDeath" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Ally();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_YouDieOnMyCommand,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;YouDieOnMyCommandCharge:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('YouDieOnMyCommandCharge', 1, 0, false, false, context.Source) and not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged;OnStatusRemoved;OnStatusApplied;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a8893a9-db5f-49cd-ba05-0aebdfe5bfba" />
