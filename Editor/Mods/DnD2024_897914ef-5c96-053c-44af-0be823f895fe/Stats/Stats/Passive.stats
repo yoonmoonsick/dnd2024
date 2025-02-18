@@ -1958,7 +1958,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd5aadfd8g5366gc8c6g862eg0b8cf3fe8bb5" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_CreateSorceryPoints_1" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('SorceryPoint',1,0,false,false,context.Source)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Metamagic_Seeking)" />
       </fields>
     </stat_object>
@@ -3834,8 +3833,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8191fe76g65a3g5b42g9c11gc936569d86ac" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdffb97cbgaa76g426bge80cg7d2643bdb0db" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PactOfTheBlade" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand, PACT_BLADE_ILLRIGER,100, -1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted;OnLongRest;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, PACT_BLADE_ILLRIGER_TECHNICAL,100, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

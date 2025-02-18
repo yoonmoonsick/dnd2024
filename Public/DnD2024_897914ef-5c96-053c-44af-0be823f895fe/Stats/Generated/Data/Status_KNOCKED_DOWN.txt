@@ -45,6 +45,7 @@ data "Icon" "Spell_Enchantment_CommandDrop"
 data "StillAnimationType" "KO_Fallen"
 data "StillAnimationPriority" "KO_Fallen"
 data "Boosts" "Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);"
+data "OnApplyFunctors" "RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);BreakConcentration();RemoveStatus(SLEEP_2);"
 data "StatusGroups" "SG_Condition"
 
 new entry "PRONE_THUNDEROUS_SMITE"
