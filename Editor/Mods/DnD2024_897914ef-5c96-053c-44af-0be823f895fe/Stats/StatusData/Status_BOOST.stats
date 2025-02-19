@@ -1105,19 +1105,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b3e0020c-e453-4ccf-8849-156dbd33f733" />
-        <field name="Name" type="NameTableFieldDefinition" value="MANTLE_OF_INSPIRATION_YMS" />
-        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ProficiencyBonus*2);UnlockSpell(Shout_MantleOfInspiration_Disengage)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Skill_MantleOfInspiration" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d082bb32-d622-44c2-8d52-b7aff6b89cf7" />
         <field name="Name" type="NameTableFieldDefinition" value="INDOMITABLE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow, 9)" />
@@ -1394,8 +1381,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb13fe44gab2fg33e5g8dc4g776fe2866f36" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ImprovedFlare" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,ImprovedWardingFlare)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d764846-ad2b-494f-ac36-8975780ff34f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6+5);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1407,22 +1394,6 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d085abaf-b3f2-4c6b-b2ea-3351caf2270f" />
-        <field name="Name" type="NameTableFieldDefinition" value="REFRESHING_STEP_TEMPHP" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bce6d90g34b0gba69gb72eg39a7e102703f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16cb16b3g5442gb08eg2c17gb3cc9c842289" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
-        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10);" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4894,8 +4865,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cac30880-0d74-47e7-aa87-17eb7de2bfbc" />
-        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LIFE_GIVING_FORCE" />
+        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE_TEMPHP" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LifeGivingForce)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('SG_Rage')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
@@ -4906,21 +4876,18 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3d764846-ad2b-494f-ac36-8975780ff34f" />
-        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE_TECHNICAL_2" />
-        <field name="StackId" type="StringTableFieldDefinition" value="LIFE_GIVING_FORCE_TECHNICAL" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="0" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,LifeGivingForce2)" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE_TECHNICAL_TEMPHP_2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TemporaryHP(2d6)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15309b87gd6a8g3643gb99fgdae3a28c5746" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16cb16b3g5442gb08eg2c17gb3cc9c842289" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ae19f02b-58b0-406e-97fb-33bd79e504e0" />
-        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE_TECHNICAL_3" />
+        <field name="Name" type="NameTableFieldDefinition" value="LIFE_GIVING_FORCE_TECHNICAL_TEMPHP_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d764846-ad2b-494f-ac36-8975780ff34f" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="0" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,LifeGivingForce3)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TemporaryHP(3d6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5986,6 +5953,22 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2a4103a5-3c07-4cfe-983f-1d8fa7cec3f5" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+29)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+29);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d085abaf-b3f2-4c6b-b2ea-3351caf2270f" />
+        <field name="Name" type="NameTableFieldDefinition" value="REFRESHING_STEP_TEMPHP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bce6d90g34b0gba69gb72eg39a7e102703f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16cb16b3g5442gb08eg2c17gb3cc9c842289" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
