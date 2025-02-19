@@ -1207,6 +1207,9 @@ Your attacks are empowered with devastating might. When you gain this feature, c
 
 #### Level 3: Spellcasting (1/3 Caster)
 
+#### Level 3: Asmodeus’s Blessing
+When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in Arcana, History, Nature, and Religion.
+
 #### Level 3: Invoke Hell
 - **Destructive Spell**: When you deal damage to a creature with an Illrigger spell of 1st level or higher, you can expend a seal (no action required) to maximize the damage.
 - **Spellblade**: You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.
@@ -1231,6 +1234,9 @@ When you cast an illrigger spell you know, you can burn two seals on an interdic
 >Moloch’s illriggers are silver-tongued enchanters, lulling his foes to complacency with sorcery and subterfuge until they wake and find themselves under the command of the Order of Desolation. These Hellspeakers train in the art known as the Red Cant or Hell’s Cant. By understanding their enemy and through weaving subtle sorceries into normal speech, Hellspeakers can make their foes feel, think, or do nearly anything to accelerate Hell’s victory.
 >
 >Across the timescape, Hellspeakers enjoy a reputation as smiling rogues and swashbuckling villains. An asset in any negotiation, Hellspeakers know that in a world of lies, the truth can be as potent a weapon as steel.
+
+#### Level 3: Moloch’s Blessing
+When Moloch accepts you as his illrigger, he grants you access to his infernal knowledge. You gain expertise in Persuasion and Deception.
 
 #### Level 3: Charm Enemy
 When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them.
@@ -1279,6 +1285,22 @@ When an ally within 30 feet of you who can hear you is killed, you can use your 
 ### Sanguine Knight
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SanguineKnight.png?raw=true)
+
+#### Level 3: Sutekh’s Blessing
+When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain expertise in the Religion skill.
+
+#### Level 3: Exsanguinate
+You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.
+
+#### Level 3: Invoke Hell
+- **Embolden Allies**: As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.
+- **Vitalize**: You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains advantage on all ability checks.
+
+#### Level 7: Foul Interchange
+As an action, you choose a creature you can see within 30 feet of you and expend a seal to end one of the following conditions affecting them: blinded, charmed, dazed, frightened, paralyzed, or poisoned. Then, you choose another creature within 60 feet of you, which must succeed on a Constitution saving throw or suffer a random condition until the start of your next turn.
+
+#### Level 11: Bloodstroke
+The magic that shields your allies now also saps their enemies’ strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes 11 necrotic damage.
 
 ### Shadowmaster
 
