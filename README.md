@@ -1306,6 +1306,22 @@ The magic that shields your allies now also saps their enemies’ strength. When
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadowmaster.png?raw=true)
 
+#### Level 3: Marked for Death
+You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.
+
+#### Level 3: Strike from the Dark
+You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.
+
+#### Level 3: Invoke Hell
+- **Master of Disguise**: As an action, you can cast the disguise self spell without expending a spell slot.
+- **No Escape**: As a bonus action, you can call upon the shadows to entrap a creature you can see within 30 feet of you. The target must make a Charisma saving throw, with disadvantage if they are in dim light or darkness. On a failed save, the target is slowed. This effect ends if you are incapacitated, die, or if the target moves more than 30 feet away from you.
+
+#### Level 7: Veil of Lies
+As a bonus action, you can expend a seal to become invisible for 10 minutes or until you attack or cast a spell.
+
+#### Level 11: Umbral Killer
+Shadows enhance your abilities, granting you Devil's Sight, an additional 10 feet of movement speed, and advantage on Stealth checks. Additionally, when making a Dexterity saving throw to take half damage, you instead take no damage on a success and half damage on a failure.
+
 # Enemies
 
 As player characters become stronger, some enemies will be enhanced to maintain balance.
