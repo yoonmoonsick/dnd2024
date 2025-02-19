@@ -392,6 +392,7 @@ You point your Holy Symbol at another creature you can see within 30 feet of you
 Divine power infuses you in battle. You gain one of the following options of your choice.
   - Divine Strike: Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d8 Necrotic or Radiant damage (your choice).
   - Potent Spellcasting: Add your Wisdom modifier to the damage you deal with any Cleric cantrip.
+
 #### Level 12 Improved Blessed Strikes
 The option you chose for Blessed Strikes grows more powerful.
   - Divine Strike. The extra damage of your Divine Strike increases to 2d8.
@@ -777,7 +778,7 @@ Your Speed increases by 10 feet while you aren’t wearing Heavy armor.
 #### Level 9: Deft Explorer
 Choose Two of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
 #### Level 10: Tireless
-Temporary Hit Points. You can give yourself 10 Temporary Hit Points. You can use this action 3 times, and you regain all expended uses when you finish a Long Rest.
+Temporary Hit Points. As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 #### Level 12: Precise Hunter
 You have Advantage on attack rolls against the creature currently marked by your Hunter’s Mark.
 
