@@ -923,7 +923,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8a8dbe7a-800f-4e84-ad09-93df3256ffa6" />
         <field name="Name" type="NameTableFieldDefinition" value="CelestialResilience" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CELESTIAL_RESILIENCE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CELESTIAL_RESILIENCE_TEMP_HP,100,-1);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DarkOnesBlessing" />
@@ -931,7 +931,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc43ca804gcb62g2c49g1ab6gd805d5c777dc" version="2" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="!Combat()" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
@@ -2378,7 +2377,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7520d50e-5d87-40b1-a54d-20c27bb0d8a7" />
         <field name="Name" type="NameTableFieldDefinition" value="AdrenalineRush" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b1f4edf3-60d5-40b7-8f09-60e75df7a513" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1);ApplyStatus(ADRENALINERUSH_TEMPHP_2,100,-1);IF(CharacterLevelGreaterThan(4)):ApplyStatus(ADRENALINERUSH_TEMPHP_3,100,-1);IF(CharacterLevelGreaterThan(8)):ApplyStatus(ADRENALINERUSH_TEMPHP_4,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1);ApplyStatus(ADRENALINERUSH_TEMP_HP,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf59d522dge786g71b3g77d8g9f51b51eb7d6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96219a8ag8003g4106g6783ga65abf8c8bcc" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;AdrenalineRushCharge:1" />
