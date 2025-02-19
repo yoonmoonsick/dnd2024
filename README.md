@@ -1016,7 +1016,7 @@ Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Lon
 - Level 9: Dominate Person, Seeming
 #### Level 3: Steps of the Fey
 Your patron grants you the ability to move between the boundaries of the planes. You can cast Misty Step without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. In addition, whenever you cast that spell, you can choose one of the following additional effects.
-- Refreshing Step: Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains 5 Temporary Hit Points.
+- Refreshing Step: Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains 1d10 Temporary Hit Points.
 - Taunting Step: Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.
 #### Level 6: Steps of the Fey:  
 - Disappearing Step: You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell.
@@ -1599,6 +1599,11 @@ Appropriate spells have been added to the spell list for each class.
 ### Enhance Leap
 - Casting Time: Bonus Action
 - Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
+
+### [False Life](https://www.dndbeyond.com/spells/2618866-false-life)
+- You gain 2d4 + 4 Temporary Hit Points.
+- ***Using a Higher-Level Spell Slot***. You gain 5 additional Temporary Hit Points for each spell slot level above 1.
+
 ### Hail of thorns 
 - Can receives extra attack benefit.
 ### Healing Word 
