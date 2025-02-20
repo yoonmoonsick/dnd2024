@@ -3,6 +3,60 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bfb2aa4-6d83-4cdf-b117-e873a9b3e98a" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_WRATH_OF_THE_SEA" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DestructiveWrath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14ebe929g180bg8657gdba2g9014973b61d9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba8eed6agaad2ge134g72b0g897fda8f59b2" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILDSHAPE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);UnlockSpell(Target_WildShape_Sea_Damage);" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(WILDSHAPE_WRATH_OF_THE_SEA_AURA,100,-1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDSHAPE_ACTIVE)" />
+        <field name="Rules" type="GuidObjectTableFieldDefinition" value="acc89ec3-a77f-45bc-be5d-8e0f0d7cc68a" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Polymorph;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="715c7070-5394-4ef2-9732-ee2796deada0" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6690a65-97b6-4d66-af1a-4fa437fc5415" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_WRATH_OF_THE_SEA_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bfb2aa4-6d83-4cdf-b117-e873a9b3e98a" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e265027-0da8-4de4-ba7f-060553fbf256" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_WRATH_OF_THE_SEA_10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f6690a65-97b6-4d66-af1a-4fa437fc5415" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);UnlockSpell(Target_WildShape_Sea_Damage);UnlockSpell(Projectile_Fly_Spell);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Thunder,Resistant);" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a10b2ddf-103d-4486-8961-769e320894a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24a151e1-6708-4dd3-93a8-606bad8ee2eb" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71d7391d-d82d-4821-bea8-51e5db2a6fed" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a167948-b108-47c0-83a9-d4550f45d6bd" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5bee7410-f97b-4f7f-a94c-e35aad08c7f1" />
         <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_CAT_PLAYER_moondruid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="90e4b9ff-129f-4b05-a83d-fc2b2f9aa5b2" />

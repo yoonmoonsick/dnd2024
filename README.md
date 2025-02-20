@@ -563,13 +563,27 @@ You magically transport yourself, reappearing amid a burst of moonlight. As a Bo
 
 #### Circle of the Sea Spells
 When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
-
 - Level 1: Ray of Frost, Fog Cloud, Thunderwave
 - Level 3: Gust of Wind, Shatter
 - Level 5: Lightning Bolt, Sleet Storm
 - Level 7: Ice Storm Storm Sphere
 - Level 9: Conjure Elemental, Hold Monster
  
+#### Level 3: Wrath of the Sea
+
+As a Bonus Action, you can expend a use of your Wild Shape to manifest a 10-foot Emanation that takes the form of ocean spray that surrounds you for 10 minutes. It ends early if you dismiss it (no action required), manifest it again, or have the Incapacitated condition.
+
+When you manifest the Emanation and as a Bonus Action on your subsequent turns, you can choose another creature you can see in the Emanation. The target must succeed on a Constitution saving throw against your spell save DC or take Cold damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you. To determine this damage, roll a number of d6s equal to your proficiency bonus.
+
+#### Level 6: Aquatic Affinity
+The size of the Emanation created by your Wrath of the Sea increases to 20 feet. In addition, if a target of the damage succeeds on a saving throw, it takes half damage.
+
+#### Level 10: Stormborn
+Your Wrath of the Sea confers two more benefits while active, as detailed below.
+
+- ***Flight***. You gain a Fly Speed equal to your Speed.
+- ***Resistance***. You have Resistance to Cold, Lightning, and Thunder damage.
+
 ## Fighter
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
