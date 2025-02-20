@@ -3887,10 +3887,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="214f3df1-324b-4d94-9e21-401dc703446e" />
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_Lissome" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="568a67f0-b741-4532-a629-8c9c80d4327f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h58c6a8b3g64bdg643fgeecegcc7f85f6a3ab" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf513e10cg82b0gd7c5g288cg506fa857cd5d" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_CounterAttackOfOpportunity" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and Character()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,MOBILE_NO_AOO_SOURCE,100,1);ApplyStatus(MOBILE_NO_AOO,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
