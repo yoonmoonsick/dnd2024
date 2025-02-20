@@ -703,6 +703,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="950ba10d-95f5-476f-b68b-1cc6e5527f0d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Command_Dummy" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Control_CommandHalt_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_CommandHalt_L1to3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="17f11731-a1c7-4653-a15b-6c7f871574b3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="28a8039d-9df1-4210-8137-f396dd23614e" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89b0b0c7-44a4-4923-9564-0211a1f5272c" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="2d8309ab-c73d-40eb-a42f-fa4935858786" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cdf608c0-4dde-45e0-acae-0fbda216e000" />
         <field name="Name" type="NameTableFieldDefinition" value="Command_Approach" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bbbcf1ba-1778-44f9-b208-e1648d81a089" />
@@ -7363,9 +7376,9 @@
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate_1;Target_InfernalConduit_Invigorate_2;Target_InfernalConduit_Invigorate_3;Target_InfernalConduit_Invigorate_4;Target_InfernalConduit_Invigorate_5;Target_InfernalConduit_Invigorate_6;" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasHPMoreThan(1);" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,1d10,Necrotic);Cast2[RegainHitPoints(1d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,1d10/2,Necrotic);Cast2[RegainHitPoints(1d10/2)];" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC()) or Ally()" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,1d10,Necrotic);RegainHitPoints(1d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,1d10/2,Necrotic);RegainHitPoints(1d10/2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Heal" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heeaf2428g425dgb142gd767g385a9b537ea5" version="1" />
@@ -7394,6 +7407,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7671f5acge9c4g8022ge48fg13f45aadd655" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7411,8 +7425,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="InfernalConduit_Invigorate_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee8cdacb-097f-4e3e-94ce-251e95313302" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,2d10,Necrotic);Cast2[RegainHitPoints(2d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,2d10/2,Necrotic);Cast2[RegainHitPoints(2d10/2)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,2d10,Necrotic);RegainHitPoints(2d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,2d10/2,Necrotic);RegainHitPoints(2d10/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);RegainHitPoints(2d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);RegainHitPoints(2d10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InfernalConduitDie:2" />
@@ -7426,8 +7440,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="InfernalConduit_Invigorate_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee8cdacb-097f-4e3e-94ce-251e95313302" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,3d10,Necrotic);Cast2[RegainHitPoints(3d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,3d10/2,Necrotic);Cast2[RegainHitPoints(3d10/2)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,3d10,Necrotic);RegainHitPoints(3d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,3d10/2,Necrotic);RegainHitPoints(3d10/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic);RegainHitPoints(3d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic);RegainHitPoints(3d10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InfernalConduitDie:3" />
@@ -7441,8 +7455,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="InfernalConduit_Invigorate_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee8cdacb-097f-4e3e-94ce-251e95313302" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,4d10,Necrotic);Cast2[RegainHitPoints(4d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,4d10/2,Necrotic);Cast2[RegainHitPoints(4d10/2)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,4d10,Necrotic);RegainHitPoints(4d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,4d10/2,Necrotic);RegainHitPoints(4d10/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic);RegainHitPoints(4d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic);RegainHitPoints(4d10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InfernalConduitDie:4" />
@@ -7456,8 +7470,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="InfernalConduit_Invigorate_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee8cdacb-097f-4e3e-94ce-251e95313302" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,5d10,Necrotic);Cast2[RegainHitPoints(5d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,5d10/2,Necrotic);Cast2[RegainHitPoints(5d10/2)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,5d10,Necrotic);RegainHitPoints(5d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,5d10/2,Necrotic);RegainHitPoints(5d10/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic);RegainHitPoints(5d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic);RegainHitPoints(5d10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InfernalConduitDie:5" />
@@ -7471,8 +7485,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="InfernalConduit_Invigorate_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee8cdacb-097f-4e3e-94ce-251e95313302" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InfernalConduit_Invigorate" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,6d10,Necrotic);Cast2[RegainHitPoints(6d10)];" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,6d10/2,Necrotic);Cast2[RegainHitPoints(6d10/2)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(SELF,6d10,Necrotic);RegainHitPoints(6d10);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(SELF,6d10/2,Necrotic);RegainHitPoints(6d10/2);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic);RegainHitPoints(6d10)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Necrotic);RegainHitPoints(6d10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InfernalConduitDie:6" />
@@ -7607,7 +7621,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;InvokeHellCharge:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;0149cfd3-d80f-4ce8-8cf7-234e0864ba46,,;1c58959b-8cb1-491d-89b7-2a7d0a593215,,;22dfbbf4-f417-4c84-b39e-2039315961e6,,;,,;5bfbe9f9-4fc3-4f26-b112-43d404db6a89,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2fa6b127-6f8a-4150-8be6-6f62b7a85911" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="4ca6a918-a46b-4269-b11b-d98fb6694677" />
@@ -7747,7 +7761,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="88f7eda7-3bc8-436a-81c9-a0214232c339" />
         <field name="Name" type="NameTableFieldDefinition" value="Exsanguinate_Full" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXSANGUINATE_FULL_TEMP_HP,100,-1);RemoveStatus(SELF,EXSANGUINATE_FULL);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1);ApplyStatus(EXSANGUINATE_FULL_TEMP_HP,100,-1);RemoveStatus(SELF,EXSANGUINATE_FULL);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() or Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_AbilityDrain" />
@@ -7774,7 +7788,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3f862259-98ef-4d0b-b1c0-1503fd0a1441" />
         <field name="Name" type="NameTableFieldDefinition" value="Exsanguinate_Half" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="88f7eda7-3bc8-436a-81c9-a0214232c339" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXSANGUINATE_FULL_HALF_HP,100,-1);RemoveStatus(SELF,EXSANGUINATE_HALF);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1);ApplyStatus(EXSANGUINATE_FULL_HALF_HP,100,-1);RemoveStatus(SELF,EXSANGUINATE_HALF);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXSANGUINATE_HALF_TEMP_HP,100,-1);" />
       </fields>
     </stat_object>
@@ -8053,13 +8067,15 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Dark" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and not Self() and HasStatus('NO_ESCAPE_AURA_VICTIM');" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeHellCharge:1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e61d2266-f041-4bd5-a488-7b66e76d781c" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="00b0965a-b9cf-4f39-8b5b-49df3fc43f86" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="0afcbe13-7593-4bb7-8dfd-b7147a3f416c" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="InvokeHellCharge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
