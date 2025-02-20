@@ -557,6 +557,19 @@ While in a Wild Shape form, You can add your Wisdom modifier to your Constitutio
 #### Level 10: Moonlight Step
 You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
+### Circle of the Sea
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheSea.png?raw=true)
+
+#### Circle of the Sea Spells
+When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
+
+- Level 1: Ray of Frost, Fog Cloud, Thunderwave
+- Level 3: Gust of Wind, Shatter
+- Level 5: Lightning Bolt, Sleet Storm
+- Level 7: Ice Storm Storm Sphere
+- Level 9: Conjure Elemental, Hold Monster
+ 
 ## Fighter
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
