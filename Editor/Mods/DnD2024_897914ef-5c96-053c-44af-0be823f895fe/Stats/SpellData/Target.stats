@@ -57,16 +57,6 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b3bc1120-a034-485e-9648-982e3472198f" />
-        <field name="Name" type="NameTableFieldDefinition" value="PolearmMaster_BonusAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d49ada2d-b5e8-418e-a99b-1596d60e4d05" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK);RemoveStatus(SELF, POLEARM_MASTER_BONUS_ATTACK_OVERRIDE);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasWeaponProperty(WeaponProperties.Reach, GetActiveWeapon(context.Source)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, true)) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, true))" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b1e15c02-ea33-4346-b127-0ad351f4c6a8" />
@@ -5974,7 +5964,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fdf25d3d-b45f-47b6-9760-d2f2f0651239" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b4b1619g0580g4ba2g9c7bg6c81cac40be5" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary" enumeration_type_name="SpellFlagList" version="1" />
