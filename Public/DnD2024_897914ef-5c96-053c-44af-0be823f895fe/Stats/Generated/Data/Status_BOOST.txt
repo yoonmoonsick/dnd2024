@@ -4801,6 +4801,16 @@ using "CRE_ASTRALPRISON_GRAVITY"
 data "StackPriority" "9"
 data "Boosts" "JumpMaxDistanceMultiplier(3); IgnoreFallDamage(); CarryCapacityMultiplier(3);UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,4,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription(),ModifyVisuals(Spell_Transmutation_LongJump))"
 
+new entry "YMS_ITEM"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "MAG_HARPERS_SINGING_SWORD_BANE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_HARPERS_SINGING_SWORD_BANE"
+data "Boosts" "RollBonus(Attack,-1d4);RollBonus(SavingThrow,-1d4,Intelligence);RollBonus(SavingThrow,-1d4,Wisdom);RollBonus(SavingThrow,-1d4,Charisma);RollBonus(DeathSavingThrow,-1d4);"
+
 new entry "YMS_TEMPORARY_HP"
 type "StatusData"
 data "StatusType" "BOOST"
