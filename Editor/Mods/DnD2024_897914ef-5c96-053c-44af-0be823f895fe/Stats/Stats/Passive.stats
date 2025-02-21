@@ -18,20 +18,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b795c88b-2656-42f0-91da-7ac97a5c868c" />
-        <field name="Name" type="NameTableFieldDefinition" value="OneSmiteSpellPerTurn" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f699b606-08ee-45e1-8425-debfa6cce04e" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="af9855e8-ff44-425b-9d5c-8a389ea0a4e0" />
-        <field name="Name" type="NameTableFieldDefinition" value="OneLevelSpellPerTurn" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f699b606-08ee-45e1-8425-debfa6cce04e" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="91abb57e-7601-40ca-ad69-3f0607bcf925" />
         <field name="Name" type="NameTableFieldDefinition" value="Passive_Resistance_2024" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -44,15 +30,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b87e593b-ffd4-4877-9724-1b4539e371ed" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_AberrantShape'),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint))" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="550af02d-5b69-4fee-947e-9edca5eae350" />
-        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_GreatWFFFF" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="261a5f2a-7f51-4788-b1ee-e7093cc66fda" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6469357g85ddgf998g70c7g0188e7734944" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(FightingStyle_GreatWeapon(context.Source)):MinimumRollResult(Damage,3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2560,7 +2537,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('ACTION_SURGE')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ARCANECHARGE,100,1);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2757,22 +2734,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f7475ea-f730-4397-a88b-3f5db7a7ff40" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE_THEIF)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5b189088-e913-410a-8b72-67999ec486b7" />
-        <field name="Name" type="NameTableFieldDefinition" value="NPC_Bard_Heroism" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1166815c-ee96-4d72-ba11-bf6a9e6a2649" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HEROISM,100,-1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="20d8ca79-4086-494e-9ccd-5ea4f818ab54" />
-        <field name="Name" type="NameTableFieldDefinition" value="NPC_Wizard_MageArmor" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1166815c-ee96-4d72-ba11-bf6a9e6a2649" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAGE_ARMOR,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4550,6 +4511,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ec7f33b-9372-4f88-b6e3-906bfec422f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowBlade_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b123f69-5e4f-4152-823b-0138bb871c6d" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasObscuredState(ObscuredState.Clear,context.Target)):Advantage(AttackRoll);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2127d2eb-0a8f-4fb1-b5da-ce5dfbebd6b0" />
         <field name="Name" type="NameTableFieldDefinition" value="DEN_HellridersPride_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0585173c-9e2b-4b77-bf7f-68a9e3942ce1" />
@@ -4925,16 +4895,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2b97f6df-47a2-44eb-8dfa-b942bb682077" />
         <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and ConditionResult(context.HitDescription.FirstAttack) and IsMeleeWeaponAttack() and (HasWeaponProperty(WeaponProperties.Reach, GetAttackWeapon(context.Source)) or Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source)))" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e914ee67-fe25-4109-9104-ec26cc67382e" />
-        <field name="Name" type="NameTableFieldDefinition" value="PolearmMaster_BonusAttack_Override" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and not HasStatus('EXTRA_ATTACK',context.Source) and not SpellId('Target_OffhandAttack_DuelWielder')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,POLEARM_MASTER_BONUS_ATTACK_OVERRIDE, 100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
