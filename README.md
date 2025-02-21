@@ -886,6 +886,39 @@ You gain a Disguise Self and Brew Poison.
 #### Level 9: Roving Aim
 Your Speed isn’t reduced to 0 by using Steady Aim. 
 
+### Soulknife
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Soulknife.png?raw=true)
+
+*Strike Foes with Psionic Blades*
+
+>A Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, revealing their full potential only as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power.
+
+#### Level 3: Psionic Power
+You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel certain powers you have from this subclass. The Soulknife Energy Dice table shows the number of these dice you have when you reach certain Rogue levels, and the table shows the die size.
+
+**Soulknife Energy Dice**
+- Rogue Level: 3, Size: D6, Number: 4
+- Rogue Level: 5, Size: D8, Number: 6
+- Rogue Level: 9, Size: D8, Number: 8
+- Rogue Level: 11, Size: D10, Number: 8
+
+Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend a Psionic Energy Die, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your Psionic Energy Dice are all expended.
+
+You regain one of your expended Psionic Energy Dice when you finish a **Short Rest**, and you regain all of them when you finish a **Long Rest**.
+
+***Psi-Bolstered Knack***. If you fail an ability check, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success.
+
+#### Level 3: Psychic Blades
+You can manifest shimmering blades of psychic energy. You can make a melee or ranged attack with a psychic blade as a Bonus Action.
+
+#### Level 9: Soul Blades
+You can now use the following powers with your Psychic Blades.
+
+***Homing Strikes***. If you make an attack roll and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll.
+
+***Psychic Teleportation***. As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die, and throw the blade at an unoccupied space you can see up to 60 feet away. You then teleport to that space, and the blade vanishes.
+
 ### Thief
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Thief.png?raw=true)
