@@ -3686,6 +3686,55 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cbd0edb2-b413-4901-a41d-f74fbfa6a6da" />
+        <field name="Name" type="NameTableFieldDefinition" value="SoulknifePower" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h811110c2gece1gdf1dgd231g1af4eaeb00e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc893301egd785g74e2g1f05g537a0737264b" version="2" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SoulknifeEnergy,1,0);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ab122b26-78a3-4a08-9890-2422b4b8da54" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2d46d58-d953-4e53-96ad-fd3518875606" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiBolsteredKnack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="46c6f4be-8163-4fbc-8195-06738ba9f70f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7817195ge1ebg605cge5begae5c9f48ed32" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c25b83dgaeceg868dgfbfbga737ffa697e5" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SoulknifeEnergy:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThoughtShield_PsychicResistance" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('SoulknifeEnergy',1,0,false,false,context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,SoulknifeEnergy,1,0) " />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(PsychicBlade));RollBonus(RawAbility,LevelMapValue(PsychicBlade));" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;IsHidden;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="726c06f3-00ad-4b3c-a380-69ee893e3f40" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsychicBlades" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10c5096fg8eeeg1345g2e7eg1d05047dc7fa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2bf658e7gd07ag07c1g2d6eg909394a9b967" version="2" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SoulknifeEnergy:1;ReactionActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PsychicBlade);UnlockSpell(Projectile_PsychicBlade);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="311aac4a-f06e-42f1-9dbf-a16cc4eeb48e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SoulBlades" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d9430c4g0a71g9829gd1b0gb7638e858559" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h566cfd5fg95ecge52fg5a0agce3170b90ce7" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SoulknifeEnergy:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_PsychicTeleportation);UnlockInterrupt(Interrupt_HomingStrikes);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c4bb114-4d51-42f7-8a03-88f91a15b2e1" />
