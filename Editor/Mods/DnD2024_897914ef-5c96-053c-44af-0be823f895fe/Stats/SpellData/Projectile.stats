@@ -1898,6 +1898,15 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c4a4fea-865a-4380-b351-9cac25ff3b12" />
+        <field name="Name" type="NameTableFieldDefinition" value="WYR_Circus_MumblingStaff_FireBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="45dfe3c2-fe7d-4ba4-b673-8194db6706c3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D10Cantrip),Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D10Cantrip))/2,Fire,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d88d001-41be-4f46-bc5c-6fa05f27f410" />

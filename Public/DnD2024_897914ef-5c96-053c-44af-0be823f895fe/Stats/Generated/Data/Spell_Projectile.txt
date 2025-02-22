@@ -1614,6 +1614,13 @@ data "PrepareEffect" "77241e8c-ae8d-4402-92d8-a871ce64d86f"
 data "CastEffect" "6f4ad0bd-c5ce-4350-9865-c0ef858fd444"
 data "DamageType" "Lightning"
 
+new entry "Projectile_WYR_Circus_MumblingStaff_FireBolt"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_WYR_Circus_MumblingStaff_FireBolt"
+data "SpellSuccess" "DealDamage(LevelMapValue(D10Cantrip),Fire,Magical);"
+data "SpellFail" "IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D10Cantrip))/2,Fire,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);"
+
 new entry "Projectile_JUMPS"
 type "SpellData"
 data "SpellType" "Projectile"
