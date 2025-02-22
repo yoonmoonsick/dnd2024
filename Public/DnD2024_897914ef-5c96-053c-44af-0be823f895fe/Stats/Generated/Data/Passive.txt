@@ -3248,6 +3248,11 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_ZOC_AdvantageOnMeleeAttackWhileSurounded_Gloves_Passive"
+type "PassiveData"
+using "MAG_ZOC_AdvantageOnMeleeAttackWhileSurounded_Gloves_Passive"
+data "Boosts" "IF(IsMeleeAttack() and HasEnemyWithinRange('SG_Incapacitated', 3, nil, 2, context.Target, context.Source)):Advantage(AttackRoll);"
+
 new entry "MAG_Acid_NoxiousFumes_Gloves_Passive"
 type "PassiveData"
 using "MAG_Acid_NoxiousFumes_Gloves_Passive"
