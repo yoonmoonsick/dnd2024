@@ -3245,8 +3245,13 @@ data "Icon" "Spell_Evocation_Darkness"
 data "Properties" "Highlighted;ForceShowInCC;OncePerAttack"
 data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud);AreaDamageEvade();Advantage(Skill,Stealth);ActionResource(Movement,3,0);"
 
-new entry "Item"
+new entry "YMS_Item"
 type "PassiveData"
+
+new entry "MAG_AttackDamage_Bonus_Passive"
+type "PassiveData"
+using "MAG_AttackDamage_Bonus_Passive"
+data "Boosts" "RollBonus(Attack, 2);CharacterWeaponDamage(2);EntityThrowDamage(2);"
 
 new entry "MAG_Infernal_Metal_AttackBonus_Passive"
 type "PassiveData"
