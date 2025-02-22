@@ -4812,6 +4812,13 @@ new entry "YMS_ITEM"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "MAG_MONK_SWIFT_AS_THE_WIND"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_MONK_SWIFT_AS_THE_WIND"
+data "Boosts" "Advantage(AttackRoll);CharacterWeaponDamage(1d8, Force);CharacterUnarmedDamage(1d8, Force);"
+data "RemoveConditions" "IsAttack() and (not IsMiss() or IsCritical())"
+
 new entry "MAG_CRITICAL_HIDING_CRITICAL"
 type "StatusData"
 data "StatusType" "BOOST"
