@@ -4812,6 +4812,18 @@ new entry "YMS_ITEM"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "MAG_HARPERS_HARMONIZING_RAPIER_HARMONY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_HARPERS_HARMONIZING_RAPIER_HARMONY"
+data "StackType" "Overwrite"
+
+new entry "MAG_PLANE_SHIFTER_SLAYER_BLESS"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_PLANE_SHIFTER_SLAYER_BLESS"
+data "Boosts" "WeaponAttackRollBonus(1d4);IF(Tagged('GITHYANKI', context.Target) or Tagged('ELEMENTAL', context.Target) or Tagged('ABERRATION', context.Target) or Tagged('FIEND', context.Target)):WeaponDamage(1d4, Slashing);"
+
 new entry "MAG_MONK_SWIFT_AS_THE_WIND"
 type "StatusData"
 data "StatusType" "BOOST"
