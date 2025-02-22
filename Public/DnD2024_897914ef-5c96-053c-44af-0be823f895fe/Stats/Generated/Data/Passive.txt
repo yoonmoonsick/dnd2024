@@ -3248,6 +3248,11 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_Harpers_ArmorOfShadows_Passive"
+type "PassiveData"
+using "MAG_Harpers_ArmorOfShadows_Passive"
+data "StatsFunctors" "IF(not HasObscuredState(ObscuredState.Clear)):ApplyStatus(MAG_HARPERS_OBSCURITY_SAVING_THROWS, 100, 2);IF(HasObscuredState(ObscuredState.Clear)):RemoveStatus(MAG_HARPERS_OBSCURITY_SAVING_THROWS)"
+
 new entry "MAG_AttackDamage_Bonus_Passive"
 type "PassiveData"
 using "MAG_AttackDamage_Bonus_Passive"
