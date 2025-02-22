@@ -1,3 +1,9 @@
+new entry "Projectile_ObliterationOrb_Netherbrain_Explosion"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_ObliterationOrb_Netherbrain_Explosion"
+data "SpellProperties" "IF(not Tagged('AI_USESPELL_A')):DealDamage(20d10,Force);AI_ONLY:DealDamage(20d10,Force);AI_ONLY:ApplyStatus(AI_HELPER_DEBUFF,100,3);IF(Tagged('AI_USESPELL_A')):RemoveStatus(OBLITERATIONORB_TECHNICAL,);"
+
 new entry "Projectile_YMS_Item"
 type "SpellData"
 data "SpellType" "Projectile"
