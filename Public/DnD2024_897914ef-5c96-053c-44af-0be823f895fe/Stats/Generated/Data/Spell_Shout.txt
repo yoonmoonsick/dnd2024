@@ -162,6 +162,12 @@ data "PrepareEffect" "c218f05b-1e12-4298-beff-e4d33a5fa5a5"
 data "CastEffect" "1eee1ec0-263e-4f15-8909-84da438559e4"
 data "TargetEffect" "68ad05e0-ad4d-48cf-8b19-84434100711a"
 
+new entry "Shout_Sacrifice_Slayer"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Sacrifice_Slayer"
+data "SpellRoll" "not SavingThrow(Ability.Constitution,ManeuverSaveDC());"
+
 new entry "Shout_YMS_Background"
 type "SpellData"
 data "SpellType" "Shout"
