@@ -3514,6 +3514,16 @@ data "Boosts" "Ability(Intelligence,2,22)"
 data "StatusPropertyFlags" "IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
 data "StatusGroups" "SG_RemoveOnRespec"
 
+new entry "YMS_NPC"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "LOW_RAPHAEL_WILLPOWER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LOW_RAPHAEL_WILLPOWER"
+data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(PLANAR_BINDING);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(HOLD_MONSTER);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(TURN_THE_UNHOLY);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(TURNED);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(SG_Dominated);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(SG_Restrained);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(SG_Incapacitated);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(FEARED);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(HIDEOUS_LAUGHTER);IF(RemoveCause(StatusRemoveCause.TimeOut)):RemoveStatus(IRRESISTIBLE_DANCE);"
+
 new entry "DAMAGE_SHIELD_NPC_RADIANT"
 type "StatusData"
 data "StatusType" "BOOST"
