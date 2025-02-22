@@ -9,3 +9,9 @@ data "StatusType" "EFFECT"
 using "INTERRUPT_LEGENDARY_RESISTANCE"
 data "OnApplyFunctors" "IF(RollDieAgainstDC(DiceType.d20,11)):RestoreResource(LegendaryResistanceCharge,1,0);IF(RollDieAgainstDC(DiceType.d20,20)):RestoreResource(LegendaryResistanceCharge,2,0)"
 
+new entry "GB_GUARDKILLER"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "GB_GUARDKILLER"
+data "StatusPropertyFlags" "None"
+
