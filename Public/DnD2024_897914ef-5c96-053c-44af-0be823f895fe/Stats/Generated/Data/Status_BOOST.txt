@@ -4707,6 +4707,13 @@ data "StatusType" "BOOST"
 using "HEALTHBOOST_HARDCORE"
 data "Boosts" "IncreaseMaxHP(40%);RollBonus(Attack,2);SpellSaveDC(2)"
 
+new entry "BLADE_BARRIER_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "BLADE_BARRIER_AURA"
+data "OnApplyRoll" "not SavingThrow(Ability.Dexterity, 17)"
+data "OnTickRoll" "not SavingThrow(Ability.Dexterity, 17)"
+
 new entry "WALLOFFORCE"
 type "StatusData"
 data "StatusType" "BOOST"
