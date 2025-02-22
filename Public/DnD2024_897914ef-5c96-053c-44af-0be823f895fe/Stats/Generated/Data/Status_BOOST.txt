@@ -4837,6 +4837,12 @@ new entry "YMS_ITEM"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "MAG_RAGE_LOWHP_VIOLENCE_TECHNICAL"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_RAGE_LOWHP_VIOLENCE_TECHNICAL"
+data "TickFunctors" "IF(not Dead() and Combat() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50)):ApplyStatus(MAG_VIOLENCE,100,2)"
+
 new entry "MAG_HARPERS_HARMONIZING_RAPIER_HARMONY"
 type "StatusData"
 data "StatusType" "BOOST"
