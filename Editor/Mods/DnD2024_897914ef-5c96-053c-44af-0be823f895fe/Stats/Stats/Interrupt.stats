@@ -1197,7 +1197,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_BlindingShot" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsRangedAttack() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(10, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Projectile_VengefulShot,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_VengefulShot,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
       </fields>
     </stat_object>
