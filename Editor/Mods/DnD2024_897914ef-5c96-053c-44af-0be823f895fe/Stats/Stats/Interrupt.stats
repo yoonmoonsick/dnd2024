@@ -1230,7 +1230,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5c8ae97a-ce3c-453f-98e0-517052955f95" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodPrice" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3f5f5454-f19e-49aa-9a53-66837ea4aa99" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf4d59f5eg0d3dgf675gf7d3g241688eb3241" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc468fafdg0527g4cd7gc2e9g1b4260a5cf56" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_Bloodfeeding_ScarletTrance" />
@@ -1238,6 +1237,12 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10)" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
