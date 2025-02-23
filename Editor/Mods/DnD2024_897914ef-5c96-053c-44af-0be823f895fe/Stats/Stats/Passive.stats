@@ -3995,7 +3995,6 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AcheronsChain);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -4039,13 +4038,17 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfc200813gd2f5gcd02g3844g3d2eec13f3d4" version="2" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="8951bc77-066b-4189-9780-4796781f80af" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;Highlighted;ToggledDefaultAddToHotbar;Temporary;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h718c658dgedc0g3c2dg4d0bgc72c61de2e55" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h718c658dgedc0g3c2dg4d0bgc72c61de2e55" version="2" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnleashHell);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_BurningSeals_UnleashHell);UnlockInterrupt(Interrupt_BurningSeals_UnleashHell_Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IllriggerBurnSeals();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(SpellId('Target_BurningSeals_Fire')):CreateExplosion(Projectile_UnleashHell_Fire);IF(SpellId('Target_BurningSeals_Necrotic')):CreateExplosion(Projectile_UnleashHell_Necrotic);UseActionResource(SELF,ReactionActionPoint,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
