@@ -3256,6 +3256,11 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_Cold_ChilledOnSpellDamage_Passive"
+type "PassiveData"
+using "MAG_Cold_ChilledOnSpellDamage_Passive"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(CHILLED, 100, 2)"
+
 new entry "MAG_Cunning_HandCrossbow_Combo_Passive"
 type "PassiveData"
 using "MAG_Cunning_HandCrossbow_Combo_Passive"
