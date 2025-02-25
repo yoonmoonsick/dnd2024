@@ -2921,7 +2921,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbba9c54g9f89g1845gea12gd6ec3c05b47c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b6185b5g0704g72e5gb52dg878fad5728a8" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcb6cb63ag6ce8g8346g80b7g730e6c95b6f6" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharlatanTrick);ActionResource(CharlatanTrickCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(CharlatanTrickCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(CharlatanTrickCharge,1,0);Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',13,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',15,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):Skill(Deception,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharlatanTrick);ActionResource(CharlatanTrickCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(CharlatanTrickCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(CharlatanTrickCharge,1,0);Skill(Deception,IntelligenceModifier);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3504,7 +3504,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha4c10b62g9649g60cag5623g78d28ab74060" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h353d0172gcf2eg7574g6dfeg728a17ee1a32" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_FeyPresence" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Deception,1);IF(AbilityGreaterThan('Wisdom',13,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Wisdom',15,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):Skill(Deception,1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):Skill(Deception,1);Skill(Intimidation,1);IF(AbilityGreaterThan('Wisdom',13,context.Source)):Skill(Intimidation,1);IF(AbilityGreaterThan('Wisdom',15,context.Source)):Skill(Intimidation,1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):Skill(Intimidation,1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):Skill(Intimidation,1);Skill(Performance,1);IF(AbilityGreaterThan('Wisdom',13,context.Source)):Skill(Performance,1);IF(AbilityGreaterThan('Wisdom',15,context.Source)):Skill(Performance,1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):Skill(Performance,1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):Skill(Performance,1);Skill(Persuasion,1);IF(AbilityGreaterThan('Wisdom',13,context.Source)):Skill(Persuasion,1);IF(AbilityGreaterThan('Wisdom',15,context.Source)):Skill(Persuasion,1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):Skill(Persuasion,1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):Skill(Persuasion,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Deception,WisdomModifier);Skill(Intimidation,WisdomModifier);Skill(Performance,WisdomModifier);Skill(Persuasion,WisdomModifier);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
