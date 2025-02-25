@@ -13,7 +13,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="WILDSHAPE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);UnlockSpell(Target_WildShape_Sea_Damage);" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(WILDSHAPE_WRATH_OF_THE_SEA_AURA,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Ally()):ApplyStatus(WILDSHAPE_WRATH_OF_THE_SEA_AURA,100,-1)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(WILDSHAPE_ACTIVE)" />
         <field name="Rules" type="GuidObjectTableFieldDefinition" value="acc89ec3-a77f-45bc-be5d-8e0f0d7cc68a" />
