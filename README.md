@@ -503,6 +503,37 @@ The option you chose for Elemental Fury grows more powerful, as detailed below.
   - Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell’s range increases by 300 feet.
   - Primal Strike. The extra damage of your Primal Strike increases to 2d8.
 
+### Circle of the Dream
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfDreams.png?raw=true)
+
+> Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids’ guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.
+
+
+#### Circle of the Sea Spells
+When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
+- Level 1: Charm Person, Sleep
+- Level 3: Misty Step, Pass Without Trace
+- Level 5: Summon Fey, Mass Healing Word
+- Level 7: Confusion, Dimension Door
+- Level 9: Conjure Elemental, Mass Cure Wounds
+
+#### Level 3: Balm of the Summer Court
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/PassiveFeature_BalmOfTheSummerCourt.png?raw=true)
+
+You become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level. 
+
+As a bonus action, you can choose one creature you can see within 60 feet of you and spend a number of those dice. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 hit point per die spent. You regain all expended dice when you finish a long rest.
+
+#### Level 6: Hearth of Moonlight and Shadow
+Home can be wherever you are. You can invoke the shadowy power of the Gloaming Court to help guard your respite. You and your allies gain the effect of a short rest, and until your next long rest, you gain a +5 bonus to Stealth and Perception checks.
+
+#### Level 10: Hidden Paths
+Starting at 10th level, you can use the hidden, magical pathways that some fey use to traverse space in the blink of an eye. As a bonus action on your turn, you can teleport up to 60 feet to an unoccupied space you can see. Alternatively, you can use your action to teleport one willing creature you touch up to 30 feet to an unoccupied space you can see.
+
+You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
+
 ### Circle of the Land
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheLand.png?raw=true)
