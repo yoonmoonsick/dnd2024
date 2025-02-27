@@ -509,7 +509,6 @@ The option you chose for Elemental Fury grows more powerful, as detailed below.
 
 > Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids’ guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.
 
-
 #### Circle of the Sea Spells
 When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
 - Level 1: Charm Person, Sleep
