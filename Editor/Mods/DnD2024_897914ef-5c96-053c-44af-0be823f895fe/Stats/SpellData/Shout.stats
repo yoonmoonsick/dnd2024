@@ -1147,7 +1147,7 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_ViciousMockery" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;FeyStepCharge:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="ff78157b-f004-4813-b6d7-83744a7a56e4,,;,,;ebc9253d-d2b2-4657-b8c1-df334c6047b1,,;3aa138db-f6d7-495b-a34f-281b1d71fbc9,,;34da5af5-71b6-4278-9cc0-d5266ca98876,,;,,;32eb3c27-cd2c-49c1-a6c6-b21b2cccf050,,;,,;,," />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CannotTargetTerrain;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="15f05cf9-02e4-45df-83ce-fd82b04a7fa1" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="77e698a6-412f-43db-be9e-68e9a6f3afa7" />
@@ -1157,7 +1157,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Combat() and (not HasStatus('SILENCED') or HasStatus('SILENCED') )" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(TAUNTED,100,2);ApplyStatus(SELF,FEYSTEP_FREE,100, 1)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,FEYSTEP_FREE,100, 1)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead() and not Self()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead();" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
     </stat_object>
@@ -1175,7 +1175,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DreadfulAspect" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h069a49b2gc671g1577g23c6gf0b5d29caf9c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6603724fg76ddge86dg1834gf90d6602b0f6" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6603724fg76ddge86dg1834gf90d6602b0f6" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Psychic)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Control_Fear_L4to5" />
@@ -1188,6 +1188,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="aa5926e1-4f85-4ef3-ac32-ae524d17ebd4" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FEYSTEP_FREE,100,1)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(2d10,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CannotTargetTerrain;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
