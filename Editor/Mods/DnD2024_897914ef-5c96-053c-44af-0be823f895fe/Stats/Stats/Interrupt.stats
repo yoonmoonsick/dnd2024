@@ -3,6 +3,39 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd8b8b68-38e6-41ce-9242-aeb5d73aa397" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WeaponMastery_Nick" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d2c46edg8108g15e5g3d86g2fd35791ede7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="DualWielder(context.Source) and Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsMeleeAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true)));" />
+        <field name="Properties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Roll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeOffHandWeaponAttack)" />
+        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon/2, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="FreeOffhandAttack:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf729263eg37dcg43fbg923cg24cc642f6773" version="1" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FreeOffhandAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77f76cbe-fcc4-47d8-9dcb-00e3e924a0f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DualWielder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd8b8b68-38e6-41ce-9242-aeb5d73aa397" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd0f46bcga5c8gb339g33c2g7c8ec0f152ef" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="DualWielder(context.Source) and Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsMeleeAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="30172d70-4912-4206-ba72-eb291f782a47" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GithyankiParry_PC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="493ec5bb-f3c5-49a3-b25c-d6bda949c4f9" />
