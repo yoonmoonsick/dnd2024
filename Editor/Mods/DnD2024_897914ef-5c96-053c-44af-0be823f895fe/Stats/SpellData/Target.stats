@@ -8379,12 +8379,16 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_LightningLure" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Lightning);Distance(3)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Lightning);" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_ThornWhip_L0" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_ThornWhip_L0" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Lightning_ShockingGrasp_L0" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Lightning_ShockingGrasp_L0" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_DamagePiercingWhip" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;ad12e2fa-1b15-4fcd-884f-38ba82d7e50e,,;5ee4c893-0149-4d08-a1f7-c4fe633530ba,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="6a1dbffa-77da-4362-bcad-a035db12aeec" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Lightning_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Lightning_Gen_L1to3_Loop" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="77241e8c-ae8d-4402-92d8-a871ce64d86f" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="10fc784a-4312-47a8-a6b8-6b529c646ac4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8581,8 +8585,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="da404a80-13c0-4805-9629-5f194d298e0f" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="SpawnExtraProjectiles(Projectile_GreenFlameBlade);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Fire);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value=";" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="CrSpell_Prepare_Azer_SearingSmite" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="CrSpell_Loop_Azer_SearingSmite" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Fire_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Fire_Gen_L1to3_Loop" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_SearingSmite_L1to3" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b626a482-ca60-4426-a51e-2aea6a016611" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="259f5c89-10e6-43a1-90ae-1fe67b8f141c" />
@@ -8630,6 +8634,10 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="d49cf296-7f7b-4658-8171-13eeb08c7d88" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_VENGEFULBLADE,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VengefulBlade" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
