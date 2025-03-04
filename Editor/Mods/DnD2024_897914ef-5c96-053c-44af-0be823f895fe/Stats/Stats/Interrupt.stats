@@ -821,8 +821,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ef55b8fgf314gc9b4gf4a8g223fa00e90e4" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DreadAmbusher_Ranged" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IsAttack() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem()" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,DEVOUR_INTELLECT_VFX,100,0);DealDamage(2d6,Psychic,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="DreadfulStrikeCharge:1;Interrupt_DreadfulStrike:1" />
         <field name="Stack" type="StringTableFieldDefinition" value="DreadfulStrike" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
@@ -832,14 +831,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4c1b2bd3-d61b-4c01-84be-673589d0270f" />
+        <field name="UUID" type="IdTableFieldDefinition" value="af208425-8f1e-4783-9d0b-e9d517fc1238" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DreadfulStrike_11" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="455eb2b0-df16-4420-8229-920bb9c30ea0" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbf65ea8g6b3ag9513g2457g64a5fa1e719e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic,Magical);ApplyStatus(FRIGHTENED,100,2, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnFrightened(), DisadvantageOnFrightened()))" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcbf65ea8g6b3ag9513g2457g64a5fa1e719e" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,DEVOUR_INTELLECT_VFX,100,0);DealDamage(2d8,Psychic,Magical);ApplyStatus(FRIGHTENED,100,2, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnFrightened(), DisadvantageOnFrightened()));" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8, Psychic)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h61e0441ag24b2g375bgd964g7acf7b839edd" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c1b2bd3-d61b-4c01-84be-673589d0270f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DreadfulStrike_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="455eb2b0-df16-4420-8229-920bb9c30ea0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h61e0441ag24b2g375bgd964g7acf7b839edd" version="2" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsCritical() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ed71bb2-2fce-4fb7-a6ad-6014df21a6b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DreadfulStrike_11_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4c1b2bd3-d61b-4c01-84be-673589d0270f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcbf65ea8g6b3ag9513g2457g64a5fa1e719e" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsCritical() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,DEVOUR_INTELLECT_VFX,100,0);DealDamage(2d8,Psychic,Magical);ApplyStatus(FRIGHTENED,100,2, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC(), AdvantageOnFrightened(), DisadvantageOnFrightened()));" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8, Psychic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
