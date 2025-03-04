@@ -10,10 +10,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="336be26b-cd71-4a79-bd88-509834a39fa5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dummy" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c791d73f-d69d-4ca3-969a-f7bfb68424e4" />
         <field name="Name" type="NameTableFieldDefinition" value="DeathSavingThrows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="190c08b9-8dc1-4d67-b2b7-65cb85c5aeb8" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnStatusApply;OnStatusApplied;OnStatusRemove;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(WeaponMasteryCheck()):ApplyStatus(UNLOCK_WEAPON_MASTERY,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -30,6 +39,41 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b87e593b-ffd4-4877-9724-1b4539e371ed" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(2d8)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_AberrantShape'),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint))" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_WeaponMastery" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cffff1cd-3683-4a7c-b45e-3567bdea256e" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Graze" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h718a4835g303bg47e2g0c25gba59ae64244c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d9ee79fga6a3gf6aag0c4ag3e5425b954af" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_Overwhelm" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(max(max(max(StrengthModifier,DexterityModifier),IntelligenceModifier),WisdomModifier),CharismaModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a51b664-7c85-4aa1-a81c-1ce91ece5879" />
+        <field name="Name" type="NameTableFieldDefinition" value="Overwhelm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a51822e9-bf05-4e9f-b013-31e7cd77a225" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72253669-a9dc-40d2-898a-1f02555a5e09" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_FightingStyle" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2103,21 +2147,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cffff1cd-3683-4a7c-b45e-3567bdea256e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Graze" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c647a1bg0181g8bcag114bg1be568c93ec5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h939b3c68gb2f3g71e5geca1gb6006f1aebf1" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_Overwhelm" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value=";" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="13587294-29c6-4d17-8107-c3c639e9fbf0" />
         <field name="Name" type="NameTableFieldDefinition" value="Cleave" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
@@ -2144,17 +2173,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,1d10);RollBonus(RawAbility,1d10)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,SecondWindCharge,1,0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2a51b664-7c85-4aa1-a81c-1ce91ece5879" />
-        <field name="Name" type="NameTableFieldDefinition" value="Overwhelm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a51822e9-bf05-4e9f-b013-31e7cd77a225" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c647a1bg0181g8bcag114bg1be568c93ec5" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(max(1,StrengthModifier)+LevelMapValue(StandardProficiencyBonusScale)/2,Slashing)" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source)):UnlockInterrupt(Interrupt_Overwhelm);IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source)):UnlockInterrupt(Interrupt_Overwhelm)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
