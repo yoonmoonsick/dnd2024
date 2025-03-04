@@ -55,10 +55,24 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h718a4835g303bg47e2g0c25gba59ae64244c" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d9ee79fga6a3gf6aag0c4ag3e5425b954af" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_Overwhelm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Physical" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(max(max(max(StrengthModifier,DexterityModifier),IntelligenceModifier),WisdomModifier),CharismaModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1bf22aaa-989a-4832-a20e-ef96476d12bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cffff1cd-3683-4a7c-b45e-3567bdea256e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf19e28abg4142g7f3agd580gadb37fb93658" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ddfb429gd5afgc22dg7422g379067d76def" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_GREATCLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_PIKE', GetAttackWeapon(context.Source)) or Tagged('WPN_WARHAMMER', GetAttackWeapon(context.Source)) or Tagged('WPN_HEAVY_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2066,22 +2080,6 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h15dfc693g35c7gbaa4g0d14gd3005284e25d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Slash_New" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FreeOffhandAttack,1,0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4c6471ec-6de7-4cd2-93d1-9fccefb84d5e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Push" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0697596ag8a69g4da5ga36cg24f0d369e2a2" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f420eedg6886g8c61ge85dg89d59bb43ddb" version="2" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()));IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character() and not Ally()):ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()));" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
