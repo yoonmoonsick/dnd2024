@@ -364,3 +364,16 @@ function DisadvantageOnNoEscape(source, target)
 
     return Tagged('NO_ESCAPE_DISADV', target)
 end
+
+function GetModifier(value)
+    return math.floor((value - 10) / 2)
+end
+
+function GetMaxModifier()
+    local maxValue1 = math.max(GetModifier(context.Source.Strength), GetModifier(context.Source.Dexterity))
+    local maxValue2 = math.max(GetModifier(context.Source.Intelligence), maxValue1)
+    local maxValue3 = math.max(GetModifier(context.Source.Wisdom), maxValue2)
+    local maxValue4 = math.max(GetModifier(context.Source.Charisma), maxValue3)
+    
+    return maxValue4
+end
