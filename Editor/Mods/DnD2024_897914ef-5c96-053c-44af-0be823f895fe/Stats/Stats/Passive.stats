@@ -46,6 +46,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_WeaponMastery" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5be407e9g20bdgb42ag03d5g21cf54c6cc49" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -59,20 +60,107 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(max(max(max(StrengthModifier,DexterityModifier),IntelligenceModifier),WisdomModifier),CharismaModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9bc43d96ge2ecg4495gec70g8d9f57bc5831" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1bf22aaa-989a-4832-a20e-ef96476d12bf" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Push" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cffff1cd-3683-4a7c-b45e-3567bdea256e" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf19e28abg4142g7f3agd580gadb37fb93658" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ddfb429gd5afgc22dg7422g379067d76def" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f420eedg6886g8c61ge85dg89d59bb43ddb" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_GREATCLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_PIKE', GetAttackWeapon(context.Source)) or Tagged('WPN_WARHAMMER', GetAttackWeapon(context.Source)) or Tagged('WPN_HEAVY_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcfd09f4eg53b0gef01gf3feg98b82bc31dcc" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66302073-fb6b-4955-89ba-f2481a228965" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Sap" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74353f5eg58b2gffe1g3fcagc7368e6ff429" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h087a32c4g2a48g7cb6g23d8g2bccfedeec0f" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h4003391cgf571g1e51gf459g8e67d03dd20f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_AttackDisadvantage" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f6d9faf-80ff-459f-945f-47abdfffd975" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Slow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d5c3d9dg192fg1ab0g5065gfb409f86933d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea10831cg7236g7c99g92f7g357a8effbcde" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hea61956fg1da6gc5e0g7b67g7a9b1ba0597e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HamstringShot" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_CLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_JAVELIN', GetAttackWeapon(context.Source)) or Tagged('WPN_LIGHT_CROSSBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(SLOW_WM, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb396205-706f-4001-aaf4-6d45daedcf20" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Topple" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76e7d552gae43g46b1g06b9g80419a0324d7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1917ec66g97efg74eegfc52gb81a3fd46bfd" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h21932815gc614g2d35g4a8cg6e71936a35b9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38832340-f1f6-4f9f-a005-4016e301ea35" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Vex" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0734a873g95cfg6a01gddcfg552f3895904f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d090fbeg1234gf414g2118gbd2650414d79" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80086518g900bgf856g98f1g144561f046fd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_FeintingAttack" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_HANDAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_RAPIER', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTSWORD_CROSSBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_HAND_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(VEX, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Nick" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h861bf672g247fg1f94g2767gaec92d76e2dd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_WeaponMastery_Nick);ActionResource(FreeOffhandAttack,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f3a7382-7195-463c-bc47-9426b4236add" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1272c1a7gf44dg6913g5f8dg36381aca3c35" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65a049b4gfe9bg937agb619g995b8cd71042" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9cddc110g0130gc809gaaedgd3872e1a68a8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave);CreateExplosion(Target_Web)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2065,97 +2153,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad961b2b-3427-4c08-a54a-c9b86bbf1525" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDamageTypePoison()):DamageBonus(1d4,Poison)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Name" type="NameTableFieldDefinition" value="Nick" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4e230bdg54ceg63b5g6854ge8ce220c2e8b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and ConditionResult(context.HitDescription.FirstAttack) and IsMeleeWeaponAttack() and not SpellId('Target_OffhandAttack_DuelWielder')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source)):ApplyStatus(SELF,FREE_OFFHAND_ATTACK,100,1);IF(not Tagged('PLAYABLE',context.Source)):ApplyStatus(SELF,FREE_OFFHAND_ATTACK,100,1)" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h15dfc693g35c7gbaa4g0d14gd3005284e25d" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Slash_New" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FreeOffhandAttack,1,0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2079037a-6242-4857-a9db-f84b184ad382" />
-        <field name="Name" type="NameTableFieldDefinition" value="Sap" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cfe534dga6f5gf182ge1c6g1fd7894f6ec4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h087a32c4g2a48g7cb6g23d8g2bccfedeec0f" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SAP,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SAP,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()))" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DistractingStrike_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d884058c-1585-4881-9e1b-e67ed0cd73db" />
-        <field name="Name" type="NameTableFieldDefinition" value="Slow" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc71f7bb4g5029g4e4bg9de5g637a4a3e34f7" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea10831cg7236g7c99g92f7g357a8effbcde" version="2" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SLOW_WM,100,2,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SLOW_WM,100,2,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()))" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_HamstringShot" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e98b8dd7-d753-4bbe-a174-5821e3f7ad65" />
-        <field name="Name" type="NameTableFieldDefinition" value="Topple" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66842f7dg459cg428ega015g73ace0595be7" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1917ec66g97efg74eegfc52gb81a3fd46bfd" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()))" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="77d87765-5eb7-48d2-a3c7-633b512bac56" />
-        <field name="Name" type="NameTableFieldDefinition" value="Vex" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c1689c6g4a75ge21eg9229g6d681feab55a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d090fbeg1234gf414g2118gbd2650414d79" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(VEX,100,2);IF(not Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SELF,VEX_OWNER,100,2);IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(VEX,100,2);IF(WeaponMasteryCheck() and Tagged('PLAYABLE',context.Source) and Character()):ApplyStatus(SELF,VEX_OWNER,100,2)" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_FeintingAttack" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="13587294-29c6-4d17-8107-c3c639e9fbf0" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cleave" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="607dfd87-bb9f-44a1-ad96-091ff1744f16" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4055fcbegc3a6gf362g604bg3c89ff57928c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he4b11b90gfe70g4bc6ga15eg0edd36a31652" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value=";" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5058,35 +5055,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8f29351c-b752-4a8f-9475-2f7bf03630c2" />
-        <field name="Name" type="NameTableFieldDefinition" value="PolearmMaster_BonusAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2b97f6df-47a2-44eb-8dfa-b942bb682077" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and ConditionResult(context.HitDescription.FirstAttack) and IsMeleeWeaponAttack() and (HasWeaponProperty(WeaponProperties.Reach, GetAttackWeapon(context.Source)) or Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source)))" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c1dfd82-b018-4591-ad31-92330b671017" />
         <field name="Name" type="NameTableFieldDefinition" value="DualWielder_BonusAC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="43440de7-517d-40e8-b04b-638ec2b2c0b2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75354733gc2dcg47beg8ed5gae0e7f501c75" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd293cf76g45abgb7e6g13a7g51ccf6c7d5cb" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FreeOffhandAttack,1,0)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and ConditionResult(context.HitDescription.FirstAttack) and IsMeleeWeaponAttack() and not SpellId('Target_OffhandAttack_DuelWielder')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FREE_OFFHAND_ATTACK,100,1)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3c7df9e0-6ee9-4ae3-8d9e-731b1279b5cb" />
-        <field name="Name" type="NameTableFieldDefinition" value="DualWielder_BonusAC_Override" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e914ee67-fe25-4109-9104-ec26cc67382e" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FREE_OFFHAND_ATTACK_OVERRIDE, 100, 1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FreeOffhandAttack,1,0);UnlockInterrupt(Interrupt_DualWielder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
