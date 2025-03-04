@@ -1570,9 +1570,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0b8fa88g87f1g7084g1031g7d7594dd0f64" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ad7e6eagb8b9g9778g0139g6b4981b560a6" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Crusher_Push);ActionResource(CrusherPushCharge,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageDoneForType(DamageType.Bludgeoning,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CRUSHER_PUSH, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1604,7 +1606,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ee02ec2g6ef3g8366g93f3ga812825f02e0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb5f1bd0gf769g3b99ge530g78d461510813" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_RevitalizingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('PIERCER_COOLDOWN',context.Source) " />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('PIERCER_COOLDOWN',context.Source) and MainDamageTypeIs(DamageType.Piercing)):Reroll(Damage,20,false)" />
@@ -1631,9 +1633,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d376467g9742g7b21gc702g01788223a069" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c4aac54g2d93g5213gab61g9ccc72fa45de" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Slasher_Hamstring);ActionResource(SlasherHamstringCharge,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageDoneForType(DamageType.Slashing,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HAMSTRING,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
