@@ -4248,6 +4248,7 @@ data "StackId" "SWARMKEEPER_SELECT_BEE"
 data "StackType" "Overwrite"
 data "Passives" "Swarmkeeper_Bee;"
 data "StatusPropertyFlags" "IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
+data "OnApplyFunctors" "RemoveStatus(SELF, SWARMKEEPER_BEE);RemoveStatus(SELF, SWARM_JELLYFISH);RemoveStatus(SELF, SWARM_MOTH)"
 data "StatusGroups" "SG_RemoveOnRespec"
 
 new entry "SWARMKEEPER_SELECT_JELLYFISH"

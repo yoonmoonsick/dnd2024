@@ -3521,22 +3521,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2fe44b86-8284-4156-b1c6-274474df1888" />
         <field name="Name" type="NameTableFieldDefinition" value="DreadfulStrike_FeyWanderer" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ef55b8fgf314gc9b4gf4a8g223fa00e90e4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d5772e8ge541gf8c7g2697gf6d34c24f2bb" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4,Psychic)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d5772e8ge541gf8c7g2697gf6d34c24f2bb" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerAttack;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Psychic,Magical)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cae853c8-553a-4cc9-a743-967905d4613a" />
-        <field name="Name" type="NameTableFieldDefinition" value="DreadfulStrike_FeyWanderer_11" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe44b86-8284-4156-b1c6-274474df1888" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Psychic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3593,7 +3584,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8f4441fg5384g43e6gb731ged328dd1927e" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GatheredSwarm_Bees" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Swarmkeeper_Select);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Swarmkeeper_Select);IF(not HasStatus('SWARMKEEPER_SELECT_BEE',context.Source) and not HasStatus('SWARMKEEPER_SELECT_JELLYFISH',context.Source) and not HasStatus('SWARMKEEPER_SELECT_MOTH',context.Source) ):UnlockSpellVariant(SpellId('Shout_Swarmkeeper_Select'),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
