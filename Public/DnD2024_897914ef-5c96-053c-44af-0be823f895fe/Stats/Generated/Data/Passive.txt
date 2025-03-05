@@ -116,7 +116,7 @@ data "Icon" "Action_Cleave_New"
 data "Properties" "Highlighted;OncePerTurn"
 data "StatsFunctorContext" "OnAttack"
 data "Conditions" "IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));"
-data "StatsFunctors" "TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave);CreateExplosion(Target_Web)"
+data "StatsFunctors" "TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,0);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave)"
 
 new entry "Overwhelm"
 type "PassiveData"
