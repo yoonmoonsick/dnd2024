@@ -5520,10 +5520,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="96066cc6-8ecc-44ff-a432-18943d95ef3c" />
         <field name="Name" type="NameTableFieldDefinition" value="AgonizingBlast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9826308d-cdc0-4d2b-9981-07692ee6592b" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWarlockCantrip() and IsCharismaModifierPositive()):DamageBonus(CharismaModifier)" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source) and IsWarlockCantrip()):DamageBonus(CharismaModifier);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWarlockCantrip() and HasDamageEffectFlag(DamageFlags.Hit)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source) and IsWarlockCantrip() and HasDamageEffectFlag(DamageFlags.Hit);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcec93acbgcf52g7863gace7ge15cf4535595" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
       </fields>
@@ -5535,8 +5534,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9f2f980-ee12-4b9d-b338-f5d1835968e7" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h26a0c7ecg1dc0g7b46g31fdg919a547bce79" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock')):UnlockSpell(Target_Silence_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(2,'Warlock')):UnlockSpell(Projectile_RayOfSickness_BookOfAnceintSecrets);IF(ClassLevelHigherOrEqualThan(2,'Warlock')):UnlockSpell(Projectile_ChromaticOrb_BookOfAncientSecrets)" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Target_Silence_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Projectile_RayOfSickness_BookOfAnceintSecrets);IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Projectile_ChromaticOrb_BookOfAncientSecrets);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5545,7 +5543,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DevilsSight" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="705567e0-1a6a-4c5c-b0d3-846d8500b6b1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5554,9 +5552,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSpear" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22c801fc-d816-4402-9508-6917d55ff03d" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCantrip(),ModifyTargetRadius(Multiplicative,1.5))" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpellVariant(IsCantrip(),ModifyTargetRadius(Multiplicative,1.5));" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5565,7 +5562,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FiendishVigor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f0ebbc6a-70e8-41a6-8a01-4a4456c10242" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Shout_FalseLife_FiendishVigor,Singular);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5623,7 +5620,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f8fff257-d7ed-4c3c-b2c0-59a5b18de41b" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Shout_DisguiseSelf_MaskOfManyFaces,Singular);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5633,7 +5630,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d41fb64f-3a18-43ae-a617-cd650ba0ede0" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Target_Jump,MostPowerful,e9127b70-22b7-42a1-b172-d02f828f260a);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5642,9 +5639,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="RepellingBlast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="213e8842-2088-4f06-93bd-1060e83bf727" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnStatusRemoved;OnStatusApplied;OnStatusRemove;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_EldritchBlast') and HasDamageEffectFlag(DamageFlags.Hit);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5653,10 +5649,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThiefOfFiveFates" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a733f7ec-ff13-42b6-82ba-ff30e28ba23d" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1d37e1c4g96a1g4a0eg172eg6a1ed9b094c0" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bane_ThiefOfFiveFates,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):UnlockSpell(Target_Bane_ThiefOfFiveFates,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5667,9 +5662,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h166faf75g64eag6d34g97c4g9e93a9ca7db3" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Fly" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_AscendantStep)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)):UnlockSpell(Shout_AscendantStep);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5680,9 +5674,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1404b9d7gce2cgff51ge396g83a04b6194ad" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EldritchStrike" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";UnlockSpell(Target_EldritchSmite,MostPowerful,e9127b70-22b7-42a1-b172-d02f828f260a,,Charisma);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_3);IF(not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_4);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_5);IF(ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(5,'Warlock')):UnlockSpell(Target_EldritchSmite,MostPowerful,e9127b70-22b7-42a1-b172-d02f828f260a,,Charisma);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_3);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(6,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_3);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_4);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(8,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_4);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_5);IF(HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(9,'Warlock')):UnlockInterrupt(Interrupt_EldritchSmite_Critical_5);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('PactOfTheBlade_Hex',context.Source) and ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8, Force)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
       </fields>
@@ -5693,10 +5686,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MireTheMind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="65f0fb4b-34cb-4183-b927-50c3e6366181" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b259a85g5402g7520g0ad8g0cd070d94c06" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Slow_MireTheMind,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)):UnlockSpell(Target_Slow_MireTheMind,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5705,7 +5697,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="OneWithShadows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="29108894-b0cc-457a-8028-817ee0f515a0" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)):UnlockSpell(Shout_OneWithShadows);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5713,10 +5705,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="65890a84-98c1-4f1e-860f-57dad7ada4c7" />
         <field name="Name" type="NameTableFieldDefinition" value="SignOfIllOmen" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="71a0087e-bffd-49f8-8cca-bb72f6377ee5" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BestowCurse,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)):UnlockSpell(Target_BestowCurse,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5729,8 +5720,8 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThirstingBlade" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheBlade_Hex',context.Source) and not HasPassive('Lifedrinker',context.Source) and not HasPassive('ExtraAttack',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheBlade_Hex',context.Source)) and (context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5741,7 +5732,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11917471g9813g02fag606bg53be9507fb04" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h0d94ff8bg598bg5124g144ag39e2ea91eccf" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Warlock_PactOfTheChain_Quasit" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheChain',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -5758,6 +5748,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_AnimateDead,Singular,,UntilRest,Charisma);IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_CallLightning,Singular,,UntilRest,Charisma);IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_Haste,Singular,,UntilRest,Charisma);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5766,10 +5757,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="DreadfulWord" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0dbfb5aa-ac37-412e-a1d2-144712bb7843" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd6da8afg3c3eg3ae2g27b6gba77e0f9ff92" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Confusion_DreadfulWord,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)):UnlockSpell(Target_Confusion_DreadfulWord,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="ff52cffd-fe45-4cf7-9d36-c5c98f994a9f" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5778,10 +5768,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="SculptorOfFlesh" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0cf6a78c-9da8-49ba-8431-dbc5138d9807" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd6da8afg3c3eg3ae2g27b6gba77e0f9ff92" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Polymorph_SculptorOfFlesh,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)):UnlockSpell(Target_Polymorph_SculptorOfFlesh,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="ff52cffd-fe45-4cf7-9d36-c5c98f994a9f" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5791,7 +5780,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="55c6c60e-d907-4cb0-9fc2-9b92d2e24cbc" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="ff52cffd-fe45-4cf7-9d36-c5c98f994a9f" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Warlock',context.Source)):UnlockSpell(Target_SpeakWithDead_WhispersOfTheGrave);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5802,9 +5791,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd5819313gb242g3c54g573agce719102af39" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DeathWard" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DeathWard_Warlock)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Target_DeathWard_Warlock);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he534fbc3gf876g1972g88f5gf6f4eaaf39e3" version="2" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(9,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="447b9201-9d31-4d6e-b45c-5089359fee40" />
       </fields>
     </stat_object>
@@ -5817,12 +5805,11 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Lifedrinker" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_LifeDrinker_Necrotic);UnlockInterrupt(Interrupt_LifeDrinker_Psychic);UnlockInterrupt(Interrupt_LifeDrinker_Radiant);ActionResource(Interrupt_LifeDrinker,1,0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Necrotic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Psychic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Radiant);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):ActionResource(Interrupt_LifeDrinker,1,0);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and IsMeleeWeaponAttack() and Character() and not AnyEntityIsItem()" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(SELF,1d8+ConstitutionModifier)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(9,'Warlock',context.Source) and HasPassive('PactOfTheBlade_Hex',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="447b9201-9d31-4d6e-b45c-5089359fee40" />
       </fields>
     </stat_object>
@@ -5831,10 +5818,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7bdfaf1d-80d2-4dc1-96c1-ec2a24ab0390" />
         <field name="Name" type="NameTableFieldDefinition" value="MinionsOfChaos" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="11a18d88-abeb-407f-9e4a-662439fc9c90" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConjureElemental_Container,,,UntilRest)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Target_ConjureElemental_Container,,,UntilRest);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="447b9201-9d31-4d6e-b45c-5089359fee40" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5845,8 +5831,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h163b488fg0dc3g4f71ge671g910bf4ee6509" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f90b144gde8agbc5bgb583g6fb29fc8b8c1" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1c4eb7feg7639gef83ge092g6fc1bfc05654" version="2" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Warlock',context.Source) and HasPassive('ThirstingBlade_Blade',context.Source) and not HasPassive('ExtraAttack',context.Source);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="8674901a-85b9-4cae-859c-a7e59d7f9d5e" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(ClassLevelHigherOrEqualThan(12,'Warlock',context.Source) and HasPassive('ThirstingBlade_Blade',context.Source)) and (context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_2_Q'));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
