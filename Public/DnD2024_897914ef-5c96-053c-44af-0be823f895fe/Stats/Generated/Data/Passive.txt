@@ -3371,6 +3371,13 @@ type "PassiveData"
 using "MAG_Gish_ArcaneAcuity_Gloves_Passive"
 data "Description" "hb707f7e4g6230g68efg0328gd435b5689e96;1"
 data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsWeaponAttack()"
+data "StatsFunctors" "ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY, 100, 2);ApplyStatus(SELF, MAG_GISH_ARCANE_ACUITY_DURATION_TECHNICAL, 100, 1)"
+
+new entry "MAG_ElementalGish_ArcaneAcuity_Helmet_Passive"
+type "PassiveData"
+using "MAG_ElementalGish_ArcaneAcuity_Helmet_Passive"
+data "Properties" "OncePerAttack"
 
 new entry "MAG_Gish_ArcaneSynergy_Circlet_Passive"
 type "PassiveData"
