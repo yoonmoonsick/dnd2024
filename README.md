@@ -1849,12 +1849,11 @@ Appropriate spells have been added to the spell list for each class.
 
 ### Conjure Barrage 
 - 5d8 Force
-### Fireball 
-- Area: 20 feet
+### [Fireball ](https://www.dndbeyond.com/spells/2618887-fireball)
+- A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
+
 ### Gaseous Form 
 - ***Using a Higher-Level Spell Slot***. You can target one additional creature for each spell slot Level above 3.     
-### Glyph of Warding 
-- Damage application mechanism has been improved to allow the application of related magic item effects.  
 ### Hypnotic Pattern
 - 10 Turns
 ### Lightning arrow 
@@ -1884,10 +1883,11 @@ Appropriate spells have been added to the spell list for each class.
 ### Conjure Woodland Beings
 - Duration: Concentration
 
-### Fount of Moonlight 
-- School: Evocation (Bard, Druid)
-- Duration: Concentration, up to 10 minutes
-- Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit. In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
+### [Fount of Moonlight](https://www.dndbeyond.com/spells/2618835-fount-of-moonlight)
+- A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.
+- Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit.
+- In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
+- Available For: Bard, Druid
 
 ### [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
 - Duration: Concentration, 1 Minute
@@ -1909,8 +1909,8 @@ Appropriate spells have been added to the spell list for each class.
 - The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.
 - ***Using a Higher-Level Spell Slot***. The extra damage increases by 1d6 for each spell slot level above 4.
 
-### Stoneskin 
-- Now provides resistance to B/P/S instead of to nonmagical B/P/S.
+### [Stoneskin](https://www.dndbeyond.com/spells/2619095-stoneskin)
+- Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.
 
 ### [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StormSphere.png?raw=true)
