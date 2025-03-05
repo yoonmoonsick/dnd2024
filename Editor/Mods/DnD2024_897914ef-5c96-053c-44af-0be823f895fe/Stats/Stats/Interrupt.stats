@@ -768,12 +768,27 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="301888ff-052a-412e-ba25-266340a090fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41c9e1b1-b99e-4918-ab55-40acfd29bd52" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73bc746d-c201-4da7-a561-2f69f26637e5" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9cbe3dbeg192cg9810g7ad6gc71d84fce093" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()))" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()));RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
@@ -783,8 +798,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Trip" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7decf27g8278g2b92gd1cbgb1f333b489d5" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_TripAttack_Ranged" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()))" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -793,8 +807,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Withdraw" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h497e5b57gf4c9g3626gfc54g8c6f54a9c266" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Disengage" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(SELF,PATIENT_DEFENCE,100,1);ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -803,7 +816,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_11_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h185dee8fg825eg809dgd88eg2e651558a6af" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()));ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(POISONED,100,10,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC(),AdvantageOnPoisoned()));ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -812,7 +825,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_11_Trip" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ed88edd6-abec-485c-838d-6dae9aaa1cf2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h296376a1ga77ag0ce6g38c6ga9b4f0c975ca" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Dexterity,ManeuverSaveDC()));ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -5937,6 +5937,8 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_SneakAttack"
 data "Cooldown" "None"
+data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);"
+data "SpellSuccess" "IF(not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainMeleeWeapon + LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainMeleeWeapon + LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);"
 data "UseCosts" "ActionPoint:1;"
 data "HitCosts" "SneakAttack_Charge:1;"
 
