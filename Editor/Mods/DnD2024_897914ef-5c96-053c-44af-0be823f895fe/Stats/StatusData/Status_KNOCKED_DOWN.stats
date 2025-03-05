@@ -46,21 +46,17 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="bd25e0ac-ed85-4564-a5c2-d82977416d56" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="KO_Fallen" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="KO_Fallen" enumeration_type_name="StillAnimPriority" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ccae785b-bd57-410d-b98f-48c2ca58c0c2" />
         <field name="Name" type="NameTableFieldDefinition" value="COMMAND_GROVEL" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bd25e0ac-ed85-4564-a5c2-d82977416d56" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="00089887-ff49-492c-a355-3d17ec7ecdd1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandDrop" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="KO_Fallen" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="KO_Fallen" enumeration_type_name="StillAnimPriority" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);BreakConcentration();RemoveStatus(SLEEP_2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandGrovel" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);BreakConcentration();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -77,7 +73,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a2383768-e526-4e52-9ec1-094623861109" />
         <field name="Name" type="NameTableFieldDefinition" value="HIDEOUS_LAUGHTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="59bdbebc-ade7-4df6-acb5-9a25c018332f" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);BreakConcentration();RemoveStatus(SLEEP_2);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);BreakConcentration();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF(DistanceToTargetGreaterThan(3)):Disadvantage(AttackTarget);" />
       </fields>
     </stat_object>
   </stat_objects>
