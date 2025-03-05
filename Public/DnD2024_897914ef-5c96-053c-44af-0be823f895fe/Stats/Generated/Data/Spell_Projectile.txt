@@ -34,6 +34,8 @@ type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_SneakAttack"
 data "Cooldown" "None"
+data "SpellProperties" "GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);"
+data "SpellSuccess" "IF(not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainRangedWeapon+ LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainRangedWeapon+ LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);"
 data "UseCosts" "ActionPoint:1;"
 data "HitCosts" "SneakAttack_Charge:1;"
 

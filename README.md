@@ -295,8 +295,8 @@ Your Rage taps into the primal power of animals. Whenever you activate your Rage
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
 
 #### Level 3: Vitality of the Tree: Your Rage taps into the life force of the World Tree. You gain the following benefits.
-  - Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian Level.
-  - Life-Giving Force. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together.
+- Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian Level.
+- Life-Giving Force. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together.
 #### Level 6: Branches of the Tree
 Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be pulled it closer to the caster. After the target pulled, you can reduce its Speed to 0 until the end of the current turn.
 #### Level 10: Battering Roots
@@ -910,7 +910,7 @@ Your cunning mind is exceptionally difficult to control. You gain proficiency in
 
 #### Level 3: Assassinate
 - Initiative. You have +5 Bonus on Initiative rolls.
-- Surprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.
+- Surprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.
 #### Level 3: Assassin’s Tools
 You gain a Disguise Self and Brew Poison.
 #### Level 9: Roving Aim
