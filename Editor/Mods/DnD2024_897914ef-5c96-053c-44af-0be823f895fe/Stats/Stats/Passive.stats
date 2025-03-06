@@ -144,7 +144,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_WeaponMastery_Nick);ActionResource(FreeOffhandAttack,1,0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
