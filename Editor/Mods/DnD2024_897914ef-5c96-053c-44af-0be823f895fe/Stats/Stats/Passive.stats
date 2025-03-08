@@ -10,6 +10,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e4e984ab-5649-4610-8861-ab069dd864f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Unlock" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14fdcc0a-983c-461e-968f-90ed6427b6db" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SneakAttack);UnlockInterrupt(Interrupt_SneakAttack_Critical);;UnlockSpell(Target_SneakAttack);UnlockSpell(Projectile_SneakAttack)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a4c1285-c931-4d82-a67a-d7163a45dd79" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Hex" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="994479cb-1a74-4f93-bfb4-e49491b307fc" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="336be26b-cd71-4a79-bd88-509834a39fa5" />
         <field name="Name" type="NameTableFieldDefinition" value="Dummy" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
@@ -146,7 +161,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem() " />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
@@ -2019,7 +2034,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="798cca1c-8b11-4c4e-b48b-abcdfbe70eba" />
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Frenzy_Boosts" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a9a12035-f447-466d-8116-c0de327687c1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_FRENZY',context.Source) and not HasStatus('FRENZY_BONUS_APPLIED',context.Source)" />
@@ -3090,13 +3105,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="44c1ccb3-3d83-4c6b-91fa-c99b625ea651" />
-        <field name="Name" type="NameTableFieldDefinition" value="Reaper" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d3ea4752-eb2a-4c8a-9e54-4238898e8b87" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="361af1eb-3df2-4be0-88bc-9df28244373e" />
         <field name="Name" type="NameTableFieldDefinition" value="MindMagic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4b3324f8-2835-463e-963f-01d06d13e292" />
@@ -3799,14 +3807,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Warlock" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="521ab563-0a65-46d8-a499-093827286a4a" />
-        <field name="Name" type="NameTableFieldDefinition" value="AccursedSpecter" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d003a873-1a5e-45e1-8465-d0eb195c5e9d" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_AccursedSpecter);ActionResource(Interrupt_AccursedSpecter,1,0);" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc640528-0800-4b81-b771-c17fdbf45ec5" />
@@ -3844,7 +3844,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a86ed519-77e3-4c2b-98c0-3db60ec1d17c" />
         <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade_5_Movement_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="431c1f81-83ff-4ad7-a0d8-b04288225d94" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="204caf0a-7212-4b9b-87e7-e13f837442c2" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('VENGEFUL_BLADE_DAMAGE_IMMUNITY');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, VENGEFUL_BLADE_5_DAMAGE,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
@@ -3854,7 +3854,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a2316548-ea2a-480f-a631-73fb75b709f8" />
         <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade_5_MovementSpell_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b0253abe-b666-4897-b763-fbd9a8b0b8a5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e15336a-dcc1-4b0b-94ca-48b8898d6506" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, VENGEFUL_BLADE_5_DAMAGE,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
       </fields>
@@ -3863,7 +3863,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4a8516a8-15b2-4c11-8d43-cf9472b7e0be" />
         <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade_11_Movement_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1eb3ff26-8151-49e4-bb8c-7795c8c4579e" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="204caf0a-7212-4b9b-87e7-e13f837442c2" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('VENGEFUL_BLADE_DAMAGE_IMMUNITY');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, VENGEFUL_BLADE_11_DAMAGE,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
@@ -3873,9 +3873,47 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ff4b8e02-bbc2-4583-9131-37f162f56f61" />
         <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade_11_MovementSpell_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c07c9586-09e5-40b1-9356-d3ca4a2caddd" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e15336a-dcc1-4b0b-94ca-48b8898d6506" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, VENGEFUL_BLADE_11_DAMAGE,100,0);ApplyStatus(SELF, VENGEFUL_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6940b44e-dbd5-4f82-9b28-925262647eee" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_5_Movement_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21caf953-c003-47d5-8fb6-b4e27c2ad4e8" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('VENGEFUL_BLADE_DAMAGE_IMMUNITY');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bad4970a-fbac-4a82-9912-98bd6ffd8a68" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_5_MovementSpell_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3f07fcf-38cb-4d99-b43b-0abafedaa4ce" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_5_DAMAGE,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c1677d5-96d5-4779-8b5b-fd57ca76cfec" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_11_Movement_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21caf953-c003-47d5-8fb6-b4e27c2ad4e8" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('VENGEFUL_BLADE_DAMAGE_IMMUNITY');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95a1d14e-2450-491a-bbbb-0ba416f9f65f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_11_MovementSpell_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3f07fcf-38cb-4d99-b43b-0abafedaa4ce" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, BOOMING_BLADE_11_DAMAGE,100,0);ApplyStatus(SELF, BOOMING_BLADE_DAMAGE_IMMUNITY, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3916,7 +3954,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="43dfe762-c88d-4a52-81dc-1be64d8503b0" />
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_Brutal" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c6471ec-6de7-4cd2-93d1-9fccefb84d5e" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d5eb7c35-0d2e-43f3-aad4-2d8f2984b18e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2851ec77gcf06g8f8dg11f8g5021c3dd8e94" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7e891f3ge6eag499dgb8deg6cfb9c39c765" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />

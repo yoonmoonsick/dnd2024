@@ -21,7 +21,6 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Stack" type="StringTableFieldDefinition" value="FreeOffhandAttack" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -633,14 +632,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="473f0344-c20c-4481-bf04-048e0bd0cb8e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AccursedSpecter" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a5ca00e6-ce51-47ac-b090-82048f922c0d" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Interrupt_AccursedSpecter:1;" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b9593b53-558e-4fa4-8a31-5e7716ac5e46" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
@@ -772,6 +763,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
