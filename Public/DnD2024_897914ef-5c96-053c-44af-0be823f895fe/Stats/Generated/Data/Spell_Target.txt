@@ -4409,6 +4409,7 @@ data "SpellType" "Target"
 using "Target_VowOfEnmity"
 data "Cooldown" "OncePerTurn"
 data "SpellProperties" "ApplyStatus(SELF,VOW_OF_ENMITY_OWNER,100,10);ApplyStatus(VOW_OF_ENMITY,100,10);AI_ONLY:ApplyStatus(AI_HELPER_VOW_OF_ENMITY,100,10);AI_ONLY:IF(CanAttack(context.Source) and Enemy() and not DistanceToTargetGreaterThan(9.0)):ApplyStatus(SELF,AI_HELPER_BUFF,100,1);"
+data "TargetRadius" "9"
 data "TargetConditions" "Character() and not Self()"
 data "UseCosts" "ChannelOath:1"
 
