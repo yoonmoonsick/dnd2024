@@ -1069,7 +1069,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="587ff6eb-f4b7-4f7a-8b0e-1de200416454" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_TIGER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8ea35b3d-43cc-4a9b-90c5-f8d649f84ee3" />
-        <field name="Passives" type="StringTableFieldDefinition" value="TotemSpirit_Tiger_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Tiger_NoHeavyArmour_VFX;TotemSpirit_Tiger" />
+        <field name="Passives" type="StringTableFieldDefinition" value="TotemSpirit_Tiger_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Tiger_NoHeavyArmour_VFX;TotemSpirit_Tiger;LongJumpTurnBasedMode_Tiger;" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);JumpMaxDistanceMultiplier(1.5);UnlockSpell(Shout_ExtendRage)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
@@ -4180,6 +4180,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="557795ef-890b-42e6-a737-93a39d768107" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
         <field name="Passives" type="StringTableFieldDefinition" value="LongJumpTurnBasedMode_Athlete" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4189,6 +4190,17 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="557795ef-890b-42e6-a737-93a39d768107" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_RemarkableAthlete_Jump" />
         <field name="Passives" type="StringTableFieldDefinition" value="LongJumpTurnBasedMode_Champion" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7ad59d4-b458-4b6b-a752-d37056068d66" />
+        <field name="Name" type="NameTableFieldDefinition" value="LONG_JUMP_PASSIVE_TIGER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="557795ef-890b-42e6-a737-93a39d768107" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage_TigerTotem" />
+        <field name="Passives" type="StringTableFieldDefinition" value="LongJumpTurnBasedMode_Tiger;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
