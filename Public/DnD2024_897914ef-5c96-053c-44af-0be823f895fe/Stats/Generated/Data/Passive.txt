@@ -32,6 +32,12 @@ using "WildShape_Combat"
 data "DescriptionParams" "RegainHitPoints(2d8)"
 data "Boosts" "UnlockSpellVariant(SpellId('Shout_AberrantShape'),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint))"
 
+new entry "DummyRepair"
+type "PassiveData"
+data "Properties" "Highlighted"
+data "StatsFunctorContext" "OnDamaged"
+data "StatsFunctors" "IF(HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50)):RegainHitPoints(9999);"
+
 new entry "YMS_WeaponMastery"
 type "PassiveData"
 data "ExtraDescription" "h5be407e9g20bdgb42ag03d5g21cf54c6cc49;1"
