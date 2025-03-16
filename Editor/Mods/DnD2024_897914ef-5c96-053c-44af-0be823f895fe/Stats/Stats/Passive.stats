@@ -56,6 +56,15 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_AberrantShape'),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint))" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df4f52f8-c4d3-4dfe-b94f-10aeb1fdf6d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DummyRepair" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50)):RegainHitPoints(9999);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
