@@ -6011,11 +6011,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="AbjureEnemy" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f3dd45d-e02f-4d2e-af65-38ad07d2a61f" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_AbjureEnemy_1;Target_AbjureEnemy_2;Target_AbjureEnemy_3;Target_AbjureEnemy_4;Target_AbjureEnemy_5;Target_AbjureEnemy_6;" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_FRIGHT,100,10)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_FRIGHT,100,3)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4966315agd430gca55g4ca7g0a4168c7bd6b" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_FRIGHT,100,10)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_FRIGHT,100,3)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_SLOW,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6024,7 +6025,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="AbjureEnemy_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5be5e1b8-0d39-4f6e-9ad9-65bbe04c32f6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
@@ -6036,7 +6037,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',13,context.Source)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
@@ -6048,7 +6049,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',15,context.Source)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
@@ -6060,7 +6061,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',17,context.Source)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
@@ -6072,7 +6073,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',19,context.Source)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
     </stat_object>
@@ -6084,7 +6085,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_AbjureEnemy" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source)" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
