@@ -36,8 +36,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="DeathSavingThrows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="190c08b9-8dc1-4d67-b2b7-65cb85c5aeb8" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnStatusApply;OnStatusApplied;OnStatusRemove;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnProficiencyChange;OnCreate;OnShortRest;OnStatusApplied;OnStatusRemoved;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(WeaponMasteryCheck()):ApplyStatus(UNLOCK_WEAPON_MASTERY,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('UNLOCK_WEAPON_MASTERY',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -71,6 +72,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="YMS_WeaponMastery" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5be407e9g20bdgb42ag03d5g21cf54c6cc49" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="-99" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -82,7 +84,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d9ee79fga6a3gf6aag0c4ag3e5425b954af" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Physical" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(max(max(max(StrengthModifier,DexterityModifier),IntelligenceModifier),WisdomModifier),CharismaModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9bc43d96ge2ecg4495gec70g8d9f57bc5831" version="1" />
       </fields>
@@ -96,11 +98,11 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f420eedg6886g8c61ge85dg89d59bb43ddb" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_GREATCLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_PIKE', GetAttackWeapon(context.Source)) or Tagged('WPN_WARHAMMER', GetAttackWeapon(context.Source)) or Tagged('WPN_HEAVY_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_GREATCLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_PIKE', GetAttackWeapon(context.Source)) or Tagged('WPN_WARHAMMER', GetAttackWeapon(context.Source)) or Tagged('WPN_HEAVY_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcfd09f4eg53b0gef01gf3feg98b82bc31dcc" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -113,7 +115,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h4003391cgf571g1e51gf459g8e67d03dd20f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_AttackDisadvantage" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
       </fields>
     </stat_object>
@@ -127,7 +129,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hea61956fg1da6gc5e0g7b67g7a9b1ba0597e" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_HamstringShot" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_CLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_JAVELIN', GetAttackWeapon(context.Source)) or Tagged('WPN_LIGHT_CROSSBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_CLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_JAVELIN', GetAttackWeapon(context.Source)) or Tagged('WPN_LIGHT_CROSSBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(SLOW_WM, 100, 2)" />
       </fields>
     </stat_object>
@@ -141,9 +143,9 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h21932815gc614g2d35g4a8cg6e71936a35b9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -156,7 +158,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80086518g900bgf856g98f1g144561f046fd" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_FeintingAttack" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_HANDAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_RAPIER', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_HAND_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_HANDAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTBOW', GetAttackWeapon(context.Source)) or Tagged('WPN_RAPIER', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_HAND_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(VEX, 100, 2)" />
       </fields>
     </stat_object>
@@ -171,7 +173,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack)):ApplyStatus(NICK, 100, 1)" />
       </fields>
     </stat_object>
@@ -186,7 +188,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9cddc110g0130gc809gaaedgd3872e1a68a8" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,0);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
