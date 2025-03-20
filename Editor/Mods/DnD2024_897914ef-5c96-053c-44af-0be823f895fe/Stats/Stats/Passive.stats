@@ -143,7 +143,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h21932815gc614g2d35g4a8cg6e71936a35b9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -1579,7 +1579,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TavernBrawler" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source) and TargetSizeEqualOrSmaller(Size.Large)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_SHIELD,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1a3b6583g891fg4caag9095g3f557dbee5bd" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3963fd93g9953ge99ag9581gff7b9029cfa9" version="1" />
@@ -1750,7 +1750,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageDoneForType(DamageType.Bludgeoning,context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and HasDamageDoneForType(DamageType.Bludgeoning,context.Target)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CRUSHER_PUSH, 100, 0)" />
       </fields>
     </stat_object>
