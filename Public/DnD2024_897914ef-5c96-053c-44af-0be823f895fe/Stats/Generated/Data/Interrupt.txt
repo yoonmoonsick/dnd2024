@@ -798,7 +798,8 @@ data "Conditions" "Self(context.Source,context.Observer) and ( IsUnarmedAttack()
 data "Properties" "DealDamage(1d6+ClassLevel(Barbarian)/2,Radiant)"
 data "Cost" "Interrupt_DivineFury:1"
 data "Stack" "DivineFury"
-data "EnableCondition" "HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'))"
+data "InterruptDefaultValue" "Enabled"
+data "EnableCondition" "HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')) and HasStatus('SG_Rage')"
 
 new entry "Interrupt_DivineFury_Necrotic"
 type "InterruptData"
@@ -806,6 +807,7 @@ using "Interrupt_DivineFury_Radiant"
 data "DescriptionParams" "DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)"
 data "Icon" "GenericIcon_DamageType_Necrotic"
 data "Properties" "DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)"
+data "InterruptDefaultValue" "Ask"
 
 new entry "Interrupt_FanaticalFocus"
 type "InterruptData"
