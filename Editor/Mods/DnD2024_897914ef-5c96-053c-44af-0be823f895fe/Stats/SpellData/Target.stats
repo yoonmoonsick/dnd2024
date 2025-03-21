@@ -8354,6 +8354,29 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcad2d16-598f-48f4-b47e-07a92010ae31" />
+        <field name="Name" type="NameTableFieldDefinition" value="TollTheDead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(HasHPPercentageLessThan(100)):DealDamage(LevelMapValue(D8Cantrip),Necrotic,Magical);IF(not HasHPPercentageLessThan(100)):DealDamage(LevelMapValue(D12Cantrip),Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0) IF(HasPassive('PotentCantrip',context.Source) and HasHPPercentageLessThan(100)):DealDamage(LevelMapValue(D8Cantrip)/2,Radiant,Magical);IF(HasPassive('PotentCantrip',context.Source) and not HasHPPercentageLessThan(100)):DealDamage(LevelMapValue(D12Cantrip)/2,Radiant,Magical)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7a0cc7fg9b00gb0a8gf69bg3e2531b3d753" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Necrotic)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Necrotic_ChillTouch_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Necrotic_ChillTouch_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_DamageNecroticGhostly" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d97c5b65-eccd-4b54-a665-64539e7924bf" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="d49cf296-7f7b-4658-8171-13eeb08c7d88" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ca29ba79-440a-430b-b6df-34db61edf077" />
         <field name="Name" type="NameTableFieldDefinition" value="ShockingGrasp" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d5442cc-62cb-49f0-8e01-a5a90ff09f0c" />
