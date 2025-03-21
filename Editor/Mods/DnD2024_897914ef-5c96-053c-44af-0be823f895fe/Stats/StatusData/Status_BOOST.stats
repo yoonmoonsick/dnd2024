@@ -815,32 +815,24 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bf2f99fe-d6b7-4f8c-9879-4ed870120b5b" />
         <field name="Name" type="NameTableFieldDefinition" value="TRUE_STRIKE_WEAPON" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollAbilityOverride(SpellCastingAbility)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack()" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0f49778-fa25-426c-ac50-7a043f557a72" />
-        <field name="Name" type="NameTableFieldDefinition" value="TRUE_STRIKE_OWNER" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand, TRUE_STRIKE_WEAPON,100, 1);ApplyEquipmentStatus(RangedMainHand, TRUE_STRIKE_WEAPON,100, 1)" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_TRUE_STRIKE_OWNER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
-        <field name="StackId" type="StringTableFieldDefinition" value="TRUE_STRIKE_OWNER" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_OWNER" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BladeCantripDismiss);UnlockSpell(Target_TrueStrike_Radiant);AttackSpellOverride(Target_TrueStrike_Weapon, Target_MainHandAttack);UnlockSpell(Projectile_TrueStrike_Radiant);AttackSpellOverride(Projectile_TrueStrike_Weapon, Projectile_MainHandAttack);UnlockSpellVariant(NotTrueStrikeCheck(),ModifyUseCosts(Add,TrueStrikePoint,1,0));UnlockSpellVariant(TrueStrikeCheck(),ModifyIconGlow())" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="TrueStrikeCheck()" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Radiant);UnlockSpell(Projectile_TrueStrike_Radiant);UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Projectile_TrueStrike_Weapon)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
