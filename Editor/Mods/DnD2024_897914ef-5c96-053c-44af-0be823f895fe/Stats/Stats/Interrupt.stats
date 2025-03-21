@@ -1079,7 +1079,8 @@
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Radiant)" />
         <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_DivineFury:1" />
         <field name="Stack" type="StringTableFieldDefinition" value="DivineFury" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'))" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')) and HasStatus('SG_Rage')" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1090,6 +1091,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
