@@ -8434,8 +8434,8 @@
         <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,DexterityModifier), MainMeleeWeaponDamageType);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);IF(WeaponAttackRollAbility(Ability.Dexterity) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier), MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Strength) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,StrengthModifier), MainMeleeWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Melee_Weapon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
@@ -8466,8 +8466,8 @@
         <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,DexterityModifier), Radiant);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);IF(WeaponAttackRollAbility(Ability.Dexterity) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier), Radiant);IF(WeaponAttackRollAbility(Ability.Strength) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,StrengthModifier), Radiant);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
