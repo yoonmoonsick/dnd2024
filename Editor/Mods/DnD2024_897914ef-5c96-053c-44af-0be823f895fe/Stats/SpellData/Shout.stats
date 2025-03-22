@@ -1450,14 +1450,12 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="850cd2f3-dde2-475d-b3a3-f35c47333523,,;,,;8bfc0edf-5baa-4344-a486-14032de5ab69,,;3935e00c-7d43-4243-a4ef-4c680530d593,,;ad775f69-0d9f-4215-bfc2-8e0ec7e32189,,;,,;6bfce8a0-80f1-47a8-97f4-34f4b8b6fe9e,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="d2c9dc70-d8d8-40fc-87a8-3c14a3ea842a" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="5e248293-1a8d-4557-a2e1-f399e4552ff0" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="b4d2ce64-af72-45a2-8146-6a9c3b71f1a6" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1482,7 +1480,6 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="850cd2f3-dde2-475d-b3a3-f35c47333523,,;,,;8bfc0edf-5baa-4344-a486-14032de5ab69,,;3935e00c-7d43-4243-a4ef-4c680530d593,,;ad775f69-0d9f-4215-bfc2-8e0ec7e32189,,;,,;6bfce8a0-80f1-47a8-97f4-34f4b8b6fe9e,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_FontOfInspiration" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
@@ -1491,7 +1488,6 @@
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="b4d2ce64-af72-45a2-8146-6a9c3b71f1a6" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3866,6 +3862,58 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8265c6d6-662a-40fe-888b-024af0e2b1b9" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF228B22" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68132e89-65c5-4b44-a74f-55ba68dd4221" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Ranger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b728c07-a333-4b0b-942c-5b837cb6e8b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Charge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8fd34ff5-3ab3-46b6-a6a1-003c79e2742e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_RangersCompanion" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_RangersCompanion_Bear;Target_RangersCompanion_Boar;Target_RangersCompanion_GiantSpider;Target_RangersCompanion_Raven;Target_RangersCompanion_Wolf;Shout_RangersCompanion_Charge" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,RangersCompanion,1,0)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CompanionsBond" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca7dcceaga9c5g4dc9ga4eega8b865bde2ab" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25ed0b87g513fg2874g54adg48ae617dc8da" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_RangersCompanion" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_RangersCompanion" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="85f63b1e-1fe6-4228-863d-71f43a945b46,,;,,;551b8855-805c-45fa-973f-88df0cbe646a,,;394f93b4-106a-44e4-8e08-2feae2881df1,,;db52441a-8a80-4630-bcb8-0f220e1b8323,,;,,;f588875b-9a5f-4e05-ac41-3f3e73cdb4e4,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2adc2574-07ac-4116-ba89-9ffe367ff77b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a8bd13f1-3918-4c25-a3c4-ca312ef20178" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0da3fe6-1b01-47b3-a3bd-71f81171e619" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Charge_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b728c07-a333-4b0b-942c-5b837cb6e8b7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_RangersCompanion_Charge" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13e7b262-298d-4221-b474-bf19e6e13123" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangersCompanion_Charge_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b728c07-a333-4b0b-942c-5b837cb6e8b7" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_RangersCompanion_Charge" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
