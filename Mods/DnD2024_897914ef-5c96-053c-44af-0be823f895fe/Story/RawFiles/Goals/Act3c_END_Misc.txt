@@ -1,0 +1,2255 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_HasItemEvent(S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e,END_General_State_HasCrownController_de78970a-95c8-4e54-bdf7-28f1da9ca83b);
+DB_HasItemEvent(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, (FLAG)END_General_State_HasSupremeTadpole_a0d1a230-79f8-4af6-a425-f9d8a771bd24);
+
+DB_END_General_TadpoleAndStoneTracking(
+    (ITEM)S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5,
+    (FLAG)END_General_State_HasSupremeTadpole_a0d1a230-79f8-4af6-a425-f9d8a771bd24,
+    (FLAG)END_General_State_PartyHasSupremeTadpole_a0ee98a9-7272-415a-95f6-f11c86048593,
+    (DIALOGRESOURCE)GLO_Tadpole_PAD_DroppedSupremeTadpole_914b8ffb-71f9-a479-5f46-e515ba0d542a,
+    "GLO_SupremeTadpole");
+DB_END_General_TadpoleAndStoneTracking(
+    (ITEM)S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e,
+    (FLAG)END_General_State_HasCrownController_de78970a-95c8-4e54-bdf7-28f1da9ca83b,
+    (FLAG)END_General_State_PartyHasCrownController_d526db7f-8ded-4755-84cd-498fd629b11d,
+    (DIALOGRESOURCE)END_General_PAD_DroppedCrownController_720b87f5-6516-f7f5-81f6-538cc8515051,
+    "END_CompleteCrownController");
+
+DB_END_General_InterjectionCharacter((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_END_General_InterjectionCharacter((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+DB_END_General_ActualInterjectionCandidate((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_END_General_ActualInterjectionCandidate((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+
+DB_Inclusion_CombatInclusionDialog(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985);
+
+//Should only ever have 1 character, easy way to check through DB who is responsible for casting Karsus' Compulsion
+NOT DB_END_General_PartyMindFlayer((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
+
+//REGION Debugs
+
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_GaleStartAvatar_dc52ad2e-99e1-47f2-0ebf-38d90927ecf2);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_WyllStartAvatar_cac9789e-f050-cc65-b346-6bbba4ac0dd2);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_AstarionStartAvatar_d97013d1-405f-c07a-d324-73da945412b1);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_SHStartAvatar_e35b5da6-1d34-024a-ac21-f8302b622d22);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_KarlachStartAvatar_9db0205a-737f-2709-36b9-944ef3571e44);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_LaezelStartAvatar_5b7d278e-abc5-a329-95a6-d6c6e216fa72);
+DB_END_Debug_AvatarPresetFlags((FLAG)END_General_Debug_DarkUrgeStartAvatar_6f90eca0-38c1-b45e-977b-3ff27857ee0e);
+
+//END_REGION 
+
+//REGION Stuff
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, (DIALOGRESOURCE)Astarion_InPartyEND_7f58ff67-227b-bfc0-d90f-0e70369b3c81);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604 ,(DIALOGRESOURCE)Gale_InPartyEND_53af5b51-2d5d-c820-02db-2d5242ba6c0d);
+DB_END_General_InPartyDialogs((CHARACTER)S_GLO_Halsin_7628bc0e-52b8-42a7-856a-13a6fd413323 ,(DIALOGRESOURCE)Halsin_InPartyEND_abd22cab-248f-9554-3621-50d99996eca2);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Jaheira_91b6b200-7d00-4d62-8dc9-99e8339dfa1a ,(DIALOGRESOURCE)Jaheira_InPartyEND_57293e55-3d7c-e464-00ee-e199161622bc);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c ,(DIALOGRESOURCE)Karlach_InPartyEND_84af8609-030b-252c-2335-65d7f410b0e7);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12 ,(DIALOGRESOURCE)Laezel_InPartyEND_10e8ff26-dea4-7ef3-ff8e-274ecb3e2868);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Minsc_0de603c5-42e2-4811-9dad-f652de080eba ,(DIALOGRESOURCE)Minsc_InPartyEND_5f5091d1-3514-6f4e-e542-5e49a6a07bea);
+DB_END_General_InPartyDialogs((CHARACTER)S_GOB_DrowCommander_25721313-0c15-4935-8176-9f134385451b ,(DIALOGRESOURCE)Minthara_InPartyEND_2f19b684-e44f-704c-f272-18d535064060);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679 ,(DIALOGRESOURCE)ShadowHeart_InPartyEND_de869b93-4a43-1813-b166-b1c0aa52cd6e);
+DB_END_General_InPartyDialogs((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d ,(DIALOGRESOURCE)Wyll_InPartyEND_0d572da8-0783-4adc-6a30-f3a25d94f033);
+
+DB_END_General_ExtractBrainCastID(NULL_00000000-0000-0000-0000-000000000000, -1);
+
+DB_GLO_ExclusiveFlag("END_General_PartyInRegion_States", (FLAG)END_General_State_CurrentlyInMorphicPool_06208edf-4c61-44a2-932b-b158d9ddd2f0);
+DB_GLO_ExclusiveFlag("END_General_PartyInRegion_States", (FLAG)END_General_State_CurrentlyInAstralPlane_b3cf6c91-4d1c-4dcf-bc57-262f7d0f02b9);
+DB_GLO_ExclusiveFlag("END_General_PartyInRegion_States", (FLAG)END_General_State_CurrentlyInHighHall_118b3dc5-dab8-4872-92da-ab01c15fa55e);
+DB_GLO_ExclusiveFlag("END_General_PartyInRegion_States", (FLAG)END_General_State_CurrentlyInBrainBattle_0d7205b2-0d55-4540-8737-543253873cd6);
+
+//END_REGION
+
+//REGION Endgame Dialogs
+
+//DB_END_General_FullPartyDialog(_Dialog, _IncludeWholeTeam, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+// _StatusIgnoreType
+// 0 = Nothing
+// 1 = IgnoreMutingStatuses (dialog will be added to the DB)
+// 2 = DropMutingStatuses (dialog will be added to the DB)
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)NULL_00000000-0000-0000-0000-000000000000, 0, 0, 0, 0, 0, 0, 0);
+NOT DB_END_General_FullPartyDialog((DIALOGRESOURCE)NULL_00000000-0000-0000-0000-000000000000, 0, 0, 0, 0, 0, 0, 0);
+
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_BrainBattle_Intro_4565e114-0153-0449-ea83-de3b972c7679, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_DestructionOfBrain_5180d955-3d53-ee59-ce74-5866c5be8cd2, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_CombatOver_8cb159d3-3390-4e58-a0ae-8414628bb813, 1, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_FinalDecision_e5feae67-c6f1-1827-e9d6-a6b34647c8ea, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_FinalDecision_Nested_EvilAvatar_e0069683-63a6-f619-cf62-5dc4105a11ba, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_FinalDecision_Nested_EvilDurge_dee4fb08-6170-7221-fb87-51733bbd7220, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_FinalDecision_Nested_EvilEmperor_b5525d0a-e217-9ed9-bc06-e98e2ce1b362, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_BrainBattle_EnterMind_714b6fff-814f-ae03-f959-c15596aef2dd, 0, 1, 1, 1, 1, 1, 1);
+DB_END_General_FullPartyDialog(END_BrainBattle_GaleExplosion_3b9653f5-17c7-6716-2919-3ad3a9c137fc, 0, 1, 1, 1, 1, 1, 2);
+
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_GameFinale_DeathofKarlach_e419b950-b6ba-64bc-f041-1d07a602dfc4, 1, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_ROM_RomanceFates_Astarion_73fb7151-e772-cae7-8d7a-bb5eb8e8860a, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Gale_81fc2269-0613-259c-b950-c0dcebbb7934, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Laezel_523b1bb2-0443-79bf-cf3e-8f435ff5f2e9, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Shadowheart_b9ebb9af-ad65-4e64-6015-105e831d49c0, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Wyll_32de9167-3489-9257-e3c1-e430f2f455ab, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Minthara_699ad056-06a4-db4f-53c4-6706dbb7c544, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Halsin_a853d059-2572-04c4-88db-d737e4a264f7, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_RomanceFates_Karlach_091af35d-0d30-a4bf-b056-9eda505138b5, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Astarion_9a09777b-c0ac-d3d3-c2f4-5e6794fa2ca0, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_CustomAvatar_f346a423-c718-45ca-3a0d-cc228b92abe6, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Gale_7674e0c3-ca25-e924-9c17-3058796f87c3, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Laezel_fbee59b9-cb3a-c1f2-66b4-b0fb82cf24fa, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Shadowheart_bdc19865-8e61-2db2-f135-4a611b15cae1, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Wyll_1667181c-2c0a-5255-ecfd-bd0752b4639c, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SoloFates_Karlach_0181cc77-4b25-dd9a-025b-b08e85387645, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_MystraGaleConfrontation_06f1e7cd-25bf-492a-be6d-5fe608de4bbb, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_TheHerosRevelry_ecd7cb66-d650-d92a-118f-6be977c4b0b2, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GameFinale_SequeToElfsong_7633bf1a-a3e5-d33c-8986-a5fe85f680f3, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog(END_GodsAndMonsters_WithersMeeting_037b2c4f-d8cd-b3bb-1471-a9dee232217d, 0, 1, 1, 1, 1, 1, 1);
+DB_END_General_FullPartyDialog(END_GameFinale_RaphaelCrownUpdate_b7ee667d-d550-7115-37f3-ce900ca80cbd, 0, 1, 1, 1, 1, 1, 1);
+
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_GodsAndMonsters_WithersMeeting_037b2c4f-d8cd-b3bb-1471-a9dee232217d, 0, 1, 1, 1, 1, 1, 1);
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_GameFinale_KarlachInAvernus_b02dc7ba-cc1b-0260-182f-53daffeac30e, 0, 1, 1, 1, 1, 1, 2);
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_GameFinale_RaphaelCrownUpdate_b7ee667d-d550-7115-37f3-ce900ca80cbd, 0, 1, 1, 1, 1, 1, 1);
+
+DB_END_General_FullPartyDialog((DIALOGRESOURCE)END_GameFinale_AvatarLaezelFinalChoice_d10594c3-607a-0b0c-bd1d-96b1ee614091, 0, 1, 1, 1, 1, 1, 2);
+
+//Unlike an inclusion, an interjection is something made for ALL party members and camp followers. It's used specifically for endgame dialogs.
+
+//DB_END_General_InterjectionDialog(_Dialog, _HasInterjectionFlag, _MinSpeakerIndex, _MaxSpeakerIndex)
+//Make sure all speakers for interjections areed group in one big continuous speaker index block. It's important for the logic. 
+//The values _MinSpeakerIndex and _MaxSpeakerIndex are 0-based, so take the values from the dialog and subtract 1.
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_FinalDecision_e5feae67-c6f1-1827-e9d6-a6b34647c8ea, (FLAG)END_FinalDecision_State_HasCompanions_71509891-35c2-4e80-a107-e7c21a0028db, 4, 13);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_8cb159d3-3390-4e58-a0ae-8414628bb813, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_AfterGithLeave_a7c18482-0cc0-7b5a-420b-28974c3e1dc8, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_Conclusion_6a5c5975-8e27-c58f-1a26-64e8685464c0, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_EmperorSolo_113aa7cc-d0cd-5c19-eb5d-b9f6e77136b5, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_GaleExplodedIntro_32b59231-2f78-df56-f3b8-4bf3674641ad, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_GithAreLeaving_b7f3c52d-364c-e740-404f-fb84d34763be, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_StandardIntro_48d64086-0da8-289a-c2a1-cdaa4f7349b2, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_VlaakithLaezel_5b64b0bb-70f3-0873-2982-aedee8a4582b, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_CombatOver_Nested_WhatNext_9187b124-548b-3da3-ca48-4ad22d613207, (FLAG)END_CombatOver_State_HasCompanions_d4e1d74a-ac07-7d10-07dc-3dbd24d3d260, 3, 12);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_GameFinale_DeathofKarlach_e419b950-b6ba-64bc-f041-1d07a602dfc4, (FLAG)END_DeathOfKarlach_State_HasCompanions_c60948cb-3c9b-491b-bccf-618a7c5bdc26, 1, 10);
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_FinalDecision_Nested_EvilDurge_dee4fb08-6170-7221-fb87-51733bbd7220, (FLAG)END_FinalDecision_State_EvilDurgeHasCompanions_7d6b03eb-1a4b-4db3-b77f-a1bc0c2a077c, 2, 15); 
+DB_END_General_InterjectionDialog((DIALOGRESOURCE)END_BrainBattle_FinalDecision_Nested_EvilAvatar_e0069683-63a6-f619-cf62-5dc4105a11ba, (FLAG)END_FinalDecision_State_EvilAvatarHasCompanions_a894824a-ad1b-41a4-841e-0f9745c325bf, 2, 11); 
+
+DB_END_General_ExcludedInterjectionCharacters((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+DB_END_General_ExcludedInterjectionCharacters((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+//This DB is for companions that are in speaker slots in dialogs but get excluded explicitely from the random interjection selection because they have to step away or something.
+//This gets reset every dialog. For a more long-term exclusion see DB_END_General_ForcedListener.
+DB_END_General_ExcludedInterjectionCandidate((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+NOT DB_END_General_ExcludedInterjectionCandidate((GUIDSTRING)NULL_00000000-0000-0000-0000-000000000000);
+
+//This DB is for characters to get slotted from full party dialogs into a listener slot instead. Usually this is because they were removed from the scene.
+//Such characters won't be able to do interjections since they won't be slotted between the speaker index values that allow interjections.
+DB_END_General_ForcedListener((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, 0);
+NOT DB_END_General_ForcedListener((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, 0);
+
+PROC_END_General_FindMainAvatar();
+
+//When the flag is set, the associated character becomes unavailable until the end of the game. This is to represent a character leaving permanently.
+//0 == Dead, 1 == Alive
+DB_END_General_MakeUnavailableFlag((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, (FLAG)END_GameFinale_State_LaezelLeavesFaerun_896fb62a-4f56-41d8-a173-7d06c4cb9209, 1);
+DB_END_General_MakeUnavailableFlag(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, END_BrainBattle_Event_KillKarlach_796fc0c1-607e-fc25-2eca-845c453f9afc, 1);
+DB_END_General_MakeUnavailableFlag(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604, ORI_Gale_State_InElysium_d6c53ee8-ce94-4016-73ee-74d44d309837, 0);
+DB_END_General_MakeUnavailableFlag(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604, ORI_Gale_State_ChallengedMystra_d6dfa722-f85e-e191-a7e0-776d19c9f18a, 0);
+DB_END_General_MakeUnavailableFlag(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, END_CombatOver_State_PlayerKilledLaezel_dc67028e-f26e-a092-ae9a-809234a6bc6d, 0);
+DB_END_General_MakeUnavailableFlag((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, (FLAG)GLO_END_GameFinale_DeathofKarlach_KarlachWentWithNonRomanceWyll_a552e386-af26-eb98-d198-a84221e467b0, 1);
+DB_END_General_MakeUnavailableFlag((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, (FLAG) END_GameFinale_Event_AccompanyKarlachToHell_35150cbf-2c72-1049-37ed-14dbc3736135, 1);
+DB_END_General_MakeUnavailableFlag((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, (FLAG)GLO_END_GameFinale_DeathofKarlach_KarlachWentWithNonRomanceWyll_a552e386-af26-eb98-d198-a84221e467b0, 1);
+DB_END_General_MakeUnavailableCharacterFlag((FLAG)END_BrainBattle_Event_Suicide_ad1258fa-27eb-537c-a113-91db07cb6590, 0);
+DB_END_General_MakeUnavailableCharacterFlag((FLAG)END_BrainBattle_Event_GoToJail_4a021214-a319-a17b-13f6-c3427c794684, 1);
+//END_REGION
+
+//REGION World Timeline DB
+//Play after intro cinematic
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNuatiloidFight_20abace3-8ed7-c55c-7e17-0f32bcf27a25, (TRIGGER)TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var1_57c7437a-44f5-43a8-b243-203d7e0db8ad, "InitialDialog");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNuatiloidFight_20abace3-8ed7-c55c-7e17-0f32bcf27a25, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var1_001_8689c065-90e9-4028-bc03-15fd6d8404d8, "InitialDialog");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var2_8fa8580d-24da-35e5-2cc4-e77ec2180192, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var2_14c45ed0-a332-4f7a-96d8-3141117166be, "InitialDialog");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var2_8fa8580d-24da-35e5-2cc4-e77ec2180192, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var2_001_644825fb-58eb-4111-8b63-b96c22736653, "InitialDialog");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var3_65dbe627-a6ef-1d51-5d9e-1db9c11f1903, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var3_af3a3db6-53fe-42b2-8ca9-07d6241f4edf, "InitialDialog");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var3_65dbe627-a6ef-1d51-5d9e-1db9c11f1903, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var3_001_ca55bdaa-8a13-4d98-83fa-73abf51ef7a1, "InitialDialog");
+
+//Play at start of Brain battle
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var2_8fa8580d-24da-35e5-2cc4-e77ec2180192, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var2_000_4acf2db8-4d00-4851-a7e9-5f3bf994446a, "Brain");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNuatiloidFight_20abace3-8ed7-c55c-7e17-0f32bcf27a25, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var1_000_ff62948d-55e4-4466-a92e-9cc167ae8f7e, "Brain");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var3_65dbe627-a6ef-1d51-5d9e-1db9c11f1903, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var3_000_b506739d-63f4-4f24-b2ec-427c6530c4ec, "Brain");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNuatiloidFight_20abace3-8ed7-c55c-7e17-0f32bcf27a25, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var1_002_cb500dd4-947d-4a49-8e75-a6a153b36bc8, "Brain");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var2_8fa8580d-24da-35e5-2cc4-e77ec2180192, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var2_002_a08d5ff0-3c03-4caa-991c-5311b75abac8, "Brain");
+DB_END_WorldTimelineHelper((DIALOGRESOURCE)WRLD_END_DragonNautiloidFight_Var3_65dbe627-a6ef-1d51-5d9e-1db9c11f1903, TimelineSceneTrigger_WRLD_END_DragonNautiloidFight_Var3_002_309d95af-7101-4ac3-9865-e219ef7f5991, "Brain");
+
+//END_REGION
+
+//REGION Cine stuff
+
+DB_END_HideMindBrainDialogs((DIALOGRESOURCE)END_BrainBattle_FinalDecision_e5feae67-c6f1-1827-e9d6-a6b34647c8ea);
+DB_END_HideMindBrainDialogs((DIALOGRESOURCE)END_BrainBattle_EnterMind_714b6fff-814f-ae03-f959-c15596aef2dd);
+//END_REGION
+
+//A temporary solution, will need to flag emperor dialog nodes in astral tadpole dialog for after release
+PROC_END_General_TEMP_RemoveAstralTadpole();
+
+SetHitpointsPercentage(S_END_SewerGratesOutside_af613949-8da2-46e9-a3c4-3e157512ac9c, 55.0);
+
+PROC_END_Misc_Init();
+PROC_END_Misc_ChangeToInPartyEND();
+
+// Flags that should also be considered when checking if a companion is perma defeated.
+DB_ORI_EPIPermaDefeatedFlags((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, (FLAG)ORI_Karlach_State_EngineBurnedOut_2cd8d398-d6ec-3227-2dfb-975127fb5393);
+KBSECTION
+//REGION DEBUG
+IF
+TextEvent("destroyparty")
+AND
+DB_Players(_Character)
+AND
+IsTagged(_Character, (TAG)AVATAR_306b9b05-1057-4770-aa17-01af21acd650, 0)
+THEN
+PROC_GLO_PartyMembers_Remove(_Character,1);
+
+IF
+TextEvent("hh_arrival")
+AND
+GetHostCharacter(_Player)
+AND
+QRY_StartDialogCustom(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46,_Player,0,0,0,0)
+THEN
+DB_NOOP(1);
+
+IF
+UseStarted(_Player,S_END_DEBUG_ToUpperHighHallDoorCube_85bac0f7-5511-44e6-b409-324d4f645420)
+AND
+DB_Players(_Player)
+THEN
+TeleportTo(_Player, S_END_DEBUG_ToHighHallUpperDoorPoint_7d44ebe5-d74f-4a47-a60e-8b2875998406);
+
+IF
+FlagSet(Debug_END_IllithidOptions_GetSupremeTadpole_50731772-e893-4a45-9691-5e0fe21f8fd9, _Player, _)
+THEN
+ClearFlag(Debug_END_IllithidOptions_GetSupremeTadpole_50731772-e893-4a45-9691-5e0fe21f8fd9, _Player);
+PROC_END_DEBUG_GiveSupremeTadpole((CHARACTER)_Player);
+
+IF
+TextEvent("end_supremetadpole")
+AND
+GetHostCharacter(_Player)
+THEN
+PROC_END_DEBUG_GiveSupremeTadpole((CHARACTER)_Player);
+
+PROC
+PROC_END_DEBUG_GiveSupremeTadpole((CHARACTER)_Player)
+THEN
+ClearFlag(END_IllithidOptions_Event_GiveSupremeTadpole_a8128df9-dea6-4a4d-961d-9dbdc49ebb38, _Player);
+ClearFlag(END_General_Event_DialogFullCeremorph_d968607c-405b-4a57-9956-477e9708b5b5, _Player);
+RemoveStatus(_Player, "MIND_FLAYER_FORM", NULL_00000000-0000-0000-0000-000000000000);
+ClearTag(_Player, FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b);
+NOT DB_OnlyOnce("END_AppliedMindFlayerForm");
+SetFlag(END_IllithidOptions_Event_GiveSupremeTadpole_a8128df9-dea6-4a4d-961d-9dbdc49ebb38, _Player);
+
+IF
+TextEvent("end_completecrowncontroller")
+AND
+GetHostCharacter(_Player)
+THEN
+ToInventory(S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e, _Player, 1, 1, 1);
+
+IF
+TextEvent("end_testbrainextract")
+AND
+DB_END_General_PartyMindFlayer(_Player)
+AND
+DB_END_IllithidOptionsFollower_Follower(_Target, _CharacterFlag, _, _)
+THEN
+Die(_Target,DEATHTYPE.Physical,_Player,0,1);
+DB_END_General_BrainExtractor(_Player);
+ClearFlag(_CharacterFlag, _Player);
+PROC_END_General_BrainExtract((CHARACTER)_Target);
+
+IF
+TextEvent("end_changeinpartydialog")
+THEN
+PROC_END_Misc_ChangeToInPartyEND();
+
+IF
+TextEvent("end_starthhworldtimelines")
+THEN
+PROC_END_General_ReadyDragonAndNautiloidWorldTimelines();
+
+IF
+DB_END_RealPartOfTheTeam((CHARACTER)_Character)
+AND
+NOT DB_ApprovalRating(_, _Character, _)
+AND
+DB_Avatars((CHARACTER)_Avatar)
+THEN
+DB_ApprovalRating(_Character, _Avatar, 0);
+//END_REGION
+
+//REGION Big Debug Setup
+
+IF
+LevelLoaded("END_Main")
+THEN
+SetFlag((FLAG)CURRENTREGION_END_Main_140b4d3e-6cc7-48cb-b66f-dbc4eba710e1, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+IF
+LevelUnloading("END_Main")
+THEN
+ClearFlag((FLAG)CURRENTREGION_END_Main_140b4d3e-6cc7-48cb-b66f-dbc4eba710e1, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+IF
+PartyPresetLoaded(_, _)
+AND
+DB_END_Debug_QueuedPartyPresetChange(1)
+AND
+GetHostCharacter(_Character)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _Character)
+THEN
+PROC_END_Debug_CheckNewAvatar(_Character);
+
+PROC
+PROC_END_Debug_CheckNewAvatar((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12)
+AND
+DB_GlobalFlag((FLAG)END_Debug_Event_LaezelOrpheusPath_bc1addec-13d4-147c-3a97-84cdd1cb1b02)
+THEN
+SetFlag(ORI_Laezel_State_IsOnOrpheusPath_97244ccc-a6b5-403e-9cfe-a3502eb4af56, NULL_00000000-0000-0000-0000-000000000000, 0);
+SetTag(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, LAEZEL_ORPHEUSPATH_616688cd-b203-4f14-8c33-086bb83062a3);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag(END_General_Debug_GaleStartAvatar_dc52ad2e-99e1-47f2-0ebf-38d90927ecf2, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag(END_General_Debug_GaleStartAvatar_dc52ad2e-99e1-47f2-0ebf-38d90927ecf2, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Gale", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_WyllStartAvatar_cac9789e-f050-cc65-b346-6bbba4ac0dd2, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_WyllStartAvatar_cac9789e-f050-cc65-b346-6bbba4ac0dd2, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Wyll", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_LaezelStartAvatar_5b7d278e-abc5-a329-95a6-d6c6e216fa72, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_LaezelStartAvatar_5b7d278e-abc5-a329-95a6-d6c6e216fa72, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Laezel", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_AstarionStartAvatar_d97013d1-405f-c07a-d324-73da945412b1, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_AstarionStartAvatar_d97013d1-405f-c07a-d324-73da945412b1, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Astarion", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_SHStartAvatar_e35b5da6-1d34-024a-ac21-f8302b622d22, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_SHStartAvatar_e35b5da6-1d34-024a-ac21-f8302b622d22, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Shadowheart", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_KarlachStartAvatar_9db0205a-737f-2709-36b9-944ef3571e44, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_KarlachStartAvatar_9db0205a-737f-2709-36b9-944ef3571e44, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_Karlach", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_DarkUrgeStartAvatar_6f90eca0-38c1-b45e-977b-3ff27857ee0e, _Player)
+THEN
+NOT DB_END_Debug_QueuedPartyChangeFlag((FLAG)END_General_Debug_DarkUrgeStartAvatar_6f90eca0-38c1-b45e-977b-3ff27857ee0e, _Player);
+DB_END_Debug_QueuedPartyPresetChange(1);
+TeleportTo(S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7, _Player, "");
+LoadPartyPreset("Level12_DarkUrge", S_END_DebugLoadPartyPresetPos_bdbdde1b-51e5-43bb-b0d5-64732ed9e2f7);
+
+IF
+FlagSet(_Flag, _Player, _)
+AND
+DB_END_Debug_AvatarPresetFlags(_Flag)
+THEN
+DB_END_Debug_QueuedPartyChangeFlag(_Flag, _Player);
+
+IF
+FlagSet((FLAG)END_Debug_Event_KillRavengard_580dde3f-31fa-6e1b-d25a-1dbd622d7fb6, _, _)
+THEN
+Die((CHARACTER)S_GLO_Ravengard_f6620372-ebd0-4511-a39d-8c2d4ad03f03, DEATHTYPE.Physical, 1);
+
+IF
+DialogEnded(DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_GlobalFlag((FLAG)ORI_Wyll_State_IsDevil_f83eee79-271b-4044-947a-d8eb699d734a)
+AND
+DB_PartOfTheTeam((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+THEN
+SetTag(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,(TAG)WYLL_DEVIL_5e844f0e-d822-4210-a28e-6af149a7bd4b);
+
+IF
+FlagSet((FLAG)END_General_Debug_GoodAllies_ee71917a-2c8d-cc3c-b50e-b981bf204b75, _, _)
+THEN
+PROC_GlobalSetFlagAndCache((FLAG)GLO_Volo_State_AtCamp_de1cadca-2eca-4cee-a3dc-e262bbb92277);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SorcerousSundries_State_ProdigyHasStayedAtRamazith_524ab56a-8169-4926-9105-8bcaf8c87499);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SorcerousSundries_State_PlayersSideWithNightsong_992ec758-9536-40ce-9a45-72193c81ec1b);
+PROC_GlobalSetFlagAndCache((FLAG)CAMP_OwlbearCub_State_Friend_3b963a1c-ca06-db60-75c3-063592e84dc4);
+PROC_GlobalSetFlagAndCache((FLAG)GLO_Origin_PartOfTheTeam_Jaheira_d7d29efe-70bb-47c2-9db3-bc8a10347bc6);
+PROC_GlobalSetFlagAndCache((FLAG)COL_TadpolingCentre_Event_ReleasePods_3e81dc65-eb2d-86aa-5163-28450894f868);
+PROC_GlobalSetFlagAndCache((FLAG)GLO_LiftingTheCurse_State_BreathHasBeenRestored_2113b54e-a140-4aa0-97ac-219fa7b7d038);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_MurderTribunal_Event_ValeriaLeavesTribunal_57a75bf2-2648-c9f8-e75e-8366c582225e);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SteelWatchFoundry_State_GainedGondianENDSupport_1bb09a8b-001d-4b43-9f39-ba89eb3aece9);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SteelWatchFoundry_BarcusIsLeader_2feaf431-1f1d-d951-7b4f-daa744985a46);
+PROC_GlobalSetFlagAndCache((FLAG)ORI_Astarion_State_StayedVampireSpawn_2724b881-6be1-49a7-8375-a49e9acb4546);
+PROC_GlobalSetFlagAndCache((FLAG)CAMP_ArabellaPowers_State_JergalToldToLeave_3d22614e-8762-8aec-4537-9d50abb97b23);
+PROC_GlobalSetFlagAndCache((FLAG)WYR_WyrmRockPrison_State_FlorrickEscaped_a84a5b16-ca29-43c3-91bf-17def670ba07);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_Guildhall_State_SidedWithNineFingers_9a6c3448-67c8-e23a-ed28-7b3cfba65bf5);
+PROC_GlobalSetFlagAndCache((FLAG)CAMP_Ravengard_State_RavengardInCamp_37309008-04cf-493c-8ca6-43034d331a8a);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_Guildhall_State_MolHelpsPlayerInEND_5c4d5b0f-a9bb-4fe0-8003-2af9213a64b0);
+
+IF
+FlagSet((FLAG)END_General_Debug_BadAllies_566210a1-27ef-a883-cb74-7001f7a0ea92, _, _)
+THEN
+PROC_GlobalSetFlagAndCache((FLAG)GLO_Volo_State_AtCamp_de1cadca-2eca-4cee-a3dc-e262bbb92277);
+PROC_GlobalSetFlagAndCache((FLAG)END_GatherYourAllies_State_WulbrenGaveIronhandSupport_dd929cfa-685e-41d6-8e04-be2f1a14da98);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_Guildhall_State_PostCoup_ZhentControlled_bd914804-54c7-4de2-b51e-988919c2e644);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SorcerousSundries_State_PlayersSideWithLorroakan_24c45d86-9027-48cc-afdd-3e6bac7d5425);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_Orthon_State_PromisedENDSupport_b412f8bc-1cc6-2ac9-058e-8a5d06e77c5a);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_SharGrotto_Event_SurrenderShadowheart_bfc7f3b7-4e58-44e1-bb58-131ee77fc0ad);
+PROC_GlobalSetFlagAndCache((FLAG)ORI_Astarion_State_BecameVampireLord_c446ce94-efd8-45d5-b407-284177b6b57e);
+PROC_GlobalSetFlagAndCache((FLAG)CAMP_MizorasPact_State_WyllEternalPact_8da8b1fb-5aa9-8cf5-8b45-6f8ca31a1227);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_DevilishOx_State_HelpedPhasmToCity_d1498063-a466-4f43-8cb5-103baa46c753);
+PROC_GlobalSetFlagAndCache((FLAG)LOW_BlushingMermaid_State_HagIsAllyInEND_3bb65bd3-a72f-4a43-a497-10b1501cd6a5);
+PROC_GlobalSetFlagAndCache((FLAG)ORI_Shadowheart_State_Shar_KilledParents_3a3b0ecf-a1ed-4733-8548-0348befc6bac);
+
+IF
+FlagSet((FLAG)END_General_Debug_SetupAllies_56c77d49-4963-4a38-b0ea-52a0e3911ca8, _, _)
+THEN
+PROC_END_GatherYourAllies_DebugSetup();
+
+IF
+FlagSet((FLAG)END_General_Debug_SideEmperor_4e4fa4b8-d870-d677-db2f-be9f1ecad210, (CHARACTER)_Player, _)
+THEN
+SetFlag(END_IllithidOptions_State_AssimilatedOrpheus_5562cc3f-c168-48c9-87c1-1598a5c58961);
+PROC_DEBUG_END_IllithidOptionsFollower_Follow(_Player, S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+FlagSet((FLAG)END_General_Debug_SideOrpheus_a1c60b25-a466-9dd3-5234-330d2bc001cb, (CHARACTER)_Player, _)
+THEN
+SetFlag(END_IllithidOptions_Event_EmperorBetrayal_411c2575-bfbc-449c-9762-edad4285aafd);
+PROC_DEBUG_END_IllithidOptionsFollower_Follow(_Player, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+PROC_END_IllithidOptionsFollower_DebugFreeOrpheus();
+
+IF
+FlagSet((FLAG)END_General_Debug_SideNone_d528077d-4da8-19b5-45ff-d92e4a3f3254, (CHARACTER)_Player, _)
+THEN
+SetFlag(END_IllithidOptions_State_AssimilatedOrpheus_5562cc3f-c168-48c9-87c1-1598a5c58961);
+SetFlag(END_IllithidOptions_Event_EmperorBetrayal_411c2575-bfbc-449c-9762-edad4285aafd);
+
+IF
+FlagSet((FLAG)END_General_Debug_EmperorMF_b027bc20-79fd-a08d-c483-78fadd3a8765, _, _)
+THEN
+SetFlag(END_IllithidOptions_State_GaveStones_18e3be1a-c1c0-437e-ad0a-a1426d8830f4);
+
+IF
+FlagSet((FLAG)END_General_Debug_OrpheusMF_f5e1bff5-a71f-13d5-70d2-44a16b060025, _, _)
+THEN
+ApplyStatus(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "MIND_FLAYER_ORPHEUS", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+FlagSet((FLAG)END_General_Debug_PlayerMF_e2c308d9-4ecf-88b7-ea51-a557d94845de, (CHARACTER)_Player, _)
+THEN
+ApplyStatus(_Player, "MIND_FLAYER_FORM", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+FlagSet((FLAG)END_General_Debug_KarlachMF_ce0e00d5-3c22-b15e-900d-b3f089d47f42, (CHARACTER)_Player, _)
+THEN
+ApplyStatus(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, "MIND_FLAYER_FORM", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+FlagSet((FLAG)END_General_Debug_GaleMF_cbf5eb48-3d73-e1fb-f78d-bf81e3bcb8ea, (CHARACTER)_Player, _)
+THEN
+ApplyStatus(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604, "MIND_FLAYER_FORM", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+FlagSet((FLAG)END_General_Debug_StartAtGather_09162d84-03ea-4e28-27e6-91d12dc574d4, (CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtGather_09162d84-03ea-4e28-27e6-91d12dc574d4, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtGather_09162d84-03ea-4e28-27e6-91d12dc574d4, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtGather_09162d84-03ea-4e28-27e6-91d12dc574d4, _Player)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtGather_09162d84-03ea-4e28-27e6-91d12dc574d4, _Player);
+PROC_TeleportPartiesTo(S_END_VossAmbushPoint_000_4f34b0e2-c6fb-4fc7-b552-30566581ab56, "");
+
+
+IF
+FlagSet((FLAG)END_General_Debug_StartAtBrainStalk_3b6b7268-6c97-9bf6-3c2b-8180cc9ae6f9,(CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtBrainStalk_3b6b7268-6c97-9bf6-3c2b-8180cc9ae6f9, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainStalk_3b6b7268-6c97-9bf6-3c2b-8180cc9ae6f9, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainStalk_3b6b7268-6c97-9bf6-3c2b-8180cc9ae6f9, _Player)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainStalk_3b6b7268-6c97-9bf6-3c2b-8180cc9ae6f9, _Player);
+PROC_TeleportPartiesTo(S_END_DEBUG_ToHighHallUpperDoorPoint_7d44ebe5-d74f-4a47-a60e-8b2875998406, "");
+
+IF
+FlagSet((FLAG)END_General_Debug_StartAtBrainBattle_80306787-bf3c-2278-e78c-706229a70b84, (CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtBrainBattle_80306787-bf3c-2278-e78c-706229a70b84, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainBattle_80306787-bf3c-2278-e78c-706229a70b84, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainBattle_80306787-bf3c-2278-e78c-706229a70b84, _Player)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtBrainBattle_80306787-bf3c-2278-e78c-706229a70b84, _Player);
+DB_END_HighHallInterior_ToRoofReadyCheckPlayer(_Player);
+DB_END_BrainBattle_IntroScene(1);
+PROC_END_BrainBattle_PreSetup();
+SetFlag(END_BrainBattle_Event_PlayersMovedToBrain_87f477a2-6ca7-4ada-be46-3f2680fa0f4c);
+SetFlag(END_BrainBattle_Event_Started_3cd63c2e-7343-45dd-9137-4cabca2179a6, NULL_00000000-0000-0000-0000-000000000000, 0);
+DB_END_BrainBattle_Start(1);
+PROC_SetRelationToPlayers(ACT3_END_Netherbrain_04928f91-6658-431e-b652-65aea6403879, 0);
+
+IF
+FlagSet((FLAG)END_General_Debug_StartAtMindBattle_0989383f-83fb-f6dc-2fa1-c4ddb0b008f8, (CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtMindBattle_0989383f-83fb-f6dc-2fa1-c4ddb0b008f8, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtMindBattle_0989383f-83fb-f6dc-2fa1-c4ddb0b008f8, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtMindBattle_0989383f-83fb-f6dc-2fa1-c4ddb0b008f8, _Player)
+AND
+DB_END_General_PartyMindFlayer(_Mindflayer)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtMindBattle_0989383f-83fb-f6dc-2fa1-c4ddb0b008f8, _Player);
+DB_END_BrainBattle_Start(1);
+PROC_TeleportPartiesTo(S_END_MindPartyPos_8f6b2b6a-3c4c-45e9-8069-d728ecca47f0, "");
+DB_END_DEBUG_BrainBattle_MindBattleCombatJoin(1);
+PROC_END_BrainBattle_DominationUsed(_Mindflayer);
+PROC_SetRelationToPlayers(ACT3_END_Netherbrain_04928f91-6658-431e-b652-65aea6403879, 0);
+
+IF
+FlagSet(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, (CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, _Player)
+THEN
+PROC_TeleportPartiesTo(S_END_MindPartyPos_8f6b2b6a-3c4c-45e9-8069-d728ecca47f0, "END_Debug_CombatOverTP");
+
+IF
+EntityEvent(_, "END_Debug_CombatOverTP")
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, _Player)
+AND
+DB_END_General_PartyMindFlayer(_Mindflayer)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtCombatOver_b46e68a0-a987-cb5c-45be-ddfaa1b6ba5a, _Player);
+DB_END_BrainBattle_DominationCharacter(_Mindflayer);
+DB_END_BrainBattle_DominationCompletedReady(1);
+
+IF
+FlagSet(END_General_Debug_StartAtFates_7a7e4405-09a9-a8e3-165c-016f5625b2b3, (CHARACTER)_Player, _)
+THEN
+ClearFlag(END_General_Debug_StartAtFates_7a7e4405-09a9-a8e3-165c-016f5625b2b3, _Player);
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtFates_7a7e4405-09a9-a8e3-165c-016f5625b2b3, _Player);
+
+IF
+DialogEnded((DIALOGRESOURCE)DebugBook_3af7dec4-4c08-9e44-9064-ec038ebad0ea, _)
+AND
+DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtFates_7a7e4405-09a9-a8e3-165c-016f5625b2b3, _Player)
+THEN
+NOT DB_END_General_QueuedDebugSetup(END_General_Debug_StartAtFates_7a7e4405-09a9-a8e3-165c-016f5625b2b3, _Player);
+PROC_END_BrainBattle_Over();
+
+IF
+FlagSet(END_General_Debug_GaleWantsCrown_4580ddff-923e-2088-0381-99d8a73316c4, _, _)
+AND
+DB_ORI_Gale_GoalScore(_Index, _Score)
+THEN
+NOT DB_ORI_Gale_GoalScore(_Index, _Score);
+DB_ORI_Gale_GoalScore(1, 6);
+
+IF
+FlagSet(END_Shadowheart_Debug_GoodHair_375a469c-5d6f-26a7-6f18-50c2b361988a, _, _)
+THEN
+AddCustomVisualOverride((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679, (GUIDSTRING)e05b0f79-d3af-41eb-b0b2-1164b6f0debf);
+AddCustomMaterialOverride((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679, "831f8c8a-4101-4265-ad55-1a57217d2af7");
+
+IF
+FlagSet(END_Shadowheart_Debug_EvilHair_d341d90d-841c-344a-8fd8-7c8dcd2e87f4, _, _)
+THEN
+AddCustomVisualOverride((CHARACTER)S_Player_ShadowHeart_3ed74f06-3c60-42dc-83f6-f034cb47c679, (GUIDSTRING)c7f78eb7-6858-4f02-836b-d8c8b56c34fc);
+
+//END_REGION
+
+PROC
+PROC_END_General_TEMP_RemoveAstralTadpole()
+AND
+DB_Players(_Player)
+AND
+GetItemByTemplateInInventory((ITEMROOT)LOOT_MF_Tadpole_Astral_A_4a82e6f2-839f-434e-addf-b07dd1578194, _Player, _Tadpole) 
+THEN
+MagicPocketsDrop(_Player, _Tadpole);
+SetOnStage(_Tadpole, 0);
+
+QRY
+QRY_GLO_DaisyDreams_BlockInclusion((DIALOGRESOURCE)_DialogResource)
+AND
+DB_ActiveLevel("END_Main")
+AND
+NOT DB_END_General_EmperorADs(_DialogResource)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_END_Misc_Init()
+AND
+QRY_OnlyOnce("END_BlockNewPlayers")
+THEN
+DB_NOOP(1);
+
+//REGION InPartyEND Companion Dialogs
+PROC
+PROC_END_Misc_ChangeToInPartyEND()
+AND
+DB_END_General_InPartyDialogs(_Player, _Dialog)
+AND
+NOT DB_OriginInPartyDialog(_Player, _Dialog)
+THEN
+DB_OriginInPartyDialog(_Player, _Dialog);
+//END_REGION
+
+//REGION Arrival to High Hall
+IF
+EntityEvent(_Player, "END_ArrivedInHighHall")
+THEN
+SetFlag(END_General_State_CurrentlyInHighHall_118b3dc5-dab8-4872-92da-ab01c15fa55e);
+RemoveStatus(_Player, "CRE_ASTRALPRISON_GRAVITY", NULL_00000000-0000-0000-0000-000000000000);
+PROC_END_HighHall_TryStartArrivalDialog((CHARACTER)_Player);
+
+PROC
+PROC_END_HighHall_TryStartArrivalDialog((CHARACTER)_Player)
+AND
+DB_END_General_MainDialogAnchor(_Player)
+AND
+NOT DB_END_HighHall_ArrivalStarted(1)
+AND
+QRY_StartDialogCustom(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46,_Player,0,0,0,0)
+THEN
+DB_END_HighHall_ArrivalStarted(1);
+PROC_NotifyWhenReadyToMoveOn(_Player, "END_HighHall_ArrivalReaction");
+
+PROC
+PROC_END_HighHall_TryStartArrivalDialog((CHARACTER)_Player)
+AND
+DB_END_HighHall_ArrivalUser((CHARACTER)_Player)
+AND
+NOT DB_END_HighHall_ArrivalStarted(1)
+AND
+QRY_StartDialogCustom(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46,_Player,0,0,0,0)
+THEN
+DB_END_HighHall_ArrivalStarted(1);
+PROC_NotifyWhenReadyToMoveOn(_Player, "END_HighHall_ArrivalReaction");
+
+PROC
+PROC_END_HighHall_TryStartArrivalDialog((CHARACTER)_Player)
+AND
+DB_Players(_Player)
+AND
+NOT DB_END_HighHall_ArrivalStarted(1)
+AND
+QRY_StartDialogCustom(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46,_Player,0,0,0,0)
+THEN
+DB_END_HighHall_ArrivalStarted(1);
+PROC_NotifyWhenReadyToMoveOn(_Player, "END_HighHall_ArrivalReaction");
+
+PROC
+PROC_END_HighHall_TryStartArrivalDialog((CHARACTER)_Player)
+AND
+NOT DB_END_HighHall_ArrivalStarted(1)
+THEN
+PROC_END_General_ReadyDragonAndNautiloidWorldTimelines();
+PROC_NotifyWhenReadyToMoveOn(_Player, "END_HighHall_ArrivalReaction");
+
+PROC
+PROC_StartDialog_AddExtraSpeakers(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46, _ID)
+AND
+DB_PartyMembers(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+PROC
+PROC_StartDialog_AddExtraSpeakers(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46, _ID)
+AND
+DB_PartyMembers(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+PROC
+PROC_ReadyToMoveOn(_Player, "END_HighHall_ArrivalReaction")
+THEN
+StartVoiceBark(END_HighHall_VB_ArrivalReaction_2f18a24d-5347-1124-2575-c288056f4993, _Player);
+
+IF
+DialogEnded(END_HighHall_Arrival_be92c5db-c9bf-4130-25f1-bdde183f7a46, _)
+THEN
+PROC_END_General_ReadyDragonAndNautiloidWorldTimelines();
+//END_REGION
+
+//REGION World Timeline Handler
+
+PROC
+PROC_END_General_ReadyDragonAndNautiloidWorldTimelines()
+AND
+QRY_OnlyOnce("END_ReadyDragonAndNautiloidWorldTimelineOnce")
+AND
+DB_END_WorldTimelineHelper(_Dialog, _SceneTrigger, "InitialDialog")
+AND
+StartWorldTimeline(_Dialog,_SceneTrigger, _, _ID)
+THEN
+DB_END_ActiveWorldTimelines(_ID);
+
+PROC
+PROC_END_BrainBattle_Setup()
+AND
+QRY_OnlyOnce("END_ReadyDragonAndNautiloidWorldTimelinesBrainBattle")
+AND
+DB_END_WorldTimelineHelper(_Dialog, _SceneTrigger, "Brain")
+AND
+StartWorldTimeline(_Dialog, _SceneTrigger, _, _ID)
+THEN
+DB_END_ActiveWorldTimelines(_ID);
+
+PROC
+PROC_END_BrainBattle_RevelryScene()
+AND
+QRY_OnlyOnce("END_DisableDragonAndNautiloidWorldTimelinesBrainBattle")
+AND
+DB_END_ActiveWorldTimelines(_ID)
+THEN
+StopWorldTimeline(_ID);
+NOT DB_END_ActiveWorldTimelines(_ID);
+//END_REGION
+
+//REGION Supreme Tadpole & Party Mind Flayer
+IF
+FlagSet(END_IllithidOptions_Event_GiveSupremeTadpole_a8128df9-dea6-4a4d-961d-9dbdc49ebb38, _Char, _)
+THEN
+SetFlag(END_General_State_SupremeTadpoleAvailable_0177c452-90cc-4c29-83b8-4acaa2902b27);
+ToInventory(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, _Char, 1, 1, 1);
+ClearFlag(END_IllithidOptions_Event_GiveSupremeTadpole_a8128df9-dea6-4a4d-961d-9dbdc49ebb38, _Char);
+
+IF
+UseStarted(_Player, S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5)
+THEN
+PROC_END_General_UseSupremeTadpole((CHARACTER)_Player);
+
+PROC
+PROC_END_General_UseSupremeTadpole((CHARACTER)_Companion)
+AND
+NOT DB_Avatars(_Companion)
+AND
+DB_Players(_Companion)
+AND
+QRY_GetClosestAvailableCharacterTo(_Companion, 0)
+AND
+DB_ClosestAvailableCharacterTo_PreferAvatar(_ClosestAvatar, _Companion, _Dist, 1)
+AND
+_Dist <= 10.0
+THEN
+DB_END_General_CompanionHandingTadpoleToAvatar(_Companion);
+PROC_GlobalSetFlagAndCache(END_SupremeTadpole_State_CompanionUsedNearAvatar_e83666c4-63db-4002-963b-53123c284c8c);
+PROC_END_General_TryStartSupremeTadpoleDialog((CHARACTER)_ClosestAvatar);
+
+PROC
+PROC_END_General_UseSupremeTadpole((CHARACTER)_Companion)
+AND
+NOT DB_Avatars(_Companion)
+AND
+DB_Players(_Companion)
+AND
+NOT DB_END_General_CompanionHandingTadpoleToAvatar(_)
+THEN
+PROC_TryStartAD(GLO_Tadpole_PAD_RefuseSupremeTadpole_e0a3c10b-6a7a-d6d1-7951-567889caabf2, _Companion);
+
+PROC
+PROC_END_General_UseSupremeTadpole((CHARACTER)_Player)
+AND
+DB_Avatars(_Player)
+THEN
+PROC_END_General_TryStartSupremeTadpoleDialog((CHARACTER)_Player);
+
+PROC
+PROC_END_General_TryStartSupremeTadpoleDialog((CHARACTER)_Player)
+AND
+NOT DB_GlobalFlag(END_BrainBattle_Event_Started_3cd63c2e-7343-45dd-9137-4cabca2179a6)
+AND
+QRY_StartDialogCustom(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, NULL_00000000-0000-0000-0000-000000000000, _Player, 0, 0, 0, 0)
+THEN
+PROC_END_General_RemoveSupremeTadpole();
+DB_END_General_SupremeTadpoleHolder(_Player);
+
+PROC
+PROC_END_General_RemoveSupremeTadpole()
+AND
+GetOwner(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, _Char)
+THEN
+MagicPocketsDrop(_Char, S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5);
+
+PROC
+PROC_END_General_RemoveSupremeTadpole()
+THEN
+SetOnStage(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, 0);
+
+PROC
+PROC_END_General_GiveSupremeTadpole((CHARACTER)_Char)
+THEN
+PROC_ToInventoryAndOnStage(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, _Char, 1, 0, 1);
+
+PROC
+PROC_END_General_TryStartSupremeTadpoleDialog((CHARACTER)_Player)
+AND
+DB_GlobalFlag(END_BrainBattle_Event_Started_3cd63c2e-7343-45dd-9137-4cabca2179a6)
+AND
+QRY_StartDialogCustom(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, S_GLO_Netherbrain_3858e896-d7dd-4699-b37d-d3919ff15ba7, _Player, 0, 0, 0, 0)
+THEN
+PROC_END_General_RemoveSupremeTadpole();
+DB_END_General_SupremeTadpoleHolder(_Player);
+
+PROC
+PROC_DialogFlagSetup(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _, _Player)
+AND
+DB_Is_InCombat(_Player, _)
+THEN
+SetFlag(END_SupremeTadpole_State_UserInCombat_c83894e1-646b-c2b5-faac-82d0927f5d0a, _Player);
+
+//If Companion Karlach used the tadpole to start the dialog, force add her as a speaker
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _ID)
+AND
+DB_END_General_CompanionHandingTadpoleToAvatar(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c);
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _ID)
+AND
+NOT DB_GlobalFlag(END_IllithidOptions_Event_EmperorBetrayal_411c2575-bfbc-449c-9762-edad4285aafd)
+THEN
+PROC_DialogAddSpeakingActor(_ID,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,0,1); 
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _ID)
+AND
+DB_GlobalFlag(END_IllithidOptions_State_OrpheusIsFree_3b747050-1be0-432e-9de6-e48faa4b74bb)
+AND
+NOT DB_GlobalFlag(END_General_State_OrpheusDefeated_f502054a-3668-4e54-b742-6266d00c4ec1)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+IF
+DialogEnded(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _)
+AND
+DB_Players(_Player)
+AND
+GetFlag(END_SupremeTadpole_State_UserInCombat_c83894e1-646b-c2b5-faac-82d0927f5d0a, _Player, 1)
+THEN
+ClearFlag(END_SupremeTadpole_State_UserInCombat_c83894e1-646b-c2b5-faac-82d0927f5d0a, _Player);
+
+IF
+DialogEnded(GLO_Tadpole_UseSupremeTadpole_474dd7db-074b-08cf-fd96-9b63fea16985, _)
+THEN
+PROC_END_General_SupremeTadpoleDialogEnded();
+
+PROC
+PROC_END_General_SupremeTadpoleDialogEnded()
+AND
+DB_GlobalFlag(END_General_State_SupremeTadpoleAvailable_0177c452-90cc-4c29-83b8-4acaa2902b27)
+AND
+DB_END_General_SupremeTadpoleHolder(_Player)
+THEN
+PROC_END_General_GiveSupremeTadpole((CHARACTER)_Player);
+NOT DB_END_General_SupremeTadpoleHolder(_Player);
+ClearFlag(END_SupremeTadpole_State_CompanionUsedNearAvatar_e83666c4-63db-4002-963b-53123c284c8c);
+
+PROC
+PROC_END_General_SupremeTadpoleDialogEnded()
+AND
+DB_END_General_CompanionHandingTadpoleToAvatar(_Companion)
+THEN
+NOT DB_END_General_CompanionHandingTadpoleToAvatar(_Companion);
+
+PROC
+PROC_END_General_SupremeTadpoleDialogEnded()
+AND
+NOT DB_GlobalFlag(END_General_State_SupremeTadpoleAvailable_0177c452-90cc-4c29-83b8-4acaa2902b27)
+AND
+DB_END_General_SupremeTadpoleHolder(_Player)
+THEN
+NOT DB_END_General_SupremeTadpoleHolder(_Player);
+
+IF
+FlagSet(END_General_Event_DialogFullCeremorph_d968607c-405b-4a57-9956-477e9708b5b5, _Char, _)
+THEN
+PROC_END_General_RemoveSupremeTadpole(); //Fallback removal if it was not removed already
+PROC_END_General_ApplyMindFlayerForm((CHARACTER)_Char);
+
+PROC
+PROC_END_General_ApplyMindFlayerForm((CHARACTER)_Char)
+AND
+QRY_END_General_ValidPlayerMindFlayerCandidate(_Char)
+AND
+HasActiveStatus(_Char, "MIND_FLAYER_FORM", 0)
+AND
+QRY_OnlyOnce("END_AppliedMindFlayerForm")
+THEN
+ApplyStatus(_Char, "MIND_FLAYER_FORM", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+QRY
+QRY_END_General_ValidPlayerMindFlayerCandidate((CHARACTER)_Char)
+AND
+DB_Avatars(_Char)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ValidPlayerMindFlayerCandidate((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+AND
+NOT DB_Avatars(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ValidPlayerMindFlayerCandidate((CHARACTER)S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604)
+AND
+NOT DB_Avatars(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604)
+THEN
+DB_NOOP(1);
+
+IF
+StatusApplied(_Char, "MIND_FLAYER_FORM", _Source, _)
+AND
+_Source != S_GLO_ThrallOfTheAbsolute_AbsoluteHelper_15d4bd12-855b-4483-a2e5-661bfeb96d1f //Ignore if form is applied because of Thrall of the Absolute
+THEN
+PROC_END_General_ApplyFullCeremorphAndReactions((CHARACTER)_Char);
+
+PROC
+PROC_END_General_ApplyMindFlayerForm((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+AND
+HasActiveStatus(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "MIND_FLAYER_ORPHEUS", 0)
+AND
+QRY_OnlyOnce("END_AppliedMindFlayerForm")
+THEN
+ApplyStatus(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "MIND_FLAYER_ORPHEUS", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+StatusApplied(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "MIND_FLAYER_ORPHEUS", _, _)
+THEN
+PROC_END_General_ApplyFullCeremorphAndReactions((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+PROC
+PROC_END_General_ApplyFullCeremorphAndReactions((CHARACTER)_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+DB_END_General_ReadyTransformVBReaction(_Player);
+DB_END_General_ReadyFollowerADTransformReaction(_Player);
+
+//Reacting to Orpheus takes priority over transformation reaction, though both should still happen if the player transforms later
+IF
+FlagSet(END_IllithidOptions_State_AssimilatedOrpheus_5562cc3f-c168-48c9-87c1-1598a5c58961, _, _)
+AND
+DB_END_General_ReadyTransformVBReaction(_Player)
+THEN
+NOT DB_END_General_ReadyTransformVBReaction(_Player);
+
+IF
+FlagSet(END_IllithidOptions_State_AssimilatedOrpheus_5562cc3f-c168-48c9-87c1-1598a5c58961, _, _ID)
+AND
+DB_DialogPlayers(_ID, _Player, 1)
+THEN
+DB_END_General_ReadyAssimilationVBReaction((CHARACTER)_Player);
+
+IF
+DB_END_General_ReadyAssimilationVBReaction(_Player)
+AND
+NOT DB_DialogPlayers(_, _Player, _)
+THEN
+NOT DB_END_General_ReadyAssimilationVBReaction(_Player);
+StartVoiceBark((VOICEBARKRESOURCE)END_IllithidOptions_VB_OrpheusAssimilationReaction_186992b2-95ed-c212-7bca-847f5a7b16a7, (CHARACTER)_Player);
+
+PROC
+PROC_END_General_ApplyFullCeremorphAndReactions((CHARACTER)_Char)
+THEN
+ClearFlag(END_General_State_SupremeTadpoleAvailable_0177c452-90cc-4c29-83b8-4acaa2902b27);
+SetOnStage(S_END_SupremeTadpole_02a7596f-5dcb-4d2a-93c8-611de53096b5, 0);
+SetTag(_Char, FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b);
+
+IF
+FlagSet(END_IllithidOptions_State_GaveStones_18e3be1a-c1c0-437e-ad0a-a1426d8830f4, _, _)
+THEN
+SetTag(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b); //Even though already a mind flayer, tag is mainly used to know who will be casting the spell
+
+//Wait for the player to be out of dialog for their party to react
+IF
+DB_END_General_ReadyTransformVBReaction(_Player)
+AND
+NOT DB_DialogPlayers(_, _Player, _)
+THEN
+StartVoiceBark((VOICEBARKRESOURCE)END_IllithidOptions_VB_TransformationReaction_983619db-fbfd-239f-c7ef-3dcfa1fd6779, (CHARACTER)_Player);
+
+IF
+AutomatedDialogStarted(END_IllithidOptions_PAD_TransformationReaction_6c3b1a42-5f59-cfb5-5bb8-4e52b2c963bb, _)
+AND
+DB_END_General_ReadyTransformVBReaction(_Player)
+THEN
+NOT DB_END_General_ReadyTransformVBReaction(_Player);
+
+IF
+AutomatedDialogEnded(END_IllithidOptions_PAD_TransformationReaction_6c3b1a42-5f59-cfb5-5bb8-4e52b2c963bb, _)
+AND
+DB_END_General_ReadyTransformVBReaction(_Player)
+THEN
+NOT DB_END_General_ReadyTransformVBReaction(_Player);
+
+IF
+DB_END_General_ReadyFollowerADTransformReaction(_Player)
+AND
+NOT DB_END_General_ReadyTransformVBReaction(_)
+AND
+NOT DB_DialogName(END_IllithidOptions_PAD_TransformationReaction_6c3b1a42-5f59-cfb5-5bb8-4e52b2c963bb, _)
+AND
+NOT DB_DialogPlayers(_, _Player, _)
+THEN
+NOT DB_END_General_ReadyFollowerADTransformReaction(_Player);
+PROC_END_General_TryFollowerTransformReactionAD();
+
+PROC
+PROC_END_General_TryFollowerTransformReactionAD()
+AND
+QRY_END_General_FollowerAvailableForAD((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+AND
+DB_GlobalFlag(END_IllithidOptions_State_OrpheusIsFree_3b747050-1be0-432e-9de6-e48faa4b74bb)
+AND
+DB_GlobalFlag(END_IllithidOptions_State_ExitPortalAvailable_b97872a1-59cc-40cd-8963-e06be614adc0)
+THEN
+PROC_TryStartAD(END_General_AD_OrpheusTadpoleReact_c201a21f-baea-173b-6d87-77a30b11dddb, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+QRY
+QRY_END_General_FollowerAvailableForAD((CHARACTER)_Follower)
+AND
+DB_END_IllithidOptionsFollower_Follower((CHARACTER)_Follower, _, _, _)
+AND
+NOT DB_CantTalk(_Follower)
+THEN
+DB_NOOP(1);
+
+IF
+TagSet(_Char,FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b)
+AND
+NOT DB_END_General_PartyMindFlayer(_)
+THEN
+DB_END_General_PartyMindFlayer((CHARACTER)_Char);
+ToInventory(S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e, _Char, 1, 1, 1);
+ApplyStatus(S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e, "END_CROWNCONTROLLER_BOUNDEDTO", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+PROC_END_General_KarsusStatusSafetyCheck();
+PROC_END_General_UpdateMindFlayerFlags((CHARACTER)_Char);
+
+PROC
+PROC_END_General_UpdateMindFlayerFlags((CHARACTER)_Player)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+SetFlag(END_General_State_PlayerIsMindFlayer_d138f537-2268-49a6-8dc4-256bd9cf5633);
+SetFlag(END_General_State_PartyMemberIsMindFlayer_3c42b03b-c51c-4f06-a5a3-a5ee416d9d8b);
+
+PROC
+PROC_END_General_UpdateMindFlayerFlags((CHARACTER)S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+AND
+NOT DB_Avatars(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c)
+THEN
+SetFlag(END_General_State_CompKarlachIsMindFlayer_4f403cb8-c9d8-4e50-ff3a-e56a90c8f1d0);
+
+PROC
+PROC_END_General_UpdateMindFlayerFlags((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+THEN
+SetFlag(END_General_State_OrpheusIsMindFlayer_2b638127-f30a-424e-9d4a-a9f8f100a307);
+SetFlag(END_General_State_PartyMemberIsMindFlayer_3c42b03b-c51c-4f06-a5a3-a5ee416d9d8b);
+
+PROC
+PROC_END_General_UpdateMindFlayerFlags((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+THEN
+SetFlag(END_General_State_EmperorIsPartyMindFlayer_4e9c31b2-f298-48f6-853c-e74dd88591e9);
+SetFlag(END_General_State_PartyMemberIsMindFlayer_3c42b03b-c51c-4f06-a5a3-a5ee416d9d8b);
+
+//END_REGION
+
+//REGION Extract Brain Spell Assimilation
+IF
+UsingSpellOnTarget(_MindFlayerCaster, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "Target_ExtractBrain_Mindflayer", _, _, _StoryID)
+AND
+DB_END_General_PartyMindFlayer((CHARACTER)_MindFlayerCaster) //Player
+THEN
+PROC_END_General_UpdateBrainCastID(_MindFlayerCaster, _StoryID);
+
+IF
+UsingSpellOnTarget(_, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, _SpellID, _, _, _)
+AND
+_SpellID != "Target_ExtractBrain_Mindflayer"
+AND
+DB_END_General_ExtractBrainCastID(_OldMindFlayerCaster, _OldStoryID)
+THEN
+NOT DB_END_General_ExtractBrainCastID(_OldMindFlayerCaster, _OldStoryID);
+
+PROC
+PROC_END_General_UpdateBrainCastID(_, _)
+AND
+DB_END_General_ExtractBrainCastID(_OldMindFlayerCaster, _OldStoryID)
+THEN
+NOT DB_END_General_ExtractBrainCastID(_OldMindFlayerCaster, _OldStoryID);
+
+PROC
+PROC_END_General_UpdateBrainCastID((CHARACTER)_MindFlayerCaster,(INTEGER)_StoryID)
+THEN
+DB_END_General_ExtractBrainCastID(_MindFlayerCaster, _StoryID);
+
+IF
+KilledBy(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, _MindFlayerCaster, _, _StoryID)
+AND
+DB_END_General_ExtractBrainCastID(_MindFlayerCaster, _StoryID)
+AND
+DB_Players(_Player)
+AND
+DB_END_IllithidOptionsFollower_Follower((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, _CharacterFlag, _GlobalFlag, _Dialog)
+AND
+GetFlag(_CharacterFlag, _Player, 1)
+THEN
+NOT DB_END_General_ExtractBrainCastID(_MindFlayerCaster, _StoryID);
+DB_END_General_BrainExtractor((CHARACTER)_MindFlayerCaster);
+ClearFlag(_CharacterFlag, _Player);
+PROC_END_General_BrainExtract((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+PROC
+PROC_END_General_BrainExtract((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+AND
+DB_END_General_BrainExtractor(_Player)
+THEN
+PROC_GlobalSetFlagAndCache(END_IllithidOptions_State_AssimilatedOrpheus_5562cc3f-c168-48c9-87c1-1598a5c58961);
+SetFlag(END_IllithidOptions_State_AssimilatorOfOrpheus_56989e8b-cca9-4f3b-aece-26a389e3b6ee, _Player);
+PROC_END_General_CheckBetrayedLaezel((CHARACTER)_Player);
+
+PROC
+PROC_END_General_CheckBetrayedLaezel((CHARACTER)_Player)
+AND
+NOT DB_Avatars(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12)
+AND
+GetFlag(ORI_State_PartneredWithLaezel_d169a786-6e56-4f0d-a2eb-33c48d8d1160, _Player, 1)
+THEN
+SetFlag(END_General_State_OrpheusBrainExtractByLaezelPartner_8bef4e13-3c97-4210-970d-d83ff71de33d);
+
+PROC
+PROC_END_General_CheckBetrayedLaezel((CHARACTER)_Player)
+AND
+DB_GlobalFlag(ORI_Laezel_State_IsOnOrpheusPath_97244ccc-a6b5-403e-9cfe-a3502eb4af56)
+AND
+NOT DB_Avatars(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12)
+THEN
+SetFlag(END_IllithidOptions_Event_OrpheusPathLaezelBetrayed_2be665c6-da32-4e78-bae2-a83fb1b72368);
+PROC_END_General_SpellAssimilationOrpheus(); //To use for region specific reactivity
+PROC_Origins_CompanionLeavePermanently((CHARACTER)S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, "CompanionHostile");
+PROC_SetRelationToPlayers((FACTION)Origin_Laezel_bee8449b-d682-93c8-e7da-9e4bad369476, 0);
+DB_CombatReact_AD_OnDeath(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, END_General_AD_LaezelBetrayedDeath_e8064996-c2f9-9c53-7540-f6f23dc66c19);
+
+PROC
+PROC_END_General_SpellAssimilationOrpheus()
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_GLO_PartyMembers_MakeNPCHook(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12)
+AND
+DB_END_General_BrainExtractor(_Player)
+THEN
+PROC_CharacterMoveTo(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, _Player, "Sprint", "");
+
+IF
+DB_Sees(S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12, _Player)
+AND
+DB_GlobalFlag(END_IllithidOptions_Event_OrpheusPathLaezelBetrayed_2be665c6-da32-4e78-bae2-a83fb1b72368)
+AND
+DB_END_General_BrainExtractor(_Player)
+AND
+QRY_OnlyOnce("END_BetrayedLaezel_TurnStartAD")
+THEN
+PROC_TryStartAD(END_General_AD_LaezelBetrayed_b7acf440-715b-9b3b-1b2c-a7644d678fd5, S_Player_Laezel_58a69333-40bf-8358-1d17-fff240d7fb12);
+//END_REGION
+
+//REGION Main avatar anchor for dialogs.
+
+//For debug reasons
+IF
+DB_Avatars(_Avatar)
+THEN
+PROC_END_General_FindMainAvatar();
+
+//Clear current main anchor
+PROC
+PROC_END_General_FindMainAvatar()
+AND
+DB_END_General_MainDialogAnchor(_Character)
+THEN
+NOT DB_END_General_MainDialogAnchor(_Character);
+
+//Set available mindflayer avatar as main anchor.
+PROC
+PROC_END_General_FindMainAvatar()
+AND
+DB_Avatars(_Avatar)
+AND
+IsTagged(_Avatar, FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b, 1)
+AND
+NOT DB_END_General_UnavailableAvatar(_Avatar, _)
+AND
+NOT DB_END_General_MainDialogAnchor(_)
+THEN
+DB_END_General_MainDialogAnchor(_Avatar);
+
+//Set available owner of mindflayer party member as main anchor.
+PROC
+PROC_END_General_FindMainAvatar()
+AND
+DB_PartyMembers(_PartyMember)
+AND
+IsTagged(_PartyMember, FULL_CEREMORPH_3797bfc4-8004-4a19-9578-61ce0714cc0b, 1)
+AND
+NOT DB_Avatars(_PartyMember)
+AND
+CharacterGetOwner(_PartyMember, _Avatar)
+AND
+DB_Avatars(_Avatar)
+AND
+NOT DB_END_General_UnavailableAvatar(_Avatar, _)
+AND
+NOT DB_END_General_MainDialogAnchor(_)
+THEN
+DB_END_General_MainDialogAnchor(_Avatar);
+
+//Set first avatar as main anchor.
+PROC
+PROC_END_General_FindMainAvatar()
+AND
+DB_Avatars(_Avatar)
+AND
+NOT DB_END_General_UnavailableAvatar(_Avatar, _)
+AND
+NOT DB_END_General_MainDialogAnchor(_)
+THEN
+DB_END_General_MainDialogAnchor(_Avatar);
+
+//Get best avatar if a non-avatar is input into the proc, and start over.
+PROC
+PROC_END_General_AssignMainAvatar((CHARACTER)_Character)
+AND
+NOT DB_Avatars(_Character)
+AND
+DB_Players(_Character)
+AND
+QRY_GetBestAvatarForCompanion(_Character)
+AND
+DB_QRYRTN_GetBestAvatarForCompanion(_Character, _Avatar)
+THEN
+PROC_END_General_AssignMainAvatar(_Avatar);
+
+//Follower version
+PROC
+PROC_END_General_AssignMainAvatar((CHARACTER)_Character)
+AND
+NOT DB_Players(_Character)
+AND
+CharacterGetOwner(_Character, _Avatar)
+THEN
+PROC_END_General_AssignMainAvatar(_Avatar);
+
+PROC
+PROC_END_General_AssignMainAvatar((CHARACTER)_Avatar)
+AND
+DB_Avatars(_Avatar)
+AND
+NOT DB_END_General_UnavailableAvatar(_Avatar, _)
+AND
+DB_END_General_MainDialogAnchor(_Character)
+AND
+_Avatar != _Character
+THEN
+NOT DB_END_General_MainDialogAnchor(_Character);
+DB_END_General_MainDialogAnchor(_Avatar);
+
+PROC
+PROC_END_General_AssignMainAvatar((CHARACTER)_Avatar)
+AND
+DB_Avatars(_Avatar)
+AND
+NOT DB_END_General_MainDialogAnchor(_)
+THEN
+DB_END_General_MainDialogAnchor(_Avatar);
+
+PROC
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Character, (INTEGER)_State)
+THEN
+DB_END_General_ForcedListener(_Character, _State);
+
+PROC
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Avatar, (INTEGER)_State)
+AND
+DB_Avatars(_Avatar)
+AND
+NOT DB_END_General_UnavailableAvatar(_Avatar, _)
+THEN
+DB_END_General_UnavailableAvatar(_Avatar, _State);
+
+PROC
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Avatar, _)
+AND
+DB_END_General_MainDialogAnchor(_Avatar)
+THEN
+PROC_END_General_FindMainAvatar();
+
+//END_REGION
+
+//REGION Real PartOfTheTeam
+
+PROC
+PROC_END_Misc_Init()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+NOT DB_PartyMembers(_Character)
+AND
+NOT DB_PermaDefeated(_Character)
+THEN
+PROC_CharacterFullRestore(_Character);
+
+PROC
+PROC_END_Misc_Init()
+AND
+DB_Avatars(_Avatar)
+AND
+DB_PartOfTheTeam(_Avatar)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Avatar);
+
+PROC
+PROC_END_Misc_Init()
+AND
+DB_PartOfTheTeam(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+PROC
+PROC_END_Misc_Init()
+AND
+DB_PartOfTheTeam(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+THEN
+DB_END_RealPartOfTheTeam(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+PROC
+PROC_END_Misc_Init()
+AND
+DB_Origins(_Character)
+AND
+DB_PartOfTheTeam(_Character)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+//Just in case, for hirelings.
+PROC
+PROC_END_Misc_Init()
+AND
+DB_Players(_Character)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+NOT DB_END_RealPartOfTheTeam(_Character)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+//Fix old acts if necessary.
+PROC
+PROC_END_Misc_Init()
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT DB_PartOfTheTeam(_Character)
+THEN
+NOT DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+//For stuff added after the goal is loaded.
+IF
+DB_Avatars(_Avatar)
+AND
+DB_PartOfTheTeam(_Character)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Avatar);
+
+IF
+DB_PartOfTheTeam(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+DB_PartOfTheTeam(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+THEN
+DB_END_RealPartOfTheTeam(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+IF
+DB_Origins(_Character)
+AND
+DB_PartOfTheTeam(_Character)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+//Just in case, for hirelings.
+IF
+DB_Players(_Character)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+NOT DB_END_RealPartOfTheTeam(_Character)
+THEN
+DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+IF
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT DB_PartOfTheTeam(_Character)
+THEN
+NOT DB_END_RealPartOfTheTeam((CHARACTER)_Character);
+
+IF
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT DB_PartyMembers(_Character)
+THEN
+PROC_CharacterFullRestore(_Character);
+
+//END_REGION
+
+//REGION Force-join all party members
+
+//DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+// _StatusIgnoreType
+// 0 = Nothing
+// 1 = IgnoreMutingStatuses (dialog will be added to the DB)
+// 2 = DropMutingStatuses (dialog will be added to the DB)
+
+IF
+DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, 1, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+THEN
+DB_DialogBlockAttackButton(_Dialog);
+
+IF
+DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, _BlockAttack, 1, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+THEN
+DB_DialogBlockTradeButton(_Dialog);
+
+IF
+DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreDefeated, _IgnoreCombat, 1)
+THEN
+DB_IgnoreMutingStatussesDialog(_Dialog);
+
+IF
+DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreDefeated, _IgnoreCombat, 2)
+THEN
+DB_DropMutingStatussesDialog(_Dialog);
+
+//Add on start - custom
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, _IncludeTeam, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+THEN
+PROC_END_General_AddExtraSpeakersCustom(_Dialog, _ID);
+
+PROC
+PROC_END_General_AddExtraSpeakersCustom((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+THEN
+DB_NOOP(1);
+
+//Add on start - Ignore statuses
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 1, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+_StatusIgnoreType != 0
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+AND
+QRY_SpeakerIsAvailable(_Character, _IgnoreCombat, 1)
+THEN
+PROC_DialogAddSpeakingActor(_ID, _Character, 1, 1);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//Add on start - Don't ignore statuses
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 1, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+_StatusIgnoreType == 0
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+AND
+QRY_SpeakerIsAvailable(_Character, _IgnoreCombat, 0)
+THEN
+PROC_DialogAddSpeakingActor(_ID, _Character, 1, 1);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//Add after start
+IF
+DB_DialogName(_Dialog, _ID)
+AND
+NOT DB_DialogEnding(_Dialog, _ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 1, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT DB_DialogPlayers(_ID, _Character, _)
+AND
+NOT DB_DialogNPCs(_ID, _Character, _)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+THEN
+PROC_DialogAddListeningActor(_ID, _Character);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//REGION Party Member Version
+
+//Add on start - Ignore statuses
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 0, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+_StatusIgnoreType != 0
+AND
+DB_PartyMembers(_Character)
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+AND
+QRY_SpeakerIsAvailable(_Character, _IgnoreCombat, 1)
+THEN
+PROC_DialogAddSpeakingActor(_ID, _Character, 1, 1);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//Add on start - Don't ignore statuses
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)_Dialog, (INTEGER)_ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 0, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+_StatusIgnoreType == 0
+AND
+DB_PartyMembers(_Character)
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+AND
+QRY_SpeakerIsAvailable(_Character, _IgnoreCombat, 0)
+THEN
+PROC_DialogAddSpeakingActor(_ID, _Character, 1, 1);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//Add after start
+IF
+DB_DialogName(_Dialog, _ID)
+AND
+NOT DB_DialogEnding(_Dialog, _ID)
+AND
+DB_END_General_FullPartyDialog(_Dialog, 0, _AddAfterStart, _BlockAttack, _BlockTrade, _IgnoreCombat, _IgnoreDefeated, _StatusIgnoreType)
+AND
+DB_PartyMembers(_Character)
+AND
+DB_END_RealPartOfTheTeam(_Character)
+AND
+NOT DB_DialogPlayers(_ID, _Character, _)
+AND
+NOT DB_DialogNPCs(_ID, _Character, _)
+AND
+NOT QRY_END_General_ShouldNotAddToFullPartyDialog(_Character, _Dialog)
+THEN
+PROC_DialogAddListeningActor(_ID, _Character);
+DB_Dialog_IncludedNearbySpeakers(_ID, _Character);
+
+//END_REGION
+
+
+//Don't add a character
+QRY
+QRY_END_General_ShouldNotAddToFullPartyDialog((CHARACTER)_Character, (DIALOGRESOURCE)_Dialog)
+AND
+DB_Defeated(_Character)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ShouldNotAddToFullPartyDialog((CHARACTER)_Character, (DIALOGRESOURCE)_Dialog)
+AND
+DB_END_General_FullPartyDialog(_Dialog, _, _, _, _, 0, _, 0)
+AND
+DB_CantTalk(_Character)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ShouldNotAddToFullPartyDialog((CHARACTER)_Character, (DIALOGRESOURCE)_Dialog)
+AND
+DB_END_General_FullPartyDialog(_Dialog, _, _, _, _, 1, _, 0)
+AND
+DB_CantTalk_IgnoreCombat(_Character)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ShouldNotAddToFullPartyDialog((CHARACTER)_Character, (DIALOGRESOURCE)_Dialog)
+AND
+DB_END_General_FullPartyDialog(_Dialog, _, _, _, _, 0, _, _StatusIgnoreType)
+AND
+_StatusIgnoreType != 0
+AND
+DB_CantTalk_IgnoreStatuses(_Character)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_ShouldNotAddToFullPartyDialog((CHARACTER)_Character, (DIALOGRESOURCE)_Dialog)
+AND
+DB_END_General_FullPartyDialog(_Dialog, _, _, _, _, 1, _, _StatusIgnoreType)
+AND
+_StatusIgnoreType != 0
+AND
+DB_CantTalk_IgnoreStatusesCombat(_Character)
+THEN
+DB_NOOP(1);
+
+
+//END_REGION
+
+//REGION Interjection Dialogs
+
+IF
+FlagSet(END_General_State_InclusionExcluded_98c42fdb-7511-72c1-3861-a9232a4c40f7, _Speaker, _ID)
+AND
+DB_DialogName(_Dialog, _ID)
+THEN
+DB_END_General_ExcludedInterjectionCandidate(_Speaker);
+PROC_END_General_CheckAvailableInterjection(_Dialog);
+
+IF
+FlagCleared(END_General_State_InclusionExcluded_98c42fdb-7511-72c1-3861-a9232a4c40f7, _Speaker, _ID)
+AND
+DB_DialogName(_Dialog, _ID)
+THEN
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker);
+PROC_END_General_CheckAvailableInterjection(_Dialog);
+
+PROC
+PROC_END_General_CheckAvailableInterjection((DIALOGRESOURCE)_Dialog)
+AND
+NOT QRY_END_General_AnyInterjectionAvailable()
+AND
+DB_END_General_InterjectionDialog(_Dialog, _Flag, _, _)
+THEN
+ClearFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+PROC
+PROC_END_General_CheckAvailableInterjection((DIALOGRESOURCE)_Dialog)
+AND
+QRY_END_General_AnyInterjectionAvailable()
+AND
+DB_END_General_InterjectionDialog(_Dialog, _Flag, _, _)
+THEN
+SetFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+QRY
+QRY_END_General_AnyInterjectionAvailable()
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_NOOP(1);
+
+IF
+DialogActorLeft(_Dialog, _, _Speaker, _)
+AND
+DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker);
+ClearFlag(END_General_State_InclusionExcluded_98c42fdb-7511-72c1-3861-a9232a4c40f7, _Speaker);
+
+IF
+DialogActorJoined(_Dialog, _ID, _Speaker, _Index)
+AND
+DB_END_General_InterjectionDialog(_Dialog, _Flag, _MinIndex, _MaxIndex)
+AND
+_Index >= _MinIndex
+AND
+_Index <= _MaxIndex
+AND
+NOT DB_Avatars((CHARACTER)_Speaker)
+THEN
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog);
+
+PROC
+PROC_DialogAddSpeakingActor(_ID, _Speaker, _, _)
+AND
+DB_DialogRequestCache_DialogInstance(_Dialog, _ID)
+AND
+DB_END_General_InterjectionDialog(_Dialog, _Flag, _MinIndex, _MaxIndex)
+AND
+NOT DB_GlobalFlag(_Flag)
+AND
+DB_END_RealPartOfTheTeam((CHARACTER)_Speaker) //Use DB_END_RealPartOfTheTeam(_Character) because we want companions still in camp to join in.
+AND
+NOT DB_END_General_ExcludedInterjectionCharacters((CHARACTER)_Speaker) //Not Emperor or Orpheus
+AND
+IsTagged(_Speaker, AVATAR_306b9b05-1057-4770-aa17-01af21acd650, 0)	//Avatars can't interject
+THEN
+SetFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+IF
+FlagSet(END_RandomCompanion_Find_b80c6715-9cc9-5106-015e-433cd682eb7a, _Player, _ID)
+THEN
+ClearFlag(END_RandomCompanion_Find_b80c6715-9cc9-5106-015e-433cd682eb7a, _Player, _ID);
+PROC_END_General_AssignInterjection((CHARACTER)_Player, _ID, END_RandomCompanion_Find_b80c6715-9cc9-5106-015e-433cd682eb7a);
+
+IF
+FlagSet(END_RandomCompanion_FindPreferPartner_afac6bc1-ae8f-4db9-bcec-0c1e96f159e3, _Player, _ID)
+THEN
+ClearFlag(END_RandomCompanion_FindPreferPartner_afac6bc1-ae8f-4db9-bcec-0c1e96f159e3, _Player, _ID);
+PROC_END_General_AssignInterjection((CHARACTER)_Player, _ID, END_RandomCompanion_FindPreferPartner_afac6bc1-ae8f-4db9-bcec-0c1e96f159e3);
+
+IF
+FlagSet(END_RandomPartyMember_Find_418e721f-1710-450b-b73d-1378bcaa2bbd, _Player, _ID)
+THEN
+ClearFlag(END_RandomPartyMember_Find_418e721f-1710-450b-b73d-1378bcaa2bbd, _Player, _ID);
+PROC_END_General_AssignInterjection((CHARACTER)_Player, _ID, END_RandomPartyMember_Find_418e721f-1710-450b-b73d-1378bcaa2bbd);
+
+IF
+FlagSet(END_RandomPartyMember_FindWithBackup_65093fd5-943d-4770-be4d-534ba1a50bb5, _Player, _ID)
+THEN
+ClearFlag(END_RandomPartyMember_FindWithBackup_65093fd5-943d-4770-be4d-534ba1a50bb5, _Player, _ID);
+PROC_END_General_AssignInterjection((CHARACTER)_Player, _ID, END_RandomPartyMember_FindWithBackup_65093fd5-943d-4770-be4d-534ba1a50bb5);
+
+IF
+FlagSet(END_RandomPartyMember_FindNotKarlachWithBackup_ad88cbbe-ea64-1eab-0ed6-b2da9807de05, _Player, _ID)
+THEN
+ClearFlag(END_RandomPartyMember_FindNotKarlachWithBackup_ad88cbbe-ea64-1eab-0ed6-b2da9807de05, _Player, _ID);
+PROC_END_General_AssignInterjection((CHARACTER)_Player, _ID, END_RandomPartyMember_FindNotKarlachWithBackup_ad88cbbe-ea64-1eab-0ed6-b2da9807de05);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, (FLAG)_Flag)
+AND
+DB_END_General_InterjectionCharacter(_Character)
+THEN
+NOT DB_END_General_InterjectionCharacter(_Character);
+ClearFlag(END_RandomCompanion_Picked_d39d2a4e-2efb-c14c-ba23-f5c03fac5038, _Character, 0);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, (FLAG)_Flag)
+AND
+DB_END_General_ActualInterjectionCandidate(_Speaker)
+THEN
+NOT DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomCompanion_Find_b80c6715-9cc9-5106-015e-433cd682eb7a)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomCompanion_FindPreferPartner_afac6bc1-ae8f-4db9-bcec-0c1e96f159e3)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+AND
+DB_ORI_Partnered(_Player, _Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomCompanion_FindPreferPartner_afac6bc1-ae8f-4db9-bcec-0c1e96f159e3)
+AND
+NOT DB_END_General_ActualInterjectionCandidate(_) //Did not find a partner
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+//Party members only.
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomPartyMember_Find_418e721f-1710-450b-b73d-1378bcaa2bbd)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+DB_PartyMembers((CHARACTER)_Speaker)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomPartyMember_FindWithBackup_65093fd5-943d-4770-be4d-534ba1a50bb5)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+DB_PartyMembers((CHARACTER)_Speaker)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomPartyMember_FindWithBackup_65093fd5-943d-4770-be4d-534ba1a50bb5)
+AND
+NOT DB_END_General_ActualInterjectionCandidate(_)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomPartyMember_FindNotKarlachWithBackup_ad88cbbe-ea64-1eab-0ed6-b2da9807de05)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+DB_PartyMembers((CHARACTER)_Speaker)
+AND
+_Speaker != S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, END_RandomPartyMember_FindNotKarlachWithBackup_ad88cbbe-ea64-1eab-0ed6-b2da9807de05)
+AND
+NOT DB_END_General_ActualInterjectionCandidate(_)
+AND
+DB_END_General_PotentialInterjectionCandidate(_Speaker, _ID, _Dialog)
+AND
+_Speaker != S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c
+AND
+NOT DB_END_General_ExcludedInterjectionCandidate(_Speaker)
+THEN
+DB_END_General_ActualInterjectionCandidate(_Speaker);
+
+PROC
+PROC_END_General_AssignInterjection((CHARACTER)_Player, (INTEGER)_ID, (FLAG)_Flag)
+AND
+QRY_GetRandom("DB_END_General_ActualInterjectionCandidate", 1, "DB_END_General_InterjectionCharacter")
+AND
+DB_END_General_InterjectionCharacter(_Character)
+THEN
+SetFlag(END_RandomCompanion_Picked_d39d2a4e-2efb-c14c-ba23-f5c03fac5038, _Character, 0);
+
+IF
+DialogEnded(_Dialog, _)
+AND
+DB_END_General_InterjectionDialog(_Dialog, _Flag, _, _)
+AND
+DB_GlobalFlag(_Flag)
+THEN
+ClearFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+//END_REGION
+
+//REGION Combine Stones
+PROC
+PROC_END_General_CombineStones((CHARACTER)_)
+AND
+DB_GLO_EmperorPrelude_NetherStoneTrackers(_Netherstone, _, _, _, _, _)
+AND
+GetOwner(_Netherstone, _Char)
+THEN
+MagicPocketsDrop(_Char, _Netherstone);
+
+PROC
+PROC_END_General_CombineStones((CHARACTER)_)
+AND
+DB_GLO_EmperorPrelude_NetherStoneTrackers(_Netherstone, _, _, _, _, _)
+THEN
+SetOnStage(_Netherstone, 0);
+
+PROC
+PROC_END_General_CombineStones((CHARACTER)_Player)
+AND
+DB_Players(_Player)
+AND
+QRY_OnlyOnce("END_General_StonesCombined")
+THEN
+ToInventory(S_END_CrownController_Complete_5424460f-8a64-45d6-863e-55e5425e271e, _Player, 1, 1, 1);
+
+//A sanity check to make sure the PartyMindFlayer has the very important spell
+PROC
+PROC_END_General_KarsusStatusSafetyCheck()
+AND
+DB_END_General_PartyMindFlayer(_MindFlayer)
+AND
+HasSpell(_MindFlayer, "Target_END_Mindflayer_CrownDomination", 0)
+THEN
+AddSpell(_MindFlayer, "Target_END_Mindflayer_CrownDomination", 0, 0);
+//END_REGION
+
+//REGION Transforming civilians
+//Civilians that turn into Mind Flayers when the player approaches or attacks them
+
+PROC
+PROC_END_Misc_Init()
+THEN
+PROC_TriggerRegisterForPlayers((TRIGGER)S_END_MindFlayerOutburstTrigger_01_03e6520d-58ae-4fce-bc25-a3dce2977810);
+DB_END_MindflayerOutburst_TurnedCivilians((CHARACTER)S_END_MindFlayerOutburstCivilian_01_74e72b8f-f071-4778-9114-0281f43a7c36, "Shout_END_MindFlayerFormCivilian",0);
+DB_END_MindflayerOutburst_TurnedCivilians((CHARACTER)S_END_MindFlayerOutburstCivilian_02_71294a40-be3e-4543-b01e-f5332cf086d5, "Shout_END_MindFlayerFormCivilian",400);
+
+IF
+DB_END_MindflayerOutburst_TurnedCivilians((CHARACTER)_Char, _, _)
+THEN
+PROC_CharacterDisableAllCrimes(_Char);
+
+IF
+AttackedBy(_Char,_,_,_,_,_,_)
+AND
+DB_END_MindflayerOutburst_TurnedCivilians((CHARACTER)_Char, _, _)
+THEN
+PROC_END_MindflayerOutburst_TurnToMindflayer();
+
+IF
+EnteredTrigger(_Player,S_END_MindFlayerOutburstTrigger_01_03e6520d-58ae-4fce-bc25-a3dce2977810)
+THEN
+PROC_END_MindflayerOutburst_TurnToMindflayer();
+
+PROC
+PROC_END_MindflayerOutburst_TurnToMindflayer()
+AND
+QRY_OnlyOnce("END_MindflayerOutburst_TurnToMindflayer_OnlyOnce")
+AND
+DB_END_MindflayerOutburst_TurnedCivilians(_Character, _, _Timer)
+THEN
+RealtimeObjectTimerLaunch(_Character,"END_MindflayerOutburst_TurnToMindflayer_Delay",_Timer);
+
+IF
+ObjectTimerFinished((CHARACTER)_Character,"END_MindflayerOutburst_TurnToMindflayer_Delay")
+AND
+DB_END_MindflayerOutburst_TurnedCivilians(_Character, _Spell, _Timer)
+AND
+NOT DB_PermaDefeated(_Character)
+THEN
+UseSpell(_Character,_Spell,_Character);
+RemoveStatus(_Character,"ANIM_COWER");
+NOT DB_END_MindflayerOutburst_TurnedCivilians(_Character, _Spell, _Timer);
+
+PROC
+PROC_END_MindflayerOutburst_TurnToMindflayer()
+THEN
+PROC_TriggerUnregisterForPlayers((TRIGGER)S_END_MindFlayerOutburstTrigger_01_03e6520d-58ae-4fce-bc25-a3dce2977810);
+
+//END_REGION
+
+//REGION Key Item Tracking
+IF
+FlagSet(_CharacterFlag, _Player, _)
+AND
+DB_END_General_TadpoleAndStoneTracking(_, _CharacterFlag, _GlobalFlag, _, _MarkerID)
+THEN
+ShowMapMarker((CHARACTER)_Player, _MarkerID, 0); 
+SetFlag(_GlobalFlag);
+PROC_END_General_ResetLeaveAttemptFlag();
+
+IF
+FlagCleared(END_General_State_HasSupremeTadpole_a0d1a230-79f8-4af6-a425-f9d8a771bd24, _Player, _)
+AND
+NOT QRY_END_General_PartyHasSupremeTadpole()
+THEN
+ClearFlag(END_General_State_PartyHasSupremeTadpole_a0ee98a9-7272-415a-95f6-f11c86048593);
+
+IF
+FlagCleared(END_General_State_HasCrownController_de78970a-95c8-4e54-bdf7-28f1da9ca83b, _Player, _)
+AND
+NOT QRY_END_General_PartyHasCompleteCrownController()
+THEN
+ClearFlag(END_General_State_PartyHasCrownController_d526db7f-8ded-4755-84cd-498fd629b11d);
+
+QRY
+QRY_END_General_PartyHasSupremeTadpole()
+AND
+DB_PartyMembers(_Player)
+AND
+GetFlag((FLAG)END_General_State_HasSupremeTadpole_a0d1a230-79f8-4af6-a425-f9d8a771bd24, _Player, 1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_PartyHasCompleteCrownController()
+AND
+DB_PartyMembers(_Player)
+AND
+GetFlag((FLAG)END_General_State_HasCrownController_de78970a-95c8-4e54-bdf7-28f1da9ca83b, _Player, 1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_CanProceedTowardsFinale()
+AND
+DB_GlobalFlag(END_General_State_PartyMemberIsMindFlayer_3c42b03b-c51c-4f06-a5a3-a5ee416d9d8b)
+AND
+QRY_END_General_PartyHasCompleteCrownController()
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_END_General_CanProceedTowardsFinale()
+AND
+QRY_END_General_PartyHasSupremeTadpole()
+AND
+QRY_END_General_PartyHasCompleteCrownController()
+THEN
+DB_NOOP(1);
+
+//Emperor is party Mind Flayer, so no need for tadpole or stones
+QRY
+QRY_END_General_CanProceedTowardsFinale()
+AND
+DB_GlobalFlag(END_IllithidOptions_State_GaveStones_18e3be1a-c1c0-437e-ad0a-a1426d8830f4)
+THEN
+DB_NOOP(1);
+
+//Orpheus is party Mind Flayer, so tadpole is already used he has stones
+QRY
+QRY_END_General_CanProceedTowardsFinale()
+AND
+DB_GlobalFlag(END_General_State_OrpheusIsMindFlayer_2b638127-f30a-424e-9d4a-a9f8f100a307)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_END_General_ThrallOfTheAbsoluteWarning((CHARACTER)_Player)
+AND
+QRY_StartDialogCustom(END_General_TadpoleOrNetherstoneAbsent_24763045-86d0-69a7-83f2-5f531a3e589f, _Player, 0, 0, 0, 0)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_END_General_ResetLeaveAttemptFlag()
+AND
+DB_Players(_Player)
+THEN
+ClearFlag(END_General_State_LeaveWithoutStoryItemsAttempt_d8a2a19f-662a-1df2-cee2-782d32c2d344, _Player);
+
+IF
+FlagCleared(_CharacterFlag, _Player, _)
+AND
+DB_END_General_TadpoleAndStoneTracking(_Item, _CharacterFlag, _, _, _MarkerID)
+AND
+NOT QRY_ItemInMagicPockets((CHARACTER)_Player, _Item)
+THEN
+ShowMapMarker((CHARACTER)_Player, _MarkerID, 1); 
+
+IF
+DroppedBy(_Item, _Player)
+AND
+DB_END_General_TadpoleAndStoneTracking((ITEM)_Item, _, _, _Dialog, _)
+AND
+DB_Players(_Player)
+THEN
+PROC_TryStartAD(_Dialog, _Player);
+//END_REGION
+
+//REGION Restoration Pods
+
+PROC
+PROC_END_Misc_Init()
+THEN
+DB_GLO_RestorationStation((ITEM)S_END_HighHallExterior_ResotrationPod_424a5497-b958-4360-b826-f93eb9f88690);
+DB_GLO_RestorationStation_OneTimeUse((ITEM)S_END_HighHallExterior_ResotrationPod_424a5497-b958-4360-b826-f93eb9f88690);
+DB_GLO_RestorationStation_CustomDistance((ITEM)S_END_HighHallExterior_ResotrationPod_424a5497-b958-4360-b826-f93eb9f88690,55.0);
+DB_GLO_RestorationStation((ITEM)S_END_HighHallInterior_ResotrationPod_1933944a-7724-4091-9c88-1e501516b890);
+DB_GLO_RestorationStation_OneTimeUse((ITEM)S_END_HighHallInterior_ResotrationPod_1933944a-7724-4091-9c88-1e501516b890);
+DB_GLO_RestorationStation_CustomDistance((ITEM)S_END_HighHallInterior_ResotrationPod_1933944a-7724-4091-9c88-1e501516b890,55.0);
+
+PROC
+PROC_Hardcore_Disable("END_Main")
+THEN
+SetOnStage(S_END_HighHallExterior_ResotrationPod_424a5497-b958-4360-b826-f93eb9f88690,1);
+SetOnStage(S_END_HighHallInterior_ResotrationPod_1933944a-7724-4091-9c88-1e501516b890,1);
+
+//Remove Restoration pods in Hard Core
+PROC
+PROC_Hardcore_Enable("END_Main")
+THEN
+SetOnStage(S_END_HighHallExterior_ResotrationPod_424a5497-b958-4360-b826-f93eb9f88690,0);
+SetOnStage(S_END_HighHallInterior_ResotrationPod_1933944a-7724-4091-9c88-1e501516b890,0);
+
+//END_REGION 
+
+//REGION Hiding Mind Netherbrain
+
+PROC
+PROC_StartDialog_AddExtraSpeakers(_Dialog, _ID)
+AND
+DB_END_HideMindBrainDialogs(_Dialog)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_END_MindBattleHelper_be50f7cd-c14a-4131-82d3-29337f3a4759);
+
+//END_REGION
+
+//REGION Endgame Character Management
+
+//Generic
+IF
+FlagSet(_Flag, _Player, _ID)
+AND
+DB_END_General_MakeUnavailableCharacterFlag(_Flag, _State)
+THEN
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Player, _State);
+
+IF
+FlagSet(_Flag, _, _)
+AND
+DB_END_General_MakeUnavailableFlag(_Character, _Flag, _State)
+THEN
+PROC_END_General_MakeAvatarUnavailable(_Character, _State);
+
+//Laezel
+//When a player leaves with Laezel, we need to cull them from future dialogues, too.
+IF
+FlagSet(END_GameFinale_State_PlayerLaezelOrpheus_9bbf4067-fcb1-0c74-088d-ff887ca2abe5, _, _ID)
+AND
+DB_DialogSpeakers(_ID, _Player, 1)
+THEN
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Player, 1);
+
+//When a player leaves with Laezel, we need to cull them from future dialogues, too.
+IF
+FlagSet(END_GameFinale_State_PlayerLaezelVlaakith_bf95c085-fe78-9cda-7aac-2d8e5b94a9cf, _, _ID)
+AND
+DB_DialogSpeakers(_ID, _Player, 1)
+THEN
+PROC_END_General_MakeAvatarUnavailable((CHARACTER)_Player, 0);
+
+//Karlach
+IF
+DialogEnded((DIALOGRESOURCE)END_GameFinale_DeathofKarlach_e419b950-b6ba-64bc-f041-1d07a602dfc4, _)
+AND
+DB_GlobalFlag(GLO_END_GameFinale_DeathofKarlach_KarlachDied_2cd8d398-d6ec-3227-2dfb-975127fb5393)
+THEN
+PROC_END_General_MakeAvatarUnavailable(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, 0);
+
+IF
+DialogEnded((DIALOGRESOURCE)END_GameFinale_DeathofKarlach_e419b950-b6ba-64bc-f041-1d07a602dfc4, _)
+AND
+NOT DB_GlobalFlag(GLO_END_GameFinale_DeathofKarlach_KarlachDied_2cd8d398-d6ec-3227-2dfb-975127fb5393)
+THEN
+PROC_END_General_MakeAvatarUnavailable(S_Player_Karlach_2c76687d-93a2-477b-8b18-8a14b549304c, 1);
+
+//Gale
+IF
+FlagSet(END_FinalDecisions_Event_GaleExploded_a32e3cb5-9536-3c3e-a4d2-1837ee3b6190, _, _)
+AND
+DB_GlobalFlag(END_BrainBattle_Event_GaleAscendsTheStalkAlone_217731da-1297-09b6-52b0-e9ee8580e70c)
+THEN
+PROC_END_General_MakeAvatarUnavailable(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604, 0);
+
+IF
+FlagSet(END_FinalDecisions_Event_GaleExploded_a32e3cb5-9536-3c3e-a4d2-1837ee3b6190, _, _)
+AND
+NOT DB_GlobalFlag(END_BrainBattle_Event_GaleAscendsTheStalkAlone_217731da-1297-09b6-52b0-e9ee8580e70c)
+AND
+DB_Players(_Player)
+THEN
+PROC_END_General_MakeAvatarUnavailable(_Player, 0);
+
+IF
+FlagSet((FLAG)ORI_Gale_State_ClaimedCrown_93279f0c-82f0-b1e5-ff24-34a47c47a85d, _, _)
+AND
+NOT DB_Avatars(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604)
+THEN
+PROC_END_General_MakeAvatarUnavailable(S_Player_Gale_ad9af97d-75da-406a-ae13-7071c563f604, 1);
+
+//END_REGION
+
+//REGION Widow flag
+// Rare case where companion dies in EPI, causing them not to get flagged as perma defeated, so we have a special version of perma defeated
+QRY
+QRY_ORI_IsOtherPermaDefeated((CHARACTER)_Companion)
+AND
+DB_ORI_EPIPermaDefeatedFlags(_Companion, _Flag)
+AND
+GetFlag(_Flag, NULL_00000000-0000-0000-0000-000000000000, 1) // DB_GlobalFlag has not been set yet when this QRY is called
+THEN
+DB_NOOP(1);
+
+IF
+FlagSet(_EPIPermaDefeatedFlag, _, _)
+AND
+DB_ORI_EPIPermaDefeatedFlags(_Companion, _EPIPermaDefeatedFlag)
+AND
+DB_ORI_Partnered(_Avatar,(CHARACTER)_Companion)
+AND
+QRY_ORI_HasOnlyDeadPartners((CHARACTER)_Avatar) // QRY will reset the flag
+THEN
+DB_NOOP(1);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act3c"
