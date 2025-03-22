@@ -460,7 +460,6 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_WEAPON,100,1)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
     </stat_object>
@@ -470,11 +469,29 @@
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_Distance" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="eaa4b321-95f0-4029-a08b-9474a2ff05b1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h221b20d9g5e68g98c2g627bga56b2a43b503" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Highlighted;ForceShowInCC;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(RangedWeaponAttackCheck(),ModifySpellRoll('AttackType.RangedWeaponAttack','AttackType.MeleeSpellAttack'),ModifyTargetRadius(Multiplicative,1.5),ModifyTooltipDescription());RollBonus(MeleeSpellAttack,-SpellCastingAbilityModifier);RollBonus(MeleeSpellAttack,DexterityModifier);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('YOONMOONSICK',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YOONMOONSICK,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c5f2f04-93bf-437d-b0d0-26f6a4f9ea42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h59c41bc5gb041g465egbf37gf2eeb913a3f1" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):Disadvantage(AttackRoll);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(Attack, -20)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5f974238g10c8g3483g0fd0g829cb33261d1" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(18);Distance(15)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="572aa489-d910-4259-ac4a-d0587842576d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c5f2f04-93bf-437d-b0d0-26f6a4f9ea42" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):Disadvantage(AttackRoll);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(Attack, -20)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
