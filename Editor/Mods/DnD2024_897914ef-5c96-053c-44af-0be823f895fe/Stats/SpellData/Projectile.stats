@@ -1833,7 +1833,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="RemoveStatus(SELF,TRUE_STRIKE_OWNER)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Weapon" />
@@ -1932,6 +1932,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d88d001-41be-4f46-bc5c-6fa05f27f410" />
         <field name="Name" type="NameTableFieldDefinition" value="JUMPS" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06aca803-61a3-43c4-8c40-ebaae7854054" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Mobility_JumpOnDash_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da71ebda-72cc-460c-a1b3-254520d00371" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
