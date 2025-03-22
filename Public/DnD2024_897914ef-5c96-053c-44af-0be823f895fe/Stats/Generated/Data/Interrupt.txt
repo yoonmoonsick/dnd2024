@@ -1287,3 +1287,8 @@ data "Icon" "Spell_Enchantment_HoldPerson"
 data "Properties" "UseSpell(Target_HoldPerson,true,true,true)"
 data "Cost" "ReactionActionPoint:1;SpellSlotsGroup:1:1:2"
 
+new entry "Interrupt_TheClover_TrueStrike_Riposte"
+type "InterruptData"
+using "Interrupt_TheClover_TrueStrike_Riposte"
+data "Properties" "UseSpell(SWAP,Target_TrueStrike_Weapon,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0)"
+
