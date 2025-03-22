@@ -2588,7 +2588,7 @@ data "DescriptionParams" "DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),P
 data "Icon" "GenericIcon_DamageType_Psychic"
 data "Properties" "OncePerAttack;Highlighted"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow()"
+data "Conditions" "IsWeaponAttack() and not IsMiss()"
 data "StatsFunctors" "ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic);"
 
 new entry "OtherworldlyGlamour"
