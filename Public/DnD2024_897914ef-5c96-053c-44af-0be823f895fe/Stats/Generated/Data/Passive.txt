@@ -320,6 +320,9 @@ data "Icon" "PassiveFeature_AttackOfOpportunity"
 data "Properties" "Highlighted"
 data "Boosts" "ActionResource(Interrupt_TunnelFighter,2,0);UnlockSpell(Shout_FightingStyle_TunnelFighter_DefensiveStance);"
 
+new entry "YMS_Feat"
+type "PassiveData"
+
 new entry "Sharpshooter_Bonuses"
 type "PassiveData"
 using "Sharpshooter_Bonuses"
@@ -2123,6 +2126,11 @@ type "PassiveData"
 using "Illusion_Disappear"
 data "StatsFunctorContext" "OnCreate"
 data "StatsFunctors" "ApplyStatus(SANCTUARY_DUPLICITY,100,-1)"
+
+new entry "TrueStrikeOwner"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Strength) ):RollBonus(Attack,SpellCastingAbilityModifier- max(0,StrengthModifier));IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Dexterity) ):RollBonus(Attack,SpellCastingAbilityModifier- max(0,DexterityModifier));"
 
 new entry "YMS_Bard"
 type "PassiveData"

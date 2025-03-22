@@ -443,6 +443,12 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f54783b-a0c4-4cb0-b841-a0d84b809da9" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Feat" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eaa4b321-95f0-4029-a08b-9474a2ff05b1" />
@@ -2986,6 +2992,14 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d409d52c-cf4c-4890-bd3c-0917c63a066f" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SANCTUARY_DUPLICITY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="def659cb-9a64-4880-84bd-05b03f0dc74c" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrueStrikeOwner" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Strength) ):RollBonus(Attack,SpellCastingAbilityModifier- max(0,StrengthModifier));IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Dexterity) ):RollBonus(Attack,SpellCastingAbilityModifier- max(0,DexterityModifier));" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
