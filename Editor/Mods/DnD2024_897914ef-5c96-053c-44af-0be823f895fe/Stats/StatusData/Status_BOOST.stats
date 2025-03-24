@@ -6883,5 +6883,21 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('DEATHSHEAD_UNSTOPPABLE_12',context.Source)):DamageReduction(All, Threshold, 120);Attribute(Grounded);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59c4571d-2744-418b-8eaf-319b51887bab" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIAMONDSCALES_BULETTE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e28102fgbdc0g4822g95fcg7fdb32d51613" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4eb1e5f9g7eeeg4f23g888cg822824ca1392" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(150)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Bulette_DiamondScales" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIAMONDSCALES_BULETTE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Attribute(Grounded);IgnoreDamageThreshold(All,10);TemporaryHP(150)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DIAMONDSCALES_BULLETTE_REMOVED,100,-1)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="73c381e9-9a2c-41a5-bba0-fa3f58de3312" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
