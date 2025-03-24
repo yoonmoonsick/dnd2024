@@ -650,6 +650,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Rage') or SpellId('Rage_Frenzy') or SpellId('Rage_Totem_Bear') or SpellId('Rage_Totem_Eagle') or SpellId('Rage_Totem_Elk') or SpellId('Rage_Totem_Tiger') or SpellId('Rage_Totem_Wolf')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(INSTINCTIVE_POUNCE,100,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerCombat;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);StatusImmunity(SURPRISED);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2336,7 +2337,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DreadAmbusher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7192d1f0-9cee-4a20-95cb-327c58d3b4ee" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(3);2d6" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3758,7 +3759,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="52f3daf0-87ad-488c-9566-879648a27f54" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bb85900g676fg434cg93b3g3e9319022d5a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h98ef9578gdc95g570cg60beg155aa126819a" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -5032,8 +5033,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeWeapon_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f703c7b-85ae-4018-af94-7a02c27b5aaf" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3523d974g82e0gcdd4geee0g88ceaaefc54d" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);Advantage(Skill,Perception);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(Skill,Perception)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5042,8 +5042,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeBonus_1_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3983dec5-e078-438d-9a6a-294b0edd656a" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3523d974g82e0gcdd4geee0g88ceaaefc54d" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5051,8 +5050,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cea9fcac-70f2-4af5-8bfe-dc3cbb5375d8" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeBonus_2_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce6f35c-add4-4781-a3f1-cae8d2e1edd9" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3523d974g82e0gcdd4geee0g88ceaaefc54d" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(4);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5061,8 +5059,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_PHB_Sentinel_Shield_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f45c1e76-581f-4c8d-a21c-d009f96eef23" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="You gain an additional bonus to initiative rolls equal to your proficiency bonus." />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);Advantage(Skill,Perception);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(Skill, Perception)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5070,7 +5067,30 @@
         <field name="UUID" type="IdTableFieldDefinition" value="db544fd7-d8ba-4bf5-9e67-aa0d2011d87d" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_PHB_Sentinel_Shield_Passive_Bow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3afd1805-a69a-457b-ad3f-ed8fc393c551" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);Advantage(Skill,Perception);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9268cbb2-bacc-408a-852a-247d4decb0ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bhalist_Hat_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="59417b4a-e2e6-44c6-9796-cb9a879f3106" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);DarkvisionRange(3)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="634c00be-1dc0-4e2a-92c4-773ae70b7d98" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Monk_Martial_Lethality_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ae45755e-2b23-4b1a-b2fe-3c798db8b0bf" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack, 2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Initiative(2);Skill(Perception, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96197cc7-c510-4d8f-9baf-374c3429d259" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_PHB_ElvenChain_AddedEffect_Armor_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f73a11ba-d61e-47a3-b6d3-ddf1ad7088fc" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(SavingThrow, Dexterity)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
