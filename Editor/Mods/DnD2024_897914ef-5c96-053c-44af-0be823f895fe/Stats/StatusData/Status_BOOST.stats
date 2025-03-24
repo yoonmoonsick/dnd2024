@@ -1166,7 +1166,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd7cc247g004cg482fg2ad4g5180aef56aa5" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FancyFootwork" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
@@ -6181,6 +6181,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b766b1b5-f367-44ac-ae97-21bca8b7936e" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_LATHANDERS_LIGHT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="adb1f653-05df-4da6-b6dc-ccf5306adcf1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(6,false,0.1,true);IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(ProficiencyBonus/2,Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="60ced669-5c7c-40c6-a918-ab0148914db7" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_SOUL_CATCHING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea5e3d53-deb3-4647-b6ac-1021eac7946d" />
@@ -6755,6 +6763,22 @@
         <field name="Name" type="NameTableFieldDefinition" value="DEN_SILVANUS_BLESSING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a24fc48-d6c9-4309-878f-d8a2408d3244" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2a9409c-b844-49c6-9105-2eede503c264" />
+        <field name="Name" type="NameTableFieldDefinition" value="TUT_LOWERDECK_INITIATIVEBOOST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a43cbe29-8e5c-474a-a1c0-3299773f15d9" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(-99)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5425e7f8-b99a-4d85-a8fa-25245ef8e6b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="END_INITIATIVE_DEBUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="79973e75-45bf-49b8-91c2-049b41961de0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(-99)" />
       </fields>
     </stat_object>
   </stat_objects>
