@@ -151,7 +151,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasShieldEquipped(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage()" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -161,7 +160,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h29464590g0aa2g1a9cgcecag575f75f5afc4" version="1" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnLeaveAttackRange;OnEnterAttackRange" enumeration_type_name="InterruptContext" version="1" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0;Interrupt_TunnelFighter:1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_TunnelFighter:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1235,7 +1234,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;BalefulInterdict:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="BurningSeals" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source);" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
       </fields>
     </stat_object>
@@ -1289,6 +1288,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="AbatingSeal" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1315,6 +1315,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_VengefulShot,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1332,7 +1333,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10)" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -1347,6 +1348,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellDamageTypeIs(DamageType.Slashing) or SpellDamageTypeIs(DamageType.Piercing) or SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Acid) or SpellDamageTypeIs(DamageType.Thunder) or SpellDamageTypeIs(DamageType.Necrotic) or SpellDamageTypeIs(DamageType.Fire) or SpellDamageTypeIs(DamageType.Lightning) or SpellDamageTypeIs(DamageType.Cold) or SpellDamageTypeIs(DamageType.Psychic) or SpellDamageTypeIs(DamageType.Poison) or SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Force)) and not AnyEntityIsItem() and IsSpell();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1391,6 +1393,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));ApplyStatus(CRUSHER_PUSH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
