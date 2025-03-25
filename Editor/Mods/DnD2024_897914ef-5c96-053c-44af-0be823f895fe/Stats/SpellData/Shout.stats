@@ -3118,47 +3118,14 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2cafe943-6c17-4622-a943-021ac03a7d14" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Shillelagh)+SpellCastingAbilityModifier, Bludgeoning)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SHILLELAGH, 100, 10)" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Shillelagh_Weapon;Shout_Shillelagh_Force" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3fc73e42-121f-4d52-9676-14d5350421f2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Shillelagh_Weapon" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Shillelagh" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SHILLELAGH,100,-1);IF(IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH,100,10);IF(not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and GetActiveWeapon(context.Target,false)):ApplyEquipmentStatus(OffHand,SHILLELAGH,100,10);IF(CharacterLevelGreaterThan(4) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_5,100,10);IF(CharacterLevelGreaterThan(4) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_5,100,10);IF(CharacterLevelGreaterThan(9) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_10,100,10);IF(CharacterLevelGreaterThan(9) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_10,100,10);ApplyStatus(SELF,SHILLELAGH_ACTIVE,100,10);AI_ONLY:IF(not HasStatus('SHILLELAGH',GetActiveWeapon())):ApplyStatus(AI_HELPER_SHILLELAGH,100,-1)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Transmutation_Shillelagh" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88189f48ga78cg4a13ga52fg9c789a31c49e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c319e99g75f8g854aga059g520a03e6f894" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Shillelagh)+SpellCastingAbilityModifier, Bludgeoning)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SHILLELAGH, 100, 10)" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_Shillelagh_L0" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_Shillelagh_L0" />
-        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_EnchantWeapon" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsMelee;IsSpell;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs', GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))" />
-        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="e8109f4b-2439-4424-9bc8-743270220f47" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="53c9d361-0fc1-4d72-a70b-bc2611d538f0" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,UNLOCK_SHILLELAGH_FORCE,100,-1);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SHILLELAGH,100,-1);IF(IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH,100,10);IF(not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and GetActiveWeapon(context.Target,false)):ApplyEquipmentStatus(OffHand,SHILLELAGH,100,10);IF(CharacterLevelGreaterThan(4) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_5,100,10);IF(CharacterLevelGreaterThan(4) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_5,100,10);IF(CharacterLevelGreaterThan(9) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_10,100,10);IF(CharacterLevelGreaterThan(9) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_10,100,10);ApplyStatus(SELF,SHILLELAGH_ACTIVE,100,10);AI_ONLY:IF(not HasStatus('SHILLELAGH',GetActiveWeapon())):ApplyStatus(AI_HELPER_SHILLELAGH,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="770e668a-53e6-468b-a1cb-cb14a63d290f" />
         <field name="Name" type="NameTableFieldDefinition" value="Shillelagh_Force" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3fc73e42-121f-4d52-9676-14d5350421f2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b17d48a9-29be-49d0-b8f4-529f1c6a486e" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SHILLELAGH,100,-1);IF(IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_FORCE,100,10);IF(not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and GetActiveWeapon(context.Target,false)):ApplyEquipmentStatus(OffHand,SHILLELAGH_FORCE,100,10);IF(CharacterLevelGreaterThan(4) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_FORCE_5,100,10);IF(CharacterLevelGreaterThan(4) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_FORCE_5,100,10);IF(CharacterLevelGreaterThan(9) and IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon())):ApplyEquipmentStatus(MainHand,SHILLELAGH_FORCE_10,100,10);IF(CharacterLevelGreaterThan(9) and (not IsWeaponOfProficiencyGroup('Clubs|Quarterstaffs',GetActiveWeapon()) and  GetActiveWeapon(context.Target,false))):ApplyEquipmentStatus(OffHand,SHILLELAGH_FORCE_10,100,10);ApplyStatus(SELF,SHILLELAGH_ACTIVE,100,10);AI_ONLY:IF(not HasStatus('SHILLELAGH',GetActiveWeapon())):ApplyStatus(AI_HELPER_SHILLELAGH,100,-1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88189f48ga78cg4a13ga52fg9c789a31c49e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Shillelagh)+SpellCastingAbilityModifier, Force)" />
