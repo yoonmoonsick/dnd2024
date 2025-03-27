@@ -18,6 +18,12 @@ data "SpellProperties" "RemoveStatus(SG_Sleeping);RemoveStatus(SG_Helpable_Condi
 data "SpellRoll" "MedicineCheck()"
 data "SpellSuccess" "IF(IsDowned()):RegainHitPoints(1)"
 
+new entry "Target_END_Mindflayer_CrownDomination"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_END_Mindflayer_CrownDomination"
+data "SpellFlags" "IsHarmful;Temporary;Wildshape"
+
 new entry "Target_YMS_Race"
 type "SpellData"
 data "SpellType" "Target"
