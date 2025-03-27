@@ -564,6 +564,9 @@ You can use this feature a number of times equal to your Wisdom modifier (minimu
 - Level 7: Polymorph
 - Level 9: Insect Plague
 #### Level 3: Land’s Aid
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_LandAid.png?raw=true)
+
 As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains 2d6 Hit Points. The damage and healing increase by 1d6 when you reach Druid Levels 10 (3d6).
 #### Level 10: Nature’s Ward
 You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature.
