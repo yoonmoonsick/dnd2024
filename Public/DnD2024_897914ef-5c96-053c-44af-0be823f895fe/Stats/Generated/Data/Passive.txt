@@ -99,7 +99,7 @@ data "Description" "h087a32c4g2a48g7cb6g23d8g2bccfedeec0f;1"
 data "ExtraDescription" "h21932815gc614g2d35g4a8cg6e71936a35b9;1"
 data "Icon" "Action_Topple"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss();"
+data "Conditions" "not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss() and not HasPassive('LegendaryAction_Apostle_Gaze', context.Target)"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)"
 
 new entry "WeaponMastery_Vex"
