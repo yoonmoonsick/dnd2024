@@ -517,7 +517,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="722d6eb9-3305-4501-b34d-bbaf7d79bfea" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_WYR_Orin_Bhaalist_Dagger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b7c0324-936e-4502-8940-39d3077df86c" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Target_TrueStrike_Radiant)" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesMainHand" type="StringTableFieldDefinition" value="MAG_TheClover_Mainhand_Passive" />
         <field name="PassivesOffHand" type="StringTableFieldDefinition" value="MAG_TheClover_OffHand_Passive" />
@@ -893,7 +893,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="81f8b9ad-dd98-4988-874b-aee1f4e8c2d3" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_TheClover_Scimitar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b0980246-8d6f-46fd-a061-52dd7ec35779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Target_TrueStrike_Radiant)" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesMainHand" type="StringTableFieldDefinition" value="MAG_TheClover_Mainhand_Passive" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_TheClover_Rearrangement_Passive" />
@@ -1142,6 +1142,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b010bedb-b5b2-4a5c-b18e-2a61c4d10cd0" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy;UNI_WYR_Circus_ClownHammer_Passive;" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="WYR_FACEPAINT_CLOWN" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1172,7 +1173,6 @@
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy;MAG_SpellResistance_Passive;" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MAG_OrphicHammer_ChainBreaker)" />
-        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Melee;Dippable;Versatile;Thrown" enumeration_type_name="WeaponFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1200,7 +1200,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Ketheric_Warhammer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="23f71d6f-1d70-4f4b-9098-aa50759f25e7" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="81764c3c-c7a9-49a7-b145-d31ffd5aebe1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1209,7 +1211,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_B" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6cfae15-a91b-4653-86e7-f68481371a0c" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1218,7 +1221,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_Rusty" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="28a97d3e-3f14-487b-9c39-67f946a548d9" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1227,7 +1231,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_REF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="95907a5b-256f-4317-b3b7-843a7f5f60d7" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1236,7 +1241,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="353cb020-3926-4244-b08f-a13a0ed7ed10" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1245,7 +1251,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_Gith" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="56f74b95-665c-4243-8141-9a56943e3b9e" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1254,7 +1261,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="945076ce-b4c8-4d64-a09b-f5ced2b8aebc" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1263,7 +1271,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e762844-5e9e-4653-8006-107b77f5d0f3" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1272,8 +1281,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Gortash_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4c07634c-1037-4689-87e8-922c8967632f" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_MAG_Automaton_SunbeamShot);UnlockSpell(Projectile_MAG_Automaton_LightTagging_Shot);IF(Tagged('ACT3_WYR_GORTASH',context.Source)):UnlockSpell(Zone_WYR_Automaton_SunbeamShot_Gortash)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1282,7 +1292,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_Harold_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce4bf376-06aa-47a2-ae40-d2f30d47b64d" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_BG_Harold_HeavyCrossbow_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_BG_Harold_HeavyCrossbow_Passive;" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1291,8 +1302,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_WATCHER_Human_Crossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1b8391cc-fa18-487a-863a-a6f57387b312" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Target_MAG_RetrievingShot)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_LightningArrow_Shot)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1301,7 +1313,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Gandrel_UndeadSlayer_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="727bf024-9890-46aa-9d5a-1bc44b1139d8" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_WeaponAction_UndeadTurningBolt)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_LC_MonsterHunter_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_LC_MonsterHunter_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1310,7 +1323,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_LC_UndeadSlayer_Crossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ee1e894-aa3a-4ae0-9817-5404a3f075e5" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy;MAG_UndeadSlayer_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_UndeadSlayer_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1319,7 +1333,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Githborn_TelekineticBolt_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1752a722-4d10-4392-b31a-786539ef893c" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_WeaponAction_TelekineticBolt)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2193,7 +2208,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow_Makeshift" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dffa1a8c-1257-440d-a06b-5796052d4c20" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2201,7 +2217,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="59662e50-63be-4e7b-b1b2-a954ecd47711" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Imp_LightCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b5cf2b2-f77f-43aa-8d24-fecee399d2bb" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2210,7 +2227,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="789aab8b-79c4-4695-95b8-96772e6506c4" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2219,7 +2237,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="83a49903-5b31-43b6-af24-5be34fa37cfd" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2228,7 +2247,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="58324914-94a4-49e3-a00b-4c914d5f52d8" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2237,7 +2257,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Kuotoa_LightCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="09f9de54-57c3-42b9-a6d1-5fee2b231de3" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2246,7 +2267,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow_REF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="23fa9f4d-45a5-4a7f-b3ff-3c5a136ae13c" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2255,7 +2277,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_LightCrossbow_Rusty" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="769b6fa2-326d-4a65-b467-d0011c4664c9" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2264,8 +2287,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_OfSpeed_LightCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ccb9e247-341c-44ba-9ff2-888aaced256d" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_BG_OfSpeed_LightCrossbow_BonusAttack)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2274,7 +2298,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Gnoll_Bow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fc365311-aa1e-45ba-8072-d777c1345e88" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2283,7 +2308,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Longbow_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbdc4520-6bba-499f-ab47-09be33dfbf84" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2292,7 +2318,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Gnoll_Bow_Flind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="94e03b04-89d4-4c75-910d-f9b1977efdce" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2301,7 +2328,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Longbow_REF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9006bb0-a463-4e9c-a387-acc7c30e5d05" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2310,7 +2338,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Longbow_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3ca0e80b-e876-49bf-a828-f92fbf19b297" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2319,7 +2348,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Longbow_B" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d3c2235-cd7a-4a7d-b7f2-896f6afbcaed" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2328,7 +2358,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8bb7ba98-1d0f-44ed-acde-9ff961b8d9de" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2337,7 +2368,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_StrongString_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6ff4e410-a425-4006-9b21-fe49a110871b" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_PushingAttack)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_StrengthBonusToWeaponDamage_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_StrengthBonusToWeaponDamage_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2346,7 +2378,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_WYR_Hellrider_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="53689714-1875-403e-bef2-d1e6001332d6" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_PHB_Sentinel_Shield_Passive_Bow;MAG_WYR_Hellrider_Longbow_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_PHB_Sentinel_Shield_Passive_Bow;MAG_WYR_Hellrider_Longbow_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2355,8 +2388,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_TheVictory_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8e33b78a-43a7-4431-a487-063176067709" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_Victory_Longbow_RoaringShot)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Victory_Longbow_Passive;MAG_Light_TheVictory_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_Victory_Longbow_Passive;MAG_Light_TheVictory_Passive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Victory_Longbow_Haste)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2365,7 +2399,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_DeadShot_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="26915978-e261-4551-af40-ba410d8700c0" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_WYR_Orin_Bhaalist_Dagger_ImprovedCritical_Passive;MAG_DoubleProficiencyBonusToRangedAttack_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_WYR_Orin_Bhaalist_Dagger_ImprovedCritical_Passive;MAG_DoubleProficiencyBonusToRangedAttack_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2978,7 +3013,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Goblin_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7126289b-de4d-4c7a-9bea-0a9d831aa169" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2987,7 +3023,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da9f92e3-2711-4794-af9b-79e5a88134a1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2996,7 +3033,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="798bcedd-7c77-475f-bc54-99b23d53b5f1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3005,7 +3043,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow_Makeshift" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cae3be00-3740-4fc7-b12e-d65141419110" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3014,7 +3053,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc2f8893-8828-4c54-8d0b-a21222b6f995" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3023,7 +3063,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow_REF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6dc6de5f-3227-4033-814e-3007ca9ba0a5" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3031,7 +3072,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="59a23289-925f-4a3b-9297-b631fed8e715" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Shortbow_Skeleton_AnimateDead" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4919b9bd-a36b-46e2-a574-2e9710185ee5" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3040,8 +3082,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Hunting_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34320930-cf34-4a6e-a280-5a6685c2ed2f" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_LC_MonsterHunter_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_LC_MonsterHunter_Passive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MAG_HuntersMark)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3050,8 +3093,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Shadow_Blinding_Bow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="806d4fd2-5a7f-4515-9971-6ef239d924cc" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_WeaponAction_BlindingShot)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Shadow_Blinding_Bow_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_Shadow_Blinding_Bow_Passive" />
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="MAG_SHADOW_OBSCURITY_ATTACK_BONUS_OWNER_TECHNICAL" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3060,8 +3104,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_Darkfire_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="db1937ea-6cd1-407a-bb18-add291a948ee" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire, Resistant);Resistance(Cold, Resistant);UnlockSpell(Target_MAG_Haste)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3070,7 +3115,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Vicious_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ef2197df-c297-4f91-907e-eccbcd5f09a3" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Vicious_Weapon_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_Vicious_Weapon_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3079,7 +3125,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_OfTheBanshee_Bow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="23fca41d-3798-4c44-b39a-98e2d1bacf04" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_BansheeBless_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_BansheeBless_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3088,7 +3135,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BG_BlightBringer_Shortbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ecd23108-fb92-4126-a8c3-e5819c6103b8" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_BG_BlightBringer_Passive;MAG_BG_SlowedOnCrit_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_BG_BlightBringer_Passive;MAG_BG_SlowedOnCrit_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3097,7 +3145,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_OfAwareness_Bow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="96502c2f-7f56-4c62-b5a6-7fd98c365b6c" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_InitiativeBonus_1_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_InitiativeBonus_1_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3416,7 +3465,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HandCrossbow_REF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="914f8700-81ee-4a50-8ff0-15593365d95f" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3425,7 +3475,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HandCrossbow_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="56a1d8b8-98ba-46c8-a9f5-e863fc34dbfc" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3434,7 +3485,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HandCrossbow_Rusty" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea667862-a40f-40d6-abec-955151bf456a" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3443,7 +3495,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HandCrossbow_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="040eb9c8-1178-4066-b2bc-9ca6240fee7b" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3452,7 +3505,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_HandCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="672207ec-6ded-4a5a-9057-2d010118c267" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3461,8 +3515,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Orthon_Hellfire_HandCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f322c92d-f438-4aad-bf82-0de2ba97e1a7" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Orthon_Hellfire_Crossbow_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow;MAG_Orthon_Hellfire_Crossbow_Passive" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_ScorchingRay_Shot)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3471,7 +3526,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Cunning_HandCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0f938aab-43b7-423d-8af6-cf611fa55754" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Cunning_HandCrossbow_Combo_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow;MAG_Cunning_HandCrossbow_Combo_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3480,8 +3536,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_MagicMissile_HandCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6aaeb196-916e-4ef2-aadb-1212e097c3e1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MAG_MagicMissile_Shot)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3543,7 +3600,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e3d1fc51-b6db-4dd3-9342-4828d4adf32e" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Orthon_Crossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fbcdc886-7333-4cc8-a41e-2afc71d8a381" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3753,7 +3811,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Sahuagin_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="241c8f03-0cf0-4ca6-8190-81e1dbeda297" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3774,6 +3833,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="903b673f-d058-4877-b12f-131c09e13cbf" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
+        <field name="PassivesMainHand" type="StringTableFieldDefinition" value="MAG_TheDueller_ImprovedDuelist_Passive;MAG_IgnoreSlashingResistance_Passive;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3955,7 +4017,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="bc231af7-cf3a-4112-ae61-fbf64f08d018" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Target_TrueStrike_Radiant)" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4233,8 +4296,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="UND_SharranCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f5a7bd0f-8925-4954-b29f-b84dd9dafb22" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="DEN_Apprentice_DaggerOfShar_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;DEN_Apprentice_DaggerOfShar_Passive;" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4301,7 +4365,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Fire_IncreasePiercingDamageToBurning_HandCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5eb1120a-492b-4f6f-9746-66279c112914" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Fire_IncreasePiercingDamageToBurning_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow;MAG_Fire_IncreasePiercingDamageToBurning_Passive" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2250" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4310,7 +4375,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_LowHP_IncreaseDamagePsychic_GithHeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="306cc355-7597-49ae-a6f2-c864fbc1d9ac" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Githborn_Mindcrusher_Greatsword_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_Githborn_Mindcrusher_Greatsword_Passive;" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4392,8 +4458,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="UNI_Bow_SpellslotRecharge" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="45cb599e-097e-4500-ab1d-89d6721edc39" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="UNI_Bow_SpellslotRecharge_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;UNI_Bow_SpellslotRecharge_Passive" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4414,6 +4481,7 @@
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Mobility_MomentumOnDamage_Passive" />
         <field name="PassivesOffHand" type="StringTableFieldDefinition" value="Dummy" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4450,7 +4518,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_MeleeDebuff_AttackDebuff2_OnDamage_HeavyCrossbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cf6d5390-ba7e-4c42-80d7-8479e991a77e" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_MeleeDebuff_AttackDebuff2_OnDamage_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_MeleeDebuff_AttackDebuff2_OnDamage_Passive;" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4459,8 +4528,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ChargedLightning_Longbow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8fb69f3e-867a-4c34-b48a-1076bc181d07" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="Dummy" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_ChargedLightning_Charge_OnDamage_Passive" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Sharpshooter_WeaponPassive;MAG_ChargedLightning_Charge_OnDamage_Passive" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="2700" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -29,5 +29,65 @@
         <field name="DisappearEffect" type="GuidObjectTableFieldDefinition" value="b214ce9c-33c2-4dfc-bfc2-3af8e4124714" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a77251cf-eddc-48de-839e-b21dcac9e286" />
+        <field name="Name" type="NameTableFieldDefinition" value="123" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3e9f7ebc-2eab-4461-acbf-0e38b813a88a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="47e2056b-0161-4892-a9eb-fe8e9040c82d" />
+        <field name="Name" type="NameTableFieldDefinition" value="TauntingStep" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character()" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_TauntingStepExplosion)" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="TeleportSelf" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="TeleportSurface" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_ViciousMockery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0dbf186cg47a9g6edcgb2cegec6b823482c2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd0e82126g5bd5g386fgd037gb0dbee02df91" version="2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_StepsOfTheFey" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(2)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TAUNTED,100,2)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_PrepareViciousMockery" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Psychic_ViciousMockery_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_DimensionDoor_L4to5" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_ViciousMockery" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;FeyStepCharge:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
+        <field name="DisappearEffect" type="GuidObjectTableFieldDefinition" value="b214ce9c-33c2-4dfc-bfc2-3af8e4124714" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0bbed61-60c8-41b2-8c11-af233e3a587c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadfulStep" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47e2056b-0161-4892-a9eb-fe8e9040c82d" />
+        <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_DreadfulStepExplosion)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DreadfulAspect" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Psychic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h069a49b2gc671g1577g23c6gf0b5d29caf9c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6603724fg76ddge86dg1834gf90d6602b0f6" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(2);DealDamage(2d10,Psychic)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

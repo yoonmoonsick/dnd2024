@@ -213,7 +213,7 @@ function IllusionSpellCheck()
 end
 
 function ExtraAttackSpellCheck()
-    return ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArrowOfDetonation') | SpellId('Projectile_ArrowOfFire') | SpellId('Projectile_ArrowOfDarkness') | SpellId('Projectile_ArrowOfIce') | SpellId('Projectile_ArrowOfAcid') | SpellId('Projectile_ArrowOfLightning') | SpellId('Projectile_ArrowOfPiercing') | SpellId('Projectile_ArrowOfRicochet') | SpellId('Projectile_ArrowOfDispelling') | SpellId('Projectile_ArrowOfAntimagic') | SpellId('Projectile_ArrowOfTeleportation') | SpellId('Projectile_ArrowOfWraithsEmbrace') | SpellId('Projectile_ArrowOfAberrationSlaying') | SpellId('Projectile_ArrowOfBeastSlaying') | SpellId('Projectile_ArrowOfCelestialSlaying') | SpellId('Projectile_ArrowOfConstructSlaying') | SpellId('Projectile_ArrowOfDragonSlaying') | SpellId('Projectile_ArrowOfElementalSlaying') | SpellId('Projectile_ArrowOfFeySlaying') | SpellId('Projectile_ArrowOfFiendSlaying') | SpellId('Projectile_ArrowOfGiantSlaying') | SpellId('Projectile_ArrowOfHumanoidSlaying') | SpellId('Projectile_ArrowOfMonstrositySlaying') | SpellId('Projectile_ArrowOfOozeSlaying') | SpellId('Projectile_ArrowOfPlantSlaying') | SpellId('Projectile_ArrowOfUndeadSlaying') | SpellId('Target_Shove') | SpellId('Target_Trip') | SpellId('Zone_BreathWeapon_Acid_Line')  | SpellId('Zone_BreathWeapon_Acid')  | SpellId('Zone_BreathWeapon_Poison_Line')  | SpellId('Zone_BreathWeapon_Poison')  | SpellId('Zone_BreathWeapon_Lightning_Line')  | SpellId('Zone_BreathWeapon_Lightning')  | SpellId('Zone_BreathWeapon_Fire_Line')  | SpellId('Zone_BreathWeapon_Fire_Cone')  | SpellId('Zone_BreathWeapon_Cold_Line')  | SpellId('Zone_BreathWeapon_Cold') 
+    return ~SpellId('Target_TrueStrike_Weapon') & ~SpellId('Target_TrueStrike_Radiant') & ~SpellId('Projectile_TrueStrike_Weapon') & ~SpellId('Projectile_TrueStrike_Radiant') & ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Bufotoxin_Frog_Summon') | SpellId('Projectile_ArrowOfSmokepowder') | SpellId('Projectile_ArrowOfDetonation') | SpellId('Projectile_ArrowOfFire') | SpellId('Projectile_ArrowOfDarkness') | SpellId('Projectile_ArrowOfIce') | SpellId('Projectile_ArrowOfAcid') | SpellId('Projectile_ArrowOfLightning') | SpellId('Projectile_ArrowOfPiercing') | SpellId('Projectile_ArrowOfRicochet') | SpellId('Projectile_ArrowOfDispelling') | SpellId('Projectile_ArrowOfAntimagic') | SpellId('Projectile_ArrowOfTeleportation') | SpellId('Projectile_ArrowOfWraithsEmbrace') | SpellId('Projectile_ArrowOfAberrationSlaying') | SpellId('Projectile_ArrowOfBeastSlaying') | SpellId('Projectile_ArrowOfCelestialSlaying') | SpellId('Projectile_ArrowOfConstructSlaying') | SpellId('Projectile_ArrowOfDragonSlaying') | SpellId('Projectile_ArrowOfElementalSlaying') | SpellId('Projectile_ArrowOfFeySlaying') | SpellId('Projectile_ArrowOfFiendSlaying') | SpellId('Projectile_ArrowOfGiantSlaying') | SpellId('Projectile_ArrowOfHumanoidSlaying') | SpellId('Projectile_ArrowOfMonstrositySlaying') | SpellId('Projectile_ArrowOfOozeSlaying') | SpellId('Projectile_ArrowOfPlantSlaying') | SpellId('Projectile_ArrowOfUndeadSlaying') | SpellId('Target_Shove') | SpellId('Target_Trip') | SpellId('Zone_BreathWeapon_Acid_Line')  | SpellId('Zone_BreathWeapon_Acid')  | SpellId('Zone_BreathWeapon_Poison_Line')  | SpellId('Zone_BreathWeapon_Poison')  | SpellId('Zone_BreathWeapon_Lightning_Line')  | SpellId('Zone_BreathWeapon_Lightning')  | SpellId('Zone_BreathWeapon_Fire_Line')  | SpellId('Zone_BreathWeapon_Fire_Cone')  | SpellId('Zone_BreathWeapon_Cold_Line')  | SpellId('Zone_BreathWeapon_Cold') 
 end
 
 function ExtraAttackCheck()
@@ -285,6 +285,11 @@ function DeceptionCheck()
     return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
 end
 
+function MedicineCheck()
+    local skillCheck = SkillCheck(Skill.Medicine,10)
+    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+end
+
 function IsDivineSmite()
     return SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Blinding_4') | SpellId('Target_Smite_Blinding_5') | SpellId('Target_Smite_Blinding_6') | SpellId('Target_Smite_Branding') | SpellId('Target_Smite_Branding_3') | SpellId('Target_Smite_Branding_4') | SpellId('Target_Smite_Branding_5') | SpellId('Target_Smite_Branding_6') | SpellId('Target_Smite_Searing') | SpellId('Target_Smite_Searing_2') | SpellId('Target_Smite_Searing_3') | SpellId('Target_Smite_Searing_4') | SpellId('Target_Smite_Searing_5') | SpellId('Target_Smite_Searing_6') | SpellId('Target_Smite_Banishing') | SpellId('Target_Smite_Banishing_6') | SpellId('Target_Smite_Blinding') | SpellId('Target_Smite_Divine') | SpellId('Target_Smite_Divine_2') | SpellId('Target_Smite_Divine_3') | SpellId('Target_Smite_Divine_4') | SpellId('Target_Smite_Divine_5') | SpellId('Target_Smite_Divine_6') | SpellId('Target_Smite_Divine_Free') | SpellId('Target_Smite_Divine_Free_2') | SpellId('Target_Smite_Divine_Free_3') | SpellId('Target_Smite_Thunderous') | SpellId('Target_Smite_Thunderous_2') | SpellId('Target_Smite_Thunderous_3') | SpellId('Target_Smite_Thunderous_4') | SpellId('Target_Smite_Thunderous_5') | SpellId('Target_Smite_Thunderous_6') | SpellId('Target_Smite_Wrathful') | SpellId('Target_Smite_Wrathful_2') | SpellId('Target_Smite_Wrathful_3') | SpellId('Target_Smite_Wrathful_4') | SpellId('Target_Smite_Wrathful_5') | SpellId('Target_Smite_Wrathful_6') | SpellId('Target_EldritchSmite') | SpellId('Target_EldritchSmite_2') | SpellId('Target_EldritchSmite_3') | SpellId('Target_EldritchSmite_4') | SpellId('Target_EldritchSmite_5') | SpellId('Target_EldritchSmite_6')
 end
@@ -339,6 +344,14 @@ function StatusDoesNotInvokeOnStatusApply()
     | StatusId('MAG_FIRE_HEAT_DURATION_TECHNICAL')
     | StatusId('MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL')
     | StatusId('MAG_PSYCHIC_MENTAL_FATIGUE_DURATION_TECHNICAL')
+    | StatusId('WILDSHAPE_WRATH_OF_THE_SEA_AURA')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL_CHARM')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL_CHARM_SUBTLE')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL_DOMINATED')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL_POLYMORPHED')
+    | StatusId('SAVED_AGAINST_HOSTILE_SPELL_BANISHMENT')
+    | StatusId('YSRSLIDFWWADNIWHWIHLY_YWNK')
 end
 
 function RedCantCheck(entity)
