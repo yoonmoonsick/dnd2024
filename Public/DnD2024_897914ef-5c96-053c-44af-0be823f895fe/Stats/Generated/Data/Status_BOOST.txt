@@ -4060,6 +4060,13 @@ type "StatusData"
 data "StatusType" "BOOST"
 data "Boosts" "ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);Invulnerable();Attribute(Grounded);"
 
+new entry "SUNBEAM_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "SUNBEAM_OWNER"
+data "StackPriority" "1"
+data "StackType" "Ignore"
+
 new entry "WILDSHAPE_WRATH_OF_THE_SEA_AURA"
 type "StatusData"
 data "StatusType" "BOOST"
