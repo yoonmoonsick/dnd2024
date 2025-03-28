@@ -26,6 +26,7 @@
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="ShortDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d0cacd4e-0eb2-4573-a6cf-d2371a8a1730" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -50,16 +51,6 @@
         <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainRangedWeapon+ LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(MainRangedWeapon+ LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7bbb1590-b9cc-4c9a-84dd-0f90f405cd78" />
-        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Rakish" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e950a0a4-276f-404a-a5d2-ffd55ebdba6b" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
-        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -132,6 +123,47 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="7a079407-0023-4594-a6db-527acac4db21" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF9932CC" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c1c9f9b-cc4c-4975-8fc4-9540574ff9cc" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Warlock" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9e3d503-92cd-495a-8db7-d9751585f6c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="TauntingStepExplosion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b146f8d-5314-4520-9ef1-e5b0f67e3bbe" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom,SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(TAUNTED,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_ViciousMockery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Peaceful" enumeration_type_name="SpellAnimationIntentType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="191870f6-8d8d-4e33-9e3d-ed3ad84af72c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadfulStepExplosion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e9e3d503-92cd-495a-8db7-d9751585f6c8" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Psychic)" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
@@ -424,7 +456,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -438,7 +469,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -452,7 +482,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -465,7 +494,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -478,7 +506,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -491,7 +518,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -504,7 +530,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -518,7 +543,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -532,7 +556,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -545,7 +568,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -558,7 +580,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -571,7 +592,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -584,7 +604,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -598,7 +617,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -612,7 +630,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -625,7 +642,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -638,7 +654,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -651,7 +666,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -664,7 +678,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -678,7 +691,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -691,7 +703,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -704,7 +715,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -717,7 +727,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -731,7 +740,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -744,7 +752,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -758,7 +765,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -772,7 +778,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -786,7 +791,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -800,7 +804,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -814,7 +817,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -827,7 +829,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -837,7 +838,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7907fa20-abbf-4712-a06c-629d5ee28b96" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -848,7 +848,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -859,7 +858,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_2)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -870,7 +868,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,4)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_3)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -881,7 +878,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_4)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -892,7 +888,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,2)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_5)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -904,7 +899,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -918,7 +912,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -932,7 +925,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -946,7 +938,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -960,7 +951,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -974,7 +964,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -986,7 +975,6 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,11)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_BookOfAncientSecrets)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
-        <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="not Dead() and Enemy() and Character()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1886,16 +1874,21 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,TRUE_STRIKE_OWNER)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);ExecuteWeaponFunctors(MainHand)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_GoadingAttack_Ranged" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Weapon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(TrueStrike),Radiant)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack);" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="0198563f-c48b-45e0-afb5-46ef9576adff" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1903,10 +1896,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dcf8d47d-776b-49ad-a968-93c3322359f4" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d1acace-332a-4aee-8c07-a2365193a146" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BrandingSmite_Ranged" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction;Temporary;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Radiant" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), Radiant);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);ExecuteWeaponFunctors(MainHand)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, Radiant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1980,6 +1973,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d88d001-41be-4f46-bc5c-6fa05f27f410" />
         <field name="Name" type="NameTableFieldDefinition" value="JUMPS" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06aca803-61a3-43c4-8c40-ebaae7854054" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Mobility_JumpOnDash_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da71ebda-72cc-460c-a1b3-254520d00371" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2491,23 +2492,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d3e914d4-9153-4d03-a66a-be6d6b3b70a7" />
-        <field name="Name" type="NameTableFieldDefinition" value="StarryForm_Archer_Damage" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d16effaa-6cbe-4299-989e-a6b315a37e90" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f70ae2ed-7b1a-4bfb-a0f1-95c5c32c34ee" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_Fireball" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="38745705-df3d-497d-8bf7-bd8c46e95d3f" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire,Magical);ApplyStatus(BURNING,100,2);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d6)/2,Fire,Magical);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Fire)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Fire,Magical);ApplyStatus(BURNING,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d10)/2,Fire,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead()" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Fire)" />
       </fields>
     </stat_object>
   </stat_objects>

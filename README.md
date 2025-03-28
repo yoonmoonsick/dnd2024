@@ -333,7 +333,8 @@ While you aren’t wearing armor or wielding a Shield, you gain the following be
 #### Level 6: Inspiring Movement
 When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction. None of this feature’s movement provokes Opportunity Attacks.
 #### Level 6: Tandem Footwork
-When you roll Initiative, you can expend one use of your Bardic Inspiration if you don’t have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.    
+When you roll Initiative, you can expend one use of your Bardic Inspiration if you don’t have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.
+#### Level 6: Extra Attack
 #### Level 12: Leading Evasion
 When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.
 
@@ -563,6 +564,9 @@ You can use this feature a number of times equal to your Wisdom modifier (minimu
 - Level 7: Polymorph
 - Level 9: Insect Plague
 #### Level 3: Land’s Aid
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_LandAid.png?raw=true)
+
 As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius Sphere centered on that point. Each creature of your choice in the Sphere must make a Constitution saving throw against your spell save DC, taking 2d6 Necrotic damage on a failed save or half as much damage on a successful one. One creature of your choice in that area regains 2d6 Hit Points. The damage and healing increase by 1d6 when you reach Druid Levels 10 (3d6).
 #### Level 10: Nature’s Ward
 You are immune to the Poisoned condition, and you have Resistance to a damage type associated with your current land choice in the Circle Spells feature.

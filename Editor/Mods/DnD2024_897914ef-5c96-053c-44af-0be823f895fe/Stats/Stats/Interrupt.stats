@@ -3,39 +3,6 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cd8b8b68-38e6-41ce-9242-aeb5d73aa397" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WeaponMastery_Nick" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5d2c46edg8108g15e5g3d86g2fd35791ede7" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="DualWielder(context.Source) and Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsMeleeAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true)));" />
-        <field name="Properties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Roll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeOffHandWeaponAttack)" />
-        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon/2, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="FreeOffhandAttack:1;" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf729263eg37dcg43fbg923cg24cc642f6773" version="1" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Stack" type="StringTableFieldDefinition" value="FreeOffhandAttack" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="77f76cbe-fcc4-47d8-9dcb-00e3e924a0f7" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DualWielder" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cd8b8b68-38e6-41ce-9242-aeb5d73aa397" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd0f46bcga5c8gb339g33c2g7c8ec0f152ef" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="DualWielder(context.Source) and Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsMeleeAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="30172d70-4912-4206-ba72-eb291f782a47" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GithyankiParry_PC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="493ec5bb-f3c5-49a3-b25c-d6bda949c4f9" />
@@ -49,7 +16,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1a54a257-7c1a-4c6b-8682-dde8999c35b5" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -59,7 +26,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57708032-676f-4aa1-ac71-fd7df8f9940a" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -69,7 +36,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="83df6326-791c-4363-8058-83446a1a700f" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -79,7 +46,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0616be7e-3ec8-4aa1-9adf-78ed02e797a4" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -89,7 +56,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5d327c3c-0d35-417d-b92a-62065796741a" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -99,7 +66,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7ac8cd6-b1ff-4586-97a1-3943d0a51610" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -109,7 +76,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5021e373-7dff-4d0f-94e3-b8fa7fda9064" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:6" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -119,7 +86,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc759922-fd1d-40b1-bf43-b17bc2d7bc24" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:5" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -129,7 +96,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac5962a9-7aff-4846-958f-b63749c01e7f" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:4" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -139,7 +106,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="620e84a5-089f-4ca2-9d3b-197fe72341e1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -149,7 +116,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7bd085ff-780c-4ea7-acc1-357745f7b20c" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -159,7 +126,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="016f22f8-6c0b-4ebf-9843-27892dd6cec0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
       </fields>
     </stat_object>
@@ -184,7 +151,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasShieldEquipped(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage()" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -194,7 +160,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b435f5b-931f-4d26-aa61-656582325124" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h29464590g0aa2g1a9cgcecag575f75f5afc4" version="1" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnLeaveAttackRange;OnEnterAttackRange" enumeration_type_name="InterruptContext" version="1" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:0;Interrupt_TunnelFighter:1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_TunnelFighter:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -633,14 +599,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="473f0344-c20c-4481-bf04-048e0bd0cb8e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_AccursedSpecter" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a5ca00e6-ce51-47ac-b090-82048f922c0d" />
-        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Interrupt_AccursedSpecter:1;" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b9593b53-558e-4fa4-8a31-5e7716ac5e46" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
@@ -661,7 +619,7 @@
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(2d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:1;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:1;Interrupt_EldritchSmite:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
@@ -677,7 +635,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f080886gb4fdge21eg382eg36dfba9f1ad3" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:1;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:1;Interrupt_EldritchSmite:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -686,7 +644,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -696,7 +654,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -706,7 +664,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -716,7 +674,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -726,7 +684,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -736,7 +694,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -746,7 +704,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
       </fields>
     </stat_object>
@@ -756,8 +714,124 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
-        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;" />
+        <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF69B4" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb2ccb3b-46d2-43ad-8d88-011f0d2612dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Bard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e07902a1-e7d2-4c0d-90bc-907c45ddbf6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c1c294e4-0896-4bf2-81cc-04c18ae14c53" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d70b040-d937-4c2f-a329-886d60f6a6a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_SavingThrow_ArmorClass_d10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1603c069-716e-4295-a6a2-2e5194ed0049" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="720c436b-9d43-4a8e-a9f0-67340fb1fb50" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_Attack_d8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="177eb6b7-5139-4c0a-9afd-eff4b74a9381" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cec4c491-5536-4164-bafd-95ff191203ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_Attack_d10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff74482b-a25e-4729-b59e-0a5aae4dbe8c" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="17282798-cd2b-426f-ab2e-8a0a4d0f2e5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_SavingThrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="67e22252-7153-4616-ba82-b5ddc90d0f92" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac2cfdcf-e476-4a69-aa0a-8fc01155a2d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_SavingThrow_d8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9c0d112-3b66-496b-ac71-880008c38c7c" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="589a32a6-7fe7-439b-9523-0d9d846ddfe0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_SavingThrow_d10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f5f5454-f19e-49aa-9a53-66837ea4aa99" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f22d474d-622d-4fb9-82de-6c3cbcce8f97" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fe2be62e-bd71-4ab7-b2f1-5ef7133de3a5" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf4f834e-e7f8-4e3c-af82-d22faabb8ca5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_Attack_d8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ba377158-94b0-4026-a95a-b9cda9997563" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96cd0b84-c50d-4d29-9b31-f430d7dcc700" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_Attack_d10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acd7a214-0870-43eb-ac2e-8823771f418f" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74456724-398d-4541-bae8-7cda4e0e8d0f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_SavingThrow_ArmorClass" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dffd0dfa-61c6-4b44-9265-96fec422f41b" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a56a1e17-7dd2-4f20-aab4-5069fdb7858b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CombatInspiration_SavingThrow_ArmorClass_d8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0b10673-50f5-44d3-9671-f15d52387956" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="edecf407-e0c5-45bf-ac4c-a6ec8b10be4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_FIghter" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae34e2d0-916f-41de-bc2c-77cd4d201a8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Riposte" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7444d60-f45a-4dbf-8bf6-203acf40af5b" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
@@ -772,6 +846,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('ImprovedCunningStrike', context.Source)):ApplyStatus(SELF,DASH_HALF,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1017,7 +1092,8 @@
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Radiant)" />
         <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_DivineFury:1" />
         <field name="Stack" type="StringTableFieldDefinition" value="DivineFury" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'))" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_DivineFury', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')) and HasStatus('SG_Rage')" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1028,6 +1104,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6+ClassLevel(Barbarian)/2,Necrotic)" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1157,7 +1234,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;BalefulInterdict:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="BurningSeals" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source);" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
       </fields>
     </stat_object>
@@ -1211,6 +1288,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="AbatingSeal" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1237,6 +1315,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_VengefulShot,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1254,7 +1333,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(10)" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -1269,6 +1348,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellDamageTypeIs(DamageType.Slashing) or SpellDamageTypeIs(DamageType.Piercing) or SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Acid) or SpellDamageTypeIs(DamageType.Thunder) or SpellDamageTypeIs(DamageType.Necrotic) or SpellDamageTypeIs(DamageType.Fire) or SpellDamageTypeIs(DamageType.Lightning) or SpellDamageTypeIs(DamageType.Cold) or SpellDamageTypeIs(DamageType.Psychic) or SpellDamageTypeIs(DamageType.Poison) or SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Force)) and not AnyEntityIsItem() and IsSpell();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1313,6 +1393,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Fire,Magical);IF(HasPassive('AxiomaticSeals',context.Source)):DealDamage(LevelMapValue(D6Cantrip)+CharismaModifier*(ProficiencyBonus-1),Fire,Magical);ApplyStatus(INTERDICTED,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,0);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));ApplyStatus(CRUSHER_PUSH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Fire)" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1497,7 +1578,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="555782c2-4776-4bfa-b273-98cd01de2e62" />
         <field name="Name" type="NameTableFieldDefinition" value="Itrp_WC_TollTheDead" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7b4665d-cadb-42f5-a1a8-a4eccf0eb6e6" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_CircleOfDeath" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_TollTheDead,true,true,true)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h138d5804g40ebg443ag848bg34cd50e9119c" version="1" />
       </fields>
@@ -1669,6 +1750,14 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_HoldPerson" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_HoldPerson,true,true,true)" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0a06672-fd9a-45c7-8404-f85f510e315a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TheClover_TrueStrike_Riposte" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0fee400a-f9ac-4bae-834f-8475ad390512" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_TrueStrike_Weapon,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0)" />
       </fields>
     </stat_object>
   </stat_objects>
