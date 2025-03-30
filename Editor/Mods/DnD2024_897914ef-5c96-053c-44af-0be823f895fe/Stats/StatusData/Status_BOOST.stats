@@ -1398,6 +1398,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(15)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1453,6 +1454,7 @@
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1483,6 +1485,7 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d764846-ad2b-494f-ac36-8975780ff34f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d6+5);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2692,6 +2695,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(LevelMapValue(StandardProficiencyBonusScale));" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ADRENALINERUSH_TEMP_HP" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2857,6 +2861,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cd48191e-67eb-4f86-8e73-38cfb0da4672" />
         <field name="Name" type="NameTableFieldDefinition" value="LONGSTRIDER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a791531-a55c-4a90-a65b-5aa5ff395ba6" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3419,6 +3424,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Druid))" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3433,6 +3439,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Druid)*3)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -4148,6 +4155,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d085abaf-b3f2-4c6b-b2ea-3351caf2270f" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(10)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4936,6 +4944,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ASPECT_OF_THE_STALLION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1b54aa08-4aa6-416d-99ee-a82ef401cfc7" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4949,6 +4958,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73f701a6gb68cgc442g13d8g7b9cffa3bb80" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6efec2dbgb9f4gbadeg317egde61ac63fa0c" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="VITALITY_SURGE_TEMPHP" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4966,6 +4976,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value=" IF(IsDowned()):RegainHitPoints(1)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4975,6 +4986,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d764846-ad2b-494f-ac36-8975780ff34f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3d6)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6294,6 +6306,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b2e93fcb-6b73-4d36-99db-95877cd658d5" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+4)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+4);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6303,6 +6316,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae37e141-115f-43e4-b137-36603527aad4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+9)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+9);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6312,6 +6326,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5eadeed6-c3b0-4c34-9fe5-da2db10acf54" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+14)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+14);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6321,6 +6336,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac02a64c-3da1-4f9c-86dd-69cd8a76ed8b" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+19)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+19);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6330,6 +6346,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="69a659bb-2b6b-4c92-9d40-ac04bd80360f" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+24)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+24);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6339,6 +6356,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2a4103a5-3c07-4cfe-983f-1d8fa7cec3f5" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+29)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d4+29);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6355,6 +6373,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6365,6 +6384,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc794190eg65c8g2e42g3a00g0a1443b71323" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Half,)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
