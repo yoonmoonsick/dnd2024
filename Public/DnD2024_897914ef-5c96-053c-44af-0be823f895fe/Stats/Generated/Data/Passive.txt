@@ -1829,7 +1829,7 @@ data "Icon" "PassiveFeature_WarMagic"
 data "Properties" "Highlighted"
 data "StatsFunctorContext" "OnCast"
 data "Conditions" "HasSpellFlag(SpellFlags.Spell) and not HasStatus('BATTLEMAGIC')"
-data "StatsFunctors" "ApplyStatus(SELF,BATTLEMAGIC,100,1);"
+data "StatsFunctors" "ApplyStatus(SELF,EXTRA_ATTACK,100,1);ApplyStatus(SELF,WAR_MAGIC_BLOCK,100,1);"
 
 new entry "ImprovedBlessedStrikes"
 type "PassiveData"
