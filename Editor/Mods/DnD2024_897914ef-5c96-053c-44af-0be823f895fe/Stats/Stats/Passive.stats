@@ -2546,7 +2546,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasSpellFlag(SpellFlags.Spell) and not HasStatus('BATTLEMAGIC')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,BATTLEMAGIC,100,1);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EXTRA_ATTACK,100,1);ApplyStatus(SELF,WAR_MAGIC_BLOCK,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
