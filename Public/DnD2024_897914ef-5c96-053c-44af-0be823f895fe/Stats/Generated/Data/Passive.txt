@@ -3374,6 +3374,11 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_Fire_Heat_RemoveEndCombat"
+type "PassiveData"
+data "StatsFunctorContext" "OnCombatEnded"
+data "StatsFunctors" "RemoveStatus(MAG_FIRE_HEAT)"
+
 new entry "MAG_Mobility_ExplosionOnJump_Passive"
 type "PassiveData"
 using "MAG_Mobility_ExplosionOnJump_Passive"
