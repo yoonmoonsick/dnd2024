@@ -562,7 +562,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and ( HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRerollInterruptInteresting(context.Source) ) and not AnyEntityIsItem()" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and ( HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRerollInterruptInteresting(context.Source) ) and not AnyEntityIsItem() and (IsSpell() or IsCantrip())" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetReroll(19,false)" />
         <field name="Cost" type="StringTableFieldDefinition" value="SorceryPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
