@@ -1874,7 +1874,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TRUESTRIKE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Weapon" />
@@ -2046,7 +2046,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="982729cd-4b0e-43cd-a547-9b0015e48ee3" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Frog" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8aa5d3e3-4d70-4d98-8fbf-f9192a62f358" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2054,7 +2054,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="882d9b4e-2900-459a-b2d8-1133eb3ee11d" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="58f80a9f-1a79-4159-aed5-704f56be4c47" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2062,7 +2062,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4e1a483e-95b9-4c27-beee-1a5dcc4e8818" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_WildShape" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="36c0fa07-f0a7-4aea-8ed2-9c02c403b680" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2086,7 +2086,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1f063222-684f-4caa-b6e1-bc19248f573d" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Spider_Tiny" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="817771d1-6544-423b-bc1c-fb616b37fce3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2110,7 +2110,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c5dd1548-0a87-47d3-af62-23d96da9b604" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_HookHorror" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0f518d14-b441-4730-b9ae-8030d6b7b9ca" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2135,6 +2135,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="77a9fcb4-53f6-40de-8267-efe5e9a36fc1" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8738adfb-caa4-46e6-ac93-73403a07c994" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2142,6 +2143,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d4a3a443-dfac-4df9-850c-7ed9e309f79f" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear_Cub" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="edad127e-6445-4203-ab1d-57431f397994" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2182,7 +2184,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="379ee592-9aa5-4764-8c92-6a71036ed136" />
         <field name="Name" type="NameTableFieldDefinition" value="Pounce_Wolf_Summon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3aef4f32-0fdf-47ee-8387-a1e52dcc7c04" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
       </fields>
     </stat_object>
@@ -2231,7 +2233,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e503ef19-ebea-47cf-8adb-47e3f172b4ef" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Panther" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="65a16059-c24a-4bba-8162-b363afc28cab" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.75" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2261,7 +2263,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b5bab558-7e96-4187-9d46-b931b95a61cb" />
         <field name="Name" type="NameTableFieldDefinition" value="Pounce_Panther_Summon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="58884948-b33b-4477-a10a-33e335008fc2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
       </fields>
     </stat_object>
@@ -2270,7 +2272,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="20ab2f1e-b014-4fd5-8bab-201bedaafb5c" />
         <field name="Name" type="NameTableFieldDefinition" value="Pounce_Dilophosaurus" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fe67ba79-3d2b-4f0e-af10-efeb7b00c6fc" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
       </fields>
     </stat_object>
@@ -2279,7 +2281,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bfd31b98-ecb2-4204-8a40-77609a4369ee" />
         <field name="Name" type="NameTableFieldDefinition" value="Pounce_Alioramus" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fcc28fb7-45c7-47f2-b909-9f31522e7c8a" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
       </fields>
     </stat_object>
@@ -2288,7 +2290,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="841834ad-f788-4621-a412-3c76364e692d" />
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Knockdown_AOE_Alioramus" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b3a5fb2f-c984-4fe6-b777-98d945222265" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
       </fields>
     </stat_object>
@@ -2305,7 +2307,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="338460fb-5c7f-4d99-a2b0-8be58716dd51" />
         <field name="Name" type="NameTableFieldDefinition" value="SlicingLunge_Slayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1758ef9-166e-4c8f-b225-8214c183d12f" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC(), AdvantageOnOrinFear())" />
       </fields>
     </stat_object>
@@ -2314,7 +2316,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="10d93241-ba82-43f8-bb49-9ff9803ab08f" />
         <field name="Name" type="NameTableFieldDefinition" value="TerrifyingLunge_Slayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="66fb9eca-b9ee-4edd-b46f-47f46968f8fc" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC(), AdvantageOnOrinFear())" />
       </fields>
     </stat_object>
@@ -2323,7 +2325,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4ee98ed0-3c89-448e-b5d3-bd5fbe73d9f4" />
         <field name="Name" type="NameTableFieldDefinition" value="TerrifyingLunge_Slayer_10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="84b968ca-7ac6-4c0c-a59b-7f169cbcf2e8" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC(), AdvantageOnOrinFear())" />
       </fields>
     </stat_object>
@@ -2333,6 +2335,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Jump_Owlbear_Wildshape_Lunge" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d12c3acc-ecb5-49c5-a902-f98e657786de" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
@@ -2417,7 +2420,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="778876e8-a411-47c7-be4b-838597fef812" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Barbarian_BrutalLeap" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61b99b82-6e4d-43ce-9fce-547b5b2d33e4" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:Distance*0.5" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
