@@ -813,6 +813,12 @@ data "RemoveConditions" "ExtraAttackSpellCheck() and not IsCantrip()"
 data "RemoveEvents" "OnSpellCast"
 data "StatusPropertyFlags" "DisableCombatlog;DisablePortraitIndicator;DisableOverhead"
 
+new entry "EXTRA_ATTACK_WAR_MAGIC"
+type "StatusData"
+data "StatusType" "BOOST"
+using "EXTRA_ATTACK_WAR_MAGIC"
+data "RemoveConditions" "((HasStringInSpellRoll('WeaponAttack') or HasStringInSpellRoll('UnarmedAttack') or SpellId('Target_CommandersStrike')) and HasUseCosts('ActionPoint') and not IsOffHandAttack()) and not HasActionResource('BonusActionPoint', 1, 0, false, false)"
+
 new entry "INSTINCTIVE_POUNCE"
 type "StatusData"
 data "StatusType" "BOOST"
