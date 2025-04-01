@@ -122,7 +122,7 @@ data "ExtraDescription" "he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b;1"
 data "Icon" "Target_OffHandAttack"
 data "Properties" "OncePerTurn"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();"
+data "Conditions" "not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();"
 data "StatsFunctors" "ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)"
 
 new entry "WeaponMastery_Cleave"
