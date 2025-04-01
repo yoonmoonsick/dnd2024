@@ -8357,6 +8357,7 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8521,6 +8522,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):ApplyStatus(BOOMING_BLADE,100,1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_5,100,1);IF(CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_11,100,1);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Thunder_Melee" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8544,6 +8546,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_SearingSmite_L1to3" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b626a482-ca60-4426-a51e-2aea6a016611" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="259f5c89-10e6-43a1-90ae-1fe67b8f141c" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8594,6 +8597,7 @@
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

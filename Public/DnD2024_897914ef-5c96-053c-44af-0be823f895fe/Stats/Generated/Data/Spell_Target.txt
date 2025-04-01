@@ -6999,6 +6999,7 @@ data "SpellAnimation" "3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;cd5e5d4a-38e1-4
 data "VerbalIntent" "Debuff"
 data "SpellStyleGroup" "Intent"
 data "SpellFlags" "IsSpell;IsHarmful"
+data "DamageType" "Cold"
 
 new entry "Target_SacredFlame"
 type "SpellData"
@@ -7147,6 +7148,7 @@ data "SpellProperties" "IF(HasPassive('WarCaster_OpportunitySpell',context.Sourc
 data "SpellSuccess" "IF(not CharacterLevelGreaterThan(4)):ApplyStatus(BOOMING_BLADE,100,1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_5,100,1);IF(CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_11,100,1);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);"
 data "Icon" "Action_DivineStrike_Thunder_Melee"
 data "SpellFlags" "IsMelee;IsHarmful;IsSpell;HasSomaticComponent;CannotTargetTerrain"
+data "DamageType" "Thunder"
 
 new entry "Target_GreenFlameBlade"
 type "SpellData"
@@ -7168,6 +7170,7 @@ data "SpellFlags" "IsMelee;IsHarmful;IsSpell;HasSomaticComponent;CannotTargetTer
 data "PrepareEffect" "b626a482-ca60-4426-a51e-2aea6a016611"
 data "CastEffect" "259f5c89-10e6-43a1-90ae-1fe67b8f141c"
 data "TargetEffect" "1ba7f68d-919e-4393-9a09-64407e997bd1"
+data "DamageType" "Fire"
 
 new entry "Target_MindSliver"
 type "SpellData"
@@ -7214,6 +7217,7 @@ data "CastSound" "Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3"
 data "TargetSound" "Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3"
 data "PrepareEffect" "ec80b3cd-29fd-40d2-a41a-b703db1b6f8e"
 data "TargetEffect" "d49cf296-7f7b-4658-8171-13eeb08c7d88"
+data "DamageType" "Necrotic"
 
 new entry "Target_ViciousMockery"
 type "SpellData"
