@@ -1,20 +1,20 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_IDENTIFIER_Initialized_DnD2024(0);
+DB_DnD2024_Initialized(0);
 KBSECTION
 IF
 LevelLoaded(_)
 AND
-DB_IDENTIFIER_Initialized_DnD2024(0)
+DB_DnD2024_Initialized(0)
 THEN
-TimerLaunch("IDENTIFIER_InitDelay", 0);
+TimerLaunch("DnD2024_InitDelay", 0);
 
 IF
-TimerFinished("IDENTIFIER_InitDelay")
+TimerFinished("DnD2024_InitDelay")
 THEN
-NOT DB_IDENTIFIER_Initialized_DnD2024(0);
-DB_IDENTIFIER_Initialized_DnD2024(1);
+NOT DB_DnD2024_Initialized(0);
+DB_DnD2024_Initialized(1);
 
 IF
 CastedSpell(_Caster,"Shout_YMS_Resotre_Oath",_,_,_)
