@@ -5992,10 +5992,10 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Lifedrinker" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Necrotic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Psychic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockInterrupt(Interrupt_LifeDrinker_Radiant);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):ActionResource(Interrupt_LifeDrinker,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Shout_LifeDrinker_Necrotic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Shout_LifeDrinker_Psychic);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Shout_LifeDrinker_Radiant);IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):ActionResource(Interrupt_LifeDrinker,1,0);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and IsMeleeWeaponAttack() and Character() and not AnyEntityIsItem()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(SELF,1d8+ConstitutionModifier)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIFEDRINKER_NECROTIC',context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('LIFEDRINKER_RADIANT',context.Source)):DealDamage(1d6,Radiant,Magical);IF(HasStatus('LIFEDRINKER_PSYCHIC',context.Source)):DealDamage(1d6,Psychic,Magical);RegainHitPoints(SELF,1d8+ConstitutionModifier);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="447b9201-9d31-4d6e-b45c-5089359fee40" />
       </fields>
