@@ -208,6 +208,10 @@ function DeflectAttackPiercing(damageType, entity)
     return ConditionResult(false)
 end
 
+function RangersCompanionCheck()
+    return SpellId('Target_RangersCompanion') | SpellId('Target_RangersCompanion_Bear') | SpellId('Target_RangersCompanion_Wolf') | SpellId('Target_RangersCompanion_Boar') | SpellId('Target_RangersCompanion_GiantSpider') | SpellId('Target_RangersCompanion_Raven')
+end
+
 function IllusionSpellCheck()
     return IsSpellOfSchool(SpellSchool.Illusion)
 end
