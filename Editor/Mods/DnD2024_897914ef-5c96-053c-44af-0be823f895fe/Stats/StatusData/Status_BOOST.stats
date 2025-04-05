@@ -1506,30 +1506,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="70b5b284-2417-4371-a1a3-0eebd29ff911" />
-        <field name="Name" type="NameTableFieldDefinition" value="REFRESHING_STEP_UNLOCK" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RefreshingStep_Give)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_RefreshingStep_Give');UnlockSpellVariant(SpellId('Target_RefreshingStep_Give'),ModifyIconGlow());" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2e5a2ec9-4f8f-4acf-bdee-a39795ada938" />
-        <field name="Name" type="NameTableFieldDefinition" value="FEYSTEP_FREE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RefreshingStep_Free);ActionResourceBlock(Movement)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_RefreshingStep_Free')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc0a48df4gc754g0d6ag011fgdcf1eaf5f636" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79808554g836cge10eg43dagaae63ef5cd10" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f1932268-6565-426a-b68e-f1b52f1a73fb" />
         <field name="Name" type="NameTableFieldDefinition" value="UNARMED_FIGHTING_NOSHIELD" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74bdc621g7468g1924gc277gaddf45885251" version="1" />
@@ -1661,7 +1637,7 @@
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Hex_MO" />
         <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_Hex_MO_Stop" />
         <field name="StackId" type="StringTableFieldDefinition" value="HEX_REAPPLY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(HexCheck(),ModifyTooltipDescription(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup))" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(HexCheck(),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup));UnlockSpellVariant(SpellId('Target_Hex_2'),ModifyIconGlow(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup));" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="3b08002d-3034-46e1-a9b4-6d95eb7b70f8" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="94d4be10-1632-47ac-a314-ce93297f2f5f" />
       </fields>
@@ -4151,9 +4127,11 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bdf0a46d-e03f-449a-b716-26c871bbc536" />
         <field name="Name" type="NameTableFieldDefinition" value="POTENTSPELLCASTING_CLERIC_UNLOCK" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="70b5b284-2417-4371-a1a3-0eebd29ff911" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Cleric_PotentSpellcasting_Give)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Cleric_PotentSpellcasting_Give);UnlockSpellVariant(SpellId('Target_Cleric_PotentSpellcasting_Give'),ModifyIconGlow());" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Cleric_PotentSpellcasting_Give')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
