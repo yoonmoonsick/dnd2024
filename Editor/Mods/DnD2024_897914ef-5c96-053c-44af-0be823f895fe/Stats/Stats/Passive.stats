@@ -5187,6 +5187,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="HasActionResource('ShieldMasterResource', 1, 0, false, false, context.Source) and HasShieldEquipped(context.Source) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_SHIELD, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
