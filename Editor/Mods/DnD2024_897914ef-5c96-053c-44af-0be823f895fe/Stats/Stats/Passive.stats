@@ -5166,19 +5166,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="53f014f7-55fc-448d-890a-b5201e354047" />
-        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_PassiveBonuses" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9d53cfae-2026-44d5-87af-1684c16e8483" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldBlow_Prone);UnlockSpell(Target_ShieldBlow_Push)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b19fd6a5-812c-4419-92f9-f45d184e51d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Block" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="77292f4a-7967-4c75-9370-22ffab1a37d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Strength,1);UnlockInterrupt(Interrupt_ShieldMaster);ActionResource(ShieldMasterResource,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b19fd6a5-812c-4419-92f9-f45d184e51d5" />
-        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Block" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="77292f4a-7967-4c75-9370-22ffab1a37d6" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Strength,1);UnlockInterrupt(Interrupt_ShieldMaster)" />
+        <field name="UUID" type="IdTableFieldDefinition" value="12ef101f-2783-4e8d-92e0-e2220b9c987b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bf22aaa-989a-4832-a20e-ef96476d12bf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d3d04d8g1c8dgdae4g314ag745a8707f416" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf222acc2g7559g950fg5834gfc4b959910d9" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hed5e6f5dgf5d1g96f7g42b9gc2d9f33fbbab" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ShieldMasterResource" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ShieldShove" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasActionResource('ShieldMasterResource', 1, 0, false, false, context.Source) and HasShieldEquipped(context.Source) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_SHIELD, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16feba91-605a-402a-82fc-99448b9273de" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Topple" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12ef101f-2783-4e8d-92e0-e2220b9c987b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9bceffeg9087gf8a1gf946gbcdc76cde679" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ShieldMaster_Shove" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 0));UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
