@@ -3364,6 +3364,11 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_StaffOFRam_KnockStun_Passive"
+type "PassiveData"
+using "MAG_StaffOFRam_KnockStun_Passive"
+data "Conditions" "AttackedWithPassiveSourceWeapon() and not Ally() and TargetSizeEqualOrSmaller(Size.Large) and not Tagged('DRAGON') and not SavingThrow(Ability.Constitution, ManeuverSaveDC(), false, false, context.Target)"
+
 new entry "MAG_Fire_Heat_RemoveEndCombat"
 type "PassiveData"
 data "StatsFunctorContext" "OnCombatEnded"
