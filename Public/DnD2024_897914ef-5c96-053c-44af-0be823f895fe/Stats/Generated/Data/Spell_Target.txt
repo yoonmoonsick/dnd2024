@@ -4881,7 +4881,7 @@ new entry "Target_Slam_Zombie_AnimateDead"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_Slam_Zombie_AnimateDead"
-data "SpellSuccess" "DealDamage(2d6+UnarmedMeleeAbilityModifier, Bludgeoning);IF(not Item() not Tagged('UNDEAD') and not Tagged('PLAYABLE') and not Tagged('CONSTRUCT')  and not Tagged('ELEMENTAL') and not Tagged('PLANT') and not Tagged('OOZE')):ApplyStatus(CRAWLING_GNAW_SWITCH,100,1) "
+data "SpellSuccess" "DealDamage(2d6+UnarmedMeleeAbilityModifier, Bludgeoning);IF(not Item() and not Tagged('UNDEAD') and not Tagged('PLAYABLE') and not Tagged('CONSTRUCT')  and not Tagged('ELEMENTAL') and not Tagged('PLANT') and not Tagged('OOZE')):ApplyStatus(CRAWLING_GNAW_SWITCH,100,1) "
 data "TargetConditions" "not Self() and not Dead()"
 
 new entry "Target_Cleric_PotentSpellcasting_Give"
