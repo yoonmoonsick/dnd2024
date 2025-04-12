@@ -1,0 +1,34 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusApplied(_Steed, "MOUNTED_STEED", _, _)
+THEN
+DB_DnD2024_FindSteed(_Steed);
+SetOnStage(_Steed, 0);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_FindSteed_Dismount",_,_,_)
+AND
+DB_DnD2024_FindSteed(_Steed)
+THEN
+NOT DB_DnD2024_FindSteed(_Steed);
+SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "MOUNTED_STEED");
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_FindSteed_Dismount",_,_,_)
+AND
+DB_DnD2024_FindSteed(_Steed)
+THEN
+NOT DB_DnD2024_FindSteed(_Steed);
+SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "MOUNTED_STEED");
+
+EXITSECTION
+
+ENDEXITSECTION

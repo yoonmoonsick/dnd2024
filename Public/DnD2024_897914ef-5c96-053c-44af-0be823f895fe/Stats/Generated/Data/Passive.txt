@@ -2524,6 +2524,12 @@ data "StatsFunctors" "ApplyStatus(SELF,FLURRY_HEALING_HARM,100,1)"
 new entry "YMS_Paladin"
 type "PassiveData"
 
+new entry "DismountSteed"
+type "PassiveData"
+data "StatsFunctorContext" "OnDamaged"
+data "Conditions" "not SavingThrow(Ability.Dexterity, 8)"
+data "StatsFunctors" "TriggerRandomCast(1,,DismountSteed);"
+
 new entry "Oath_Glory_Tenents"
 type "PassiveData"
 using "Oath_Vengeance_Tenents"
