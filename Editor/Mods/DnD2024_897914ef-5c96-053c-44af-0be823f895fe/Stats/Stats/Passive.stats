@@ -173,7 +173,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
@@ -188,7 +188,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9cddc110g0130gc809gaaedgd3872e1a68a8" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,0);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -5268,7 +5268,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and IsWeaponAttack() and DualWielder(context.Source) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and IsMeleeWeaponAttack() and DualWielder(context.Source) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
