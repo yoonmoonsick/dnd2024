@@ -14,10 +14,6 @@
 - Rules 
 - Spells and Cantrips  
 
-**Caution**
-- Might be a crash when respec or Level up your character after installing or updating a mod.
-- If custom resource icons are not visible when using the [dynamic](https://www.nexusmods.com/baldursgate3/mods/2668) [sidebar](https://mod.io/g/baldursgate3/m/dynamic-sidebar), install Requires [Better Inve](https://www.nexusmods.com/baldursgate3/mods/4597)[ntory UI](https://mod.io/g/baldursgate3/m/better-inventory-ui1) or [BC](https://www.nexusmods.com/baldursgate3/mods/1580)[PP](https://mod.io/g/baldursgate3/m/bcpp-16x9-6chars).
-
 **Credit**
 - Druid Features: ChefReg (https://www.nexusmods.com/baldursgate3/mods/13575)
 - Chniese Translation : woodheader (https://www.nexusmods.com/baldursgate3/mods/14703), (https://mod.io/g/baldursgate3/m/dnd-phb-2024-all-in-one-chs)
@@ -27,10 +23,6 @@
 **Changelog**
 
 Please Visit: https://github.com/yoonmoonsick/dnd2024/commits/master/
-
-or https://mod.io/g/baldursgate3/m/dnd-2024
-
-![](https://i.imgur.com/9goI97j.png)
 
 # Background 
 
