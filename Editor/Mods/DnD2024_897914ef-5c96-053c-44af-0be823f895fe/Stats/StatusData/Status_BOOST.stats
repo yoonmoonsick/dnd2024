@@ -1758,6 +1758,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_LESSER_RESTORATION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d843cec-c2db-4de0-bfe6-2343f2254e76" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(AdrenalineRushCharge,100%,0);RestoreResource(YouDieOnMyCommandCharge,100%,0);RestoreResource(InvokeHellCharge,100%,0);RestoreResource(IllriggerSeal,100%,0);IF(HasPassive('FontOfInspiration')):RestoreResource(BardicInspiration,100%,0);ResetCooldowns(UntilShortRest);IF(not HasPassive('Durable')):RegainHitPoints(MaxHP/2);IF(HasPassive('Durable')):RegainHitPoints(MaxHP);RestoreResource(SpellSlot,100%,1);RestoreResource(SpellSlot,100%,2);RestoreResource(ChannelDivinity,100%,0);RestoreResource(SuperiorityDie,100%,0);RestoreResource(KiPoint,100%,0);RestoreResource(WarlockSpellSlot,100%,1);RestoreResource(WarlockSpellSlot,100%,2);RestoreResource(WarlockSpellSlot,100%,3);RestoreResource(WarlockSpellSlot,100%,4);RestoreResource(WarlockSpellSlot,100%,5);RestoreResource(WarlockSpellSlot,100%,6);RestoreResource(WildShape,100%,0);RestoreResource(WeaponActionPoint,100%,0);RestoreResource(TidesOfChaos,100%,0);RestoreResource(ChannelOath,100%,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1765,7 +1766,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e2e5b11e-2180-4c0f-acbc-05a391d337f0" />
         <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REST_SLEEP_GREATER_RESTORATION_DND2024" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="65d4b50f-29c8-4833-a224-b77302146a72" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SecondWindCharge,100%,0);RestoreResource(HealingLightCharge,100%,0);RestoreResource(InnateSorceryCharge,100%,0);RestoreResource(FavoredEnemyCharge,100%,0);RestoreResource(TirelessCharge,100%,0);RestoreResource(WardingFlareCharge,100%,0);RestoreResource(FeyStepCharge,100%,0);RestoreResource(BreathWeaponCharge,100%,0);RestoreResource(MoonlightStepCharge,100%,0);RestoreResource(HeroicInspiration_Performer_Charge,100%,0);RestoreResource(AdrenalineRushCharge,100%,0)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(AdrenalineRushCharge,100%,0);RestoreResource(YouDieOnMyCommandCharge,100%,0);RestoreResource(InvokeHellCharge,100%,0);RestoreResource(IllriggerSeal,100%,0);RestoreResource(SecondWindCharge,100%,0);RestoreResource(HealingLightCharge,100%,0);RestoreResource(InnateSorceryCharge,100%,0);RestoreResource(FavoredEnemyCharge,100%,0);RestoreResource(TirelessCharge,100%,0);RestoreResource(WardingFlareCharge,100%,0);RestoreResource(FeyStepCharge,100%,0);RestoreResource(BreathWeaponCharge,100%,0);RestoreResource(MoonlightStepCharge,100%,0);RestoreResource(HeroicInspiration_Performer_Charge,100%,0);RestoreResource(AdrenalineRushCharge,100%,0)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ALCH_POTION_REST_GREATER_SLEEP_RESTORATION_DND2024" />
       </fields>
@@ -3393,6 +3394,9 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ACOverrideFormula(13,true,Wisdom)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MOON_DRUID_WILDSHAPE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="13" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4139,9 +4143,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="513fe79f-bcb1-4eab-a148-498d4331359c" />
         <field name="Name" type="NameTableFieldDefinition" value="POTENTSPELLCASTING_CLERIC_TEMPHP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d085abaf-b3f2-4c6b-b2ea-3351caf2270f" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(10)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(12)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5420,6 +5425,34 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5da5f96gbd4eg1cb7g8b42g8edc609802a6" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_ALACRITY" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d57102e2-4de4-4fb4-866d-82e891971b7d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOUNTED_STEED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd13fd8c-690d-4ce0-b18a-6defdf567519" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;LoseControl;LoseControlFriendly;DisableInteractions;TickingWithSource;ExecuteFunctorsOnOwner" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97fee248-23a6-46f4-b4e0-eae0d1843645" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOUNTING_PALADIN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd13fd8c-690d-4ce0-b18a-6defdf567519" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha870dd81g0bf9g970eg1d4ag97b245a20502" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FindSteed_Dismount);ActionResource(SteedActionPoint,1,0);UnlockInterrupt(Interrupt_SteedAttack);UnlockSpellVariant(SpellId('Shout_Dash'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Disengage'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Dodge'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DismountSteed" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF228B22" is_substat="false">

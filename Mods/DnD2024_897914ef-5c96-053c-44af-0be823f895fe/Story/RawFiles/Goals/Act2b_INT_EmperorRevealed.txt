@@ -1,0 +1,1487 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//REGION
+DB_BlockedWaypointZone((TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2);
+DB_DangerZone((TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2,"INT_AstralPrison");
+
+SetFlag((FLAG)INT_EmperorRevealed_Event_BeforeAmbush_c3e160f2-66df-465e-8012-acff8bd6b9e7);
+
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_OrbExploder_fab4ef8a-ce00-4ab4-892d-f50ab5878dac);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_OrbShattersArea_ae7c4379-6270-4fbe-bd08-87c5f2635da2);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_NotDemonsButGithPAD_Trigger_b5f6a756-e4b7-4e0e-bcaf-1a9a426ae736);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_FightingOffstageTrigger_71a75efc-49ee-4d81-b3a7-94f5ed3b2498);
+PROC_TriggerRegisterForPlayers((TRIGGER)S_INT_EmperorFightingOffstageTrigger_8b7af747-5a84-403f-9a25-aeb486a18f10);
+
+PROC_TriggerRegisterForParty((TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2);
+PROC_TriggerRegisterForParty((TRIGGER)S_INT_FightingOffstageTrigger_71a75efc-49ee-4d81-b3a7-94f5ed3b2498);
+PROC_TriggerRegisterForParty((TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba);
+PROC_TriggerRegisterForParty((TRIGGER)S_INT_EmperorFightingOffstageTrigger_8b7af747-5a84-403f-9a25-aeb486a18f10);
+PROC_TriggerRegisterForParty((TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21);
+
+DB_InRegionFlag((TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2, (FLAG)INT_State_InAstralPrison_7144b3fc-b354-4e6b-b392-c20004be4324);
+
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_GlobeDestroyed_d545fbcf-a098-4cca-9749-481aa6cd7fa3, (DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f);
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_State_PlayerAgreedToHelpEmperor_a8997c32-e165-6e7c-888b-b5433c41a8d7, (DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_PlayerRefusedToHelpEmperor_34918c8c-dedf-4243-8172-97a70d23e2f6, (DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_State_OrpheusSubdued_cdbc0a7c-96f6-4008-8b33-546b889bb5a4, (DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_HasMet_GlobeReformed_d75e55df-663b-5c6b-e123-ead307625778,(DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+DB_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6,(DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+DB_FlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_GiveAstralTadpole_f36c3396-5607-d177-0965-1feb4bab5368, (DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_GetInThePortal_201cc66b-5d31-c57b-a845-dd82ea15d30b);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_GetInThePortal_201cc66b-5d31-c57b-a845-dd82ea15d30b);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_InsideAstralPrisonHurry_fce37cb8-66d6-5d44-0147-c31f2a82d3f7);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_InsideAstralPrisonHurry_fce37cb8-66d6-5d44-0147-c31f2a82d3f7);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_DialogBlockAttackButton((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+DB_DialogBlockTradeButton((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+DB_DialogBlockTradeButton((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+DB_DialogBlockAttackButton((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f);
+DB_DialogBlockTradeButton((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f);
+DB_DialogBlockAttackButton((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f);
+
+DB_DropMutingStatussesDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891);
+DB_DialogStarted_IgnoreStopConditions((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891);
+DB_DialogBlockTradeButton((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891);
+DB_DialogBlockAttackButton((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891);
+
+DB_AddCharactersInTriggerToDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5,(TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba,1,1);
+DB_AddCharactersInTriggerToDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2,1,1);
+DB_AddCharactersInTriggerToDialog((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2,1,1);
+DB_AddCharactersInTriggerToDialog((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2,1,1);
+
+DB_GiveNewItemFromTemplateEvent((ITEMROOT)LOOT_MF_Tadpole_Astral_A_4a82e6f2-839f-434e-addf-b07dd1578194,(FLAG)INT_EmperorRevealed_Event_GiveAstralTadpole_f36c3396-5607-d177-0965-1feb4bab5368,1);
+//END_REGION
+
+//REGION Camp combat
+
+DB_GLO_NarrativeCombat_Region("INT_CampAmbush_NarrativeCombat",(TRIGGER)S_INT_CampAmbush_Area_f2ccd3c7-70c0-4ab5-96bd-95493557d632);
+
+DB_INT_PortalGishGroup(S_INT_PortalGithyanki_Wave1_Melee_01_4438d35a-918e-47fd-a16a-2ed4423ce0cd,0);
+DB_INT_PortalGishGroup(S_INT_PortalGithyanki_Wave1_Caster_01_4007a88a-1bae-41a1-9b6c-64ec44d5f0a4,0);
+DB_INT_PortalGishGroup(S_INT_PortalGithyanki_Wave1_Melee_02_91153fd6-7d2a-4ac2-a647-fcac53a8c113,0);
+
+DB_INT_PortalGishGroup(S_INT_PortalGithyanki_Wave2_Melee_01_99b01e7f-ff4b-4b55-b275-dd0d02c08a0e,1);
+
+DB_INT_PortalGishGroup(S_INT_PortalGithyanki_Wave3_Caster_01_9918e38c-a12a-44d6-94ab-92a857514a29,2);
+
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave1_Melee_01_4438d35a-918e-47fd-a16a-2ed4423ce0cd,0);
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave1_Caster_01_4007a88a-1bae-41a1-9b6c-64ec44d5f0a4,0);
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave1_Melee_02_91153fd6-7d2a-4ac2-a647-fcac53a8c113,0);
+
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave2_Caster_01_0beffbc6-dd26-4fea-9f0a-a779bf574e11,0);
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave2_Melee_01_99b01e7f-ff4b-4b55-b275-dd0d02c08a0e,0);
+
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave3_Caster_01_9918e38c-a12a-44d6-94ab-92a857514a29,0);
+PROC_SetOnStage(S_INT_PortalGithyanki_Wave3_Melee_01_5a52c9f4-e82f-477d-8830-3cc719f72baf,0);
+
+PROC_SetOnStage(S_INT_PortalFromAstralPlane_OrpheusChamber_d16098eb-cb90-4ef9-a66b-86eac687e547,0);
+PROC_SetOnStage(S_INT_PortalToAstralPlane_Emperor_c20431a7-90e8-4610-b9f4-7c14c432c50a,0);
+
+DB_CombatReact_AD_OnTurn(S_INT_PortalGithyanki_Wave1_Caster_01_4007a88a-1bae-41a1-9b6c-64ec44d5f0a4, (DIALOGRESOURCE)INT_EmperorRevealed_AD_CombatAtCamp_dc9aa773-ddea-0272-63f0-e9ad2a34ad71, 1);
+DB_CombatReact_AD_OnTurn(S_INT_PortalGithyanki_Wave1_Melee_01_4438d35a-918e-47fd-a16a-2ed4423ce0cd, (DIALOGRESOURCE)INT_EmperorRevealed_AD_CombatAtCamp_02_66dd2800-f79b-46a6-3a27-f52ce129e86e, 1);
+DB_CombatReact_AD_OnTurn(S_INT_PortalGithyanki_Wave1_Melee_02_91153fd6-7d2a-4ac2-a647-fcac53a8c113, (DIALOGRESOURCE)INT_EmperorRevealed_AD_CombatAtCamp_03_3c5dc3b9-62a2-6528-7d8e-d1e383187bd9, 2);
+DB_CombatReact_AD_OnTurn(S_INT_PortalGithyanki_Wave2_Melee_01_99b01e7f-ff4b-4b55-b275-dd0d02c08a0e, (DIALOGRESOURCE)INT_EmperorRevealed_AD_CombatAtCamp_NewWave_01_bee6506b-d671-d78a-ad71-9ef4efc378d0, 1);
+//DB_CombatReact_AD_OnTurn(S_INT_PortalGithyanki_Wave3_Melee_01_5a52c9f4-e82f-477d-8830-3cc719f72baf, (DIALOGRESOURCE)INT_EmperorRevealed_AD_CombatAtCamp_NewWave_02_5913a678-a18d-c408-06c0-5530e8a91ba1, 1);
+//END_REGION
+
+//REGION Orpheus combat
+
+DB_GLO_NarrativeCombat_Region("INT_Orpheus_NarrativeCombat",(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2);
+
+//Setting up Orpheus fight win condition
+DB_GLO_DefeatCounter((CHARACTER)S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59, "INT_RoyalGuard_Combat");
+DB_GLO_DefeatCounter((CHARACTER)S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7, "INT_RoyalGuard_Combat");
+DB_GLO_DefeatCounter((CHARACTER)S_INT_GithRoyalGuard03_b8492256-64d0-44a0-b289-eb8387b98f5f, "INT_RoyalGuard_Combat");
+DB_GLO_DefeatCounter((CHARACTER)S_INT_GithRoyalGuard04_3cce9a81-6755-44ce-a391-77fe4ffb68e2, "INT_RoyalGuard_Combat");
+DB_GLO_DefeatCounter_IgnoreWaitForCombatEnd("INT_RoyalGuard_Combat");
+
+DB_INT_OrpheusFightCombatants((CHARACTER)Intellect_Devourer_002_43834138-4980-473e-94d1-1a913aead4d3);
+DB_INT_OrpheusFightCombatants((CHARACTER)Intellect_Devourer_003_f2e15e40-6e90-46e4-8852-e4510b6e27f9);
+DB_INT_OrpheusFightCombatants((CHARACTER)Intellect_Devourer_005_3d3eefd4-ee0e-4c92-836d-9194d04b2d19);
+DB_INT_OrpheusFightCombatants((CHARACTER)Intellect_Devourer_006_5717eb29-0400-4426-ac7a-e827a980a341);
+DB_INT_OrpheusFightCombatants((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_INT_OrpheusFightCombatants((CHARACTER)S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59);
+DB_INT_OrpheusFightCombatants((CHARACTER)S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7);
+DB_INT_OrpheusFightCombatants((CHARACTER)S_INT_GithRoyalGuard03_b8492256-64d0-44a0-b289-eb8387b98f5f);
+DB_INT_OrpheusFightCombatants((CHARACTER)S_INT_GithRoyalGuard04_3cce9a81-6755-44ce-a391-77fe4ffb68e2);
+
+DB_INT_EmperorRevealed_AbsolutePainQuestTime("INT_ABSOLUTEPAIN_01",18000);
+DB_INT_EmperorRevealed_AbsolutePainQuestTime("INT_ABSOLUTEPAIN_02",12000);
+DB_INT_EmperorRevealed_AbsolutePainQuestTime("INT_ABSOLUTEPAIN_03",6000);
+
+DB_INT_EmperorRevealed_AbsolutePainStatusProgress("INT_ABSOLUTEPAIN_01", "INT_ABSOLUTEPAIN_02", -1.0);
+DB_INT_EmperorRevealed_AbsolutePainStatusProgress("INT_ABSOLUTEPAIN_02", "INT_ABSOLUTEPAIN_03", -1.0); //Allows the players to all complete their turn before triggering a game over
+
+NOT DB_INT_EmperorRevealed_LastPainStatus((CHARACTER)NULL_00000000-0000-0000-0000-000000000000, "ActiveStatus");
+
+DB_CombatReact_AD_OnTurn(S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59, (DIALOGRESOURCE)INT_EmperorRevealed_AD_HonourGuard01_Combat_0ce8d0d3-8ee0-2524-8572-6fc6083ec671, 1);
+DB_CombatReact_AD_OnTurn(S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7, (DIALOGRESOURCE)INT_EmperorRevealed_AD_ReturnToAPCombat_8ad07cca-4772-56fc-c8a9-de26b1da5fc5, 2);
+DB_CombatReact_AD_OnTurn(S_INT_GithRoyalGuard03_b8492256-64d0-44a0-b289-eb8387b98f5f, (DIALOGRESOURCE)INT_EmperorRevealed_AD_HonourGuardCaptain_Combat_df46cf27-1862-f75c-537f-c76c3ef79002, 2);
+DB_CombatReact_AD_OnTurn(S_INT_GithRoyalGuard04_3cce9a81-6755-44ce-a391-77fe4ffb68e2, (DIALOGRESOURCE)INT_EmperorRevealed_AD_HonourGuard04_Combat_efed7f36-0735-e876-5484-ed940f016627, 1);
+
+DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 1);
+DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 3);
+DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 4);
+DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 5);
+//END_REGION
+
+//REGION Intellect devourers
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_002_43834138-4980-473e-94d1-1a913aead4d3);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_003_f2e15e40-6e90-46e4-8852-e4510b6e27f9);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_005_3d3eefd4-ee0e-4c92-836d-9194d04b2d19);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_006_5717eb29-0400-4426-ac7a-e827a980a341);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_012_6cd4560d-c5aa-438d-a3c5-376ef56be71b);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_013_938023cd-9eb6-4ace-ab01-87502f2253f9);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_014_af21a8dc-3124-4d1a-9bfa-972fbfe4312e);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_015_e0a37134-4ef3-4eec-bd36-b1ee815d2fd9);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_016_3317497c-f28a-425b-b75e-eddd53fdf9c5);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_017_009c12f6-34cf-473d-8095-65dca3fb0b15);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_018_e21dee3c-9867-42ae-966f-946ae733dbd6);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_019_87838b00-38ff-4cdc-a3f7-933685500ce2);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_020_ea93a813-0086-4e46-82b9-01b690ddf11e);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_021_5c4b57df-c392-4156-82ea-4a9d273be26a);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_022_420e41df-3bdf-422d-9bd8-70591bd3afab);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_023_a2cb7c08-1bcb-4d62-af53-ab967fdacb0d);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_024_18b26545-f253-46ad-b013-c37b6aabd792);
+DB_INT_IntellectDevourers((CHARACTER)Intellect_Devourer_025_63b64e18-4ddd-4be1-9b63-20c255a5393a);
+
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_012_6cd4560d-c5aa-438d-a3c5-376ef56be71b);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_013_938023cd-9eb6-4ace-ab01-87502f2253f9);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_014_af21a8dc-3124-4d1a-9bfa-972fbfe4312e);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_015_e0a37134-4ef3-4eec-bd36-b1ee815d2fd9);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_016_3317497c-f28a-425b-b75e-eddd53fdf9c5);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_022_420e41df-3bdf-422d-9bd8-70591bd3afab);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_023_a2cb7c08-1bcb-4d62-af53-ab967fdacb0d);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_024_18b26545-f253-46ad-b013-c37b6aabd792);
+DB_INT_BackgroundCombatants_1((CHARACTER)Intellect_Devourer_025_63b64e18-4ddd-4be1-9b63-20c255a5393a);
+DB_INT_BackgroundCombatants_1((CHARACTER)S_INT_Githyanki_FirstContact_003_f95179b2-42d2-432f-93bc-c7c066fb5cfa);
+DB_INT_BackgroundCombatants_1((CHARACTER)S_INT_Githyanki_FirstContact_004_189d5ced-1aad-4a59-b587-c598bf87daf1);
+
+DB_INT_BackgroundCombatants_2((CHARACTER)Intellect_Devourer_017_009c12f6-34cf-473d-8095-65dca3fb0b15);
+DB_INT_BackgroundCombatants_2((CHARACTER)Intellect_Devourer_018_e21dee3c-9867-42ae-966f-946ae733dbd6);
+DB_INT_BackgroundCombatants_2((CHARACTER)Intellect_Devourer_019_87838b00-38ff-4cdc-a3f7-933685500ce2);
+DB_INT_BackgroundCombatants_2((CHARACTER)Intellect_Devourer_020_ea93a813-0086-4e46-82b9-01b690ddf11e);
+DB_INT_BackgroundCombatants_2((CHARACTER)Intellect_Devourer_021_5c4b57df-c392-4156-82ea-4a9d273be26a);
+DB_INT_BackgroundCombatants_2((CHARACTER)S_INT_Githyanki_FirstContact_001_798325ee-42ad-4237-86b1-e1410a548e26);
+
+PROC_INT_AssignDialogToIDs((DIALOGRESOURCE)INT_EmperorRevealed_AD_IntellectDevourer_Interaction_f683c81b-51e1-01cf-da81-ac52fc09bf31);
+//END_REGION
+
+//REGION Pre-Orpheus combat
+DB_INT_PreSkullGishGroup((CHARACTER)S_INT_Githyanki_FirstContact_001_798325ee-42ad-4237-86b1-e1410a548e26);
+DB_INT_PreSkullGishGroup((CHARACTER)S_INT_Githyanki_FirstContact_003_f95179b2-42d2-432f-93bc-c7c066fb5cfa);
+DB_INT_PreSkullGishGroup((CHARACTER)S_INT_Githyanki_FirstContact_004_189d5ced-1aad-4a59-b587-c598bf87daf1);
+//END_REGION
+
+//REGION Orpheus
+SetImmortal((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,1);
+SetCharacterLootable(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,0);
+SetCanJoinCombat(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,0);
+SetDetached(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,1);
+SetDoNotFaceFlag(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, 1);
+//TeleportTo(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,S_INT_OrpheusPos_d98fd0e8-c7bf-4152-82f0-eb2f7b62ae88);
+
+PROC_SetAnubisConfig(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e, "Dummy");
+PROC_CharacterDisableAllCrimes((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+ApplyStatus(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,"INT_ORPHEUS_INFERNALBINDSANIM",-1.0,1,NULL_00000000-0000-0000-0000-000000000000);
+ApplyStatus((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,"INT_INFERNALCHAINS_LEFT",-1.0,0,(ITEM)S_END_CrystalShakle_002_75024e98-273c-4967-826c-470ca7ca7879);
+ApplyStatus((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,"INT_INFERNALCHAINS_RIGHT",-1.0,0,(ITEM)S_END_CrystalShakle_001_ce41cb70-e763-460c-a368-61011365e589);
+//END_REGION
+
+//REGION Emperor
+ApplyStatus(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,"INT_EMPEROR_UNPREFERREDTARGET",-1.0);
+SetCanJoinCombat(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,0);
+SetFaction((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214);
+TeleportTo(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,S_INT_EmperorPos_7f8332e9-e118-4f13-9d0e-bf476df692c5,"");
+
+PROC_CharacterDisableAllCrimes((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+DB_PreventKnockedOutPermaDefeated(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_PreventPermaDefeated(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_CanBeResurrected(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_NoLowAttitudeDialog((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+DB_DialogDeath((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_DontRemoveDialogsOnKnockedOut((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+DB_SurrenderManually((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+DB_INT_EmperorRevealed_EmperorAttackerCache((CHARACTER)NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION
+
+//REGION Journal
+DB_QuestDef_State((FLAG)INT_EmperorRevealed_State_InAP_12cdb704-0a32-48e9-a4ac-d5c93888f98a, "INT_HelpDaisy", "IntInsideAP");
+DB_QuestDef_State((FLAG)INT_EmperorRevealed_Event_PlayerRefusedToHelpEmperor_34918c8c-dedf-4243-8172-97a70d23e2f6,"INT_HelpDaisy","IntDieMindflayer");
+DB_QuestDef_State((FLAG)INT_EmperorRevealed_State_PlayerAgreedToHelpEmperor_a8997c32-e165-6e7c-888b-b5433c41a8d7,"INT_HelpDaisy","IntOrpheusFight");
+DB_QuestDef_State((FLAG)INT_EmperorRevealed_HasMet_GlobeReformed_d75e55df-663b-5c6b-e123-ead307625778,"INT_HelpDaisy","IntAfterOrpheusFight");
+DB_QuestDef_State((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6,"INT_HelpDaisy","IntSceneComplete");
+//END_REGION
+
+//REGION Exit Logic
+PROC_SetOnStage(S_INT_PortalToAstralPlane_Daisy_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, 0);
+PROC_SetOnStage(S_CRE_AstralPrisonExit_f5176c90-0f81-4489-a2c3-c9983aa73559,0);
+//END_REGION
+
+DB_ItemDialog_NarratorAD((ITEM)S_EmperorRevealed_GlobeOfDomination_Small_8950891c-ad3a-434c-a463-615b5ab90ea7,(DIALOGRESOURCE)INT_EmperorRevealed_NarratorAD_DescribeOrb_be7a9a25-ef9f-5fe1-1192-7ffad883674d);
+TeleportTo(S_EmperorRevealed_GlobeOfDomination_Small_8950891c-ad3a-434c-a463-615b5ab90ea7, S_INT_GlobeOfDomination_SmallPos_aee64821-ca83-4273-b81f-52206dc87318, "", 0, 0, 0, 0, 0);
+PROC_SetOnStage(S_EmperorRevealed_GlobeOfDomination_Small_8950891c-ad3a-434c-a463-615b5ab90ea7, 0);
+KBSECTION
+//REGION Debug
+IF
+TextEvent("int_skip")
+THEN
+DB_INT_ReadyToLeave(1); //If this is set, the players will move to Act3 after resting
+DB_INT_DebugSkip(1);
+
+//REGION Skip Orpheus Fight
+IF
+DB_INT_DebugSkip(1)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+THEN
+NOT DB_INT_EmperorRevealed_WeakToAbsolute(1);
+//END_REGION
+
+IF
+StatusApplied(_Player, "INT_ABSOLUTEPAIN", _, _)
+AND
+DB_INT_DebugSkip(1)
+THEN
+RemoveStatus(_Player, "INT_ABSOLUTEPAIN", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+WentOnStage(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, 1)
+AND
+DB_INT_DebugSkip(1)
+THEN
+PROC_SetOnStage(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96,0);
+
+PROC
+PROC_LongRest()
+AND
+DB_INT_DebugSkip(1)
+THEN
+NOT DB_INT_DebugSkip(1);
+
+// This logic for playtesting purposes. In a non-debug playthrough this will never be needed.
+IF 
+DB_InRegion(_Player,(TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba)
+AND
+DB_Players(_Player)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_State_OrpheusSubdued_cdbc0a7c-96f6-4008-8b33-546b889bb5a4)
+THEN
+DB_INT_EmperorRevealed_WeakToAbsolute(1);
+//END_REGION
+
+//REGION INT - Disable InParties Flag
+
+//Added DB_Players check because this was spamming sets/unsets when players had left Astral Prison but other entities were still in the Region trigger
+IF
+DB_InRegion(_Player,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_State_InAP_12cdb704-0a32-48e9-a4ac-d5c93888f98a)
+AND
+DB_Players(_Player)
+THEN
+SetFlag((FLAG)INT_EmperorRevealed_State_InAP_12cdb704-0a32-48e9-a4ac-d5c93888f98a, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+DB_InRegion(_Player,S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_State_InAP_12cdb704-0a32-48e9-a4ac-d5c93888f98a)
+AND
+DB_Players(_Player)
+THEN
+ClearFlag((FLAG)INT_EmperorRevealed_State_InAP_12cdb704-0a32-48e9-a4ac-d5c93888f98a, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION
+
+//REGION Dialog Logic
+PROC
+PROC_INT_AssignDialogToIDs((DIALOGRESOURCE)_Resource)
+AND
+DB_INT_IntellectDevourers(_IDs)
+THEN
+PROC_RemoveDialog(_IDs);
+DB_Dialogs(_IDs,_Resource);
+
+IF
+DB_InRegion(_Player,(TRIGGER)S_INT_NotDemonsButGithPAD_Trigger_b5f6a756-e4b7-4e0e-bcaf-1a9a426ae736)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_Players(_Player)
+AND
+NOT DB_OnlyOnce("INT_NotDemonsButGith")
+AND
+QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_PAD_NotDemonsButGith_c79e83af-b6c2-d57b-be2a-bcb26cc9d5c5, _Player)
+THEN
+DB_OnlyOnce("INT_NotDemonsButGith");
+
+PROC
+PROC_BlockLootCorpse(_Player,(CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e)
+AND
+DB_Players(_Player)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_NarratorAD_DescribeOrb_be7a9a25-ef9f-5fe1-1192-7ffad883674d,_Player)
+THEN
+DB_CustomLootCorpseResponse(_Player,S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,0);
+
+IF
+AttackedBy(S_END_CrystalShakle_001_ce41cb70-e763-460c-a368-61011365e589,_Attacker,_,_,_,_,_)
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_NarratorAD_CrystalsImmuneToAttacks_8c45732f-8fa5-fb4f-aa06-8f36ae052c14,_Attacker)
+THEN
+DB_NOOP(1);
+
+IF
+AttackedBy(S_END_CrystalShakle_002_75024e98-273c-4967-826c-470ca7ca7879,_Attacker,_,_,_,_,_)
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_NarratorAD_CrystalsImmuneToAttacks_8c45732f-8fa5-fb4f-aa06-8f36ae052c14,_Attacker)
+THEN
+DB_NOOP(1);
+
+IF
+AttackedBy(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,_Attacker,_,_,_,_,_)
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_PAD_AttemptToAttackOrpheus_7cb87c48-c750-beb5-d2fe-9da248a1c938,_Attacker)
+THEN
+DB_NOOP(1);
+//END_REGION
+
+//REGION Block camp night progression
+QRY
+QRY_Camp_PreventLeaveNightHook((CHARACTER)_Player)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+THEN
+StartVoiceBark((VOICEBARKRESOURCE)INT_EmperorRevealed_VB_CantSleep_5f711592-224d-05ac-1b8b-73f54766ef92,_Player);
+//END_REGION
+
+//REGION Woken Up At Night Setup
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_WokenUpAtNight_SCO_2dd56c1b-66b0-5c6e-00d3-e6fdd5cab379, _)
+THEN
+PROC_GLO_NarrativeCombat_StartCombat("INT_CampAmbush_NarrativeCombat");
+ClearFlag((FLAG)INT_EmperorRevealed_State_BeforeAmbush_c3e160f2-66df-465e-8012-acff8bd6b9e7,NULL_00000000-0000-0000-0000-000000000000);
+QuestUpdate("INT_HelpDaisy","IntWoke");
+SetLongRestAvailable(0);
+DB_INT_EmperorRevealed_WeakToAbsolute(1);
+PROC_INT_EmperorRevealed_PortalOn();
+PROC_INT_EmperorRevealed_SpawnGish();
+SetHitpointsPercentage(S_INT_PortalGithyanki_Wave1_Melee_01_4438d35a-918e-47fd-a16a-2ed4423ce0cd,75.0);
+SetHitpointsPercentage(S_INT_PortalGithyanki_Wave1_Caster_01_4007a88a-1bae-41a1-9b6c-64ec44d5f0a4,80.0);
+SetHitpointsPercentage(S_INT_PortalGithyanki_Wave1_Melee_02_91153fd6-7d2a-4ac2-a647-fcac53a8c113,70.0);
+SetHitpointsPercentage(S_INT_PortalGithyanki_Wave2_Melee_01_99b01e7f-ff4b-4b55-b275-dd0d02c08a0e,70.0);
+SetHitpointsPercentage(S_INT_PortalGithyanki_Wave3_Caster_01_9918e38c-a12a-44d6-94ab-92a857514a29,75.0);
+
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_WokenUpAtNight_SCO_2dd56c1b-66b0-5c6e-00d3-e6fdd5cab379, _)
+AND
+DB_Players(_Players)
+THEN
+PROC_DaisyAD(_Players,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_CallToHelp_a9a3f0d2-fcd8-d487-b8f7-7e6a6fca1075);
+DB_PartyDialogSuppressionZone((TRIGGER)S_INT_PartySuppressionZone_AstralPlane_d3f3f7e9-c70a-4322-9e86-716ccc649692);
+DB_PartyDialogSuppressionZone((TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_CampAmbush_NarrativeCombat", _Players);
+
+PROC
+PROC_INT_EmperorRevealed_SpawnGish()
+AND
+DB_INT_PortalGishGroup(_Gish,0)
+THEN
+PROC_SetOnStage(_Gish,1);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_CampAmbush_NarrativeCombat", (GUIDSTRING)_Gish);
+
+PROC
+PROC_INT_EmperorRevealed_PortalOn()
+AND
+DB_Players(_Host)
+AND
+DB_INT_PortalGishGroup(_Gish,0)
+THEN
+PROC_SetOnStage(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, 1);
+PROC_EnterCombat(_Host,_Gish);
+
+IF
+WentOnStage(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96,1)
+AND
+GetHostCharacter(_Host)
+THEN
+PROC_EnterCombat(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96,_Host);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_CampAmbush_NarrativeCombat", (GUIDSTRING)S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96);
+//END_REGION
+
+//REGION Portal Gish-Spawning Logic
+IF
+TurnStarted(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96)
+AND
+DB_Is_InCombat(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96,_ID)
+AND
+DB_INT_PortalGishGroup(_Gish,_RoundNumber)
+AND
+QRY_CurrentCombatRoundIs(_ID,_RoundNumber)
+THEN
+PROC_SetOnStage(_Gish,1);
+EndTurn(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_CampAmbush_NarrativeCombat", (GUIDSTRING)_Gish);
+//END_REGION
+
+//REGION Get in the Portal Shinji DaisyADs
+IF
+TurnStarted(_Player)
+AND
+DB_Avatars((CHARACTER)_Player)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+AND
+IsTagged(_Player, (TAG)ILLITHID_1eec74e8-3673-4500-abec-57b7ed8469ed, 1)
+AND
+DB_InRegion((CHARACTER)_Player,(TRIGGER)S_INT_CampArea_9ef2ce12-074b-456a-9808-19c80dff20ff)
+THEN
+PROC_DaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_GetInThePortal_201cc66b-5d31-c57b-a845-dd82ea15d30b);
+PROC_RemoveDaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_GetInThePortal_201cc66b-5d31-c57b-a845-dd82ea15d30b);
+
+IF
+AutomatedDialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_DaisyPAD_FirstTimeInAstralPrison_3bb90e03-58c8-9783-bd4b-779aa76ae4e1,_ID)
+THEN
+TimerLaunch("INT_DaisyADTimer", 30000);
+
+IF
+TimerFinished("INT_DaisyADTimer")
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+THEN
+TimerLaunch("INT_DaisyADTimer", 30000);
+
+IF
+TimerFinished("INT_DaisyADTimer")
+AND
+DB_Avatars(_Players)
+AND
+DB_InRegion(_Players,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+AND
+NOT DB_InRegion(_Players,(TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+IsTagged(_Players,ILLITHID_1eec74e8-3673-4500-abec-57b7ed8469ed,1)
+AND
+IsInCombat(_Players,0)
+THEN
+PROC_DaisyAD(_Players,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_InsideAstralPrisonHurry_fce37cb8-66d6-5d44-0147-c31f2a82d3f7);
+PROC_RemoveDaisyAD(_Players,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_InsideAstralPrisonHurry_fce37cb8-66d6-5d44-0147-c31f2a82d3f7);
+//END_REGION
+
+//REGION Combat ADs
+IF
+DB_PartyMembers(_PartyMember)
+AND
+DB_Is_InCombat(S_INT_Githyanki_FirstContact_004_189d5ced-1aad-4a59-b587-c598bf87daf1, _ID)
+AND
+DB_Is_InCombat(_PartyMember, _ID)
+AND
+QRY_OnlyOnce("INT_EmperorReveal_GithyankiFirstContactAD")
+THEN
+DB_CombatReact_AD_OnTurn((GUIDSTRING)S_INT_Githyanki_FirstContact_004_189d5ced-1aad-4a59-b587-c598bf87daf1,(DIALOGRESOURCE)INT_EmperorRevealed_AD_FirstContactWithGith_973817c9-ebe5-ed97-c1cb-9ccfaf319a68, 1); 
+//END_REGION
+
+//REGION After-combat ADs
+IF
+CombatEnded(_)
+AND
+DB_Avatars(_Player)
+AND
+NOT DB_InRegion(_Player,(TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+DB_InRegion(_Player,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+IsTagged(_Player, (TAG)ILLITHID_1eec74e8-3673-4500-abec-57b7ed8469ed,1)
+THEN
+PROC_DaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_AfterCombatGetToTheSkull_24534a92-e56f-779a-114e-52ca5cbcae22);
+PROC_RemoveDaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_AfterCombatGetToTheSkull_24534a92-e56f-779a-114e-52ca5cbcae22);
+
+IF
+EnteredCombat(_Player,_CombatGUID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_INT_OrpheusFightCombatants(_Combatant)
+AND
+QRY_IsInCombatWith((GUIDSTRING)_Player,_Combatant)
+THEN
+RemoveStatus(_Combatant,"INT_ORPHEUSGUARDS_FAKECOMBAT");
+
+IF
+CombatEnded(_CombatID)
+AND
+DB_INT_IntellectDevourers(_Devourer)
+AND
+NOT DB_Dead(_Devourer)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+NOT QRY_AnyPlayerInTrigger((TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+QRY_GLO_IsOrWasInCombat(_Devourer, _CombatID)
+AND
+QRY_OnlyOnce("INT_EmperorReveal_IntellectDevourersAD")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_IntellectDevourer_CombatEnds_966c0b98-0958-7422-2667-feab75b7fde9,_Devourer);
+SetFlag((FLAG)INT_EmperorRevealed_State_CanGoToSkull_19affb40-2d94-432e-a970-cfcc48bfb304);
+//END_REGION
+
+//REGION Astral Plane transition
+IF
+UseFinished(_Player, (ITEM)S_INT_PortalToAstralPlane_Daisy_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, 1)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+NOT DB_OnlyOnce("OrbExplodes")
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,_Player)
+THEN
+DB_OnlyOnce("OrbExplodes");
+
+//Event sent by the teleport item
+IF
+UseStarted(_TeleportedPlayer, (ITEM)S_INT_PortalToAstralPlane_Daisy_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96)
+AND
+DB_Players(_TeleportedPlayer)
+THEN
+PROC_INT_EmperorRevealed_TransitionPlayersToAstralPlane();
+PROC_GLO_NarrativeCombat_EndCombat("INT_CampAmbush_NarrativeCombat");
+
+PROC
+PROC_INT_EmperorRevealed_TransitionPlayersToAstralPlane()
+AND
+QRY_OnlyOnce("INT_EmperorRevealed_EnterAstralPlane")
+THEN
+PROC_TeleportPartiesTo((TRIGGER)S_INT_AstralPrisonEntryPoint_afb086de-aa2d-4cb5-807a-6079245cdecc, "");
+
+PROC
+PROC_INT_EmperorRevealed_TransitionPlayersToAstralPlane()
+AND
+DB_Players(_Player)
+THEN
+NOT DB_INT_EmperorRevealed_AbsolutePainActivePlayer(_Player);
+SetFlag((FLAG)INT_Intermezzo_State_PlayerEnteredAstralPrism_30c5b088-e1ac-4825-8a80-d521c4340a66, _Player);
+SetFlag((FLAG)INT_State_InAstralPrison_7144b3fc-b354-4e6b-b392-c20004be4324, _Player);
+SetFlag((FLAG)INT_EmperorRevealed_Event_LeftCampCombatArea_69851154-674a-4dd3-bcf4-4e9e4045e972);
+
+PROC
+PROC_INT_EmperorRevealed_TransitionPlayersToAstralPlane()
+THEN
+SetCanInteract(S_INT_PortalFromAstralPlane_Spine_c485923b-d0c1-43b1-b61d-2d1a13649ae2, 0);
+
+IF
+UseStarted(_TeleportingPlayer,S_INT_PortalFromAstralPlane_OrpheusChamber_d16098eb-cb90-4ef9-a66b-86eac687e547)
+THEN
+ReadyCheckGlobal("INT_EmperorRevealed_ReturnReadyCheck", "INT_EmperorRevealed_Leaving_ReadyCheck", 0, (CHARACTER)_TeleportingPlayer);
+
+IF
+UseStarted(_TeleportingPlayer, S_INT_PortalFromAstralPlane_OrpheusChamber_d16098eb-cb90-4ef9-a66b-86eac687e547)
+AND
+DB_GlobalFlag(INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_PartyMembers(_Player)
+AND
+DB_GLO_NarrativeCombat_Participant("INT_Orpheus_NarrativeCombat", _, _Player)
+THEN
+PROC_GLO_NarrativeCombat_EndCombat("INT_Orpheus_NarrativeCombat");
+
+IF
+ReadyCheckPassed("INT_EmperorRevealed_ReturnReadyCheck")
+THEN
+DB_INT_ReadyToLeave(1); //If this is set, the players will move to Act3 after resting
+NOT DB_INT_EmperorRevealed_WeakToAbsolute(1);
+PROC_TeleportPartiesTo((TRIGGER)S_INT_EmpRevealExitTarget_0363c803-ee4d-4dd6-bb81-c0909a60a162, "INT_AstralPlane_Leaving");
+PROC_SetOnStage(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96,0);
+
+IF
+DB_InRegion(_Char, (TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+THEN
+ApplyStatus(_Char, "CRE_ASTRALPRISON_GRAVITY", -1.0, 1, NULL_00000000-0000-0000-0000-000000000000);
+
+//removing the artefact while in the astral plane
+IF
+DB_InRegion(_Player, S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+AND
+DB_Players(_Player)
+AND
+IsInMagicPockets(S_GLO_PuzzleBox_326324f9-0920-8f0f-3e85-3781fbf48282, _Player, 1)
+THEN
+ClearFlag(GLO_InfernalBox_Event_ForceGiveBox_7addbb64-502f-48aa-9b71-da1b8d6c28eb, _Player);
+SetFlag(GLO_InfernalBox_Event_ForceGiveBox_7addbb64-502f-48aa-9b71-da1b8d6c28eb, S_INT_TempContainerOfArtefact_786d2932-4ef2-40e3-bb0d-9d7216146604);
+
+//giving the artefact back when leaving the astral plane
+IF
+LeftTrigger(_Player, (TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+AND
+DB_Players(_Player)
+AND
+NOT IsInMagicPockets(S_GLO_PuzzleBox_326324f9-0920-8f0f-3e85-3781fbf48282, _Player, 1)
+THEN
+SetFlag(GLO_InfernalBox_Event_ForceGiveBox_7addbb64-502f-48aa-9b71-da1b8d6c28eb, _Player);
+ClearFlag(GLO_InfernalBox_Event_ForceGiveBox_7addbb64-502f-48aa-9b71-da1b8d6c28eb, S_INT_TempContainerOfArtefact_786d2932-4ef2-40e3-bb0d-9d7216146604);
+
+IF
+LeftTrigger(_Char, (TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2)
+THEN
+RemoveStatus(_Char, "CRE_ASTRALPRISON_GRAVITY", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+EntityEvent(_Player, "INT_AstralPlane_Leaving")
+THEN
+RealtimeObjectTimerLaunch(_Player, "INT_AstralPlane_LeaveAnim", 500);
+
+IF
+ObjectTimerFinished(_Player, "INT_AstralPlane_LeaveAnim")
+THEN
+PlayAnimation(_Player, CUST_Exiting_Astral_Plane_01_4043d9a9-8692-469b-9e7d-691ccfba8c3a, "INT_AstralPrism_LeaveAnimFinished");
+//END_REGION
+
+//REGION Emperor Scene Intro
+IF
+DB_InRegion(_Character,(TRIGGER)S_INT_FightingOffstageTrigger_71a75efc-49ee-4d81-b3a7-94f5ed3b2498)
+AND
+DB_PartyMembers(_Character)
+AND
+QRY_OnlyOnce("INT_EmperorReveal_Fireball")
+THEN
+UseSpell((GUIDSTRING)S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59,"Projectile_Fireball_Monk",(CHARACTER)Intellect_Devourer_028_37ff723c-d5b9-406b-a3d6-0f3cbec02399);
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_IntellectDevourer_CombatEnds_966c0b98-0958-7422-2667-feab75b7fde9,Intellect_Devourer_026_e20c3770-5f46-43ed-97e9-ca676530268a);
+CharacterMoveTo((CHARACTER)Intellect_Devourer_026_e20c3770-5f46-43ed-97e9-ca676530268a,(TRIGGER)S_INT_FireballMoveTarget_01_0649b33e-7d98-4620-b198-b09f198de570, "Sprint", "" );
+CharacterMoveTo((CHARACTER)Intellect_Devourer_028_37ff723c-d5b9-406b-a3d6-0f3cbec02399,(TRIGGER)S_INT_FireballMoveTarget_02_dc7554ad-fb79-4f21-81de-bdc2e12b9b1f, "Sprint", "" );
+CharacterMoveTo((CHARACTER)S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59,(TRIGGER)S_INT_FireballRetreat_971c1969-757f-4e8d-a4a3-31e07b9a88ad,"Sprint","INT_Fireball");
+
+IF
+DB_InRegion(_Character, (TRIGGER)S_INT_EmperorFightingOffstageTrigger_8b7af747-5a84-403f-9a25-aeb486a18f10)
+AND
+DB_PartyMembers(_Character)
+AND
+QRY_OnlyOnce("INT_EmperorSpell")
+THEN
+UseSpell(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, "Throw_END_Emperor_Telekinesis", S_INT_ThrowingRockPos01_5c03a0c8-38a4-4cb4-8e6a-ebdcc678e9c5, S_INT_ThrowingRock_57bbc648-ac1f-4196-8ee8-475de3905e95);
+
+IF
+DB_InRegion(_Character, (TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba)
+AND
+DB_PartyMembers(_Character)
+AND
+QRY_OnlyOnce("INT_EmperorReveal_PullCharsInForPlea")
+THEN
+SetFlag(INT_EmperorRevealed_State_DaisyTrueIdentity_4e234132-dafe-4e81-8c68-6b8a90778562);
+PROC_INT_StartPleaDialog(_Character);
+PROC_TriggerUnregisterForParty((TRIGGER)S_INT_FightingOffstageTrigger_71a75efc-49ee-4d81-b3a7-94f5ed3b2498);
+
+IF
+DB_InRegion(_Character, (TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+DB_PartyMembers(_Character)
+THEN
+TimerCancel("INT_DaisyADTimer");
+PROC_RemoveDaisyAD(_Character, (DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_InsideAstralPrisonHurry_fce37cb8-66d6-5d44-0147-c31f2a82d3f7);
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5,_ID)
+AND
+DB_INT_OrpheusFightCombatants(_Combatants)
+THEN
+PROC_DialogAddSpeakingActor(_ID,_Combatants);
+PROC_DialogAddSpeakingActor(_ID, S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+IF
+DialogStarted((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5,_ID)
+AND
+DB_Players(_Players)
+AND
+NOT DB_Defeated(_Players)
+AND
+NOT DB_InRegion(_Players,(TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba)
+THEN
+PROC_DialogAddListeningActor(_ID, _Players);
+
+PROC
+PROC_INT_StartPleaDialog((CHARACTER)_Player)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5, S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _Player)
+THEN
+PROC_GLO_NarrativeCombat_StartCombat("INT_Orpheus_NarrativeCombat");
+PROC_INT_EmperorRevealed_StartGithCombat();
+
+PROC
+PROC_INT_StartPleaDialog(_Summon)
+AND
+DB_PlayerSummons(_Summon)
+AND
+QRY_GetSummonOwner(_Summon)
+AND
+DB_QRYRTN_GetSummonOwner(_Owner)
+AND
+NOT QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5, S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _Owner)
+THEN
+PROC_GLO_NarrativeCombat_StartCombat("INT_Orpheus_NarrativeCombat");
+PROC_INT_EmperorRevealed_StartGithCombat();
+
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5,_ID)
+AND
+DB_Players(_Players)
+AND
+DB_InRegion(_Players,(TRIGGER)S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+THEN
+TeleportTo(_Players,(TRIGGER)S_INT_AstralPrisonEntryPoint_OrpheusFight_f96c0593-ddd7-4257-9e11-ce671deb0f5a,"INT_OrpheusFight",0,0,0,0,0);
+
+//only one of these procs should trigger, when the player makes their choice
+PROC
+PROC_GlobalFlagReactionAfterDialog(INT_EmperorRevealed_State_PlayerAgreedToHelpEmperor_a8997c32-e165-6e7c-888b-b5433c41a8d7)
+AND
+QRY_OnlyOnce("INT_Orpheus_NarrativeCombat_Start")
+THEN
+PROC_GLO_NarrativeCombat_StartCombat("INT_Orpheus_NarrativeCombat");
+PROC_INT_EmperorRevealed_StartGithCombat();
+
+PROC
+PROC_GlobalFlagReactionAfterDialog(INT_EmperorRevealed_Event_PlayerRefusedToHelpEmperor_34918c8c-dedf-4243-8172-97a70d23e2f6)
+AND
+QRY_OnlyOnce("INT_Orpheus_NarrativeCombat_Start")
+THEN
+PROC_GLO_NarrativeCombat_StartCombat("INT_Orpheus_NarrativeCombat");
+PROC_INT_EmperorRevealed_StartGithCombat();
+
+PROC
+PROC_INT_EmperorRevealed_StartGithCombat()
+AND
+DB_InRegion(_Player,S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+DB_Players(_Player)
+AND
+DB_GlobalFlag(INT_EmperorRevealed_State_PlayerAgreedToHelpEmperor_a8997c32-e165-6e7c-888b-b5433c41a8d7)
+THEN
+SetCanJoinCombat(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,1);
+PROC_SetOnStage((ITEM)S_EmperorRevealed_GlobeOfDomination_Large_d70d37fb-4f58-4a65-bf19-4ea504f3e16c,0);
+SetFlag(INT_EmperorRevealed_State_InOrpheusFight_a54d65cb-b149-4f8e-ba52-6f9696a69a13);
+PROC_SetRelationMutual((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,(FACTION)ACT2B_INT_Orpheus_ad62a159-c6fb-43ae-a682-63c139905874,0);
+PROC_SetRelationToPlayers((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,100);
+PROC_EnterCombat(_Player,S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_Orpheus_NarrativeCombat", _Player);
+
+PROC
+PROC_INT_EmperorRevealed_StartGithCombat()
+AND
+DB_InRegion(_Player,S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+DB_Players(_Player)
+AND
+DB_GlobalFlag(INT_EmperorRevealed_Event_PlayerRefusedToHelpEmperor_34918c8c-dedf-4243-8172-97a70d23e2f6)
+THEN
+SetCanJoinCombat(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,1);
+PROC_SetOnStage((ITEM)S_EmperorRevealed_GlobeOfDomination_Large_d70d37fb-4f58-4a65-bf19-4ea504f3e16c,0);
+SetFlag(INT_EmperorRevealed_State_InOrpheusFight_a54d65cb-b149-4f8e-ba52-6f9696a69a13);
+PROC_SetRelationMutual((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,(FACTION)ACT2B_INT_Orpheus_ad62a159-c6fb-43ae-a682-63c139905874,0);
+PROC_SetRelationToPlayers((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,0);
+PROC_EnterCombat(_Player,S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_Orpheus_NarrativeCombat", _Player);
+
+PROC
+PROC_INT_EmperorRevealed_StartGithCombat()
+AND
+DB_INT_OrpheusFightCombatants(_Combatants)
+THEN
+RemoveStatus(_Combatants,"INT_ORPHEUSGUARDS_FAKECOMBAT",NULL_00000000-0000-0000-0000-000000000000);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_Orpheus_NarrativeCombat", _Combatants);
+
+IF
+DB_InRegion(_Player, S_INT_EmperorRevealed_CombatPullTrigger_a5d355ad-771d-4e67-bb7e-fdf40e59ab21)
+AND
+DB_PartyMembers(_Player)
+AND
+DB_GLO_NarrativeCombat_ID("INT_Orpheus_NarrativeCombat", _ID)
+THEN
+PROC_GLO_NarrativeCombat_JoinCombat("INT_Orpheus_NarrativeCombat", _Player);
+//END_REGION
+
+//REGION Orb Explodes
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,_ID)
+AND
+DB_Players(_Players)
+AND
+GetHostCharacter(_Host)
+THEN
+PROC_SetRelationMutual((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,(FACTION)ACT2B_INT_Orpheus_ad62a159-c6fb-43ae-a682-63c139905874, 0);
+AttachToPartyGroup(_Players,_Host);
+
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,_ID)
+AND
+DB_Avatars(_Players)
+AND
+QRY_OnlyOnce("INT_PAD_ReactToAstralPrism")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_PAD_FirstTimeInAstralPrison_74654021-10c3-c724-fbae-87894941b2eb, _Players);
+
+IF
+DialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,_ID)
+AND
+IsOnStage(S_INT_PortalFromAstralPlane_Spine_c485923b-d0c1-43b1-b61d-2d1a13649ae2, 1)
+THEN
+PROC_SetOnStage((ITEM)S_EmperorRevealed_GlobeOfDomination_Large_d70d37fb-4f58-4a65-bf19-4ea504f3e16c, 0);
+PROC_SetOnStage((ITEM)S_INT_PortalFromAstralPlane_Spine_c485923b-d0c1-43b1-b61d-2d1a13649ae2, 0);
+
+IF
+AutomatedDialogEnded((DIALOGRESOURCE)INT_EmperorRevealed_PAD_FirstTimeInAstralPrison_74654021-10c3-c724-fbae-87894941b2eb,_ID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+QRY_OnlyOnce("INT_DaisyAD_ReactToAstralPrism")
+THEN
+PROC_DaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyPAD_FirstTimeInAstralPrison_3bb90e03-58c8-9783-bd4b-779aa76ae4e1);
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f,_ID)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_INT_GithRoyalGuard01_2a57207b-ce9a-4472-aea2-bb94722a9c59);
+PROC_DialogAddSpeakingActor(_ID, S_INT_GithRoyalGuard02_fd75dc6e-6a8d-4d9d-8cfc-ca4ff5da53d7);
+PROC_DialogAddSpeakingActor(_ID, S_INT_GithRoyalGuard03_b8492256-64d0-44a0-b289-eb8387b98f5f);
+PROC_DialogAddSpeakingActor(_ID, S_INT_GithRoyalGuard04_3cce9a81-6755-44ce-a391-77fe4ffb68e2);
+
+PROC
+PROC_GlobalFlagReactionAfterDialog(INT_EmperorRevealed_Event_GlobeDestroyed_d545fbcf-a098-4cca-9749-481aa6cd7fa3)
+THEN
+PROC_SetOnStage((ITEM)S_EmperorRevealed_GlobeOfDomination_Large_d70d37fb-4f58-4a65-bf19-4ea504f3e16c, 0);
+PROC_SetOnStage((ITEM)S_INT_PortalFromAstralPlane_Spine_c485923b-d0c1-43b1-b61d-2d1a13649ae2, 0);
+
+PROC
+PROC_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_HasMet_GlobeReformed_d75e55df-663b-5c6b-e123-ead307625778)
+AND
+DB_Avatars(_Avatars)
+AND
+DB_Defeated(_Avatars)
+THEN
+RemoveHarmfulStatuses(_Avatars);
+PROC_SetHitpointsMinimum(_Avatars, 1);
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorRezzesAvatar_4ece64d9-4a77-0af8-8738-b43974520652,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+//END_REGION
+
+//REGION Emperor AD Warnings Logic
+IF
+AttackedBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_,_DamageAmount,_,_)
+AND
+_DamageAmount > 0
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+AND
+QRY_OnlyOnce("INT_StartEmperorsPleaWarning")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorInPain_f0a4c35d-1e21-cd85-308d-c0cc4473e19a,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+AttackedBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_,_DamageAmount,_,_)
+AND
+_DamageAmount > 0
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_Warn50_b2f61888-8999-9172-8cf1-9baecd3e8a8f)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+AND
+QRY_OnlyOnce("INT_Emperor_Warn50")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorInPain_f0a4c35d-1e21-cd85-308d-c0cc4473e19a,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+AttackedBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_,_DamageAmount,_,_)
+AND
+_DamageAmount > 0
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_Warn25_5b75ff3a-7a85-d96e-280e-a90bf6d5a3de)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+AND
+QRY_OnlyOnce("INT_Emperor_Warn25")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorInPain_f0a4c35d-1e21-cd85-308d-c0cc4473e19a,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+AttackedBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_,_DamageAmount,_,_)
+AND
+_DamageAmount > 0
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_Warn10_0085ae8a-4403-9db3-981e-f77ae8285534)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+AND
+QRY_OnlyOnce("INT_Emperor_Warn10")
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorInPain_f0a4c35d-1e21-cd85-308d-c0cc4473e19a,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+AttackedBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_,_DamageAmount,_,_)
+AND
+_DamageAmount > 0
+AND
+DB_Players((CHARACTER)_Attacker)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)INT_EmperorRevealed_EmperorAD_StopHittingMeAfterOrpheus_ae56b73a-d74e-c6fa-a2ba-33b84f5266d0,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+IF
+HitpointsChanged(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _NewHP)
+AND
+_NewHP <= 50.0
+AND
+QRY_OnlyOnce("INT_EmperorInPain_50")
+THEN
+SetFlag((FLAG)INT_EmperorRevealed_Event_Warn50_b2f61888-8999-9172-8cf1-9baecd3e8a8f, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+HitpointsChanged(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _NewHP)
+AND
+_NewHP <= 25.0
+AND
+QRY_OnlyOnce("INT_EmperorInPain_25")
+THEN
+SetFlag((FLAG)INT_EmperorRevealed_Event_Warn25_5b75ff3a-7a85-d96e-280e-a90bf6d5a3de, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+HitpointsChanged(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _NewHP)
+AND
+_NewHP <= 10.0
+AND
+QRY_OnlyOnce("INT_EmperorInPain_10")
+THEN
+SetFlag((FLAG)INT_EmperorRevealed_Event_Warn10_0085ae8a-4403-9db3-981e-f77ae8285534, NULL_00000000-0000-0000-0000-000000000000);
+//END_REGION
+
+//REGION Thrall of the Absolute G/O Local
+QRY
+QRY_GLO_ThrallOfTheAbsolute_IgnoreEmperorGameplayDeath()
+AND
+DB_GlobalFlag(INT_EmperorRevealed_State_InOrpheusFight_a54d65cb-b149-4f8e-ba52-6f9696a69a13)
+AND
+NOT DB_GlobalFlag(INT_EmperorRevealed_Event_EmperorIsDead_99d4a8f9-ba03-dfa6-a300-1b0fd6884eb7)
+THEN
+DB_NOOP(1);
+
+//Generics removed dialog on knock out (PROC_RemoveDialog)
+PROC
+PROC_KnockedOut((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,(GUIDSTRING)_Cause)
+AND
+DB_INT_EmperorRevealed_EmperorAttackerCache(_Attacker)
+THEN
+PROC_GLO_ThrallOfTheAbsolute_GameOverDialog((CHARACTER)_Cause);
+
+IF
+KilledBy(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Attacker,_,_)
+THEN
+PROC_INT_EmperorRevealed_EmperorKilled((CHARACTER)_Attacker);
+
+IF
+HitpointsChanged(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _NewHP)
+AND
+_NewHP <= 0.0
+AND
+DB_PartyMembers((CHARACTER)_Attacker)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097)
+THEN
+PROC_INT_EmperorRevealed_EmperorKilled((CHARACTER)_Attacker);
+
+PROC
+PROC_INT_EmperorRevealed_EmperorKilled((CHARACTER)_Attacker)
+AND
+NOT DB_PartyMembers((CHARACTER)_Attacker)
+AND
+QRY_GLO_ThrallOfTheAbsolute_GetNearestTadpoledPlayer((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+AND
+DB_QRYRTN_GLO_ThrallOfTheAbsolute_NearestPlayer(_Player, _Dist)
+THEN
+PROC_GlobalSetFlagAndCache((FLAG)INT_EmperorRevealed_Event_BeginGlobalGameOverPROC_966ea204-673f-9939-5ac6-4eb8778f3597);
+PROC_GLO_ThrallOfTheAbsolute_GameOverDialog((CHARACTER)_Player);
+
+IF
+DialogEnded(INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891,_ID)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_EmperorRezzed_be7a2d7f-97ab-ef52-9f29-2a58c4d4f5b3)
+THEN
+NOT DB_Dead(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+NOT DB_PermaDefeated(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+PROC_RemoveMutingStatusses(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+PROC_SetRelationMutual((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,(FACTION)ACT2B_INT_Orpheus_ad62a159-c6fb-43ae-a682-63c139905874,0);
+PROC_SetRelationToPlayers((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214, 100);
+SetHitpoints(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, 70);
+PROC_GLO_NarrativeCombat_JoinCombat("INT_Orpheus_NarrativeCombat", S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+
+PROC
+PROC_INT_EmperorRevealed_EmperorKilled((CHARACTER)_Attacker)
+AND
+DB_PartyMembers((CHARACTER)_Attacker)
+THEN
+PROC_GLO_ThrallOfTheAbsolute_GameOverDialog((CHARACTER)_Attacker);
+
+QRY	
+QRY_GLO_ThrallOfTheAbsolute_OverrideGlobalGameOverDialog((CHARACTER)_Player)
+AND
+DB_GlobalFlag(INT_EmperorRevealed_State_InOrpheusFight_a54d65cb-b149-4f8e-ba52-6f9696a69a13)
+AND
+NOT DB_GlobalFlag(INT_EmperorRevealed_Event_EmperorIsDead_99d4a8f9-ba03-dfa6-a300-1b0fd6884eb7)
+AND
+QRY_StartDialog_Fixed((DIALOGRESOURCE)INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891, (CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, _Player ,S_GLO_ThrallOfTheAbsolute_AbsoluteHelper_15d4bd12-855b-4483-a2e5-661bfeb96d1f)
+THEN 
+DB_GLO_ThrallOfTheAbsolute_DialogStarted(1);
+
+IF
+DialogStarted(INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891, _) //Dialog Ended is a bit too late
+AND
+DB_GLO_ThrallOfTheAbsolute_DialogStarted(1)
+THEN
+NOT DB_GLO_ThrallOfTheAbsolute_DialogStarted(1);
+
+IF
+DialogEnded(INT_EmperorRevealed_EmperorDies_ec591e20-85ae-3ccf-9963-a02e0828a891,_ID)
+AND
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_EmperorIsDead_99d4a8f9-ba03-dfa6-a300-1b0fd6884eb7)
+AND
+DB_DialogPlayers(_ID, _Player, 1)
+THEN
+PROC_GLO_ThrallOfTheAbsolute_StartGenericGameOverDialog((CHARACTER)_Player);
+//END_REGION
+
+//REGION After Orpheus Combat
+PROC
+PROC_GLO_DefeatCounter_AllPermaDefeated("INT_RoyalGuard_Combat")
+AND
+QRY_EmperorRevealed_EmperorIsInDefeatedState()
+AND
+NOT DB_ProgressTo_AfterOrpheusScene(1)
+THEN
+PROC_RestoreEmperor();
+PROC_INT_OrpheusSubduedInGameplay();
+DB_ProgressTo_AfterOrpheusScene(1);
+
+PROC
+PROC_GLO_DefeatCounter_AllPermaDefeated("INT_RoyalGuard_Combat")
+AND
+NOT DB_ProgressTo_AfterOrpheusScene(1)
+THEN
+PROC_INT_OrpheusSubduedInGameplay();
+DB_ProgressTo_AfterOrpheusScene(1);
+
+QRY
+QRY_EmperorRevealed_EmperorIsInDefeatedState()
+AND
+HasActiveStatus(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, "KNOCKED_OUT", 1)
+THEN
+RemoveStatus(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, "KNOCKED_OUT", NULL_00000000-0000-0000-0000-000000000000);
+
+QRY
+QRY_EmperorRevealed_EmperorIsInDefeatedState()
+AND
+DB_Defeated(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b)
+THEN
+DB_NOOP(1);
+
+IF
+DB_ProgressTo_AfterOrpheusScene(1)
+THEN
+PROC_GLO_NarrativeCombat_EndCombat("INT_Orpheus_NarrativeCombat");
+TeleportTo(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,S_INT_EmperorPos_7f8332e9-e118-4f13-9d0e-bf476df692c5,"",1,1,1,1,1);
+PROC_SetOnStage(S_INT_PortalFromAstralPlane_Spine_c485923b-d0c1-43b1-b61d-2d1a13649ae2,0);
+PROC_TriggerUnregisterForPlayers((TRIGGER)S_INT_EmperorRevealArea_f765db82-3fa8-4f4b-b92a-55bdc95fc1ba);
+SetFlag((FLAG)INT_EmperorRevealed_Event_OrpheusNearlyDefeated_5c6065fb-0d96-44b4-9ffb-3e1bacc9e097);
+DB_Dialogs(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,(DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+PROC_INT_AssignDialogToIDs((DIALOGRESOURCE)INT_EmperorRevealed_AD_IntellectDevourer_AfterCombat_82468303-1dde-0240-ca0e-47c16991515d);
+DB_SceneManager((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,"INT_AfterOrpheus");
+DB_SceneNoHostileContinuousDisturbance("INT_AfterOrpheus");
+PROC_SetRelationMutual((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,(FACTION)ACT2B_INT_Orpheus_ad62a159-c6fb-43ae-a682-63c139905874,0);
+PROC_SetRelationToPlayers((FACTION)ACT2B_INT_Emperor_1b0c07fe-d67c-4b1a-9ea4-a790be642214,100);
+SetImmortal(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, 1);
+PROC_RemoveDialogEntryForSpeaker((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_EmperorPlea_415aa8b3-5eba-6ce5-ee7a-5113b38884e5);
+
+PROC
+PROC_INT_OrpheusSubduedInGameplay()
+AND
+DB_Players(_Player) //ToDo: Make a proper selection for player speaker
+AND
+QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Player)
+THEN
+DB_SceneManager(_Player,"INT_AfterOrpheus");
+
+//start dialog if the player has been resurrected by the emperor
+IF
+AutomatedDialogEnded(INT_EmperorRevealed_AD_EmperorRezzesAvatar_4ece64d9-4a77-0af8-8738-b43974520652, _ID)
+AND
+DB_Players(_Player)
+AND
+NOT DB_OnlyOnce("INT_PlayAfterOrpheus_AfterAD")
+AND
+QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Player)
+THEN
+DB_OnlyOnce("INT_PlayAfterOrpheus_AfterAD");
+DB_SceneManager(_Player,"INT_AfterOrpheus");
+
+IF
+AutomatedDialogRequestFailed(INT_EmperorRevealed_AD_EmperorRezzesAvatar_4ece64d9-4a77-0af8-8738-b43974520652, _ID)
+AND
+DB_Players(_Player)
+AND
+NOT DB_OnlyOnce("INT_PlayAfterOrpheus_AfterADFailed")
+AND
+QRY_StartDialog((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Player)
+THEN
+DB_OnlyOnce("INT_PlayAfterOrpheus_AfterADFailed");
+DB_SceneManager(_Player,"INT_AfterOrpheus");
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,_ID)
+THEN
+PROC_DialogAddSpeakingActor(_ID,S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e);
+
+IF
+DB_GlobalFlag(INT_EmperorRevealed_State_OrpheusSubdued_cdbc0a7c-96f6-4008-8b33-546b889bb5a4)
+THEN
+NOT DB_INT_EmperorRevealed_WeakToAbsolute(1);
+DB_Dialogs((CHARACTER)S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2);
+
+IF
+DialogStarted((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,_ID)
+AND
+NOT DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_Players(_Players)
+AND
+NOT QRY_SpeakerIsAvailableAndInDialogRange(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,_Players)
+THEN
+PROC_DialogAddListeningActor(_ID,_Players);
+
+IF
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+THEN
+PROC_AddCharactersInTriggerToDialog_Clear((DIALOGRESOURCE)INT_EmperorRevealed_AfterOrpheus_b66e7115-ecea-7fc0-5a33-61a6eed77ab2,(TRIGGER)S_INT_AstralPlaneArea_37dec4e1-9db0-44a9-bd39-a5f4362d2ab2);
+
+// Changing ambient to peaceful state after combat is over
+IF
+DB_ProgressTo_AfterOrpheusScene(1)
+THEN
+TriggerSetSoundState((TRIGGER)Amb_SV_CRE_AstralPlane_QD_000_c261a341-2642-4bfb-96e0-d6b0df1bb3ab, "AstralPlane_BattleState", "Peaceful", 0);
+//END_REGION
+
+//REGION Leaving Astral Plane
+PROC
+PROC_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_Players(_Players)
+THEN
+DB_INT_ReadyToLeave(1); //If this is set, the players will move to Act3 after resting
+NOT DB_INT_EmperorRevealed_WeakToAbsolute(1);
+UnblockFlee(_Players);
+
+PROC
+PROC_GlobalFlagReactionAfterDialog((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+THEN
+ClearFlag(INT_EmperorRevealed_State_InOrpheusFight_a54d65cb-b149-4f8e-ba52-6f9696a69a13);
+PROC_SetOnStage(S_EmperorRevealed_GlobeOfDomination_Small_8950891c-ad3a-434c-a463-615b5ab90ea7, 1);
+PROC_SetOnStage(S_INT_PortalFromAstralPlane_OrpheusChamber_d16098eb-cb90-4ef9-a66b-86eac687e547, 1);
+NOT DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 1);
+NOT DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 3);
+NOT DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 4);
+NOT DB_CombatReact_AD_OnTurn(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, (DIALOGRESOURCE)INT_EmperorRevealed_AD_EmperorCallsObjectiveDuringOrpheusFight_b1fe8b8b-6160-fc20-bc53-d2f3f0b68686, 5);
+
+IF
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_INT_PortalGishGroup(_Gish,_)
+AND
+NOT DB_Dead((CHARACTER)_Gish)
+THEN
+Die(_Gish, DEATHTYPE.Physical, NULL_00000000-0000-0000-0000-000000000000, 1, 1, 1.0);
+
+IF
+DB_GlobalFlag((FLAG)INT_EmperorRevealed_Event_SceneComplete_2fa4811a-8757-40e7-a0bb-dc7e210dd6e6)
+AND
+DB_INT_PreSkullGishGroup(_Gish)
+AND
+NOT DB_Dead(_Gish)
+THEN
+Die(_Gish, DEATHTYPE.Physical, NULL_00000000-0000-0000-0000-000000000000, 1, 1, 1.0);
+
+//Keeps players in their armor for camp night after leaving prism
+QRY
+QRY_CAMP_VanityArmour_BlockChangeForCharacter((CHARACTER)_Player, (DIALOGRESOURCE)_Dialog)
+AND
+DB_GlobalFlag(INT_EmperorRevealed_State_AfterOrpheus_96b5ce4b-fbff-400d-9894-13f0b2e8b268)
+AND
+DB_CurrentLevel("INT_Main_A")
+THEN
+DB_NOOP(1);
+
+//END_REGION
+
+//REGION Absolute status effect logic
+//Applies a status on characters that are in the material plane while Orpheus is rebelling. The status is removed while in the Astral Plane
+IF
+CombatRoundStarted(_,1)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+AND
+DB_InRegion(_Player, (TRIGGER)S_INT_CampArea_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+DB_Players(_Player)
+AND
+IsTagged(_Player,(TAG)ILLITHID_1eec74e8-3673-4500-abec-57b7ed8469ed,1)
+THEN
+PROC_INT_EmperorRevealed_StartCountDownStatus((CHARACTER)_Player);
+
+IF
+CombatRoundStarted(_,_RoundCount)
+AND
+_RoundCount != 1
+AND
+DB_InRegion(_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+THEN
+RemoveStatus(_Player,"INT_ABSOLUTEPAIN_03",NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Player,"INT_ABSOLUTEPAIN_02",NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Player,"INT_ABSOLUTEPAIN_01",NULL_00000000-0000-0000-0000-000000000000);
+
+PROC
+PROC_INT_EmperorRevealed_StartCountDownStatus((CHARACTER)_Player)
+AND
+DB_INT_EmperorRevealed_LastPainStatus(_Player, _Status)
+THEN
+ApplyStatus(_Player, _Status, -1.0, 1);
+
+PROC
+PROC_INT_EmperorRevealed_StartCountDownStatus((CHARACTER)_Player)
+AND
+NOT DB_INT_EmperorRevealed_LastPainStatus(_Player, _)
+AND
+IsTagged(_Player,(TAG)ILLITHID_1eec74e8-3673-4500-abec-57b7ed8469ed,1)
+THEN
+ApplyStatus(_Player, "INT_ABSOLUTEPAIN_01", -1.0, 1);
+
+IF
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+AND
+DB_Players(_Player)
+AND
+NOT DB_InRegion(_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+DB_INT_EmperorRevealed_AbsolutePainQuestTime(_Status,_)
+THEN
+RemoveStatus(_Player, _Status, NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+EnteredCombat((CHARACTER)_Player, _ID)
+AND
+DB_InRegion(_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+DB_INT_EmperorRevealed_LastPainStatus(_Player,_Status)
+AND
+DB_INT_EmperorRevealed_AbsolutePainQuestTime(_Status,_Time)
+AND
+NOT DB_INT_EmperorRevealed_AbsolutePainActivePlayer((CHARACTER)_Player)
+THEN
+DB_INT_EmperorRevealed_AbsolutePainActivePlayer(_Player);
+
+IF
+EnteredCombat((CHARACTER)_Player, _ID)
+AND
+DB_InRegion(_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+NOT DB_INT_EmperorRevealed_LastPainStatus(_Player,_)
+AND
+DB_INT_EmperorRevealed_AbsolutePainQuestTime("INT_ABSOLUTEPAIN_01",_Time)
+AND
+NOT DB_INT_EmperorRevealed_AbsolutePainActivePlayer((CHARACTER)_Player)
+THEN
+DB_INT_EmperorRevealed_AbsolutePainActivePlayer(_Player);
+
+IF
+EnteredCombat(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, _ID)
+AND
+QRY_OnlyOnce("INT_StartTurnBasedTimer")
+THEN
+TurnBasedTimerLaunch(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, "INT_TurnBasedTimer", "INT_Intermezzo_PortalTimer", 18000);
+//END_REGION
+
+//REGION Thralldom Countdown
+IF
+StatusRemoved(_Player, _PreviousStatus, _, _)
+AND
+DB_INT_EmperorRevealed_AbsolutePainStatusProgress(_PreviousStatus, _NextStatus, _Duration)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+AND
+DB_InRegion(_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+THEN
+NOT DB_INT_EmperorRevealed_LastPainStatus(_Player, _PreviousStatus);
+ApplyStatus(_Player, _NextStatus, _Duration, 1);
+DB_INT_EmperorRevealed_LastPainStatus(_Player, _NextStatus);
+PROC_DaisyAD(_Player,(DIALOGRESOURCE)INT_EmperorRevealed_DaisyAD_CallToHelp_a9a3f0d2-fcd8-d487-b8f7-7e6a6fca1075);
+
+IF
+TurnStarted(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_INT_EmperorRevealed_WeakToAbsolute(1)
+AND
+DB_InRegion((CHARACTER)_Player, (TRIGGER)S_CAMP_INT_Area_9ef2ce12-074b-456a-9808-19c80dff20ff)
+AND
+DB_Is_InCombat(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, _ID)
+AND
+QRY_CurrentCombatRoundIs(_ID, 3)
+THEN
+PROC_GLO_ThrallOfTheAbsolute_StartGenericGameOverDialog((CHARACTER)_Player);
+EndTurn(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96);
+
+IF
+DialogStarted((DIALOGRESOURCE)INT_EmperorRevealed_OrbExplodes_a521faf3-f6f1-3afa-b35d-c96ced8aca7f, _)
+THEN
+TurnBasedTimerCancel(S_INT_PortalToAstralPlane_a3ee6e1e-78d6-4cd1-aa59-fb59ca27df96, "INT_TurnBasedTimer");
+//END_REGION
+
+//REGION Leaving Intermezzo
+PROC
+PROC_LongRest()
+AND
+DB_INT_ReadyToLeave(1)
+THEN
+PROC_INT_EmperorRevealed_CleanUp();
+
+PROC
+PROC_INT_EmperorRevealed_CleanUp()
+THEN
+PROC_LockAllGroupWaypoints("Act1");
+PROC_LockAllGroupWaypoints("Act1b");
+PROC_LockAllGroupWaypoints("Act2");
+
+PROC
+PROC_INT_EmperorRevealed_CleanUp()
+THEN
+PROC_GLO_EmperorPrelude_CheckForIntermezzoStone();
+RemoveStatus(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b,"INT_EMPEROR_UNPREFERREDTARGET");
+SetImmortal((CHARACTER)S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,0);
+PROC_SceneOver("INT_AfterOrpheus");
+PROC_SetOnStage(S_INT_PortalFromAstralPlane_OrpheusChamber_d16098eb-cb90-4ef9-a66b-86eac687e547,0);
+PROC_SetOnStage(S_INT_PortalToAstralPlane_Emperor_c20431a7-90e8-4610-b9f4-7c14c432c50a,0);
+SetDetached(S_GLO_Orpheus_47c90728-af68-4cbc-baaa-6497eebd8d7e,0);
+NOT DB_BlockedWaypointZone(S_CAMP_Intermezzo_SUB_23fcbd9d-3837-4c84-af5b-583281d77191);
+
+PROC
+PROC_INT_EmperorRevealed_CleanUp()
+AND
+DB_INT_IntellectDevourers(_IntDev)
+AND
+NOT DB_PermaDefeated(_IntDev) //Leave dead ones so the bodies are still left in END
+THEN
+PROC_SetOnStage(_IntDev, 0);
+
+PROC
+PROC_Camp_Leave(_Avatar)
+AND
+DB_INT_ReadyToLeave(1)
+AND
+DB_Avatars(_Avatar)
+THEN
+DB_OnlyOnce("LeaveINT");
+NOT DB_INT_ReadyToLeave(1);
+PROC_TeleportPartiesTo((TRIGGER)S_Debug_Teleport_WYR_Start_267cc194-a67a-4705-9459-3187e51487db, "");
+SetImmortal(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b, 0);
+TemplateAddTo((ITEMROOT)END_Emperor_Staff_ff63ca4a-a990-43dc-a28b-c6bed7bfa617, _Avatar, 1, 1);
+GoalCompleted;
+
+//END_REGION
+
+//REGION TMP Solution: Give Jump spell to background combat characters if a player enters combat with them
+
+IF
+EnteredCombat((CHARACTER)_PartyMember, _CombatGuid)
+AND
+DB_PartyMembers(_PartyMember)
+AND
+DB_INT_BackgroundCombatants_1(_Char)
+AND
+DB_Is_InCombat(_Char, _CombatGuid)
+AND
+HasSpell(_Char, "Projectile_Jump", 0)
+THEN
+AddSpell(_Char, "Projectile_Jump", 0, 0);
+
+IF
+EnteredCombat((CHARACTER)_PartyMember, _CombatGuid)
+AND
+DB_PartyMembers(_PartyMember)
+AND
+DB_INT_BackgroundCombatants_2(_Char)
+AND
+DB_Is_InCombat(_Char, _CombatGuid)
+AND
+HasSpell(_Char, "Projectile_Jump", 0)
+THEN
+AddSpell(_Char, "Projectile_Jump", 0, 0);
+//END_REGION
+
+//REGION Free Orpheus journal start
+IF
+ReadyCheckPassed("INT_EmperorRevealed_ReturnReadyCheck")
+THEN
+QuestUpdate("GLO_FreeOrpheus", "DiscussedOrpheus");
+
+IF
+ReadyCheckPassed("INT_EmperorRevealed_ReturnReadyCheck")
+AND
+DB_GlobalFlag((FLAG)ORI_Laezel_Knows_VossMeetingRaphaelInSharessCaress_d5a087ed-7479-47d1-99e7-6ba9b090f0c5)
+THEN
+QuestUpdate("GLO_FreeOrpheus", "HaveVossDirections");
+//END_REGION
+
+//REGION Restore the Emperor
+PROC
+PROC_RestoreEmperor()
+THEN
+NOT DB_Dead(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+NOT DB_PermaDefeated(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+PROC_CharacterFullRestore(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+PROC_RemoveMutingStatusses(S_GLO_Emperor_73d49dc5-8b8b-45dc-a98c-927bb4e3169b);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act2b"
