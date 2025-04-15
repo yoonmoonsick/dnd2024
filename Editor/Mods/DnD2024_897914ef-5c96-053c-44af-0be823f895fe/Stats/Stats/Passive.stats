@@ -173,7 +173,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
@@ -188,7 +188,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9cddc110g0130gc809gaaedgd3872e1a68a8" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_GREATAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_HALBERD', GetAttackWeapon(context.Source)));" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:ApplyStatus(WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE,100,0);ApplyStatus(SELF,WEAPONMASTERY_CLEAVE_TECHNICAL,100,1);CreateExplosion(Projectile_WeaponMastery_Cleave)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -1398,9 +1398,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5c3bed42-697f-422e-88a0-cf3200ad3bde" />
         <field name="Name" type="NameTableFieldDefinition" value="Drow_Darkness_Free" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlotII,1,0);UnlockSpell(Target_Darkness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Target_Darkness,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_Darkness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_Darkness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -1409,9 +1407,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="149f2296-69bf-4381-a42b-7c21b5a79e1f" />
         <field name="Name" type="NameTableFieldDefinition" value="Drow_FaerieFire_Free" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlot,1,0);UnlockSpell(Target_FaerieFire,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Target_FaerieFire,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_FaerieFire'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -1420,9 +1416,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1007defa-efe2-49fc-83c6-3e51a14830fd" />
         <field name="Name" type="NameTableFieldDefinition" value="HighElf_Misty_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="149f2296-69bf-4381-a42b-7c21b5a79e1f" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlotII,1,0);UnlockSpell(Target_MistyStep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Target_MistyStep,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_MistyStep'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_MistyStep'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1430,9 +1424,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5f9c4df1-50f0-4b87-af83-a3909942b5f2" />
         <field name="Name" type="NameTableFieldDefinition" value="WoodElf_Long_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="149f2296-69bf-4381-a42b-7c21b5a79e1f" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlot,1,0);UnlockSpell(Target_Longstrider,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Target_Longstrider,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_Longstrider'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_Longstrider'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1440,9 +1432,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="da49b977-7c5a-49a4-bcf4-da36cc565114" />
         <field name="Name" type="NameTableFieldDefinition" value="WoodElf_Pass_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="149f2296-69bf-4381-a42b-7c21b5a79e1f" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlotII,1,0);UnlockSpell(Shout_PassWithoutTrace,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Shout_PassWithoutTrace,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_PassWithoutTrace'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_PassWithoutTrace'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1450,8 +1440,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
         <field name="Name" type="NameTableFieldDefinition" value="Tiefling_RayOfSickness_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="149f2296-69bf-4381-a42b-7c21b5a79e1f" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlot,1,0);UnlockSpell(Projectile_RayOfSickness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Projectile_RayOfSickness,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Projectile_RayOfSickness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Projectile_RayOfSickness'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1459,8 +1448,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="df9f8ca4-01f5-41e3-8ab9-038edb53038c" />
         <field name="Name" type="NameTableFieldDefinition" value="Tiefling_HoldPerson_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlotII,1,0);UnlockSpell(Target_HoldPerson,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Target_HoldPerson,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_HoldPerson'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Target_HoldPerson'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1468,8 +1456,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c295af77-f802-4e16-8ca1-3ba11648a750" />
         <field name="Name" type="NameTableFieldDefinition" value="Tiefling_FalseLife_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlot,1,0);UnlockSpell(Shout_FalseLife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Shout_FalseLife,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_FalseLife'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlot', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Shout_FalseLife'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlot,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1477,8 +1464,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ec9f3ea3-71ad-498c-830e-098ee91e8870" />
         <field name="Name" type="NameTableFieldDefinition" value="Tiefling_RayOfEnfeeblement_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(RaceSpellSlotII,1,0);UnlockSpell(Projectile_RayOfEnfeeblement,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2,,,);UnlockSpell(Projectile_RayOfEnfeeblement,Singular,e9127b70-22b7-42a1-b172-d02f828f260a,,,);IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Projectile_RayOfEnfeeblement'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasActionResource('RaceSpellSlotII', 1, 0, false, false, context.Source)):UnlockSpellVariant(SpellId('Projectile_RayOfEnfeeblement'),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyIconGlow(),ModifyUseCosts(Add,RaceSpellSlotII,1,0))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1486,9 +1472,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c534bf93-3d57-4437-885b-f6709e08b5dd" />
         <field name="Name" type="NameTableFieldDefinition" value="Tiefling_HellishRebuke_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value=";" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3568,6 +3552,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e9ea17f-3e84-401b-8329-9f1e6125cf47" />
+        <field name="Name" type="NameTableFieldDefinition" value="DismountSteed" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, 8)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,DismountSteed);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1791e843-e7df-4e92-b106-4c356f7223ce" />
         <field name="Name" type="NameTableFieldDefinition" value="Oath_Glory_Tenents" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="83660091-20ad-4898-9e76-7423b470d0e9" />
@@ -4708,6 +4701,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce574759-84dd-445b-8129-38194a903387" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_StaffOFRam_KnockStun_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa669ccf-a456-4c28-a836-c773bbaf7e25" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not Ally() and TargetSizeEqualOrSmaller(Size.Large) and not Tagged('DRAGON') and not SavingThrow(Ability.Constitution, ManeuverSaveDC(), false, false, context.Target)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="821e418c-3752-4555-beb7-f7ff019bb9ec" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Fire_Heat_RemoveEndCombat" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -5182,19 +5183,39 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="53f014f7-55fc-448d-890a-b5201e354047" />
-        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_PassiveBonuses" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9d53cfae-2026-44d5-87af-1684c16e8483" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldBlow_Prone);UnlockSpell(Target_ShieldBlow_Push)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b19fd6a5-812c-4419-92f9-f45d184e51d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Block" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="77292f4a-7967-4c75-9370-22ffab1a37d6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Strength,1);UnlockInterrupt(Interrupt_ShieldMaster);ActionResource(ShieldMasterResource,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b19fd6a5-812c-4419-92f9-f45d184e51d5" />
-        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Block" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="77292f4a-7967-4c75-9370-22ffab1a37d6" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Strength,1);UnlockInterrupt(Interrupt_ShieldMaster)" />
+        <field name="UUID" type="IdTableFieldDefinition" value="12ef101f-2783-4e8d-92e0-e2220b9c987b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bf22aaa-989a-4832-a20e-ef96476d12bf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d3d04d8g1c8dgdae4g314ag745a8707f416" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf222acc2g7559g950fg5834gfc4b959910d9" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hed5e6f5dgf5d1g96f7g42b9gc2d9f33fbbab" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ShieldMasterResource" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_ShieldShove" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not IsKillingBlow() and HasActionResource('ShieldMasterResource', 1, 0, false, false, context.Source) and HasShieldEquipped(context.Source) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_SHIELD, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16feba91-605a-402a-82fc-99448b9273de" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldMaster_Topple" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12ef101f-2783-4e8d-92e0-e2220b9c987b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9bceffeg9087gf8a1gf946gbcdc76cde679" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ShieldMaster_Shove" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 0));UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5247,7 +5268,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and IsWeaponAttack() and DualWielder(context.Source) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and IsMeleeWeaponAttack() and DualWielder(context.Source) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)" />
       </fields>
     </stat_object>
