@@ -5551,7 +5551,6 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;EldritchHexCharge:1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65a476b1g7a3ag0836ga351gc6f132942eac" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7b8cc70g3415g5ef8g804bg09b0c8328c85" version="2" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hssssssssssssssssss" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7768,13 +7767,12 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="da404a80-13c0-4805-9629-5f194d298e0f" />
         <field name="Name" type="NameTableFieldDefinition" value="BoomingBlade_ClassSpell" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c0dd7564-72ef-4d50-bea9-08fcf2e24865" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4cc48b7b-196f-441a-840a-d31f5988f36a" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BOOMINGBLADE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsSpell;HasSomaticComponent;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):ApplyStatus(BOOMING_BLADE,100,1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_5,100,1);IF(CharacterLevelGreaterThan(10)):ApplyStatus(BOOMING_BLADE_11,100,1);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Thunder);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Thunder_Melee" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
