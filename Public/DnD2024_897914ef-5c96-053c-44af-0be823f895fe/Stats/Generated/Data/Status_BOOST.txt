@@ -900,6 +900,12 @@ data "RemoveConditions" "not HasStatus('RAGE_STOP_REMOVE')"
 data "RemoveEvents" "OnTurn"
 data "TickFunctors" ";"
 
+new entry "RAGE_GIANT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "RAGE_GIANT"
+data "Boosts" "Tag(VFX_RAGE);UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25);EntityThrowDamage(2);UnlockSpell(Shout_ExtendRage);"
+
 new entry "RAGE"
 type "StatusData"
 data "StatusType" "BOOST"
