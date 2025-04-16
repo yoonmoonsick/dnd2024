@@ -5347,7 +5347,6 @@
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);TemporaryHP(15);ActionResource(Movement,3,0);UnlockInterrupt(Interrupt_SteedAttack);ActionResource(Interrupt_SteedAttack,1,0);DamageReduction(All, Flat, 1)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -5360,7 +5359,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cd13fd8c-690d-4ce0-b18a-6defdf567519" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="25;2;1;Distance(3)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);TemporaryHP(25);ActionResource(Movement,3,0);UnlockInterrupt(Interrupt_SteedAttack);ActionResource(Interrupt_SteedAttack,1,0);DamageReduction(All, Flat, 1)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEED" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5437,6 +5436,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;LoseControl;LoseControlFriendly;DisableInteractions;TickingWithSource;ExecuteFunctorsOnOwner" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEED" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5452,6 +5452,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEED" />
       </fields>
     </stat_object>
     <stat_object color="#FF228B22" is_substat="false">
