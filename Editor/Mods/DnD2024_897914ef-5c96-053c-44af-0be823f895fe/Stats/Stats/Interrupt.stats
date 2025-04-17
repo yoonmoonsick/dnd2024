@@ -544,7 +544,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) " />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and not (isCritical() and not isMiss());" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h437076cdg918cg95e5gc97fgb5e86e66f1cb" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>

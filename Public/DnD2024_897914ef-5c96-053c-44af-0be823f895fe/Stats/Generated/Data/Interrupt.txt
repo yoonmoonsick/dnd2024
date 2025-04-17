@@ -408,7 +408,7 @@ type "InterruptData"
 using "Interrupt_RecklessAttack"
 data "Description" "h437076cdg918cg95e5gc97fgb5e86e66f1cb;1"
 data "InterruptContext" "OnPostRoll"
-data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) "
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and not (isCritical() and not isMiss());"
 data "InterruptDefaultValue" "Enabled"
 
 new entry "Interrupt_EldritchSmite"
