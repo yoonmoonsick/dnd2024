@@ -75,8 +75,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d9ee79fga6a3gf6aag0c4ag3e5425b954af" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Physical" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(max(max(max(StrengthModifier,DexterityModifier),IntelligenceModifier),WisdomModifier),CharismaModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(max(1,StrengthModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h9bc43d96ge2ecg4495gec70g8d9f57bc5831" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -106,7 +106,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h4003391cgf571g1e51gf459g8e67d03dd20f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_AttackDisadvantage" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
       </fields>
     </stat_object>
@@ -134,7 +134,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h21932815gc614g2d35g4a8cg6e71936a35b9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss() and not HasPassive('LegendaryAction_Apostle_Gaze', context.Target)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and (Tagged('WPN_STAVE', GetAttackWeapon(context.Source)) or Tagged('WPN_BATTLEAXE', GetAttackWeapon(context.Source)) or Tagged('WPN_MAUL', GetAttackWeapon(context.Source)) or Tagged('WPN_TRIDENT', GetAttackWeapon(context.Source))) and not IsMiss() and not HasPassive('LegendaryAction_Apostle_Gaze', context.Target);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)" />
       </fields>
     </stat_object>
