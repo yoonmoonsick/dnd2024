@@ -1031,7 +1031,7 @@ You gain Resistance to that damage type associated with your draconic ancestry.
 #### Level 3: Wild Magic Surge
 > **Note**: It has been modified so that it applies beneficial effects to allies and detrimental effects to enemies as much as possible.
 #### Level 3: Tides of Chaos
-Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.
+Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again (This feature is only enabled in turn-based mode).
 
 ### Storm Sorcery
 
