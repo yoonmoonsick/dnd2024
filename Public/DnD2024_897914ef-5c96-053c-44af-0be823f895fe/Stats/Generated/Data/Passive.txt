@@ -2223,6 +2223,13 @@ data "StatsFunctors" "RestoreResource(ZealousPresence,1,0)"
 new entry "YMS_Cleric"
 type "PassiveData"
 
+new entry "Reaper"
+type "PassiveData"
+using "Reaper"
+data "Boosts" "IF(not Combat()):UnlockSpellVariant(SpellId('Target_ChillTouch'),ModifyNumberOfTargets(AdditiveBase,1,false));IF(not Combat()):UnlockSpellVariant(SpellId('Target_BurstingSinew'),ModifyNumberOfTargets(AdditiveBase,1,false));IF(not Combat()):UnlockSpellVariant(SpellId('Target_TollTheDead'),ModifyNumberOfTargets(AdditiveBase,1,false));"
+data "StatsFunctorContext" "OnTurn"
+data "StatsFunctors" "ApplyStatus(SELF,REAPER_BOOST,100,1)"
+
 new entry "MindMagic"
 type "PassiveData"
 using "MAG_FreeCast_Level3_Passive"

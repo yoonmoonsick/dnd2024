@@ -7045,7 +7045,7 @@ data "SpellFail" "IF(HasPassive('PotentCantrip',context.Source)):DealDamage(Leve
 data "TooltipDamageList" "DealDamage(LevelMapValue(D10Cantrip), Necrotic)"
 data "TooltipAttackSave" "MeleeSpellAttack"
 data "TooltipStatusApply" "ApplyStatus(CHILL_TOUCH,100,2)"
-data "SpellFlags" "IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;IgnorePreviouslyPickedEntities"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;IsHarmful;IgnorePreviouslyPickedEntities"
 
 new entry "Target_LightningLure"
 type "SpellData"
@@ -7118,6 +7118,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_TollTheDead"
 data "SpellProperties" "IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1)"
+data "SpellFlags" "IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities"
 
 new entry "Target_ShockingGrasp"
 type "SpellData"
