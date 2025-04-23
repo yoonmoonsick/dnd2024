@@ -5106,6 +5106,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e418957-b03a-43ea-8d11-601e0ca0963a" />
+        <field name="Name" type="NameTableFieldDefinition" value="D24_WEAPON_FLAMEBLADE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('D24_WEAPON_FLAMEBLADE', GetAttackWeapon(context.Source))):CharacterWeaponDamage(max(1, SpellCastingAbilityModifier));" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="24574c9f-e1b9-4a93-857a-4b8a9b43009d" />
         <field name="Name" type="NameTableFieldDefinition" value="GRASPINGVINE_SURFACE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.SpellCastingAbilityModifier);Invulnerable();Attribute(Grounded);" />
