@@ -4080,6 +4080,12 @@ new entry "YMS_DRUID"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "D24_WEAPON_FLAMEBLADE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Boosts" "IF(Tagged('D24_WEAPON_FLAMEBLADE', GetAttackWeapon(context.Source))):CharacterWeaponDamage(max(1, SpellCastingAbilityModifier));"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "GRASPINGVINE_SURFACE"
 type "StatusData"
 data "StatusType" "BOOST"
