@@ -401,7 +401,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f0337d8d-7d77-496d-a8c5-332f6be5a769" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:DealDamage(2d8,Psychic,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:DealDamage(2d8,Psychic,Magical);" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -411,7 +413,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4c5b8bf9-ef7f-49bc-90ac-f774b8b4512b" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Slashing)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Slashing)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Slashing,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Slashing,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -421,7 +424,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8a828430-9fd6-49ad-baeb-ab01f5d7754c" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Piercing)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Piercing)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Piercing,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Piercing,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -431,7 +435,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="0840f8f0-3542-4cbd-ad0c-18fb730d69c8" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Bludgeoning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Bludgeoning)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Bludgeoning,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Bludgeoning,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -441,7 +446,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="507b392a-fc8f-4b19-8f97-f58ae683cb64" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Acid)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Acid)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Acid,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Acid,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -451,7 +457,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="261cfbf6-a671-4915-8068-6b119332a3bc" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Thunder,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Thunder,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -461,7 +468,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c7fbe8b-d23c-4020-872f-f0ed77a0a7c6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Necrotic,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Necrotic,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -471,7 +479,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f2f5c1b-6f47-40a6-986f-2b53813ed1e1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Fire)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Fire)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Fire,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Fire,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -481,7 +490,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7bfb2dbb-860e-4455-95dc-9b1d43a6864d" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Lightning)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Lightning)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Lightning,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Lightning,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -491,7 +501,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="164f83cf-8b72-4397-b5d1-6c0fa5ecbd20" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Cold)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Cold)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Cold,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Cold,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -501,7 +512,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="11658e95-593c-45b6-b366-0c515f5fb416" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Psychic,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Psychic,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -511,7 +523,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="01390142-f85e-4874-9000-f892d0a56d33" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -521,7 +534,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="996a0250-d182-4e3c-b220-bf2787e0fb80" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Radiant)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Radiant,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Radiant,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -531,7 +545,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d17267d9-0f0b-4cb3-bd72-cd3c24d0b292" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Force)" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Force)" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Force,Magical)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Force,Magical);IF( HasPassive( 'PsychicSpell',context.Source ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -670,12 +685,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4cab14d-55e2-4cab-aab0-cc4f91ae4c24" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e3a5cc31-1ea3-4b15-a397-19c8772b8e8b" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="464fa89e-f5d1-44e3-a24d-356f6db14f90" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="320b7a3e-5809-4652-a50f-4d958f0ffc71" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_3,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ea9ae17-3a99-4c0a-a898-e7bc4a9fb70e" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebdaf0ef-c688-46a1-8483-bb880b3feb50" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_4,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca3ccfe2-b0e4-4af2-bd5a-d641852d9bee" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4112fcc2-e254-4d63-8156-2bee8f019c2f" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_5,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c87eccb3-dc90-43ec-8f78-5240392b87a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dd5c583a-2d13-4dd0-add3-0c9991b2fe52" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS_6,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a3bf05a3-a246-489f-b36c-bac2ff119c30" />
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ecd64fb7-6aaf-49f4-bc6e-9e1f50f4c732" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(4d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(4d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
       </fields>
     </stat_object>
@@ -685,30 +740,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="41ca9936-39a4-4821-ac4a-b23bf0949cdf" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(6d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(6d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a9da62ff-a7da-40f4-9029-5ab5c02563b1" />
-        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="64808e48-8413-4da4-b93b-7cb125031a44" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(12d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(12d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="80d4ad12-c8a7-4183-aa12-43ccc0a68418" />
-        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="72e53e2a-4b55-4174-98ea-02821e2fa1ad" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(10d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(10d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
       </fields>
     </stat_object>
@@ -718,8 +751,30 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="49440b12-14f2-46ae-b0da-519a69707ab0" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(8d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(8d4,Slashing,Magical);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="80d4ad12-c8a7-4183-aa12-43ccc0a68418" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72e53e2a-4b55-4174-98ea-02821e2fa1ad" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(10d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(10d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9da62ff-a7da-40f4-9029-5ab5c02563b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64808e48-8413-4da4-b93b-7cb125031a44" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(12d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(12d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
       </fields>
     </stat_object>
@@ -729,6 +784,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_DAMAGE_RECEIVED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="13feb980-bffb-4a77-b27a-b3b00e9daa65" />
         <field name="StackId" type="StringTableFieldDefinition" value="CLOUD_OF_DAGGERS_DAMAGE_RECEIVED" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5797,10 +5853,27 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73cb352f-6713-4239-9c34-01cd94017190" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37a29975-269c-4860-835f-6dc3c86b2f02" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(VOID_START,100,-1);TARGET:IF(Character()):ApplyStatus(VOID_END,100,-1);TARGET:IF(Character()):ApplyStatus(DIFFICULT_TERRAIN,100,-1);;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad92e208-6611-4014-9638-60aba8fb92ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="VOID_START" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3908dda-1cd0-4a4b-9bb2-baa0b17018a6" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6,Cold,Magical);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="61ab6d7e-5185-4fe9-8255-03099d2e56af" />
         <field name="Name" type="NameTableFieldDefinition" value="VOID_END" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="333adb98-b272-423c-8a99-c0491db0edfe" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, 14)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(VOID_END_DAMAGE,100,0);DealDamage(2d6,Cold,Magical);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
@@ -6752,6 +6825,30 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DIAMONDSCALES_BULLETTE_REMOVED,100,-1)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="73c381e9-9a2c-41a5-bba0-fa3f58de3312" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0de104c-8fe1-4f7c-826a-26dd0c152e9d" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSYCHIC_SPELL_BONUS_DAMAGE" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97eb27a0-1c49-4790-87e0-e44c21dceb1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSECT_PLAGUE_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de80e252-27aa-4d07-9dff-a506881f9af5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(INSECT_PLAGUE);IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(DIFFICULT_TERRAIN);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c34bb68-1e0b-4d6e-bfd3-ed91a9f5334b" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSECT_PLAGUE_AURA_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d235f29-762e-4814-af97-c86c95a30f06" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(INSECT_PLAGUE_6);IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(DIFFICULT_TERRAIN);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
       </fields>
     </stat_object>
   </stat_objects>

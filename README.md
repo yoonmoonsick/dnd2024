@@ -1134,7 +1134,7 @@ When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to
 - Level 7: Confusion, Summon Aberration
 - Level 9: Modify Memory, Telekinesis
 #### Level 3: Psychic Spells
-When you cast a Warlock Level 1+ spell slot that deals damage, you can add 1d4 Psychic damage. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
+When you cast a Warlock Level 1+ spell slot that deals damage, you can add Psychic damage. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
 #### Level 6: Clairvoyant Combatant
 You can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
 #### Level 10: Eldritch Hex
