@@ -22,15 +22,14 @@ THEN
 StartRespecRestore(_Caster);
 
 IF
-CastedSpell(_Caster,"Shout_YMS_Respec",_,_,_)
-THEN
-StartRespec(_Caster);
-ApplyStatus(_Caster,"RESPEC_TECHNICAL",1.0,1,NULL_00000000-0000-0000-0000-000000000000);
-
-IF
 StatusApplied(_Player, "GAIN_INSPIRATION", _, _)
 THEN
 GiveInspirationPoints((CHARACTER)_Player, 1.0, "", "");
+
+IF
+CastedSpell(_Caster,"Shout_YMS_LongRest",_,_,_)
+THEN
+RequestLongRest((CHARACTER)_Caster, 1);
 EXITSECTION
 
 ENDEXITSECTION
