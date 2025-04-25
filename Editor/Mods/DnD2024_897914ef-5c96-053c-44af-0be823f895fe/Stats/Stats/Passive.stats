@@ -3140,9 +3140,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="73649694-e423-4734-b575-697c75839d8d" />
         <field name="Name" type="NameTableFieldDefinition" value="Reaper" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d3ea4752-eb2a-4c8a-9e54-4238898e8b87" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Combat()):UnlockSpellVariant(SpellId('Target_ChillTouch'),ModifyNumberOfTargets(AdditiveBase,1,false));IF(not Combat()):UnlockSpellVariant(SpellId('Target_BurstingSinew'),ModifyNumberOfTargets(AdditiveBase,1,false));IF(not Combat()):UnlockSpellVariant(SpellId('Target_TollTheDead'),ModifyNumberOfTargets(AdditiveBase,1,false));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_ChillTouch'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Target_BurstingSinew'),ModifyNumberOfTargets(AdditiveBase,1,false));UnlockSpellVariant(SpellId('Target_TollTheDead'),ModifyNumberOfTargets(AdditiveBase,1,false));" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,REAPER_BOOST,100,1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemove;OnCreate;OnTurn;OnCombatEnded;OnRound;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not Combat();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
