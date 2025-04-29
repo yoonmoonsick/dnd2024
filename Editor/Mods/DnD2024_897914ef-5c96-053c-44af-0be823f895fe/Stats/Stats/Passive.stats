@@ -3072,10 +3072,35 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6e9a6b85g43c6g1b32g8f86gaec1f1046429" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Smash" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(MeleeWeaponAttackCheck(),ModifyTargetRadius(Multiplicative, 2));" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PRONE,100,1,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()));ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()))" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddb9271b-3076-4f14-80ee-edfe6173990a" />
+        <field name="Name" type="NameTableFieldDefinition" value="BatteringRoots_Topple" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5a0bbb9-262f-48bb-bc0c-0a9969132201" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="BatteringRoots_Topple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d42b6ac6-a22d-4c11-9e61-ca1101445be7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BatteringRoots_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5a0bbb9-262f-48bb-bc0c-0a9969132201" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="BatteringRoots_Topple" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
