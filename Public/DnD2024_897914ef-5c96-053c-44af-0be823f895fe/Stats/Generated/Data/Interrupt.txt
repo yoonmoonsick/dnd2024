@@ -403,14 +403,6 @@ data "Properties" "UseSpell(OBSERVER_OBSERVER,Shout_DarkOnesBelssing,true,true,t
 data "InterruptDefaultValue" "Enabled"
 data "TooltipDamageList" "RegainHitPoints(0);GainTemporaryHitPoints(CharismaModifier+ClassLevel(Warlock))"
 
-new entry "Interrupt_RecklessAttack"
-type "InterruptData"
-using "Interrupt_RecklessAttack"
-data "Description" "h437076cdg918cg95e5gc97fgb5e86e66f1cb;1"
-data "InterruptContext" "OnPostRoll"
-data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and not (isCritical() and not isMiss());"
-data "InterruptDefaultValue" "Enabled"
-
 new entry "Interrupt_EldritchSmite"
 type "InterruptData"
 data "DisplayName" "h120fce6fgc95bg74fdgab63g7f264995e31c;1"
@@ -490,6 +482,15 @@ using "Interrupt_EldritchSmite_Critical"
 data "Properties" "ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)"
 data "Cost" "WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;"
 data "TooltipDamageList" "DealDamage(6d8,Force,Magical)"
+
+new entry "YMS_Barbarian"
+type "InterruptData"
+
+new entry "Interrupt_RecklessAttack"
+type "InterruptData"
+using "Interrupt_RecklessAttack"
+data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasAdvantage();"
+data "InterruptDefaultValue" "Enabled"
 
 new entry "YMS_Bard"
 type "InterruptData"

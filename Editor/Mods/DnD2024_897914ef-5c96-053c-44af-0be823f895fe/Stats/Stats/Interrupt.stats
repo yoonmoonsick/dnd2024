@@ -540,17 +540,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b9593b53-558e-4fa4-8a31-5e7716ac5e46" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack())  and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and not HasStatus('FIRST_ATTACK_TURN',context.Observer) and not (isCritical() and not isMiss());" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h437076cdg918cg95e5gc97fgb5e86e66f1cb" version="1" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h120fce6fgc95bg74fdgab63g7f264995e31c" version="1" />
@@ -657,6 +646,21 @@
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B0000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7de991fc-dd72-40cc-8863-176fb919f610" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Barbarian" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44a04a74-b8ef-4679-bfe7-72b41a1372d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RecklessAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasAdvantage();" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
