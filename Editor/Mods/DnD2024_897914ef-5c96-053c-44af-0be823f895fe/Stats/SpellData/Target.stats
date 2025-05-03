@@ -9701,7 +9701,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="563a311e-f0d2-45c9-9303-a9f6c43ee87b" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(2d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(2d8,Force,Magical);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_EldritchStrike" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(2d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
@@ -9714,6 +9714,10 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8, Force)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="3561c48f-d28e-40a4-8b63-aa4565cc03a8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="5e7c5840-97dc-4e78-aec9-28bbaae3402e" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="9157bc9f-4eaa-46ee-94ee-ea67a4f93ae7" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="9f1bb4d7-e13d-429d-bc25-b56e5f7398cc" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9722,7 +9726,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd2e43f4-9c08-416e-9690-4c50b146f258" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(3d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
@@ -9742,7 +9746,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd2e43f4-9c08-416e-9690-4c50b146f258" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(4d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
@@ -9762,7 +9766,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd2e43f4-9c08-416e-9690-4c50b146f258" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(5d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
@@ -9782,7 +9786,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd2e43f4-9c08-416e-9690-4c50b146f258" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(6d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
@@ -9802,7 +9806,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchSmite_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd2e43f4-9c08-416e-9690-4c50b146f258" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand); ApplyStatus(PRONE,100,1);DealDamage(7d8,Force,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(7d8,Force,Magical);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(7d8,Force)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />

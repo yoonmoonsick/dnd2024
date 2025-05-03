@@ -548,7 +548,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(2d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(2d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:1;Interrupt_EldritchSmite:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="DivineSmite" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
@@ -573,7 +573,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="72d40444-4445-4436-bc1b-49983b6f999e" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical)" />
       </fields>
@@ -583,7 +583,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4e18d533-3002-48b8-be78-2cf2edf7443b" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(3d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:2;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Force,Magical)" />
       </fields>
@@ -593,7 +593,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="09f70bb9-a544-462f-8c9a-b4ff2d90f626" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical)" />
       </fields>
@@ -603,7 +603,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1c01ef2c-719e-4bef-8252-db854319af0a" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(4d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:3;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Force,Magical)" />
       </fields>
@@ -613,7 +613,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="694b87a2-55da-41c8-8d2a-411dad1a73f7" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical)" />
       </fields>
@@ -623,7 +623,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fa2f3080-c132-4339-96cf-b32949deafba" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(5d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:4;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Force,Magical)" />
       </fields>
@@ -633,7 +633,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="749b22c5-6897-4472-bb9e-ab5165799c51" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d58dd605-110e-4a75-acbc-132eda181570" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
       </fields>
@@ -643,7 +643,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9900bdd1-a950-4ea1-acf1-b19cfd04245b" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EldritchSmite_Critical_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03d00b68-f5ab-4c49-b8e5-af8ab6380e8e" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(PRONE,100,1);DealDamage(6d8,Force,Magical);" />
         <field name="Cost" type="StringTableFieldDefinition" value="WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
       </fields>
