@@ -34,6 +34,22 @@ function MindMagicLevel9()
     return MindMagicLevel7() | SpellId('Throw_Telekinesis')| SpellId('Target_SynapticStatic')
 end
 
+function AcolyteOfNature3()
+    return SpellId('Shout_SpeakWithAnimals') | SpellId('Target_AnimalFriendship') | SpellId('Target_Barkskin') | SpellId('Target_SpikeGrowth')
+end
+
+function AcolyteOfNature5()
+    return AcolyteOfNature3() | SpellId('Target_PlantGrowth') | SpellId('Target_SleetStorm')
+end
+
+function AcolyteOfNature7()
+    return AcolyteOfNature5() | SpellId('Target_DominateBeast') | SpellId('Target_GraspingVine')
+end
+
+function AcolyteOfNature9()
+    return AcolyteOfNature7() | SpellId('Target_InsectPlague')| SpellId('Wall_WallOfStone')
+end
+
 function HasMediumArmor(entity)
     entity = entity or context.Target
     local armor = GetActiveArmor(entity)
