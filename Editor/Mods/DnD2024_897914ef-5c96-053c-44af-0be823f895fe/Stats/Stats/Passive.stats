@@ -1142,6 +1142,8 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(1d8,Radiant);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d8,Radiant)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ImprovedDivineSmite" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1512,9 +1514,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MartialArts_UnarmedDamage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35af45a5-74a5-474d-b8db-506e4d92bcdf" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd79caba1g593cg6310g2fedg81643275e017" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) " />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa4fff12d3-d897-4649-a847-c584c26194aa" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) ):MonkWeaponDamageDiceOverride(LevelMapValue(MartialArts));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1523,8 +1525,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="MartialArts_DextrousUnarmedAttacks" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2c8917a-2082-475d-b1d7-27fc8eb5ee40" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48faea1dg4d13gd42cgba30g2e7f07e37a4d" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) " />
+        <field name="BoostConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):MonkWeaponAttackOverride();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -2785,7 +2785,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -2797,12 +2797,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Acid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Acid)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack_Acid" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2811,12 +2812,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Cold)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2825,12 +2827,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Fire)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2839,12 +2842,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Lightning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Lightning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack_Lightning" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2853,12 +2857,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack_Thunder" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2874,7 +2879,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fd86334ge5e3g47d0gb00fg7bb89fce60d3" version="2" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_FlurryofBlows_L1to3" />
@@ -2908,9 +2913,10 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Acid)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Acid" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2919,9 +2925,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Cold)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2930,9 +2937,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Fire)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2941,9 +2949,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Lightning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Lightning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Lightning" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2952,9 +2961,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Thunder" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2964,7 +2974,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d6c42b3f-3c10-41d3-a7ef-175d51927f88" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Bludgeoning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69adc5a5ge60ag4affg84a0gd14490176db0" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
@@ -2976,10 +2986,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk_Acid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa60b31c-1fc8-45b1-9f3f-23d12e7c1418" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Acid)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike_Acid" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2988,10 +2999,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa60b31c-1fc8-45b1-9f3f-23d12e7c1418" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Cold)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3000,10 +3012,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa60b31c-1fc8-45b1-9f3f-23d12e7c1418" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Fire)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3012,10 +3025,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa60b31c-1fc8-45b1-9f3f-23d12e7c1418" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Lightning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Lightning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike_Lightning" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3024,10 +3038,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa60b31c-1fc8-45b1-9f3f-23d12e7c1418" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage, Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack;Strength" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike_Thunder" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3048,7 +3063,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Bludgeoning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Bludgeoning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
@@ -3061,9 +3076,10 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Acid)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Acid" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3074,9 +3090,10 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Cold)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3087,9 +3104,10 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Fire)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3100,9 +3118,10 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Lightning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Lightning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Lightning" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3113,9 +3132,10 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);DealDamage(UnarmedDamage, Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6, Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Thunder" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5197,15 +5217,6 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0f7dfee5-ad45-4cc4-908c-06f6bd06acab" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9b6dbbfb-c437-4c8f-8849-f66d2e661e51" />
-        <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9967,10 +9978,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="287b9102-acaf-40dc-bdd0-0eb0fa05e922" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack )" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts), Bludgeoning)" />
-        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value=";" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
