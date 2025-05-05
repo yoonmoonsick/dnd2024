@@ -2251,6 +2251,32 @@ data "Boosts" "UnlockSpellVariant(SpellId('Target_ChillTouch'),ModifyNumberOfTar
 data "StatsFunctorContext" "OnTurn"
 data "StatsFunctors" "ApplyStatus(SELF,REAPER_BOOST,100,1)"
 
+new entry "AcolyteOfNature_3"
+type "PassiveData"
+using "AcolyteOfNature"
+data "Description" "h0601e15fg42c7gbe83gdba6g4142a7f21347;1"
+data "EnabledConditions" "HasActionResource('ChannelDivinity', 1, 0, false, false, context.Source);"
+data "EnabledContext" "OnCastResolved;OnLongRest;OnActionResourcesChanged"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;MetaMagic"
+data "Boosts" "UnlockSpellVariant(AcolyteOfNature3(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));"
+data "ToggleOnEffect" "VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX"
+data "ToggleOffContext" "OnCastResolved"
+
+new entry "AcolyteOfNature_5"
+type "PassiveData"
+using "AcolyteOfNature_3"
+data "Boosts" "UnlockSpellVariant(AcolyteOfNature5(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));"
+
+new entry "AcolyteOfNature_7"
+type "PassiveData"
+using "AcolyteOfNature_5"
+data "Boosts" "UnlockSpellVariant(AcolyteOfNature7(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));"
+
+new entry "AcolyteOfNature_9"
+type "PassiveData"
+using "AcolyteOfNature_7"
+data "Boosts" "UnlockSpellVariant(AcolyteOfNature9(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));"
+
 new entry "MindMagic"
 type "PassiveData"
 using "MAG_FreeCast_Level3_Passive"

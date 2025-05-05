@@ -1514,7 +1514,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MartialArts_UnarmedDamage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35af45a5-74a5-474d-b8db-506e4d92bcdf" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd79caba1g593cg6310g2fedg81643275e017" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa4fff12d3-d897-4649-a847-c584c26194aa" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) ):MonkWeaponDamageDiceOverride(LevelMapValue(MartialArts));" />
       </fields>
@@ -3167,6 +3167,44 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,REAPER_BOOST,100,1)" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemove;OnCreate;OnTurn;OnCombatEnded;OnRound;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not Combat();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="658f418a-864b-4a45-8c06-b215985322e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcolyteOfNature_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="65a148ea-852b-474c-bc6c-0bd6413993da" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0601e15fg42c7gbe83gdba6g4142a7f21347" version="1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ChannelDivinity', 1, 0, false, false, context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AcolyteOfNature3(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a695c60-14ed-45b8-a683-e1a6ee6a9c12" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcolyteOfNature_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="658f418a-864b-4a45-8c06-b215985322e9" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AcolyteOfNature5(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac567e90-62ef-4aa7-845e-ec1f3d460e84" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcolyteOfNature_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a695c60-14ed-45b8-a683-e1a6ee6a9c12" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AcolyteOfNature7(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5265a7fd-3f73-49f5-b6f7-516a2e12a50e" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcolyteOfNature_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ac567e90-62ef-4aa7-845e-ec1f3d460e84" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(AcolyteOfNature9(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
