@@ -234,13 +234,10 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca5ca0e1g2bd1g4977g8766g3cd014581c7f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11acaa45gb4a8g7161gbaf6g3a41284335a6" version="4" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d6)" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d8);" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasShieldEquipped(context.Source)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,UNARMED_FIGHTING_NOSHIELD,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -716,8 +713,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bad6d42g696cg853cg4acfgf18e070b09a6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c05dc72g459ag959bg54fdgc0f3ed81e2cc" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BardicInspiration')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,AGILE_STRIKE,100,1)" />
@@ -734,7 +729,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="MonkWeaponAttackOverride();CharacterUnarmedDamage(LevelMapValue(BardicInspiration));RollBonus(MeleeUnarmedAttack, 1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="MonkWeaponAttackOverride();UnlockSpell(Target_UnarmedStrike_Bard_Action);RollBonus(MeleeUnarmedAttack, 1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_UnarmedDamage" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa" />
       </fields>
@@ -747,7 +742,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd481c65fg3d5dg40b4ge0c2g888a543d460d" version="3" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiringMovement)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Skill_InspiringMovement" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(9)" />
       </fields>
     </stat_object>
@@ -757,7 +752,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TandemFootwork" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TandemFootwork);RollBonus(MeleeUnarmedAttack, 1);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FancyFootwork" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Fighter_EvasiveFootwork" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

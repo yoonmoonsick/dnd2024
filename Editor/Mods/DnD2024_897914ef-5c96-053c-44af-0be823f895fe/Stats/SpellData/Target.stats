@@ -2714,11 +2714,11 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Bludgeoning)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+DexterityModifier, Bludgeoning);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69adc5a5ge60ag4affg84a0gd14490176db0" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+DexterityModifier, Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_UnarmedStrike_L1to3" />
@@ -2736,14 +2736,30 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="9d8f170e-35d7-4cdb-b1f9-5493cf771b19" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d09a37bc-47aa-47f4-a6a9-b605fc6ade5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Bard_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+DexterityModifier, Bludgeoning);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BardicInspiration)+DexterityModifier, Bludgeoning)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_UnarmedStrike_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_UnarmedStrike_L1to3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood;IsDefaultWeaponAction" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="9d8f170e-35d7-4cdb-b1f9-5493cf771b19" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="19993d65-0d04-449d-90e4-6a40fc8b8449" />
         <field name="Name" type="NameTableFieldDefinition" value="InspiringMovement" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,INSPIRING_MOVEMENT, 100, 1);ApplyStatus(INSPIRING_MOVEMENT_TARGET, 100, 1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,INSPIRING_MOVEMENT, 100, 2);ApplyStatus(INSPIRING_MOVEMENT_TARGET, 100, 2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_InspiringMovement" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0f018ffg00a8gbaf6g187bg502edaa40e94" version="1" />
