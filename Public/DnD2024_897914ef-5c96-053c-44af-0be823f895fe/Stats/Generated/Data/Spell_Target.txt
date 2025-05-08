@@ -580,6 +580,12 @@ data "SpellType" "Target"
 using "Target_Slam_Slayer_10"
 data "SpellSuccess" "DealDamage(max(1,6d6+UnarmedMeleeAbilityModifier), Slashing);IF(HasStatus('BLEEDING') and not HasStatus('PRONE')):ApplyStatus(CONTAGION_FLESH_ROT_1,100,3);IF(HasStatus('BLEEDING') and HasStatus('PRONE') and not SavingThrow(Ability.Strength,ManeuverSaveDC())):ApplyStatus(CONTAGION_FLESH_ROT,100,-1);"
 
+new entry "Target_BloodLust_RedCap"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BloodLust_RedCap"
+data "SpellFlags" "IsEnemySpell;HasVerbalComponent;IsConcentration"
+
 new entry "Target_YMS_Feat"
 type "SpellData"
 data "SpellType" "Target"
