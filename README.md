@@ -1140,6 +1140,15 @@ You can force that creature to make a Wisdom saving throw against your spell sav
 #### Level 10: Eldritch Hex
 Your alien patron grants you a powerful curse. You always have the Eldritch Hex spell prepared. And the target also has Disadvantage on saving throws of all ability for the duration of the spell.
 
+### Hexblade
+
+#### Hexblade Spells (Always prepared)
+- Level 1: Hex, Wrathful Smite
+- Level 3: Arcane VIgor, Magic Weapon
+- Level 5: Conjure Barrage, Counterspell
+- Level 7: Freedom of Movement, Staggering Smite
+- Level 9: Steel Wind Strike
+  
 ## Wizard
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Wizard.png?raw=true)
