@@ -1753,6 +1753,8 @@ Appropriate spells have been added to the spell list for each class.
 
 ## Level 2 spells
 
+### [Arcane Vigor](https://www.dndbeyond.com/spells/2618831-arcane-vigor)
+
 ### [Barkskin](https://www.dndbeyond.com/spells/2618907-barkskin)
 - Casting Time: 1 Bonus Action
 - Duration: 1 Hour
