@@ -4613,40 +4613,24 @@
         <field name="UUID" type="IdTableFieldDefinition" value="15576151-2aa1-4722-a6b2-d8769a5c904e" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_Monk" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7171076b-3740-4c24-8265-6657e9c671e7" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_RECAST,100,10);GROUND:ApplyStatus(SELF,DARKNESS_IMMUNE,100,10)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hf8929639gc0d6g0568gf50ag04240038dc81" version="2" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2668c2c2-f108-42e0-b6c9-b5c5c4c489c4" />
-        <field name="Name" type="NameTableFieldDefinition" value="ShadowStep_Improved" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:ApplyStatus(SELF,SHADOW_STEP_IMPROVED,100,1)" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('')" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_ShadowStep" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3416397dg1577g73cfgad82ga89c7eaf6e4b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2524c8cg424cgad36ge3f8g09ecefbe7bc8" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SHADOW_STEP_IMPROVED,100,1)" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_ShadowStep_L1to3" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_ShadowStep_L1to3" />
-        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="85c2d091-d84a-44c1-8361-20c5ce7149f1,,;,,;e329fa49-fa97-41a5-9b37-5157bb17d398,,;5527380a-aa1c-4b96-9321-c9da23af7396,,;c70b4b2a-0a53-47e2-a455-b8cf2e7cd862,,;,,;992158f7-2b13-4519-95de-868325b57443,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h14d481a5g0028g4d7cg9851gdac9ad093481" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(25)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Shadow_Monk" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="85c2d091-d84a-44c1-8361-20c5ce7149f1,,;,,;ea8d873d-2e21-48c3-ae4a-a412e6809da0,ea8d873d-2e21-48c3-ae4a-a412e6809da0,ea8d873d-2e21-48c3-ae4a-a412e6809da0;8d841313-e287-4ca4-bf4c-b23adc2e2db9,,;c70b4b2a-0a53-47e2-a455-b8cf2e7cd862,,;,,;992158f7-2b13-4519-95de-868325b57443,,;,,;,," />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Invisible;IsEnemySpell;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
-        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsConcentration;Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a0458d31-f8ef-419a-8708-5715c81e91d3" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="52af7a1d-d5d9-4506-85ce-d124f1ef9ea5" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a0214ac3-c122-4516-9f36-fd53ba96f4f1" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="5ab29886-b6c1-41b8-af40-32f2d3139a82" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10097,6 +10081,12 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SynapticStatic" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54e658e8-98a4-4df6-9e36-f2df20fbbd3b" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
       </fields>
     </stat_object>
   </stat_objects>
