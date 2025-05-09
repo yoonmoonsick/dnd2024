@@ -1923,6 +1923,8 @@ Appropriate spells have been added to the spell list for each class.
 - Power Level 5: Automaton
 - Power Level 6: Steel Watcher
 
+### [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere)
+
 ## Level 5 spells
 ### Banishing Smite 
 - School: Conjuration 

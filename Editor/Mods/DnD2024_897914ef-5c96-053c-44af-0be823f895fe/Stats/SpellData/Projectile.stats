@@ -125,6 +125,65 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;CanAreaDamageEvade" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ae76f84-88d2-4ebd-8eaa-013420e339d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Evocation" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d380618c-ab6d-430c-a516-162d9eb07dba" />
+        <field name="Name" type="NameTableFieldDefinition" value="VitriolicSphere" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a817993-5fdc-48b4-98a7-123be5e962fc" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,0,Acid);" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ACID_ARROW_SUPER,100,1);DealDamage(10d4,Acid,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(10d4/2,Acid,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not (HasPassive('SculptSpells', context.Source) and Ally())" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VitriolicSphere" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b0d1242gbba0g7848gad4cg327ec1c3ec08" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d4,Acid);DealDamage(5d4,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(10d4,Acid);DealDamage(5d4,Acid,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ACID_ARROW_SUPER,100,1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Acid)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70df2149-be22-4f36-9c0b-fd936e5ef1c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="VitriolicSphere_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d380618c-ab6d-430c-a516-162d9eb07dba" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ACID_ARROW_SUPER,100,1);DealDamage(12d4,Acid,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(12d4/2,Acid,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(12d4,Acid);DealDamage(5d4,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(12d4,Acid);DealDamage(5d4,Acid,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_VitriolicSphere" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5b5b538-5654-4ba1-9c69-4a3d54664ce4" />
+        <field name="Name" type="NameTableFieldDefinition" value="VitriolicSphere_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d380618c-ab6d-430c-a516-162d9eb07dba" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(ACID_ARROW_SUPER,100,1);DealDamage(14d4,Acid,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(14d4/2,Acid,Magical);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(14d4,Acid);DealDamage(5d4,Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(14d4,Acid);DealDamage(5d4,Acid,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_VitriolicSphere" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd67b626-944a-444b-bc58-f8a03dc29ab0" />
