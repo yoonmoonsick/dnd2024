@@ -2151,10 +2151,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="GraspingVine_Pull" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="95a29f2f-9331-463a-a1de-888d82baf40a" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-9, OriginToEntity, Neutral, false, true);IF(not Ally()):DealDamage(4d8,Bludgeoning,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Grounded()):Force(-9, OriginToEntity, Neutral, false, true);IF(not Ally()):DealDamage(4d8,Bludgeoning,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Bludgeoning,Magical)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
