@@ -77,12 +77,6 @@ data "TickFunctors" "IF(not SavingThrow(Ability.Intelligence, SourceSpellDC())):
 data "StatusPropertyFlags" "MultiplyEffectsByDuration"
 data "OnApplyFunctors" "IF(not SavingThrow(Ability.Intelligence, SourceSpellDC())):DealDamage(1, Psychic)"
 
-new entry "MAG_VIOLENCE"
-type "StatusData"
-data "StatusType" "BOOST"
-using "MAG_VIOLENCE"
-data "Boosts" "IF(IsMeleeWeaponAttack()):CharacterWeaponDamage(1);IF(IsUnarmedAttack()):CharacterUnarmedDamage(1);"
-
 new entry "YMS_RACE"
 type "StatusData"
 data "StatusType" "BOOST"
