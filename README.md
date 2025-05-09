@@ -1743,6 +1743,9 @@ Appropriate spells have been added to the spell list for each class.
 ### Sleep 
 - Duration: Concentration, up to 1 minutes
 - If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
+
+### [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew)
+
 ### Tasha's Hideous Laughter  
 - You can target one additional creature for each spell slot Level above 2.
 
