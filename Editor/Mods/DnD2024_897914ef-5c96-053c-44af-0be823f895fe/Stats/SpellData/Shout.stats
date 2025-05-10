@@ -4135,6 +4135,84 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="76b6984d-eec9-4b6d-a821-2cd31a1e0f15" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Monk" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64e33504-8e60-4610-ac83-32a087921d16" />
+        <field name="Name" type="NameTableFieldDefinition" value="KenseiShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e5f53776-a4e4-4af3-a294-ccafbc8e84d2" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(KENSEI_KENSEI_SHOT,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h368c5415ge4c3g354bg2c10g0fba75cdf50c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14d7ceb7gd8f4g9dacg4310g160dde54bda7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KENSEI_KENSEI_SHOT,100,1);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="RangedKenseiWeapon()" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f12b8e5-94a3-4c0e-a54b-4dcdb6b76d81" />
+        <field name="Name" type="NameTableFieldDefinition" value="SharpenTheBlade" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b01c67cd-2f69-4231-aa53-19a1fad05bf7" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SharpenTheBlade_1;Shout_SharpenTheBlade_2;Shout_SharpenTheBlade_3;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,KENSEI_SHARPEN_THE_BLADE,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4acacb8g4048gfa7cge98cg284e32b21168" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd74b802gfbfbg8bd8g1294g2f2d4f190166" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KENSEI_SHARPEN_THE_BLADE,100,10);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WholenessOfBody_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WholenessOfBody_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Stop" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="KenseiWeapon()" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3828a2e-cac9-4033-98f8-30db7ffa870e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SharpenTheBlade_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f12b8e5-94a3-4c0e-a54b-4dcdb6b76d81" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SharpenTheBlade" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59016563-15ee-461c-9209-b85ba0b76b0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SharpenTheBlade_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3828a2e-cac9-4033-98f8-30db7ffa870e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,KENSEI_SHARPEN_THE_BLADE_2,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KENSEI_SHARPEN_THE_BLADE_2,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83290945-c7c0-40fc-a412-8bf053c84bf2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SharpenTheBlade_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3828a2e-cac9-4033-98f8-30db7ffa870e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,KENSEI_SHARPEN_THE_BLADE_3,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(KENSEI_SHARPEN_THE_BLADE_3,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:3;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="efdcaefe-8b51-4005-9994-043626255b0f" />

@@ -411,3 +411,11 @@ function GetMaxModifier()
     
     return maxValue4
 end
+
+function RangedKenseiWeapon()
+    return IsWeaponOfProficiencyGroup('Shortbows|Longbows', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand))
+end
+
+function KenseiWeapon()
+    return IsWeaponOfProficiencyGroup('Shortbows|Longbows', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand)) | IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Scimitars|Longswords', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))
+end

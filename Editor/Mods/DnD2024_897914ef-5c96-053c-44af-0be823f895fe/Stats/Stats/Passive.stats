@@ -3602,6 +3602,92 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows" />
       </fields>
     </stat_object>
+    <stat_object color="#FF66CDAA" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="502541c5-9239-4359-9ab3-89a1dbf6abea" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Monk_Kensei" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5a7f043-6101-4620-9a0c-88fbfcb18cc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_3_KenseiWeapons" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fc8e9a3g6a7dg73c7g4d7bga87d09848605" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b62ce09g4d40g79cfg9fa9gcc6779a8d8b3" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SavageAttacker" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(Rapiers);Proficiency(Longswords);Proficiency(Longbows);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfc97ba4-1b03-4414-b52d-9f6c0e52cae0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_3_AgileParry" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14d7ceb7gd8f4g9dacg4310g160dde54bda7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h12a1d811g6e1bgff36ge798g97b8153f3691" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Parry" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsWeaponAttack() and (Tagged('WPN_DAGGER', GetAttackWeapon(context.Source)) or Tagged('WPN_SICKLE', GetAttackWeapon(context.Source)) or Tagged('WPN_RAPIER', GetAttackWeapon(context.Source)) or Tagged('WPN_SCIMITAR', GetAttackWeapon(context.Source)) or Tagged('WPN_SHORTSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,KENSEI_AGILE_PARRY,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02722071-3b40-45dc-9eae-e8d6bc03f6fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_3_KenseiShot" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h368c5415ge4c3g354bg2c10g0fba75cdf50c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h14d7ceb7gd8f4g9dacg4310g160dde54bda7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Steady_Ranged" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_KenseiShot);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="410118b2-9a12-4bfe-955e-b2c9d66f6416" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_6_MagicKenseiWeapons" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha2e7abffg685bgdfa6g4fe5g7b89f684776b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6dbe9255ga4c0g9ab7gce5dg46abaaa0e057" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Slashing, Resistant);IgnoreResistance(Piercing, Resistant);IgnoreResistance(Bludgeoning, Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be0b60b9-34ee-4819-ae23-9354490d99bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_6_DeftStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd6c4d753g52fbged20gcfb6ge7232e6a9d5f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d94fbc4g8914ge389g8608g908018e0ef07" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GuidedStrike" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Kensei_6_DeftStrike);ActionResource(Interrupt_DeftStrike,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52e90c49-0971-4591-ad37-56d23811e993" />
+        <field name="Name" type="NameTableFieldDefinition" value="Kensei_11_SharpenTheBlade" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4acacb8g4048gfa7cge98cg284e32b21168" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd74b802gfbfbg8bd8g1294g2f2d4f190166" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SharpenTheBlade);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fecbb415-c274-4ea4-b714-172a5868e960" />

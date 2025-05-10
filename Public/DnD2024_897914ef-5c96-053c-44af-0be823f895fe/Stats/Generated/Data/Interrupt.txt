@@ -563,6 +563,23 @@ type "InterruptData"
 using "Interrupt_Riposte"
 data "InterruptDefaultValue" "Ask;Enabled"
 
+new entry "YMS_Monk"
+type "InterruptData"
+
+new entry "Interrupt_Kensei_6_DeftStrike"
+type "InterruptData"
+using "Interrupt_SneakAttack"
+data "DisplayName" "h2df2fb3bgf702gd8dagc696g0b405e2080ff;1"
+data "Description" "h8d94fbc4g8914ge389g8608g908018e0ef07;1"
+data "Icon" "PassiveFeature_GuidedStrike"
+data "Conditions" "Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();"
+data "Properties" "IF(IsMeleeAttack()):DealDamage(LevelMapValue(MartialArts), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(MartialArts), MainRangedWeaponDamageType);"
+data "Cost" "KiPoint:1;Interrupt_DeftStrike:1;"
+data "Stack" "DeftStrike"
+data "InterruptDefaultValue" "Enabled;Ask"
+data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
+
 new entry "YMS_Rogue"
 type "InterruptData"
 
