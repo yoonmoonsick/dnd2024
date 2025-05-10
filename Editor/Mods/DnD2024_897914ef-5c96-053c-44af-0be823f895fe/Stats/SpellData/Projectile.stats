@@ -41,6 +41,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_IceKnife" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="37376acd-cd91-4575-bc03-c93dffbd1f60" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -57,6 +58,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="UND_MagicMissile_SocietyOfBrilliance_Amulet" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="20ccbd95-ccef-49f9-a289-eae6dddd6aed" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -65,6 +67,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ScorchingRay_CircletOfBlasting" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7886d7c5-c21c-42a2-905f-d369ebd3e92f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;HasSomaticComponent;HasVerbalComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -73,6 +76,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_IceKnife_MonkGloves" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0264224e-a79f-4da1-803f-02a45887cc25" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -83,14 +87,17 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c829b081-28c0-4df5-bf9b-efa54b97819b" />
         <field name="Name" type="NameTableFieldDefinition" value="HAG_RayOfSickness_Staff" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d66d664c-7e0f-40aa-b31e-78a1a32bc505" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c67102dd-da80-45d6-b50b-430ef02f623a" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -502,6 +509,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Legendary_Chromatic_MelfAcidArrow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d5b5b538-5654-4ba1-9c69-4a3d54664ce4" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2713,6 +2721,18 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d10)/2,Fire,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead()" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddf88553-efe7-45c6-a7f6-00486032dc9b" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="086b7121-e3c9-4ad1-92c2-9eaf8241f75b" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
       </fields>
     </stat_object>
   </stat_objects>
