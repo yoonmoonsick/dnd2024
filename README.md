@@ -741,6 +741,23 @@ You can expend 1 Ki Point to imbue yourself with elemental energy. The energy la
 #### Level 11: Stride of the Elements 
 - While your Elemental Attunement is active, you also have a Fly Speed equal to your Speed.
 
+### Way of the Kensei
+
+>Monks of the Way of the Kensei train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons. A kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a kensei a peerless warrior is but a side effect of intense devotion, practice, and study.
+
+#### Level 3: Kensei Weapons
+You gain proficiency with daggers, sickles, rapiers, scimitars, shortswords, longswords, shortbows, and longbows.
+#### Level 3: Agile Parry
+If you make a melee attack with a kensei weapon on your turn, you gain a +2 bonus to AC until the start of your next turn, while holding the weapon and not incapacitated.
+#### Level 3: Kensei’s Shot
+As a bonus action, you can deal an extra 1d4 damage with ranged kensei weapon attacks until the end of the turn.
+#### Level 6: Magic Kensei Weapons
+Your attacks made with kensei weapons ignore both magical and nonmagical resistance.
+#### Level 6: Deft Strike
+When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.
+#### Level 11: Sharpen the Blade
+As a bonus action, you can expend up to 3 ki points to grant a kensei weapon you touch a bonus to attack and damage rolls equal to the number of ki points spent. This bonus lasts for 1 minute.
+
 ## Paladin
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Paladin.png?raw=true)

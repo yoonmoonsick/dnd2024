@@ -779,6 +779,29 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF008080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27397e7c-afa4-45b4-9be7-f534f4116035" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Monk" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8730e920-9afa-4718-b498-31094f942edf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Kensei_6_DeftStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2df2fb3bgf702gd8dagc696g0b405e2080ff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d94fbc4g8914ge389g8608g908018e0ef07" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GuidedStrike" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(MartialArts), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(MartialArts), MainRangedWeaponDamageType);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="KiPoint:1;Interrupt_DeftStrike:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DeftStrike" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="48b53ba6-34c8-40cd-af07-e9b3b66b62e6" />
