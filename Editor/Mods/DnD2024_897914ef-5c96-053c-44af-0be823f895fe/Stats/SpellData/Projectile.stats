@@ -2091,9 +2091,9 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Divination" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Weapon" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Physical_Ranged" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(TrueStrike),Radiant)" />
@@ -2112,11 +2112,28 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dcf8d47d-776b-49ad-a968-93c3322359f4" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d1acace-332a-4aee-8c07-a2365193a146" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Radiant" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Ranged" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07b12489ga1aegc562g756bg838656bf7ebe" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsSpell;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, Radiant);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier,Radiant);IF(CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier+LevelMapValue(TrueStrike),Radiant);" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TRUESTRIKE,100,-1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31f26ec9-93c3-4cb6-ae39-cd3dc0488bb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant_Sneak" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dcf8d47d-776b-49ad-a968-93c3322359f4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ((HasAdvantage(AttackType.RangedWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.RangedWeaponAttack))" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Sneak" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant)" />
+        <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53ad1006ge033g808fgdcecgcc857a028774" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
