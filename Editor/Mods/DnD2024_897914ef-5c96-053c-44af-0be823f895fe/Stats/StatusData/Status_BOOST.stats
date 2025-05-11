@@ -995,7 +995,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
         <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_OWNER" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Radiant);UnlockSpell(Projectile_TrueStrike_Radiant);UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Projectile_TrueStrike_Weapon)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Projectile_TrueStrike_Weapon);UnlockSpell(Target_TrueStrike_Radiant);UnlockSpell(Projectile_TrueStrike_Radiant);IF(ClassLevelHigherOrEqualThan(1,'Rogue')):UnlockSpell(Target_TrueStrike_Radiant_Sneak);IF(ClassLevelHigherOrEqualThan(1,'Rogue')):UnlockSpell(Projectile_TrueStrike_Radiant_Sneak);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="TrueStrikeOwner" />
       </fields>
