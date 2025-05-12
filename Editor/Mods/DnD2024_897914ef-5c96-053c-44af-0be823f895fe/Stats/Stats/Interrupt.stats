@@ -793,7 +793,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2df2fb3bgf702gd8dagc696g0b405e2080ff" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8d94fbc4g8914ge389g8608g908018e0ef07" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GuidedStrike" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) IsWeaponAttack() and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(MartialArts), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(MartialArts), MainRangedWeaponDamageType);" />
         <field name="Cost" type="StringTableFieldDefinition" value="KiPoint:1;Interrupt_DeftStrike:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="DeftStrike" />
