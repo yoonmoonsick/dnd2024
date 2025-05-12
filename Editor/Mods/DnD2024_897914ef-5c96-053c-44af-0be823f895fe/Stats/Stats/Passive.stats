@@ -752,7 +752,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e564850b-1c41-4764-a1dd-73f67885b0c3" />
         <field name="Name" type="NameTableFieldDefinition" value="TandemFootwork" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TandemFootwork);RollBonus(MeleeUnarmedAttack, 1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TandemFootwork);RollBonus(MeleeUnarmedAttack, 1);UnarmedMagicalProperty();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Fighter_EvasiveFootwork" />
       </fields>
     </stat_object>
@@ -3525,7 +3525,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6424e07e-5704-4827-8cae-adcde04f6ffd" />
         <field name="Name" type="NameTableFieldDefinition" value="UnarmoredMovement_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="21d64b71-9121-4523-ae8e-ffae19736005" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 3, 0);RollBonus(MeleeUnarmedAttack, 1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 3, 0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3533,7 +3533,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6dc8c0ef-b69d-426a-89bd-92fdb41a5def" />
         <field name="Name" type="NameTableFieldDefinition" value="UnarmoredMovement_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="68633632-9efd-4892-8b12-d9c3d2b059b8" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 4.5, 0);RollBonus(MeleeUnarmedAttack, 2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 4.5, 0);RollBonus(MeleeUnarmedAttack, 1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3541,7 +3541,18 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c5232057-7e36-493d-801a-cc1774a81b38" />
         <field name="Name" type="NameTableFieldDefinition" value="UnarmoredMovement_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8ade4bc5-9528-4fba-9781-e1cb58865a4b" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 6, 0);RollBonus(MeleeUnarmedAttack, 3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement, 6, 0);RollBonus(MeleeUnarmedAttack, 2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="743e99ad-ab27-4cf0-bdfd-370be7ef9c97" />
+        <field name="Name" type="NameTableFieldDefinition" value="KiEmpoweredStrikes_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f7685f04-38a6-4d01-8885-345791920694" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and Unarmed(context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Bludgeoning, Resistant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3655,12 +3666,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="410118b2-9a12-4bfe-955e-b2c9d66f6416" />
         <field name="Name" type="NameTableFieldDefinition" value="Kensei_6_MagicKenseiWeapons" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha2e7abffg685bgdfa6g4fe5g7b89f684776b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6dbe9255ga4c0g9ab7gce5dg46abaaa0e057" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6dbe9255ga4c0g9ab7gce5dg46abaaa0e057" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)) and KenseiWeapon();" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Slashing, Resistant);IgnoreResistance(Piercing, Resistant);IgnoreResistance(Bludgeoning, Resistant);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Slashing, Resistant);IgnoreResistance(Piercing, Resistant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
