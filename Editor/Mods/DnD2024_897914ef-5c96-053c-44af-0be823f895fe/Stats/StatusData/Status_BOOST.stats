@@ -5290,7 +5290,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SYMBIOTIC_ENTITY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1864397d-27d9-4a68-8dfa-10cb2d28b103" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Druid)*4);DealDamage(LevelMapValue(SymbioticEntity),Necrotic)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Druid)*4);CharacterWeaponDamage(LevelMapValue(SymbioticEntity),Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(SymbioticEntity),Necrotic);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Druid)*4);CharacterWeaponDamage(LevelMapValue(SymbioticEntity),Necrotic);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(SymbioticEntity),Necrotic);IF(IsAttackType(AttackType.MeleeSpellAttack)):DamageBonus(LevelMapValue(SymbioticEntity),Necrotic,false);IF(HasPassive('SpreadingSpores', context.Source)):UnlockSpell(Target_SpreadingSpores);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('SG_Polymorph_BeastShape')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
       </fields>
