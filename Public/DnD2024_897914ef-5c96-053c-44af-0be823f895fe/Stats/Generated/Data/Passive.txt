@@ -2529,6 +2529,12 @@ data "BoostContext" "OnEquip;OnCreate"
 data "BoostConditions" "not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and Unarmed(context.Source);"
 data "Boosts" "IgnoreResistance(Bludgeoning, Resistant);"
 
+new entry "Monk_Darkness"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnTurn"
+data "StatsFunctors" "GROUND:CreateSurface(5,1,DarknessCloud,true)"
+
 new entry "HandOfHarm"
 type "PassiveData"
 using "YMS_Monk"
