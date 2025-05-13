@@ -641,6 +641,56 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="11cc150b-681a-45ef-8d7f-efa01496d676" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Conjuration" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1edd9b94-7353-4cd6-9ec4-cd3413371bb8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3fd2f608-3ef7-444b-bd94-1c46d93799e3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,CloudkillCloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER,100,10);GROUND:ApplyStatus(SELF,CLOUDKILL_RECAST_BLOCK,100,1);ApplyStatus(CLOUDKILL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7e8d920-f819-4a95-ac38-cd694afa4c68" />
+        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12cbd21a-813b-4ebf-af8c-492a267750ee" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,Cloudkill6Cloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER,100,10);GROUND:ApplyStatus(SELF,CLOUDKILL_RECAST_BLOCK,100,1);ApplyStatus(CLOUDKILL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="edbb3470-a915-43d4-8023-313417c4479b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fdd0de96-3ed9-42c2-acb4-70a3a4856260" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('CLOUDKILL_RECAST_BLOCK');" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="518086f5-f411-4bd0-8f48-a8329512649c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d9b75ad6-94d6-4d3d-84b2-346551e51e72" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('CLOUDKILL_RECAST_BLOCK');" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee1112b2-32fe-4024-9166-6dc28fddb627" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Legendary_Chromatic_CloudKill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef159b7e-ecca-42d6-a5c8-ba167915b51f" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20bde5fc-6af4-495c-9243-7b2f1ddd950c" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Transmutation" />
       </fields>
@@ -2242,7 +2292,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e61d2266-f041-4bd5-a488-7b66e76d781c" />
@@ -3393,60 +3443,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StunningStrike_Thunder" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="40e125d6-eb50-4b2a-8d0e-7b825e2c0bb6" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3fd2f608-3ef7-444b-bd94-1c46d93799e3" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC(15), AdvantageOnPoisoned())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(5d8,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(5d8/2,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,CloudkillCloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER,100,100);ApplyStatus(CLOUDKILL,100,1)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUDKILL,100,100)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Dead()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="45eaaef9-51cc-440c-b0f3-73c537c0ffc2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="fdd0de96-3ed9-42c2-acb4-70a3a4856260" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC(15), AdvantageOnPoisoned())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(5d8,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(5d8/2,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,CloudkillCloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER_RECAST,100,100);ApplyStatus(CLOUDKILL,100,1)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUDKILL,100,100)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f89d9fc5-dd4d-4910-9b6b-e755acddbabb" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="12cbd21a-813b-4ebf-af8c-492a267750ee" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC(15), AdvantageOnPoisoned())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8/2,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,Cloudkill6Cloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER,100,100);ApplyStatus(CLOUDKILL,100,1)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUDKILL,100,100)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Dead()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="61122708-baab-4e06-9ff9-98a7f3e2f5f2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Cloudkill_Recast_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d9b75ad6-94d6-4d3d-84b2-346551e51e72" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC(15), AdvantageOnPoisoned())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8/2,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,Cloudkill6Cloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER_RECAST,100,100);ApplyStatus(CLOUDKILL,100,1)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUDKILL,100,100)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Dead()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6110,22 +6106,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ddabd60gb75fgf826g23ccg59b5bc78dcbb" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ChannelOath:0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="987fba28-8c8e-469e-b101-938a39ae65eb" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Legendary_Chromatic_CloudKill" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ef159b7e-ecca-42d6-a5c8-ba167915b51f" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Cloudkill_Recast_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,10,Cloudkill6Cloud,true);GROUND:ApplyStatus(SELF,CLOUDKILL_CASTER,100,100);ApplyStatus(CLOUDKILL,100,1)" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC(15), AdvantageOnPoisoned())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUDKILL_DAMAGED',context.Target)):DealDamage(6d8/2,Poison,Magical);ApplyStatus(CLOUDKILL_DAMAGED,100,1)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Item() and not Dead()" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Poison)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Poison)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUDKILL,100,100)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
