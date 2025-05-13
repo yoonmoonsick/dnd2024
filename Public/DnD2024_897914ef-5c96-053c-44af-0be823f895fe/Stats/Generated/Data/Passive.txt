@@ -44,7 +44,7 @@ data "ExtraDescription" "h9bc43d96ge2ecg4495gec70g8d9f57bc5831;1"
 data "Icon" "GenericIcon_DamageType_Physical"
 data "Properties" "OncePerAttack"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();"
+data "Conditions" "not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_GLAIVE', GetAttackWeapon(context.Source)) or Tagged('WPN_GREATSWORD', GetAttackWeapon(context.Source))) and IsMiss();"
 data "StatsFunctors" "DealDamage(max(1,StrengthModifier)+LevelMapValue(StandardProficiencyBonusScale)/2, Slashing)"
 
 new entry "WeaponMastery_Push"
