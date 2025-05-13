@@ -454,6 +454,15 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="4ca0dc53-1568-4bfd-8680-67086fea6451" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0c10974-b15d-459a-8b39-8855032ec3e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DARKNESS_OWNER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DARKNESS_OWNER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Darkness_Move);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="85fbb291-0ac2-465e-aa76-23b56d2dd371" />
@@ -3547,14 +3556,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fb46ba71-ba37-43c4-b54c-930f5ae18ede" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARKNESS_IMMUNE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dfa0153f-6057-43d6-9d3b-c5c0db2801ce" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7ae9b3cd-5be9-4c87-afa1-7bbc544dab8e" />
         <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_DISMISS" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Warlock_DismissPactWeapon" />
@@ -5495,7 +5496,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="12e6f243-3bab-4387-bcd2-e1987cdb2580" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="Monk_Darkness;" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="GROUND:CreateSurface(5,1,DarknessCloud,true)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="GROUND:CreateSurface(2,1,DarknessCloud,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
