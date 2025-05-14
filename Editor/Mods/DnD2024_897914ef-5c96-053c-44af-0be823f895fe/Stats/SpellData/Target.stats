@@ -1109,7 +1109,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6702089egb6bfg3875g1557gf5aecca19734" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(25)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsConcentration;Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS_MONK,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
       </fields>
@@ -1148,7 +1148,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_Move" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b9b1321-b19a-46cd-8f11-a63535356caf" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER_RECAST,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER_RECAST,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Stealth;Invisible;Temporary;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
