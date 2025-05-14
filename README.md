@@ -228,8 +228,6 @@ You can channel draconic magic to give yourself temporary flight. As a Bonus Act
 
 # Class 
 
-All subclasses are obtained at class Level 3.
-
 ## Barbarian 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)
@@ -629,6 +627,8 @@ Your attack rolls with weapons and Unarmed Strikes can now score a Critical Hit 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
 
+Eldritch Knights and Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
+
 #### Level 3: War Bond
 You can have up to two bonded weapons.
 
@@ -898,6 +898,14 @@ You always benefit from the effect of "Withdraw" from Cunning Strike without spe
 #### Level 12: Slippery Mind
 Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.
 
+### Arcane Trickster
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArcaneTrickster.png?raw=true)
+
+Eldritch Knights and Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
+
+#### Level 6: Magical Ambush
+
 ### Assassin
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
@@ -907,7 +915,7 @@ Your cunning mind is exceptionally difficult to control. You gain proficiency in
 - Surprising Strikes. During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.
 #### Level 3: Assassin’s Tools
 You gain a Disguise Self and Brew Poison.
-#### Level 9: Roving Aim
+#### Level 6: Roving Aim
 Your Speed isn’t reduced to 0 by using Steady Aim. 
 
 ### Soulknife
@@ -939,7 +947,7 @@ You regain one of your expended Soulknife Energy Dice when you finish a **Short 
 #### Level 3: Psychic Blades
 You can manifest shimmering blades of psychic energy, allowing you to make a melee or ranged attack with a psychic blade by using your reaction.
 
-#### Level 9: Soul Blades
+#### Level 6: Soul Blades
 You can now use the following powers with your Psychic Blades.
 
 ***Homing Strikes***. If you make an attack roll and miss the target, you can roll one Soulknife Energy Die and add the number rolled to the attack roll.
@@ -957,7 +965,7 @@ You can now use the following powers with your Psychic Blades.
 - You've mastered the art of falling and gain Resistance to Falling damage.
 - Your Jump distance is increased by 3m.
 - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
-#### Level 9: Supreme Sneak
+#### Level 6: Supreme Sneak
 Once per turn, you can try to hide without any action point or bonus action point.
 
 ## Sorcerer
