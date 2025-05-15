@@ -680,6 +680,20 @@ data "Properties" "ApplyStatus(OBSERVER_TARGET,DEVOUR_INTELLECT_VFX,100,0);DealD
 data "TooltipDamageList" "DealDamage(2d8, Psychic)"
 data "TooltipStatusApply" "ApplyStatus(FRIGHTENED,100,2)"
 
+new entry "Interrupt_Counterspell_ArcaneTricskter"
+type "InterruptData"
+using "Interrupt_Counterspell"
+data "DisplayName" "h928f834egd673g4226g8299gfefdeb81958c;1"
+data "Cost" "ReactionActionPoint:1;SpellThiefCharge:1;"
+data "Cooldown" "OncePerRest"
+data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+
+new entry "Interrupt_CunningStrike_11_Stun"
+type "InterruptData"
+using "Interrupt_CunningStrike_Trip"
+data "DisplayName" "h661a83eag0d58gf9f1g16c3g6ed490eff135;1"
+data "Properties" "IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(STUNNED,100,1,,,,not SavingThrow(Ability.Wisdom ,ManeuverSaveDC()));RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);"
+
 new entry "Interrupt_InstinctiveCharmBard"
 type "InterruptData"
 using "Interrupt_InstinctiveCharm"

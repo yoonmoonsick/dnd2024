@@ -906,6 +906,9 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 #### Level 6: Magical Ambush
 
+#### Level 11: Spell Thief
+You can cast Counterspell once per long rest.
+
 ### Assassin
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
@@ -917,6 +920,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 You gain a Disguise Self and Brew Poison.
 #### Level 6: Roving Aim
 Your Speed isn’t reduced to 0 by using Steady Aim. 
+#### Level 11: Death Strike
+You can gain the bonus Sneak Attack damage from Surprising Strikes on every turn, not just the first turn.
 
 ### Soulknife
 
