@@ -943,6 +943,26 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1cc1c578-b9cf-4827-9e37-988cc2630ef3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Counterspell_ArcaneTricskter" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5bdabb7-bbd0-4537-841f-ac861a185407" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h928f834egd673g4226g8299gfefdeb81958c" version="1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellThiefCharge:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e713415-415e-43cd-932a-a67dc9a26a53" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_11_Stun" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed88edd6-abec-485c-838d-6dae9aaa1cf2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h661a83eag0d58gf9f1g16c3g6ed490eff135" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(CunningStrike)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4, Force,Magical);ApplyStatus(STUNNED,100,1,,,,not SavingThrow(Ability.Wisdom ,ManeuverSaveDC()));RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7b7aa235-0e85-4630-af5d-0687a738f2c6" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharmBard" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="48f9ba72-0eb1-4d59-baf0-47b4727ba9b2" />
