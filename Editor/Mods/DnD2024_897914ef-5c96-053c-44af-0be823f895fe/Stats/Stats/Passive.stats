@@ -478,7 +478,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2c5f2f04-93bf-437d-b0d0-26f6a4f9ea42" />
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h068b0270g578ag1d0dg5b32g7353015d2250" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,1);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,-5);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,-5);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72ca0906gaca7g6fbcg767ag27e0eda8f101" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
       </fields>
@@ -488,7 +488,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="572aa489-d910-4259-ac4a-d0587842576d" />
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2c5f2f04-93bf-437d-b0d0-26f6a4f9ea42" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,1);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,-5);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,-5);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(15)" />
       </fields>
     </stat_object>
