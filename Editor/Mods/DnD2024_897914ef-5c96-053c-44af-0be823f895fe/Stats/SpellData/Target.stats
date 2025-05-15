@@ -9206,7 +9206,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(WeaponAttackRollAbility(Ability.Dexterity) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier), MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Strength) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,StrengthModifier), MainMeleeWeaponDamageType);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(WeaponAttackRollAbility(Ability.Dexterity) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier), MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Strength) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,StrengthModifier), MainMeleeWeaponDamageType);IF(not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Physical_Melee" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
@@ -9239,7 +9239,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0),Radiant);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0)+LevelMapValue(TrueStrike),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike),Radiant);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0),Radiant);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier),Radiant);IF(not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon,Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0)+LevelMapValue(TrueStrike),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike),Radiant);IF(CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike),Radiant);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
@@ -9271,7 +9271,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4a308920-ad2f-4ff8-842b-e49646b40460" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant_Sneak" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e21007a-76ec-4cc2-a659-3c4c1886a004" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);IF(not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and not Tagged('INANIMATE')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Melee_Sneak" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant);" />
@@ -10231,6 +10231,12 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="54e658e8-98a4-4df6-9e36-f2df20fbbd3b" />
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="872a44ac-5754-456d-9748-f4a420863101" />
+        <field name="Name" type="NameTableFieldDefinition" value="t" />
       </fields>
     </stat_object>
   </stat_objects>

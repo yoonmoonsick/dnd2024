@@ -240,12 +240,8 @@ function ExtraAttackCheck()
     return ExtraAttackSpellCheck() & HasUseCosts('ActionPoint',false)
 end
 
-function NotTrueStrikeCheck()
-    return (~SpellId('Target_TrueStrike_Weapon') & ~SpellId('Target_TrueStrike_Radiant') & ~SpellId('Projectile_TrueStrike_Weapon') & ~SpellId('Projectile_TrueStrike_Radiant') ) & HasUseCosts('ActionPoint')
-end
-
 function TrueStrikeCheck()
-    return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant')
+    return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Target_TrueStrike_Radiant_Sneak') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Radiant_Sneak')
 end
 
 function SniperCheck()
