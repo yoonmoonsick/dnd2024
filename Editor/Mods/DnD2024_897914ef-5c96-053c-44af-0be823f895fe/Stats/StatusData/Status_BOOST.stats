@@ -1654,6 +1654,7 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundStart" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2913,6 +2914,9 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ADRENALINERUSH_TEMP_HP" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3079,6 +3083,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="LONGSTRIDER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a791531-a55c-4a90-a65b-5aa5ff395ba6" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundStop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5247,6 +5254,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6efec2dbgb9f4gbadeg317egde61ac63fa0c" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="VITALITY_SURGE_TEMPHP" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6775,6 +6784,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_SOUL_CATCHING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ea5e3d53-deb3-4647-b6ac-1021eac7946d" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6919,6 +6930,130 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d947ef8-6888-413e-bdc6-8ee1ce96584e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEROISM" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9bf0c27c-a0bf-4989-9be7-8613033778b0" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a31c594e-ae5c-420b-b0ed-4ff25815afc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="RALLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3991b5d7-47c8-419c-8039-598fffe460b8" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f867a7f7-2994-428a-add9-14d773a2a4fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TEMPORARY_HP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2637e0cg3924g759bg3b59g16b1941d36dc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6a1d72cg28a2g9c96g119agf85451f124f5" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TEMPORARY_HP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Status_Buff_MO" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2fea60b8-7e07-4eab-bf41-3b95e58b222a" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TEMPORARY_HP_3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edef3318-0d00-453e-97d7-ee2b96c8ce59" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb5755beg3563g9850gc36cg7d557ae9abf6" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60319932-3bf8-4a3e-b37e-88bdd179dc1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TEMPORARY_HP_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edef3318-0d00-453e-97d7-ee2b96c8ce59" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(8)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="8" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8b80f7egf17bg42afge7d9gd989c0a11e56" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7e31f72-5d4a-45b9-ba86-bc2df2cf4c7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TEMPORARY_HP_BARDIC_INSPIRATION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edef3318-0d00-453e-97d7-ee2b96c8ce59" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(4)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65e4dab4g9251gd3a2g0d05gc68147a80e42" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c251e85-4e2f-4eba-9970-334e081a007c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_RAGE_TEMPORARY_HP_ON_RAGE_EXIT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edef3318-0d00-453e-97d7-ee2b96c8ce59" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="15" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(15)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="46164338-624c-4059-bb80-f79f8b7867a9" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43ab287dgf88eg437fg5ebdgd7ec37540fac" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP() or not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70ef2500-1be0-4f12-b101-143f702f4039" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_CHARGED_LIGHTNING_TEMPORARY_HP_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h642523d3g31f9gadabg1c1fg1a57758358c1" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(3)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MAG_CHARGED_LIGHTNING_TEMPORARY_HP_3" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="46164338-624c-4059-bb80-f79f8b7867a9" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Status_Buff_MO" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e70e9620-1838-4c41-bc13-df79d0f55a72" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_PALADIN_TEMP_HP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="edef3318-0d00-453e-97d7-ee2b96c8ce59" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6aed636aga0c5ga980g6195g8f7a9cd0b466" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(CharismaModifier)" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="62fa9966-8ac1-409d-9c28-1c91a92acc46" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_DRUID_WILDSHAPE_TEMP_HP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34e52452-3253-4be4-baf4-d59ff84b5a7e" />
@@ -6930,11 +7065,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2ab17c5c-fc72-4acb-b247-9c6553d17a77" />
-        <field name="Name" type="NameTableFieldDefinition" value="FANGS_OF_THE_FIRE_SNAKE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3d14a534-818e-4f17-9ef0-dd1424152891" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Fire)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(1d10,Fire);CharacterUnarmedDamage(1d10, Fire)" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8d9d0fd8-c864-424d-917d-132cd1178c5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="GLO_PIXIESHIELD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91f6484b-db82-4b85-9f15-bd6f0a8bff72" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a26b50e-5c33-4d85-bd8b-a1a12dfab707" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUMMON_PIXIESHIELD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b97cee54-07ae-4179-a6f5-13bb0386cfb3" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
