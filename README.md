@@ -1603,7 +1603,7 @@ You learn Guidance and one Cleric cantrips of your choice.
 
 ## Weapon Mastery Properties
 
-Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below.
+Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below. Only the Barbarian, Fighter, Paladin, Ranger, and Rogue classes can benefit from Weapon Mastery. You can also select "Weapon Master" Feat to get the benefit. You can gain the benefits either by obtaining the Blessed Strike passive at Cleric level 7, or by reaching level 6 in the College of Swords or the College of Valor as a Bard.
 
 - **Cleave** (Greataxe, Halberd): If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
 - **Graze** (Glaive, Greatsword): If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.

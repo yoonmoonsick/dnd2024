@@ -451,7 +451,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(Rage,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;RageRestore"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;RageRestore"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(233793b3-838a-4d4e-9d68-1e0a1089aba5,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
@@ -462,7 +462,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Barbarian"/>
-                    <attribute id="PassivesAdded" type="LSString" value="RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;RageRestore"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;RageUnlock;UnarmouredDefence_Barbarian;Rage_Armour_Message;Rage_NoHeavyArmour_VFX;RageRestore"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
                     <attribute id="UUID" type="guid" value="2dc1015e-6fd9-48aa-923e-eecaf72a83f1"/>
@@ -752,7 +752,7 @@
                     <attribute id="Boosts" type="LSString" value="Tag(WEAPONMASTER)"/>
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="ValorCollege"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;WarMagic"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;WarMagic;WeaponMastery_Get_WeaponMasteries;"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="d58a305f-3ccf-440c-b069-2abd9235ac03"/>
                     <attribute id="UUID" type="guid" value="eb3a178a-03d1-4300-bdaa-129656a5536c"/>
@@ -2039,7 +2039,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Constitution);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SecondWindCharge,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Fighter"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SecondWindRestore"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;SecondWindRestore"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(6a4f8598-3a17-42d1-beac-d7ced582bafa,2);AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123);SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
@@ -2051,7 +2051,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Fighter"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SecondWindRestore"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;SecondWindRestore"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(9e32fc2b-ce4f-47aa-b113-25cbdc025123);SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle)"/>
                     <attribute id="TableUUID" type="guid" value="ba4e707e-4bbd-4630-963b-ce2f2947f971"/>
@@ -2784,7 +2784,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);ActionResource(SpellSlot,2,1);"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(627af380-2bbb-4a9f-9571-5ec781a6daf4,2);AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831)"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
@@ -2816,7 +2816,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831)"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
@@ -3158,7 +3158,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemy"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;UnlockedSpellSlotLevel1;FavoredEnemy"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
@@ -3168,7 +3168,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0);ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemy"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemyWeaponMastery_Get_WeaponMasteries;"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
@@ -3581,7 +3581,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(SimpleWeapons);Proficiency(HandCrossbows);Proficiency(Longswords);Proficiency(Rapiers);Proficiency(Shortswords);ActionResource(SneakAttack_Charge,1,0);Proficiency(Scimitars);Proficiency(Longbows);"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Rogue"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;SneakAttack_Unlock"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,4);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
@@ -3593,7 +3593,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Rogue"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SneakAttack_Unlock"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;SneakAttack_Unlock"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(a1c2b712-2ed6-4e5b-820f-c5db654fe006,1);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,2)"/>
                     <attribute id="TableUUID" type="guid" value="9a44e828-92db-4d6c-acbc-a4f8ef340415"/>
@@ -3794,6 +3794,14 @@
                     <attribute id="UUID" type="guid" value="b3ea7f97-4cba-4d03-91cc-ef07993642b9"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Assassin"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Assassin_11_DeathStrike"/>
+                    <attribute id="ProgressionType" type="uint8" value="11"/>
+                    <attribute id="TableUUID" type="guid" value="43c75b78-757b-4875-9932-427bc95278a0"/>
+                    <attribute id="UUID" type="guid" value="c53c1192-b215-4a63-87f1-e76a75be8269"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Boosts" type="LSString" value="ActionResource(SoulknifeEnergy,4,0);"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Soulknife"/>
@@ -3827,6 +3835,14 @@
                     <attribute id="UUID" type="guid" value="18dd5444-4f77-4fce-b9a7-daf7177f48a1"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Soulknife"/>
+                    <attribute id="PassivesAdded" type="LSString" value="SoulKnife_11_RendMind"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="777c3287-c66b-40b5-9491-9cd2b4046d71"/>
+                    <attribute id="UUID" type="guid" value="001d9f05-1db9-42b5-9c70-68519f2863b7"/>
+                </node>
+                <node id="Progression">
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="Thief"/>
                     <attribute id="PassivesAdded" type="LSString" value="FastHands_dnd2024;SecondStoryWork"/>
@@ -3849,6 +3865,14 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="f6acc595-46b4-4d96-b7d5-6f33366fc2de"/>
                     <attribute id="UUID" type="guid" value="949309de-6da5-4c20-be16-d4b25f3a100e"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Thief"/>
+                    <attribute id="PassivesAdded" type="LSString" value="Thief_11_ThiefReflexes"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="f6acc595-46b4-4d96-b7d5-6f33366fc2de"/>
+                    <attribute id="UUID" type="guid" value="f55d89e6-3524-4f84-83d3-07c41a545386"/>
                 </node>
                 <node id="Progression">
                     <attribute id="Name" type="LSString" value="YMS_Sorcerer"/>
@@ -5459,7 +5483,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(IllriggerSeal,3,0);ActionResource(BalefulInterdict,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Illrigger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="BalefulInterdict;ForkedTongue"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;BalefulInterdict;ForkedTongue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(1825c85c-8c28-4fa0-9ae9-4f481d634e61,2,IllriggerSkill);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);"/>
                     <attribute id="TableUUID" type="guid" value="2e24d2cc-607c-461b-9286-9ced0eb53abf"/>
@@ -5470,7 +5494,7 @@
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Illrigger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="BalefulInterdict;ForkedTongue"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;BalefulInterdict;ForkedTongue"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="2e24d2cc-607c-461b-9286-9ced0eb53abf"/>
                     <attribute id="UUID" type="guid" value="bbbb80cc-e721-468c-a4a8-5908e9a6ec25"/>
@@ -5782,28 +5806,13 @@
                     <attribute id="UUID" type="guid" value="2bee25ba-b72f-49de-a44b-4645249f7db7"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Assassin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Assassin_11_DeathStrike"/>
-                    <attribute id="ProgressionType" type="uint8" value="11"/>
-                    <attribute id="TableUUID" type="guid" value="43c75b78-757b-4875-9932-427bc95278a0"/>
-                    <attribute id="UUID" type="guid" value="c53c1192-b215-4a63-87f1-e76a75be8269"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Soulknife"/>
-                    <attribute id="PassivesAdded" type="LSString" value="SoulKnife_11_RendMind"/>
+                    <attribute id="Boosts" type="LSString" value="Tag(WEAPONMASTER)"/>
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="SwordsCollege"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ExtraAttack;WeaponMastery_Get_WeaponMasteries;"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="777c3287-c66b-40b5-9491-9cd2b4046d71"/>
-                    <attribute id="UUID" type="guid" value="001d9f05-1db9-42b5-9c70-68519f2863b7"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="Thief"/>
-                    <attribute id="PassivesAdded" type="LSString" value="Thief_11_ThiefReflexes"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="f6acc595-46b4-4d96-b7d5-6f33366fc2de"/>
-                    <attribute id="UUID" type="guid" value="f55d89e6-3524-4f84-83d3-07c41a545386"/>
+                    <attribute id="TableUUID" type="guid" value="68f61c89-be48-41aa-acb6-2f3bd15303c7"/>
+                    <attribute id="UUID" type="guid" value="b5a994cc-e76a-4e55-b2d7-ac8ec665c2f1"/>
                 </node>
             </children>
         </node>
