@@ -102,7 +102,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsWeaponAttack() and (Tagged('WPN_GREATCLUB', GetAttackWeapon(context.Source)) or Tagged('WPN_PIKE', GetAttackWeapon(context.Source)) or Tagged('WPN_WARHAMMER', GetAttackWeapon(context.Source)) or Tagged('WPN_HEAVY_CROSSBOW', GetAttackWeapon(context.Source))) and not IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_30, 100, 0)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcfd09f4eg53b0gef01gf3feg98b82bc31dcc" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
@@ -445,6 +445,49 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4f54783b-a0c4-4cb0-b841-a0d84b809da9" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Feat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2d91481-4789-4fea-8966-4e176a667eee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Crusher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1de4faa7g257eg6dfeg60c9g0a1b40801710" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h99cd677bga900g5562g1c8dg3a02861b2225" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BludgeonTheWeak" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Bludgeoning, Resistant);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Bludgeoning,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(DAZED, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1ca1059-de92-4f58-891b-53ec5001a56a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slasher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c37ac0bg9bcdgb429gf74cg41b07ce711b5" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a2d91481-4789-4fea-8966-4e176a667eee" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h099b3251g8015g1c56g5796g265024ad546f" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_SlashTheWeak" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Slashing, Resistant);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Slashing,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(BLEEDING, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24c0148b-677b-40a7-afe4-afc11e49e62a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Piercer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdb10df4bg5585gd694g2189ga683c9bb1a1b" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a2d91481-4789-4fea-8966-4e176a667eee" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had5f96dega3b2gbefeg6c23gd3fb9cd2049b" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PierceTheWeak" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Piercing, Resistant);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Piercing,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(GAPING_WOUND, 100, 2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1584,7 +1627,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source) and TargetSizeEqualOrSmaller(Size.Large)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_SHIELD,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1a3b6583g891fg4caag9095g3f557dbee5bd" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3963fd93g9953ge99ag9581gff7b9029cfa9" version="1" />
       </fields>
@@ -1746,92 +1789,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d5eb7c35-0d2e-43f3-aad4-2d8f2984b18e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Crusher_Push" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0b8fa88g87f1g7084g1031g7d7594dd0f64" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ad7e6eagb8b9g9778g0139g6b4981b560a6" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and HasDamageDoneForType(DamageType.Bludgeoning,context.Target)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(CRUSHER_PUSH, 100, 0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="79aa4827-6c89-4a3b-8f76-e2ee21045e7b" />
-        <field name="Name" type="NameTableFieldDefinition" value="Crusher_EnhancedCritical" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb54d44bag9922g97d0ge414g4a2d5e317e1b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c619a48g72afgd63agad5fg0dbcb662d0c2" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Critical) and not HasDamageEffectFlag(DamageFlags.Miss) and not Ally() and Character()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(TRUE_STRIKE_CRUSHER,100,2);IF(HasDamageDoneForType(DamageType.Bludgeoning)):ApplyStatus(SELF,TRUE_STRIKE_CRUSHER_OWNER,100,2)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bbca99f4-2c5c-4d82-b2cb-c81d5e8f9dd6" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMaster" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f5acb798-17da-491b-a006-457b335408c6" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54f1e392gd4dfgb2dagf626g8e745726af63" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MartialWeapons);Tag(WEAPONMASTER)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6210ae4b-f037-473f-995a-80f21d4e370f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Piercer_Puncture" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ee02ec2g6ef3g8366g93f3ga812825f02e0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb5f1bd0gf769g3b99ge530g78d461510813" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_RevitalizingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('PIERCER_COOLDOWN',context.Source) " />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('PIERCER_COOLDOWN',context.Source) and MainDamageTypeIs(DamageType.Piercing)):Reroll(Damage,20,false)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Piercing)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasDamageDoneForType(DamageType.Piercing)):ApplyStatus(SELF,PIERCER_COOLDOWN,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="71ea0f7b-a022-481c-bf5d-b1c78aa09bbd" />
-        <field name="Name" type="NameTableFieldDefinition" value="Piercer_EnhancedCritical" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fdd1cc6g4c8cg05fdg3060gc29a9181cabe" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0001d4b2g00c6g04a8g0ea4g9c58b04df380" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_RevitalizingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CriticalHitExtraDice(1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cae066cf-fea3-4f27-a35d-722b42f78355" />
-        <field name="Name" type="NameTableFieldDefinition" value="Slasher_Hamstring" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d376467g9742g7b21gc702g01788223a069" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c4aac54g2d93g5213gab61g9ccc72fa45de" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageDoneForType(DamageType.Slashing,context.Target);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HAMSTRING,100,2)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="be446b48-5036-4420-b8fb-911108a72fa8" />
-        <field name="Name" type="NameTableFieldDefinition" value="Slasher_EnhancedCritical" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h644e04d7ge6c1g6194geb8eg7e86a60a63c3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb87ef49fg4ff9geb56g1a66g446d4e3e0c2c" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Critical) and not HasDamageEffectFlag(DamageFlags.Miss) and not Ally() and Character()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SLASHER_DISADVANTAGE,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2492,7 +2454,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttackType(AttackType.MeleeUnarmedAttack)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()))" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_30,100,0,,,,not SavingThrow(Ability.Strength,ManeuverSaveDC()))" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
@@ -3108,7 +3070,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH, 100, 0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_30, 100, 0)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="BatteringRoots_Topple" />
       </fields>
     </stat_object>
@@ -4278,15 +4240,15 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="43dfe762-c88d-4a52-81dc-1be64d8503b0" />
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_Brutal" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d5eb7c35-0d2e-43f3-aad4-2d8f2984b18e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2851ec77gcf06g8f8dg11f8g5021c3dd8e94" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7e891f3ge6eag499dgb8deg6cfb9c39c765" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h769445b8gf3dfg12d9g6497gbb0d5a132095" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and not IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_SHIELD,100,0);ApplyStatus(SELF, MAG_MOMENTUM, 100, 1);ApplyStatus(SELF, MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF, MAG_MOMENTUM, 100, 1);ApplyStatus(SELF, MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5480,7 +5442,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ShieldShove" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsKillingBlow() and HasActionResource('ShieldMasterResource', 1, 0, false, false, context.Source) and HasShieldEquipped(context.Source) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_SHIELD, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_15, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
