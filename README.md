@@ -1452,9 +1452,8 @@ Once per turn, by expending 2 meters of your movement speed, you can jump up to 
 #### Crossbow Expert 
 - Dual Wielding. When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property.
 
-#### Crusher 
-- Push. Once per turn, when you hit a creature with an attack that deals Bludgeoning damage, you can move it 5 feet to an unoccupied space if the target is no more than one size larger than you.
-- Enhanced Critical. When you score a Critical Hit that deals Bludgeoning damage to a creature, attack rolls against that creature have Advantage until the start of your next turn.
+#### Crusher (homebrew)
+Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
 
 #### Defensive Duelist 
 Parry. If you are holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.    
@@ -1493,9 +1492,8 @@ Agile Movement. Opportunity Attacks have Disadvantage against you.
 
 #### Performer: Encouraging Song. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
 
-#### Piercer 
-- Puncture. Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack’s damage dice, and you must use the new roll.
-- Enhanced Critical. When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.
+#### Piercer (homebrew)
+Your piercing damage ignores resistance. When you deal piercing damage to a creature, it must succeed on a Constitution saving throw or be suffering from Gaping Wounds until the end of its next turn.
 
 #### Poisoner 
 - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
@@ -1521,9 +1519,8 @@ Once per turn when you hit a target with a weapon, you can roll the weapon’s d
 - Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
 - Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
 
-#### Slasher 
-- Hamstring. Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.
-- Enhanced Critical. When you score a Critical Hit that deals Slashing damage to a creature , it has Disadvantage on attack rolls until the start of your next turn.   
+#### Slasher (homebrew)
+Your slashing damage ignores resistance. When you deal slashing damage to a creature, it must succeed on a Constitution saving throw or be Bleeding until the end of its next turn.
 
 #### Spell Sniper 
 - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.

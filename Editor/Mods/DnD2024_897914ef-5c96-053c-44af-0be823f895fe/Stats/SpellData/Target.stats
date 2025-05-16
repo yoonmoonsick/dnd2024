@@ -2942,7 +2942,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bc1b6174-76c4-4fee-8e69-73a7bbf01e0f" />
         <field name="Name" type="NameTableFieldDefinition" value="RecklessAttack_ForcefulBlow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c1bb1604-4093-4f1a-9e34-61ee973747c9" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon+1d10), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(CRUSHER_PUSH, 100, 0);ApplyStatus(SELF,DISENGAGE,100,1)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon+1d10), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(PUSH_45, 100, 0);ApplyStatus(SELF,DISENGAGE,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea30b33dgf452gfc54g3b52g872f57cd7855" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf04dbf3agebe1g5226gb956g6b7d180408e7" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;AddFallDamageOnLand;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -7331,10 +7331,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f0452127-b460-41d4-af41-785f324dce2c" />
         <field name="Name" type="NameTableFieldDefinition" value="ShieldBlow_Push" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70242e01-ca91-4340-8b98-977a09be5ad4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4+StrengthModifier,Bludgeoning);ApplyStatus(PUSH_SHIELD,100,0)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4+StrengthModifier,Bludgeoning);ApplyStatus(PUSH_15,100,0)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ShieldMaster_Shove" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7aef820cg5b03g791cg651bg0f426dc7d436" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PUSH_SHIELD,100,0)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0b564a5g3e94g2ba5g1f36g4c49d2e295c4" version="1" />
       </fields>
     </stat_object>
@@ -7515,13 +7515,13 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14ebe929g180bg8657gdba2g9014973b61d9" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WrathOfTheSea),Cold);ApplyStatus(CRUSHER_PUSH,100,0);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WrathOfTheSea),Cold);ApplyStatus(PUSH_45,100,0);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);IF(HasPassive('AquaticAffinity',context.Source)):DealDamage(LevelMapValue(WrathOfTheSea)/2,Cold);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('WILDSHAPE_WRATH_OF_THE_SEA_AURA',context.Target) and Enemy() and not Dead();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_WaterWhip" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WrathOfTheSea),Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CRUSHER_PUSH,100,0);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PUSH_45,100,0);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_WaterWhip_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_WaterWhip_L1to3" />
