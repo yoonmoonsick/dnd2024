@@ -7533,6 +7533,13 @@ data "Level" ""
 data "SpellSchool" ""
 data "SpellFlags" "HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;IsSwarmAttack"
 
+new entry "Target_GOB_CureWounds_SeluneAmulet"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_GOB_CureWounds_SeluneAmulet"
+data "Cooldown" "OncePerTurn"
+data "SpellProperties" "ApplyStatus(SLEEP,100,2,,,,not SavingThrow(Ability.Constitution,8));RegainHitPoints(1d8);"
+
 new entry "Target_ChillTouch"
 type "SpellData"
 data "SpellType" "Target"
