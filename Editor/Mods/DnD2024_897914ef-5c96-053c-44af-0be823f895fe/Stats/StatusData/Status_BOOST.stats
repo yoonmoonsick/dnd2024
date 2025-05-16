@@ -3590,7 +3590,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
         <field name="Name" type="NameTableFieldDefinition" value="NICK" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force,Magical);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison,Magical);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SG_Rage',context.Source)):DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force,Magical);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison,Magical);IF(HasStatus('SG_Rage',context.Source)):DealDamage(OffhandMeleeWeapon+2, OffhandMeleeWeaponDamageType);" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="43f8f1a3-dc6f-43a4-9836-593cea329788" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
@@ -6961,9 +6961,9 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Status_Buff_MO" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="Positive" enumeration_type_name="ManagedStatusEffectType" version="1" />
-        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7016,7 +7016,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="15" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="15" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(15)" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="46164338-624c-4059-bb80-f79f8b7867a9" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43ab287dgf88eg437fg5ebdgd7ec37540fac" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP() or not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnTurn" enumeration_type_name="StatusEvent" version="1" />
@@ -7035,8 +7035,8 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAG_CHARGED_LIGHTNING_TEMPORARY_HP_3" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="46164338-624c-4059-bb80-f79f8b7867a9" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Status_Buff_MO" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
