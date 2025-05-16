@@ -690,15 +690,15 @@ You gain the following benefits while you are unarmed or wielding only Monk weap
 - Martial Arts Die. You can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk Levels, as shown in the Martial Arts column of the Monk Features table.
 - Dexterous Attacks. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons.
 #### Level 2: Monk’s Focus
-- Flurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.
-- Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.
-- Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
+- Flurry of Blows. You can expend 1 Ki-Point to make two Unarmed Strikes as a Bonus Action.
+- Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and the Dodge actions as a Bonus Action.
+- Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
 #### Level 3: Deflect Attacks
-When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack’s total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk Level. If you reduce the damage to 0, you can expend 1 Focus Point to return the attack to the attacker. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier.
+When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack’s total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk Level. If you reduce the damage to 0, you can expend 1 Ki-Point to return the attack to the attacker. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier.
 #### Level 10: Heightened Focus
 - Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.
-- Flurry of Blows. You can expend 1 Focus Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.
-- Patient Defense. When you expend a Focus Point to use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.
+- Flurry of Blows. You can expend 1 Ki-Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.
+- Patient Defense. When you expend a Ki-Point to use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.
 #### Level 12: Disciplined Survivor
 Your physical and mental discipline grant you proficiency in all saving throws.
 
@@ -707,25 +707,25 @@ Your physical and mental discipline grant you proficiency in all saving throws.
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Mercy.png?raw=true)
 
 #### Level 3: Hand of Harm
-Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
+Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Ki-Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
 #### Level 3: Hand of Healing
-As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.
+As a Bonus action, you can expend 1 Ki-Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier.
 #### Level 3: Implements of Mercy
 You gain proficiency in the Insight and Medicine skills and proficiency with the Herbalism Kit.
 #### Level 6: Physician’s Touch
 Your Hand of Harm and Hand of Healing improve, as detailed below. Hand of Harm. When you use Hand of Harm on a creature, you can also give that creature the Poisoned condition until the end of your next turn. Hand of Healing. When you use Hand of Healing, you can also end one of the following conditions on the creature you heal: Blinded, Paralyzed, Poisoned, or Stunned.
 #### Level 11: Flurry of Healing and Harm
-When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing. In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn. You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
+When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Ki-Points for the healing. In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Ki-Point for Hand of Harm. You can still use Hand of Harm only once per turn. You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 
 ### Warrior of Shadow
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadow.png?raw=true)
 
 #### Level 3: Shadow Arts 
-- Darkness. You can expend 1 Focus Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
+- Darkness. You can expend 1 Ki-Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
 - Darkvision. You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet. 
 #### Level 11: Improved Shadow Step
-You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Focus Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.      
+You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Ki-Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.      
 
 ### Warrior of the Elements
 
