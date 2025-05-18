@@ -147,7 +147,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74353f5eg58b2gffe1g3fcagc7368e6ff429" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c5b99degd1e4g47e4g232bg7e86fb7208c0" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h4003391cgf571g1e51gf459g8e67d03dd20f" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_AttackDisadvantage" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
