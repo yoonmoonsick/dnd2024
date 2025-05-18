@@ -30,197 +30,182 @@ An origin feat is added to the background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to gain inspiration.
 
-## Acolyte
- ![](https://i.imgur.com/G1SM08n.png)
+## ![](https://i.imgur.com/G1SM08n.png) Acolyte
 - Feat: Magic Initiate: Cleric
 
-## Charlatan
- ![](https://i.imgur.com/AGRnGA5.png)
+## ![](https://i.imgur.com/AGRnGA5.png) Charlatan
 - Feat: Charlatan's Trick (Homebrew)
     - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
     - You add your Intelligence modifier to your Deception skill checks.
 
-## Criminal
- ![](https://i.imgur.com/bEanuMf.png)
+## ![](https://i.imgur.com/bEanuMf.png) Criminal
 - Feat: Alert
 - Skill Proficiencies: Sleight of Hand and Stealth
 
-## Entertainer
- ![](https://i.imgur.com/bGnvazh.png)
+## ![](https://i.imgur.com/bGnvazh.png) Entertainer
 - Feat: Performer
 
-## Farmer (Tag: Folk Hero)
- ![](https://i.imgur.com/nZV1TpT.png)
+## ![](https://i.imgur.com/nZV1TpT.png) Farmer (Tag: Folk Hero)
 - Feat: Tough
 - Skill Proficiencies: Animal Handling and Nature
 
-## Folk Hero
- ![](https://i.imgur.com/qD084Ff.png)
+## ![](https://i.imgur.com/qD084Ff.png) Folk Hero
 - Feat: Tough
 
-## Guard (Tag: Soldier)
- ![](https://i.imgur.com/thXzv0m.png)
+## ![](https://i.imgur.com/thXzv0m.png) Guard (Tag: Soldier)
 - Feat: Alert
 - Skill Proficiencies: Athletics and Perception
 
-## Guide (Tag: Outlander)
- ![](https://i.imgur.com/rdNxenE.png)
+## ![](https://i.imgur.com/rdNxenE.png) Guide (Tag: Outlander)
 - Feat: Magic Initiate: Druid
 - Skill Proficiencies: Stealth and Survival
 
-## Guild Artisan
- ![](https://i.imgur.com/iiB78kT.png)
+## ![](https://i.imgur.com/iiB78kT.png) Guild Artisan
 - Feat: Skilled
 
-## Haunted One
- ![](https://i.imgur.com/1BCPAmY.png)
+## ![](https://i.imgur.com/1BCPAmY.png) Haunted One
 - Feat: Alert
 
-## Hermit (Tag: Sage)
- ![](https://i.imgur.com/YDiCkju.png)
+## ![](https://i.imgur.com/YDiCkju.png) Hermit (Tag: Sage)
 - Feat: Healer
 - Skill Proficiencies: Medicine and Religion
 
-## Noble
- ![](https://i.imgur.com/sjbygvI.png)
+## ![](https://i.imgur.com/sjbygvI.png) Noble
 - Feat: Skilled
 
-## Merchant (Tag: Guild Artisan)
- ![](https://i.imgur.com/QgT6mpK.png)
+## ![](https://i.imgur.com/QgT6mpK.png) Merchant (Tag: Guild Artisan)
 - Feat: Lucky
 - Skill Proficiencies: Animal Handling and Persuasion
 
-## Outlander
- ![](https://i.imgur.com/tNbDQEF.png)
+## ![](https://i.imgur.com/tNbDQEF.png) Outlander
 - Feat: Tough
 
-## Sailor (Tag: Urchin)
- ![](https://i.imgur.com/wFa8ZT4.png)
+## ![](https://i.imgur.com/wFa8ZT4.png) Sailor (Tag: Urchin)
 - Feat: Tavern Brawler
 - Skill Proficiencies: Acrobatics and Perception
 
-## Sage
- ![](https://i.imgur.com/3tIlUHd.png)
+## ![](https://i.imgur.com/3tIlUHd.png) Sage
 - Feat: Magic Initiate: Wizard
 
-## Scribe (Tag: Acolyte)
- ![](https://i.imgur.com/wUPA9Bc.png)
+## ![](https://i.imgur.com/wUPA9Bc.png) Scribe (Tag: Acolyte)
 - Feat: Skilled
 - Skill Proficiencies: Investigation and Perception
 
-## Soldier
- ![](https://i.imgur.com/WpDgTUN.png)
+## ![](https://i.imgur.com/WpDgTUN.png) Soldier
 - Feat: Savage Attacker
 
-## Urchin
- ![](https://i.imgur.com/3bdAAA4.png)
+## ![](https://i.imgur.com/3bdAAA4.png) Urchin
 - Feat: Savage Attacker
 
-## Wayfarer (Tag: Criminal)
- ![](https://i.imgur.com/1BCPAmY.png)
+## ![](https://i.imgur.com/1BCPAmY.png) Wayfarer (Tag: Criminal)
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
 # Races 
 
-## Dragonborn
- ![](https://i.imgur.com/0XLTw3S.png)
+## ![alt text](https://i.imgur.com/jY89W13.png) Aasimar
 
-- Darkvision
-- Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
+Choose **Aasimar** from the list of **Versatile** passives available to **Humans**.
+
+>Aasimar are mortals who carry a spark of the Upper Planes within their souls. Whether descended from an angelic being or infused with celestial power, they can fan that spark to bring light, healing, and heavenly fury.
+>
+>Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and have features that hint at their celestial heritage, such as metallic freckles, luminous eyes, a halo, or the skin color of an angel (silver, opalescent green, or coppery red). These features start subtle and become obvious when the aasimar learns to reveal their full celestial nature.
+
+#### Level 1
+You have Resistance to Necrotic and Radiant damage, Darkvision, can cast the Light cantrip, use Healing Hands.
+#### Level 3
+You Can transform with Celestial Revelation as a Bonus Action.
+
+## ![](https://i.imgur.com/0XLTw3S.png) Dragonborn
+ 
+#### Level 1: Darkvision
+
+#### Level 1: Breath Weapon
+
+When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
+
 #### Level 5: Draconic Flight
 You can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
-## Drow
- ![](https://i.imgur.com/omrOUzB.png)
+## ![](https://i.imgur.com/omrOUzB.png) Drow
 
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## Dwarf
- ![](https://i.imgur.com/zGZWcVr.png)
-- Speed: 30 feet
-- Superior Darkvision
+## ![](https://i.imgur.com/zGZWcVr.png) Dwarf
+#### Level 1: Speed: 30 feet
+#### Level 1: Superior Darkvision
 
-## Elf
- ![](https://i.imgur.com/hdJ45yB.png)
+## ![](https://i.imgur.com/hdJ45yB.png) Elf
 #### Level 1: Keen Senses: You have proficiency in the Insight, Perception, or Survival skill.
 
-## High Elf
- ![](https://i.imgur.com/QzWVnPx.png)
+## ![](https://i.imgur.com/QzWVnPx.png) High Elf
 #### Level 1: Wizard Cantrip
 #### Level 3: Faerie Fire
 #### Level 5: Misty Step
 
-## Wood Elf
- ![](https://i.imgur.com/zAIW6FO.png)
+## ![](https://i.imgur.com/zAIW6FO.png) Wood Elf
 #### Level 1: Your Speed increases to 35 feet
 #### Level 3: Longstrider
 #### Level 5: Pass without Trace
 
-## Githyanki
- ![](https://i.imgur.com/bDSBj4l.png)
+## ![](https://i.imgur.com/bDSBj4l.png) Githyanki
 - Psychic Resilience: You have resistance to psychic damage.
 #### Level 10: Githyanki Parry
 
-## Gnome
- ![](https://i.imgur.com/SQ6TGl5.png)
+## ![](https://i.imgur.com/SQ6TGl5.png) Gnome
 - Speed: 30 feet
 
-## Goliath 
- ![](https://i.imgur.com/vdd9l9T.png)
-- Speed: 35 feet
+## ![](https://i.imgur.com/x7t3WNQ.png) Goliath
+
+Choose **Goliath** from the list of **Versatile** passives available to **Humans**.
+
+>Towering over most folk, goliaths are distant descendants of giants. Each goliath bears the favors of the first giants—favors that manifest in various supernatural boons, including the ability to quickly grow and temporarily approach the height of goliaths’ gigantic kin.
+> 
+> Goliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse—unencumbered by the internecine conflicts that have ravaged giantkind for ages—and seek heights above those reached by their ancestors.
+
+#### Level 1: Speed: 35 feet
 #### Level 1: Giant Ancestry: You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
-    - Cloud’s Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
-    - Fire’s Burn. When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.
-    - Frost’s Chill. When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.
-    - Hill’s Tumble. When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.
-    - Stone’s Endurance. When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
-    - Storm’s Thunder. When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.
+  - Cloud’s Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
+  - Fire’s Burn. When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.
+  - Frost’s Chill. When you hit a target with an attack roll and deal damage to it, you can also deal 1d6 Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.
+  - Hill’s Tumble. When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.
+  - Stone’s Endurance. When you take damage, you can take a Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
+  - Storm’s Thunder. When you take damage from a creature within 60 feet of you, you can take a Reaction to deal 1d8 Thunder damage to that creature.
 #### Level 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
+## ![](https://i.imgur.com/bG5Zplf.png) Half-Elf
+#### Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
+#### Level 1: Gain racial spells corresponding to your elven bloodline.
 
-## Half-Elf
- ![](https://i.imgur.com/bG5Zplf.png)
-- Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
-- Gain racial spells corresponding to your elven bloodline.
+## ![](https://i.imgur.com/bMfuE6u.png) Half-Orc
 
-## Half-Orc
- ![](https://i.imgur.com/bMfuE6u.png)
+#### Level 1: Superior Darkvision
+#### Level 1: Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
-- Superior Darkvision
-- Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
+## ![](https://i.imgur.com/cllZm5T.png) Halfling
 
-## Halfling
- ![](https://i.imgur.com/cllZm5T.png)
+#### Level 1: Speed: 30 feet
 
-- Speed: 30 feet
+## ![](https://i.imgur.com/VP8nBud.png) Human
 
-## Human
- ![](https://i.imgur.com/VP8nBud.png)
-
-- Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
+#### Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 #### Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
-## Tiefling
- ![](https://i.imgur.com/mdPxMdD.png)
+## ![](https://i.imgur.com/mdPxMdD.png) Tiefling 
 
-
-## Asmodeus Tiefling
- ![](https://i.imgur.com/CzBc2oc.png)
+## ![](https://i.imgur.com/CzBc2oc.png) Asmodeus Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
 #### Level 3: Ray of Sickness
 #### Level 5: Hold Person
 
-## Mephistopheles Tiefling
- ![](https://i.imgur.com/NrG1DxF.png)
+## ![](https://i.imgur.com/NrG1DxF.png) Mephistopheles Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Necrotic, Chill Touch
 #### Level 3: False Life
 #### Level 5: Ray of Enfeeblement
 
-## Zariel Tiefling
- ![](https://i.imgur.com/485otPl.png)
+## ![](https://i.imgur.com/485otPl.png) Zariel Tiefling
 
 #### Level 1: Thaumaturgy, Resistance to Fire, Fire Bolt
 #### Level 3: Hellish Rebuke
@@ -1454,7 +1439,7 @@ Once per turn, by expending 2 meters of your movement speed, you can jump up to 
 #### Crossbow Expert 
 - Dual Wielding. When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property.
 
-#### Crusher (homebrew)
+#### Crusher (Homebrew)
 Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
 
 #### Defensive Duelist 
@@ -1494,7 +1479,7 @@ Agile Movement. Opportunity Attacks have Disadvantage against you.
 
 #### Performer: Encouraging Song. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
 
-#### Piercer (homebrew)
+#### Piercer (Homebrew)
 Your piercing damage ignores resistance. When you deal piercing damage to a creature, it must succeed on a Constitution saving throw or be suffering from Gaping Wounds until the end of its next turn.
 
 #### Poisoner 
@@ -1521,7 +1506,7 @@ Once per turn when you hit a target with a weapon, you can roll the weapon’s d
 - Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
 - Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
 
-#### Slasher (homebrew)
+#### Slasher (Homebrew)
 Your slashing damage ignores resistance. When you deal slashing damage to a creature, it must succeed on a Constitution saving throw or be Bleeding until the end of its next turn.
 
 #### Spell Sniper 
