@@ -9140,6 +9140,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f7c279a4-5c97-4b27-9bcf-75008f1c907e" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcba62ea6g346ag4337g6ba3g5b4d15f17a2e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RESISTANCE,100,100);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RESISTANCE,100,100)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9173,6 +9175,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SacredFlame" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SACREDFLAME,100,-1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
