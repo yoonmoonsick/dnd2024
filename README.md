@@ -103,7 +103,7 @@ If you choose a newly added background, you gain a spell that can be used once p
 
 # Races 
 
-## ![alt text](https://i.imgur.com/jY89W13.png) Aasimar
+## ![](https://i.imgur.com/s3dE2kW.png) Aasimar
 
 Choose **Aasimar** from the list of **Versatile** passives available to **Humans**.
 
@@ -155,7 +155,7 @@ You can channel draconic magic to give yourself temporary flight. As a Bonus Act
 ## ![](https://i.imgur.com/SQ6TGl5.png) Gnome
 - Speed: 30 feet
 
-## ![](https://i.imgur.com/x7t3WNQ.png) Goliath
+## ![](https://i.imgur.com/dzJsHZp.png) Goliath
 
 Choose **Goliath** from the list of **Versatile** passives available to **Humans**.
 
@@ -1382,6 +1382,12 @@ When an ally within 30 feet of you who can hear you is killed, you can use your 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SanguineKnight.png?raw=true)
 
+>The blood-knights of Hell, Sanguine Knights serve Sutekh, Lord of Blood. Their sorceries drain their enemies’ life force, pouring this stolen vitality into infernal rituals to turn the tide of battle.
+>
+>Sutekh rules Naraka, the City of Blood. Recognized as the greatest sorcerer in hell, he carries the title of High Sanguinary and rules from the Temple of Vitality. He is a master of blood magic, and his inner circle of priests and wizards are the Bloodliches, undead spellcasters whose corporeal forms turned to ash centuries ago and whose bodies are crafted from solid blood.
+>
+>Sutekh’s illriggers all belong to a cult known as the Chalice of Vitality. Knights of the Chalice drink deeply of their enemies’ essence, draining it to power their magics. Other members of the Order of Desecration fear that the Sanguine Knights seek more than Sutekh’s mere ascension to the Throne of Hell; some whisper that the Chalice secretly schemes to make Sutekh a god. This would, of course, be treason.
+
 #### Level 3: Sutekh’s Blessing
 When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain expertise in the Religion skill.
 
@@ -1401,6 +1407,10 @@ The magic that shields your allies now also saps their enemies’ strength. When
 ### Shadowmaster
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadowmaster.png?raw=true)
+
+>Belial rules Gehennom, the City of Darkness. He strives to rule Hell through poison, torture, and assassination. His illriggers strike from the shadows or use deception to earn high-ranking positions close to powerful rulers. Many Shadowmasters run networks of spies and assassins who have no idea of the infernal provenance of their leader.
+>
+>Shadowmasters are sworn not to reveal their true allegiance, and if need be, they must take their own lives to fulfill this oath. Many Shadowmasters prepare elaborate plans for their own assassination so that, should they risk discovery, their assassination obscures the truth. Of course, these killers never learn they were hired by their deceased target.
 
 #### Level 3: Marked for Death
 You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.
@@ -1616,8 +1626,7 @@ Appropriate spells have been added to the spell list for each class.
 - ***Cantrip Upgrade***. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
 - Available For: Sorcerer, Warlock, Wizard, Illrigger
 
-### Booming Blade
-> **Note** Cannot be affected by extra attack.
+### [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
 
 ### Dancing Lights 
 - School: Illusion 
@@ -1803,7 +1812,6 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
 - You summon an otherworldly being that appears as a loyal steed. The steed enhances your attack, defense, and movement speed.
-> **Note** The implementation method may change in the future.
 
 ### [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
 - Duration: Concentration, 10 Minutes
@@ -1811,17 +1819,14 @@ Appropriate spells have been added to the spell list for each class.
 - ***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
 
 ### [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
-> **Note** Casting Time: 1 Bonus Action
 
 ### [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
 - You touch a weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.
 - ***Using a Higher-Level Spell Slot.*** The bonus increases to +2 with a level 3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
 
 ### [Mirror Image](https://www.dndbeyond.com/spells/2619060-mirror-image)
-> **Note** Improve the mechanism to be more faithful to the rulebook.
 
 ### [Moonbeam](https://www.dndbeyond.com/spells/2619134-moonbeam)
-> **Note** A creature makes save only once per turn.
 
 ### [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
 - An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm’s area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion.
