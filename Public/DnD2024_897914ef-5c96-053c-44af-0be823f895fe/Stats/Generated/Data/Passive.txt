@@ -3604,6 +3604,12 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Item"
 type "PassiveData"
 
+new entry "MAG_Fire_IncreasedDamage_Passive"
+type "PassiveData"
+using "MAG_Fire_IncreasedDamage_Passive"
+data "DescriptionParams" "DealDamage(2,Fire)"
+data "Boosts" "IF(HasDamageDoneForType(DamageType.Fire)):DamageBonus(2, Fire);"
+
 new entry "MAG_Healer_HealSelfPoisonWeapon_Passive"
 type "PassiveData"
 using "MAG_Healer_HealSelfPoisonWeapon_Passive"
