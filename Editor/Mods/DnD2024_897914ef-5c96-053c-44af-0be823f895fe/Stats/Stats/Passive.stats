@@ -76,6 +76,20 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="DarkvisionRangeMin(12);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);Resistance(Radiant,Resistant);Resistance(Necrotic,Resistant);UnlockSpell(Target_Light);UnlockSpell(Target_HealingHands);UnlockSpell(Shout_CelestialRevelation);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4439edbf-6272-41ac-b1ec-dc3aab0a321e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Race_Human_Goliath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca6ee450gaf6fgec98g8841g0a632705c050" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34f791acgf5fbg77efg5facg8074c09b7092" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h7af62aa3g28adga035g790dgdf10465af544" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Azer_Overheat" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CarryCapacityMultiplier(1.25);ScaleMultiplier(1.2);ActionResource(Movement,1.5,0);UnlockSpell(Shout_GoliathSelect);UnlockSpell(Shout_Enlarge_Goliath);ActionResource(GiantAncestryCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(GiantAncestryCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(GiantAncestryCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(GiantAncestryCharge,1,0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
@@ -559,7 +573,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Alert" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73c13486-a576-4b09-a12f-fc71be054fe1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b9949f4gd1bdg39d7g5ea0gf1bcc9c517dd" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -711,7 +725,8 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Rage') or SpellId('Rage_Frenzy') or SpellId('Rage_Totem_Bear') or SpellId('Rage_Totem_Eagle') or SpellId('Rage_Totem_Elk') or SpellId('Rage_Totem_Tiger') or SpellId('Rage_Totem_Wolf')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(INSTINCTIVE_POUNCE,100,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerCombat;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);StatusImmunity(SURPRISED);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);StatusImmunity(SURPRISED);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1844,7 +1859,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebd016c2g97b3gdad1gdbdfg1540757c1697" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PoisonerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(PoisonerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(PoisonerCharge,1,0);UnlockSpell(Shout_Poisoner_BrewPoison)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PoisonerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(PoisonerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(PoisonerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(PoisonerCharge,1,0);UnlockSpell(Shout_Poisoner_BrewPoison);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Poison)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(POISONED,100,2)" />
@@ -1916,10 +1931,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fae0e4a0-e933-4e94-855e-b67467f10618" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h238f09c9g07eeg1c14g6c5ag082fbaea8af0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(ProficiencyBonus)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(D8Cantrip)+ProficiencyBonus)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2033,7 +2049,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Frenzy_Boosts" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_FRENZY',context.Source) and not HasStatus('FRENZY_BONUS_APPLIED',context.Source)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(LevelMapValue(RageFrenzyDamage));IF(IsUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(RageFrenzyDamage));EntityThrowDamage(2d6);IF(CharacterLevelGreaterThan(8)):EntityThrowDamage(1d6)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -2299,7 +2315,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="DreadAmbusher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7192d1f0-9cee-4a20-95cb-327c58d3b4ee" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3;Distance(3);2d6" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2962,7 +2979,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbba9c54g9f89g1845gea12gd6ec3c05b47c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b6185b5g0704g72e5gb52dg878fad5728a8" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcb6cb63ag6ce8g8346g80b7g730e6c95b6f6" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharlatanTrick);ActionResource(CharlatanTrickCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(CharlatanTrickCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(CharlatanTrickCharge,1,0);Skill(Deception,IntelligenceModifier);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CharlatanTrick);ActionResource(CharlatanTrickCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(CharlatanTrickCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(CharlatanTrickCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(CharlatanTrickCharge,1,0);Skill(Deception,IntelligenceModifier);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3922,8 +3939,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="52f3daf0-87ad-488c-9566-879648a27f54" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bb85900g676fg434cg93b3g3e9319022d5a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h98ef9578gdc95g570cg60beg155aa126819a" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5390,7 +5408,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeWeapon_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f703c7b-85ae-4018-af94-7a02c27b5aaf" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(Skill,Perception)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);Advantage(Skill,Perception);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5399,7 +5418,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeBonus_1_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3983dec5-e078-438d-9a6a-294b0edd656a" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(1);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5407,7 +5427,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cea9fcac-70f2-4af5-8bfe-dc3cbb5375d8" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_InitiativeBonus_2_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce6f35c-add4-4781-a3f1-cae8d2e1edd9" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5416,7 +5437,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_PHB_Sentinel_Shield_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f45c1e76-581f-4c8d-a21c-d009f96eef23" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(Skill, Perception)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(3);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);Advantage(Skill, Perception);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5431,7 +5453,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9268cbb2-bacc-408a-852a-247d4decb0ca" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Bhalist_Hat_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="59417b4a-e2e6-44c6-9796-cb9a879f3106" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);DarkvisionRange(3)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);DarkvisionRange(3);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5439,7 +5462,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="634c00be-1dc0-4e2a-92c4-773ae70b7d98" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Monk_Martial_Lethality_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae45755e-2b23-4b1a-b2fe-3c798db8b0bf" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack, 2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Initiative(2);Skill(Perception, 2)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack, 2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);Initiative(2);Skill(Perception, 2);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5447,7 +5471,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="96197cc7-c510-4d8f-9baf-374c3429d259" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_PHB_ElvenChain_AddedEffect_Armor_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f73a11ba-d61e-47a3-b6d3-ddf1ad7088fc" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);Advantage(SavingThrow, Dexterity)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);Advantage(SavingThrow, Dexterity);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
