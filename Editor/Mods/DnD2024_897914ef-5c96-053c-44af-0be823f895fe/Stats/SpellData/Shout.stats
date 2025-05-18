@@ -3546,9 +3546,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7acb796e-dc30-443e-9c1c-03b264fe4642" />
         <field name="Name" type="NameTableFieldDefinition" value="BladeWard" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="677657b6-7aec-41d1-8dc7-64a05ed1e68a" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BLADEWARD,100,-1);ApplyStatus(BLADE_WARD,100,10)" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,10)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_BLADEWARD,100,-1);ApplyStatus(BLADE_WARD,100,100)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,100)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3634,20 +3634,6 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="78ab57f2-edce-4697-8be4-7bf7c2e76f92" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="dedc1360-817d-40bf-891d-4bb05784c407" />
-        <field name="Name" type="NameTableFieldDefinition" value="BladeCantripDismiss" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,ActionPoint,1,0);RemoveStatus(SELF,GREENFLAME_BLADE_OWNER);RemoveStatus(SELF,BOOMING_BLADE_OWNER);RemoveStatus(SELF,TRUE_STRIKE_OWNER)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DispelMagic" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a893fc5g5af3gc878gf756g8bce8260e639" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasPassive('WarMagic')" />
-        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnApply;OnApplyAndTurn" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

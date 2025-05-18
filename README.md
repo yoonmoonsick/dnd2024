@@ -1617,9 +1617,9 @@ Appropriate spells have been added to the spell list for each class.
 ### Acid Splash 
 - School: Evocation
 
-### Blade Ward 
-- Duration: Concentration, up to 1 minute
-- Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.
+### Blade Ward (Homebrew)
+- Duration: Concentration, up to 10 minute
+- AC +1.
 
 ### [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.
@@ -1695,8 +1695,8 @@ Appropriate spells have been added to the spell list for each class.
 - Bard, Druid, Sorcerer, Warlock, Wizard
 - Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away.
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach Levels 5 (2d6), 11 (3d6), and 17 (4d6).
-### Resistance 
-- You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn.
+### Resistance
+- You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1 (Homebrew).
 ### True Strike 
 - Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
 - ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach Levels 5 (1d6), 10 (2d6), and 17 (3d6).
