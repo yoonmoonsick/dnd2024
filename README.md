@@ -778,6 +778,8 @@ Your strikes now carry supernatural power. When you hit a target with an attack 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
 
 #### Level 3: Holy Rebuke
+HolyRebuke now applies to both the target and the caster.
+
 #### Level 3: Sacred Weapon
 When you take the Attack action, you can expend one use of your Channel Divinity to imbue one Melee weapon that you are holding with positive energy. For 10 minutes or until you use this feature again, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage. The weapon also emits Bright Light in a 20-foot radius and Dim Light 20 feet beyond that.
 
