@@ -4524,9 +4524,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bcd4d240-2aa2-4c95-9fea-092d287bdab5" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Bind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f297a9c5-cadb-4c19-96bc-f4d5eed62659" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PactOfTheBlade_Bind;Shout_PactOfTheBlade_Necrotic;Shout_PactOfTheBlade_Psychic;Shout_PactOfTheBlade_Radiant;Shout_PactOfTheBlade_Weapon" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PactOfTheBlade_Weapon;Shout_PactOfTheBlade_Necrotic;Shout_PactOfTheBlade_Psychic;Shout_PactOfTheBlade_Radiant;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand,HEXBLADE_BIND,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4534,7 +4536,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="63460d67-8c20-44c2-8c48-94e6bab4a193" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Necrotic" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_PactOfTheBlade_Bind" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_NECROTIC,100, 999);IF(HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand,HEXBLADE_BIND,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_NECROTIC,100, -1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ad6568cg1fa8gb3f3g87bfg3676652c7675" version="1" />
@@ -4552,6 +4554,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fc23a5a6-f05b-40c3-8e0f-99377cfb04cc" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dea85f03-4f00-4960-815f-f06e434da129" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4559,7 +4562,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b4aefc51-4380-43c4-803d-4a6d8ecfe710" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="63460d67-8c20-44c2-8c48-94e6bab4a193" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_PSYCHIC,100, 999);IF(HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand,HEXBLADE_BIND,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_PSYCHIC,100, -1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h88be6e15gc15fg5304g54a2g35695d08f305" version="1" />
       </fields>
@@ -4569,7 +4572,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e4391e48-03de-4c47-89d1-632728b11817" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Radiant" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="63460d67-8c20-44c2-8c48-94e6bab4a193" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_RADIANT,100, 999);IF(HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand,HEXBLADE_BIND,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_RADIANT,100, -1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d2877f3ga5a9g76ccgcd4fg09b3305980e1" version="1" />
       </fields>
@@ -4579,7 +4582,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3f599847-821e-43c6-a1a1-0558ad612ede" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Weapon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="63460d67-8c20-44c2-8c48-94e6bab4a193" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_WEAPON,100, 999);IF(HasPassive('HexWarrior',context.Source)):ApplyEquipmentStatus(MainHand,HEXBLADE_BIND,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, PACT_BLADE,100, -1);IF(HasPassive('HexWarrior',context.Source)):ApplyStatus(SELF,HEXBLADE_BIND_TECHNICAL,100,-1);ApplyEquipmentStatus(MainHand, PACTOFTHEBLADE_WEAPON,100, 0);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Damage" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b1da87cg01e8gfdadg174ag47650f4cdda5" version="1" />
       </fields>

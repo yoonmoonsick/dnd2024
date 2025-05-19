@@ -3065,6 +3065,17 @@ type "PassiveData"
 using "ClarifiedMortality"
 data "Conditions" "not Item() and IsCritical() "
 
+new entry "HexWarrior"
+type "PassiveData"
+using "HexWarrior"
+
+new entry "PactOfTheBlade_Hex"
+type "PassiveData"
+using "PactOfTheBlade_Hex"
+data "BoostContext" "OnShortRest;OnCreate"
+data "BoostConditions" "ClassLevelHigherOrEqualThan(1,'Warlock',context.Source);"
+data "StatsFunctorContext" "OnShortRest;OnCreate"
+
 new entry "YMS_Wizard"
 type "PassiveData"
 
@@ -3667,6 +3678,26 @@ data "Boosts" "DarkvisionRangeMin(24);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "MAG_ShockingBound_Passive_Technical_Passive"
+type "PassiveData"
+using "MAG_ShockingBound_Passive_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');"
+
+new entry "MAG_Bound_ProficiencyToDamage_Technical_Passive"
+type "PassiveData"
+using "MAG_Bound_ProficiencyToDamage_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');"
+
+new entry "MAG_Bound_Throwing_Technical_Passive"
+type "PassiveData"
+using "MAG_Bound_Throwing_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');"
+
+new entry "MAG_BoundToBeBonded_Technical_Passive"
+type "PassiveData"
+using "MAG_BoundToBeBonded_Technical_Passive"
+data "Conditions" "StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');"
+
 new entry "MAG_Acid_AcidDamageOnWeaponAttack_Ring_Passive"
 type "PassiveData"
 using "MAG_Acid_AcidDamageOnWeaponAttack_Ring_Passive"
@@ -3845,26 +3876,6 @@ new entry "MAG_Marksmanship_Passive"
 type "PassiveData"
 using "MAG_Marksmanship_Passive"
 data "Boosts" "RollBonus(RangedWeaponAttack,1);RollBonus(RangedOffHandWeaponAttack,1);RollBonus(RangedSpellAttack,1);IF(SpellTypeIs(SpellType.Throw)):RollBonus(Attack,1)"
-
-new entry "MAG_BoundToBeBonded_Technical_Passive"
-type "PassiveData"
-using "MAG_BoundToBeBonded_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')"
-
-new entry "MAG_ShockingBound_Passive_Technical_Passive"
-type "PassiveData"
-using "MAG_ShockingBound_Passive_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')"
-
-new entry "MAG_Bound_ProficiencyToDamage_Technical_Passive"
-type "PassiveData"
-using "MAG_Bound_ProficiencyToDamage_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')"
-
-new entry "MAG_Bound_Throwing_Technical_Passive"
-type "PassiveData"
-using "MAG_Bound_Throwing_Technical_Passive"
-data "Conditions" "StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')"
 
 new entry "MAG_Legendary_PsionicResistance_Passive"
 type "PassiveData"
