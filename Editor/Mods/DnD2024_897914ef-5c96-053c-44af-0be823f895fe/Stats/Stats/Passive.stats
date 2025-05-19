@@ -4313,6 +4313,23 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and IsCritical() " />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ef1394f-bd1b-491e-b42b-fbeabd36e7e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="HexWarrior" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c9334a22-51b4-47cf-b3d4-790239f6615a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04bd8b26-9260-42fe-9e63-dc301cf2d069" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheBlade_Hex" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecde94b6-438c-4bae-b871-e1d47af3c98d" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(1,'Warlock',context.Source);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc640528-0800-4b81-b771-c17fdbf45ec5" />
@@ -5124,6 +5141,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bac69933-8b9f-47e3-abef-3aa2af68e1c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_ShockingBound_Passive_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58462178-6280-4c35-a289-68fd4e0cedab" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9529b41d-2cde-4559-9536-5a638e8ee2bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_ProficiencyToDamage_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b9bdd8a2-9eef-4496-8749-a2701e2a0a5b" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d918e967-0dec-4ca2-a095-a28e408b9841" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_Throwing_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4c161e44-8c84-442e-8ea9-4f33022fef9e" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab3a4ead-efdf-4498-baed-dd914ce6b79b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_BoundToBeBonded_Technical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b3a04f86-2eb1-4833-a97e-986ef52e65e2" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('PACT_BLADE') or StatusId('HEXBLADE_BIND') or StatusId('WEAPON_BOND_2');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ded8a190-e3cc-474d-bb57-3ea66ab4e011" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Acid_AcidDamageOnWeaponAttack_Ring_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f6e81882-e965-4b75-9610-94315905b95d" />
@@ -5395,38 +5444,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Marksmanship_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1970396a-935a-4a6c-a674-238412bc17eb" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(RangedWeaponAttack,1);RollBonus(RangedOffHandWeaponAttack,1);RollBonus(RangedSpellAttack,1);IF(SpellTypeIs(SpellType.Throw)):RollBonus(Attack,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4cba544e-91dd-4819-9835-9c7077d6b1e0" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_BoundToBeBonded_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0d526822-ab3f-4593-a31e-9d647ba3b17d" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f4edb5ab-a337-4df7-a924-e9b0796ca7d8" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_ShockingBound_Passive_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a6b7ce7b-a187-4f3b-8ca6-6d6f1b1c0b8d" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9696cdcc-fcbb-4761-aaa4-ff016a41734b" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_ProficiencyToDamage_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="98f4e1b0-8dee-470b-88de-990df6ff5063" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c7c93f06-6aae-4990-91ba-26694ebafdc2" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Bound_Throwing_Technical_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0325d78c-a50f-45c8-8582-9260a44d9b24" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('WEAPON_BOND') or StatusId('WEAPON_BOND_2') or StatusId('PACT_BLADE') or StatusId('PACT_BLADE_NECROTIC') or StatusId('PACT_BLADE_PSYCHIC') or StatusId('PACT_BLADE_RADIANT')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
