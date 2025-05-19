@@ -556,7 +556,7 @@ When you reach a Druid level specified in the Circle of the Sea Spells table, yo
 - Level 1: Ray of Frost, Fog Cloud, Thunderwave
 - Level 3: Gust of Wind, Shatter
 - Level 5: Lightning Bolt, Sleet Storm
-- Level 7: Ice Storm Storm Sphere
+- Level 7: Ice Storm, Storm Sphere
 - Level 9: Conjure Elemental, Hold Monster
  
 #### Level 3: Wrath of the Sea
