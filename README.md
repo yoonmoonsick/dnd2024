@@ -355,6 +355,35 @@ The option you chose for Blessed Strikes grows more powerful.
   - Divine Strike. The extra damage of your Divine Strike increases to 2d8.
   - Potent Spellcasting. When you cast a Cleric cantrip and deal damage to a creature with it, you can give vitality to yourself or another creature within 60 feet of yourself, granting 10 Temporary Hit Points.
 
+### Arcana Domain
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArcanaDomain.png?raw=true)
+
+>Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.
+>
+>The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and Wee Jas of Greyhawk.
+
+#### Domain Spells (Always prepared)
+- Level 1: Magic Missile, Chromatic Orb 
+- Level 3: Magic Weapon, Mirror Image
+- Level 5: Blink, Haste
+- Level 7: Dimension Door, Banishment
+- Level 9: Planar Binding, Flame Strike
+
+#### Level 3: Arcane Initiate
+You gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.
+
+#### Level 3: Channel Divinity: Arcane Abjuration
+- You can use your Channel Divinity to abjure otherworldly creatures.
+- As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
+- After you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute
+
+#### Level 6: Spell Breaker
+Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell.
+
+#### Level 11: Arcane Mastery
+You choose four spells from the wizard spell list. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you.
+
 ### Death Domain
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DeathDomain.png?raw=true)
