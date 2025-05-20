@@ -5737,7 +5737,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="286c3dfd-0175-4506-8194-ce38ef88f0d6" />
         <field name="Name" type="NameTableFieldDefinition" value="MagicInitiateCleric" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="830a9584-d57f-4d6b-a903-87e327d35620" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5870bec4g6420g4ea8ga493g5121992156c3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8053a868gf1aeg0321ge90bg0c3ff639de9a" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateCleric" />
@@ -5747,6 +5746,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6229,8 +6229,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="830a9584-d57f-4d6b-a903-87e327d35620" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0fc85524-5f46-4a32-9648-7e0fb8445907" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheTome" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a86efcde-4bd1-4000-86f5-282dad36734e" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbc234a9eg17a4g17d4gc99fg90cc7b72ad37" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Hex);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PACTOFTHETOME_RESOURCE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e55fbcb-d846-4e1d-a0a9-97e84f261425" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheTome_Resource" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnEquip;OnProficiencyChange;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',13,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',15,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',17,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',19,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',21,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',23,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',25,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',27,context.Source)):ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma',29,context.Source)):ActionResource(PactOfTheTome,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a30153e-ccb2-41a8-8acd-ea9fe68fd71e" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheTome_Replace" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('PactOfTheTome',1,0,false,false,context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_Hex'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,PactOfTheTome,1,0));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="830a9584-d57f-4d6b-a903-87e327d35620" />
+        <field name="Name" type="NameTableFieldDefinition" value="PactOfTheTome_old" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a86efcde-4bd1-4000-86f5-282dad36734e" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PactOfTheTome)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4319a04gb2ecg4312g0b7fg1f461f154cd9" version="1" />

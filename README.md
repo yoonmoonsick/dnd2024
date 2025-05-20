@@ -1102,7 +1102,7 @@ Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Lon
 - Eldritch Mind: You have Advantage on Constitution saving throws that you make to maintain Concentration.
 - Pact of the Blade: Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.
 - Pact of The Chain
-- Pact of the Tome: Learn three cantrips from any class’s spell list.
+- Pact of the Tome: You always have the Hex spell prepared. You can cast Hex without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest. (Homebrew)
 #### Eldritch Invocations Level 2
 - Book of Ancient Secrets: The spell power Level is equal to the Level of the opened Warlock spell slot.
 - Eldritch Spear: The range of your Eldritch Blast increases by half.
