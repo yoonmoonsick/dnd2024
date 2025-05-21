@@ -853,7 +853,8 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FeyWanderer.png?raw=true)
 
-#### Fey Wanderer Spells: When you reach a Ranger Level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.
+#### Fey Wanderer Spells
+When you reach a Ranger Level specified in the Fey Wanderer Spells table, you thereafter always have the listed spells prepared.
 - Level 3: Charm Person
 - Level 5: Misty Step
 - Level 9: Summon Fey
@@ -895,6 +896,35 @@ You gain one of the following feature options of your choice. Whenever you finis
 
 #### Level 3: Gathered Swarm
 You can replace the swarm you are interacting with after each long rest.
+
+### Winter Walker
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WinterWalker.png?raw=true)
+
+> Forged in the howling winds and endless snows of Icewind Dale, Winter Walkers are rangers who have embraced the unforgiving cold and made it their ally. These hunters become one with the tundra, their breath forming frost and their gaze as piercing as a shard of ice. Over time, they take on an otherworldly aspect, embodying the very blizzards they walk through. 
+> 
+> More than just survivalists, Winter Walkers are experts in the strange and supernatural phenomena that haunt the Far North. They study the ancient, latent magics of shattered Netherese ruins, track elusive creatures such as yetis and crag cats, and prepare for threats rising from the Underdark's frozen tunnels. Their magic is as cold and cruel as the land they defend.
+
+#### Winter Walker Spells
+When you reach a Ranger Level specified in the Winter Walker Spells table, you thereafter always have the listed spells prepared.
+- Level 3: Ice Knife
+- Level 5: Rime's Binding Ice
+- Level 9: Remove Curse
+
+#### Level 3: Frigid Explorer
+You have Resistance to Cold Damage.
+
+#### Level 3: Polar Strike
+When you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d4 Cold damage.
+
+#### Level 3: Hunter's Rime
+Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter’s Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter’s Mark, it can’t take the Disengage action. 
+
+#### Level 7: Fortifying Soul
+You choose a creature. The chosen creature regains hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
+
+#### Level 11: Chilling Retribution
+When a creature hits you with an attack roll, you can use a Reaction to force it to make a Wisdom saving throw against your spell save DC; on a failed save, it is Frightened until the end of it's next turn. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
 
 ## Rogue
 
