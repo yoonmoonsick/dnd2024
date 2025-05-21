@@ -565,6 +565,20 @@ data "InterruptDefaultValue" "Enabled;Ask"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableContext" "OnStatusApplied;OnStatusRemoved"
 
+new entry "YMS_Ranger"
+type "InterruptData"
+
+new entry "Interrupt_ChillingRetribution"
+type "InterruptData"
+using "Interrupt_TAD_Charm"
+data "DisplayName" "h0015a66bg00d8gb433g2444g385578d397ac;1"
+data "Description" "h2aa61cc2gd613g83fdg0ac9g78f2ab3cb5df;1"
+data "Icon" "PassiveFeature_ArmorOfAgathys"
+data "Conditions" "IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and Enemy(context.Source,context.Observer) and IsAttack() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and HasLastAttackTriggered();"
+data "Properties" "UseSpell(OBSERVER_SOURCE,Target_ChillingRetribution,true,true,true);"
+data "Cost" "ReactionActionPoint:1;ChillingRetribution:1;"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged"
+
 new entry "YMS_Rogue"
 type "InterruptData"
 
