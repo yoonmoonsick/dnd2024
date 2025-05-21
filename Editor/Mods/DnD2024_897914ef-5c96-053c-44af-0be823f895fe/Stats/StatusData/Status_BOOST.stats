@@ -618,6 +618,37 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not (HasStatus('DARKNESS_CASTER') or HasStatus('DARKNESS_CASTER_RECAST'))" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="271d72ac-94a0-4bb4-8048-83fe2ecec9f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="BINDING_ICE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d95486db-6139-43c7-a246-5b518c38e8a9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had098508g9b5ag33begee64g27e94ffcb4c3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Frozen" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Water" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="MaterialType" type="EnumerationTableFieldDefinition" value="FadingOverlay" enumeration_type_name="MaterialType" version="1" />
+        <field name="MaterialApplyBody" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyArmor" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyWeapon" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyNormalMap" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialFadeAmount" type="IntegerTableFieldDefinition" value="3000" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Petrified" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Downed" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="BindingIceRemovalDamage()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="62318bbf-d36a-497c-91a4-bda8f7fb7af7" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Frost_MO_Stop" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC()" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(BINDING_ICE)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Restrained;SG_Condition;SG_Helpable_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="85fbb291-0ac2-465e-aa76-23b56d2dd371" />
