@@ -1868,6 +1868,12 @@ Appropriate spells have been added to the spell list for each class.
 - A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.
 - On a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.
 
+### [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_BindingIce.png?raw=true)
+- A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 3d8 cold damage and becomes hindered by ice formations for 10 turns, or until it succeeds on another saving throw, or a nearby creature uses an action to break the ice. Taking fire damage also ends the condition. A creature hindered by ice has its speed reduced to 0. On a successful save, a creature takes half damage and is not hindered by ice.
+- ***At Higher Levels***. When you cast this spell using a spell slot of 3rd level or higher, increase the cold damage by 1d8 for each slot level above 2nd.
+- Available For: Sorcerer, Wizard
+
 ### [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
 - Duration: Concentration, 1 Minute
 

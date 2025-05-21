@@ -415,3 +415,7 @@ end
 function KenseiWeapon()
     return IsWeaponOfProficiencyGroup('Shortbows|Longbows', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand)) | IsWeaponOfProficiencyGroup('Daggers|Sickles|Shortswords|Rapiers|Scimitars|Longswords', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))
 end
+
+function BindingIceRemovalDamage()
+    return ConditionResult(context.HitDescription.GetDamageDoneForType(DamageType.Fire) > 0)
+end
