@@ -1205,8 +1205,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17c09696gc56fg5109ga9e7g2722968d15e6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha3390e61g458cg8db5gb284g0f913654d158" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_MAG_TemporaryHP" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Tireless);ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(TirelessCharge,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(TirelessCharge,1,0);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1257,6 +1258,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WarPriestActionPoint" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(WarPriestActionPoint,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(WarPriestActionPoint,1,0)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3310,54 +3312,6 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(MindMagicLevel9(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2f81ea33-72b8-458e-84fe-683755965cde" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c4ff61b7-00b6-4d8c-8861-e7104d7dae2c" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="324bb6aa-5f98-4fff-b064-d2a69dd57fbc" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="edb258b9-e2e2-4531-9efa-01b2a08842f8" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a8e9c95f-de12-431f-882b-e7bc270e2fd0" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="08430836-4b42-4657-bf46-c0a6e7887d7c" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="15b480f7-a73d-4934-8823-85b18117c288" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bce621c7-a6fe-4560-8c8b-fef44a5c13b9" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3156cf29-299f-4b46-aa3d-a26921a0a0fa" />
@@ -3892,6 +3846,65 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8c808f8f-b918-46a1-a95d-9036293811eb" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Ranger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0b713fe9-8dff-433d-a17e-cac871aefa65" />
+        <field name="Name" type="NameTableFieldDefinition" value="WinterWalker_3_FrigidExplorer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="87e7848c-60df-48b2-80e8-8ace8894f463" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1de3766ag0a5eg986eg7aa1g450a6d7d62bb" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9cc670d2-20fe-49cb-a007-450a99e4b467" />
+        <field name="Name" type="NameTableFieldDefinition" value="WinterWalker_3_PolarStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe44b86-8284-4156-b1c6-274474df1888" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e257a05geb3eg3238g3daaga46ee4551b38" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadba9566gd956g2168g7029g5e2150f63f5e" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3217cf2a-ded9-4f32-9830-cc1e621915b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="WinterWalker_3_HuntersRime" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h06f0071bgad57g254cgdb5cgdf7329a2e8fb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85d4e58bge915gf038gd7e4gdd81b589cb05" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Frozen" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HuntersRimeCheck();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_RIME_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf900141-7a8f-41ad-8c39-87aa1358768b" />
+        <field name="Name" type="NameTableFieldDefinition" value="WinterWalker_7_FortifyingSoul" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10256381gcb09gdafcg37a2g25cb003228ee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h041ae077g8d60ga610gf926gb4fd9155eef8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Cold" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FortifyingSoul,1,0);UnlockSpell(Target_FortifyingSoul);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(FortifyingSoul,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(FortifyingSoul,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f77fc71-6bcd-4e51-9407-5f92cce0503f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WinterWalker_11_ChillingRetribution" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0015a66bg00d8gb433g2444g385578d397ac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2aa61cc2gd613g83fdg0ac9g78f2ab3cb5df" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArmorOfAgathys" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ChillingRetribution,1,0);UnlockInterrupt(Interrupt_ChillingRetribution);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(ChillingRetribution,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(ChillingRetribution,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
