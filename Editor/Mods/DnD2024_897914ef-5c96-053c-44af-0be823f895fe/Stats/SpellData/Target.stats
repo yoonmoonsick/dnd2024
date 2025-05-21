@@ -4891,7 +4891,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ead9be30-05e0-4dde-b64f-ed0991a89257" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_DragonsBreath_Acid;Target_DragonsBreath_Cold;Target_DragonsBreath_Fire;Target_DragonsBreath_Lightning;Target_DragonsBreath_Poison" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and (Tagged('HUMANOID') or Tagged('BEAST') or Tagged('CELESTIAL') or Tagged('FIEND') or Tagged('UNDEAD') or Tagged('UNDEAD_BEAST') or Tagged('DRAGON') or Tagged('MONSTROSITY'));" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_FireCone" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="7bbb79fa-02c7-4f45-a115-1d8e11b96ea0" />
@@ -4918,7 +4918,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_ACID,100,10)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Acid" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_ACID,100,10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
@@ -4928,7 +4927,7 @@
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Acid);2" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Acid)" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value=";" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="803e65f9-b27c-4e9c-af2a-8cf0e8e8564d" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="dfb57578-dafa-4c39-9f6e-238b9e2c237d" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89018ece-411e-4c00-94ec-6cb3743f4af5" />
@@ -4942,7 +4941,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_COLD,100,10)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Cold" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_COLD,100,10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
@@ -4965,7 +4963,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_FIRE,100,10)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_FireCone" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_FIRE,100,10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
@@ -4988,7 +4985,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_LIGHTNING,100,10)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Lightning" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_LIGHTNING,100,10)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
@@ -5011,7 +5007,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_DragonsBreath" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_POISON,100,10)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and Tagged('HUMANOID')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Poison" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRAGONBREATH_POISON,100,10)" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Poison_Gen_L1to3" />
