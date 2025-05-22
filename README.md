@@ -458,7 +458,7 @@ Whenever you take the Bonus Action to create or move the illusion of your Invoke
 - Level 5: Crusader’s Mantle, Spirit Guardians
 - Level 7: Fire Shield, Freedom of Movement
 - Level 9: Hold Monster, Steel Wind Strike
-#### Level 2: Guided Strike
+#### Level 3: Guided Strike
 When you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit.
 #### Level 3: Improved Guided Strike
 When you or a creature within 30 feet of you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit. When you use this feature to benefit another creature’s attack roll, you must take a Reaction to do so.
@@ -787,6 +787,28 @@ As a Magic action, you can expend one use of this class’s Channel Divinity to 
 Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.  
 #### Level 12: Aura Expansion: Your Aura of Protection is now a 30-foot Emanation.
 
+### Oath of Conquest
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Conquest.png?raw=true)
+
+>The Oath of Conquest calls to paladins who seek glory in battle and the subjugation of their enemies. It isn’t enough for these paladins to establish order. They must crush the forces of chaos. Sometimes called knight tyrants or iron mongers, those who swear this oath gather into grim orders that serve gods or philosophies of war and well-ordered might.
+>
+>Some of these paladins go so far as to consort with the powers of the Nine Hells, valuing the rule of law over the balm of mercy. The archdevil Bel, warlord of Avernus, counts many of these paladins — called hell knights — as his most ardent supporters. Hell knights cover their armor with trophies taken from fallen enemies, a grim warning to any who dare oppose them and the decrees of their lords. These knights are often most fiercely resisted by other paladins of this oath, who believe that the hell knights have wandered too far into darkness.
+
+#### Oath Spells
+- Level 3: Armor of Agathys, Command
+- Level 5: Hold person, Spiritual weapon
+- Level 9: Bestow curse, Fear
+
+#### Level 3: Conquering Presence
+You can use your Channel Oath to exude a terrifying presence. You force each creature of your choice that you can see within 30 ft of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+#### Level 3: Guided Strike
+When you misses with an attack roll, you can expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit.
+
+#### Level 7: Aura of Conquest
+When a creature is affected by your Aura of Conquest, it must succeed on a Wisdom saving throw or become frightened of you until the end of its next turn. A creature that is frightened while within the aura takes psychic damage equal to half your paladin level at the start of its turn.
+
 ### Oath of Devotion
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
@@ -811,7 +833,9 @@ Ancient magic lies so heavily upon you that it forms an eldritch ward, blunting 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Glory.png?raw=true)
 
-#### Oath of Glory Spells
+> Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions, so they’re all ready when destiny calls.
+
+#### Oath Spells
 - Level 3: Guiding Bolt, Heroism
 - Level 5: Enhance Ability, Magic Weapon
 - Level 9: Haste, Protection from Energy
