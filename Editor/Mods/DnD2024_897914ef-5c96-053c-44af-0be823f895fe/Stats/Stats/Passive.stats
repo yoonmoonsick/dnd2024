@@ -3866,7 +3866,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadba9566gd956g2168g7029g5e2150f63f5e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
