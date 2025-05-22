@@ -565,6 +565,14 @@ data "InterruptDefaultValue" "Enabled;Ask"
 data "EnableCondition" "not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableContext" "OnStatusApplied;OnStatusRemoved"
 
+new entry "YMS_Paladin"
+type "InterruptData"
+
+new entry "Interrupt_Conquest_3_GuidedStrike"
+type "InterruptData"
+using "Interrupt_GuidedStrike"
+data "Cost" "ChannelOath:1;"
+
 new entry "YMS_Ranger"
 type "InterruptData"
 

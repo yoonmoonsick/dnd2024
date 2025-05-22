@@ -5895,6 +5895,60 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fdacd52-c26c-459a-bfff-1d9a4d5c9f34" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONQUERING_PRESENCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d982fb59-8c33-4b38-a5e4-667f632ff982" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf87d15afg7333g88d0gededg83ff69131a1f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h331b2a7fg1669ga080g4742g1fcdcbdc6f59" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF, CONQUERING_PRESENCE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b298cafd-06fc-4499-b720-d65469e1f53d" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_CONQUEST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a92e62b-3e82-4220-80ee-aa12e9aca5f0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h321481d4g7b69g39eagde21ga9b8121196d9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54bdc68agab9aga985g0583ge5c6203908bc" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Legendary_PacifyingAura" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_CONQUEST" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(AURA_OF_CONQUEST_DEBUFF)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1130d8e4-0b19-425f-847e-d3bb00e740a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_CONQUEST_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b298cafd-06fc-4499-b720-d65469e1f53d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b40f1c4-ded5-4c50-ae8c-1ba78f2b0daf" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_CONQUEST_DEBUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d159f5c-4295-44af-bb7b-bd7ed97c145e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h321481d4g7b69g39eagde21ga9b8121196d9" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_CONQUEST_DEBUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('SG_Frightened')):DealDamage(Cause.ClassLevel(Paladin)/2,Psychic,Magical)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, AuraOfConquestDC())" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONQUERING_PRESENCE,100,2)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, AuraOfConquestDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONQUERING_PRESENCE,100,2)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF228B22" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7cb76d24-49a2-4ce8-851c-adfb05dbdfde" />
