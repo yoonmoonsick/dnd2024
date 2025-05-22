@@ -7475,6 +7475,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self()" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SG_Rage', context.Source)" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7483,28 +7484,32 @@
         <field name="Name" type="NameTableFieldDefinition" value="BranchesOfTheTree" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Grounded()):Force(-8, OriginToEntity, Neutral, false, true);ApplyStatus(BRANCHES_OF_THE_TREE_TARGET,100,1)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Grounded()):Force(-8, OriginToEntity, Neutral, false, true);ApplyStatus(BRANCHES_OF_THE_TREE,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ThornWhip" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3a37ff4g3b5dg19e5gfb07g89657cce4f20" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4f250acdg99a1gd4c7ged99gd52387722855" version="3" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_ThornWhip_L0" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_ThornWhip_L0" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_AdhesiveWhip" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_AdhesiveWhip" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;70a28457-dba7-46f7-b03c-ceb3b9e12bad,,;68868848-6341-448a-97e3-94aa43ad5faf,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="613e61ed-610d-4380-89f4-6c977a85b4df" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="f9eb379f-108c-443d-bf29-886774d0fb63" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="037dc8e8-15e0-439f-ae4d-ad6a93e85cfd" />
-        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="32b12e6c-7b91-4dab-aeb6-061578dbdf51" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFFFA500" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f06b928a-4862-460e-8ed2-05aedb01da55" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_Cleric" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3ab81027-1aaa-4a32-8a1c-509a470d6a5b" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="531f487f-1fd3-4987-96f5-c1e8ec4a2fe7" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="b8091ea6-a6d8-4a78-bdb8-80ff1d5203d2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SG_Rage', context.Source)" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_DamagePiercingWhip" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BRANCHES_OF_THE_TREE,100,2)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7769,7 +7774,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="539f1bdf-e0c4-44a3-9beb-789503a918ac" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Fighter" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BRANCHES_OF_THE_TREE_TARGET,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
