@@ -150,10 +150,20 @@ If you choose a newly added background, you gain a spell that can be used once p
 
 # Races 
 
+## Aarakocra
+
+![](https://i.imgur.com/q7ZAlD6.png)
+
+Choose **Aarakocra** from the list of **Versatile** passives available to **Humans**.
+
+>Sequestered in high mountains and atop tall trees, the aarakocra—sometimes called birdfolk—evoke both fear and wonder. Many aarakocra are not even native to the Material Plane. They hail from a world beyond: the boundless vistas of the Elemental Plane of Air. They are immigrants, refugees, scouts, and explorers, with their outposts serving as footholds in a world both strange and alien.
+
+- Level 1
+  - As a descendant of the Aarakocra, you gain the ability to fly. You can use this flying speed only while not wearing medium or heavy armor. Your base walking speed becomes 25ft per turn, and your body is considered light in weight.
+
 ## Aasimar
 
 ![](https://i.imgur.com/s3dE2kW.png)
-
 
 Choose **Aasimar** from the list of **Versatile** passives available to **Humans**.
 
