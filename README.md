@@ -1663,19 +1663,18 @@ As player characters become stronger, some enemies will be enhanced to maintain 
   - You gain proficiency with Martial Weapons. And get Weapon Masteries.
 
 ## Fighting Styles 
+- Great Weapon Fighting
+  - When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.
 - Thrown Weapon Fighting
   - When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
 - Blind Fighting
   - You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
 - Interception
-  - When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a 
-shield or a weapon to use this reaction.
+  - When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a shield or a weapon to use this reaction.
 - Unarmed Fighting
-  - Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a 
-d8.
+  - Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.
 - Tunnel Fighter
-  - As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, 
-and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.
+  - As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.
 - Close Quarters Shooter
   - When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. You have a +1 bonus to attack rolls on ranged attacks.
 - Mariner
