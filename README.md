@@ -1072,7 +1072,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Assassin’s Tools
   - You gain a Disguise Self and Brew Poison.
 - Level 6: Roving Aim
-  - Your Speed isn’t reduced to 0 by using Steady Aim. 
+  - Your Speed isn’t reduced to 0 by using Steady Aim.
 - Level 11: Death Strike
   - You can gain the bonus Sneak Attack damage from Surprising Strikes on every turn, not just the first turn.
 
@@ -1098,6 +1098,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
       - If you make an attack roll and miss the target, you can roll one Soulknife Energy Die and add the number rolled to the attack roll.
     - Psychic Teleportation
       - As a Bonus Action, you manifest a Psychic Blade, expend one Soulknife Energy Die, and throw the blade at an unoccupied space you can see up to 60 feet away. You then teleport to that space, and the blade vanishes.
+- Level 11: Rend Mind
+  - You unlock the Stun option for Cunning Strike.
 
 ### Thief
 
@@ -1112,6 +1114,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
 - Level 6: Supreme Sneak
   - Once per turn, you can try to hide without any action point or bonus action point.
+- Level 11: Thief’s Reflexes
+  - You gain Action Surge.
 
 ## Sorcerer
 
