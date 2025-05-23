@@ -189,6 +189,12 @@ data "Boosts" "AC(0);"
 new entry "YMS_FightingStyle"
 type "PassiveData"
 
+new entry "FightingStyle_GreatWeaponFighting"
+type "PassiveData"
+using "FightingStyle_GreatWeaponFighting"
+data "Description" "h158d9067gd93fg37d9g531bgc1f9aca9ed68;1"
+data "Boosts" "IF(FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack()):MinimumRollResult(Damage,3);"
+
 new entry "FightingStyle_ThrownWeaponFighting"
 type "PassiveData"
 using "FightingStyle_Archery"
