@@ -20,7 +20,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c791d73f-d69d-4ca3-969a-f7bfb68424e4" />
         <field name="Name" type="NameTableFieldDefinition" value="DeathSavingThrows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="190c08b9-8dc1-4d67-b2b7-65cb85c5aeb8" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
