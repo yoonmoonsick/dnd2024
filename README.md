@@ -821,7 +821,6 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 3: Darkness
   - You can expend 1 Ki-Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
 - Level 3: Darkvision
-  - You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet. 
 - Level 11: Improved Shadow Step
   - You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Ki-Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.      
 
@@ -986,7 +985,7 @@ You have Advantage on attack rolls against the creature currently marked by your
   - Initiative Bonus
     - When you roll Initiative, you can add your Wisdom modifier to the roll.
 - Level 3: Umbral Sight
-  - You gain Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.You are also adept at evading creatures that rely on Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.
+  - You gain Darkvision. While entirely in Darkness, you have the Invisible condition to any creature that relies on Darkvision to see you in that Darkness.
 - Level 11: Stalker’s Flurry
   - The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, the target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.
 
@@ -1713,6 +1712,10 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 
 ## D20 Tests
 - No critical failure on non-attack d20 rolls.
+
+## Darkvision
+- Darkvision: 60 ft.
+- Superior Darkvision: 180 ft.
 
 ## Initiative 
 - 1d4 -> 1d20
