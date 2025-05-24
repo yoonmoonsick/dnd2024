@@ -7483,8 +7483,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="033a95d6-0331-4511-8172-b15202c3e156" />
         <field name="Name" type="NameTableFieldDefinition" value="BranchesOfTheTree" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, ManeuverSaveDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Grounded()):Force(-8, OriginToEntity, Neutral, false, true);ApplyStatus(BRANCHES_OF_THE_TREE,100,2);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="BranchesOfTheTreeCheck()" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Grounded()):Force(-8, OriginToEntity, Neutral, false, true);IF(Enemy()):ApplyStatus(BRANCHES_OF_THE_TREE,100,2);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and (Item() or Character() or Dead())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ThornWhip" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd3a37ff4g3b5dg19e5gfb07g89657cce4f20" version="1" />
