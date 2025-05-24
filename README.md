@@ -202,6 +202,11 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 - Level 1: Speed: 30 feet
 - Level 1: Superior Darkvision
 
+### Duergar
+
+- Duergar Magic
+  - Starting at 3rd level, you can cast the enlarge/reduce spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the invisibility spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. To Do: ~~ You can also cast these spells using spell slots you have of the appropriate level~~
+
 ## Elf
 
 ![](https://i.imgur.com/hdJ45yB.png)
