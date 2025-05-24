@@ -9,7 +9,7 @@ data "Properties" "IsHidden"
 new entry "DeathSavingThrows"
 type "PassiveData"
 using "DeathSavingThrows"
-data "Boosts" "IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);"
+data "Boosts" "IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));ActionResource(SpellPoint,1,0);MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);"
 
 new entry "Passive_Resistance_2024"
 type "PassiveData"

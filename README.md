@@ -1711,6 +1711,9 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Wet
     - The status is removed when taking cold, fire, or lightning damage.
 
+## D20 Tests
+- No critical failure on non-attack d20 rolls.
+
 ## Initiative 
 - 1d4 -> 1d20
 
