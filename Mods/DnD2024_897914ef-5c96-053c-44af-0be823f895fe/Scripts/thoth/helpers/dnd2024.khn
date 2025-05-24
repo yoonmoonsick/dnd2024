@@ -427,3 +427,13 @@ end
 function AuraOfConquestDC()
     return context.Source.ProficiencyBonus + GetModifier(context.Source.Charisma)
 end
+
+function BranchesOfTheTreeCheck()
+    local result = Dead() | Item() | Ally()
+    if not result.Result then
+        local st = ~SavingThrow(Ability.Strength, ManeuverSaveDC())
+        return ConditionResult(st.Result, {}, {}, st.Chance)
+    end
+
+    return result
+end
