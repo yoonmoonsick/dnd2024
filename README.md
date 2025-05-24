@@ -325,7 +325,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 2: Reckless Attack
   - You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
 - Level 7: Feral Instinct
-  - Your instincts are so honed that you have Advantage on Initiative rolls. Take to enter your Rage, you can Move up to half your Speed.
+  - Your instincts are so honed that you have Advantage on Initiative rolls (+5). Take to enter your Rage, you can Move up to half your Speed.
 - Level 9: Brutal Strike 
   - Forceful Blow: When hit the target, it takes an extra 1d10 damage and be pushed 15 feet straight away from you. Then you can move without provoking Opportunity Attacks.
   - Hamstring Blow: When hit the he target, it takes an extra 1d10 damage and it’s speed is reduced by 15 feet until the start of your next turn.
