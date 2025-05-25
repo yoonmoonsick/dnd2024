@@ -1657,10 +1657,8 @@ As player characters become stronger, some enemies will be enhanced to maintain 
   - Your slashing damage ignores resistance. When you deal slashing damage to a creature, it must succeed on a Constitution saving throw or be Bleeding until the end of its next turn.
 - Spell Sniper 
   - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
-- Tavern Brawler 
-  - Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4.
-  - Damage Rerolls. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.
-  - Push. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.
+- Tavern Brawler
+  - Normal unarmed strikes deal additional 1d4 damage (excluding features like a monk's), allow rerolling 1s on damage dice, and can push a target 5 feet once per turn.
 - War Caster 
   - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
 - Weapon Master
