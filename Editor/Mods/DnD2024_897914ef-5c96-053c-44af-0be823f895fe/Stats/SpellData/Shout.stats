@@ -169,6 +169,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="UND_FeatherFall_Tower_Boots" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="59b41554-843a-457f-b7e2-ab7b031a652b" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3650,6 +3652,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6b0dbf62-943b-4f1f-bb45-13a463376f15" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3658,6 +3662,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a9534a37-78db-4050-9f82-6506b0aa1bac" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3666,6 +3672,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b93184b3-7849-48ed-882e-8daa564c5bf5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3674,6 +3682,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bdf1b815-e192-4c84-ac2d-0be8d770a6d9" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3682,6 +3692,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="20ac63f9-2037-4c18-8ff0-a20c73e18f02" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3690,6 +3702,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8ed8fd4c-0192-4052-9ee2-b618a8bdfde6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3952,6 +3966,253 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Skilled_Persuasion" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasProficiencyBonus(context.CheckedAbility,Skill.Persuasion,context.Source)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h257372d3g6f98g4450g813bg190e19aecce4" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB8860B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1031501f-e71a-4aca-8c96-0882e6132b27" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Artificer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0514754a-0b1b-4cbb-83ef-d5b8d82c44ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="STI_FalseLife" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2f81ae9d-2bd2-448c-a0ad-9cfec7baeffa" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d0b1a7a-3b70-4e3d-952b-a43de5f65681" />
+        <field name="Name" type="NameTableFieldDefinition" value="STI_Blur" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73c880ba-3c0d-4fb9-8c39-a4c8b8b407ff" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;IsConcentration;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a4aaeab-f951-4692-b612-e92d7cc42fe9" />
+        <field name="Name" type="NameTableFieldDefinition" value="STI_SeeInvisibility" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6626de96-f96d-464f-bc7a-75c2d12f5f7f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a3a9ee0-846c-404c-9fd9-0ba2286db977" />
+        <field name="Name" type="NameTableFieldDefinition" value="STI_Blink" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5030667e-3cb4-4d5f-9bba-29c095b30dff" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExperimentalAlchemy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha7fc963eg78c6g76e2g84f9g659f3337232d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h714c1298g3f17g3c83g2137gde86ab77571f" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_Random;Shout_ExperimentalElixir_Healing;Shout_ExperimentalElixir_Swiftness;Shout_ExperimentalElixir_Resilience;Shout_ExperimentalElixir_Boldness;Shout_ExperimentalElixir_Flight;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8f9043e2-4608-43c5-b78f-c4a1b91ea340" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ExperimentalElixir:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="832d1bca-c857-48f8-9ae9-482e7e705469" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Healing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_CONS_Potion_Healing_A_Greater" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb8c0a45g3cd2g4d90gae52g1a49450acd7d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;PragmaticElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(a1070c9a-54ff-4d3f-b38c-13b20e08cccc,-1,1);IF(HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(848a29ad-9aee-4170-90ff-98fe13561472,-1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9dc4a064-7ecf-4053-9a0f-85b9e356edf8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Swiftness" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_CONS_Potion_Speed" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h50d2f74cg74f8g4672g8997gdb221462aad7" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;PragmaticElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(01bd16d9-86d7-4b0e-bc76-adcd58c2223b,-1,1);IF(HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(ea1952da-11f9-473f-b542-521fafca0c11,-1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa31017b-2467-49be-aa07-a8fe4677f6ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Resilience" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_ALCH_Solution_Remedy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18b6f717g0e1eg441cg851eg483cd5051b3d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;PragmaticElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(024e3ce1-83f4-4234-9ef7-12423a051bed,-1,1);IF(HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(4ff3df61-4612-4ab9-8c47-5b56ecf09330,-1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d53ac372-9ef8-473c-9d94-7e29e54473f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Boldness" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_CONS_Potion_Invisible_A" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h301c00f1g5521g4cacg96bfge108ed494803" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;PragmaticElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(9309bce8-7a4f-440d-9992-55a354ef95b4,-1,1);IF(HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(8346eeed-4f24-4198-9d63-c28dab80f566,-1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5992183c-c2a9-4af0-bae6-35f0982abc45" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Flight" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_ALCH_Solution_Potion_Flying" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46b8bfedg5c26g41ddg8ef8g4d7413a2a25a" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;PragmaticElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(8a7f911d-b3fa-405c-b9f6-e86f1d884adf,-1,1);IF(HasPassive('Alchemist_9_RestorativeReagents_Fortify',context.Source)):SummonInInventory(2a9d8c77-ecf1-4349-b99d-cfe2bf1e3b72,-1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f68f22c9-c824-4ce0-a935-f2f6f6a6e4f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c24d031a-a974-45b6-bce1-6969a77e8b7e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ExperimentalElixir:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TriggerRandomCast(1,0,ExperimentalElixirRandom);" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3ebc192f-035e-4acd-8a59-f9119a423b43" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot_1;Shout_ExperimentalElixir_SpellSlot_2;Shout_ExperimentalElixir_SpellSlot_3;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he43686b8gf02bge506g4ccbg37c140636eb4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h760fb132g365cg7a18g63a0gf5e4d721291b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,1, false, false, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16260114-5751-4145-ae92-30ba2a9f4456" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,2);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,2, false, false, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a82abfe3-be53-41c8-b13f-4577fd6e70d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,3);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,3, false, false, context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9998fcc-4b92-4f5f-b1ac-9cd23c022c66" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Healing_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="832d1bca-c857-48f8-9ae9-482e7e705469" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8b079af-f142-4bc9-8e5d-3de142feb375" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Swiftness_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dc4a064-7ecf-4053-9a0f-85b9e356edf8" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dda26bf7-5852-4884-bc18-db8266cf0ef8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Resilience_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa31017b-2467-49be-aa07-a8fe4677f6ba" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bad97e8f-5242-4332-93a4-a166984b4c61" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Boldness_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d53ac372-9ef8-473c-9d94-7e29e54473f4" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c52138e-f670-48c2-95bd-391dfd11c264" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_Flight_Random" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5992183c-c2a9-4af0-bae6-35f0982abc45" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">

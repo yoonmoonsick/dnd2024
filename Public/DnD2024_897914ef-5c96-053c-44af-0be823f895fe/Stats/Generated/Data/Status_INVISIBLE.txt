@@ -6,3 +6,9 @@ data "StackId" "INVISIBILITY_GS"
 data "RemoveEvents" "OnSpellCast;OnDamage;OnEntityPickUp;OnEntityDrop;OnEntityDrag;OnLockpickingFinished;OnDisarmingFinished;OnObscurityChanged"
 data "RemoveConditions" "(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (not HasObscuredState(ObscuredState.HeavilyObscured,context.Source))) and not IsStatusEvent(StatusEvent.OnDamage)) "
 
+new entry "POTION_OF_INVISIBILITY_FORTIFY"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "POTION_OF_INVISIBILITY"
+data "OnApplyFunctors" "ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)"
+

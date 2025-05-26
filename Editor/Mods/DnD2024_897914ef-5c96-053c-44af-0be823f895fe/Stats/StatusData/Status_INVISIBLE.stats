@@ -11,5 +11,13 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(IsStatusEvent(StatusEvent.OnSpellCast) and not HasSpellFlag(SpellFlags.Invisible)) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0)) or (not IsStatusEvent(StatusEvent.OnSpellCast) or ((IsStatusEvent(StatusEvent.OnObscurityChanged) or IsStatusEvent(StatusEvent.OnMove)) and (not HasObscuredState(ObscuredState.HeavilyObscured,context.Source))) and not IsStatusEvent(StatusEvent.OnDamage)) " />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07ea19aa-d75f-4e37-9cde-307bd3ff2c0d" />
+        <field name="Name" type="NameTableFieldDefinition" value="POTION_OF_INVISIBILITY_FORTIFY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bdc7ec88-8609-4118-947b-f4f751dc5227" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
