@@ -7362,13 +7362,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7b34172a-e9df-4cba-bdf7-c5166a01b867" />
         <field name="Name" type="NameTableFieldDefinition" value="CharlatanTrick" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_VICIOUSMOCKERY,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_VICIOUSMOCKERY,100,-1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="DeceptionCheck()" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(CONFUSION,100,2);DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL_CHARM,100,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead() and Tagged('HUMANOID') and not Tagged('UNDEAD')" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Confusion" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdbba9c54g9f89g1845gea12gd6ec3c05b47c" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h363b4b80gee88gaaf2g6a6dge685bdb506a5" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
