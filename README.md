@@ -2021,6 +2021,10 @@ Appropriate spells have been added to the spell list for each class.
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d8 for each spell slot level above 2.
 - Available For: Sorcerer, Warlock, Wizard
 
+### [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
+- Duration: 10 Minutes
+- If you are good or neutral, the damage is Radiant; if you are evil, the damage is Necrotic.
+
 ### [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - Summon a Blink Dog to fight by your side.
 - Available For: Druid, Ranger, Warlock, Wizard, Fey Wanderer
