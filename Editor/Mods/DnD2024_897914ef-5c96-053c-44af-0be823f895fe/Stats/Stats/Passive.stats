@@ -72,6 +72,27 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ab1847d-60bd-445e-8f17-f4eef05f535a" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fbfac853-0ad4-48b8-b85e-545a69ebfbe7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Crossbow_Loading_MainHand" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff3fef16g4dcbg44e3g8bfbg3b15c27102c5" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h19b7bc50g3ddcg5a48ge4dag9929c22898d3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingMainHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source):UnlockSpellVariant(not SpellId('Projectile_OffhandAttack') and HasStringInSpellRoll('AttackType.RangedWeaponAttack'),ModifyUseCosts(Add,CrossbowLoadingMainHand,1,0));" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingMainHand" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2276ff09-14b6-4715-ae24-68bb5c483da8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Crossbow_Loading_OffHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fbfac853-0ad4-48b8-b85e-545a69ebfbe7" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingOffHand" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="052cf0ad-e68e-4e42-8774-fe03c5fbe1bf" />
@@ -602,8 +623,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h068b0270g578ag1d0dg5b32g7353015d2250" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,-5);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,-5);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72ca0906gaca7g6fbcg767ag27e0eda8f101" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h72ca0906gaca7g6fbcg767ag27e0eda8f101" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -612,7 +633,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_WeaponPassive_HandCrossBow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2c5f2f04-93bf-437d-b0d0-26f6a4f9ea42" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedWeaponAttack,-5);IF(not HasPassive('Sharpshooter_Distance',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedWeaponAttack()):RollBonus(RangedOffHandWeaponAttack,-5);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(15)" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(15)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -662,10 +683,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="984514e4-86d3-4c22-9af1-5f94b687552a" />
-        <field name="Name" type="NameTableFieldDefinition" value="CrossbowExpert_Wounding" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ad66ea82-7b55-4e7e-8922-a06571a65ba7" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_PiercingShot);UnlockSpellVariant(SpellId('Projectile_PiercingShot'), ModifyTooltipDescription());" />
+        <field name="UUID" type="IdTableFieldDefinition" value="90cd345a-d5f5-49d1-bfd2-6364a8605b13" />
+        <field name="Name" type="NameTableFieldDefinition" value="CrossbowExpert_IgnoreLoading" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7f5251bg3341gb10fg299egfa45a9e1edba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80eb8a5fgb0d4g109cg0d08g39d86260bffd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1244,6 +1267,7 @@
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasHeavyArmor(context.Source)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1668,9 +1692,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MartialArts_DextrousUnarmedAttacks" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2c8917a-2082-475d-b1d7-27fc8eb5ee40" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48faea1dg4d13gd42cgba30g2e7f07e37a4d" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):MonkWeaponAttackOverride();" />
       </fields>
     </stat_object>
@@ -6398,6 +6420,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4319a04gb2ecg4312g0b7fg1f461f154cd9" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('PACT_OF_THE_TOME_CANTRIP_BLOCK')" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnStatusRemoved;OnStatusApply;OnStatusApplied;OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6643,6 +6666,7 @@
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="b898036c-cc77-4bee-9601-eb58fbdd6f19" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_AnimateDead,Singular,,UntilRest,Charisma);IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_CallLightning,Singular,,UntilRest,Charisma);IF(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheTome',context.Source)):UnlockSpell(Target_Haste,Singular,,UntilRest,Charisma);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

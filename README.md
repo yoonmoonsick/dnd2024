@@ -1604,7 +1604,7 @@ As player characters become stronger, some enemies will be enhanced to maintain 
   - Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
   - Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
 - Crossbow Expert 
-  - When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property.
+  - You ignore the Loading property of crossbows, shoot without disadvantage in melee, and add your ability modifier to the damage of a Hand crossbow's off-hand attack.
 - Crusher (Homebrew)
   - Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
 - Defensive Duelist 
