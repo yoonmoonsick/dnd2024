@@ -319,7 +319,44 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 3: Hellish Rebuke
 - Level 5: Darkness
 
-# Class 
+# Class
+
+## Artificer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Artificer.png?raw=true)
+
+> A Magical Crafter and an Inventor of Wonders. Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.
+
+- Level 1: Spell casting (1/2 Caster)
+- Level 2: Replicate Magic Item
+  - You have learned arcane plans that you use to make magic items.
+- Level 6: Expanded Replication
+  - You have learned arcane plans that you use to make magic items.
+- Level 7: Flash of Genius
+  - When you or a creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to add a bonus to the roll, potentially turning it into a success. The bonus equals your Intelligence modifier. You can use this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
+- Level 10: Expanded Replication
+  - You have learned arcane plans that you use to make magic items.
+- Level 11: Spell-Storing Item
+  - You can store one 1st- to 3rd-level artificer spell into a weapon or spellcasting focus that a humanoid creature can wear. A creature holding this item can use an action to cast the stored spell. Only one such spell-storing item can be held by a creature at a time. You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all uses after a long rest.
+
+### Alchemist
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Alchemist.png?raw=true)
+
+> An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Healing Word, Ray of Sickness
+  - Level 5: Scorching Ray, Melf's Acid Arrow
+  - Level 9: Stinking Cloud, Mass Healing Word
+- Level 3: Experimental Potion
+  - You can create two Potions, each with a randomly determined effect. Any Potions remaining after a long rest disappear, and Potions can be consumed by yourself or given to others as a bonus action. Additionally, you can use a spell slot to create an additional Potion as a magic action, in which case you choose the effect directly. The number of Potions you can create after a long rest increases as you reach certain artificer levels: 3 at level 5, 4 at level 9, and 5 at level 12.
+- Level 5: Alchemical Savant
+  - When you cast a Alchemist spell, you add your Intelligence modifier (minimum +1) to the roll that restores hit points or deals acid, fire, necrotic, or poison damage.
+- Level 9: Restorative Reagents: Fortify
+  - A creature who drinks an Potion you create gains 15 temporary hit points.
+- Level 9: Restorative Reagents: Restore
+  - You always have the Lesser Restoration spell prepared and can cast it without expending a spell slot. You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and all uses are restored after a long rest.
 
 ## Barbarian 
 
@@ -1883,6 +1920,9 @@ Appropriate spells have been added to the spell list for each class.
 - You gain 2d4 + 4 Temporary Hit Points.
 - ***Using a Higher-Level Spell Slot***. You gain 5 additional Temporary Hit Points for each spell slot level above 1.
 
+### [Feather Fall](https://www.dndbeyond.com/spells/2618874-feather-fall)
+- Casting Time: Reaction ~~To do: Implement Interrupt~~\
+
 ### Hail of thorns 
 - Can receives extra attack benefit.
 ### Healing Word 
@@ -1957,6 +1997,7 @@ Appropriate spells have been added to the spell list for each class.
 ### [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
 
 ### [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
+- Casting Time: Bonus Action
 - You touch a weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.
 - ***Using a Higher-Level Spell Slot.*** The bonus increases to +2 with a level 3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
 

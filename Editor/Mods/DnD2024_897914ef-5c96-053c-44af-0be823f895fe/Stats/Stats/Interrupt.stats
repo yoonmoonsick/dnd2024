@@ -630,6 +630,27 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFB8860B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="edc94309-cf35-4082-a2b1-a3ccd1f7d6d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Artificer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8f9dd0e3-bccc-4a28-a136-a5eb04c6ab1f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dbe5cf6g252ag283agf096gf6cbb7ef0871" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer) and IsFlatValueInterruptInteresting(1)) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(IntelligenceModifier);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7de991fc-dd72-40cc-8863-176fb919f610" />
@@ -1049,7 +1070,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0062c05g7d43g42b2g5ed5gcd08c6b4f55f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h06ad5f74gda19ge7b0g7201gdc760924fdf9" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_TelekineticBolt" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IsWeaponAttack() and not IsKillingBlow() and IsHit() and not IsDivineStrike() and Character() and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target)" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionicPower)+IntelligenceModifier,Force,Magical);IF(HasPassive('TelekineticThrust',context.Source)):ApplyStatus(PRONE,100,1, , , ,not SavingThrow(Ability.Strength, SourceSpellDC() ));IF(HasPassive('TelekineticThrust',context.Source)):ApplyStatus(PUSH_30,100,0, , , ,not SavingThrow(Ability.Strength, SourceSpellDC() ));" />
         <field name="Cost" type="StringTableFieldDefinition" value="PsionicPower:1;Interrupt_PsionicStrike:1" />

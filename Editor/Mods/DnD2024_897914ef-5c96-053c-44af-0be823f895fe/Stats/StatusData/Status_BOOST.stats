@@ -5247,9 +5247,278 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_SILENCE_THROW" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9762b640-f3f2-459f-a9ab-347cb830ae3b" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h125d4c3bg683ege902g1529g70866d715149" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value=";" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Silence" />
         <field name="StackId" type="StringTableFieldDefinition" value="MAG_SILENCE_THROW" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB8860B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd88d0f2-a1ee-4178-bddc-f05a12ab0cea" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_ARTIFICER" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_CUREWOUNDS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb6a43434g03c4gb400g0bc3g924fdbc6ccd9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CureWounds" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9ba64edbge50ag4346gaf0egae2bfd63c7ac" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SPELLSTORINGITEM" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_CureWounds)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_CureWounds')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5939707-7d63-484f-b8c5-5605adac3dfd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_FAERIEFIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FaerieFire" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb44f718cg1521g4c02ga8aag38ee2cd4ee0d" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_FaerieFire)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_FaerieFire')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9e11636-b246-4dcb-9951-538c8a0f2737" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_FALSELIFE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_FalseLife" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc1c50b3cga0d7g4d7fga882g6214221f9240" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_STI_FalseLife)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Shout_STI_FalseLife')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5447bdc9-6491-4fc5-a6ad-e5152eeafad1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_GREASE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_Grease" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h242fcc04gb150g4189g8536g39b58871b18a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Grease)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Grease')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2529347e-c701-4f90-9295-9b70cf579702" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_ARCANELOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ArcaneLock" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c9245ecg53cdg4972ga5c8gb74454ad30ea" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_ArcaneLock)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_ArcaneLock')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb7266ce-e8a3-407c-af0a-4de7d6fb38eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_BLUR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Blur" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf5a7c326gf49dg419eg8859g9895d2c94935" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_STI_Blur)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Shout_STI_Blur')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1648d06a-abeb-4688-a14f-5f5015541441" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_DARKVISION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Darkvision" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4429287cg9154g4843g944ag9bad9d8979cc" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Darkvision)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Darkvision')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97f7a462-df5a-40fa-a3a9-c286475e45de" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_ENLARGEREDUCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_EnlargeReduce" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h654c75bagd3a5g4f56g96b1g5b0fcd961705" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_EnlargeReduce)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_EnlargeReduce') or SpellId('Target_STI_Enlarge') or SpellId('Target_STI_Reduce')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c774ba08-ddee-4416-8f1a-ea8f49b34bfa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_HEATMETAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_HeatMetal" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbc61e946g04eeg4e7dg84b3g52e3afb1cc91" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_HeatMetal)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_HeatMetal')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="305a25a8-7e33-4b62-9f3b-a4de17010db0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_INVISIBILITY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcf22dcf2g26c6g4dffg98f8gc7c84f36124c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Invisibility)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Invisibility')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f64098d5-93ae-414f-9ee2-8b35eddbbc45" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_PROTECTIONFROMPOISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromPoison" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9482b366g585bg4c78gac1egabb4edd8a68c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_ProtectionFromPoison)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_ProtectionFromPoison')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bbba24e-7887-43fe-bd44-d718cd59e515" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_WEB" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_Web" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb319307g8927g4f1dga47ega668bfec25bc" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Web)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Web')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="658682ef-b6b6-499b-a086-7c65508bf5f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_SEEINVISIBILITY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_SeeInvisibility" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5ad4a60dga70fg45efg9efbge4e61ca4e073" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_STI_SeeInvisibility)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Shout_STI_SeeInvisibility')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfa74d20-a705-48ac-97df-84cec4d4e7a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_BLINK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha54795d0g7a88g4c16g912fg434c89027456" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_STI_Blink)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Shout_STI_Blink')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9777aeb6-645b-49eb-88b4-7761790b73f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_ELEMENTALWEAPON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7cec02dg22c5g4adag8503g41ec5cee749f" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_ElementalWeapon)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_ElementalWeapon') or SpellId('Target_STI_ElementalWeapon_Acid') or SpellId('Target_STI_ElementalWeapon_Cold') or SpellId('Target_STI_ElementalWeapon_Fire') or SpellId('Target_STI_ElementalWeapon_Lightning') or SpellId('Target_STI_ElementalWeapon_Thunder')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ccf0423-be6d-4c0a-ac42-275277547201" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_FLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Fly" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc56ae716gb59cg4310ga7f7ga3e0f98bf743" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Fly)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Fly')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d21985bf-3b8b-49a3-9653-dff22551681d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_HASTE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Haste" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e53406dg221dg4fc3g8306g42ea9ecfdc69" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_Haste)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_Haste')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f099d510-8990-40e8-b312-7a87f3fbbe11" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_PROTECTIONFROMENERGY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3fc19655g97b4g496fgb23fg608be11eebc0" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_ProtectionFromEnergy)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_ProtectionFromEnergy') or SpellId('Target_STI_ProtectionFromEnergy_Acid') or SpellId('Target_STI_ProtectionFromEnergy_Cold') or SpellId('Target_STI_ProtectionFromEnergy_Fire') or SpellId('Target_STI_ProtectionFromEnergy_Lightning') or SpellId('Target_STI_ProtectionFromEnergy_Thunder')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3eb48de7-2eda-4caf-adfd-511d7e7652a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLSTORINGITEM_GLYPHOFWARDING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2b507026-15b0-4ff7-858b-852ccfa4b2bc" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_GlyphOfWarding_ExplosiveRunes" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a8d4bfcg859fg49c2g94c9ged72f4d1bfc5" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_STI_GlyphOfWarding)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_STI_GlyphOfWarding') or SpellId('Target_STI_GlyphOfWarding_Acid') or SpellId('Target_STI_GlyphOfWarding_Cold') or SpellId('Target_STI_GlyphOfWarding_Fire') or SpellId('Target_STI_GlyphOfWarding_Lightning') or SpellId('Target_STI_GlyphOfWarding_Thunder') or SpellId('Target_STI_GlyphOfWarding_Detonation') or SpellId('Target_STI_GlyphOfWarding_Sleep')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a99d87bf-18e4-4144-984d-f25fc4bfebde" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCHEMIST_FORTIFY_TEMP_HP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="55c29060-9681-4cf9-bf1d-04d27798feac" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ALCHEMIST_FORTIFY_TEMP_HP" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6250e3a-33ea-4013-84d5-873ca858a116" />
+        <field name="Name" type="NameTableFieldDefinition" value="POTION_OF_SPEED_FORTIFY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f2fbc6d-591d-4403-afdc-6e349926839b" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="984a34e4-d548-4cd5-b079-2dbe50ba4fe7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_FLYING_FORTIFY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7cd84f5-9f4e-43c9-af05-d1c3e328ecd8" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="801b43e8-fafb-4446-b1b7-7f77570dde7c" />
+        <field name="Name" type="NameTableFieldDefinition" value="POTION_OF_HEALING_GREATER_FORTIFY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1662c9af-5e3f-47c3-9987-33428e4c7f3d" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(4d4+4);RemoveStatus(BURNING);ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5a6e059-1041-4abf-a014-a468cb72f3e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_POTION_REMEDY_FORTIFY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="711704d3-ed3b-4d56-b92a-eb3455013c2f" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_Poisoned); RemoveStatus(SG_Disease); RemoveStatus(SG_Blinded); RemoveStatus(COLOR_SPRAY); RemoveStatus(SG_Paralyzed);RemoveStatus(SILENCED);ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1308c6b0-9e14-4029-b935-b710c7257dfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_DISTILLATION_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2801515-255b-4b3e-97f6-065eb06e6888" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PragmaticElixir,1,0);" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
