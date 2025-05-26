@@ -201,7 +201,7 @@ new entry "FightingStyle_GreatWeaponFighting"
 type "PassiveData"
 using "FightingStyle_GreatWeaponFighting"
 data "Description" "h158d9067gd93fg37d9g531bgc1f9aca9ed68;1"
-data "Boosts" "IF(FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack()):MinimumRollResult(Damage,3);"
+data "Boosts" "IF(not Player(context.Source) and FightingStyle_GreatWeapon(context.Source)):Reroll(MeleeWeaponDamage,2,true);IF(Player(context.Source) and FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack()):MinimumRollResult(Damage,3);"
 
 new entry "FightingStyle_ThrownWeaponFighting"
 type "PassiveData"

@@ -284,7 +284,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_GreatWeaponFighting" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="261a5f2a-7f51-4788-b1ee-e7093cc66fda" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h158d9067gd93fg37d9g531bgc1f9aca9ed68" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack()):MinimumRollResult(Damage,3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Player(context.Source) and FightingStyle_GreatWeapon(context.Source)):Reroll(MeleeWeaponDamage,2,true);IF(Player(context.Source) and FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack()):MinimumRollResult(Damage,3);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
