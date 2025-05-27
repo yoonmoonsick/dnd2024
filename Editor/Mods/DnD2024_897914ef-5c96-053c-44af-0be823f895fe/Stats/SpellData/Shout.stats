@@ -4215,6 +4215,108 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72a539b3-a687-4aa5-b6d8-785c398ef36d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArcaneArmor_Dreadnaught;Shout_ArcaneArmor_Guardian;Shout_ArcaneArmor_Infiltrator;" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HeavyArmorMaster" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15767649gc128gd6f9g5eddg5bbba75cbc10" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ad966a9g6f83g3fcfg12e7gbb4c5aab8d8a" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_Blink_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Teleport" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2e13383d-6141-42e7-9f88-9900d073be7c" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67e38dae-8629-48d9-b140-b643142243a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Dreadnaught" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72a539b3-a687-4aa5-b6d8-785c398ef36d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneArmor" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,ARCANEARMOR_DREADNAUGHT,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(a73fcb4f-5fc8-465a-a394-0bc7bbfcf159,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(8cec7feb-bb5f-4ad0-953f-850a325accfa,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(729047e7-868c-473e-a1c3-804b64314b43,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd8a74f0g45d2gb949g408cgf5802c7420b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52e76c07g23eeg1231g986bg700d852f39dc" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7c6c6884gd54dg07d7g25b8ga197a98aa5ed" version="2" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1ea60ce-d8f6-4807-ba8e-2a6b225e788f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Dreadnaught_GiantStature" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c8d9282-2f51-469d-bba1-69777096e7d4" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(GIANT_STATURE, 100, 10);Armorer_11_PerfectedArmor:ApplyStatus(GIANT_STATURE_11, 100, 10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d07fb74ge77dg4bb4gc02fg8e7ca9b14d6b" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GIANT_STATURE, 100, 10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21f6927d-760f-444d-a7e4-ad09f15c7ded" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Guardian" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72a539b3-a687-4aa5-b6d8-785c398ef36d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneArmor" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANEARMOR_GUARDIAN,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(968279f0-aff8-49dc-a34b-71eaf78144f3,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(c7ea8868-6fd4-47a4-ac9a-fe7f45836d1c,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(fb48777e-226d-4638-abb1-16780383b43a,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h190d2c4cg9b88g1072ga577g96dc970958f8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h15dd3bf8g0f91g316fg9cb5g8accb396cfcb" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b103696g6484gf30eg329fga8921bd9b53b" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7dba1aa-85ec-4cb2-a374-c24958f524b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Guardian_DefensiveField" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e57ebc5-59bb-4cc3-ad0f-ed86e578000d" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVE_FIELD,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Thunder" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81ff9b72gd15cgb72fg2652ga95becf9ba38" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="ClassLevel(Artificer)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVE_FIELD,100,-1)" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Sorcerer_Wildmagic_TurnMagic" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;2860e825-ec12-4008-8471-d797fc00abc4,,;b6540e92-9e06-4695-9d8e-552d5eac45c2,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="469505dd-fe63-4940-9b14-7efe9fc320d1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="469505dd-fe63-4940-9b14-7efe9fc320d1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d04404ce-0ea8-416e-8ef2-f970a591787e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Infiltrator" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72a539b3-a687-4aa5-b6d8-785c398ef36d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArcaneArmor" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANEARMOR_INFILTRATOR,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(6c762051-5795-4355-9e4d-ff1c34b67614,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(ecedaf0a-9dc2-432b-9fe2-6e97f2de781b,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(28456b48-8b4f-4bdf-ac77-0adddd6bfe7c,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThunderboltStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc113b9c2g98bdg1271gfcecg23754c82c1cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd67f6d3g848bg7d06g4482g8cde38c3daa0" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3a23c7e9g1d07gadf6gc939gbc0a2555bf4e" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d0b10a9-4f8a-43ab-935e-91793f77c3bb" />
