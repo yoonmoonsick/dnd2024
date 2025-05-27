@@ -5529,6 +5529,80 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PragmaticElixir,1,0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e104851-669c-41bd-b185-13b2a117cd7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANEARMOR_DREADNAUGHT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd8a74f0g45d2gb949g408cgf5802c7420b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52e76c07g23eeg1231g986bg700d852f39dc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ARCANEARMOR_DREADNAUGHT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneArmor_Dreadnaught_GiantStature);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e972f739-980f-4de2-9ea4-bdbc0ced71ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANEARMOR_GUARDIAN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e104851-669c-41bd-b185-13b2a117cd7a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h190d2c4cg9b88g1072ga577g96dc970958f8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h15dd3bf8g0f91g316fg9cb5g8accb396cfcb" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneArmor_Guardian_DefensiveField);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9de18c0e-e965-4a88-baa6-7eed76579c07" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANEARMOR_INFILTRATOR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e104851-669c-41bd-b185-13b2a117cd7a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc113b9c2g98bdg1271gfcecg23754c82c1cb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd67f6d3g848bg7d06g4482g8cde38c3daa0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThunderboltStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1b9448e-31de-4b48-91af-065c50f29651" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANEARMOR_INFILTRATOR_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9de18c0e-e965-4a88-baa6-7eed76579c07" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d00f41ba-facf-4a02-8e04-892b68d42147" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_ARMOR_WEAPON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5b462409-c474-460a-a653-c51d03727716" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_ARMOR_WEAPON" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7edea5b7-27cf-4141-99a4-f05ba52adc40" />
+        <field name="Name" type="NameTableFieldDefinition" value="GIANT_STATURE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dff998f-0cb3-4ce2-abb3-74d7c63ab673" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d07fb74ge77dg4bb4gc02fg8e7ca9b14d6b" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GIANT_STATURE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength);Advantage(SavingThrow, Strength);CharacterWeaponDamage(1d4);ObjectSize(+1);ScaleMultiplier(1.1);CharacterUnarmedDamage(1d4);CarryCapacityMultiplier(1.25);IF(not HasPassive('Armorer_11_PerfectedArmor', context.Source)):UnlockSpellVariant(HasStringInSpellRoll('AttackType.MeleeWeaponAttack'),ModifyTargetRadius(Override, 3));IF(HasPassive('Armorer_11_PerfectedArmor', context.Source)):UnlockSpellVariant(HasStringInSpellRoll('AttackType.MeleeWeaponAttack'),ModifyTargetRadius(Override, 3.5));IF(HasPassive('Armorer_11_PerfectedArmor', context.Source)):UnlockSpell(Projectile_Fly_Equal_Temp);IF(HasPassive('Armorer_11_PerfectedArmor', context.Source)):ObjectSize(+1);IF(HasPassive('Armorer_11_PerfectedArmor', context.Source)):ScaleMultiplier(1.1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cb7a50a-2553-412c-9250-bd510b41d484" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEFENSIVE_FIELD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f867a7f7-2994-428a-add9-14d773a2a4fe" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81ff9b72gd15cgb72fg2652ga95becf9ba38" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Artificer))" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DEFENSIVE_FIELD" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Artificer));" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f7a8336-df17-4cc8-ae26-b54232f59857" />

@@ -329,7 +329,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 - Level 1: Spell casting (1/2 Caster)
 - Level 2: Replicate Magic Item
-  - You have learned arcane plans that you use to make magic items.
+  - You have learned arcane plans that you use to make magic items. As you gain levels in the Artificer class, you learn plans for more magic items. At 6th and 10th level, you can replicate more rare magic items. Non-consumable magic items grant permanent effects to you, while consumables are recreated after each long rest.
 - Level 6: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
 - Level 7: Flash of Genius
@@ -347,7 +347,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 - Subclass Spells (Always prepared)
   - Level 3: Healing Word, Ray of Sickness
-  - Level 5: Scorching Ray, Melf's Acid Arrow
+  - Level 5: Flaming Sphere, Melf's Acid Arrow
   - Level 9: Stinking Cloud, Mass Healing Word
 - Level 3: Experimental Potion
   - You can create two Potions, each with a randomly determined effect. Any Potions remaining after a long rest disappear, and Potions can be consumed by yourself or given to others as a bonus action. Additionally, you can use a spell slot to create an additional Potion as a magic action, in which case you choose the effect directly. The number of Potions you can create after a long rest increases as you reach certain artificer levels: 3 at level 5, 4 at level 9, and 5 at level 12.
@@ -357,6 +357,37 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - A creature who drinks an Potion you create gains 15 temporary hit points.
 - Level 9: Restorative Reagents: Restore
   - You always have the Lesser Restoration spell prepared and can cast it without expending a spell slot. You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and all uses are restored after a long rest.
+- Level 11: Chemical Matery
+  - Alchemical Eruption: When you cast an Artificer spell that deals Acid, Fire, Necrotic, or Poison damage to a target, you can also deal 1d6 Force damage to that target.
+  - Chemical Resistance: You gain resistance to Acid damage and Poison damage.
+
+### Armorer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Armorer.png?raw=true)
+
+> An Artificer who specializes as an Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Artificer’s magic, unleash potent attacks, and generate a formidable defense.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Magic Missile, Thunderwave
+  - Level 5: Mirror Image, Shatter
+  - Level 9: Hypnotic Pattern, Lightning Bolt
+- Level 3: Arcane Armor
+  - Customize your Arcane Armor by choosing one of three models: Dreadnaught, Guardian, or Infiltrator. Each model grants you unique benefits while you wear the armor. In addition, every model includes a special weapon that allows you to use your Intelligence modifier for attack and damage rolls. You can change the armor's model whenever you finish a short or long rest.
+  - Armor Model: Dreadnaught
+    - Dreadnaught is an armor model designed to make you a powerful force in battle, featuring an Armor Flail weapon with reach that deals 1d10 bludgeoning damage plus your ability modifier, the ability to enlarge your armor for 1 minute to increase your reach and size as a bonus action, and the option to push or pull smaller creatures up to 10 feet when you hit them with the flail.
+    - When you reach 11th level as an artificer, your Armor Flail deals 2d6 bludgeoning damage. Additionally, when you use your Giant Stature, your reach increases by 10 feet, and you gain a flying speed equal to your walking speed.
+  - Armor Model: Guardian
+    - Guardian is an armor model designed for frontline combat, featuring Thunder Gauntlets that deal 1d8 thunder damage plus your ability modifier and cause hit creatures to have disadvantage on attacks against others, and a Defensive Field that lets you gain temporary hit points as a bonus action when you are bloodied, which are lost if you remove the armor.
+    - When you reach 11th level as an artificer, your Thunder Gauntlets deal 1d10 thunder damage. When a creature enters your reach, you can use your reaction to make an attack against it with your Thunder Gauntlets.
+  - Armor Model: Infiltrator
+    - Infiltrator is an armor model designed for stealth, featuring a Lightning Launcher that deals 1d6 lightning damage plus your ability modifier and can be thrown long distances, and dealing damage using this weapon, they gain Lightning Charges., increased speed by 5 feet, and advantage on Dexterity (Stealth) checks.
+    - When you reach 11th level as an artificer, your Lightning Launcher deals 2d6 lightning damage. A creature that takes damage from this weapon has disadvantage on its next attack roll.
+- Level 5: Extra Attack
+  - When you cast a Alchemist spell, you add your Intelligence modifier (minimum +1) to the roll that restores hit points or deals acid, fire, necrotic, or poison damage.
+- Level 9: Armor Replication
+  - You learn an additional plan for your Replicate Magic Item feature, which is an armor plan.
+- Level 11: Perfected Armor
+  - Your Arcane Armor gains additional benefits based on its model.
 
 ## Barbarian 
 

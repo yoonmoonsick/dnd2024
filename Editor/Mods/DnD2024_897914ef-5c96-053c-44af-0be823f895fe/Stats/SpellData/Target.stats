@@ -7493,6 +7493,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPELLSTORINGITEM_CUREWOUNDS,100,-1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SPELLSTORINGITEM_CUREWOUNDS,100,-1);" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7537,7 +7538,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c9245ecg53cdg4972ga5c8gb74454ad30ea" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPELLSTORINGITEM_ARCANELOCK,100,-1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SPELLSTORINGITEM_ARCANELOCK,100,-1);" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8019,6 +8019,62 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;CannotTargetItems;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df781c80-b8d7-4532-bd0c-2066baffab7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Dreadnaught_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="15431f52-f307-4484-9345-ab67ca11b2ef" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, SourceSpellDC())):Force(3);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h935b1170gd283gc840g9e43g16b775a16cbb" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;AddFallDamageOnLand;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f95ea4a1-f846-4673-860c-806da892e2f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Dreadnaught_Pull" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="df781c80-b8d7-4532-bd0c-2066baffab7a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, SourceSpellDC())):Force(-3);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PullingShout" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h86608ca7g7e7dgb06dg06f8gcf6042016977" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h695a24a6g177dg33f9g9bffg3cfcac37fc7f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3afa4ef5-a63f-48e3-9cb8-074e0dade038" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_ThunderGauntlets" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c69241a-8e02-42eb-a512-322beeaf3e85" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24fc7038-653f-4f9f-867f-c34a7743eae3" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c26defc-f2eb-4e3a-87c5-9f40463ea3ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8387ad65-d2ff-49f3-b5eb-c53db9048311" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f78808b6-400e-4a72-a86b-b14f3c897e9c" />
@@ -8079,7 +8135,7 @@
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="97731080-de3e-4650-8dfb-aedd939b7f12" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Cleric" />
