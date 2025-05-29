@@ -30,6 +30,15 @@ IF
 CastedSpell(_Caster,"Shout_YMS_LongRest",_,_,_)
 THEN
 RequestLongRest((CHARACTER)_Caster, 1);
+
+IF
+DB_Players(_Player)
+AND
+DB_DnD2024_Initialized(1)
+AND
+HasPassive(_Player, "LongRangeThrow", 0)
+THEN
+AddPassive(_Player, "LongRangeThrow");
 EXITSECTION
 
 ENDEXITSECTION

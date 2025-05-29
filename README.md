@@ -1737,6 +1737,7 @@ As player characters become stronger, some enemies will be enhanced to maintain 
   - When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.
 - Thrown Weapon Fighting
   - When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
+  - Removes the penalty from Long Range Throw.
 - Blind Fighting
   - You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
 - Interception
@@ -1790,6 +1791,13 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 
 ## Initiative 
 - 1d4 -> 1d20
+
+## Ranged Weapon
+- When making a ranged weapon attack against a target more than 18m or 15m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Sharpshooter feat.
+- Crossbows have the Loading property, which can be ignored if you have the Crossbow Expert feat.
+
+## Thrown Weapon
+- When throwing a weapon at a target more than 9m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Throw Fighting Style.
 
 ## Weapon Mastery Properties
 
