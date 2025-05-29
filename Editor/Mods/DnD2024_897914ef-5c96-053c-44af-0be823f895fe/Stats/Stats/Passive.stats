@@ -809,7 +809,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="53417c6f-c314-4235-9ec6-0f3a51faec4b" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9ce5c9b6g8685gb828gd6ccg069b0290c7c0" version="2" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Rage') or SpellId('Rage_Frenzy') or SpellId('Rage_Totem_Bear') or SpellId('Rage_Totem_Eagle') or SpellId('Rage_Totem_Elk') or SpellId('Rage_Totem_Tiger') or SpellId('Rage_Totem_Wolf')" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Shout_Rage') or SpellId('Shout_Rage_Frenzy') or SpellId('Shout_Rage_Totem_Bear') or SpellId('Shout_Rage_Totem_Eagle') or SpellId('Shout_Rage_Totem_Elk') or SpellId('Shout_Rage_Totem_Tiger') or SpellId('Shout_Rage_Totem_Wolf');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(INSTINCTIVE_POUNCE,100,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerCombat;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);StatusImmunity(SURPRISED);" />
@@ -4856,9 +4856,16 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10c5096fg8eeeg1345g2e7eg1d05047dc7fa" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2bf658e7gd07ag07c1g2d6eg909394a9b967" version="2" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SoulknifeEnergy:1;ReactionActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PsychicBlade);UnlockSpell(Projectile_PsychicBlade);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Soulknife_Melee" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PsychicBlade);UnlockSpell(Projectile_PsychicBlade);IF(SpellId('Target_PsychicBlade') or SpellId('Projectile_PsychicBlade')):RollBonus(Attack,max(0,IntelligenceModifier));" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c1aaf1d-bc76-4fef-8134-5a39f216cc8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="def659cb-9a64-4880-84bd-05b03f0dc74c" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
