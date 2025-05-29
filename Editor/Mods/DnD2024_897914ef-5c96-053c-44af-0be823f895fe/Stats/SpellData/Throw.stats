@@ -16,6 +16,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="InventorySelection;RangeIgnoreVerticalThreshold;IsHarmful;HasHighGroundRangeExtension;IgnoreVisionBlock;AddFallDamageOnLand;HasVerbalComponent;HasSomaticComponent;AbortOnSpellRollFail;AbortOnSecondarySpellRollFail;IsConcentration;CombatLogSetSingleLineRoll" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -34,6 +35,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
         <field name="Template" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76, f432f788-1481-449b-a3fe-3d3e84412297, 200e3672-5ce8-482e-b880-91db9edd6566" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -45,6 +47,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76, f432f788-1481-449b-a3fe-3d3e84412297, 200e3672-5ce8-482e-b880-91db9edd6566" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -55,6 +58,7 @@
         <field name="Trajectories" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76, f432f788-1481-449b-a3fe-3d3e84412297, 200e3672-5ce8-482e-b880-91db9edd6566" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="InventorySelection;RangeIgnoreVerticalThreshold;IsHarmful;HasHighGroundRangeExtension;IgnoreVisionBlock;AddFallDamageOnLand;HasVerbalComponent;HasSomaticComponent;AbortOnSpellRollFail;AbortOnSecondarySpellRollFail;Temporary;CombatLogSetSingleLineRoll;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -65,6 +69,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);GROUND:DealDamage(1,Bludgeoning);TARGET:IF(HasStatus('MAG_PROJECTILE_SHOES_TECHNICAL', context.HitDescription.ThrownObject)):DealDamage(2d4, Psychic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THE_THORNS_WEAPON_BOND', context.HitDescription.ThrownObject)):ApplyStatus(MAG_THE_THORNS_AOE_DAMAGE_TECHNICAL, 100, 0);TARGET:IF(HasStatus('MAG_FIRE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Fire,Magical,,0,,true);TARGET:IF(HasStatus('MAG_COLD_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Cold,Magical,,0,,true);TARGET:IF(HasStatus('MAG_LIGHTNING_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Lightning,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THUNDER_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Thunder,Magical,,0,,true);TARGET:IF(HasStatus('MAG_ACID_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Acid,Magical,,0,,true);TARGET:IF(HasStatus('MAG_POISON_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Poison,Magical,,0,,true);TARGET:IF(HasStatus('MAG_NECROTIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Necrotic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_FORCE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Force,Magical,,0,,true);TARGET:IF(HasStatus('MAG_PSYCHIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Psychic,Magical,,0,,true);TARGET:IF((HasStatus('BURNING', context.HitDescription.ThrownObject) or HasStatus('FLAMING_SPHERE_AURA', context.HitDescription.ThrownObject))):ApplyStatus(SELF, BURNING,100,1)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -75,6 +80,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);GROUND:DealDamage(1,Bludgeoning);TARGET:IF(HasStatus('MAG_PROJECTILE_SHOES_TECHNICAL', context.HitDescription.ThrownObject)):DealDamage(2d4, Psychic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THE_THORNS_WEAPON_BOND', context.HitDescription.ThrownObject)):ApplyStatus(MAG_THE_THORNS_AOE_DAMAGE_TECHNICAL, 100, 0);TARGET:IF(HasStatus('MAG_FIRE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Fire,Magical,,0,,true);TARGET:IF(HasStatus('MAG_COLD_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Cold,Magical,,0,,true);TARGET:IF(HasStatus('MAG_LIGHTNING_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Lightning,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THUNDER_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Thunder,Magical,,0,,true);TARGET:IF(HasStatus('MAG_ACID_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Acid,Magical,,0,,true);TARGET:IF(HasStatus('MAG_POISON_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Poison,Magical,,0,,true);TARGET:IF(HasStatus('MAG_NECROTIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Necrotic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_FORCE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Force,Magical,,0,,true);TARGET:IF(HasStatus('MAG_PSYCHIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Psychic,Magical,,0,,true);TARGET:IF((HasStatus('BURNING', context.HitDescription.ThrownObject) or HasStatus('FLAMING_SPHERE_AURA', context.HitDescription.ThrownObject))):ApplyStatus(SELF, BURNING,100,1)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -86,6 +92,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject,false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);ApplyStatus(SELF,TELEKINESIS_TECHNICAL,100,10);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -103,6 +110,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18e6e0fcg3e90g9bf4gae8ag9d8cd3b764ff" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6cc84e6ag4decg3d08g357fg6c2f38bea887" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(HasStatus('MAG_SILENCE_THROW',context.HitDescription.ThrownObject)):ApplyStatus(SILENCED,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()))" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -116,6 +124,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Barbarian_WeaponInfusion" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd8014d7g865egde14gb2ffg39a2329d0bf9" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec45abc8gb0ceg40b7g16ecg07172c471711" version="1" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -127,7 +136,7 @@
         <field name="ThrowOrigin" type="EnumerationTableFieldDefinition" value="Target" enumeration_type_name="ThrowOrigin" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,TELEKINETIC_MOVEMENT_FREE);GROUND:DealDamage(1,Bludgeoning);TARGET:IF(HasStatus('MAG_PROJECTILE_SHOES_TECHNICAL', context.HitDescription.ThrownObject)):DealDamage(2d4, Psychic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THE_THORNS_WEAPON_BOND', context.HitDescription.ThrownObject)):ApplyStatus(MAG_THE_THORNS_AOE_DAMAGE_TECHNICAL, 100, 0);TARGET:IF(HasStatus('MAG_FIRE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Fire,Magical,,0,,true);TARGET:IF(HasStatus('MAG_COLD_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Cold,Magical,,0,,true);TARGET:IF(HasStatus('MAG_LIGHTNING_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Lightning,Magical,,0,,true);TARGET:IF(HasStatus('MAG_THUNDER_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Thunder,Magical,,0,,true);TARGET:IF(HasStatus('MAG_ACID_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Acid,Magical,,0,,true);TARGET:IF(HasStatus('MAG_POISON_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Poison,Magical,,0,,true);TARGET:IF(HasStatus('MAG_NECROTIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Necrotic,Magical,,0,,true);TARGET:IF(HasStatus('MAG_FORCE_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Force,Magical,,0,,true);TARGET:IF(HasStatus('MAG_PSYCHIC_THROW', context.HitDescription.ThrownObject)):DealDamage(1d4, Psychic,Magical,,0,,true);TARGET:IF((HasStatus('BURNING', context.HitDescription.ThrownObject) or HasStatus('FLAMING_SPHERE_AURA', context.HitDescription.ThrownObject))):ApplyStatus(SELF, BURNING,100,1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self()" />
-        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
         <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not Grounded() and not IsItemDisabled() and not HasAttribute('InventoryBound') and (IsMovable() or Character() or Dead()) and (not IsEquipped() or IsEquipmentSlot(EquipmentSlot.MeleeMainHand) or IsEquipmentSlot(EquipmentSlot.MeleeOffHand) or IsEquipmentSlot(EquipmentSlot.Boots))" />
         <field name="Template" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="55ae7132-ee98-46a8-b111-771809a7ff76, f432f788-1481-449b-a3fe-3d3e84412297, 200e3672-5ce8-482e-b880-91db9edd6566" />
@@ -159,6 +168,7 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="40f10873-4dbb-47bb-bf64-8a1b41a0c8a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="AddRangeFromAbility" type="StringTableFieldDefinition" value="Intelligence,1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
