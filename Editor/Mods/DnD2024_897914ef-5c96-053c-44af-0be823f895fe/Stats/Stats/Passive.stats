@@ -3474,7 +3474,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h714c1298g3f17g3c83g2137gde86ab77571f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ExperimentalAlchemy" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ExperimentalElixir);UnlockSpell(Shout_ExperimentalElixir_SpellSlot);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ExperimentalElixir);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3547,7 +3547,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Armorer_3_ArcaneArmor" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15767649gc128gd6f9g5eddg5bbba75cbc10" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ad966a9g6f83g3fcfg12e7gbb4c5aab8d8a" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HeavyArmorMaster" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HeavilyArmored" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneArmor);" />
       </fields>
@@ -3698,6 +3698,51 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',25,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',27,context.Source)):ActionResource(ThunderGauntlets,1,0);IF(AbilityGreaterThan('Intelligence',29,context.Source)):ActionResource(ThunderGauntlets,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HeavyArmorMaster" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ea0e6d3-1f16-4207-a20e-35324094ea8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artillerist_3_EldritchCannon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb51aefeagf86bg9748gfcfeg1e1f7d1d4e8b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7493e46fgdc51g08dbgb4d3g38dde8aa1a92" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_EldritchCannon);ActionResource(EldritchCannon,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78b554e3-64b9-483d-a63b-9fec3a0bd2be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artillerist_5_ArcaneFirearm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3169425ega134gc6adgc915g0069f3c18971" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e693445g4eedg8d84gbc3ag539f503e49c5" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicalAmbush" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell()):DamageBonus(1d8);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d406b7c-76c5-4838-9053-7a64983bd7de" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artillerist_9_ExplosiveCannon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa1e4a7dg56adgb205g8a33g0058a80215c6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b3e2b4bgcb61gd91bgcdabg483e09c733dc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ExplosiveCannon);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="871e623d-fc83-4674-869e-1a190bf9b0d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artillerist_11_FortifiedPosition" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08d0b2a2g3564gb986g7ed2gd32f2bd6f8e2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93af406fgdbbdgae0eg49b8g7172de555374" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FortifiedPosition);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">

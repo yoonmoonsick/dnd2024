@@ -4119,45 +4119,37 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
         <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3ebc192f-035e-4acd-8a59-f9119a423b43" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot_1;Shout_ExperimentalElixir_SpellSlot_2;Shout_ExperimentalElixir_SpellSlot_3;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he43686b8gf02bge506g4ccbg37c140636eb4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h760fb132g365cg7a18g63a0gf5e4d721291b" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
-        <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,1);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,1, false, false, context.Source)" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16260114-5751-4145-ae92-30ba2a9f4456" />
         <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,2);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,2, false, false, context.Source)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a82abfe3-be53-41c8-b13f-4577fd6e70d3" />
         <field name="Name" type="NameTableFieldDefinition" value="ExperimentalElixir_SpellSlot_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3cb93420-9009-4552-a594-c7c608c00fe5" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c4d1efdd-32fa-4ba9-948d-b3749e16f09e" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARCANE_DISTILLATION_1,100,-1);UseActionResource(SpellSlot,1,3);" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1,3, false, false, context.Source)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ExperimentalElixir_SpellSlot" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4315,6 +4307,227 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3a23c7e9g1d07gadf6gc939gbc0a2555bf4e" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a56cf3e-2187-4e91-8f13-fff6cbae6b27" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_SpellSlot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8fd34ff5-3ab3-46b6-a6a1-003c79e2742e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,EldritchCannon,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1eb66c2g8d5ag7b13gd39dgd12b4550d529" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca5d426ag6509g83b8g7184ge6fd305162e8" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8f9043e2-4608-43c5-b78f-c4a1b91ea340" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6c9ba66-d590-49c1-96f6-b727c0949db1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_SpellSlot_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9e613bcb-b592-46c6-9fac-1d929e84e0ed" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,EldritchCannon,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1eb66c2g8d5ag7b13gd39dgd12b4550d529" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca5d426ag6509g83b8g7184ge6fd305162e8" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_EldritchCannon_SpellSlot" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8f9043e2-4608-43c5-b78f-c4a1b91ea340" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="220490ac-3d38-4c71-923c-be293b3ee4e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_SpellSlot_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38c18cd0-df2a-4ac1-90e3-70419c242988" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,EldritchCannon,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1eb66c2g8d5ag7b13gd39dgd12b4550d529" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca5d426ag6509g83b8g7184ge6fd305162e8" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;924d3103-e770-47ad-b472-f0f0c79baea3,,;921aedc8-10a0-47b3-b5a3-85f2b8a105af,,;,,;,,;,,;,,;,," />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_EldritchCannon_SpellSlot" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8f9043e2-4608-43c5-b78f-c4a1b91ea340" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59a56463-0561-4013-a3a5-396e38b2ba66" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72a539b3-a687-4aa5-b6d8-785c398ef36d" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb51aefeagf86bg9748gfcfeg1e1f7d1d4e8b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6065c288g4a48g8e8dg6d31ga51277a72274" version="2" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_EldritchCannon_Flamethrower;Shout_EldritchCannon_ForceBallista;Shout_EldritchCannon_Protector;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;EldritchCannon:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de391c76-8f27-4aec-bfdd-38f6b7f13502" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Flamethrower" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="59a56463-0561-4013-a3a5-396e38b2ba66" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_EldritchCannon" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(not HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(f1c6688f-f53d-4e9d-ad96-e490638ec746,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(8e9ed30d-820e-44d8-ac21-4890279da731,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_FlameThrower" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ccc6086g83abgd51ag9e63g4e51884fb5fb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13dba9c4g685cgd9f1g44bdg7083dc24edc6" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ad0d0d1-dd43-4208-a6fc-5b424108af99" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_ForceBallista" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de391c76-8f27-4aec-bfdd-38f6b7f13502" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32b91ab3g291egad70g8012g2b107d074e56" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35a58848g081fge561g5668g12b36e6852f2" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(not HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(5c17467a-f8a2-4e22-85ea-ed41c5ab6578,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(d0d051aa-bcfe-46b1-8af1-08e12752a432,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="833468ba-b748-4658-955b-af6add1ffe91" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Protector" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de391c76-8f27-4aec-bfdd-38f6b7f13502" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_ShieldCapacitor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd70a3607g0e2bg0dbegd52cga026b824541b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c3d8d51gf9c7g4c52gb6adgd8d42236ec3a" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(not HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(32d9cc54-5c05-4bc5-87e2-d90ddd63ad26,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(a53ee87c-e872-4e2e-a717-b61432bc9d3f,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="793857fe-9212-40e9-bfb0-bd6e9956ddfb" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Protector_Heal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4f9bbc65-1402-4f57-a5db-3c47d1564771" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELDRITCH_CANNON_PROTECTOR_TEMPHP,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Enemy() and not Dead() and Character();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_ShieldCapacitor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd70a3607g0e2bg0dbegd52cga026b824541b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c3d8d51gf9c7g4c52gb6adgd8d42236ec3a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(1d8);GainTemporaryHitPoints(Owner.IntelligenceModifier)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELDRITCH_CANNON_PROTECTOR_TEMPHP,100,-1);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c562513-e081-48f3-88cd-17b6b7c6e67a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Protector_Heal_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="793857fe-9212-40e9-bfb0-bd6e9956ddfb" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELDRITCH_CANNON_PROTECTOR_TEMPHP_9,100,-1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(2d8);GainTemporaryHitPoints(Owner.IntelligenceModifier)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELDRITCH_CANNON_PROTECTOR_TEMPHP_9,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec6887f8-02b6-4eac-ba02-e87da417b480" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Detonate" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6412ed8c-e460-4723-854a-b560141f837a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC());" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Force,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10/2,Force,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() " />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h220a691bg6069gea4fg2a68gb19394bdb727" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h670c673eg1b10gf2d5g02d4g476b7189931a" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="dcf06db0-84c5-436c-965f-1c6c559cdc65" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="54674ec5-e6f5-487a-9b97-5502aca85e01" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6951768d-63aa-4da7-814c-26765f4580f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="FortifiedPosition" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="59a56463-0561-4013-a3a5-396e38b2ba66" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h98ec19b4g7a3dgb38ege640g8d57511bd3a9" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_FortifiedPosition_Flamethrower;Shout_FortifiedPosition_ForceBallista;Shout_FortifiedPosition_Protector;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5409b3c-2664-4db7-87fe-e6dd1af6906e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FortifiedPosition_Flamethrower" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de391c76-8f27-4aec-bfdd-38f6b7f13502" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(8e9ed30d-820e-44d8-ac21-4890279da731,Permanent,,,'FortifiedPosition',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FortifiedPosition" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="194b7668-e5c2-4bd2-a1fb-e82f56aa9108" />
+        <field name="Name" type="NameTableFieldDefinition" value="FortifiedPosition_ForceBallista" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ad0d0d1-dd43-4208-a6fc-5b424108af99" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(d0d051aa-bcfe-46b1-8af1-08e12752a432,Permanent,,,'FortifiedPosition',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FortifiedPosition" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="725859e9-da5c-4296-a740-15a75fd84f7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="FortifiedPosition_Protector" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="833468ba-b748-4658-955b-af6add1ffe91" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(a53ee87c-e872-4e2e-a717-b61432bc9d3f,Permanent,,,'FortifiedPosition',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FortifiedPosition" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">

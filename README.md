@@ -389,6 +389,34 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 11: Perfected Armor
   - Your Arcane Armor gains additional benefits based on its model.
 
+### Artillerist
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Artillerist.png?raw=true)
+
+> An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Shield, Thunderwave
+  - Level 5: Scorching Ray, Shatter
+  - Level 9: Fireball, Slow
+- Level 3: Eldritch Cannon
+  - You can create a Eldritch Cannon. You can have only one cannon at a time and must finish a Long Rest or expend a spell slot to create another.
+  - Arcane Refueling
+    - Creates an Eldritch Cannon resource that allows you to summon an additional Eldritch Cannon by expending a spell slot.
+  - Flamethrower
+    - Breathes fire in a 15-foot cone. Targets must make a Dexterity save, taking 2d8 fire damage on a fail (half on success).
+  - Force Ballista
+    - Makes a ranged spell attack. On hit, deals 2d8 force damage and pushes a creature 5 feet.
+  - Protector
+    - Grants itself and nearby allies (within 10 feet) temporary hit points equal to 1d8 + Intelligence modifier.
+- Level 5: Arcane Firearm
+  - You can turn your spellcasting focus into an arcane firearm by carving magical sigils into it. When you cast an Artificer spell, you add 1d8 to one of the spell’s damage rolls.
+- Level 9: Explosive Cannon
+  - Your cannon’s damage rolls increase by 1d8. You can use a Reaction to make it explode. Creatures within 20 feet must make a Dexterity save or take 3d10 force damage (half on success).
+  - You can detonate your Eldritch Cannon.
+- Level 11: Fortified Position
+- You can have up to two cannons at once.
+
 ## Barbarian 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)

@@ -5584,6 +5584,58 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(ClassLevel(Artificer));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31d5240e-ca34-4634-97ca-a622a276fef2" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONTROL_ELDRITCH_CANNON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a92e62b-3e82-4220-80ee-aa12e9aca5f0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONTROL_ELDRITCH_CANNON" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and Tagged('ELDRITCH_CANNON')):ApplyStatus(CONTROL_ELDRITCH_CANNON_ACTIVATED)" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="663e5165-adb0-4bb3-bce5-9d13e5531ad7" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONTROL_ELDRITCH_CANNON_ACTIVATED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="052d1638-5e6b-4d48-aac1-0c586d7cb735" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONTROL_ELDRITCH_CANNON_ACTIVATED" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BonusActionPoint,1,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3f994b5-ec30-4fb0-a3de-4fafc0e7c52e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_CANNON_PROTECTOR_TEMPHP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d085abaf-b3f2-4c6b-b2ea-3351caf2270f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd70a3607g0e2bg0dbegd52cga026b824541b" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELDRITCH_CANNON_PROTECTOR_TEMPHP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d8+Owner.IntelligenceModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dffee06c-bb2c-4e9f-a48b-4007f8eefa95" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_CANNON_PROTECTOR_TEMPHP_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3f994b5-ec30-4fb0-a3de-4fafc0e7c52e" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d8+Owner.IntelligenceModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34edad27-2f5f-43e9-860a-f6cc22751c0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_CANNON_LEVEL_BOOST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0cf3667d-eced-4d6b-8e24-92d477abc6f3" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELDRITCH_CANNON_LEVEL_BOOST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.IntelligenceModifier);IncreaseMaxHP(Owner.ClassLevel(Artificer)*5-1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f7a8336-df17-4cc8-ae26-b54232f59857" />
