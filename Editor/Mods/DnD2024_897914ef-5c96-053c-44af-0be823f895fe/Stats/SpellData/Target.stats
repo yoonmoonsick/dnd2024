@@ -8064,19 +8064,28 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="24fc7038-653f-4f9f-867f-c34a7743eae3" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0c26defc-f2eb-4e3a-87c5-9f40463ea3ae" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8387ad65-d2ff-49f3-b5eb-c53db9048311" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExplosiveCannon" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5f37c13-89e3-4a2a-ba0f-c3b6f654a78f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Force,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10/2,Force,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('ELDRITCH_CANNON');" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h220a691bg6069gea4fg2a68gb19394bdb727" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h670c673eg1b10gf2d5g02d4g476b7189931a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Tagged('ELDRITCH_CANNON');" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="54674ec5-e6f5-487a-9b97-5502aca85e01" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
