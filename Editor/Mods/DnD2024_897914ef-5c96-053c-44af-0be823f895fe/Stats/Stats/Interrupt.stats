@@ -896,6 +896,54 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2bc523d2-3b18-422b-8e95-65b9e9a6f4e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Monk_DeflectAttacks_Melee" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="77491e14-ef33-4e82-a07c-ff77b4daa530" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd8653f36gd937gc1f8g163eg59487c5b707d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4f9a7fe2g69b4g38d8g5b12g16e5edcce33f" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Riposte" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and (IsMeleeAttack() or IsMeleeUnarmedAttack()) and not HasStatus('SG_Polymorph_BeastShape') and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));" />
+        <field name="Stack" type="StringTableFieldDefinition" value="DeflectAttacks_Melee" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="739374ec-566d-4783-be9e-68ffad327d1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Monk_DeflectAttacks_Bludgeoning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2bc523d2-3b18-422b-8e95-65b9e9a6f4e8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h404bd384g3e83g89b0g0ba8gfe98cf867273" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BludgeonTheWeak" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Bludgeoning,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;KiPoint:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Bludgeoning);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="514e9d1e-bf53-4eea-b405-236e127ee69c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Monk_DeflectAttacks_Piercing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="739374ec-566d-4783-be9e-68ffad327d1e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha83c1a6fgc882g82feg1366g89f3ba1fc4ed" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PierceTheWeak" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Piercing,true,true,true);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Piercing);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d1e17ce-6871-4bf9-be46-90fea871ecd1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Monk_DeflectAttacks_Slashing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="739374ec-566d-4783-be9e-68ffad327d1e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01064203gcb7dg86cfg68c8g3e4d596af953" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_SlashTheWeak" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Slashing,true,true,true);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Slashing);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8730e920-9afa-4718-b498-31094f942edf" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Kensei_6_DeftStrike" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
@@ -906,7 +954,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(MartialArts)+DexterityModifier, MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(MartialArts)+DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="Cost" type="StringTableFieldDefinition" value="KiPoint:1;Interrupt_DeftStrike:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="DeftStrike" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
