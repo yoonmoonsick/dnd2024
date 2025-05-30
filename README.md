@@ -383,7 +383,6 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
     - Infiltrator is an armor model designed for stealth, featuring a Lightning Launcher that deals 1d6 lightning damage plus your ability modifier and can be thrown long distances, and dealing damage using this weapon, they gain Lightning Charges., increased speed by 5 feet, and advantage on Dexterity (Stealth) checks.
     - When you reach 11th level as an artificer, your Lightning Launcher deals 2d6 lightning damage. A creature that takes damage from this weapon has disadvantage on its next attack roll.
 - Level 5: Extra Attack
-  - When you cast a Alchemist spell, you add your Intelligence modifier (minimum +1) to the roll that restores hit points or deals acid, fire, necrotic, or poison damage.
 - Level 9: Armor Replication
   - You learn an additional plan for your Replicate Magic Item feature, which is an armor plan.
 - Level 11: Perfected Armor
@@ -415,7 +414,33 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Your cannon’s damage rolls increase by 1d8. You can use a Reaction to make it explode. Creatures within 20 feet must make a Dexterity save or take 3d10 force damage (half on success).
   - You can detonate your Eldritch Cannon.
 - Level 11: Fortified Position
-- You can have up to two cannons at once.
+  - You can have up to two cannons at once.
+
+### Battle Smith
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleSmith.png?raw=true)
+
+> A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a Steel Defender, a protective companion of their own creation.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Heroism, Sheild
+  - Level 5: Branding Smite, Warding Bond
+  - Level 9: Aura of Vitality, Conjure Barrage
+- Level 3: Arcane Empowerment
+  - When you make an attack with a weapon, you can use your Intelligence modifier instead of your Strength or Dexterity modifier for the attack and damage rolls.
+- Level 3: Steel Defender
+  - You create a Steel Defender, a mechanical companion.
+  - Deflect Attack
+    - Impose Disadvantage on an attack against your allies when you are within 10ft.
+- Level 5: Extra Attack
+- Level 9: Arcane Jolt
+  - You and your Steel Defender share Arcane Jolt, allowing you to unleash destructive power and healing ability.
+  - Destructive Energy
+    - When you hit a target with an attack roll using a weapon, or when your Steel Defender hits a target, you can channel magical energy through the strike, causing the target to take an extra 2d6 force damage.
+  - Restorative Energy
+    - You or your Steel Defender can restore 2d6 hit points to one creature.
+- Level 11: Improved Defender
+  - Your Arcane Jolt and Steel Defender become more powerful. The extra damage and healing from Arcane Jolt both increase to 3d6. Additionally, whenever your Steel Defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 plus your Intelligence modifier.
 
 ## Barbarian 
 

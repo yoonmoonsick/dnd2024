@@ -4530,6 +4530,42 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FortifiedPosition" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="969b8844-42ac-4481-b027-dccbc9ceea5a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="833468ba-b748-4658-955b-af6add1ffe91" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):Summon(df416f8d-17b5-4d86-b1b8-4b50b675f127,Permanent,,,'SteelDefender',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):Summon(f0aaecd9-996b-44d8-bbec-89980b9e57bf,Permanent,,,'SteelDefender',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(11,'Artificer')):Summon(a5b37425-7dd2-420f-b21c-0ff84cfc8979,Permanent,,,'SteelDefender',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SteelWatcher_ImmutableForm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8918de44g07e1ge705gc332gbf3b34e3bfe7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94c4a97cga62eg78f0gfb5cgf588f8d71fb0" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f2dbd9e-a27e-4618-a497-e58325e10080" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_Repair" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ac162fab-464a-4473-abeb-35a50a6e2eb4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+Owner.IntelligenceModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Mending" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11c016c1g62a6g4e34g852dg9cc43da69d57" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1b1f766gdaf8g144egebb3g87c6c1314f9b" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d8+Owner.IntelligenceModifier);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Enlarge" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SteelDefenderRepair:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;236087a5-5597-4ee7-ab06-75b01147f596,,;ee0b6a78-c6b6-4852-aecb-d7c474a37d68,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Peaceful" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2e13383d-6141-42e7-9f88-9900d073be7c" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d0b10a9-4f8a-43ab-935e-91793f77c3bb" />

@@ -3745,6 +3745,92 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_FortifiedPosition);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f3fc2536-46af-4d42-93f3-50b1d69333ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_3_ArcaneEmpowerment" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1238e6gd4ceg1b5bg9cd9gccbfa2eff14f" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50405ae5gb99cg9528ge5e5g5a403c7de1ee" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,ARCANE_EMPOWERMENT_1,100,-1);ApplyEquipmentStatus(MeleeOffHand,ARCANE_EMPOWERMENT_2,100,-1);ApplyEquipmentStatus(RangedMainHand,ARCANE_EMPOWERMENT_3,100,-1);ApplyEquipmentStatus(RangedOffHand,ARCANE_EMPOWERMENT_4,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6b589a4-520d-4ce6-8cfa-3238ea024641" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_9_ArcaneJolt" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneJolt,1,0);ActionResource(ArcaneJolt_Cooldown,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',25,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',27,context.Source)):ActionResource(ArcaneJolt,1,0);IF(AbilityGreaterThan('Intelligence',29,context.Source)):ActionResource(ArcaneJolt,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasActionResource('ArcaneJolt', 1, 0, false, false, context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SHARE_ARCANE_JOLT,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_LightningBlast" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07b908d3gde6dg24beg31a8g35821fd2521f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34a1212eg906cgabf0g1792g548a2a3b2d8f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b5c9231-695e-4c47-a920-002d5d59ebbb" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_9_DestructiveEnergy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc7fb337dg0addga83fg7d9ag8214aac38c2f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h37f371b2g598bga2e9gb04fg2cf9c15bd76d" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ArcaneJolt:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_DestructiveEnergy);UnlockInterrupt(Interrupt_DestructiveEnergy_Critical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="209d0421-915c-4449-b936-fa276f9bdafc" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_9_RestorativeEnergy" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b06520dg262ag0297gd1c7gf2f3802b61ab" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha954cb64g890egfb94g080fg142a7f139895" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ArcaneJolt:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RestorativeEnergy);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="709aa1a4-0ca6-457e-8282-d35c18e0f194" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_11_ArcaneJolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6b589a4-520d-4ce6-8cfa-3238ea024641" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SHARE_ARCANE_JOLT_11,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1103831-13f6-404d-b319-cacefaf26219" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleSmith_11_ImprovedDefender" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cd5376cgc734g9f88gb0feg839b2231a35c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9c00840g9471gef24g5638gbc80eb34aaf8" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SteelWatcher_ImmutableForm" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f33937f4-07db-42db-86c2-ef5f462fdd24" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_DeflectAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c064cca8-88d4-41c5-bd79-c622afab5176" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SteelDefender_DeflectAttack);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f706c8a2-c2e0-49db-a3f2-2023ca3b352d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_DeflectAttack_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f33937f4-07db-42db-86c2-ef5f462fdd24" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SteelDefender_DeflectAttack_11);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="627c8455-fab8-4663-9023-5ce434a0fb07" />

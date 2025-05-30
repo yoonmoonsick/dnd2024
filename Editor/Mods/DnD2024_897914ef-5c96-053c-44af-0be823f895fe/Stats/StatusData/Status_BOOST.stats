@@ -5636,6 +5636,98 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a4e49b8-c159-438f-b010-77e9ec6a7b47" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1238e6gd4ceg1b5bg9cd9gccbfa2eff14f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50405ae5gb99cg9528ge5e5g5a403c7de1ee" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponAttackRollAbilityOverride(Intelligence);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65bfb52b-a006-4349-87ff-10fac6551d21" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc184685-598d-408e-a6de-ad6786a56fa5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68096a10-a131-4490-af4f-55ffaa1281ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd329115-b25f-4957-a1dd-55bb2aaaf1d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHARE_ARCANE_JOLT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="31d5240e-ca34-4634-97ca-a622a276fef2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHARE_ARCANE_JOLT" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and Tagged('STEEL_DEFENDER')):ApplyStatus(SHARE_ARCANE_JOLT_ACTIVATED);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07b908d3gde6dg24beg31a8g35821fd2521f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34a1212eg906cgabf0g1792g548a2a3b2d8f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_LightningBlast" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasActionResource('ArcaneJolt', 1, 0, false, false, context.Source);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack;OnSpellCast;OnTurn;OnDamage;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce4c802c-bde9-4141-a714-3668a3b5110b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHARE_ARCANE_JOLT_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dd329115-b25f-4957-a1dd-55bb2aaaf1d1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="11" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and Tagged('STEEL_DEFENDER')):ApplyStatus(SHARE_ARCANE_JOLT_ACTIVATED_11);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24fd4996-3b63-4459-ba0f-b4813365db07" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHARE_ARCANE_JOLT_ACTIVATED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="663e5165-adb0-4bb3-bce5-9d13e5531ad7" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHARE_ARCANE_JOLT_ACTIVATED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h07b908d3gde6dg24beg31a8g35821fd2521f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34a1212eg906cgabf0g1792g548a2a3b2d8f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_LightningBlast" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneJolt_Cooldown,1,0);UnlockInterrupt(Interrupt_DestructiveEnergy_SteelDefender);UnlockInterrupt(Interrupt_DestructiveEnergy_SteelDefender_Critical);UnlockSpell(Target_RestorativeEnergy_SteelDefender);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4df61fcc-b293-4bda-9f4d-f80f3ee5d221" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHARE_ARCANE_JOLT_ACTIVATED_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24fd4996-3b63-4459-ba0f-b4813365db07" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="11" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ArcaneJolt_Cooldown,1,0);UnlockInterrupt(Interrupt_DestructiveEnergy_SteelDefender_11);UnlockInterrupt(Interrupt_DestructiveEnergy_SteelDefender_11_Critical);UnlockSpell(Target_RestorativeEnergy_SteelDefender_11);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfb5a331-8601-4f4f-ab0b-163b23ff50b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEEL_DEFENDER_BOOST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34edad27-2f5f-43e9-860a-f6cc22751c0c" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonusOverride(Owner.LevelMapValue(StandardProficiencyBonusScale));RollBonus(Attack,Owner.IntelligenceModifier);IncreaseMaxHP(Owner.ClassLevel(Artificer)*5);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f7a8336-df17-4cc8-ae26-b54232f59857" />

@@ -8088,6 +8088,75 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="54674ec5-e6f5-487a-9b97-5502aca85e01" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87477023-7300-4aa3-b7a2-7e199cac5a09" />
+        <field name="Name" type="NameTableFieldDefinition" value="RestorativeEnergy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6f1692a-96dc-4b00-af6e-6a53b62b4547" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(ArcaneJolt)+IntelligenceModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b06520dg262ag0297gd1c7gf2f3802b61ab" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(ArcaneJolt)+SpellCastingAbilityModifier)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcaneJolt:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="58427877-c715-4834-b338-ec3e096f68a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RestorativeEnergy_SteelDefender" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="87477023-7300-4aa3-b7a2-7e199cac5a09" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+Owner.IntelligenceModifier);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self();" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b18fe033-6734-475c-9205-79a9bffb6ce3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RestorativeEnergy_SteelDefender_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58427877-c715-4834-b338-ec3e096f68a3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+Owner.IntelligenceModifier);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(3d6+SpellCastingAbilityModifier)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb4e9716-671d-499d-a00c-f6ff5812c8e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_SteelDefender" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff91c426-0f66-4f00-9ccd-6e2d3e30e682" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+2+Owner.IntelligenceModifier,Force,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SpiritualWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdefb19d7gc973gd79eg9a48g4449f21ab29b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8+2+Owner.Intelligence,Force);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+2+Owner.IntelligenceModifier, Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f9f7f0d-a817-48aa-b28f-cac64437f5aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_ImprovedDeflection" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bb4e9716-671d-499d-a00c-f6ff5812c8e4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(1d4+Owner.IntelligenceModifier,Force,Magical);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d4+Owner.IntelligenceModifier,Force);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f78808b6-400e-4a72-a86b-b14f3c897e9c" />
