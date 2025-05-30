@@ -645,7 +645,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer) and IsFlatValueInterruptInteresting(1)) and not AnyEntityIsItem();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((not Self(context.Source,context.Observer) and (HasInterruptedSavingThrow() or HasInterruptedAttack()) and Ally(context.Source, context.Observer) and IsFlatValueInterruptInteresting(4, context.Source)) or (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer) and IsFlatValueInterruptInteresting(4))) and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(IntelligenceModifier);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
@@ -662,6 +662,99 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and IsAbleToReact(context.Observer) and Enemy() and not (not Player(context.Source) and Tagged('AI_IGNORED_TARGET')  and not HasStatus('GNOLL_SUDDENRUSH')) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Target) and not HasStatus('SG_Ignore_AOO',context.Target) and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseAttack();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ThunderGauntlets:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a4456a2-6827-4a81-84f3-b6ab0eec72ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e9a71b36-bfed-431c-bf1a-52bbab849309" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc7fb337dg0addga83fg7d9ag8214aac38c2f" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsCritical() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneJolt),Force,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcaneJolt:1;ArcaneJolt_Cooldown:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneJolt),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da202f81-cf41-4654-b07e-fa43052ed710" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a286b9f-7264-4b72-941c-fbbec1be47c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had137537gca0aga028g9e5cg05f0db8d8f1a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Force" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsCritical() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneJolt),Force,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcaneJolt:1;ArcaneJolt_Cooldown:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneJolt),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6c5eabe-ffee-425b-ba89-83749aa6eded" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy_SteelDefender" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a4456a2-6827-4a81-84f3-b6ab0eec72ec" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Force,Magical);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcaneJolt_Cooldown:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e5035bc-0ca7-4e0e-bf1b-8bd9e0a1edc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy_SteelDefender_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da202f81-cf41-4654-b07e-fa43052ed710" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d6,Force,Magical);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ArcaneJolt_Cooldown:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="62897418-491b-41c2-8793-727ba6fb54d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy_SteelDefender_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c6c5eabe-ffee-425b-ba89-83749aa6eded" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(3d6,Force,Magical);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57dd589d-040f-45e6-87fa-b67653380d42" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveEnergy_SteelDefender_11_Critical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e5035bc-0ca7-4e0e-bf1b-8bd9e0a1edc6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(3d6,Force,Magical);CreateExplosion(Projectile_UseArcaneJolt);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="515454c7-42df-48d2-8768-86753d1358a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SteelDefender_DeflectAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h33e345d9g77b3g0522g1555g95731afb13eb" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(5, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph');" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93535cf4ge646g27f3g2e82g594cf309ef06" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84fc42f8-e5b7-4c1d-9cd9-45ef1b59a9c5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SteelDefender_DeflectAttack_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="515454c7-42df-48d2-8768-86753d1358a2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_SOURCE,Target_SteelDefender_ImprovedDeflection,true,true,true);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d4+5,Force);" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">

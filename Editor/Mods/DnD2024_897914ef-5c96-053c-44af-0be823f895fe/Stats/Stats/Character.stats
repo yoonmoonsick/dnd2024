@@ -18,7 +18,7 @@
         <field name="Intelligence" type="IntegerTableFieldDefinition" value="10" />
         <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
         <field name="Charisma" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Armor" type="IntegerTableFieldDefinition" value="18" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="15" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="1" />
         <field name="Sight" type="IntegerTableFieldDefinition" value="1600" />
         <field name="Hearing" type="IntegerTableFieldDefinition" value="1100" />
@@ -80,6 +80,58 @@
         <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_Protector_9" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="205ecdae-a075-40f4-b123-a842edbbc8d1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();AttackSpellOverride(Shout_EldritchCannon_Protector_Heal_9, Target_MainHandAttack);BlockRegainHP(Undead;Construct;Living);Tag(ACT2_SHADOW_CURSE_IMMUNE);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5de35b24-4a6e-4035-a1ad-835ea0642a39" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a7654bd-f088-40fa-b337-b556273c6587" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="14" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="5" />
+        <field name="XPReward" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="120" />
+        <field name="GameSize" type="EnumerationTableFieldDefinition" value="Medium" enumeration_type_name="ObjectSize" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();AttackSpellOverride(Target_MainHandAttack_SteelDefender, Target_MainHandAttack);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Tag(ACT2_SHADOW_CURSE_IMMUNE);Skill(Perception, 10);" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1;SteelDefenderRepair:3" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;SteelDefender_DeflectAttack" />
+        <field name="BludgeoningResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="SlashingResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PiercingResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="FireResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="LightningResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PoisonResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="Plate" enumeration_type_name="ArmorType" version="1" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="140f361e-ad65-42a1-9107-70dc006c5922" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5de35b24-4a6e-4035-a1ad-835ea0642a39" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="17" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="DialogueBlock();AttackSpellOverride(Target_MainHandAttack_SteelDefender, Target_MainHandAttack);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Tag(ACT2_SHADOW_CURSE_IMMUNE);Skill(Perception, 10);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;SteelDefender_DeflectAttack;ExtraAttack" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1;SteelDefenderRepair:4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31a2247d-fbbe-48f9-94d4-1f2a36eab11b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelDefender_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="140f361e-ad65-42a1-9107-70dc006c5922" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="18" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;SteelDefender_DeflectAttack_11;ExtraAttack" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1;SteelDefenderRepair:5" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
