@@ -645,8 +645,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((not Self(context.Source,context.Observer) and (HasInterruptedSavingThrow() or HasInterruptedAttack()) and Ally(context.Source, context.Observer) and IsFlatValueInterruptInteresting(4, context.Source)) or (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer) and IsFlatValueInterruptInteresting(4))) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(IntelligenceModifier);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(1, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_SOURCE,IntelligenceModifier);UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
       </fields>
