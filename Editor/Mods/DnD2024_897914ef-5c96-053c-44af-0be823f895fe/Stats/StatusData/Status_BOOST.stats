@@ -6854,6 +6854,63 @@
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(VOID_END_DAMAGE,100,0);DealDamage(2d6,Cold,Magical);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b1bf958-428b-4a58-a9bd-b5759f25546b" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_WIZARD" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0ae388c-391e-4d70-9684-c59ecb4778b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADESONG" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8abc2dde-ffb3-4fc2-a3da-32627941bf3c" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6cb469bagf9a5g5334g7712g5039c948bb19" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,BLADEWORK_1,100,10);ApplyEquipmentStatus(MeleeOffHand,BLADEWORK_2,100,10);ApplyEquipmentStatus(RangedMainHand,BLADEWORK_3,100,10);ApplyEquipmentStatus(RangedOffHand,BLADEWORK_4,100,10)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,BLADEWORK_REMOVE,100,1);ApplyEquipmentStatus(MeleeOffHand,BLADEWORK_REMOVE,100,1);ApplyEquipmentStatus(RangedMainHand,BLADEWORK_REMOVE,100,1);ApplyEquipmentStatus(RangedOffHand,BLADEWORK_REMOVE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADEWORK_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bladesong" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLADEWORK" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de4d6003-b8e9-41af-853a-0224f1e0e8f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADEWORK_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c85d77aa-2d86-4882-a830-908442464aed" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADEWORK_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="731a4422-2c20-438b-b24e-4213604ad37e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADEWORK_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1fa448e5-d067-4dfa-9a1d-916692b0f45f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADEWORK_REMOVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="9" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f09b3d92-9169-40c6-b20d-18bd9b907b23" />
