@@ -201,7 +201,7 @@ data "Icon" "Target_OffHandAttack"
 data "Properties" "OncePerTurn"
 data "StatsFunctorContext" "OnAttack"
 data "Conditions" "not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();"
-data "StatsFunctors" "IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0);"
+data "StatsFunctors" "TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_RAGE, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY_RAGE, 100, 0);"
 
 new entry "WeaponMastery_Cleave"
 type "PassiveData"
@@ -3483,6 +3483,13 @@ data "Boosts" "UnlockSpell(Shout_Swarmkeeper_Select);IF(not HasStatus('SWARMKEEP
 
 new entry "YMS_Rogue"
 type "PassiveData"
+
+new entry "SneakAttack_Unlock"
+type "PassiveData"
+using "SneakAttack_Unlock"
+data "StatsFunctorContext" "OnStatusApply"
+data "Conditions" "StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE');"
+data "StatsFunctors" "UseActionResource(SELF,SneakAttack_Charge,1,0)"
 
 new entry "SteadyAim"
 type "PassiveData"
