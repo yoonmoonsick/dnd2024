@@ -3620,13 +3620,38 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
         <field name="Name" type="NameTableFieldDefinition" value="NICK" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SG_Rage',context.Source)):DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force,Magical);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic,Magical);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison,Magical);IF(HasStatus('SG_Rage',context.Source)):DealDamage(OffhandMeleeWeapon+2, OffhandMeleeWeaponDamageType);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ExecuteWeaponFunctors(OffHand);DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType,,true,0,,false,false);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);IF(HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and (HasAdvantage() or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage()):DealDamage(Cause.LevelMapValue(SneakAttack), OffhandMeleeWeaponDamageType,,true,0,,false,false);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h861bf672g247fg1f94g2767gaec92d76e2dd" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="43f8f1a3-dc6f-43a4-9836-593cea329788" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
         <field name="StackId" type="StringTableFieldDefinition" value="NICK" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb80ac7a-ca39-47a7-8ec7-d6bf4135773b" />
+        <field name="Name" type="NameTableFieldDefinition" value="NICK_ARCANE_SYNERGY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ExecuteWeaponFunctors(OffHand);DealDamage(OffhandMeleeWeapon+Cause.SpellCastingAbilityModifier, OffhandMeleeWeaponDamageType,,true,0,,false,false);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);IF(HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and (HasAdvantage() or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage()):DealDamage(Cause.LevelMapValue(SneakAttack), OffhandMeleeWeaponDamageType,,true,0,,false,false);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55855b7b-21b9-4485-9598-b1cc75291714" />
+        <field name="Name" type="NameTableFieldDefinition" value="NICK_RAGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ExecuteWeaponFunctors(OffHand);DealDamage(OffhandMeleeWeapon+Cause.LevelMapValue(RageDamage), OffhandMeleeWeaponDamageType,,true,0,,false,false);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);IF(HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and (HasAdvantage() or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage()):DealDamage(Cause.LevelMapValue(SneakAttack), OffhandMeleeWeaponDamageType,,true,0,,false,false);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7f227f3-36da-4dac-8099-0563e00799a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="NICK_ARCANE_SYNERGY_RAGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ExecuteWeaponFunctors(OffHand);DealDamage(OffhandMeleeWeapon+Cause.LevelMapValue(RageDamage)+Cause.SpellCastingAbilityModifier, OffhandMeleeWeaponDamageType,,true,0,,false,false);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);IF(HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source) and (HasAdvantage() or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage()):DealDamage(Cause.LevelMapValue(SneakAttack), OffhandMeleeWeaponDamageType,,true,0,,false,false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -281,7 +281,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_RAGE, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY_RAGE, 100, 0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4876,6 +4876,16 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ff030c74-9e39-473e-a0aa-351f09db7283" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Rogue" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f02edd3f-9b18-4f4e-8262-b20ddc747e3e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SneakAttack_Unlock" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0ffc26e0-d2f1-441c-a9b6-57608a70f688" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,SneakAttack_Charge,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
