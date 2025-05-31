@@ -1770,6 +1770,8 @@ As player characters become stronger, some enemies will be enhanced to maintain 
 - Poisoner
   - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
   - Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
+- Polearm Master
+  - Ability Score Increase. Increase your Dexterity or Strength score by 1, to a maximum of 20.
 - Savage Attacker
   - Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.
 - Sharpshooter
