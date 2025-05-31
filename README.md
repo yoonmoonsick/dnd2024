@@ -2099,6 +2099,9 @@ Appropriate spells have been added to the spell list for each class.
 - As a Magic action, you can make a melee spell attack with the fiery blade. On a hit, the target takes Fire damage equal to 3d6 plus your spellcasting ability modifier.
 - ***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
 
+### [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)
+- Duration: Concentration, 1 Hour
+
 ### [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
 
 ### [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
