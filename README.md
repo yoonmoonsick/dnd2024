@@ -1513,10 +1513,16 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BladesingingSchool.png?raw=true)
 
+- Level 3: Bladesong
+  - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+  - While the Bladesong is active, you gain the following benefits. 
+    - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.
+    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. 
+    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total. 
 - Level 6: Extra Attack
   - You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
 - Level 12: Song of Victory
-  - While your Bladesong is active, you can add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks. This applies only to the first attack on your turn.
+  - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
 ## [Illrigger](https://www.dndbeyond.com/sources/dnd/tir/the-illrigger-revised#TheIllrigger)
 
