@@ -6030,6 +6030,12 @@ new entry "YMS_ITEM"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "MAGICAL_HAND_CROSSBOW"
+type "StatusData"
+data "StatusType" "BOOST"
+using "NICK"
+data "OnApplyFunctors" "DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);UseActionResource(ReactionActionPoint,1);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);"
+
 new entry "MAG_WEAPON_ATTACK_ROLL_BONUS"
 type "StatusData"
 data "StatusType" "BOOST"

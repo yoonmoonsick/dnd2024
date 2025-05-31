@@ -4467,8 +4467,15 @@ data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, SourceSpellDC()))
 new entry "MAG_Cunning_HandCrossbow_Combo_Passive"
 type "PassiveData"
 using "MAG_Cunning_HandCrossbow_Combo_Passive"
-data "StatsFunctorContext" "OnLongRest"
-data "StatsFunctors" ";"
+data "Properties" "IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
+data "Boosts" ""
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "AttackedWithPassiveSourceWeapon() and DistanceToTargetLessThan(3);"
+data "StatsFunctors" "TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):ApplyStatus(MAGICAL_HAND_CROSSBOW, 100, 0);UseActionResource(SELF,ReactionActionPoint,1)"
+
+new entry "New_Stat_1"
+type "PassiveData"
+using "WeaponMastery_Nick"
 
 new entry "MAG_Infernal_Metal_Helmet_InfernalSight_Passive"
 type "PassiveData"
