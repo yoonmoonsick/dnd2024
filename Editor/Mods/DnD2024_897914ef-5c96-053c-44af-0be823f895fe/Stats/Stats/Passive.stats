@@ -6076,6 +6076,91 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cf5a49d-7484-47bf-be34-7432237fbffe" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_ShadowBlinding_Weapon_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c20f7ce9-53a5-4cb6-adb4-af4efaaf633f" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and HasAdvantage() and not HasDisadvantage() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7fe984f4-2f7c-424b-b3d8-5f14a8cf1c62" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Thorn_Blade_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0bf1d9f-c08e-461f-a058-3a905cfd8250" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsConcentrating(context.Source) and (not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Poison,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b793377-0ed0-4ad7-b43d-cec252258d85" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_LC_BurnOnDamage_Scimitar_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b94b1b5e-45a7-4ca1-a450-d4860184f3dc" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c308ed6-e565-4160-be31-dd45de960405" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TheClover_Mainhand_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ede7390a-ced7-4b90-93c3-551f0ee1a650" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_BHAALIST_AURA_OF_MURDER, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d3140ca-1627-4f1b-83ab-190b8f556b75" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOB_PainPriest_Dagger_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ecf5fa5-504a-4a6e-9127-2835bf885509" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,GOB_PAIN_PRIEST_DAGGER_BLESS,100,2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef0123ea-21c7-48a9-b768-bff6e362ef2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_WYR_Orin_Bhaalist_Dagger_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="decc0a7b-0e41-4b65-ac0c-2dca9611118f" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')) and HasHPPercentageEqualOrLessThan(50, context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Piercing,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9014f1f4-daaa-4f1d-960f-65bae1382a15" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_TheHunters_Dagger_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="985c3fea-2837-4cf7-9f6f-49dfa5bd382c" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f157a28b-e887-4e4b-ac41-53422ea064d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Mobility_MomentumOnDamage_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7df445b7-4d3a-481e-802d-cf277b87b0e4" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12e7286a-29aa-414b-a9cf-5b4fa5894a06" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEN_CapturedGoblin_MurderDagger_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="249d3968-ae8f-489a-b34b-5ad77ac99bb1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy() and (HasStatus('SLEEPING') or HasStatus('SG_Sleeping_Magical') or HasStatus('SLEEP') or HasStatus('KNOCKED_OUT'))) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')) and (HasStatus('SLEEPING') or HasStatus('SG_Sleeping_Magical') or HasStatus('SLEEP') or HasStatus('KNOCKED_OUT')));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a9cee5aa-c3a1-4c7a-9e36-7a073f8330eb" />
         <field name="Name" type="NameTableFieldDefinition" value="GOB_DrowCommander_Mace_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0d0ad934-96cc-463a-a440-1fc428a43253" />
