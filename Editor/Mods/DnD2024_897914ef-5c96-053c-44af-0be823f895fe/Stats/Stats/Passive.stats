@@ -6241,8 +6241,18 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e6da7dcb-e616-4d3c-9421-742f53b2e22b" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Cunning_HandCrossbow_Combo_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="05134836-c6a0-4079-98e4-bb4980672218" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value=";" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):ApplyStatus(MAGICAL_HAND_CROSSBOW, 100, 0);UseActionResource(SELF,ReactionActionPoint,1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and DistanceToTargetLessThan(3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cf748ae-b9d2-49b4-8456-91cb7415bd84" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
