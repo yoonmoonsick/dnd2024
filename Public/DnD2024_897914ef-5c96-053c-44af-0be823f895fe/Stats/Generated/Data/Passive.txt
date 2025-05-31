@@ -2532,10 +2532,10 @@ data "StatsFunctorContext" "OnDamage"
 data "Conditions" "AttackedWithPassiveSourceWeapon()"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(GOADING_ATTACK,100,2)"
 
-new entry "Armorer_3_ArcaneArmor_Guardian_Reaction"
+new entry "Armorer_11_ArcaneArmor_Guardian_Reaction"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "Boosts" "IF(HasPassive('Armorer_11_PerfectedArmor', context.Source)):UnlockInterrupt(Interrupt_ThunderGauntlets);"
+data "Boosts" "UnlockInterrupt(Interrupt_ThunderGauntlets);"
 
 new entry "Armorer_3_ArcaneArmor_Infiltrator"
 type "PassiveData"
