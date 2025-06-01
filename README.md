@@ -233,7 +233,7 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 
 - Level 1: Your Speed increases to 35 feet
 - Level 3: Longstrider
-- Level 5: Pass without Trace
+- Level 5: Barkskin
 
 ## Githyanki
 
