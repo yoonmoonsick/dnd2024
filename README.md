@@ -1722,7 +1722,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 # Enemies
 
-As player characters become stronger, some enemies will be enhanced to maintain balance.
+In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
+
+## Ochre Jelly
+- Split
+  - When it becomes bloodied, the jelly splits into two new ochre jellies, each one size smaller than the original.
 
 # Feat 
 
