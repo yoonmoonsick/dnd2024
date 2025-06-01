@@ -11289,7 +11289,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="287b9102-acaf-40dc-bdd0-0eb0fa05e922" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack )" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
@@ -11351,16 +11351,155 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="54e658e8-98a4-4df6-9e36-f2df20fbbd3b" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Myrmidon" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="872a44ac-5754-456d-9748-f4a420863101" />
-        <field name="Name" type="NameTableFieldDefinition" value="t" />
+        <field name="UUID" type="IdTableFieldDefinition" value="02779b7e-6c63-4486-b135-d58e4c4ef79a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slam_Elemental_Air" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="152866b1-edbb-4496-9ed0-0d160a6ab7d6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Lightning);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Lightning);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f2a2f217-e23a-48fb-9eca-10dd6c53f108" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slam_Elemental_Earth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a0206375-4a99-4495-9753-2dcd788b39ae" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Bludgeoning,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Bludgeoning);" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d1bee04-f1ff-41b1-b08b-49d82ef8e38c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slam_Elemental_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cfd23025-51ed-46ed-8e94-220ac4d10d43" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Fire);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Fire);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e09886d4-1501-4c0d-8be0-dadb5b80201a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Slam_Elemental_Water" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a2030d88-7ef1-426e-be3a-72ce52abacff" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Cold);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+5,Cold);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="152866b1-edbb-4496-9ed0-0d160a6ab7d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="LightningStrike_Myrmidon_Air" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc8b2244-0104-4296-9774-296992af44f4" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Lightning);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Lightning);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08b2dfa4g035ag4886ga07fg1fd5e4d7f913" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0206375-4a99-4495-9753-2dcd788b39ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderousPunch_Myrmidon_Earth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36fbc4e9-96cd-4089-b507-2ba34206504a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Bludgeoning,Magical);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Bludgeoning);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08b2dfa4g035ag4886ga07fg1fd5e4d7f913" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="EMPTY" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="52fa3782-aa09-4d58-bcf6-447d5c0bbab0,52fa3782-aa09-4d58-bcf6-447d5c0bbab0,52fa3782-aa09-4d58-bcf6-447d5c0bbab0;c46a50a1-cfcc-400d-92a6-3d4fc231a1a0,62cae842-1ff9-4804-a837-8c3ac36f65b4,6c7c44db-a0c7-4ef5-9976-0603c48c03d6;29983fa1-f176-4382-a2ee-010acb974d5a,12e5008a-b1f8-4264-b85c-b6151f1220e0,1e69683a-f98d-4edd-84f4-6975d540f827;5defc0f3-e3fc-4b66-a227-bdf20b6ff96c,c64fcf86-5272-4375-bc43-30b20cbe8f69,ef69b865-73f8-4487-bd6c-5ed20e076567;9c70d08b-0b5f-42e8-837f-f69b13d15b42,9c70d08b-0b5f-42e8-837f-f69b13d15b42,9c70d08b-0b5f-42e8-837f-f69b13d15b42;bb785fef-4479-4b88-8987-71e891f01498,bb785fef-4479-4b88-8987-71e891f01498,bb785fef-4479-4b88-8987-71e891f01498;,,;,,;,," />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99516023-6062-4306-af53-9fa46fc513db" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderousPunch_Wildshape_Myrmidon_Earth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="92601ed0-ab28-44ca-888b-2f1887844b5a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Bludgeoning,Magical);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Bludgeoning);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08b2dfa4g035ag4886ga07fg1fd5e4d7f913" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="EMPTY" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="52fa3782-aa09-4d58-bcf6-447d5c0bbab0,52fa3782-aa09-4d58-bcf6-447d5c0bbab0,52fa3782-aa09-4d58-bcf6-447d5c0bbab0;c46a50a1-cfcc-400d-92a6-3d4fc231a1a0,62cae842-1ff9-4804-a837-8c3ac36f65b4,6c7c44db-a0c7-4ef5-9976-0603c48c03d6;29983fa1-f176-4382-a2ee-010acb974d5a,12e5008a-b1f8-4264-b85c-b6151f1220e0,1e69683a-f98d-4edd-84f4-6975d540f827;5defc0f3-e3fc-4b66-a227-bdf20b6ff96c,c64fcf86-5272-4375-bc43-30b20cbe8f69,ef69b865-73f8-4487-bd6c-5ed20e076567;9c70d08b-0b5f-42e8-837f-f69b13d15b42,9c70d08b-0b5f-42e8-837f-f69b13d15b42,9c70d08b-0b5f-42e8-837f-f69b13d15b42;bb785fef-4479-4b88-8987-71e891f01498,bb785fef-4479-4b88-8987-71e891f01498,bb785fef-4479-4b88-8987-71e891f01498;,,;,,;,," />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfd23025-51ed-46ed-8e94-220ac4d10d43" />
+        <field name="Name" type="NameTableFieldDefinition" value="FieryStrike_Myrmidon_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6ada6d67-3c6b-405b-b778-262b211f5929" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Fire);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Fire);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="EMPTY" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08b2dfa4g035ag4886ga07fg1fd5e4d7f913" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2030d88-7ef1-426e-be3a-72ce52abacff" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreezingStrike_Myrmidon_Water" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee59dafc-79d7-42ca-a786-628d03df7313" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Cold);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+6,Cold);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="EMPTY" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08b2dfa4g035ag4886ga07fg1fd5e4d7f913" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
       </fields>
     </stat_object>
   </stat_objects>

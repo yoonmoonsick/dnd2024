@@ -1724,7 +1724,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
 
-## Ochre Jelly
+
+## [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
+- Use Elemental Spirit stat block
+
+## [Ochre Jelly](https://www.dndbeyond.com/monsters/5195148-ochre-jelly)
 - Split
   - When it becomes bloodied, the jelly splits into two new ochre jellies, each one size smaller than the original.
 
@@ -2250,7 +2254,7 @@ Appropriate spells have been added to the spell list for each class.
 - Damage application mechanism has been improved to allow the application of related magic item effects.  
 ### Contagion 
 - The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition
-### Conjure Elementals
+### [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)
 - Duration: Concentration
 ### Mass Cure Wounds  
 - School: Abjuration 

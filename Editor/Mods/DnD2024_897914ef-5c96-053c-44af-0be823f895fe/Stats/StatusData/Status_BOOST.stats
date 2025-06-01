@@ -4873,6 +4873,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a8359645-70b9-425e-bb4d-e6619a236bae" />
+        <field name="Name" type="NameTableFieldDefinition" value="BURNING_MYRMIDON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b285885e-32d0-4b35-8d54-6c95a8ad2bbb" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BURNING_MYRMIDON" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('TORCH')):DealDamage(2d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51153dcd-5510-43a4-8541-3c94fe3dc4d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RAY_OF_FROST_MYRMIDON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4dc3d3f2-5276-46d3-a67b-d63587dc1049" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RAY_OF_FROST_MYRMIDON" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(BURNING);DealDamage(1d10,Cold)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fb571757-812a-4f22-b2dc-3738a2b85f0c" />
         <field name="Name" type="NameTableFieldDefinition" value="LOW_RAPHAEL_WILLPOWER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="40633b56-e629-48ce-879a-45d17a835a82" />
