@@ -1583,6 +1583,7 @@ data "SpellType" "Projectile"
 using "Projectile_AcidSplash"
 data "SpellSchool" "Evocation"
 data "SpellProperties" "IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_ACIDSPLASH,100,-1)"
+data "TargetConditions" "not (HasPassive('SculptSpells', context.Source) and Ally());"
 
 new entry "Projectile_RayOfFrost"
 type "SpellData"
