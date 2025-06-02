@@ -814,6 +814,14 @@ Restores 1 Bardic Inspiration at the start of combat.
     - Flight: You gain a Fly Speed equal to your Speed.
     - Resistance: You have Resistance to Cold, Lightning, and Thunder damage.
 
+### Circle of the Star
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfStars.png?raw=true)
+
+- Level 3: Starry Form
+  - Dragon
+    - A constellation of a wise dragon appears on you. When you make an Intelligence or a Wisdom check or a Constitution saving throw to maintain Concentration, you can treat a roll of 9 or lower on the d20 as a 10.
+
 ## Fighter
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
