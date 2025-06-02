@@ -915,11 +915,3 @@ data "SpellType" "Zone"
 using "Zone_Sunbeam"
 data "SpellProperties" "GROUND:ApplyStatus(SELF,SUNBEAM_OWNER,100,10)"
 
-new entry "Zone_StarryForm_Dragon_BreathWeapon"
-type "SpellData"
-data "SpellType" "Zone"
-using "Zone_StarryForm_Dragon_BreathWeapon"
-data "SpellSuccess" "DealDamage(LevelMapValue(StarryBreath)+WisdomModifier,Radiant,Magical);"
-data "SpellFail" "DealDamage((LevelMapValue(StarryBreath)+WisdomModifier)/2, Radiant,Magical);"
-data "TooltipDamageList" "DealDamage(LevelMapValue(StarryBreath)+WisdomModifier,Radiant,Magical)"
-
