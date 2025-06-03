@@ -9646,6 +9646,13 @@ new entry "Target_YMS_NPC"
 type "SpellData"
 data "SpellType" "Target"
 
+new entry "Target_Claws_Incubus"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_Claws"
+data "SpellSuccess" "DealDamage(max(1,3d6+UnarmedMeleeAbilityModifier),Psychic);"
+data "TooltipDamageList" "DealDamage(3d6+UnarmedMeleeAbilityModifier,Psychic)"
+
 new entry "Target_Bite_PhaseSpider"
 type "SpellData"
 data "SpellType" "Target"
