@@ -1921,8 +1921,14 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.
   - Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly’s Hit Points are divided evenly between the new jellies (round down).
 
-## [Ogre](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogres)
+## [Ogres](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogres)
 - Use Ogre stat block
+
+## [Owlbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Owlbears)
+- Use Owlbears stat block
+
+## [Phase Spider](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PhaseSpider)
+- Use Phase Spider stat block
 
 # Rules 
 
