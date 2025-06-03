@@ -5257,6 +5257,40 @@ type "PassiveData"
 using "Split_Ooze_Jelly_Ochre"
 data "StatsFunctors" "GROUND:Spawn(81d762e5-4158-410d-8a16-3a3583a27512);GROUND:Spawn(81d762e5-4158-410d-8a16-3a3583a27512);Kill()"
 
+new entry "YMS_Gondian"
+type "PassiveData"
+
+new entry "Gondian_BattleSmith"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCombatStarted"
+data "StatsFunctors" "GROUND:Summon(f0aaecd9-996b-44d8-bbec-89980b9e57bf,Permanent,,,'SteelDefender',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);"
+
+new entry "Ironhand_Armorer_Dreadnaught"
+type "PassiveData"
+using "Gondian_BattleSmith"
+data "StatsFunctors" "ApplyStatus(SELF,ARCANEARMOR_DREADNAUGHT,100,-1);SummonInInventory(8cec7feb-bb5f-4ad0-953f-850a325accfa,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);"
+
+new entry "Ironhand_Armorer_Infiltrator"
+type "PassiveData"
+using "Gondian_BattleSmith"
+data "StatsFunctors" "ApplyStatus(SELF,ARCANEARMOR_INFILTRATOR,100,-1);SummonInInventory(ecedaf0a-9dc2-432b-9fe2-6e97f2de781b,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);"
+
+new entry "Artificer_Flamethrower"
+type "PassiveData"
+using "Gondian_BattleSmith"
+data "StatsFunctors" "GROUND:Summon(f1c6688f-f53d-4e9d-ad96-e490638ec746,Permanent,,,'IronhandFlamethrower',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);"
+
+new entry "Artificer_ForceBallista"
+type "PassiveData"
+using "Gondian_BattleSmith"
+data "StatsFunctors" "ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);Summon(5c17467a-f8a2-4e22-85ea-ed41c5ab6578,Permanent,,,'IronhandForceBallista',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);"
+
+new entry "Artificer_Protector"
+type "PassiveData"
+using "Gondian_BattleSmith"
+data "StatsFunctors" "GROUND:Summon(32d9cc54-5c05-4bc5-87e2-d90ddd63ad26,Permanent,,,'IronhandProtector',STEEL_DEFENDER_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);"
+
 new entry "YMS_Warlock_Invocations"
 type "PassiveData"
 
