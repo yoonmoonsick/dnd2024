@@ -1767,9 +1767,9 @@ data "DisplayName" "h04c51487g42ffg5dd4g8b14g30cd9e040f41;1"
 data "Description" "hea3276edg5d41g6030g1f42g50e59f01879a;1"
 data "TooltipUseCosts" "FreeSmiteCharge:1"
 data "Icon" "Action_Paladin_DivineSmite"
+data "BoostContext" "OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest;OnActionResourcesChanged"
 data "BoostConditions" "HasActionResource('FreeSmiteCharge',1,0,false,false,context.Source)"
 data "Boosts" "UnlockSpell(Target_Smite_Divine_Free);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free'),ModifyIconGlow())"
-data "StatsFunctorContext" "OnLongRest"
 
 new entry "PaladinsSmite_2"
 type "PassiveData"
@@ -3363,6 +3363,17 @@ data "BoostConditions" "(not WearingArmor(context.Source) and not HasShieldEquip
 data "Boosts" "UnlockSpell(Shout_SharpenTheBlade);"
 
 new entry "YMS_Paladin"
+type "PassiveData"
+
+new entry "Paladin_5_FaithfulSteed"
+type "PassiveData"
+using "PaladinsSmite"
+data "Properties" "IsHidden"
+data "BoostContext" "OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest"
+data "BoostConditions" "HasActionResource('FaithfulSteed',1,0,false,false,context.Source);"
+data "Boosts" "UnlockSpellVariant(FindSteed(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FaithfulSteed,1,0),ModifyIconGlow());"
+
+new entry "New_Stat_3"
 type "PassiveData"
 
 new entry "DismountSteed"

@@ -2465,7 +2465,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineSmite" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('FreeSmiteCharge',1,0,false,false,context.Source)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free'),ModifyIconGlow())" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4721,6 +4721,23 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fecbb415-c274-4ea4-b714-172a5868e960" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Paladin" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="973b4006-981c-4f34-a52c-aa0eb2f08343" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin_5_FaithfulSteed" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="68c063ef-b631-473a-ad93-e40e7ef82206" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('FaithfulSteed',1,0,false,false,context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(FindSteed(),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FaithfulSteed,1,0),ModifyIconGlow());" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f7dc36ae-e47f-4a49-80cd-6f20aa072b27" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

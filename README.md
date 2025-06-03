@@ -1043,6 +1043,9 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature.
 - Level 1: Channel Oath
   - You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin Level 6 and 11.
+- Level 5: Faithful Steed
+  - You can call on the aid of an otherworldly steed. You always have the Find Steed spell prepared.
+  - You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.
 - Level 9: Abjure Enemy
   - As a Magic action, you can expend one use of this class’s Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage.
 - Level 11: Radiant Strikes 
