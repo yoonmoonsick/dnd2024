@@ -1889,46 +1889,24 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
 
-## [Bugbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bugbears)
-- Tag: Humanoid, Fey
+## Stat Adjustment
+- [Imp](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Imp)
+- [Incubus](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Incubus)
+- [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
+- [Ogre](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogre)
+- [Ochre Jelly](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#OchreJelly)
+  - Split
+    - Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.
+    - Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly’s Hit Points are divided evenly between the new jellies (round down).
+- [Owlbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Owlbear)
+- [Phase Spider](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PhaseSpider)
+- [Quasit](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-q#Quasit)
+- [Spectator](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Spectator)
 
-## [Githyanki](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Githyanki)
-- Tag: Humanoid, Aberration
-
-## [Gnolls](https://bg3.wiki/wiki/Gnoll)
-- Tag: Humanoid, Fiend
-
-## [Goblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Goblins)
-- Tag: Humanoid, Fey
-
-## Gondians
-- Gain the actions of the Battle Smith Artificer.
-
-## Gortash
-- Gain the actions of the Artillerist Artificer.
-
-## [Hobgoblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hobgoblins)
-- Tag: Humanoid, Fey
-
-## Ironhand Gnomes
-- Gain the actions of the Armorer Artificer.
-
-## [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
-- Use Elemental Spirit stat block
-
-## [Ochre Jelly](https://www.dndbeyond.com/monsters/5195148-ochre-jelly)
-- Split
-  - Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.
-  - Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly’s Hit Points are divided evenly between the new jellies (round down).
-
-## [Ogres](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogres)
-- Use Ogre stat block
-
-## [Owlbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Owlbears)
-- Use Owlbears stat block
-
-## [Phase Spider](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PhaseSpider)
-- Use Phase Spider stat block
+## Progression Adjustment
+- Gondians: Gain the actions of the Battle Smith Artificer.
+- Gortash: Gain the actions of the Artillerist Artificer.
+- Ironhand Gnomes: Gain the actions of the Armorer Artificer.
 
 # Rules 
 
