@@ -1,26 +1,39 @@
 # DnD PHB 2024 All in One 
 
+## Introduction
 - Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Races, Rules, Spells and more.
 - Some rules are modified with Homebrew rules to enhance the gameplay experience.
 - This mod is focused on reducing the inconvenience of having to download and set up PHB 2024 related mods individually. It does not consider compatibility issues with other mods.
+- The original or latest version of this document can be found at the link below.
+  - https://github.com/yoonmoonsick/dnd2024/blob/master/README.md
+- Detailed changes can be found below.
+  - https://github.com/yoonmoonsick/dnd2024/commits/master/
+
+## 개요
 - DnD 2024 플레이어 핸드북 규칙(및 기타 출처)에 맞게 출신 배경, 직업, 재주, 종족, 규칙, 주문 등 다양한 콘텐츠를 추가하고 업데이트합니다.
 - 일부 규칙은 게임 플레이 경험을 향상시키기 위해 홈브루 규칙으로 수정되었습니다.
 - 이 모드는 PHB 2024 관련 모드를 개별적으로 다운로드하고 설정해야 하는 번거로움을 줄이는 데 중점을 두고 있습니다. 다른 모드와의 호환성 문제는 고려하지 않습니다.
+- 이 문서의 원본 또는 최신 버전은 아래 링크에서 확인할 수 있습니다.
+  - https://github.com/yoonmoonsick/dnd2024/blob/master/README.md
+- 자세한 변경 내용은 아래에서 확인할 수 있습니다.
+  - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
-**Changelog**
-- Please Visit: https://github.com/yoonmoonsick/dnd2024/commits/master/
+## Credit
 
-**Credit**
-- Druid Features: ChefReg (https://www.nexusmods.com/baldursgate3/mods/13575)
-- Chniese Translation : woodheader (https://www.nexusmods.com/baldursgate3/mods/14703), (https://mod.io/g/baldursgate3/m/dnd-phb-2024-all-in-one-chs)
-- French Translation: gpayerdcu (https://www.nexusmods.com/baldursgate3/mods/13470)
-- Russian Translation: HivyGreys (https://next.nexusmods.com/profile/HivyGreys/mods)
+- Ideas for Druid features
+  - ChefReg https://www.nexusmods.com/baldursgate3/mods/13575
+- Chniese Translation
+  - woodheader https://www.nexusmods.com/baldursgate3/mods/14703, https://mod.io/g/baldursgate3/m/dnd-phb-2024-all-in-one-chs
+- French Translation
+  - gpayerdcu https://www.nexusmods.com/baldursgate3/mods/13470
+- Russian Translation
+  - HivyGreys https://next.nexusmods.com/profile/HivyGreys/mods
 
 # Background 
 
-An origin feat is added to the background.
+An origin feat has been added to each background.
 
-If you choose a newly added background, you gain a spell that can be used once per day to gain inspiration.
+If you choose a newly added background, you gain a spell that can be used once per day to grant inspiration.
 
 ## Acolyte
 
@@ -234,7 +247,8 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 
 ![](https://i.imgur.com/bDSBj4l.png)
 
-- Psychic Resilience: You have resistance to psychic damage.
+- Tag: Aberration, Humanoid
+- Level 1: Psychic Resilience: You have resistance to psychic damage.
 - Level 10: Githyanki Parry
 
 ## Gnome
@@ -1767,18 +1781,6 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 11: Umbral Killer
   - Shadows enhance your abilities, granting you Devil's Sight, an additional 10 feet of movement speed, and advantage on Stealth checks. Additionally, when making a Dexterity saving throw to take half damage, you instead take no damage on a success and half damage on a failure.
 
-# Enemies
-
-In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
-
-
-## [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
-- Use Elemental Spirit stat block
-
-## [Ochre Jelly](https://www.dndbeyond.com/monsters/5195148-ochre-jelly)
-- Split
-  - When it becomes bloodied, the jelly splits into two new ochre jellies, each one size smaller than the original.
-
 # Feat 
 
 ## General
@@ -1882,19 +1884,68 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - The effects of certain equipment items will be adjusted to align with the above changes.  
 - Items that exist in the data but do not appear in the game will now be available in Acts 1 to 3 through specific merchants, locations, or boss loot.
 
+
+# NPCs
+
+In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
+
+## [Bugbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bugbears)
+- Tag: Humanoid, Fey
+
+## [Githyanki](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Githyanki)
+- Tag: Humanoid, Aberration
+
+## [Gnolls](https://bg3.wiki/wiki/Gnoll)
+- Tag: Humanoid, Fiend
+
+## [Goblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Goblins)
+- Tag: Humanoid, Fey
+
+## Gondians
+- Gain the actions of the Battle Smith Artificer.
+
+## Gortash
+- Gain the actions of the Artillerist Artificer.
+
+## [Hobgoblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hobgoblins)
+- Tag: Humanoid, Fey
+
+## Ironhand Gnomes
+- Gain the actions of the Armorer Artificer.
+
+## [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
+- Use Elemental Spirit stat block
+
+## [Ochre Jelly](https://www.dndbeyond.com/monsters/5195148-ochre-jelly)
+- Split
+  - Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.
+  - Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly’s Hit Points are divided evenly between the new jellies (round down).
+
 # Rules 
 
 ## Actions 
+
 - Attack
-    - Shove (Cost: 1 Action Point, Extra Attack)
-    - Trip (Cost: 1 Action Point, Extra Attack)
-- Break Free: Attempt to escape from conditions such as restraint or webs.
+  - Shove
+    - Cost changed from Bonus Action to Action Point
+    - Now allowed as part of Extra Attack
+  - Trip
+    - New option to knock a target prone using 1 Action Point
+    - Can be used with Extra Attack
+- Break Free
+  - Attempt to escape from conditions such as Restrained or Grappled
 - Distract
+  - New: Costs 1 Action Point
+  - Grants advantage to allies' attacks against the target
+  - Can be used with Extra Attack
 - Dodge
+  - Grants advantage on attack rolls against you and on Dexterity saving throws until the start of your next turn
 - Jump
-    - Cost: 1 Bonus Action Point and 3m movement speed -> movement distance
+  - Cost changed from "1 Bonus Action and 3m movement" to "movement equal to jump distance"
+  - No longer requires a bonus action
 - Spell Casting
-    - You can only cast a spell of Level 1 or higher once per turn.
+  - You can cast only one spell of 1st level or higher per turn
+  - Spells cast through magical equipment items are excluded from this rule. Abilities gained from race or class are excluded from this rule (currently under exception processing).
 
 ## Condition
 - Prone
@@ -1910,8 +1961,8 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - Darkvision: 60 ft.
 - Superior Darkvision: 180 ft.
 
-## Initiative 
-- 1d4 -> 1d20
+## Initiative
+- Changed the initiative roll from 1d4 to 1d20.
 
 ## Ranged Weapon
 - When making a ranged weapon attack against a target more than 18m or 15m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Sharpshooter feat.
