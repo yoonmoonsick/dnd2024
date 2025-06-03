@@ -3829,7 +3829,7 @@ data "Boosts" "ActionResource(Bladesong,1,0);IF(AbilityGreaterThan('Intelligence
 new entry "Bladesong_Boost"
 type "PassiveData"
 using "Bladesong_Boost"
-data "Boosts" "ActionResource(Movement,3,0);RollBonus(SavingThrow,IntelligenceModifier,Constitution);AC(IntelligenceModifier);"
+data "Boosts" "ActionResource(Movement,3,0);RollBonus(SavingThrow,IntelligenceModifier,Constitution);IF(AbilityGreaterThan('Intelligence',11,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',13,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',15,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',17,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',19,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',21,context.Source)):AC(1);IF(AbilityGreaterThan('Intelligence',23,context.Source)):AC(1);"
 
 new entry "Bladesong_Weapon"
 type "PassiveData"
