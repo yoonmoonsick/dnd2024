@@ -1921,6 +1921,9 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - Trigger: While the jelly is Large or Medium and has 10+ Hit Points, it becomes Bloodied or is subjected to Lightning or Slashing damage.
   - Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Initiative. The original jelly’s Hit Points are divided evenly between the new jellies (round down).
 
+## [Ogre](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogres)
+- Use Ogre stat block
+
 # Rules 
 
 ## Actions 
@@ -2251,6 +2254,9 @@ Appropriate spells have been added to the spell list for each class.
 
 ## Level 3 spells
 
+### Animate Dead
+- Can cast without requiring corpses (Homebrew).
+
 ### [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
 - Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
 - The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success.
@@ -2258,7 +2264,7 @@ Appropriate spells have been added to the spell list for each class.
 
 ### Conjure Barrage 
 - 5d8 Force
-### [Fireball ](https://www.dndbeyond.com/spells/2618887-fireball)
+### [Fireball](https://www.dndbeyond.com/spells/2618887-fireball)
 - A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
 
 ### Gaseous Form 
