@@ -4252,7 +4252,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c1ea60ce-d8f6-4807-ba8e-2a6b225e788f" />
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneArmor_Dreadnaught_GiantStature" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5c8d9282-2f51-469d-bba1-69777096e7d4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f6b57c12-fac3-4bc7-917c-b6a2da294900" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(GIANT_STATURE, 100, 10);IF(HasPassive('Armorer_11_PerfectedArmor',context.Source)):ApplyStatus(GIANT_STATURE_11, 100, 10);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d07fb74ge77dg4bb4gc02fg8e7ca9b14d6b" version="1" />
@@ -4891,6 +4891,83 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="637dac0d-9119-4a69-9c5f-bb719babdfe8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7dac720gaae5gc8d2g2f67gbbce4ddeaf85" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23629449-9980-4fc9-8442-23a94251f110" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Frost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2655432a-f423-4a4e-9f1f-2799a09f583c" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_FROST, 100, 100);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArmorOfAgathys" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef788974gfe57g35f2ga28eg7ddc2d79388c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39cf4c52g8fe1g90e6g4b1fg00e4c5e6bdb9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_FROST, 100, 100);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d7f4b0a-0b7d-4cad-bcbb-d212de0beaf5" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Hill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="561f9cfe-c43c-43ca-bbff-a191714ebc78" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_HILL,100, 10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b53ecafg622ega271g8727g188352b0e0af" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h059b3721g467fg9bd3g0195g90b201f53afe" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_HILL,100, 10)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d0c3298-c263-404b-82a7-e157f2a03810" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Storm" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_STORM,100, 10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h077fa6edg484eg136ag7fe5g38894c3daa9a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25fdbf65g1412g2fb0gf7b3g0154c4e93f1d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_STORM,100, 10);" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9fd22d7d-5d7a-470b-a939-810046915bed,,;,,;4222840e-85c4-41d4-89f3-cf525ab7a2ce,,;d58199b1-9bc5-4715-99d4-43a5b5c1ec16,,;2d19a206-bf18-4f4d-ba95-f83c5fc38fd7,,;,,;57db495b-2467-467b-a599-d7df2fa4d659,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="8f9043e2-4608-43c5-b78f-c4a1b91ea340" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a47fd35-20cb-406b-b696-e9f4568efaa4" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_GiantsMight" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="06650636-5a66-417a-a33f-57edaef9035b" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_GIANTSMIGHT, 100, 10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_GIANTSMIGHT,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;GiantsMight:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h888b00fbg85edg0d00gbf03gcb26b4833ebf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2bd629e0gade8g66f2ga609g825032cb0b08" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF008080" is_substat="false">

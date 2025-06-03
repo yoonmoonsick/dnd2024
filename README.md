@@ -899,6 +899,10 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PurpleDragonKnight.png?raw=true)
 
+> The Purple Dragon Knights are paragons of valor and leadership who ally themselves with amethyst dragons. These knights strive to protect the innocent and inspire their fellow adventurers to champion the causes of justice and freedom.
+> 
+> Although the Purple Dragons were originally founded in Cormyr, new recruits are now drawn from any realm where chivalry thrives, including the Silver Marches, Damara, and Chessenta.
+
 - Level 3: Rallying Cry
   - When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter Level, provided that the creature can see or hear you.
 - Level 3: Knightly Envoy
@@ -909,6 +913,43 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
 - Level 12: Bulwark
   - You can extend the benefit of your Indomitable feature to an ally. 
+
+### Rune Knight
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/RuneKnight.png?raw=true)
+
+> Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan.
+> 
+> Whether you found the giant’s work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant’s craft and learned how to apply magic runes to empower your equipment.
+
+- Level 3: Rune Carver
+  - You can use magic runes to enhance your gear. You learn two runes of your choice. When you reach certain levels in this class, you learn additional runes (Fighter Level 7 and 10).
+  - Cloud Rune
+    - You have advantage on Sleight of Hand checks and Deception checks.
+    - When you are hit by an attack roll, you can use your reaction to invoke the rune. For the next 2 turns, the attacker targets the nearest creature other than you.
+  - Fire Rune
+    - You have advantage on Athletics checks and Perception checks.
+    - When you hit a creature with a weapon attack, you can invoke the rune to deal an extra 2d6 fire damage and force the target to make a Strength saving throw. On a failed save, the target is restrained for 1 minute and takes 2d6 fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.
+  - Frost Rune
+    - You have advantage on Animal Handling checks and Intimidation checks.
+    - You can use a bonus action to invoke the rune and gain +2 to AC, Strength and Constitution ability checks, and saving throws for 10 minutes.
+  - Stone Rune
+    - You have advantage on Insight checks. You have darkvision up to 120 feet.
+    - As a bonus action, you can invoke the rune to target one creature within 30 feet.The target must make a Constitution saving throw or be petrified and incapacitated with a speed of 0 for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.
+  - Hill Rune (Fighter Level 7)
+    - You have advantage on saving throws against poison and resistance to poison damage.
+    - As a bonus action, you can invoke the rune to gain resistance to bludgeoning, piercing, and slashing damage for 1 minute.
+  - Storm Rune (Fighter Level 7)
+    - As a bonus action, you can invoke the rune to enter a prophetic state for 1 minute or until you become incapacitated. While in this state, when you or a creature you can see within 60 feet makes an attack roll or a saving throw, you can use your reaction to grant advantage or disadvantage on that roll.
+    - You have advantage on Arcana checks. You can’t be surprised.
+- Level 3: Giant’s Might
+  - You can cast Enlarge on yourself up to twice, regaining all uses after a long rest. At fighter level 5, you gain 1 additional use, and at level 9, you have a total of 4 uses.
+- Level 7: Runic Shield
+  - When a creature you can see within 60 feet is hit by an attack roll, you can use this reaction to impose disadvantage. You can do this three times, and you regain all uses after a long rest. At Fighter level 9, you gain 1 additional use.
+- Level 10: Great Stature
+  - The extra damage you deal with your Giant’s Might feature increases to 1d8.
+- Level 12: Master of Runes
+  - You can invoke each rune from your Rune Carver feature twice instead of once, regaining all uses after a short or long rest.
 
 ## Monk
 

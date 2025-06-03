@@ -744,6 +744,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b9949f4gd1bdg39d7g5ea0gf1bcc9c517dd" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1643,14 +1644,6 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(MoonlightStepCharge,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(MoonlightStepCharge,1,0)" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MoonlightStep" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c534bf93-3d57-4437-885b-f6709e08b5dd" />
-        <field name="Name" type="NameTableFieldDefinition" value="Tiefling_HellishRebuke_Free" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8c86e6a8-037a-445b-8631-7a4581c7afcd" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4391,6 +4384,131 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnLongRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BULWARK_OF_FORCE_FREE,100,-1)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99a59901-4a37-4abb-bb9d-3bde43403a28" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_RuneCarver" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8beab796gb90ag1ea2ge279g8f4d67c83ee5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c818269gb813gd4c6g12cegd7248692527e" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Cloud" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hacbec6fcg562bg5dddg06dag3072bd47421f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8a10829dg3abeg5f73g5e0bgb7d34930c4aa" version="4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hba3e9a9bg822bgcd1cg4f3fg80dcd278da1e" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="InvokeRune:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_GasCloud" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, SleightOfHand);Advantage(Skill, Deception);UnlockInterrupt(Interrupt_RuneKnight_Rune_Cloud);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3433bc1d-60b7-4be1-aff5-6b324f4bc5f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haeb4ac37g065cg98cegf98eg6e95738a2f8f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he055a11dg8f88ge244g5028g2887f79f30f5" version="7" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h55db58bbgabf1gb0e3g10aeg6457ec8d554a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ElementalAdept_Fire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, Athletics);Advantage(Skill, Perception);UnlockInterrupt(Interrupt_RuneKnight_Rune_Fire);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="677c0d37-d1c2-4f43-816a-7f8784f5fd52" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Frost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he1c6cfa2g792dg9f4dgb216g6fd01be43b77" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39cf4c52g8fe1g90e6g4b1fg00e4c5e6bdb9" version="4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h29820960g38a2g9485g536bg2e7b85e37e15" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ElementalAdept_Cold" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, AnimalHandling);Advantage(Skill, Intimidation);UnlockSpell(Shout_RuneKnight_Rune_Frost);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="376adac9-6977-4d35-b65a-a29ff89f9ca4" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Stone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h088f15f4gc329ge57dg76d4g6f75e39cd263" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3d2f775gfb74g07a5g0b2eg7d0c1eff068f" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha61711f1g6053gb6e6g6f3egc198ee697d2a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TransmutationStone" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, Insight);DarkvisionRangeMin(36);ActiveCharacterLight(c46e7ba8-e746-7020-5146-287474d7b9f7);UnlockSpell(Target_RuneKnight_Rune_Stone);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b9b3dc8-637f-4836-929e-712e698d57c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Hill" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h506e30e9gdf51g786cgc8f4ga90e5b2c8a69" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h059b3721g467fg9bd3g0195g90b201f53afe" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2f221239g7b9egf45cgb6f0g58a0522e7962" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Land_Mountain" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(POISONED_ADV);Resistance(Poison, Resistant);UnlockSpell(Shout_RuneKnight_Rune_Hill);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2be90e75-f1ca-4a4b-9123-8670c5b83db2" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_Rune_Storm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b009c2f3-4a3f-4514-8957-8785d0de334d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6193d5aeg3277g80d0gc8efg08d5e2198170" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25fdbf65g1412g2fb0gf7b3g0154c4e93f1d" version="4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6452bc2eg0fabg6b16g05b4g6e5cc9e63038" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WrathOfTheStorm_Thunder" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, Arcana);StatusImmunity(SURPRISED);UnlockSpell(Shout_RuneKnight_Rune_Storm);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1cce1a4f-b134-431e-b156-16447efb3e90" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_3_GiantsMight" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h888b00fbg85edg0d00gbf03gcb26b4833ebf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2bd629e0gade8g66f2ga609g825032cb0b08" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RuneKnight_GiantsMight);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="464a0b9a-1201-49d9-b4d1-525d8ef74157" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_7_RunicShield" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefb56862gecabg1101g4eecg92ec5c286a79" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cae26c8g758cg141cg29c0gc91313582892" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_RuneKnight_7_RunicShield);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7beac158-5aae-4bde-8a2c-bcca4821480f" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_10_GreatStature" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ae20132g7c71ge8a3g7002g4df2e64fee6f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h00ebac78g110fg184bg89e8ga3f33f20352d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FeralInstinct" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e69a934c-721e-4a20-b94c-b5edf8a3e526" />
+        <field name="Name" type="NameTableFieldDefinition" value="RuneKnight_12_MasterOfRunes" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h215f5468g7804ga6bbg55f9gcbe3416b9597" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb94dd1f0g25e7g6a4cg1f02g7a50e2bb4229" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF008080" is_substat="false">
