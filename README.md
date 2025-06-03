@@ -2333,3 +2333,13 @@ Appropriate spells have been added to the spell list for each class.
 - Create a barrier that makes creatures and objects inside it Immune to magical damage.
 ### Heal 
 - School: Abjuration
+### [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Transmutation_TensersTransformation.png?raw=true)
+
+- You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can’t cast spells, and you gain the following benefits:
+  - You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.
+  - You have advantage on attack rolls that you make with simple and martial weapons.
+  - When you hit a target with a weapon attack, that target takes an extra 2d12 force damage.
+  - You have proficiency with all armor, shields, simple weapons, and martial weapons.
+  - You have proficiency in Strength and Constitution saving throws.
+  - You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.
