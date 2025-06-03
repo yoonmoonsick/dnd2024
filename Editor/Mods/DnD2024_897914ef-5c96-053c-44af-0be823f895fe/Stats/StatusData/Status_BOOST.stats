@@ -1389,6 +1389,12 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="((HasStringInSpellRoll('WeaponAttack') or HasStringInSpellRoll('UnarmedAttack') or SpellId('Target_CommandersStrike')) and HasUseCosts('ActionPoint') and not IsOffHandAttack()) and not HasActionResource('BonusActionPoint', 1, 0, false, false)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFA52A2A" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="785378e5-7249-44d9-9773-720b8ca31427" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_BARABRIAN" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="15504851-3199-41b9-b60c-9161354ed732" />
@@ -6148,6 +6154,116 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Indomitable" />
         <field name="StackId" type="StringTableFieldDefinition" value="BULWARK" />
         <field name="Passives" type="StringTableFieldDefinition" value="Indomitable" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="096e67e6-48f5-4dcb-b5e2-9219dc0b7447" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_CLOUD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bb5cb102-77f5-4f12-b2f9-728b94f11f1f" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="517d50c3-73a7-447b-8db4-706bda38c0c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_FIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d95486db-6139-43c7-a246-5b518c38e8a9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h04425df9g8c9cg11a2g5bdfg86dae9c97340" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SearingSmite" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_SearingSmite" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_SearingSmite_Stop" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RUNEKNIGHT_FIRE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackTarget);Disadvantage(AttackRoll);ActionResourceBlock(Movement);Disadvantage(SavingThrow,Dexterity);Attribute(Grounded);" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d6, Fire)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d6, Fire,Magical)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bdfb09d0-0f10-4796-bb78-5a6570c0a5cb" />
+        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="f9b06276-bb8f-4fb2-8789-989de2fe0287" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, RuneKnightSaveDC())" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f789171-fcec-497f-a6e5-224cd0c4e943" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_FROST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ada04ef1-47ed-41c6-968e-b7f359b1cade" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef788974gfe57g35f2ga28eg7ddc2d79388c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ArmorOfAgathys" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Water" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RUNEKNIGHT_FROST" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);RollBonus(RawAbility, 2, Strength);RollBonus(SavingThrow, 2, Strength);RollBonus(RawAbility, 2 Constitution);RollBonus(SavingThrow, 12 Constitution);" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d54c732f-51cd-481c-971b-6cd38231c06c" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_STONE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="181cff8d-ab41-4d5b-8e8b-3d5350c825ef" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2349a56gf3f7g0b54ged34g216163ed01aa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_WallOfStone" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Earth" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, RuneKnightSaveDC())" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="b59b8382-53cd-407e-a579-4140b18f43cf" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="54aff51d-0b76-47ca-b4dc-a2ff7568f1d6" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Petrified" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Suffocating" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackTarget);Disadvantage(AttackRoll);ActionResourceBlock(Movement);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);Disadvantage(SavingThrow,Dexterity);Attribute(Grounded);" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,RUNEKNIGHT_STONE)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9de7ab61-804f-4a58-baf0-95d774fae59e" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_HILL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b53ecafg622ega271g8727g188352b0e0af" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Stoneskin" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RUNEKNIGHT_HILL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Bludgeoning, Resistant);Resistance(Piercing, Resistant);Resistance(Slashing, Resistant)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="10e29e97-31af-400f-8520-71fbed87d2aa" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f03aeae-101c-4687-be00-0159a7aa7913" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_STORM" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h077fa6edg484eg136ag7fe5g38894c3daa9a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Misc_Status_Shocked_Enter" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RUNEKNIGHT_STORM" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_RuneKnight_Rune_Storm_Advantage);UnlockInterrupt(Interrupt_RuneKnight_Rune_Storm_Disadvantage);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="e062357a-3c20-4dea-96a5-119b17eb9044" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="28d55075-4bdd-4683-9073-3c0038c5e2e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="RUNEKNIGHT_GIANTSMIGHT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9dff998f-0cb3-4ce2-abb3-74d7c63ab673" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RUNEKNIGHT_GIANTSMIGHT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength);Advantage(SavingThrow, Strength);IF(not HasPassive('RuneKnight_10_GreatStature', context.Source)):CharacterWeaponDamage(1d4);IF(not HasPassive('RuneKnight_10_GreatStature', context.Source)):CharacterUnarmedDamage(1d4);ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25);IF(HasPassive('RuneKnight_10_GreatStature', context.Source)):CharacterWeaponDamage(1d8);IF(HasPassive('RuneKnight_10_GreatStature', context.Source)):CharacterUnarmedDamage(1d8);" />
       </fields>
     </stat_object>
     <stat_object color="#FF008080" is_substat="false">

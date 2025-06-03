@@ -437,3 +437,7 @@ end
 function LevelSpellCheck()
     return ~(IsCantrip() | IsSmiteSpells()) & (HasSpellFlag(SpellFlags.Spell))
 end
+
+function RuneKnightSaveDC()
+    return 8 + context.Source.ProficiencyBonus + GetModifier(context.Source.Constitution)
+end
