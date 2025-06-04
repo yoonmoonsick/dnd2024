@@ -1890,6 +1890,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
 
 ## Stat Adjustment
+- [Bugbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bugbears)
 - [Imp](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Imp)
 - [Incubus](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Incubus)
 - [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
