@@ -95,7 +95,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff3fef16g4dcbg44e3g8bfbg3b15c27102c5" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h19b7bc50g3ddcg5a48ge4dag9929c22898d3" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingMainHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source):UnlockSpellVariant(not SpellId('Projectile_OffhandAttack') and HasStringInSpellRoll('AttackType.RangedWeaponAttack'),ModifyUseCosts(Add,CrossbowLoadingMainHand,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingMainHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source)):UnlockSpellVariant(not SpellId('Projectile_OffhandAttack') and HasStringInSpellRoll('AttackType.RangedWeaponAttack'),ModifyUseCosts(Add,CrossbowLoadingMainHand,1,0));" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingMainHand" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
@@ -105,7 +105,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2276ff09-14b6-4715-ae24-68bb5c483da8" />
         <field name="Name" type="NameTableFieldDefinition" value="Crossbow_Loading_OffHand" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fbfac853-0ad4-48b8-b85e-545a69ebfbe7" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source)):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingOffHand" />
       </fields>
     </stat_object>
@@ -6349,7 +6349,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Acid_AcidDamageOnWeaponAttack_Ring_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f6e81882-e965-4b75-9610-94315905b95d" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h1bbe3f21g2815g315fg1771g3e303da92095" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2, Acid);IF(SpellDamageTypeIs(DamageType.Acid)):ProficiencyBonus(2, Acid, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2, Acid);IF(SpellDamageTypeIs(DamageType.Acid)):DamageBonus(2, Acid, false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
