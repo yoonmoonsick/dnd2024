@@ -1,9 +1,3 @@
-new entry "Interrupt_GithyankiParry_PC"
-type "InterruptData"
-using "Interrupt_GithyankiParry"
-data "Cost" "ReactionActionPoint:1;Interrupt_GithyankiParry:1;"
-data "Cooldown" "OncePerRest"
-
 new entry "Interrupt_Smite_Divine"
 type "InterruptData"
 using "Interrupt_Smite_Divine"
@@ -1494,4 +1488,12 @@ new entry "Interrupt_TheClover_TrueStrike_Riposte"
 type "InterruptData"
 using "Interrupt_TheClover_TrueStrike_Riposte"
 data "Properties" "UseSpell(SWAP,Target_TrueStrike_Weapon,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0)"
+
+new entry "Interrupt_Parry_NPC"
+type "InterruptData"
+using "Interrupt_DefensiveDuelist"
+data "DisplayName" "h91b542c1g106dg4c22gbbd8g01ffa11f1a09;1"
+data "Description" "h505e5398gabccg0407g5589gea9fde6cb9f5;1"
+data "ExtraDescription" ""
+data "Conditions" "IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsMeleeAttack() and HasWeaponProperty(WeaponProperties.Melee, GetActiveWeapon(context.Observer)) and IsProficientWith(context.Observer, GetActiveWeapon(context.Observer)) and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus, context.Source);"
 
