@@ -249,7 +249,6 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 
 - Tag: Aberration, Humanoid
 - Level 1: Psychic Resilience: You have resistance to psychic damage.
-- Level 10: Githyanki Parry
 
 ## Gnome
 
@@ -1891,8 +1890,27 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 
 ## Stat Adjustment
 - [Bugbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bugbears)
+- [Cambion](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cambion)
+- [Death Knights](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathKnights)
+- [Doppelganger](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Doppelganger)
+- [Drider](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Drider)
+- [Dryad](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Dryad)
+- [Ettercap](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Ettercap)
+- [FleshGolem](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FleshGolem)
+- [Ghoul](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Ghoul)
+- [Githyanki](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Githyanki)
+- [Gnolls](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Gnolls)
+- [Green Hag](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GreenHag)
+- [Harpy](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Harpy)
+- [Hobgoblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hobgoblins)
+- [Hook Horror](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HookHorror)
 - [Imp](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Imp)
 - [Incubus](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Incubus)
+- [Kobolds](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Kobolds)
+- [Kuotoa](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Kuotoa)
+- [MindFlayers](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MindFlayers)
+- [Mummy](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Mummy)
+- [Myconids](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Myconids)
 - [Myrmidons](https://www.dndbeyond.com/spells/2619113-summon-elemental)
 - [Ogre](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogre)
 - [Ochre Jelly](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#OchreJelly)
@@ -1903,6 +1921,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - [Phase Spider](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PhaseSpider)
 - [Quasit](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-q#Quasit)
 - [Spectator](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Spectator)
+- [Vampires](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#Vampires)
 
 ## Progression Adjustment
 - Gondians: Gain the actions of the Battle Smith Artificer.
