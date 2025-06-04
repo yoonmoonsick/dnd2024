@@ -4500,7 +4500,6 @@
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4572,6 +4571,32 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="833468ba-b748-4658-955b-af6add1ffe91" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(a53ee87c-e872-4e2e-a717-b61432bc9d3f,Permanent,,,'FortifiedPosition',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FortifiedPosition" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e17a3dcf-fe39-44ae-84e1-19d2638fb6b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchCannon_UA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ad0d0d1-dd43-4208-a6fc-5b424108af99" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb51aefeagf86bg9748gfcfeg1e1f7d1d4e8b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7493e46fgdc51g08dbgb4d3g38dde8aa1a92" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(not HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(7f3d1990-8618-49a4-a4f9-eaa8112c5a05,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(2c90765b-c5bc-4259-8ad8-4ec9423040ad,Permanent,,,'EldritchCannon',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="55aecef1-efc6-4930-8318-ef2f05d4d5b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="FortifiedPosition_UA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="194b7668-e5c2-4bd2-a1fb-e82f56aa9108" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h98ec19b4g7a3dgb38ege640g8d57511bd3a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93af406fgdbbdgae0eg49b8g7172de555374" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_ELDRITCH_CANNON,100,-1);GROUND:IF(HasPassive('Artillerist_9_ExplosiveCannon',context.Source)):Summon(2c90765b-c5bc-4259-8ad8-4ec9423040ad,Permanent,,,'FortifiedPosition',ELDRITCH_CANNON_LEVEL_BOOST,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6648,6 +6673,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e6ff3862-51af-400b-82a0-cc4482eb3e4f" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_NPC" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4da4f95d-1952-48e3-b8dd-ac3b617ca895" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dismiss_Self" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be2ddd2f-6515-4b5c-aab5-e241280f7a52" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
