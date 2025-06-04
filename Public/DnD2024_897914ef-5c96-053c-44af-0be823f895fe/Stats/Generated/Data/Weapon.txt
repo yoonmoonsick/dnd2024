@@ -3386,3 +3386,13 @@ data "Damage" "2d6"
 data "Rarity" "VeryRare"
 data "DefaultBoosts" "WeaponEnchantment(2);WeaponProperty(Magical);"
 
+new entry "YMS_HolyAvenger"
+type "Weapon"
+using "WPN_Longsword_2"
+data "RootTemplate" "4cbfe982-bbc2-4848-aea7-231e74b6ba13"
+data "ValueUUID" "d24c441f-7ebe-4229-8522-cf34c257ff20"
+data "Rarity" "Legendary"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);IF(ClassLevelHigherOrEqualThan(1,'Paladin') and (Tagged('UNDEAD',context.Target) or Tagged('FIEND',context.Target))):WeaponDamage(2d10, Radiant);"
+data "Boosts" "UnlockSpell(Shout_AuraOf_HolyAvenger);"
+data "PassivesOnEquip" "HolyAvenger;"
+

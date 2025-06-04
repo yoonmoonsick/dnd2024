@@ -6627,7 +6627,48 @@
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(CONQUERING_PRESENCE,100,2)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF228B22" is_substat="false">
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="039f278d-7492-422b-9991-b98c86eec7b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLYAVENGER_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="48fc6afd-0eaa-4ab5-9610-d6c7e34309c1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e842b0dgdbddg2005g8393g75ad26853f65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h21c7eb78g6aaeg2723gf100g793aa000d945" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CrusadersMantle" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Gold" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLYAVENGER_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Tagged('INANIMATE')):ApplyStatus(HOLYAVENGER_AURA_BUFF)" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MagicResistance;" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasPassive('HolyAvengerAura',context.Source)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="725d0443-0b74-4bad-9e06-0722be7f6996" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLYAVENGER_AURA_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="039f278d-7492-422b-9991-b98c86eec7b8" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3f5c3ad-4e93-4b9b-b50b-19b8de1453e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLYAVENGER_AURA_BUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="052d1638-5e6b-4d48-aac1-0c586d7cb735" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e842b0dgdbddg2005g8393g75ad26853f65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h21c7eb78g6aaeg2723gf100g793aa000d945" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CrusadersMantle" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Gold" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HOLYAVENGER_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MagicResistance;" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7cb76d24-49a2-4ce8-851c-adfb05dbdfde" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_RANGER" />
