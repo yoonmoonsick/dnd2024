@@ -4451,6 +4451,13 @@ data "Boosts" "DarkvisionRangeMin(36);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "HolyAvenger"
+type "PassiveData"
+data "DisplayName" "h9e842b0dgdbddg2005g8393g75ad26853f65;1"
+data "Description" "h21c7eb78g6aaeg2723gf100g793aa000d945;1"
+data "TooltipPermanentWarnings" "1c421c08-d16c-4da5-b809-0113bdf4278c"
+data "Icon" "Spell_Evocation_CrusadersMantle"
+
 new entry "MAG_ShadowBlinding_Weapon_Passive"
 type "PassiveData"
 using "MAG_ShadowBlinding_Weapon_Passive"
@@ -4625,10 +4632,6 @@ data "Boosts" ""
 data "StatsFunctorContext" "OnAttack"
 data "Conditions" "AttackedWithPassiveSourceWeapon() and DistanceToTargetLessThan(3);"
 data "StatsFunctors" "TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):ApplyStatus(MAGICAL_HAND_CROSSBOW, 100, 0);UseActionResource(SELF,ReactionActionPoint,1)"
-
-new entry "New_Stat_1"
-type "PassiveData"
-using "WeaponMastery_Nick"
 
 new entry "MAG_Infernal_Metal_Helmet_InfernalSight_Passive"
 type "PassiveData"

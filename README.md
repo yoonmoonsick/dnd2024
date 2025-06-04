@@ -1880,15 +1880,24 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You learn Guidance and one Cleric cantrips of your choice.
 
 # Items
-- The effects of certain equipment items will be adjusted to align with the above changes.  
-- Items that exist in the data but do not appear in the game will now be available in Acts 1 to 3 through specific merchants, locations, or boss loot.
 
+## Changed Items
+
+- Similar to other changes, the effects of equipment items have been adjusted.
+- Fixed known bugs related to certain equipment items.
+
+## New Items
+
+- Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
+- [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
+  - Can be obtained by solving the puzzle related to the Dawnmaster's Crest.
 
 # NPCs
 
 In accordance with the Monster Manual, the enemies listed below have been modified. In addition, other enemies not specifically mentioned are also adjusted to match the players' increased power.
 
 ## Stat Adjustment
+
 - [Bugbears](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bugbears)
 - [Cambion](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cambion)
 - [Death Knights](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathKnights)
@@ -1924,6 +1933,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - [Vampires](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#Vampires)
 
 ## Progression Adjustment
+
 - Gondians: Gain the actions of the Battle Smith Artificer.
 - Gortash: Gain the actions of the Artillerist Artificer.
 - Ironhand Gnomes: Gain the actions of the Armorer Artificer.
@@ -1955,6 +1965,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - Spells cast through magical equipment items are excluded from this rule. Abilities gained from race or class are excluded from this rule (currently under exception processing).
 
 ## Condition
+
 - Prone
     - Attacks Affected. You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
     - Do not break the concentraion.
@@ -1962,20 +1973,25 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
     - The status is removed when taking cold, fire, or lightning damage.
 
 ## D20 Tests
+
 - No critical failure on non-attack d20 rolls.
 
 ## Darkvision
+
 - Darkvision: 60 ft.
 - Superior Darkvision: 180 ft.
 
 ## Initiative
+
 - Changed the initiative roll from 1d4 to 1d20.
 
 ## Ranged Weapon
+
 - When making a ranged weapon attack against a target more than 18m or 15m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Sharpshooter feat.
 - Crossbows have the Loading property, which can be ignored if you have the Crossbow Expert feat.
 
 ## Thrown Weapon
+
 - When throwing a weapon at a target more than 9m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Throw Fighting Style.
 
 ## Weapon Mastery Properties

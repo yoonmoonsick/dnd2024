@@ -3579,6 +3579,20 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(AURA_OF_WARDING,100,-1);IF(HasPassive('AuraExpansion',context.Source)):ApplyStatus(AURA_OF_WARDING_9,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74b55594-820c-4cc5-8c5d-a8c7378ec580" />
+        <field name="Name" type="NameTableFieldDefinition" value="AuraOf_HolyAvenger" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a069ab6-0700-4718-8cce-39cb8d885072" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e842b0dgdbddg2005g8393g75ad26853f65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2172e8f0g4855gf4f7g0cb6g5674cc434a76" version="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HOLYAVENGER_AURA,100,-1);IF(HasPassive('AuraExpansion',context.Source)):ApplyStatus(HOLYAVENGER_AURA_9,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CrusadersMantle" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HOLYAVENGER_AURA,100,-1);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HOLYAVENGER_AURA') and ClassLevelHigherOrEqualThan(1,'Paladin',context.Source)" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b692d0fb-c538-45c6-b0c8-56684b39f05f" />
