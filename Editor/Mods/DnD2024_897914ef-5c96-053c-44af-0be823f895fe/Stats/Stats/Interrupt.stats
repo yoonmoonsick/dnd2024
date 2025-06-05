@@ -2034,5 +2034,14 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsMeleeAttack() and HasWeaponProperty(WeaponProperties.Melee, GetActiveWeapon(context.Observer)) and IsProficientWith(context.Observer, GetActiveWeapon(context.Observer)) and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus, context.Source);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49227552-2daa-4623-8f7f-400dba9c51b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MAG_Counterspell_Blackstaff" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9936b55-4e24-4b3e-b064-19bdb1eb8235" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(1,'Wizard',context.Source) and not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source);" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_MAG_Counterspell', 1, 0, false, false, context.Source) and ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

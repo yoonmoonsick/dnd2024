@@ -1497,3 +1497,9 @@ data "Description" "h505e5398gabccg0407g5589gea9fde6cb9f5;1"
 data "ExtraDescription" ""
 data "Conditions" "IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsMeleeAttack() and HasWeaponProperty(WeaponProperties.Melee, GetActiveWeapon(context.Observer)) and IsProficientWith(context.Observer, GetActiveWeapon(context.Observer)) and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus, context.Source);"
 
+new entry "Interrupt_MAG_Counterspell_Blackstaff"
+type "InterruptData"
+using "Interrupt_MAG_Counterspell"
+data "Conditions" "ClassLevelHigherOrEqualThan(1,'Wizard',context.Source) and not HasSpellCastBlocked(context.Observer) and IsAbleToReact(context.Observer) and not Self(context.Source, context.Observer) and Enemy(context.Source, context.Observer) and IsSpell() and not Uninterruptible() and not HasStringInSpellRoll('WeaponAttack') and not AnyEntityIsItem() and not SpellId('Shout_END_Gale_ActivateNethereseOrb') and CounterspellCheck(context.Observer, context.Source);"
+data "EnableCondition" "HasActionResource('Interrupt_MAG_Counterspell', 1, 0, false, false, context.Source) and ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);"
+

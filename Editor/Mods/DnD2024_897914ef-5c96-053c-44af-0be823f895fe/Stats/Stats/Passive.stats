@@ -6213,6 +6213,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56c40706-a1e8-4193-86a3-ac36cf158e82" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blackstaff_MasterOfEnchantment" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8d4ab49gfdceg547dg26fbgc92cfc1703a6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h45ada390gdcf4g8f3ag6121gf017c2010c0c" version="1" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="2aade4a6-d8f5-499f-b0a5-5b71077b1f12" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_SplitEnchantment" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpellSchool(SpellSchool.Enchantment) and ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(SpellPowerLevelEqualTo(6) and MasterofEnchantment(6)):RestoreResource(SELF,SpellSlot,1,6);IF(SpellPowerLevelEqualTo(5) and MasterofEnchantment(5)):RestoreResource(SELF,SpellSlot,1,5);IF(SpellPowerLevelEqualTo(4) and MasterofEnchantment(4)):RestoreResource(SELF,SpellSlot,1,4);IF(SpellPowerLevelEqualTo(3) and MasterofEnchantment(3)):RestoreResource(SELF,SpellSlot,1,3);IF(SpellPowerLevelEqualTo(2) and MasterofEnchantment(2)):RestoreResource(SELF,SpellSlot,1,2);IF(SpellPowerLevelEqualTo(1) and MasterofEnchantment(1)):RestoreResource(SELF,SpellSlot,1,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="126cd77c-5015-4aee-9ef0-7473e43d4c1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blackstaff_ArcaneInterference" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h261c67e0g4d5dg9a75g90a2g4f7f5b6b28f5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had5b300bg71efg4993g30d6g0132189c2d6c" version="2" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="2aade4a6-d8f5-499f-b0a5-5b71077b1f12" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Counterspell" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(ARCANE_INTERFERENCE, 100, 2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a0977d9a-d419-4c9d-97ba-48b5183baba6" />
         <field name="Name" type="NameTableFieldDefinition" value="HolyAvenger" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9e842b0dgdbddg2005g8393g75ad26853f65" version="1" />
@@ -7934,6 +7962,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="ExpertDivination" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae52f029-dabf-4455-87f6-600c571ccbf0" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h918eca09g904cgd34ag2fadgd2859496fe26" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpellSchool(SpellSchool.Divination);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(SpellPowerLevelEqualTo(6)):RestoreResource(SELF,SpellSlot,1,4);IF(SpellPowerLevelEqualTo(5)):RestoreResource(SELF,SpellSlot,1,4);IF(SpellPowerLevelEqualTo(4)):RestoreResource(SELF,SpellSlot,1,3);IF(SpellPowerLevelEqualTo(3)):RestoreResource(SELF,SpellSlot,1,2);IF(SpellPowerLevelEqualTo(2)):RestoreResource(SELF,SpellSlot,1,1);" />
       </fields>
     </stat_object>
   </stat_objects>

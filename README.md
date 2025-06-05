@@ -1889,8 +1889,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ## New Items
 
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
+- [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
+  - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
-  - Can be obtained by solving the puzzle related to the Dawnmaster's Crest.
+  - It can be obtained by solving the puzzle related to the Dawnmaster's Crest. Alternatively, it can be purchased from Lady Esther.
 
 # NPCs
 

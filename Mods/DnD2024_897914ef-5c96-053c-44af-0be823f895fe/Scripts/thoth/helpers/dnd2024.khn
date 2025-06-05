@@ -445,3 +445,8 @@ end
 function FindSteed()
     return SpellId('Target_FindSteed') | SpellId('Target_FindSteed_3') | SpellId('Target_SpitefulSuffering') | SpellId('Target_FindSteed_Celestial') | SpellId('Target_FindSteed_Celestial_3') | SpellId('Target_FindSteed_Fey') | SpellId('Target_FindSteed_Fey_3') | SpellId('Target_FindSteed_Fiend') | SpellId('Target_FindSteed_Fiend_3')
 end
+
+function MasterofEnchantment(value)
+    local skillCheck = SkillCheck(Skill.Arcana,10+value)
+    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+end
