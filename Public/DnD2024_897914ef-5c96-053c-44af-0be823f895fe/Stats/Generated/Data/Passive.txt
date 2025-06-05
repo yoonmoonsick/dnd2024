@@ -4451,6 +4451,16 @@ data "Boosts" "DarkvisionRangeMin(36);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "Oathbow"
+type "PassiveData"
+using "HuntersMark"
+data "DisplayName" "h711c3266gb2feg4020g9366ge5174c9e0098;1"
+data "Description" "hc99ec3b8g7b09ga6dfg8fcbg2199abf68a83;1"
+data "DescriptionParams" ""
+data "Icon" "Action_Paladin_AbjureEnemy"
+data "Boosts" "IF(HasStatus('OATHBOW',context.Target,context.Source) and IsRangedWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit)):CharacterWeaponDamage(3d6);"
+data "Conditions" "HasStatus('OATHBOW',context.Target,context.Source) and IsRangedWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0);"
+
 new entry "Blackrazor_UndeadHeal"
 type "PassiveData"
 data "DisplayName" "hdd6c4a92g9cd0g3a52gf2f9g753d0beed5f8;1"
