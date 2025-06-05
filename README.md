@@ -1899,6 +1899,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased from A'jak'nir Jeera.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
   - It can be purchased from Lann Tarv.
+- [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
+  - It can be purchased from A'jak'nir Jeera.
 
 # NPCs
 
