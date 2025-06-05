@@ -9,6 +9,52 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67cd06fc-4b56-49cc-89e4-f5f12c8fbc23" />
+        <field name="Name" type="NameTableFieldDefinition" value="CavalierShield_ProtectiveField" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7717d881-5c50-47b7-ae34-44f499f9303b" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:ApplyStatus(SANCTUARY_CAVALIER,100,10);CreateExplosion(Projectile_ProtectiveField_Explosion);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcf49d99fg3484g9c14geb10ge50449ba161d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ce9b6edg4616gd0d7ge6bfg7e137e0d6011" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h35ab9702ga64eg8aeeg5678gf23ccd7eb94d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANCTUARY_CAVALIER,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59a7549f-3d42-4d87-8b28-cee17d2cd93d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CavalierShield_Push" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0452127-b460-41d4-af41-785f324dce2c" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6+StrengthModifier,Force);IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_15,100,0);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf976b68g1636ga25eg058egb800ca4d9c60" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+StrengthModifier,Force);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1e0bcb8-e88f-4363-bc9e-908ab4fc5ca2" />
+        <field name="Name" type="NameTableFieldDefinition" value="CavalierShield_Prone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70242e01-ca91-4340-8b98-977a09be5ad4" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6+StrengthModifier,Force);IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd6b0cee7g71fbgda68gc1b9gbd95b999b9ba" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+StrengthModifier,Force);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="be045213-70b8-48e6-b71a-49df467aa40b" />
         <field name="Name" type="NameTableFieldDefinition" value="DominateConstruct" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22f190a7-278a-4166-a57a-a341dd75950e" />
