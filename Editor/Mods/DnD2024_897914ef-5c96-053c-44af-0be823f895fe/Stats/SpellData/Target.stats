@@ -9,6 +9,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be045213-70b8-48e6-b71a-49df467aa40b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DominateConstruct" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="22f190a7-278a-4166-a57a-a341dd75950e" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(DOMINATE_CONSTRUCT,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead() and Tagged('CONSTRUCT') and not (Party(context.Target) and Party(context.Source));" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_EndGameAlly_SteelWatcherSummon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cec0af7g40c0gc3e9gf488g18317d49685a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b436066ga7bcg85c7g4e3bg15c9992b3dcb" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DOMINATE_CONSTRUCT,100,10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;HasHighGroundRangeExtension;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19fdbc3d-e7d3-41e0-a60b-62b0aae81eac" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_CounterSpell_Blackstaff" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="285e28c0-73e0-41c2-b623-9f807e5aea7e" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="791d9480-ac67-4be1-a9b1-923b54086c8f" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Illithid_HoldPerson" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2fa7994-f151-42b9-bfe7-f4f996ce6db2" />
@@ -11994,13 +12020,6 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="edc99000-1faa-4721-8f3a-a0bd29889a7a" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
       </fields>
     </stat_object>
   </stat_objects>
