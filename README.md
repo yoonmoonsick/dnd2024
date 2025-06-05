@@ -1215,7 +1215,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 - Level 3: Hunter's Rime
   - Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter’s Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter’s Mark, it can’t take the Disengage action. 
 - Level 7: Fortifying Soul
-  - You choose a creature. The chosen creature regains hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
+  - You choose a creature. The chosen creature gains temporary hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
 - Level 11: Chilling Retribution
   - When a creature hits you with an attack roll, you can use a Reaction to force it to make a Wisdom saving throw against your spell save DC; on a failed save, it is Frightened until the end of it's next turn. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
 
@@ -1889,6 +1889,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ## New Items
 
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
+- [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
+  - It can be obtained by reading the "Missive From Moonrise" carried by the dead Zealot of the Absolute on the Rosymorn Monastery Trail. Alternatively, it can be purchased from Lady Esther.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
