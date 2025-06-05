@@ -6213,6 +6213,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5cbdda6-0121-4321-bcb5-226b217d063c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blackrazor_UndeadHeal" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd6c4a92g9cd0g3a52gf2f9g753d0beed5f8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha05d7e44ga2f0g4355g6b41g2c5824eaa163" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Frightened);StatusImmunity(SG_Charmed);DarkvisionRangeMin(9);StatusImmunity(BLINDED_DARKNESS);StatusImmunity(SG_Blinded);IgnoreSurfaceCover(SurfaceDarknessCloud);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and Tagged('UNDEAD');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d10,Necrotic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa47a83c-1c12-4bb6-9ed2-59ef178fbf39" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blackrazor_DevourSoul" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ba7e6951-6525-48eb-bfe7-57fd5db8fb2e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e07c4ecgfa6bga684gfef1g31ec6da13679" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h86057791gcd11g123bg93caga2ee039e6f0d" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Legendary_SoulSiphon" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasHPLessThan(1) and Enemy() and Character() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_DARK_ONES_BLESSING,100,0);ApplyStatus(SELF,BLACKRAZOR_DEVOURSOUL,100,-1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9a453cc1-fa25-48cb-a568-670f190a6f8e" />
         <field name="Name" type="NameTableFieldDefinition" value="CavalierShield_Sanctuary" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9ef8bee-8219-48e5-b674-9e1fb64941bb" />

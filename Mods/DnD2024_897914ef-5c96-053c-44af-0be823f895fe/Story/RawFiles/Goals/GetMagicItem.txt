@@ -1,0 +1,23 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+TemplateUseStarted(_Player,(ITEMROOT)UNI_CRE_KethericOrders_c6555b5d-4d26-41ce-bcd6-d31ed7bed86b,_Scroll)
+AND
+GetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6,_Player,0)
+THEN
+PROC_TryStartAD((DIALOGRESOURCE)GLO_Tadpole_PAD_Refusal_7796cab2-9587-8ba5-d921-741f6ae10805, _Player);
+TemplateAddTo((ITEMROOT)YMS_MagicItem_Blackrazor_b00b1f0c-1b9e-4d88-a11f-52dbb717a843, _Player, 1);
+SetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6);
+
+IF
+TemplateUseStarted(_Player,(ITEMROOT)UNI_CRE_KethericOrders_c6555b5d-4d26-41ce-bcd6-d31ed7bed86b,_Scroll)
+AND
+GetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6,_Player,1)
+THEN
+PROC_PlayCantUseItemAD(_Player);
+EXITSECTION
+
+ENDEXITSECTION
