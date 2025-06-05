@@ -1893,6 +1893,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
   - It can be obtained by solving the puzzle related to the Dawnmaster's Crest. Alternatively, it can be purchased from Lady Esther.
+- [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
+  - It can be purchased from Lann Tarv.
 
 # NPCs
 

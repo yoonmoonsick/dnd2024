@@ -4451,6 +4451,21 @@ data "Boosts" "DarkvisionRangeMin(36);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "CavalierShield_Sanctuary"
+type "PassiveData"
+using "Sanctuary"
+data "StatsFunctors" "RemoveStatus(SELF,SANCTUARY_CAVALIER);RemoveStatus(SELF,SANCTUARY_TRANQUILITY);"
+
+new entry "CavalierShield_SanctuaryDamage"
+type "PassiveData"
+using "SanctuaryDamage"
+data "StatsFunctors" "RemoveStatus(SELF,SANCTUARY_CAVALIER);RemoveStatus(SELF,SANCTUARY_TRANQUILITY);"
+
+new entry "CavalierShield_SanctuarySpecificSpell"
+type "PassiveData"
+using "SanctuarySpecificSpell"
+data "StatsFunctors" "RemoveStatus(SELF,SANCTUARY_CAVALIER);RemoveStatus(SELF,SANCTUARY_TRANQUILITY);"
+
 new entry "Blackstaff_MasterOfEnchantment"
 type "PassiveData"
 data "DisplayName" "hf8d4ab49gfdceg547dg26fbgc92cfc1703a6;1"
