@@ -4451,6 +4451,16 @@ data "Boosts" "DarkvisionRangeMin(36);ActiveCharacterLight(c46e7ba8-e746-7020-51
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "VorpalGlaive"
+type "PassiveData"
+using "MAG_IgnoreSlashingResistance_Passive"
+data "DisplayName" "h277b239ag4acfgfbf1g6f24g98aff21a0c26;1"
+data "Description" "h9001dcf4g89edg4c27g1bd2gfdbc73d744b3;1"
+data "Icon" "Action_PactOfTheBlade_Glaive"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "AttackedWithPassiveSourceWeapon()"
+data "StatsFunctors" "IF(IsCritical()):DealDamage(30,Slashing,Magical)"
+
 new entry "Oathbow"
 type "PassiveData"
 using "HuntersMark"
