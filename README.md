@@ -1901,6 +1901,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased from Lann Tarv.
 - [Sword of Kas](https://www.dndbeyond.com/magic-items/9229112-sword-of-kas)
   - It can be purchased Vicar Humbletoes.
+- [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
+  - It can be purchased Vicar Humbletoes.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
 
