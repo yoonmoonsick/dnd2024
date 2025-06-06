@@ -626,10 +626,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce58f68a-9153-407a-9184-d8ad05bb86f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blur_Race" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c646d3b6-8cd6-4599-a19c-9ecbda99a3cc" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39f6f20f-4df5-463a-9ab8-0ef2f1a2748b" />
         <field name="Name" type="NameTableFieldDefinition" value="FalseLife_Race" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e57ebc5-59bb-4cc3-ad0f-ed86e578000d" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3620,6 +3631,65 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,100)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5974892e-594d-4e12-970a-d79604cb9e75" />
+        <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Prestidigitation_Light;Shout_Prestidigitation_Extinguish;Shout_Prestidigitation_Clean;" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="27" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MagicCircle" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf87799e0gc980g1a41gd171g28e7eac5fb02" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h63d7c1cbgd840gde3cgcbf3g221de6d49b7d" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_DisguiseSelf_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_DisguiseSelf_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_PolymorphGeneric" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9e7ec23c-4b13-4a88-b3d6-1df1782e4359" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="c33c578f-fc5c-4a9d-a961-78b7bfff73d7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53fe4300-15c4-4ce1-9e1f-0d8b493ab0b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation_Light" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5974892e-594d-4e12-970a-d79604cb9e75" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Prestidigitation" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Tagged('TORCH') or Tagged('CUSTOM_BURN_VFX')):ApplyStatus(YMS_AUTO_TORCH_ON_TECHNICAL);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb09a6790g8123ge25dge7bbg165d8fb4c3f9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d9f7797g7af7ga666ga878g47ddd0a1e0e0" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="49997958-e39b-4760-9c4d-21b2890b4722" />
+        <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation_Extinguish" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53fe4300-15c4-4ce1-9e1f-0d8b493ab0b6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Tagged('TORCH') or Tagged('CUSTOM_BURN_VFX')):ApplyStatus(YMS_AUTO_TORCH_OFF_TECHNICAL);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1426481gc2e7g8ef8g67b2ga092552425bd" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57b49023-9ccf-420c-8888-a2832d0112bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation_Clean" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53fe4300-15c4-4ce1-9e1f-0d8b493ab0b6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Character()):ApplyStatus(SOAP_WASH,100,1);GROUND:SurfaceChange(DestroyWater);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Item_LOOT_Bathroom_Sponge_A" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd083f49ag8b82ge229g9a2bg192754dfeb47" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbe78e8f1ga499gc358g758fg0c5e1b4719df" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
