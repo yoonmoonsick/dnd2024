@@ -630,6 +630,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FalseLife_Race" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e57ebc5-59bb-4cc3-ad0f-ed86e578000d" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -637,6 +638,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="06650636-5a66-417a-a33f-57edaef9035b" />
         <field name="Name" type="NameTableFieldDefinition" value="Enlarge_Duergar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f6b57c12-fac3-4bc7-917c-b6a2da294900" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -645,6 +647,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Invisibility_Duergar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1412f418-ec62-4357-ad3a-10b1713f7ccf" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsConcentration;IsEnemySpell" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -656,6 +659,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Fire)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Fire,,,,1575c661-c7a1-44c7-b07d-d47b57164841)" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1334,10 +1338,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Totem_Bear" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a2f1afc0-ad7e-40d0-a159-9688cb197118" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_Totem" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_TOTEM_BEAR,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_BEAR,100,100)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50e11d91g63acgc13cg4eb8g8f9269e2dedb" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_TOTEM_BEAR') and not HasStatus('CALM_EMOTIONS') and not HasStatus('SG_Rage')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1346,9 +1350,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Totem_Eagle" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="33ce7f95-6d0b-45d6-9f3e-ee1b23f7d21c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_Totem" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_TOTEM_EAGLE,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_EAGLE,100,100)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_TOTEM_EAGLE') and not HasStatus('CALM_EMOTIONS') and not HasStatus('SG_Rage')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1357,9 +1361,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Totem_Elk" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d1c660ff-c7ed-4577-b492-260d4e9272ce" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_Totem" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_TOTEM_ELK,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_ELK,100,100)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_TOTEM_ELK') and not HasStatus('CALM_EMOTIONS') and not HasStatus('SG_Rage')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1368,9 +1372,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Totem_Tiger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39b1fc87-4fac-4247-afe5-824d4da6089d" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_Totem" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_TOTEM_TIGER,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_TIGER,100,100)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_TOTEM_TIGER') and not HasStatus('CALM_EMOTIONS') and not HasStatus('SG_Rage')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1379,9 +1383,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Totem_Wolf" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da549ad9-7b12-49f9-b250-47ec4d9f3141" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_Totem" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_TOTEM_WOLF,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_TOTEM_WOLF,100,100)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_TOTEM_WOLF') and not HasStatus('CALM_EMOTIONS') and not HasStatus('SG_Rage')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1410,7 +1414,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,RAGE_STOP_REMOVE,100,1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Rage" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MindlessRage" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce3a3d3egac78gf710g10eeg3e502fd96a6c" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rage" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rage_Wolf" />
@@ -2550,8 +2554,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="PackHowl_Barbarian" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d83edcae-3e44-409a-a9fc-de090da1c27e" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_TOTEM_WOLF')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2560,11 +2564,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="FerociousAppetite" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d6b1d199-ca6f-404d-bee2-8997ad206fea" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d4*LevelMapValue(RageDamage)+ConstitutionModifier);RemoveStatus(RAGE_TOTEM_BEAR_HEAL_TOGGLE);ApplyStatus(SELF,RAGE_STOP_REMOVE,100,1)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc129bcf2g73cbg540fgc643g4458656c0f1e" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d4*LevelMapValue(RageDamage)+ConstitutionModifier)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_TOTEM_BEAR') and HasStatus('RAGE_TOTEM_BEAR_HEAL_TOGGLE')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4661,6 +4665,33 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d0b10a9-4f8a-43ab-935e-91793f77c3bb" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Barbarian" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="931126ed-a7c2-453b-91bc-f9af861611b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EndRage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cb08f27c-82d8-4518-a1fb-997b62011958" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66d35345-3eba-4bbb-8578-d1b92028c480" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dash_BonusAction_Eagle" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="021086ec-d402-44b3-803f-3e629ecd0a16" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;Stealth;Invisible;Temporary;NoCameraMove" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_TOTEM_EAGLE')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb38a59b-315f-4cf9-bd25-9d2aaf5ab8b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Disengage_BonusAction_Eagle" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Immobilized() and HasStatus('RAGE_TOTEM_EAGLE')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
