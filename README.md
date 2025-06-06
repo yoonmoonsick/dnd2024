@@ -2084,6 +2084,12 @@ Appropriate spells have been added to the spell list for each class.
 - Range: 9 m
 - Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.  
 
+### [Prestidigitation](https://www.dndbeyond.com/spells/2618893-prestidigitation)
+- You create a magical effect within range.
+  - Prestidigitation: Light Torch
+  - Prestidigitation: Extinguish Torch
+  - Prestidigitation: Clean Object
+
 ### [Primal Savagery](https://www.dndbeyond.com/spells/14558-primal-savagery)
 
 ### Produce Flame 

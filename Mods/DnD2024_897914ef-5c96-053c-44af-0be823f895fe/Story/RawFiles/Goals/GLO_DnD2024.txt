@@ -39,6 +39,20 @@ AND
 HasPassive(_Player, "LongRangeThrow", 0)
 THEN
 AddPassive(_Player, "LongRangeThrow");
+
+IF
+StatusApplied(_Object, "YMS_AUTO_TORCH_ON_TECHNICAL", _, _)
+AND
+HasActiveStatus(_Object, "BURNING", 0)
+THEN
+ApplyStatus(_Object, "BURNING", -1.0, 1, _Object);
+
+IF
+StatusApplied(_Object, "YMS_AUTO_TORCH_OFF_TECHNICAL", _, _)
+AND
+HasActiveStatus(_Object, "BURNING", 1)
+THEN
+RemoveStatus(_Object, "BURNING", _Object);
 EXITSECTION
 
 ENDEXITSECTION
