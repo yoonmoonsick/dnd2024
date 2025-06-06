@@ -171,6 +171,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -180,6 +181,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="91ba2241-d07a-4e62-ba73-e29d43eff8d0" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -351,7 +353,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ce61799e-0ba9-4566-95a1-8363fcbba044" />
         <field name="Name" type="NameTableFieldDefinition" value="PsychicBlade" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsychicBlade)+max(DexterityModifier,StrengthModifier), Psychic);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_SneakAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead();" />
@@ -2403,6 +2405,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;IsHarmful;HasHighGroundRangeExtension;CombatLogSetSingleLineRoll;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="MinJumpDistance" type="FloatTableFieldDefinition" value="1" />
         <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Jump" enumeration_type_name="SpellActionType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_TOTEM_EAGLE');" />
       </fields>
     </stat_object>
     <stat_object color="#FF808080" is_substat="false">
