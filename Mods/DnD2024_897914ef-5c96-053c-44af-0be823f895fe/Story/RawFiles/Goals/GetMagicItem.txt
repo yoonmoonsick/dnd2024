@@ -3,6 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// BlackRazor
 IF
 TemplateUseStarted(_Player,(ITEMROOT)UNI_CRE_KethericOrders_c6555b5d-4d26-41ce-bcd6-d31ed7bed86b,_Scroll)
 AND
@@ -12,12 +13,16 @@ PROC_TryStartAD((DIALOGRESOURCE)GLO_Tadpole_PAD_Refusal_7796cab2-9587-8ba5-d921-
 TemplateAddTo((ITEMROOT)YMS_MagicItem_Blackrazor_b00b1f0c-1b9e-4d88-a11f-52dbb717a843, _Player, 1);
 SetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6);
 
+// Holy Avenger
 IF
-TemplateUseStarted(_Player,(ITEMROOT)UNI_CRE_KethericOrders_c6555b5d-4d26-41ce-bcd6-d31ed7bed86b,_Scroll)
+StatusApplied(_Player, "CRE_MAG_LATHANDER_PUZZLE_BOON", _, _)
 AND
-GetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6,_Player,1)
+DB_Avatars((CHARACTER)_Player)
+AND
+GetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28,_Player,0)
 THEN
-PROC_PlayCantUseItemAD(_Player);
+TemplateAddTo((ITEMROOT)WPN_HUM_Longsword_HolyAvenger_4cbfe982-bbc2-4848-aea7-231e74b6ba13, _Player, 1, 1);
+SetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28);
 EXITSECTION
 
 ENDEXITSECTION
