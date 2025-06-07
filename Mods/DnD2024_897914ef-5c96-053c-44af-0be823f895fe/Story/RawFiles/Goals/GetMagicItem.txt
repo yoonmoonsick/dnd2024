@@ -5,24 +5,42 @@ INITSECTION
 KBSECTION
 // BlackRazor
 IF
-TemplateUseStarted(_Player,(ITEMROOT)UNI_CRE_KethericOrders_c6555b5d-4d26-41ce-bcd6-d31ed7bed86b,_Scroll)
+KilledBy((CHARACTER)S_CRE_CultistsUndead_GiantSkeleton_000_09f52656-f262-48a2-bdbb-949264077dc4,_Killer,_,_)
 AND
-GetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6,_Player,0)
+GetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6,_Killer,0)
+AND
+GetPosition(S_CRE_CultistsUndead_GiantSkeleton_000_09f52656-f262-48a2-bdbb-949264077dc4,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_Blackrazor_b00b1f0c-1b9e-4d88-a11f-52dbb717a843,_X,_Y,_Z,0,0,"",_Blackrazor)
 THEN
-PROC_TryStartAD((DIALOGRESOURCE)GLO_Tadpole_PAD_Refusal_7796cab2-9587-8ba5-d921-741f6ae10805, _Player);
-TemplateAddTo((ITEMROOT)YMS_MagicItem_Blackrazor_b00b1f0c-1b9e-4d88-a11f-52dbb717a843, _Player, 1);
 SetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6);
+RequestPing(_X,_Y,_Z,_Blackrazor,_Killer);
 
 // Holy Avenger
 IF
-StatusApplied(_Player, "CRE_MAG_LATHANDER_PUZZLE_BOON", _, _)
+KilledBy((CHARACTER)S_CRE_GuardianOfFaith_5144e2e8-fbd7-41b3-a6fb-f4cf5759cb95,_Killer,_,_)
 AND
-DB_Avatars((CHARACTER)_Player)
+GetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28,_Killer,0)
 AND
-GetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28,_Player,0)
+GetPosition(S_CRE_GuardianOfFaith_5144e2e8-fbd7-41b3-a6fb-f4cf5759cb95,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)WPN_HUM_Longsword_HolyAvenger_4cbfe982-bbc2-4848-aea7-231e74b6ba13,_X,_Y,_Z,0,0,"",_HolyAvenger)
 THEN
-TemplateAddTo((ITEMROOT)WPN_HUM_Longsword_HolyAvenger_4cbfe982-bbc2-4848-aea7-231e74b6ba13, _Player, 1, 1);
 SetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28);
+RequestPing(_X,_Y,_Z,_HolyAvenger,_HolyAvenger);
+
+// Wave
+IF
+KilledBy((CHARACTER)S_SCL_FishermansHut_CursedKuoToa_Champion_03524330-c6ca-4078-8fbf-12ec4ffa389a,_Killer,_,_)
+AND
+GetFlag((FLAG)Wave_Obtained_fdec2c63-2b8a-4b59-97f7-dd1ed9423741,_Killer,0)
+AND
+GetPosition(S_SCL_FishermansHut_CursedKuoToa_Champion_03524330-c6ca-4078-8fbf-12ec4ffa389a,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_Wave_53a7965a-04e4-4fca-8f24-ae0da6975097,_X,_Y,_Z,0,0,"",_Wave)
+THEN
+SetFlag((FLAG)Wave_Obtained_fdec2c63-2b8a-4b59-97f7-dd1ed9423741);
+RequestPing(_X,_Y,_Z,_Wave,_Killer);
 EXITSECTION
 
 ENDEXITSECTION
