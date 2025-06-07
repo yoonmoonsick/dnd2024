@@ -6249,12 +6249,20 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79f72e4e-c775-485e-9e85-8e0e51f04c2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderousGreatclub_Passive" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Character()):CharacterWeaponDamage(1d8, Thunder);IF(Item()):CharacterWeaponDamage(3d8, Thunder);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c6c01075-be0e-445a-a503-08f78706e6de" />
         <field name="Name" type="NameTableFieldDefinition" value="Wave_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="905bb271-686b-4239-964f-0ea2755da7d4" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(21,Necrotic,Magical)" />

@@ -16,6 +16,29 @@ THEN
 SetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6);
 RequestPing(_X,_Y,_Z,_Blackrazor,_Killer);
 
+// Cloak of Invisibility
+IF
+KilledBy((CHARACTER)S_UND_CorpseDisposer_Leader_5df19256-efcc-44c5-8fba-0add58492ccf,_Killer,_,_)
+AND
+GetFlag((FLAG)CloakOfInvisibility_Obtained_06db3697-b29d-47c7-bb23-3eb59b50243e,_Killer,0)
+AND
+GetPosition(S_UND_CorpseDisposer_Leader_5df19256-efcc-44c5-8fba-0add58492ccf,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_CloakOfInvisibility_fb0dbe2d-aa9c-4b19-a8a3-388d7dab9280,_X,_Y,_Z,0,0,"",_CloakOfInvisibility)
+THEN
+SetFlag((FLAG)CloakOfInvisibility_Obtained_06db3697-b29d-47c7-bb23-3eb59b50243e);
+RequestPing(_X,_Y,_Z,_CloakOfInvisibility,_Killer);
+
+// Energy Bow
+IF
+KilledBy((CHARACTER)S_UND_KethericCity_LostMerregon_07e9b38f-624c-45db-b3fa-b45737314796,_Killer,_,_)
+AND
+GetPosition(S_UND_KethericCity_LostMerregon_07e9b38f-624c-45db-b3fa-b45737314796,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_EnergyBow_a8d6eacf-07fc-4139-866b-f4947741e912,_X,_Y,_Z,0,0,"",_EnergyBow)
+THEN
+RequestPing(_X,_Y,_Z,_EnergyBow,_Killer);
+
 // Holy Avenger
 IF
 KilledBy((CHARACTER)S_CRE_GuardianOfFaith_5144e2e8-fbd7-41b3-a6fb-f4cf5759cb95,_Killer,_,_)
@@ -27,7 +50,18 @@ AND
 CreateAt((ITEMROOT)WPN_HUM_Longsword_HolyAvenger_4cbfe982-bbc2-4848-aea7-231e74b6ba13,_X,_Y,_Z,0,0,"",_HolyAvenger)
 THEN
 SetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28);
-RequestPing(_X,_Y,_Z,_HolyAvenger,_HolyAvenger);
+RequestPing(_X,_Y,_Z,_HolyAvenger,_Killer);
+
+// Thunderous Greatclub
+IF
+KilledBy((CHARACTER)S_UND_Automaton_5038c0f2-0022-4699-82ce-a319b30616bb,_Killer,_,_)
+AND
+GetPosition(S_UND_Automaton_5038c0f2-0022-4699-82ce-a319b30616bb,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_ThunderousGreatclub_12128b87-5ff4-414d-8788-b5fac0c320f6,_X,_Y,_Z,0,0,"",_ThunderousGreatclub)
+THEN
+RequestPing(_X,_Y,_Z,_ThunderousGreatclub,_Killer);
+
 
 // Wave
 IF
