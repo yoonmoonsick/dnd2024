@@ -9,6 +9,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4bd11e0-a512-481d-a7fa-61431b24e7be" />
+        <field name="Name" type="NameTableFieldDefinition" value="CloakOfInvisibility" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="06cfea64-e0db-4750-b7e4-4b0642d38150" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasStatus('FAERIE_FIRE')  and not IsImmuneToStatus('SG_Invisible');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="02fb83f1-9cef-4c08-a62c-526429a5e7aa" />
         <field name="Name" type="NameTableFieldDefinition" value="Wave_GlobeOfInvulnerability" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae42b8c8-0285-41a7-b35f-66d1f4354941" />
@@ -447,6 +456,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="71b69aaf-ea0e-4ed8-b1d3-70e5f99c41db" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -455,6 +466,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="UND_DeadInWater_Invisibility" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d49767c1-2bfd-4621-81a4-5f576dc3d742" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsConcentration;UnavailableInDialogs;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(INVISIBILITY,100,600);AI_ONLY:ApplyStatus(INVISIBILITY,100,2);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() and not HasStatus('FAERIE_FIRE')  and not IsImmuneToStatus('SG_Invisible');" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,600)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

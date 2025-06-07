@@ -1893,8 +1893,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
+- [Cloak of Invisibility](https://www.dndbeyond.com/magic-items/9059006-cloak-of-invisibility)
+  - It can be obtained by killing the Duergar Corpse Disposer in Grymforge.
+- [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow)
+  - It can be obtained by killing the Merregon Legionnaire in Grymforge.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
-  - It can be obtained by killing the GuardianOfFaith in the Crèche Y'llek.
+  - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
   - It can be purchased from A'jak'nir Jeera.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
@@ -1905,9 +1909,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased Vicar Humbletoes.
 - [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
   - It can be purchased Vicar Humbletoes.
+- [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
+  - It can be obtained by killing Bernard in the Arcane Tower.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
+  - It can be obtained by killing the Cursed Kuo-Toa Chief in the Shadow-Cursed Lands.
 
 # NPCs
 

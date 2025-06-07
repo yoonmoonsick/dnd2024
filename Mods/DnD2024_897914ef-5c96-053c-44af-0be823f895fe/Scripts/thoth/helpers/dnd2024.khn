@@ -450,3 +450,8 @@ function MasterofEnchantment(value)
     local skillCheck = SkillCheck(Skill.Arcana,10+value)
     return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
 end
+
+function BreakFreeCheck(value)
+    local skillCheck = SkillCheck(Skill.Athletics,value)
+    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+end
