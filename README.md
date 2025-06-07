@@ -1890,11 +1890,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
 - [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
-  - It can be obtained by reading the "Missive From Moonrise" carried by the dead Zealot of the Absolute on the Rosymorn Monastery Trail. Alternatively, it can be purchased from Lady Esther.
+  - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
-  - It can be obtained by solving the puzzle related to the Dawnmaster's Crest. Alternatively, it can be purchased from Lady Esther.
+  - It can be obtained by killing the GuardianOfFaith in the Crèche Y'llek.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
   - It can be purchased from A'jak'nir Jeera.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
@@ -1907,6 +1907,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased Vicar Humbletoes.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
+- [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
 
 # NPCs
 
