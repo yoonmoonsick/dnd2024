@@ -2043,5 +2043,19 @@
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_MAG_Counterspell', 1, 0, false, false, context.Source) and ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef8fe858-6100-4ec8-815f-6f5fa4da32d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SwordOfAnswering" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7444d60-f45a-4dbf-8bf6-203acf40af5b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h357be0d8g2820g9404g5386g3ef7392f8ad9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_Riposte_SwordOfAnswering,true,true,true);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
