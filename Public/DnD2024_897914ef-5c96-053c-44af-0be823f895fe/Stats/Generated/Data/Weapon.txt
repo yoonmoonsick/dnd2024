@@ -3928,6 +3928,15 @@ data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);IF(Tagged('UN
 data "Boosts" "UnlockSpell(Projectile_FingerOfDeath_SwordOfKas);"
 data "PassivesOnEquip" "SwordOfKas;ImprovedCritical;"
 
+new entry "YMS_SwordOfAnswering"
+type "Weapon"
+using "YMS_SwordOfKas"
+data "RootTemplate" "d7c89aa0-ded1-4507-bf7e-b4860920e277"
+data "ValueLevel" "2"
+data "DefaultBoosts" "WeaponEnchantment(3);WeaponProperty(Magical);"
+data "Boosts" "UnlockInterrupt(Interrupt_SwordOfAnswering);IF(SpellId('Target_Riposte_SwordOfAnswering')):Advantage(AttackRoll);"
+data "PassivesOnEquip" ""
+
 new entry "YMS_SwordOfZariel"
 type "Weapon"
 using "YMS_SwordOfKas"
