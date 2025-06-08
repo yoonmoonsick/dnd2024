@@ -21,7 +21,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b4bbd8f0-4d27-45cf-b2c3-a4582c6391a0" />
         <field name="Name" type="NameTableFieldDefinition" value="TraderDonationsRequiredAttitude" />
-        <field name="Value" type="FloatTableFieldDefinition" value="-90" />
+        <field name="Value" type="FloatTableFieldDefinition" value="-135" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: -45" />
       </fields>
     </stat_object>
@@ -157,7 +157,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="65482621-764d-4940-a18c-0e18a3fb23e1" />
         <field name="Name" type="NameTableFieldDefinition" value="EscortStragglerDistance" />
-        <field name="Value" type="FloatTableFieldDefinition" value="1" />
+        <field name="Value" type="FloatTableFieldDefinition" value="10" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 10 Distance where the escort leader will wait for stragglers" />
       </fields>
     </stat_object>
@@ -167,6 +167,30 @@
         <field name="Name" type="NameTableFieldDefinition" value="CombatCameraDeathAnimationWait" />
         <field name="Value" type="FloatTableFieldDefinition" value="0.5" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 2 The delay the camera stays on a dying NPC" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79524570-798e-45da-99ae-471ef54de892" />
+        <field name="Name" type="NameTableFieldDefinition" value="FollowDistance" />
+        <field name="Value" type="FloatTableFieldDefinition" value="70" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 70" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="877929f7-0786-42cb-9451-388718f00573" />
+        <field name="Name" type="NameTableFieldDefinition" value="SurfaceOnMoveDistanceMultiplier" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.75" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Used in the calculation of the distance threshold AFTER entering a surface. Each time distance threshold reached, status of surface will apply." />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39d79da5-ff70-4d0d-b3f0-a6ba61724e59" />
+        <field name="Name" type="NameTableFieldDefinition" value="SurfaceOnEnterDistanceMultiplier" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Used in the calculation of the distance threshold when first entering a surface. Only after this first distance is reached will the status of the surface first apply." />
       </fields>
     </stat_object>
   </stat_objects>
