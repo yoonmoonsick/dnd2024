@@ -128,6 +128,16 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d6cc01d-5428-4868-b9f9-c1277c67627c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DIP_FIRE_UNLOCK" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DIP_FIRE_UNLOCK" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Candle_Dip);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="00752230-b1c3-401e-a941-3a120866e64c" />
@@ -680,6 +690,32 @@
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, SourceSpellDC()" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(BINDING_ICE)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Restrained;SG_Condition;SG_Helpable_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a527f63-d34f-4656-909d-73082d921442" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Enchantment" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aaffd03b-d694-4d5d-be53-c477c2fbe85c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MIND_WHIP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8d50f327-8202-40ad-bcae-7517e8ffb93d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39abb19eg3d94gbceeg814bg51d0e6613a22" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5ac84180gd30dg8d0fg8132g3483e737ebf9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindWhip" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Purple" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MIND_WHIP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint);Tag(EXTRA_ATTACK_BLOCKED);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Slow_ActionPoint;" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9a936844-e7af-40af-afb2-18da21f8621a" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
+        <field name="SplatterSweatAmount" type="FloatTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
