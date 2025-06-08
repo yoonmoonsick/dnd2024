@@ -2289,7 +2289,7 @@ Appropriate spells have been added to the spell list for each class.
 - ***At Higher Levels***. When you cast this spell using a spell slot of 3rd level or higher, increase the cold damage by 1d8 for each slot level above 2nd.
 - Available For: Sorcerer, Wizard
 
-## [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip)
+### [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip)
 - Available For: Sorcerer, Wizard
 
 ### [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
@@ -2342,6 +2342,9 @@ Appropriate spells have been added to the spell list for each class.
 ### [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - Summon a Blink Dog to fight by your side.
 - Available For: Druid, Ranger, Warlock, Wizard, Fey Wanderer
+
+### [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
+- Available For: Sorcerer, Warlock
 
 ### Warden of Vitality 
 - School: Abjuration 
