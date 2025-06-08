@@ -455,3 +455,7 @@ function BreakFreeCheck(value)
     local skillCheck = SkillCheck(Skill.Athletics,value)
     return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
 end
+
+function SneakAttackSpellCheck()
+    return SpellId('Projectile_SneakAttack') | SpellId('Target_SneakAttack') | SpellId('Target_TrueStrike_Radiant_Sneak') | SpellId('Projectile_TrueStrike_Radiant_Sneak')
+end
