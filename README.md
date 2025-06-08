@@ -2379,6 +2379,9 @@ Appropriate spells have been added to the spell list for each class.
 ### Phantasmal Killer 
 - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
 
+### [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance)
+- Available For: Bard, Sorcerer, Warlock, Wizard
+
 ### [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
 - Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
 - The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.
