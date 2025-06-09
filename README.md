@@ -2302,6 +2302,9 @@ Appropriate spells have been added to the spell list for each class.
 - Summon an Eagle to fight by your side.
 - Available For: Druid, Ranger
 
+### [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
+- Available For: Bard, Druid, Sorcerer, Wizard
+
 ### [Web](https://www.dndbeyond.com/spells/2619208-web)
 - When the spell is cast, flames in the area covered by spider webs are extinguished.
 
