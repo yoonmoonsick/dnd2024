@@ -70,6 +70,12 @@ using "Crossbow_Loading_MainHand"
 data "TooltipUseCosts" "CrossbowLoadingOffHand"
 data "Boosts" "ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source)):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));"
 
+new entry "WardingWind"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnMovedDistance"
+data "StatsFunctors" "CreateExplosion(Projectile_WardingWind)"
+
 new entry "YMS_Race"
 type "PassiveData"
 
