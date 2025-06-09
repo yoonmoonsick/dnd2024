@@ -183,10 +183,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0d9ca71-36cb-4f8c-bdc4-dcbea6e81c0a" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(ProficiencyBonus,Radiant)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus,Radiant,Magical)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus/2,Radiant,Magical)" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus,Radiant,Magical)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus/2,Radiant,Magical)" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus,Radiant,Magical);ApplyStatus(MOONBEAM_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus/2,Radiant,Magical);ApplyStatus(MOONBEAM_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus,Radiant,Magical);ApplyStatus(MOONBEAM_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(ProficiencyBonus/2,Radiant,Magical);ApplyStatus(MOONBEAM_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
