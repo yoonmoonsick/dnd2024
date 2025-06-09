@@ -1681,11 +1681,8 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e106a7a1-e86a-4123-b59b-5d190829a261" />
         <field name="Name" type="NameTableFieldDefinition" value="PsychicLance" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="82be50d6-1f94-4659-a5c6-d2ec12c0e065" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_PsychicLance" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d367d0dg7c50g37d9gc87egf718cd114f2c" version="1" />
@@ -1704,13 +1701,27 @@
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasHighGroundRangeExtension;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasHighGroundRangeExtension;IsHarmful;DisableBlood;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="4d8b4ab5-04d2-47ee-bcd8-bb3e2c4c8847" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b4dcc63a-058d-4a1c-9720-2d18512c0ed2" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="ac0b2094-a6e5-4a39-8c17-157278fec6ce" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_PsychicLance_4;Target_PsychicLance_5;Target_PsychicLance_6;" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9313094a-bae2-454f-9701-f920d0e8e98d,,;,,;3e441d3f-11f9-432d-877c-c0ba4d92c74a,,;8b7ae969-2a04-4720-9685-3bde54c18ffe,,;808fdfab-2e6c-472e-b3c4-19ce4a719d9d,,;,,;ea745d30-eb87-447f-b190-c81298e27d9c,,;,,;,," />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TargetHitEffect" type="GuidObjectTableFieldDefinition" value="9ef115db-4a1d-4846-b286-3364cd5fdc28" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="215f5aca-5db2-4952-9c92-c65c652ae399" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsychicLance_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e106a7a1-e86a-4123-b59b-5d190829a261" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_PsychicLance" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1724,6 +1735,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Taget_PsychicLance" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_PsychicLance" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1737,6 +1749,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Taget_PsychicLance" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_PsychicLance" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
