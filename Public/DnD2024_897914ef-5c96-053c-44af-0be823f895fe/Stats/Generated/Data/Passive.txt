@@ -3846,6 +3846,11 @@ data "BoostContext" "OnShortRest;OnCreate"
 data "BoostConditions" "ClassLevelHigherOrEqualThan(1,'Warlock',context.Source);"
 data "StatsFunctorContext" "OnShortRest;OnCreate"
 
+new entry "HexWarriorTechnical"
+type "PassiveData"
+using "HexWarriorTechnical"
+data "Conditions" "HasStatus('PACT_BLADE', GetAttackWeapon(context.Source)) and not HasStatus('HEXBLADES_CURSE',context.Target) and IsWeaponAttack() and not IsMiss() and (Character() and not Dead()) and RollDieAgainstDC(DiceType.d20,17);"
+
 new entry "YMS_Wizard"
 type "PassiveData"
 
