@@ -5390,6 +5390,14 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73885300-b0d7-47ff-95c2-91b6657b82e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="HexWarriorTechnical" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5e2675f8-ea9a-43aa-abb8-62832d2d4cb4" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('PACT_BLADE', GetAttackWeapon(context.Source)) and not HasStatus('HEXBLADES_CURSE',context.Target) and IsWeaponAttack() and not IsMiss() and (Character() and not Dead()) and RollDieAgainstDC(DiceType.d20,17);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc640528-0800-4b81-b771-c17fdbf45ec5" />
@@ -6251,7 +6259,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="79f72e4e-c775-485e-9e85-8e0e51f04c2a" />
         <field name="Name" type="NameTableFieldDefinition" value="ThunderousGreatclub_Passive" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(Character()):CharacterWeaponDamage(1d8, Thunder);IF(Item()):CharacterWeaponDamage(3d8, Thunder);" />
       </fields>

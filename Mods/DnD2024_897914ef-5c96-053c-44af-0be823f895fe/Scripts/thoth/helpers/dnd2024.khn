@@ -435,7 +435,7 @@ function IsDivineSmite()
 end
 
 function LevelSpellCheck()
-    return ~(IsCantrip() | IsSmiteSpells()) & (HasSpellFlag(SpellFlags.Spell))
+    return ~(IsCantrip() | IsSmiteSpells()) & (HasSpellFlag(SpellFlags.Spell)) & ~HasUseCosts('SpellPoint')
 end
 
 function RuneKnightSaveDC()
