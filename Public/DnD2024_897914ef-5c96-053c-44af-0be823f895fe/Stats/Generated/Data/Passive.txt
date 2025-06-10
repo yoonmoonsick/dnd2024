@@ -76,6 +76,13 @@ data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnMovedDistance"
 data "StatsFunctors" "CreateExplosion(Projectile_WardingWind)"
 
+new entry "FlameArrow_Technical"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "IsRangedWeaponAttack();"
+data "StatsFunctors" "ApplyStatus(SELF,FLAME_ARROW,100,FLAME_ARROW.Duration-1)"
+
 new entry "YMS_Race"
 type "PassiveData"
 
