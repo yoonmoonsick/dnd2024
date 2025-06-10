@@ -2320,8 +2320,12 @@ Appropriate spells have been added to the spell list for each class.
 
 ### Conjure Barrage 
 - 5d8 Force
+
 ### [Fireball](https://www.dndbeyond.com/spells/2618887-fireball)
 - A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
+
+### [Flame Arrows](https://www.dndbeyond.com/spells/2381-flame-arrows)
+- Available For: Artificer, Druid, Ranger, Sorcerer, Wizard
 
 ### Gaseous Form 
 - ***Using a Higher-Level Spell Slot***. You can target one additional creature for each spell slot Level above 3.     

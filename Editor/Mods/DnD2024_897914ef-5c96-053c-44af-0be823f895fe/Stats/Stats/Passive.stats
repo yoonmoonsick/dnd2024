@@ -118,6 +118,16 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="CreateExplosion(Projectile_WardingWind)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="184896ae-9ce6-4210-be79-09f54a38229a" />
+        <field name="Name" type="NameTableFieldDefinition" value="FlameArrow_Technical" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedWeaponAttack();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FLAME_ARROW,100,FLAME_ARROW.Duration-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="052cf0ad-e68e-4e42-8774-fe03c5fbe1bf" />
