@@ -2270,6 +2270,8 @@ Appropriate spells have been added to the spell list for each class.
 
 ### [Mirror Image](https://www.dndbeyond.com/spells/2619060-mirror-image)
 
+### [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step)
+
 ### [Moonbeam](https://www.dndbeyond.com/spells/2619134-moonbeam)
 
 ### [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
