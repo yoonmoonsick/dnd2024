@@ -101,6 +101,12 @@ data "StackType" "Ignore"
 data "Boosts" "UnlockSpell(Shout_Candle_Dip);"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "HASTE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HASTE"
+data "Boosts" "ActionResource(Movement,9,0);AC(2);ActionResource(ActionPoint,1,0);Advantage(SavingThrow, Dexterity);UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Add,SpellPoint,1,0));"
+
 new entry "YMS_RACE"
 type "StatusData"
 data "StatusType" "BOOST"
