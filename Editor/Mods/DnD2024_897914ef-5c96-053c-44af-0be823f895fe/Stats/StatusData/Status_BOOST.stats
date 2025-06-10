@@ -758,6 +758,106 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="12" />
       </fields>
     </stat_object>
+    <stat_object color="#FFD2691E" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a03d322-bd31-447f-a0fe-cd6666e5ddbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_AshardalonsStride" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy()):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement,6,0);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="0c68361f-5f2a-4325-b273-e15784fb0bbb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac9c8a00gf23dg8e6eg3803ga962c52d27d3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef9df974g461eg9e31g9191gb245d0b27df6" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6);DealDamage(1d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="972aef3a-c3d9-49e8-b440-3cc61a39140e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a03d322-bd31-447f-a0fe-cd6666e5ddbe" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy()):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_4)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement,7.5,0);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(7.5);DealDamage(2d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aea2fce6-1820-4151-b547-7ac53355b0c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a03d322-bd31-447f-a0fe-cd6666e5ddbe" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy()):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement,9,0);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd7e2ed5-5935-4f4a-9bb7-d0d973685e1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a03d322-bd31-447f-a0fe-cd6666e5ddbe" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Enemy()):ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_6)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement,10.5,0);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(10.5);DealDamage(4d6,Fire)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="975b3fc1-6b05-4ea3-b9df-56257dc8352b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4deed5ae-6bf3-401f-80e5-d795a8596e5b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8395cabf-fab1-40c4-989c-f0619ac37d87" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="24d9f2bc-a443-4627-8816-7d65ccd092cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_RECIEVED" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="7" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c6af0d63-54dd-4e1e-beeb-6a9b0265be59" />
