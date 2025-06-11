@@ -5584,6 +5584,75 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
+    <stat_object color="#FF7B68EE" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94e82ed8-e4d0-4b51-8101-43c738e815b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Rogue" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db3f1280-6c85-4412-9c42-d4373c5387a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadAllegiance" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DreadAllegiance_Bane;Shout_DreadAllegiance_Bhaal;Shout_DreadAllegiance_Myrkul;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_ChannelDivinity_CloakOfShadows" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_OathBreaker_DreadfulAspect_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_OathBreaker_DreadfulAspect_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="2f0d97b9-4a1f-4bf3-a3c2-32efb563d601,,;,,;6a95a81d-62e7-4b68-9b45-7e42e538dbde,,;815364ff-bbaa-4efc-b10e-f31043fafd6e,,;57e449b3-b712-4508-afcf-f2e91dc473f6,,;,,;84f3727f-aabc-4e34-bf31-c6cd0160bec9,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Stealth;Invisible;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="12adcfc2-96c1-4f52-b9cc-df7fd63cbce9" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="383e59eb-4db8-4ebe-9b19-5ae78387e1c2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ccd5566g29ebg21ccg4db7gd451131ab7ee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6a83cd4g9aecga828g7012g152955fc6479" version="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4006841-52a6-49a6-9225-96caf79d1421" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadAllegiance_Bane" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db3f1280-6c85-4412-9c42-d4373c5387a5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_DreadAllegiance" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="Shout_DreadAllegiance_Bane;Shout_DreadAllegiance_Bhaal;Shout_DreadAllegiance_Myrkul;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_BANE,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_BANE,100,-1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e753bd0g75d0gdbe4g1844g911b4dc251d6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h025710c4g377dg2cb4ga04ege4b4ac800df8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="09d5588e-5723-43e0-9b53-f28f3aedd849" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadAllegiance_Bhaal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4006841-52a6-49a6-9225-96caf79d1421" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_BHAAL,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_BHAAL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h26601a4fg50dfg9c4cgd90dg7e49896e742d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1623381fg3612g205bg42f2g6c23b45cb6d5" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3311fb09-9c9a-4356-869a-ee0db4530256" />
+        <field name="Name" type="NameTableFieldDefinition" value="DreadAllegiance_Myrkul" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4006841-52a6-49a6-9225-96caf79d1421" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_MYRKUL,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_MYRKUL,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dc4e7dfga824gdf3cg3519gdb8a369d5857" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7b211bagee07g5f5fg8d20g861dd741376b" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c2c95ee-7d1d-45fa-b836-dd74e108d055" />

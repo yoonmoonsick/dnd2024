@@ -491,6 +491,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
 
+> Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage. This tree grows among the Outer Planes, connecting them to each other and the Material Plane. These Barbarians draw on the tree’s magic for vitality and as a means of dimensional travel.
+
 - Level 3: Vitality of the Tree
   - Your Rage taps into the life force of the World Tree. You gain the following benefits.
 - Level 3: Vitality Surge
@@ -1265,6 +1267,29 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Your Speed isn’t reduced to 0 by using Steady Aim.
 - Level 11: Death Strike
   - You can gain the bonus Sneak Attack damage from Surprising Strikes on every turn, not just the first turn.
+
+### Scion of the Three
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ScionThree.png?raw=true)
+
+> A Scion of the Three draws power from a group of malevolent gods known as the Dead Three: Bane, deity of tyranny; Bhaal, deity of violence and murder; and Myrkul, deity of death. While some Rogues of this subclass pledge themselves ardently to those three macabre gods, others find themselves thrust on this path by a curse. Either way, a scion’s power manifests as various occult gifts, as well as an uncanny talent for striking and terrifying foes. Scions of the Three are most common in Baldur’s Gate, where the Dead Three have long competed for influence over mortal hearts. Underground cults to Bane, Bhaal, and Myrkul often count Scions of the Three among their most useful agents.
+
+- Level 3: Bloodthirst
+  - If your Sneak Attack hits a Bloodied creature, the target takes extra damage of the weapon’s type equal to half your Rogue level. Additionally, when you reduce an enemy's Hit Points to 0, you can use a Reaction to teleport to an unoccupied space you can see within 30 feet of yourself. You can then make one melee attack. You can use this Reaction a number of times equal to your Intelligence modifier (minimum of once), regaining all expended uses when you finish a Long Rest.
+- Level 3: Dread Allegiance
+  - When you choose one of the Dead Three—Bane, Bhaal, or Myrkul—you gain specific benefits based on your patron. You can change your choice of patron when you finish a Long Rest.
+  - Dread Allegiance: Bane
+    - You gain Resistance to Psychic damage and learn the Minor Illusion cantrip.
+  - Dread Allegiance: Bhaal
+    - You gain Resistance to Poison damage and learn the Blade Ward cantrip. 
+  - Dread Allegiance: Myrkul
+    - You gain Resistance to Necrotic damage and learn the Chill Touch cantrip. 
+- Level 6: Strike Fear
+  - You gain a new Cunning Strike option: Terrify (Cost: 1d6). The target must succeed on a Wisdom saving throw or become Frightened for 1 minute. A Frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+- Level 9: Battle Tyrant
+  - You have advantage on attack rolls against any creature that is Frightened.
+- Level 11: Murderous Intent
+  - When you roll your Sneak Attack damage, you can treat a roll of a 1 or 2 on the damage die as a 3.
 
 ### Soulknife
 
