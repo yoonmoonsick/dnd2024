@@ -112,6 +112,18 @@ data "StatsFunctorContext" "OnAttack"
 data "Conditions" "IsRangedWeaponAttack();"
 data "StatsFunctors" "ApplyStatus(SELF,FLAME_ARROW,100,FLAME_ARROW.Duration-1)"
 
+new entry "Metamagic_Distant_Baelen"
+type "PassiveData"
+using "Metamagic_Distant"
+data "Icon" ""
+data "EnabledConditions" ""
+data "EnabledContext" ""
+data "Properties" "IsHidden"
+data "Boosts" "UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multiplicative,2));"
+data "ToggleOnEffect" ""
+data "ToggleOffContext" ""
+data "ToggleGroup" ""
+
 new entry "YMS_Race"
 type "PassiveData"
 
