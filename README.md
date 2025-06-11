@@ -2146,7 +2146,10 @@ Appropriate spells have been added to the spell list for each class.
 - If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 - Available For: Sorcerer
-  
+
+### [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
+- Available For: Artificer, Cleric, Druid
+
 ### [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StarryWisp.png?raw=true)
 - You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
