@@ -6698,6 +6698,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3410134a-182a-4420-90cc-bd1a4f7149a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ccdea1c2-ad45-42da-b5e5-8e34053b1ea1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSourceDeath" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4378fe6c-f968-4d3f-8731-9e4b25c334f3" />
         <field name="Name" type="NameTableFieldDefinition" value="ABJURE_ENEMY_FRIGHT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d70448e-f8e6-4d01-b366-f55085d5bb66" />
@@ -6993,6 +7003,65 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="bf5fa9ef-7d14-4061-b393-10852789ff1b" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d22b072c-466c-4e83-a692-6db08d9e1a54" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccc8d1f9-8403-4d00-acd7-08107082b453" />
+        <field name="Name" type="NameTableFieldDefinition" value="DREAD_ALLEGIANCE_BANE" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DREAD_ALLEGIANCE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DeadThree_3_Bane;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8e753bd0g75d0gdbe4g1844g911b4dc251d6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h025710c4g377dg2cb4ga04ege4b4ac800df8" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="DarkGray" enumeration_type_name="FormatStringColor" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c9efe1e-14de-422b-accc-7c964d8da009" />
+        <field name="Name" type="NameTableFieldDefinition" value="DREAD_ALLEGIANCE_BHAAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ccc8d1f9-8403-4d00-acd7-08107082b453" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DeadThree_3_Bhaal;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h26601a4fg50dfg9c4cgd90dg7e49896e742d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1623381fg3612g205bg42f2g6c23b45cb6d5" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9a5a27d-0e8a-44a1-8c6b-9b4a534c981d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DREAD_ALLEGIANCE_MYRKUL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ccc8d1f9-8403-4d00-acd7-08107082b453" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DeadThree_3_Myrkul;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dc4e7dfga824gdf3cg3519gdb8a369d5857" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7b211bagee07g5f5fg8d20g861dd741376b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="416404c0-6844-4da1-b35e-acfc9e6149ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODTHIRST_TELEPORT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bloodthirst_Teleport);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="bf5fa9ef-7d14-4061-b393-10852789ff1b" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d22b072c-466c-4e83-a692-6db08d9e1a54" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a584f0d-1b01-497f-93d7-43a71f44492c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLOODTHIRST_ATTACK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Bloodthirst_Attack);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="bf5fa9ef-7d14-4061-b393-10852789ff1b" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d22b072c-466c-4e83-a692-6db08d9e1a54" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
