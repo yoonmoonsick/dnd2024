@@ -7146,6 +7146,8 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Frightened);TemporaryHP(1d10+Cause.ClassLevel(Ranger));" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
@@ -7365,6 +7367,36 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="53f90afe-eaa8-4759-8239-0d78315fec4c" />
         <field name="StackId" type="StringTableFieldDefinition" value="BEND_LUCK_SAVE_PENALTY" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f8aaba19-75f9-46ad-925e-88a442b92770" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPELLFIRE_BURST" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Spellfire_BolsteringFlames);UnlockSpell(Target_Spellfire_RadiantFire_Fire);UnlockSpell(Target_Spellfire_RadiantFire_Radiant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ffb79961-99c1-47af-a3bb-907bd491a793" />
+        <field name="Name" type="NameTableFieldDefinition" value="BOLSTERING_FLAMES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f867a7f7-2994-428a-add9-14d773a2a4fe" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BOLSTERING_FLAMES" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d4+Cause.CharismaModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff4b23b1-b614-40dd-8b0e-a512edfdf938" />
+        <field name="Name" type="NameTableFieldDefinition" value="BOLSTERING_FLAMES_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ffb79961-99c1-47af-a3bb-907bd491a793" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="11" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d4+Cause.CharismaModifier+Cause.ClassLevel(Sorcerer));" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">

@@ -1444,14 +1444,40 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WildMagic.png?raw=true)
 
 - Subclass Spells (Always prepared)
-  - Level 3: Magic Missile, Entangle	
-  - Level 3: EnlargeReduce, MistyStep	
-  - Level 5: Blink, Counterspell	
-  - Level 7: Polymorph, DimensionDoor	
-  - Level 9: Telekinesis, WallWallOfStone	
+  - Level 3: Magic Missile, Entangle
+  - Level 3: Enlarge/Reduce, Misty Step
+  - Level 5: Blink, Counterspell
+  - Level 7: Polymorph, Dimension Door
+  - Level 9: Telekinesis, Wall of Stone
 - Level 3: Wild Magic Surge
 - Level 3: Tides of Chaos
   - Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again (This feature is only enabled in turn-based mode).
+
+### Spellfire Sorcery
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SpellfireSorcery.png?raw=true)
+
+> Your innate power stems from the source of magic itself: the Weave. This connection manifests as a rare ability known as spellfire, and you surge with radiant bursts of this raw magic. Your talent with spellfire allows you to heal allies, sear enemies, and absorb powerful spells.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Cure Wounds, Guiding Bolt, Lesser Restoration, Scorching Ray
+  - Level 5: Aura of Vitality, Counterspell
+  - Level 7: Fire Shield, Wall of Fire
+  - Level 9: Greater Restoration, Flame Strike
+- Level 3: Spellfire Burst
+  - When you cast a spell of 1st level or higher on your turn, you can spend Sorcery Points to unleash one of the following effects. You can do so only once per turn.
+    - Bolstering Flames
+      - You or one creature you can see within 30 feet gains Temporary Hit Points equal to 1d4 + your Charisma modifier.
+    - Radiant Fire
+      - One creature you can see within 30 feet must make a Dexterity saving throw against your spell save DC. On a failed save, they take 1d6 Fire or Radiant damage (your choice).
+- Level 6: Absorb Spells
+  - Whenever a target fails the saving throw against a Counterspell you cast, you regain 1d4 Sorcery Points.
+- Level 11: Honed Spellfire
+  - Your Spellfire Burst improves
+    - Bolstering Flames
+      - You add your Sorcerer level to the Temporary Hit Points gained.
+    - Radiant Fire
+      - The damage increases from 1d6 to 3d6.
 
 ### Storm Sorcery
 
