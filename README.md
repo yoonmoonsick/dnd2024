@@ -1122,6 +1122,31 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 7: Aura of Alacrity
   - Your Speed increases by 10 feet. In addition, whenever an ally enters your Aura of Protection for the first time on a turn or starts their turn there, the ally’s Speed increases by 10 feet until the end of their next turn.
 
+### Oath of the Noble Genies
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/NobleGenies.png?raw=true)
+
+> Paladins who take the Oath of the Noble Genies draw their power from the four elemental genie types: dao (earth), djinn (air), efreet (fire), and marids (water). They channel this elemental energy to unleash powerful and dazzling displays of elemental might.
+
+- Oath Spells (Always prepared)
+  - Level 3: Chromatic Orb, Thunderous Smite
+  - Level 5: Mirror Image, Phantasmal Force
+  - Level 9: Fly, Faseous Form
+- Level 3: Elemental Smite
+  - Immediately after you cast Divine Smite, you can expend one use of your Channel Divinity to invoke one effect.
+  - Dao's Crush
+    - The target is Restrained.
+  - Djinni's Escape
+    - You teleport to an unoccupied space you can see within 30 feet and take on a mist-like form until the end of your next turn.
+  - Efreeti's Fury
+    - The target takes an extra 2d4 Fire damage.
+  - Marid's Surge
+    - The target and creatures in a 10-foot emanation from you must make a Strength saving throw against your spell save DC. On a failed save, the creature is pushed 15 feet straight away from you and becomes Prone.
+- Level 3: Genie's Splendor
+  - When you're not wearing Medium or Heavy armor, you gain a bonus to your AC equal to your Charisma modifier (minimum of +1).
+- Level 7: Aura of Elemental Shielding
+  - Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You and your allies have Resistance to that damage type while in your Aura.
+
 ### Oath of Vengeance
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Vengeance.png?raw=true)
