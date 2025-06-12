@@ -56,8 +56,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(RESTRAINED,100,10);" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="4a73ede0-6afb-46fb-a095-cb42ccd7cbb7,19867dc5-83cc-2067-15d5-cab200ef2480,83cf4d39-e2f1-4118-a552-726fd1b61c1b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1,Piercing);IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(RESTRAINED,100,10);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RESTRAINED,100,10);" />
         <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />

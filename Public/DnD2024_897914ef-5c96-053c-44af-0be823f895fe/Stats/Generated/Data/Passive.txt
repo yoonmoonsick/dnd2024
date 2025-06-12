@@ -2209,22 +2209,22 @@ data "StatsFunctors" "Summon(eaa6046f-0901-4b49-9781-4ac61f4524a4,Permanent,,,'M
 new entry "Toxin_Basic_Passive"
 type "PassiveData"
 using "Toxin_Basic_Passive"
-data "StatsFunctors" "ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1, AdvantageOnPoisoned())"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1, AdvantageOnPoisoned())"
 
 new entry "Toxin_SerpentVenom_Passive"
 type "PassiveData"
 using "Toxin_SerpentVenom_Passive"
-data "StatsFunctors" "ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned())"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned())"
 
 new entry "Toxin_Wyvern_Passive"
 type "PassiveData"
 using "Toxin_Wyvern_Passive"
-data "StatsFunctors" "ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,1, AdvantageOnPoisoned())"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,1, AdvantageOnPoisoned())"
 
 new entry "Toxin_PurpleWorm_Passive"
 type "PassiveData"
 using "Toxin_PurpleWorm_Passive"
-data "StatsFunctors" "ApplyStatus(ALCH_TOXIN_PURPLEWORM_CONDITION,100,1, AdvantageOnPoisoned())"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):ApplyStatus(ALCH_TOXIN_PURPLEWORM_CONDITION,100,1, AdvantageOnPoisoned())"
 
 new entry "Toxin_BrewPoison_Passive"
 type "PassiveData"
