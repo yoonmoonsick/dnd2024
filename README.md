@@ -658,7 +658,11 @@ Restores 1 Bardic Inspiration at the start of combat.
   - Level 7: Death Ward
   - Level 9: Greater Restoration, Mass Cure Wounds
 - Level 3: Disciple of Life
-  - When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot’s Level.
+  - When a spell you cast with a spell slot restores Hit Points to a creature, that creature regains additional Hit Points on the turn you cast the spell. The additional Hit Points equal 2 plus the spell slot’s level.
+- Level 3: Preserve Life
+  - As a Magic action, you present your Holy Symbol and expend a use of your Channel Divinity to evoke healing energy that can restore a number of Hit Points equal to five times your Cleric level. Choose Bloodied creatures within 30 feet of yourself (which can include you), and divide those Hit Points among them. This feature can restore a creature to no more than half its Hit Point maximum.
+- Level 6: Blessed Healer
+  - The healing spells you cast on others heal you as well. Immediately after you cast a spell with a spell slot that restores Hit Points to one or more creatures other than yourself, you regain Hit Points equal to 2 plus the spell slot’s level.
 
 ### Light Domain
 
@@ -1880,7 +1884,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Great Weapon Master  
   - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
 - Healer
-  - When casting a healing spell, the target regains additional hit points equal to Proficiency Bonus. Learn Battle Medic Bonus Action that heals a creature 1d8 + Proficiency Bonus.
+  - Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.
 - Heavy Armor Master 
   - Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
 - Lightly Armored
