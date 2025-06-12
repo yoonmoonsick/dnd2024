@@ -1909,7 +1909,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.
 - Thrown Weapon Fighting
   - When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
-  - Removes the penalty from Long Range Throw.
+  - Reduces the penalty from Long Range Throw.
 - Blind Fighting
   - You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
 - Interception
