@@ -4,31 +4,20 @@ INITSECTION
 
 KBSECTION
 IF
-StatusApplied(_Steed, "MOUNTED_STEED", _, _)
+StatusApplied(_Steed, "MOUNTED_STEED", _Player, _)
 THEN
-DB_DnD2024_FindSteed(_Steed);
+DB_DnD2024_FindSteed(_Steed,_Player);
 SetOnStage(_Steed, 0);
 
 IF
 CastSpell((CHARACTER)_Player, "Target_FindSteed_Dismount",_,_,_)
 AND
-DB_DnD2024_FindSteed(_Steed)
+DB_DnD2024_FindSteed(_Steed,_Player)
 THEN
-NOT DB_DnD2024_FindSteed(_Steed);
+NOT DB_DnD2024_FindSteed(_Steed,_Player);
 SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
 RemoveStatus(_Steed, "MOUNTED_STEED");
-
-IF
-CastSpell((CHARACTER)_Player, "Shout_FindSteed_Dismount",_,_,_)
-AND
-DB_DnD2024_FindSteed(_Steed)
-THEN
-NOT DB_DnD2024_FindSteed(_Steed);
-SetOnStage(_Steed, 1);
-TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "MOUNTED_STEED");
-
 EXITSECTION
 
 ENDEXITSECTION
