@@ -1983,7 +1983,6 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - [Ghoul](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Ghoul)
 - [Githyanki](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Githyanki)
 - [Gnolls](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Gnolls)
-- [Green Hag](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GreenHag)
 - [Harpy](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Harpy)
 - [Hobgoblins](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hobgoblins)
 - [Hook Horror](https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HookHorror)
