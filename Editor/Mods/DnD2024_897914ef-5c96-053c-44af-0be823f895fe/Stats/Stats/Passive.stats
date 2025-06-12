@@ -2104,12 +2104,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="Healer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fae0e4a0-e933-4e94-855e-b67467f10618" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h238f09c9g07eeg1c14g6c5ag082fbaea8af0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(ProficiencyBonus)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="Reroll(Damage,1,false);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(D8Cantrip)+ProficiencyBonus)" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4078,6 +4079,23 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="99ddf425-6012-47b3-b501-2ef551efdb2d" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Cleric" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="568d46c1-b4e6-482f-9913-8d782a2b5cf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DiscipleOfLife" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fae0e4a0-e933-4e94-855e-b67467f10618" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2058d5d-2705-41ed-84c4-abc75672826c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BlessedHealer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0793a0c9-7af3-40f7-8078-df9f0c2a37f8" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
