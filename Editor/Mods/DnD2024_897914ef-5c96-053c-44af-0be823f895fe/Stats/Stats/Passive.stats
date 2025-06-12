@@ -73,10 +73,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="LongRangeThrow" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc2b1150g8971g73e1g7e94g227819c7d3ae" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h29da524bg17a5gdc3cg3047gbfdcbc206b4c" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value=" Distance(9); Distance(18)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9); Distance(18)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ThrowWeapon" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-5);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -552,7 +552,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_ThrownWeaponFighting" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="32d107e3-b069-45b0-8fd2-8e55e22bf531" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2827d540g02d2gc10fgc310g83a344d70ec5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94b9785dg3134g769eg7f3cg6d34d94ad992" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94b9785dg3134g769eg7f3cg6d34d94ad992" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF( ( IsRangedUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') or SpellId('Throw_ImprovisedWeaponBerserker') ) and HasDamageEffectFlag(DamageFlags.Hit)):DamageBonus(2)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ThrowWeapon" />
       </fields>
