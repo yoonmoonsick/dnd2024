@@ -1042,6 +1042,71 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ChannelOath:1;" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ElementalSmite_Dao" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self() and not Item() and IsMeleeAttack() and IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsWeaponAttack() and not AnyEntityIsItem();" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ChannelOath:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h655fc910g9d44g80f6g9ca9gf9adbae4ced4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1a5bc028g969eg1319ga010gad92f9409f11" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_EnsnaringStrikeMelee" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(RESTRAINED,100,10);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RESTRAINED,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83db5161-9a05-4dac-9fcf-f3869fc76ac6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ElementalSmite_Djinni" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20d93a6g9ec6gc3cdg1890g0e70817191af" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h82b4e323g8955g3a24g7568gcf34d63f6c07" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,DJINNIS_ESCAPE,100,1);" />
+        <field name="Roll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Success" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="205761bc-2fe6-4f67-a043-8a78dd869b90" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ElementalSmite_Efreeti" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41d151e2g9ff2g7903gdcffg74d3df5ec77f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6024450cgb069gd1f6gff3dg138461f0203c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SearingSmite" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(2d4,Fire,Magical);" />
+        <field name="Roll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Success" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51d528b3-91d5-48fc-aade-045fc2cca51e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ElementalSmite_Marid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e963fa9e-e54e-45bf-9732-abb43e127bba" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h48d5140cg0c24ga6cfg77d7g5b5aac3590e3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f6149dag74e3g9bb4g8cdcg22971278151c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="Properties" type="StringTableFieldDefinition" value="CreateExplosion(Projectile_MaridsSurge);" />
+        <field name="Roll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Success" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF6B8E23" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5d379a14-d74c-4af9-890d-2239a7c1b9e4" />

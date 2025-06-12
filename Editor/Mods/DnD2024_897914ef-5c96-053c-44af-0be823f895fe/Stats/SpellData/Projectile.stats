@@ -355,6 +355,36 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StarryForm)+WisdomModifier,Radiant);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfbe5a53-1f59-45a1-91ee-90d980725c4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Paladin" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cab89fe-74d0-43f8-a9ae-9097c4174839" />
+        <field name="Name" type="NameTableFieldDefinition" value="MaridsSurge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c684fa7a-635d-4d1a-b7ef-bc5aad26dd7f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength,SourceSpellDC())):Force(5, TargetToEntity);IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy();" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5a51f673-1ac6-47ea-8b8a-cc641c6afa8e" />
