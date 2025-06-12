@@ -979,7 +979,7 @@
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Psychic)" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:DealDamage(2d8,Psychic,Magical);" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Psychic);ApplyStatus(PHANTASMAL_FORCE_PSYCHIC,100,10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5275,38 +5275,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d3373a59-dd64-4f7e-9769-14c3df940d1d" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_BASIC" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4a8279e9-79bf-4259-9d12-d9e964b8e17d" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,ALCH_TOXIN_BASIC_DIPPED,100,10);ApplyEquipmentStatus(MeleeOffHand,ALCH_TOXIN_BASIC_DIPPED,100,10);ApplyEquipmentStatus(RangedMainHand,ALCH_TOXIN_BASIC_DIPPED,100,10);ApplyEquipmentStatus(RangedOffHand,ALCH_TOXIN_BASIC_DIPPED,100,10);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="64cf5725-4763-4c8f-bcb9-48a2a682006c" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_SERPENTVENOM" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ba8600ca-22db-4ddc-9e66-82962cda04d4" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,TOXIN_SERPENTVENOM_DIPPED,100,10);ApplyEquipmentStatus(MeleeOffHand,TOXIN_SERPENTVENOM_DIPPED,100,10);ApplyEquipmentStatus(RangedMainHand,TOXIN_SERPENTVENOM_DIPPED,100,10);ApplyEquipmentStatus(RangedOffHand,TOXIN_SERPENTVENOM_DIPPED,100,10);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="eb5940e2-2a40-4961-a9d6-a09b5e0bbd54" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_WYVERN" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="30c3cfbf-efd1-49b5-9362-0eb944f45808" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,TOXIN_WYVERN_DIPPED,100,10);ApplyEquipmentStatus(MeleeOffHand,TOXIN_WYVERN_DIPPED,100,10);ApplyEquipmentStatus(RangedMainHand,TOXIN_WYVERN_DIPPED,100,10);ApplyEquipmentStatus(RangedOffHand,TOXIN_WYVERN_DIPPED,100,10);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0c02dd65-6c75-42fb-9633-01f5aa07a28b" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_PURPLEWORM" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="79fa78cc-378e-4132-8fa8-2b885746dd0d" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,TOXIN_PURPLEWORM_DIPPED,100,10);ApplyEquipmentStatus(MeleeOffHand,TOXIN_PURPLEWORM_DIPPED,100,10);ApplyEquipmentStatus(RangedMainHand,TOXIN_PURPLEWORM_DIPPED,100,10);ApplyEquipmentStatus(RangedOffHand,TOXIN_PURPLEWORM_DIPPED,100,10);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e492bbbb-49f6-4162-982d-5dbae577fbd6" />
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0c02dd65-6c75-42fb-9633-01f5aa07a28b" />
@@ -5320,34 +5288,6 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(MeleeOffHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(RangedMainHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(RangedOffHand,BREW_POISON_REMOVE,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="927ece36-a4fd-4da1-8ecc-2e2a7eb05ea1" />
-        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_BASIC_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0f038eaa-20d1-41e6-904e-76f018f09d77" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6e59b9e2-9005-4dd9-8583-efb5df9c27aa" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_SERPENTVENOM_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="59a6f2e9-7c35-489b-a72f-09ddc0893e96" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a88ee00c-57d5-4a15-a87e-cbbf0db77be9" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_WYVERN_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8bc70f2c-bad3-46ce-a563-3d934dff3e3c" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b0c9ac2b-3e86-493a-9937-ed63dccc0d0a" />
-        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_PURPLEWORM_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="45de896b-f76e-4f20-a732-890e6b1929c8" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5366,91 +5306,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3d0f8256-49ca-4a2d-96d8-d9149b00d11a" />
-        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_BASIC_CONDITION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6c749ce2-73a0-4158-b1df-74cd7e96241f" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 11)" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Poison)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4/2,Poison)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 11)" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Poison)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4/2,Poison)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ALCH_TOXIN_BASIC_CONDITION" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f6785e61-04f8-4214-9d25-fa18658e530a" />
-        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_SERPENTVENOM_CONDITION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b6c3a0a5-fb1d-4835-a9aa-e7ece8e764b7" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 13)" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Poison)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d6/2,Poison)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 13)" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Poison)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d6/2,Poison)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ALCH_TOXIN_SERPENTVENOM_CONDITION" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="57463627-9f06-4425-acf0-31512a0e1c7e" />
-        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_WYVERN_CONDITION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="817e95cf-737e-4c35-b08c-ccc8737c0ad1" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 15)" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Poison)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d8/2,Poison)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 15)" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Poison)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d8/2,Poison)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ALCH_TOXIN_WYVERN_CONDITION" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="594f9dc9-7e45-4219-a4a9-795e1737c7a6" />
-        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_PURPLEWORM_CONDITION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4ae0d1c9-cd0f-4bde-aac2-4dbb3e273dca" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 19)" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d10,Poison)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d10/2,Poison)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, 19)" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d10,Poison)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d10/2,Poison)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ALCH_TOXIN_PURPLEWORM_CONDITION" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d917a008-1cd5-495a-ac18-50ba693bc281" />
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON_CONDITION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="594f9dc9-7e45-4219-a4a9-795e1737c7a6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70e1140bgff78g25dfg224ag7c6604206bcf" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC())" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="DealDamage(2d8/2,Poison)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC())" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(2d8/2,Poison)" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6ea786f5-8fb5-4a00-b731-c50b50b94c70" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ae3e5f8a-acd1-4005-bbe9-d9692ed3239b" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BREW_POISON_CONDITION" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5474,46 +5337,6 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="RemoveOnLongRest;FreezeDuration;MultiplyEffectsByDuration" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="dd7aeceb-3535-44c0-bf26-7523ae478a59" />
-        <field name="Name" type="NameTableFieldDefinition" value="POISON_DROW_TECHNICAL_APPLIER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f96e8f77-869b-4e8e-b339-8a67fc2e1bf4" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_DROW_CONDITION')):ApplyStatus(POISON_DROW_IMMUNE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7e7ce445-9d19-4b0c-99e7-e6444a05ee7c" />
-        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE_TECHNICAL_APPLIER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3b141e9a-b801-418e-acd1-8af91ebb12c4" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_SIMPLE_CONDITION')):ApplyStatus(POISON_SIMPLE_IMMUNE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b64063b5-1ba6-4f33-98b1-060b234f9212" />
-        <field name="Name" type="NameTableFieldDefinition" value="POISON_CRAWLER_MUCUS_TECHNICAL_APPLIER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e1879323-bcc8-4ff7-aee8-6671529fe49f" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_CRAWLER_MUCUS_CONDITION')):ApplyStatus(POISON_CRAWLER_MUCUS_IMMUNE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c0c72ae8-8aa8-410e-97a1-a6869d8bf41c" />
-        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_TECHNICAL_APPLIER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3f984911-2264-4a86-a3e6-8705e9ca0d8e" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_MALICE_CONDITION')):ApplyStatus(POISON_MALICE_IMMUNE,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="60ea447b-4dba-4e0f-a016-3ec00983ff8a" />
-        <field name="Name" type="NameTableFieldDefinition" value="UNI_POISON_BREWER_TECHNICAL_APPLIER" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2435d822-3e18-4a15-a783-a10c6da41448" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('UNI_POISON_BREWER_CONDITION')):ApplyStatus(UNI_POISON_IMMUNE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8857,6 +8680,174 @@
         <field name="Name" type="NameTableFieldDefinition" value="GLO_PIXIESHIELD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="91f6484b-db82-4b85-9f15-bd6f0a8bff72" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6d58f04-28d5-4a85-a9bd-392f44007934" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE_DIPPED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8513ef4-a1a0-4bac-93b4-b7a4a8d1d667" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d9a907b-2457-4ac8-9fd0-7a05e861108f" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="678bce48-6a3c-4ecb-9e9f-c703188c64a6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2048ae7e-82ea-428d-8eeb-b03a591e69dc" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE_TECHNICAL_APPLIER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b141e9a-b801-418e-acd1-8af91ebb12c4" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC(11), AdvantageOnPoisoned())" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_SIMPLE_CONDITION')):ApplyStatus(POISON_SIMPLE_IMMUNE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="070c9961-2d64-4f5a-83f1-1627f8834def" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b36f6689-1ba7-4c7f-aba3-f6f90888fefc" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, PoisonerSaveDC(11), AdvantageOnPoisoned())" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="450eeccd-f04f-4927-a88d-dfe370c8aa92" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_SIMPLE_IMMUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ad033831-0b66-43e7-8a3a-40b90ce56217" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a86c2300-5590-4e0c-a6bc-c189bc3734f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_DROW" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="76edde2f-152a-4da4-a3f8-132e36ed8924" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6712d678-8a01-4d24-8f3f-efc00ab224f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_DROW_DIPPED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2273465-63c2-4632-b477-80bea1053154" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4255b1d7-0dc6-4c6a-833e-efaac74bb826" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_DROW_TECHNICAL_APPLIER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f96e8f77-869b-4e8e-b339-8a67fc2e1bf4" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC(13), AdvantageOnPoisoned())" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_DROW_CONDITION')):ApplyStatus(POISON_DROW_IMMUNE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41f90ccc-253f-4d86-8c9d-ff8070317721" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_DROW_IMMUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b0c88fe8-29c4-434d-adc0-ec97a3fe50e1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d142c98-7480-4f04-a2c9-d1252c6ae7c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_CRAWLER_MUCUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9111cd3f-5b4b-44d6-bed8-04af4bd5c0f5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10949adb-0075-4af8-85c9-dc80cd819ec9" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_CRAWLER_MUCUS_DIPPED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ce33109-2e45-450d-8e32-5584ba8cb0b9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a4964ec-2df3-4fa4-9203-bc6ccba4a2ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_CRAWLER_MUCUS_TECHNICAL_APPLIER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e1879323-bcc8-4ff7-aee8-6671529fe49f" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC(13, AdvantageOnPoisoned())" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_CRAWLER_MUCUS_CONDITION')):ApplyStatus(POISON_CRAWLER_MUCUS_IMMUNE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d6e87fa-cfee-4aa5-93bc-98b3b86f42b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_CRAWLER_MUCUS_IMMUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebaac165-bee8-4df4-bdaf-d28fd4200c74" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="147e866c-7d23-4344-b48b-014ee0f1b834" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70848acd-22c5-41f0-b3e5-c0df786c0f62" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d45263eb-269f-4995-9b22-102bdeb4ae37" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_DIPPED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1fa41e57-3878-4e66-b3cd-23dfc791b657" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e4f173d-82dd-4bd8-920c-3df2d1ffaad6" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_TECHNICAL_APPLIER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f984911-2264-4a86-a3e6-8705e9ca0d8e" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution, PoisonerSaveDC(15), AdvantageOnPoisoned())" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POISON_MALICE_CONDITION')):ApplyStatus(POISON_MALICE_IMMUNE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c56692d0-3039-4051-929a-4a223af7bf06" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fea376a5-d81f-4316-8a67-0c6a6b40db6c" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Constitution, PoisonerSaveDC(15), AdvantageOnPoisoned())" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="205d1e79-79ff-47b9-b14d-720b749a3571" />
+        <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_IMMUNE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a4656b64-aab0-4e16-bbcb-615cbc2a152b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01b55c73-fe63-4660-b0a4-55074d0c5009" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_BASIC_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6c749ce2-73a0-4158-b1df-74cd7e96241f" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ade3fdc-61b5-4f4b-899f-7174f308959a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_SERPENTVENOM_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b6c3a0a5-fb1d-4835-a9aa-e7ece8e764b7" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a7da96e-52c6-4420-a710-06b32fb617c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_WYVERN_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="817e95cf-737e-4c35-b08c-ccc8737c0ad1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4c52ded-dd5b-4e51-b7dd-593eb49f1259" />
+        <field name="Name" type="NameTableFieldDefinition" value="ALCH_TOXIN_PURPLEWORM_CONDITION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ae0d1c9-cd0f-4bde-aac2-4dbb3e273dca" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d10,Poison)" />
       </fields>
     </stat_object>
   </stat_objects>

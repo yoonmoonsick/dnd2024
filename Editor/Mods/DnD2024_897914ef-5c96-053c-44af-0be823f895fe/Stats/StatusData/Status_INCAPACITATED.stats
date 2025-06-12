@@ -9,8 +9,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="SLEEP" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(SLEEP_2,100,9)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="RemoveStatus(SLEEP)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;OverheadOnTurn;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18,9 +16,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="56e0f2d1-fe3c-49d4-98ac-5331748bce30" />
         <field name="Name" type="NameTableFieldDefinition" value="SLEEP_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="459eef32-65eb-4350-97d3-e38efef70ae4" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value=";" />
-        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value=";" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value=";" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

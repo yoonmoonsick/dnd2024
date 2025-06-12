@@ -85,8 +85,10 @@ function MagicInitiateSpell()
     return HasUseCosts('LearnCantripPoint') | HasUseCosts('LearnSpellPoint')
 end
 
-function PoisonerSaveDC()
-    return 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Intelligence), GetModifier(context.Source.Dexterity))
+function PoisonerSaveDC(fallbackDC)
+	local spellDC = fallbackDC or 10 -- Global default so that we don't return 0
+    local CalculatedDC = 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Intelligence), GetModifier(context.Source.Dexterity))
+    return math.max(spellDC, CalculatedDC)
 end
 
 function BurningSealsCheck()
