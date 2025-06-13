@@ -520,7 +520,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ## Bard 
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Bard.png?raw=true)
-
+- Level 1: Bardic Inspiration
+  - Number of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 5: Font of Inspiration
   - You can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.
 - Level 10: Magical Secrets

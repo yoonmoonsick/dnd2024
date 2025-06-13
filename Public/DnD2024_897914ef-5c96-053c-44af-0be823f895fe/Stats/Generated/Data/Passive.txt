@@ -2782,6 +2782,18 @@ data "Boosts" "UnlockInterrupt(Interrupt_SteelDefender_DeflectAttack_11);"
 new entry "YMS_Bard"
 type "PassiveData"
 
+new entry "New_Stat_0"
+type "PassiveData"
+using "DreadfulStrike"
+data "Boosts" "ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(DreadfulStrikeCharge,1,0);"
+
+new entry "BardicInspiration"
+type "PassiveData"
+using "BardicInspiration"
+data "Properties" "Highlighted;ForceShowInCC"
+data "BoostContext" "OnShortRest;OnCreate;OnEquip;OnProficiencyChange"
+data "Boosts" "UnlockSpell(Target_BardicInspiration);ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',13,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',15,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',17,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',19,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',21,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',23,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',25,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',27,context.Source)):ActionResource(BardicInspiration,1,0);IF(AbilityGreaterThan('Charisma',29,context.Source)):ActionResource(BardicInspiration,1,0);"
+
 new entry "SwordsCollege_3_BladeFlourish"
 type "PassiveData"
 data "DisplayName" "h70f01377g83d1g5789g4d78g76c428721ce4;1"
