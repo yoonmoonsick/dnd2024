@@ -2107,7 +2107,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="4" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
         <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="Reroll(Damage,1,false);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(D8Cantrip)+ProficiencyBonus)" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -2700,11 +2700,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="da179b1f-6bdf-4e02-8af2-949d52b8cecd" />
         <field name="Name" type="NameTableFieldDefinition" value="PeerlessSkill" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b594f83g66c1gdea7g4484gbc746fb8136b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4fd6c672gef67geb77g13a5gce9b3a9dd976" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4fd6c672gef67geb77g13a5gce9b3a9dd976" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_RestoreBardicInspiration" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(BardicInspiration,1,0)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,BardicInspiration,1,0)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Combat()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3921,6 +3922,33 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="627c8455-fab8-4663-9023-5ce434a0fb07" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Bard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c90f1fc9-598c-429a-b218-d73dab55bb7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SwordsCollege_3_BladeFlourish" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70f01377g83d1g5789g4d78g76c428721ce4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8f421c9gf4c0gd1e0g7e7eg4701459e4cfd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Melee" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BladeFlourish,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,BLADE_FLOURISH,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db856205-c601-4b6e-8984-fcef3beff733" />
+        <field name="Name" type="NameTableFieldDefinition" value="SwordsCollege_12_MastersFlourish" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd061c7e9g0567g4091g1802gb553cf792f99" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18251c3ag31a6g65begb1b3g32e104f30e03" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Melee" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BladeFlourish_Defensive') or SpellId('Target_BladeFlourish_Mobile') or SpellId('Zone_BladeFlourish_Slashing');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,BardicInspiration,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

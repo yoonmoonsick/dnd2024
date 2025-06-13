@@ -562,9 +562,9 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LoreCollege.png?raw=true)
 
 - Level 6: Magical Discoveries
-You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class’s section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard Level, you can replace one of the spells with another spell that meets these requirements.
+  - You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class’s section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard Level, you can replace one of the spells with another spell that meets these requirements.
 - Level 12: Peerless Skill
-Restores 1 Bardic Inspiration at the start of combat.
+  - You restore 1 Bardic Inspiration at the start of your turn in combat.
 
 ### College of Valor
 
@@ -572,6 +572,7 @@ Restores 1 Bardic Inspiration at the start of combat.
 
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
+- Level 6: Weapon Mastery
 - Level 12: Battle Magic
   - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
@@ -579,7 +580,13 @@ Restores 1 Bardic Inspiration at the start of combat.
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SwordsCollege.png?raw=true)
 
-- Level 3: The range of ranged flourish is reduced to 3m.
+- Level 3: Blade Flourish
+  - Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.
+- Level 6: Extra Attack
+  - You can attack twice instead of once whenever you take the Attack action on your turn.
+- Level 6: Weapon Mastery
+- Level 12: Master’s Flourish
+  - Whenever you use a Blade Flourish option, you regain 1 Bardic Inspiration per turn.
 
 ## Cleric
 
@@ -858,7 +865,7 @@ Restores 1 Bardic Inspiration at the start of combat.
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleMaster.png?raw=true)
 
-- Level 12: Relentless
+- Level 12: Relentless Superiority
   - Once per turn, you regain expended a Superiority Die.
 
 ### Champion
