@@ -1,0 +1,19 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+AddedTo(_Item,(CHARACTER)_Player, _)
+AND
+DB_Players(_Player)
+AND
+IsTagged(_Item, (TAG)YMS_AUTOSELL_0e8709f6-681f-4eec-9554-1fe59e149fab, 1)
+AND
+ItemGetGoldValue((ITEM)_Item, _Value)
+THEN
+AddGold(_Player, _Value);
+RequestDelete(_Item);
+EXITSECTION
+
+ENDEXITSECTION
