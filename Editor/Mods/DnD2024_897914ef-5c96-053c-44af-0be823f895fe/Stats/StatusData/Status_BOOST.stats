@@ -135,7 +135,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DIP_FIRE_UNLOCK" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Candle_Dip);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -986,6 +986,8 @@
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:DealDamage(2d8,Psychic,Magical);" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Psychic);ApplyStatus(PHANTASMAL_FORCE_PSYCHIC,100,10)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1277,6 +1279,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e3a5cc31-1ea3-4b15-a397-19c8772b8e8b" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):ApplyStatus(CLOUD_OF_DAGGERS,100,1);IF( HasPassive( 'PsychicSpell',GetOwner(context.Source) ) ):ApplyStatus(PSYCHIC_SPELL_BONUS_DAMAGE,100,1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2239,6 +2242,13 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Cursed" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="372f12fd-d95c-43ca-9cc6-096ecf421704" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb5a59ee-bd52-4da5-bd53-2a298ab52559" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7f8cc179-37c8-4538-92cc-d268c5404608" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5303,7 +5313,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e492bbbb-49f6-4162-982d-5dbae577fbd6" />
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="0c02dd65-6c75-42fb-9633-01f5aa07a28b" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30c3cfbf-efd1-49b5-9362-0eb944f45808" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70e1140bgff78g25dfg224ag7c6604206bcf" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2afeb226gced0g1e8fg3cbbg3cd131e678a3" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
@@ -5320,7 +5330,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8de8c7f2-4657-4dcd-accf-19607d5874fe" />
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b0c9ac2b-3e86-493a-9937-ed63dccc0d0a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bc70f2c-bad3-46ce-a563-3d934dff3e3c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he6b17988g758agf02eg21b7gb90c07015076" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="98" />
@@ -5334,25 +5344,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d917a008-1cd5-495a-ac18-50ba693bc281" />
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON_CONDITION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="594f9dc9-7e45-4219-a4a9-795e1737c7a6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a7da96e-52c6-4420-a710-06b32fb617c0" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70e1140bgff78g25dfg224ag7c6604206bcf" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6ea786f5-8fb5-4a00-b731-c50b50b94c70" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ae3e5f8a-acd1-4005-bbe9-d9692ed3239b" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="de84250c-b716-49ec-b84f-443df1f24452" />
-        <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON_REMOVE" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DIPPED" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_WeaponCoating" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack()" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
