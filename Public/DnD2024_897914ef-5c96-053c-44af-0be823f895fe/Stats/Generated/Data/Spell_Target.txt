@@ -7485,6 +7485,22 @@ data "SpellRoll" ""
 data "SpellSuccess" ""
 data "TooltipDamageList" "DealDamage(1d4+Owner.IntelligenceModifier,Force);"
 
+new entry "Target_YMS_Bard"
+type "SpellData"
+data "SpellType" "Target"
+
+new entry "Target_BladeFlourish_Defensive"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BladeFlourish_Defensive"
+data "HitCosts" "BardicInspiration:1;BladeFlourish:1;"
+
+new entry "Target_BladeFlourish_Mobile"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_BladeFlourish_Mobile"
+data "HitCosts" "BardicInspiration:1;BladeFlourish:1;"
+
 new entry "Target_YMS_Barbarian"
 type "SpellData"
 data "SpellType" "Target"

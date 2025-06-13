@@ -117,6 +117,16 @@ data "SpellSuccess" "DealDamage(3d8, Fire,Magical);"
 data "SpellFail" "DealDamage(3d8/2, Fire,Magical);"
 data "TooltipDamageList" "DealDamage(3d8,Fire)"
 
+new entry "Zone_YMS_Bard"
+type "SpellData"
+data "SpellType" "Zone"
+
+new entry "Zone_BladeFlourish_Slashing"
+type "SpellData"
+data "SpellType" "Zone"
+using "Zone_BladeFlourish_Slashing"
+data "HitCosts" "BardicInspiration:1;BladeFlourish:1;"
+
 new entry "Zone_YMS_Barbarian"
 type "SpellData"
 data "SpellType" "Zone"
