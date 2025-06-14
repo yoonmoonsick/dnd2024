@@ -3,10 +3,14 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+
+
 IF
 AddedTo(_Item,(CHARACTER)_Player, _)
 AND
 DB_Players(_Player)
+AND
+HasActiveStatus(_Player, "YMS_AUTOSELL_TOGGLE", 1)
 AND
 IsTagged(_Item, (TAG)YMS_AUTOSELL_0e8709f6-681f-4eec-9554-1fe59e149fab, 1)
 AND
