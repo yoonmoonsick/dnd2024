@@ -549,6 +549,27 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 12: Leading Evasion
   - When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can’t use this feature if you have the Incapacitated condition.
 
+### College of the Moon
+
+> The College of the Moon, rooted in the ancient druidic circles of the Moonshae Isles, empowers its Bards to chronicle island stories. These Bards use Fey magic and moonwell power to aid allies, protect nature, and create works based on Moonshae myths like fairy pranks, the Beast, and moonwell mysteries.
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/MoonCollege.png?raw=true)
+
+- Level 3: Moonshae Folktales
+  - As a Magic action, you can invoke the power of a folktale, imbuing yourself with primal magic until you use this feature again. When you use this feature, choose which of the following folktales you invoke; your choice gives you certain benefits while this magic is active.
+  - Tale of Life
+    - When you invoke the Tale of Life, you tap into the essence of vitality and the thriving earth. This allows you to enhance your healing magic. Once per turn, when you restore Hit Points to a creature with a spell, you can expend one of your Bardic Inspiration dice. When you do, roll that Bardic Inspiration die, and add the result to the number of Hit Points restored by your spell.
+  - Tale of Gloam
+    - When you invoke the Tale of Gloam, you channel the power of mystery and secrets. This enhances your ability to support allies while remaining elusive. When you use your Bonus Action to give a creature a Bardic Inspiration die, you can also take the Disengage or Hide action as part of that same Bonus Action.
+  - Tale of Mirth
+    - When you invoke the Tale of Mirth, you embody merriment and fey trickery. This allows you to subtly undermine your enemies' successes. When an enemy you can see within 60 feet of you succeeds on a saving throw, you can use your Reaction to expend one of your Bardic Inspiration dice. That creature must then roll the Bardic Inspiration die and subtract the result from their saving throw's total, potentially causing the save to fail.
+- Level 3: Primal Lorist
+  - Nature's Cantrip: You also learn one cantrip of your choice from the Druid spell list. Skilled in the Wilds: You gain proficiency in one of the following skills, reflecting your enhanced connection to the natural world or its inhabitants: Animal Handling, Insight, Medicine, Nature, Perception, or Survival.
+- Level 6: Blessing of the Moonwells
+  - You always have Moonbeam prepared. While you are casting Moonbeam, you can choose another creature you can see within 60 feet to regain Hit Points.
+- Level 12: Bolstered Folktales
+  - When you use your Tale of Life or Tale of Mirth, you restore one expended Bardic Inspiration die. Additionally, when you use your Tale of Gloam, you can teleport up to 30 feet to an unoccupied space you can see as part of the same bonus action.
+
 ### College of Glamour
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GlamourCollege.png?raw=true)

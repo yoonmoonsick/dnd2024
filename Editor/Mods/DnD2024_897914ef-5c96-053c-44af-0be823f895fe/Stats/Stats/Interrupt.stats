@@ -866,6 +866,36 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d27f7ef-0029-42a1-8a2d-c9988141c442" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TaleOfLife" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and HealingSpell() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(MOONSHAEFOLKTALES_LIFE_HEAL,100,0);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):RestoreResource(SELF,BardicInspiration,1,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;TaleOfLife:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h366cf1ebg8bb1g8c5fg50ffg00728d0c3231" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf262294dg5b79g0594g6afbgb452b4178dfc" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d658ef0-cbb8-4df4-b2c9-a99b9f50c4e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CuttingWords_MoonBard" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a743bad-661b-449b-836c-55516e7ccbce" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((HasInterruptedSavingThrow() and Enemy(context.Target,context.Observer) and ((not ClassLevelHigherOrEqualThan(5,'Bard') and IsFlatValueInterruptInteresting(6)) or (ClassLevelHigherOrEqualThan(5,'Bard') and not ClassLevelHigherOrEqualThan(10,'Bard') and IsFlatValueInterruptInteresting(8)) or (ClassLevelHigherOrEqualThan(10,'Bard') and IsFlatValueInterruptInteresting(10))))) and not AnyEntityIsItem();" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17a35e4g168bg658bgc5fcg7d1161796d35" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8362a45fg49bag34c1g7a9eg125767f203e3" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(BardicInspiration));ApplyStatus(OBSERVER_SOURCE,INTERRUPT_CUTTING_WORDS_TARGET,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_CUTTING_WORDS,100,0);IF(not Self(context.Target, context.Observer)):UseSpell(OBSERVER_SOURCE,Target_CuttingWords,true,true,true);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):RestoreResource(SELF,BardicInspiration,1,0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edecf407-e0c5-45bf-ac4c-a6ec8b10be4c" />

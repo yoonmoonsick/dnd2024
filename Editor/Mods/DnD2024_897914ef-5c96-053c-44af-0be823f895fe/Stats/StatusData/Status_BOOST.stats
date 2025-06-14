@@ -1661,30 +1661,10 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="((HasStringInSpellRoll('WeaponAttack') or HasStringInSpellRoll('UnarmedAttack') or SpellId('Target_CommandersStrike')) and HasUseCosts('ActionPoint') and not IsOffHandAttack()) and not HasActionResource('BonusActionPoint', 1, 0, false, false)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFDA70D6" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="da48d036-9c47-424c-9721-5c5b786e513c" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_BARD" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="535edcf3-c200-461c-a88b-8152514f08eb" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLADE_FLOURISH" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BLADE_FLOURISH" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Dash_MO" />
-        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_Dash_MO_Stop" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="c8db5bfe-06a2-4847-a496-bac8a11453ef" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="30c73b0a-169a-46f9-9f6f-c3ea19117e38" />
-      </fields>
-    </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="785378e5-7249-44d9-9773-720b8ca31427" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_BARABRIAN" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_BARBABRIAN" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1796,6 +1776,104 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDA70D6" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da48d036-9c47-424c-9721-5c5b786e513c" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_BARD" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="535edcf3-c200-461c-a88b-8152514f08eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADE_FLOURISH" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLADE_FLOURISH" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_Dash_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_Dash_MO_Stop" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="c8db5bfe-06a2-4847-a496-bac8a11453ef" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="30c73b0a-169a-46f9-9f6f-c3ea19117e38" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd3755b0-5221-4e8c-a06e-bb7987630b51" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_LIFE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h366cf1ebg8bb1g8c5fg50ffg00728d0c3231" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf262294dg5b79g0594g6afbgb452b4178dfc" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfLife;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d9d5f74e-49d6-4963-803b-931f25bc7d85" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_LIFE_HEAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cd3755b0-5221-4e8c-a06e-bb7987630b51" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(Cause.LevelMapValue(BardicInspiration));" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64e3af42-03bf-4c44-a551-70258250c474" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_GLOAM" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a75e2f3g4b1ag900age6b9gac7088e936b7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he776da4eg3c17g8903g77ffgb864dbe651bb" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfGloam;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Disengage" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc3808a4-d0b7-41e1-860a-1404a0ff3998" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_GLOAM_UNLOCK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="64e3af42-03bf-4c44-a551-70258250c474" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Disengage_MoonBard);UnlockSpell(Shout_Hide_MoonBard);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):UnlockSpell(Target_MistyStep_MoonBard);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b7cb63c-b9f7-4be0-b281-039abaae6aec" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_MIRTH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17a35e4g168bg658bgc5fcg7d1161796d35" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8362a45fg49bag34c1g7a9eg125767f203e3" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfMirth;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CuttingWords_MoonBard);" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8c976f3-7dda-417e-9ed7-ca6a1b4908f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f5301e0-3594-4ccb-a4f6-6a77306fdfde" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb1d70d6-dbfc-4080-926d-3bb96c3a0d83" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5992,6 +6070,30 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineGuardian" />
         <field name="StackId" type="StringTableFieldDefinition" value="ZEALOUS_PRESENCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackRoll);Advantage(SavingThrow, Strength); Advantage(SavingThrow, Dexterity); Advantage(SavingThrow, Constitution);Advantage(SavingThrow, Intelligence); Advantage(SavingThrow, Wisdom); Advantage(SavingThrow, Charisma);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02fae288-2bf5-4fb0-8d4e-3003eecaf0b9" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8abb1e4-5c5a-4181-8939-6c2fbabc2c0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="21aaf094-84ef-4ee3-b4ff-5babcf766553" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bcab7c45-36f7-4ed3-8f68-590f3640f63f" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
       </fields>
     </stat_object>
     <stat_object color="#FFDAA520" is_substat="false">
