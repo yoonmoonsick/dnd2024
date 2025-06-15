@@ -8120,23 +8120,11 @@
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1,,,,,true);ApplyStatus(HEX_STRENGTH,100,-1,,,,,true);RemoveStatus(SELF,HEX_REAPPLY);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,-1)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="79557601-2e0d-475f-a1dd-43a26530e7c1" />
-        <field name="Name" type="NameTableFieldDefinition" value="NPC_Hex" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d8aaaf53-c3fa-4fd9-a0f7-6f7873d9d3f5" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;IsHarmful;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
