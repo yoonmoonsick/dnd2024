@@ -2415,6 +2415,8 @@ Appropriate spells have been added to the spell list for each class.
 - Summon an Eagle to fight by your side.
 - Available For: Druid, Ranger
 
+### [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
+
 ### [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
 - Available For: Bard, Druid, Sorcerer, Wizard
 
