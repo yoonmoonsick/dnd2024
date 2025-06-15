@@ -2019,7 +2019,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
   - It can be purchased Vicar Humbletoes.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
-  - It can be obtained by killing Bernard in the Arcane Tower.
+  - It can be obtained by killing Fist Marcus.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
