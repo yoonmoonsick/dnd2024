@@ -514,6 +514,44 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da5a55a5-ab04-475b-9bc2-b0cc7ac37549" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARDING_BOND" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="546fe62a-78bd-4794-b816-a45a011eb4a2" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="27" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(HasStatus('WARDING_BOND_CASTER')):ApplyStatus(WARDING_BOND_AURA,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not (HasStatus('WARDING_BOND_CASTER_AURA')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41e3357f-5552-48ad-9ad7-68714bff3ab7" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARDING_BOND_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b7e95d5e-36ca-414d-881a-77dbea1bd349" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARDING_BOND_CASTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e05fd921-ef65-4cb2-9a6d-c832a22c6c0c" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="27" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(HasStatus('WARDING_BOND')):ApplyStatus(WARDING_BOND_CASTER_AURA,100,-1)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not (HasStatus('WARDING_BOND_AURA')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32bbb4a1-8494-4bfa-8387-35250c62d51d" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARDING_BOND_CASTER_AURA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="301612de-88cd-403a-9413-d30de49e6906" />
         <field name="Name" type="NameTableFieldDefinition" value="PLATINUM_SHIELD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4375bf51-d285-40bf-93b4-2e661832f3c5" />
