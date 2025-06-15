@@ -4845,7 +4845,7 @@ type "PassiveData"
 new entry "ThunderousGreatclub_Passive"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "Boosts" "IF(Character()):CharacterWeaponDamage(1d8, Thunder);IF(Item()):CharacterWeaponDamage(3d8, Thunder);"
+data "Boosts" "IF(IsMeleeWeaponAttack() and Character()):CharacterWeaponDamage(1d8, Thunder);IF(IsMeleeWeaponAttack() and Item()):CharacterWeaponDamage(3d8, Thunder);"
 data "StatsFunctorContext" ""
 
 new entry "VorpalGlaive"

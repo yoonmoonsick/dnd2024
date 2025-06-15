@@ -6749,7 +6749,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThunderousGreatclub_Passive" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Character()):CharacterWeaponDamage(1d8, Thunder);IF(Item()):CharacterWeaponDamage(3d8, Thunder);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack() and Character()):CharacterWeaponDamage(1d8, Thunder);IF(IsMeleeWeaponAttack() and Item()):CharacterWeaponDamage(3d8, Thunder);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
