@@ -1,7 +1,7 @@
 # DnD PHB 2024 All in One 
 
 ## Introduction
-- Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Races, Rules, Spells and more.
+- Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Items, Races, Rules, Spells and more.
 - Some rules are modified with Homebrew rules to enhance the gameplay experience.
 - This mod is focused on reducing the inconvenience of having to download and set up PHB 2024 related mods individually. It does not consider compatibility issues with other mods.
 - The original or latest version of this document can be found at the link below.
@@ -10,7 +10,7 @@
   - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
 ## 개요
-- DnD 2024 플레이어 핸드북 규칙(및 기타 출처)에 맞게 출신 배경, 직업, 재주, 종족, 규칙, 주문 등 다양한 콘텐츠를 추가하고 업데이트합니다.
+- DnD 2024 플레이어 핸드북 규칙(및 기타 출처)에 맞게 출신 배경, 직업, 재주, 아이템, 종족, 규칙, 주문 등 다양한 콘텐츠를 추가하고 업데이트합니다.
 - 일부 규칙은 게임 플레이 경험을 향상시키기 위해 홈브루 규칙으로 수정되었습니다.
 - 이 모드는 PHB 2024 관련 모드를 개별적으로 다운로드하고 설정해야 하는 번거로움을 줄이는 데 중점을 두고 있습니다. 다른 모드와의 호환성 문제는 고려하지 않습니다.
 - 이 문서의 원본 또는 최신 버전은 아래 링크에서 확인할 수 있습니다.
