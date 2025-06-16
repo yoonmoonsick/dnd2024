@@ -1054,6 +1054,59 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d82ad85-1f75-4771-958e-6fbf7622eccd" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_INFUSION_ACID" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38ad1183-92ad-4b9d-9cef-bf4ba08aa5b1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CHROMATIC_INFUSION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Acid);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1ad0635-2057-4db9-95ec-f701eccea46d" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_INFUSION_COLD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d82ad85-1f75-4771-958e-6fbf7622eccd" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Cold);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="e92003cd-6622-4a82-a3c7-69d6222f0ba0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d9f03b2-1dc6-4de2-a6cd-806993aed746" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_INFUSION_FIRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d82ad85-1f75-4771-958e-6fbf7622eccd" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Fire);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="8a4c7e6e-a629-4765-9c5d-d354838703d8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9c7539f-51e6-4cb4-af7e-11c47dc98d6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_INFUSION_LIGHTNING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d82ad85-1f75-4771-958e-6fbf7622eccd" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Lightning);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="7905bb82-0284-46b8-855b-24f17560fe4a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2e9591c-5868-486d-96f4-1b7c8a44f234" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHROMATIC_INFUSION_POISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d82ad85-1f75-4771-958e-6fbf7622eccd" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(1d4,Poison);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="86b94e03-b0d5-46aa-9045-88cdc5aeff47" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e87560c6-02fb-4344-845f-97dba4d4bcda" />
         <field name="Name" type="NameTableFieldDefinition" value="SYNAPTIC_STATIC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffcef28f-c270-4e59-9f7f-b39e0fcad34d" />
@@ -7433,6 +7486,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a3591b3b-0b14-419d-8b24-1ae4af825f42" />
         <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b907065-d4e5-4b4b-a470-a7d16e328104" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7447,6 +7501,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Necrotic);" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7461,6 +7516,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Psychic);" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7475,6 +7531,7 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Radiant);" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7487,6 +7544,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_DAMAGE_TYPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7494,6 +7552,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="757a487f-a200-4cb7-8683-4292e303a8eb" />
         <field name="Name" type="NameTableFieldDefinition" value="HEXBLADE_BIND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b462409-c474-460a-a653-c51d03727716" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7506,6 +7565,7 @@
         <field name="Passives" type="StringTableFieldDefinition" value="HexWarriorTechnical" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
