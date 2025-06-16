@@ -1952,6 +1952,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
 - [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
 - [Deadly Archery](https://www.dndbeyond.com/feats/1872970-deadly-archery)
+- [Dragon Fear](https://www.dndbeyond.com/feats/82-dragon-fear)
 - [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
 - [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
 - [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
