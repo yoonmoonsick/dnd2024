@@ -829,13 +829,69 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22b9130a-2b7b-46d1-a4f5-fcc74078310c" />
+        <field name="Name" type="NameTableFieldDefinition" value="FireShield_Warm_Feat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce77245e-853e-43a8-bcf2-453bde75df8a" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_FIRE_SHIELD_WARM,100,0);ApplyStatus(SELF,PASSIVE_FIRE_SHIELD_WARM_ATTACKER,100,0);DealDamage(SWAP,1d4, Fire,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfe242d2-f69f-4e84-a5bf-840cb1e3439c" />
+        <field name="Name" type="NameTableFieldDefinition" value="FlamesOfPhlegethos" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h32ca34dcg4cb6g23c3gecf6g7d9eb1df16c6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf995c979ga474g5ffbgfcd7g7deefb6840a0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Tiefling_HellishResistance" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(MainDamageTypeIs(DamageType.Fire)):MinimumRollResult(Damage,2);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() or IsAttackType(AttackType.MeleeSpellAttack);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasDamageDoneForType(DamageType.Fire)):ApplyStatus(SELF,FLAMES_OF_PHLEGETHOS, 100, 2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c042632-e5f6-408f-a01a-e207f5a0e3f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeyTeleportation" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a4ebd90b-d797-4554-b1f3-24c53cb9b5bf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h559b608dg30ccg8b2cg71cbg2d5fce67a3ba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hda240d00g912eg27ffg42fdg1745bf9f30d7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MistyStep_Feat);UnlockSpell(Target_MistyStep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3713918f-d021-4cfe-94e0-246db20d5202" />
+        <field name="Name" type="NameTableFieldDefinition" value="FadeAway" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4635e8ag4a3agd71bgdc6cgf9d5a4314a2c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc1f80778g7eaag2ac8g27c1g59e0f92bc010" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Female" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FadeAway,1,0);UnlockInterrupt(Interrupt_FadeAway);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="288b24b5-c8bd-4087-bb61-521ac9d16a20" />
+        <field name="Name" type="NameTableFieldDefinition" value="DwarvenFortitude" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h152fc808g2a7ag6c27g57c6ga358def2d160" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3eaa1d05g5570g4c32g977bg443606db47a5" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Dwarf_Male" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Constitution,1,20);UnlockSpell(Shout_DwarvenFortitude);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a2d91481-4789-4fea-8966-4e176a667eee" />
         <field name="Name" type="NameTableFieldDefinition" value="Crusher" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1de4faa7g257eg6dfeg60c9g0a1b40801710" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h99cd677bga900g5562g1c8dg3a02861b2225" version="1" />
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BludgeonTheWeak" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Bludgeoning, Resistant);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Bludgeoning,context.Target);" />
@@ -882,6 +938,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_WEAPON,100,1)" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -905,6 +962,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(2);StatusImmunity(SURPRISED);IF(CharacterLevelGreaterThan(4)):Initiative(1);IF(CharacterLevelGreaterThan(8)):Initiative(1);IF(CharacterLevelGreaterThan(11)):Initiative(1);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -918,6 +976,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, MAG_MOMENTUM, 100, 1);ApplyStatus(SELF, MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Rush_Charger,1,0);UnlockSpell(Rush_Charger_Attack);UnlockSpell(Rush_Charger_Push);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -929,6 +988,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h65d2ba2dgcea9ge3b6g2d32gbacc463bde8c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_PointBlank" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TwoWeaponFighting()" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -940,6 +1000,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_WEAPON,100,1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -949,7 +1010,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7f5251bg3341gb10fg299egfa45a9e1edba" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80eb8a5fgb0d4g109cg0d08g39d86260bffd" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -958,6 +1019,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DefensiveDuelist" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="466e7f83-05a2-486c-9088-5105f1417718" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_DefensiveDuelist);Ability(Dexterity,1,20)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -967,6 +1029,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a19d5831-defd-45fe-9da1-2fd7a7facd8d" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4642c3e6g6770g1e62g7ecfg380c05de907e" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Constitution,1,20);UnlockSpell(Shout_Durable)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -976,6 +1039,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b54ee116-9fd6-485c-9c78-d8c0155438df" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e31ae2agcb1agbd11gbdc4g152b4f1556c0" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasHeavyArmor()):DamageReduction(Slashing,Flat,ProficiencyBonus); IF(HasHeavyArmor()):DamageReduction(Bludgeoning,Flat,ProficiencyBonus); IF(HasHeavyArmor()):DamageReduction(Piercing,Flat,ProficiencyBonus)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -985,6 +1049,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f557e90a-f1a6-4f78-84c9-841c2aa8b9ed" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe79dff8gf6d0g7fb7g685fga2a559d3711e" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(HeavyArmor)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

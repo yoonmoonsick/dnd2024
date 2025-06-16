@@ -463,6 +463,19 @@ data "Properties" "IF(TargetSizeEqualOrSmaller(Size.Large) and not SavingThrow(A
 data "Cost" "WarlockSpellSlot:1:1:5;Interrupt_EldritchSmite:1;"
 data "TooltipDamageList" "DealDamage(6d8,Force,Magical)"
 
+new entry "YMS_Feat"
+type "InterruptData"
+
+new entry "Interrupt_FadeAway"
+type "InterruptData"
+using "Interrupt_MistyEscape"
+data "DisplayName" "hb4635e8ag4a3agd71bgdc6cgf9d5a4314a2c;1"
+data "Description" "hc1f80778g7eaag2ac8g27c1g59e0f92bc010;1"
+data "Icon" "Spell_Illusion_DisguiseSelf_Gnome_Female"
+data "Properties" "ApplyStatus(OBSERVER_OBSERVER,INVISIBILITY,100,2);"
+data "Cost" "ReactionActionPoint:1;FadeAway:1;"
+data "EnableCondition" "HasActionResource('FadeAway', 1, 0, false, false, context.Source) and (not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));"
+
 new entry "YMS_Artificer"
 type "InterruptData"
 
