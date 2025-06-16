@@ -1606,6 +1606,111 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f03f0bbc-e05b-4b98-a7ad-cc9234a568d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ead9be30-05e0-4dde-b64f-ed0991a89257" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_ChromaticInfusion_Acid;Target_ChromaticInfusion_Cold;Target_ChromaticInfusion_Fire;Target_ChromaticInfusion_Lightning;Target_ChromaticInfusion_Poison;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95a16d75-f7d4-4a28-af7b-27aca9e4897a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ae0a0ae1-1046-4726-871a-d57de3878922" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ChromaticInfusion" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_ACID,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_ACID,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_ACID, 100, 10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b0130f0-b1ac-44ef-915e-cd2284863f48" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ae80759-a7b2-42c4-8114-2565ac93c4f2" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ChromaticInfusion" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_COLD,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_COLD,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_COLD, 100, 10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ac344f0-9d42-44c6-9f39-0bf2be8e027f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b7250fd2-a995-4fad-9ccd-1c05b970d411" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ChromaticInfusion" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_FIRE,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_FIRE,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_FIRE, 100, 10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b568301-0454-452a-a599-5505e7efa116" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9ca0c29c-af4d-4d59-aa44-dc1aba114a01" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ChromaticInfusion" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_LIGHTNING,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_LIGHTNING,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_LIGHTNING, 100, 10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18e93e21-c085-4d74-b6ad-e456d98678cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticInfusion_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95a16d75-f7d4-4a28-af7b-27aca9e4897a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a48a616g8d4ag8afagc315g016352e24672" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c821a88gff52g655eg7593gbac5af07e4a9" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_POISON,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_POISON,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_POISON, 100, 10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0656bb9f-424d-4867-b28b-07c550ae54ad" />
         <field name="Name" type="NameTableFieldDefinition" value="MistyStep_Feat" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7083f9c8-00b3-454a-9d22-37d4f6105d82" />

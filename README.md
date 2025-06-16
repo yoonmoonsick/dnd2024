@@ -1956,9 +1956,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Dragon Hide](https://www.dndbeyond.com/feats/84-dragon-hide)
 - [Dragon-Slayer](https://www.dndbeyond.com/feats/1872974-dragon-slayer)
 - [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
+- [Elven Accuracy](https://www.dndbeyond.com/feats/89-elven-accuracy)
 - [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
 - [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
 - [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
+- [Gift of the Chromatic Dragon](https://www.dndbeyond.com/feats/766446-gift-of-the-chromatic-dragon)
 - Healer
   - Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.
 - Piercer (Homebrew)

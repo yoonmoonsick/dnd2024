@@ -471,3 +471,16 @@ end
 function HealingSpell()
     return SpellId('Target_HealingWord') | SpellId('Target_HealingWord_2') | SpellId('Target_HealingWord_3') | SpellId('Target_HealingWord_4') | SpellId('Target_HealingWord_5') | SpellId('Target_HealingWord_6') | SpellId('Target_CureWounds') | SpellId('Target_CureWounds_2') | SpellId('Target_CureWounds_3') | SpellId('Target_CureWounds_4') | SpellId('Target_CureWounds_5') | SpellId('Target_CureWounds_6') | SpellId('Shout_HealingWord_Mass') | SpellId('Shout_HealingWord_Mass_4') | SpellId('Shout_HealingWord_Mass_5') | SpellId('Shout_HealingWord_Mass_6') | SpellId('Target_CureWounds_Mass') | SpellId('Target_CureWounds_Mass_6') | SpellId('Target_Heal') | SpellId('Shout_ArcaneVigor') |SpellId('Shout_ArcaneVigor_3') |SpellId('Shout_ArcaneVigor_4') |SpellId('Shout_ArcaneVigor_5') |SpellId('Shout_ArcaneVigor_6')
 end
+
+function ChromaticDragonResistance(damageType, entity)
+    local entity = entity or context.Target
+    if (damageType == DamageType.Acid
+        or damageType == DamageType.Cold
+        or damageType == DamageType.Fire
+        or damageType == DamageType.Lightning
+        or damageType == DamageType.Poison
+    ) then
+        return ~IsResistantToDamageType(damageType, entity)
+    end
+    return ConditionResult(false)
+end

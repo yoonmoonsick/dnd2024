@@ -630,6 +630,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9451b9ad-66b5-4f9a-903d-ac520fd236aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ElvenAccuracy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01eed6cd-d3d1-40e1-948c-a3cdc722aed8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h412aec5ege7ccg503fg3072ga38b574bf4f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h818241bagd090g8ca0g278dg621279fd66ea" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Elf_WeaponTraining" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and (HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRerollInterruptInteresting(context.Source)) and not AnyEntityIsItem() and InterruptHasAdvantage() and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma));" />
+        <field name="Cost" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="419c4966-bc17-4308-ba4b-5428837ea2c2" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FadeAway" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="afb6a7a6-c4e7-4998-a80e-2c6f81e0ec5d" />
@@ -639,6 +651,19 @@
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,INVISIBILITY,100,2);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FadeAway:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('FadeAway', 1, 0, false, false, context.Source) and (not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="672958a4-59f9-488d-a08c-b10a8507aef5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ChromaticDragonResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="28cbacc5-44d2-449b-ba17-952f7a206654" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec2d8e09g913eg3a5dga811gdffe48f81129" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0084dadag198cg54b7gc2c3gfb06f624371f" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and not AnyEntityIsItem() and ChromaticDragonResistance(context.HitDescription.MainDamageType, context.Target) and not Enemy(context.Target,context.Observer);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDamageResistance(Acid);SetDamageResistance(Cold);SetDamageResistance(Fire);SetDamageResistance(Lightning);SetDamageResistance(Poison);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ChromaticDragonResistance:1;" />
       </fields>
     </stat_object>
     <stat_object color="#FFB8860B" is_substat="false">
