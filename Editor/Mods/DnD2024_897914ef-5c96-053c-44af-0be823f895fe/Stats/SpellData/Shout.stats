@@ -354,6 +354,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99575cb1-5b7d-4bba-a2b0-79e15f42665e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeadlyArchery" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24462e69-9025-4718-b25f-57370b204b13" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DEADLY_ARCHERY,100,1);UseActionResource(Movement, 300%, 0, true);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h78ff0bc8g8073ge51bg53dbgcb3f39a770e3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0806ef9ag54c9g26f9g227egbc9247895a8a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ae70b409-91c0-46c0-91ab-8cb452d636ab" />
         <field name="Name" type="NameTableFieldDefinition" value="DwarvenFortitude" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d6b1d199-ca6f-404d-bee2-8997ad206fea" />
@@ -1840,7 +1850,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="eeb2f0ba-c0fe-4435-864c-17a2847ef9a7" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="efbebd8f-acd0-43ba-823d-0faf14507c6a" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1856,7 +1865,13 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth;ImmediateCast;UnavailableInDialogs" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('STEADY_AIM_BLOCK')" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1871,7 +1886,13 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth;ImmediateCast;UnavailableInDialogs" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1881,7 +1902,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ee445a79-5c57-4e33-986e-bfe05e81cb9f" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd096d1b0g63d6g3e24gb01bgbfb5c873fbcf" version="1" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(WarlockSpellSlot,1,1);RestoreResource(WarlockSpellSlot,1,2);RestoreResource(WarlockSpellSlot,1,3);RestoreResource(WarlockSpellSlot,1,4);RestoreResource(WarlockSpellSlot,2,5);" />
       </fields>

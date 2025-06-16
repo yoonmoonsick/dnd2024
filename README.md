@@ -1891,37 +1891,26 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 # Feat 
 
-## General
-
-- [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
+## General: Changed
 - Alert
   - When you roll Initiative, you can add your Proficiency Bonus to the roll.
-- [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
 - Athlete
   - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
-- [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
 - Charger 
   - Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
   - Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
-- [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
 - Crossbow Expert 
   - You ignore the Loading property of crossbows, shoot without disadvantage in melee, and add your ability modifier to the damage of a Hand crossbow's off-hand attack.
-- Crusher (Homebrew)
-  - Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
 - Defensive Duelist 
   - Parry. If you are holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.
 - Dual Wielder
   - You can deliver additional Offhand attack for free once per turn.
 - Durable
   - As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
-- [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
-- [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
-- [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
-- [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
+- Crusher (Homebrew)
+  - Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
 - Great Weapon Master  
   - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
-- Healer
-  - Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.
 - Heavy Armor Master 
   - Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
 - Lightly Armored
@@ -1938,11 +1927,6 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Agile Movement. Opportunity Attacks have Disadvantage against you.
 - Performer
   - As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
-- Piercer (Homebrew)
-  - Your piercing damage ignores resistance. When you deal piercing damage to a creature, it must succeed on a Constitution saving throw or be suffering from Gaping Wounds until the end of its next turn.
-- Poisoner
-  - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
-  - Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
 - Polearm Master
   - Ability Score Increase. Increase your Dexterity or Strength score by 1, to a maximum of 20.
 - Savage Attacker
@@ -1953,6 +1937,32 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Shield Master
   - Shield Bash. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it’s equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
   - Interpose Shield. If you’re subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.
+- Spell Sniper 
+  - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
+- Tavern Brawler
+  - Normal unarmed strikes deal additional 1d4 damage (excluding features like a monk's), allow rerolling 1s on damage dice, and can push a target 5 feet once per turn.
+- War Caster 
+  - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
+- Weapon Master
+  - You gain proficiency with Martial Weapons. And get Weapon Masteries.
+
+## General: New
+- [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
+- [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
+- [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
+- [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
+- [Deadly Archery](https://www.dndbeyond.com/feats/1872970-deadly-archery)
+- [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
+- [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
+- [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
+- [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
+- Healer
+  - Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.
+- Piercer (Homebrew)
+  - Your piercing damage ignores resistance. When you deal piercing damage to a creature, it must succeed on a Constitution saving throw or be suffering from Gaping Wounds until the end of its next turn.
+- Poisoner
+  - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
+  - Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
 - Skill Expert 
   - Skill Proficiency. You gain proficiency in one skill of your choice.
   - Expertise. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.
@@ -1962,14 +1972,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
 - Slasher (Homebrew)
   - Your slashing damage ignores resistance. When you deal slashing damage to a creature, it must succeed on a Constitution saving throw or be Bleeding until the end of its next turn.
-- Spell Sniper 
-  - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
-- Tavern Brawler
-  - Normal unarmed strikes deal additional 1d4 damage (excluding features like a monk's), allow rerolling 1s on damage dice, and can push a target 5 feet once per turn.
-- War Caster 
-  - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
-- Weapon Master
-  - You gain proficiency with Martial Weapons. And get Weapon Masteries.
+
 
 ## Fighting Styles 
 - Great Weapon Fighting
