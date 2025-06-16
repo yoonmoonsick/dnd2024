@@ -622,6 +622,25 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Force,Magical)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d09679e-96f1-4dbf-9bf7-7f4c7d47f946" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Feat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="419c4966-bc17-4308-ba4b-5428837ea2c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FadeAway" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afb6a7a6-c4e7-4998-a80e-2c6f81e0ec5d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb4635e8ag4a3agd71bgdc6cgf9d5a4314a2c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc1f80778g7eaag2ac8g27c1g59e0f92bc010" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Female" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,INVISIBILITY,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FadeAway:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('FadeAway', 1, 0, false, false, context.Source) and (not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFB8860B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edc94309-cf35-4082-a2b1-a3ccd1f7d6d0" />

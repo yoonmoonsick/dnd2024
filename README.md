@@ -1910,6 +1910,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You can deliver additional Offhand attack for free once per turn.
 - Durable
   - As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
+- [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
+- [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
+- [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
+- [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
 - Great Weapon Master  
   - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
 - Healer
