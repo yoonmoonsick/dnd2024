@@ -1893,13 +1893,17 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## General
 
+- [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
 - Alert
   - When you roll Initiative, you can add your Proficiency Bonus to the roll.
+- [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
 - Athlete
   - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
+- [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
 - Charger 
   - Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
   - Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
+- [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
 - Crossbow Expert 
   - You ignore the Loading property of crossbows, shoot without disadvantage in melee, and add your ability modifier to the damage of a Hand crossbow's off-hand attack.
 - Crusher (Homebrew)
