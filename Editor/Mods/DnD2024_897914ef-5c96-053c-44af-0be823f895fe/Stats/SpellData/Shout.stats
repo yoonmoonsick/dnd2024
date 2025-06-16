@@ -357,9 +357,24 @@
         <field name="UUID" type="IdTableFieldDefinition" value="99575cb1-5b7d-4bba-a2b0-79e15f42665e" />
         <field name="Name" type="NameTableFieldDefinition" value="DeadlyArchery" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="24462e69-9025-4718-b25f-57370b204b13" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DEADLY_ARCHERY,100,1);UseActionResource(Movement, 300%, 0, true);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h78ff0bc8g8073ge51bg53dbgcb3f39a770e3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0806ef9ag54c9g26f9g227egbc9247895a8a" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DEADLY_ARCHERY,100,1);UseActionResource(Movement, 300%, 0, true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb1d7a09-cc39-4378-81e6-0a4b0531ff50" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonFear" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3f014eb2-e8d5-4d2f-bb24-2caea7f85ad5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC(),AdvantageOnFrightened(), DisadvantageOnFrightened());" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;BreathWeaponCharge:1;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68dcacdfg057agb5c2g3e22g4f0f972d4b45" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb0a0dbdg027dg8e1eg9048g7897994bdd17" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Banite_AuraOfTerror" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
