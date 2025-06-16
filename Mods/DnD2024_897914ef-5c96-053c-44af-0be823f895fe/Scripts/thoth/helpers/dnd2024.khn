@@ -91,6 +91,12 @@ function PoisonerSaveDC(fallbackDC)
     return math.max(spellDC, CalculatedDC)
 end
 
+function BarukKhazadDC(fallbackDC)
+	local spellDC = fallbackDC or 10 -- Global default so that we don't return 0
+    local CalculatedDC = 8 + context.Source.ProficiencyBonus + math.max(GetModifier(context.Source.Strength), GetModifier(context.Source.Charisma))
+    return math.max(spellDC, CalculatedDC)
+end
+
 function BurningSealsCheck()
     return SpellId('Target_BurningSeals') | SpellId('Target_BurningSeals_Fire') | SpellId('Target_BurningSeals_Necrotic')
 end
