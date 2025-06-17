@@ -685,6 +685,22 @@
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d181a1e2-ddca-4aab-930f-f42e41247fa6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MetallicDragonResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb15c649-019b-4580-b836-e4008e1e7d92" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf106d397g36ccg8ee4g1fd8gd6fb8fe284c1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha15e06fbgbf47ge0d7ga273ge5d57b2e49de" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEvilAndGood" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsMeleeAttack() and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus, context.Source);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;MetallicDragonResistance:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="MetallicDragonResistance" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFB8860B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edc94309-cf35-4082-a2b1-a3ccd1f7d6d0" />
