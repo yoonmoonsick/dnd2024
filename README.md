@@ -2008,6 +2008,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 # Items
 
+## Firearms
+- Weapons that have the Firearm property don’t add your ability modifier to damage rolls.
+- [Pistol](https://www.dndbeyond.com/equipment/42-pistol)
+- [Musket](https://www.dndbeyond.com/equipment/43-musket)
+
 ## Changed Items
 
 - Similar to other changes, the effects of equipment items have been adjusted.
