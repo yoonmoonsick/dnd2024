@@ -1602,6 +1602,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7bb90975-5dcb-4748-a133-6c69da0f1213" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Feat" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1707,6 +1708,32 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(CHROMATIC_INFUSION_POISON,100,10);IF(not Item()):ApplyEquipmentStatus(MainHand,CHROMATIC_INFUSION_POISON,100,10);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHROMATIC_INFUSION_POISON, 100, 10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ef71c5c5-277d-4d9d-b5bb-f76e5c9f065a" />
+        <field name="Name" type="NameTableFieldDefinition" value="GemDragonResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d2875576-5071-429a-87d6-9166f84bd55e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h875aad70gd4b8g9923g0c8dg6cc7d7885231" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1804517gac07g9157g0508g009b1c51eea1" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(3);DealDamage(2d8,Fire,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d8/2,Fire,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_Repulsor_2" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Tadpole_Repulsor_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Surge" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="9fdf9456-fcbb-4558-b2a2-df13a06c69f2" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="12d3e0a2-cc79-4707-aead-ed5f9da4417e" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

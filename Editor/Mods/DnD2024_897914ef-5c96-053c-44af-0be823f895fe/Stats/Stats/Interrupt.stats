@@ -638,6 +638,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Elf_WeaponTraining" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and (HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRerollInterruptInteresting(context.Source)) and not AnyEntityIsItem() and InterruptHasAdvantage() and (AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma));" />
         <field name="Cost" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Stack" type="StringTableFieldDefinition" value="ElvenAccuracy" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -650,7 +652,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Female" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,INVISIBILITY,100,2);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FadeAway:1;" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('FadeAway', 1, 0, false, false, context.Source) and (not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="Stack" type="StringTableFieldDefinition" value="FadeAway" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -664,6 +667,22 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and not AnyEntityIsItem() and ChromaticDragonResistance(context.HitDescription.MainDamageType, context.Target) and not Enemy(context.Target,context.Observer);" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDamageResistance(Acid);SetDamageResistance(Cold);SetDamageResistance(Fire);SetDamageResistance(Lightning);SetDamageResistance(Poison);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;ChromaticDragonResistance:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="ChromaticDragonResistance" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ea83f89-6b72-4ae3-889d-545c555db190" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_GemDragonResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="190af403-8356-4b0c-85a9-242e330fcda9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h875aad70gd4b8g9923g0c8dg6cc7d7885231" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha1804517gac07g9157g0508g009b1c51eea1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_Repulsor_2" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_GemDragonResistance,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;GemDragonResistance:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="GemDragonResistance" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
       </fields>
     </stat_object>
     <stat_object color="#FFB8860B" is_substat="false">
