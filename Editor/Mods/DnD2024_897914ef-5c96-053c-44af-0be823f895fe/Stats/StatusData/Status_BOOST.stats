@@ -5410,6 +5410,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a090557-3247-4413-b736-bf11134ea700" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="51e933ea-97a7-40b5-a6f8-7a109d46bb29" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="47737f9a-5518-418e-8d25-4320f6dc2ae8" />
@@ -7698,6 +7704,47 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b5ff760-fe64-4b74-a049-2266592c8036" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHARMED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fbc76b9c-f545-4a10-942d-e0a130e664da" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasPassive('CharmEnemy',context.Source) and (HasDamageEffectFlag(DamageFlags.Hit) and HasSpellFlag(SpellFlags.Harmful) and (IsInflicterEqualToSource() or Ally(context.HitDescription.InflicterObject, context.Source)))" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6942ead7-ed38-4121-a552-03b2b84bbf7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BALEFULINTERDICT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="353fe3eb-9145-46e1-b9ad-8d4b8f40a8bd" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StatusEffectOverride" type="StringTableFieldDefinition" value="44d77ebf-fc9e-407d-b20f-257019351f2a" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="56e94294-31b6-43f3-8465-10a752b22c61" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KNOCKED_OUT')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnAttacked" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,BALEFULINTERDICT_REAPPLY,100,-1,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,BALEFULINTERDICT_REAPPLY,100,-1,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9af8c362-c72a-4b7b-8a57-2c72d9c4a004" />
+        <field name="Name" type="NameTableFieldDefinition" value="BALEFULINTERDICT_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f59491f3-8d7b-4b0e-bae1-6a630d8e6c42" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BALEFULINTERDICT_OWNER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Illrigger_1_BalefulInterdict_Passive;" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fdfcecad-3e05-49e5-8a57-560982e20873" />
+        <field name="Name" type="NameTableFieldDefinition" value="BALEFULINTERDICT_REAPPLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Illrigger_BalefulInterdict_Reapply);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="353fe3eb-9145-46e1-b9ad-8d4b8f40a8bd" />
         <field name="Name" type="NameTableFieldDefinition" value="INTERDICTED" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c2c2fadg4a5dg9b92g7d6cg6fff665ed40e" version="1" />
@@ -7715,20 +7762,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b907065-d4e5-4b4b-a470-a7d16e328104" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8191fe76g65a3g5b42g9c11gc936569d86ac" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdffb97cbgaa76g426bge80cg7d2643bdb0db" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponAttackRollAbilityOverride(Charisma);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_ILLRIGER" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0223f555-0342-486e-9d34-88f5986273b0" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGER_TECHNICAL" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c00f8db-82c2-44e8-9b94-c31efc1ac0c8" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand, PACT_BLADE_ILLRIGER,100, 600);ApplyEquipmentStatus(MeleeOffHand, PACT_BLADE_ILLRIGER,100, 600)" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_ILLRIGER_TECHNICAL" />
-        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="4393c90f-eacd-43b7-bcfb-d30b4b8c319d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Charisma);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
