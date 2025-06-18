@@ -10520,6 +10520,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not (not Player(context.Source) and not Enemy()) and not HasStatus('DOWNED') and not HasStatus('BALEFULINTERDICT');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -2166,6 +2166,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased Vicar Humbletoes.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
   - It can be obtained by killing Fist Marcus.
+- [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name)
+  - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)

@@ -62,6 +62,16 @@ CreateAt((ITEMROOT)YMS_MagicItem_ThunderousGreatclub_12128b87-5ff4-414d-8788-b5f
 THEN
 RequestPing(_X,_Y,_Z,_ThunderousGreatclub,_Killer);
 
+// True Name
+IF
+KilledBy((CHARACTER)S_SCL_ServantOfTheRaven_ShadarKai_a66dd998-1e87-433b-b147-359c0572e700,_Killer,_,_)
+AND
+GetPosition(S_SCL_ServantOfTheRaven_ShadarKai_a66dd998-1e87-433b-b147-359c0572e700,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_TrueName_58ec4182-839a-43a6-b790-01613371c37e,_X,_Y,_Z,0,0,"",_TrueName)
+THEN
+RequestPing(_X,_Y,_Z,_TrueName,_Killer);
+
 
 // Wave
 IF
