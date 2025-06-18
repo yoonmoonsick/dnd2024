@@ -6296,7 +6296,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedWeaponAttack() and not IsMiss() and Character() and not Dead() and TargetSizeEqualOrSmaller(Size.Large);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(GUT_SHOT,100,10)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(GUT_SHOT,100,10);IF(HasPassive('Spellslinger_10_AntimagicShot',context.Source)):ApplyStatus(ANTIMAGIC_SHOT,100,10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6420,6 +6420,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Spellslinger_3_BangYouAreDead" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8110a8d7g0bb4gbda8g1c17g85ff3fb5f8e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8784a9f1g6b01g7277gbfd3g826d365650e7" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_FingerGuns);UnlockInterrupt(Interrupt_Spellslinger_ArcaneShot);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6444,6 +6445,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Spellslinger_10_InuredToMagic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21e05d17g629fgabe2ga467g1b7c1b79b9e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87a3bbf7ge622g830bgea6ag3b610b54db73" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellslinger_InuredToMagic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

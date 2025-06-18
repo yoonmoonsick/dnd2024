@@ -2317,6 +2317,9 @@ Appropriate spells have been added to the spell list for each class.
 - School: Illusion 
 - Casting Time: Bonus action
 
+### [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns)
+- Available For: Bard, Sorcerer, Wizard
+
 ### [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_GreenFlameBlade.png?raw=true)
 - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.

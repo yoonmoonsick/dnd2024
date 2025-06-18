@@ -1,6 +1,7 @@
 new entry "YMS_SYSTEM"
 type "StatusData"
 data "StatusType" "BOOST"
+data "DisplayName" ""
 
 new entry "GAIN_INSPIRATION"
 type "StatusData"
@@ -6280,6 +6281,15 @@ data "StackId" "GUT_SHOT"
 data "StackType" "Overwrite"
 data "Boosts" "ActionResourceMultiplier(Movement,50,0);Disadvantage(AttackRoll);"
 data "ManagedStatusEffectGroup" "6435c10a-c67d-4f79-8813-b84b0762f92b"
+
+new entry "ANTIMAGIC_SHOT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "GUT_SHOT"
+data "DisplayName" "hefa9c283g0fffg1531g12c8g8c11a21d2c38;1"
+data "Description" "h8672fcb9gccd2g6266g20fag9188683221f7;1"
+data "StackId" "ANTIMAGIC_SHOT"
+data "Boosts" "Disadvantage(SavingThrow,Constitution);BlockSpellCast();"
 
 new entry "YMS_ILLRIGGER"
 type "StatusData"

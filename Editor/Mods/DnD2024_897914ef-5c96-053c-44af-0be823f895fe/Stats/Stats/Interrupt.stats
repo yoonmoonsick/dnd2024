@@ -9,6 +9,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1721,9 +1722,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="62099154-d5b4-4a03-b7a5-c995f8f2858a" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="67e22252-7153-4616-ba82-b5ddc90d0f92" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f075fbfd-af4e-4aa4-a3c3-1c6dfc847eaa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellslinger_ArcaneShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9093833e-3fb5-45d3-990c-c86f9930108c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8110a8d7g0bb4gbda8g1c17g85ff3fb5f8e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8784a9f1g6b01g7277gbfd3g826d365650e7" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and SpellId('Projectile_FingerGuns') and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie),Force,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="Spellslinger" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('RiskDie', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'));" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie),Force,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65683719-1162-4525-8926-34585ccb0f95" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellslinger_InuredToMagic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="803e95f3-ec64-4200-ad69-f5d73b3f1b06" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21e05d17g629fgabe2ga467g1b7c1b79b9e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87a3bbf7ge622g830bgea6ag3b610b54db73" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(6);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,1d6);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
