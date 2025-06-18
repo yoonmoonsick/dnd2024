@@ -532,6 +532,52 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF8B4513" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ea4a57ae-ff6f-47b2-91a3-63a6664c7911" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Gunslinger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0824e73-892d-461f-bbe0-daaca1090fb0" />
+        <field name="Name" type="NameTableFieldDefinition" value="PartingShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="943120ee-4df4-464d-b269-fc12978cb5a4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e198b56gd3abge4b2gdcabg66e87d2c7f9a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5dea6a6g6fe1g8a00ga037gcf735dbc6367" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon)+LevelMapValue(RiskDie), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon+LevelMapValue(RiskDie), MainRangedWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae08d5e7-f3ce-45fa-94b3-887017e2a149" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrickShot_Ricochet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h608550b7g6f0fg448cg1f6egc8643f41d86c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb14c0939g6be0g40e4g800cga9f787fa59a8" version="2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_BonusShot" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dae6e2a6-e193-43f7-89c1-481a44a666f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeftDeflection" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4b6085a0-2fc0-47a5-8d7a-ef9c3a38e77c" />
@@ -1954,7 +2000,7 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((1d6+LevelMapValue(D6Cantrip))/2,Force,Magical);" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="3eaf2c46-46a9-4b52-8e05-fae7dc4e548b" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5391d1a5g7191g9a43g6763g48c4f4038beb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd191f60g611bg67ffg8644gfbff7c3dc068" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+LevelMapValue(D6Cantrip),Force,Magical);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack;Strength" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SLOW_WM, 100, 2)" />

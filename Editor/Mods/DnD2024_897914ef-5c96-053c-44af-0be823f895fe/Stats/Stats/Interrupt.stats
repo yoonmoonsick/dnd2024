@@ -9,7 +9,6 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1738,6 +1737,50 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b153f41f-2860-4eff-843f-5b07f77de19b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HighRoller_RiskyBusiness" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdca7bb45g524cg8975gd0dfg0c0be03c072f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ae476f6g714eg0519g3256gb1694b44c959" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Control" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRangedWeaponAttack() and not AnyEntityIsItem() and not InterruptHasDisadvantage();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RestoreResource(SELF,RiskDie,1,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="RiskyBusiness:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc78ece4-3d32-41fb-8b0a-2bddc13a9a8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HighRoller_MaverickSpirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="803e95f3-ec64-4200-ad69-f5d73b3f1b06" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,1d6);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="MaverickSpirit:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e08cfc53-6d66-4a7b-89fc-a80da29002cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HighRoller_SkinOfYourTeeth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="43be880b-e010-4883-8a0f-adaef032f523" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-1d6);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa20dcc5-4ad8-4a1b-aaf8-657f31a64c70" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SecretAgent_ExitStrategy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="afb6a7a6-c4e7-4998-a80e-2c6f81e0ec5d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9764bf86g7b9fgd711g7884gd4ea6768bf13" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2dfeab87ge946gc4ddg6508ge87b0b1732fa" version="2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,INVISIBILITY,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('RiskDie', 1, 0, false, false, context.Source) and (not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'}));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f075fbfd-af4e-4aa4-a3c3-1c6dfc847eaa" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellslinger_ArcaneShot" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9093833e-3fb5-45d3-990c-c86f9930108c" />
@@ -1764,6 +1807,34 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60c8be25-5631-43f3-9917-5da9d758870b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TrickShot_DeftDeflection" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43ad471ag2d62g9031g66d2g9dd6812b0207" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0fdcc665g87e9g76f0g95f3ga96776634d7d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_BonusShot" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and IsFlatValueInterruptInteresting(8, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));UseSpell(OBSERVER_TARGET,Projectile_DeftDeflection,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded')" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a61147d-954c-4070-a396-78627eb1e4c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_WhiteHat_LayDownTheLaw" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="07ef9059-76e9-47f6-8c6f-f2f27b1bdfd2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42661ad5g9eb0gb340g35a1g7740221a710b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c7cf0f3gf08eg9b3fg4345g99d0df3f4afa" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasLastAttackTriggered() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and HasStatus('LAY_DOWN_THE_LAW_ALLY',context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">

@@ -5,6 +5,17 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eeaaa237-0d71-42eb-bda6-5bbfd62447ce" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="345c94e5-51ad-47f7-8617-fdd5e9903418" />
+        <field name="Name" type="NameTableFieldDefinition" value="Reload" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dc61ee-3058-404d-884a-348585145e64" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h266433b3g34b3g7522g9594g29c231b69ee3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had542c8ag54f1ge70ag3ff8g71777e368404" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3917,6 +3928,29 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73224b9a-6dcc-4c9b-9111-03509410e275" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConcealedShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2cafe943-6c17-4622-a943-021ac03a7d14" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Illusion" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(RangedMainHand, CONCEALED_SHOT, 100, 10);ApplyStatus(SELF, CONCEALED_SHOT_OWNER, 100, 10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ConcealedShot" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h52ba2da8g03f9g047bg62f6g8e84d9e7a4d7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbe63d5b2g2784ga195gbf73g1afb4c358289" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CONCEALED_SHOT, 100, 10)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasSomaticComponent;Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="IsWeaponOfProficiencyGroup('Shortbows|Longbows|LightCrossbows|HeavyCrossbows|HandCrossbows', GetItemInEquipmentSlot(EquipmentSlot.RangedMainHand))" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_Invisibility_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_Invisibility_L1to3" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b1c774c1-9ad2-426b-9240-ba83ad2efc70" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fadb15d3-6175-4334-be28-3160a640e799" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5974892e-594d-4e12-970a-d79604cb9e75" />
         <field name="Name" type="NameTableFieldDefinition" value="Prestidigitation" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
@@ -6333,6 +6367,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hed958873gf839g7b23ga2e0ge927f937b78c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e916f80g2b8dg8533g473fg532bca5293be" version="2" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,DISENGAGE,100,1);ApplyStatus(SELF,DASH_HALF,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6341,30 +6377,41 @@
         <field name="Name" type="NameTableFieldDefinition" value="LiarsDice" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h023e162eg10abg0ab8ge9d9g48875a967c39" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5aa88674g1572g79c6g7781g8c88e54628d3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5aa88674g1572g79c6g7781g8c88e54628d3" version="3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Indomitable" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,10);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(SELF,LIARS_DICE_GOOD,100,1);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SELF,LIARS_DICE_BAD,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="35dc61ee-3058-404d-884a-348585145e64" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpeedLoader" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb271ad12g045fga993g682age6b2628c58d2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24d41a13gfb7ag71dbgd4a4gd2efcdd9ef66" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(CrossbowLoadingMainHand,100%,0);RestoreResource(CrossbowLoadingOffHand,100%,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b55fb978-81d2-4b94-b464-9a17628473a7" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="17302be6-5c67-479d-a961-c1c23ea686ce" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteelyEyedAura" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="196a83cf-7c74-42b9-b2f3-f30a92151b42" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f312c16g20d1gc50eg5274g548c64954b19" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h029e99f1ga341g1102g88b7g047dd6193a2c" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STEELY_EYED_AURA,100,-1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('STEELY_EYED_AURA')" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF4500" is_substat="false">

@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -516,6 +515,25 @@
         <field name="StackId" type="StringTableFieldDefinition" value="BOOMING_BLADE_DAMAGE_IMMUNITY" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e4b2fa1-13c7-4ed7-93aa-d07b8e595e02" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONCEALED_SHOT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="530d52db-0aec-4ea6-ae79-e194435ad79b" />
+        <field name="StackId" type="StringTableFieldDefinition" value="CONCEALED_SHOT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eed8edb8-9173-4a46-990e-5a680fe521de" />
+        <field name="Name" type="NameTableFieldDefinition" value="CONCEALED_SHOT_OWNER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ConcealedShot_Passive;Sniper;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e43f3d1b-ffac-4fee-9eca-7cb7cbb2f872" />
@@ -1015,12 +1033,6 @@
         <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0da70c03-dc9f-40cc-9507-c6134af153af" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -7767,6 +7779,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="aa54f297-345f-4ef7-bd78-8d79027cfe6a" />
         <field name="Name" type="NameTableFieldDefinition" value="LIARS_DICE_GOOD" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LIARS_DICE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):CharacterWeaponDamage(2d8);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h023e162eg10abg0ab8ge9d9g48875a967c39" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsRangedWeaponAttack()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5e6576d3-29c9-4c00-859b-1abcea010922" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7775,6 +7794,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="LIARS_DICE_BAD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa54f297-345f-4ef7-bd78-8d79027cfe6a" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):DamageBonus(-1d10,,false);" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7786,6 +7809,57 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8672fcb9gccd2g6266g20fag9188683221f7" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ANTIMAGIC_SHOT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow,Constitution);BlockSpellCast();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b36a510d-a8db-459e-9198-d31439b56d34" />
+        <field name="Name" type="NameTableFieldDefinition" value="LAY_DOWN_THE_LAW" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a31c594e-ae5c-420b-b0ed-4ff25815afc2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42661ad5g9eb0gb340g35a1g7740221a710b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c7cf0f3gf08eg9b3fg4345g99d0df3f4afa" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LAY_DOWN_THE_LAW" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(Cause.LevelMapValue(RiskDie));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca1a9d09-d173-4192-8691-51241d676a27" />
+        <field name="Name" type="NameTableFieldDefinition" value="LAY_DOWN_THE_LAW_ALLY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LAY_DOWN_THE_LAW_ALLY" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4eb834fd-fc93-4e71-bc5f-4042d9da7abb" />
+        <field name="Name" type="NameTableFieldDefinition" value="LAY_DOWN_THE_LAW_REACTION" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LAY_DOWN_THE_LAW_REACTION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_WhiteHat_LayDownTheLaw);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69a68054-5f16-47bc-8ed8-9bb756629c8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEELY_EYED_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2a92e62b-3e82-4220-80ee-aa12e9aca5f0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f312c16g20d1gc50eg5274g548c64954b19" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h029e99f1ga341g1102g88b7g047dd6193a2c" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEELY_EYED_AURA" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Tagged('INANIMATE')):ApplyStatus(STEELY_EYED_AURA_BUFF)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(FRIGHTENED_ADV);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1ccde09-07c8-437e-b336-a48446bdcf9a" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEELY_EYED_AURA_BUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="052d1638-5e6b-4d48-aac1-0c586d7cb735" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f312c16g20d1gc50eg5274g548c64954b19" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h029e99f1ga341g1102g88b7g047dd6193a2c" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEELY_EYED_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(FRIGHTENED_ADV);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
