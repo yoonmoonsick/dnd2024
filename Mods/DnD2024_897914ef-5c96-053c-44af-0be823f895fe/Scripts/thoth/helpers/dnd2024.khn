@@ -491,3 +491,9 @@ function FightingStyle_GreatWeapon_Ranged(entity)
     local hasTwohandedWeapon = ~WieldingWeapon('Light', false, false, entity) & WieldingWeapon('Ammunition', false, false, entity)
     return hasTwohandedWeapon
 end
+
+function MobileShootingCasterCondition(entity)
+    entity = entity or context.Source
+    result = HasStatus('DASH', entity, context.Source) | HasStatus('DISENGAGE', entity, context.Source) | HasStatus('DODGE', entity, context.Source)
+    return ConditionResult(result.Result, {ConditionError("HasNotDashedOrDisengaged")})
+end

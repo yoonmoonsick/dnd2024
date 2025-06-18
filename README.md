@@ -1748,7 +1748,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Poker Face
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
 - Level 3: Liar’s Dice
-  - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 1d10 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
+  - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 2d8 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
 - Level 6: Risky Business
   - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
 - Level 10: Risk Taker
@@ -1756,7 +1756,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Secert Agent
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SecertAgent.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SecretAgent.png?raw=true)
 
 > Knowledge is power. The best way to defeat your enemies is by stealing what they know and replacing it with misinformation. To that end, you have been trained in the ways of covert warfare, giving you a broad range of abilities to complement your fearsome gunnery skills.
 
@@ -1793,7 +1793,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Creative Trajectory
   - Your ranged weapon attacks are not penalized for High Ground Rules.
 - Level 3: Ricochet
-  - You can take a bonus action and expend one Risk Die. Roll the Risk Die and add the result to the damage. Then, the attack ricochets, allowing you to make a ranged attack against one additional creature within range.
+  - You can take a bonus action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
 - Level 6: Gun Spinning
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
 - Level 6: Speed Loader
@@ -2312,6 +2312,9 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Sorcerer, Warlock, Wizard, Illrigger
 
 ### [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
+
+### [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
+- Available For: Bard, Druid, Sorcerer, Warlock, Wizard
 
 ### Dancing Lights 
 - School: Illusion 
