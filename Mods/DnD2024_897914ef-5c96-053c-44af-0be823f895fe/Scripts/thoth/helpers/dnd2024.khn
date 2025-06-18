@@ -484,3 +484,10 @@ function ChromaticDragonResistance(damageType, entity)
     end
     return ConditionResult(false)
 end
+
+function FightingStyle_GreatWeapon_Ranged(entity)
+	-- Default to Target, like cpp functions
+    entity = entity or context.Target
+    local hasTwohandedWeapon = WieldingWeapon('Twohanded', false, false, entity) & WieldingWeapon('Ammunition', false, false, entity)
+    return hasTwohandedWeapon
+end
