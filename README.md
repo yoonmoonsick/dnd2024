@@ -1693,6 +1693,129 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 12: Song of Victory
   - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
+## [Gunslinger](https://www.dndbeyond.com/sources/dnd/tgc/the-gunslinger-class-valdas-spire-of-secrets)
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Gunslinger.png?raw=true)
+
+> Risk is in a Gunslinger’s blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms. Gunslingers are infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck to survive.
+
+- Level 1: Quick Draw
+  - You have Advantage on Initiative rolls.
+- Level 2: Critical Shot
+  - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.
+- Level 2: Risk
+  - You can perform incredible feats of daring fueled by special dice called Risk Dice.
+  - Bite the Bullet
+    - As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.
+  - Blindfire
+    - You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.
+  - Dodge Roll
+    - You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn’t provoke Opportunity Attacks and is unaffected by Difficult Terrain.
+  - Grazing Shot
+    - When you miss with a ranged attack roll using a weapon, you can expend one Risk Die to deal damage to that creature. You can only use this maneuver once per turn.
+  - Maverick Spirit
+    - When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.
+  - Skin of Your Teeth
+    - When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm’s way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.
+- Level 5: Gut Shot
+  - Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute, its Speed is halved and it has Disadvantage on attack rolls.
+- Level 9: Improved Critical Shot
+  - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 18 or 20 on the d20.
+- Level 11: Overkill
+  - When you deal damage with a Ranged weapon, the target takes an extra 1d8 damage of the weapon’s type.
+
+### Deadeye
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Deadeye.png?raw=true)
+
+> A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
+
+- Level 3: Eagle Eye
+  - Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.
+- Level 3: Sharpshooter’s Stance
+  - You don’t have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
+- Level 6: Concealed Position
+  - You can take the Hide action as a bonus action. If you make an attack roll while hidden and the roll misses, making the attack roll doesn’t reveal your location.
+- Level 10: Reposition
+  - Whenever a creature misses you with an attack roll, you can take a Reaction to move up to half your Speed.
+
+### High Roller
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/HighRoller.png?raw=true)
+
+> Fortune is a fickle thing—unless you’re a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?
+
+- Level 3: Poker Face
+  - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
+- Level 3: Liar’s Dice
+  - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 1d10 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
+- Level 6: Risky Business
+  - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
+- Level 10: Risk Taker
+  - You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die.
+
+### Secert Agent
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SecertAgent.png?raw=true)
+
+> Knowledge is power. The best way to defeat your enemies is by stealing what they know and replacing it with misinformation. To that end, you have been trained in the ways of covert warfare, giving you a broad range of abilities to complement your fearsome gunnery skills.
+
+- Level 3: Operative Training
+  - You learn the Concealed Shot and Disguise Self. You gain proficiency in two of these skills of your choice: Deception, Investigation, Persuasion, Sleight of Hand, or Stealth.
+- Level 3: Parting Shot
+  - When you take the Dash, Disengage, or Dodge action on your turn, you can expend one Risk Die to make a ranged attack using a weapon as a Bonus Action. Add the Risk Die to the damage roll on a hit.
+- Level 6: Fieldcraft
+  - Whenever you make a Deception or Persuasion check, you can treat a d20 roll of 9 or lower as a 10.
+- Level 10: Exit Strategy
+  - When you take damage, you can take a Reaction and expend one Risk Die to evade further harm. You have the Invisible condition until the start of your next turn.
+
+### Spellslinger
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Spellslinger.png?raw=true)
+
+> Magic and guns aren’t so different—arcane power is like gunpowder, a spell is like a bullet, and you are like a gun, directing your spells with precision at unfortunate targets. Spellslingers mix the disciplines of gunplay and spellcasting, sometimes loading arcane charges with your shots and firing bullets enhanced with lighting, frost, or flame.
+
+- Level 3: Bang, You’re Dead!
+  - You learn the Finger Guns. When you hit a target with a Finger Guns attack, you can expend one Risk Die as a Bonus Action and add it to the damage roll.
+- Level 6: Spellshot
+  - When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
+- Level 6: Antimagic Shot
+  - When you score a Critical Hit and the target is affected by your Gut Shot feature, it also impedes the target’s ability to cast spells. While the projectile is lodged in the target, it can’t cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.
+- Level 10: Inured to Magic
+  - When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.
+
+### Trick Shot
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickShot.png?raw=true)
+
+> Accuracy means different things to different people. For you, true accuracy isn’t necessarily in hitting a target on the first shot, but might include hitting the mark after the bullet bounces around a dozen times. Your attacks are just as dangerous if they miss, or even after hitting their mark, as others’ are while they’re still in the air.
+
+- Level 3: Creative Trajectory
+  - Your ranged weapon attacks are not penalized for High Ground Rules.
+- Level 3: Ricochet
+  - You can take a bonus action and expend one Risk Die. Roll the Risk Die and add the result to the damage. Then, the attack ricochets, allowing you to make a ranged attack against one additional creature within range.
+- Level 6: Gun Spinning
+  - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
+- Level 6: Speed Loader
+  - On your turn, you can reload a weapon with the Reload property without taking an action or Bonus Action.
+- Level 10: Deft Deflection
+  - You can shoot projectiles out of the air. When an ally within 30 feet of you is hit by an ranged weapon attack, you can take a Reaction and expend one Risk Die to grant that ally the benefit of the Skin of Your Teeth maneuver against that attack.
+
+### White Hat
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WhiteHat.png?raw=true)
+
+> Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what’s right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don’t often oblige.
+
+- Level 3: Lay Down the Law
+  - You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.
+- Level 3: Steely-Eyed Aura
+  - An aura of stoic confidence radiates from you in a 10-foot Emanantion. You and allies within the Emanantion have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.
+- Level 6: Reach for the Skies
+  - When you score a Critical Hit against a creature, the target must succeed on a Wisdom saving throw or have the Frightened for 1 minute.
+- Level 10: Long Arm of the Law
+  - Once per turn, when you hit a Large or smaller creature with a ranged weapon attack, you can hobble the target. The creature can’t move on its next turn.
+
 ## [Illrigger](https://www.dndbeyond.com/sources/dnd/tir/the-illrigger-revised#TheIllrigger)
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Illrigger.png?raw=true)
