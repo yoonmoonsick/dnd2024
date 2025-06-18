@@ -6282,6 +6282,17 @@ data "StackType" "Overwrite"
 data "Boosts" "ActionResourceMultiplier(Movement,50,0);Disadvantage(AttackRoll);"
 data "ManagedStatusEffectGroup" "6435c10a-c67d-4f79-8813-b84b0762f92b"
 
+new entry "LIARS_DICE_GOOD"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Icon" "GenericIcon_Intent_Buff"
+
+new entry "LIARS_DICE_BAD"
+type "StatusData"
+data "StatusType" "BOOST"
+using "LIARS_DICE_GOOD"
+data "Icon" "GenericIcon_Intent_Debuff"
+
 new entry "ANTIMAGIC_SHOT"
 type "StatusData"
 data "StatusType" "BOOST"

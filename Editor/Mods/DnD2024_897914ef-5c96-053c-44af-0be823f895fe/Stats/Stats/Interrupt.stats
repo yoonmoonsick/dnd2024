@@ -1358,6 +1358,8 @@
         <field name="Cost" type="StringTableFieldDefinition" value="SoulknifeEnergy:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="SoulknifeEnergy" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1718,6 +1720,20 @@
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c702317d-51b3-42d9-8381-26b48eefacc7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Deadeye_EagleEye" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aea58b19-e381-4138-bba1-05650e008ccf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc2145165g97c4g59a8gf509g849e66265302" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9c1ded32g620bg0030g59a3g264f0336c922" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarGodsBlessing" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(RiskDie));" />
+        <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

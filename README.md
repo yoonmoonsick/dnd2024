@@ -1737,7 +1737,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 6: Concealed Position
   - You can take the Hide action as a bonus action. If you make an attack roll while hidden and the roll misses, making the attack roll doesn’t reveal your location.
 - Level 10: Reposition
-  - Whenever a creature misses you with an attack roll, you can take a Reaction to move up to half your Speed.
+  - As a Reaction, you can move up to half your Speed and disengage.
 
 ### High Roller
 
