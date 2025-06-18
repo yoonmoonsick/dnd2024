@@ -1743,7 +1743,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ba897b7e-ef2f-4f62-9427-6b4c5f42810b" />
         <field name="Name" type="NameTableFieldDefinition" value="SecondWind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d1a74a5-e5cb-42a7-a532-5f4ab916aa82" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SecondWindCharge:1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
       </fields>
@@ -2027,7 +2027,7 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1162f3ba-ed65-4cd0-9e1f-5882414c0097" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="fb2cd1f1-3fb7-4efc-87cc-61f08868f567" />
         <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5494,7 +5494,7 @@
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;FrostRune:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="HitAnimationType" version="1" />
       </fields>
@@ -5512,7 +5512,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h059b3721g467fg9bd3g0195g90b201f53afe" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_HILL,100, 10)" />
         <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;HillRune:1;" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -5532,7 +5532,7 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;InvokeRune:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;StormRune:1;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9fd22d7d-5d7a-470b-a939-810046915bed,,;,,;4222840e-85c4-41d4-89f3-cf525ab7a2ce,,;d58199b1-9bc5-4715-99d4-43a5b5c1ec16,,;2d19a206-bf18-4f4d-ba95-f83c5fc38fd7,,;,,;57db495b-2467-467b-a599-d7df2fa4d659,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -6266,6 +6266,67 @@
         <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Burning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="90f3012a-7bbc-4a0f-a327-1e2e989c3109" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() or Item()) and not Dead() not Ally()" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B4513" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72413432-fe45-43fa-ab05-b3d834666b8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Gunslinger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4cf7111-e4fc-4df5-aa3a-69613c939356" />
+        <field name="Name" type="NameTableFieldDefinition" value="Risk_BiteTheBullet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="373a0976-fcfd-4758-a35c-f10d02cc7f40" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BITE_THE_BULLET,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h18d485b0g9556gab44g0936gd0481860bab4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4ad1566bg7ce8gf7e6g74eagf8e893e963ca" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BITE_THE_BULLET,100,-1);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="952acb58-db42-4ac7-8c62-80a5971b14e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12644fd2-488b-4c9c-a3b3-c63d5950dff8" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9402a08d-1b8e-46ab-a008-4be770ab6f1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e904ded7-d883-47af-9d4f-3bbb92d2d4a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35dc61ee-3058-404d-884a-348585145e64" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b55fb978-81d2-4b94-b464-9a17628473a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="17302be6-5c67-479d-a961-c1c23ea686ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF4500" is_substat="false">
