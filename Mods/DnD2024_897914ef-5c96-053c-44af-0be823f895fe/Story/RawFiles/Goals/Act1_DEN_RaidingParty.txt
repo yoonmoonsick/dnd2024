@@ -1,0 +1,1351 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//REGION Default Dialog 
+
+DB_Dialogs(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DEN_RaidingParty_AdventurerLeader_0f2f631a-f47b-eee0-6025-2b814050d453);
+DB_Dialogs(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, DEN_RaidingParty_Adventurer2_8b5b6c19-b64c-9aa9-504d-da47901340b5);
+DB_Dialogs(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, DEN_RaidingParty_Adventurer1_0c9c15fb-cf0a-fb3b-f196-d23a30afc269);
+
+//END_REGION
+
+//REGION Goblin Fight 
+DB_DoNotFaceDialog(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+DB_Crime_DoNotStopDialog(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+DB_DoNotFaceDialog(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+DB_DoNotFaceDialog(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+
+DB_OneShotPartyTrigger(S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74);
+DB_AddCharactersInTriggerToDialog(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f, 1, 1, 1);
+DB_IgnoreMutingStatussesDialog((DIALOGRESOURCE)DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+DB_IgnoreMutingStatussesDialog((DIALOGRESOURCE)DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c);
+PROC_TriggerRegisterForPlayers(S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f);
+
+DB_DEN_RaidingParty_GoblinRaidParticipants((CHARACTER)S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_001_6a03d0ff-a930-4347-bba2-9f3fd6bc317a);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_002_7fbfb1b0-184b-4889-935b-f916a7ad1177);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_003_f1a7c5a6-27e7-4164-a31d-d18b4064df85);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_004_c3fb3a30-a1a7-4d8a-8b3c-b101657a0a3d);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_Melee_004_51e9e140-04c2-4598-83c0-787dac74ce61);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_Ranger_003_442fddf8-875a-4099-8725-12042f9e3ebd);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
+DB_DEN_RaidingParty_GoblinRaidParticipants(S_DEN_GoblinRaider_Bugbear_01_cde6e700-9c2a-4dec-9081-689881198639);
+
+PROC_DEN_RaidingParty_SetupPleaExtras();
+
+DB_DEN_RaidingParty_RaidingGoblins((CHARACTER)S_DEN_GoblinRaider_Ranger_01_7fbfb1b0-184b-4889-935b-f916a7ad1177, (TRIGGER)S_DEN_GoblinRaiderPos_001_d9627561-c4a2-46d7-8f3c-7fda4c9ad7b5, (TRIGGER)S_DEN_GoblinRaiderAppearPos_001_ae477b7b-c50e-4242-b13a-ec5f3ae82b23); //
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Ranger_02_c3fb3a30-a1a7-4d8a-8b3c-b101657a0a3d, S_DEN_GoblinRaiderPos_002_80e20d51-344b-4395-92d8-6cd693ac7a8a, S_DEN_GoblinRaiderAppearPos_008_194c17fd-d000-4499-a498-6ee33c9ace37);
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Melee_01_6a03d0ff-a930-4347-bba2-9f3fd6bc317a, S_DEN_GoblinRaiderPos_003_6040ee51-ac44-4f57-9770-c099c2d3307a, S_DEN_GoblinRaiderAppearPos_003_a699070b-4675-4d20-8a93-30d372d76fe7); //
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Melee_02_f1a7c5a6-27e7-4164-a31d-d18b4064df85, S_DEN_GoblinRaiderPos_004_a0274b7b-e30c-4b1c-b447-17e081e514c4, S_DEN_GoblinRaiderAppearPos_007_3ced2bc5-7e5a-4ad2-857b-fef2df42475e); //
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Ranger_003_442fddf8-875a-4099-8725-12042f9e3ebd, S_DEN_GoblinRaiderPos_006_ccf45eac-23c7-4934-9a72-fb089d78b973, S_DEN_GoblinRaiderAppearPos_009_8d7c5687-9400-4be9-8211-141b1ab62ee0); //
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Worg_01_51e9e140-04c2-4598-83c0-787dac74ce61, S_DEN_GoblinRaiderPos_007_e1f2d63a-1f6a-4f10-8271-2a3553736590, S_DEN_GoblinRaiderAppearPos_002_78887aa6-5e29-4be5-b425-2fef63aec97a);
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d, S_DEN_GoblinRaiderPos_008_6925a317-d4dc-46a5-a617-638a0e02837a, S_DEN_GoblinRaiderAppearPos_004_19f9e9f8-1698-427b-bc60-3dde19d3f84e); //
+DB_DEN_RaidingParty_RaidingGoblins(S_DEN_GoblinRaider_Bugbear_01_cde6e700-9c2a-4dec-9081-689881198639, S_DEN_GoblinRaiderPos_009_d9fbcc1c-dc46-43ab-9682-5c4a4336b8d0, S_DEN_GoblinRaiderAppearPos_010_0e3a934d-211c-4ccd-b8f4-3e7d680a9708); //
+
+DB_GLO_DefeatCounter((CHARACTER)S_DEN_GoblinRaider_Ranger_01_7fbfb1b0-184b-4889-935b-f916a7ad1177, "DEN_RaidingParty_Goblins");
+
+DB_DEN_RaidingParty_WyllGoblins((CHARACTER)S_DEN_GoblinRaider_Melee_003_0d9a9811-27b3-48ae-84a6-8a85c65a092e);
+DB_DEN_RaidingParty_WyllGoblins(S_DEN_GoblinRaider_Ranger_004_dfcc8342-4357-4b3f-9fb4-0d3eb2542830);
+
+PROC_DeclareCounter("DEN_RaidingParty_Goblins");
+//END_REGION
+
+//REGION Confrontation 
+PROC_TriggerRegisterForPlayers(S_DEN_ConfrontationArea_59d80e7d-78b5-41b2-8b8a-6aa0abcc5982);
+
+DB_DEN_RaidingParty_Leaders((CHARACTER)S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_DEN_RaidingParty_Leaders(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+
+DB_PermaDefeatedFlag(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c,(FLAG)DEN_AdventurerLeader_State_PermsaDefeated_ed091ac6-d46e-88e6-0568-844d6cc5a559);
+
+DB_DEN_RaidingParty_Adventurers((CHARACTER)S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_DEN_RaidingParty_Adventurers(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d);
+DB_DEN_RaidingParty_Adventurers(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d);
+
+
+DB_DEN_RaidingParty_AdventurersLeaveDialogs((DIALOGRESOURCE)DEN_RaidingParty_AdventurerAfterKO_ed1090f6-6c29-0823-196b-d2e798ccf2ca);
+DB_DEN_RaidingParty_AdventurersLeaveDialogs(DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9);
+DB_DropMutingStatussesDialog(DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9);
+
+DB_DEN_RaidingParty_WakeUpADs((CHARACTER)S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, (DIALOGRESOURCE)DEN_RaidingParty_AD_TieflingWakesUp_bc1edede-e286-8c68-fc3a-e5a3468d168d);
+DB_DEN_RaidingParty_WakeUpADs(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DEN_RaidingParty_AD_AdventurerWakesUp_33b04f26-cb83-7cc1-abde-9ed9f562797c);
+
+DB_DEN_RaidingParty_ConfrontationCharacters((CHARACTER)S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+DB_DEN_RaidingParty_ConfrontationCharacters((CHARACTER)S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_DEN_RaidingParty_ConfrontationCharacters((CHARACTER)S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d);
+DB_DEN_RaidingParty_ConfrontationCharacters((CHARACTER)S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d);
+
+DB_DialogBlockAttackButton((DIALOGRESOURCE)DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e);
+//END_REGION
+
+//REGION Voice Barks
+
+PROC_TriggerRegisterForPlayers(S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a);
+
+//END_REGION
+
+
+ClearTag(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, GUARD_0b52f35e-fb1f-4865-bcd2-5d21ef7343cd);
+TriggerRegisterForCharacter(S_DEN_KanonPushbackPos_bb550eee-2a36-4a47-902b-193dcfb6f5fa, S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f);
+
+DB_DEN_RaidingParty_PleaAtGateActors(S_DEN_Griefling_7ce0afc2-e8f2-4f2e-82d8-27df98acc3d8);
+DB_DEN_RaidingParty_PleaAtGateActors(S_DEN_GoblinRaider_Worg_01_51e9e140-04c2-4598-83c0-787dac74ce61);
+
+SetForceUpdate(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, 1);
+
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+SetCanTrade(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 0);
+
+KBSECTION
+//REGION Setup
+
+IF
+DB_DEN_RaidingParty_RaidingGoblins(_Raider, _, _)
+THEN
+ApplyStatus(_Raider, "AI_NO_LOOK_AT_BATTLE", -1.0, 1, _Raider);
+
+IF
+DB_DEN_RaidingParty_RaidingGoblins(_Raider, _, _)
+AND
+_Raider !=  S_DEN_GoblinRaider_Ranger_01_7fbfb1b0-184b-4889-935b-f916a7ad1177
+THEN
+DB_GLO_DefeatCounter(_Raider, "DEN_RaidingParty_Goblins");
+
+//Custom Music
+IF
+DB_DEN_RaidingParty_RaidingGoblins(_Raider, _, _)
+THEN
+DB_Sound_ScriptedCombatMusic(_Raider,"DEN_PleaAtTheGates");
+
+QRY
+QRY_CorpseLooting_BlockMakeOwned((CHARACTER)_Raider)
+AND
+DB_DEN_RaidingParty_WyllGoblins(_Raider)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CorpseLooting_BlockMakeOwned((CHARACTER)_Raider)
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Raider, _, _)
+THEN
+DB_NOOP(1);
+
+//END_REGION
+
+
+//REGION Scene Manager and edge case fallbacks
+
+IF
+DB_DEN_RaidingParty_GoblinRaidParticipants(_Character)
+THEN
+DB_SceneManager(_Character, "DEN_RaidingParty_PleaAtGate");
+SetImmortal(_Character, 1);
+PROC_SetInvulnerable(_Character, 1);
+DB_DEN_RaidingParty_SceneCharacters(_Character);
+
+PROC
+PROC_DEN_RaidingParty_SetupPleaExtras()
+THEN
+DB_SceneManager(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, "DEN_RaidingParty_PleaAtGate");
+SetImmortal(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, 1);
+PROC_SetInvulnerable(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, 1);
+DB_DEN_RaidingParty_SceneCharacters(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f);
+
+PROC
+PROC_DEN_RaidingParty_SetupPleaExtras()
+AND
+DB_DEN_NPC(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _, _)
+THEN
+DB_SceneManager(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, "DEN_RaidingParty_PleaAtGate");
+SetImmortal(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 1);
+PROC_SetInvulnerable(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 1);
+DB_DEN_RaidingParty_SceneCharacters(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+
+//Removing him from raiding party when debug-recruited.
+PROC
+PROC_DEN_Wyll_CleanTraining()
+THEN
+NOT DB_SceneManager(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, "DEN_RaidingParty_PleaAtGate");
+SetImmortal(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 0);
+PROC_SetInvulnerable(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 0);
+NOT DB_DEN_RaidingParty_SceneCharacters(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+
+PROC
+PROC_SceneInterrupted(_NPC, _Character, "DEN_RaidingParty_PleaAtGate", _)
+AND
+DB_PartyMembers(_Character)
+THEN
+PROC_DEN_RaidingParty_StartPleaAtGate(_Character);
+
+
+PROC
+PROC_DEN_RaidingParty_StartPleaAtGate((CHARACTER)_Player)
+AND
+DB_Players(_Player)
+AND
+QRY_StartDialogCustom(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a,
+				S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, _Player,S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, 0, 0, 0, 0)
+THEN
+TimerCancel("DEN_RaidingParty_CommotionPlaySoundTimer");
+PlaySound(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, "SE_Crowd_Commotion_Stop");
+PROC_TriggerUnregisterForPlayers(S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74);
+PROC_TriggerUnregisterForPlayers(S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a);
+
+PROC
+PROC_DEN_RaidingParty_StartPleaAtGate((CHARACTER)_Character)
+AND
+NOT DB_Players(_Character)
+AND
+CharacterGetOwner(_Character, _Player)
+AND
+QRY_StartDialogCustom(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a,
+				S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, _Player,S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, 0, 0, 0, 0)
+THEN
+TimerCancel("DEN_RaidingParty_CommotionPlaySoundTimer");
+PlaySound(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, "SE_Crowd_Commotion_Stop");
+PROC_TriggerUnregisterForPlayers(S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74);
+PROC_TriggerUnregisterForPlayers(S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a);
+
+IF
+FlagSet(Debug_AddWyll_c84c0e41-3ee5-4ff9-8163-65966c6a5b6a, _, _)
+THEN
+PROC_GlobalSetFlagAndCache((FLAG)Wyll_Recruitment_Event_RecruitedOnce_6855bdf2-de0a-af66-dc74-0fbf3aaf03d9);
+NOT DB_SceneManager(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, "DEN_RaidingParty_PleaAtGate");
+PROC_DEN_RemoveFromDenNPCs(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+SetImmortal(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 0);
+PROC_SetInvulnerable(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, 0);
+NOT DB_DEN_RaidingParty_SceneCharacters(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+
+
+IF
+DialogStarted(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _)
+THEN
+PROC_SceneOver("DEN_RaidingParty_PleaAtGate");
+
+IF
+DialogEnded(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _ID)
+THEN
+PROC_AddCharactersInTriggerToDialog_Clear(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f);
+
+PROC
+PROC_SceneOver("DEN_RaidingParty_PleaAtGate")
+AND
+DB_DEN_RaidingParty_SceneCharacters(_Character)
+THEN
+SetImmortal(_Character, 0);
+PROC_SetInvulnerable(_Character, 0);
+
+//END_REGION
+
+//REGION
+
+IF
+DialogStarted(DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+SetCanTrade(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 0);
+
+IF
+DialogEnded(DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 1);
+SetCanTrade(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 1);
+
+IF
+DialogStarted(DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+SetCanTrade(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 0);
+
+IF
+DialogEnded(DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 1);
+SetCanTrade(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 1);
+
+IF
+DialogStarted(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+
+IF
+DialogEnded(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, _)
+THEN
+SetCanTrade(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 1);
+
+
+//END_REGION
+
+//Logic of the confrontation event and its involved characters.
+//REGION Confrontation Event
+
+IF
+DialogEnded(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, _)
+AND
+DB_Players(_Player)
+AND
+DB_InRegion(_Player, S_DEN_RaidersArriveIncludeSphere_dbfb7504-275f-4ae8-9699-a6aa2772219e)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_PostRaidVB")
+THEN
+StartVoiceBark(DEN_RaidingParty_VB_RaidersDefeated_3f1d6894-ed89-60b6-57ef-379ca0eeb9a7, _Player);
+
+IF
+FlagSet(DEN_RaidingParty_Event_OpenDenGate_1018a5ed-3543-a4c2-9dd7-138517d55e5e, _, _)
+AND
+DB_Players(_Player)
+AND
+NOT DB_DialogPlayers(_, _Player, _)
+AND
+DB_InRegion(_Player, S_DEN_RaidersArriveIncludeSphere_dbfb7504-275f-4ae8-9699-a6aa2772219e)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_PostRaidVB")
+THEN
+StartVoiceBark(DEN_RaidingParty_VB_RaidersDefeated_3f1d6894-ed89-60b6-57ef-379ca0eeb9a7, _Player);
+
+IF
+DB_DEN_RaidingParty_ConfrontationCharacters(_Character)
+THEN
+TriggerRegisterForCharacter(S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350, _Character);
+PROC_SelfHealing_Disable(_Character);
+
+IF
+DB_InRegion(_Character, S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350)
+AND
+DB_DEN_RaidingParty_ConfrontationCharacters(_Character)
+AND
+NOT DB_GlobalFlag((FLAG)DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+THEN
+SetCombatGroupID(_Character, "DEN_RaidingParty_Confrontation");
+
+IF
+DB_DEN_RaidingParty_ConfrontationCharacters(_Character)
+AND
+NOT DB_Is_InCombat(_Character, _)
+AND
+NOT DB_InRegion(_Character, S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350)
+AND
+GetCombatGroupID(_Character, "DEN_RaidingParty_Confrontation")
+THEN
+SetCombatGroupID(_Character, "");
+
+IF
+FlagSet(DEN_RaidingParty_Event_AdventurerLeaderToConfrontation_d7fb4647-686e-d4ea-f636-52a4c60aa0ab, _, _)
+THEN
+SetHasDialog(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 0);
+
+IF
+FlagSet(DEN_RaidingParty_Event_AdventurersToConfrontation_0b553dd3-afc8-4ab7-9046-8dd452bfc455, _, _)
+THEN
+SetHasDialog(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, 0);
+SetHasDialog(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, 0);
+
+
+PROC
+PROC_StateSet_Defeated(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Event_KnockOutAdventurer_802fa2ca-c3dd-ae55-dc06-2adfadaf9ac0)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+THEN
+SetFlag(DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f, NULL_00000000-0000-0000-0000-000000000000, 0);
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+
+
+PROC
+PROC_StateSet_Defeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Event_KnockOutTiefling_8d41adfe-8595-7ba0-fc0c-95ebb61f2fbf)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+THEN
+SetFlag(DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f, NULL_00000000-0000-0000-0000-000000000000, 0);
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+
+//Cleanup and setup proc fired once end of confrontation is reached.
+PROC
+PROC_DEN_RaidingParty_ConfrontationCompleted()
+AND
+QRY_OnlyOnce("DEN_ConfrontationCleanup")
+THEN
+ClearFlag((FLAG)DEN_RaidingParty_Event_StartConfrontation_60fb6fc5-f579-4db7-4f7d-f27fce1140aa, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+PROC_TriggerUnregisterForPlayers(S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350);
+PROC_GlobalSetFlagAndCache((FLAG)DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd);
+PROC_DEN_RaidingParty_RestoreConfrontationCharacters();
+
+IF
+DB_GlobalFlag(DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+AND
+DB_InRegion(_Player, (TRIGGER)S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211)
+AND
+DB_Players(_Player)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ActivatePostConfrontationBanters")
+THEN
+PROC_RegisterWorldGossipTrigger(S_PartyBanterTrigger_FOR_DenBridgeCleared_fe51428d-3eeb-43d9-a2ca-2b8d58f254e9);
+
+PROC
+PROC_DEN_RaidingParty_RestoreConfrontationCharacters()
+AND
+DB_DEN_RaidingParty_ConfrontationCharacters(_Character)
+THEN
+TriggerUnregisterForCharacter(S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350, _Character);
+PROC_SelfHealing_Enable(_Character);
+SetHasDialog(_Character,1);
+
+IF
+EntityEvent((CHARACTER)_Leader, "DEN_GoToConfrontation_MoveComplete")
+AND
+DB_DEN_RaidingParty_Leaders(_Leader)
+THEN
+DB_DEN_RaidingParty_LeaderIsReady(_Leader);
+
+IF
+EntityEvent((CHARACTER)_Adventurer, "DEN_GoToConfrontation_MoveComplete")
+AND
+DB_DEN_RaidingParty_Adventurers(_Adventurer)
+THEN
+SetHasDialog(_Adventurer, 1);
+
+
+IF
+DB_DEN_RaidingParty_LeaderIsReady(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+DB_DEN_RaidingParty_LeaderIsReady(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+NOT DB_CantTalk(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+THEN
+NOT DB_DEN_RaidingParty_LeaderIsReady(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+NOT DB_DEN_RaidingParty_LeaderIsReady(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+SetFlag(DEN_RaidingParty_Event_StartConfrontation_60fb6fc5-f579-4db7-4f7d-f27fce1140aa, NULL_00000000-0000-0000-0000-000000000000);
+PROC_TriggerRegisterForPlayers(S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350);
+
+
+//Start the confrontation dialog when a player enters the trigger.
+IF
+DB_InRegion(_Player, S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350)
+AND
+DB_Players(_Player)
+AND
+NOT DB_HiddenCharacters(_Player, _)
+AND
+NOT DB_OnlyOnce("DEN_RaidingParty_ConfrontationDialog")
+AND
+QRY_StartDialogCustom(DIALOGRESOURCEGUID_DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9, S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, _Player, 0, 0, 1, 1)
+THEN
+DB_OnlyOnce("DEN_RaidingParty_ConfrontationDialog");
+PROC_TriggerUnregisterForPlayers(S_DEN_ConfrontationLookAt_8012202f-6143-4c3f-a482-8394325b8350);
+
+IF
+DialogEnded(DIALOGRESOURCEGUID_DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9, _ID)
+THEN
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+
+IF
+FlagSet(DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f, _, _)
+AND
+DB_State_Current(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _PeaceState)
+AND
+DB_DEN_DefaultStates(_State)
+AND
+NOT DB_PermaDefeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+NOT DB_PermaDefeated(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+DB_Players(_Player)
+THEN
+QuestUpdate(_Player, "HIDDEN_WLD_Boosters", "DEN_Confrontation_PersuadedAradin");
+
+IF
+FlagSet(DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f, _, _)
+AND
+DB_State_Current(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _PeaceState)
+AND
+DB_DEN_DefaultStates(_State)
+AND
+NOT DB_PermaDefeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+NOT DB_PermaDefeated(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+DB_Players(_Player)
+THEN
+QuestUpdate(_Player, "HIDDEN_WLD_Boosters", "DEN_Confrontation_PersuadedAradin");
+//END_REGION
+
+
+//REGION Plea at Gates
+
+PROC
+PROC_DEN_RaidingParty_SkipPleaAtGates()
+THEN
+PROC_SceneOver("DEN_RaidingParty_PleaAtGate");
+PROC_TriggerUnregisterForPlayers(S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74);
+PROC_TriggerUnregisterForPlayers(S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f);
+PROC_TriggerUnregisterForPlayers(S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a);
+PROC_DEN_RaidingParty_GoblinRaidEnded();
+Die(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, DEATHTYPE.DoT, 1);
+TeleportTo(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, S_DEN_KanonDeathPos_3226b5b1-8e96-428a-8761-9f9f129125e8);
+TeleportTo(CHARACTERGUID_S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, TRIGGERGUID_S_DEN_GatekeeperPos_12e49637-70dc-4b9f-b1a5-942a2c534314);
+SetFlag((FLAG)DEN_RaidingParty_Quest_GoblinRaidOver_98712d90-c46b-20c4-c4df-02c0117e85a5, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global //set after "GateIsOpened" otherwise it messes up Wyll's behaviour
+TimerCancel("DEN_RaidingParty_CommotionPlaySoundTimer");
+PlaySound(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, "SE_Crowd_Commotion_Stop");
+
+//Forcefully resolve the plea at gate and the combat vs raiders if players find a way into the den without actually doing the scene.
+IF
+EnteredTrigger(_Player, S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211)
+AND
+DB_Players(_Player)
+AND
+DB_SceneManager(_, "DEN_RaidingParty_PleaAtGate")
+AND
+IsInTrigger(_Player, S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74, 0)
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+
+//Forcefully resolve the plea at gate and the combat vs raiders if players find a way into the den, FOR or HAG without actually doing the scene.
+IF
+EnteredTrigger(_Player, S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211)
+AND
+DB_Players(_Player)
+AND
+DB_SceneManager(_, "DEN_RaidingParty_PleaAtGate")
+AND
+IsInTrigger(_Player, S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74, 0)
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+
+IF
+EnteredTrigger(_Player, S_FOR_Forest_SUB_ad526a8c-dc6d-4c07-855b-35255561a374)
+AND
+DB_Players(_Player)
+AND
+DB_SceneManager(_, "DEN_RaidingParty_PleaAtGate")
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+
+IF
+EnteredTrigger(_Player, S_HAG_Swamp_SUB_5bd69370-6b30-4643-8b8f-412a2b837770)
+AND
+DB_Players(_Player)
+AND
+DB_SceneManager(_, "DEN_RaidingParty_PleaAtGate")
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+
+
+//Also forcefully resolve if Grove tries to transition to another state.
+PROC
+PROC_State_Progress(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _)
+AND
+DB_SceneManager(_, "DEN_RaidingParty_PleaAtGate")
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+
+//Start the event at the Gate when the player enters the goblin raid area.
+PROC
+PROC_OneShotTriggerEntered(_Character, S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74)
+THEN
+PROC_DEN_RaidingParty_StartPleaAtGate(_Character);
+
+IF
+FlagSet(DEN_RaidingParty_Event_UnsheatheForFight_520b53e9-b8a3-27b5-7a67-cd63f6d23411, _, _)
+AND
+DB_DEN_RaidingParty_GoblinRaidParticipants(_Character)
+AND
+NOT DB_DEN_RaidingParty_RaidingGoblins(_Character, _, _)
+THEN
+LookAtEntity(_Character, S_DEN_GoblinRaiderPos_008_6925a317-d4dc-46a5-a617-638a0e02837a);
+SetWeaponUnsheathed(_Character,1,0);
+
+IF
+FlagSet(DEN_RaidingParty_Event_UnsheatheForFight_520b53e9-b8a3-27b5-7a67-cd63f6d23411, _, _)
+THEN
+LookFromTrigger(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, S_DEN_AdventurerLookAt_f56f5c74-2c30-4081-a918-26d286285c59, 1);
+PROC_CharacterMoveTo(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, S_DEN_PleaAdventuerCombatPos_002_676b483c-3a2a-4225-aab0-53993d68ae37, "Run", "DEN_RaidingParty_LookAtRaiders");
+PROC_CharacterMoveTo(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, S_DEN_PleaAdventuerCombatPos_001_bd9a949b-bf67-4671-803b-3889ee38a1c1, "Run", "DEN_RaidingParty_LookAtRaiders");
+
+IF
+DialogActorJoined(DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _, S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, _)
+THEN
+DB_DialogDeath(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f);
+
+IF
+DialogActorLeft(DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _, S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, _)
+THEN
+NOT DB_DialogDeath(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f);
+
+
+//Kanon gameplay flags
+
+IF
+FlagSet(DEN_RaidingParty_Event_KanonOpensGate_d9ea3a80-2a8f-0b85-fc2a-a0802cb5b99c, _, _)	// flagType: Global
+THEN
+LookFromTrigger(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, S_DEN_ShoutTrigger_09052582-3fff-4018-8361-2056d898e49d, 0);
+TimerLaunch("DEN_RaidingParty_KanonDies", 5000);
+
+IF
+TimerFinished("DEN_RaidingParty_KanonDies")
+THEN
+Die(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, DEATHTYPE.DoT, 1);
+TeleportTo(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, S_DEN_KanonPushbackPos_bb550eee-2a36-4a47-902b-193dcfb6f5fa, "");
+SetFlag((FLAG)DEN_RaidingParty_Event_LoverFallsDead_195a37d3-cb04-4e0a-9c32-ce76aa8cb564, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+
+//END_REGION
+
+//REGION Add other characters to Plea at Gates
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, (INTEGER)_ID)
+AND
+NOT DB_Players((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+THEN
+PROC_DialogAddSpeakingActor(_ID, S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+
+PROC
+PROC_StartDialog_AddExtraSpeakers((DIALOGRESOURCE)DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, (INTEGER)_ID)
+AND
+DB_DEN_RaidingParty_PleaAtGateActors(_Actor)
+THEN
+PROC_DialogAddSpeakingActor(_ID, _Actor);
+
+IF
+DialogEnded(DEN_RaidingParty_PleaAtGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _)
+THEN
+PROC_TriggerUnregisterForPlayers(S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f);
+
+//END_REGION
+
+//Logic of the fight with the goblins and its setup.
+//REGION Goblin Raid Fight
+
+//Set Surprised on non-goblins when event ends
+IF
+DialogEnded(DIALOGRESOURCEGUID_DEN_RaidingParty_PleaAtTheGate_2e71ecd7-3a8e-2d46-8b37-716f6064417e, _)
+THEN
+PROC_DEN_RaidingParty_GateFightSetup();
+
+PROC
+PROC_DEN_RaidingParty_GateFightSetup()
+AND
+NOT DB_Players(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+THEN
+SetTag(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,AI_UNPREFERRED_TARGET_9787450d-f34d-43bd-be88-d2bac00bb8ee);
+ApplyStatus(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,"FEATHER_FALL",30.0,0,NULL_00000000-0000-0000-0000-000000000000);
+DB_DEN_RaidingParty_WyllClearUnpreferredTag(1);
+
+IF
+LeftCombat(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,_)
+AND
+DB_DEN_RaidingParty_WyllClearUnpreferredTag(1)
+THEN
+NOT DB_DEN_RaidingParty_WyllClearUnpreferredTag(1);
+ClearTag(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d,AI_UNPREFERRED_TARGET_9787450d-f34d-43bd-be88-d2bac00bb8ee);
+
+PROC
+PROC_DEN_RaidingParty_GateFightSetup()
+AND
+DB_GlobalFlag((FLAG)DEN_RaidingParty_Event_GoblinRaidFight_b4f0c21a-9ebc-9d8f-61f7-04b479196eb3) // flagType: Global
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _, _)
+THEN
+FlushOsirisQueue(_Goblin);	//TODO: Remove when code feature is in.
+SetFaction(_Goblin, (FACTION)ACT1_DEN_GoblinRaiders_6f5d49b5-1dc8-6226-e625-f0267cdbbbff);
+SetCombatGroupID(_Goblin, "893da9dc-8adb-4cd6-ae5e-231628de205a");
+PROC_EnterCombat(_Goblin, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+
+PROC
+PROC_DEN_RaidingParty_GateFightSetup()
+AND
+NOT DB_Avatars(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+AND
+GetFaction(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _Faction)
+THEN
+DB_DEN_RaidingParty_WyllOriginalFaction(_Faction);
+SetFaction(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, ACT1_DEN_RaidingPartyFight_c2a2e8f3-4c2a-4ebd-b374-1f9d691e585e);
+
+PROC
+PROC_DEN_RaidingParty_GateFightSetup()
+THEN
+SetFaction(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, ACT1_DEN_RaidingPartyFight_c2a2e8f3-4c2a-4ebd-b374-1f9d691e585e);
+SetFaction(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, ACT1_DEN_RaidingPartyFight_c2a2e8f3-4c2a-4ebd-b374-1f9d691e585e);
+SetFaction(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, ACT1_DEN_RaidingPartyFight_c2a2e8f3-4c2a-4ebd-b374-1f9d691e585e);
+PROC_SetRelationToPlayers(ACT1_DEN_Tieflings_ca9de2d9-9022-9215-6d9b-676d916dcb5a, 100);
+PROC_SetRelationToPlayers(ACT1_DEN_GoblinRaiders_6f5d49b5-1dc8-6226-e625-f0267cdbbbff, 0);
+
+//Throw all party members into combat.
+IF
+RelationChanged(ACT1_DEN_GoblinRaiders_6f5d49b5-1dc8-6226-e625-f0267cdbbbff, Hero_a1542c81-6895-929e-4522-10ce218bb360, 0, _)
+THEN
+PROC_DEN_RaidingParty_ForceAllIntoCombat();
+
+PROC
+PROC_DEN_RaidingParty_ForceAllIntoCombat()
+AND
+DB_PartyMembers(_Character)
+AND
+IsInTrigger(_Character, S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f, 1)
+THEN
+PROC_EnterCombat(_Character, S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
+
+IF
+FlagSet(DEN_RaidingParty_Event_GoblinRaidFight_b4f0c21a-9ebc-9d8f-61f7-04b479196eb3, _, _)
+AND
+DB_DEN_Adventurers(_Adventurer)
+THEN
+FlushOsirisQueue(_Adventurer);
+
+//Save the ID of the goblin raid combat. Used to restrict following events.
+IF
+EnteredCombat(_Object, _ID)
+AND
+DB_DEN_RaidingParty_RaidingGoblins((CHARACTER)_Object, _, _)
+AND
+NOT DB_DEN_GoblinRaidCombatID(_ID)
+THEN
+DB_DEN_GoblinRaidCombatID(_ID);
+
+IF
+SwitchedCombat(_Object, _OldID, _NewID)
+AND
+DB_DEN_GoblinRaidCombatID(_OldID)
+AND
+DB_DEN_RaidingParty_GoblinRaidParticipants((CHARACTER)_Object)
+AND
+NOT DB_DEN_GoblinRaidCombatID(_NewID)
+THEN
+NOT DB_DEN_GoblinRaidCombatID(_OldID);
+DB_DEN_GoblinRaidCombatID(_NewID);
+
+IF
+CombatEnded(_ID)
+AND
+DB_DEN_GoblinRaidCombatID(_ID)
+THEN
+NOT DB_DEN_GoblinRaidCombatID(_ID);
+
+PROC
+PROC_GLO_DefeatCounter_AllDefeated("DEN_RaidingParty_Goblins")
+THEN
+PROC_DEN_RaidingParty_AssignInspiration();
+SetFlag((FLAG)DEN_RaidingParty_Quest_GoblinRaidOver_98712d90-c46b-20c4-c4df-02c0117e85a5, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+PROC_DEN_RaidingParty_GoblinRaidEnded();
+
+PROC
+PROC_DEN_RaidingParty_GoblinRaidEnded()
+AND
+QRY_OnlyOnce("DEN_RaidingParty_GoblinRaidCleanup")
+THEN
+PROC_SetRelationMutual(ACT1_DEN_Tieflings_ca9de2d9-9022-9215-6d9b-676d916dcb5a, ACT1_DEN_Adventurers_d8ebdf1b-1362-460a-f51c-30ecd9b34e6b, 50);
+PROC_RegisterWorldGossipTrigger((TRIGGER)S_PartyBanterTrigger_CRA_RoadDen_05138b51-dc09-4238-80b4-4915f147597f);
+SysClear("DB_DEN_RaidingParty_RaidingGoblins", 3);
+SysClear("DB_DEN_RaidingParty_GoblinRaidParticipants", 1);
+SetCombatGroupID(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, "");
+SetCombatGroupID(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, "");
+SetCombatGroupID(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, "");
+SetCombatGroupID(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "");
+SetCombatGroupID(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, "");
+PROC_DEN_RaidingParty_SetupAlignmentsAfterGoblinFight();
+
+PROC
+PROC_DEN_RaidingParty_SetupAlignmentsAfterGoblinFight()
+THEN
+PROC_SetRelationToPlayers(ACT1_DEN_Tieflings_ca9de2d9-9022-9215-6d9b-676d916dcb5a, 50);
+SetFaction(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, ACT1_DEN_Adventurers_d8ebdf1b-1362-460a-f51c-30ecd9b34e6b);
+SetFaction(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d, ACT1_DEN_Adventurers_d8ebdf1b-1362-460a-f51c-30ecd9b34e6b);
+SetFaction(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, ACT1_DEN_AdventurerLeader_8276868b-adf0-4b7e-fc32-2f268e43f51e);
+
+PROC
+PROC_DEN_RaidingParty_SetupAlignmentsAfterGoblinFight()
+AND
+DB_DEN_RaidingParty_WyllOriginalFaction(_Faction)
+THEN
+NOT DB_DEN_RaidingParty_WyllOriginalFaction(_Faction);
+SetFaction(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _Faction);
+
+IF
+FlagSet((FLAG)DEN_RaidingParty_Event_GoblinsAppear_de5537a8-586c-6e56-a635-648679345c35, _, _)
+THEN
+TeleportTo(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, S_DEN_ZevlorCombatPos_4f86355b-ed1b-481f-be48-2f480351f8f0, "");
+
+IF
+FlagSet(DEN_RaidingParty_Event_GoblinsAppear_de5537a8-586c-6e56-a635-648679345c35, _, _) // flagType: Global
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _MovePos, _AppearPos)
+THEN
+PROC_AppearOutOfSightTo(_Goblin, _AppearPos, S_DEN_GoblinAppearDirection_2d5a4623-399f-4b23-b7cc-2cd5f2635fc0, "");
+SetForceUpdate(_Goblin, 1);
+PROC_CharacterMoveTo(_Goblin, _MovePos, "Run", "DEN_RaidingParty_GoblinArrived");
+
+IF
+EntityEvent((CHARACTER)_Goblin,"DEN_RaidingParty_GoblinArrived")
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _MovePos, _AppearPos)
+THEN
+LookFromTrigger(_Goblin, _MovePos, 0);
+SetForceUpdate(_Goblin, 0);
+
+//END_REGION
+
+
+//Various debugs for the goblin raid combat.
+//REGION Goblin Raid Fight DEBUG
+
+//Set an event on characters who join the raid combat.
+IF
+EnteredCombat(_Character, _ID)
+AND
+DB_DEN_GoblinRaidCombatID(_ID)
+THEN
+SetEntityEvent(_Character, "DEN_RaidingParty_EnteredRaidFight");
+
+
+//Open the gate.
+IF
+TextEvent("DEN_OpenGate")
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+SetEntityEvent(_Gate, "DEN_OpenGate");
+
+
+//END_REGION
+
+
+//REGION Adventurers Leave Den
+
+IF
+DialogEnded(_Dialog, _)
+AND
+DB_DEN_RaidingParty_AdventurersLeaveDialogs(_Dialog)
+AND
+NOT DB_GlobalFlag((FLAG)DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f) // flagType: Global
+THEN
+PROC_DEN_RaidingParty_AdventurersLeaveDen();
+
+
+PROC
+PROC_DEN_RaidingParty_AdventurersLeaveDen()
+AND
+DB_DEN_RaidingParty_Adventurers(_Adventurer)
+AND
+NOT DB_Defeated(_Adventurer)
+AND
+HasActiveStatus(_Adventurer, "DEN_KNOCKEDOUT", 0)
+THEN
+NOT DB_DEN_RaidingParty_Adventurers(_Adventurer);
+PROC_DEN_LeaveDen(_Adventurer);
+PROC_DEN_RaidingParty_TryStartReactionVoiceBark();
+
+PROC
+PROC_DEN_RaidingParty_TryStartReactionVoiceBark()
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_InRegion(_Player, S_DEN_ConfrontationArea_59d80e7d-78b5-41b2-8b8a-6aa0abcc5982)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_VoicebarkReactionPlayed")
+THEN
+StartVoiceBark((VOICEBARKRESOURCE)DEN_RaidingParty_VB_AdventurerLeaderLeaves_338fb23c-6bc8-318d-147f-6c1be037e88b, _Player);
+//END_REGION
+
+
+//REGION Generic 
+
+//Used to check if any available player is in an area.
+QRY
+QRY_DEN_AnyAvailablePlayerInTrigger((TRIGGER)_Region)
+AND
+DB_Players(_Player)
+AND
+NOT DB_Defeated(_Player)
+AND
+DB_InRegion(_Player, _Region)
+AND
+QRY_SpeakerIsAvailable(_Player)
+THEN
+DB_NOOP(1);
+
+//END_REGION
+
+
+//REGION Commotion sound and voice bark
+
+IF
+EnteredTrigger(_Player, S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a)
+AND
+DB_Players(_Player)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_Event_ApproachingVB")
+THEN
+ObjectTimerLaunch(_Player, "DEN_RaidingParty_Event_ApproachingVB", 3000);
+
+IF
+EnteredTrigger(_Player, S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_CheckOtherPlayersInTrigger(_Player, S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a)
+THEN
+TimerLaunch("DEN_RaidingParty_CommotionPlaySoundTimer", 600);
+
+IF
+TimerFinished("DEN_RaidingParty_CommotionPlaySoundTimer")
+THEN
+PlaySound(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, "SE_Crowd_Commotion");
+
+IF
+LeftTrigger(_Player, S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_TriggerEvents_AnyPlayerInTrigger((TRIGGER)S_DEN_ApproachingGatesVB_211654fb-d641-4d84-a8f6-52b32de8320a)
+THEN
+TimerCancel("DEN_RaidingParty_CommotionPlaySoundTimer");
+PlaySound(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, "SE_Crowd_Commotion_Stop");
+
+
+IF
+ObjectTimerFinished(_Player, "DEN_RaidingParty_Event_ApproachingVB")
+THEN
+StartVoiceBark(VOICEBARKRESOURCEGUID_DEN_RaidingParty_VB_ApproachingGate_119fd3ea-67da-1036-bf6f-794a5bf7b7a5, (CHARACTER)_Player);
+
+
+IF
+DialogActorLeft(DIALOGRESOURCEGUID_DEN_RaidingParty_AdventurerAfterKO_ed1090f6-6c29-0823-196b-d2e798ccf2ca, _, _Player, _)
+AND
+DB_Players((CHARACTER)_Player)
+THEN
+ObjectTimerLaunch(_Player, "DEN_RaidingParty_Event_ConclusionVB", 1500);
+
+
+IF
+ObjectTimerFinished(_Player, "DEN_RaidingParty_Event_ConclusionVB")
+AND
+DB_InRegion((CHARACTER)_Player, S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+AND
+NOT DB_Defeated(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+NOT DB_Defeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_EndVB")
+THEN
+StartVoiceBark(VOICEBARKRESOURCEGUID_DEN_RaidingParty_VB_PeacefulResolution_71ae380c-dca2-8915-b9e4-a65a2297054b, (CHARACTER)_Player);
+
+
+//END_REGION
+
+
+//REGION Leader KO and Waking Up
+
+IF
+StatusApplied((CHARACTER)_NPC, "DEN_KNOCKEDOUT", _, _)
+THEN
+PROC_CharacterDisableAllCrimes(_NPC, 1);
+
+IF
+StatusRemoved((CHARACTER)_NPC, "DEN_KNOCKEDOUT", _, _)
+THEN
+PROC_CharacterEnableAllCrimes(_NPC);
+
+IF
+DialogActorJoined(_, _, _Leader, _)
+AND
+DB_DEN_RaidingParty_LeaderIsKO(_Leader)
+AND
+HasActiveStatus(_Leader, "DEN_KNOCKEDOUT", 1)
+THEN
+RemoveStatus(_Leader, "DEN_KNOCKEDOUT");
+
+IF
+StatusRemoved(_Leader, "DEN_KNOCKEDOUT", _, _)
+AND
+DB_DEN_RaidingParty_LeaderIsKO(_Leader)
+THEN
+NOT DB_DEN_RaidingParty_LeaderIsKO(_Leader);
+
+IF
+FlagSet(DEN_RaidingParty_Event_KnockOutAdventurer_802fa2ca-c3dd-ae55-dc06-2adfadaf9ac0, _, _)
+THEN
+ApplyStatus(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, "DEN_KNOCKEDOUT", -1.0);
+DB_DEN_RaidingParty_LeaderIsKO(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+PROC_RemoveAllDialogEntriesForSpeaker(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_Dialogs(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DIALOGRESOURCEGUID_DEN_RaidingParty_AdventurerAfterKO_ed1090f6-6c29-0823-196b-d2e798ccf2ca);
+
+IF
+FlagSet(DEN_RaidingParty_Event_KnockOutTiefling_8d41adfe-8595-7ba0-fc0c-95ebb61f2fbf, _, _)
+THEN
+ApplyStatus(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_KNOCKEDOUT", -1.0);
+DB_DEN_RaidingParty_LeaderIsKO(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+
+IF
+DialogStarted(DEN_RaidingParty_AdventurerAfterKO_ed1090f6-6c29-0823-196b-d2e798ccf2ca, _)
+THEN
+SetEntityEvent(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, "DEN_RaidingParty_LeaveDen");
+SetFlag(DEN_RaidingParty_Event_AdventurerLeft_892fab5d-cf11-b3c9-43d2-b7d093c9eb5c, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+PROC
+PROC_DEN_RaidingParty_PlayWakeUpAD((CHARACTER)_Leader)
+AND
+DB_DEN_RaidingParty_WakeUpADs(_Leader, _AD)
+AND
+QRY_StartDialog(_AD, _Leader)
+THEN
+DB_NOOP(1);
+
+//END_REGION
+
+//REGION Leaders leave confrontation site if players leave the area or do a long rest OR if Den state changes
+
+PROC
+PROC_LongRest()
+AND
+DB_DEN_RaidingParty_Adventurers(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+DB_GlobalFlag((FLAG)DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd) // flagType: Global
+AND
+NOT DB_GlobalFlag((FLAG)DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f) // flagType: Global
+AND
+NOT DB_Defeated(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ForceEndConfrontation")
+THEN
+NOT DB_DEN_RaidingParty_Adventurers(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+RemoveStatus(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, "DEN_KNOCKEDOUT");
+SetOnStage(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, 0);
+SetEntityEvent(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, "DEN_RaidingParty_LeftDen");
+
+
+IF
+LeftTrigger(_Player, S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+AND
+DB_Players(_Player)
+AND
+DB_GlobalFlag((FLAG)DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd) // flagType: Global
+AND
+NOT DB_GlobalFlag((FLAG)DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f) // flagType: Global
+AND
+NOT QRY_CheckOtherPlayersInTrigger(NULL_00000000-0000-0000-0000-000000000000, S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ForceEndConfrontation")
+AND
+DB_DEN_RaidingParty_LeaderIsKO(_Leader)
+THEN
+RemoveStatus(_Leader, "DEN_KNOCKEDOUT");
+PROC_DEN_RaidingParty_AdventurersLeaveDen();
+
+IF
+DB_InRegion(_Player, S_DEN_Cave_SUB_adecafa4-27c6-4b2f-bf9e-6ffd7c81a766)
+AND
+NOT DB_OnlyOnce("DEN_ConfrontationCleanup")
+AND
+DB_Players(_Player)
+AND
+NOT DB_GlobalFlag(DEN_RaidingParty_Quest_ConfrontationResolved_dc97da68-5ed9-ffe2-7582-2533be0efbcd)
+AND
+NOT QRY_CheckOtherPlayersInTrigger(_Player, S_DEN_ConfrontationArea_59d80e7d-78b5-41b2-8b8a-6aa0abcc5982)
+THEN
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+PROC_DEN_RaidingParty_AdventurersLeaveDen();
+
+//Break up confrontation if Den state is changed.
+PROC
+PROC_State_Changed(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _State)
+THEN
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+//END_REGION
+
+//REGION Battle Horn
+
+//Dirty hack Bert approved and wants to forget we ever did.
+IF
+EntityEvent(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_ZevlorUsedHorn")
+THEN
+RealtimeObjectTimerLaunch(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn", 2600);
+
+IF
+ObjectTimerFinished(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn")
+THEN
+PROC_DEN_BattleHorn_Used(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+ApplyStatus(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "ZEVLOR_JUMP", 6.0, 1);
+
+IF
+UseStarted(_Player,S_DEN_BattleHorn_baf1a4c5-b6f9-48c2-908d-164b967655d5)
+AND
+HasActiveStatus(S_DEN_BattleHorn_baf1a4c5-b6f9-48c2-908d-164b967655d5, "SILENCED", _IsHornSilenced)
+THEN
+PROC_DEN_BattleHorn_Used(_Player, _IsHornSilenced);
+
+PROC
+PROC_DEN_BattleHorn_Used((CHARACTER)_Player, 0)
+AND
+NOT DB_DEN_BattleHorn_UsedBy(_)
+THEN
+DB_DEN_BattleHorn_UsedBy(_Player);
+PROC_DEN_BattleHorn_UsedAndAvailable(_Player);
+
+PROC
+PROC_DEN_BattleHorn_UsedAndAvailable((CHARACTER)_Player)
+THEN
+SetCanInteract(S_DEN_BattleHorn_baf1a4c5-b6f9-48c2-908d-164b967655d5,0);
+PlayEffect(S_DEN_BattleHorn_vfxtrigger_271b6814-45c1-41f1-9c13-096107ff706b,VFX_Script_Wyll_Horn_Cast_01_a5b7b36f-8033-c0cb-4767-801ab6214323,"",1.0);
+TimerLaunch("DEN_BattleHorn_Used",500);
+TimerLaunch("DEN_BattleHorn_Finished",4000);
+
+PROC
+PROC_DEN_BattleHorn_Used((CHARACTER)_Player, 1)
+THEN
+PROC_PlayCantUseItemAD(_Player);
+
+IF
+TimerFinished("DEN_BattleHorn_Used")
+AND
+DB_DEN_BattleHorn_UsedBy(_Player)
+THEN
+IterateCharactersAround(_Player,45.0,"DEN_BattleHorn_Buff","DEN_BattleHorn_Buff_Completion");
+
+IF
+EntityEvent((CHARACTER)_Char,"DEN_BattleHorn_Buff")
+AND
+DB_DEN_BattleHorn_UsedBy((CHARACTER)_Player)
+AND
+IsOnStage(_Char,1)
+AND
+NOT DB_Defeated(_Char)
+AND
+IsEnemy(_Char,_Player,0)
+THEN
+PlayEffect(_Char,VFX_Script_Wyll_Horn_Impact_01_88eb47eb-5bca-cbec-ae9b-5b2273b8af45,"Dummy_BodyFX",0.8);
+ApplyStatus(_Char,"RALLY",30.0,1,_Player);
+
+IF
+TimerFinished("DEN_BattleHorn_Finished")
+AND
+DB_DEN_BattleHorn_UsedBy(_Player)
+THEN
+NOT DB_DEN_BattleHorn_UsedBy(_Player);
+SetCanInteract(S_DEN_BattleHorn_baf1a4c5-b6f9-48c2-908d-164b967655d5,1);
+
+//END_REGION
+
+//REGION Debug
+
+IF
+FlagSet(DEN_RaidingParty_Debug_ResolveConfrontation_cd991e7d-f05f-ddfe-d159-b4d80bf8075d, _Player, _) // flagType: Object
+THEN
+ClearFlag((FLAG)DEN_RaidingParty_Debug_ResolveConfrontation_cd991e7d-f05f-ddfe-d159-b4d80bf8075d, _Player); // flagType: Object
+PROC_DEN_RaidingParty_DebugResolveConfrontation();
+
+IF
+FlagSet(DEN_RaidingParty_Debug_ResolveConfrontation_NotPeaceful_ecf261d5-1733-2a18-8482-b4d7535febc0, _Player, _)	//flagType: Object
+THEN
+ClearFlag(DEN_RaidingParty_Debug_ResolveConfrontation_NotPeaceful_ecf261d5-1733-2a18-8482-b4d7535febc0, _Player, 0);	//flagType: Object
+PROC_DEN_RaidingParty_DebugResolveConfrontationNotPeaceful();
+
+IF
+TextEvent("denraiddone")
+THEN
+PROC_DEN_RaidingParty_DebugKillGoblins();
+PROC_DEN_RaidingParty_DebugResolveConfrontation();
+
+IF
+TextEvent("denraiddonenopeace")
+THEN
+PROC_DEN_RaidingParty_DebugKillGoblins();
+PROC_DEN_RaidingParty_DebugResolveConfrontationNotPeaceful();
+
+PROC
+PROC_DEN_RaidingParty_DebugKillGoblins()
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _, _)
+AND
+NOT DB_Defeated((CHARACTER)_Goblin)
+AND
+IsOnStage(_Goblin, 1)
+THEN
+Die(_Goblin, DEATHTYPE.Physical, 1);
+
+PROC
+PROC_DEN_RaidingParty_DebugResolveConfrontation()
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ForceEndConfrontation")
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+SysClear("DB_DEN_GoblinRaidCombatID", 1);
+SetFlag((FLAG)DEN_RaidingParty_Debug_GoblinRaidOver_94aac9b4-dec7-48c7-a471-975179a28ce5, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+SetFlag(DEN_RaidingParty_State_PeacefulResolution_f4529d52-b459-6545-b4bf-8b2fb2cd6f2f, NULL_00000000-0000-0000-0000-000000000000, 0);
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+
+
+PROC
+PROC_DEN_RaidingParty_DebugResolveConfrontationNotPeaceful()
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ForceEndConfrontation")
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+PROC_DEN_RaidingParty_SkipPleaAtGates();
+SysClear("DB_DEN_GoblinRaidCombatID", 1);
+SetFlag((FLAG)DEN_RaidingParty_Debug_GoblinRaidOver_94aac9b4-dec7-48c7-a471-975179a28ce5, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+PROC_DEN_RaidingParty_AdventurersLeaveDen();
+
+IF
+TextEvent("rpka")
+THEN
+PROC_ForceStopDialog(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+Die(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DEATHTYPE.DoT, NULL_00000000-0000-0000-0000-000000000000, 1, 1);
+
+
+IF
+TextEvent("rpkt")
+THEN
+PROC_ForceStopDialog(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+Die(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, DEATHTYPE.DoT, NULL_00000000-0000-0000-0000-000000000000, 1, 1);
+
+IF
+TextEvent("pleaskip")
+THEN
+PROC_TriggerUnregisterForPlayers(S_DEN_EntranceAreaMain_ee125fea-bd62-4f5c-8fde-04f02a7b6a74);
+PROC_TriggerUnregisterForPlayers(S_DEN_FallbackPleaSphere_b18fcf59-ea21-4f14-8ba2-af2d29b81d2f);
+PROC_TriggerRegisterForPlayers(S_DEN_EntranceAreaDebug_a414d31e-8a59-4ae8-a720-c94ae5312a29);
+
+IF
+EnteredTrigger(_Player, S_DEN_EntranceAreaDebug_a414d31e-8a59-4ae8-a720-c94ae5312a29)
+AND
+DB_Players(_Player)
+THEN
+Die(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, DEATHTYPE.DoT, 1);
+TeleportTo(S_DEN_DeadLover_0126a6b5-3452-47db-a3e5-525b7deca82f, S_DEN_KanonDeathPos_3226b5b1-8e96-428a-8761-9f9f129125e8);
+PROC_DEN_RaidingParty_DebugFight();
+
+PROC
+PROC_DEN_RaidingParty_DebugFight()
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _MovePos, _AppearPos)
+THEN
+TeleportTo(_Goblin, _MovePos, "");
+
+PROC
+PROC_DEN_RaidingParty_DebugFight()
+AND
+DB_DEN_RaidingParty_RaidingGoblins(_Goblin, _, _)
+THEN
+SetFaction(_Goblin, (FACTION)ACT1_DEN_GoblinRaiders_6f5d49b5-1dc8-6226-e625-f0267cdbbbff);
+SetCombatGroupID(_Goblin, "893da9dc-8adb-4cd6-ae5e-231628de205a");
+PROC_EnterCombat(_Goblin, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+
+//END_REGION
+
+//REGION Reflection Dialog after Confrontation
+IF
+DialogActorLeft(DEN_RaidingParty_Confrontation_9f62049b-025f-c424-debf-c4a133a02da9, _, _Player, _)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_ConfrontationResolvedVB")
+THEN
+StartVoiceBark(DEN_RaidingParty_VB_ConfrontationResolved_e5b4679a-b83a-6976-4344-b1c350e4ef8c, _Player);
+
+//END_REGION
+
+//REGION Swap adventurer dialogs after confrontation.
+
+IF
+FlagSet(DEN_AdventurersQuest_State_AtDen_a76436f9-d1c5-11ea-1340-fc7f5c02f87f, S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, _)
+THEN
+PROC_RemoveDialog(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+DB_Dialogs(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c, DEN_AdventurerLeader_46fea64f-e098-2df5-f4ee-825080ef9728);
+
+IF
+FlagSet(DEN_AdventurersQuest_State_AtDen_a76436f9-d1c5-11ea-1340-fc7f5c02f87f, S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, _)
+THEN
+PROC_RemoveDialog(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d);
+DB_Dialogs(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d, DEN_AdventurersQuest_RaidAdventurer_33617ce2-882e-8c82-83da-3c6b0e0b06ef);
+
+//END_REGION
+
+//REGION Goblin captain AD on first turn
+
+IF
+TurnStarted(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d)
+AND
+NOT DB_CantTalk_IgnoreCombat(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d)
+AND
+DB_OnlyOnce("DEN_GoblinRaider_Captain_AD")
+AND
+QRY_OnlyOnce("DEN_GoblinRaider_Captain_AD2")
+AND
+HasActiveStatusWithGroup(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d, "SG_Unconscious", 0)
+THEN
+SetEntityEventReal(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d,"GLO_CombatWait",3.0);
+PROC_TryStartAD((DIALOGRESOURCE)DEN_GoblinRaider_Captain_AD_TakingTurn_Combat_b1c0435d-060e-2623-8531-ce136cc8221e,S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
+
+IF
+TurnStarted(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d)
+AND
+NOT DB_CantTalk_IgnoreCombat(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d)
+AND
+QRY_OnlyOnce("DEN_GoblinRaider_Captain_AD")
+AND
+HasActiveStatusWithGroup(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d, "SG_Unconscious", 0)
+THEN
+SetEntityEventReal(S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d,"GLO_CombatWait",3.0);
+PROC_TryStartAD((DIALOGRESOURCE)DEN_RaidingParty_AD_GoblinCaptain_b60b9208-94d2-6790-d636-b3c6f2fd5274,S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
+
+//END_REGION
+
+//REGION Wyll
+
+IF
+DB_DEN_RaidingParty_WyllGoblins(_Goblin)
+THEN
+SetOnStage(_Goblin, 0);
+
+IF
+TurnStarted(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+AND
+DB_DEN_NPC(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _, _)
+AND
+DB_DEN_GoblinRaidCombatID(_ID)
+AND
+DB_Is_InCombat(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _ID)
+AND
+DB_DEN_RaidingParty_WyllAD(1)
+AND
+QRY_StartDialog_Fixed(DIALOGRESOURCEGUID_DEN_RaidingParty_AD_WyllCharge_f261f885-77fb-7c1a-8415-e8a1cf373149, S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d)
+THEN
+NOT DB_DEN_RaidingParty_WyllAD(1);
+
+IF
+FlagSet(DEN_RaidingParty_Event_WyllEntersFight_95cc86b7-d74b-f176-3375-afcf87aada99, _, _)
+THEN
+PROC_DEN_RaidingParty_WyllEntersFight();
+
+PROC
+PROC_DEN_RaidingParty_WyllEntersFight()
+THEN
+DB_DEN_RaidingParty_WyllAD(1);
+TeleportTo(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, S_DEN_WyllJumpToPos_17d714bb-a0b8-492d-bba5-a673f789a1a4, "");
+
+PROC
+PROC_DEN_RaidingParty_WyllEntersFight()
+AND
+DB_DEN_RaidingParty_WyllGoblins(_Goblin)
+THEN
+PROC_ClearCorpseOwner(_Goblin);
+SetOnStage(_Goblin, 1);
+CreatePuddle(_Goblin, "SurfaceBlood", 3, 15, 12, 12, 1.0);
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"
