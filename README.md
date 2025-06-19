@@ -225,7 +225,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Artificer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Artificer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artificer.png?raw=true)
 
 > A Magical Crafter and an Inventor of Wonders. Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.
 
@@ -243,7 +243,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Alchemist
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Alchemist.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Alchemist.png?raw=true)
 
 > An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away.
 
@@ -265,7 +265,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Armorer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Armorer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Armorer.png?raw=true)
 
 > An Artificer who specializes as an Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Artificer’s magic, unleash potent attacks, and generate a formidable defense.
 
@@ -292,7 +292,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Artillerist
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Artillerist.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artillerist.png?raw=true)
 
 > An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.
 
@@ -320,7 +320,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Battle Smith
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleSmith.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleSmith.png?raw=true)
 
 > A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a Steel Defender, a protective companion of their own creation.
 
@@ -346,7 +346,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Barbarian 
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Barbarian.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Barbarian.png?raw=true)
 
 - Level 1: Rage
   - You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. Take a Bonus Action to extend your Rage.
@@ -364,21 +364,21 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Path of the Berserker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BerserkerPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BerserkerPath.png?raw=true)
 
 - Level 3: Frenzy
   - If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
 
 ### Path of the Wild Heart
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TotemWarriorPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TotemWarriorPath.png?raw=true)
 
 - Level 3: Rage of the Wilds
   - Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the follwing options of your choice.
 
 ### Path of the World Tree
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WorldTreePath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WorldTreePath.png?raw=true)
 
 > Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage. This tree grows among the Outer Planes, connecting them to each other and the Material Plane. These Barbarians draw on the tree’s magic for vitality and as a means of dimensional travel.
 
@@ -395,7 +395,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Path of the Zealot
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ZealotPath.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ZealotPath.png?raw=true)
 
 - Level 3: Divine Fury
   - You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian Level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.
@@ -408,7 +408,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Bard 
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Bard.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Bard.png?raw=true)
 - Level 1: Bardic Inspiration
   - Number of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 5: Font of Inspiration
@@ -418,7 +418,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of Dance
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DanceCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DanceCollege.png?raw=true)
 
 >Bards of the College of Dance know that the Words of Creation can’t be contained within speech or song; the words are uttered by the movements of celestial bodies and flow through the motions of the smallest creatures. These Bards practice a way of being in harmony with the whirling cosmos that emphasizes agility, speed, and grace.
 
@@ -442,7 +442,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 > The College of the Moon, rooted in the ancient druidic circles of the Moonshae Isles, empowers its Bards to chronicle island stories. These Bards use Fey magic and moonwell power to aid allies, protect nature, and create works based on Moonshae myths like fairy pranks, the Beast, and moonwell mysteries.
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/MoonCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/MoonCollege.png?raw=true)
 
 - Level 3: Moonshae Folktales
   - As a Magic action, you can invoke the power of a folktale, imbuing yourself with primal magic until you use this feature again. When you use this feature, choose which of the following folktales you invoke; your choice gives you certain benefits while this magic is active.
@@ -461,7 +461,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of Glamour
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GlamourCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GlamourCollege.png?raw=true)
 
 - Level 3: Beguiling Magic
   - You always have the Charm Person and Mirror Image spells prepared. Additionally, immediately after casting an Enchantment or Illusion spell using a spell slot, you can expend one use of your Bardic Inspiration to force a creature you can see within 60 feet to make a Wisdom saving throw against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.
@@ -470,7 +470,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of Lore
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LoreCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LoreCollege.png?raw=true)
 
 - Level 6: Magical Discoveries
   - You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class’s section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard Level, you can replace one of the spells with another spell that meets these requirements.
@@ -479,7 +479,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of Valor
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ValorCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ValorCollege.png?raw=true)
 
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
@@ -489,7 +489,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of Sword
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SwordsCollege.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SwordsCollege.png?raw=true)
 
 - Level 3: Blade Flourish
   - Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.
@@ -501,7 +501,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Cleric
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Cleric.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cleric.png?raw=true)
 
 - Level 1: Divine Order
   - You have dedicated yourself to one of the following sacred roles of your choice.
@@ -522,7 +522,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Arcana Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArcanaDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcanaDomain.png?raw=true)
 
 >Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.
 >
@@ -547,14 +547,14 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Death Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DeathDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DeathDomain.png?raw=true)
 
 - Level 3: Reaper
   - The same object cannot be selected as an additional target.
 
 ### Knowledge Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/KnowledgeDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/KnowledgeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Command, Sleep
@@ -567,7 +567,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Life Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LifeDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LifeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Bless, Cure Wounds
@@ -584,7 +584,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Light Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/LightDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LightDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Burning Hands, Faerie Fire
@@ -599,7 +599,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Trickery Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickeryDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickeryDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Charm Person, Disguise Self
@@ -616,7 +616,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### War Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WarDomain.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WarDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Guiding Bolt, Shield of Faith
@@ -635,7 +635,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Druid
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Druid.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Druid.png?raw=true)
 
 - Level 1: Primal Order
   - You have dedicated yourself to one of the following sacred roles of your choice.
@@ -658,7 +658,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Circle of the Dream
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfDreams.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDreams.png?raw=true)
 
 > Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids’ guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.
 
@@ -679,7 +679,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Circle of the Land
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheLand.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheLand.png?raw=true)
 
 - Circle of the Land Spells
   - Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid Level and lower prepared.
@@ -718,7 +718,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Circle of the Moon
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheMoon.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheMoon.png?raw=true)
 
 - Circle Spells (Always prepared)
   - Level 3: Starry Wisp, Cure Wounds
@@ -733,7 +733,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Circle of the Sea
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfTheSea.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheSea.png?raw=true)
 
 - Circle Spells (Always prepared)
   - Level 3: Ray of Frost, Fog Cloud, Thunderwave
@@ -753,7 +753,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Circle of the Star
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/CircleOfStars.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfStars.png?raw=true)
 
 - Level 3: Starry Form
   - Dragon
@@ -761,7 +761,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Fighter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fighter.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fighter.png?raw=true)
 
 - Level 1: Second Wind
   - You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Fighter Level 4, you gain 1 additional use of this feature. At Level 10, you gain 4 uses.
@@ -774,14 +774,14 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Battle Master
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BattleMaster.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleMaster.png?raw=true)
 
 - Level 12: Relentless Superiority
   - Once per turn, you regain expended a Superiority Die.
 
 ### Champion
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Champion.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Champion.png?raw=true)
 
 - Level 3: Remarkable Athlete
   - Immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.
@@ -795,7 +795,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### Eldritch Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EldritchKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EldritchKnight.png?raw=true)
 
 Eldritch Knights and Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
 
@@ -808,7 +808,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Psi Warrior
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PsiWarrior.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarrior.png?raw=true)
 
 - Level 3: Psionic Power
   - You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter Level. You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
@@ -834,7 +834,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Purple Dragon Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/PurpleDragonKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PurpleDragonKnight.png?raw=true)
 
 > The Purple Dragon Knights are paragons of valor and leadership who ally themselves with amethyst dragons. These knights strive to protect the innocent and inspire their fellow adventurers to champion the causes of justice and freedom.
 > 
@@ -855,7 +855,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Rune Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/RuneKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/RuneKnight.png?raw=true)
 
 > Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan.
 > 
@@ -892,7 +892,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ## Monk
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Monk.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Monk.png?raw=true)
 
 - Level 1: Bonus Unarmed Strike
   - You can make an Unarmed Strike as a Bonus Action.
@@ -915,7 +915,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Warrior of Mercy
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Mercy.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Mercy.png?raw=true)
 
 - Level 3: Hand of Harm
   - Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Ki-Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
@@ -930,7 +930,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Warrior of Shadow
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadow.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadow.png?raw=true)
 
 - Level 3: Darkness
   - You can expend 1 Ki-Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
@@ -940,7 +940,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Warrior of the Elements
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FourElements.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FourElements.png?raw=true)
 
 - Level 3: Elemental Attunement
   - You can expend 1 Ki Point to imbue yourself with elemental energy. The energy lasts for 10 minutes. You gain the following benefits while this feature is active.
@@ -956,7 +956,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Way of the Kensei
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Kensei.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Kensei.png?raw=true)
 
 >Monks of the Way of the Kensei train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons. A kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a kensei a peerless warrior is but a side effect of intense devotion, practice, and study.
 
@@ -975,7 +975,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ## Paladin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Paladin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Paladin.png?raw=true)
 
 - Level 1: Spell Casting 
 - Level 1: Lay On Hands
@@ -993,7 +993,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of Conquest
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Conquest.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Conquest.png?raw=true)
 
 >The Oath of Conquest calls to paladins who seek glory in battle and the subjugation of their enemies. It isn’t enough for these paladins to establish order. They must crush the forces of chaos. Sometimes called knight tyrants or iron mongers, those who swear this oath gather into grim orders that serve gods or philosophies of war and well-ordered might.
 >
@@ -1012,7 +1012,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of Devotion
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Devotion.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Devotion.png?raw=true)
 
 - Level 3: Holy Rebuke
   - HolyRebuke now applies to both the target and the caster.
@@ -1021,7 +1021,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of the Ancients
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ancients.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ancients.png?raw=true)
 
 - Level 3: Healing Radiance
 - Level 3: Nature’s Wrath
@@ -1031,7 +1031,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of Glory
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Glory.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Glory.png?raw=true)
 
 > Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions, so they’re all ready when destiny calls.
 
@@ -1048,7 +1048,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of the Noble Genies
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/NobleGenies.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NobleGenies.png?raw=true)
 
 > Paladins who take the Oath of the Noble Genies draw their power from the four elemental genie types: dao (earth), djinn (air), efreet (fire), and marids (water). They channel this elemental energy to unleash powerful and dazzling displays of elemental might.
 
@@ -1073,7 +1073,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Oath of Vengeance
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Vengeance.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Vengeance.png?raw=true)
 
 - Level 3: Inquisitors Might
 - Level 3: Vow of Enmity
@@ -1081,7 +1081,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ## Ranger
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Ranger.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ranger.png?raw=true)
 
 - Level 1: Spell Casting
 You can now learn all Ranger spells and prepare them for use. 
@@ -1100,7 +1100,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Fey Wanderer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/FeyWanderer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FeyWanderer.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Charm Person
@@ -1117,7 +1117,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Gloom Stalker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GloomStalker.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GloomStalker.png?raw=true)
 
 - Level 3: Dread Ambusher
   - Ambusher’s Leap
@@ -1133,7 +1133,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Hunter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hunter.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
 
 - Level 3: Hunter’s Prey
   - You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.
@@ -1142,14 +1142,14 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Swarmkeeper
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Swarmkeeper.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Swarmkeeper.png?raw=true)
 
 - Level 3: Gathered Swarm
   - You can replace the swarm you are interacting with after each long rest.
 
 ### Winter Walker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WinterWalker.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WinterWalker.png?raw=true)
 
 > Forged in the howling winds and endless snows of Icewind Dale, Winter Walkers are rangers who have embraced the unforgiving cold and made it their ally. These hunters become one with the tundra, their breath forming frost and their gaze as piercing as a shard of ice. Over time, they take on an otherworldly aspect, embodying the very blizzards they walk through. 
 > 
@@ -1172,7 +1172,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ## Rogue
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Rogue.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Rogue.png?raw=true)
 
 - Level 3: Steady Aim
   - As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven’t moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
@@ -1193,7 +1193,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ### Arcane Trickster
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArcaneTrickster.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcaneTrickster.png?raw=true)
 
 Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
 
@@ -1203,7 +1203,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Assassin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Assassin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Assassin.png?raw=true)
 
 - Level 3: Assassinate
 - Initiative
@@ -1219,7 +1219,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Scion of the Three
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ScionThree.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ScionThree.png?raw=true)
 
 > A Scion of the Three draws power from a group of malevolent gods known as the Dead Three: Bane, deity of tyranny; Bhaal, deity of violence and murder; and Myrkul, deity of death. While some Rogues of this subclass pledge themselves ardently to those three macabre gods, others find themselves thrust on this path by a curse. Either way, a scion’s power manifests as various occult gifts, as well as an uncanny talent for striking and terrifying foes. Scions of the Three are most common in Baldur’s Gate, where the Dead Three have long competed for influence over mortal hearts. Underground cults to Bane, Bhaal, and Myrkul often count Scions of the Three among their most useful agents.
 
@@ -1242,7 +1242,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Soulknife
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Soulknife.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Soulknife.png?raw=true)
 
 >A Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, revealing their full potential only as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power.
 
@@ -1267,7 +1267,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Thief
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Thief.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Thief.png?raw=true)
 
 - Level 3: Fast Hands
   - You gain expertise in Sleight of Hand and have advantage on your Sleight of Hand checks. Additionally, you do not critically fail on skill checks in which you are proficient.
@@ -1283,7 +1283,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Sorcerer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Sorcerer.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Sorcerer.png?raw=true)
 
 - Level 1: Innate Sorcery
   - As a Bonus Action, you can unleash the magic for 1 minute, during which you gain the following benefits:
@@ -1313,7 +1313,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Aberrant Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/AberrantSorcery.png?raw=true) 
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true) 
 
 - Subclass Spells (Always prepared)
   - Level 3: Arms of Hadar
@@ -1333,7 +1333,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Clockwork Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ClockworkSorcery.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ClockworkSorcery.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Protection from Evil and Good
@@ -1350,7 +1350,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Draconic Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DraconicBloodline.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DraconicBloodline.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Chromatic Orb, Command
@@ -1365,7 +1365,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Wildmagic Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WildMagic.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagic.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Magic Missile, Entangle
@@ -1379,7 +1379,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Spellfire Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SpellfireSorcery.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SpellfireSorcery.png?raw=true)
 
 > Your innate power stems from the source of magic itself: the Weave. This connection manifests as a rare ability known as spellfire, and you surge with radiant bursts of this raw magic. Your talent with spellfire allows you to heal allies, sear enemies, and absorb powerful spells.
 
@@ -1405,7 +1405,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Storm Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/StormSorcery.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/StormSorcery.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Thunderwave, Create or Destroy Water
@@ -1417,7 +1417,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Warlock
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Warlock.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Warlock.png?raw=true)
 
 - Level 2: Magical Cunning
   - You regain expended a Pact Magic spell slots. Once you use this feature, you can’t do so again until you finish a Long Rest.
@@ -1467,7 +1467,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Archfey Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Archfey.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Archfey.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Faerie Fire, Sleep
@@ -1485,7 +1485,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Celestial Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Celestial.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Celestial.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Cure Wounds, Guiding Bolt, Light, Sacred Flame
@@ -1502,7 +1502,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Fiend Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Fiend.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fiend.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Burning Hands, Command
@@ -1515,7 +1515,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Great Old One Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/GreatOldOne.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreatOldOne.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Tasha’s Hideous Laughter
@@ -1541,28 +1541,28 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   
 ## Wizard
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Wizard.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
 
 - Level 12: Spell Mastery
   - You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
 
 ### Divination School
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/DivinationSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
 
 - Level 6: Expert Divination
   - Casting Divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a Divination spell using a level 2+ spell slot, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can’t be higher than level 5.
 
 ### Evocation School
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/EvocationSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EvocationSchool.png?raw=true)
 
 - Level 3: Potent Cantrip
 - Level 6: Sculpt Spells
 
 ### Illusion School
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/IllusionSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/IllusionSchool.png?raw=true)
 
 - Level 3: Improved Illusions
   - You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
@@ -1571,7 +1571,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Bladesinging School
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/BladesingingSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
 
 - Level 3: Bladesong
   - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
@@ -1586,7 +1586,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## [Gunslinger](https://www.dndbeyond.com/sources/dnd/tgc/the-gunslinger-class-valdas-spire-of-secrets)
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Gunslinger.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Gunslinger.png?raw=true)
 
 > Risk is in a Gunslinger’s blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms. Gunslingers are infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck to survive.
 
@@ -1617,7 +1617,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Deadeye
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Deadeye.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Deadeye.png?raw=true)
 
 > A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
 
@@ -1632,7 +1632,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### High Roller
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/HighRoller.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HighRoller.png?raw=true)
 
 > Fortune is a fickle thing—unless you’re a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?
 
@@ -1647,7 +1647,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Secert Agent
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SecretAgent.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SecretAgent.png?raw=true)
 
 > Knowledge is power. The best way to defeat your enemies is by stealing what they know and replacing it with misinformation. To that end, you have been trained in the ways of covert warfare, giving you a broad range of abilities to complement your fearsome gunnery skills.
 
@@ -1662,7 +1662,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Spellslinger
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Spellslinger.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Spellslinger.png?raw=true)
 
 > Magic and guns aren’t so different—arcane power is like gunpowder, a spell is like a bullet, and you are like a gun, directing your spells with precision at unfortunate targets. Spellslingers mix the disciplines of gunplay and spellcasting, sometimes loading arcane charges with your shots and firing bullets enhanced with lighting, frost, or flame.
 
@@ -1677,7 +1677,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Trick Shot
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/TrickShot.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickShot.png?raw=true)
 
 > Accuracy means different things to different people. For you, true accuracy isn’t necessarily in hitting a target on the first shot, but might include hitting the mark after the bullet bounces around a dozen times. Your attacks are just as dangerous if they miss, or even after hitting their mark, as others’ are while they’re still in the air.
 
@@ -1694,7 +1694,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### White Hat
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/WhiteHat.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WhiteHat.png?raw=true)
 
 > Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what’s right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don’t often oblige.
 
@@ -1709,7 +1709,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## [Illrigger](https://www.dndbeyond.com/sources/dnd/tir/the-illrigger-revised#TheIllrigger)
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Illrigger.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Illrigger.png?raw=true)
 
 >The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.
 >
@@ -1780,7 +1780,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Architect of Ruin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/ArchitectsOfRuin.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArchitectsOfRuin.png?raw=true)
 
 >Architects of Ruin are cool and calculating arcane knights who serve Asmodeus, deploying spells, steel, and subterfuge to win at any cost.
 >
@@ -1805,7 +1805,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Hellspeaker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Hellspeaker.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hellspeaker.png?raw=true)
 
 >The charismatic and manipulative Hellspeakers serve Moloch as they slip about the battlefield, coercing enemies into becoming unwitting allies.
 >
@@ -1833,7 +1833,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Painkiller
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Painkiller.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Painkiller.png?raw=true)
 
 >The heavily armored death troopers of Hell, Painkillers serve Dispater, leading from the front of every major infernal battle.
 >
@@ -1859,7 +1859,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Sanguine Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/SanguineKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineKnight.png?raw=true)
 
 >The blood-knights of Hell, Sanguine Knights serve Sutekh, Lord of Blood. Their sorceries drain their enemies’ life force, pouring this stolen vitality into infernal rituals to turn the tide of battle.
 >
@@ -1883,7 +1883,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Shadowmaster
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons%20300/hotbar%20140/Shadowmaster.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadowmaster.png?raw=true)
 
 >Belial rules Gehennom, the City of Darkness. He strives to rule Hell through poison, torture, and assassination. His illriggers strike from the shadows or use deception to earn high-ranking positions close to powerful rulers. Many Shadowmasters run networks of spies and assassins who have no idea of the infernal provenance of their leader.
 >
@@ -2181,19 +2181,19 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Bard, Sorcerer, Wizard
 
 ### [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_GreenFlameBlade.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_GreenFlameBlade.png?raw=true)
 - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.
 - This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
 - Available For: Sorcerer, Warlock, Wizard
 
 ### [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_Hellfire.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_Hellfire.png?raw=true)
 - You create an eruption of smoldering hellfire around a creature you can see within range. The target must succeed on a Charisma saving throw or take 1d4 fire damage plus 1d4 necrotic damage.
 - ***At Higher Levels***. Both of the spell’s damage types increase by 1d4 when you reach 5th level (2d4 each), 11th level (3d4 each), and 17th level (4d4 each).
 - Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
 
 ### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_LightningLure.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_LightningLure.png?raw=true)
 - You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 - Available For: Sorcerer, Warlock, Wizard
@@ -2233,7 +2233,7 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Druid
 
 ### [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_SorcerousBurst.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_SorcerousBurst.png?raw=true)
 - You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
 - If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
@@ -2243,7 +2243,7 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Artificer, Cleric, Druid
 
 ### [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StarryWisp.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_StarryWisp.png?raw=true)
 - You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
 - ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
 - Available For: Bard, Druid
@@ -2259,7 +2259,7 @@ Appropriate spells have been added to the spell list for each class.
 - ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach Levels 5 (1d6), 10 (2d6), and 17 (3d6).
 
 ### [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_VengefulBlade.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_VengefulBlade.png?raw=true)
 - You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes 1d8 necrotic damage and the spell ends.
 - This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).
 - Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
@@ -2267,7 +2267,7 @@ Appropriate spells have been added to the spell list for each class.
 ### [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
 ### [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WordofRadiance.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_WordofRadiance.png?raw=true)
 - Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.
 - ***Cantrip Upgrade***. The damage increases by 1d6 when you reach Levels 5 (2d6), 11 (3d6), and 17 (4d6).
 - Available For: Cleric
@@ -2406,7 +2406,7 @@ Appropriate spells have been added to the spell list for each class.
 - On a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.
 
 ### [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_BindingIce.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_BindingIce.png?raw=true)
 - A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 3d8 cold damage and becomes hindered by ice formations for 10 turns, or until it succeeds on another saving throw, or a nearby creature uses an action to break the ice. Taking fire damage also ends the condition. A creature hindered by ice has its speed reduced to 0. On a successful save, a creature takes half damage and is not hindered by ice.
 - ***At Higher Levels***. When you cast this spell using a spell slot of 3rd level or higher, increase the cold damage by 1d8 for each slot level above 2nd.
 - Available For: Sorcerer, Wizard
@@ -2464,7 +2464,7 @@ Appropriate spells have been added to the spell list for each class.
 - School: Abjuration 
 - 2d4 + spellcasting ability modifier
 ### [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Divination_MindSpike.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Divination_MindSpike.png?raw=true)
 - You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking 3d8 Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target’s location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can’t become hidden from you, and if it has the Invisible condition, it gains no benefit from that condition against you.
 - ***Using a Higher-Level Spell Slot***. The damage increases by 1d8 for each spell slot level above 2.
 - Available For: Sorcerer, Warlock, Wizard
@@ -2525,7 +2525,7 @@ Appropriate spells have been added to the spell list for each class.
 - Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.
 
 ### [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_StormSphere.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_StormSphere.png?raw=true)
 - A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.
 - Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.
 - Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
@@ -2558,23 +2558,23 @@ Appropriate spells have been added to the spell list for each class.
 - 5d8 + spellcasting ability modifier
 
 ### [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SteelWindStrike.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Conjuration_SteelWindStrike.png?raw=true)
 - You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
 - You then teleport to an unoccupied space you can see within 5 feet of one of the targets.
 - Available For: Ranger, Wizard, War Domain
 
 ### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Conjuration_SummonDragon.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Conjuration_SummonDragon.png?raw=true)
 - Available For: Wizard, Draconic Sorcery
 
 ### [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Enchantment_SynapticStatic.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_SynapticStatic.png?raw=true)
 - You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.
 - On a failed save, a target also has muddled thoughts for 3 turns. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration.
 - Available For: Bard, Sorcerer, Warlock, Wizard, Knowledge Domain
 
 ### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Evocation_WallofForce.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_WallofForce.png?raw=true)
 - An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (you choose which side).
 - Nothing can physically pass through the wall.
 - Available For: Wizard, Oath of Redemption, Clockwork Sorcery
@@ -2594,7 +2594,7 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Sorcerer, Wizard
 
 ### [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/SkillIconsBG%2064/Spell_Transmutation_TensersTransformation.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Transmutation_TensersTransformation.png?raw=true)
 - You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can’t cast spells, and you gain the following benefits:
   - You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.
   - You have advantage on attack rolls that you make with simple and martial weapons.
