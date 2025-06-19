@@ -1468,7 +1468,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="36244b88-bb2f-477f-adbb-e79c930953f3" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ProtectiveField" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-LevelMapValue(PsionicPower)-IntelligenceModifier)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(PsionicPower)+context.Target.IntelligenceModifier));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionicPower:1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf95a3fd7g238dg4f5fgff02g187fb243aa92" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac9d3bfeg89eagc487ge252g23b4271f96aa" version="2" />
@@ -1492,6 +1492,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="36244b88-bb2f-477f-adbb-e79c930953f3" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-2);AdjustRoll(-1d6);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
