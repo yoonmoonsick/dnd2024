@@ -1181,7 +1181,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2deb7a9e-be40-405b-8282-1ae0a799a708" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7fd575c5g3a3ag46a8g9a40gcddf1cd2b044" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0346a927g669cg3bfcg1e97g20644382b422" version="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition);Ability(Dexterity,1,20)" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_WEAPON,100,1)" />
@@ -1195,10 +1194,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="Sharpshooter_Distance" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="eaa4b321-95f0-4029-a08b-9474a2ff05b1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h221b20d9g5e68g98c2g627bga56b2a43b503" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('YOONMOONSICK',context.Source)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YOONMOONSICK,100,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Dexterity,1,20);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1306,7 +1305,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="MageSlayer_Advantage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a459b317-5de5-4ca5-bd35-01ecca637a1a" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07fbe14dgae67g5cc5gba50g337abca54051" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(InMeleeRange() and IsSpell()):Advantage(AllSavingThrows);UnlockInterrupt(Interrupt_MageSlayer_SavingThrow);ActionResource(Interrupt_MageSlayer,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MageSlayer_SavingThrow);ActionResource(Interrupt_MageSlayer,1,0);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b0e23698-185d-488a-8cc4-cdb0d687ea0d" />
+        <field name="Name" type="NameTableFieldDefinition" value="MageSlayer_BreakConcentration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d017b291-8c02-47cf-8d6d-01c85236670f" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and IsConcentrating(context.Target);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1335,6 +1343,7 @@
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RANGED_ALIKE_MELEE_SPELL)" />
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLowGroundPenalty(RangedSpellAttack);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1344,7 +1353,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="61b92c36-fa31-4cea-b8fa-f927f8344b19" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd7ac736fg6e54g4383gb286g3a7b3014617a" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85846355g2916g44b3g9067g1e089037591f" version="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value=";" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3695a8a8g1a8ag792cg740agb3e646ec7868" version="6" />
       </fields>
     </stat_object>
