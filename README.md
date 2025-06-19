@@ -2412,6 +2412,8 @@ Appropriate spells have been added to the spell list for each class.
 - Available For: Sorcerer, Wizard
 
 ### [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_MindWhip.png?raw=true)
+
 - Available For: Sorcerer, Wizard
 
 ### [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
@@ -2514,6 +2516,8 @@ Appropriate spells have been added to the spell list for each class.
 - The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
 
 ### [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_PsychicLance.png?raw=true)
+
 - Available For: Bard, Sorcerer, Warlock, Wizard
 
 ### [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
@@ -2543,6 +2547,7 @@ Appropriate spells have been added to the spell list for each class.
 - Power Level 6: Steel Watcher
 
 ### [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_VitriolicSphere.png?raw=true)
 
 ## Level 5 spells
 ### Banishing Smite 
