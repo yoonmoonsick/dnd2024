@@ -1,0 +1,49 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UsingSpellOnTarget((CHARACTER)_Player, (CHARACTER)_Steed, "Target_PurpleDragonCompanion_Mount",_,_,_)
+THEN
+DB_DnD2024_PurpleDragonCompanion(_Steed, _Player);
+SetOnStage(_Steed, 0);
+RemoveStatus(_Player, "DRAGON_OWNER");
+
+IF
+CastSpell((CHARACTER)_Player, "Target_PurpleDragonCompanion_Dismount",_,_,_)
+AND
+DB_DnD2024_PurpleDragonCompanion(_Steed, _Player)
+THEN
+SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "MOUNTED_DRAGON");
+RemoveStatus(_Player, "MOUNTING_KNIGHT");
+ApplyStatus(_Player, "DRAGON_OWNER", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+HasActiveStatus(_Player, "DRAGON_OWNER", 1)
+AND
+DB_DnD2024_PurpleDragonCompanion((CHARACTER)_Steed, (CHARACTER)_Player)
+THEN
+SetOnStage(_Steed, 0);
+RemoveStatus(_Player, "DRAGON_OWNER");
+ApplyStatus(_Player, "MOUNTING_KNIGHT", -1.0, 1);
+
+IF
+CombatEnded(_CombatID)
+AND
+DB_Players(_Player)
+AND
+DB_DnD2024_PurpleDragonCompanion(_Steed, _Player)
+THEN
+SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "MOUNTED_DRAGON");
+RemoveStatus(_Player, "MOUNTING_KNIGHT");
+ApplyStatus(_Player, "DRAGON_OWNER", -1.0, 1);
+EXITSECTION
+
+ENDEXITSECTION
