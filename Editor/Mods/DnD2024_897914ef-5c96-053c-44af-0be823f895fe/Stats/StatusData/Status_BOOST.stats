@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6494,6 +6495,32 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12eb435f-824d-4391-a210-2b3a9a3a610a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRAGON_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01cca3ba-ab07-4fe3-8909-31620a81a10d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PurpleDragonCompanion_Mount);UnlockSpellVariant(SpellId('Target_PurpleDragonCompanion_Mount'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71c3228a-6778-47b0-a57c-e21d44eedcd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOUNTED_DRAGON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d57102e2-4de4-4fb4-866d-82e891971b7d" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SummonDragon" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3667023d-bee6-4227-bdae-9655ee163289" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOUNTING_KNIGHT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97fee248-23a6-46f4-b4e0-eae0d1843645" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e09a3c1g3b61g4a4ag92ceg068ea103e647" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SummonDragon" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,6,0);UnlockSpell(Target_PurpleDragonCompanion_Dismount);UnlockSpell(Projectile_Fly_Temp);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="93628cb7-a924-4d1c-8e1e-c82dbd22c600" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_SURGE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23d20fc5g3de7g3667g55c9g7166d51f0458" version="1" />
@@ -6778,7 +6805,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cd13fd8c-690d-4ce0-b18a-6defdf567519" />
         <field name="Name" type="NameTableFieldDefinition" value="STEED_UNDEAD_HOUND" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6c166eb1-924e-4e59-a7b9-ea03b268cdf4" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd096bc49g6f05gc8abg4acfg2fd81e53fc04" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd096bc49g6f05gc8abg4acfg2fd81e53fc04" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="15;1;1;Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_AspectOfTheBeast_Stallion" />
         <field name="StackId" type="StringTableFieldDefinition" value="STEED" />
@@ -6875,10 +6902,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01cca3ba-ab07-4fe3-8909-31620a81a10d" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEED_OWNER" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEED_OWNER" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FindSteed_Mount);UnlockSpellVariant(SpellId('Target_FindSteed_Mount'),ModifyIconGlow());" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d57102e2-4de4-4fb4-866d-82e891971b7d" />
         <field name="Name" type="NameTableFieldDefinition" value="MOUNTED_STEED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cd13fd8c-690d-4ce0-b18a-6defdf567519" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />

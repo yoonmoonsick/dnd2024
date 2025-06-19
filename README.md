@@ -846,6 +846,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.
 - Level 3: Purple Dragon Companion
   - You are bonded with an amethyst dragon hatchling that serves as your purple dragon companion and uses the Purple Dragon Companion stat block. The purple dragon is Friendly to you and your allies and obeys your commands.
+- Level 7: Dragon Knight
+  - Your Purple Dragon Companion grows mightier, and you can mount your Purple Dragon Companion to fly.
 - Level 10: Rallying Surge
   - When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
 - Level 12: Bulwark
