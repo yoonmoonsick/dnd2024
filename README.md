@@ -2131,28 +2131,36 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 # Items
 
+- Similar to other changes, the effects of equipment items have been adjusted.
+- Fixed known bugs related to certain equipment items.
+- Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
+
 ## Firearms
 - Weapons that have the Firearm property don’t add your ability modifier to damage rolls.
 - [Pistol](https://www.dndbeyond.com/equipment/42-pistol)
 - [Musket](https://www.dndbeyond.com/equipment/43-musket)
 
 ## Changed Items
-
-- Similar to other changes, the effects of equipment items have been adjusted.
-- Fixed known bugs related to certain equipment items.
 - [Amulet of Health](https://www.dndbeyond.com/magic-items/4568-amulet-of-health)
 - [Bracers of Archery](https://www.dndbeyond.com/magic-items/4593-bracers-of-archery)
+- [Gloves of Thievery](https://www.dndbeyond.com/magic-items/5352-gloves-of-thievery)
 - [Headband of Intellect](https://www.dndbeyond.com/magic-items/4652-headband-of-intellect)
 
 ## New Items
-
-- Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
+- [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
+  - It can be obtained by killing the ***Stonemason Kith*** in Grymforge.
 - [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
   - It can be obtained by killing the ***Death Shepherd*** on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from ***Vicar Humbletoes***.
+- [Cape of the Mountebank](https://www.dndbeyond.com/magic-items/9228376-cape-of-the-mountebank)
+  - It can be obtained by killing the ***Dhourn*** in Underdark.
+- [Cloak of Arachnida](https://www.dndbeyond.com/magic-items/4604-cloak-of-arachnida)
+  - It can be obtained by killing a ***Ettercap*** in Whispering Depths.
 - [Cloak of Invisibility](https://www.dndbeyond.com/magic-items/9059006-cloak-of-invisibility)
   - It can be obtained by killing the ***Duergar Corpse Disposer*** in Grymforge.
+- [Efreeti Chain](https://www.dndbeyond.com/magic-items/9228530-efreeti-chain)
+  - It can be obtained by killing the ***Animated Armour*** in the Ancient Forge.
 - [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow)
   - It can be obtained by killing the ***Merregon Legionnaire*** in Grymforge.
 - [Executioner's Handaxe](https://www.dndbeyond.com/magic-items/9228603-executioners-axe)
@@ -2161,6 +2169,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be obtained by killing ***Zarys*** in Zhentarim Basement.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
   - It can be obtained by killing the ***Guardian of Faith*** in Crèche Y'llek.
+- [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
+  - It can be obtained by killing the ***Wood Woad*** in the Decrepit Sanctuary.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
   - It can be purchased from ***A'jak'nir Jeera***.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)

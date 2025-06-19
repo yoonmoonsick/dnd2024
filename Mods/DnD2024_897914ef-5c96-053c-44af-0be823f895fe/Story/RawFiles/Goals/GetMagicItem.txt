@@ -3,6 +3,16 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Axe of the Dwarvish Lords
+IF
+KilledBy((CHARACTER)S_UND_DuergarRebelMason_01_d09aecce-fad1-4aa8-9c40-c370a0ac8835,_Killer,_,_)
+AND
+GetPosition(S_UND_DuergarRebelMason_01_d09aecce-fad1-4aa8-9c40-c370a0ac8835,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_AxeOfTheDwarvishLords_9c495d7e-1816-40fb-895e-5d35c1949b01,_X,_Y,_Z,0,0,"",_Drop)
+THEN
+RequestPing(_X,_Y,_Z,_Drop,_Killer);
+
 // BlackRazor
 IF
 KilledBy((CHARACTER)S_CRE_CultistsUndead_GiantSkeleton_000_09f52656-f262-48a2-bdbb-949264077dc4,_Killer,_,_)
@@ -16,6 +26,26 @@ THEN
 SetFlag((FLAG)BlackRazor_Optained_66cea69b-395e-4a3b-a1b1-f4f7cf279cd6);
 RequestPing(_X,_Y,_Z,_Blackrazor,_Killer);
 
+// Cape of the Mountebank
+IF
+KilledBy((CHARACTER)S_UND_PetrifiedDrow_Wizard1f86d2de-db96-4662-a360-6ba5ad902fd7,_Killer,_,_)
+AND
+GetPosition(S_UND_PetrifiedDrow_Wizard1f86d2de-db96-4662-a360-6ba5ad902fd7,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_CapeOfTheMountebank_ceea0b5a-8618-4dad-a259-b70f3692eec5,_X,_Y,_Z,0,0,"",_Drop)
+THEN
+RequestPing(_X,_Y,_Z,_Drop,_Killer);
+
+// Cloak of Arachnida
+IF
+KilledBy((CHARACTER)S_FOR_Bottomless_Ettercap_01_1c167d87-048b-40ac-9117-c87d5a2471fd,_Killer,_,_)
+AND
+GetPosition(S_FOR_Bottomless_Ettercap_01_1c167d87-048b-40ac-9117-c87d5a2471fd,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_CloakOfArachnida_16d89bc9-f383-411a-b016-7652651e8b2e,_X,_Y,_Z,0,0,"",_Drop)
+THEN
+RequestPing(_X,_Y,_Z,_Drop,_Killer);
+
 // Cloak of Invisibility
 IF
 KilledBy((CHARACTER)S_UND_CorpseDisposer_Leader_5df19256-efcc-44c5-8fba-0add58492ccf,_Killer,_,_)
@@ -28,6 +58,16 @@ CreateAt((ITEMROOT)YMS_MagicItem_CloakOfInvisibility_fb0dbe2d-aa9c-4b19-a8a3-388
 THEN
 SetFlag((FLAG)CloakOfInvisibility_Obtained_06db3697-b29d-47c7-bb23-3eb59b50243e);
 RequestPing(_X,_Y,_Z,_CloakOfInvisibility,_Killer);
+
+// Efreeti Chain
+IF
+KilledBy((CHARACTER)S_UND_KethericCity_AnimatedArmor_001_11172575-a7e4-43b1-85a3-162a99a7e10b,_Killer,_,_)
+AND
+GetPosition(S_UND_KethericCity_AnimatedArmor_001_11172575-a7e4-43b1-85a3-162a99a7e10b,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_EfreetiChain_c79d78b1-b1b0-4de7-8dbb-9a7e67ba90c2,_X,_Y,_Z,0,0,"",_Drop)
+THEN
+RequestPing(_X,_Y,_Z,_Drop,_Killer);
 
 // Energy Bow
 IF
@@ -59,8 +99,6 @@ CreateAt((ITEMROOT)YMS_MagicItem_FrostBrand_c9eabd8b-238f-481d-8de5-9e4029b366d4
 THEN
 RequestPing(_X,_Y,_Z,_FrostBrand,_Killer);
 
-
-
 // Holy Avenger
 IF
 KilledBy((CHARACTER)S_CRE_GuardianOfFaith_5144e2e8-fbd7-41b3-a6fb-f4cf5759cb95,_Killer,_,_)
@@ -73,6 +111,16 @@ CreateAt((ITEMROOT)WPN_HUM_Longsword_HolyAvenger_4cbfe982-bbc2-4848-aea7-231e74b
 THEN
 SetFlag((FLAG)HolyAvenger_Obtained_2ea96f3b-3b9d-49de-a0c3-66bcfc5eef28);
 RequestPing(_X,_Y,_Z,_HolyAvenger,_Killer);
+
+// Nature's Mantle
+IF
+KilledBy((CHARACTER)S_HAG_WoodWoad_001_9bfff102-7858-47ad-a54d-ad7abae921f1,_Killer,_,_)
+AND
+GetPosition(S_HAG_WoodWoad_001_9bfff102-7858-47ad-a54d-ad7abae921f1,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_NaturesMantle_114fbccb-8b14-436b-bdde-9ff418566a93,_X,_Y,_Z,0,0,"",_Drop)
+THEN
+RequestPing(_X,_Y,_Z,_Drop,_Killer);
 
 // Thunderous Greatclub
 IF
