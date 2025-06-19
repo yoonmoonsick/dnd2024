@@ -2014,66 +2014,42 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 # Feat 
 
-## General: Changed
-- Alert
-  - When you roll Initiative, you can add your Proficiency Bonus to the roll.
-- Athlete
-  - Once per turn, by expending 2 meters of your movement speed, you can jump up to your maximum jump distance.
-- Charger 
-  - Improved Dash. When you take the Dash Action, your Speed increases by 10 feet for that action.
-  - Charge Attack. Choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.
-- Crossbow Expert 
-  - You ignore the Loading property of crossbows, shoot without disadvantage in melee, and add your ability modifier to the damage of a Hand crossbow's off-hand attack.
-- Defensive Duelist 
-  - Parry. If you are holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.
-- Dual Wielder
-  - You can deliver additional Offhand attack for free once per turn.
-- Durable
-  - As a Bonus Action, you can regain 1d4 + your Constitution Modifier of Hit Points.
-- Crusher (Homebrew)
-  - Your bludgeoning damage ignores resistance. When you deal bludgeoning damage to a creature, it must succeed on a Strength saving throw or be Dazed until the end of its next turn.
-- Great Weapon Master  
-  - When attacking with a Melee or Ranged weapon you are Proficient with and are wielding in both hands, their damage increases by your Proficiency Bonus.
-- Heavy Armor Master 
-  - Incoming damage from Piercing, Bludgeoning, Slashing attacks decreases by your Proficiency Bonus while you're wearing heavy armour.
-- Lightly Armored
-  - Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
-  - Armor Training. You gain training with Light armor and Shields.
-- Mage Slayer 
-  - If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest. ,
-- Magic Initiate
-  - Learn 2 Cantrips and a Level 1 Spell. You can cast the Level 1 Spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
-- Metamagic Adept
-  - You learn two Metamagic options of your choice from the sorcerer class.
-  - You gain 2 sorcery points to spend on Metamagic.
-- Mobile 
-  - Agile Movement. Opportunity Attacks have Disadvantage against you.
-- Performer
-  - As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.
-- Polearm Master
-  - Ability Score Increase. Increase your Dexterity or Strength score by 1, to a maximum of 20.
-- Savage Attacker
-  - Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.
-- Sharpshooter
-  - Firing in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.      
-  - Long Shots. Increases the range of actions with Ranged weapons by 1.5 times.
-- Shield Master
-  - Shield Bash. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it’s equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
-  - Interpose Shield. If you’re subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.
-- Spell Sniper 
-  - Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells. Increase the range of spells make an attack roll by 50%.
-- Tavern Brawler
-  - Normal unarmed strikes deal additional 1d4 damage (excluding features like a monk's), allow rerolling 1s on damage dice, and can push a target 5 feet once per turn.
-- War Caster 
-  - Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a cantrip at the creature, rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.    
-- Weapon Master
-  - You gain proficiency with Martial Weapons. And get Weapon Masteries.
+## Origin Feats
+- [Alert](https://www.dndbeyond.com/feats/1789101-alert)
+- [Healer](https://www.dndbeyond.com/feats/1789152-healer)
+- [Lucky](https://www.dndbeyond.com/feats/1789160-lucky)
+- [Magic Initiate](https://www.dndbeyond.com/feats/1789162-magic-initiate)
+- [Performer](https://www.dndbeyond.com/feats/1789172-musician)
+- [Savage Attacker](https://www.dndbeyond.com/feats/1789183-savage-attacker)
+- [Skilled](https://www.dndbeyond.com/feats/1789189-skilled)
+- [Tavern Brawler](https://www.dndbeyond.com/feats/1789202-tavern-brawler)
+- [Tough](https://www.dndbeyond.com/feats/1789206-tough)
 
-## General: New
+## General Feats (Changed)
+- [Athlete](https://www.dndbeyond.com/feats/1789104-athlete)
+- [Charger](https://www.dndbeyond.com/feats/1789121-charger) 
+- [Crossbow Expert](https://www.dndbeyond.com/feats/1789126-crossbow-expert)
+- [Defensive Duelist](https://www.dndbeyond.com/feats/1789129-defensive-duelist)
+- [Dual Wielder](https://www.dndbeyond.com/feats/1789130-dual-wielder)
+- [Durable](https://www.dndbeyond.com/feats/1789132-durable)
+- [Great Weapon Master](https://www.dndbeyond.com/feats/1789149-great-weapon-master)
+- [Heavy Armor Master](https://www.dndbeyond.com/feats/1789154-heavy-armor-master)
+- [Lightly Armored](https://www.dndbeyond.com/feats/1789159-lightly-armored)
+- [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
+- [Mobile](https://www.dndbeyond.com/feats/1789200-speedy) 
+- [Polearm Master](https://www.dndbeyond.com/feats/1789177-polearm-master)
+- [Sharpshooter](https://www.dndbeyond.com/feats/1789187-sharpshooter)
+- [Shield Master](https://www.dndbeyond.com/feats/1789188-shield-master)
+- [Spell Sniper](https://www.dndbeyond.com/feats/1789201-spell-sniper)
+- [War Caster](https://www.dndbeyond.com/feats/1789209-war-caster)
+- [Weapon Master](https://www.dndbeyond.com/feats/1789211-weapon-master)
+
+## General Feats (New)
 - [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
 - [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
 - [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
 - [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
+- [Crusher](https://www.dndbeyond.com/feats/1789127-crusher) (Homebrew)
 - [Deadly Archery](https://www.dndbeyond.com/feats/1872970-deadly-archery)
 - [Dragon Fear](https://www.dndbeyond.com/feats/82-dragon-fear)
 - [Dragon Hide](https://www.dndbeyond.com/feats/84-dragon-hide)
@@ -2086,48 +2062,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Gift of the Chromatic Dragon](https://www.dndbeyond.com/feats/766446-gift-of-the-chromatic-dragon)
 - [Gift of the Gem Dragon](https://www.dndbeyond.com/feats/766450-gift-of-the-gem-dragon)
 - [Gift of the Metallic Dragon](https://www.dndbeyond.com/feats/766454-gift-of-the-metallic-dragon)
-- Healer
-  - Learn Battle Medic Action that heals a creature 1d8 + Proficiency Bonus. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.
-- Piercer (Homebrew)
-  - Your piercing damage ignores resistance. When you deal piercing damage to a creature, it must succeed on a Constitution saving throw or be suffering from Gaping Wounds until the end of its next turn.
-- Poisoner
-  - Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
-  - Brew Poison. You can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. When a creature takes poison damage, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn.
-- Skill Expert 
-  - Skill Proficiency. You gain proficiency in one skill of your choice.
-  - Expertise. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.
-- Skulker 
-  - Blindsight. You have Blindsight with a range of 10 feet.
-  - Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
-  - Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
-- Slasher (Homebrew)
-  - Your slashing damage ignores resistance. When you deal slashing damage to a creature, it must succeed on a Constitution saving throw or be Bleeding until the end of its next turn.
-
+- [Metamagic Adept](https://www.dndbeyond.com/feats/452833-metamagic-adept)
+- [Piercer](https://www.dndbeyond.com/feats/1789175-piercer) (Homebrew)
+- [Poisoner](https://www.dndbeyond.com/feats/1878699-poisoner)
+- [Skill Expert](https://www.dndbeyond.com/feats/1789196-skill-expert)
+- [Skulker](https://www.dndbeyond.com/feats/1789197-skulker) 
+- [Slasher](https://www.dndbeyond.com/feats/1789198-slasher) (Homebrew)
 
 ## Fighting Styles 
-- Great Weapon Fighting
-  - When you roll damage for an attack you make with a Melee weapon that you are holding with two hands, you can treat any 1 or 2 on a damage die as a 3. The weapon must have the Two-Handed or Versatile property to gain this benefit.
-- Thrown Weapon Fighting
-  - When you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.
-  - Reduces the penalty from Long Range Throw.
-- Blind Fighting
-  - You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
-- Interception
-  - When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10. You must be wielding a shield or a weapon to use this reaction.
-- Unarmed Fighting
-  - Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.
-- Tunnel Fighter
-  - As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.
-- Close Quarters Shooter
-  - When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. You have a +1 bonus to attack rolls on ranged attacks.
-- Mariner
-  - As long as you are not wearing heavy armor or using a shield, your movement speed increases by 10 feet, and you gain a +1 bonus to armor class.
-- Superior Technique (Fighter)
-  - Learn a maneuver from the Battle Master Fighter subclass and receive 1 (additional) Superiority Die.
-- Druidic Warrior (Ranger)
-  - You learn Guidance and one Druid cantrips of your choice.
-- Blessed Warrior (Paladin)
-  - You learn Guidance and one Cleric cantrips of your choice.
+- [Blind Fighting](https://www.dndbeyond.com/feats/1789108-blind-fighting)
+- [Great Weapon Fighting](https://www.dndbeyond.com/feats/1789148-great-weapon-fighting)
+- [Interception](https://www.dndbeyond.com/feats/1789157-interception)
+- [Thrown Weapon Fighting](https://www.dndbeyond.com/feats/1789205-thrown-weapon-fighting)
+- [Unarmed Fighting](https://www.dndbeyond.com/feats/1789208-unarmed-fighting)
 
 # Items
 
