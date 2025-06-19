@@ -2140,38 +2140,45 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Similar to other changes, the effects of equipment items have been adjusted.
 - Fixed known bugs related to certain equipment items.
+- [Amulet of Health](https://www.dndbeyond.com/magic-items/4568-amulet-of-health)
+- [Bracers of Archery](https://www.dndbeyond.com/magic-items/4593-bracers-of-archery)
+- [Headband of Intellect](https://www.dndbeyond.com/magic-items/4652-headband-of-intellect)
 
 ## New Items
 
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
 - [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
-  - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
+  - It can be obtained by killing the ***Death Shepherd*** on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
-  - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
+  - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from ***Vicar Humbletoes***.
 - [Cloak of Invisibility](https://www.dndbeyond.com/magic-items/9059006-cloak-of-invisibility)
-  - It can be obtained by killing the Duergar Corpse Disposer in Grymforge.
+  - It can be obtained by killing the ***Duergar Corpse Disposer*** in Grymforge.
 - [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow)
-  - It can be obtained by killing the Merregon Legionnaire in Grymforge.
+  - It can be obtained by killing the ***Merregon Legionnaire*** in Grymforge.
+- [Executioner's Handaxe](https://www.dndbeyond.com/magic-items/9228603-executioners-axe)
+  - It can be obtained by killing ***Crusher*** in Goblin Camp.
+- [Frost Brand](https://www.dndbeyond.com/magic-items/9228651-frost-brand)
+  - It can be obtained by killing ***Zarys*** in Zhentarim Basement.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
-  - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
+  - It can be obtained by killing the ***Guardian of Faith*** in Crèche Y'llek.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
-  - It can be purchased from A'jak'nir Jeera.
+  - It can be purchased from ***A'jak'nir Jeera***.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
-  - It can be purchased from Lann Tarv.
+  - It can be purchased from ***Lann Tarv***.
 - [Sword of Answering](https://www.dndbeyond.com/magic-items/9229111-sword-of-answering)
-  - It can be purchased from A'jak'nir Jeera.
+  - It can be purchased from ***A'jak'nir Jeera***.
 - [Sword of Kas](https://www.dndbeyond.com/magic-items/9229112-sword-of-kas)
-  - It can be purchased Vicar Humbletoes.
+  - It can be purchased ***Vicar Humbletoes***.
 - [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
-  - It can be purchased Vicar Humbletoes.
+  - It can be purchased ***Vicar Humbletoes***.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
-  - It can be obtained by killing Fist Marcus.
+  - It can be obtained by killing ***Fist Marcus***.
 - [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name)
-  - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
+  - It can be obtained by killing ***He Who Was*** in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
-  - It can be purchased from A'jak'nir Jeera.
+  - It can be purchased from ***A'jak'nir Jeera***.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
-  - It can be obtained by killing the Cursed Kuo-Toa Chief in the Shadow-Cursed Lands.
+  - It can be obtained by killing the ***Cursed Kuo-Toa Chief*** in the Shadow-Cursed Lands.
 
 # NPCs
 

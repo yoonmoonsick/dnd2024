@@ -39,6 +39,28 @@ CreateAt((ITEMROOT)YMS_MagicItem_EnergyBow_a8d6eacf-07fc-4139-866b-f4947741e912,
 THEN
 RequestPing(_X,_Y,_Z,_EnergyBow,_Killer);
 
+// Executioners Handaxe
+IF
+KilledBy((CHARACTER)S_GOB_DrunkGoblin_0c3404d4-af6f-4c3c-8873-101a79cc4d86,_Killer,_,_)
+AND
+GetPosition(S_GOB_DrunkGoblin_0c3404d4-af6f-4c3c-8873-101a79cc4d86,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_ExecutionersHandaxe_3f12f1ab-9a4f-4462-82ae-b9e9e820628e,_X,_Y,_Z,0,0,"",_ExecutionersHandaxe)
+THEN
+RequestPing(_X,_Y,_Z,_ExecutionersHandaxe,_Killer);
+
+// Frost Brand
+IF
+KilledBy((CHARACTER)S_PLA_ZhentDungeon_Zhent02_8a064abd-3582-4a32-a9f8-748ad60f63ca,_Killer,_,_)
+AND
+GetPosition(S_PLA_ZhentDungeon_Zhent02_8a064abd-3582-4a32-a9f8-748ad60f63ca,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_FrostBrand_c9eabd8b-238f-481d-8de5-9e4029b366d4,_X,_Y,_Z,0,0,"",_FrostBrand)
+THEN
+RequestPing(_X,_Y,_Z,_FrostBrand,_Killer);
+
+
+
 // Holy Avenger
 IF
 KilledBy((CHARACTER)S_CRE_GuardianOfFaith_5144e2e8-fbd7-41b3-a6fb-f4cf5759cb95,_Killer,_,_)
