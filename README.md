@@ -36,133 +36,73 @@ An origin feat has been added to each background.
 If you choose a newly added background, you gain a spell that can be used once per day to grant inspiration.
 
 ## Acolyte
-
-![](https://i.imgur.com/G1SM08n.png)
-
 - Feat: Magic Initiate: Cleric
 
 ## Charlatan
-
-![](https://i.imgur.com/AGRnGA5.png)
-
 - Feat: Charlatan's Trick (Homebrew)
     - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
     - You add your Intelligence modifier to your Deception skill checks.
 
 ## Criminal
-
-![](https://i.imgur.com/bEanuMf.png)
-
 - Feat: Alert
 - Skill Proficiencies: Sleight of Hand and Stealth
 
 ## Entertainer
-
-![](https://i.imgur.com/bGnvazh.png)
-
 - Feat: Performer
 
 ## Farmer (Tag: Folk Hero)
-
-![](https://i.imgur.com/nZV1TpT.png)
-
 - Feat: Tough
 - Skill Proficiencies: Animal Handling and Nature
 
 ## Folk Hero
-
-![](https://i.imgur.com/qD084Ff.png)
-
 - Feat: Tough
 
 ## Guard (Tag: Soldier)
-
-![](https://i.imgur.com/thXzv0m.png)
-
 - Feat: Alert
 - Skill Proficiencies: Athletics and Perception
 
 ## Guide (Tag: Outlander)
-
-![](https://i.imgur.com/rdNxenE.png)
-
 - Feat: Magic Initiate: Druid
 - Skill Proficiencies: Stealth and Survival
 
 ## Guild Artisan
-
-![](https://i.imgur.com/iiB78kT.png)
-
 - Feat: Skilled
 
 ## Haunted One
-
-![](https://i.imgur.com/1BCPAmY.png)
-
 - Feat: Alert
 
 ## Hermit (Tag: Sage)
-
-![](https://i.imgur.com/YDiCkju.png)
-
 - Feat: Healer
 - Skill Proficiencies: Medicine and Religion
 
 ## Noble
-
-![](https://i.imgur.com/sjbygvI.png)
-
 - Feat: Skilled
 
 ## Merchant (Tag: Guild Artisan)
-
-![](https://i.imgur.com/QgT6mpK.png)
-
 - Feat: Lucky
 - Skill Proficiencies: Animal Handling and Persuasion
 
 ## Outlander
-
-![](https://i.imgur.com/tNbDQEF.png)
-
 - Feat: Tough
 
 ## Sailor (Tag: Urchin)
-
-![](https://i.imgur.com/wFa8ZT4.png)
-
 - Feat: Tavern Brawler
 - Skill Proficiencies: Acrobatics and Perception
 
 ## Sage
-
-![](https://i.imgur.com/3tIlUHd.png)
-
 - Feat: Magic Initiate: Wizard
 
 ## Scribe (Tag: Acolyte)
-
-![](https://i.imgur.com/wUPA9Bc.png)
-
 - Feat: Skilled
 - Skill Proficiencies: Investigation and Perception
 
 ## Soldier
-
-![](https://i.imgur.com/WpDgTUN.png)
-
 - Feat: Savage Attacker
 
 ## Urchin
-
-![](https://i.imgur.com/3bdAAA4.png)
-
 - Feat: Savage Attacker
 
 ## Wayfarer (Tag: Criminal)
-
-![](https://i.imgur.com/1BCPAmY.png)
-
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
@@ -195,9 +135,6 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
   - You Can transform with Celestial Revelation as a Bonus Action.
 
 ## Dragonborn
-
-![](https://i.imgur.com/0XLTw3S.png)
-
 - Level 1: Darkvision
 - Level 1: Breath Weapon
   - When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
@@ -207,59 +144,35 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
   - You can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Draconic Ancestry. Once you use this trait, you can’t do so again until you finish a long rest.
 
 ## Drow
-
-![](https://i.imgur.com/omrOUzB.png)
-
 - Level 1: Keen Senses
   - You have proficiency in the Insight, Perception, or Survival skill.
 
 ## Dwarf
-
-![](https://i.imgur.com/zGZWcVr.png)
-
 - Level 1: Speed: 30 feet
 - Level 1: Superior Darkvision
 
 ## Elf
-
-![](https://i.imgur.com/hdJ45yB.png)
-
 - Level 1: Keen Senses
   - You have proficiency in the Insight, Perception, or Survival skill.
 
 ## High Elf
-
-![](https://i.imgur.com/QzWVnPx.png)
-
 - Level 1: Wizard Cantrip
 - Level 3: Faerie Fire
 - Level 5: Misty Step
 
 ## Wood Elf
-
-![](https://i.imgur.com/zAIW6FO.png)
-
 - Level 1: Your Speed increases to 35 feet
 - Level 3: Longstrider
 - Level 5: Barkskin
 
 ## Githyanki
-
-![](https://i.imgur.com/bDSBj4l.png)
-
 - Tag: Aberration, Humanoid
 - Level 1: Psychic Resilience: You have resistance to psychic damage.
 
 ## Gnome
-
-![](https://i.imgur.com/SQ6TGl5.png)
-
 - Speed: 30 feet
 
 ## Goliath
-
-![](https://i.imgur.com/dzJsHZp.png)
-
 
 Choose **Goliath** from the list of **Versatile** passives available to **Humans**.
 
@@ -278,56 +191,32 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
 ## Half-Elf
-
-![](https://i.imgur.com/bG5Zplf.png)
-
 - Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Level 1: Gain racial spells corresponding to your elven bloodline.
 
 ## Half-Orc
-
-![](https://i.imgur.com/bMfuE6u.png)
-
 - Level 1: Superior Darkvision
 - Level 1: Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
 ## Halfling
-
-![](https://i.imgur.com/cllZm5T.png)
-
 - Level 1: Speed: 30 feet
 
 ## Human
-
-![](https://i.imgur.com/VP8nBud.png)
-
 - Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
 ## Tiefling 
-
-![](https://i.imgur.com/mdPxMdD.png)
-
 ### Asmodeus Tiefling
-
-![](https://i.imgur.com/CzBc2oc.png)
-
 - Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
 - Level 3: Ray of Sickness
 - Level 5: Hold Person
 
 ### Mephistopheles Tiefling
-
-![](https://i.imgur.com/NrG1DxF.png)
-
 - Level 1: Thaumaturgy, Resistance to Necrotic, Chill Touch
 - Level 3: False Life
 - Level 5: Ray of Enfeeblement
 
 ### Zariel Tiefling
-
-![](https://i.imgur.com/485otPl.png)
-
 - Level 1: Thaumaturgy, Resistance to Fire, Fire Bolt
 - Level 3: Hellish Rebuke
 - Level 5: Darkness
