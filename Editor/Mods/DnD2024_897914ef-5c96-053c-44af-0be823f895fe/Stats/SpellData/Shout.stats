@@ -5515,7 +5515,7 @@
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AIFlags" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1);ApplyStatus(LUNGINGATTACK,100,1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:0;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;Stealth;Invisible;NoCameraMove" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
       </fields>
@@ -5527,6 +5527,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfea88186g9bb3gd4d4gbe61gb1923f8de04f" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
