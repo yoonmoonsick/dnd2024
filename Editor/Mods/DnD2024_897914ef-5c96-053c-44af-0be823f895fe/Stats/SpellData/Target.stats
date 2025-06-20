@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e53f4f69-0b4e-40f4-a96f-466b3e7d1fb1" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9640,6 +9641,124 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="539f1bdf-e0c4-44a3-9beb-789503a918ac" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Fighter" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="acace47d-bbd9-4708-8f74-835dcf81c40b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rally" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5f37c13-89e3-4a2a-ba0f-c3b6f654a78f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(RALLY,100,-1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RALLY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f563fd4-267b-471e-b9fc-2441d17ac53b" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_BaitAndSwitch" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3571f68-51d4-4c07-8096-e7585dcae867" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa2ce898g1038g1000ga842g235229508f25" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55ffc6b3g963dgcc4bg3f6cg45b72d4a0937" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Character()):SwapPlaces();ApplyStatus(SELF,BAITANDSWITCH_UNLOCK,100,1);ApplyStatus(BAITANDSWITCH_TARGET,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BenignTransposition_Swap" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rally" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rally" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:0" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="1300f78c-4469-49d4-9b8d-d0febec0b211,,;58fe003c-1612-4052-8137-f44252f535d6,,;0d7359e1-fb44-4854-a992-1ae64315f646,,;34d8b715-1924-47bf-872b-d047cb0b582e,,;,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="LineOfSightFlags" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7a5b19df-0015-44ce-9a06-199d8e681e94" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74a0c9e9-c932-462e-a5f9-3ff2b79834fa" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="eedddf2e-a10d-44b9-b635-278fcf9b81b6" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f4094ac-2597-4814-a50c-4d67ac224456" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_BaitAndSwitch_GiveAC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b5f37c13-89e3-4a2a-ba0f-c3b6f654a78f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa2ce898g1038g1000ga842g235229508f25" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55ffc6b3g963dgcc4bg3f6cg45b72d4a0937" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BAITANDSWITCH_AC,100,1);RemoveStatus(SELF,BAITANDSWITCH_UNLOCK);RemoveStatus(BAITANDSWITCH_TARGET);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() or HasStatus('BAITANDSWITCH_TARGET');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Self() or HasStatus('BAITANDSWITCH_TARGET');" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;4b27cbbb-6774-4037-a620-80901b11a10f,4b27cbbb-6774-4037-a620-80901b11a10f,4b27cbbb-6774-4037-a620-80901b11a10f;52ffbb9a-a97b-448e-acaf-06344ce9be87,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;032cf56a-3808-45ad-9991-740431d9c14f,,;4b385541-a3a3-429d-93ae-dffa6da50050,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="538beed9-e346-40c5-bedc-5ed2422ad587" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_KnowYourEnemy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="66e4049b-ac12-46b5-bc6f-9084fe3522e1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BattleMaster_KnowYourEnemy_Bludgeoning;Target_BattleMaster_KnowYourEnemy_Piercing;Target_BattleMaster_KnowYourEnemy_Slashing;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;SecondWindCharge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa1522d2-bd1e-4190-83f1-ed5ffa82ff6d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_KnowYourEnemy_Bludgeoning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5a089b5-634a-447a-bb64-e659ca5f203c" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BattleMaster_KnowYourEnemy" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;SecondWindCharge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07ec0746-3f11-4eb1-90f4-4004df63c94c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_KnowYourEnemy_Piercing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b876225-4183-40d2-9a23-915221dac197" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BattleMaster_KnowYourEnemy" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;SecondWindCharge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3376d0db-0fa8-489d-909c-e63b483378d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_KnowYourEnemy_Slashing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4e533bbe-c369-4bda-9f13-869f59509fe1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_BattleMaster_KnowYourEnemy" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;SecondWindCharge:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

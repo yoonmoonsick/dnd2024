@@ -775,7 +775,24 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ### Battle Master
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleMaster.png?raw=true)
-
+- Level 3: Combat Superiority
+  - You can use only one maneuver per attack.
+  - Ambush
+    - You can expend one Superiority Die to gain a +5 bonus to your next initiative roll.
+  - Bait and Switch
+    - Expend one Superiority Die to swap positions with a creature within 5 feet of you. Then, grant either that creature or yourself a +5 bonus to AC until the start of your next turn.
+  - Lunging Attack
+    - You take the Dash action. Then, charge forward and attack the first enemy in your way.
+  - Evasive Footwork
+    - As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.
+  - Parry
+    - When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).
+  - Precision Attack
+    - When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.
+- Level 3: Student of War
+  - You gain proficiency in one skill of your choice from the skills available to Fighters.
+- Level 7: Know You Enemy
+  - As a Bonus Action, you can discern certain strengths and weaknesses of a creature you can see within 30 feet of yourself.
 - Level 12: Relentless Superiority
   - Once per turn, you regain expended a Superiority Die.
 

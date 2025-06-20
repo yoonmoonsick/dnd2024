@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6fe40ec1-ae7a-43c7-8244-20e4b3efae53" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13,6 +14,24 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ZephyrFlash" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="90c50eed-0951-4a18-86b6-838ea2a55bf2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3bef416-82c0-4ede-bd9f-f3124fbdeb97" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_LungingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bae6edf6-7900-476d-9407-418702fd5d54" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4256e3cg6b70gc354gd7cfgb2daf4ac7653" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,LUNGINGATTACK);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="MovementSpeed" type="IntegerTableFieldDefinition" value="30000" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Ally() and not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -30,6 +49,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(not Ally() and not Dead()) and DistanceToTargetGreaterThan(3.0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -44,6 +64,7 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(not Ally() and not Dead()) and DistanceToTargetGreaterThan(3.0) and CanShoveWeight() and IsMovable() and not Grounded();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

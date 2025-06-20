@@ -497,3 +497,7 @@ function MobileShootingCasterCondition(entity)
     result = HasStatus('DASH', entity, context.Source) | HasStatus('DISENGAGE', entity, context.Source) | HasStatus('DODGE', entity, context.Source)
     return ConditionResult(result.Result, {ConditionError("HasNotDashedOrDisengaged")})
 end
+
+function BattleMasterManeuver()
+    return SpellId('Projectile_DisarmingAttack') |SpellId('Projectile_DistractingStrike') |SpellId('Projectile_GoadingAttack') |SpellId('Projectile_ManeuveringAttack') |SpellId('Projectile_MenacingAttack') |SpellId('Projectile_PushingAttack') |SpellId('Projectile_TripAttack') |SpellId('Rush_BattleMaster_Maneuver_LungingAttack') |SpellId('Shout_EvasiveFootwork') |SpellId('Target_DisarmingAttack') |SpellId('Target_DistractingStrike') |SpellId('Target_FeintingAttack') |SpellId('Target_GoadingAttack') |SpellId('Target_ManeuveringAttack') |SpellId('Target_MenacingAttack') |SpellId('Target_PushingAttack') |SpellId('Target_TripAttack') |SpellId('Zone_SweepingAttack')
+end
