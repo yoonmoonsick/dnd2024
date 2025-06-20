@@ -2088,12 +2088,8 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - Attempt to escape from conditions such as Restrained or Grappled
 - Dash
   - To prevent exploitation, players can no longer enter combat with a movement advantage derived from using the Dash action before the fight begins.
-- Distract
-  - New: Costs 1 Action Point
-  - Grants advantage to allies' attacks against the target
-  - Can be used with Extra Attack
-- Dodge
-  - Grants advantage on attack rolls against you and on Dexterity saving throws until the start of your next turn
+- [Distract](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#HideAction)
+- [Dodge](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#DodgeAction)
 - Jump
   - Cost changed from "1 Bonus Action and 3m movement" to "movement equal to jump distance"
   - No longer requires a bonus action
@@ -2103,9 +2099,8 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 
 ## Condition
 
-- Prone
-    - Attacks Affected. You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.
-    - Do not break the concentraion.
+- [Prone](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#ProneCondition)
+- [Surprise](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#Surprise)
 - Wet
     - The status is removed when taking cold, fire, or lightning damage.
 
@@ -2118,9 +2113,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - Darkvision: 60 ft.
 - Superior Darkvision: 180 ft.
 
-## Initiative
-
-- Changed the initiative roll from 1d4 to 1d20.
+## [Initiative](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#Initiative)
 
 ## Ranged Weapon
 
