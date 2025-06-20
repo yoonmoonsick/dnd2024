@@ -5011,8 +5011,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdabcee10ga9d9g5d87g04ffg3e17ad729804" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value=";" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6429,6 +6429,80 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4f9074d7-10d1-4b2c-a97d-91be3c44cd34" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_FIGHTER" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3b48492-b8e8-44df-b61c-5938405c3111" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVASIVE_FOOTWORK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70d59373-9cd2-40ce-ab04-c6d635766549" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfea88186g9bb3gd4d4gbe61gb1923f8de04f" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();AC(5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a31c594e-ae5c-420b-b0ed-4ff25815afc2" />
+        <field name="Name" type="NameTableFieldDefinition" value="RALLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3991b5d7-47c8-419c-8039-598fffe460b8" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RALLY_TEMPORARY_HP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10+Cause.ClassLevel(Fighter)/2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e431ed96-c160-45ac-a45b-b9ccad0543b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BATTLEMASTER_AMBUSH" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28611bf1g8f71g782agcb7bgb2650df2f846" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11ae6472gbcc5gaedbga5degdbf1d03b91e8" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DreadAmbusher_Melee" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d603605-67b6-4ca9-aafe-222e08a7dde1" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAITANDSWITCH_UNLOCK" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BattleMaster_Maneuver_BaitAndSwitch_GiveAC);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f590eb3d-02ef-4796-be21-851b29d13928" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAITANDSWITCH_TARGET" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="007732a2-31bd-41b4-9237-d614362aa1a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BAITANDSWITCH_AC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfa2ce898g1038g1000ga842g235229508f25" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55ffc6b3g963dgcc4bg3f6cg45b72d4a0937" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(5);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5261411-e46a-48c7-a197-c67bead74400" />
+        <field name="Name" type="NameTableFieldDefinition" value="LUNGINGATTACK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4256e3cg6b70gc354gd7cfgb2daf4ac7653" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Rush_BattleMaster_Maneuver_LungingAttack);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8849,17 +8923,6 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a31c594e-ae5c-420b-b0ed-4ff25815afc2" />
-        <field name="Name" type="NameTableFieldDefinition" value="RALLY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3991b5d7-47c8-419c-8039-598fffe460b8" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
-        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StackId" type="StringTableFieldDefinition" value="RALLY_TEMPORARY_HP" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

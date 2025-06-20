@@ -9,6 +9,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem()" />
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -980,6 +981,37 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edecf407-e0c5-45bf-ac4c-a6ec8b10be4c" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_FIghter" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2814704f-19c3-4e68-98a6-5f98dc8d9f38" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BattleMaster_Maneuver_Parry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="493ec5bb-f3c5-49a3-b25c-d6bda949c4f9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c046e70g3edcg4ba8g9a99gbafa2c7a41b5" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7a1ba33aga5b3g956eg781cgc4dc21ace277" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsMeleeAttack() and not HasSpellFlag(SpellFlags.Spell) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Blinded') and not HasStatus('SG_Prone') and not HasStatus('SG_Incapacitated') and not HasStatus('SG_Restrained');" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(SuperiorityDie)+max(DexterityModifier,StrengthModifier)));" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SuperiorityDie:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9aaeefdb-49e5-46a3-8d0a-58baba887615" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BattleMaster_Maneuver_PrecisionAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aea58b19-e381-4138-bba1-05650e008ccf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21d1e89bg0fd1g4adbg9148g6f701644162e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7c5d570gbaadg019cg9a0cg8973e1878243" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source) and not BattleMasterManeuver();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(SuperiorityDie));" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SuperiorityDie:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

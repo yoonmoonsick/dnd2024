@@ -5,7 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="eeaaa237-0d71-42eb-bda6-5bbfd62447ce" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1579,23 +1579,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1bd0aac5-94c8-4fcb-9d17-d15d0f1cc0a1" />
-        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_TunnelFighter_DefensiveStance" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7f31fd73-0d4f-4a77-a817-2d0f26ff1f9a" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,TUNNEL_FIGHTER_FIGHTINGSTYLE_DEFENSIVE_STANCE,100,1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Threat" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h813e012dgf52cg4883ga257gba17c2717f14" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1ee7fb6g4a33gc498gaec4gc188b9f3a7b5" version="2" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TUNNEL_FIGHTER_FIGHTINGSTYLE_DEFENSIVE_STANCE,100,1)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6fc9801a-23ee-4765-8621-4c417583c8ce" />
         <field name="Name" type="NameTableFieldDefinition" value="Durable" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
@@ -3066,13 +3049,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a0293a16-3cea-4496-8eab-e6b644898917" />
         <field name="Name" type="NameTableFieldDefinition" value="DispelEvilAndGood_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4722fd5e-adf3-4cb4-8540-8b638b83f682" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2f3b0527-3641-4396-a239-647bce84794a" />
-        <field name="Name" type="NameTableFieldDefinition" value="EvasiveFootwork" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5516,6 +5492,45 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7263adc3-b193-4afa-ab6d-d4b22db75dd3" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_Ambush" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28611bf1g8f71g782agcb7bgb2650df2f846" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11ae6472gbcc5gaedbga5degdbf1d03b91e8" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BATTLEMASTER_AMBUSH, 100, -1);" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DreadAmbusher_Melee" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SuperiorityDie:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b62c8419-83ba-401f-89eb-2dd37fd2819d" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_LungingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="021086ec-d402-44b3-803f-3e629ecd0a16" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4256e3cg6b70gc354gd7cfgb2daf4ac7653" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1);ApplyStatus(LUNGINGATTACK,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:0;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;Stealth;Invisible;NoCameraMove" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="de4638f6-0c75-40c2-bd85-166c5fd46ca5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EvasiveFootwork" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfea88186g9bb3gd4d4gbe61gb1923f8de04f" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="306f3be8-e33d-4563-9cbf-2d778575642a" />
         <field name="Name" type="NameTableFieldDefinition" value="Dragon_Dismount" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a95010d7-1b03-4237-933c-37a076a627ae" />
@@ -5782,7 +5797,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a95010d7-1b03-4237-933c-37a076a627ae" />
         <field name="Name" type="NameTableFieldDefinition" value="FindSteed_Dismount" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(MOUNTING_PALADIN);ApplyStatus(PRONE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
