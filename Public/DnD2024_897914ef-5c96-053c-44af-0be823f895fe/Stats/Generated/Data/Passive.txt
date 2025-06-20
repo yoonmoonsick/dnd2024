@@ -26,6 +26,12 @@ data "ToggleOnFunctors" "ApplyStatus(YMS_AUTOSELL_TOGGLE,100,-1)"
 data "ToggleOffFunctors" "RemoveStatus(YMS_AUTOSELL_TOGGLE)"
 data "ToggleGroup" "YMS_AutoSell_Toggle"
 
+new entry "Dash_NoCheating"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnCombatStarted"
+data "StatsFunctors" "RemoveStatus(SELF,DASH);RemoveStatus(SELF,DASH_STACKED);RemoveStatus(SELF,DASH_STACKED_2)"
+
 new entry "Range_LightCrossbow"
 type "PassiveData"
 data "DisplayName" "h068b0270g578ag1d0dg5b32g7353015d2250;3"

@@ -2086,6 +2086,8 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
     - Can be used with Extra Attack
 - Break Free
   - Attempt to escape from conditions such as Restrained or Grappled
+- Dash
+  - To prevent exploitation, players can no longer enter combat with a movement advantage derived from using the Dash action before the fight begins.
 - Distract
   - New: Costs 1 Action Point
   - Grants advantage to allies' attacks against the target
