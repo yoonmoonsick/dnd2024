@@ -490,8 +490,23 @@ data "BoostContext" "OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRes
 data "BoostConditions" "not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);"
 data "Boosts" "CharacterUnarmedDamage(1d8);"
 
-new entry "YMS_Feat"
+new entry "YMS_Feats"
 type "PassiveData"
+
+new entry "MagicInitiate_Wizard"
+type "PassiveData"
+using "MagicInitiate_Wizard"
+data "Boosts" "ActionResource(SpellSlot,1,1);"
+
+new entry "MagicInitiate_Cleric"
+type "PassiveData"
+using "MagicInitiate_Cleric"
+data "Boosts" "ActionResource(SpellSlot,1,1);"
+
+new entry "MagicInitiate_Druid"
+type "PassiveData"
+using "MagicInitiate_Druid"
+data "Boosts" "ActionResource(SpellSlot,1,1);"
 
 new entry "AgainstTheUnseen"
 type "PassiveData"
@@ -6020,6 +6035,7 @@ new entry "MagicInitiateCleric"
 type "PassiveData"
 data "DisplayName" "h5870bec4g6420g4ea8ga493g5121992156c3;1"
 data "Description" "h8053a868gf1aeg0321ge90bg0c3ff639de9a;1"
+data "TooltipPermanentWarnings" "090351b0-b08a-45cd-83be-a74fdfb64064"
 data "Icon" "PassiveFeature_MagicInitiateCleric"
 data "Properties" "Highlighted"
 data "BoostContext" "OnCreate"
