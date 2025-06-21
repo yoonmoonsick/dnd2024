@@ -1159,11 +1159,12 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
         <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_SPELL,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RANGED_ALIKE_MELEE_SPELL)" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_CQC_RANGED_SPELL, 100, -1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MAG_CQC_RANGED_SPELL)" />
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLowGroundPenalty(RangedSpellAttack);" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED', context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6873,10 +6874,14 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd64bf54g91acg29f2gbfeag7872bfe307b6" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2b1133fege8e8g1553gf53dg9f385ea25d6d" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);Distance(9);Distance(1.5)" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RANGED_ALIKE_MELEE_SPELL,100,-1);ApplyStatus(UNFETTERED_BOOST,100,-1)" />
-        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition);UnlockSpellVariant(BurningSealsCheck(),ModifyTargetRadius(Multiplicative,2));UnlockSpellVariant(InfernalConduitCheck(),ModifyTargetRadius(Override,9));" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition);UnlockSpellVariant(BurningSealsCheck(),ModifyTargetRadius(Multiplicative,2));UnlockSpellVariant(InfernalConduitCheck(),ModifyTargetRadius(Override,9));StatusImmunity(FLANKED);" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
