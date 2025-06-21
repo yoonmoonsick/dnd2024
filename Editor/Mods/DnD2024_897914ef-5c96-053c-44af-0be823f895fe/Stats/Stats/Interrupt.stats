@@ -1737,7 +1737,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(RiskDie));" />
         <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;MaverickSpirit:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('MaverickSpirit', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph');" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8) and (HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

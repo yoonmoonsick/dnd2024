@@ -8266,7 +8266,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Disengage" />
         <field name="StackId" type="StringTableFieldDefinition" value="GRAND_STRATEGIST" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResource(Movement, 4.5, 0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
