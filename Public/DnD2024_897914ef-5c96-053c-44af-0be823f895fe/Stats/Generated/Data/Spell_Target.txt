@@ -9944,7 +9944,7 @@ data "SpellProperties" "IF(HasPassive('WarCaster_OpportunitySpell',context.Sourc
 data "SpellRoll" "not SavingThrow(Ability.Intelligence, SourceSpellDC())"
 data "SpellSuccess" "DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);ApplyStatus(MIND_SLIVER, 100, 2)"
 data "SpellFail" "IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical); IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)"
-data "TargetConditions" "Character() and Enemy() and not Dead()"
+data "TargetConditions" "Character() and not Dead();"
 data "Icon" "Action_Monster_Duergar_MindSpike"
 data "DisplayName" "h0f040d5bg4c7cge949g0d8bga19028ba9101;1"
 data "Description" "hcc53587eg1f6bg447bgafb4gc365158d9012;1"
@@ -9959,7 +9959,7 @@ data "SpellAnimation" "554a18f7-952e-494a-b301-7702a85d4bc9,,;,,;af94aac1-d8eb-4
 data "HitAnimationType" "MagicalDamage_Psychic"
 data "PrepareEffect" "2fa6b127-6f8a-4150-8be6-6f62b7a85911"
 data "CastEffect" "d2ef6b50-243f-478d-85c6-892086a1477e"
-data "TargetEffect" "e1b340b6-78a9-413a-bb7e-8299848238ae"
+data "TargetEffect" ""
 data "DamageType" "Psychic"
 
 new entry "Target_VengefulBlade"
