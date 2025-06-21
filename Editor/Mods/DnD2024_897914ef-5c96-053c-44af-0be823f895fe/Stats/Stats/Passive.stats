@@ -6,6 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f699b606-08ee-45e1-8425-debfa6cce04e" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_DnD2024_Rule" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6665,14 +6666,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c15bee7c-6a02-4955-96cc-fcccefdd795e" />
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_1_BalefulInterdict_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="57c81a71-acd5-4238-b1d5-632a7497de77" />
-        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a4cdea18-86fa-4496-9fb3-1fc5eda1f983" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Fire);IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Necrotic);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);UnlockSpellVariant(SpellId('Target_Illrigger_BalefulInterdict'),ModifyUseCosts(Replace,IllriggerSeal,0,-1,IllriggerSeal),ModifyIconGlow());IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Fire);IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Necrotic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6791,7 +6787,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Illrigger_BalefulInterdict);UnlockSpell(Target_Illrigger_BalefulInterdict);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HellishRebuke" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="IllriggerSeal:1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
@@ -6822,11 +6817,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_Brutal" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2851ec77gcf06g8f8dg11f8g5021c3dd8e94" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7e891f3ge6eag499dgb8deg6cfb9c39c765" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h769445b8gf3dfg12d9g6497gbb0d5a132095" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and not IsMiss();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF, MAG_MOMENTUM, 100, 1);ApplyStatus(SELF, MAG_MOMENTUM_DURATION_TECHNICAL, 100, 1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_45,100,0);ApplyStatus(SELF,MOVEMENT_45, 100, 1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
@@ -6836,11 +6831,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="12d6d3be-a0a4-481d-81bc-17efa248382e" />
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_Inexorable" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0c4062d8gf8begefacga3f5g020d8b61c61c" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1dea39ag7363g09bcg29a6gf6119a99534f" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1dea39ag7363g09bcg29a6gf6119a99534f" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2;Distance(3);6" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FiendishResilience" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasEnemyWithinRange('SG_Incapacitated', 1.5, nil, 1, context.Target, context.Source)):RollBonus(SavingThrow,1);IF(HasEnemyWithinRange('SG_Incapacitated', 1.5, nil, 2, context.Target, context.Source)):RollBonus(SavingThrow,1);IF(HasEnemyWithinRange('SG_Incapacitated', 1.5, nil, 3, context.Target, context.Source)):RollBonus(SavingThrow,1);IF(HasEnemyWithinRange('SG_Incapacitated', 1.5, nil, 4, context.Target, context.Source)):RollBonus(SavingThrow,1);IF(HasEnemyWithinRange('SG_Incapacitated', 1.5, nil, 5, context.Target, context.Source)):RollBonus(SavingThrow,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasEnemyWithinRange('SG_Incapacitated', 3, nil, 1, context.Target, context.Source)):RollBonus(SavingThrow,2);IF(HasEnemyWithinRange('SG_Incapacitated', 3, nil, 2, context.Target, context.Source)):RollBonus(SavingThrow,2);IF(HasEnemyWithinRange('SG_Incapacitated', 3, nil, 3, context.Target, context.Source)):RollBonus(SavingThrow,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6895,7 +6890,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c69f82cc-52b9-4073-92f9-619c919e04b7" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb0282bb4gbdf5gdb9ag742bg875a62bccce1" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_AbatingSeal);" />
       </fields>
@@ -6905,7 +6900,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="122a239c-d834-40c1-a5a9-81f509eae407" />
         <field name="Name" type="NameTableFieldDefinition" value="Interdict_2_Bedevil" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c1e1488g0254g0f87g9305g74a385ab7462" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5a03a167g30b0g48d3g4f35gd795fef3b638" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5a03a167g30b0g48d3g4f35gd795fef3b638" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Bane" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -6915,7 +6910,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6fa6c0b4-895a-40fc-bd0f-c73fd91ae293" />
         <field name="Name" type="NameTableFieldDefinition" value="Interdict_2_SoulEater" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43d6db23g1cc1g8c1fg6bc5g89c1a4583269" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h322dcfbbg21feg2e66g81e6gf0bf3d2a4923" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h322dcfbbg21feg2e66g81e6gf0bf3d2a4923" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_AccursedSpecter_SoulDevour" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -6925,11 +6920,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b12f33fb-fb4e-4b80-940c-c90948a53498" />
         <field name="Name" type="NameTableFieldDefinition" value="Interdict_2_StyxsApathy" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h747db0c1g4bf9g6d18g594dg2f31502d32d7" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb25e96cgbb75g8d9eg2543g5c5bd39d8185" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb25e96cgbb75g8d9eg2543g5c5bd39d8185" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Gnoll_SoulOffering" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_StyxsApathy);" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6968,10 +6961,9 @@
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd353ff5g2297gc6c0ga83eg0a13fda59a66" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_Hellcrawler" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ConflagrantChannel);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_ConflagrantChannel);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6984,10 +6976,9 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h306941fbg462cg75f0geec9g2340f4ea3414" version="1" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_ChannelDivinity_CloakOfShadows" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShadowShroud);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_ShadowShroud);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7000,7 +6991,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h718c658dgedc0g3c2dg4d0bgc72c61de2e55" version="2" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
@@ -7017,10 +7007,66 @@
         <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0f47907g9262g3233gd564g7d304c27834f" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_BlindingShot" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_VengefulShot);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockInterrupt(Interrupt_VengefulShot);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="464ecd46-7225-420a-9e9d-3c7a9497f1cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interdict_12_DissOnslaught" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h477cf246gaa9eg2b08g555fgeb70b706aa0b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05441293gd034g1ad2gb6fbg84670e80152d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarMagic" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="5ffd4f0d-9aea-4db0-80ed-74199355766a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c387823-c43a-4627-af98-eb8dfd00a3a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interdict_12_FlashOfBrimstone" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf351c806g52d6g9917g9a72g997992547d89" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h255f2714g3eedgfad2ga294g10e9b49e4d30" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_ShadowStep" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_FlashOfBrimstone');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveSource(SELF,FLASH_OF_BRIMSTONE);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="5ffd4f0d-9aea-4db0-80ed-74199355766a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97465cec-f80a-43e2-9a6c-c707126d4189" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interdict_12_SoulsDoom" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ed6e595g1fcfgc80dg5500g3644ffe038e7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62996830g3d50g97adg37ffgdbdd994480e3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_ExtraDamage" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="5ffd4f0d-9aea-4db0-80ed-74199355766a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1319e37e-3213-4d59-bd2f-c60292127c00" />
+        <field name="Name" type="NameTableFieldDefinition" value="SoulsDoom_Target" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="828b8c16-a98c-46be-94f7-1a2822f6f029" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_ExtraDamage" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_HEX,100,0);DealDamage(4,Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
