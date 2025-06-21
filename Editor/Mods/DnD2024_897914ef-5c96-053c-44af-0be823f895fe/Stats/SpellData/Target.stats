@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e53f4f69-0b4e-40f4-a96f-466b3e7d1fb1" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10557,12 +10556,12 @@
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Illrigger_BalefulInterdict_Reapply" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,BALEFULINTERDICT_OWNER,100,-1);ApplyStatus(BALEFULINTERDICT,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):RegainHitPoints(SELF,ClassLevel(Illrigger));IF(HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasStatus('BALEFULINTERDICT_OWNER',context.Source)):ApplyStatus(SELF,BALEFULINTERDICT_OWNER,100,10);ApplyStatus(BALEFULINTERDICT,100,10);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):RegainHitPoints(SELF,ClassLevel(Illrigger));IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source) and HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source) and HasPassive('Interdict_12_DissOnslaught',context.Source)):ApplyStatus(SELF,DISS_ONSLAUGHT,100,1);IF(ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source) and HasPassive('Interdict_12_FlashOfBrimstone',context.Source)):ApplyStatus(SELF,FLASH_OF_BRIMSTONE,100,1);IF(ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source) and HasPassive('Interdict_12_SoulsDoom',context.Source)):ApplyStatus(SOULS_DOOM,100,10);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illrigger_BurningSeals" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BALEFULINTERDICT,100,-1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BALEFULINTERDICT,100,10)" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_BrandOfTheAbsolute" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_BrandOfTheAbsolute" />
@@ -10582,23 +10581,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c45861c5-c4da-4b91-b9dc-4e80e76f2589" />
-        <field name="Name" type="NameTableFieldDefinition" value="Illrigger_BalefulInterdict_Reapply" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2b6ff91f-9fe9-4eec-bb96-d0ab3270dc5a" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;BalefulInterdict:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,BALEFULINTERDICT_OWNER,100,-1);ApplyStatus(BALEFULINTERDICT,100,-1);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):RegainHitPoints(SELF,ClassLevel(Illrigger));IF(HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);RemoveStatus(SELF,BALEFULINTERDICT_REAPPLY);" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7890dc57-dcbd-43cd-adc5-16a084fa53cc" />
         <field name="Name" type="NameTableFieldDefinition" value="BurningSeals_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d0327b2c-5e94-4447-aae3-e8a7264afbd9" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);RemoveStatus(BALEFULINTERDICT);DealDamage(LevelMapValue(BurningSeals),Fire,Magical);IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);RemoveStatus(BALEFULINTERDICT);DealDamage(LevelMapValue(BurningSeals),Fire,Magical);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,-1);IF(HasPassive('Interdict_2_StyxsApathy',context.Source)):ApplyStatus(SELF,STYXS_APATHY,100,2);IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
@@ -10623,7 +10610,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b9290cd6-0044-46de-926a-bf114b53d594" />
         <field name="Name" type="NameTableFieldDefinition" value="BurningSeals_Necrotic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7890dc57-dcbd-43cd-adc5-16a084fa53cc" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);RemoveStatus(BALEFULINTERDICT);DealDamage(LevelMapValue(BurningSeals),Necrotic,Magical);IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);RemoveStatus(BALEFULINTERDICT);DealDamage(LevelMapValue(BurningSeals),Necrotic,Magical);IF(HasPassive('Interdict_2_Bedevil',context.Source)):ApplyStatus(BEDEVIL,100,2);IF(HasPassive('Interdict_2_SoulEater',context.Source)):ApplyStatus(SELF,SOUL_EATER_REGAIN,100,-1);IF(HasPassive('Interdict_2_StyxsApathy',context.Source)):ApplyStatus(SELF,STYXS_APATHY,100,2);IF(HasPassive('Interdict_12_DissOnslaught',context.Source)):ApplyStatus(SELF,DISS_ONSLAUGHT,100,1);IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dd1b683ge599g0209gf9c0g4f8b321b4b7a" version="1" />
@@ -10806,6 +10793,32 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="051cdc72-08e5-4684-82ba-1d23fb8e219b" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,BALEFULINTERDICT_OWNER);RemoveStatus(BALEFULINTERDICT);DealDamage(LevelMapValue(BurningSeals),Necrotic,Magical);IF(HasPassive('Exsanguinate',context.Source) and not HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_FULL,100,1);IF(HasPassive('Exsanguinate',context.Source) and HasPassive('Bloodstroke',context.Source)):ApplyStatus(SELF,EXSANGUINATE_BLOODSTROKE_FULL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cdb56a0-c499-4e25-be07-aa86393df662" />
+        <field name="Name" type="NameTableFieldDefinition" value="FlashOfBrimstone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3a8a1681-b141-44e1-8fe9-b4fca45bbdf9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf351c806g52d6g9917g9a72g997992547d89" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h255f2714g3eedgfad2ga294g10e9b49e4d30" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:RemoveStatus(SELF,FLASH_OF_BRIMSTONE);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('BALEFULINTERDICT');" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_ShadowStep" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;TargetClosestEqualGroundSurface;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a0458d31-f8ef-419a-8708-5715c81e91d3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="52af7a1d-d5d9-4506-85ce-d124f1ef9ea5" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

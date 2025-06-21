@@ -1733,20 +1733,20 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 >These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
 
 - Level 1: Baleful Interdict
-  - You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range. This seal lasts for 1 minute or until burned (see "Burning Seals" below). A creature with one or more of your seals is referred to as an interdicted creature. Seals you place are invisible to other creatures, and when you can see an interdicted creature, the seals appear to you as glowing glyphs on the creature’s body.
-  - You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels, as indicated in the Seals column of the Illrigger table.
-  - If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them. Each seal’s duration continues to elapse when an interdicted creature dies and when that seal is moved to a new creature.
+  - You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range.
+  - You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels.
+  - If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them.
   - Burning Seals
-    - When an interdicted creature you can see within 30 feet of you takes damage from any source other than a seal burned by an illrigger, you can burn any number of seals you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn’t require an action from you, but you can’t do so while incapacitated. Once a seal is burned, it immediately vanishes.
-  - Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 11th level (for a total of 3d6) and 20th level (for a total of 4d6) in this class, as indicated in the Seal Damage column of the Illrigger table.
+    - You can burn a seal you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn’t require an action from you, but you can’t do so while incapacitated. Once a seal is burned, it immediately vanishes.
+  - Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 10th level for a total of 3d6.
 - Level 2: Combat Mastery
   - Your archdevil grants you uncanny skill in a certain form of combat. Choose one of the following illrigger combat masteries:
   - Bravado
     - While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.
   - Brutal
-    - Once per turn, when you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 5 feet horizontally.
+    - Once per turn, when you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 15 feet horizontally. You gain movement speed equal to the distance you push the creature.
   - Inexorable
-    - You gain a +1 bonus to saving throws for each hostile creature within 5 feet of you, to a maximum bonus of +5.
+    - You gain a +2 bonus to saving throws for each hostile creature within 10 feet of you, to a maximum bonus of +6.
   - Lies
     - When you attack with a melee weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.
   - Lissome
@@ -1794,6 +1794,14 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You can strengthen your defenses at the cost of your vitality. Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.
 - Level 11: Terrorizing Force
   - Your attacks are empowered with devastating might. When you gain this feature, choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type.
+- Level 12: Interdiction
+  - You can infuse your seals with hellish magical power, enhancing their effects.
+  - Dis’s Onslaught
+    - Each time you use a bonus action to place or move a seal, you can make one weapon attack as part of the same bonus action.
+  - Flash of Brimstone
+    - When you place or move a seal, you can activate this boon (no action required) to magically teleport to an unoccupied space you can see within 5 feet of the target.
+  - Soul’s Doom
+    - When you use a bonus action to place or move a seal, you can scorch the seals into the target’s soul. For 1 minute, whenever that interdicted creature takes damage, they take extra damage equal to your proficiency bonus.
 
 ### Architect of Ruin
 
