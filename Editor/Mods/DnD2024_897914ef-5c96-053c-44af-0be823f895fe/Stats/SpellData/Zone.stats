@@ -543,13 +543,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6414e3c1-592a-45b0-afeb-e4416a72d961" />
         <field name="Name" type="NameTableFieldDefinition" value="BreathWeapon_Acid_Line" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c2544bc-00bd-4207-b97f-e0d549ccc351" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Acid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc0df22d7geec5g1b64g521fg76b9a409c2aa" version="1" />
         <field name="Shape" type="StringTableFieldDefinition" value="Square" />
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -559,13 +558,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1a0c453c-c96d-4d36-880d-4775cd7cf93b" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Acid" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Acid_Line" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon), Acid,Magical);ApplyStatus(ACID,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08ae96dfg0452gbd04gde18gfeb714726083" version="1" />
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Acid;Zone_BreathWeapon_Acid_Line" />
       </fields>
     </stat_object>
@@ -574,7 +573,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f6d57b1d-26af-4d75-b25d-fa5034de68c8" />
         <field name="Name" type="NameTableFieldDefinition" value="BreathWeapon_Poison_Line" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1f3a8b2-e218-492a-b971-968ffd12e178" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Poison" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcdf9d46ege630g43cfg9a8fg166ee93f42df" version="1" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
@@ -582,7 +580,7 @@
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -592,7 +590,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa89ad8c-1d65-45a2-a233-5e7fe193eb59" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Poison" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Poison_Line" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon),Poison,Magical);ApplyStatus(POISONED,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23949f09g6250gc872g6ae7gab3b84c92470" version="1" />
@@ -601,7 +599,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Poison;Zone_BreathWeapon_Poison_Line" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -614,7 +612,9 @@
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning_Line" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning;Zone_BreathWeapon_Lightning_Line;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -624,14 +624,14 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b30a08a4-ead3-4d68-ac87-131f840f1c3c" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning_Line" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon),Lightning,Magical);ApplyStatus(SHOCKED,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h36376212g8128g0d66g6aa1g325889332082" version="1" />
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning;ZoneBreathWeapon_Lightning_Line" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Lightning;Zone_BreathWeapon_Lightning_Line;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -641,13 +641,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="332bc514-b92d-4e59-b428-9e342534b972" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Line" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon),Fire,Magical);ApplyStatus(BURNING,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7fe6fd8fgb4cag736dg0e3agfa5828f6ed01" version="1" />
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone;Zone_BreathWeapon_Fire_Line" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -657,13 +657,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="0f4d9d05-8635-4b28-8dce-763e5edc005b" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Line" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon),Fire,Magical);ApplyStatus(BURNING,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2af3744egd36bga402g6a53gb0ddf553302b" version="1" />
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Fire_Cone;Zone_BreathWeapon_Fire_Line" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -679,7 +679,8 @@
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Cold_Line" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -689,7 +690,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4669e5e8-b4bd-41e0-875f-30929b13e124" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BreathWeaponCharge:1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Cold" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Cold_Line" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(BreathWeapon),Cold,Magical);ApplyStatus(RAY_OF_FROST,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h96993295gdb1bg22c5g9ae8gda72d7b092fc" version="1" />
@@ -697,7 +698,7 @@
         <field name="Base" type="IntegerTableFieldDefinition" value="0" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Zone_BreathWeapon_Cold;Zone_BreathWeapon_Cold_Line" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="CanAreaDamageEvade;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
