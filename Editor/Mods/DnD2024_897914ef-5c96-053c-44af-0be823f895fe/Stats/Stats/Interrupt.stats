@@ -10,6 +10,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;SpellPoint:1" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1)" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Roll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1253,6 +1254,26 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5d379a14-d74c-4af9-890d-2239a7c1b9e4" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Ranger" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="86788da8-57e4-439d-9fb3-054a895c286a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BeguilingTwist" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9ffe662-f440-4f3b-8bd6-35ea1c7dddaf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha7806177g7c39g6093g89b6g17ba426c0c7b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e061db8g1d3bg6716g7e83g563ec8dae447" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Ally(context.Target,context.Observer) and HasStatus('BEGUILING_TWIST_TARGET',context.Target) and not AnyEntityIsItem() and not DistanceToTargetGreaterThan(27);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_BeguilingTwist_Dummy,true,true,true);" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,10);" />
+        <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_FeyPresence" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

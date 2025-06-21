@@ -34,3 +34,9 @@ data "StatusType" "EFFECT"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "StatusEffect" "6aeb7555-514b-4cf3-beee-e5a2ee8fcab9"
 
+new entry "LOW_CAZADORSPALACE_CHARM_VFX_override"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "LOW_CAZADORSPALACE_CHARM_VFX"
+data "OnRemoveFunctors" "ApplyStatus(BEGUILING_TWIST_TARGET,100,1)"
+

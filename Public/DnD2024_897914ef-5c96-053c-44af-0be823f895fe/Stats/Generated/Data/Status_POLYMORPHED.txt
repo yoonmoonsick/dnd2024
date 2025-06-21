@@ -860,3 +860,9 @@ using "DISGUISE_SELF_GNOME_FEMALE_MOMF"
 data "StatusPropertyFlags" "IgnoreResting"
 data "StatusGroups" "SG_Disguise;SG_RemoveOnRespec"
 
+new entry "LOW_HOUSEOFGRIEF_MINDFLAYER_override"
+type "StatusData"
+data "StatusType" "POLYMORPHED"
+using "LOW_HOUSEOFGRIEF_MINDFLAYER"
+data "OnRemoveFunctors" "ApplyStatus(BEGUILING_TWIST_TARGET,100,1);ApplyStatus(LOW_HOUSEOFGRIEF_WOLF_REMOVE_VFX,100,1);RemoveStatus(LOW_HOUSEOFGRIEF_UMBRAL_EFFECT);ApplyStatus(SELF, WILDSHAPE_TECHNICAL,100,1);RemoveStatus(LOW_HOUSEOFGRIEF_MINDFLAYER_STUN);"
+
