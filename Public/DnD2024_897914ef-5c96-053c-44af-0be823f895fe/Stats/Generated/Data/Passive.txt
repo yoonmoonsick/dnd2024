@@ -5518,6 +5518,12 @@ data "TooltipPermanentWarnings" "1c421c08-d16c-4da5-b809-0113bdf4278c"
 data "Icon" "Spell_Evocation_CrusadersMantle"
 data "Properties" "IsHidden"
 
+new entry "FOR_OwlbearCubs_Armor_Passive"
+type "PassiveData"
+using "FOR_OwlbearCubs_Armor_Passive"
+data "Description" "h309bc896g60e2g695dgc9fbg4fe104b7f406;1"
+data "StatsFunctors" "IF((HasDamageEffectFlag(DamageFlags.Hit) or HasDamageEffectFlag(DamageFlags.Critical)) and Tagged('UNDEAD',context.Source)):DealDamage(SWAP,1d6,Radiant,Magical);IF((HasDamageEffectFlag(DamageFlags.Hit) or HasDamageEffectFlag(DamageFlags.Critical)) and Tagged('BEAST',context.Source)):ApplyStatus(SWAP,CHARMED,100,10)"
+
 new entry "MAG_ShapeshiftersBurgeon_Passive"
 type "PassiveData"
 using "MAG_ShapeshiftersBurgeon_Passive"
