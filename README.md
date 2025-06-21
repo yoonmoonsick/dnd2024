@@ -1777,7 +1777,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
       - On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can’t be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.
     - Devour
       - On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can’t be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can’t suffer more than three levels of exhaustion combined from all illriggers’ Infernal Conduit features.
-  - You regain any spent Infernal Conduit dice when you finish a long rest.
+  - You regain any spent Infernal Conduit dice when you finish a short rest.
 - Level 7: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
   - Acheron’s Chain
@@ -1866,7 +1866,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
 - Level 3: Invoke Hell
   - Grand Strategist
-    - You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target can immediately move up to half their speed without provoking opportunity attacks.
+    - You can order your allies to follow your formation (no action required). Choose one or more creatures within [1] of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
   - Punishment
     - When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
 - Level 7: Telekinetic Seal
