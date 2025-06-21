@@ -4778,6 +4778,13 @@ data "TooltipStatusApply" "ApplyStatus(HEROIC_INSPIRATION,100, -1)"
 data "CycleConditions" "Ally() and not Dead() and Tagged('HUMANOID') and not Self()"
 data "UseCosts" "BonusActionPoint:1"
 
+new entry "Target_UnarmedStrike_Monk_Action"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_UnarmedStrike_Monk"
+data "Icon" "Action_UnarmedAttack"
+data "UseCosts" "ActionPoint:1"
+
 new entry "Target_OpenHandTechnique_Knock"
 type "SpellData"
 data "SpellType" "Target"
