@@ -49,3 +49,15 @@ data "Boosts" "ActionResourceBlock(Movement);"
 data "StatusGroups" "SG_Condition;SG_Incapacitated"
 data "OnApplyFunctors" "BreakConcentration()"
 
+new entry "HYPNOTIC_PATTERN_override"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "HYPNOTIC_PATTERN"
+data "OnRemoveFunctors" "ApplyStatus(BEGUILING_TWIST_TARGET,100,1)"
+
+new entry "LOW_HOUSEOFGRIEF_MINDFLAYER_STUN_override"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "LOW_HOUSEOFGRIEF_MINDFLAYER_STUN"
+data "OnRemoveFunctors" "ApplyStatus(BEGUILING_TWIST_TARGET,100,1)"
+
