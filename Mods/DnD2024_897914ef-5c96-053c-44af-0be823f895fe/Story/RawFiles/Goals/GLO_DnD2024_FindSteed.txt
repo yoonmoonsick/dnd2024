@@ -17,7 +17,6 @@ DB_DnD2024_FindSteed(_Steed, _Player)
 THEN
 SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "MOUNTED_STEED");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
 
@@ -28,7 +27,6 @@ DB_DnD2024_FindSteed(_Steed, _Player)
 THEN
 SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "MOUNTED_STEED");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
 
@@ -56,10 +54,8 @@ DB_DnD2024_FindSteed(_Steed, _Player)
 THEN
 SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "MOUNTED_STEED");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
-
 
 IF
 EnteredCombat(_Player, _CombatID)
@@ -73,7 +69,6 @@ SetOnStage(_Steed, 1);
 RemoveStatus(_Player, "STEED_OWNER");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 RemoveSummons(_Steed, 0);
-
 
 IF
 CombatEnded(_CombatID)
