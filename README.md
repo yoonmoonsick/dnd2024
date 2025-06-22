@@ -1645,7 +1645,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Poker Face
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
 - Level 3: Liar’s Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
-  - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 2d8 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
+  - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On an 11 or higher, the damage of your next ranged weapon attack is doubled. On a 10 or lower, it's halved.
 - Level 6: Risky Business ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_RiskyBusiness.png?raw=true)
   - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
 - Level 10: Risk Taker
