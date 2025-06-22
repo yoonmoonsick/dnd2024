@@ -289,7 +289,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Level 3: Shield, Thunderwave
   - Level 5: Scorching Ray, Shatter
   - Level 9: Fireball, Slow
-- Level 3: Eldritch Cannon
+- Level 3: Eldritch Cannon ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_BLD_GEN_Arcane_Turret_A.png?raw=true)
   - You can create a Eldritch Cannon. You can have only one cannon at a time and must finish a Long Rest or expend a spell slot to create another.
   - Arcane Refueling
     - Creates an Eldritch Cannon resource that allows you to summon an additional Eldritch Cannon by expending a spell slot.
@@ -319,7 +319,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Level 9: Aura of Vitality, Conjure Barrage
 - Level 3: Arcane Empowerment
   - When you make an attack with a weapon, you can use your Intelligence modifier instead of your Strength or Dexterity modifier for the attack and damage rolls.
-- Level 3: Steel Defender
+- Level 3: Steel Defender ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_LOOT_Underdark_Automaton_Head.png?raw=true)
   - You create a Steel Defender, a mechanical companion.
   - Deflect Attack
     - Impose Disadvantage on an attack against your allies when you are within 10ft.
@@ -1754,7 +1754,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - When you burn a seal on an interdicted creature, you can use your reaction to flood the target with an otherworldly chill. Until the end of the target’s next turn, they can’t take reactions.
   - Swift Retribution (Passive)
     - When an interdicted creature provokes an opportunity attack from you, you can make that attack without using your reaction, provided you’re not incapacitated. Once you benefit from this boon, you can’t do so again until the start of your next turn.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.
   - When you use your Invoke Hell, you choose which option to use. You must then finish a short or long rest to use your Invoke Hell again.
   - Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals your interdict save DC.
@@ -1842,7 +1842,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When you make a Charisma check, you can expend a seal to treat a d20 roll of 9 or lower as a 10.
 - Level 11: Intransigent
   - You and your allies within 10 feet of you are immune to the charmed condition while you are conscious.
-- Level 11: Let’s Make a Deal
+- Level 11: Let’s Make a Deal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_LetsMakeADeal.png?raw=true)
   - As a bonus action, you can offer a willing ally within 60 feet a deal. Within the next 10 minutes, they gain advantage on one attack roll or saving throw. After using this effect, there is a 50% chance they receive a blessing, gaining 12 temporary hit points, or a curse, suffering disadvantage on their next attack roll or saving throw.
 
 ### Painkiller
