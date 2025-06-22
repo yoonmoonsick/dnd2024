@@ -1611,19 +1611,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You have Advantage on Initiative rolls.
 - Level 2: Critical Shot
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.
-- Level 2: Risk
+- Level 2: Risk ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Risk.png?raw=true)
   - You can perform incredible feats of daring fueled by special dice called Risk Dice.
-  - Bite the Bullet
+  - Bite the Bullet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_BiteTheBullet.png?raw=true)
     - As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.
-  - Blindfire
+  - Blindfire ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Blindfire.png?raw=true)
     - You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.
-  - Dodge Roll
+  - Dodge Roll ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_DodgeRoll.png?raw=true)
     - You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn’t provoke Opportunity Attacks and is unaffected by Difficult Terrain.
-  - Grazing Shot
+  - Grazing Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_GrazingShot.png?raw=true)
     - When you miss with a ranged attack roll using a weapon, you can expend one Risk Die to deal damage to that creature. You can only use this maneuver once per turn.
-  - Maverick Spirit
+  - Maverick Spirit ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_MaverickSpirits.png?raw=true)
     - When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.
-  - Skin of Your Teeth
+  - Skin of Your Teeth ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_SkinOfYourTeeth.png?raw=true)
     - When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm’s way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.
 - Level 5: Gut Shot
   - Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute, its Speed is halved and it has Disadvantage on attack rolls.
@@ -1638,7 +1638,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
 
-- Level 3: Eagle Eye
+- Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_EagleEye.png?raw=true)
   - Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.
 - Level 3: Sharpshooter’s Stance
   - You don’t have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
@@ -1655,9 +1655,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Poker Face
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
-- Level 3: Liar’s Dice
+- Level 3: Liar’s Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_LiarsDice.png?raw=true)
   - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 2d8 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
-- Level 6: Risky Business
+- Level 6: Risky Business ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_RiskyBusiness.png?raw=true)
   - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
 - Level 10: Risk Taker
   - You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die.
@@ -1670,7 +1670,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Operative Training
   - You learn the Concealed Shot and Disguise Self. You gain proficiency in two of these skills of your choice: Deception, Investigation, Persuasion, Sleight of Hand, or Stealth.
-- Level 3: Parting Shot
+- Level 3: Parting Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_PartingShot.png?raw=true)
   - When you take the Dash, Disengage, or Dodge action on your turn, you can expend one Risk Die to make a ranged attack using a weapon as a Bonus Action. Add the Risk Die to the damage roll on a hit.
 - Level 6: Fieldcraft
   - Whenever you make a Deception or Persuasion check, you can treat a d20 roll of 9 or lower as a 10.
@@ -1700,7 +1700,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Creative Trajectory
   - Your ranged weapon attacks are not penalized for High Ground Rules.
-- Level 3: Ricochet
+- Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Ricochet.png?raw=true)
   - You can take a bonus action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
 - Level 6: Gun Spinning
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
@@ -1715,7 +1715,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what’s right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don’t often oblige.
 
-- Level 3: Lay Down the Law
+- Level 3: Lay Down the Law ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_LayDowntheLaw.png?raw=true)
   - You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.
 - Level 3: Steely-Eyed Aura
   - An aura of stoic confidence radiates from you in a 10-foot Emanantion. You and allies within the Emanantion have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.
