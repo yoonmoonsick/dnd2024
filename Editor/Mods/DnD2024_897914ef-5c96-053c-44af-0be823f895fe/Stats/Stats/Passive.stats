@@ -6640,6 +6640,9 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_LiarsDice" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_LiarsDice);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIARS_DICE_GOOD',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7540,7 +7543,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticSeal" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54568a83g80bcge12dg3a7bg9c37e564da74" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0aaf15eg6c23g3782gee90g0f943d3419be" version="3" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="Distance(1.5);Distance(4.5)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_OpportunitySpell" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />

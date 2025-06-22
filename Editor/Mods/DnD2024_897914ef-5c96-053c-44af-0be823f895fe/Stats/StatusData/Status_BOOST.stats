@@ -8004,7 +8004,6 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_LiarsDice" />
         <field name="StackId" type="StringTableFieldDefinition" value="LIARS_DICE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):CharacterWeaponDamage(2d8);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c7f9c28gea49g89d0g1832gbea7438f241c" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsRangedWeaponAttack()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
@@ -8017,7 +8016,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="LIARS_DICE_BAD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa54f297-345f-4ef7-bd78-8d79027cfe6a" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):DamageBonus(-1d10,,false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="HalveWeaponDamage(Dexterity);" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
