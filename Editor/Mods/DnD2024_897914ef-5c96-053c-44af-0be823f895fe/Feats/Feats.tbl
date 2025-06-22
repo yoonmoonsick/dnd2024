@@ -128,7 +128,7 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="MagicInitiateCleric" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="MagicInitiate_Cleric" />
         <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,2,0,MIClericCantrips,Wisdom,,AlwaysPrepared,,114e7aee-d1d4-4371-8d90-8a2080592faf);SelectSpells(269d1a3b-eed8-4131-8901-a562238f5289,1,0,MIClericSpells)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(2f43a103-5bf1-4534-b14f-663decc0c525,2,0,MIClericCantrips,Wisdom,,AlwaysPrepared,,114e7aee-d1d4-4371-8d90-8a2080592faf);SelectSpells(269d1a3b-eed8-4131-8901-a562238f5289,1,0,MIClericSpells,Wisdom,,AlwaysPrepared,,114e7aee-d1d4-4371-8d90-8a2080592faf)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -138,7 +138,7 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="MagicInitiateDruid" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="MagicInitiate_Druid" />
         <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,2,0,MIDruidCantrips,Wisdom,,AlwaysPrepared,,457d0a6e-9da8-4f95-a225-18382f0e94b5);SelectSpells(2cd54137-2fe5-4100-aad3-df64735a8145,1,0,MIDruidSpells)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(b8faf12f-ca42-45c0-84f8-6951b526182a,2,0,MIDruidCantrips,Wisdom,,AlwaysPrepared,,457d0a6e-9da8-4f95-a225-18382f0e94b5);SelectSpells(2cd54137-2fe5-4100-aad3-df64735a8145,1,0,MIDruidSpells,Wisdom,,AlwaysPrepared,,457d0a6e-9da8-4f95-a225-18382f0e94b5)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -164,7 +164,7 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="MagicInitiateWizard" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="MagicInitiate_Wizard" />
         <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="True" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,MIWizardCantrips,Intelligence,,AlwaysPrepared,,a865965f-501b-46e9-9eaa-7748e8c04d09);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,1,0,MIWizardSpells)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,2,0,MIWizardCantrips,Intelligence,,AlwaysPrepared,,a865965f-501b-46e9-9eaa-7748e8c04d09);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,1,0,MIWizardSpells,Intelligence,,AlwaysPrepared,,a865965f-501b-46e9-9eaa-7748e8c04d09)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -395,7 +395,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="083dc6e7-23de-45b0-b5e7-896d1cb766c9" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="EldritchAdept" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c6750968-4bc3-4fba-a126-6ffde333a7dc,1);SelectAbilities(85aff7e9-69f1-4152-ba4f-16128d61505a,1,1,FeatASI)" />
-        <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="True" />
+        <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="False" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -405,6 +405,14 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="ElvenAccuracy" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ElvenAccuracy" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(c4e548ff-eb35-4cd7-abe6-548617a069f1,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_58" />
+        <field name="UUID" type="IdTableFieldDefinition" value="175ded91-d0dd-4063-911b-c5c271beded6" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="EnduranceRanger" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="EnduranceRanger" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -427,11 +435,37 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_60" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2ef1bcd0-0c45-4ed3-b4c5-4466b8c19f40" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="FeyTouched" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FeyTouched" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(4bd98c53-959b-4ed8-a86b-b02c64d2ca93,1,0,,,,AlwaysPrepared,,);SelectSpells(1b243a1f-fcb0-494e-a275-1dbb889d0555,1,0,,,,AlwaysPrepared,,);SelectAbilities(85aff7e9-69f1-4152-ba4f-16128d61505a,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_62" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b36ca471-92fe-4c99-93bf-027cf56b3e90" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="FierceShot" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FierceShot" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,LightlyArmoredASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_32" />
         <field name="UUID" type="IdTableFieldDefinition" value="b3e2066f-88b3-41b3-a06f-a092283734ae" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="FightingInitiate" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(da3203d8-750a-4de1-b8eb-1eccfccddf46,1,FightingStyle);SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,LightlyArmoredASI)" />
         <field name="CanBeTakenMultipleTimes" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_63" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c6426f20-6e14-4d03-856c-60e26c19f839" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="FirearmSpecialist" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="FirearmSpecialist" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -471,10 +505,27 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_61" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cb614fbc-172b-46fe-bfc7-c7b1113bba97" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="GleamWrath" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="GleamWrath" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,LightlyArmoredASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_30" />
         <field name="UUID" type="IdTableFieldDefinition" value="7c89b8bc-c345-446e-97a5-a83a0d730419" />
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Healer" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Healer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_65" />
+        <field name="UUID" type="IdTableFieldDefinition" value="915d2be7-f9f9-4171-b223-dab89420054d" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Hardiness" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Hardiness" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -484,6 +535,33 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="MetamagicAdept" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="MetamagicAdept" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(c3506532-36eb-4d18-823e-497a537a9619,2,Metamagic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_64" />
+        <field name="UUID" type="IdTableFieldDefinition" value="76da9247-f893-4203-90b6-7a0e827abec6" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="MountedCombatant" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MountedCombatant" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(a821083f-eab8-4249-a4d9-c209c6702d57,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_66" />
+        <field name="UUID" type="IdTableFieldDefinition" value="26be6747-35ba-48b2-bda1-96966458249e" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Nimbleness" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Nimbleness" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(6670b9e8-bf20-447c-a736-7f4673ccd6e2,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_67" />
+        <field name="UUID" type="IdTableFieldDefinition" value="825bcd26-e560-4806-9c64-b2104e3865f5" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="OrcishFury" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="OrcishFury" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(dc31acdd-88df-4244-9ed7-69b302a86997,1,1,FeatASI)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -502,6 +580,24 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Poisoner" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="ElementalAdept_Poison;BrewPoison;ExperimentalAlchemy" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(389b74cd-398f-4e27-80b2-6d7a6e71cdde,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_68" />
+        <field name="UUID" type="IdTableFieldDefinition" value="966e38a4-8ff4-4daf-9ed8-9aaf823000ad" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SecondChance" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SecondChance" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(d097a99e-256c-4e91-b06d-f4155152c503,1,1,FeatASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_69" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fb1f085d-f150-4fe1-b716-8a42db580ecb" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="ShadowTouched" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ShadowTouched" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(15c6f22f-d994-4931-81ed-9f0bcd5b0260,1,0,,,,AlwaysPrepared,,);SelectSpells(236bcbca-3c47-4abc-8650-3aac55aea587,1,0,,,,AlwaysPrepared,,);SelectAbilities(85aff7e9-69f1-4152-ba4f-16128d61505a,1,1,FeatASI)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -529,6 +625,15 @@
         <field name="NameFS" type="FixedStringTableFieldDefinition" value="Slasher" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="Slasher" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,LightlyArmoredASI)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_70" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cd12e1b4-a3cc-4de2-8ba6-0fdcdd8e07e7" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="SquatNimbleness" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="SquatNimbleness" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectAbilities(499230af-5946-4680-a7ee-4d76d421f2ef,1,1,LightlyArmoredASI);SelectSkills(37927957-baf4-42b0-b6d8-9af5a745ae1a,1,SkilledSkills);" />
       </fields>
     </stat_object>
   </stat_objects>

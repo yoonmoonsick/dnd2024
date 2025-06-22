@@ -460,8 +460,9 @@ function MasterofEnchantment(value)
 end
 
 function BreakFreeCheck(value)
-    local skillCheck = SkillCheck(Skill.Athletics,value)
-    return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+    local skillCheck_Athletics = SkillCheck(Skill.Athletics,value)
+    local skillCheck_Acrobatics = SkillCheck(Skill.Acrobatics,value)
+    return ConditionResult(skillCheck_Athletics.Result,{},{},skillCheck_Athletics.Chance) | ConditionResult(skillCheck_Acrobatics.Result,{},{},skillCheck_Acrobatics.Chance) 
 end
 
 function SneakAttackSpellCheck()
@@ -469,7 +470,7 @@ function SneakAttackSpellCheck()
 end
 
 function HealingSpell()
-    return SpellId('Target_HealingWord') | SpellId('Target_HealingWord_2') | SpellId('Target_HealingWord_3') | SpellId('Target_HealingWord_4') | SpellId('Target_HealingWord_5') | SpellId('Target_HealingWord_6') | SpellId('Target_CureWounds') | SpellId('Target_CureWounds_2') | SpellId('Target_CureWounds_3') | SpellId('Target_CureWounds_4') | SpellId('Target_CureWounds_5') | SpellId('Target_CureWounds_6') | SpellId('Shout_HealingWord_Mass') | SpellId('Shout_HealingWord_Mass_4') | SpellId('Shout_HealingWord_Mass_5') | SpellId('Shout_HealingWord_Mass_6') | SpellId('Target_CureWounds_Mass') | SpellId('Target_CureWounds_Mass_6') | SpellId('Target_Heal') | SpellId('Shout_ArcaneVigor') |SpellId('Shout_ArcaneVigor_3') |SpellId('Shout_ArcaneVigor_4') |SpellId('Shout_ArcaneVigor_5') |SpellId('Shout_ArcaneVigor_6')
+    return SpellId('Target_HealingWord') | SpellId('Target_HealingWord_2') | SpellId('Target_HealingWord_3') | SpellId('Target_HealingWord_4') | SpellId('Target_HealingWord_5') | SpellId('Target_HealingWord_6') | SpellId('Target_CureWounds') | SpellId('Target_CureWounds_2') | SpellId('Target_CureWounds_3') | SpellId('Target_CureWounds_4') | SpellId('Target_CureWounds_5') | SpellId('Target_CureWounds_6') | SpellId('Shout_HealingWord_Mass') | SpellId('Shout_HealingWord_Mass_4') | SpellId('Shout_HealingWord_Mass_5') | SpellId('Shout_HealingWord_Mass_6') | SpellId('Target_CureWounds_Mass') | SpellId('Target_CureWounds_Mass_6') | SpellId('Target_Heal') | SpellId('Shout_ArcaneVigor') | SpellId('Shout_ArcaneVigor_3') | SpellId('Shout_ArcaneVigor_4') | SpellId('Shout_ArcaneVigor_5') | SpellId('Shout_ArcaneVigor_6')
 end
 
 function ChromaticDragonResistance(damageType, entity)
@@ -499,5 +500,5 @@ function MobileShootingCasterCondition(entity)
 end
 
 function BattleMasterManeuver()
-    return SpellId('Projectile_DisarmingAttack') |SpellId('Projectile_DistractingStrike') |SpellId('Projectile_GoadingAttack') |SpellId('Projectile_ManeuveringAttack') |SpellId('Projectile_MenacingAttack') |SpellId('Projectile_PushingAttack') |SpellId('Projectile_TripAttack') |SpellId('Rush_BattleMaster_Maneuver_LungingAttack') |SpellId('Shout_EvasiveFootwork') |SpellId('Target_DisarmingAttack') |SpellId('Target_DistractingStrike') |SpellId('Target_FeintingAttack') |SpellId('Target_GoadingAttack') |SpellId('Target_ManeuveringAttack') |SpellId('Target_MenacingAttack') |SpellId('Target_PushingAttack') |SpellId('Target_TripAttack') |SpellId('Zone_SweepingAttack')
+    return SpellId('Projectile_DisarmingAttack') | SpellId('Projectile_DistractingStrike') | SpellId('Projectile_GoadingAttack') | SpellId('Projectile_ManeuveringAttack') | SpellId('Projectile_MenacingAttack') | SpellId('Projectile_PushingAttack') | SpellId('Projectile_TripAttack') | SpellId('Rush_BattleMaster_Maneuver_LungingAttack') | SpellId('Shout_EvasiveFootwork') | SpellId('Target_DisarmingAttack') | SpellId('Target_DistractingStrike') | SpellId('Target_FeintingAttack') | SpellId('Target_GoadingAttack') | SpellId('Target_ManeuveringAttack') | SpellId('Target_MenacingAttack') | SpellId('Target_PushingAttack') | SpellId('Target_TripAttack') | SpellId('Zone_SweepingAttack')
 end
