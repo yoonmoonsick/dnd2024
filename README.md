@@ -180,19 +180,23 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 5: Large Form: You can change your size to Large as a Bonus Action if you’re in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can’t use it again until you finish a Long Rest.
 
 ## Half-Elf
-- Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
+- Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
+  - You gain Heroic Inspiration whenever you finish a Long Rest.
 - Level 1: Gain racial spells corresponding to your elven bloodline.
 
 ## Half-Orc
 - Level 1: Superior Darkvision
-- Level 1: Adrenaline Rush: You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
+- Level 1: Adrenaline Rush
+  - You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
 ## Halfling
 - Level 1: Speed: 30 feet
 
 ## Human
-- Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
-- Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
+- Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
+  - You gain Heroic Inspiration whenever you finish a Long Rest. 
+- Level 1: Versatile
+  - You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
 ## Tiefling
 ### Asmodeus Tiefling
@@ -223,7 +227,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - You have learned arcane plans that you use to make magic items. As you gain levels in the Artificer class, you learn plans for more magic items. At 6th and 10th level, you can replicate more rare magic items. Non-consumable magic items grant permanent effects to you, while consumables are recreated after each long rest.
 - Level 6: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
-- Level 7: Flash of Genius
+- Level 7: Flash of Genius ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FlashOfGenius.png?raw=true)
   - When you or a creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to add a bonus to the roll, potentially turning it into a success. The bonus equals your Intelligence modifier. You can use this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 - Level 10: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
@@ -289,7 +293,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Level 3: Shield, Thunderwave
   - Level 5: Scorching Ray, Shatter
   - Level 9: Fireball, Slow
-- Level 3: Eldritch Cannon ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_BLD_GEN_Arcane_Turret_A.png?raw=true)
+- Level 3: Eldritch Cannon ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/EldritchCannon.png?raw=true)
   - You can create a Eldritch Cannon. You can have only one cannon at a time and must finish a Long Rest or expend a spell slot to create another.
   - Arcane Refueling
     - Creates an Eldritch Cannon resource that allows you to summon an additional Eldritch Cannon by expending a spell slot.
@@ -1721,7 +1725,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 >
 >These archdevils’ elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.
 
-- Level 1: Baleful Interdict
+- Level 1: Baleful Interdict ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/IllriggerSeal.png?raw=true)
   - You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range.
   - You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels.
   - If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them.
@@ -1805,7 +1809,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Spellcasting (1/3 Caster)
 - Level 3: Asmodeus’s Blessing
   - When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in Arcana, History, Nature, and Religion.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Destructive Spell
     - When you deal damage to a creature with an Illrigger spell of 1st level or higher, you can expend a seal (no action required) to maximize the damage.
   - Spellblade
@@ -1833,7 +1837,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When Moloch accepts you as his illrigger, he grants you access to his infernal knowledge. You gain expertise in Persuasion and Deception.
 - Level 3: Charm Enemy
   - When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Honey-Sweet Blades
     - When you make a weapon attack against an interdicted creature, If the attack hits, it becomes a critical hit.
   - Turncoat
@@ -1861,7 +1865,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.
 - Level 3: Devastator ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Devastator.png?raw=true)
   - You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Grand Strategist ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
     - You can order your allies to follow your formation (no action required). Choose one or more creatures within [1] of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
   - Punishment
@@ -1885,7 +1889,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain expertise in the Religion skill.
 - Level 3: Exsanguinate
   - You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Embolden Allies
     - As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.
   - Vitalize
@@ -1907,7 +1911,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.
 - Level 3: Strike from the Dark
   - You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.
-- Level 3: Invoke Hell
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Master of Disguise
     - As an action, you can cast the disguise self spell without expending a spell slot.
   - No Escape
