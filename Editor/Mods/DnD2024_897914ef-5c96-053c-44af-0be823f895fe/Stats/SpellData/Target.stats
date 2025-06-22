@@ -11133,7 +11133,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="94b5153b-1aed-4aa0-8536-a6922b41b5d8" />
         <field name="Name" type="NameTableFieldDefinition" value="Devastator" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEVASTATOR_STRIKE,100,3);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEVASTATOR_STRIKE,100,2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() and Ally() or Self()) and HasActionResource('ReactionActionPoint',1,0,false,false,context.Target);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(StandardProficiencyBonusScale)" />
@@ -11141,7 +11141,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08f966b8g70bege28fg6053gd60fe1c3896f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h40984bdag8b57g2436gaeb2g1db1f86eaeae" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEVASTATOR_STRIKE,100,3);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEVASTATOR_STRIKE,100,2);" />
         <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_BrandOfTheAbsolute" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_BrandOfTheAbsolute" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
@@ -11154,18 +11154,6 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="954307f2-6216-4eff-aa7a-d87553bcee37" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="abb61fd9-813b-4112-933a-dbc1eb07194a" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e4f94b3c-082e-4389-a779-0a09c7c0254e" />
-        <field name="Name" type="NameTableFieldDefinition" value="Devastator_Attack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8e4a2dce-458a-4c98-a48e-ec90a5cae533" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);RemoveStatus(SELF,DEVASTATOR_STRIKE);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h40984bdag8b57g2436gaeb2g1db1f86eaeae" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
