@@ -850,7 +850,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter Level, provided that the creature can see or hear you.
 - Level 3: Knightly Envoy
   - You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.
-- Level 3: Purple Dragon Companion
+- Level 3: Purple Dragon Companion ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Fighter_PurpleDragonCompanion.png?raw=true)
   - You are bonded with an amethyst dragon hatchling that serves as your purple dragon companion and uses the Purple Dragon Companion stat block. The purple dragon is Friendly to you and your allies and obeys your commands.
 - Level 7: Dragon Knight
   - Your Purple Dragon Companion grows mightier, and you can mount your Purple Dragon Companion to fly.
