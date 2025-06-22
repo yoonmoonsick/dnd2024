@@ -1750,10 +1750,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h83422e17ge571gcfe3g5911g733382425a39" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h345167a7g798cg28ffg09c7gdbbcb6ff18b9" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_GrazingShot" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (IsCriticalMiss() or IsMiss()) and IsRangedWeaponAttack() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie), Piercing);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie)+DexterityModifier, Piercing);" />
         <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;GrazingShot:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie)+DexterityModifier, Piercing);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1767,6 +1768,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;MaverickSpirit:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('MaverickSpirit', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph');" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedSavingThrow() and Self(context.Observer,context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8) and (HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Wisdom) or HasSavingThrowWithAbility(Ability.Charisma));" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_MaverickSpirit" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1782,6 +1784,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_SkinOfYourTeeth" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1791,7 +1794,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="aea58b19-e381-4138-bba1-05650e008ccf" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc2145165g97c4g59a8gf509g849e66265302" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9c1ded32g620bg0030g59a3g264f0336c922" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarGodsBlessing" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_EagleEye" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(RiskDie));" />
         <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;" />
@@ -1805,7 +1808,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8864b766-567d-4495-ac94-31ca55789160" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdca7bb45g524cg8975gd0dfg0c0be03c072f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ae476f6g714eg0519g3256gb1694b44c959" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Control" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_RiskyBusiness" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRangedWeaponAttack() and not AnyEntityIsItem() and not InterruptHasDisadvantage();" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();RestoreResource(SELF,RiskDie,1,0);" />
         <field name="Cost" type="StringTableFieldDefinition" value="RiskyBusiness:1;" />
@@ -1898,6 +1901,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasLastAttackTriggered() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and HasStatus('LAY_DOWN_THE_LAW_ALLY',context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_LayDowntheLaw" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
@@ -2067,7 +2071,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28ffe78cgda09gea22ga11cg170716172528" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h47a016e4g2442g9c66ga3b8gb2f05f217dc0" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineGuardian" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_YouDieOnMyCommand" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnDeath" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
