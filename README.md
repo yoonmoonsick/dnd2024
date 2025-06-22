@@ -1,4 +1,4 @@
-# DnD PHB 2024 All in One 
+# DnD PHB 2024 All in One
 
 ## Introduction
 - Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Items, Races, Rules, Spells and more.
@@ -18,18 +18,7 @@
 - 자세한 변경 내용은 아래에서 확인할 수 있습니다.
   - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
-## Credit
-
-- Ideas for Druid features
-  - ChefReg https://www.nexusmods.com/baldursgate3/mods/13575
-- Chniese Translation
-  - woodheader https://www.nexusmods.com/baldursgate3/mods/14703, https://mod.io/g/baldursgate3/m/dnd-phb-2024-all-in-one-chs
-- French Translation
-  - gpayerdcu https://www.nexusmods.com/baldursgate3/mods/13470
-- Russian Translation
-  - HivyGreys https://next.nexusmods.com/profile/HivyGreys/mods
-
-# Background 
+# Background
 
 An origin feat has been added to each background.
 
@@ -106,7 +95,7 @@ If you choose a newly added background, you gain a spell that can be used once p
 - Feat: Lucky
 - Skill Proficiencies: Insight and Stealth
 
-# Races 
+# Races
 
 ## Aarakocra
 
@@ -177,7 +166,7 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 Choose **Goliath** from the list of **Versatile** passives available to **Humans**.
 
 >Towering over most folk, goliaths are distant descendants of giants. Each goliath bears the favors of the first giants—favors that manifest in various supernatural boons, including the ability to quickly grow and temporarily approach the height of goliaths’ gigantic kin.
-> 
+>
 > Goliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse—unencumbered by the internecine conflicts that have ravaged giantkind for ages—and seek heights above those reached by their ancestors.
 
 - Level 1: Speed: 35 feet
@@ -205,7 +194,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 1: Resourceful: You gain Heroic Inspiration whenever you finish a Long Rest.
 - Level 1: Versatile: You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
-## Tiefling 
+## Tiefling
 ### Asmodeus Tiefling
 - Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
 - Level 3: Ray of Sickness
@@ -344,7 +333,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 11: Improved Defender
   - Your Arcane Jolt and Steel Defender become more powerful. The extra damage and healing from Arcane Jolt both increase to 3d6. Additionally, whenever your Steel Defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 plus your Intelligence modifier.
 
-## Barbarian 
+## Barbarian
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Barbarian.png?raw=true)
 
@@ -354,11 +343,11 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
 - Level 7: Feral Instinct
   - Your instincts are so honed that you have Advantage on Initiative rolls (+5). Take to enter your Rage, you can Move up to half your Speed.
-- Level 9: Brutal Strike 
+- Level 9: Brutal Strike
   - Forceful Blow: When hit the target, it takes an extra 1d10 damage and be pushed 15 feet straight away from you. Then you can move without provoking Opportunity Attacks.
   - Hamstring Blow: When hit the he target, it takes an extra 1d10 damage and it’s speed is reduced by 15 feet until the start of your next turn.
 - Level 11: Relentless Rage
-  - Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don’t die outright, your Hit Points instead change to a number equal to twice your Barbarian Level.   
+  - Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don’t die outright, your Hit Points instead change to a number equal to twice your Barbarian Level.
 - Level 12: Persistent Rage
   - Your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.
 
@@ -406,7 +395,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 10: Zealous Presence
   - As a Bonus Action, you unleash a battle cry infused with divine energy. Creatures within 60 feet of you gain Advantage on attack rolls and saving throws for 2 turns. Once you use this feature, you can’t use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.
 
-## Bard 
+## Bard
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Bard.png?raw=true)
 - Level 1: Bardic Inspiration
@@ -425,11 +414,11 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 3: Dazzling Footwork
   - While you aren’t wearing armor or wielding a Shield, you gain the following benefits. You have Advantage on Performance check.
 - Level 3: Unarmored Defense
-  - Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. 
-- Level 3: Agile Strikes 
-  - When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction. 
+  - Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.
+- Level 3: Agile Strikes
+  - When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.
 - Level 3: Bardic Damage
-  - You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike’s normal damage. This roll doesn’t expend the die.    
+  - You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike’s normal damage. This roll doesn’t expend the die.
 - Level 6: Inspiring Movement
   - When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction. None of this feature’s movement provokes Opportunity Attacks.
 - Level 6: Extra Attack (Homebrew)
@@ -440,9 +429,9 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ### College of the Moon
 
-> The College of the Moon, rooted in the ancient druidic circles of the Moonshae Isles, empowers its Bards to chronicle island stories. These Bards use Fey magic and moonwell power to aid allies, protect nature, and create works based on Moonshae myths like fairy pranks, the Beast, and moonwell mysteries.
-
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/MoonCollege.png?raw=true)
+
+> The College of the Moon, rooted in the ancient druidic circles of the Moonshae Isles, empowers its Bards to chronicle island stories. These Bards use Fey magic and moonwell power to aid allies, protect nature, and create works based on Moonshae myths like fairy pranks, the Beast, and moonwell mysteries.
 
 - Level 3: Moonshae Folktales
   - As a Magic action, you can invoke the power of a folktale, imbuing yourself with primal magic until you use this feature again. When you use this feature, choose which of the following folktales you invoke; your choice gives you certain benefits while this magic is active.
@@ -529,7 +518,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 >The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and Wee Jas of Greyhawk.
 
 - Domain Spells (Always prepared)
-  - Level 3: Magic Missile, Chromatic Orb 
+  - Level 3: Magic Missile, Chromatic Orb
   - Level 3: Magic Weapon, Mirror Image
   - Level 5: Blink, Haste
   - Level 7: Dimension Door, Banishment
@@ -644,7 +633,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 2: Wild Shape
   - The power of nature allows you to assume the form of an animal. As a Bonus Action, you shape-shift into a Beast form. You can use Wild Shape twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain additional uses when you reach Druid Level 6.
 - Level 2: Wild Companion
-  - You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can cast the Find Familiar spell once per short rest.   
+  - You can summon a nature spirit that assumes an animal form to aid you. As a Magic action, you can cast the Find Familiar spell once per short rest.
 - Level 5: Wild Resurgence
   - Once on each of your turns, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required).
 - Level 7: Elemental Fury
@@ -669,7 +658,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Level 7: Confusion, Dimension Door
   - Level 9: Conjure Elemental, Mass Cure Wounds
 - Level 3: Balm of the Summer Court
-  - You become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level. 
+  - You become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level.
   - As a bonus action, you can choose one creature you can see within 60 feet of you and spend a number of those dice. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 hit point per die spent. You regain all expended dice when you finish a long rest.
 - Level 6: Hearth of Moonlight and Shadow
   - Home can be wherever you are. You can invoke the shadowy power of the Gloaming Court to help guard your respite. You and your allies gain the effect of a short rest, and until your next long rest, you gain a +5 bonus to Stealth and Perception checks.
@@ -683,25 +672,25 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 - Circle of the Land Spells
   - Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid Level and lower prepared.
-- Arid Land 
+- Arid Land
   - Level 1: Fire Bolt, Burning Hands
   - Level 3: Blur
   - Level 5: Fireball
   - Level 7: Blight
   - Level 9: Wall of Stone
-- Polar Land 
+- Polar Land
   - Level 1: Ray of Frost, Fog Cloud
   - Level 3: Hold Person
   - Level 5: Sleet Storm
   - Level 7: Ice Storm
   - Level 9: Cone of Cold
-- Temperate Land 
+- Temperate Land
   - Level 1: Shocking Grasp, Sleep
   - Level 3: Misty Step
   - Level 5: Lightning Bolt
   - Level 7: Freedom of Movement
   - Level 9: Mass Cure Wounds
-- Tropical Land 
+- Tropical Land
   - Level 1: Acid Splash, Ray of Sickness
   - Level 3: Web
   - Level 5: Stinking Cloud
@@ -768,7 +757,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 2: Tactical Mind
   - You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success.
 - Level 5: Tactical Shift
-  - Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.    
+  - Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.
 - Level 9: Indomitable
   - If you fail a saving throw, add a bonus equal to your Fighter Level. You can’t use this feature again until you finish a Long Rest.
 
@@ -854,7 +843,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PurpleDragonKnight.png?raw=true)
 
 > The Purple Dragon Knights are paragons of valor and leadership who ally themselves with amethyst dragons. These knights strive to protect the innocent and inspire their fellow adventurers to champion the causes of justice and freedom.
-> 
+>
 > Although the Purple Dragons were originally founded in Cormyr, new recruits are now drawn from any realm where chivalry thrives, including the Silver Marches, Damara, and Chessenta.
 
 - Level 3: Rallying Cry
@@ -868,14 +857,14 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 10: Rallying Surge
   - When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
 - Level 12: Bulwark
-  - You can extend the benefit of your Indomitable feature to an ally. 
+  - You can extend the benefit of your Indomitable feature to an ally.
 
 ### Rune Knight
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/RuneKnight.png?raw=true)
 
 > Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan.
-> 
+>
 > Whether you found the giant’s work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant’s craft and learned how to apply magic runes to empower your equipment.
 
 - Level 3: Rune Carver
@@ -953,7 +942,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - You can expend 1 Ki-Point to cast the Darkness spell without spell components. You can see within the spell’s area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
 - Level 3: Darkvision
 - Level 11: Improved Shadow Step
-  - You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Ki-Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.      
+  - You can draw on your Shadowfell connection to empower your teleportation. When you use your Shadow Step, you can expend 1 Ki-Point to remove the requirement that you must start and end in Dim Light or Darkness for that use of the feature. As part of this Bonus Action, you can make an Unarmed Strike immediately after you teleport.
 
 ### Warrior of the Elements
 
@@ -966,9 +955,9 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - Elemental Strikes
     - Whenever you hit with your Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Thunder damage rather than its normal damage type.
     - When you deal one of these types with it, you can also force the target to make a Strength saving throw. On a failed save, you can move the target up to 10 feet away from you, as elemental energy swirls around it.
-- Level 6: Elemental Burst 
+- Level 6: Elemental Burst
   - You can expend 2 Ki Points to cause elemental energy to burst in a 12-foot-radius Sphere centered on a point within 60 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder. Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.
-- Level 11: Stride of the Elements 
+- Level 11: Stride of the Elements
   - While your Elemental Attunement is active, you also have a Fly Speed equal to your Speed.
 
 ### Way of the Kensei
@@ -994,7 +983,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Paladin.png?raw=true)
 
-- Level 1: Spell Casting 
+- Level 1: Spell Casting
 - Level 1: Lay On Hands
   - As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature.
 - Level 1: Channel Oath
@@ -1004,8 +993,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest.
 - Level 9: Abjure Enemy
   - As a Magic action, you can expend one use of this class’s Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage.
-- Level 11: Radiant Strikes 
-  - Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.  
+- Level 11: Radiant Strikes
+  - Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.
 - Level 12: Aura Expansion: Your Aura of Protection is now a 30-foot Emanation.
 
 ### Oath of Conquest
@@ -1101,19 +1090,19 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ranger.png?raw=true)
 
 - Level 1: Spell Casting
-You can now learn all Ranger spells and prepare them for use. 
+  - You can now learn all Ranger spells and prepare them for use.
 - Level 1: Favored Enemy
-You always have the Hunter’s Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Ranger Level 5, you gain 1 additional use of this feature. At Level 9, you gain 4 uses.
+  - You always have the Hunter’s Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Ranger Level 5, you gain 1 additional use of this feature. At Level 9, you gain 4 uses.
 - Level 2: Deft Explorer
-Expertise. Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
+  - Expertise. Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
 - Level 6: Roving
-Your Speed increases by 10 feet while you aren’t wearing Heavy armor.
+  - Your Speed increases by 10 feet while you aren’t wearing Heavy armor.
 - Level 9: Deft Explorer
-Choose Two of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
+  - Choose Two of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
 - Level 10: Tireless
-Temporary Hit Points. As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+  - Temporary Hit Points. As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 12: Precise Hunter
-You have Advantage on attack rolls against the creature currently marked by your Hunter’s Mark.
+  - You have Advantage on attack rolls against the creature currently marked by your Hunter’s Mark.
 
 ### Fey Wanderer
 
@@ -1168,8 +1157,8 @@ You have Advantage on attack rolls against the creature currently marked by your
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WinterWalker.png?raw=true)
 
-> Forged in the howling winds and endless snows of Icewind Dale, Winter Walkers are rangers who have embraced the unforgiving cold and made it their ally. These hunters become one with the tundra, their breath forming frost and their gaze as piercing as a shard of ice. Over time, they take on an otherworldly aspect, embodying the very blizzards they walk through. 
-> 
+> Forged in the howling winds and endless snows of Icewind Dale, Winter Walkers are rangers who have embraced the unforgiving cold and made it their ally. These hunters become one with the tundra, their breath forming frost and their gaze as piercing as a shard of ice. Over time, they take on an otherworldly aspect, embodying the very blizzards they walk through.
+>
 > More than just survivalists, Winter Walkers are experts in the strange and supernatural phenomena that haunt the Far North. They study the ancient, latent magics of shattered Netherese ruins, track elusive creatures such as yetis and crag cats, and prepare for threats rising from the Underdark's frozen tunnels. Their magic is as cold and cruel as the land they defend.
 
 - Subclass Spells (Always prepared)
@@ -1181,7 +1170,7 @@ You have Advantage on attack rolls against the creature currently marked by your
 - Level 3: Polar Strike
   - When you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d4 Cold damage.
 - Level 3: Hunter's Rime
-  - Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter’s Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter’s Mark, it can’t take the Disengage action. 
+  - Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter’s Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter’s Mark, it can’t take the Disengage action.
 - Level 7: Fortifying Soul
   - You choose a creature. The chosen creature gains temporary hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
 - Level 11: Chilling Retribution
@@ -1247,9 +1236,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Dread Allegiance: Bane
     - You gain Resistance to Psychic damage and learn the Minor Illusion cantrip.
   - Dread Allegiance: Bhaal
-    - You gain Resistance to Poison damage and learn the Blade Ward cantrip. 
+    - You gain Resistance to Poison damage and learn the Blade Ward cantrip.
   - Dread Allegiance: Myrkul
-    - You gain Resistance to Necrotic damage and learn the Chill Touch cantrip. 
+    - You gain Resistance to Necrotic damage and learn the Chill Touch cantrip.
 - Level 6: Strike Fear
   - You gain a new Cunning Strike option: Terrify (Cost: 1d6). The target must succeed on a Wisdom saving throw or become Frightened for 1 minute. A Frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - Level 9: Battle Tyrant
@@ -1305,7 +1294,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 1: Innate Sorcery
   - As a Bonus Action, you can unleash the magic for 1 minute, during which you gain the following benefits:
   - The spell save DC of your Sorcerer spells increases by 1.
-  - You have Advantage on the attack rolls of Sorcerer spells you cast. 
+  - You have Advantage on the attack rolls of Sorcerer spells you cast.
   - You can use this feature twice, and you regain all expended uses of it when you finish a Long Rest.
 - Level 2: Metamagic
   - You gain two Metamagic options. You use the chosen options to temporarily modify spells you cast. Whenever you gain a Sorcerer Level, you can replace one of your Metamagic options with one you don’t know. You gain two more options at Sorcerer Level 10.
@@ -1323,14 +1312,14 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.
   - Twinned Spell (1 Sorcery Point)
     - When you cast a spell, such as Charm Person, that can be cast with a higher-Level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell’s effective Level by 1.
-- Level 5: Sorcerous Restoration 
+- Level 5: Sorcerous Restoration
   - You can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer Level. Once you use this feature, you can’t do so again until you finish a Long Rest.
-- Level 7: Sorcery Incarnate 
+- Level 7: Sorcery Incarnate
   - If you have no uses of Innate Sorcery left, you can spend 2 Sorcery Points to regain one charge.
 
 ### Aberrant Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true) 
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Arms of Hadar
@@ -1439,11 +1428,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 2: Magical Cunning
   - You regain expended a Pact Magic spell slots. Once you use this feature, you can’t do so again until you finish a Long Rest.
 
-### Eldritch Invocations 
+### Eldritch Invocations
 - Required Warlock Level 1
   - Armor Of Shadows
     - Don't need to cast the spell to get benefit.
-  - Beast Speech: 
+  - Beast Speech:
     - Don't need to cast the spell to get benefit.
   - Beguiling Influence
   - Eldritch Mind
@@ -1496,7 +1485,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Your patron grants you the ability to move between the boundaries of the planes. You can cast Misty Step without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. In addition, whenever you cast that spell, you can choose one of the following additional effects.
   - Refreshing Step: Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains 1d10 Temporary Hit Points.
   - Taunting Step: Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.
-- Level 6: Steps of the Fey:  
+- Level 6: Steps of the Fey:
   - Disappearing Step: You have the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell.
   - Dreadful Step: Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take 2d10 Psychic damage.
 
@@ -1555,7 +1544,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 5: Conjure Barrage, Counterspell
   - Level 7: Freedom of Movement, Staggering Smite
   - Level 9: Steel Wind Strike
-  
+
 ## Wizard
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
@@ -1592,10 +1581,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Bladesong
   - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
-  - While the Bladesong is active, you gain the following benefits. 
+  - While the Bladesong is active, you gain the following benefits.
     - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.
-    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity. 
-    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total. 
+    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.
+    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.
 - Level 6: Extra Attack
   - You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
 - Level 12: Song of Victory
@@ -1611,19 +1600,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You have Advantage on Initiative rolls.
 - Level 2: Critical Shot
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.
-- Level 2: Risk ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Risk.png?raw=true)
+- Level 2: Risk ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Risk.png?raw=true)
   - You can perform incredible feats of daring fueled by special dice called Risk Dice.
-  - Bite the Bullet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_BiteTheBullet.png?raw=true)
+  - Bite the Bullet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BiteTheBullet.png?raw=true)
     - As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.
-  - Blindfire ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Blindfire.png?raw=true)
+  - Blindfire ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Blindfire.png?raw=true)
     - You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.
-  - Dodge Roll ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_DodgeRoll.png?raw=true)
+  - Dodge Roll ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DodgeRoll.png?raw=true)
     - You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn’t provoke Opportunity Attacks and is unaffected by Difficult Terrain.
-  - Grazing Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_GrazingShot.png?raw=true)
+  - Grazing Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GrazingShot.png?raw=true)
     - When you miss with a ranged attack roll using a weapon, you can expend one Risk Die to deal damage to that creature. You can only use this maneuver once per turn.
-  - Maverick Spirit ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_MaverickSpirits.png?raw=true)
+  - Maverick Spirit ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_MaverickSpirits.png?raw=true)
     - When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.
-  - Skin of Your Teeth ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_SkinOfYourTeeth.png?raw=true)
+  - Skin of Your Teeth ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SkinOfYourTeeth.png?raw=true)
     - When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm’s way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.
 - Level 5: Gut Shot
   - Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute, its Speed is halved and it has Disadvantage on attack rolls.
@@ -1638,7 +1627,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
 
-- Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_EagleEye.png?raw=true)
+- Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_EagleEye.png?raw=true)
   - Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.
 - Level 3: Sharpshooter’s Stance
   - You don’t have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
@@ -1655,9 +1644,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Poker Face
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
-- Level 3: Liar’s Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_LiarsDice.png?raw=true)
+- Level 3: Liar’s Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
   - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On a result of 11 or higher, add 2d8 to the damage of your next ranged weapon attack. On a 10 or lower, subtract 1d10 from the damage of your next ranged weapon attack.
-- Level 6: Risky Business ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_RiskyBusiness.png?raw=true)
+- Level 6: Risky Business ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_RiskyBusiness.png?raw=true)
   - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
 - Level 10: Risk Taker
   - You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die.
@@ -1670,7 +1659,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Operative Training
   - You learn the Concealed Shot and Disguise Self. You gain proficiency in two of these skills of your choice: Deception, Investigation, Persuasion, Sleight of Hand, or Stealth.
-- Level 3: Parting Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_PartingShot.png?raw=true)
+- Level 3: Parting Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PartingShot.png?raw=true)
   - When you take the Dash, Disengage, or Dodge action on your turn, you can expend one Risk Die to make a ranged attack using a weapon as a Bonus Action. Add the Risk Die to the damage roll on a hit.
 - Level 6: Fieldcraft
   - Whenever you make a Deception or Persuasion check, you can treat a d20 roll of 9 or lower as a 10.
@@ -1700,7 +1689,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Creative Trajectory
   - Your ranged weapon attacks are not penalized for High Ground Rules.
-- Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_Ricochet.png?raw=true)
+- Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Ricochet.png?raw=true)
   - You can take a bonus action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
 - Level 6: Gun Spinning
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
@@ -1715,7 +1704,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what’s right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don’t often oblige.
 
-- Level 3: Lay Down the Law ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_32/Gunslinger_LayDowntheLaw.png?raw=true)
+- Level 3: Lay Down the Law ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LayDowntheLaw.png?raw=true)
   - You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.
 - Level 3: Steely-Eyed Aura
   - An aura of stoic confidence radiates from you in a 10-foot Emanantion. You and allies within the Emanantion have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.
@@ -1870,16 +1859,16 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Dispater’s Blessing
   - When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.
-- Level 3: Devastator
+- Level 3: Devastator ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Devastator.png?raw=true)
   - You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
 - Level 3: Invoke Hell
-  - Grand Strategist
+  - Grand Strategist ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
     - You can order your allies to follow your formation (no action required). Choose one or more creatures within [1] of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
   - Punishment
     - When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
 - Level 7: Telekinetic Seal
   - When a creature you can see moves within 5 feet of you, you can use your reaction to place a seal on them. When you do, the target must succeed on a Wisdom saving throw or be either pushed back 15 feet.
-- Level 11: You Die on My Command!
+- Level 11: You Die on My Command! ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_YouDieOnMyCommand.png?raw=true)
   - When an ally within 30 feet of you who can hear you is killed, you can use your reaction to shout an order at them, causing them to be revived and regain 1 hit point. Once you use this reaction, you can’t do so again until you finish a short or long rest.
 
 ### Sanguine Knight
@@ -1928,7 +1917,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 11: Umbral Killer
   - Shadows enhance your abilities, granting you Devil's Sight, an additional 10 feet of movement speed, and advantage on Stealth checks. Additionally, when making a Dexterity saving throw to take half damage, you instead take no damage on a success and half damage on a failure.
 
-# Feat 
+# Feat
 
 ## Origin Feats
 - [Alert](https://www.dndbeyond.com/feats/1789101-alert)
@@ -1943,7 +1932,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## General Feats (Changed)
 - [Athlete](https://www.dndbeyond.com/feats/1789104-athlete)
-- [Charger](https://www.dndbeyond.com/feats/1789121-charger) 
+- [Charger](https://www.dndbeyond.com/feats/1789121-charger)
 - [Crossbow Expert](https://www.dndbeyond.com/feats/1789126-crossbow-expert)
 - [Defensive Duelist](https://www.dndbeyond.com/feats/1789129-defensive-duelist)
 - [Dual Wielder](https://www.dndbeyond.com/feats/1789130-dual-wielder)
@@ -1952,7 +1941,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Heavy Armor Master](https://www.dndbeyond.com/feats/1789154-heavy-armor-master)
 - [Lightly Armored](https://www.dndbeyond.com/feats/1789159-lightly-armored)
 - [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
-- [Mobile](https://www.dndbeyond.com/feats/1789200-speedy) 
+- [Mobile](https://www.dndbeyond.com/feats/1789200-speedy)
 - [Polearm Master](https://www.dndbeyond.com/feats/1789177-polearm-master)
 - [Sharpshooter](https://www.dndbeyond.com/feats/1789187-sharpshooter)
 - [Shield Master](https://www.dndbeyond.com/feats/1789188-shield-master)
@@ -1995,11 +1984,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Second Chance](https://www.dndbeyond.com/feats/86-second-chance)
 - [Shadow Touched](https://www.dndbeyond.com/feats/1874732-shadow-touched)
 - [Skill Expert](https://www.dndbeyond.com/feats/1789196-skill-expert)
-- [Skulker](https://www.dndbeyond.com/feats/1789197-skulker) 
+- [Skulker](https://www.dndbeyond.com/feats/1789197-skulker)
 - [Slasher](https://www.dndbeyond.com/feats/1789198-slasher) (Homebrew)
 - [Squat Nimbleness](https://www.dndbeyond.com/feats/83-squat-nimbleness)
 
-## Fighting Styles 
+## Fighting Styles
 - [Blind Fighting](https://www.dndbeyond.com/feats/1789108-blind-fighting)
 - [Great Weapon Fighting](https://www.dndbeyond.com/feats/1789148-great-weapon-fighting)
 - [Interception](https://www.dndbeyond.com/feats/1789157-interception)
@@ -2026,47 +2015,47 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## New Items
 - [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
-  - It can be obtained by killing the ***Stonemason Kith*** in Grymforge.
+  - It can be obtained by killing the Stonemason Kith in Grymforge.
 - [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
-  - It can be obtained by killing the ***Death Shepherd*** on the Rosymorn Monastery Trail.
+  - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
-  - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from ***Vicar Humbletoes***.
+  - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
 - [Cape of the Mountebank](https://www.dndbeyond.com/magic-items/9228376-cape-of-the-mountebank)
-  - It can be obtained by killing the ***Dhourn*** in Underdark.
+  - It can be obtained by killing the Dhourn in Underdark.
 - [Cloak of Arachnida](https://www.dndbeyond.com/magic-items/4604-cloak-of-arachnida)
-  - It can be obtained by killing a ***Ettercap*** in Whispering Depths.
+  - It can be obtained by killing a Ettercap in Whispering Depths.
 - [Cloak of Invisibility](https://www.dndbeyond.com/magic-items/9059006-cloak-of-invisibility)
-  - It can be obtained by killing the ***Duergar Corpse Disposer*** in Grymforge.
+  - It can be obtained by killing the Duergar Corpse Disposer in Grymforge.
 - [Efreeti Chain](https://www.dndbeyond.com/magic-items/9228530-efreeti-chain)
-  - It can be obtained by killing the ***Animated Armour*** in the Ancient Forge.
+  - It can be obtained by killing the Animated Armour in the Ancient Forge.
 - [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow)
-  - It can be obtained by killing the ***Merregon Legionnaire*** in Grymforge.
+  - It can be obtained by killing the Merregon Legionnaire in Grymforge.
 - [Executioner's Handaxe](https://www.dndbeyond.com/magic-items/9228603-executioners-axe)
-  - It can be obtained by killing ***Crusher*** in Goblin Camp.
+  - It can be obtained by killing Crusher in Goblin Camp.
 - [Frost Brand](https://www.dndbeyond.com/magic-items/9228651-frost-brand)
-  - It can be obtained by killing ***Zarys*** in Zhentarim Basement.
+  - It can be obtained by killing Zarys in Zhentarim Basement.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
-  - It can be obtained by killing the ***Guardian of Faith*** in Crèche Y'llek.
+  - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
 - [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
-  - It can be obtained by killing the ***Wood Woad*** in the Decrepit Sanctuary.
+  - It can be obtained by killing the Wood Woad in the Decrepit Sanctuary.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
-  - It can be purchased from ***A'jak'nir Jeera***.
+  - It can be purchased from A'jak'nir Jeera.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
-  - It can be purchased from ***Lann Tarv***.
+  - It can be purchased from Lann Tarv.
 - [Sword of Answering](https://www.dndbeyond.com/magic-items/9229111-sword-of-answering)
-  - It can be purchased from ***A'jak'nir Jeera***.
+  - It can be purchased from A'jak'nir Jeera.
 - [Sword of Kas](https://www.dndbeyond.com/magic-items/9229112-sword-of-kas)
-  - It can be purchased ***Vicar Humbletoes***.
+  - It can be purchased Vicar Humbletoes.
 - [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
-  - It can be purchased ***Vicar Humbletoes***.
+  - It can be purchased Vicar Humbletoes.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
-  - It can be obtained by killing ***Fist Marcus***.
+  - It can be obtained by killing Fist Marcus.
 - [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name)
-  - It can be obtained by killing ***He Who Was*** in the Shadow-Cursed Lands.
+  - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
-  - It can be purchased from ***A'jak'nir Jeera***.
+  - It can be purchased from A'jak'nir Jeera.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
-  - It can be obtained by killing the ***Cursed Kuo-Toa Chief*** in the Shadow-Cursed Lands.
+  - It can be obtained by killing the Cursed Kuo-Toa Chief in the Shadow-Cursed Lands.
 
 # NPCs
 
@@ -2113,9 +2102,9 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - Gortash: Gain the actions of the Artillerist Artificer.
 - Ironhand Gnomes: Gain the actions of the Armorer Artificer.
 
-# Rules 
+# Rules
 
-## Actions 
+## Actions
 
 - Attack
   - Shove
@@ -2145,501 +2134,177 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
     - The status is removed when taking cold, fire, or lightning damage.
 
 ## D20 Tests
-
 - No critical failure on non-attack d20 rolls.
 
 ## Darkvision
-
 - Darkvision: 60 ft.
 - Superior Darkvision: 180 ft.
 
 ## [Initiative](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#Initiative)
 
 ## Ranged Weapon
-
 - When making a ranged weapon attack against a target more than 18m or 15m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Sharpshooter feat.
 - Crossbows have the Loading property, which can be ignored if you have the Crossbow Expert feat.
 
 ## Thrown Weapon
-
 - When throwing a weapon at a target more than 9m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Throw Fighting Style.
 
 ## Weapon Mastery Properties
 
 Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below. Only the Barbarian, Fighter, Paladin, Ranger, and Rogue classes can benefit from Weapon Mastery. You can also select "Weapon Master" Feat to get the benefit. You can gain the benefits either by obtaining the Blessed Strike passive at Cleric level 7, or by reaching level 6 in the College of Swords or the College of Valor as a Bard.
 
-- **Cleave** (Greataxe, Halberd)
+- Cleave
+  - Greataxe, Halberd
   - If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
-- **Graze** (Glaive, Greatsword)
+- Graze
+  - Glaive, Greatsword
   - If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.
-- **Nick** (Dagger, Light hammer, Sickle, Scimitar)
+- Nick
+  - Dagger, Light hammer, Sickle, Scimitar
   - When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.
-- **Push** (Greatclub, Pike, Warhammer, Heavy Crossbow)
+- Push
+  - Greatclub, Pike, Warhammer, Heavy Crossbow
   - If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
-- **Sap** (Mace, Spear, Flail, Longsword, Morningstar, War Pick)
+- Sap
+  - Mace, Spear, Flail, Longsword, Morningstar, War Pick
   - If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
-- **Slow** (Club, Javelin, Light Crossbow, Longbow)
+- Slow
+  - Club, Javelin, Light Crossbow, Longbow
   - If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.
-- **Topple** (Quarterstaff, Battleaxe, Maul, Trident)
+- Topple
+  - Quarterstaff, Battleaxe, Maul, Trident
   - If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
-- **Vex** (Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow)
+- Vex
+  - Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow
   - If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
-# Spells 
+# Spells
 
-Appropriate spells have been added to the spell list for each class.
+The appropriate spells have been added to the class spell list, aligning with the PHB's class spell lists.
 
 ## Cantrip
 
-### Acid Splash 
-- School: Evocation
-
-### Blade Ward (Homebrew)
-- Duration: Concentration, up to 10 minute
-- AC +1.
-
-### [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
-- Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.
-- ***Cantrip Upgrade***. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).
-- Available For: Sorcerer, Warlock, Wizard, Illrigger
-
-### [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
-
-### [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
-- Available For: Bard, Druid, Sorcerer, Warlock, Wizard
-
-### Dancing Lights 
-- School: Illusion 
-- Casting Time: Bonus action
-
-### [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns)
-- Available For: Bard, Sorcerer, Wizard
-
-### [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_GreenFlameBlade.png?raw=true)
-- You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.
-- This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
-- Available For: Sorcerer, Warlock, Wizard
-
-### [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_Hellfire.png?raw=true)
-- You create an eruption of smoldering hellfire around a creature you can see within range. The target must succeed on a Charisma saving throw or take 1d4 fire damage plus 1d4 necrotic damage.
-- ***At Higher Levels***. Both of the spell’s damage types increase by 1d4 when you reach 5th level (2d4 each), 11th level (3d4 each), and 17th level (4d4 each).
-- Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
-
-### [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_LightningLure.png?raw=true)
-- You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.
-- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-- Available For: Sorcerer, Warlock, Wizard
-
-### [Magic Stone](https://www.dndbeyond.com/spells/2391-magic-stone)
-- You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker’s, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.
-- If you cast this spell again, the spell ends early on any pebbles still affected by it.
-- Available For: Druid, Warlock, Artificer
-
-### [Mind Sliver](https://www.dndbeyond.com/spells/2619037-mind-sliver)
-- You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.
-- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
-- Available For: Sorcerer, Warlock, Wizard, Aberrant Sorcery
-
-### Poison Spray 
-- School: Necromancy 
-- Range: 9 m
-- Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.  
-
-### [Prestidigitation](https://www.dndbeyond.com/spells/2618893-prestidigitation)
-- You create a magical effect within range.
-  - Prestidigitation: Light Torch
-  - Prestidigitation: Extinguish Torch
-  - Prestidigitation: Clean Object
-
-### [Primal Savagery](https://www.dndbeyond.com/spells/14558-primal-savagery)
-
-### Produce Flame 
-- A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.
-- Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.
-- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach Levels 5 (2d8), 11 (3d8), and 17 (4d8).
-
-### [Shillelagh](https://www.dndbeyond.com/spells/2618984-shillelagh)
-- A Club or Quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).
-- The spell ends early if you cast it again or if you let go of the weapon.
-- ***Cantrip Upgrade***. The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).
-- Available For: Druid
-
-### [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_SorcerousBurst.png?raw=true)
-- You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.
-- If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier.
-- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
-- Available For: Sorcerer
-
-### [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
-- Available For: Artificer, Cleric, Druid
-
-### [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_StarryWisp.png?raw=true)
-- You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.
-- ***Cantrip Upgrade***. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).
-- Available For: Bard, Druid
-
-### Thunderclap
-- Bard, Druid, Sorcerer, Warlock, Wizard
-- Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d6 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away.
-- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach Levels 5 (2d6), 11 (3d6), and 17 (4d6).
-### Resistance
-- You touch a willing creature. When the creature takes damage before the spell ends, the creature reduces the total damage taken by 1 (Homebrew).
-### True Strike 
-- Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).
-- ***Cantrip Upgrade***. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach Levels 5 (1d6), 10 (2d6), and 17 (3d6).
-
-### [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_VengefulBlade.png?raw=true)
-- You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then radiates a dark aura of energy until the start of your next turn. If the target makes an attack or casts a spell before then, the target takes 1d8 necrotic damage and the spell ends.
-- This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target on a hit, and the damage the target takes for making an attack or casting a spell increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).
-- Available For: Sorcerer, Warlock, Wizard, Architect of Ruin
-
-### [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
-- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).
-### [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_WordofRadiance.png?raw=true)
-- Burning radiance erupts from you in a 5-foot Emanation. Each creature of your choice that you can see in it must succeed on a Constitution saving throw or take 1d6 Radiant damage.
-- ***Cantrip Upgrade***. The damage increases by 1d6 when you reach Levels 5 (2d6), 11 (3d6), and 17 (4d6).
-- Available For: Cleric
+- [Acid Splash](https://www.dndbeyond.com/spells/2618844-acid-splash)
+- [Blade Ward](https://www.dndbeyond.com/spells/2618931-blade-ward) (Homebrew)
+- [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
+- [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
+- [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
+- [Dancing Lights](https://www.dndbeyond.com/spells/2619058-dancing-lights)
+- [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns)
+- [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
+- [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
+- [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
+- [Magic Stone](https://www.dndbeyond.com/spells/2391-magic-stone)
+- [Mind Sliver](https://www.dndbeyond.com/spells/2619037-mind-sliver)
+- [Poison Spray](https://www.dndbeyond.com/spells/2618875-poison-spray)
+- [Prestidigitation](https://www.dndbeyond.com/spells/2618893-prestidigitation)
+- [Primal Savagery](https://www.dndbeyond.com/spells/14558-primal-savagery)
+- [Produce Flame](https://www.dndbeyond.com/spells/2618901-produce-flame)
+- [Resistance](https://www.dndbeyond.com/spells/2618947-resistance)
+- [Shillelagh](https://www.dndbeyond.com/spells/2618984-shillelagh)
+- [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
+- [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
+- [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
+- [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap)
+- [True Strike](https://www.dndbeyond.com/spells/2619204-true-strike)
+- [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
+- [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
+- [Word of Radiance](https://www.dndbeyond.com/spells/2619217-word-of-radiance)
 
 ## Level 1 spells
-### Armour of Agathys 
-- Casting Time: Bonus Action 
-### Chromatic Orb 
-- No surface creation, but all variant types deal 3d8 damage.
-- If you roll the same number on two or more of the d8s, the orb leaps to a different target, and deals reduced damage. The orb can’t leap again unless you cast the spell with a Level 2+ spell slot.
-### Color Spray 
-- You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn.   
-### Cure Wounds 
-- School: Abjuration 
-- 2d8 + spellcasting ability modifier
-- The healing increases by 2d8 for each spell slot Level above 1.
-
-### [Dissonant Whispers](https://www.dndbeyond.com/spells/2619104-dissonant-whispers)
-- One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.
-- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot level above 1.
-
-### Divine Favor 
-- No concentration required.
-
-### [Divine Smite](https://www.dndbeyond.com/spells/2618833-divine-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead.
-
-### Enhance Leap
-- Casting Time: Bonus Action
-- Once per turn, by expending 4 meters of your movement speed, you can jump up to your maximum jump distance.
-
-### [False Life](https://www.dndbeyond.com/spells/2618866-false-life)
-- You gain 2d4 + 4 Temporary Hit Points.
-- ***Using a Higher-Level Spell Slot***. You gain 5 additional Temporary Hit Points for each spell slot level above 1.
-
-### [Feather Fall](https://www.dndbeyond.com/spells/2618874-feather-fall)
-- Casting Time: Reaction ~~To do: Implement Interrupt~~\
-
-### Hail of thorns 
-- Can receives extra attack benefit.
-### Healing Word 
-- School: Abjuration 
-- 2d4 + spellcasting ability modifier
-- The healing increases by 2d4 for each spell slot Level above 1.
-### Hunter's Mark 
-- 1d6 Force damage
-### Inflict Wounds 
-- A creature you touch makes a Constitution saving throw, taking 2d10 Necrotic damage on a failed save or half as much damage on a successful one.   
-
-### [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.
-- ***Using a Higher-Level Spell Slot***. All the damage increases by 1d6 for each spell slot level above 1.
-
-### Sleep 
-- Duration: Concentration, up to 1 minutes
-- If the target fails a Wisdom saving throw, it falls asleep until the end of its next turn. If it fails a repeat saving throw at the end of its turn after waking up, the target falls asleep again. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect.
-
-### [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew)
-
-### Tasha's Hideous Laughter  
-- You can target one additional creature for each spell slot Level above 2.
-
-### [Thunderous Smite](https://www.dndbeyond.com/spells/2619182-thunderous-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra 2d6 Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition.
-- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
-
-### Ray of Sickness 
-- On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.  
-### Witch Bolt 
-- On a hit, the target takes 2d12 Lightning damage. 
-- On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed.   ,   
-
-### [Wrathful Smite ](https://www.dndbeyond.com/spells/2619220-wrathful-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- The target takes an extra 1d6 Necrotic damage from the attack, and it must succeed on a Wisdom saving throw or have the Frightened condition until the spell ends. At the end of each of its turns, the Frightened target repeats the save, ending the spell on itself on a success.
-- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 1.
+- [Armor of Agathys](https://www.dndbeyond.com/spells/2618870-armor-of-agathys)
+- [Chromatic Orb](https://www.dndbeyond.com/spells/2618966-chromatic-orb)
+- [Color Spray](https://www.dndbeyond.com/spells/2618978-color-spray)
+- [Cure Wounds](https://www.dndbeyond.com/spells/2619079-cure-wounds)
+- [Dissonant Whispers](https://www.dndbeyond.com/spells/2619104-dissonant-whispers)
+- [Divine Favor](https://www.dndbeyond.com/spells/2619142-divine-favor)
+- [Divine Smite](https://www.dndbeyond.com/spells/2618833-divine-smite)
+- [False Life](https://www.dndbeyond.com/spells/2618866-false-life)
+- [Feather Fall](https://www.dndbeyond.com/spells/2618874-feather-fall)
+- [Hail of thorns](https://www.dndbeyond.com/spells/2618975-hail-of-thorns)
+- [Healing Word](https://www.dndbeyond.com/spells/2619143-healing-word)
+- [Hunter's Mark](https://www.dndbeyond.com/spells/2619166-hunters-mark)
+- [Inflict Wounds](https://www.dndbeyond.com/spells/2619181-inflict-wounds)
+- [Jump](https://www.dndbeyond.com/spells/2618991-jump)
+- [Ray of Sickness](https://www.dndbeyond.com/spells/2618935-ray-of-sickness)
+- [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
+- [Sleep](https://www.dndbeyond.com/spells/2619064-sleep)
+- [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew)
+- [Tasha's Hideous Laughter](https://www.dndbeyond.com/spells/2619132-tashas-hideous-laughter)
+- [Thunderous Smite](https://www.dndbeyond.com/spells/2619182-thunderous-smite)
+- [Witch Bolt](https://www.dndbeyond.com/spells/2619215-witch-bolt)
+- [Wrathful Smite](https://www.dndbeyond.com/spells/2619220-wrathful-smite)
 
 ## Level 2 spells
-
-### [Arcane Vigor](https://www.dndbeyond.com/spells/2618831-arcane-vigor)
-
-### [Barkskin](https://www.dndbeyond.com/spells/2618907-barkskin)
-- Casting Time: 1 Bonus Action
-- Duration: 1 Hour
-
-### [Branding Smite](https://www.dndbeyond.com/spells/2618838-shining-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can’t benefit from the Invisible condition.
-- ***Using a Higher-Level Spell Slot***. The damage increases by 1d6 for each spell slot Level above 2.
-
-### [Cloud of Daggers](https://www.dndbeyond.com/spells/2618974-cloud-of-daggers)
-- You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn.
-- On your later turns, you can take a Magic action to teleport the Cube up to 30 feet.
-- ***Using a Higher-Level Spell Slot.*** The damage increases by 2d4 for each spell slot level above 2.
-
-### [Dragon's Breath](https://www.dndbeyond.com/spells/2619150-dragons-breath)
-- You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one.
-- ***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
-
-### [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
-- You summon an otherworldly being that appears as a loyal steed. The steed enhances your attack, defense, and movement speed.
-
-### [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
-- Duration: Concentration, 10 Minutes
-- As a Magic action, you can make a melee spell attack with the fiery blade. On a hit, the target takes Fire damage equal to 3d6 plus your spellcasting ability modifier.
-- ***Using a Higher-Level Spell Slot.*** The damage increases by 1d6 for each spell slot level above 2.
-
-### [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)
-- Duration: Concentration, 1 Hour
-
-### [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
-
-### [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
-- Casting Time: Bonus Action
-- You touch a weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. The spell ends early if you cast it again.
-- ***Using a Higher-Level Spell Slot.*** The bonus increases to +2 with a level 3–5 spell slot. The bonus increases to +3 with a level 6+ spell slot.
-
-### [Mirror Image](https://www.dndbeyond.com/spells/2619060-mirror-image)
-
-### [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step)
-
-### [Moonbeam](https://www.dndbeyond.com/spells/2619134-moonbeam)
-
-### [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
-- An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm’s area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion.
-
-### [Prayer of Healing](https://www.dndbeyond.com/spells/2618892-prayer-of-healing)
-- Up to five creatures of your choice who remain within range for the spell’s entire casting gain the benefits of a Short Rest and also regain 2d8 Hit Points. A creature can’t be affected by this spell again until that creature finishes a Long Rest.
-- ***Using a Higher-Level Spell Slot***. The healing increases by 1d8 for each spell slot level above 2.
-
-### [Ray of Enfeeblement](https://www.dndbeyond.com/spells/2618926-ray-of-enfeeblement)
-- A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn.
-- On a failed save, the target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success.
-
-### [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_BindingIce.png?raw=true)
-- A burst of cold energy emanates from you in a 30-foot cone. Each creature in that area must make a Constitution saving throw. On a failed save, a creature takes 3d8 cold damage and becomes hindered by ice formations for 10 turns, or until it succeeds on another saving throw, or a nearby creature uses an action to break the ice. Taking fire damage also ends the condition. A creature hindered by ice has its speed reduced to 0. On a successful save, a creature takes half damage and is not hindered by ice.
-- ***At Higher Levels***. When you cast this spell using a spell slot of 3rd level or higher, increase the cold damage by 1d8 for each slot level above 2nd.
-- Available For: Sorcerer, Wizard
-
-### [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_MindWhip.png?raw=true)
-
-- Available For: Sorcerer, Wizard
-
-### [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
-- Duration: Concentration, 1 Minute
-
-### [Spiritual Weapon](https://www.dndbeyond.com/spells/2619081-spiritual-weapon)
-- Duration: Concentration, 1 Minute
-
-### [Summon Beast](https://www.dndbeyond.com/spells/2619106-summon-beast)
-- Summon an Eagle to fight by your side.
-- Available For: Druid, Ranger
-
-### [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
-
-### [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
-- Available For: Bard, Druid, Sorcerer, Wizard
-
-### [Web](https://www.dndbeyond.com/spells/2619208-web)
-- When the spell is cast, flames in the area covered by spider webs are extinguished.
+- [Arcane Vigor](https://www.dndbeyond.com/spells/2618831-arcane-vigor)
+- [Barkskin](https://www.dndbeyond.com/spells/2618907-barkskin)
+- [Branding Smite](https://www.dndbeyond.com/spells/2618838-shining-smite)
+- [Cloud of Daggers](https://www.dndbeyond.com/spells/2618974-cloud-of-daggers)
+- [Dragon's Breath](https://www.dndbeyond.com/spells/2619150-dragons-breath)
+- [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
+- [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
+- [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)
+- [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
+- [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
+- [Mirror Image](https://www.dndbeyond.com/spells/2619060-mirror-image)
+- [Misty Step](https://www.dndbeyond.com/spells/2619133-misty-step)
+- [Moonbeam](https://www.dndbeyond.com/spells/2619134-moonbeam)
+- [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
+- [Prayer of Healing](https://www.dndbeyond.com/spells/2618892-prayer-of-healing)
+- [Ray of Enfeeblement](https://www.dndbeyond.com/spells/2618926-ray-of-enfeeblement)
+- [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice)
+- [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
+- [Spiritual Weapon](https://www.dndbeyond.com/spells/2619081-spiritual-weapon)
+- [Summon Beast](https://www.dndbeyond.com/spells/2619106-summon-beast)
+- [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_MindWhip.png?raw=true)
+- [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
+- [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
+- [Web](https://www.dndbeyond.com/spells/2619208-web)
 
 ## Level 3 spells
-
-### Animate Dead
-- Can cast without requiring corpses (Homebrew).
-
-### [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride)
-- Available For: Artificer, Ranger, Sorcerer, Wizard
-
-### [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success.
-- ***Using a Higher-Level Spell Slot***. The extra damage increases by 1d8 for each spell slot level above 3.
-
-### Conjure Barrage 
-- 5d8 Force
-
-### [Fireball](https://www.dndbeyond.com/spells/2618887-fireball)
-- A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one.
-
-### [Flame Arrows](https://www.dndbeyond.com/spells/2381-flame-arrows)
-- Available For: Artificer, Druid, Ranger, Sorcerer, Wizard
-
-### Gaseous Form 
-- ***Using a Higher-Level Spell Slot***. You can target one additional creature for each spell slot Level above 3.     
-### Hypnotic Pattern
-- 10 Turns
-### Lightning arrow 
-- The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw. Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.
-### Mass Healing Word  
-- School: Abjuration 
-- 2d4 + spellcasting ability modifier
-### [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Divination_MindSpike.png?raw=true)
-- You drive a spike of psionic energy into the mind of one creature you can see within range. The target makes a Wisdom saving throw, taking 3d8 Psychic damage on a failed save or half as much damage on a successful one. On a failed save, you also always know the target’s location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can’t become hidden from you, and if it has the Invisible condition, it gains no benefit from that condition against you.
-- ***Using a Higher-Level Spell Slot***. The damage increases by 1d8 for each spell slot level above 2.
-- Available For: Sorcerer, Warlock, Wizard
-
-### [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
-- Duration: 10 Minutes
-- If you are good or neutral, the damage is Radiant; if you are evil, the damage is Necrotic.
-
-### [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
-- Summon a Blink Dog to fight by your side.
-- Available For: Druid, Ranger, Warlock, Wizard, Fey Wanderer
-
-### [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
-- Available For: Sorcerer, Warlock
-
-### Warden of Vitality 
-- School: Abjuration 
-- An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it.
+- [Animate Dead](https://www.dndbeyond.com/spells/2618853-animate-dead)
+- [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride)
+- [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
+- [Conjure Barrage](https://www.dndbeyond.com/spells/2619045-conjure-barrage)
+- [Fireball](https://www.dndbeyond.com/spells/2618887-fireball)
+- [Flame Arrows](https://www.dndbeyond.com/spells/2381-flame-arrows)
+- [Gaseous Form](https://www.dndbeyond.com/spells/2618927-gaseous-form)
+- [Hypnotic Pattern](https://www.dndbeyond.com/spells/2619168-hypnotic-pattern)
+- [Lightning Arrow](https://www.dndbeyond.com/spells/2618997-lightning-arrow)
+- [Mass Healing Word](https://www.dndbeyond.com/spells/2619028-mass-healing-word)
+- [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Divination_MindSpike.png?raw=true)
+- [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
+- [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
+- [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
+- [Warden of Vitality](https://www.dndbeyond.com/spells/2618891-aura-of-vitality)
 
 ## Level 4 spells
-
-### Conjure Minor Elementals
-- Duration: Concentration
-
-### Conjure Woodland Beings
-- Duration: Concentration
-
-### [Fount of Moonlight](https://www.dndbeyond.com/spells/2618835-fount-of-moonlight)
-- A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.
-- Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra 2d6 Radiant damage on a hit.
-- In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your next turn.
-- Available For: Bard, Druid
-
-### [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
-- Duration: Concentration, 1 Minute
-- You conjure a vine that sprouts from a surface in an unoccupied space that you can see within range. The vine lasts for the duration.
-- Make a melee spell attack against a creature within 30 feet of the vine. On a hit, the target takes 4d8 Bludgeoning damage and is pulled up to 30 feet toward the vine; if the target is Huge or smaller, it has the Grappled condition (escape DC equal to your spell save DC). The vine can grapple only one creature at a time, and you can cause the vine to release a Grappled creature (no action required).
-- As a Bonus Action on your later turns, you can repeat the attack against a creature within 30 feet of the vine.
-- ***Using a Higher-Level Spell Slot***. The number of creatures the vine can grapple increases by one for each spell slot level above 4.
-
-### [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm)
-- Each creature in the Cylinder makes a Dexterity saving throw. A creature takes 2d10 Bludgeoning damage and 4d6 Cold damage on a failed save or half as much damage on a successful one.
-- Hailstones turn ground in the Cylinder into Difficult Terrain until the end of your next turn.
-- ***Using a Higher-Level Spell Slot***. The Bludgeoning damage increases by 1d10 for each spell slot level above 4.
-
-### Phantasmal Killer 
-- The target is no longer Frightened. This means that Phantasmal Killer can affect creatures immune to fear.   
-
-### [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_PsychicLance.png?raw=true)
-
-- Available For: Bard, Sorcerer, Warlock, Wizard
-
-### [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
-- Casting Time: 1 Bonus Action (Which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike)
-- The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn.
-- ***Using a Higher-Level Spell Slot***. The extra damage increases by 1d6 for each spell slot level above 4.
-
-### [Stoneskin](https://www.dndbeyond.com/spells/2619095-stoneskin)
-- Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage.
-
-### [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_StormSphere.png?raw=true)
-- A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.
-- Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.
-- Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
-- ***At Higher Levels.*** When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th.
-
-### Summon Aberration 
-- School: Conjuration (Warlock, Wizard, Aberrant Sorcery)
-- Power Level 4: Intellect Devourer
-- Power Level 5: Spectator
-- Power Level 6: Mindflayer
-### Summon Construct 
-- School: Conjuration (Wizard, Clockwork Sorcery)
-- Power Level 4: Animated Armor
-- Power Level 5: Automaton
-- Power Level 6: Steel Watcher
-
-### [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_VitriolicSphere.png?raw=true)
+- [Fount of Moonlight](https://www.dndbeyond.com/spells/2618835-fount-of-moonlight)
+- [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
+- [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm)
+- [Phantasmal Killer](https://www.dndbeyond.com/spells/2618857-phantasmal-killer)
+- [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_PsychicLance.png?raw=true)
+- [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
+- [Stoneskin](https://www.dndbeyond.com/spells/2619095-stoneskin)
+- [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
+- [Summon Aberration](https://www.dndbeyond.com/spells/2619105-summon-aberration)
+- [Summon Construct](https://www.dndbeyond.com/spells/2619111-summon-construct)
+- [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_VitriolicSphere.png?raw=true)
 
 ## Level 5 spells
-### Banishing Smite 
-- School: Conjuration 
-### Cloudkill 
-- Damage application mechanism has been improved to allow the application of related magic item effects.  
-### Contagion 
-- The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition
-### [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)
-- Duration: Concentration
-### Mass Cure Wounds  
-- School: Abjuration 
-- 5d8 + spellcasting ability modifier
-
-### [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Conjuration_SteelWindStrike.png?raw=true)
-- You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 Force damage.
-- You then teleport to an unoccupied space you can see within 5 feet of one of the targets.
-- Available For: Ranger, Wizard, War Domain
-
-### [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Conjuration_SummonDragon.png?raw=true)
-- Available For: Wizard, Draconic Sorcery
-
-### [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Enchantment_SynapticStatic.png?raw=true)
-- You cause psychic energy to erupt at a point within range. Each creature in a 20-foot-radius Sphere centered on that point makes an Intelligence saving throw, taking 8d6 Psychic damage on a failed save or half as much damage on a successful one.
-- On a failed save, a target also has muddled thoughts for 3 turns. During that time, it subtracts 1d6 from all its attack rolls and ability checks, as well as any Constitution saving throws to maintain Concentration.
-- Available For: Bard, Sorcerer, Warlock, Wizard, Knowledge Domain
-
-### [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Evocation_WallofForce.png?raw=true)
-- An Invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a globe with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick and lasts for the duration. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (you choose which side).
-- Nothing can physically pass through the wall.
-- Available For: Wizard, Oath of Redemption, Clockwork Sorcery
+- [Banishing Smite](https://www.dndbeyond.com/spells/2618904-banishing-smite)
+- [Cloudkill](https://www.dndbeyond.com/spells/2618976-cloudkill)
+- [Contagion](https://www.dndbeyond.com/spells/2619063-contagion)
+- [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)
+- [Mass Cure Wounds](https://www.dndbeyond.com/spells/2619026-mass-cure-wounds)
+- [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
+- [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_SummonDragon.png?raw=true)
+- [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_SynapticStatic.png?raw=true)
+- [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_WallofForce.png?raw=true)
 
 ## Level 6 spells
-
-### Circle of Death 
-- 8d8
-
-### Globe of Invulnerability 
-- Create a barrier that makes creatures and objects inside it Immune to magical damage.
-
-### Heal 
-- School: Abjuration
-
-### [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
-- Available For: Sorcerer, Wizard
-
-### [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/3_Atalas_64/Spell_Transmutation_TensersTransformation.png?raw=true)
-- You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can’t cast spells, and you gain the following benefits:
-  - You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.
-  - You have advantage on attack rolls that you make with simple and martial weapons.
-  - When you hit a target with a weapon attack, that target takes an extra 2d12 force damage.
-  - You have proficiency with all armor, shields, simple weapons, and martial weapons.
-  - You have proficiency in Strength and Constitution saving throws.
-  - You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.
-- Available For: Wizard
+- [Circle of Death](https://www.dndbeyond.com/spells/2618969-circle-of-death)
+- [Globe of Invulnerability](https://www.dndbeyond.com/spells/2618950-globe-of-invulnerability)
+- [Heal](https://www.dndbeyond.com/spells/2618979-heal)
+- [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
+- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)
