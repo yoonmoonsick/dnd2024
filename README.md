@@ -1762,9 +1762,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 6: Infernal Conduit
   - You can strengthen your allies at the cost of yourself—or drain your enemy’s life force for your own gain. You have a pool of Infernal Conduit dice, which are d10s. The number of Infernal Conduit dice in your pool increase as you gain illrigger levels, as shown in the Infernal Conduit Dice column of the Illrigger table.
   - As an action, you can touch another creature and spend one or more dice from your pool. The target must make a Constitution saving throw against your interdict save DC. A creature can willingly fail this saving throw. Roll the spent dice and choose one of the following effects:
-    - Invigorate
+    - Invigorate ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Invigorate.png?raw=true)
       - On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can’t be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.
-    - Devour
+    - Devour ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Devour.png?raw=true)
       - On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can’t be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can’t suffer more than three levels of exhaustion combined from all illriggers’ Infernal Conduit features.
   - You regain any spent Infernal Conduit dice when you finish a short rest.
 - Level 7: Interdiction
