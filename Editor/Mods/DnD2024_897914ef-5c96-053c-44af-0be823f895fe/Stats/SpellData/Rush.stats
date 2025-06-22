@@ -46,10 +46,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Charger_Attack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bae6edf6-7900-476d-9407-418702fd5d54" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage((max(0,MainMeleeWeapon+1d8)), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="(not Ally() and not Dead()) and DistanceToTargetGreaterThan(3.0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -64,7 +63,6 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Charger_Push" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="(not Ally() and not Dead()) and DistanceToTargetGreaterThan(3.0) and CanShoveWeight() and IsMovable() and not Grounded();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

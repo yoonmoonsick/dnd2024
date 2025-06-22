@@ -6867,7 +6867,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_1_BalefulInterdict_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4cdea18-86fa-4496-9fb3-1fc5eda1f983" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);UnlockSpellVariant(SpellId('Target_Illrigger_BalefulInterdict'),ModifyUseCosts(Replace,IllriggerSeal,0,-1,IllriggerSeal),ModifyIconGlow());IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Fire);IF(HasPassive('Interdict_7_UnleashHell',context.Source) and ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);UnlockSpellVariant(SpellId('Target_Illrigger_BalefulInterdict'),ModifyUseCosts(Replace,IllriggerSeal,0,-1,IllriggerSeal),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7119,7 +7119,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b12f33fb-fb4e-4b80-940c-c90948a53498" />
         <field name="Name" type="NameTableFieldDefinition" value="Interdict_2_StyxsApathy" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h747db0c1g4bf9g6d18g594dg2f31502d32d7" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb25e96cgbb75g8d9eg2543g5c5bd39d8185" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbb25e96cgbb75g8d9eg2543g5c5bd39d8185" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Gnoll_SoulOffering" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
@@ -7193,6 +7193,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Explosion" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Fire);IF(ClassLevelHigherOrEqualThan(7,'Illrigger',context.Source)):UnlockSpell(Target_UnleashHell_Necrotic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7538,12 +7539,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5d9d56ad-4a6e-48c0-9b33-ea82794704d3" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticSeal" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54568a83g80bcge12dg3a7bg9c37e564da74" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0aaf15eg6c23g3782gee90g0f943d3419be" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(4.5)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0aaf15eg6c23g3782gee90g0f943d3419be" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="Distance(1.5);Distance(4.5)" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_OpportunitySpell" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TelekineticSeal);UnlockInterrupt(Interrupt_TelekineticSeal_Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TelekineticSeal_Push);UnlockInterrupt(Interrupt_TelekineticSeal_Prone);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

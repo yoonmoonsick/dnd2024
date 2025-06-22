@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6987,11 +6988,19 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3410134a-182a-4420-90cc-bd1a4f7149a6" />
         <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ccdea1c2-ad45-42da-b5e5-8e34053b1ea1" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSourceDeath" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Frightened;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6287b7e0-92ed-4982-9b37-1ac9910556fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRIGHTENED_SHADOWHEART" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01ac7050-8a7d-4b95-8259-e99fb3ed7adc" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RemoveStatus(FRIGHTENED)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9559,7 +9568,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="31fe4624-c17a-4291-8fdc-2a75a3c68d5c" />
-        <field name="Name" type="NameTableFieldDefinition" value="MANTLEOFINSPIRATION_CHARMED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="MANTLEOFINSPIRATION_CHARMED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70d4ce73-665d-4c7b-8018-7e9820a11f25" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9567,7 +9576,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ffb7fcc6-1473-4dff-b2ad-a0c1f98bbfbb" />
-        <field name="Name" type="NameTableFieldDefinition" value="PANACHE_CHARMED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PANACHE_CHARMED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="49045c25-1899-460a-91b2-106ccb171b74" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9575,14 +9584,14 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a8ac16f7-5d73-45a9-8149-4049da6d7cd7" />
-        <field name="Name" type="NameTableFieldDefinition" value="REDIRECT_ATTACK_ATTACKER_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="REDIRECT_ATTACK_ATTACKER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="516fd5a1-9bee-4b6b-a848-7dd72582d33f" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="664d2a4d-3c6a-4619-a26d-67c903e7dbba" />
-        <field name="Name" type="NameTableFieldDefinition" value="GLO_CAPTUREDINFLASK_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="GLO_CAPTUREDINFLASK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="25533901-4d4d-4d9a-8893-1f77c37dbe33" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9590,7 +9599,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="46686329-8cc1-4159-8b04-37610f1ac19a" />
-        <field name="Name" type="NameTableFieldDefinition" value="UND_SPECTATOR_CHARMED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="UND_SPECTATOR_CHARMED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0f9d49b-057b-418d-bb40-a2271310ad16" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9598,7 +9607,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="97f9d3ab-d3bb-4a32-8a5f-06935cc9eb82" />
-        <field name="Name" type="NameTableFieldDefinition" value="UND_NERE_COERCION_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="UND_NERE_COERCION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="746e60e2-985e-49ef-adb5-bf02497e04f8" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9606,7 +9615,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8bfd996a-ab82-4899-9249-8e18e8fd48ea" />
-        <field name="Name" type="NameTableFieldDefinition" value="CHARM_ANIMALS_AND_PLANTS_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHARM_ANIMALS_AND_PLANTS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3b88bc6-4230-493d-af1a-7f1072b85928" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9614,7 +9623,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a35ba045-ab30-4a98-9993-f09da847aab1" />
-        <field name="Name" type="NameTableFieldDefinition" value="CHARMED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="CHARMED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fbc76b9c-f545-4a10-942d-e0a130e664da" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9622,7 +9631,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0496b659-9ac6-44b9-b073-c356b3046065" />
-        <field name="Name" type="NameTableFieldDefinition" value="CROWN_OF_MADNESS_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="CROWN_OF_MADNESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bb5cb102-77f5-4f12-b2f9-728b94f11f1f" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9630,7 +9639,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e388797b-b01e-463a-b530-d9e7ecb5b085" />
-        <field name="Name" type="NameTableFieldDefinition" value="FRIENDS_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRIENDS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="66184cbb-139d-454a-9acb-1f6edba0619d" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9646,7 +9655,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="647d6feb-e0dd-4330-8c90-ea6ec73a827b" />
-        <field name="Name" type="NameTableFieldDefinition" value="SHA_DISPLACER_CHARMED_HIDDEN_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHA_DISPLACER_CHARMED_HIDDEN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ec77d8a8-8f9e-4541-9975-329d3ab9f7e6" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9654,7 +9663,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7887afac-2cf1-4ccc-bf9c-a735b6999e52" />
-        <field name="Name" type="NameTableFieldDefinition" value="LOW_HOUSEOFGRIEF_DOMINATED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_HOUSEOFGRIEF_DOMINATED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6d990d69-fbba-4a5a-8191-84fc2e41bb4d" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9662,7 +9671,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="afb69d60-1098-4d9c-aedc-f48236438bd0" />
-        <field name="Name" type="NameTableFieldDefinition" value="LOW_IRONTHRONE_MIZORA_FIENDISHCHARM_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_IRONTHRONE_MIZORA_FIENDISHCHARM" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e35ffd07-db1f-4176-9f93-ece0d8544260" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9670,7 +9679,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="07cf5298-1b38-4906-a151-00df8a0765f4" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_ZHENTARIM_DEMONSPIRIT_MADNESS_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_ZHENTARIM_DEMONSPIRIT_MADNESS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9cf3fc7-9d67-41f7-9d03-70ef605bd75b" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9678,7 +9687,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9424c455-6295-4b57-aeb9-9f17ebd74b16" />
-        <field name="Name" type="NameTableFieldDefinition" value="LOW_CAZADORSPALACE_CHARM_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_CAZADORSPALACE_CHARM" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="402d69d0-6e77-4afa-837d-3bf2eabf448b" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);RemoveStatus(LOW_CAZADORSPALACE_CHARM_VFX)" />
       </fields>
@@ -9686,7 +9695,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f1efa8ac-7146-432b-b1e2-5a3a42fec2c5" />
-        <field name="Name" type="NameTableFieldDefinition" value="DOMINATE_BEAST_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOMINATE_BEAST" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="22e5714c-c13b-4957-9eb9-906ae38ba0a2" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9694,7 +9703,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5259b57c-6f66-43bc-9791-0d17899c5127" />
-        <field name="Name" type="NameTableFieldDefinition" value="DOMINATE_PERSON_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOMINATE_PERSON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="54821fa4-01b2-4e7d-912a-581f1aa4a16b" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9702,7 +9711,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="400a462f-6355-4073-b6de-13f8332b5b3b" />
-        <field name="Name" type="NameTableFieldDefinition" value="HYPNOTIC_GAZE_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="HYPNOTIC_GAZE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="45b6a7b8-4825-4f02-9889-2e8e2108e867" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);IF(RemoveCause(StatusRemoveCause.Death)):RemoveStatus(SELF,HYPNOTIC_GAZE_OWNER)" />
       </fields>
@@ -9710,7 +9719,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ec667268-9c69-4a44-95e4-bdc7c3e5296d" />
-        <field name="Name" type="NameTableFieldDefinition" value="IRRESISTIBLE_DANCE_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="IRRESISTIBLE_DANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="97764827-8e57-4655-a1e0-0ba9a2a25892" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ActionPoint,1) " />
       </fields>
@@ -9718,7 +9727,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9a63f7ca-7335-4b39-b43b-95c335387b54" />
-        <field name="Name" type="NameTableFieldDefinition" value="PLANAR_BINDING_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PLANAR_BINDING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f93c2efc-3ed8-4d0a-8205-982cffe89eb6" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9726,7 +9735,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="63a666ca-6b2d-40a0-8674-180ae346fb4e" />
-        <field name="Name" type="NameTableFieldDefinition" value="FIENDISH_CHARM_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="FIENDISH_CHARM" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b2c2f558-c744-4749-a795-7aa3c464eb05" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9734,7 +9743,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9f8510e9-e819-4209-8756-23e26d085248" />
-        <field name="Name" type="NameTableFieldDefinition" value="INCUBUS_CHARM_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="INCUBUS_CHARM" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="daa64924-45a2-431d-b77c-c9791f8c519a" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9742,7 +9751,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cbd60fbc-b781-45d3-941f-4aa5ee63ce28" />
-        <field name="Name" type="NameTableFieldDefinition" value="PLA_GITHCHOKEPOINT_FRIGHTENED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PLA_GITHCHOKEPOINT_FRIGHTENED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5c898ebf-3dc9-42ad-9fa9-91aac6dc1ed2" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9750,7 +9759,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f43807ac-27ab-4731-95a9-8cb0a099b2ae" />
-        <field name="Name" type="NameTableFieldDefinition" value="LOW_OSKARSBELOVED_UNNERVED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_OSKARSBELOVED_UNNERVED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="acb770f0-2257-4a10-b595-90c2c821d110" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9758,7 +9767,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7cddedec-c0b4-439f-8223-b8c0f7799c95" />
-        <field name="Name" type="NameTableFieldDefinition" value="TERRIFIED_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="TERRIFIED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d982fb59-8c33-4b38-a5e4-667f632ff982" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9766,7 +9775,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="608ac9f6-4f26-46cf-a8d2-b936741e5fdd" />
-        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="415e89f2-8d0c-4370-804d-19910721e2f1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9774,7 +9783,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c2142f02-6b60-4d6f-93d1-bff377fc99c9" />
-        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_5_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d3aefdc2-03b7-4a95-8ff3-61ca05c71541" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
@@ -9782,7 +9791,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="47e6dd11-6f33-436e-91bb-d0ef1a5d1cd5" />
-        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_6_override" />
+        <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb3b118f-e423-4369-a4bc-6f743a12dbf8" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
