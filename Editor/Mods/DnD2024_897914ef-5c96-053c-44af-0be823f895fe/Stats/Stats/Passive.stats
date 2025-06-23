@@ -6,7 +6,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f699b606-08ee-45e1-8425-debfa6cce04e" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_DnD2024_Rule" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -109,7 +108,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Firearms" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h82bb4ebdgdb35gb0d9gfe25gee04b61840d1" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_GortashMachine_GrenadeLauncher" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7754a827ga245g2734g7854g89f75052141a" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7754a827ga245g2734g7854g89f75052141a" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -117,7 +116,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c3696488-f0d6-472e-8b21-f756318a80a8" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearms_Projectile_Main" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -125,7 +124,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="af7f696c-bff3-4670-af49-445bd9800b83" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearms_Projectile_Offhand" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF((HasPassive('CrossbowExpert_DualWielding',context.Source) or HasPassive('FightingStyle_TwoWeaponFighting',context.Source) or HasPassive('MAG_TheCrimson_TwoWeapon_Passive',context.Source) or HasPassive('MAG_TwoWeaponFighting',context.Source)) and IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF((HasPassive('CrossbowExpert_DualWielding',context.Source) or HasPassive('FightingStyle_TwoWeaponFighting',context.Source) or HasPassive('MAG_TheCrimson_TwoWeapon_Passive',context.Source) or HasPassive('MAG_TwoWeaponFighting',context.Source)) and IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -241,6 +240,18 @@
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b26fa3f5-3e4f-4b8d-a3ec-33142e875e5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Proficiency_Firearm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e6a988f-26a8-4284-903b-26546068e315" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea9046fbg548cge8a2gc781g2614603cf5f3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81d026bdgddfeg1b9dg7878g92b15ae7cd47" version="2" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
