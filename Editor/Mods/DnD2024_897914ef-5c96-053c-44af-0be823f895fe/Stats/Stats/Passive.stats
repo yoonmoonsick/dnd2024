@@ -7513,6 +7513,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="597d1d48-eac3-4d02-bc44-8416fcf334cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dvastator_Strike" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnTurn;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d7f8dae0-e1d5-474b-b666-1d77a68d7ddc" />
         <field name="Name" type="NameTableFieldDefinition" value="InvokeHell_GrandStrategist" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h067dccf8g9bebg5e77g3c9fg06b3a44397e4" version="2" />
