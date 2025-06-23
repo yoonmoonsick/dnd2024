@@ -3226,7 +3226,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57c81a71-acd5-4238-b1d5-632a7497de77" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit)):CharacterWeaponDamage(1d6,Force)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and HasPassive('PreciseHunter',context.Source)):Advantage(AttackRoll);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit)):CharacterWeaponDamage(1d6,Force);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
@@ -3361,15 +3361,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="DamageShield_NPC_Radiant" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0193a343-f822-4e72-b772-d5df90b83e59" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RedirectDamage(1,Necrotic,Radiant,true);RedirectDamage(1,Radiant,Radiant,true)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6f23a1ab-19a3-4613-91af-57b76bab9620" />
-        <field name="Name" type="NameTableFieldDefinition" value="RemoveHuntersMark" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HUNTERS_MARK)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
