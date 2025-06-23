@@ -20,7 +20,7 @@ foreach ($file in $files) {
     & cmd /c "magick `2_Controller_144\$filename.png` -define dds:compression=BC7 `2_Controller_144\$filename.DDS`"
 
     # 작업 3: spell_bg.DDS 합성 후 PNG 저장
-    & cmd /c "magick `spell_bg.DDS` -resize 144x144 ( `"$fullPath`" -resize 144x144 ) -gravity center -composite `3_Atlas_64\$filename.png`"
+    & cmd /c "magick `spell_bg.DDS` -resize 64x64 ( `"$fullPath`" -resize 64x64 ) -gravity center -composite `3_Atlas_64\$filename.png`"
     # 작업 3: PNG를 DDS로 변환 (BC7 압축)
     & cmd /c "magick `3_Atlas_64\$filename.png` -define dds:compression=BC7 `3_Atlas_64\$filename.DDS`"
 
