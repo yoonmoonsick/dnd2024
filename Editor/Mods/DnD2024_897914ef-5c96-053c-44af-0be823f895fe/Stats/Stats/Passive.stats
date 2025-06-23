@@ -2705,7 +2705,9 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Druid))" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="8892b93b-721f-4b99-b9b4-05ac25aadb33" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(StatusHasStatusGroup(context.StatusId,'SG_Polymorph')):ApplyStatus(DRUID_WILDSHAPE_TEMP_HP,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DRUID_WILDSHAPE_TEMP_HP,100,-1)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusHasStatusGroup(context.StatusId, 'SG_Polymorph_BeastShape');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2714,7 +2716,14 @@
         <field name="Name" type="NameTableFieldDefinition" value="MoonDruid_Wildshape_TempHP_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cf33f005-e706-4f15-8447-6c62ef460db1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ClassLevel(Druid)*3)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(StatusHasStatusGroup(context.StatusId,'SG_Polymorph')):ApplyStatus(MOON_DRUID_WILDSHAPE_TEMP_HP,100,-1);IF(StatusHasStatusGroup(context.StatusId,'SG_Polymorph')):ApplyStatus(MOON_DRUID_WILDSHAPE_AC,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,MOON_DRUID_WILDSHAPE_TEMP_HP,100,-1);ApplyStatus(SELF,MOON_DRUID_WILDSHAPE_AC,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0359919e-fd9d-4b3c-afd5-3f13a2e2eec3" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b964cfa4-e208-483f-836c-0b5cd1d8aff6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
