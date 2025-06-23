@@ -11806,13 +11806,28 @@
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant_Sneak" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e21007a-76ec-4cc2-a659-3c4c1886a004" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);IF(not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and not Tagged('INANIMATE')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ( (((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and not Tagged('INANIMATE')) or (HasPassive('SneakAttackSwitch',context.Source)  and (HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5) or (not HasEnemyWithinRange('SG_Incapacitated',1.5, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',1.5, nil,false,context.Source,context.Target))) and not HasDisadvantage(AttackType.MeleeWeaponAttack) and not Tagged('INANIMATE')));" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Melee_Sneak" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant);" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53ad1006ge033g808fgdcecgcc857a028774" version="1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingFinesseWeaponInSpecificHand(context.Source,false) and HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0461815d-59df-48b8-ada2-6c216e0d30be" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f124fec-1605-4952-a13f-f61f92cb53f8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8871290d-71c3-4d34-879c-81bc8e22e4fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38618677-f8b1-4853-a1d7-77f987edaf15" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
