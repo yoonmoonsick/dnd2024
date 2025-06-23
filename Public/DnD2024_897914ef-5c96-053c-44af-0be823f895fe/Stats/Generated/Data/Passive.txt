@@ -1,6 +1,5 @@
 new entry "YMS_DnD2024_Rule"
 type "PassiveData"
-data "DisplayName" ""
 data "Properties" "IsHidden"
 
 new entry "Dummy"
@@ -70,18 +69,18 @@ data "Boosts" "IF(not HasPassive('Sharpshooter_Distance',context.Source) and Dis
 new entry "Firearms"
 type "PassiveData"
 data "DisplayName" "h82bb4ebdgdb35gb0d9gfe25gee04b61840d1;1"
-data "ExtraDescription" "h7754a827ga245g2734g7854g89f75052141a;1"
+data "ExtraDescription" "h7754a827ga245g2734g7854g89f75052141a;2"
 data "Icon" "Action_Monster_GortashMachine_GrenadeLauncher"
 
 new entry "Firearms_Projectile_Main"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "Boosts" "AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);"
+data "Boosts" "AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);"
 
 new entry "Firearms_Projectile_Offhand"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "Boosts" "AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF((HasPassive('CrossbowExpert_DualWielding',context.Source) or HasPassive('FightingStyle_TwoWeaponFighting',context.Source) or HasPassive('MAG_TheCrimson_TwoWeapon_Passive',context.Source) or HasPassive('MAG_TwoWeaponFighting',context.Source)) and IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);"
+data "Boosts" "AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF((HasPassive('CrossbowExpert_DualWielding',context.Source) or HasPassive('FightingStyle_TwoWeaponFighting',context.Source) or HasPassive('MAG_TheCrimson_TwoWeapon_Passive',context.Source) or HasPassive('MAG_TwoWeaponFighting',context.Source)) and IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):DamageBonus(-DexterityModifier,,false);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);"
 
 new entry "LongRangeThrow"
 type "PassiveData"
@@ -164,6 +163,15 @@ data "Boosts" "UnlockSpellVariant(DistantSpellCheck(),ModifyTargetRadius(Multipl
 data "ToggleOnEffect" ""
 data "ToggleOffContext" ""
 data "ToggleGroup" ""
+
+new entry "Proficiency_Firearm"
+type "PassiveData"
+using "Proficiency_HeavyCrossbows"
+data "DisplayName" "hea9046fbg548cge8a2gc781g2614603cf5f3;1"
+data "Description" "h81d026bdgddfeg1b9dg7878g92b15ae7cd47;2"
+data "PriorityOrder" "99"
+data "Properties" "Highlighted;ForceShowInCC"
+data "Boosts" ""
 
 new entry "YMS_Race"
 type "PassiveData"

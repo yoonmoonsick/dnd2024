@@ -2006,7 +2006,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
 
 ## Firearms
-- Weapons that have the Firearm property don’t add your ability modifier to damage rolls.
+- Firearms don't add your ability modifier to damage rolls. If you're not proficient with firearms, you deal half damage when using them.
+- Characters proficient with firearms deal full damage when using them.
+- Firearm Proficiency can be obtained through:
+  - The Artificer or Gunslinger class (including multiclassing).
+  - The Firearm Specialist Feat.
+- You can buy firearms from weapon traders. The kinds of firearms they have will diversify as your party level increases.
 - [Pistol](https://www.dndbeyond.com/equipment/42-pistol)
 - [Musket](https://www.dndbeyond.com/equipment/43-musket)
 
