@@ -2013,9 +2013,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ## Changed Items
 - [Amulet of Health](https://www.dndbeyond.com/magic-items/4568-amulet-of-health)
 - [Bracers of Archery](https://www.dndbeyond.com/magic-items/4593-bracers-of-archery)
+- [Chain of Liberation]()
 - [Gloves of Thievery](https://www.dndbeyond.com/magic-items/5352-gloves-of-thievery)
 - [Headband of Intellect](https://www.dndbeyond.com/magic-items/4652-headband-of-intellect)
-- The Oak Father's Embrace
+- [The Oak Father's Embrace]()
 
 ## New Items
 - [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
