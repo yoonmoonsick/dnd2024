@@ -6014,7 +6014,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c25f4653-5c52-48cf-b4a4-215529ae4118" />
         <field name="Name" type="NameTableFieldDefinition" value="Distract" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfc3f62f-61cf-49d2-833c-9504d3134615" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Distract" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Status_Distracted" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7358,7 +7358,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and CanShoveWeight() and IsMovable() and not Grounded() and not Tagged('GASEOUS_FORM') and not (not Player(context.Source) and Combat(context.Source) and Character() and not (Enemy() or HasStatus('SG_Unconscious'))) and not Tagged('CANT_SHOVE_THROW')" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Topple" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_statIcons_OffBalanced" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b15828cg593cg2f44gcab6g26c806542a8c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcdf25e0dgbe69g49cdg881cgdad2d4c70bb5" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
@@ -7379,6 +7379,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5d8c64e3-f9ff-4ee0-b0b6-2a081c7244a8" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
