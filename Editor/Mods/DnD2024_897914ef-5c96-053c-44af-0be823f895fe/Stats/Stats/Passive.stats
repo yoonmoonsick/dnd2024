@@ -7022,7 +7022,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h769445b8gf3dfg12d9g6497gbb0d5a132095" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeAttack() and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="FightingStyle_GreatWeapon(context.Source) and IsMeleeWeaponAttack() and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_45,100,0);ApplyStatus(SELF,MOVEMENT_45, 100, 1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
