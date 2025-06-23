@@ -5421,6 +5421,12 @@ data "Icon" "Illrigger_Devastator"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "UnlockSpell(Target_Devastator);"
 
+new entry "Dvastator_Strike"
+type "PassiveData"
+data "BoostContext" "OnCreate;OnTurn;OnActionResourcesChanged"
+data "BoostConditions" "HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source);"
+data "Boosts" "UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ReactionActionPoint,1,0,ActionPoint),ModifyIconGlow());"
+
 new entry "InvokeHell_GrandStrategist"
 type "PassiveData"
 data "DisplayName" "h067dccf8g9bebg5e77g3c9fg06b3a44397e4;2"
