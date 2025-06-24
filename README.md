@@ -18,6 +18,31 @@
 - 자세한 변경 내용은 아래에서 확인할 수 있습니다.
   - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
+## Bug Report Guidelines
+Following these guidelines will help me focus more efficiently on bug fixes. Reports that do not adhere to the following may be deleted without a separate response.
+* For bug reports, please use either **Nexus Mods** or **GitHub**.
+  * [Nexus Mods](https://www.nexusmods.com/baldursgate3/mods/12727?tab=bugs)
+  * [GitHub](https://www.google.com/search?q=https://github.com/yoonmoonsick/dnd2024/issues)
+* **Do not report bugs that occur in conjunction with other mods.** My mod is not developed with compatibility with other mods in mind.
+* **Do not report crashes that occur during respeccing or leveling up as bugs unless the same issue occurs in a new game.**
+* **Do not submit duplicate reports for issues that have already been reported.** Please check bug reports marked as **New issue**, **Being looked at**, or **Needs more info**, and add your experience as a comment to the existing report.
+* **Please write "good" bug reports.** A good bug report should meet the following requirements:1. **Title:** Clearly and concisely summarize the bug in one sentence.
+  1. **Reproduction Steps:** Describe the process of how the bug occurs in detail, step by step.
+  1. **Expected vs. Actual Results:** Clearly compare and explain the **expected outcome** versus the **actual outcome** when the bug occurs.
+  1. **Environment:** Include all relevant information about the environment where the bug occurred (e.g., location, class, character, level, etc.).
+
+## 버그 리포트 안내 사항
+다음 지침을 준수하시면 버그 수정에 더 효율적으로 집중할 수 있습니다. 아래 지침을 따르지 않는 보고서는 별도의 통보 없이 삭제될 수 있습니다.
+
+* 버그 리포트는 [넥서스 모드](https://www.nexusmods.com/baldursgate3/mods/12727?tab=bugs) 또는 [깃헙](https://github.com/yoonmoonsick/dnd2024/issues)을 이용바랍니다.
+* **다른 모드와 함께 발생하는 버그는 제보하지 마십시오.** 제 모드는 다른 모드와의 호환성을 전제로 개발되지 않았습니다.
+* **리스펙 또는 레벨업 시 발생하는 크래시는 새 게임에서 동일한 현상이 발생하지 않는 이상 버그로 제보하지 마십시오.**
+* **이미 제보된 내용은 중복으로 제보하지 마십시오.** **New issue**, **Being looked at**, **Needs more info** 등으로 표시된 버그 리포트를 확인하신 후, 해당 리포트에 여러분의 경험을 댓글로 추가해 주시기 바랍니다.
+* **"좋은" 버그 리포트를 작성해 주십시오.** 좋은 버그 리포트는 다음 요건을 충족해야 합니다.1. **제목:** 버그를 명확하고 간결하게 한 문장으로 요약해 주십시오.
+  1. **재현 단계:** 버그가 발생하는 과정을 상세하게, 단계별로 설명해 주십시오.
+  1. **예상 결과 vs. 실제 결과:** 버그 발생 시 **예상했던 결과**와 **실제로 나타난 결과**를 명확하게 비교하여 설명해 주십시오.
+  1. **환경:** 버그가 발생한 환경에 대한 모든 관련 정보(예: 장소, 직업, 캐릭터, 레벨 등)를 포함해 주십시오.
+
 # Background
 
 An origin feat has been added to each background.
@@ -2169,7 +2194,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 
 ## Weapon Mastery Properties
 
-Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below. Only the Barbarian, Fighter, Paladin, Ranger, and Rogue classes can benefit from Weapon Mastery. You can also select "Weapon Master" Feat to get the benefit. You can gain the benefits either by obtaining the Blessed Strike passive at Cleric level 7, or by reaching level 6 in the College of Swords or the College of Valor as a Bard.
+Weapon Mastery properties are only available to characters with a feature that unlocks them, like the Weapon Mastery feature itself. Generally, classes and subclasses that gain Extra Attack, along with Rogues, can use these properties. This includes Barbarians, Rangers, College of Valor Bards, and Bladesinging Wizards. You can also gain these benefits as a Cleric who obtains the Blessed Strike passive at level 7, or by choosing the Weapon Master feat.
 
 - Cleave
   - Greataxe, Halberd
