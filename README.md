@@ -1991,6 +1991,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Skulker](https://www.dndbeyond.com/feats/1789197-skulker)
 - [Slasher](https://www.dndbeyond.com/feats/1789198-slasher) (Homebrew)
 - [Squat Nimbleness](https://www.dndbeyond.com/feats/83-squat-nimbleness)
+- [Telekinetic](https://www.dndbeyond.com/feats/1789203-telekinetic)
+- [Tough as Old Tree-Roots](https://www.dndbeyond.com/feats/1873002-tough-as-old-tree-roots)
 
 ## Fighting Styles
 - [Blind Fighting](https://www.dndbeyond.com/feats/1789108-blind-fighting)
