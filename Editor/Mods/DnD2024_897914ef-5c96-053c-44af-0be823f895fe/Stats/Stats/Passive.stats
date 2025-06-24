@@ -481,6 +481,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WM_GET_GRAZE,100,-1);ApplyStatus(SELF,WM_GET_PUSH,100,-1);ApplyStatus(SELF,WM_GET_SAP,100,-1);ApplyStatus(SELF,WM_GET_SLOW,100,-1);ApplyStatus(SELF,WM_GET_TOPPLE,100,-1);ApplyStatus(SELF,WM_GET_VEX,100,-1);ApplyStatus(SELF,WM_GET_NICK,100,-1);ApplyStatus(SELF,WM_GET_CLEAVE,100,-1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WM_GET_GRAZE);RemoveStatus(SELF,WM_GET_PUSH);RemoveStatus(SELF,WM_GET_SAP);RemoveStatus(SELF,WM_GET_SLOW);RemoveStatus(SELF,WM_GET_TOPPLE);RemoveStatus(SELF,WM_GET_VEX);RemoveStatus(SELF,WM_GET_NICK);RemoveStatus(SELF,WM_GET_CLEAVE)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3caa2f8gba5dgd5b3g8184g3b4ec7e8cac3" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -584,10 +585,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source) and not HasStatus('SG_Rage',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and not HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_RAGE, 100, 0);TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasStatus('SG_Rage',context.Source) and HasStatus('MAG_GISH_ARCANE_SYNERGY',context.Source)):ApplyStatus(NICK_ARCANE_SYNERGY_RAGE, 100, 0);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and ( Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false)) ) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(Attack(AttackType.MeleeOffHandWeaponAttack)):DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);ExecuteWeaponFunctors(OffHand)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="-1" />
       </fields>
     </stat_object>
@@ -1762,10 +1763,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19d76d14gaf78g1851g30aag424806970150" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2eb0f8bbg9d74g3a0eg66f2gb006fd69698f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Melee" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5f6aa70bg4762gfc16g1534gd51687e6bb24" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WM_GET_GRAZE,100,-1);ApplyStatus(SELF,WM_GET_PUSH,100,-1);ApplyStatus(SELF,WM_GET_SAP,100,-1);ApplyStatus(SELF,WM_GET_SLOW,100,-1);ApplyStatus(SELF,WM_GET_TOPPLE,100,-1);ApplyStatus(SELF,WM_GET_VEX,100,-1);ApplyStatus(SELF,WM_GET_NICK,100,-1);ApplyStatus(SELF,WM_GET_CLEAVE,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WM_GET_GRAZE);RemoveStatus(SELF,WM_GET_PUSH);RemoveStatus(SELF,WM_GET_SAP);RemoveStatus(SELF,WM_GET_SLOW);RemoveStatus(SELF,WM_GET_TOPPLE);RemoveStatus(SELF,WM_GET_VEX);RemoveStatus(SELF,WM_GET_NICK);RemoveStatus(SELF,WM_GET_CLEAVE)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
@@ -1830,8 +1829,6 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(1d8,Radiant);IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d8,Radiant)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ImprovedDivineSmite" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7239,8 +7236,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Cold);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="TerrorizingForce" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK_COLD,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK_COLD)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7250,8 +7245,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Fire_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Fire);" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK_FIRE,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK_FIRE)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7261,8 +7254,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Necrotic);" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK_NECROTIC,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK_NECROTIC)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7272,8 +7263,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Poison);" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(IMPROVED_DIVINE_SMITE_NICK_POISON,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(IMPROVED_DIVINE_SMITE_NICK_POISON)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8151,7 +8140,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Cunning_HandCrossbow_Combo_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="05134836-c6a0-4079-98e4-bb4980672218" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):ApplyStatus(MAGICAL_HAND_CROSSBOW, 100, 0);UseActionResource(SELF,ReactionActionPoint,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);UseActionResource(SELF,ReactionActionPoint,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and DistanceToTargetLessThan(3);" />
@@ -8625,14 +8614,11 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c1dfd82-b018-4591-ad31-92330b671017" />
         <field name="Name" type="NameTableFieldDefinition" value="DualWielder_BonusAC" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="43440de7-517d-40e8-b04b-638ec2b2c0b2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75354733gc2dcg47beg8ed5gae0e7f501c75" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd293cf76g45abgb7e6g13a7g51ccf6c7d5cb" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('NICK_COOLDOWN',context.Source) and IsMeleeWeaponAttack() and DualWielder(context.Source) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_COOLDOWN,100,1);TARGET:IF(Attack(AttackType.MeleeOffHandWeaponAttack) and not HasStatus('NICK',context.Target)):ApplyStatus(NICK, 100, 0)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
