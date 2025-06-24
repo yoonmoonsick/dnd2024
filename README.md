@@ -1650,7 +1650,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.
   - Skin of Your Teeth ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SkinOfYourTeeth.png?raw=true)
     - When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm’s way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.
-- Level 5: Gut Shot
+- Level 5: Gut Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GutShot.png?raw=true)
   - Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute, its Speed is halved and it has Disadvantage on attack rolls.
 - Level 9: Improved Critical Shot
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 18 or 20 on the d20.
@@ -1665,7 +1665,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_EagleEye.png?raw=true)
   - Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.
-- Level 3: Sharpshooter’s Stance
+- Level 3: Sharpshooter’s Stance ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SharpshootersStance.png?raw=true)
   - You don’t have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
 - Level 6: Concealed Position
   - You can take the Hide action as a bonus action. If you make an attack roll while hidden and the roll misses, making the attack roll doesn’t reveal your location.
@@ -1678,11 +1678,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Fortune is a fickle thing—unless you’re a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?
 
-- Level 3: Poker Face
+- Level 3: Poker Face ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_RiskyBusiness.png?raw=true)
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
 - Level 3: Liar’s Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
   - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On an 11 or higher, the damage of your next ranged weapon attack is doubled. On a 10 or lower, it's halved.
-- Level 6: Risky Business ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_RiskyBusiness.png?raw=true)
+- Level 6: Risky Business
   - Once per turn when you make an attack roll against an enemy and the roll doesn’t have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
 - Level 10: Risk Taker
   - You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die.
@@ -1918,7 +1918,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Sutekh’s Blessing
   - When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain expertise in the Religion skill.
-- Level 3: Exsanguinate
+- Level 3: Exsanguinate ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Exsanguinate.png?raw=true)
   - You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Embolden Allies
@@ -1927,7 +1927,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains advantage on all ability checks.
 - Level 7: Foul Interchange
   - As an action, you choose a creature you can see within 30 feet of you and expend a seal to end one of the following conditions affecting them: blinded, charmed, dazed, frightened, paralyzed, or poisoned. Then, you choose another creature within 60 feet of you, which must succeed on a Constitution saving throw or suffer a random condition until the start of your next turn.
-- Level 11: Bloodstroke
+- Level 11: Bloodstroke ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bloodstroke.png?raw=true)
   - The magic that shields your allies now also saps their enemies’ strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes 11 necrotic damage.
 
 ### Shadowmaster
@@ -2350,4 +2350,4 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Globe of Invulnerability](https://www.dndbeyond.com/spells/2618950-globe-of-invulnerability)
 - [Heal](https://www.dndbeyond.com/spells/2618979-heal)
 - [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
-- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)
+- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)  ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
