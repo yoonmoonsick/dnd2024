@@ -1687,7 +1687,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 10: Risk Taker
   - You can use your Maverick Spirit and Skin of Your Teeth maneuvers without expending a Risk Die.
 
-### Secert Agent
+### Secret Agent
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SecretAgent.png?raw=true)
 
