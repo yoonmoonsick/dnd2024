@@ -2010,6 +2010,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Gift of the Metallic Dragon](https://www.dndbeyond.com/feats/766454-gift-of-the-metallic-dragon)
 - [Gleam of Wrath](https://www.dndbeyond.com/feats/1872983-gleam-of-wrath)
 - [Hardiness](https://www.dndbeyond.com/feats/1872984-hardiness)
+- [Infernal Constitution](https://www.dndbeyond.com/feats/93-infernal-constitution)
 - [Metamagic Adept](https://www.dndbeyond.com/feats/452833-metamagic-adept)
 - [Mounted Combatant](https://www.dndbeyond.com/feats/1789171-mounted-combatant)
 - [Nimbleness](https://www.dndbeyond.com/feats/1872989-nimbleness)

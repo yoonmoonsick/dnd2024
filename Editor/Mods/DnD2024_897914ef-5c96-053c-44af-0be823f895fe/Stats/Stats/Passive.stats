@@ -1068,7 +1068,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c5b784bg8809gbf22g4141g57ae2436dbb8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f8831ffga563gfca5g1da7gb90bb5810ff6" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Daylight_Enchantment" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_GleamWrath);CriticalHitExtraDice(1, MeleeWeaponAttack);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h206b17cdga121g132cg96a6g0177b822ca90" version="3" />
       </fields>
@@ -1082,6 +1082,19 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf2c88bb8gef13g8e9dgd036g16e164b14c90" version="1" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hc0c8d274gc520g2b89g5de4g5143b66bd1a6" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Level);Ability(Constitution,1,20);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="959d643d-0c3a-45e0-9eed-f2bbc13488b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="InfernalConstitution" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he7cced22gd881gb122g7af8ge2cebed7ff6a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h652dac68g4100g74d6g935cgfd9ac4595f63" version="1" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h97b12de0gfd7dg6088g5b40g2def50e09c8f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FiendishResilience" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Constitution,1,20);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Tag(POISONED_ADV);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1090,7 +1103,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MetamagicAdept" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08a1426fg9876g3a2ag74abgc7801e65eceb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8992e34fg7ef2gc28cgda83gcf6cdf2e54b5" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SorceryPoint,2,0);Tag(SORCERER_METAMAGIC)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_HeightenedSpell" />
       </fields>
@@ -1101,7 +1114,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MountedCombatant" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd223b5aegc102gaf91ga851gc119fbeeea12" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6f73caabgb662g550ag874cg23cf77f1e3db" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF((HasStatus('MOUNTING_PALADIN',context.Source) or HasStatus('MOUNTING_KNIGHT',context.Source) ) and not SizeEqualOrGreater(Size.Large) and IsMeleeWeaponAttack() and ):Advantage(AttackRoll);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_AspectOfTheBeast_Stallion" />
       </fields>
