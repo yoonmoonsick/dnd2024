@@ -568,6 +568,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DeathDomain.png?raw=true)
 
+- Domain Spells (Always prepared)
+  - Level 9: Enervation, Danse Macabre
 - Level 3: Reaper
   - The same object cannot be selected as an additional target.
 
