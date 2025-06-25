@@ -496,16 +496,6 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 12: Peerless Skill
   - You restore 1 Bardic Inspiration at the start of your turn in combat.
 
-### College of Valor
-
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ValorCollege.png?raw=true)
-
-- Level 6: Extra Attack
-  - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
-- Level 6: Weapon Mastery
-- Level 12: Battle Magic
-  - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
-
 ### College of Sword
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SwordsCollege.png?raw=true)
@@ -517,6 +507,16 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 6: Weapon Mastery
 - Level 12: Master’s Flourish
   - Whenever you use a Blade Flourish option, you regain 1 Bardic Inspiration per turn.
+
+### College of Valor
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ValorCollege.png?raw=true)
+
+- Level 6: Extra Attack
+  - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
+- Level 6: Weapon Mastery
+- Level 12: Battle Magic
+  - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
 ## Cleric
 
