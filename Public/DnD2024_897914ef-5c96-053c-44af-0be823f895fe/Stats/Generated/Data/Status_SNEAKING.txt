@@ -3,5 +3,5 @@ type "StatusData"
 data "StatusType" "SNEAKING"
 using "SNEAKING"
 data "Boosts" "Advantage(AttackRoll);MovementSpeedLimit(Walk);Tag(VFX_SNEAKING);UnlockSpellVariant(IsHideSpell(),ModifyUseCosts(Replace,BonusActionPoint,0,0,BonusActionPoint));UnlockSpellVariant(IsHideSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint));IF(HasPassive('ArtOfDisappearing',context.Source)):StatusImmunity(BLINDED)"
-data "RemoveConditions" "( (not HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) ) or ( HasPassive('Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) and not IsMiss() ) ) and not HasSpellFlag(SpellFlags.Stealth, context.Source) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0))"
+data "RemoveConditions" "( (not HasPassive('Skulker_Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) ) or ( HasPassive('Skulker_Sniper',context.Source) and IsStatusEvent(StatusEvent.OnAttack) and not IsMiss() ) ) and not HasSpellFlag(SpellFlags.Stealth, context.Source) or (IsStatusEvent(StatusEvent.OnDamage) and TotalDamageDoneGreaterThan(0))"
 
