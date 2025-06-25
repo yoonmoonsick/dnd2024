@@ -821,6 +821,38 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="(2d4+29)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46200cec-db56-4edf-b4c8-33e530e02344" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enervation_Activate" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="09dc1f46-6dad-4333-8d79-1a5d3172261b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);SetStatusDuration(SELF,ENERVATION_OWNER,2);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('ENERVATION',context.Target,context.Source) and not Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Enervation" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Constrict" />
+        <field name="TargetSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('ENERVATION_BLOCK')" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bb56d92b-66cb-4328-a013-490201b919f1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="444e121e-c8d3-4236-be2a-69d914aec905" />
+        <field name="SpellEffect" type="GuidObjectTableFieldDefinition" value="b8091ea6-a6d8-4a78-bdb8-80ff1d5203d2" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_Enervation" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be6ae219-ffbe-438c-87fe-36f4c441c787" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enervation_Activate_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="46200cec-db56-4edf-b4c8-33e530e02344" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);SetStatusDuration(SELF,ENERVATION_OWNER_6,2);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dcad7efb-9694-4185-9b0b-641ed2432697" />
@@ -1248,7 +1280,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WitchBolt_Activate" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5576e387-3937-43e0-8f00-973525cfc91b" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;Temporary;IsSpell;IgnoreVisionBlock;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;Temporary;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('WITCH_BOLT_BLOCK')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />

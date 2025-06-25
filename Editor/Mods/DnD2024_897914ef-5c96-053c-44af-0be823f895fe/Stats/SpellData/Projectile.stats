@@ -293,7 +293,7 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dcdf45fb-9fb1-4583-882a-9eb283a21e5a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Conjuration" />
@@ -364,6 +364,71 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder);" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_ThunderStepExplosion" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1713ae8e-b267-43d2-9f77-a571b529f55e" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Necromancy" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="772bf464-e5a1-4944-bf90-aa219b4563bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enervation" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Shout_Enervation_Activate" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(4d8,Necrotic);ApplyStatus(ENERVATION,100,10);ApplyStatus(SELF,ENERVATION_BLOCK,100,1);" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d8/2,Necrotic,Magical);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b64b516c-1afd-4f8d-b624-4c9caf06f1c2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Enervation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4887b38gfbb1g7a89gf2begc8f860243163" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h61c36e8ag571ag2a11g4a0ega173cd7de642" version="2" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic,Magical);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENERVATION,100,10);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Constrict" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;70a28457-dba7-46f7-b03c-ceb3b9e12bad,,;68868848-6341-448a-97e3-94aa43ad5faf,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="613e61ed-610d-4380-89f4-6c977a85b4df" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bb56d92b-66cb-4328-a013-490201b919f1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="444e121e-c8d3-4236-be2a-69d914aec905" />
+        <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="b8091ea6-a6d8-4a78-bdb8-80ff1d5203d2" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c40640d-592b-4be6-98f3-cb4a69586802" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enervation_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="772bf464-e5a1-4944-bf90-aa219b4563bd" />
+        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Shout_Enervation_Activate_6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(5d8,Necrotic);ApplyStatus(ENERVATION,100,10);ApplyStatus(SELF,ENERVATION_BLOCK,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d8/2,Necrotic,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic,Magical);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_Enervation" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
