@@ -2025,6 +2025,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Skulker](https://www.dndbeyond.com/feats/1789197-skulker)
 - [Slasher](https://www.dndbeyond.com/feats/1789198-slasher) (Homebrew)
 - [Squat Nimbleness](https://www.dndbeyond.com/feats/83-squat-nimbleness)
+- [Swift Witchcraft](https://www.dndbeyond.com/feats/2048526-swift-witchcraft)
 - [Telekinetic](https://www.dndbeyond.com/feats/1789203-telekinetic) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Telekinetic_Pull.png?raw=true) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Telekinetic_Push.png?raw=true)
 - [Tough as Old Tree-Roots](https://www.dndbeyond.com/feats/1873002-tough-as-old-tree-roots)
 
