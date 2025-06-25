@@ -17,33 +17,6 @@ NOT DB_DnD2024_Initialized(0);
 DB_DnD2024_Initialized(1);	
 
 IF
-DB_Players(_Player)
-AND
-DB_DnD2024_Initialized(1)
-AND
-HasPassive(_Player, "YMS_OneTurnOneSpell", 0)
-THEN
-AddPassive(_Player, "YMS_OneTurnOneSpell");
-
-IF
-DB_Players(_Player)
-AND
-DB_DnD2024_Initialized(1)
-AND
-HasPassive(_Player, "LongRangeThrow", 0)
-THEN
-AddPassive(_Player, "LongRangeThrow");
-
-IF
-DB_Players(_Player)
-AND
-DB_DnD2024_Initialized(1)
-AND
-HasPassive(_Player, "YMS_AutoSell_Toggle", 0)
-THEN
-AddPassive(_Player, "YMS_AutoSell_Toggle");
-
-IF
 CastedSpell(_Caster,"Shout_YMS_Resotre_Oath",_,_,_)
 THEN
 StartRespecRestore(_Caster);
