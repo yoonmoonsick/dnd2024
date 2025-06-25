@@ -2320,6 +2320,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
 - [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
+- [Thunder Step](https://www.dndbeyond.com/spells/14613-thunder-step) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_ThunderStep.png?raw=true)
 - [Warden of Vitality](https://www.dndbeyond.com/spells/2618891-aura-of-vitality)
 
 ## Level 4 spells
