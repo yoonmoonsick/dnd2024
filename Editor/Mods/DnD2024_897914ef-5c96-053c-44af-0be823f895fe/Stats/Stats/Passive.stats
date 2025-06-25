@@ -32,12 +32,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="YMS_OneTurnOneSpell" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellPoint,1,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c93600bg28e3g0f8eg8875gaa24eb146854" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SpellPoint:1" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnRound;OnCreate;OnLongRest;OnStatusApply;OnStatusApplied;OnStatusRemove;OnEquip;OnCombatStarted;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('ONE_TURN_ONE_SPELL_TECHNICAL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ONE_TURN_ONE_SPELL_TECHNICAL,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -148,8 +149,10 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9); Distance(18)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ThrowWeapon" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="98" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('LONG_RANGE_THROW_TECHNICAL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_RANGE_THROW_TECHNICAL,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

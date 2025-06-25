@@ -21,6 +21,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e18d3c5-acb7-4e14-ae99-6e0f87b62d95" />
+        <field name="Name" type="NameTableFieldDefinition" value="ONE_TURN_ONE_SPELL_TECHNICAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ONE_TURN_ONE_SPELL_TECHNICAL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellPoint,1,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1d51466-5d92-4390-8ce5-56d95781c71c" />
+        <field name="Name" type="NameTableFieldDefinition" value="LONG_RANGE_THROW_TECHNICAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="LONG_RANGE_THROW_TECHNICAL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-3);IF(DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(6) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-99);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e1d77041-0359-4631-8ef1-f0690bff0566" />
         <field name="Name" type="NameTableFieldDefinition" value="SURPRISED" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="55c1ae4f-01b0-44dd-b926-855170ae58eb" />
