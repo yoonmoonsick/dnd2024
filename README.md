@@ -2341,6 +2341,8 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Cloudkill](https://www.dndbeyond.com/spells/2618976-cloudkill)
 - [Contagion](https://www.dndbeyond.com/spells/2619063-contagion)
 - [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)
+- [Danse Macabre](https://www.dndbeyond.com/spells/14830-danse-macabre)
+- [Enervation](https://www.dndbeyond.com/spells/14869-enervation) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Necromancy_Enervation.png?raw=true)
 - [Mass Cure Wounds](https://www.dndbeyond.com/spells/2619026-mass-cure-wounds)
 - [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
 - [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_SummonDragon.png?raw=true)
