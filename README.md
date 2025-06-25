@@ -784,7 +784,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fighter.png?raw=true)
 
-- Level 1: Second Wind
+- Level 1: Second Wind ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/SecondWindCharge.png?raw=true)
   - You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Fighter Level 4, you gain 1 additional use of this feature. At Level 10, you gain 4 uses.
 - Level 2: Tactical Mind
   - You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success.
