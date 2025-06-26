@@ -7120,7 +7120,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="Illrigger_1_BalefulInterdict_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4cdea18-86fa-4496-9fb3-1fc5eda1f983" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);UnlockSpellVariant(SpellId('Target_Illrigger_BalefulInterdict'),ModifyUseCosts(Replace,IllriggerSeal,0,-1,IllriggerSeal),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7237,7 +7236,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dd1b683ge599g0209gf9c0g4f8b321b4b7a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h83324463ge119g6653gbacag895a8e4f0833" version="2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Illrigger_BalefulInterdict);UnlockSpell(Target_Illrigger_BalefulInterdict);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Illrigger_BalefulInterdict);UnlockSpell(Target_Illrigger_BalefulInterdict);UnlockSpell(Target_BurningSeals_Fire);UnlockSpell(Target_BurningSeals_Necrotic);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HellishRebuke" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
@@ -7795,7 +7794,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h54568a83g80bcge12dg3a7bg9c37e564da74" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0aaf15eg6c23g3782gee90g0f943d3419be" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_OpportunitySpell" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TelekineticSeal_Push);UnlockInterrupt(Interrupt_TelekineticSeal_Prone);" />
@@ -8025,7 +8023,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a5221b7-de46-4175-9a4e-2488020552c4" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(BurningSealsCheck()):DamageBonus(2d6);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,IllriggerSeal,1,)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,IllriggerSeal,1,0)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dfbb60ag7425g6a4dgc7ebge833aeab8053" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
