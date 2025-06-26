@@ -53,76 +53,26 @@ An origin feat has been added to each background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to grant inspiration.
 
-## Acolyte
-- Feat: Magic Initiate: Cleric
-
-## Charlatan
-- Feat: Charlatan's Trick (Homebrew)
-    - You can use your deceptive speech to confuse a single enemy. This ability can be used a number of times equal to your proficiency bonus, and its uses are restored when you finish a long rest. You can use your action to choose one creature within 30 feet of you and attempt a Deception check. The target can resist this by making an Insight check. If the target fails the check, it becomes confused for 3 turns.
-    - You add your Intelligence modifier to your Deception skill checks.
-
-## Criminal
-- Feat: Alert
-- Skill Proficiencies: Sleight of Hand and Stealth
-
-## Entertainer
-- Feat: Performer
-
-## Farmer (Tag: Folk Hero)
-- Feat: Tough
-- Skill Proficiencies: Animal Handling and Nature
-
-## Folk Hero
-- Feat: Tough
-
-## Guard (Tag: Soldier)
-- Feat: Alert
-- Skill Proficiencies: Athletics and Perception
-
-## Guide (Tag: Outlander)
-- Feat: Magic Initiate: Druid
-- Skill Proficiencies: Stealth and Survival
-
-## Guild Artisan
-- Feat: Skilled
-
-## Haunted One
-- Feat: Alert
-
-## Hermit (Tag: Sage)
-- Feat: Healer
-- Skill Proficiencies: Medicine and Religion
-
-## Noble
-- Feat: Skilled
-
-## Merchant (Tag: Guild Artisan)
-- Feat: Lucky
-- Skill Proficiencies: Animal Handling and Persuasion
-
-## Outlander
-- Feat: Tough
-
-## Sailor (Tag: Urchin)
-- Feat: Tavern Brawler
-- Skill Proficiencies: Acrobatics and Perception
-
-## Sage
-- Feat: Magic Initiate: Wizard
-
-## Scribe (Tag: Acolyte)
-- Feat: Skilled
-- Skill Proficiencies: Investigation and Perception
-
-## Soldier
-- Feat: Savage Attacker
-
-## Urchin
-- Feat: Savage Attacker
-
-## Wayfarer (Tag: Criminal)
-- Feat: Lucky
-- Skill Proficiencies: Insight and Stealth
+- Acolyte (Feat: Magic Initiate: Cleric)
+- Charlatan (Feat: Charlatan's Trick, Homebrew)
+- Criminal (Feat: Alert)
+- Entertainer (Feat: Performer)
+- Farmer (Feat: Tough)
+- Folk Hero (Feat: Tough)
+- Guard (Feat: Alert)
+- Guide (Feat: Magic Initiate: Druid)
+- Guild Artisan (Feat: Skilled)
+- Haunted One (Feat: Alert)
+- Hermit (Feat: Healer)
+- Noble (Feat: Skilled)
+- Merchant (Feat: Lucky)
+- Outlander (Feat: Tough)
+- Sailor (Feat: Tavern Brawler)
+- Sage (Feat: Magic Initiate: Wizard)
+- Scribe (Feat: Skilled)
+- Soldier (Feat: Savage Attacker)
+- Urchin (Feat: Savage Attacker)
+- Wayfarer (Feat: Lucky)
 
 # Races
 
