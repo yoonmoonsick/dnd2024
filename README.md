@@ -2215,6 +2215,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 
 - [Acid Splash](https://www.dndbeyond.com/spells/2618844-acid-splash)
 - [Blade Ward](https://www.dndbeyond.com/spells/2618931-blade-ward) (Homebrew)
+- [Blood Bolt](https://www.dndbeyond.com/spells/2952580-blood-bolt)
 - [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
 - [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
