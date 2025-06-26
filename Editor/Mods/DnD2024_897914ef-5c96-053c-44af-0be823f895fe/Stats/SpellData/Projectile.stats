@@ -2618,6 +2618,29 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D10Cantrip))/2,Fire,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69f2e666-f233-4cd7-9f4e-8e040765e5b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);ApplyStatus(SELF,BOOLD_BOLT,100,-1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Necrotic,Magical);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="84e22f8f-5dc2-4d7e-95b3-d87247d4d380" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BloodBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h082db4e0g8410gf9f0g760bg3bf03eeecf7c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heae2a5f6g7dfdg413egc75cga89aa6fdce89" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOOLD_BOLT,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4d1d3da-0193-4f35-bd70-44f3a889810c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="465a418c-76df-4bc8-9c99-20c52b36c6c3" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7d88d001-41be-4f46-bc5c-6fa05f27f410" />
