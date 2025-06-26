@@ -53,25 +53,28 @@ An origin feat has been added to each background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to grant inspiration.
 
+## Updated Backgrounds
 - Acolyte (Feat: Magic Initiate: Cleric)
 - Charlatan (Feat: Charlatan's Trick, Homebrew)
 - Criminal (Feat: Alert)
 - Entertainer (Feat: Performer)
-- Farmer (Feat: Tough)
 - Folk Hero (Feat: Tough)
-- Guard (Feat: Alert)
-- Guide (Feat: Magic Initiate: Druid)
 - Guild Artisan (Feat: Skilled)
 - Haunted One (Feat: Alert)
-- Hermit (Feat: Healer)
 - Noble (Feat: Skilled)
-- Merchant (Feat: Lucky)
 - Outlander (Feat: Tough)
-- Sailor (Feat: Tavern Brawler)
 - Sage (Feat: Magic Initiate: Wizard)
-- Scribe (Feat: Skilled)
 - Soldier (Feat: Savage Attacker)
 - Urchin (Feat: Savage Attacker)
+
+## New Backgrounds
+- Farmer (Feat: Tough)
+- Guard (Feat: Alert)
+- Guide (Feat: Magic Initiate: Druid)
+- Hermit (Feat: Healer)
+- Merchant (Feat: Lucky)
+- Sailor (Feat: Tavern Brawler)
+- Scribe (Feat: Skilled)
 - Wayfarer (Feat: Lucky)
 
 # Races
@@ -2006,7 +2009,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Pistol](https://www.dndbeyond.com/equipment/42-pistol)
 - [Musket](https://www.dndbeyond.com/equipment/43-musket)
 
-## Changed Items
+## Updated Items
 - [Amulet of Health](https://www.dndbeyond.com/magic-items/4568-amulet-of-health)
 - [Bracers of Archery](https://www.dndbeyond.com/magic-items/4593-bracers-of-archery)
 - [Chain of Liberation]()
