@@ -523,14 +523,16 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Level 9: Bigby’s Hand, Planar Binding
 - Level 3: Arcane Initiate
   - You gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.
-- Level 3: Channel Divinity: Arcane Abjuration
-  - You can use your Channel Divinity to abjure otherworldly creatures.
-  - As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
-  - After you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute
-- Level 6: Spell Breaker
+- Level 3: Modify Magic
+  - You can use your Channel Divinity to alter your spells as you cast them. When you cast a spell, you can expend one use of your Channel Divinity to change it.
+  - Fortifying Spell
+    - One target of the spell gains a number of Temporary Hit Points equal to 2d8 plus your Cleric level.
+  - Tenacious Spell
+    - When you cast a spell that forces a creature to make a saving throw, choose one target of the spell you can see. Roll 1d6 and apply the number rolled as a penalty to that target's saving throw.
+- Level 6: Dispelling Recovery
   - Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell.
-- Level 11: Arcane Mastery
-  - You choose four spells from the wizard spell list. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you.
+- Level 6, 8, 10, 12: Arcane Mastery
+  - You choose a spell from the wizard spell list. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you.
 
 ### Death Domain
 
