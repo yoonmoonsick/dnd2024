@@ -47,6 +47,17 @@ Following these guidelines will help me focus more efficiently on bug fixes. Rep
   1. **예상 결과 vs. 실제 결과:** 버그 발생 시 **예상했던 결과**와 **실제로 나타난 결과**를 명확하게 비교하여 설명해 주십시오.
   1. **환경:** 버그가 발생한 환경에 대한 모든 관련 정보(예: 장소, 직업, 캐릭터, 레벨 등)를 포함해 주십시오.
 
+# Conflict Mods
+
+This mod may have potential conflicts with the mods listed below. If any of the following mods are active when the game starts, the **DnD PHB 2024 All in One** will be disabled.
+
+- 5eSpells
+- DnD Expanded
+- featsextra modio version
+- Mystra's Spells
+- One DND Backgrounds - PHB 2024
+- OneDnD_SpellListAdditions
+
 # Background
 
 An origin feat has been added to each background.
