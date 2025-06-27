@@ -516,8 +516,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 > Magic suffuses the multiverse, fueling both destruction and creation. Clerics with this domain view magical knowledge not as power to be used for personal gain, but as a gift they have a responsibility to share. Gods associated with the Arcana Domain intimately know the secrets and potential of magic. These gods are often connected to knowledge, as learning and arcane power tend to go hand-in-hand, or to secrecy or ultimate power.
 
 - Domain Spells (Always prepared)
-  - Level 3: Magic Missile, Chromatic Orb
-  - Level 3: Magic Weapon, Mirror Image
+  - Level 3: Magic Missile, Chromatic Orb, Magic Weapon, Mirror Image
   - Level 5: Counterspell, Haste
   - Level 7: Dimension Door, Banishment
   - Level 9: Bigby’s Hand, Planar Binding
@@ -548,8 +547,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/KnowledgeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
-  - Level 3: Command, Sleep
-  - Level 3: Calm Emotions, Mind Spike
+  - Level 3: Command, Sleep, Calm Emotions, Mind Spike
   - Level 5: Counter Spell, Slow
   - Level 7: Confusion, Banishment
   - Level 9: Telekinesis, Synaptic Static
@@ -561,8 +559,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LifeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
-  - Level 3: Bless, Cure Wounds
-  - Level 3: Aid, Lesser Restoration
+  - Level 3: Bless, Cure Wounds, Aid, Lesser Restoration
   - Level 5: Mass Healing Word, Revivify
   - Level 7: Death Ward
   - Level 9: Greater Restoration, Mass Cure Wounds
@@ -578,8 +575,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LightDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
-  - Level 3: Burning Hands, Faerie Fire
-  - Level 3: Scorching Ray, See Invisibility
+  - Level 3: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility
   - Level 5: Daylight, Fireball
   - Level 7: Arcane Eye, Wall of Fire
   - Level 9: Flame Strike
@@ -593,8 +589,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickeryDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
-  - Level 3: Charm Person, Disguise Self
-  - Level 3: Invisibility, Pass without Trace
+  - Level 3: Charm Person, Disguise Self, Invisibility, Pass without Trace
   - Level 5: Hypnotic Pattern, Fear
   - Level 7: Confusion, Dimension Door
   - Level 9: Dominate Person, Seeming
@@ -610,8 +605,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WarDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
-  - Level 3: Guiding Bolt, Shield of Faith
-  - Level 3: Magic Weapon, Spiritual Weapon
+  - Level 3: Guiding Bolt, Shield of Faith, Magic Weapon, Spiritual Weapon
   - Level 5: Crusader’s Mantle, Spirit Guardians
   - Level 7: Fire Shield, Freedom of Movement
   - Level 9: Hold Monster, Steel Wind Strike
