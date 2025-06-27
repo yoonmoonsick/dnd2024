@@ -4912,25 +4912,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="932cbb12-73e0-4a33-a0f6-a497980d9d6c" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArcanaDomain_3_ArcaneAbjuration" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24f39530g42d5gd3bdgd549g1dfed4ab5fb9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f1d4d28g4d77g86d1g1e4ag8f2e6443a912" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc0fd9351gf283g5febgb9b6g43b93a5ca8cd" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_TurnTheFaithless" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0ce827e2-b94b-428e-ac58-9c79d6290bd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcanaDomain_3_ModifyMagic" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16455780g604eg5930gdae5g929e947da0c3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6504226eg55e5gccc1g0ca7gaba52e12e359" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ChannelDivinity:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ArcanaDomain_3_ArcaneAbjuration);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="52bd136c-c08b-4532-8a97-2f50657e6d46" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArcanaDomain_5_ArcaneAbjuration" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="932cbb12-73e0-4a33-a0f6-a497980d9d6c" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0db31801g1c81gb580ge1c2gc72d78ea79c7" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ArcanaDomain_5_ArcaneAbjuration);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ModifyMagic,1,0);UnlockInterrupt(Interrupt_ArcanaDomain_FortifyingSpell);UnlockInterrupt(Interrupt_ArcanaDomain_TenaciousSpell);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4941,6 +4930,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01ef8f64g2e34g9896g957dg7e560ffcc097" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DispelMagic" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(DispellingRecovery,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(DispellingRecovery,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -986,6 +986,48 @@
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(BardicInspiration));ApplyStatus(OBSERVER_SOURCE,INTERRUPT_CUTTING_WORDS_TARGET,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_CUTTING_WORDS,100,0);IF(not Self(context.Target, context.Observer)):UseSpell(OBSERVER_SOURCE,Target_CuttingWords,true,true,true);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):RestoreResource(SELF,BardicInspiration,1,0);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22bd79ff-b68a-4c5a-9754-3021c5e1d7c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Cleric" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0d25b21-db3e-42ac-8f7d-6102c6933e15" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ArcanaDomain_FortifyingSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h143feef3gba42gae15g6fcfg8391c5cd5516" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h278fd57cg88b9g9665gcbe1g38cd1b14a1fa" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Durable" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Ally(context.Target,context.Observer) and (IsSpell() or IsCantrip());" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(FORTIFYING_SPELL,100,-1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ChannelDivinity:1;ModifyMagic:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e17931fb-b889-4fc2-a41a-896089022c67" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ArcanaDomain_TenaciousSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f9e19a1g0a85g5039g6810g5710b27529df" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde253dd7ga819g77d7g8f75ge3f642fa522b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and Enemy(context.Target,context.Observer) and IsFlatValueInterruptInteresting(6) and not AnyEntityIsItem() and (IsSpell() or IsCantrip());" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-1d6);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ChannelDivinity:1;ModifyMagic:1;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edecf407-e0c5-45bf-ac4c-a6ec8b10be4c" />
