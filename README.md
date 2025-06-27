@@ -513,16 +513,14 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcanaDomain.png?raw=true)
 
->Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.
->
->The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and Wee Jas of Greyhawk.
+> Magic suffuses the multiverse, fueling both destruction and creation. Clerics with this domain view magical knowledge not as power to be used for personal gain, but as a gift they have a responsibility to share. Gods associated with the Arcana Domain intimately know the secrets and potential of magic. These gods are often connected to knowledge, as learning and arcane power tend to go hand-in-hand, or to secrecy or ultimate power.
 
 - Domain Spells (Always prepared)
   - Level 3: Magic Missile, Chromatic Orb
   - Level 3: Magic Weapon, Mirror Image
-  - Level 5: Blink, Haste
+  - Level 5: Counterspell, Haste
   - Level 7: Dimension Door, Banishment
-  - Level 9: Planar Binding, Flame Strike
+  - Level 9: Bigby’s Hand, Planar Binding
 - Level 3: Arcane Initiate
   - You gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips.
 - Level 3: Channel Divinity: Arcane Abjuration
@@ -2324,6 +2322,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 
 ## Level 5 spells
 - [Banishing Smite](https://www.dndbeyond.com/spells/2618904-banishing-smite)
+- [Bigby's Hand](https://www.dndbeyond.com/spells/2618928-bigbys-hand) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BigbysHand.png?raw=true)
 - [Cloudkill](https://www.dndbeyond.com/spells/2618976-cloudkill)
 - [Contagion](https://www.dndbeyond.com/spells/2619063-contagion)
 - [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)

@@ -2451,6 +2451,58 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Stealth;Invisible;Temporary;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37eb87cb-59ec-4a15-b3f4-44148c430335" />
+        <field name="Name" type="NameTableFieldDefinition" value="BigbysHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="77ad0465-858b-4298-af5f-1c219f06386f" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(e4d033b9-30c4-4202-8d7c-f990b894d1eb, 10,,,BigbyHandStack',UNSUMMON_ABLE_MAGEHAND,BIGBY_HAND,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5f3f37eagde0dg9dcdg2d8ega07b7c0c7afa" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('e4d033b9-30c4-4202-8d7c-f990b894d1eb') and not Character() and not Self();" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96e4c458g89cbg0cc6gf0abga372cd695df7" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Force)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;CannotTargetCharacter;CannotTargetItems;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BigbysHand" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="beeb1995-a4b7-493a-8d0b-2f5d8840213f" />
+        <field name="Name" type="NameTableFieldDefinition" value="BigbysHand_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37eb87cb-59ec-4a15-b3f4-44148c430335" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(9a1291c2-5adc-4aff-821d-ca7b786328dd, 10,,,BigbyHandStack',UNSUMMON_ABLE_MAGEHAND,BIGBY_HAND,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Force)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_BigbysHand" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f230bc26-91c4-4a14-ab67-46cdccb3d681" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_BigbysHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5f3f37eagde0dg9dcdg2d8ega07b7c0c7afa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96e4c458g89cbg0cc6gf0abga372cd695df7" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage+Owner.SpellCastingAbilityModifier,Force,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BigbysHand" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Force)&#xD;&#xA;DealDamage(Owner.SpellCastingAbilityModifier,Force)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Force_SpiritualWeapon_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Force_SpiritualWeapons_L1to3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood;IsDefaultWeaponAction" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e23fe1c0-f07b-4204-8a4c-ab8f61338009" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="99341604-00b7-40c9-9170-b2a7f2567929" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2fa46213-0541-4729-a306-b9d895f97995" />
