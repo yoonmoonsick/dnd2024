@@ -1955,7 +1955,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6f92fa2f-0c26-4841-88d8-e1812e607a54" />
         <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="41bb49b0-31ec-4aa0-aee9-34f6ece18964" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(HasPassive('WarMagic', context.Source)):UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackCheck(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());IF(not HasStatus('WAR_MAGIC_BLOCK', context.Source) and HasPassive('WarMagic', context.Source)):UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription())" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(ExtraAttackSpellCheck() and HasUseCosts('ActionPoint',false,context.Target) and not IsOffHandAttack()) or (IsCantrip() and HasUseCosts('ActionPoint',false,context.Target))" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(EXTRA_ATTACK_Q, 100, 1)" />
       </fields>
@@ -1983,7 +1983,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1562cffb-c101-49c0-9e04-d5d57232b829" />
         <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_WAR_MAGIC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4eae9853-1894-4869-be6c-8d9a86bf6fc9" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="((HasStringInSpellRoll('WeaponAttack') or HasStringInSpellRoll('UnarmedAttack') or SpellId('Target_CommandersStrike')) and HasUseCosts('ActionPoint') and not IsOffHandAttack()) and not HasActionResource('BonusActionPoint', 1, 0, false, false)" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
