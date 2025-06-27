@@ -5659,6 +5659,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0942085-10fa-43af-84e8-a8540f98efb5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_LungingAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e0fd05f4-0b0d-4663-beec-21d2b5de7928" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4256e3cg6b70gc354gd7cfgb2daf4ac7653" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('DASH_STACKED')):ApplyStatus(DASH_STACKED_2,100,1);IF(not HasStatus('DASH_STACKED_2') and HasStatus('DASH')):ApplyStatus(DASH_STACKED,100,1);IF(not HasStatus('DASH_STACKED_2') and not HasStatus('DASH_STACKED') and not HasStatus('DASH')):ApplyStatus(DASH,100,1);ApplyStatus(LUNGING_ATTACK, 100, 1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SuperiorityDie)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de4638f6-0c75-40c2-bd85-166c5fd46ca5" />
         <field name="Name" type="NameTableFieldDefinition" value="EvasiveFootwork" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7de03ce-2804-43c8-b628-42c4caec260d" />
