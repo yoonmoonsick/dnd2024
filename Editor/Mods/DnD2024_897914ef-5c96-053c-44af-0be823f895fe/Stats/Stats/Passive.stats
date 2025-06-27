@@ -3061,10 +3061,20 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bacfc840-1f2c-49d8-acc2-93d6c00048af" />
         <field name="Name" type="NameTableFieldDefinition" value="PsychicSpell" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he25d5e9bgd34bg1b31g19a9g336aa36e7bfe" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a0da719g3052gaa71g5dd4g2666837f1ff8" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a0da719g3052gaa71g5dd4g2666837f1ff8" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip()):DamageBonus(ClassLevel(Warlock)/2,Psychic);UnlockSpellVariant(PsychicSpell(),ModifySpellFlags(Verbal,0));" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PSYCHIC_SPELLS,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PSYCHIC_SPELLS)" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Subtle_HeadFX_01:Dummy_HeadFX" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="029f93ac-86f2-41af-bd92-118a30dcba36" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsychicSpell_Subtle" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(PsychicSpell(),ModifySpellFlags(Verbal,0),ModifySpellFlags(Stealth,1));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

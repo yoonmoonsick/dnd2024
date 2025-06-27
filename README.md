@@ -1219,7 +1219,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Surprising Strikes
     - During the first round of each combat, you have Advantage on attack rolls against any creature that hasn’t taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon’s type equal to your Rogue level.
 - Level 3: Assassin’s Tools
-  - You gain a Disguise Self and Brew Poison ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PoisonerCharge.png?raw=true).
+  - You gain a Disguise Self and Brew Poison. ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PoisonerCharge.png?raw=true)
 - Level 6: Roving Aim
   - Your Speed isn’t reduced to 0 by using Steady Aim.
 - Level 11: Death Strike
@@ -1532,7 +1532,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 7: Confusion, Summon Aberration
   - Level 9: Modify Memory, Telekinesis
 - Level 3: Psychic Spells
-  - When you cast a Warlock Level 1+ spell slot that deals damage, you can add Psychic damage. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
+  - When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
 - Level 6: Clairvoyant Combatant
   - You can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
 - Level 10: Eldritch Hex
