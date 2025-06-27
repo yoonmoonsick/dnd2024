@@ -386,6 +386,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ZealotPath.png?raw=true)
 
+> Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.
+
 - Level 3: Divine Fury
   - You can channel divine power into your strikes. On each of your turns while your Rage is active, the first creature you hit with a weapon or an Unarmed Strike takes extra damage equal to 1d6 plus half your Barbarian Level (round down). The extra damage is Necrotic or Radiant; you choose the type each time you deal the damage.
 - Level 3: Warrior of the Gods
@@ -720,6 +722,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheSea.png?raw=true)
 
+> Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature’s wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds.
+
 - Circle Spells (Always prepared)
   - Level 3: Ray of Frost, Fog Cloud, Thunderwave
   - Level 3: Gust of Wind, Shatter
@@ -811,6 +815,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 ### Psi Warrior
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarrior.png?raw=true)
+
+> Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.
 
 - Level 3: Psionic Power
   - You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter Level. You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
@@ -918,6 +924,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 ### Warrior of Mercy
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Mercy.png?raw=true)
+
+> Warriors of Mercy manipulate the life force of others. These Monks are wandering physicians, but they bring a swift end to their enemies. They often wear masks, presenting themselves as faceless bringers of life and death.
 
 - Level 3: Hand of Harm
   - Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Ki-Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
@@ -1103,6 +1111,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 ### Fey Wanderer
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FeyWanderer.png?raw=true)
+
+> Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.
 
 - Subclass Spells (Always prepared)
   - Level 3: Charm Person
@@ -1317,6 +1327,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true)
 
+> An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you. Will this power shine from you as a hopeful beacon to others? Or will you be a terror to those who feel the stab of your mind?
+> 
+> Perhaps a psychic wind from the Astral Plane carried psionic energy to you, or you were exposed to the Far Realm’s warping influence. Alternatively, you were implanted with a mind flayer tadpole, but your transformation into a mind flayer never occurred; now the tadpole’s psionic power is yours. However you acquired this power, your mind is aflame with it.
+
 - Subclass Spells (Always prepared)
   - Level 3: Arms of Hadar
   - Level 3: Calm Emotions, Detect Thoughts
@@ -1336,6 +1350,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ### Clockwork Sorcery
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ClockworkSorcery.png?raw=true)
+
+> The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it—a plane of existence shaped entirely by clockwork efficiency. You or someone from your lineage might have become entangled in the machinations of modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it’s part of a vast and glorious system.
 
 - Subclass Spells (Always prepared)
   - Level 3: Protection from Evil and Good
@@ -1488,6 +1504,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ### Celestial Patron
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Celestial.png?raw=true)
+
+> Your pact draws on the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or another heavenly entity. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience a hint of the holy light that illuminates the multiverse.
 
 - Subclass Spells (Always prepared)
   - Level 3: Cure Wounds, Guiding Bolt, Light, Sacred Flame
