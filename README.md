@@ -2057,7 +2057,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ## New Items
 - [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
   - It can be obtained by killing the Stonemason Kith in Grymforge.
-- [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor)
+- [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Blackrazor.png?raw=true)
   - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
@@ -2069,17 +2069,17 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be obtained by killing the Duergar Corpse Disposer in Grymforge.
 - [Efreeti Chain](https://www.dndbeyond.com/magic-items/9228530-efreeti-chain)
   - It can be obtained by killing the Animated Armour in the Ancient Forge.
-- [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow)
+- [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_EnergyBow.png?raw=true)
   - It can be obtained by killing the Merregon Legionnaire in Grymforge.
 - [Executioner's Handaxe](https://www.dndbeyond.com/magic-items/9228603-executioners-axe)
   - It can be obtained by killing Crusher in Goblin Camp.
 - [Frost Brand](https://www.dndbeyond.com/magic-items/9228651-frost-brand)
   - It can be obtained by killing Zarys in Zhentarim Basement.
-- [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger)
+- [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_HolyAvenger.png?raw=true)
   - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
 - [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
   - It can be obtained by killing the Wood Woad in the Decrepit Sanctuary.
-- [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow)
+- [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Oathbow.png?raw=true)
   - It can be purchased from A'jak'nir Jeera.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
   - It can be purchased from Lann Tarv.
@@ -2087,11 +2087,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - It can be purchased from A'jak'nir Jeera.
 - [Sword of Kas](https://www.dndbeyond.com/magic-items/9229112-sword-of-kas)
   - It can be purchased Vicar Humbletoes.
-- [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel)
+- [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_SwordOfZariel.png?raw=true)
   - It can be purchased Vicar Humbletoes.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
   - It can be obtained by killing Fist Marcus.
-- [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name)
+- [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_TrueName.png?raw=true)
   - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be purchased from A'jak'nir Jeera.
