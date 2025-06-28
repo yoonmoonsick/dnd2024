@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1327,6 +1326,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffcef28f-c270-4e59-9f7f-b39e0fcad34d" />
         <field name="StackId" type="StringTableFieldDefinition" value="SYNAPTIC_STATIC" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(Attack,-1d6);RollBonus(SavingThrow,-1d6);RollBonus(DeathSavingThrow,-1d6);" />
+        <field name="Material" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7803,6 +7803,82 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2a4b2ad7-f64c-4bed-8979-cc64066af7c0" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="9" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8FBC8F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="852c845d-cf57-423d-9617-42fcb43df20f" />
+        <field name="Name" type="NameTableFieldDefinition" value="GRIM_HARVEST_GIVE" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GRIM_HARVEST_GIVE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GrimHarvest_Give);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f479431gb8d1g41e5g890dg59ddd0becf9c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6e20e79g80f3g204egbae8gb5f1d6554959" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d26f759-bb57-43f2-8527-131555c60ced" />
+        <field name="Name" type="NameTableFieldDefinition" value="GRIM_HARVEST_TEMPHP" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
+        <field name="StackId" type="StringTableFieldDefinition" value="GRIM_HARVEST_TEMPHP" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(Cause.LevelMapValue(StandardProficiencyBonusScale)+Cause.IntelligenceModifier);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value=" IF(IsDowned()):RegainHitPoints(1)" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f479431gb8d1g41e5g890dg59ddd0becf9c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6e20e79g80f3g204egbae8gb5f1d6554959" version="2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f867a7f7-2994-428a-add9-14d773a2a4fe" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78b274b5-b649-42ae-86c7-8529f1efad55" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEATH_WARD_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e328d67-cf61-4705-b67c-47713b3fbf3a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d479ab5g70cfgd72ag7830g551cf230d10b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f515d28g6565g462bg6987g9e7333f43632" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(40);40" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(DEATH_WARD_DOWNED_4,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4378b95a-c4a1-4543-a68c-264a8aa4a5f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEATH_WARD_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78b274b5-b649-42ae-86c7-8529f1efad55" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(50);50" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(DEATH_WARD_DOWNED_5,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61609fdf-a37c-4e6b-bca3-7d943baf1985" />
+        <field name="Name" type="NameTableFieldDefinition" value="DEATH_WARD_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78b274b5-b649-42ae-86c7-8529f1efad55" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(60);60" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DownedStatus(DEATH_WARD_DOWNED_6,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2fc181a-7123-40f4-a123-996dae0f2a65" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNDEAD_SECRETS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="UNDEAD_SECRETS" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_UndeadSecrets);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d479ab5g70cfgd72ag7830g551cf230d10b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6237ef98gefe7g53fbg93c3g7367796d7b38" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B4513" is_substat="false">

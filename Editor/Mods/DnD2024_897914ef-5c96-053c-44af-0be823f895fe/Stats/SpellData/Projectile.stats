@@ -7,6 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ObliterationOrb_Netherbrain_Explosion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cd0ad3b3-9779-468c-9f31-f9112d6646e7" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Tagged('AI_USESPELL_A')):DealDamage(20d10,Force);AI_ONLY:DealDamage(20d10,Force);AI_ONLY:ApplyStatus(AI_HELPER_DEBUFF,100,3);IF(Tagged('AI_USESPELL_A')):RemoveStatus(OBLITERATIONORB_TECHNICAL,);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -921,6 +922,33 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Lightning)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d12,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;IsConcentration;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e78987b-206c-443b-923a-599929daa46f" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Wizard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8627744d-06c1-4215-847f-3dcd87ac2e50" />
+        <field name="Name" type="NameTableFieldDefinition" value="UndeadSecrets" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8aac9acd-e5eb-4a8d-93b7-8a959425ea90" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d479ab5g70cfgd72ag7830g551cf230d10b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6237ef98gefe7g53fbg93c3g7367796d7b38" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="366b5ab6-8280-44fa-84b0-56ef89216d08" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -6781,6 +6781,56 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="4eee4a03-353e-47c8-b892-a28181426ccd" />
       </fields>
     </stat_object>
+    <stat_object color="#FF8FBC8F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c95518d3-c4ec-4148-832b-d148d85b4601" />
+        <field name="Name" type="NameTableFieldDefinition" value="GrimHarvest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50529a9c-ef0f-4b6f-997f-93155755a93b" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6e20e79g80f3g204egbae8gb5f1d6554959" version="2" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and IsSpellSchool(SpellSchool.Necromancy) and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,GRIM_HARVEST_GIVE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c296d18-ddbf-4351-80a1-14a5cfd8d39a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Necromancer_3_NecroticResistance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdc089cfdgc955g445ag8738g38247669d0d8" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Necrotic,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0686524-5458-41f2-81fd-1ec0c82ef532" />
+        <field name="Name" type="NameTableFieldDefinition" value="Necromancer_6_OverwhelmingNecrosis" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3c7a7a5gd9acg85e3g0bc0g5fa35a743677" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8dac0396g6b1fgf2b2gbf4bg21be36d8850b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Necrotic,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f04fe730-8ec7-4c39-a6aa-a27a5602f885" />
+        <field name="Name" type="NameTableFieldDefinition" value="InuredtoUndeath" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71b4428c-73d2-4464-aed4-09460a0525bb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d479ab5g70cfgd72ag7830g551cf230d10b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6237ef98gefe7g53fbg93c3g7367796d7b38" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DeathWard_Necromancer);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Dead() and HasHPPercentageWithoutTemporaryHPLessThan(50);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(UNDEAD_SECRETS,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c99304f5-1bc7-48f9-afb4-e23c98fb8a03" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF8B4513" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e8c8b72b-9ba3-40fe-a23a-8f6aeeffde67" />
