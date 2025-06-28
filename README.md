@@ -1592,28 +1592,34 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 12: Song of Victory
   - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
-### Divination School
+### Diviner
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
+
+> The counsel of a Diviner is sought by those who want a clearer understanding of the past, present, and future. As a Diviner, you strive to part the veils of space, time, and consciousness. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight.
 
 - Level 6: Expert Divination
   - Casting Divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a Divination spell using a level 2+ spell slot, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can’t be higher than level 5.
 
-### Evocation School
+### Evoker
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EvocationSchool.png?raw=true)
+
+> Your studies focus on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some Evokers find employment in military forces, serving as artillery to blast armies from afar. Others use their power to protect others, while some seek their own gain.
 
 - Level 3: Potent Cantrip
 - Level 6: Sculpt Spells
 
-### Illusion School
+### Illusionist
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/IllusionSchool.png?raw=true)
+
+> You specialize in magic that dazzles the senses and tricks the mind, and the illusions you craft make the impossible seem real.
 
 - Level 3: Improved Illusions
   - You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn’t count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
 - Level 6: Phantasmal Creatures
-  - You always have the Summon Beast and Summon Fey spells prepared. you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.
+  - You always have the Summon Beast and Summon Fey spells prepared. Whenever you cast either spell, you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot. Once you cast either spell in this way, you must finish a Long Rest before you can cast it that way again.
 
 ### Necromancer
 
