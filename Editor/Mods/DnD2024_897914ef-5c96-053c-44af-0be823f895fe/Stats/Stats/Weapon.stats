@@ -5566,9 +5566,10 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical);" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Constitution, 2, 20);" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="AxeOfTheDwarvishLords;Darkvision;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="AxeOfTheDwarvishLords;" />
         <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Versatile;Melee;Dippable;Magical;Thrown" enumeration_type_name="WeaponFlags" version="1" />
         <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="DARKVISION;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5692,8 +5693,8 @@
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical);IF(Tagged('UNDEAD',context.Target)):WeaponDamage(2d10, Slashing);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_FingerOfDeath_SwordOfKas);" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="SwordOfKas;ImprovedCritical;" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_FingerOfDeath_SwordOfKas);Initiative(5);Resistance(Necrotic,Resistant);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="ImprovedCritical;" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
@@ -5704,8 +5705,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="965fc054-eaf7-4147-92e8-6903d95fa79f" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="bf24eff8-894f-403e-8a57-6ee52af7eb9a" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical);WeaponDamage(2d8, Radiant);" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="SwordOfZariel;" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Radiant,Resistant);Resistance(Necrotic,Resistant);AbilityOverrideMinimum(Charisma,20);DarkvisionRangeMin(36);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusOnEquip" type="StringTableFieldDefinition" value="FLY;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
