@@ -1577,6 +1577,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 12: Spell Mastery
   - You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
 
+### Bladesinging School
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
+
+- Level 3: Bladesong
+  - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+  - While the Bladesong is active, you gain the following benefits.
+    - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.
+    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.
+    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.
+- Level 6: Extra Attack
+  - You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
+- Level 12: Song of Victory
+  - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
+
 ### Divination School
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
@@ -1600,20 +1615,22 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 6: Phantasmal Creatures
   - You always have the Summon Beast and Summon Fey spells prepared. you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.
 
-### Bladesinging School
+### Necromancer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromancySchool.png?raw=true)
 
-- Level 3: Bladesong
-  - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
-  - While the Bladesong is active, you gain the following benefits.
-    - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.
-    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.
-    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.
-- Level 6: Extra Attack
-  - You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
-- Level 12: Song of Victory
-  - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
+> You explore the cosmic forces of life, death, and undeath. As a Necromancer, you learn to manipulate the energy that animates all creatures. As you progress, you master magic that can drain the life force from a creature, transforming its vital energy into magical power.
+> 
+> Many view Necromancers as menacing or villainous, though not all Necromancers are evil. Nevertheless, the manipulation of life and death is often considered taboo in various societies.
+
+- Level 3: Graim Harvest
+  - When you cast a Necromancy spell using a spell slot, choose yourself or a creature you can see within 30 feet. The chosen target gains temporary hit points equal to proficiency bonus plus your Intelligence modifier.
+- Level 3: Necrotic Resistance
+- Level 6: Overwhelming Necrosis
+  - Damage from your Wizard spells and Wizard features ignores Resistance to Necrotic damage.
+- Level 10: Undead Secrets
+  - You've learned more secrets about the nuances of life and death. You can expend a 4th-level or higher spell slot to protect yourself from death. Until you finish your next Long Rest, the first time you would drop to 0 Hit Points, your Hit Points instead become a number equal to ten times the level of the spell slot you expended.
+  - Immediately after you take damage and are bloodied after taking that damage but not killed outright, you can take a Reaction and teleport to an unoccupied space up to 60 feet from yourself, and each creature within 10 feet of the space you left takes 2d10 Necrotic damage.
 
 ## [Gunslinger](https://www.dndbeyond.com/sources/dnd/tgc/the-gunslinger-class-valdas-spire-of-secrets)
 

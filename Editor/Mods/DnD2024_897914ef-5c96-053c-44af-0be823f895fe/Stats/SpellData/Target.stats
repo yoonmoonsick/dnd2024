@@ -5,6 +5,8 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e53f4f69-0b4e-40f4-a96f-466b3e7d1fb1" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10844,6 +10846,74 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad0531c1-f862-4965-8684-e4feaadd00f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Wizard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c57f641a-027c-4ad9-9391-1014752a0e86" />
+        <field name="Name" type="NameTableFieldDefinition" value="GrimHarvest_Give" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6f1692a-96dc-4b00-af6e-6a53b62b4547" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f479431gb8d1g41e5g890dg59ddd0becf9c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6e20e79g80f3g204egbae8gb5f1d6554959" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(GRIM_HARVEST_TEMPHP, 100, -1);Remove(SELF,GRIM_HARVEST_GIVE);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Dead();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(ProficiencyBonus+IntelligenceModifier)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41bd6d60-7345-4bdc-b1d8-bcc3d944e641" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathWard_Necromancer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0d9c64f7-ba32-4c9e-bb19-f18c4de8e077" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_4,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d479ab5g70cfgd72ag7830g551cf230d10b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f515d28g6565g462bg6987g9e7333f43632" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_DOWNED_4,100,-1)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cc0277c-dcae-4136-b129-ebde13ab2f73" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathWard_Necromancer_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="202fe8bd-69f9-44d8-b57d-4f71822efa15" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_5,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_DOWNED_5,100,-1)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DeathWard_Necromancer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d8ba090-1e40-4b8d-a978-a15f4d65c570" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeathWard_Necromancer_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01bad4ab-9251-4192-bbd8-b408deec226b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_6,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DEATH_WARD_DOWNED_6,100,-1)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_DeathWard_Necromancer" />
       </fields>
     </stat_object>
     <stat_object color="#FF8A2BE2" is_substat="false">
