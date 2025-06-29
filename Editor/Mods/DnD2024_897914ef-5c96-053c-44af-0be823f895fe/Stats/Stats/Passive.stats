@@ -6783,6 +6783,42 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0289c670-5256-4fbd-9dfd-8a1bfe03756f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enchanter_EnchantingTalker" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10b1ec66g9627ge56egd1e5g06ab88fe127d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h181e4189gbca6g96degb545g1c5964a43c13" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CuttingWords" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Deception,IntelligenceModifier);Skill(Intimidation,IntelligenceModifier);Skill(Performance,IntelligenceModifier);Skill(Persuasion,IntelligenceModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="545aeeaf-408a-4d2a-aeb2-dfa3901afb3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Enchanter_VexingMovement" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5fb32c6-6b59-4c6d-aa95-dad59cb09e0b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0305e05gce9cgc88fgad56gd8995c511b5a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2befe1d1gc2d9g2b91g77dbg353743ffd02a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Dash_Bonus" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',13,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',15,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',17,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',19,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',21,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',23,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',25,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',27,context.Source)):ActionResource(VexingMovement,1,0);IF(AbilityGreaterThan('Intelligence',29,context.Source)):ActionResource(VexingMovement,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and IsSpellSchool(SpellSchool.Enchantment) and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,VEXING_MOVEMENT,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecc462a9-7a33-4074-a79d-930814cd3f3b" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstinctiveCharm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="607a1731-6933-46b0-945d-ce1e50cc6d04" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f7163dag024egfe18g3043g76bcf40b9d17" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h333a62b5g8ab1g6354gf4e8gdfa8ef43e6f5" version="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(InstinctiveCharm,1,0);UnlockInterrupt(Interrupt_InstinctiveCharm);UnlockInterrupt(Interrupt_InstinctiveCharm_1);UnlockInterrupt(Interrupt_InstinctiveCharm_2);UnlockInterrupt(Interrupt_InstinctiveCharm_3);UnlockInterrupt(Interrupt_InstinctiveCharm_4);UnlockInterrupt(Interrupt_InstinctiveCharm_5);UnlockInterrupt(Interrupt_InstinctiveCharm_6);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d560e6ed-8520-4ce9-aab0-7ab17ed343f2" />
         <field name="Name" type="NameTableFieldDefinition" value="Illusionist_PhantasmalCreatures" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h322e230fg436bgd0dcg7394g8a90faaa4e83" version="1" />
