@@ -725,6 +725,21 @@ data "Properties" "AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(BardicInspiratio
 new entry "YMS_Cleric"
 type "InterruptData"
 
+new entry "Interrupt_DestructiveWrath"
+type "InterruptData"
+using "Interrupt_DestructiveWrath"
+data "EnableCondition" "not HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+
+new entry "Interrupt_WrathOfTheStorm_Lightning"
+type "InterruptData"
+using "Interrupt_WrathOfTheStorm_Lightning"
+data "EnableCondition" "not HasAnyStatus({'SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+
+new entry "Interrupt_WrathOfTheStorm_Thunder"
+type "InterruptData"
+using "Interrupt_WrathOfTheStorm_Thunder"
+data "EnableCondition" "not HasAnyStatus({'SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
+
 new entry "Interrupt_ArcanaDomain_FortifyingSpell"
 type "InterruptData"
 data "DisplayName" "h143feef3gba42gae15g6fcfg8391c5cd5516;1"
