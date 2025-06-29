@@ -9870,11 +9870,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14ebe929g180bg8657gdba2g9014973b61d9" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WrathOfTheSea),Cold);ApplyStatus(PUSH_45,100,0);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);IF(HasPassive('AquaticAffinity',context.Source)):DealDamage(LevelMapValue(WrathOfTheSea)/2,Cold);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('WILDSHAPE_WRATH_OF_THE_SEA_AURA',context.Target) and Enemy() and not Dead();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_WaterWhip" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WrathOfTheSea),Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold);" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PUSH_45,100,0);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
@@ -9892,8 +9892,60 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="7f8485a2-920d-49e7-903e-bdf8e684db46" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="bb97ac24-8aae-463b-a080-072c2957db0e" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0a6eece4-b70c-4381-95e2-93b030d8b77e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="903e4abf-0b01-41e5-8a7e-e4ba97206254" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b491ccce-9f39-4b69-b0e5-1e8d62ced5a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31f4df0c-464f-4056-bd20-4c3db1def3d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52e441cf-9766-4d43-b98c-49144343b792" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da8b9c6a-bbe9-47ad-9c53-221ad1380c11" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildShape_Sea_Damage_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c498f8aa-125c-45b5-a3a1-6a21cce575b5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Cold);IF(not SizeEqualOrGreater(Size.Huge, context.Target)):ApplyStatus(PUSH_45,100,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

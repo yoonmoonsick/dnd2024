@@ -31,7 +31,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="WILDSHAPE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);UnlockSpell(Target_WildShape_Sea_Damage);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);IF(not AbilityGreaterThan('Wisdom',13,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_1);IF(not AbilityGreaterThan('Wisdom',15,context.Source) and AbilityGreaterThan('Wisdom',13,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_2);IF(not AbilityGreaterThan('Wisdom',17,context.Source) and AbilityGreaterThan('Wisdom',15,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_3);IF(not AbilityGreaterThan('Wisdom',19,context.Source) and AbilityGreaterThan('Wisdom',17,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_4);IF(not AbilityGreaterThan('Wisdom',21,context.Source) and AbilityGreaterThan('Wisdom',19,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_5);IF(AbilityGreaterThan('Wisdom',21,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_6);" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and not Ally()):ApplyStatus(WILDSHAPE_WRATH_OF_THE_SEA_AURA,100,-1)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_ACTIVE,100,-1)" />
@@ -57,7 +57,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1e265027-0da8-4de4-ba7f-060553fbf256" />
         <field name="Name" type="NameTableFieldDefinition" value="WILDSHAPE_WRATH_OF_THE_SEA_10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f6690a65-97b6-4d66-af1a-4fa437fc5415" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);UnlockSpell(Target_WildShape_Sea_Damage);UnlockSpell(Projectile_Fly_Spell);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Thunder,Resistant);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_WildShape_Dismiss_Sea);IF(not AbilityGreaterThan('Wisdom',13,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_1);IF(not AbilityGreaterThan('Wisdom',15,context.Source) and AbilityGreaterThan('Wisdom',13,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_2);IF(not AbilityGreaterThan('Wisdom',17,context.Source) and AbilityGreaterThan('Wisdom',15,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_3);IF(not AbilityGreaterThan('Wisdom',19,context.Source) and AbilityGreaterThan('Wisdom',17,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_4);IF(not AbilityGreaterThan('Wisdom',21,context.Source) and AbilityGreaterThan('Wisdom',19,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_5);IF(AbilityGreaterThan('Wisdom',21,context.Source)):UnlockSpell(Target_WildShape_Sea_Damage_6);UnlockSpell(Projectile_Fly_Spell);Resistance(Cold,Resistant);Resistance(Lightning,Resistant);Resistance(Thunder,Resistant);" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
