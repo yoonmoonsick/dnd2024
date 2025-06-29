@@ -6856,6 +6856,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8dac0396g6b1fgf2b2gbf4bg21be36d8850b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Necrotic,Resistant);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6873,8 +6874,49 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b86c7974-1adc-476a-9096-65655dcbda59" />
+        <field name="Name" type="NameTableFieldDefinition" value="TransmutationStone_Activation" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b8e905f-4ddb-40ae-9a1b-c5ca103dbbd0" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TRANSMUTERS_STONE_USED);RemoveStatus(SELF,TRANSMUTERS_STONE_USED_10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c99304f5-1bc7-48f9-afb4-e23c98fb8a03" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Transmuter_3_WoundrousEnhancement" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e173ed7g07a5ga8f2g2fdeg575a23e29a28" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35942136g7e8dg9b4bg78c2g23a0ec8390c1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_EnhanceAbility" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="747721c5-068e-45e8-aad2-45805bc2254c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Transmuter_3_WoundrousEnhancement_Free" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(WONDROUS_ENHANCEMENT_FREE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f8e07bb-b9f0-4e32-b374-5a8d72de84af" />
+        <field name="Name" type="NameTableFieldDefinition" value="Transmuter_6_SplitTransmutation" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ec41e67-10b1-43f6-9170-d05702ce53b2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a9cd7feg0fbbg79bdgae0cgb3840535f78a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h217aad20gb401gdd3fg4da9gc57f81ebf0f4" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SplitTransmutationProjectileSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SplitTransmutationTargetSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyMaximumTargets(Override,2),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SplitTransmutationTargetTouchSpellCheck(),ModifyNumberOfTargets(AdditiveBase,1,false),ModifyMaximumTargets(Override,2),ModifyTooltipDescription(),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9489a170-bdd2-4cfc-9458-241bafd04eba" />
+        <field name="Name" type="NameTableFieldDefinition" value="Transmuter_10_PotentStone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a8b46f7-1b5e-4d6c-9972-d555c9ef04d1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h567cd1a6g9a96g1369ged3bg5efb237fb88a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6709d691ga99eg8eacgb353gf778eaa929c7" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TransmutersStone_10);" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B4513" is_substat="false">
