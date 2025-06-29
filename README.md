@@ -1601,6 +1601,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 6: Expert Divination
   - Casting Divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a Divination spell using a level 2+ spell slot, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can’t be higher than level 5.
 
+### Enchanter
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EnchantmentSchool.png?raw=true)
+
+> Your magic clouds or captivates minds. Some Enchanters use their abilities to encourage peace and soften cruelty, while others use their mind- altering magic for selfish ends. Many Enchanters fall somewhere in between.
+
+- Level 3: Enchanting Talker
+  - Whenever you make a Charisma check, you gain a bonus to the check equal to your Intelligence modifier (minimum of +1). You also gain proficiency in one of these skills of your choice: Deception, Intimidation, or Persuasion.
+- Level 3: Vexing Movement
+  - Immediately after you cast an Enchantment spell using an action and a spell slot, you can take both the Disengage and Dash actions as a bonus action. You can use this bonus action a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.
+- Level 6: Reflecting Charm
+  - When a creature you can see within 30 feet of you hits you with an attack, you can use your reaction to reduce the damage you take by 5 multiplied by the spell slot level used. The attacker must then make a Wisdom saving throw against your spell save DC. On a failed save, the attacker takes psychic damage equal to half your wizard level plus your Intelligence modifier.
+
 ### Evoker
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EvocationSchool.png?raw=true)
@@ -1637,6 +1650,20 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 10: Undead Secrets
   - You've learned more secrets about the nuances of life and death. You can expend a 4th-level or higher spell slot to protect yourself from death. Until you finish your next Long Rest, the first time you would drop to 0 Hit Points, your Hit Points instead become a number equal to ten times the level of the spell slot you expended.
   - Immediately after you take damage and are bloodied after taking that damage but not killed outright, you can take a Reaction and teleport to an unoccupied space up to 60 feet from yourself, and each creature within 10 feet of the space you left takes 2d10 Necrotic damage.
+
+### Transmuter
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TransmutationSchool.png?raw=true)
+
+> You specialize in spells that modify energy and matter. To you, the world isn't fixed; it's eminently mutable. Your magic gives you the tools to become a smith on reality's forge. Some Transmuters are tinkerers and pranksters, while others pursue their magical studies with deadly seriousness, seeking god-like power to create and destroy worlds.
+
+- Level 3: Transmuter's Stone
+- Level 3: Woundrous Enhancement
+  - You can cast the spell Enhance Ability once per long rest without using a spell slot. When you cast it this way, the target of your Enhance Ability spell also gains advantage on saving throws that use the ability you chose.
+- Level 6: Split Transmutation
+  - When you cast a Transmutation spell like Fly using a higher-level spell slot to target an additional creature, increase the spell's effective level by 1.
+- Level 10: Potent Stone
+  - You can create a second Transmuter's Stone.
 
 ## [Gunslinger](https://www.dndbeyond.com/sources/dnd/tgc/the-gunslinger-class-valdas-spire-of-secrets)
 

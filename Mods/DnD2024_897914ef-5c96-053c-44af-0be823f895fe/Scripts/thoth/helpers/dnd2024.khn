@@ -502,3 +502,19 @@ end
 function BattleMasterManeuver()
     return SpellId('Projectile_DisarmingAttack') | SpellId('Projectile_DistractingStrike') | SpellId('Projectile_GoadingAttack') | SpellId('Projectile_ManeuveringAttack') | SpellId('Projectile_MenacingAttack') | SpellId('Projectile_PushingAttack') | SpellId('Projectile_TripAttack') | SpellId('Rush_BattleMaster_Maneuver_LungingAttack') | SpellId('Shout_EvasiveFootwork') | SpellId('Target_DisarmingAttack') | SpellId('Target_DistractingStrike') | SpellId('Target_FeintingAttack') | SpellId('Target_GoadingAttack') | SpellId('Target_ManeuveringAttack') | SpellId('Target_MenacingAttack') | SpellId('Target_PushingAttack') | SpellId('Target_TripAttack') | SpellId('Zone_SweepingAttack')
 end
+
+function EnhanceAbility()
+    return SpellId('Target_EnhanceAbility') | SpellId('Target_EnhanceAbility_BearsEndurance') | SpellId('Target_EnhanceAbility_BullsStrength') | SpellId('Target_EnhanceAbility_CatsGrace') | SpellId('Target_EnhanceAbility_EaglesSplendor') | SpellId('Target_EnhanceAbility_FoxsCunning') | SpellId('Target_EnhanceAbility_OwlsWisdom')
+end
+
+function SplitTransmutationProjectileSpellCheck()
+    return ~NumberOfTargetsGreaterThan(1) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Projectile) & IsSpellOfSchool(SpellSchool.Transmutation)
+end
+
+function SplitTransmutationTargetSpellCheck()
+    return TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & IsSpellOfSchool(SpellSchool.Transmutation) & ~NumberOfTargetsGreaterThan(1)
+end
+
+function SplitTransmutationTargetTouchSpellCheck()
+    return TargetRadiusGreaterThan(0) & ~TargetRadiusGreaterThan(1.5) & ~AreaRadiusGreaterThan(0) & HasSpellFlag(SpellFlags.Spell) & SpellTypeIs(SpellType.Target) & ~HasFunctor(StatsFunctorType.Summon) & IsSpellOfSchool(SpellSchool.Transmutation) & ~NumberOfTargetsGreaterThan(1)
+end
