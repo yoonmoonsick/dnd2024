@@ -1049,6 +1049,7 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1776,6 +1777,80 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BastionOfLaw_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="13e7cd08-52cd-4fa3-b94f-36ac8e1318a7" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-5d8);RemoveStatus(BASTION_OF_LAW_5)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF00008B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="374c7c23-941c-4dc6-b4d7-9d4dfbfe9c2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Wizard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2eb3ffe9-399c-4e0e-afa2-97b625d5fb26" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="48f9ba72-0eb1-4d59-baf0-47b4727ba9b2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f7163dag024egfe18g3043g76bcf40b9d17" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h333a62b5g8ab1g6354gf4e8gdfa8ef43e6f5" version="2" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-5,All);" />
+        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;InstinctiveCharm:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1dfd66c-d6da-4c18-9254-a342706436a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2eb3ffe9-399c-4e0e-afa2-97b625d5fb26" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="820bddbc-78d3-4f18-bc2e-41283245da2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1dfd66c-d6da-4c18-9254-a342706436a2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-10,All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83445d91-8dc8-49bc-ba7c-cb022cc0497c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="820bddbc-78d3-4f18-bc2e-41283245da2b" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-15,All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1ea9e66-272a-4959-8ae7-a78b951ad5ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="820bddbc-78d3-4f18-bc2e-41283245da2b" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-20,All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7552bf70-6dc0-437c-afcc-fee0d8bd8f52" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="820bddbc-78d3-4f18-bc2e-41283245da2b" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-25,All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64ecd9a9-b4c4-4384-a836-e3662faea36a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_InstinctiveCharm_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="820bddbc-78d3-4f18-bc2e-41283245da2b" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-30,All);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B4513" is_substat="false">
