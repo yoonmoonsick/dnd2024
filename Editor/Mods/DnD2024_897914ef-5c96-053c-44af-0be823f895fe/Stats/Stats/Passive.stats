@@ -912,7 +912,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20d3e228ge283ga162g478dgabfba616e9de" version="1" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hfbd73dfdgffc3gf675ga2c9g2faaac3f8770" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) or HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source)):ApplyStatus(SELF,INVISIBILITY,100,1);IF(not HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) and not HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source)):RemoveStatus(SELF,INVISIBILITY)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('INVISIBILITY_UNREFLECTED',context.Source) and (HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) or HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 3, context.Target, context.Source))):ApplyStatus(SELF,INVISIBILITY_UNREFLECTED,100,1);IF(not HasEnemyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 2, context.Target, context.Source) and not HasAllyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 3, context.Target, context.Source)):RemoveStatus(SELF,INVISIBILITY_UNREFLECTED)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
       </fields>
     </stat_object>

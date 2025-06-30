@@ -644,7 +644,7 @@ data "LoreDescription" "hfbd73dfdgffc3gf675ga2c9g2faaac3f8770;1"
 data "PriorityOrder" "9"
 data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
 data "StatsFunctorContext" "OnMovedDistance"
-data "StatsFunctors" "IF(HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) or HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source)):ApplyStatus(SELF,INVISIBILITY,100,1);IF(not HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) and not HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source)):RemoveStatus(SELF,INVISIBILITY)"
+data "StatsFunctors" "IF(not HasStatus('INVISIBILITY_UNREFLECTED',context.Source) and (HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) or HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 3, context.Target, context.Source))):ApplyStatus(SELF,INVISIBILITY_UNREFLECTED,100,1);IF(not HasEnemyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 2, context.Target, context.Source) and not HasAllyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 3, context.Target, context.Source)):RemoveStatus(SELF,INVISIBILITY_UNREFLECTED)"
 
 new entry "YMS_Feats_New_General"
 type "PassiveData"
