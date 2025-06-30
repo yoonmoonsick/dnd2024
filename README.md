@@ -1592,6 +1592,18 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 12: Song of Victory
   - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
+### Conjurer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ConjurationSchool.png?raw=true)
+
+> You consider distance and matter flexible guidelines rather than rigid physical laws. Conjurers harness the power of magic to instantly move creatures through space and summon them to fight on their behalf.
+
+- Level 3: Benign Transposition
+- Level 6: Distant Transposition
+  - The range of your Benign Transposition feature increases to 60 feet. 
+- Level 6: Durable Summons
+  - You can give Temporary Hit Points equal to twice your Wizard level when it first appears.
+
 ### Diviner
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
