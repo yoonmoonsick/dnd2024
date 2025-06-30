@@ -680,12 +680,12 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="874e7043-1457-4092-a54e-69341477a891" />
-        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_GreatWeaponFighting_Ranged" />
+        <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_Ranged" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2e7207d3-5021-4054-887e-59862f048a50" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cb25ce5gb06ag9a14g7277g8ab2e456b9e4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54bb5de3g4a3dg0b43ge323g8610119b91f0" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cb25ce5gb06ag9a14g7277g8ab2e456b9e4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h54bb5de3g4a3dg0b43ge323g8610119b91f0" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Steady_Ranged" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Player(context.Source) and FightingStyle_GreatWeapon_Ranged(context.Source) and IsRangedWeaponAttack()):MinimumRollResult(Damage,3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):Reroll(Damage,2,false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
