@@ -12,3 +12,16 @@ data "StatusType" "INVISIBLE"
 using "POTION_OF_INVISIBILITY"
 data "OnApplyFunctors" "ApplyStatus(ALCHEMIST_FORTIFY_TEMP_HP,100,-1)"
 
+new entry "INVISIBILITY_UNREFLECTED"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "StackId" "INVISIBILITY_UNREFLECTED"
+data "StackPriority" "1"
+
+new entry "INVISIBILITY_ILLRIGGER"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "INVISIBILITY"
+data "StackId" "INVISIBILITY_ILLRIGGER"
+
