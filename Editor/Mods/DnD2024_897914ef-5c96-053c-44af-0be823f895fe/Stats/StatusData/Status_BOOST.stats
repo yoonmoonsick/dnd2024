@@ -874,26 +874,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="DARKNESS_CASTER" />
         <field name="StackId" type="StringTableFieldDefinition" value="DARKNESS_CASTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c778eecf-46ab-4cdc-aae7-592a851ffb59" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DARKNESS_RECAST,100,10)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ec109537-447c-4530-8fb8-af0e64aed536" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARKNESS_CASTER_RECAST" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="11bb4766-5ca5-4e5c-a58f-d20f9ef52d6e" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARKNESS_CASTER" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="64c4c06b-7635-4d8f-aa8a-aecb263532ec" />
-        <field name="Name" type="NameTableFieldDefinition" value="DARKNESS_RECAST" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9b1e5d87-e09b-44b9-a1a2-739d7172cc1d" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DARKNESS_RECAST" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Darkness_Move);" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not (HasStatus('DARKNESS_CASTER') or HasStatus('DARKNESS_CASTER_RECAST'))" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnDamage;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(Darkness(),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Replace,SpellPoint,0,-1,SpellPoint),ModifyUseCosts(Replace,ActionPoint,0,-1,ActionPoint),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
