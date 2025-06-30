@@ -4864,7 +4864,7 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Acid)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Acid)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Acid)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Acid" />
@@ -4876,7 +4876,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Cold)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Cold)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Cold" />
@@ -4888,7 +4888,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Fire)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Fire)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Fire)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Fire" />
@@ -4900,7 +4900,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Lightning)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Lightning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Lightning)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Lightning" />
@@ -4912,7 +4912,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="FlurryOfBlows_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="531454ef-2929-4a93-a591-b6b771f1a386" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Thunder)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder);DealDamage(LevelMapValue(MartialArts)+UnarmedMeleeAbilityModifier, Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Thunder)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FlurryOfBlows_Thunder" />
@@ -6186,7 +6186,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);IF(not SavingThrow(Ability.Dexterity, ManeuverSaveDC())):ApplyStatus(PRONE,100,1);" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
@@ -6198,7 +6198,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);ApplyStatus(OPEN_HAND_NO_REACTIONS,100,1);" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
@@ -6210,7 +6210,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):Force(5);" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
