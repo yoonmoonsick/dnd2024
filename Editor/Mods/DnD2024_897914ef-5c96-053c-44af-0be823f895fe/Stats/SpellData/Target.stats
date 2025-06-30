@@ -148,14 +148,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="19fdbc3d-e7d3-41e0-a60b-62b0aae81eac" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_CounterSpell_Blackstaff" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="285e28c0-73e0-41c2-b623-9f807e5aea7e" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(1,'Wizard',context.Source);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="791d9480-ac67-4be1-a9b1-923b54086c8f" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Illithid_HoldPerson" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e2fa7994-f151-42b9-bfe7-f4f996ce6db2" />
@@ -1432,7 +1424,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsConcentration;Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2368,8 +2360,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c983262c-0e2f-4c77-a7b2-46c118ba59a1" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b9b1321-b19a-46cd-8f11-a63535356caf" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2377,8 +2369,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f51b6ef2-610a-4077-afb5-8107977effcb" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ed47614-1928-4dac-af25-75da12688b0f" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2386,8 +2378,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e7b755d7-eb4d-46db-bf66-63b0833e5c30" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ab1b25d9-083c-4365-a8e3-a58b08f5d3c4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2395,8 +2387,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="77b197a3-f162-4146-bf25-68c8b0dcddda" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5192131-8f14-42fb-8ce7-b4151f8cadd2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2404,8 +2396,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="88859810-d2b5-4a0a-ae14-f6bf4a95dbed" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="18d1ec08-c599-408d-82d3-b6e9416c60c4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2414,15 +2406,14 @@
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_Monk" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7171076b-3740-4c24-8265-6657e9c671e7" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6702089egb6bfg3875g1557gf5aecca19734" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(25)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsConcentration;Stealth;Invisible" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2430,8 +2421,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9a960dd6-858b-432c-addd-0fc16c8f6871" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_DrowMagic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4e839b84-f4d4-419c-b570-054d9a24d08d" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2440,8 +2430,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_Tiefling" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b9b1321-b19a-46cd-8f11-a63535356caf" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2449,19 +2439,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="56520acb-c634-459f-a02a-3cbdbfbd1a31" />
         <field name="Name" type="NameTableFieldDefinition" value="Darkness_Sorcerer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="93063c96-50d9-4d06-a685-53de95a4e729" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_Darkness_Move" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2022392b-acb6-4d4e-8f22-fc11c56fab82" />
-        <field name="Name" type="NameTableFieldDefinition" value="Darkness_Move" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3b9b1321-b19a-46cd-8f11-a63535356caf" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(5,10,DarknessCloud,true);GROUND:ApplyStatus(SELF,DARKNESS_CASTER_RECAST,100,10);GROUND:IF(HasPassive('EyesOfTheDark', context.Source)):ApplyStatus(SELF,EYESOFTHEDARK_DARKNESS,100,10);" />
-        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;IsConcentration;Stealth;Invisible;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
