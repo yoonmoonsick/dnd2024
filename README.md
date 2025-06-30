@@ -925,6 +925,9 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
 - Level 3: Deflect Attacks
   - When a melee attack roll hits you and deals bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage you take. The amount reduced equals 1d10 + your Dexterity modifier + your Monk level. Additionally, you can spend 1 Ki point to redirect some of the attack's force. The attacking creature must succeed on a Dexterity saving throw or take damage equal to your Martial Arts die + your Dexterity modifier.
+- Level 6: Empowered Strikes
+  - Your unarmed attacks bypass enemies' Bludgeoning Resistance, whether magical or non-magical.
+- Level 10: Stillness of Mind
 - Level 10: Heightened Focus
   - Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.
   - Flurry of Blows. You can expend 1 Ki-Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.
@@ -974,6 +977,14 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
   - You can expend 2 Ki Points to cause elemental energy to burst in a 12-foot-radius Sphere centered on a point within 60 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder. Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.
 - Level 11: Stride of the Elements
   - While your Elemental Attunement is active, you also have a Fly Speed equal to your Speed.
+
+### Warrior of the Open Hand
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/OpenHand.png?raw=true)
+
+- Level 6: Wholeness of Body ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/WholenessOfBody.png?raw=true)
+  - You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1 Hit Point regained).
+  - You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ### Way of the Kensei
 
