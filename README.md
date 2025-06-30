@@ -2326,6 +2326,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Feather Fall](https://www.dndbeyond.com/spells/2618874-feather-fall)
 - [Hail of thorns](https://www.dndbeyond.com/spells/2618975-hail-of-thorns)
 - [Healing Word](https://www.dndbeyond.com/spells/2619143-healing-word)
+- [Hell’s Lash](https://www.dndbeyond.com/spells/2721764-hells-lash) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_HellsLash.png?raw=true)
 - [Hunter's Mark](https://www.dndbeyond.com/spells/2619166-hunters-mark)
 - [Inflict Wounds](https://www.dndbeyond.com/spells/2619181-inflict-wounds)
 - [Jump](https://www.dndbeyond.com/spells/2618991-jump)
