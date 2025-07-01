@@ -2383,13 +2383,13 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Ray of Enfeeblement](https://www.dndbeyond.com/spells/2618926-ray-of-enfeeblement)
 - [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BindingIce.png?raw=true)
 - [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
+- [Snilloc's Snowball Swarm](https://www.dndbeyond.com/spells/2399-snillocs-snowball-swarm)
 - [Spiritual Weapon](https://www.dndbeyond.com/spells/2619081-spiritual-weapon)
 - [Summon Beast](https://www.dndbeyond.com/spells/2619106-summon-beast)
 - [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_MindWhip.png?raw=true)
 - [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
 - [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
 - [Web](https://www.dndbeyond.com/spells/2619208-web)
-
 ## Level 3 spells
 - [Animate Dead](https://www.dndbeyond.com/spells/2618853-animate-dead)
 - [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_AshardalonsStride.png?raw=true)
