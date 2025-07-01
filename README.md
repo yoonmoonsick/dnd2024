@@ -18,6 +18,8 @@
 - 자세한 변경 내용은 아래에서 확인할 수 있습니다.
   - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F61HB2WA)
+
 ## Bug Report Guidelines
 Following these guidelines will help me focus more efficiently on bug fixes. Reports that do not adhere to the following may be deleted without a separate response.
 * For bug reports, please use either **Nexus Mods** or **GitHub**.
