@@ -59,6 +59,16 @@ This mod may have potential conflicts with the mods listed below. If any of the 
 - Mystra's Spells
 - One DND Backgrounds - PHB 2024
 - OneDnD_SpellListAdditions
+- Rebalance_Cantrips
+- Rebalance_ClassSpells
+- Rebalance_CommonEffects
+- Rebalance_Feats
+- Rebalance_Lvl1_Spells
+- Rebalance_Lvl2_Spells
+- Rebalance_Lvl3_Spells
+- Rebalance_Lvl4_Spells
+- Rebalance_Lvl5_Spells
+- Rebalance_Lvl6_Spells
 
 # Background
 
