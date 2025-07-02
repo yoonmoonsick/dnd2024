@@ -10151,6 +10151,59 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb21a73d-1b66-48dc-8c5c-9e215ef212e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dragonshape_Bite" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="32ffe40f-c5b8-4fec-b926-3733ba711f67" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94118a36ga153g4141ga739g781284040ed6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94118a36ga153g4141ga739g781284040ed6" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12+WisdomModifier, Piercing);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="not Character() and not Dead();" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_VampireBite" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12+WisdomModifier, Piercing);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Alioramus_Bite" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_Alioramus_Bite" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e28c1681-ed5e-471f-b7db-92c30a9fdb70" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="cb7fdf13-f21b-4c27-8198-30384512fd8a" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0687f9b1-a795-43be-93a6-bb6c221a593f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dragonshape_Claw" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9640f53b-06e7-4d8c-8304-4e92b16c9ab7" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h39829445g2dc1g47f7g95a7ga65d84e8c81d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h361b0b7fg98cdg4040g84bcg818772c52383" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="0" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('DragonCircle_6_ImprovedDragonShape');" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,2d6+WisdomModifier),Slashing);Cast2[DealDamage(1d6+WisdomModifier,Piercing);];" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="not Character() and not Dead();" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+WisdomModifier,Slashing);DealDamage(1d6+WisdomModifier,Piercing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFA0522D" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="539f1bdf-e0c4-44a3-9beb-789503a918ac" />
