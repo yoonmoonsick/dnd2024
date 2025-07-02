@@ -664,6 +664,22 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
     - Potent Spellcasting. When you cast a Druid cantrip with a range of 10 feet or greater, the spell's range increases by 300 feet.
     - Primal Strike. The extra damage of your Primal Strike increases to 2d8.
 
+### Circle of Dragons
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDragons.png?raw=true)
+
+> The Circle of Dragons is an old order of druids steeped in rigid tradition. These honor-bound wardens of nature and draconic heritage are members of a secret society that have influenced governance, war, and culture across the world. High-standing members of this Circle have ties to royal bloodlines that date back generations, a connection that’s subtly showcased in royal family crests and insignia. Druids from this Circle know that dragons, and draconic magic, are as connected to the world as plants or beasts, and utilize that connection to transform into a unique and powerful draconic form all their own.
+
+- Level 3: Draconic Lore
+  - You gain Expertise in the History skill.
+- Level 3: Dragon Shape
+  - You can transform into a dragon shape. When you take this form, you gain temporary hit points equal to three times your druid level. When you use your dragon shape, you determine what type of dragon to transform into. The type of dragon determines your scale color and the breath weapon’s damage type.
+  - Your dragon form grants you an AC equal to 13 + your Dexterity modifier. When you take the Attack action, you can make an unarmed strike using your dagger-like teeth, substituting your Wisdom modifier for the attack and damage rolls. As an action, you can exhale a plume of powerful energy. Your breath weapon improves at 6th and 10th levels.
+- Level 6: Improved Dragon Shape
+  - Your control over your dragon shape has improved. Your AC is equal to 14 + your Dexterity modifier. Your razor-sharp claws are natural weapons, which you can use to make unarmed strikes. When you take the Attack action on your turn, you can make one attack with your bite and one with your claws. Your attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+- Level 10: Draconic Magic
+  - In your dragon shape, you can cast druid spells that consume a spell slot of 3rd level or lower. Your AC becomes 15 + your Dexterity modifier. You also gain resistance to your dragon shape's associated damage type and a flying speed of 30 feet.
+
 ### Circle of the Dream
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDreams.png?raw=true)
