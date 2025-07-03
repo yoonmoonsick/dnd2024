@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8719,6 +8720,52 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="1e34754f-17e3-4aeb-9db9-a34f682c1c45" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="d787f666-8ee6-4185-9365-6aac9ebe76ae" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6f37b00-fcf7-49b9-94c2-7bd710f8af48" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_PSION" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a099e9c4-0340-41c9-8ad5-cff6cd498476" />
+        <field name="Name" type="NameTableFieldDefinition" value="BIOFEEDBACK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="852c845d-cf57-423d-9617-42fcb43df20f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bbd86b4g2a16g30cfg2b9fgba342c02735c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf2168cf9g7d5dg9844g4fe9g3e3f13e9e8b0" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BIOFEEDBACK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Biofeedback);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fa48645-1c6c-4223-a69c-fc0af9309666" />
+        <field name="Name" type="NameTableFieldDefinition" value="BIOFEEDBACK_TEMP_HP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f867a7f7-2994-428a-add9-14d773a2a4fe" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bbd86b4g2a16g30cfg2b9fgba342c02735c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf2168cf9g7d5dg9844g4fe9g3e3f13e9e8b0" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BIOFEEDBACK_TEMP_HP" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(LevelMapValue(PsionDie)+IntelligenceModifier);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c277c0fc-bd6c-48b7-9ccc-faf182d55f10" />
+        <field name="Name" type="NameTableFieldDefinition" value="EGO_WHIP" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindWhip" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="WEAK" enumeration_type_name="SoundVocalType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EGO_WHIP" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageBonus(-1d8,,false);ActionResourceMultiplier(Movement,50,0);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="131ae698-d8a7-4a61-b494-51aeee3dd55c" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

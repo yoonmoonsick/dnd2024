@@ -12198,6 +12198,31 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7c4565d-6fb6-4a4d-a2ae-5e5eb88c8be3" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Psion" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="601dcab7-519d-42c2-9b94-7206b33d10d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EgoWhip" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b535d2c-76d3-4d62-9d0f-7951df677c43" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EGO_WHIP,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="RestoreResource(SELF,PsionDie,1,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EGO_WHIP,100,2);" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="57d3a626-fc77-4733-891a-0a157b9f3737" />
@@ -12524,21 +12549,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53ad1006ge033g808fgdcecgcc857a028774" version="1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="WieldingFinesseWeaponInSpecificHand(context.Source,false) and HasActionResource('SneakAttack_Charge',1,0,false,false,context.Source);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0461815d-59df-48b8-ada2-6c216e0d30be" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5f124fec-1605-4952-a13f-f61f92cb53f8" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8871290d-71c3-4d34-879c-81bc8e22e4fa" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="38618677-f8b1-4853-a1d7-77f987edaf15" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
