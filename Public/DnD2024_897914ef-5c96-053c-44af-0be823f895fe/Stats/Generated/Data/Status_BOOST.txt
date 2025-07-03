@@ -7114,7 +7114,7 @@ using "PSIONICMODES_ATTACK"
 data "DisplayName" "hbd58fe03g1d0fg9398gabf1g7ad64145c516;1"
 data "Description" "hf6d94610g3764ge77cg24efg6ac7a5a43093;1"
 data "Icon" "Psion_PsionicMode_Defense"
-data "Boosts" "Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);"
+data "Boosts" "Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);IF(HasPassive('Telepath_6_EmpoweredDefenseMode'),context.Source):RollBonus(SavingThrow, 1d4);"
 
 new entry "PSIONIC_SURGE"
 type "StatusData"

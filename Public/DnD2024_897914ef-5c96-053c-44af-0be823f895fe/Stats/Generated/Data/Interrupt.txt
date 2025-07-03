@@ -1730,6 +1730,16 @@ data "InterruptDefaultValue" "Ask;Enabled"
 data "EnableCondition" "not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 data "EnableContext" "OnStatusApplied;OnStatusRemoved"
 
+new entry "Interrupt_TelepathicBolstering"
+type "InterruptData"
+using "Interrupt_WarGodsBlessing"
+data "DisplayName" "he71511d3gcf74g7ddcg4883g0447f66bda2b;1"
+data "Description" "h5eccfcd0gdbecg1f82geaf1g4511973196bc;1"
+data "DescriptionParams" ""
+data "Conditions" "IsAbleToReact(context.Observer) and (Self(context.Source,context.Observer) or Ally(context.Source,context.Observer)) and HasInterruptedAttack() and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);"
+data "Properties" "AdjustRoll(LevelMapValue(PsionDie));ApplyStatus(OBSERVER_SOURCE,WAR_GODS_BLESSING,100,0);UseSpell(OBSERVER_SOURCE,Target_WarGodsBlessing_Interrupt,true,true,true);"
+data "Cost" "ReactionActionPoint:1;PsionDie:1;"
+
 new entry "YMS_Warcaster"
 type "InterruptData"
 

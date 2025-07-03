@@ -8747,7 +8747,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);IF(HasPassive('Telepath_6_EmpoweredDefenseMode'),context.Source):RollBonus(SavingThrow, 1d4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
