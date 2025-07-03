@@ -673,7 +673,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 3: Draconic Lore
   - You gain Expertise in the History skill.
 - Level 3: Dragon Shape
-  - You can transform into a dragon shape. When you take this form, you gain temporary hit points equal to three times your druid level. When you use your dragon shape, you determine what type of dragon to transform into. The type of dragon determines your scale color and the breath weapon’s damage type.
+  - You can transform into a dragon shape. When you take this form, you gain temporary hit points equal to your maximum Hit Points. When you use your dragon shape, you determine what type of dragon to transform into. The type of dragon determines your scale color and the breath weapon’s damage type.
   - Your dragon form grants you an AC equal to 13 + your Dexterity modifier. When you take the Attack action, you can make an unarmed strike using your dagger-like teeth, substituting your Wisdom modifier for the attack and damage rolls. As an action, you can exhale a plume of powerful energy. Your breath weapon improves at 6th and 10th levels.
 - Level 6: Improved Dragon Shape
   - Your control over your dragon shape has improved. Your AC is equal to 14 + your Dexterity modifier. Your razor-sharp claws are natural weapons, which you can use to make unarmed strikes. When you take the Attack action on your turn, you can make one attack with your bite and one with your claws. Your attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
