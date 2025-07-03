@@ -727,7 +727,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(1, context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(4, context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_SOURCE,IntelligenceModifier);UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
@@ -2224,6 +2224,43 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('YouDieOnMyCommandCharge', 1, 0, false, false, context.Source) and not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged;OnStatusRemoved;OnStatusApplied;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="679be18a-e6b9-4714-82a0-e281b4b194ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Psion" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00eebad1-24d1-4c56-bf7d-a8431932bda6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DestructiveThoughts" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e17931fb-b889-4fc2-a41a-896089022c67" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Duergar_MindSpike" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and Enemy(context.Target,context.Observer) and IsFlatValueInterruptInteresting(99) and not AnyEntityIsItem() and IsSpell() and (IsSpellOfSchool(SpellSchool.Conjuration) or IsSpellOfSchool(SpellSchool.Evocation));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+IntelligenceModifier, Psychic);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="PsionDie:1;PsionicDiscipline:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+IntelligenceModifier, Psychic);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0738d9cgb49eg70e8g4d2cg3ecf0ce6cb80" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e6c4241g8a64g18bcg80f3g7e5ce6a47331" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e7360c7-29b7-4ffa-b1cf-90e89612b198" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EgoWhip" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e4da948d-80d8-4011-bfa2-4a8cf4f1ae73" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindWhip" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Observer, context.Source) and not Self(context.Observer, context.Target) and Enemy() and not HasStatus('SG_Incapacitated', context.Source) and not HasStatus('SG_Unconscious', context.Source) and not (not Player(context.Source) and Tagged('AI_IGNORED_TARGET')  and not HasStatus('GNOLL_SUDDENRUSH')) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Target) and not HasStatus('SG_Ignore_AOO',context.Target) and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Target_EgoWhip,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;PsionicDiscipline:1;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
