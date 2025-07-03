@@ -6844,13 +6844,76 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b8cd8144-1793-4daa-a04b-b9046edf14d7" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicModes" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8cff9265-f5a2-4726-a564-7d12a8ac7eac" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;PsionicMode:1;" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb994ed72gcdf7gd4f6g979agc29b050c2c94" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h38503f37g01efg95fag666fgb42abd37c4eb" version="2" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PsionicModes_Attack;Shout_PsionicModes_Defense;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="72085a1e-efd2-43e3-9133-45bbae0c64a3" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicModes_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b8cd8144-1793-4daa-a04b-b9046edf14d7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PSIONICMODES_ATTACK,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PSIONICMODES_ATTACK,100,10);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb10c2d86gd047g719dge8aegc28b844da298" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f1bde5g81fbg72b2g4746g985882994699" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_PsionicModes" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d4a134f-b122-4cd7-94f2-5ede77234c2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicModes_Defense" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72085a1e-efd2-43e3-9133-45bbae0c64a3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(PSIONICMODES_DEFENSE,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PSIONICMODES_DEFENSE,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c7136f6-290f-42b0-b12a-8a86e4d60cf7" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicRestoration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cfb873e9-5424-48cd-b803-ea282a3f7fca" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,PsionDie,50%,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9052e42fgfd87gaaddg5835g92f75cb66db6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfda9fb00g411bg03cega329g8180f295bbc9" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d1a41e3-617f-4b20-90f0-5e229edf2a63" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicSurge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8c7136f6-290f-42b0-b12a-8a86e4d60cf7" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,PsionicMode,1,0);DealDamage(SELF,8,Force);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
+        <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

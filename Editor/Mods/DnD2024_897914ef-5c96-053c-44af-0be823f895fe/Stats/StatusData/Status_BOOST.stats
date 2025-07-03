@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8730,6 +8729,40 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3aa01172-3db7-441d-935f-c6e833e7323a" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSIONICMODES_ATTACK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb10c2d86gd047g719dge8aegc28b844da298" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f1bde5g81fbg72b2g4746g985882994699" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PSIONICMODES" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Psychic, Resistant);IF(IsSpell()):DamageBonus(IntelligenceModifier,Psychic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4fb67b4-4fd0-4e87-9c8c-4921484e7ed9" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSIONICMODES_DEFENSE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3aa01172-3db7-441d-935f-c6e833e7323a" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5df4d62d-9548-412e-901e-712d11882f4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSIONIC_SURGE" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PSIONIC_SURGE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PsionicSurge);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a099e9c4-0340-41c9-8ad5-cff6cd498476" />
         <field name="Name" type="NameTableFieldDefinition" value="BIOFEEDBACK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="852c845d-cf57-423d-9617-42fcb43df20f" />
@@ -8766,13 +8799,22 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="131ae698-d8a7-4a61-b494-51aeee3dd55c" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20e2c242-bcf7-4908-81f1-07e113d36329" />
+        <field name="Name" type="NameTableFieldDefinition" value="PSION_PSIONIC_BACKLASH" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+LevelMapValue(PsionDie),Psychic)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="55546fa0-5e3d-41ee-8f16-960ef3a7d7d0" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_RULE" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
