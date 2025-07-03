@@ -8267,6 +8267,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h38503f37g01efg95fag666fgb42abd37c4eb" version="2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionicMode:1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PsionicMode,2,0);UnlockSpell(Shout_PsionicModes);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8276,6 +8278,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9052e42fgfd87gaaddg5835g92f75cb66db6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfda9fb00g411bg03cega329g8180f295bbc9" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PsionicRestoration);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8283,8 +8287,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="afc37b4b-52c8-4661-9be9-50116672b19e" />
         <field name="Name" type="NameTableFieldDefinition" value="Psion_7_PsionicSurge" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PSIONIC_SURGE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8397,8 +8404,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="98843ad4-8169-4fd3-8c46-62c76d1e1d07" />
         <field name="Name" type="NameTableFieldDefinition" value="PsionicDiscipline_PsionicGuards" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h13545848g50b4g2ab6g6a61g64b214b8f8c8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc253b585g62fcge1e8gba89g31f745e5bc4c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc253b585g62fcge1e8gba89g31f745e5bc4c" version="2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7e82b33-401e-497a-8e9a-caacc207f0f8" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_Charmed);RemoveStatus(SG_Frightened);UseActionResource(SELF,PsionDie,1,0);UseSpell(SELF,Shout_StillnessOfMind,true,true,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8407,7 +8417,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="PsionicDiscipline_SwiftPrecognition" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95beb03fgf546gcfb2g91fdga031077e5666" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0b60478g13b1g16b7g7088g7adad2714dcc" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3545c2ba-eede-464c-8521-bcc2146ccee1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('PsionDie', 1, 0, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SwiftPrecognition(),ModifyUseCosts(Add,PsionicDiscipline,1,0),ModifyUseCosts(Add,PsionDie,SpellPowerLevel,0),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
