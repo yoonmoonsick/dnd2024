@@ -2300,10 +2300,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_PsionicBacklash" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)));" />
-        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
-        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+LevelMapValue(PsionDie),Psychic);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)),All);ApplyStatus(OBSERVER_SOURCE,PSION_PSIONIC_BACKLASH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;PsionicDiscipline:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
@@ -2311,6 +2309,7 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c0db81fg8190gc050g9220g664e84d9d6aa" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf9a2255bge1bega3a8g1d78gbc52600a0a52" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
