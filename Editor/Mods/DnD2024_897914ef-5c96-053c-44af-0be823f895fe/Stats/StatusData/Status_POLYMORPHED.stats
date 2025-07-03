@@ -1072,6 +1072,8 @@
         <field name="TemplateID" type="StringTableFieldDefinition" value="8fdfa9f8-2e42-4144-8228-3ebe66117ba3" />
         <field name="Rules" type="GuidObjectTableFieldDefinition" value="554343ad-a56a-48de-9fd2-16a1eaa6d4e6" />
         <field name="Icon" type="StringTableFieldDefinition" value="DragonShape_Black" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WILDSHAPE_BADGER_REMOVE_VFX,100,1);ApplyStatus(SELF, WILDSHAPE_TECHNICAL,100,1);RemoveStatus(WILDSHAPE_ACTIVE);ApplyStatus(SELF,DRAGONSHAPE_REMOVE,100,1);" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1337,6 +1339,18 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc5cec38-c5bc-4cdb-9307-80006687fb85" />
         <field name="Icon" type="StringTableFieldDefinition" value="DragonShape_White" />
         <field name="TemplateID" type="StringTableFieldDefinition" value="e99e2b75-481f-4720-b80c-458bd815759e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fbb0aa02-4db1-46a3-b625-df6633273b81" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRAGONSHAPE_REMOVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d3072353-4dd3-4253-9a96-e4e670c41b26" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRAGONSHAPE_REMOVE)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="04a9eb22-cbc1-4aa4-b694-f0f56453cf71" />
       </fields>
     </stat_object>
   </stat_objects>
