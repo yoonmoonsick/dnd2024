@@ -2048,6 +2048,66 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 11: Umbral Killer
   - Shadows enhance your abilities, granting you Devil's Sight, an additional 10 feet of movement speed, and advantage on Stealth checks. Additionally, when making a Dexterity saving throw to take half damage, you instead take no damage on a success and half damage on a failure.
 
+## Psion
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psion.png?raw=true)
+
+> Psions weave magic and extraordinary powers through the sheer force of their minds. They develop their minds as fonts of power that manifest spells and grow stronger over the course of their adventuring careers.
+
+- Level 1: Psionic Power
+  - You possess a wellspring of psionic energy within yourself, represented by your Psionic Energy Dice. Your Psion level determines both the size and number of these dice. You regain one expended Psionic Energy Die when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
+- Level 1: Psionic Spellcasting
+  - When you cast a Psion spell, it doesn't require a verbal component.
+- Level 1: Subtle Telekinesis
+  - You know the Mage Hand cantrip. And you can make the spectral hand invisible when you cast it.
+- Level 2: Psionic Discipline
+  - You learn further psionic techniques fueled by your Psionic Energy Dice. You gain two disciplines of your choice, You gain additional options at Psion levels 6 and 10.
+  - Biofeedback
+    - When you cast a Psion spell from the Necromancy or Transmutation school, you can expend and roll one Psionic Energy Die. You gain a number of Temporary Hit Points equal to the number rolled plus your Intelligence modifier.
+  - Destructive Thoughts
+    - When you cast a Psion spell from the Conjuration or Evocation school and a creature you can see succeeds on a saving throw against that spell, you can expend and roll one Psionic Energy Die. The creature then takes Psychic damage equal to the number rolled plus your Intelligence modifier.
+  - Devilish Tongue
+    - When you take a Charisma Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
+  - Ego Whip
+    - When a creature provokes an Opportunity Attack from you by leaving your reach, you can use your Reaction to roll one Psionic Energy Die and force the creature to make an Intelligence saving throw. On a failed save, the target's Speed is reduced by 10 feet, and it subtracts the number rolled from the next damage roll it makes before the end of its next turn. The die is expended only if the target fails the saving throw.
+  - Expanded Awareness
+    - When you take a Wisdom Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
+  - Id Insinuation
+    - When you cast a Psion spell from the Enchantment or Illusion school that forces a creature to make a saving throw, you can expend two Psionic Energy Dice and roll one of them. One target of the spell you can see then subtracts the number rolled from its saving throw against the spell.
+  - Inerrant Aim
+    - When you make an attack roll against a creature and miss, you can roll one Psionic Energy Die and add the number rolled to the attack roll, potentially turning the miss into a hit.
+  - Tactical Mind
+    - When you take a Intelligence Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
+  - Swift Precognition
+    - When you cast a Psion spell from the Abjuration or Divination school with a casting time of one action, you can expend a number of Psionic Energy Dice to change its casting time to a Bonus Action for that casting. The number of dice expended equals one plus the spell’s level.
+  - Psionic Guards
+    - If you are Charmed or Frightened, you automatically remove the condition.
+  - Psionic Backlash
+    - Immediately after a creature you can see hits you with an attack roll, you can use your Reaction to expend one Psionic Energy Die, roll two Psionic Energy Dice, and subtract the number rolled on each die from the total damage you take. In addition, you can force the attacker to make a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to the amount rolled on the two Psionic Energy Dice.
+- Level 2: Psionic Modes
+  - You have honed your psionic powers to act as both a shield and a weapon in battle. As a Bonus Action, you can choose either Attack Mode or Defense Mode, granting you certain benefits for 1 minute. You can use this feature twice, and you regain all.
+  - Attack Mode
+    - You ignore Resistance to Psychic damage. When you deal spell damage, you gain a damage bonus equal to your Intelligence modifier.
+  - Defense Mode
+    - You have resistance to psychic damage. You gain a bonus equal to your Intelligence modifier to mental saving throws.
+- Level 5: Psionic Restoration
+  - When you finish a Short Rest, you can regain expended Psionic Energy Dice, up to a maximum of half your total number of dice (rounded down). Once you use this feature, you cannot do so again until you finish a Long Rest.
+- Level 7: Psionic Surge
+  - When you roll Initiative, you can expend 8 Hit Points to regain one expended use of your Psionic Modes.
+
+### Telepath
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Telepath.png?raw=true)
+
+> Telepaths are masters of mind magic, wielding their psionic powers for all matters of the mind. They can bolster allies' mental defenses or subtly probe the thoughts of others. A telepath can be a bastion of psionic aid or a crafty manipulator.
+
+- Level 3: Potent Thoughts
+  - You add your Intelligence modifier to the damage you deal with any Psion cantrip.
+- Level 6: Empowered Defense Mode
+  - While your Defense Mode is active, you add 1d4 to all your saving throws.
+- Level 10: Telepathic Bolstering
+  - When you or a creature you can see within this range misses an attack roll, you can use your Reaction to expend one Psionic Energy Die. Roll the die and add the result to the d20. This can potentially turn a failed check into a miss into a hit.
+
 # Feat
 
 ## Origin Feats
