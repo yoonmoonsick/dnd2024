@@ -2323,6 +2323,26 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he71511d3gcf74g7ddcg4883g0447f66bda2b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5eccfcd0gdbecg1f82geaf1g4511973196bc" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20b26b82-6cab-486b-b687-47b6c382299e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_EtherealShift" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Activate" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);ApplyStatus(OBSERVER_OBSERVER,BLINK_VANISH,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5f2a7dfgf752ge21bg336fg12d24cb4629b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19e79290gda68g146dg5308g41f26c6fe328" version="1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
