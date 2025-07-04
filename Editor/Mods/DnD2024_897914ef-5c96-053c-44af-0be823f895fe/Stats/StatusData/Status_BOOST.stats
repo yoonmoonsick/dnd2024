@@ -8736,7 +8736,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
         <field name="StackId" type="StringTableFieldDefinition" value="PSIONICMODES" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Psychic, Resistant);IF(IsSpell()):DamageBonus(IntelligenceModifier,Psychic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Psychic, Resistant);IF(IsSpell()):DamageBonus(IntelligenceModifier,Psychic);IF(HasPassive('Psykinetic_6_EmpoweredAttackMode',context.Source)):UnlockSpell(Projectile_Fly_Temp);IF(HasPassive('Psykinetic_6_EmpoweredAttackMode',context.Source) and IsSpell()):Reroll(Damage, 2, false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8747,7 +8747,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);IF(HasPassive('Telepath_6_EmpoweredDefenseMode'),context.Source):RollBonus(SavingThrow, 1d4);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);IF(HasPassive('Telepath_6_EmpoweredDefenseMode',context.Source)):RollBonus(SavingThrow, 1d4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8809,6 +8809,74 @@
         <field name="Name" type="NameTableFieldDefinition" value="PSION_PSIONIC_BACKLASH" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+LevelMapValue(PsionDie),Psychic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc231935-9ebe-4cc0-b998-b8f370470133" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEKINETICTECHNIQUES_BOOST" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TELEKINETICTECHNIQUES" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42587ece-e4c3-4de1-a340-2d9b59dd4306" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEKINETICTECHNIQUES_DISORIENT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc231935-9ebe-4cc0-b998-b8f370470133" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52e6274d-c2e6-429d-90b2-5b81a731e1ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEKINETICTECHNIQUES_TELEKINETICBOLT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc231935-9ebe-4cc0-b998-b8f370470133" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82db8672-b041-4145-a732-c7ebe2ba21d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEKINETICTECHNIQUES_BOOST_BUFF" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TELEKINETICTECHNIQUES_BOOST_BUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,3,0);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a945ab8g1849g996ag0eeeg5eda8bd910a6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf9660f2g8113gca7dge00egf3e19276d95a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cec168a6-28f9-42f7-a4fb-67d6b97d1777" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEKINETICTECHNIQUES_DISORIENT_DEBUFF" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TELEKINETICTECHNIQUES_DISORIENT_DEBUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint); " />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he775f837gebb7g3fa4geca9g7ad5c18ec4eb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2142410gb75eg38d4g450bg4c5313047b29" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f28ed9f5-49d1-493d-9703-8273b9190cfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="ENHANCEDTELEKINETICCRUSH" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(TelekineticCrush(),ModifyUseCosts(Add,PsionDie,1,0));" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="435856b3-955c-4f26-822e-df354dfe732a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ENHANCEDTELEKINETICCRUSH_DEBUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="52deb994-ab2c-448c-b902-32882aa807c9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90683d3eg279ega7b7g6289g351081ec2eb8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93adddbcg92ddg0001g6042ga9cb8cd48785" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ENHANCEDTELEKINETICCRUSH_DEBUFF" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

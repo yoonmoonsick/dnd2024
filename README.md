@@ -2095,6 +2095,25 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 7: Psionic Surge
   - When you roll Initiative, you can expend 8 Hit Points to regain one expended use of your Psionic Modes.
 
+### Psykinetic
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psykinetic.png?raw=true)
+
+> A Psykinetic controls their psionic powers as a malleable force. They bend their telekinetic energies into sturdy barriers and strike with the force of a battering ram.
+
+- Level 3: Telekinetic Techniques
+  - When you use your Telekinetic Push or Pull, you can impose one of the following effects on that target.
+  - Telekinetic Techniques: Boost
+    - The target’s Speed increases by 10 feet until the start of your next turn.
+  - Telekinetic Techniques: Disorient
+    - The target can’t make Opportunity Attacks until the start of its next turn.
+  - Telekinetic Techniques: Telekinetic Bolt
+    - If the target fails the saving throw, it takes Force damage equal to the number rolled on the Psionic Energy Die.
+- Level 6: Empowered Attack Mode
+  - While your Attack Mode is active, you gain a Fly speed. Additionally, when you cast a Psion spell, you can reroll any 1s or 2s on its damage rolls.
+- Level 10: Enhanced Telekinetic Crush
+  - When you cast Telekinetic Crush, you can expend one Psionic Energy Die to modify the spell. If you do, a creature's speed is halved until the start of your next turn, regardless of whether it succeeds or fails its saving throw against the spell.
+
 ### Telepath
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Telepath.png?raw=true)

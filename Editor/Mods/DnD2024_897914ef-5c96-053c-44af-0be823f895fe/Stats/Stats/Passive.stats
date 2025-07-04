@@ -2995,6 +2995,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f7d5bccg97f0gfd64g610egbd7cebea53ed" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h999af346gad42g467bg224agbfabc473fc1d" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(TwinnedSpellCheck(),ModifyNumberOfTargets(AdditiveFinal,1,false),ModifyUseCosts(Add,SorceryPoint,1,0));" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TWINNED_ON)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8470,6 +8471,69 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarGodsBlessing" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TelepathicBolstering);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c30cd3f-a968-440f-b2cc-c361a602000e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_3_TelekineticTechniques_Boost" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a945ab8g1849g996ag0eeeg5eda8bd910a6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h055cf13ag55e3g1d5fgca95g5064ff868c3c" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdf9660f2g8113gca7dge00egf3e19276d95a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TELEKINETICTECHNIQUES_BOOST,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TELEKINETICTECHNIQUES_BOOST)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="TelekineticTechniques" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e09c795-98c9-4eff-a63f-a3d16dc67bb8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_3_TelekineticTechniques_Disorient" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0c30cd3f-a968-440f-b2cc-c361a602000e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he775f837gebb7g3fa4geca9g7ad5c18ec4eb" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hb2142410gb75eg38d4g450bg4c5313047b29" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TELEKINETICTECHNIQUES_DISORIENT,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TELEKINETICTECHNIQUES_DISORIENT)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6d47c19-cd10-46c0-80d5-988c58c95027" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_3_TelekineticTechniques_TelekineticBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0c30cd3f-a968-440f-b2cc-c361a602000e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70fd9d05geb1ag2a62g5675g2a5d3fe5c5bb" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2c72d17fg5bd1gee54g49eegdde18920996a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_TelekineticBolt" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TELEKINETICTECHNIQUES_TELEKINETICBOLT,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,TELEKINETICTECHNIQUES_TELEKINETICBOLT)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="717f8d07-ff01-44fb-8911-98f5c751c32f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_6_EmpoweredAttackMode" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h218bcf43ge7f4g2b33gc9daga1de6a3bd974" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49298224g969dg3949g539fgbf7a1a86b3b4" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32ab3f5c-5d04-4be5-ba40-bbaa62d5eb61" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_10_EnhancedTelekineticCrush" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90683d3eg279ega7b7g6289g351081ec2eb8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93adddbcg92ddg0001g6042ga9cb8cd48785" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ENHANCEDTELEKINETICCRUSH,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,ENHANCEDTELEKINETICCRUSH)" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="EnhancedTelekineticCrush" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
