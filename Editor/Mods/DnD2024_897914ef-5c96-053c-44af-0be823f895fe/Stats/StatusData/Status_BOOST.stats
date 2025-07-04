@@ -8863,7 +8863,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f28ed9f5-49d1-493d-9703-8273b9190cfc" />
         <field name="Name" type="NameTableFieldDefinition" value="ENHANCEDTELEKINETICCRUSH" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(TelekineticCrush(),ModifyUseCosts(Add,PsionDie,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(TelekineticCrush(),ModifyUseCosts(Add,PsionDie,1,0),ModifyIconGlow());" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
@@ -8877,6 +8877,25 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93adddbcg92ddg0001g6042ga9cb8cd48785" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ENHANCEDTELEKINETICCRUSH_DEBUFF" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb6725fc-3f85-444b-9b7c-3097c713cc3e" />
+        <field name="Name" type="NameTableFieldDefinition" value="WARPSPACE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f28ed9f5-49d1-493d-9703-8273b9190cfc" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(Shatter(),ModifyAreaRadius(Multiplicative,2),ModifyUseCosts(Add,PsionDie,1,0),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d60d8a5-e889-432e-a058-53236f40fe77" />
+        <field name="Name" type="NameTableFieldDefinition" value="TELEPORTER_COMBAT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsCantrip(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTooltipDescription());" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsCantrip()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd45195g55cag1849g5401g2025fb4d82fd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h764e77dbgbd99g809dg5864gecfe092809a1" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -8536,6 +8536,69 @@
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="EnhancedTelekineticCrush" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13a9b56d-a69c-4020-94ea-79a508f1e6a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiWarper_3_Teleportation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf737af8eg853bg6ef8g771bg3cd7aad14c2a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef627625g09e0gfbb5g8d62g028bc2694d96" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MistyStep_PsiWarper);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="544233a2-9d44-4c98-950e-d7cd0981130f" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiWarper_3_WarpPropel" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0725092gd173g7df2g23bfga97464d1a9b1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hef467505g7a87gfe4cgb4e0g3d57560006cb" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_WildMagic_Teleport_Activate" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Teleportation_TelekineticPropel_PsiWarper);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd79a9be-a959-4b82-b7cf-8b06f3957534" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiWarper_6_WarpSpace" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h93a58d7cg9d66gcf2bg6cb8g71f506801196" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf05ea9a0g9fc8g8991gf471g930916547bfd" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WARPSPACE,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WARPSPACE)" />
+        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="WarpSpace" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e77b6f4f-03d6-4d56-b995-64d602d4efe8" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiWarper_6_TeleporterCombat" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd45195g55cag1849g5401g2025fb4d82fd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h764e77dbgbd99g809dg5864gecfe092809a1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="MistyStep();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TELEPORTER_COMBAT,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d86ce279-bd2b-494d-bca6-4e9a2c4bcefb" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsiWarper_10_EtherealShift" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb5f2a7dfgf752ge21bg336fg12d24cb4629b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19e79290gda68g146dg5308g41f26c6fe328" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Activate" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_EtherealShift);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4afeccbb-46f3-40cf-a7b9-483c89ed8258" />
