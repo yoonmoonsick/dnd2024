@@ -1337,6 +1337,7 @@
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="326e77b8-3951-4507-b42a-838533b274e2" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" value="c6ab2aef-9a58-4196-afc0-5c7fa58b0173" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Force" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('ENHANCEDTELEKINETICCRUSH',conetxt.Source)):ApplyStatus(ENHANCEDTELEKINETICCRUSH_DEBUFF,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12267,6 +12268,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticPropel_Push" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5be2c67d-2633-42d6-a2c8-3192afbc6f33" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="PsionDie:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('TELEKINETICTECHNIQUES_BOOST',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);IF(HasStatus('TELEKINETICTECHNIQUES_DISORIENT',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(6, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12275,6 +12278,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticPropel_Pull" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="872ad012-87cd-4d32-987b-2f6965358378" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="PsionDie:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('TELEKINETICTECHNIQUES_BOOST',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);IF(HasStatus('TELEKINETICTECHNIQUES_DISORIENT',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-6, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
