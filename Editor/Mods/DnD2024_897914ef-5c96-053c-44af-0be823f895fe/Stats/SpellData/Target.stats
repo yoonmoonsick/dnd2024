@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e53f4f69-0b4e-40f4-a96f-466b3e7d1fb1" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
@@ -2357,10 +2356,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65e559c7-9a71-4108-bb2f-ec21407e3bed" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53b9b117-cbbf-49a2-bd6e-b0bcd6fd5c9b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5f1d8113-4fc2-4185-8f09-61570dcaec03" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1783a003-8146-48a3-a077-5a5182b5b4a6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8/2,Psychic,Magical);" />
       </fields>
     </stat_object>
@@ -2369,7 +2375,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="783df5d6-bc71-4334-963c-d12a6931f0ff" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9c4ae120-4a7a-4625-be65-6ae3a1fa1760" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8/2,Psychic,Magical);" />
       </fields>
     </stat_object>
@@ -2378,7 +2384,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7aebdaca-f70b-4dca-a569-eca900f59395" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1620a679-b6a9-477c-b488-6c8a3a34380f" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8/2,Psychic,Magical);" />
       </fields>
     </stat_object>
@@ -2387,7 +2393,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1f6f9d78-c503-4cee-80f8-4918a279ab1a" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73275101-62f7-4bb8-82de-3f1e0c1aa2d4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8/2,Psychic,Magical);" />
       </fields>
     </stat_object>
@@ -2396,7 +2402,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ee628d03-51cc-4296-bed3-d050dc4234fd" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c958d54a-2410-4671-afbc-3f8bfa63ed16" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8/2,Psychic,Magical);" />
       </fields>
     </stat_object>
@@ -12299,6 +12305,17 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74a10705-d280-4de9-b20e-bed7439e73f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MistyStep_PsiWarper" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6ae25cf6-1bb3-40b6-abe9-c66f86baa02b" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;PsionDie:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

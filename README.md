@@ -2095,12 +2095,39 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 7: Psionic Surge
   - When you roll Initiative, you can expend 8 Hit Points to regain one expended use of your Psionic Modes.
 
+### Psi Warper
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarper.png?raw=true)
+
+> Psi Warpers tune their psionic powers to manipulating the space between objects. Capable of teleporting across the battlefield and creating vacuums in space, a Psi Warper is never in one place for too long.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Expeditious Retreat, Feather Fall, Misty Step, Shatter
+  - Level 5: Blink, Haste
+  - Level 7: Banishment, Dimension Door
+  - Level 9: SteelWind Strike, Conjure Elemental
+- Level 3: Teleportation
+  - You can cast Misty Step by expending one Psionic Energy Die. 
+- Level 3: Warp Propel
+  - You can teleport the target to an unoccupied space you can see within 30 feet of you, instead of pulling or pushing it.
+- Level 6: Warp Space
+  - When you cast Shatter, you can expend one Psionic Energy Die to make the spell's radius 20 feet. Also, creatures failing the saving throw are pulled straight toward the sphere's center.
+- Level 6: Teleporter Combat
+  - Immediately after you cast Misty Step, you can cast one of your Psion cantrips that has a casting time of an action as part of the same bonus action.
+- Level 10: Ethereal Shift
+  - When a creature you can see makes an attack roll against you, you can use your reaction and expend one Psionic Energy Die to Blink to the Ethereal Plane, causing the creature to miss the attack.
+
 ### Psykinetic
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psykinetic.png?raw=true)
 
 > A Psykinetic controls their psionic powers as a malleable force. They bend their telekinetic energies into sturdy barriers and strike with the force of a battering ram.
 
+- Subclass Spells (Always prepared)
+  - Level 3: Shield, Thunderwave, Barkskin, Cloud of Daggers
+  - Level 5: Slow, Telekinetic Crush
+  - Level 7: Resilient Sphere, Stoneskin
+  - Level 9: Telekinesis, Wall of Force
 - Level 3: Telekinetic Techniques
   - When you use your Telekinetic Push or Pull, you can impose one of the following effects on that target.
   - Telekinetic Techniques: Boost
@@ -2120,6 +2147,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Telepaths are masters of mind magic, wielding their psionic powers for all matters of the mind. They can bolster allies' mental defenses or subtly probe the thoughts of others. A telepath can be a bastion of psionic aid or a crafty manipulator.
 
+- Subclass Spells (Always prepared)
+  - Level 3: Bane, Command, Mind Spike, Detect Thoughts
+  - Level 5: Counterspell, Speak with Dead
+  - Level 7: Confusion, Psychic Lance
+  - Level 9: Hold Monster, Planar Binding
 - Level 3: Potent Thoughts
   - You add your Intelligence modifier to the damage you deal with any Psion cantrip.
 - Level 6: Empowered Defense Mode
