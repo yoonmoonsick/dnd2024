@@ -497,7 +497,6 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
   - Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn.
-- Level 6: Weapon Mastery
 - Level 12: Master's Flourish
   - Whenever you use a Blade Flourish option, you regain 1 Bardic Inspiration per turn.
 
@@ -507,7 +506,6 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
-- Level 6: Weapon Mastery
 - Level 12: Battle Magic
   - After you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action.
 
@@ -2093,6 +2091,48 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 7: Psionic Surge
   - When you roll Initiative, you can expend 8 Hit Points to regain one expended use of your Psionic Modes.
 
+### Metamorph
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Metamorph.png?raw=true)
+
+> Your mastery of psionic powers turns inward. Your own flesh becomes like clay to you, and youmold it to turn it into the perfect vessel of your psionic powers. Experience in manipulating your life energy also enables you to adjust the life force of friends and foes alike.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Cure Wounds, Inflict Wounds, Enlarge/Reduce, Lesser Restoration
+  - Level 5: Aura of Vitality, Haste
+  - Level 7: Polymorph, Stoneskin
+  - Level 9: Contagion, Mass Cure Wounds
+- Level 3: Organic Weapons
+  - You can reshape your limbs into weapons. As an action, you can transform your hand into one of the following organic weapons: a Bone Blade, Flesh Maul, or Viscera Launcher.
+  - Whenever you attack with this weapon, you can use your Intelligence modifier for the attack and damage rolls instead of Strength or Dexterity. Additionally, you can choose to have the weapon deal Psychic damage or its normal damage type.
+  - Bone Blade
+    - A bone blade springs from your forearm or extends from your hand. This counts as a Simple Melee weapon with the Finesse property, dealing 1d8 Piercing damage on a hit.
+    - You have Advantage on attack rolls made with this blade if at least one ally is within 5 feet of the target and isn't Incapacitated.
+  - Flesh Maul
+    - You transform your fist and forearm into a dense maul of flesh and bone. This weapon counts as a Simple Melee weapon, dealing 1d10 Bludgeoning damage on impact.
+    - Additionally, any creature hit by this maul suffers Disadvantage on the next Strength or Constitution saving throw it makes before the beginning of its next turn.
+  - Viscera Launcher
+    - Your hand and forearm transform into a crossbow of muscle and sinew that fires bolts of bile. This Viscera Launcher functions as a Simple Ranged weapon with a normal range of 30 feet and a long range of 90 feet, dealing 1d6 Acid damage on a hit.
+    - Once per turn, when you hit a creature with an attack using this launcher, you can deal an extra 1d6 Acid damage to the target.
+- Level 3: Extend Libs
+  - As a Bonus Action, you can expend one Psionic Energy Die. For the next minute, you gain the benefit.
+  - Reach
+    - Your reach increases by 5 feet.
+  - Speed
+    - Your Speed increases by 5 feet.
+  - Touch
+    - When you cast a spell that has a range of Touch and a casting time of an action, you can make the spell’s range 10 feet.
+- Level 6: Quickened Healing
+  - When you cast Healing spell, you can expend a Psionic Energy Dice to change its casting time to a Bonus Action for that specific casting.
+- Level 10: Mutable Form
+  - When you use Extend Limbs, you gain one of the benefits of your choice. These effects last until Extend Limbs ends.
+  - Stony Epidermis
+    - You have Advantage on Constitution saving throws made to maintain concentration. In addition, You gain Resistance to the Bludgeoning, Piercing and Slashing damage type.
+  - Superior Stride
+    - While you aren't wearing armor, you can take the Dash and Disenguage action as a Bonus Action.
+  - Unnatural Flexibility
+    - You gain a +2 bonus to AC, and your body, along with any equipment you're wearing or carrying, becomes pliable. You can move through any space as narrow as 1 inch. Furthermore, you have advantage on saving throws to end the restrained condition.
+
 ### Psi Warper
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarper.png?raw=true)
@@ -2413,7 +2453,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 
 ## Weapon Mastery Properties
 
-Weapon Mastery properties are only available to characters with a feature that unlocks them, like the Weapon Mastery feature itself. Generally, classes and subclasses that gain Extra Attack, along with Rogues, can use these properties. This includes Barbarians, Rangers, College of Valor Bards, and Bladesinging Wizards. You can also gain these benefits as a Cleric who obtains the Blessed Strike passive at level 7, or by choosing the Weapon Master feat.
+Weapon Mastery properties are typically utilized by specific character classes. Generally, classes that gain extra attacks or Rogues can make use of these properties. However, subclasses of Monks, Artificers, or spellcasting classes like Clerics, Druids, Sorcerers, and Warlocks cannot utilize Weapon Mastery properties even if they gain extra attacks. If these classes wish to benefit from Weapon Mastery properties, they must select the Weapon Master feat.
 
 - Cleave
   - Greataxe, Halberd
