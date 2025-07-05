@@ -49,7 +49,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b8b26935-3c6e-4e52-89da-cd1fdf7b7bdd" />
         <field name="Name" type="NameTableFieldDefinition" value="Candle_Dip" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_REACH,100,10)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(WieldingWeapon('Dippable',false,false,context.Source)):ApplyEquipmentStatus(SELF,MainHand,DIPPED_FIRE_SWITCH,100,0);IF(WieldingWeapon('Dippable',true,false,context.Source)):ApplyEquipmentStatus(SELF,OffHand,DIPPED_FIRE_SWITCH,100,0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dip_Fire" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e2f25a6ga621g29f8g8d13ge37010f7aed0" version="1" />
