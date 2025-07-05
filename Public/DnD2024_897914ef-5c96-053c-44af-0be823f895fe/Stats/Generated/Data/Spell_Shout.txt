@@ -3071,13 +3071,6 @@ data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_FRENZY,100,100);AI_ONLY:IF(Ha
 data "Description" "hca5754b6gfb28gb3d0g1f13g4d6e856ab59f;2"
 data "TooltipStatusApply" "ApplyStatus(RAGE_FRENZY,100,100)"
 
-new entry "Shout_MAG_Shield_MI"
-type "SpellData"
-data "SpellType" "Shout"
-using "Shout_MAG_Shield"
-data "Cooldown" "OncePerRest"
-data "InterruptPrototype" "Interrupt_MAG_Shield_MI"
-
 new entry "Shout_FOR_Ogre_Blur"
 type "SpellData"
 data "SpellType" "Shout"
@@ -6588,6 +6581,12 @@ data "SpellProperties" "ApplyStatus(SELF,MI_UNLOCK_CAUSTICBREW,100,-1);"
 data "Icon" "Spell_Evocation_CausticBrew"
 data "Description" "ha694f4dfg7596g7078g7c05g33904d4520a5;1"
 data "RequirementConditions" "not HasStatus('MI_UNLOCK_CAUSTICBREW')"
+
+new entry "Shout_Shield_Wizard_MI"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_Shield_Wizard"
+data "InterruptPrototype" "Interrupt_Shield_Wizard_MI"
 
 new entry "Shout_YMS_NPC"
 type "SpellData"
