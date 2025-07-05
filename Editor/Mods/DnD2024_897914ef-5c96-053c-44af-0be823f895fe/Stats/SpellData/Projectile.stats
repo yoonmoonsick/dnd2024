@@ -7,7 +7,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="ObliterationOrb_Netherbrain_Explosion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cd0ad3b3-9779-468c-9f31-f9112d6646e7" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Tagged('AI_USESPELL_A')):DealDamage(20d10,Force);AI_ONLY:DealDamage(20d10,Force);AI_ONLY:ApplyStatus(AI_HELPER_DEBUFF,100,3);IF(Tagged('AI_USESPELL_A')):RemoveStatus(OBLITERATIONORB_TECHNICAL,);" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2657,7 +2656,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c4dae9c-188e-4287-aa5c-4a0ceb42e1c0" />
         <field name="Name" type="NameTableFieldDefinition" value="GreenFlameBlade" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):DealDamage(SpellCastingAbilityModifier,Fire,Magical,Lethal,0,,true,true);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire,Magical,Lethal,0,,true,true);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):DealDamage(SpellCastingAbilityModifier,Fire);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Incinerate" enumeration_type_name="Death Type" version="1" />
@@ -2671,10 +2670,10 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Fire_FireBolt_L1to3" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;RangeIgnoreBlindness;NoCameraMove;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
