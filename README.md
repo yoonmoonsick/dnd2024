@@ -2082,7 +2082,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - If you are Charmed or Frightened, you automatically remove the condition.
   - Psionic Backlash
     - Immediately after a creature you can see hits you with an attack roll, you can use your Reaction to expend one Psionic Energy Die, roll two Psionic Energy Dice, and subtract the number rolled on each die from the total damage you take. In addition, you can force the attacker to make a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to the amount rolled on the two Psionic Energy Dice.
-- Level 2: Psionic Modes
+- Level 2: Psionic Modes ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_PsionicMode.png?raw=true)
   - You have honed your psionic powers to act as both a shield and a weapon in battle. As a Bonus Action, you can choose either Attack Mode or Defense Mode, granting you certain benefits for 1 minute. You can use this feature twice, and you regain all.
   - Attack Mode
     - You ignore Resistance to Psychic damage. When you deal spell damage, you gain a damage bonus equal to your Intelligence modifier.
@@ -2107,16 +2107,16 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Organic Weapons
   - You can reshape your limbs into weapons. As an action, you can transform your hand into one of the following organic weapons: a Bone Blade, Flesh Maul, or Viscera Launcher.
   - Whenever you attack with this weapon, you can use your Intelligence modifier for the attack and damage rolls instead of Strength or Dexterity. Additionally, you can choose to have the weapon deal Psychic damage or its normal damage type.
-  - Bone Blade
+  - Bone Blade ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_BoneBlade.png?raw=true)
     - A bone blade springs from your forearm or extends from your hand. This counts as a Simple Melee weapon with the Finesse property, dealing 1d8 Piercing damage on a hit.
     - You have Advantage on attack rolls made with this blade if at least one ally is within 5 feet of the target and isn't Incapacitated.
-  - Flesh Maul
+  - Flesh Maul ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_FleshMaul.png?raw=true)
     - You transform your fist and forearm into a dense maul of flesh and bone. This weapon counts as a Simple Melee weapon, dealing 1d10 Bludgeoning damage on impact.
     - Additionally, any creature hit by this maul suffers Disadvantage on the next Strength or Constitution saving throw it makes before the beginning of its next turn.
-  - Viscera Launcher
+  - Viscera Launcher ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_Launcher.png?raw=true)
     - Your hand and forearm transform into a crossbow of muscle and sinew that fires bolts of bile. This Viscera Launcher functions as a Simple Ranged weapon with a normal range of 30 feet and a long range of 90 feet, dealing 1d6 Acid damage on a hit.
     - Once per turn, when you hit a creature with an attack using this launcher, you can deal an extra 1d6 Acid damage to the target.
-- Level 3: Extend Libs
+- Level 3: Extend Libs ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_ExtendLimbs.png?raw=true)
   - As a Bonus Action, you can expend one Psionic Energy Die. For the next minute, you gain the benefit.
   - Reach
     - Your reach increases by 5 feet.
@@ -2124,6 +2124,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - Your Speed increases by 5 feet.
   - Touch
     - When you cast a spell that has a range of Touch and a casting time of an action, you can make the spell’s range 10 feet.
+- Level 6: Extra Attack
+  - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your Psion cantrips that has a casting time of an action in place of one of those attacks.
 - Level 6: Quickened Healing
   - When you cast Healing spell, you can expend a Psionic Energy Dice to change its casting time to a Bonus Action for that specific casting.
 - Level 10: Mutable Form
