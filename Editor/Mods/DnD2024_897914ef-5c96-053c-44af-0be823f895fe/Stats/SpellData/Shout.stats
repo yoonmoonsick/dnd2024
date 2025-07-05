@@ -49,7 +49,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b8b26935-3c6e-4e52-89da-cd1fdf7b7bdd" />
         <field name="Name" type="NameTableFieldDefinition" value="Candle_Dip" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(WieldingWeapon('Dippable',false,false,context.Source)):ApplyEquipmentStatus(SELF,MainHand,DIPPED_FIRE_SWITCH,100,0);IF(WieldingWeapon('Dippable',true,false,context.Source)):ApplyEquipmentStatus(SELF,OffHand,DIPPED_FIRE_SWITCH,100,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_REACH,100,10)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dip_Fire" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e2f25a6ga621g29f8g8d13ge37010f7aed0" version="1" />
@@ -6922,25 +6922,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bc50e5f0-8242-4679-bdb6-42876acd22c3" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dea85f03-4f00-4960-815f-f06e434da129" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="61700ff6-a05a-4410-aa34-199f52a9eb4e" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="234da5c8-c833-45c9-93c1-f1f1ee94cac0" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="188fc8d0-20da-4d3c-8095-cd444e0599c8" />
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_OrganicWeapons_BoneBlade;Shout_OrganicWeapons_FleshMaul;Shout_OrganicWeapons_VisceraLauncher;Shout_OrganicWeapons_BoneBlade_Psychic;Shout_OrganicWeapons_FleshMaul_Psychic;Shout_OrganicWeapons_VisceraLauncher_Psychic;" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_BoneBlade" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Buff_Shillelagh_L0" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Buff_Shillelagh_L0" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="72a41c0a-6bb0-4063-946e-54000cf684c0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="79caa1cd-1a4d-4c9f-8401-76ce465dc7c6" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e11d5ceg7952gd445ge29fg59dcd975993c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbe7045edg0137g59c9g7650g4bea1cfe13b2" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6950,9 +6947,12 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="188fc8d0-20da-4d3c-8095-cd444e0599c8" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_OrganicWeapons" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7312e56dg7a6agc320ga8a3gdad021a5979d" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a693821gb955g815egfc5cga77d5a1f525b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2e9c36cfgbe49g5e71geabcgc557ca308d46" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="You have Advantage on attack rolls made with this blade if at least one ally is within 5 feet of the target and isn't Incapacitated." />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(76887360-294e-45a8-b20b-9631cfe4eb39,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(bfd3d095-35a7-4005-960d-bebef8f560e8,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(19ffd43c-9f06-46df-ba41-09b1612990cc,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h34c807b7g585ag1b4ege571g60c203c2eaa2" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6961,6 +6961,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons_BoneBlade_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e9461aec-cc43-4b37-a623-0050aafeddca" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35e875b2g1c66g9339g0e5cg91dda8a5a376" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(76887360-294e-45a8-b20b-9631cfe4eb39,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(bfd3d095-35a7-4005-960d-bebef8f560e8,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(19ffd43c-9f06-46df-ba41-09b1612990cc,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_BoneBlade_Psychic" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6968,9 +6970,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a2c59ba8-06ba-40ba-bd08-4022ed880efd" />
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons_FleshMaul" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e9461aec-cc43-4b37-a623-0050aafeddca" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02af445fge7b5g5fd7gc1ffge26584489f44" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h740e615cgb76cgcd7agf5d1g51901cc06a44" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6efa5c28g823cg8423g0de7gc1adc985dc67" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Additionally, any creature hit by this maul suffers Disadvantage on the next Strength or Constitution saving throw it makes before the beginning of its next turn." />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(dd44086b-4b05-4a04-af6f-34737b6b4001,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(8ee8cf54-9668-4d43-a1bb-45332dcaf3e3,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(2c8e191c-2b2c-48cc-bc84-eb00a1aa385e,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_FleshMaul" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="had25c99dg4abbgb3f3g0dc6g46ac2fb09438" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6979,6 +6983,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons_FleshMaul_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a2c59ba8-06ba-40ba-bd08-4022ed880efd" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5accb12ag4e31g4d9dge3ffgab36b6418513" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(dd44086b-4b05-4a04-af6f-34737b6b4001,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(8ee8cf54-9668-4d43-a1bb-45332dcaf3e3,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(2c8e191c-2b2c-48cc-bc84-eb00a1aa385e,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_FleshMaul_Psychic" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6986,9 +6992,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fa97cfe5-693e-4712-beab-7fca3d59fcd9" />
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons_VisceraLauncher" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e9461aec-cc43-4b37-a623-0050aafeddca" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h74d2387ag232fg2842g37a6g6bffe198716f" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcd090349ged7dga78age0d3g1b550ddfac87" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd7f8741g85a8gf8e2g88a5g766f77dc7f02" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Once per turn, when you hit a creature with an attack using this launcher, you can deal an extra 1d6 Acid damage to the target." />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(7d10e18b-dc76-4cc3-b15b-4a053d1af4c6,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(dde6c739-6d95-4d29-b9a7-4923090ce6d7,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(83b02e1e-7f85-4656-ae76-209b060005df,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_Launcher" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h92cb038fgc4aagb3beg8eacg2d20bbf55456" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6997,12 +7006,24 @@
         <field name="Name" type="NameTableFieldDefinition" value="OrganicWeapons_VisceraLauncher_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa97cfe5-693e-4712-beab-7fca3d59fcd9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h610e3196g3862ge7c5g9e3bgd11c56586f9b" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(6,'Psion')):SummonInInventory(7d10e18b-dc76-4cc3-b15b-4a053d1af4c6,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(6,'Psion') and not ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(dde6c739-6d95-4d29-b9a7-4923090ce6d7,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);IF(ClassLevelHigherOrEqualThan(10,'Psion')):SummonInInventory(83b02e1e-7f85-4656-ae76-209b060005df,Permanent,1,true,true,true,,,OrganicWeapons,ORGANICWEAPONS_PSYCHIC);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_Launcher_Psychic" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3b1dae01-6a8b-4299-a6b4-8f321c97d8f7" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtendLimbs" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h708b409eg9f5fgb69ag4c0dg8883c2d0aa45" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7dadd4f9g7302g55ccg94bagc70e1ba8c4ba" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b2d2a30b-e94f-4bd8-b75c-869558191663" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtendLimbs_Reach;Shout_ExtendLimbs_Speed;Shout_ExtendLimbs_Touch;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_ExtendLimbs" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;PsionDie:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7012,6 +7033,12 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b1dae01-6a8b-4299-a6b4-8f321c97d8f7" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46e33966g6170g3e89g9ef7g4b450c501892" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb4e6a64gdbaeg4132g0da5g3b5da77ea9a5" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtendLimbs" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_REACH,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PolearmMaster_BonusAttack" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7021,6 +7048,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc5db167-7f8e-4e3b-a7a3-46a1e7052deb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc8f3fe18g8089gc86dg96a7gcdf870d2c455" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde8cdd15gc88agd452ge5a7g3d4399d2eae8" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_TOUCH,100,10)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7030,6 +7060,24 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc5db167-7f8e-4e3b-a7a3-46a1e7052deb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h373bbdf6g4855g79cag222bg30432f111964" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac93798fg39fag1b01g268eg3d6399049592" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_Bonuses" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_TOUCH,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70bcff34-9867-4289-aedb-9fba5a46cebe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dash_Metamorph" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="021086ec-d402-44b3-803f-3e629ecd0a16" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="106f365d-5139-416c-abde-f2296ecfc88d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Disengage_Metamorph" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
