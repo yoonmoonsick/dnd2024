@@ -4947,6 +4947,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="640f6c97-b734-460f-8ef3-9037b4f17c96" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8957,6 +8958,143 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bd45195g55cag1849g5401g2025fb4d82fd" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h764e77dbgbd99g809dg5864gecfe092809a1" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="99acc033-575a-455a-9389-f52cf444c29e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ORGANICWEAPONS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a3591b3b-0b14-419d-8b24-1ae4af825f42" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ORGANICWEAPONS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();ItemReturnToOwner();Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd1c132d-4385-4a35-83a8-e0967d676cea" />
+        <field name="Name" type="NameTableFieldDefinition" value="ORGANICWEAPONS_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="734c865c-bbdb-4817-95a9-59f76b7e8f77" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ORGANICWEAPONS" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();ItemReturnToOwner();Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();WeaponDamageTypeOverride(Psychic);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="734c0dca-85f0-4459-93a9-4e80a9023295" />
+        <field name="Name" type="NameTableFieldDefinition" value="FLESHMAUL_DEBUFF" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FLESHMAUL_DEBUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Constitution);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="690c1649-a898-4683-9ca9-9404aa8fe2a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTENDLIMBS_REACH" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PolearmMaster_BonusAttack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EXTENDLIMBS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(HasStringInSpellRoll('AttackType.MeleeWeaponAttack'),ModifyTargetRadius(Multiplicative, 2));" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h46e33966g6170g3e89g9ef7g4b450c501892" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb4e6a64gdbaeg4132g0da5g3b5da77ea9a5" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="983ce063-4639-459d-a006-8be0d02f32fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTENDLIMBS_SPEED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="690c1649-a898-4683-9ca9-9404aa8fe2a9" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,1.5,0);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc8f3fe18g8089gc86dg96a7gcdf870d2c455" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde8cdd15gc88agd452ge5a7g3d4399d2eae8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7461d8cc-16c4-48e8-bea9-ad2d52c6d9eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTENDLIMBS_TOUCH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="690c1649-a898-4683-9ca9-9404aa8fe2a9" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_Bonuses" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(DistantTouchSpellCheck(),ModifyTargetRadius(Override,3),ModifySpellFlags(Melee,0));" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h373bbdf6g4855g79cag222bg30432f111964" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac93798fg39fag1b01g268eg3d6399049592" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b07303c8-6cc0-4ac1-91ae-5a5f41bc6669" />
+        <field name="Name" type="NameTableFieldDefinition" value="STONYEPIDERMIS" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d55eb81b-f8cd-4e5b-847c-fb0e74fc2cd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUPERIORSTRIDE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="509b431c-8854-4892-8157-6c33f5151e86" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNNATURALFLEXIBILITY" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="71b0bdcc-f426-4cb6-a562-57a1f9ac630c" />
+        <field name="Name" type="NameTableFieldDefinition" value="STONYEPIDERMIS_BUFF" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS_BUFF" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Concentration);Resistance(Bludgeoning, Resistant);Resistance(Piercing, Resistant);Resistance(Slashing, Resistant);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb29fd25gf191g4d2eg1111gd23b28f5782f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3263e57egbe19ge78egf6f7g19db521cc853" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FiendishResilience" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37bf11df-daee-4b31-adab-b7963eaddbfb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SUPERIORSTRIDE_BUFF" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS_BUFF" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source)):UnlockSpell(Shout_Dash_Metamorph);IF(not WearingArmor(context.Source)):UnlockSpell(Shout_Disengage_Metamorph);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h659745c4g0febg89d7g7ac5gadcd7da7bf0f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha36c0528g1dffg1277g77c9g044c13b60c1d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="269c7d92-1703-4f1f-8fa4-58b525bc04be" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNNATURALFLEXIBILITY_BUFF" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STONYEPIDERMIS_BUFF" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(2);Tag(RESTRAINED_ADV);ObjectSize(-5);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0663b453gfd78g5514gbb62g71cff20a13e7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="habf16127g1bc8g6135g208bg58ab26cafada" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Reduce" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
