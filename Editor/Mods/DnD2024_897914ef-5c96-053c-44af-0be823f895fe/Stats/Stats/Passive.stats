@@ -9125,25 +9125,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="471f2668-cefb-4bf9-a8ae-28f9475d9678" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_MentalFatigue_PsychicDischarge_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="77763cc3-6eec-4aa7-b8f0-69901cce0e4c" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked;OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnAttacked) and not Self() and not IsLastConditionRollSuccess(ConditionRollType.ConditionSavingThrow) and (HasSavingThrowWithAbility(Ability.Intelligence) or HasSavingThrowWithAbility(Ability.Charisma) or HasSavingThrowWithAbility(Ability.Wisdom)) and MentalFatigueDischargeRequirement()) or (context.HasContextFlag(StatsFunctorContext.OnDamaged) and HasAttackDamageDoneForType(DamageType.Psychic) and MentalFatigueDischargeRequirement());" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Psychic);IF( context.HasContextFlag(StatsFunctorContext.OnAttacked) ):RemoveStatus(MAG_PSYCHIC_MENTAL_FATIGUE);IF(context.HasContextFlag(StatsFunctorContext.OnDamaged) and SavingThrow(Ability.Intelligence,10) ):RemoveStatus(MAG_PSYCHIC_MENTAL_FATIGUE);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8a54c9d5-24cf-4ab5-9d74-9cb7e6c9e397" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_Psychic_MentalFatigue_Cape_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ead6c45d-4d04-4f0f-b4b6-268ad10eef02" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked;OnDamaged" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Item() and not Self() and IsLastConditionRollSuccess(ConditionRollType.ConditionSavingThrow) and IsSavingThrow();" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ce574759-84dd-445b-8129-38194a903387" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_StaffOFRam_KnockStun_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa669ccf-a456-4c28-a836-c773bbaf7e25" />
