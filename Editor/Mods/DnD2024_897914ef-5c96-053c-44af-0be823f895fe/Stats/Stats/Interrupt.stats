@@ -735,7 +735,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(4, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_SOURCE,IntelligenceModifier);UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_SOURCE,IntelligenceModifier);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
       </fields>
@@ -1143,7 +1143,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((HasInterruptedAttack() and IsRerollInterruptInteresting(context.Source) and not Enemy(context.Source, context.Observer)) or (HasInterruptedSavingThrow() and IsRerollInterruptInteresting() and not Enemy(context.Target, context.Observer))) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();IF(not Self(context.Target,context.Observer) and HasInterruptedAttack()):UseSpell(OBSERVER_SOURCE,Target_BendLuck_Interrupt_Positive,true,true,true);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
@@ -1160,7 +1160,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((HasInterruptedAttack() and IsRerollInterruptInteresting(context.Source) and Enemy(context.Source, context.Observer)) or (HasInterruptedSavingThrow() and IsRerollInterruptInteresting() and Enemy(context.Target, context.Observer))) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();IF(not Self(context.Target,context.Observer) and HasInterruptedAttack()):UseSpell(OBSERVER_SOURCE,Target_BendLuck_Interrupt_Negative,true,true,true);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Negative,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
@@ -1179,7 +1179,7 @@
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph');" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefb56862gecabg1101g4eecg92ec5c286a79" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cae26c8g758cg141cg29c0gc91313582892" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Positive,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
       </fields>
     </stat_object>
     <stat_object color="#FF008080" is_substat="false">
@@ -1749,6 +1749,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f94fa27gfb1dg18a3g304cge87d4ad23ac4" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RestoreBalanceCharge:1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1758,7 +1759,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd7e0204-0b05-430c-9497-6a2b28db1bed" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0c5c895egd3a4g9cd3gcff1g146c100a0f32" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((HasInterruptedAttack() and IsRerollInterruptInteresting(context.Source) and Enemy(context.Source, context.Observer)) or (HasInterruptedSavingThrow() and IsRerollInterruptInteresting() and Enemy(context.Target, context.Observer))) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();IF(not Self(context.Target,context.Observer) and HasInterruptedAttack()):UseSpell(OBSERVER_SOURCE,Target_BendLuck_Interrupt_Negative,true,true,true);IF(not Self(context.Target,context.Observer) and HasInterruptedSavingThrow()):UseSpell(OBSERVER_TARGET,Target_BendLuck_Interrupt_Negative,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RestoreBalanceCharge:1" />
       </fields>
     </stat_object>
