@@ -457,7 +457,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UnarmoredDefense" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-1d12);(AdjustRoll(0-ConstitutionModifier);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(1d12+context.Target.ConstitutionModifier));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;GiantAncestryCharge:1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
@@ -1075,7 +1075,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsMeleeAttack() and not HasSpellFlag(SpellFlags.Spell) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Blinded') and not HasStatus('SG_Prone') and not HasStatus('SG_Incapacitated') and not HasStatus('SG_Restrained');" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(SuperiorityDie)+max(DexterityModifier,StrengthModifier)));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(SuperiorityDie)+max(context.Target.DexterityModifier,context.Target.StrengthModifier)));" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SuperiorityDie:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasAnyStatus({'SG_Polymorph','SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
@@ -1198,7 +1198,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Riposte" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and (IsMeleeAttack() or IsMeleeUnarmedAttack()) and not HasStatus('SG_Polymorph_BeastShape') and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+context.Target.DexterityModifier+ClassLevel(Monk)));" />
         <field name="Stack" type="StringTableFieldDefinition" value="DeflectAttacks_Melee" />
       </fields>
     </stat_object>
@@ -1209,7 +1209,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2bc523d2-3b18-422b-8e95-65b9e9a6f4e8" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h404bd384g3e83g89b0g0ba8gfe98cf867273" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BludgeonTheWeak" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Bludgeoning,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+context.Target.DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Bludgeoning,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;KiPoint:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Bludgeoning);" />
       </fields>
@@ -1221,7 +1221,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="739374ec-566d-4783-be9e-68ffad327d1e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha83c1a6fgc882g82feg1366g89f3ba1fc4ed" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PierceTheWeak" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Piercing,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+context.Target.DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Piercing,true,true,true);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Piercing);" />
       </fields>
     </stat_object>
@@ -1232,7 +1232,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="739374ec-566d-4783-be9e-68ffad327d1e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01064203gcb7dg86cfg68c8g3e4d596af953" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_SlashTheWeak" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Slashing,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(1d10+context.Target.DexterityModifier+ClassLevel(Monk)));UseSpell(SWAP,Target_DeflectAttack_Slashing,true,true,true);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+DexterityModifier, Slashing);" />
       </fields>
     </stat_object>
