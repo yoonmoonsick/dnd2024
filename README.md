@@ -2520,6 +2520,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Sorcerous Burst](https://www.dndbeyond.com/spells/2618839-sorcerous-burst)
 - [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
 - [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
+- [Telekinetic Fling](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
 - [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap)
 - [True Strike](https://www.dndbeyond.com/spells/2619204-true-strike)
 - [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
