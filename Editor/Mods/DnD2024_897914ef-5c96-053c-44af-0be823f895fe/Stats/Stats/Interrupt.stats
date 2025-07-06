@@ -457,9 +457,9 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UnarmoredDefense" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-1d12-ConstitutionModifier)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-1d12);(AdjustRoll(0-ConstitutionModifier);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;GiantAncestryCharge:1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value=";" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
