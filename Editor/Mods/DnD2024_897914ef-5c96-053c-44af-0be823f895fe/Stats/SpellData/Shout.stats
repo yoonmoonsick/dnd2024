@@ -6,7 +6,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eeaaa237-0d71-42eb-bda6-5bbfd62447ce" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
         <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1209,7 +1208,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="93c95c35-e38b-46ec-af5b-dfdae8fa1e02" />
         <field name="Name" type="NameTableFieldDefinition" value="GoliathSelect" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ae2a9bfg169ag86c0gf322gfcc180a668dd" version="1" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_GoliathFire;Shout_GoliathFrost;Shout_GoliathHill;Shout_GoliathStone;Shout_GoliathStorm;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_GoliathCloud;Shout_GoliathFire;Shout_GoliathFrost;Shout_GoliathHill;Shout_GoliathStone;Shout_GoliathStorm;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
@@ -1222,6 +1221,19 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="419490b6-d15f-474e-87bb-635c012f0682" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Azer_Overheat" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfa774d9-97ac-4270-86a5-11f2e1873206" />
+        <field name="Name" type="NameTableFieldDefinition" value="GoliathCloud" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f361ee6b-c12a-4815-809f-3662830cf02f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he88b236bgc209gae35g2b84g29fe2a464d0c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h82b4e323g8955g3a24g7568gcf34d63f6c07" version="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(GOLIATH_CLOUD,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GOLIATH_CLOUD,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
