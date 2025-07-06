@@ -115,7 +115,7 @@ If you choose a newly added background, you gain a spell that can be used once p
 
 # Races
 
-## Aarakocra
+## [Aarakocra](https://www.dndbeyond.com/species/1026377-aarakocra)
 
 ![](https://i.imgur.com/q7ZAlD6.png)
 
@@ -126,7 +126,7 @@ Choose **Aarakocra** from the list of **Versatile** passives available to **Huma
 - Level 1
   - As a descendant of the Aarakocra, you gain the ability to fly. You can use this flying speed only while not wearing medium or heavy armor. Your base walking speed becomes 25ft per turn, and your body is considered light in weight.
 
-## Aasimar
+## [Aasimar](https://www.dndbeyond.com/species/1751434-aasimar)
 
 ![](https://i.imgur.com/s3dE2kW.png)
 
@@ -140,6 +140,16 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
   - You have Resistance to Necrotic and Radiant damage, Darkvision, can cast the Light cantrip, use Healing Hands.
 - Level 3
   - You Can transform with Celestial Revelation as a Bonus Action.
+
+## [Dhampir](https://www.dndbeyond.com/sources/dnd/vrgtr/character-creation#Dhampir)
+
+![](https://i.imgur.com/YoP5D8w.png)
+
+Choose **Dhampir** from the list of **Versatile** passives available to **Humans**.
+> Poised between the worlds of the living and the dead, dhampirs retain their grip on life yet are endlessly tested by vicious hungers. Their ties to the undead grant dhampirs a taste of a vampire’s deathless prowess in the form of increased speed, darkvision, and a life-draining bite.
+
+- Level 1
+  - You have a walking speed of 35 feet, Darkvision, and can use Vampiric Bite.
 
 ## Dragonborn
 - Level 1: Darkvision
@@ -179,7 +189,7 @@ Choose **Aasimar** from the list of **Versatile** passives available to **Humans
 ## Gnome
 - Speed: 30 feet
 
-## Goliath
+## [Goliath](https://www.dndbeyond.com/species/1751439-goliath)
 
 Choose **Goliath** from the list of **Versatile** passives available to **Humans**.
 
