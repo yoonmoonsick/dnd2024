@@ -581,7 +581,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h4003391cgf571g1e51gf459g8e67d03dd20f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsMeleeWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsWeaponAttack() and (Tagged('WPN_MACE', GetAttackWeapon(context.Source)) or Tagged('WPN_SPEAR', GetAttackWeapon(context.Source)) or Tagged('WPN_FLAIL', GetAttackWeapon(context.Source)) or Tagged('WPN_LONGSWORD', GetAttackWeapon(context.Source)) or Tagged('WPN_WAR_PICK', GetAttackWeapon(context.Source))) and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="-1" />
       </fields>
@@ -6204,6 +6204,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_3_AncientArmor" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbf49fc84g605fgb3ddg4f3fg580c58d4f56e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h71d27e03gf160g7367g972dg18221b38a47e" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MageArmor" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6212,6 +6214,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_3_UnnervingAura" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1bafcb2gf99agb7fbgf8d1g9bdf4e8f1aca" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd97a8872g2e32g1fdbga103gab63a87d2820" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HuntersMark();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,UNNERVING_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6220,6 +6227,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_7_HungeringMight" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="habae9907g2ad1g98e9gd671gc16195882555" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf95b00d5g578bgfdd5g020cg9b0da0a2f92b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Lifedrinker" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,WisdomModifier,Constitution);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss() and HasHPPercentageWithoutTemporaryHPLessThan(50,context.Source) and HasStatus('HUNTERS_MARK_OWNER',context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(SELF,1d10+WisdomModifier); " />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6228,6 +6241,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_11_EerieAura_Necrotic" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23c1fc05gb7b6g30a3gaa0dg263ae70cc41e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb875d51egc0feg3733ge8ecga9cefaa44ace" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EERIE_AURA_NECROTIC,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,EERIE_AURA_NECROTIC)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="EerieAura" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6236,6 +6254,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_11_EerieAura_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f03c45ec-a1a2-4cb2-9e3b-c95e4b7600a3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h703e0f1fg414dg4469ga00fg6bef790a77e3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EERIE_AURA_POISON,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,EERIE_AURA_POISON)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6244,6 +6265,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_11_EerieAura_Psychic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f03c45ec-a1a2-4cb2-9e3b-c95e4b7600a3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b55bbe6g1a8ege196ge720g60f697de8ed9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EERIE_AURA_PSYCHIC,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,EERIE_AURA_PSYCHIC)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6252,6 +6276,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_11_StranglingRoots_Sap" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he981689bgda58g1344gfec5g825b38d2fef6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd3f23814g0e57g44a8g3b01g87d206e42513" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(SAP, 100, 2)" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="StranglingRoots" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6260,6 +6290,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="HollowWarden_11_StranglingRoots_Slow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7da51ffc-7890-43a1-ab52-08f2d7be4cb1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5ab2d387gfdd4g4f10g438cgca691adbdd72" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_HamstringShot" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and not Item() and IsWeaponAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(SLOW_WM, 100, 2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
