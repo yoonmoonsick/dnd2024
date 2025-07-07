@@ -7376,6 +7376,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c97ef66a-d88e-4c4a-ab0a-d731a91df262" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_OWNER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f59491f3-8d7b-4b0e-bae1-6a630d8e6c42" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('HollowWarden_3_AncientArmor',context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',13,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',15,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',17,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',19,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',21,context.Source)):AC(1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7455,6 +7456,75 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27db44f2-6343-4d48-a2a5-194df9a6bdcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNNERVING_AURA" />
+        <field name="StackId" type="StringTableFieldDefinition" value="UNNERVING_AURA" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(UNNERVING_AURA_TARGET)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('HUNTERS_MARK_OWNER')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1bafcb2gf99agb7fbgf8d1g9bdf4e8f1aca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd97a8872g2e32g1fdbga103gab63a87d2820" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83e4a7d7-ecc3-401d-aeae-e0a63eaa0a5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNNERVING_AURA_TARGET" />
+        <field name="StackId" type="StringTableFieldDefinition" value="UNNERVING_AURA_TARGET" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="ApplyStatus(UNNERVING_AURA_DEBUFF,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1bafcb2gf99agb7fbgf8d1g9bdf4e8f1aca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd97a8872g2e32g1fdbga103gab63a87d2820" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="73116794-e3c6-41fb-9390-5230b50c0484" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNNERVING_AURA_DEBUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EXTRA_ATTACK_BLOCKED);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Slow_ActionPoint;" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EERIE_AURA_NECROTIC',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Necrotic);IF(HasStatus('EERIE_AURA_POISON',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Poison);IF(HasStatus('EERIE_AURA_PSYCHIC',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Psychic)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1bafcb2gf99agb7fbgf8d1g9bdf4e8f1aca" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd97a8872g2e32g1fdbga103gab63a87d2820" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHate" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecbcde1a-eb06-4ad5-9ad1-32b0dc86befb" />
+        <field name="Name" type="NameTableFieldDefinition" value="EERIE_AURA_NECROTIC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23c1fc05gb7b6g30a3gaa0dg263ae70cc41e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb875d51egc0feg3733ge8ecga9cefaa44ace" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78f649ed-3291-4a84-b4bb-2b6a9ad39c52" />
+        <field name="Name" type="NameTableFieldDefinition" value="EERIE_AURA_POISON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecbcde1a-eb06-4ad5-9ad1-32b0dc86befb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h703e0f1fg414dg4469ga00fg6bef790a77e3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be554c44-56b2-4b14-851f-c15212f837e7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EERIE_AURA_PSYCHIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecbcde1a-eb06-4ad5-9ad1-32b0dc86befb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b55bbe6g1a8ege196ge720g60f697de8ed9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
