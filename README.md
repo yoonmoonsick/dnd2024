@@ -1199,6 +1199,27 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 11: Stalker's Flurry
   - The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, the target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.
 
+### Hollow Warden
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
+
+> Legends tell that the most ancient and fearsome terrors lurk deep within the old places of the earth—unfathomable and bloodthirsty entities of fallow soil and sharpened claws. Hollow Wardens venerate and draw power from such beings, transforming themselves into similarly merciless and monstrous guardians that stalk along jagged coastlines, across steep mountain crags, and through other dark and wild places.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Wrathful Smite
+  - Level 5: Find Steed
+  - Level 9: Hunger of Hadar
+- Level 3: Ancient Armor
+  - When you cast Hunter's Mark, you transform, gaining a bonus to your AC equal to your Wisdom modifier for the spell's duration.
+- Level 3: Unnerving Aura
+  - While you're concentrating on Hunter's Mark, when an enemy starts its turn within a 10-foot emanation originating from you, it must make a Wisdom saving throw against your spell save DC. On a failed save, it can take either an action or a bonus action on this turn, but not both.
+- Level 7: Hungering Might
+  - You gain a bonus to Constitution saving throws equal to your Wisdom modifier. Additionally, once per turn when you hit a creature with an attack roll while concentrating on Hunter's Mark, you regain hit points equal to 1d10 plus your Wisdom modifier, provided your hit points are below 50%.
+- Level 11: Eerie Aura
+  - When a creature fails its saving throw against your Unnerving Aura, it also takes necrotic, poison, or psychic damage (your choice) equal to your Ranger level.
+- Level 11: Strangling Roots
+  - When you hit a creature with a weapon attack roll, you can activate the Sap or Slow mastery property in addition to a different mastery property you're using with that weapon.
+
 ### Hunter
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
