@@ -243,6 +243,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 # Class
 
+**Subclasses can be chosen at class level 1 or 2, but all subclass abilities are gained starting from class level 3.**
+
 ## Artificer
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artificer.png?raw=true)
