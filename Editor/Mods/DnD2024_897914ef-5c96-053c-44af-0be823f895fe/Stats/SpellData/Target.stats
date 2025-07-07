@@ -1950,13 +1950,13 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="(Dead() or Item() or Ally()) or not SavingThrow(Ability.Strength,SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(3, OriginToEntity, Neutral, false, true);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(6, OriginToEntity, Neutral, false, true);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Telekinetic_Push" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66a94c4eg9b73g9736ga428g06907bfca5aa" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h70556959ge5d0g7b81g3e56g4e230ce4b563" version="3" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -1969,13 +1969,16 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_Telekinesis_L5" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="112f6ce5-c64e-4c47-8afc-824744390c21,,;57a133ee-98e0-46a4-8f57-e2ae436206e3,,;6359af9b-f775-42fb-8dec-00dea9acbba5,,;8285df5d-b1f5-46d0-aee6-4dccfe8c6699,,;b65bfc83-80fd-465f-ae1b-c0606482b5dd,,;,,;2129b85c-1d9e-4f56-97a6-0f6b8c664d8a,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="0319ca29-4024-4649-9278-3c1f20c5f023,,;a71e11ca-95ab-463d-a4bf-fe8094126b61,,;352c3a89-f99c-4472-8424-58c0ffb15e55,,;a57fc614-ed20-4574-936b-bdcc6cebd36a,,;b24b3f23-6d3a-43ce-ae3a-abfb44d26082,,;200ab854-a989-4a6a-8ac9-4b20aecaccda,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1861cb83-aa7c-4b64-8dd3-37d2348f65c9" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74c0adbe-5a19-430b-942a-f378180112b1" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="50bedaff-dd03-43bf-a7aa-4b9bef9eeb4e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3fdf3e73-59a3-4518-9521-35f40374d048" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5d8c64e3-f9ff-4ee0-b0b6-2a081c7244a8" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Shove" enumeration_type_name="SpellActionType" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1986,7 +1989,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="(Dead() or Item() or Ally()) or not SavingThrow(Ability.Strength,SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-3, OriginToEntity, Neutral, false, true);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-6, OriginToEntity, Neutral, false, true);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Telekinetic_Pull" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbfc7ff67ga2efg5c6egfa72ga918b8095df1" version="1" />
@@ -2004,14 +2007,18 @@
         <field name="VocalComponentSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="112f6ce5-c64e-4c47-8afc-824744390c21,,;57a133ee-98e0-46a4-8f57-e2ae436206e3,,;6359af9b-f775-42fb-8dec-00dea9acbba5,,;8285df5d-b1f5-46d0-aee6-4dccfe8c6699,,;b65bfc83-80fd-465f-ae1b-c0606482b5dd,,;,,;2129b85c-1d9e-4f56-97a6-0f6b8c664d8a,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;ad12e2fa-1b15-4fcd-884f-38ba82d7e50e,,;5ee4c893-0149-4d08-a1f7-c4fe633530ba,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="1861cb83-aa7c-4b64-8dd3-37d2348f65c9" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74c0adbe-5a19-430b-942a-f378180112b1" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="50bedaff-dd03-43bf-a7aa-4b9bef9eeb4e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="3fdf3e73-59a3-4518-9521-35f40374d048" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5d8c64e3-f9ff-4ee0-b0b6-2a081c7244a8" />
         <field name="BeamEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Shove" enumeration_type_name="SpellActionType" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12290,7 +12297,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5be2c67d-2633-42d6-a2c8-3192afbc6f33" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="PsionDie:1;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('TELEKINETICTECHNIQUES_BOOST',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);IF(HasStatus('TELEKINETICTECHNIQUES_DISORIENT',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(6, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(9, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12300,7 +12308,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="872ad012-87cd-4d32-987b-2f6965358378" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="PsionDie:1;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('TELEKINETICTECHNIQUES_BOOST',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);IF(HasStatus('TELEKINETICTECHNIQUES_DISORIENT',context.Source)):ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-6, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="Force(-9, OriginToEntity, Neutral, false, true);IF(HasStatus('TELEKINETICTECHNIQUES_TELEKINETICBOLT',context.Source) and not Ally()):DealDamage(LevelMapValue(PsionDie),Force);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
