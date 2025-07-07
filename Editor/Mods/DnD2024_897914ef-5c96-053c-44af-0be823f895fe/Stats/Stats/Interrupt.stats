@@ -2152,10 +2152,17 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73492150g4b0fgcd04g64a0g8f2061aa0a79" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h767b980cg5a95g13c4g43bdgc186f031e85b" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_EmpoweredSpell" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellDamageTypeIs(DamageType.Slashing) or SpellDamageTypeIs(DamageType.Piercing) or SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Acid) or SpellDamageTypeIs(DamageType.Thunder) or SpellDamageTypeIs(DamageType.Necrotic) or SpellDamageTypeIs(DamageType.Fire) or SpellDamageTypeIs(DamageType.Lightning) or SpellDamageTypeIs(DamageType.Cold) or SpellDamageTypeIs(DamageType.Psychic) or SpellDamageTypeIs(DamageType.Poison) or SpellDamageTypeIs(DamageType.Radiant) or SpellDamageTypeIs(DamageType.Force)) and not AnyEntityIsItem() and IsSpell();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Piercing)or SpellDamageTypeIs(DamageType.Slashing)or SpellDamageTypeIs(DamageType.Acid)or SpellDamageTypeIs(DamageType.Cold)or SpellDamageTypeIs(DamageType.Fire)or SpellDamageTypeIs(DamageType.Force)or SpellDamageTypeIs(DamageType.Lightning)or SpellDamageTypeIs(DamageType.Necrotic)or SpellDamageTypeIs(DamageType.Poison)or SpellDamageTypeIs(DamageType.Psychic)or SpellDamageTypeIs(DamageType.Radiant)or SpellDamageTypeIs(DamageType.Thunder)) and not AnyEntityIsItem();" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19206b56-82ff-4673-8815-1d0f5546e359" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83a45a62-2261-4c41-b3dd-99c62867dad9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
