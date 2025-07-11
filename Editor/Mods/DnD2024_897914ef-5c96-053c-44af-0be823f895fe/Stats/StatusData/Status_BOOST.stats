@@ -259,6 +259,14 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="MultiplyEffectsByDuration;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ef195a2-341d-4008-93fd-70d5f06086d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESURRECTING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2e99a2c3-e00b-43da-bd33-6a4981cee387" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('GraveDomain_3_ReturnToLife',context.Source)):RegainHitPoints(Cause.ClassLevel(Cleric)*2)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="00752230-b1c3-401e-a941-3a120866e64c" />
@@ -6400,6 +6408,29 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h278fd57cg88b9g9665gcbe1g38cd1b14a1fa" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="FORTIFYING_SPELL" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2d8+Cause.ClassLevel(Cleric));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7512ac55-4d12-49b5-886c-b76163bed4f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="PATH_TO_THE_GRAVE_DEBUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="959731d8-1d4b-46d9-9042-7bd4a53326cb" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_PathToTheGrave" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PATH_TO_THE_GRAVE_DEBUFF" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(AttackRoll);Disadvantage(SavingThrow,Strength);Disadvantage(SavingThrow,Dexterity);Disadvantage(SavingThrow,Constitution);Disadvantage(SavingThrow,Intelligence);Disadvantage(SavingThrow,Wisdom);Disadvantage(SavingThrow,Charisma);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3244093fg311cg1b85g742bg8493d669f021" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c85f474g77d4g6b20ge35ag39882b822cac" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8541199c-1244-425d-847a-6b48e935bcd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SENTINELATDEATHSDOOR" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Half);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19c8d05agacdeg274dg1216gee1edcae0928" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb054772g98d6g23adge377gb09aa494b792" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF808000" is_substat="false">
