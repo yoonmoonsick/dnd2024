@@ -1059,6 +1059,24 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc2732ba-88e4-46a5-af2d-9e2f7ae6256c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SentinelAtDeathsDoor" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( Self(context.Target,context.Observer) or Ally(context.Target, context.Observer) ) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(SENTINELATDEATHSDOOR,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SentinelAtDeathsDoor:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="SentinelAtDeathsDoor" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19c8d05agacdeg274dg1216gee1edcae0928" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb054772g98d6g23adge377gb09aa494b792" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="edecf407-e0c5-45bf-ac4c-a6ec8b10be4c" />
