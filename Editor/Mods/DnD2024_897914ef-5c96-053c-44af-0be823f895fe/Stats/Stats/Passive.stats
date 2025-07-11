@@ -5037,6 +5037,65 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(MindMagicLevel9(),ModifyIconGlow(), ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,ChannelDivinity,1,0));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c9a12ed-06e4-4854-b331-e1bb36299a4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraveDomain_3_PullOfDeath" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf990af4egb109ga73fg2a14g56a7248b8485" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hced41cefgbee5g2073g4422g6088cc009cbe" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Death" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasHPPercentageWithoutTemporaryHPLessThan(50,context.Target);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Necrotic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06b8629a-2350-4210-94df-d31e51f37f4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraveDomain_3_ReturnToLife" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h309d6397gf700g04c7g001bg17e93c12425e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5df6b0dg6940gaa3cg4267g2c1c44020efc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Revivify" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsDowned()):RegainHitPoints(ClassLevel(Cleric)*2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="956c5d8c-cdb8-4162-8534-9003f60f78bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraveDomain_3_PathToTheGrave" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3244093fg311cg1b85g742bg8493d669f021" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c85f474g77d4g6b20ge35ag39882b822cac" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_PathToTheGrave" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PathToTheGrave);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7295d4d3-e0b0-4f85-b61c-fe3a96d6fdd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraveDomain_6_SentinelAtDeathsDoor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19c8d05agacdeg274dg1216gee1edcae0928" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb054772g98d6g23adge377gb09aa494b792" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ReaperOBhaal_MurderPrayer" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_SentinelAtDeathsDoor);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2c63c424-fe27-47ba-978a-416f487819fd" />
+        <field name="Name" type="NameTableFieldDefinition" value="GraveDomain_6_SentinelAtDeathsDoor_Resource" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f5fb32c6-6b59-4c6d-aa95-dad59cb09e0b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',25,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',27,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);IF(AbilityGreaterThan('Wisdom',29,context.Source)):ActionResource(SentinelAtDeathsDoor,1,0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3156cf29-299f-4b46-aa3d-a26921a0a0fa" />
