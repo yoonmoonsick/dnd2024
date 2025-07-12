@@ -8885,10 +8885,11 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Acid,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,VISCERA_LAUNCHER_COOLDOWN,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcd090349ged7dga78age0d3g1b550ddfac87" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd7f8741g85a8gf8e2g88a5g766f77dc7f02" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h92cb038fgc4aagb3beg8eacg2d20bbf55456" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('VISCERA_LAUNCHER_COOLDOWN',context.Source)):DamageBonus(1d6,Acid);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
