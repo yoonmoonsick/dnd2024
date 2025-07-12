@@ -575,6 +575,26 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 3: Reaper
   - The same object cannot be selected as an additional target.
 
+### Grave Domain
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GraveDomain.png?raw=true)
+
+> The Grave Domain focuses on the cycle of life and death, viewing death as a natural and unavoidable part of existence. Clerics who draw power from this domain actively combat the Undead and guide spirits to the afterlife, even if the spirits resist. While these clerics can temporarily delay death for those with important tasks, they cannot prevent it entirely, as death ultimately claims everyone.
+
+- Domain Spells (Always prepared)
+  - Level 3: Bone Chill, Bane, Protection from Evil and Good, Blindness, Ray of Enfeeblement
+  - Level 5: Revivify, Vampiric Touch
+  - Level 7: Blight, Dispel Evil and Good
+  - Level 9: Hold Monster, Danse Macabre
+- Level 3: Pull of Death
+  - Once per turn, when you deal damage to a creature that has 50% or less of its hit points remaining with a spell or attack roll, that creature takes an extra 1d4 Necrotic damage.
+- Level 3: Return to Life
+  - When you restore hit points to a creature at 0 hit points with a spell or Channel Divinity, that creature regains an additional number of hit points equal to twice your Cleric level.
+- Level 3: Path to the Grave
+  - As a bonus action, you expend a use of your Channel Divinity to curse one creature you can see within 30 feet of you for 2 turns. While cursed, the creature has disadvantage on attack rolls and saving throws.
+- Level 6: Sentinel at Death's Door
+  - When a creature you can see within 30 feet of you is hit with an attack while it has 50% or less of its hit points, you can use your reaction to halve that attack's damage. You can use this feature a number of times equal to your Wisdom modifier. You regain all expended uses when you finish a long rest.
+
 ### Knowledge Domain
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/KnowledgeDomain.png?raw=true)
