@@ -11900,7 +11900,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEVASTATOR_STRIKE,100,2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() and Ally() or Self()) and HasActionResource('ReactionActionPoint',1,0,false,false,context.Target);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() or Self();" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(StandardProficiencyBonusScale)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Devastator" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08f966b8g70bege28fg6053gd60fe1c3896f" version="1" />
@@ -11919,6 +11919,7 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="954307f2-6216-4eff-aa7a-d87553bcee37" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="abb61fd9-813b-4112-933a-dbc1eb07194a" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11935,7 +11936,6 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(GRAND_STRATEGIST,100,1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="InvokeHellCharge:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreBlindness;HasVerbalComponent;CannotTargetItems;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
