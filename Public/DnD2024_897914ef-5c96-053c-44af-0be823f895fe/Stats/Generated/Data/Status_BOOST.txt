@@ -5227,6 +5227,12 @@ new entry "YMS_DRUID"
 type "StatusData"
 data "StatusType" "BOOST"
 
+new entry "WILDSHAPE_ACTIVE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILDSHAPE_ACTIVE"
+data "OnApplyFunctors" "IF(not HasPassive('WildShapeCombatUnlock'),context.Source):BreakConcentration()"
+
 new entry "SYMBIOTIC_ENTITY"
 type "StatusData"
 data "StatusType" "BOOST"
