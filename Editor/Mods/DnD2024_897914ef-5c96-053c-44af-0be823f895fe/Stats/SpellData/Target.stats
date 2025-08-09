@@ -9742,7 +9742,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self();" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(2d6+SpellCastingAbilityModifier)" />
-        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self();" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self() and not Enemy();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13706,6 +13706,7 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedUnarmedAttack" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;HasHighGroundRangeExtension" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
