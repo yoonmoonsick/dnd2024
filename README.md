@@ -2354,6 +2354,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Fixed known bugs related to certain equipment items.
 - Items that previously existed only as dummy data can now be obtained from merchants, treasure chests, and loot during Acts I and III.
 
+## Ability Score Item Rebalance
+
+Some items in Baldur's Gate 3 that set an ability score to a fixed number (override) have been changed to provide a stat bonus instead. This adjustment was made to prevent the homogenization of "stat-dumping" builds, which became overly powerful when combined with the flexible respec system. The goal of this balance change is to preserve the value of character growth through leveling, broaden the scope of viable item choices, and encourage players to enjoy building more diverse and unique characters.
+
 ## Firearms
 - Firearms don't add your ability modifier to damage rolls. If you're not proficient with firearms, you deal half damage when using them.
 - Characters proficient with firearms deal full damage when using them.
@@ -2363,14 +2367,6 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - You can buy firearms from weapon traders. The kinds of firearms they have will diversify as your party level increases.
 - [Pistol](https://www.dndbeyond.com/equipment/42-pistol)
 - [Musket](https://www.dndbeyond.com/equipment/43-musket)
-
-## Updated Items
-- [Amulet of Health](https://www.dndbeyond.com/magic-items/4568-amulet-of-health)
-- [Bracers of Archery](https://www.dndbeyond.com/magic-items/4593-bracers-of-archery)
-- [Chain of Liberation]()
-- [Gloves of Thievery](https://www.dndbeyond.com/magic-items/5352-gloves-of-thievery)
-- [Headband of Intellect](https://www.dndbeyond.com/magic-items/4652-headband-of-intellect)
-- [The Oak Father's Embrace]()
 
 ## New Items
 - [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
