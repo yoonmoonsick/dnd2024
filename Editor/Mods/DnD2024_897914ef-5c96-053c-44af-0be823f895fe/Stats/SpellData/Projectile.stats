@@ -170,6 +170,7 @@
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRestPerItem" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -253,7 +254,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8bd412c5-748e-4364-88ed-bbf23046b744" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(BURNING);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);RemoveStatus(BURNING);GROUND:CreateSurface(3,2,WaterFrozen);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
@@ -324,7 +325,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="VitriolicSphere" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a817993-5fdc-48b4-98a7-123be5e962fc" />
         <field name="Level" type="IntegerTableFieldDefinition" value="4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,0,Acid);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,2,Acid);ApplyStatus(ACID,100,2);" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
@@ -886,7 +887,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1c273ec5-643b-495a-8b44-bd044a4ceed6" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,0,Acid);ApplyStatus(ACID,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -896,7 +897,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="49e1e084-a3a5-4c2b-a6f5-9a6c2b8737a4" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,0,Acid);ApplyStatus(ACID,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -906,7 +907,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b4f14a0-f764-461c-95fa-e23e824d577b" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,0,Acid);ApplyStatus(ACID,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -916,7 +917,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ae979b47-7b43-4418-b43f-740b5fd8db93" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,0,Acid);ApplyStatus(ACID,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -926,7 +927,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="9e21d94e-52f0-43ca-90fb-7764fe67a874" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,0,Acid);ApplyStatus(ACID,100,2);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -936,6 +937,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d5b5b538-5654-4ba1-9c69-4a3d54664ce4" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(6,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1137,7 +1139,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3409e067-80fa-4631-b346-4a9c0eea44fc" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b8b0c97a-30fc-4c1e-ae08-f23a99ba18da" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
         <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead();" />
@@ -1148,7 +1150,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="aa4b1cbe-b003-48b2-8eca-4b15d165a04b" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ababef8-c892-4130-935d-849b8eac396c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid,Magical)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid)" />
@@ -1162,7 +1164,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="191b1d8a-babe-42bd-9d70-95ee89329144" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d15c622f-ab48-4a6d-b967-99b803f89288" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Acid)" />
@@ -1176,7 +1178,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d8b1b9c1-fb2a-454d-a300-c202a8a89b27" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="374421f6-3667-47ff-8413-8262bc30aebf" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_2)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1189,7 +1191,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f6a66b7f-46b6-404c-a45a-e4e4a4cd2c2e" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74f7ebd0-7428-41f2-b70b-c59dc27f02fd" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,4)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_3)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1202,7 +1204,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="da73f4f6-8b40-46d1-8c07-4a81fcb325a5" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f1cc4fd-7902-42c7-ab3a-131879d3731c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_4)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1215,7 +1217,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bee563de-a6eb-4076-9aa6-0d667c6753ac" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="90b6be49-a5e5-4974-a978-cfa468b8524f" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,2)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_5)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1468,7 +1470,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="021ef18d-55c5-496c-9c89-c65830b3efd6" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ab16307-2824-42e2-adde-0074c7331c92" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison,Magical)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison)" />
@@ -1482,7 +1484,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="627b8bbc-91e3-457c-a628-761ebb583a0a" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4f24aec-d4b5-4f30-8793-83d92c454387" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Poison)" />
@@ -1496,7 +1498,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="43d260be-eb21-4db7-8c94-19d420f59f45" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5f8504e0-d2fb-4ef6-bd6b-9beb4b8cdc3f" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_2)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Poison)" />
@@ -1510,7 +1512,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="aae30879-b54e-47d3-9a93-264b35299b4e" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f679b02d-55b6-4137-a141-c46821dd6522" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,4)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_3)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Poison)" />
@@ -1524,7 +1526,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9d25b3a0-621a-4b5e-88ef-0ddf9a2232b0" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="224dba1e-027a-4abf-b8ee-27202fd6ab05" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_4)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Poison)" />
@@ -1538,7 +1540,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f65da756-e9cc-4eb7-8aae-8557afd05bf7" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4c110fdf-9547-46d5-96b1-e733987a9b20" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,2)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_5)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
@@ -1616,7 +1618,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="98fe3bb7-02d7-4081-940f-995e99ca279f" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da1c2219-33b6-482f-9039-d0a1c8400d68" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder)" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="64035e2e-3731-46d3-82d6-c78877508c1c" />
@@ -1628,7 +1630,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="742fae4e-8dc7-4194-9ae6-0bbff53280ff" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d25b525d-6ffa-47af-8b38-674acb9a584e" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,11)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_BookOfAncientSecrets)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid)" />
@@ -1684,7 +1686,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4fcb6224-8564-473a-b985-752341dc2311" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a2b24ec-e1e1-478b-b8ae-7ba85f08d47e" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Poison)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,11)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_BookOfAncientSecrets)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd951b2b1g39f3gb720g942fg89a900fb11ac" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison)" />
@@ -1959,7 +1961,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Acid" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Projectile_ElementalBurst" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(4,1,Acid);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(4,2,Acid);ApplyStatus(ACID,100,2);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
@@ -2008,7 +2010,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e9c12d8e-5323-4f08-8ad3-72cbcd3ddf79" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="f6672806-9b2f-401b-aed9-fe1aa0e2b27a" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);GROUND:CreateSurface(4,1,WaterFrozen);RemoveStatus(BURNING);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);GROUND:CreateSurface(4,2,WaterFrozen);RemoveStatus(BURNING);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="8dfa6051-1c61-493a-bcdf-1380e1c26ed9" />
       </fields>
     </stat_object>
@@ -2017,7 +2019,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b59984f3-70d1-452e-af61-58e633802723" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);GROUND:CreateSurface(4,1,Fire);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);GROUND:CreateSurface(4,2,Fire);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Fire,Magical)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Fire,Magical)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Fire" />
@@ -2048,7 +2050,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2a061853-8b26-4692-9adf-d9bf9ee7f12a" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="ca431b9f-3f96-4dd8-b84f-682a733035cc" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify);GROUND:CreateSurface(4,1,WaterElectrified);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify);GROUND:CreateSurface(4,2,WaterElectrified);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="09410842-1a06-4457-89ab-607877ccaede" />
       </fields>
     </stat_object>
@@ -2457,7 +2459,6 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h575f7c60g9dbeg32aag41d4g1e7a906258a1" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1237b242gd49agebbeg3cb7gc4244b065741" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,1,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2557,7 +2558,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="11f94ff7-9c1b-431a-a26b-99e157026dee" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Poison" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Poison_Gen_L1to3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2579,7 +2579,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b24f792d-b7f1-48db-8ad5-e0cbaabdcc3a" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Force_Gen_L1to3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2631,7 +2630,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2b284468-04a1-4730-a5c0-8ce54afbd937" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(0,0,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3330,6 +3328,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="303ebd17-5b4e-46c6-ac4a-315c2aa29c6d,,;97e3b980-9905-428b-b682-68462777d628,,;f43888ef-1069-40d8-9159-ca0bc413fd5f,,;29574072-3390-485e-8257-5a65d6703e5f,,;,,;,,;,,;,,;,," />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(2,2,Acid);ApplyStatus(ACID,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
