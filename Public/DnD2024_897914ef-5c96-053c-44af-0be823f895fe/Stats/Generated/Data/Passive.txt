@@ -9,10 +9,6 @@ data "StatsFunctorContext" "OnShortRest;OnCreate;OnCombatStarted;OnLongRest"
 data "Conditions" "not HasStatus('ONE_TURN_ONE_SPELL');"
 data "StatsFunctors" "ApplyStatus(ONE_TURN_ONE_SPELL,100,-1);"
 
-new entry ""
-type "PassiveData"
-data "Properties" "IsHidden;DisplayBoostInTooltip"
-
 new entry "YMS_OneTurnOneSpell"
 type "PassiveData"
 data "DisplayName" "h9c93600bg28e3g0f8eg8875gaa24eb146854;1"
@@ -6452,6 +6448,13 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 
 new entry "YMS_Items"
 type "PassiveData"
+
+new entry "MAG_LowHP_IncreaseDamage_Passive"
+type "PassiveData"
+using "MAG_LowHP_IncreaseDamage_Passive"
+data "DescriptionParams" "DealDamage(1d12,Slashing)"
+data "TooltipConditionalDamage" "DealDamage(1d12,Slashing)"
+data "StatsFunctors" "DealDamage(1d12,Slashing,Magical)"
 
 new entry "AxeOfTheDwarvishLords"
 type "PassiveData"
