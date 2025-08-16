@@ -966,7 +966,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;925779e7-8bf6-4d56-8c4d-42c3bc01c60c,,;50398f4e-dd82-4d6a-ad43-aedd578543d9,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7cca049a-47ea-43c7-85ee-353c27193363" />
@@ -5675,7 +5675,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d0942085-10fa-43af-84e8-a8540f98efb5" />
         <field name="Name" type="NameTableFieldDefinition" value="BattleMaster_Maneuver_LungingAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e0fd05f4-0b0d-4663-beec-21d2b5de7928" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dca01b7-508a-46fc-91e3-aae572721f2d" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he4256e3cg6b70gc354gd7cfgb2daf4ac7653" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="AIFlags" version="1" />
@@ -5684,6 +5684,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SuperiorityDie)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
