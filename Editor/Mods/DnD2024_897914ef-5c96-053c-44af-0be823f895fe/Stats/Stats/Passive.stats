@@ -854,7 +854,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc75796a0g2ae2gea9ag7e21gb997e9629b6b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4bea4491g19f1g455egb333g2c24134d0000" version="2" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hf0e9cc37g3c34g3730ge9b9g452107b118f1" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('UNDEAD')):Advantage(AttackRoll);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('UNDEAD'), context.Target):Advantage(AttackRoll);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
@@ -878,7 +878,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc221e310gd9ccg02f1g44b5gac522e4fb680" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc185c90bg2db6g5709gea36g5211048efe69" version="2" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hf740f3f6g4445g1020gae7fgf0e5b14714d9" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('MONSTROSITY')):Advantage(AttackRoll);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('MONSTROSITY', context.Target)):Advantage(AttackRoll);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
