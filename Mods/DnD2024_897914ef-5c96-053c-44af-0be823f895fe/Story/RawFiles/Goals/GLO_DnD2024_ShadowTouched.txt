@@ -1,0 +1,49 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CastSpell((CHARACTER)_Player, "Zone_ColorSpray",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_COLORSPRAY", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_DisguiseSelf",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_DISGUISESELF", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_FalseLife",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_FALSELIFE", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_InflictWounds",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_INFLICTWOUNDS", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Projectile_RayOfSickness",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_RAYOFSICKNESS", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_Invisibility",_,_,_)
+AND
+HasPassive(_Player,"ShadowTouched",1)
+THEN
+ApplyStatus(_Player, "SHADOWTOUCHED_INVISIBILITY", -1.0, 1);
+EXITSECTION
+
+ENDEXITSECTION
