@@ -1662,8 +1662,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
 
+- Level 1: Ritual Adept
+  - You can add an abjuration spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
+- Level 2: Scholar
+  - While studying magic, you also specialized in another field of study. Choose one of the following skills in which you have proficiency: Arcana, History, Investigation, Medicine, Nature, or Religion. You have Expertise in the chosen skill.
 - Level 12: Spell Mastery
   - You gain two Level 1 spell slots and one Level 2 spell slot. Intelligence cap becomes 22 and Intelligence increases by 2.
+
+### Abjurer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AbjurationSchool.png?raw=true)
+
+- Level 3: Abjuration Savant
+  - You can add an Abjuration spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 
 ### Bladesinging School
 
@@ -1686,6 +1697,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > You consider distance and matter flexible guidelines rather than rigid physical laws. Conjurers harness the power of magic to instantly move creatures through space and summon them to fight on their behalf.
 
+- Level 3: Conjuration Savant
+  - You can add a Conjuration spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Benign Transposition
 - Level 6: Distant Transposition
   - The range of your Benign Transposition feature increases to 60 feet. 
@@ -1698,6 +1711,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > The counsel of a Diviner is sought by those who want a clearer understanding of the past, present, and future. As a Diviner, you strive to part the veils of space, time, and consciousness. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight.
 
+- Level 3: Divination Savant
+  - You can add a Divination spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 6: Expert Divination
   - Casting Divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a Divination spell using a level 2+ spell slot, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can't be higher than level 5.
 
@@ -1707,6 +1722,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Your magic clouds or captivates minds. Some Enchanters use their abilities to encourage peace and soften cruelty, while others use their mind- altering magic for selfish ends. Many Enchanters fall somewhere in between.
 
+- Level 3: Enchantment Savant
+  - You can add an Enchantment spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Enchanting Talker
   - Whenever you make a Charisma check, you gain a bonus to the check equal to your Intelligence modifier (minimum of +1). You also gain proficiency in one of these skills of your choice: Deception, Intimidation, or Persuasion.
 - Level 3: Vexing Movement
@@ -1720,6 +1737,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Your studies focus on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some Evokers find employment in military forces, serving as artillery to blast armies from afar. Others use their power to protect others, while some seek their own gain.
 
+- Level 3: Evocation Savant
+  - You can add an Evocation spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Potent Cantrip
 - Level 6: Sculpt Spells
 
@@ -1729,6 +1748,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > You specialize in magic that dazzles the senses and tricks the mind, and the illusions you craft make the impossible seem real.
 
+- Level 3: Illusion Savant
+  - You can add an Illusion spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Improved Illusions
   - You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet. You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.
 - Level 6: Phantasmal Creatures
@@ -1742,6 +1763,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 > 
 > Many view Necromancers as menacing or villainous, though not all Necromancers are evil. Nevertheless, the manipulation of life and death is often considered taboo in various societies.
 
+- Level 3: Necromancy Savant
+  - You can add a Necromancy spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Graim Harvest
   - When you cast a Necromancy spell using a spell slot, choose yourself or a creature you can see within 30 feet. The chosen target gains temporary hit points equal to proficiency bonus plus your Intelligence modifier.
 - Level 3: Necrotic Resistance
@@ -1757,6 +1780,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > You specialize in spells that modify energy and matter. To you, the world isn't fixed; it's eminently mutable. Your magic gives you the tools to become a smith on reality's forge. Some Transmuters are tinkerers and pranksters, while others pursue their magical studies with deadly seriousness, seeking god-like power to create and destroy worlds.
 
+- Level 3: Transmutation Savant
+  - You can add a Transmutation spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 3: Transmuter's Stone
 - Level 3: Woundrous Enhancement
   - You can cast the spell Enhance Ability once per long rest without using a spell slot. When you cast it this way, the target of your Enhance Ability spell also gains advantage on saving throws that use the ability you chose.
@@ -2599,6 +2624,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Dragon's Breath](https://www.dndbeyond.com/spells/2619150-dragons-breath)
 - [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
 - [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
+- [Flaming Sphere](https://www.dndbeyond.com/spells/2618919-flaming-sphere)
 - [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)
 - [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
 - [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
