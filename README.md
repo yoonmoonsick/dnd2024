@@ -2650,6 +2650,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_AshardalonsStride.png?raw=true)
 - [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
 - [Conjure Barrage](https://www.dndbeyond.com/spells/2619045-conjure-barrage)
+- [Counterspell](https://www.dndbeyond.com/spells/2619072-counterspell)
 - [Fireball](https://www.dndbeyond.com/spells/2618887-fireball)
 - [Flame Arrows](https://www.dndbeyond.com/spells/2381-flame-arrows)
 - [Gaseous Form](https://www.dndbeyond.com/spells/2618927-gaseous-form)
