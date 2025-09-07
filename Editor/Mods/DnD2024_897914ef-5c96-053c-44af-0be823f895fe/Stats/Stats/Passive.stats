@@ -1082,7 +1082,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h818241bagd090g8ca0g278dg621279fd66ea" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Elf_WeaponTraining" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ElvenAccuracy);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):RollBonus(Attack,2);IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):MinimumRollResult(Attack,2);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h67ba676ag79feg0b99g7fceg5edf2e00a1e1" version="2" />
       </fields>
     </stat_object>
