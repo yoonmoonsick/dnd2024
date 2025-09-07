@@ -1,0 +1,17 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CastSpell((CHARACTER)_Player, "Target_FaerieFire_Race",_,_,_)
+THEN
+ApplyStatus(_Player, "RACE_HIGHELF_FAERIEFIRE", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_MistyStep_Race",_,_,_)
+THEN
+ApplyStatus(_Player, "RACE_HIGHELF_MISTYSTEP", -1.0, 1);
+EXITSECTION
+
+ENDEXITSECTION
