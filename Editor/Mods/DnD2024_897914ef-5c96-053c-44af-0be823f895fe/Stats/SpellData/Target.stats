@@ -4131,7 +4131,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c5c14e47-5792-4ed6-8204-3e0c70bb6c48" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_Move" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA);AI_ONLY:DealDamage(4d4,Slashing)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER'))DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -4142,7 +4142,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e1b1057-a47d-4097-9f19-a43056103f16" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_Move_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_3,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_3);AI_ONLY:DealDamage(6d4,Slashing)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_3,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_3);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(6d4,Slashing);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -4153,7 +4153,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8e06395e-c164-4d5a-a9bd-82230e5add5a" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_Move_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_4,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_4);AI_ONLY:DealDamage(8d4,Slashing)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_4,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_4);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(8d4,Slashing);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -4164,7 +4164,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4c207879-0c4a-4a09-8317-3f6fe2404790" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_Move_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_5,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_5);AI_ONLY:DealDamage(10d4,Slashing)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_5,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_5);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(10d4,Slashing);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -4175,7 +4175,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5dd05ee9-7611-43c4-b265-46dc6f777dc2" />
         <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_Move_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_6,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_6);AI_ONLY:DealDamage(12d4,Slashing)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:ApplyStatus(SELF,CLOUD_OF_DAGGERS_OWNER_6,100,10);AI_IGNORE:GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_6);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(12d4,Slashing);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally())" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
@@ -4186,9 +4186,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_Move" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA)" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(4d4,Slashing);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_CloudOfDaggers" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3b62dc5g9eefga282g97e6g901b01b07e0a" version="1" />
@@ -4219,8 +4218,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2ee20969-2f7f-45e3-98ca-1498350d88cc" />
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_Move_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74dc8300-71c4-4033-b030-508111186179" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_3)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_3);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(6d4,Slashing);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d4,Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUD_OF_DAGGERS_AURA_3,100,10)" />
       </fields>
@@ -4230,8 +4228,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7efe9e66-21b8-4f6f-bc2c-7fc8379191b3" />
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_Move_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74dc8300-71c4-4033-b030-508111186179" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_4" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_4)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_4);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(8d4,Slashing);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d4,Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUD_OF_DAGGERS_AURA_4,100,10)" />
       </fields>
@@ -4241,8 +4238,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="062b815c-1ab6-40f8-84fd-9cc795add236" />
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_Move_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74dc8300-71c4-4033-b030-508111186179" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_5)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_5);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(10d4,Slashing);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(10d4,Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUD_OF_DAGGERS_AURA_5,100,10)" />
       </fields>
@@ -4252,8 +4248,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c9ccbdf3-164b-4687-bb77-62fbfe7c091b" />
         <field name="Name" type="NameTableFieldDefinition" value="CloudOfDaggers_Move_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74dc8300-71c4-4033-b030-508111186179" />
-        <field name="ConcentrationSpellID" type="StringTableFieldDefinition" value="Target_CloudOfDaggers_6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_6)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0ba4af65-19d0-4a31-9a42-2c365462841b, 10,,true,'CloudOfDaggersStack',CLOUD_OF_DAGGERS_AURA_6);IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED') and not Tagged('INVISIBLE_HELPER')):DealDamage(12d4,Slashing);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(12d4,Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLOUD_OF_DAGGERS_AURA_6,100,10)" />
       </fields>
