@@ -783,7 +783,7 @@ data "Description" "h818241bagd090g8ca0g278dg621279fd66ea;2"
 data "LoreDescription" "h67ba676ag79feg0b99g7fceg5edf2e00a1e1;2"
 data "Icon" "PassiveFeature_Elf_WeaponTraining"
 data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockInterrupt(Interrupt_ElvenAccuracy);"
+data "Boosts" "IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):RollBonus(Attack,2);IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):MinimumRollResult(Attack,2);"
 
 new entry "EnduranceRanger"
 type "PassiveData"
