@@ -8838,8 +8838,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="HordeBreaker" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ab428da-dc4d-48d9-b0ff-52eaa54e9167" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Ally()" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:ApplyStatus(HORDE_BREAKER_TECHNICAL,100,1);ApplyStatus(SELF,HORDE_BREAKER,100,1);ApplyStatus(SELF,HORDE_BREAKER_TECHNICAL,100,1);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);AOE:ApplyStatus(HORDE_BREAKER_TARGET,100,1)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HORDE_BREAKER_TECHNICAL', context.Source) and HasStatus('HUNTERSPREY_HB',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -3509,6 +3509,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="46499226-7f5d-4a18-a6a1-0b50f8ba8da8" />
         <field name="Name" type="NameTableFieldDefinition" value="HordeBreaker" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bd22c6f0-a6fc-490a-8f5b-7225adc1af0f" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3516,6 +3517,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5f8b5395-639a-477b-8679-8a11123c9563" />
         <field name="Name" type="NameTableFieldDefinition" value="ColossusSlayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57ff851b-479a-4fa8-a3a3-7fbe4d1ba272" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and not HasMaxHP() and not HasStatus('COLOSSUSSLAYER_COOLDOWN',context.Source)):CharacterWeaponDamage(1d8);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,COLOSSUSSLAYER_COOLDOWN,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3523,6 +3527,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c948d990-6ce1-4837-8bd8-2d811ff4ffe7" />
         <field name="Name" type="NameTableFieldDefinition" value="GiantKiller" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="62a1a450-9ebb-49fe-a050-abcaaf619936" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
