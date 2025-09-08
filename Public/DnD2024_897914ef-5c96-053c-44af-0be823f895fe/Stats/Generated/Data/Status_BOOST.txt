@@ -6172,6 +6172,13 @@ data "StatusType" "BOOST"
 using "HUNTERS_MARK_OWNER"
 data "Boosts" "IF(HasPassive('HollowWarden_3_AncientArmor',context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',13,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',15,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',17,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',19,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',21,context.Source)):AC(1);"
 
+new entry "COLOSSUSSLAYER_COOLDOWN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "COLOSSUSSLAYER"
+data "StackType" "Overwrite"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "SWARMKEEPER_SELECT_BEE"
 type "StatusData"
 data "StatusType" "BOOST"
