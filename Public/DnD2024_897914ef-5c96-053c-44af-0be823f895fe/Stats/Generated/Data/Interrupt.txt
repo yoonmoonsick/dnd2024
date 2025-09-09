@@ -1069,7 +1069,7 @@ type "InterruptData"
 new entry "Interrupt_GiantKiller"
 type "InterruptData"
 using "Interrupt_GiantKiller"
-data "Conditions" "IsAbleToReact(context.Observer) and (SizeEqualOrGreater(Size.Large, context.Source) or (SizeEqualOrGreater(Size.Medium, context.Source) and SizeEqualOrGreater(Size.Small, context.Target)) and IsMeleeAttack() and not HasStatus('INVISIBILITY', context.Source) and Self(context.Target,context.Observer) and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Source) and HasLastAttackTriggered();"
+data "Conditions" "IsAbleToReact(context.Observer) and (SizeEqualOrGreater(Size.Large, context.Source) or (SizeEqualOrGreater(Size.Medium, context.Source) and SizeEqualOrGreater(Size.Small, context.Target))) and IsMeleeAttack() and not HasStatus('INVISIBILITY', context.Source) and Self(context.Target,context.Observer) and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Source) and HasLastAttackTriggered();"
 
 new entry "Interrupt_BeguilingTwist"
 type "InterruptData"
