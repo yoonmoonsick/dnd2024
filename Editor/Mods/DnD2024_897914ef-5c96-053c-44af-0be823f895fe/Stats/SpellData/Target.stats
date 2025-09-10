@@ -11134,6 +11134,8 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:ApplyStatus(SELF,BLOODTHIRST_ATTACK,100,1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;Bloodthirst:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Invisible;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee611d7g0628g3c3eg953bgfb7c324da640" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11143,8 +11145,20 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;CanDualWield;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Rogue_Bloodthirst" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+ClassLevel(Rogue), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_SneakAttack" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_SneakAttack" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="c25d80c5-aaf3-4aba-bc1f-bb1c8534725e,,;45bcbbd4-f9ca-4b19-88c2-822c5e2b0d8b,,;466e7470-712f-4a67-8ef1-5908a20b0449,,;c1713221-163b-4bae-95de-e6681d665c76,,;dc83b386-41f5-43df-9649-788107052830,,;b63dee1e-08e1-4f7a-88ee-1e6baa38e0dd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="62fa9d2f-ec0b-4900-a455-ec9b5e6e3eb4" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6ebc0b77-460f-4be0-90ce-355cfa5b67c1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b51922cf-e412-4462-8274-144781bac7f3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee611d7g0628g3c3eg953bgfb7c324da640" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)&#xD;&#xA;DealDamage(ClassLevel(Rogue), MainMeleeWeaponDamageType);" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
@@ -14185,6 +14199,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5fbc164e-2822-482d-8ee4-dc5355a1c0d3" />
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ca9d7e2-67f8-4e54-8953-340e8f2bd97d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="083455d9-4af8-42ba-bd59-75c6576e8b27" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f124fec-1605-4952-a13f-f61f92cb53f8" />
       </fields>
     </stat_object>
   </stat_objects>
