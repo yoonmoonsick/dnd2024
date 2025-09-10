@@ -199,8 +199,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FightingStyle_Protection" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasShieldEquipped(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_FIGHTINGSTYLE_PROTECTION_2,100,1);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasShieldEquipped(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus+1, context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(HasInterruptedAttack()):AdjustRoll(0-(ProficiencyBonus+1));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_FIGHTINGSTYLE_PROTECTION_2,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -208,7 +208,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eac7be65-9984-403d-b498-c2921aca5c4a" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FightingStyle_Protection_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(HasInterruptedAttack()):AdjustRoll(0-(ProficiencyBonus+1));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
         <field name="Cost" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
@@ -228,7 +228,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fb15c649-019b-4580-b836-e4008e1e7d92" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DefensiveDuelist" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dee86b86-10a3-42ab-b11c-6b3cb9ae7cf6" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-ProficiencyBonus);ApplyStatus(SWAP,PASSIVE_DEFENSIVE_DUELIST,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_DEFENSIVE_DUELIST,100,0);ApplyStatus(OBSERVER_OBSERVER,DEFENSIVE_DUELIST_AC,100,1)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-(ProficiencyBonus+1));ApplyStatus(SWAP,PASSIVE_DEFENSIVE_DUELIST,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_DEFENSIVE_DUELIST,100,0);ApplyStatus(OBSERVER_OBSERVER,DEFENSIVE_DUELIST_AC,100,1);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsMeleeAttack() and HasWeaponProperty(WeaponProperties.Finesse, GetActiveWeapon(context.Observer)) and IsProficientWith(context.Observer, GetActiveWeapon(context.Observer)) and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus+1, context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -405,7 +406,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and ((HasInterruptedAttack() and IsFlatValueInterruptInteresting(13, context.Source)) and not AnyEntityIsItem())" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and ((HasInterruptedAttack() and IsFlatValueInterruptInteresting(7, context.Source)) and not AnyEntityIsItem());" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(HasInterruptedAttack()):AdjustRoll(-7);RemoveStatus(MIRROR_IMAGE_1)" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('MIRROR_IMAGE_2') and not HasStatus('MIRROR_IMAGE_3') " />
@@ -422,7 +423,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and ((HasInterruptedAttack() and IsFlatValueInterruptInteresting(13, context.Source)) and not AnyEntityIsItem())" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Target,context.Observer) and ((HasInterruptedAttack() and IsFlatValueInterruptInteresting(10, context.Source)) and not AnyEntityIsItem());" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(HasInterruptedAttack()):AdjustRoll(-10);RemoveStatus(MIRROR_IMAGE_2)" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('MIRROR_IMAGE_3') " />
