@@ -12,6 +12,11 @@ IF
 CastSpell((CHARACTER)_Player, "Target_MistyStep_Race",_,_,_)
 THEN
 ApplyStatus(_Player, "RACE_HIGHELF_MISTYSTEP", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_Jump_Githyanki",_,_,_)
+THEN
+ApplyStatus(_Player, "RACE_GITHYANKI_JUMP", -1.0, 1);
 EXITSECTION
 
 ENDEXITSECTION
