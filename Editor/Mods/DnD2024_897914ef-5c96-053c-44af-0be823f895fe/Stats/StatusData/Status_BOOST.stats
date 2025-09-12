@@ -6283,6 +6283,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);IntrinsicSummonerProficiency();IntrinsicSourceProficiency();Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Intelligence);CannotBeDisarmed();" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6361,36 +6362,16 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9a4e49b8-c159-438f-b010-77e9ec6a7b47" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1238e6gd4ceg1b5bg9cd9gccbfa2eff14f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50405ae5gb99cg9528ge5e5g5a403c7de1ee" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Enchant" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponAttackRollAbilityOverride(Intelligence);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="65bfb52b-a006-4349-87ff-10fac6551d21" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cc184685-598d-408e-a6de-ad6786a56fa5" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="68096a10-a131-4490-af4f-55ffaa1281ef" />
-        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_EMPOWERMENT_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2ebb113f-30da-4e5a-888e-6746a79a81ed" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ARCANE_EMPOWERMENT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8100,7 +8081,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a3591b3b-0b14-419d-8b24-1ae4af825f42" />
         <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b907065-d4e5-4b4b-a470-a7d16e328104" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8114,8 +8095,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_DAMAGE_TYPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Necrotic);" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8129,8 +8108,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_DAMAGE_TYPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Psychic);" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8144,8 +8121,6 @@
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_DAMAGE_TYPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamageTypeOverride(Radiant);" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8157,8 +8132,6 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Damage" />
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_DAMAGE_TYPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(YMS, 100, 0)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8166,7 +8139,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="757a487f-a200-4cb7-8683-4292e303a8eb" />
         <field name="Name" type="NameTableFieldDefinition" value="HEXBLADE_BIND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5b462409-c474-460a-a653-c51d03727716" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8681,33 +8654,13 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4c00f8db-82c2-44e8-9b94-c31efc1ac0c8" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGGER_1" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGGER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b907065-d4e5-4b4b-a470-a7d16e328104" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8191fe76g65a3g5b42g9c11gc936569d86ac" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdffb97cbgaa76g426bge80cg7d2643bdb0db" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);Attribute(InventoryBound);WeaponAttackRollAbilityOverride(Charisma);" />
         <field name="StackId" type="StringTableFieldDefinition" value="PACT_BLADE_ILLRIGGER" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b6e65d88-7e58-40b8-a8a1-23374189ca46" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGGER_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c00f8db-82c2-44e8-9b94-c31efc1ac0c8" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2080c841-9d72-44dd-96b4-9df356bc5674" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGGER_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c00f8db-82c2-44e8-9b94-c31efc1ac0c8" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2b6adda0-ed24-4bba-a7cb-cc8fefade469" />
-        <field name="Name" type="NameTableFieldDefinition" value="PACT_BLADE_ILLRIGGER_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4c00f8db-82c2-44e8-9b94-c31efc1ac0c8" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9679,6 +9632,7 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('WEAPON_BOND') or not HasStatus('PACT_BLADE') or not HasStatus('HEXBLADE_BIND') or not HasStatus('WEAPON_BOND_2')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9707,6 +9661,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f74a6d5-3f4d-42f3-be56-f49924108473" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('WEAPON_BOND') or not HasStatus('PACT_BLADE') or not HasStatus('HEXBLADE_BIND') or not HasStatus('WEAPON_BOND_2')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9715,6 +9670,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_WEAPON_PROFICIENCY_BONUS_DAMAGE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="19c18eae-3569-4b28-83ee-e5a23a8d173d" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('WEAPON_BOND') or not HasStatus('PACT_BLADE') or not HasStatus('HEXBLADE_BIND') or not HasStatus('WEAPON_BOND_2')" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
