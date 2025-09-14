@@ -5385,6 +5385,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="RECKLESS_ATTACK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5e942caa-772e-4bee-a7a7-63b6417e6031" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);Advantage(AttackTarget)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="055447bf-b750-4600-8522-990aed043986" />
+        <field name="Name" type="NameTableFieldDefinition" value="RECKLESS_ATTACK_NO_ADV" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e78e5e11-f8d3-444a-8b7e-4787467c0359" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackTarget);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6457,6 +6468,18 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="df07658f-edac-474f-bf79-b92dd0de9fc2" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2dde704-09b4-4691-9c12-a4fa49018b5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="FORCEFUL_BLOW" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec8273bd-c522-49c3-b0bf-c2b833c549eb" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea30b33dgf452gfc54g3b52g872f57cd7855" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FORCEFUL_BLOW" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,4.5,0);IgnoreLeaveAttackRange();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

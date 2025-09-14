@@ -4925,17 +4925,36 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d11a2ba7-cce3-428c-80ba-9eb813dacfec" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecklessAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c1bb1604-4093-4f1a-9e34-61ee973747c9" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_RecklessAttack_Base;Target_RecklessAttack_ForcefulBlow;Target_RecklessAttack_HamstringBlow;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9bed0f1-a13b-4042-b876-be0e37b200ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="RecklessAttack_Base" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c1bb1604-4093-4f1a-9e34-61ee973747c9" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_RecklessAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc1b6174-76c4-4fee-8e69-73a7bbf01e0f" />
         <field name="Name" type="NameTableFieldDefinition" value="RecklessAttack_ForcefulBlow" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c1bb1604-4093-4f1a-9e34-61ee973747c9" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon+1d10), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(PUSH_45, 100, 0);ApplyStatus(SELF,DISENGAGE,100,1)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon+1d10), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);ApplyStatus(PUSH_45, 100, 0);ApplyStatus(SELF,FORCEFUL_BLOW,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea30b33dgf452gfc54g3b52g872f57cd7855" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf04dbf3agebe1g5226gb956g6b7d180408e7" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;AddFallDamageOnLand;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RecklessAttackCharge:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PushingAttack_Melee" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8712d97fg18ffgc446g72edgc70353853344" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_RecklessAttack" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,RECKLESS_ATTACK_NO_ADV, 100, 1);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('BrutalCritical',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4945,7 +4964,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="bc1b6174-76c4-4fee-8e69-73a7bbf01e0f" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon+1d10), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand); ApplyStatus(HAMSTRING,100,2)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc5fe5e99g3e1fgf673g8295g9e4621f3dd4f" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RecklessAttackCharge:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CripplingStrike" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc09bd976g24a3gb47cgbb2bg1d333059ae25" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5)" />
