@@ -459,6 +459,8 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 6: Extra Attack (Homebrew)
 - Level 6: Tandem Footwork
   - When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.
+- Level 6: Unarmored Movement
+- Level 10: Unarmored Movement 2
 - Level 12: Leading Evasion
   - When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.
 
@@ -2643,6 +2645,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
 - [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
 - [Web](https://www.dndbeyond.com/spells/2619208-web)
+
 ## Level 3 spells
 - [Animate Dead](https://www.dndbeyond.com/spells/2618853-animate-dead)
 - [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_AshardalonsStride.png?raw=true)
