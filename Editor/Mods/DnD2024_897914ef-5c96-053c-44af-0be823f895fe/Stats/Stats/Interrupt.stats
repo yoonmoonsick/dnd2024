@@ -908,6 +908,19 @@
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7298d961-0ce5-4b00-a361-aefebb964f11" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Retaliation" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7444d60-f45a-4dbf-8bf6-203acf40af5b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9a952da6g6bf6g494fgaf79gf92e41de43e8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf5c61eb8g73c2g487dg89deg20632436fa2a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedStrike" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsAttack() and not IsMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseAttack(SWAP);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF69B4" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb2ccb3b-46d2-43ad-8d88-011f0d2612dc" />

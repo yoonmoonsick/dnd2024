@@ -671,6 +671,16 @@ using "Interrupt_RecklessAttack"
 data "Conditions" "not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and (IsMeleeWeaponAttack() or IsUnarmedAttack()) and not HasStatus('RECKLESS_ATTACK',context.Observer) and not SpellId('Target_RecklessAttack') and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasAdvantage();"
 data "InterruptDefaultValue" "Enabled"
 
+new entry "Interrupt_Retaliation"
+type "InterruptData"
+using "Interrupt_Riposte"
+data "DisplayName" "h9a952da6g6bf6g494fgaf79gf92e41de43e8;1"
+data "Description" "hf5c61eb8g73c2g487dg89deg20632436fa2a;1"
+data "Icon" "Action_Barbarian_FrenziedStrike"
+data "Conditions" "IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsAttack() and not IsMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Source) and HasLastAttackTriggered();"
+data "Properties" "UseAttack(SWAP);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_RIPOSTE,100,0);"
+data "Cost" "ReactionActionPoint:1;"
+
 new entry "YMS_Bard"
 type "InterruptData"
 
