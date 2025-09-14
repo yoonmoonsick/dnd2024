@@ -108,14 +108,12 @@ HasPassive(_Player,"FeyTouched",1)
 THEN
 ApplyStatus(_Player, "FEYTOUCHED_COMMAND", -1.0, 1);
 
-
 IF
 CastSpell((CHARACTER)_Player, "Target_Command_Flee",_,_,_)
 AND
 HasPassive(_Player,"FeyTouched",1)
 THEN
 ApplyStatus(_Player, "FEYTOUCHED_COMMAND", -1.0, 1);
-
 
 IF
 CastSpell((CHARACTER)_Player, "Target_Command_Approach",_,_,_)
@@ -124,13 +122,26 @@ HasPassive(_Player,"FeyTouched",1)
 THEN
 ApplyStatus(_Player, "FEYTOUCHED_COMMAND", -1.0, 1);
 
-
 IF
 CastSpell((CHARACTER)_Player, "Target_Command_Halt",_,_,_)
 AND
 HasPassive(_Player,"FeyTouched",1)
 THEN
 ApplyStatus(_Player, "FEYTOUCHED_COMMAND", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_MistyStep_Feat",_,_,_)
+AND
+HasPassive(_Player,"FeyTeleportation",1)
+THEN
+ApplyStatus(_Player, "RACE_HIGHELF_MISTYSTEP", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_MistyStep_Feat_LongRest",_,_,_)
+AND
+HasPassive(_Player,"FeyTouched",1)
+THEN
+ApplyStatus(_Player, "RACE_HIGHELF_MISTYSTEP", -1.0, 1);
 EXITSECTION
 
 ENDEXITSECTION

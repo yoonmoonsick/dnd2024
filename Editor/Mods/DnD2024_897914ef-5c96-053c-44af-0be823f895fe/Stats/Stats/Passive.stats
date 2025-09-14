@@ -1105,7 +1105,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hda240d00g912eg27ffg42fdg1745bf9f30d7" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_MistyStep" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MistyStep_Feat);UnlockSpell(Target_MistyStep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MistyStep_Feat);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h847ce636g54e1g10d8ga407g64842c21075f" version="1" />
       </fields>
     </stat_object>
@@ -1141,7 +1141,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h844eb87cga7a9g3674ged06g4a0fff6def78" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FeyAncestry" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,1,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);UnlockSpell(Target_MistyStep_Feat_LongRest);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hdf49d64bg981agafc7g1a7egbeff14b6dd11" version="2" />
       </fields>
     </stat_object>
@@ -1388,7 +1388,7 @@
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hbba13892g8475g6f0agc0c2geebca2583f65" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Darkness" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);ActionResource(SpellSlot,1,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);UnlockSpell(Target_Invisibility_Feat_LongRest);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1582,36 +1582,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d017b291-8c02-47cf-8d6d-01c85236670f" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and IsConcentrating(context.Target);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5d149237-6e63-485f-abb2-e59948a83aeb" />
-        <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Wizard" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d8e0856b-13e8-4a3f-a4c7-77804dda4902" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a033b224-83c8-4d21-bb66-7ed000c62fa6" />
-        <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Cleric" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="12b06c58-eb9c-4ad8-b8c2-5299e4ef74c1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="aa3ef014-326d-4700-bb8f-e6d2f2e77e3b" />
-        <field name="Name" type="NameTableFieldDefinition" value="MagicInitiate_Druid" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="67a5b4f9-f772-40cd-a76b-e42c5e0126fc" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9771,7 +9741,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5870bec4g6420g4ea8ga493g5121992156c3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8053a868gf1aeg0321ge90bg0c3ff639de9a" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateCleric" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateCleric);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_CLERIC_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateCleric);UnlockSpellVariant(SpellId('Shout_MagicInitiateCleric'),ModifyIconGlow());" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_CLERIC_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_CLERIC)" />
         <field name="Conditions" type="StringTableFieldDefinition" value="MagicInitiateSpell()" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -9788,7 +9758,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="286c3dfd-0175-4506-8194-ce38ef88f0d6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h520bba07g4665g4ef0gb7e0g2550a2cf7d35" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateDruid" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateDruid);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateDruid);UnlockSpellVariant(SpellId('Shout_MagicInitiateDruid'),ModifyIconGlow());" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_DRUID_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_DRUID)" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_DRUID_BLOCK',context.Source);" />
       </fields>
@@ -9800,7 +9770,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="286c3dfd-0175-4506-8194-ce38ef88f0d6" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02a9497eg703cg40edg9469gd538dab475e1" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MagicInitiateWizard" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateWizard);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateWizard);UnlockSpellVariant(SpellId('Shout_MagicInitiateWizard'),ModifyIconGlow());" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_WIZARD_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_WIZARD)" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source);" />
       </fields>
