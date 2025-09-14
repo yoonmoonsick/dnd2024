@@ -8873,6 +8873,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d458f5bf-6479-4818-8278-5725e20ba137" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_LowHP_IncreaseDamage_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84e9c94b-c7bd-460f-a74c-9164730ef122" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Slashing)" />
+        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Slashing)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack() and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Source)):CharacterWeaponDamage(1d6);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0062f3cc-a020-40d5-8432-97100dc8ae78" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_BardicInspiration_Heal_Hat_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73ba08a2-01d4-4e7e-86b8-f741811b767f" />
@@ -8887,16 +8900,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c30a8d18-5c98-445a-9c44-5fbb52fbf9d6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(LevelMapValue(BardicInspiration)+CharismaModifier)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(SELF,LevelMapValue(BardicInspiration)+CharismaModifier)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b4857574-1ef8-425f-ad21-10421b7e5063" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_LowHP_IncreaseDamage_Passive" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="84e9c94b-c7bd-460f-a74c-9164730ef122" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Slashing)" />
-        <field name="TooltipConditionalDamage" type="StringTableFieldDefinition" value="DealDamage(1d12,Slashing)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d12,Slashing,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
