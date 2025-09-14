@@ -6430,6 +6430,14 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "UND_DuergarRaft_PestKillerAxe_Passive"
+type "PassiveData"
+using "UND_DuergarRaft_PestKillerAxe_Passive"
+data "Boosts" "IF(IsMeleeWeaponAttack() and (TargetSizeEqualOrSmaller(Size.Small) or Tagged('PLANT',context.Target) or Tagged('MYCONID',context.Target))):CharacterWeaponDamage(1d6,Fire);"
+data "StatsFunctorContext" ""
+data "Conditions" ""
+data "StatsFunctors" ""
+
 new entry "MAG_LowHP_IncreaseDamage_Passive"
 type "PassiveData"
 using "MAG_LowHP_IncreaseDamage_Passive"
