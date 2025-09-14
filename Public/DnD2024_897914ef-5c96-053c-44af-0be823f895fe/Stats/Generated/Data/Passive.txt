@@ -6460,11 +6460,17 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "MAG_BardicInspiration_Heal_Hat_Passive"
+type "PassiveData"
+using "MAG_BardicInspiration_Heal_Hat_Passive"
+data "DescriptionParams" "RegainHitPoints(LevelMapValue(BardicInspiration)+ClassLevel(Bard))"
+data "StatsFunctors" "RegainHitPoints(LevelMapValue(BardicInspiration)+ClassLevel(Bard))"
+
 new entry "MAG_BardicInspiration_TempHP_Armor_Passive"
 type "PassiveData"
 using "MAG_BardicInspiration_TempHP_Armor_Passive"
-data "DescriptionParams" "RegainHitPoints(ClassLevel(Bard)+CharismaModifier)"
-data "StatsFunctors" "RegainHitPoints(SELF,ClassLevel(Bard)+CharismaModifier)"
+data "DescriptionParams" "RegainHitPoints(LevelMapValue(BardicInspiration)+CharismaModifier)"
+data "StatsFunctors" "RegainHitPoints(SELF,LevelMapValue(BardicInspiration)+CharismaModifier)"
 
 new entry "MAG_LowHP_IncreaseDamage_Passive"
 type "PassiveData"
