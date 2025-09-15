@@ -5,18 +5,23 @@ INITSECTION
 KBSECTION
 IF
 UsingSpellOnTarget((CHARACTER)_Player, (CHARACTER)_Steed, "Target_FindSteed_Mount",_,_,_)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
 DB_DnD2024_FindSteed(_Steed, _Player);
-SetOnStage(_Steed, 0);
+ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
 RemoveStatus(_Player, "STEED_OWNER");
+ApplyStatus(_Player, "MOUNTING_PALADIN", -1.0, 1);
 
 IF
 CastSpell((CHARACTER)_Player, "Target_FindSteed_Dismount",_,_,_)
 AND
 DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
-SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
 
@@ -24,9 +29,11 @@ IF
 CastSpell((CHARACTER)_Player, "Shout_FindSteed_Dismount",_,_,_)
 AND
 DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
-SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
 
@@ -38,8 +45,11 @@ AND
 HasActiveStatus(_Player, "STEED_OWNER", 1)
 AND
 DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
-SetOnStage(_Steed, 0);
+TeleportTo(_Steed, _Player);
+ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
 RemoveStatus(_Player, "STEED_OWNER");
 ApplyStatus(_Player, "MOUNTING_PALADIN", -1.0, 1);
 
@@ -54,8 +64,8 @@ DB_DnD2024_FindSteed(_Steed, _Player)
 AND
 IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
-SetOnStage(_Steed, 1);
 TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 ApplyStatus(_Player, "STEED_OWNER", -1.0, 1);
 
@@ -65,9 +75,12 @@ AND
 HasPassive(_Player,"Paladin_5_FaithfulSteed",0)
 AND
 DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
 NOT DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player);
-SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "STEED_OWNER");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 RemoveSummons(_Steed, 0);
@@ -80,9 +93,12 @@ AND
 HasPassive(_Player,"Paladin_5_FaithfulSteed",0)
 AND
 DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
 NOT DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player);
-SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "STEED_OWNER");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 RemoveSummons(_Steed, 0);
@@ -91,9 +107,12 @@ IF
 RespecCompleted((CHARACTER)_Player)
 AND
 DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)FIND_STEED_b4ca9f12-61a7-42e2-925b-0ee5381adfb6, 1)
 THEN
 NOT DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player);
-SetOnStage(_Steed, 1);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "STEED_OWNER");
 RemoveStatus(_Player, "MOUNTING_PALADIN");
 RemoveSummons(_Steed, 0);
