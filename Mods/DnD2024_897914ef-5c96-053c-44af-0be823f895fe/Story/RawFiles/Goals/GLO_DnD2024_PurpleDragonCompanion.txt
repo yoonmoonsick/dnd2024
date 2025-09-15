@@ -5,31 +5,34 @@ INITSECTION
 KBSECTION
 IF
 UsingSpellOnTarget((CHARACTER)_Player, (CHARACTER)_Steed, "Target_PurpleDragonCompanion_Mount",_,_,_)
+AND
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
-DB_DnD2024_PurpleDragonCompanion(_Steed, _Player);
-ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
-RemoveStatus(_Player, "DRAGON_OWNER");
+DB_DnD2024_FindSteed(_Steed, _Player);
 ApplyStatus(_Player, "MOUNTING_KNIGHT", -1.0, 1);
+ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
 
 IF
 CastSpell((CHARACTER)_Player, "Target_PurpleDragonCompanion_Dismount",_,_,_)
 AND
-DB_DnD2024_PurpleDragonCompanion(_Steed, _Player)
+DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_KNIGHT");
-ApplyStatus(_Player, "DRAGON_OWNER", -1.0, 1);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
 IF
 CastSpell((CHARACTER)_Player, "Shout_FindSteed_Dismount",_,_,_)
 AND
 DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_KNIGHT");
-ApplyStatus(_Player, "DRAGON_OWNER", -1.0, 1);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
 IF
 EnteredCombat(_Player, _CombatID)
@@ -38,12 +41,13 @@ HasPassive(_Player,"PurpleDragonKnight_7_DragonKnight",1)
 AND
 HasActiveStatus(_Player, "DRAGON_OWNER", 1)
 AND
-DB_DnD2024_PurpleDragonCompanion((CHARACTER)_Steed, (CHARACTER)_Player)
+DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
 TeleportTo(_Steed, _Player);
-ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
-RemoveStatus(_Player, "DRAGON_OWNER");
 ApplyStatus(_Player, "MOUNTING_KNIGHT", -1.0, 1);
+ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
 
 IF
 CombatEnded(_CombatID)
@@ -52,25 +56,25 @@ DB_Players(_Player)
 AND
 HasPassive(_Player,"PurpleDragonKnight_7_DragonKnight",1)
 AND
-DB_DnD2024_PurpleDragonCompanion(_Steed, _Player)
+DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveStatus(_Player, "MOUNTING_KNIGHT");
-ApplyStatus(_Player, "DRAGON_OWNER", -1.0, 1);
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
 IF
-EnteredCombat(_Player, _CombatID)
+RespecCompleted((CHARACTER)_Player)
 AND
-HasPassive(_Player,"PurpleDragonKnight_7_DragonKnight",0)
+DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
 AND
-DB_DnD2024_PurpleDragonCompanion((CHARACTER)_Steed, (CHARACTER)_Player)
+IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
 THEN
-NOT DB_DnD2024_PurpleDragonCompanion((CHARACTER)_Steed, (CHARACTER)_Player);
+NOT DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player);
 TeleportTo(_Steed, _Player);
-RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
-RemoveStatus(_Player, "DRAGON_OWNER");
 RemoveStatus(_Player, "MOUNTING_KNIGHT");
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveSummons(_Steed, 0);
 EXITSECTION
 
