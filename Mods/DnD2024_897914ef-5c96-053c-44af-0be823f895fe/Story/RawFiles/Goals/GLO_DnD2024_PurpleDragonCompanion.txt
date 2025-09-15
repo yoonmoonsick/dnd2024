@@ -34,35 +34,6 @@ TeleportTo(_Steed, _Player);
 RemoveStatus(_Player, "MOUNTING_KNIGHT");
 RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
-IF
-EnteredCombat(_Player, _CombatID)
-AND
-HasPassive(_Player,"PurpleDragonKnight_7_DragonKnight",1)
-AND
-HasActiveStatus(_Player, "DRAGON_OWNER", 1)
-AND
-DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
-AND
-IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
-THEN
-TeleportTo(_Steed, _Player);
-ApplyStatus(_Player, "MOUNTING_KNIGHT", -1.0, 1);
-ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
-
-IF
-CombatEnded(_CombatID)
-AND
-DB_Players(_Player)
-AND
-HasPassive(_Player,"PurpleDragonKnight_7_DragonKnight",1)
-AND
-DB_DnD2024_FindSteed(_Steed, _Player)
-AND
-IsTagged(_Steed, (TAG)PURPLE_DRAGON_COMPANION_85189334-9bee-4b86-a06e-714494e1f549, 1)
-THEN
-TeleportTo(_Steed, _Player);
-RemoveStatus(_Player, "MOUNTING_KNIGHT");
-RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
 IF
 RespecCompleted((CHARACTER)_Player)
