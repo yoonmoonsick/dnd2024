@@ -1223,6 +1223,75 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INVISIBILITY,100,600)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9593939f-d4fe-458f-ada3-2210727a41ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a00b1927-0776-4532-ab43-87bf7a5f9fc1" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Illusion" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(6a926f5a-9e7b-42f0-957c-b69cb8ebd60c, -1,,,'FindSteed',UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);ApplyStatus(PHANTOM_STEED_OWNER,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self() or Ally();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PhantomSteed_Base" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9cbf6155gb857g3a87gb478g848f2dd6a97f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6a952397gfa4fg7c21g8f05g2415cbb5e648" version="2" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Summon_FindFamiliar_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Summon_FindFamiliar_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Control_CharmPerson_L1to3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="d7ff6074-0dee-46eb-84c2-fed6118b0cc3" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="238adc5b-64e5-474a-b5fa-c4c5d032a21b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6593b357-f1f4-4f4b-803b-ee892b569b99" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9593939f-d4fe-458f-ada3-2210727a41ec" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_PhantomSteed" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c85e570-7743-41c8-89d4-01ad60c63d02" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6593b357-f1f4-4f4b-803b-ee892b569b99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4fab32f9-4d9b-402b-9d4b-463f53f8f5b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6593b357-f1f4-4f4b-803b-ee892b569b99" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1a47ea9-42a9-474c-b6f1-9d02d87bd51b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed_Mount" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8ade425-b12a-43c8-85f2-6e50eee5eea4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MOUNTING_PHANTOM_STEED,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('PHANTOM_STEED');" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PhantomSteed_Mount" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MOUNTING_PHANTOM_STEED,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cece9dda-b2ff-48fd-96c6-d6dfdd9ae7da" />
+        <field name="Name" type="NameTableFieldDefinition" value="PhantomSteed_Dismount" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7be10f04-59dd-4867-bd28-a3f613775ad1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(MOUNTING_PHANTOM_STEED);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PhantomSteed_Dismount" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20bde5fc-6af4-495c-9243-7b2f1ddd950c" />
@@ -8655,7 +8724,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4966315agd430gca55g4ca7g0a4168c7bd6b" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_FRIGHT,100,3)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsLinkedSpellContainer;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="ApplyStatus(ABJURE_ENEMY_SLOW,100,2)" />
       </fields>
     </stat_object>
@@ -8753,6 +8822,7 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7e42016a-29f9-4922-908b-dbf010dff168" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="48f172da-9d50-4881-8b35-f32514ff5fd7" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10943,6 +11013,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Fighter_PurpleDragonCompanion" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -1231,8 +1231,8 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 - Subclass Spells (Always prepared)
   - Level 3: Wrathful Smite
-  - Level 5: Find Steed
-  - Level 9: Hunger of Hadar
+  - Level 5: Spike Growth
+  - Level 9: Phantom Steed
 - Level 3: Ancient Armor
   - When you cast Hunter's Mark, you transform, gaining a bonus to your AC equal to your Wisdom modifier for the spell's duration.
 - Level 3: Unnerving Aura
@@ -2659,6 +2659,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Lightning Arrow](https://www.dndbeyond.com/spells/2618997-lightning-arrow)
 - [Mass Healing Word](https://www.dndbeyond.com/spells/2619028-mass-healing-word)
 - [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Divination_MindSpike.png?raw=true)
+- [Phantom Steed](https://www.dndbeyond.com/spells/2618859-phantom-steed)
 - [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
 - [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
