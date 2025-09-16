@@ -1,0 +1,51 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UsingSpellOnTarget((CHARACTER)_Player, (CHARACTER)_Steed, "Target_PhantomSteed_Mount",_,_,_)
+AND
+IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
+THEN
+DB_DnD2024_FindSteed(_Steed, _Player);
+ApplyStatus(_Player, "MOUNTING_PHANTOM_STEED", -1.0, 1);
+ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Target_PhantomSteed_Dismount",_,_,_)
+AND
+DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
+THEN
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_PhantomSteed_Dismount",_,_,_)
+AND
+DB_DnD2024_FindSteed(_Steed, _Player)
+AND
+IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
+THEN
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
+
+IF
+RespecCompleted((CHARACTER)_Player)
+AND
+DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player)
+AND
+IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
+THEN
+NOT DB_DnD2024_FindSteed((CHARACTER)_Steed, (CHARACTER)_Player);
+TeleportTo(_Steed, _Player);
+RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
+RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
+RemoveSummons(_Steed, 0);
+EXITSECTION
+
+ENDEXITSECTION

@@ -7392,6 +7392,26 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="780d17bd-e560-4c68-9a10-e11b3dce490d" />
+        <field name="Name" type="NameTableFieldDefinition" value="PHANTOM_STEED_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01cca3ba-ab07-4fe3-8909-31620a81a10d" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PHANTOM_STEED_OWNER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('MOUNTING_PHANTOM_STEED',context.Source)):UnlockSpell(Target_PhantomSteed_Mount);IF(not HasStatus('MOUNTING_PHANTOM_STEED',context.Source)):UnlockSpellVariant(SpellId('Target_PhantomSteed_Mount'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="90a8d5a6-28b1-4909-bb47-f538195ed64b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOUNTING_PHANTOM_STEED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97fee248-23a6-46f4-b4e0-eae0d1843645" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PhantomSteed_Mount" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STEED" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Movement,6,0);UnlockSpell(Target_PhantomSteed_Dismount);ActionResource(SteedActionPoint,1,0);UnlockInterrupt(Interrupt_SteedAttack);UnlockSpellVariant(SpellId('Shout_Dash'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Disengage'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Dodge'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6fdacd52-c26c-459a-bfff-1d9a4d5c9f34" />
         <field name="Name" type="NameTableFieldDefinition" value="CONQUERING_PRESENCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d982fb59-8c33-4b38-a5e4-667f632ff982" />

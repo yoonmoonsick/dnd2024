@@ -5982,6 +5982,22 @@ data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndi
 data "IsUnique" "1"
 data "StatusEffect" "ba55a11f-a411-4856-ad0f-731522c9f7f1"
 
+new entry "PHANTOM_STEED_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "STEED_OWNER"
+data "StackId" "PHANTOM_STEED_OWNER"
+data "Boosts" "IF(not HasStatus('MOUNTING_PHANTOM_STEED',context.Source)):UnlockSpell(Target_PhantomSteed_Mount);IF(not HasStatus('MOUNTING_PHANTOM_STEED',context.Source)):UnlockSpellVariant(SpellId('Target_PhantomSteed_Mount'),ModifyIconGlow());"
+
+new entry "MOUNTING_PHANTOM_STEED"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOUNTING_PALADIN"
+data "Icon" "PhantomSteed_Mount"
+data "StackId" "STEED"
+data "StackPriority" "1"
+data "Boosts" "ActionResource(Movement,6,0);UnlockSpell(Target_PhantomSteed_Dismount);ActionResource(SteedActionPoint,1,0);UnlockInterrupt(Interrupt_SteedAttack);UnlockSpellVariant(SpellId('Shout_Dash'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Disengage'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_Dodge'),ModifyUseCosts(Replace,SteedActionPoint,1,0,ActionPoint),ModifyIconGlow());"
+
 new entry "CONQUERING_PRESENCE"
 type "StatusData"
 data "StatusType" "BOOST"
