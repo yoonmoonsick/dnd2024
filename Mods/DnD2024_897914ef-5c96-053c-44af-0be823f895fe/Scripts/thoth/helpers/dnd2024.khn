@@ -542,3 +542,9 @@ end
 function HuntersMark()
     return SpellId('Target_HuntersMark') | SpellId('Target_HuntersMark_2') | SpellId('Target_HuntersMark_3') | SpellId('Target_HuntersMark_4') | SpellId('Target_HuntersMark_5') | SpellId('Target_HuntersMark_6') | SpellId('Target_HuntersMark_Reapply') | SpellId('Target_MAG_HuntersMark') | SpellId('Target_MAG_HuntersMark_Grymskull')
 end
+
+function YMSCounterSpell()
+    local SpellCasterConstitution = 8 + GetModifier(context.Source.Constitution)
+    local st = AbilityCheck(context.PreferredCastingAbility, SpellCasterConstitution, false, false, 0, context.Observer, context.Observer)
+    return ConditionResult(st.Result,{},{},st.Chance)
+end
