@@ -46,6 +46,18 @@ TeleportTo(_Steed, _Player);
 RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
 RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 RemoveSummons(_Steed, 0);
+
+IF
+StatusRemoved(_Player, "PHANTOM_STEED_SUMMONER", _, _)
+THEN
+TimerLaunch("PHANTOM_STEED_TIMER", 100);
+
+IF
+TimerFinished("PHANTOM_STEED_TIMER")
+AND
+DB_Players(_Player)
+THEN
+RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
 EXITSECTION
 
 ENDEXITSECTION
