@@ -2667,6 +2667,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Warden of Vitality](https://www.dndbeyond.com/spells/2618891-aura-of-vitality)
 
 ## Level 4 spells
+- [Conjure Minor Elementals](https://www.dndbeyond.com/spells/2619049-conjure-minor-elementals)
 - [Fount of Moonlight](https://www.dndbeyond.com/spells/2618835-fount-of-moonlight)
 - [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
 - [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm)
