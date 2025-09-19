@@ -4255,6 +4255,11 @@ data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "not HasPassive('MountedCombatant',context.Target);"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Dexterity, 8)):TriggerRandomCast(1,,DismountSteed);"
 
+new entry "MountedSteed"
+type "PassiveData"
+data "StatsFunctorContext" "OnRound;OnCombatStarted;OnTurn"
+data "StatsFunctors" "ApplyStatus(SELF,STEED_MOUNTED_BY_CHAR_COMBAT,100,-1)"
+
 new entry "Oath_Glory_Tenents"
 type "PassiveData"
 using "Oath_Vengeance_Tenents"
