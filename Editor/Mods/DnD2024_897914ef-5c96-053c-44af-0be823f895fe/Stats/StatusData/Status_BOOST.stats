@@ -7567,8 +7567,22 @@
         <field name="Name" type="NameTableFieldDefinition" value="STEED_MOUNTED_BY_CHAR" />
         <field name="StackId" type="StringTableFieldDefinition" value="STEED_MOUNTED_BY_CHAR" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Attribute(Grounded);DetectDisturbancesBlock(true);Invulnerable();DialogueBlock();CanShootThrough(true);SightRangeOverride(0);ActionResourceBlock(Movement);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ba55a11f-a411-4856-ad0f-731522c9f7f1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MountedSteed;" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6caa6ea-4dfe-4b87-b1f6-75c3f8afa3a3" />
+        <field name="Name" type="NameTableFieldDefinition" value="STEED_MOUNTED_BY_CHAR_COMBAT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Attribute(Grounded);DetectDisturbancesBlock(true);Detach();Invulnerable();DialogueBlock();CanShootThrough(true);SightRangeOverride(0);LeaveTriggers();ActionResourceBlock(Movement);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;LoseControlFriendly;LoseControl" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ba55a11f-a411-4856-ad0f-731522c9f7f1" />
       </fields>
