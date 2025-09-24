@@ -7600,11 +7600,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6cc900b1-dfb1-4ba4-af1f-a08423846d88" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_Rend" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9640f53b-06e7-4d8c-8304-4e92b16c9ab7" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Slashing);Cast2[DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Fire);ApplyStatus(BURNING,100,2)];" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+UnarmedMeleeAbilityModifier,Slashing);DealDamage(2d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Fire);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);Cast2[DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing)];" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier,Slashing);DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsEnemySpell;CannotTargetTerrain;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead() and not Tagged('HIT_PROXY')" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11035,7 +11037,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8791a662-1d09-4a67-92c2-c889b0214da4" />
         <field name="Name" type="NameTableFieldDefinition" value="PurpleDragonCompanion_Rend" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6cc900b1-dfb1-4ba4-af1f-a08423846d88" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);Cast2[DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Force)];" />
@@ -11043,7 +11044,6 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);&#xD;&#xA;DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);&#xD;&#xA;DealDamage(1d6,Force);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
