@@ -3036,8 +3036,14 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="06bf76d9-4432-45d4-96cc-df326d82e00b" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c62a50b6-f7dc-4101-bbbe-f5841c29ec0a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonDragon_Fireball" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="38745705-df3d-497d-8bf7-bd8c46e95d3f" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire,Magical);ApplyStatus(BURNING,100,2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2,Fire,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Fire)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;IsHarmful;CanAreaDamageEvade;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
   </stat_objects>
