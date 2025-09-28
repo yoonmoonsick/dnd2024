@@ -3604,7 +3604,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9afe4468-ad49-416c-8890-121940499ba9" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,1);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_TRANSMUTER,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_TRANSMUTER,100,-1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
       </fields>
     </stat_object>
@@ -3615,7 +3615,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad7e0ec0-a7f6-41a0-861c-95e2e3d12f69" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(MAGIC_WEAPON_4,100,-1)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,2);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,2)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_TRANSMUTER_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_TRANSMUTER_4,100,-1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3" />
       </fields>
@@ -3626,7 +3626,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fca26f45-ab20-410b-9586-0c417d0ebdf8" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,2);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,2)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_TRANSMUTER_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_TRANSMUTER_4,100,-1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4" />
       </fields>
     </stat_object>
@@ -3636,7 +3636,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a0f8b5f-310a-499a-b3d0-637b4f25a968" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,2);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,2)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_TRANSMUTER_4,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_TRANSMUTER_4,100,-1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5" />
       </fields>
     </stat_object>
@@ -3646,7 +3646,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MagicWeapon_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb6f4a0e-b57b-448a-961d-d97f0b0d256b" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Item()):ApplyStatus(MAGIC_WEAPON,100,3);IF(not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,3)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_6,100,-1);IF(not HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_6,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_TRANSMUTER_6,100,-1);IF(HasPassive('Transmuter_6_SplitTransmutation', context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_TRANSMUTER_6,100,-1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6" />
       </fields>
     </stat_object>
