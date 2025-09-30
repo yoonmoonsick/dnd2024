@@ -6413,6 +6413,12 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "MAG_ForcefulSneakAttack_Passive"
+type "PassiveData"
+using "MAG_ForcefulSneakAttack_Passive"
+data "DescriptionParams" "DealDamage(1d4+ClassLevel(Rogue), Force)"
+data "StatsFunctors" "DealDamage(1d4+ClassLevel(Rogue), Force,Magical)"
+
 new entry "MAG_Mobility_JumpOnDash_Passive"
 type "PassiveData"
 using "MAG_Mobility_JumpOnDash_Passive"
