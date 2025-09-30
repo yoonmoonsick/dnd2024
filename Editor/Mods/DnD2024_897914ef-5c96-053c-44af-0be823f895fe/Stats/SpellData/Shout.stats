@@ -6,6 +6,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eeaaa237-0d71-42eb-bda6-5bbfd62447ce" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Spell_From_Item" />
         <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3650,7 +3651,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="032e704f-51f2-4bde-a1b9-5c20b991cbb9" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d7a70400-146b-416a-8e55-9ea9ba5ad470" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_HuntersPrey_ColossusSlayer;Shout_HuntersPrey_GiantKiller;Shout_HuntersPrey_HordeBreaker" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_HuntersPrey_ColossusSlayer;Shout_HuntersPrey_GiantKiller;Shout_HuntersPrey_HordeBreaker;Shout_HuntersPrey_BountyHunter;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_CS,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ColossusSlayer" />
@@ -3714,6 +3715,17 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h053c56f6g4d3bg4255g9ab8g393f0c7f1909" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcc7397b5g57f0gd81bg3102g09476fe029c1" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5722298-5bd3-49c5-84cb-4139bbaae32e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersPrey_BountyHunter" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7f924ede-e3db-414b-8e04-2e46588d6c15" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FavoredEnemy_BountyHunter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h58e99731gc268g4d20gbf9dg14edcfc6d89c" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd9a6d52g4e2bg44c1gb4d9g42f70562e12e" version="3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERSPREY_BH,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3784,7 +3796,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="af05a670-76f8-441a-85c1-3952ec285404" />
         <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="032e704f-51f2-4bde-a1b9-5c20b991cbb9" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DefensiveTactics_EscapeTheHorde;Shout_DefensiveTactics_SteelWill;Shout_DefensiveTactics_MultiattackDefense" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_DefensiveTactics_EscapeTheHorde;Shout_DefensiveTactics_SteelWill;Shout_DefensiveTactics_MultiattackDefense;Shout_DefensiveTactics_RangerKnight;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_MD,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34c95ae6g484cg48c9gb12age37d1512dd51" version="1" />
@@ -3838,6 +3850,17 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MultiattackDefense" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd412093g5768g48e5g8b15ga2f022f6121f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf64845e5g69dfg91f6g074bg8f1be67f6945" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="469fbda9-647e-4d60-8969-c2ce3eb38f4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DefensiveTactics_RangerKnight" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d336bd05-77de-45dd-8b63-1f5f4f530f94" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FavoredEnemy_RangerKnight" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc7096ba5g9de4g4e0cga503g0132de82c4e8" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hed836643ga0d6g401fg8ce1gc755354723cb" version="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DEFENSIVETACTICS_RK,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
