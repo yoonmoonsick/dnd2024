@@ -6413,6 +6413,13 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "CRE_MAG_Githborn_Amulet_Passive"
+type "PassiveData"
+using "CRE_MAG_Githborn_Amulet_Passive"
+data "BoostContext" ""
+data "BoostConditions" ""
+data "Boosts" "IF(Tagged('ABERRATION', context.Source)):Disadvantage(AttackTarget);Advantage(SavingThrow, Intelligence);"
+
 new entry "MAG_ForcefulSneakAttack_Passive"
 type "PassiveData"
 using "MAG_ForcefulSneakAttack_Passive"
