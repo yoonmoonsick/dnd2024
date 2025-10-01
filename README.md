@@ -225,6 +225,14 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 1: Versatile
   - You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
+## [Kalashtar](https://www.dndbeyond.com/sources/dnd/erftlw/character-creation#Kalashtar)
+Choose **Kalashtar** from the list of **Versatile** passives available to **Humans**.
+
+> The kalashtar are a compound people, created from the union of humanity and renegade spirits from the plane of dreams — spirits called quori. Kalashtar are often seen as wise, spiritual people with great compassion for others. There is an unmistakable alien quality to the kalashtar, though, as they are haunted by the conflicts of their otherworldly spirits.
+
+- Level 1
+  - You have advantage on all Wisdom saving throws. You have resistance to psychic damage.
+
 ## Tiefling
 ### Asmodeus Tiefling
 - Level 1: Thaumaturgy, Resistance to Poison, Poison Spray
