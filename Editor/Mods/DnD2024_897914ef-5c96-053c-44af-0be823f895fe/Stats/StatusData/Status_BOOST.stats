@@ -5,7 +5,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0e05cf6-1855-4d61-a9da-155173fb7a1a" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_SYSTEM" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -42,6 +41,19 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc2b1150g8971g73e1g7e94g227819c7d3ae" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h29da524bg17a5gdc3cg3047gbfdcbc206b4c" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8b2e5bc-9456-40ce-8c95-652f4d115ed7" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_ARCANE_ENCHANTMENT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_ARCANE_ENCHANTMENT" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(CharacterLevelGreaterThan(4)):SpellSaveDC(1);IF(CharacterLevelGreaterThan(4)):RollBonus(MeleeSpellAttack, 1);IF(CharacterLevelGreaterThan(4)):RollBonus(RangedSpellAttack,1);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h181f9246g612ag484cg99c2g57ca3e4ffcb5" version="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
