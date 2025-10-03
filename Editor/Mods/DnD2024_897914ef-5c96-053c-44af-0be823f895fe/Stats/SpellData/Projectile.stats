@@ -2504,7 +2504,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Death Type" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Acid,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Acid,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Acid,Magical)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
@@ -2540,7 +2540,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Cold,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Cold,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Cold,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Cold,Magical)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="32fab210-8c88-4fe2-a33c-ade6a9c880b7" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
@@ -2565,7 +2565,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Incinerate" enumeration_type_name="Death Type" version="1" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedSpellAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Fire,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Fire,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Fire,Magical)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
@@ -2596,7 +2596,7 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify)" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Electrocution" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Lightning,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Lightning,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Lightning,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Lightning,Magical)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="7a2eea92-5a51-408d-ac76-c45098c87d93" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
@@ -2617,7 +2617,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Poison,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Poison,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Poison,Magical)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="8c7bb016-4706-45b0-bcf4-5b59011ced12" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
@@ -2638,7 +2638,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Psychic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Psychic,Magical)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="ada4b2b0-5e65-4257-9fea-b7376bd92d5f" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
@@ -2689,7 +2689,7 @@
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Electrocution" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);IF(not CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);IF(CharacterLevelGreaterThan(4) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);IF(CharacterLevelGreaterThan(10) and RollDieAgainstDC(DiceType.d20,18)):DealDamage(1d8,Thunder,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Thunder,Magical)" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="c7cd4b0a-2b2e-47ae-a4e8-849ad5d448f8" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
