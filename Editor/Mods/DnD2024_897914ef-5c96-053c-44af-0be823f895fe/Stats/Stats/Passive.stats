@@ -292,6 +292,12 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="(context.HasContextFlag(StatsFunctorContext.OnCast) and (IsCantrip() or ExtraAttackSpellCheck()) and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_2_Q'));" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd097b68-6b45-4e6a-9c58-4d3889ba460a" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_NoReroll" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="052cf0ad-e68e-4e42-8774-fe03c5fbe1bf" />
