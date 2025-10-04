@@ -3431,10 +3431,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="LongJumpTurnBasedMode" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h770c049cg208dg414cgac75g0160f1097b39" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h63694f55ge134g7dd1g3a44gb53f1a9eac38" version="4" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,4,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE)" />
@@ -3445,8 +3445,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c9e362a5-3acb-425c-99f7-45085c5ae3f2" />
         <field name="Name" type="NameTableFieldDefinition" value="Athlete_Jump" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="19c32712-ac61-4049-98b1-b66808f1860a" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE_ATHLETE,100,1)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3462,41 +3462,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7f7475ea-f730-4397-a88b-3f5db7a7ff40" />
-        <field name="Name" type="NameTableFieldDefinition" value="LongJumpTurnBasedMode_Athlete" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="41d7272a-fd69-4b80-8265-44beb38c6f19" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,2,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE_ATHLETE)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="91b6e5a4-4eb3-43a4-b4f4-689a4db32666" />
         <field name="Name" type="NameTableFieldDefinition" value="RemarkableAthlete_Jump" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3bc44d19-7642-4584-8908-fe136a65f8f0" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE_CHAMPION,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b349512b-4853-43d6-bf7a-093899d85911" />
-        <field name="Name" type="NameTableFieldDefinition" value="LongJumpTurnBasedMode_Champion" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7f7475ea-f730-4397-a88b-3f5db7a7ff40" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE_CHAMPION)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,2,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="381e2c63-5b8f-40f7-88d8-d77d98110ee7" />
-        <field name="Name" type="NameTableFieldDefinition" value="LongJumpTurnBasedMode_Tiger" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7f7475ea-f730-4397-a88b-3f5db7a7ff40" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE_TIGER)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,2,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3539,18 +3509,8 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hae8de321g466fg792fg81c1g6e525ec2efc1" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="FallDamageMultiplier(0.5);JumpMaxDistanceBonus(3)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE_THEIF,100,1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9cf483bd-2f62-4fee-8423-221b61d4916d" />
-        <field name="Name" type="NameTableFieldDefinition" value="LongJumpTurnBasedMode_SecondStoryWork" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7f7475ea-f730-4397-a88b-3f5db7a7ff40" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE_THEIF)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,2,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
