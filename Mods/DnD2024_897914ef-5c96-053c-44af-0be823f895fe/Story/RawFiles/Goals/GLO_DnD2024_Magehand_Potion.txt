@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+CastSpell((CHARACTER)_Magehand, "Shout_MagehandPotion",_,_,_)
+AND
+DB_Players(_Player)
+AND
+TemplateGetCountInMagicPockets(CONS_Potion_Healing_A_d47006e9-8a51-453d-b200-9e0d42e9bbab,_Player,_Count)
+AND
+_Count > 0
+AND
+CreateAt((ITEMROOT)CONS_Potion_Healing_A_d47006e9-8a51-453d-b200-9e0d42e9bbab,_X,_Y,_Z,0,0,"",_Player)
+THEN
+MagicPocketsDestroyLocalItemsByTemplate(_Player,CONS_Potion_Healing_A_d47006e9-8a51-453d-b200-9e0d42e9bbab,1);
+EXITSECTION
+
+ENDEXITSECTION
