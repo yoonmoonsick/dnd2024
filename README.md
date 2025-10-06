@@ -2147,9 +2147,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 2: Psionic Discipline
   - You learn further psionic techniques fueled by your Psionic Energy Dice. You gain two disciplines of your choice, You gain additional options at Psion levels 6 and 10.
   - Biofeedback
-    - When you cast a Psion spell from the Necromancy or Transmutation school, you can expend and roll one Psionic Energy Die. You gain a number of Temporary Hit Points equal to the number rolled plus your Intelligence modifier.
+    - When you cast a Psion spell from the Necromancy or Transmutation school, you can expend a number of Psionic Energy Dice up to your Intelligence modifier. Roll those dice, and you gain a number of temporary hit points equal to the total rolled plus your Intelligence modifier (minimum of 1).
   - Destructive Thoughts
-    - When you cast a Psion spell from the Conjuration or Evocation school and a creature you can see succeeds on a saving throw against that spell, you can expend and roll one Psionic Energy Die. The creature then takes Psychic damage equal to the number rolled plus your Intelligence modifier.
+    - When you cast a Psion spell from the Conjuration or Evocation school that forces a creature you can see to make a saving throw, you can expend a number of Psionic Energy Dice up to your Intelligence modifier and roll them. The creature takes psychic damage equal to the total rolled plus your Intelligence modifier (minimum of 1), regardless of the result of the saving throw.
   - Devilish Tongue
     - When you take a Charisma Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
   - Ego Whip
@@ -2157,7 +2157,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Expanded Awareness
     - When you take a Wisdom Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
   - Id Insinuation
-    - When you cast a Psion spell from the Enchantment or Illusion school that forces a creature to make a saving throw, you can expend two Psionic Energy Dice and roll one of them. One target of the spell you can see then subtracts the number rolled from its saving throw against the spell.
+    - When you cast a Psion spell from the Enchantment or Illusion school that forces a creature to make a saving throw, you can expend one Psionic Energy Die and roll it. One target of the spell you can see subtracts half the number rolled (rounded up) from its saving throw against the spell.
   - Inerrant Aim
     - When you make an attack roll against a creature and miss, you can roll one Psionic Energy Die and add the number rolled to the attack roll, potentially turning the miss into a hit.
   - Tactical Mind
@@ -2167,17 +2167,17 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Psionic Guards
     - If you are Charmed or Frightened, you automatically remove the condition.
   - Psionic Backlash
-    - Immediately after a creature you can see hits you with an attack roll, you can use your Reaction to expend one Psionic Energy Die, roll two Psionic Energy Dice, and subtract the number rolled on each die from the total damage you take. In addition, you can force the attacker to make a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to the amount rolled on the two Psionic Energy Dice.
+    - Immediately after a creature you can see hits you with an attack roll, you can use your Reaction to expend one Psionic Energy Die, roll it, and reduce the damage you take from the attack by an amount equal to twice the number rolled plus your Intelligence modifier (minimum of 2). In addition, you can force the attacker to make a Wisdom saving throw. On a failed save, the target takes psychic damage equal to the amount of damage you reduced.
 - Level 2: Psionic Modes ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_PsionicMode.png?raw=true)
   - You have honed your psionic powers to act as both a shield and a weapon in battle. As a Bonus Action, you can choose either Attack Mode or Defense Mode, granting you certain benefits for 1 minute. You can use this feature twice, and you regain all.
   - Attack Mode
-    - You ignore Resistance to Psychic damage. When you deal spell damage, you gain a damage bonus equal to your Intelligence modifier.
+    - You ignore resistance to psychic damage. In addition, you gain a +1 bonus to attack rolls and to the saving throw DCs of your spells.
   - Defense Mode
     - You have resistance to psychic damage. You gain a bonus equal to your Intelligence modifier to mental saving throws.
 - Level 5: Psionic Restoration
-  - When you finish a Short Rest, you can regain expended Psionic Energy Dice, up to a maximum of half your total number of dice (rounded down). Once you use this feature, you cannot do so again until you finish a Long Rest.
+  - You regain expended Psionic Energy Dice.
 - Level 7: Psionic Surge
-  - When you roll Initiative, you can expend 8 Hit Points to regain one expended use of your Psionic Modes.
+  - When you roll Initiative, you can activate your Psionic Mode by expending 8 Hit Points instead of using a Psionic Mode charge.
 
 ### Metamorph
 
@@ -2203,17 +2203,14 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - Your hand and forearm transform into a crossbow of muscle and sinew that fires bolts of bile. This Viscera Launcher functions as a Simple Ranged weapon with a normal range of 30 feet and a long range of 90 feet, dealing 1d6 Acid damage on a hit.
     - Once per turn, when you hit a creature with an attack using this launcher, you can deal an extra 1d6 Acid damage to the target.
 - Level 3: Extend Libs ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_ExtendLimbs.png?raw=true)
-  - As a Bonus Action, you can expend one Psionic Energy Die. For the next minute, you gain the benefit.
-  - Reach
-    - Your reach increases by 5 feet.
-  - Speed
-    - Your Speed increases by 5 feet.
-  - Touch
-    - When you cast a spell that has a range of Touch and a casting time of an action, you can make the spell’s range 10 feet.
+  - As a bonus action, you can expend one Psionic Energy Die to psionically stretch your limbs for 1 minute. Roll the expended die and gain a number of temporary hit points equal to the number rolled plus your Intelligence modifier (minimum of 1). While this feature is active, you gain the following benefits
+    - Reach: Your reach increases by 5 feet.
+    - Speed: Your speed increases by 5 feet.
+    - Touch: When you cast a spell with a range of touch and a casting time of 1 action, you can cast the spell as if it had a range of 10 feet.
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your Psion cantrips that has a casting time of an action in place of one of those attacks.
-- Level 6: Quickened Healing
-  - When you cast Healing spell, you can expend a Psionic Energy Dice to change its casting time to a Bonus Action for that specific casting.
+- Level 6: Flesh Weaver
+  - When you use Mutable Form, you gain a +2 bonus to AC.
 - Level 10: Mutable Form
   - When you use Extend Limbs, you gain one of the benefits of your choice. These effects last until Extend Limbs ends.
   - Stony Epidermis
@@ -2257,7 +2254,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 7: Resilient Sphere, Stoneskin
   - Level 9: Telekinesis, Wall of Force
 - Level 3: Telekinetic Techniques
-  - When you use your Telekinetic Push or Pull, you can impose one of the following effects on that target.
+  - When you use your Telekinetic Push or Pull, you can impose one of the following effects on that target. Additionally, you do not expend Psionic Energy.
   - Telekinetic Techniques: Boost
     - The target’s Speed increases by 10 feet until the start of your next turn.
   - Telekinetic Techniques: Disorient
@@ -2265,9 +2262,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Telekinetic Techniques: Telekinetic Bolt
     - If the target fails the saving throw, it takes Force damage equal to the number rolled on the Psionic Energy Die.
 - Level 6: Empowered Attack Mode
-  - While your Attack Mode is active, you gain a Fly speed. Additionally, when you cast a Psion spell, you can reroll any 1s or 2s on its damage rolls.
+  - While your Attack Mode is active, you gain a flying speed. Additionally, when you cast a Psion spell using a spell slot, you can roll your Psionic Energy Die and add the result to one damage roll of that spell. This roll does not expend the Psionic Energy Die.
 - Level 10: Enhanced Telekinetic Crush
-  - When you cast Telekinetic Crush, you can expend one Psionic Energy Die to modify the spell. If you do, a creature's speed is halved until the start of your next turn, regardless of whether it succeeds or fails its saving throw against the spell.
+  - When you cast Telekinetic Crush, you can expend one Psionic Energy Die to modify the spell so that, whether a creature succeeds or fails on its saving throw against the spell, its speed is halved until the start of your next turn. In addition, you can roll the expended Psionic Energy Die and add the result to one damage roll of the spell.
 
 ### Telepath
 
@@ -2277,13 +2274,15 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Subclass Spells (Always prepared)
   - Level 3: Bane, Command, Mind Spike, Detect Thoughts
-  - Level 5: Counterspell, Speak with Dead
+  - Level 5: Counterspell, Slow
   - Level 7: Confusion, Psychic Lance
   - Level 9: Hold Monster, Planar Binding
-- Level 3: Potent Thoughts
+- Level 3: Telepathic Distraction
+  - When a creature you can see within the range of your telepathy hits with an attack roll, you can use your Reaction to roll one Psionic Energy Die and subtract the result from the attack roll, potentially causing the attack to miss.
+- Level 6: Potent Thoughts
   - You add your Intelligence modifier to the damage you deal with any Psion cantrip.
 - Level 6: Empowered Defense Mode
-  - While your Defense Mode is active, you add 1d4 to all your saving throws.
+  - While your Defense Mode is active, you add a roll of your Psionic Energy Die.
 - Level 10: Telepathic Bolstering
   - When you or a creature you can see within this range misses an attack roll, you can use your Reaction to expend one Psionic Energy Die. Roll the die and add the result to the d20. This can potentially turn a failed check into a miss into a hit.
 
