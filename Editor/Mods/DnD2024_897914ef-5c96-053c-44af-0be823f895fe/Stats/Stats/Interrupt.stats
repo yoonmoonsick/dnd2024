@@ -2282,13 +2282,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="19206b56-82ff-4673-8815-1d0f5546e359" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="83a45a62-2261-4c41-b3dd-99c62867dad9" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c8a23470-5566-4595-8a39-b3b28737e6ed" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_HoneySweetBlades" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fc366366-2ec1-4305-832e-4ac8056effae" />
@@ -2533,6 +2526,52 @@
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db6b2bef-d23e-4ba4-989a-3379845581ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TelekineticTechniques_Boost" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7a945ab8g1849g996ag0eeeg5eda8bd910a6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf9660f2g8113gca7dge00egf3e19276d95a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f075fbfd-af4e-4aa4-a3c3-1c6dfc847eaa" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellId('Target_TelekineticPropel_Push') or SpellId('Target_TelekineticPropel_Pull')) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and not Enemy(context.Target,context.Observer);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);RestoreResource(SELF,PsionDie,1,0);" />
+        <field name="Cost" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Stack" type="StringTableFieldDefinition" value="TelekineticTechniques" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82a4bf91-e45d-4325-ae81-959e732daf74" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TelekineticTechniques_Disorient" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he775f837gebb7g3fa4geca9g7ad5c18ec4eb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2142410gb75eg38d4g450bg4c5313047b29" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_Hindered" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db6b2bef-d23e-4ba4-989a-3379845581ab" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellId('Target_TelekineticPropel_Push') or SpellId('Target_TelekineticPropel_Pull')) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and Enemy(context.Target,context.Observer);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);RestoreResource(SELF,PsionDie,1,0);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3d20932-d607-4155-949d-c257c94afc39" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TelekineticTechniques_TelekineticBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70fd9d05geb1ag2a62g5675g2a5d3fe5c5bb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c72d17fg5bd1gee54g49eegdde18920996a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_TelekineticBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db6b2bef-d23e-4ba4-989a-3379845581ab" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellId('Target_TelekineticPropel_Push') or SpellId('Target_TelekineticPropel_Pull')) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and Enemy(context.Target,context.Observer);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie),Force);RestoreResource(SELF,PsionDie,1,0);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie),Force)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="RestoreResource(SELF,PsionDie,1,0);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
