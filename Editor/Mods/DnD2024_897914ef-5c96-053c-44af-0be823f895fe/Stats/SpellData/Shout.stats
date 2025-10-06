@@ -7184,15 +7184,59 @@
         <field name="Name" type="NameTableFieldDefinition" value="Biofeedback" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8cff9265-f5a2-4726-a564-7d12a8ac7eac" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bbd86b4g2a16g30cfg2b9fgba342c02735c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf2168cf9g7d5dg9844g4fe9g3e3f13e9e8b0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf2168cf9g7d5dg9844g4fe9g3e3f13e9e8b0" version="2" />
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BIOFEEDBACK_TEMP_HP,100,-1);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(IntelligenceModifier)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="PsionDie:1;PsionicDiscipline:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Biofeedback_1;Shout_Biofeedback_2;Shout_Biofeedback_3;Shout_Biofeedback_4;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8bebc4a7-7550-40ce-aaa3-5ab8029e7ae8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Biofeedback_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2e87ad4c-d803-4f30-b0df-34822903ddd5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Biofeedback" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01c1ace2-9552-4ebc-9021-17297de2d212" />
+        <field name="Name" type="NameTableFieldDefinition" value="Biofeedback_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bebc4a7-7550-40ce-aaa3-5ab8029e7ae8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BIOFEEDBACK_TEMP_HP_2,100,-1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(IntelligenceModifier)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="PsionDie:2;PsionicDiscipline:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51f43076-90ab-4e88-b65f-ac5c898f2127" />
+        <field name="Name" type="NameTableFieldDefinition" value="Biofeedback_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01c1ace2-9552-4ebc-9021-17297de2d212" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BIOFEEDBACK_TEMP_HP_3,100,-1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(IntelligenceModifier)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="PsionDie:3;PsionicDiscipline:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5cd15bdd-e11c-46b6-87b9-25fe599ec6fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Biofeedback_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01c1ace2-9552-4ebc-9021-17297de2d212" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BIOFEEDBACK_TEMP_HP_4,100,-1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(IntelligenceModifier)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="PsionDie:4;PsionicDiscipline:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7223,7 +7267,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PSIONICMODES_ATTACK,100,10);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb10c2d86gd047g719dge8aegc28b844da298" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f1bde5g81fbg72b2g4746g985882994699" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f1bde5g81fbg72b2g4746g985882994699" version="2" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_PsionicModes" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
@@ -7247,12 +7291,12 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cfb873e9-5424-48cd-b803-ea282a3f7fca" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,PsionDie,50%,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,PsionDie,100%,0);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_PearlOfPower_SpellSlotRestoration" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9052e42fgfd87gaaddg5835g92f75cb66db6" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfda9fb00g411bg03cega329g8180f295bbc9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfda9fb00g411bg03cega329g8180f295bbc9" version="2" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
@@ -7266,7 +7310,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
         <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="4" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -7365,7 +7409,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3b1dae01-6a8b-4299-a6b4-8f321c97d8f7" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtendLimbs" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h708b409eg9f5fgb69ag4c0dg8883c2d0aa45" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7dadd4f9g7302g55ccg94bagc70e1ba8c4ba" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7dadd4f9g7302g55ccg94bagc70e1ba8c4ba" version="2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b2d2a30b-e94f-4bd8-b75c-869558191663" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ExtendLimbs_Reach;Shout_ExtendLimbs_Speed;Shout_ExtendLimbs_Touch;" />
@@ -7374,6 +7418,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;PsionDie:1;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="GainTemporaryHitPoints(LevelMapValue(PsionDie));GainTemporaryHitPoints(IntelligenceModifier)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7385,7 +7430,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb4e6a64gdbaeg4132g0da5g3b5da77ea9a5" version="1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ExtendLimbs" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_REACH,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_REACH,100,10);IF(HasPassive('Metamorph_6_FleshWeaver',context.Source)):ApplyStatus(ORGANIC_DEFENSE,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_PolearmMaster_BonusAttack" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
@@ -7398,7 +7443,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc5db167-7f8e-4e3b-a7a3-46a1e7052deb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc8f3fe18g8089gc86dg96a7gcdf870d2c455" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde8cdd15gc88agd452ge5a7g3d4399d2eae8" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10);IF(HasPassive('Metamorph_6_FleshWeaver',context.Source)):ApplyStatus(ORGANIC_DEFENSE,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Mobile_DashAcrossDifficultTerrain" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_TOUCH,100,10)" />
       </fields>
@@ -7412,7 +7457,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac93798fg39fag1b01g268eg3d6399049592" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarCaster_Bonuses" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_SPEED,100,10)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_TOUCH,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EXTENDLIMBS_TOUCH,100,10);IF(HasPassive('Metamorph_6_FleshWeaver',context.Source)):ApplyStatus(ORGANIC_DEFENSE,100,10);IF(HasStatus('STONYEPIDERMIS',context.Source)):ApplyStatus(STONYEPIDERMIS_BUFF,100,10);IF(HasStatus('SUPERIORSTRIDE',context.Source)):ApplyStatus(SUPERIORSTRIDE_BUFF,100,10);IF(HasStatus('UNNATURALFLEXIBILITY',context.Source)):ApplyStatus(UNNATURALFLEXIBILITY_BUFF,100,10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
