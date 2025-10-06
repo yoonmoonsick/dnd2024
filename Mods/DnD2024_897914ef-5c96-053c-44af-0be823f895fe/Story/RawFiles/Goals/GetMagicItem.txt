@@ -132,6 +132,15 @@ CreateAt((ITEMROOT)YMS_MagicItem_TrueName_58ec4182-839a-43a6-b790-01613371c37e,_
 THEN
 RequestPing(_X,_Y,_Z,_TrueName,_Killer);
 
+// True Name Pike
+IF
+KilledBy((CHARACTER)S_SCL_ServantOfTheRaven_Raven_3e4d4ec4-e687-42dd-8149-47cf10a42b39,_Killer,_,_)
+AND
+GetPosition(S_SCL_ServantOfTheRaven_Raven_3e4d4ec4-e687-42dd-8149-47cf10a42b39,_X,_Y,_Z)
+AND
+CreateAt((ITEMROOT)YMS_MagicItem_Truename_Pike_1a06b786-776c-46d4-b6b5-bd1464b4dd05,_X,_Y,_Z,0,0,"",_TrueName)
+THEN
+RequestPing(_X,_Y,_Z,_TrueName,_Killer);
 
 // Wave
 IF
