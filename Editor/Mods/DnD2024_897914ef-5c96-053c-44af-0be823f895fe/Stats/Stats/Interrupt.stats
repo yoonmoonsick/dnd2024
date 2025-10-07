@@ -2545,6 +2545,7 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_BOOST_BUFF,100,1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2558,6 +2559,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellId('Target_TelekineticPropel_Push') or SpellId('Target_TelekineticPropel_Pull')) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and Enemy(context.Target,context.Observer);" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);RestoreResource(SELF,PsionDie,1,0);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TELEKINETICTECHNIQUES_DISORIENT_DEBUFF,100,1);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2571,7 +2573,8 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and (SpellId('Target_TelekineticPropel_Push') or SpellId('Target_TelekineticPropel_Pull')) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and Enemy(context.Target,context.Observer);" />
         <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie),Force);RestoreResource(SELF,PsionDie,1,0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie),Force)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="RestoreResource(SELF,PsionDie,1,0);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
