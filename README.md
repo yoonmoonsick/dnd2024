@@ -2218,7 +2218,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Superior Stride
     - While you aren't wearing armor, you can take the Dash and Disenguage action as a Bonus Action.
   - Unnatural Flexibility
-    - You gain a +2 bonus to AC, and your body, along with any equipment you're wearing or carrying, becomes pliable. You can move through any space as narrow as 1 inch. Furthermore, you have advantage on saving throws to end the restrained condition.
+    - You gain a +1 bonus to AC, and your body, along with any equipment you're wearing or carrying, becomes pliable. You can move through any space as narrow as 1 inch. Furthermore, you have advantage on saving throws to end the restrained condition.
 
 ### Psi Warper
 
