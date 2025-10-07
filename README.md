@@ -289,7 +289,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - A creature who drinks an Potion you create gains 15 temporary hit points.
 - Level 9: Restorative Reagents: Restore
   - You always have the Lesser Restoration spell prepared and can cast it without expending a spell slot. You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and all uses are restored after a long rest.
-- Level 11: Chemical Matery
+- Level 11: Chemical Mastery
   - Alchemical Eruption: When you cast an Artificer spell that deals Acid, Fire, Necrotic, or Poison damage to a target, you can also deal 1d6 Force damage to that target.
   - Chemical Resistance: You gain resistance to Acid damage and Poison damage.
 
