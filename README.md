@@ -1844,7 +1844,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 > A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
 
 - Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_EagleEye.png?raw=true)
-  - Once per turn when you miss with a ranged attack roll, you can expend one Risk Die and add it to the attack roll, potentially causing the attack to hit.
+  - Once per turn, when you miss with a ranged attack roll, you can expend one Risk Die and add it and your Dexterity modifier to the attack roll, potentially causing the attack to hit.
 - Level 3: Sharpshooter's Stance ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SharpshootersStance.png?raw=true)
   - You don't have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
 - Level 6: Concealed Position

@@ -2067,7 +2067,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9c1ded32g620bg0030g59a3g264f0336c922" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_EagleEye" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and HasInterruptedAttack() and Self(context.Observer,context.Source) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(8, context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(RiskDie));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,LevelMapValue(RiskDie)+DexterityModifier);" />
         <field name="Cost" type="StringTableFieldDefinition" value="RiskDie:1;" />
         <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
