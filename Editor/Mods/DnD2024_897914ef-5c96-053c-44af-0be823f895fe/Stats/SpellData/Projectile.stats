@@ -96,6 +96,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Firearm" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon-DexterityModifier,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon-DexterityModifier, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -104,6 +107,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack_Firearm" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cff06719-32a6-40ed-9fce-a1b0f1bdf6ff" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandRangedWeapon-DexterityModifier, OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(OffhandRangedWeapon-DexterityModifier, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(OffhandRangedWeapon-DexterityModifier, OffhandRangedWeaponDamageType)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
