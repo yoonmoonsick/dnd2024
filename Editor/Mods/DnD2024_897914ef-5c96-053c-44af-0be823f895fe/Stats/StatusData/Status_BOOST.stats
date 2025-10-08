@@ -117,7 +117,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dbd0c54b-2175-415d-9b77-3915d1d4c0c1" />
         <field name="Name" type="NameTableFieldDefinition" value="ZEVLOR_JUMP" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d580eaeb-952f-41bc-8dac-9d2f6a7fe27d" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreFallDamage();JumpMaxDistanceMultiplier(6);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreFallDamage();JumpMaxDistanceMultiplier(3);UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
@@ -2527,7 +2527,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="587ff6eb-f4b7-4f7a-8b0e-1de200416454" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_TIGER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8ea35b3d-43cc-4a9b-90c5-f8d649f84ee3" />
-        <field name="Passives" type="StringTableFieldDefinition" value="TotemSpirit_Tiger;TotemSpirit_Tiger_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Tiger_NoHeavyArmour_VFX;LongJumpTurnBasedMode_Tiger;" />
+        <field name="Passives" type="StringTableFieldDefinition" value="TotemSpirit_Tiger;TotemSpirit_Tiger_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Tiger_NoHeavyArmour_VFX;LongJumpTurnBasedMode;" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);JumpMaxDistanceMultiplier(1.5);UnlockSpell(Shout_ExtendRage)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
