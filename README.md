@@ -382,6 +382,8 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. Take a Bonus Action to extend your Rage.
 - Level 2: Reckless Attack
   - You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
+- Level 3: Primal Knowledge
+  - You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.
 - Level 7: Feral Instinct
   - Your instincts are so honed that you have Advantage on Initiative rolls (+5). Take to enter your Rage, you can Move up to half your Speed.
 - Level 9: Brutal Strike
