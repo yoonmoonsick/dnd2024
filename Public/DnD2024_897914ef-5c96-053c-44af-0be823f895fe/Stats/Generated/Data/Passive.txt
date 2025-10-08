@@ -4221,7 +4221,7 @@ data "Boosts" "UnlockSpellVariant(FindSteed(),ModifyUseCosts(Replace,SpellSlot,0
 
 new entry "DismountSteed"
 type "PassiveData"
-data "Properties" "IsHidden"
+data "Properties" "IsHidden;OncePerTurn"
 data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "not HasPassive('MountedCombatant',context.Target);"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Dexterity, 8)):TriggerRandomCast(1,,DismountSteed);"
