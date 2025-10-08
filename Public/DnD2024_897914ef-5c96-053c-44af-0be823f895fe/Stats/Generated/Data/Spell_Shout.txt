@@ -1805,6 +1805,7 @@ data "SpellType" "Shout"
 using "Shout_SecondWind"
 data "Cooldown" "None"
 data "AIFlags" "GrantsResources"
+data "SpellProperties" "AI_IGNORE:RegainHitPoints(1d10+ClassLevel(Fighter));AI_ONLY:RegainHitPoints(1d10+ConstitutionModifier+ProficiencyBonus);"
 data "UseCosts" "BonusActionPoint:1;SecondWindCharge:1"
 
 new entry "Shout_ElementalAttunement"
