@@ -121,7 +121,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c3696488-f0d6-472e-8b21-f756318a80a8" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearms_Projectile_Main" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):RollBonus(Damage,0-DexterityModifier);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_MainHandAttack_Firearm,Projectile_MainHandAttack);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -129,7 +130,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="af7f696c-bff3-4670-af49-445bd9800b83" />
         <field name="Name" type="NameTableFieldDefinition" value="Firearms_Projectile_Offhand" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF((HasPassive('CrossbowExpert_DualWielding',context.Source) or HasPassive('FightingStyle_TwoWeaponFighting',context.Source) or HasPassive('MAG_TheCrimson_TwoWeapon_Passive',context.Source) or HasPassive('MAG_TwoWeaponFighting',context.Source)) and IsOffHandAttack() and IsRangedWeaponAttack() and not HasPassive('FirearmSpecialist',context.Source)):RollBonus(Damage,0-DexterityModifier);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Projectile_OffhandAttack_Firearm,Projectile_OffhandAttack);IF(not HasPassive('Proficiency_Firearm',context.Source) and IsRangedWeaponAttack()):HalveWeaponDamage(Dexterity);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1185,8 +1186,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FirearmSpecialist" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="93e63833-9389-4664-98e0-c637af91976c" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h06007cd3gb73eg265dgf647g932fa171ebea" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc62e020cg071bg1233gba79g98ac32da0aa5" version="4" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TwoWeaponFighting();Ability(Dexterity,1,20);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc62e020cg071bg1233gba79g98ac32da0aa5" version="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Dexterity,1,20);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="heca6979cg6f73g0a11g16a1g46360d7c80b7" version="1" />
       </fields>
     </stat_object>
