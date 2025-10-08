@@ -44,31 +44,6 @@ AND
 HasActiveStatus(_Object, "BURNING", 1)
 THEN
 RemoveStatus(_Object, "BURNING", _Object);
-
-IF
-DB_Players(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255)
-AND
-DB_DnD2024_Initialized(1)
-AND
-HasActiveStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", 0)
-THEN
-ApplyStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", -1.0, 1);
-
-IF
-CharacterJoinedParty(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255)
-AND
-DB_DnD2024_Initialized(1)
-AND
-HasActiveStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", 0)
-THEN
-ApplyStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", -1.0, 1);
-
-IF
-StatusApplied(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "SNEAKING", _, _)
-AND
-HasActiveStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", 0)
-THEN
-ApplyStatus(S_Player_Astarion_c7c13742-bacd-460a-8f65-f864fe41f255, "ASTARION_OVERRIDE", -1.0, 1);
 EXITSECTION
 
 ENDEXITSECTION
