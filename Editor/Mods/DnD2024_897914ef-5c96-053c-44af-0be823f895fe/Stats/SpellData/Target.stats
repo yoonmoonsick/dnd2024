@@ -8872,7 +8872,7 @@
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_InspiringSmite_1;Target_InspiringSmite_2;Target_InspiringSmite_3;Target_InspiringSmite_4;Target_InspiringSmite_5;Target_InspiringSmite_6;" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:RegainHitPoints((2d8+ClassLevel(Paladin))/1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and Ally()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT');" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h110df7aag72aag0c23g1509gd61153f7af6d" version="1" />
@@ -8893,6 +8893,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b730bde9-de9f-4134-9948-94daf4fb9245" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="04cc3403-f67a-4747-b49e-a1802cc7a6ad" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8902,7 +8903,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_InspiringSmite" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:RegainHitPoints((2d8+ClassLevel(Paladin))/1)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and Ally()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT');" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h110df7aag72aag0c23g1509gd61153f7af6d" version="3" />
@@ -8924,6 +8925,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="04cc3403-f67a-4747-b49e-a1802cc7a6ad" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
