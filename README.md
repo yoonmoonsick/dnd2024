@@ -1908,7 +1908,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Creative Trajectory
   - Your ranged weapon attacks are not penalized for High Ground Rules.
 - Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Ricochet.png?raw=true)
-  - You can take a bonus action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
+  - You can take an action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
 - Level 6: Gun Spinning
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
 - Level 6: Speed Loader

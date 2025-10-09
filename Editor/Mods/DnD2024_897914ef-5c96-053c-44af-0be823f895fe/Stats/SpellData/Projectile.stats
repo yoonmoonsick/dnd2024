@@ -832,8 +832,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e198b56gd3abge4b2gdcabg66e87d2c7f9a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5dea6a6g6fe1g8a00ga037gcf735dbc6367" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon)+LevelMapValue(RiskDie), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon+LevelMapValue(RiskDie), MainRangedWeaponDamageType)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier+LevelMapValue(RiskDie), MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon+LevelMapValue(RiskDie), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="DealDamage(MainRangedWeapon+LevelMapValue(RiskDie), MainRangedWeaponDamageType)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_PartingShot" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -847,13 +847,38 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h608550b7g6f0fg448cg1f6egc8643f41d86c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb14c0939g6be0g40e4g800cga9f787fa59a8" version="2" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_Ricochet" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;RiskDie:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RiskDie:1;" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1b87ee6f-03b2-4b52-bc52-4a356ca901f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5faa7d93-16e0-463b-bf61-e8881502e5fc" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8fea1d89-4e37-426d-a941-f8fd30162ebb" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="920b06ec-bb92-4b73-9167-bdba19050313" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f5732dc-95d9-4b67-b87b-63bce4a2f04a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21252e04-71ca-447d-91b3-7dc76b13979f" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
