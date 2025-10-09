@@ -548,3 +548,7 @@ function YMSCounterSpell()
     local st = AbilityCheck(context.PreferredCastingAbility, SpellCasterConstitution, false, false, 0, context.Observer, context.Observer)
     return ConditionResult(st.Result,{},{},st.Chance)
 end
+
+function IsIntelligenceGreaterThanDexterity()
+    return ConditionResult(context.Source.Intelligence >= context.Source.Dexterity)
+end
