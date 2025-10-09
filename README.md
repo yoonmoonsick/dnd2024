@@ -2540,31 +2540,34 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 
 ## Weapon Mastery Properties
 
-Weapon Mastery properties are typically utilized by specific character classes. Generally, classes that gain extra attacks or Rogues can make use of these properties. However, subclasses of Monks, Artificers, or spellcasting classes like Clerics, Druids, Sorcerers, and Warlocks cannot utilize Weapon Mastery properties even if they gain extra attacks. If these classes wish to benefit from Weapon Mastery properties, they must select the Weapon Master feat.
+- Weapon Mastery properties are typically utilized by specific character classes. Generally, classes that gain extra attacks or Rogues can make use of these properties. However, subclasses of Monks, Artificers, or spellcasting classes like Clerics, Druids, Sorcerers, and Warlocks cannot utilize Weapon Mastery properties even if they gain extra attacks. If these classes wish to benefit from Weapon Mastery properties, they must select the Weapon Master feat.
+  - **Barbarian, Fighter, Illrigger, Paladin, Ranger**: Cleave, Graze, Nick, Push, Sap, Slow, Topple, Vex
+  - **Rogue**: Nick, Slow, Vex
+  - **Gunslinger**: Push, Slow, Vex
 
-- Cleave
-  - Greataxe, Halberd
+- **Cleave**
+  - **Greataxe, Halberd**
   - If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.
-- Graze
-  - Glaive, Greatsword
+- **Graze**
+  - **Glaive, Greatsword**
   - If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.
-- Nick
-  - Dagger, Light hammer, Sickle, Scimitar
+- **Nick**
+  - **Dagger, Light hammer, Sickle, Scimitar**
   - When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.
-- Push
-  - Greatclub, Pike, Warhammer, Heavy Crossbow
+- **Push**
+  - **Greatclub, Pike, Warhammer, Heavy Crossbow**
   - If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
-- Sap
-  - Mace, Spear, Flail, Longsword, Morningstar, War Pick
+- **Sap**
+  - **Mace, Spear, Flail, Longsword, Morningstar, War Pick**
   - If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.
-- Slow
-  - Club, Javelin, Light Crossbow, Longbow
+- **Slow**
+  - **Club, Javelin, Light Crossbow, Longbow**
   - If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.
-- Topple
-  - Quarterstaff, Battleaxe, Maul, Trident
+- **Topple**
+  - **Quarterstaff, Battleaxe, Maul, Trident**
   - If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.
-- Vex
-  - Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow
+- **Vex**
+  - **Handaxe, Shortbow, Rapier, Shortsword, Hand Crossbow**
   - If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
 
 # Spells
@@ -2574,7 +2577,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 ## Cantrip
 
 - [Acid Splash](https://www.dndbeyond.com/spells/2618844-acid-splash)
-- [Blade Ward](https://www.dndbeyond.com/spells/2618931-blade-ward) (Homebrew)
+- [Blade Ward](https://www.dndbeyond.com/spells/2618931-blade-ward)
 - [Blood Bolt](https://www.dndbeyond.com/spells/2952580-blood-bolt)
 - [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
