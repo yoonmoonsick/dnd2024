@@ -1305,7 +1305,7 @@ data "TooltipPermanentWarnings" "4fff12d3-d897-4649-a847-c584c26194aa"
 data "Icon" "PassiveFeature_MartialArts_UnarmedDamage"
 data "Properties" "Highlighted"
 data "BoostContext" "OnEquip;OnCreate"
-data "Boosts" "IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):RollBonus(MeleeUnarmedAttack,DexterityModifier+1);"
+data "Boosts" "IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):RollBonus(MeleeUnarmedAttack,DexterityModifier+1);IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):Damage(MeleeUnarmedAttack,DexterityModifier+1);"
 
 new entry "InspiringMovement"
 type "PassiveData"
