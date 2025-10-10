@@ -1,0 +1,20 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+TemplateUseStarted(_,(ITEMROOT)_BookTypeA,_BookTypeB)
+AND
+IsTagged(_BookTypeA, (TAG)BOOK_8a8e253a-c081-45a1-9fa2-91b6901dc568, 1)
+AND
+TemplateGetDisplayString(_BookTypeA,_TranslatedStringKey)
+AND
+ResolveTranslatedString(_TranslatedStringKey, _InputBookName)
+AND
+Concatenate("® ", _InputBookName, _ResultBookName)
+THEN
+SetStoryDisplayName(_BookTypeB, _ResultBookName);
+EXITSECTION
+
+ENDEXITSECTION
