@@ -142,13 +142,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Surface Type" version="1" />
+        <field name="SurfaceType" type="EnumerationTableFieldDefinition" value="Sentinel" enumeration_type_name="Surface Type" version="1" />
         <field name="SurfaceLifetime" type="IntegerTableFieldDefinition" value="0" />
         <field name="SurfaceGrowStep" type="IntegerTableFieldDefinition" value="5" />
         <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="10" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead() and not (HasPassive('SculptSpells', context.Source) and Ally()) and not Tagged('INVISIBLE_HELPER')" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_CausticBrew" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha694f4dfg7596g7078g7c05g33904d4520a5" version="1" />
@@ -159,9 +158,9 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW,100,10);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Acid)" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Acid_Gen_L1to3" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Acid_Gen_L1to3_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Acid_MelfsAcidArrow_L1to3" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_BreathWeapon_Acid" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_BreathWeapon_Acid" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_BreathWeapon_Acid" />
         <field name="Shape" type="StringTableFieldDefinition" value="Square" />
         <field name="Range" type="IntegerTableFieldDefinition" value="9" />
         <field name="Base" type="IntegerTableFieldDefinition" value="2" />
@@ -169,9 +168,12 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;d30d2b40-c45a-45bd-94d7-9b2baaf0f77b,,;a601b33c-5320-455d-b4d4-74d6dc35b757,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="41193b01-e0c2-4945-ba40-7c3464b71bc0" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="53ceb907-6389-4e52-a459-7536665f7e2b" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="004e05c7-5e36-45d8-b3de-919028307d66" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DeathType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Death Type" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="fa3eaf23-5a9a-47a0-bc24-eb03d85d4d7a" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -179,8 +181,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="54153bfd-7ac5-4751-a210-43537e9bf226" />
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a55b6751-7b29-4f63-85a8-161cbe708bb6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_2,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_2,100,10);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d4,Acid)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d4,Acid)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW_2,100,10);" />
@@ -194,8 +195,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="348343fb-baa4-438c-b1f4-15dd12253976" />
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a55b6751-7b29-4f63-85a8-161cbe708bb6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_3,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_3,100,10);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d4,Acid)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d4,Acid)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW_3,100,10);" />
@@ -209,8 +209,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8aa24393-f179-4757-8ef1-01cb6fa36ebf" />
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a55b6751-7b29-4f63-85a8-161cbe708bb6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_4,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_4,100,10);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d4,Acid)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d4,Acid)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW_4,100,10);" />
@@ -224,8 +223,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="78b7841b-c648-4ae6-b9a4-5ceafe6dc63e" />
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a55b6751-7b29-4f63-85a8-161cbe708bb6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_5,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_5,100,10);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(10d4,Acid)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(10d4,Acid)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW_5,100,10);" />
@@ -239,8 +237,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ba4d76c0-53fa-4a14-9408-95611b7c64ee" />
         <field name="Name" type="NameTableFieldDefinition" value="CausticBrew_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a55b6751-7b29-4f63-85a8-161cbe708bb6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_6,100,10);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d4/2,Acid,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d4,Acid,Magical);ApplyStatus(CAUSTIC_BREW_6,100,10);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(12d4,Acid)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(12d4,Acid)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CAUSTIC_BREW_6,100,10);" />
@@ -1215,6 +1212,13 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Poison" enumeration_type_name="Damage Type" version="1" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bfce220c-9a94-4682-b628-66bdaa582bdb" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c410d220-4896-46ba-8f58-1f0bc0fa3338" />
       </fields>
     </stat_object>
   </stat_objects>
