@@ -849,8 +849,11 @@
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h1a9ed105g6f53g496bg99acge94b77ba5677" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source)):CharacterUnarmedDamage(1d8);IF(not WearingArmor(context.Source) and not IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Dexterity);IF(not WearingArmor(context.Source) and IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Constitution);DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Dexterity);IF(not WearingArmor(context.Source) and IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Constitution);DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source) and IsMeleeUnarmedAttack();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Bludgeoning)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
