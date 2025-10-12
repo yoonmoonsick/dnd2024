@@ -3520,11 +3520,10 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow(),ModifyTooltipDescription());" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,LONG_JUMP_PASSIVE)" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnCombatStarted;OnRound;OnCreate;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3532,9 +3531,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c9e362a5-3acb-425c-99f7-45085c5ae3f2" />
         <field name="Name" type="NameTableFieldDefinition" value="Athlete_Jump" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="19c32712-ac61-4049-98b1-b66808f1860a" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnCombatStarted;OnRound;OnCreate;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceBonus(3);IF(not HasStatus('LONG_JUMP_COOLDOWN',context.Source)):UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3553,8 +3555,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="91b6e5a4-4eb3-43a4-b4f4-689a4db32666" />
         <field name="Name" type="NameTableFieldDefinition" value="RemarkableAthlete_Jump" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3bc44d19-7642-4584-8908-fe136a65f8f0" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnCombatStarted;OnRound;OnCreate;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceBonus(3);IF(not HasStatus('LONG_JUMP_COOLDOWN',context.Source)):UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3596,9 +3601,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d8b1526-a786-41eb-8ab4-ce9928660f06" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hae8de321g466fg792fg81c1g6e525ec2efc1" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="FallDamageMultiplier(0.5);JumpMaxDistanceBonus(3)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_JUMP_PASSIVE,100,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="FallDamageMultiplier(0.5);JumpMaxDistanceBonus(3);IF(not HasStatus('LONG_JUMP_COOLDOWN',context.Source)):UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow());" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnCombatStarted;OnRound;OnCreate;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5997,8 +6004,12 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e844d48g39b4g5d9agf147g48bae18f7bc6" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_RemarkableAthlete_Jump" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceBonus(3);Advantage(Skill, Athletics);Advantage(Skill, Acrobatics);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceBonus(3);Advantage(Skill, Athletics);Advantage(Skill, Acrobatics);IF(not HasStatus('LONG_JUMP_COOLDOWN',context.Source)):UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow());" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnCombatStarted;OnRound;OnCreate;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
