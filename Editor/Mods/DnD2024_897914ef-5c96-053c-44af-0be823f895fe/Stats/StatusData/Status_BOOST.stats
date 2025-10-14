@@ -2542,6 +2542,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="229c8c25-38ee-4736-be7a-05ee770a3ecc" />
+        <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_TIGER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8ea35b3d-43cc-4a9b-90c5-f8d649f84ee3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);JumpMaxDistanceBonus(4.5);IF(not HasStatus('LONG_JUMP_COOLDOWN',context.Source)):UnlockSpellVariant(SpellId('Projectile_Jump'),ModifyUseCosts(Replace,Movement,3,-1,Movement),ModifyIconGlow());" />
+        <field name="Passives" type="StringTableFieldDefinition" value="TotemSpirit_Tiger;TotemSpirit_Tiger_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Tiger_NoHeavyArmour_VFX;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="62a315ac-27c2-4657-adb3-a34ca3761854" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_GIANT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="abfbc9ef-9132-44e8-b86a-7799cd2b2543" />
@@ -9305,24 +9314,36 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3aa01172-3db7-441d-935f-c6e833e7323a" />
-        <field name="Name" type="NameTableFieldDefinition" value="PSIONICMODES_ATTACK" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb10c2d86gd047g719dge8aegc28b844da298" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h62f1bde5g81fbg72b2g4746g985882994699" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SHARPENED_MIND" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
-        <field name="StackId" type="StringTableFieldDefinition" value="PSIONICMODES" />
+        <field name="StackId" type="StringTableFieldDefinition" value="SHARPENED_MIND" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Psychic, Resistant);RollBonus(Attack, 1);SpellSaveDC(1);IF(HasPassive('Psykinetic_6_EmpoweredAttackMode',context.Source)):UnlockSpell(Projectile_Fly_Temp);IF(HasPassive('Psykinetic_6_EmpoweredAttackMode',context.Source) and IsSpell() and not IsCantrip()):DamageBonus(LevelMapValue(PsionDie),Psychic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(MainDamageTypeIs(DamageType.Psychic)):MinimumRollResult(Damage,2);IgnoreResistance(Psychic,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ac82552-8936-4312-913c-1e08e2b42696" />
+        <field name="Name" type="NameTableFieldDefinition" value="DESTRUCTIVE_TRANCE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h218bcf43ge7f4g2b33gc9daga1de6a3bd974" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49298224g969dg3949g539fgbf7a1a86b3b4" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DESTRUCTIVE_TRANCE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_Fly_Warlock_Spell);IF(IsSpell()):DamageBonus(LevelMapValue(PsionDie));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d4fb67b4-4fd0-4e87-9c8c-4921484e7ed9" />
-        <field name="Name" type="NameTableFieldDefinition" value="PSIONICMODES_DEFENSE" />
+        <field name="Name" type="NameTableFieldDefinition" value="BULWARK_MIND" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3aa01172-3db7-441d-935f-c6e833e7323a" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, Intelligence);RollBonus(SavingThrow, IntelligenceModifier, Wisdom);RollBonus(SavingThrow, IntelligenceModifier, Charisma);IF(HasPassive('Telepath_6_EmpoweredDefenseMode',context.Source)):RollBonus(SavingThrow, LevelMapValue(PsionDie));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Psychic, Resistant);RollBonus(SavingThrow, IntelligenceModifier, LevelMapValue(PsionDie));RollBonus(SavingThrow, IntelligenceModifier, LevelMapValue(PsionDie));RollBonus(SavingThrow, IntelligenceModifier, LevelMapValue(PsionDie));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9331,9 +9352,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="PSIONIC_SURGE" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
         <field name="StackId" type="StringTableFieldDefinition" value="PSIONIC_SURGE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PsionicSurge);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(BonusActionPoint,1, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9359,6 +9381,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(LevelMapValue(PsionDie)+IntelligenceModifier);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GrimHarvest" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9390,28 +9413,10 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c277c0fc-bd6c-48b7-9ccc-faf182d55f10" />
-        <field name="Name" type="NameTableFieldDefinition" value="EGO_WHIP" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindWhip" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
-        <field name="SoundVocalStart" type="EnumerationTableFieldDefinition" value="WEAK" enumeration_type_name="SoundVocalType" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="EGO_WHIP" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="DamageBonus(-1d8,,false);ActionResourceMultiplier(Movement,50,0);" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="131ae698-d8a7-4a61-b494-51aeee3dd55c" />
-        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
-        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="bc4f779b-7424-4770-90bb-bdea0f4e9ead" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20e2c242-bcf7-4908-81f1-07e113d36329" />
         <field name="Name" type="NameTableFieldDefinition" value="PSION_PSIONIC_BACKLASH" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(PsionDie)+LevelMapValue(PsionDie),Psychic)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(PsionDie)+Cause.LevelMapValue(PsionDie),Psychic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9460,6 +9465,30 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint); " />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he775f837gebb7g3fa4geca9g7ad5c18ec4eb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb2142410gb75eg38d4g450bg4c5313047b29" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7439737e-cbe6-4035-baa2-20f58a7bc5d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="REBOUNDING_FIELD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0fa48645-1c6c-4223-a69c-fc0af9309666" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f113011g86c4gbd1dgff8bge696f641fda5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb402e96dgb765geab9g508cgb720c3032713" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REBOUNDING_FIELD" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84eac9db-fc56-462a-9e85-666e88ba9677" />
+        <field name="Name" type="NameTableFieldDefinition" value="REBOUNDING_FIELD_DAMAGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7439737e-cbe6-4035-baa2-20f58a7bc5d7" />
+        <field name="StackId" type="StringTableFieldDefinition" value="REBOUNDING_FIELD_DAMAGE" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(Cause.LevelMapValue(PsionDie)+Cause.IntelligenceModifier,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

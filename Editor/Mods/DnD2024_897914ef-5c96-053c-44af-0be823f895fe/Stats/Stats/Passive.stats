@@ -4688,6 +4688,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="TotemSpirit_Tiger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d4ab9402-25e4-4e8f-8c79-a1b57ccf0dd6" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_TigersBloodlust);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,LONG_JUMP_COOLDOWN,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8439,18 +8442,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ac4e2530-fa80-4b2f-9509-0b964d0e6e7b" />
-        <field name="Name" type="NameTableFieldDefinition" value="Psion_2_PsionicModes" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb994ed72gcdf7gd4f6g979agc29b050c2c94" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h38503f37g01efg95fag666fgb42abd37c4eb" version="2" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionicMode:1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PsionicMode,2,0);UnlockSpell(Shout_PsionicModes);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8408db4c-49ef-4b28-8abd-e081dfbdcf84" />
         <field name="Name" type="NameTableFieldDefinition" value="Psion_5_PsionicRestoration" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9052e42fgfd87gaaddg5835g92f75cb66db6" version="1" />
@@ -8465,11 +8456,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="afc37b4b-52c8-4661-9be9-50116672b19e" />
         <field name="Name" type="NameTableFieldDefinition" value="Psion_7_PsionicSurge" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h105ddafdg048eg7808g79f9ga77856510228" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha535643dg1387g95d8g82dbg572b83801f94" version="4" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WildMagicSurge" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PSIONIC_SURGE,100,1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('PsionDie');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8518,14 +8510,14 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="01c99a2d-0860-41ac-a6a2-f96146401824" />
-        <field name="Name" type="NameTableFieldDefinition" value="PsionicDiscipline_EgoWhip" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="PsionicDiscipline_SharpenedMind" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbe6decg5d40ge8ddgfe60g25df571e9180" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfd059abagf378g187cg2d19g30e9b43a082d" version="2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61b92c36-fa31-4cea-b8fa-f927f8344b19" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_MindWhip" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_EgoWhip);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SharpenedMind);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8607,7 +8599,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f105a94d-54e1-4533-99bf-5170a76cee65" />
         <field name="Name" type="NameTableFieldDefinition" value="PsionicDiscipline_TacticalMind" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7bb8b62g9394gbba0g1641g8a4ffbb88e46" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h979e339bg8912g2683g4c60g94a7fd73144c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h848fb9c0g4865gd01dgbfffgcd5a85fcc85a" version="2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="80483fdf-ea44-4ecd-9806-f97d236eeefd" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_RitualCaster_MemorizeSpells" />
@@ -8640,11 +8632,13 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0a151c1-f1ef-4f08-bd8c-67dfb7fa2aaa" />
-        <field name="Name" type="NameTableFieldDefinition" value="Telepath_6_EmpoweredDefenseMode" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0653ad4bg7e37g34dcga087gd07b6aefe194" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6330a480g68d0g4c26g2cefg383d8937f47c" version="2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Telepath_6_BulwarkMind" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd58fe03g1d0fg9398gabf1g7ad64145c516" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6d94610g3764ge77cg24efg6ac7a5a43093" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Defense" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_BulwarkMind);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8695,10 +8689,23 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="717f8d07-ff01-44fb-8911-98f5c751c32f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_6_EmpoweredAttackMode" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h218bcf43ge7f4g2b33gc9daga1de6a3bd974" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49298224g969dg3949g539fgbf7a1a86b3b4" version="3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_6_DestructiveTrance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h218bcf43ge7f4g2b33gc9daga1de6a3bd974" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h49298224g969dg3949g539fgbf7a1a86b3b4" version="4" />
         <field name="Icon" type="StringTableFieldDefinition" value="Psion_PsionicMode_Attack" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DestructiveTrance);IF(HasStatus('DESTRUCTIVE_TRANCE',context.Source) and IsSpell() and not IsCantrip()):DamageBonus(LevelMapValue(PsionDie));" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5da94f90-c72d-4854-b7f7-3b935aad3ba9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Psykinetic_6_ReboundingField" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f113011g86c4gbd1dgff8bge696f641fda5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb402e96dgb765geab9g508cgb720c3032713" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
