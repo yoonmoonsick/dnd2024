@@ -2154,32 +2154,26 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - When you cast a Psion spell from the Conjuration or Evocation school that forces a creature you can see to make a saving throw, you can expend a number of Psionic Energy Dice up to your Intelligence modifier and roll them. The creature takes psychic damage equal to the total rolled plus your Intelligence modifier (minimum of 1), regardless of the result of the saving throw.
   - Devilish Tongue
     - When you take a Charisma Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
-  - Ego Whip
-    - When a creature provokes an Opportunity Attack from you by leaving your reach, you can use your Reaction to roll one Psionic Energy Die and force the creature to make an Intelligence saving throw. On a failed save, the target's Speed is reduced by 10 feet, and it subtracts the number rolled from the next damage roll it makes before the end of its next turn. The die is expended only if the target fails the saving throw.
   - Expanded Awareness
     - When you take a Wisdom Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
   - Id Insinuation
     - When you cast a Psion spell from the Enchantment or Illusion school that forces a creature to make a saving throw, you can expend one Psionic Energy Die and roll it. One target of the spell you can see subtracts half the number rolled (rounded up) from its saving throw against the spell.
   - Inerrant Aim
     - When you make an attack roll against a creature and miss, you can roll one Psionic Energy Die and add the number rolled to the attack roll, potentially turning the miss into a hit.
-  - Tactical Mind
-    - When you take a Intelligence Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
   - Swift Precognition
     - When you cast a Psion spell from the Abjuration or Divination school with a casting time of one action, you can expend a number of Psionic Energy Dice to change its casting time to a Bonus Action for that casting. The number of dice expended equals one plus the spell’s level.
-  - Psionic Guards
-    - If you are Charmed or Frightened, you automatically remove the condition.
+  - Observant Mind
+    - When you take a Intelligence Check, you can expend and roll one Psionic Energy Die, adding the number rolled to the ability and the skill check.
   - Psionic Backlash
     - Immediately after a creature you can see hits you with an attack roll, you can use your Reaction to expend one Psionic Energy Die, roll it, and reduce the damage you take from the attack by an amount equal to twice the number rolled plus your Intelligence modifier (minimum of 2). In addition, you can force the attacker to make a Wisdom saving throw. On a failed save, the target takes psychic damage equal to the amount of damage you reduced.
-- Level 2: Psionic Modes ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_PsionicMode.png?raw=true)
-  - You have honed your psionic powers to act as both a shield and a weapon in battle. As a Bonus Action, you can choose either Attack Mode or Defense Mode, granting you certain benefits for 1 minute. You can use this feature twice, and you regain all.
-  - Attack Mode
-    - You ignore resistance to psychic damage. In addition, you gain a +1 bonus to attack rolls and to the saving throw DCs of your spells.
-  - Defense Mode
-    - You have resistance to psychic damage. You gain a bonus equal to your Intelligence modifier to mental saving throws.
+  - Psionic Guards
+    - If you are Charmed or Frightened, you automatically remove the condition.
+  - Sharpened Mind
+    - You can expend one Psionic Energy Die to hone your destructive psionics for 1 minute. During this time, damage from your weapon attacks, Psion spells, and Psion features ignores resistance to psychic damage. In addition, when you deal psychic damage, any damage roll of 1 counts as 2.
 - Level 5: Psionic Restoration
   - You regain expended Psionic Energy Dice.
 - Level 7: Psionic Surge
-  - When you roll Initiative, you can activate your Psionic Mode by expending 8 Hit Points instead of using a Psionic Mode charge.
+  - Whenever you expend a Psionic Energy Die, you can regain your bonus action.
 
 ### Metamorph
 
@@ -2263,8 +2257,10 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - The target can’t make Opportunity Attacks until the start of its next turn.
   - Telekinetic Techniques: Telekinetic Bolt
     - If the target fails the saving throw, it takes Force damage equal to the number rolled on the Psionic Energy Die.
-- Level 6: Empowered Attack Mode
-  - While your Attack Mode is active, you gain a flying speed. Additionally, when you cast a Psion spell using a spell slot, you can roll your Psionic Energy Die and add the result to one damage roll of that spell. This roll does not expend the Psionic Energy Die.
+- Level 6: Destructive Trance
+  - You can expend one Psionic Energy Die to enter a destructive state. For the next 10 minutes, you gain a flying speed. Additionally, when you cast a Psion spell using a spell slot, you can roll your Psionic Energy Die and add the result to one damage roll of that spell. This roll does not expend the Psionic Energy Die.
+- Level 6: Rebounding Field
+  - When you cast Shield in response to being hit by an attack roll and cause the triggering attack to miss, you can expend one Psionic Energy Die to launch the force back at the attacker. The attacker makes a Dexterity saving throw. Roll one Psionic Energy Die. On a failed save, the attacker takes Force damage equal to the amount rolled plus your Intelligence modifier. Whether the target fails or succeeds on the saving throw, you gain Temporary Hit Points equal to the amount of damage dealt.
 - Level 10: Enhanced Telekinetic Crush
   - When you cast Telekinetic Crush, you can expend one Psionic Energy Die to modify the spell so that, whether a creature succeeds or fails on its saving throw against the spell, its speed is halved until the start of your next turn. In addition, you can roll the expended Psionic Energy Die and add the result to one damage roll of the spell.
 
@@ -2283,8 +2279,8 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When a creature you can see within the range of your telepathy hits with an attack roll, you can use your Reaction to roll one Psionic Energy Die and subtract the result from the attack roll, potentially causing the attack to miss.
 - Level 6: Potent Thoughts
   - You add your Intelligence modifier to the damage you deal with any Psion cantrip.
-- Level 6: Empowered Defense Mode
-  - While your Defense Mode is active, you add a roll of your Psionic Energy Die.
+- Level 6: Bulwark Mind
+  - You can expend one Psionic Energy Die to strengthen your mind and enter a fortified state. For the next 10 minutes, you have Resistance to Psychic damage; and whenever you make an Intelligence, Wisdom, or Charisma saving throw, you add a roll of your Psionic Energy Die to the save.
 - Level 10: Telepathic Bolstering
   - When you or a creature you can see within this range misses an attack roll, you can use your Reaction to expend one Psionic Energy Die. Roll the die and add the result to the d20. This can potentially turn a failed check into a miss into a hit.
 
