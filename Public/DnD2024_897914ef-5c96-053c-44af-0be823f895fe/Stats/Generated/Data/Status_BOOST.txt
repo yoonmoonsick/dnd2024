@@ -2164,6 +2164,42 @@ data "RemoveConditions" "not HasStatus('RAGE_STOP_REMOVE')"
 data "RemoveEvents" "OnTurn"
 data "TickFunctors" ";"
 
+new entry "WILD_MAGIC_BARBARIAN_WEAPON_INFUSION"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILD_MAGIC_BARBARIAN_WEAPON_INFUSION"
+data "DescriptionParams" "DealDamage(LevelMapValue(D6Cantrip),Force)"
+data "Boosts" "ItemReturnToOwner();WeaponProperty(Thrown);WeaponProperty(Light);WeaponDamage(LevelMapValue(D6Cantrip),Force);"
+
+new entry "WILD_MAGIC_BARBARIAN_MAGIC_RETRIBUTION"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILD_MAGIC_BARBARIAN_MAGIC_RETRIBUTION"
+data "DescriptionParams" "DealDamage(LevelMapValue(D6Cantrip),Force)"
+
+new entry "WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS"
+data "Boosts" "IF(not ClassLevelHigherOrEqualThan(4,'Barbarian')):AC(1);IF(not ClassLevelHigherOrEqualThan(4,'Barbarian') and not ClassLevelHigherOrEqualThan(10,'Barbarian')):AC(2);IF(not ClassLevelHigherOrEqualThan(10,'Barbarian')):AC(3);"
+
+new entry "WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS_AURA"
+
+new entry "New_Stat_4"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "New_Stat_5"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "New_Stat_6"
+type "StatusData"
+data "StatusType" "BOOST"
+
 new entry "YMS_BARD"
 type "StatusData"
 data "StatusType" "BOOST"
