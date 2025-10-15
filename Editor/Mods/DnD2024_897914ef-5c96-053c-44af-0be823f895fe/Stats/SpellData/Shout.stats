@@ -247,7 +247,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="59b41554-843a-457f-b7e2-ab7b031a652b" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1243,6 +1243,60 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dcad7efb-9694-4185-9b0b-641ed2432697" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Transmutation" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0986026-e8de-4915-862f-0046230786d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b0dbf62-943b-4f1f-bb45-13a463376f15" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:1;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fea658a9-37de-4099-a203-ee4897e999b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a9534a37-78db-4050-9f82-6506b0aa1bac" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae201eef-ad50-4c36-828b-0698e896271d" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b93184b3-7849-48ed-882e-8daa564c5bf5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8535456d-6046-41db-afcd-05a113febabf" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bdf1b815-e192-4c84-ac2d-0be8d770a6d9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a71799f5-9de3-42da-a4fd-53c80441770e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="20ac63f9-2037-4c18-8ff0-a20c73e18f02" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e537fa7e-f7d3-450f-acc3-e47e38236bc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8ed8fd4c-0192-4052-9ee2-b618a8bdfde6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RitualCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4370,66 +4424,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8e98f746-2617-4c93-abdf-c7bf2e9b1f21" />
         <field name="Name" type="NameTableFieldDefinition" value="Ritual" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9a6ce225-7cef-499a-b2ee-808dca257659" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6b0dbf62-943b-4f1f-bb45-13a463376f15" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:1;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="293b70ca-afa2-46bc-a982-0dee5847ea90" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a9534a37-78db-4050-9f82-6506b0aa1bac" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:2;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="72aaea14-c7d3-4ac3-9d5a-decb932802c9" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b93184b3-7849-48ed-882e-8daa564c5bf5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fe9fe427-f16a-4816-8325-a14f162c7ebf" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bdf1b815-e192-4c84-ac2d-0be8d770a6d9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:4;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9644f12b-9ce7-44dc-a58c-72c57f7c25ba" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="20ac63f9-2037-4c18-8ff0-a20c73e18f02" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d3731435-4696-472c-9f86-3bb86a94c0aa" />
-        <field name="Name" type="NameTableFieldDefinition" value="FeatherFall_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8ed8fd4c-0192-4052-9ee2-b618a8bdfde6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FEATHERFALL,100,-1)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="RitualCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
