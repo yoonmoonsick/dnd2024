@@ -3394,6 +3394,21 @@ data "Properties" "Highlighted;OncePerTurn"
 data "StatsFunctorContext" "OnCast"
 data "Conditions" "SpellCategoryIs(SpellCategory.Dash) and Combat()"
 
+new entry "WildMagicBarbarian_MagicRetribution_Passive"
+type "PassiveData"
+using "WildMagicBarbarian_MagicRetribution_Passive"
+data "DescriptionParams" "DealDamage(LevelMapValue(D6Cantrip), Force)"
+data "StatsFunctors" "DealDamage(SWAP,LevelMapValue(D6Cantrip), Force,Magical);ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)"
+
+new entry "New_Stat_1"
+type "PassiveData"
+
+new entry "New_Stat_2"
+type "PassiveData"
+
+new entry "New_Stat_3"
+type "PassiveData"
+
 new entry "VitalitySurge"
 type "PassiveData"
 data "DisplayName" "h73f701a6gb68cgc442g13d8g7b9cffa3bb80;1"

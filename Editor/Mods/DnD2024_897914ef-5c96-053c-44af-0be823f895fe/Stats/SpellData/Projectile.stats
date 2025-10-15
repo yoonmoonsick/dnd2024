@@ -638,6 +638,32 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF800000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f7a7eee5-ad48-4b07-84a9-bf11adfba38d" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Barbarian" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af95c0ca-6735-4eb3-a310-4da0c5ef30dd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Flumph_Explosion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de30271f-538e-4581-bc4a-403e3f00ab94" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, CalculateSpellDC(Ability.Constitution, context.Source))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force,Magical);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e33006cb-9cdb-4b8d-8341-4cf0a63f13fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_LightBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2e740ffc-592e-4ac0-9659-63839b1dd060" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, CalculateSpellDC(Ability.Constitution, context.Source))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Radiant,Magical);ApplyStatus(WILD_MAGIC_BARBARIAN_LIGHT_BOLT_BLINDED,100,1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Radiant)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd67b626-944a-444b-bc58-f8a03dc29ab0" />
