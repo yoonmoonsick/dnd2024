@@ -2348,6 +2348,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Fighting Initiate](https://www.dndbeyond.com/feats/451309-fighting-initiate)
 - [Firearm Specialist](https://www.dndbeyond.com/feats/16938-firearm-specialist)
 - [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
+- [Focused Critical](https://www.dndbeyond.com/feats/1983842-focused-critical)
 - [Gift of the Chromatic Dragon](https://www.dndbeyond.com/feats/766446-gift-of-the-chromatic-dragon)
 - [Gift of the Gem Dragon](https://www.dndbeyond.com/feats/766450-gift-of-the-gem-dragon)
 - [Gift of the Metallic Dragon](https://www.dndbeyond.com/feats/766454-gift-of-the-metallic-dragon)
