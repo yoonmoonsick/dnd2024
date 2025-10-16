@@ -1674,8 +1674,6 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
 
-- Level 1: Ritual Adept
-  - You can add an abjuration spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 - Level 2: Scholar
   - While studying magic, you also specialized in another field of study. Choose one of the following skills in which you have proficiency: Arcana, History, Investigation, Medicine, Nature, or Religion. You have Expertise in the chosen skill.
 - Level 12: Spell Mastery
@@ -2322,6 +2320,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
 - [Mobile](https://www.dndbeyond.com/feats/1789200-speedy)
 - [Polearm Master](https://www.dndbeyond.com/feats/1789177-polearm-master)
+- [Ritual Caster](https://www.dndbeyond.com/feats/1789180-ritual-caster)
 - [Sharpshooter](https://www.dndbeyond.com/feats/1789187-sharpshooter)
 - [Shield Master](https://www.dndbeyond.com/feats/1789188-shield-master)
 - [Spell Sniper](https://www.dndbeyond.com/feats/1789201-spell-sniper)
@@ -2617,6 +2616,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Hunter's Mark](https://www.dndbeyond.com/spells/2619166-hunters-mark)
 - [Inflict Wounds](https://www.dndbeyond.com/spells/2619181-inflict-wounds)
 - [Jump](https://www.dndbeyond.com/spells/2618991-jump)
+- [Longstrider](https://www.dndbeyond.com/spells/2619004-longstrider)
 - [Ray of Sickness](https://www.dndbeyond.com/spells/2618935-ray-of-sickness)
 - [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
 - [Sleep](https://www.dndbeyond.com/spells/2619064-sleep)
