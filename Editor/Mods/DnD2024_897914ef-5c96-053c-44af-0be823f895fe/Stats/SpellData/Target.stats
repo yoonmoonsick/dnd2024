@@ -9850,10 +9850,19 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a0d080ba-d475-445b-b9a3-82218dcd46b0" />
         <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_ExplodingFlumph" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8d70c997-94fa-4280-b502-e20252bd2684" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0e40a847-a275-4eea-95d7-dd6bad6643ca,1,,,,FLUMPH_EXPLODE);GROUND:CreateExplosion(Projectile_Flumph_Explosion);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self();" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(0e40a847-a275-4eea-95d7-dd6bad6643ca,0,,,,);GROUND:CreateExplosion(Projectile_Flumph_Explosion);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Dead();" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force);Distance(2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a8952f0e-96cc-4fea-b822-69f6e3538e09" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_Teleport" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0d941a6-f68f-460b-9da3-24e0acd4da06" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

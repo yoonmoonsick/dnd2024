@@ -5347,8 +5347,17 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1c9a8666-b8f6-4fc0-9119-6f0d191dcc14" />
         <field name="Name" type="NameTableFieldDefinition" value="Rage_WildMagic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="618981b6-7e2b-41b8-8b7c-1a7d21bbbf09" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:TriggerRandomCast(1,0,WildMagicBarbarian);IF(ClassLevelHigherOrEqualThan(1,'Barbarian') and not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);AI_ONLY:ApplyStatus(AI_HELPER_RAGE,100,100);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:TriggerRandomCast(1,0,WildMagicBarbarian);IF(ClassLevelHigherOrEqualThan(1,'Barbarian') and not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);ApplyStatus(WILDMAGIC_BARBARIAN_FIRST_TURN,100,1);AI_ONLY:ApplyStatus(AI_HELPER_RAGE,100,100);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE,100,100)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7a3275d-3013-486f-9c7d-edf773eae8ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagicAwareness" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e83b92f6-2682-4007-8768-7d8d34ce4bd1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(MAGIC_AWARENESS,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
