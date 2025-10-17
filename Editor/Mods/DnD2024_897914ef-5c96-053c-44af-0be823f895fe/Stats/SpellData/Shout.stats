@@ -457,7 +457,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SwiftWitchcraft" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellPoint,1,0);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SWIFT_WITCHCRAFT,100,1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
@@ -472,8 +472,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h24669f92g7ceegd28ag3a43gd7566e19c639" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b074a62gb979gb68dg0f42gf93f0684c68a" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasActionResource('SpellPoint', 1, 0, false, false, context.Source)" />
-        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnTurn" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
