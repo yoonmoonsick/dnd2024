@@ -6523,6 +6523,15 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "MAG_BansheeBless_Passive"
+type "PassiveData"
+using "MAG_BansheeBless_Passive"
+
+new entry "MAG_Zhentarim_BloodfeederBlade_Rapier_Passive_Source"
+type "PassiveData"
+using "MAG_Zhentarim_BloodfeederBlade_Rapier_Passive"
+data "Conditions" "IsKillingBlow() and Enemy() and AttackedWithPassiveSourceWeapon();"
+
 new entry "UND_StrengthChair_Leg_Passive"
 type "PassiveData"
 using "UND_StrengthChair_Leg_Passive"

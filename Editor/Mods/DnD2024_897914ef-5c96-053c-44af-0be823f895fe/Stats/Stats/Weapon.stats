@@ -3708,6 +3708,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical);IF(CharacterLevelGreaterThan(4)):WeaponEnchantment(1);IF(CharacterLevelGreaterThan(9)):WeaponEnchantment(1);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Zhentarim_BloodfeederBlade_Rapier_Passive_Source;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5068,7 +5069,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f42684e9-e60f-40c9-8062-38965fb268e7" />
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurDagger" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ec9cbe73-2e32-4765-bb11-19e16d23d898" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution,ManeuverSaveDC())):ApplyStatus(SILENCED,100, 2)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical);IF(CharacterLevelGreaterThan(4)):WeaponEnchantment(1);IF(CharacterLevelGreaterThan(9)):WeaponEnchantment(1);" />
@@ -5079,7 +5079,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3a547461-579a-4dc3-8365-b948dd9cb13b" />
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurGreatsword" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cd46b2ba-8f3c-4c33-9e8a-bcdb068275b2" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution,ManeuverSaveDC())):ApplyStatus(SILENCED,100, 2)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical);IF(CharacterLevelGreaterThan(4)):WeaponEnchantment(1);IF(CharacterLevelGreaterThan(9)):WeaponEnchantment(1);" />
@@ -5090,7 +5089,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7640a654-589c-40b7-b903-972f64729056" />
         <field name="Name" type="NameTableFieldDefinition" value="FOR_IncompleteMasterwork_SussurSickle" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c8bb373a-4904-4984-9352-0cf50fcb2db1" />
-        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution,ManeuverSaveDC())):ApplyStatus(SILENCED,100, 2)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical);IF(CharacterLevelGreaterThan(4)):WeaponEnchantment(1);IF(CharacterLevelGreaterThan(9)):WeaponEnchantment(1);" />
@@ -5266,6 +5264,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="43ed65d4-e3aa-4a2d-9a9f-09dfd5da2e91" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED, 100, 2,,,,not SavingThrow(Ability.Wisdom, 12));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5358,7 +5357,7 @@
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="81764c3c-c7a9-49a7-b145-d31ffd5aebe1" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="MAG_BLOODFEEDER_SCARLET_REMITTANCE_REMOVAL_TECHNICAL;" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Firearms;Range_Pistol;MAG_Zhentarim_BloodfeederBlade_Rapier_Passive;UNI_DarkUrge_Bleeding_Dagger_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Firearms;Range_Pistol;MAG_Zhentarim_BloodfeederBlade_Rapier_Passive_Source;" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="101652b7-7dca-4e58-8467-7df7286493a4" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(3);WeaponProperty(Magical);" />
