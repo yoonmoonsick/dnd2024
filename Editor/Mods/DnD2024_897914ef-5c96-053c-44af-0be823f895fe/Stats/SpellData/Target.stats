@@ -12479,7 +12479,35 @@
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="57d3a626-fc77-4733-891a-0a157b9f3737" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_Cantrip" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS Cantrip" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e363a26f-0704-467c-ab1d-3d2544dc7bd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Concussion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fcad2d16-598f-48f4-b47e-07a92010ae31" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_CONCUSSION,100,-1);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Thunder,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Concussion" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4a5df8ag592cg7004gb832gb818fc6085f0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d54c05eg352bg5606g8bd5g4f3c5135f074" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Thunder)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Thunder)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_Thunder_Gen_L1to3" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Thunder_Thunderwave_L1to3_01" />
+        <field name="TargetSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2b284468-04a1-4730-a5c0-8ce54afbd937" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2b284468-04a1-4730-a5c0-8ce54afbd937" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="154802bd-3dae-4bdc-9889-4addfdc0ca57" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h29de4232g6b05ge683g2a0egde2ecffa24b4" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

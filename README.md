@@ -2578,6 +2578,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
 - [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
+- [Concussion](https://www.dndbeyond.com/spells/2840679-concussion)
 - [Dancing Lights](https://www.dndbeyond.com/spells/2619058-dancing-lights)
 - [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
