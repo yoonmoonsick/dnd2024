@@ -1,0 +1,38 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusApplied(_Target, "NICK_TARGET", _Source, _)
+THEN
+DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target);
+TimerLaunch("NICK_WAITING", 0);
+
+IF
+TimerFinished("NICK_WAITING")
+AND
+DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target)
+AND
+HasActiveStatus(_Source, "NON_LETHAL", 0)
+THEN
+UseSpell((GUIDSTRING)_Source, "Target_OffhandAttack_Nick", (GUIDSTRING)_Target);
+NOT DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target);
+
+IF
+TimerFinished("NICK_WAITING")
+AND
+DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target)
+AND
+HasActiveStatus(_Source, "NON_LETHAL", 1)
+THEN
+UseSpell((GUIDSTRING)_Source, "Target_OffhandAttack_Nick_NonLethal", (GUIDSTRING)_Target);
+NOT DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target);
+
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION
