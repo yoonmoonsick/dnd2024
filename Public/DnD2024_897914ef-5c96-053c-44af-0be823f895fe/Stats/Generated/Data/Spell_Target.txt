@@ -6727,6 +6727,18 @@ using "Target_OffhandAttack"
 data "Cooldown" "None"
 data "SpellProperties" "GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType); GROUND:ExecuteWeaponFunctors(OffHand)"
 
+new entry "Target_OffhandAttack_Nick"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_OffhandAttack"
+data "TargetRadius" "9"
+
+new entry "Target_OffhandAttack_Nick_NonLethal"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_OffhandAttack_Nick"
+data "SpellSuccess" "DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType, Magical, Nonlethal);ExecuteWeaponFunctors(OffHand);"
+
 new entry "Target_MainHandAttack"
 type "SpellData"
 data "SpellType" "Target"
