@@ -1067,12 +1067,18 @@ IF
 EntityEvent(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_ZevlorUsedHorn")
 THEN
 RealtimeObjectTimerLaunch(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn", 2600);
+RealtimeObjectTimerLaunch(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn_2", 4000);
 
 IF
 ObjectTimerFinished(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn")
 THEN
 PROC_DEN_BattleHorn_Used(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
-ApplyStatus(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "ZEVLOR_JUMP", 6.0, 1);
+
+IF
+ObjectTimerFinished(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, "DEN_RaidingParty_BlowHorn_2")
+THEN
+PROC_DEN_BattleHorn_Used(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, 0);
+UseSpell(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a,"Projectile_DivingStrike_Zevlor", S_DEN_GoblinRaider_Captain_22d80f21-7f31-4240-b981-9137d53ad77d);
 
 IF
 UseStarted(_Player,S_DEN_BattleHorn_baf1a4c5-b6f9-48c2-908d-164b967655d5)
