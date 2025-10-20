@@ -4390,7 +4390,7 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderclap" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a0999c9g19f0g4a2bg8247g0c5f78a66703" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb28cd36fg83c2gad4ag8eddge07496510147" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Thunder)" />
@@ -7588,6 +7588,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="402e5d56-9728-40e7-a802-9e9d1480c5f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="MI_Concussion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1b0f756e-da5b-40fd-9fd4-fe7ae90b3be5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4a5df8ag592cg7004gb832gb818fc6085f0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d54c05eg352bg5606g8bd5g4f3c5135f074" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Thunder)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MI_UNLOCK_CONCUSSION,100,-1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Concussion" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('MI_UNLOCK_CONCUSSION') and not HasStatus('HASSPELL_CONCUSSION')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e12f14b0-c732-41c9-b4c3-ebd1e86a94eb" />
         <field name="Name" type="NameTableFieldDefinition" value="MI_DancingLights" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1b0f756e-da5b-40fd-9fd4-fe7ae90b3be5" />
@@ -7900,7 +7913,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MI_ThunderClap" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1b0f756e-da5b-40fd-9fd4-fe7ae90b3be5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MI_UNLOCK_THUNDERCLAP,100,-1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderclap" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6a0999c9g19f0g4a2bg8247g0c5f78a66703" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('MI_UNLOCK_THUNDERCLAP') and not HasStatus('HASSPELL_THUNDERCLAP')" />
       </fields>
