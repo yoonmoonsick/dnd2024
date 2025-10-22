@@ -932,8 +932,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3d9640fc-9aa9-4297-acf0-34678d0e4f18" />
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Scimitar_FlameBlade" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0ed025d-22e4-4551-b970-c69234d0dc59" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
-        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="HiddenDuringCinematic();CannotBeDisarmed();WeaponAttackRollAbilityOverride(SpellCastingAbility);IF(Item(context.Source)):WeaponProperty(Unstowable);Attribute(InventoryBound);GameplayLight(3,false,0.1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4233,7 +4232,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Scimitar_FlameBlade_d24_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d9640fc-9aa9-4297-acf0-34678d0e4f18" />
         <field name="Damage" type="DiceTableFieldDefinition" value="4d6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4242,7 +4240,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Scimitar_FlameBlade_d24_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b45edc1c-5227-4759-91c7-63ddd13f7c4c" />
         <field name="Damage" type="DiceTableFieldDefinition" value="5d6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4251,7 +4248,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Scimitar_FlameBlade_d24_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b45edc1c-5227-4759-91c7-63ddd13f7c4c" />
         <field name="Damage" type="DiceTableFieldDefinition" value="6d6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4260,7 +4256,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="WPN_Scimitar_FlameBlade_d24_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b45edc1c-5227-4759-91c7-63ddd13f7c4c" />
         <field name="Damage" type="DiceTableFieldDefinition" value="7d6" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4655,7 +4650,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="46f50735-38d4-4fc1-a292-3de2a3b28475" />
         <field name="Name" type="NameTableFieldDefinition" value="UND_SocietyOfBrilliance_ResonanceStaff" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1d661bd7-7e58-4327-921d-1ac7ae5678fe" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="MAG_ArcaneEnchantment_Lesser_Passive;UND_SocietyOfBrilliance_ResonanceStaff_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="YMS_ARCANE_ENCHANTMENT" />
@@ -4701,7 +4696,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="87e3fb1d-f59c-4df5-a839-a4c33a161eb5" />
         <field name="Name" type="NameTableFieldDefinition" value="UND_Tower_StaffBlessMystra" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="39592796-df91-4b33-b43a-46f5ee5c2bcb" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="MAG_ArcaneEnchantment_Lesser_Passive;UND_Tower_StaffBlessMystra_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UND_Bless_StaffBlessMystra)" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="9b6a4ab2-323b-4030-89ab-030252bb6214" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
@@ -4771,7 +4766,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="MAG_ArcaneEnchantment_Lesser_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="YMS_ARCANE_ENCHANTMENT" />
         <field name="PassivesMainHand" type="StringTableFieldDefinition" value="MAG_ArcaneEnchantment_Lesser_Passive;" />
       </fields>
@@ -5075,7 +5070,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1699a4c0-ff48-476a-ac54-6770310e56ac" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ChargedLightning_Quarterstaff" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d35eb7c-11fe-4077-b765-fc7cf1b93825" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="MAG_ArcaneEnchantment_Lesser_Passive;MAG_ChargedLightning_Charge_OnSpellDamage_Passive;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="YMS_ARCANE_ENCHANTMENT" />
