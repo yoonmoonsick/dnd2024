@@ -2620,6 +2620,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Jump](https://www.dndbeyond.com/spells/2618991-jump)
 - [Longstrider](https://www.dndbeyond.com/spells/2619004-longstrider)
 - [Ray of Sickness](https://www.dndbeyond.com/spells/2618935-ray-of-sickness)
+- [Sanctuary](https://www.dndbeyond.com/spells/2619003-sanctuary)
 - [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
 - [Sleep](https://www.dndbeyond.com/spells/2619064-sleep)
 - [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_CausticBrew.png?raw=true)

@@ -6632,6 +6632,11 @@ data "Properties" "IsHidden"
 data "Conditions" "HasHPLessThan(1) and Enemy() and Character() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT');"
 data "StatsFunctors" "ApplyStatus(PASSIVE_DARK_ONES_BLESSING,100,0);ApplyStatus(SELF,BLACKRAZOR_DEVOURSOUL,100,-1);"
 
+new entry "SanctuarySpecificSpell"
+type "PassiveData"
+using "SanctuarySpecificSpell"
+data "Conditions" "not SanctuarySpecificSpellCheck();"
+
 new entry "CavalierShield_Sanctuary"
 type "PassiveData"
 using "Sanctuary"
