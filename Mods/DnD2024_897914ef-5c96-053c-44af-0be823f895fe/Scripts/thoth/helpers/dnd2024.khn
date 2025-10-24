@@ -550,3 +550,7 @@ end
 function IsConstitutionGreaterThanDexterity()
     return ConditionResult(context.Source.Constitution >= context.Source.Dexterity)
 end
+
+function SanctuarySpecificSpellCheck()
+    return IsHideSpell() | SpellId('Target_Help') | SpellId('Shout_Disengage') | SpellId('Shout_Dodge') | SpellCategoryIs(SpellCategory.Dash) | SpellCategoryIs(SpellCategory.Jump)
+end
