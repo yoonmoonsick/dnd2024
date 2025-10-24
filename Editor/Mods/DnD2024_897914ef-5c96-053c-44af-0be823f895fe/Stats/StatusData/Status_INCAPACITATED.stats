@@ -85,5 +85,25 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="daf512a9-2802-4173-a3ab-4328bad2684e" />
+        <field name="Name" type="NameTableFieldDefinition" value="LIE_DYING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa90355b-4fbc-4b46-aef9-6c4c9a5c8a60" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,20)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1940da4d-27d6-4582-ae4d-6a2627f5bf17" />
+        <field name="Name" type="NameTableFieldDefinition" value="LIE_DYING_VULNERABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b9d8ad5a-973a-45ea-9e30-a60d82489556" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,20)" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
