@@ -22,6 +22,16 @@ IF
 CastSpell((CHARACTER)_Player, "Target_Jump_Githyanki",_,_,_)
 THEN
 ApplyStatus(_Player, "RACE_GITHYANKI_JUMP", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_Enlarge_Duergar",_,_,_)
+THEN
+ApplyStatus(_Player, "RACE_DUERGAR_ENLARGE", -1.0, 1);
+
+IF
+CastSpell((CHARACTER)_Player, "Shout_Invisibility_Duergar",_,_,_)
+THEN
+ApplyStatus(_Player, "RACE_DUERGAR_INVISIBILITY", -1.0, 1);
 EXITSECTION
 
 ENDEXITSECTION
