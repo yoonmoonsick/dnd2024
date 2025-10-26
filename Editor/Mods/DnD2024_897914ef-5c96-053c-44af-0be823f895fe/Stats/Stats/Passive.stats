@@ -833,6 +833,154 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b0468fc-b1c0-454f-ae35-154e474b6eeb" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS Feat Wild Talent" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Atmokinesis" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha19aae59g7b6dg42f1g99c8gba9fa01efa5a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3cf4fea4g9f6ag6709g6ba6g71924336f258" version="5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h327d8d82g77e8ga130g894fg6d7428f03312" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Lightning" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShockingGrasp);UnlockSpell(Target_FogCloud_Feat);UnlockSpell(Target_FogCloud,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Zone_GustOfWind_Feat);UnlockSpell(Zone_GustOfWind,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeLightning() and IsSpell() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING,100, 2);ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3d8af1d-16cc-401c-90af-744a474fa2d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Cryokinesis" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1adeadddg4cf1g6bdegcd5dg34aa912921df" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8adef53ag9d08g1fe5g6fe5g149dbdf973d7" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Cold" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfFrost);UnlockSpell(Shout_ArmorOfAgathys_Feat);UnlockSpell(Shout_ArmorOfAgathys,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Projectile_IceKnife_Feat);UnlockSpell(Projectile_IceKnife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeCold() and IsSpell() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_FROST,100,2);ApplyStatus(MAG_FROST_DURATION_TECHNICAL, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="623cbee2-8309-46ba-8cfa-fa795a6458e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_MindWhisperer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4a8e7abfgce4eg3fdfg2f64g05a562e17a73" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7dd3e8bcga695gafb1g3dacgea4093450390" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Duergar_MindSpike" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MindSliver);UnlockSpell(Target_DissonantWhispers_Feat);UnlockSpell(Target_DissonantWhispers,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_MindWhip_Feat);UnlockSpell(Target_MindWhip,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypePsychic() and IsSpell() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE, 100, 2);ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE_DURATION_TECHNICAL, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5fcaf35d-e2c1-42c2-8042-79d5aecb4e26" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Psykineticist" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b9aef94gd65bgd0ecg4721g1c89e9c36339" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he25b8d57gbde9g0b28gdf02gf81ebb9cd47f" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Thunder" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Concussion);UnlockSpell(Zone_Thunderwave_Feat);UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Shatter_Feat);UnlockSpell(Target_Shatter,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeThunder() and IsSpell() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="357cb88b-07f5-4f9b-9b76-2f2b1eb5330d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Pyrokinesis" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73fa1385g1ec5g5636gc3a7g586351cebb2b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20a2da4dg1e95g9d2eg8f95g46f3d4657d4a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy_Fire" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ProduceFlame);UnlockSpell(Zone_BurningHands_Feat);UnlockSpell(Zone_BurningHands,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Projectile_ScorchingRay_Feat);UnlockSpell(Projectile_ScorchingRay,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeFire() and IsSpell() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_FIRE_HEAT_ONCE_TECHNICAL', context.Source)):ApplyStatus(SELF, MAG_FIRE_HEAT_CHARGE_UP_TECHNICAL,100, 0);ApplyStatus(SELF, MAG_FIRE_HEAT, 100, 2);ApplyStatus(SELF, MAG_FIRE_HEAT_ONCE_TECHNICAL, 100, 0);ApplyStatus(SELF, MAG_FIRE_HEAT_DURATION_TECHNICAL, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b6d92ee-3689-46ae-8473-d5788266de3d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Biokinesis" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h45c91aa5g4e8dg1ff8g71d2g7ba7dcebf796" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1b1c99degb46dg4d62g85d1g1cc58284502e" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DiscipleOfLife" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SpareTheDying);UnlockSpell(Target_HealingWord_Feat);UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_ArcaneVigor_Feat);UnlockSpell(Shout_ArcaneVigor,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d4);ApplyStatus(PASSIVE_DISCIPLE_OF_LIFE,100,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7eb13b15-3bbe-44ee-b6cc-353e5d56821b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Clairsentience" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1875bcedg5ab1gfc8cg851bgd35837a28242" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72e4b760ga0f6g5182gbeb1gad293bb55311" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEvilAndGood" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Guidance);UnlockSpell(Target_ProtectionFromEvilAndGood_Feat);UnlockSpell(Target_ProtectionFromEvilAndGood,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Shout_SeeInvisibility_Feat);UnlockSpell(Shout_SeeInvisibility,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);Advantage(Ability, Wisdom);Advantage(Skill, AnimalHandling);Advantage(Skill, Insight);Advantage(Skill, Medicine);Advantage(Skill, Perception);Advantage(Skill, Survival);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b33b208-9eec-44ae-9fe4-16c5bfa5a766" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Empath" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbc89fd75gae49g4307g24e7g6b93aa7f0290" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8f312615g4035g58c7gfaafg73af42ef2007" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Friends);UnlockSpell(Target_Sleep_Feat);UnlockSpell(Target_Sleep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_CalmEmotions_Feat);UnlockSpell(Target_CalmEmotions,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);Advantage(Ability, Charisma);Advantage(Skill, Deception);Advantage(Skill, Intimidation);Advantage(Skill, Performance);Advantage(Skill, Persuasion);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ab7273d-c52a-4a4e-bfa3-86f6e69204fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_FleshMorpher" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a6ce2d2gb747gd1a8g9663g99a757739d22" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h86b61479g3c5fgccc0g227cg217c26f3f494" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Barkskin" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Longstrider_Feat);UnlockSpell(Target_Longstrider,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Barkskin_Feat);UnlockSpell(Target_Barkskin,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);RollBonus(RawAbility, IntelligenceModifier, Dexterity);Skill(Acrobatics,IntelligenceModifier);Skill(SleightOfHand,IntelligenceModifier);Skill(Stealth,IntelligenceModifier);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e571933-1ae4-469b-9460-f8f6b02e3848" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_PsiTrickster" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44be439f-6651-4fe3-82a1-ff9f43c89d71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3950c457g847agcb1age394gba3a6fa421b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h572ef118gad02g7c2dgf87ag493f7a5d5ea6" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThoughtShield_PsychicResistance" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MinorIllusion);UnlockSpell(Target_HideousLaughter_Feat);UnlockSpell(Target_HideousLaughter,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_CrownOfMadness_Feat);UnlockSpell(Target_CrownOfMadness,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);RollBonus(RawAbility, IntelligenceModifier, Charisma);Skill(Deception,IntelligenceModifier);Skill(Intimidation,IntelligenceModifier);Skill(Performance,IntelligenceModifier);Skill(Persuasion,IntelligenceModifier);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="28a0d1e4-bc11-4077-94dd-cdd70ae9c591" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS Feat Xanathar's Guide to Everything" />
       </fields>
