@@ -2799,9 +2799,8 @@
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem() and not HasStatus('BALEFULINTERDICT',context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(BALEFULINTERDICT,100,10);IF(HasPassive('Interdict_7_AcheronsChain',context.Source)):ApplyStatus(ACHERONS_CHAIN,100,2,,,,not SavingThrow(Ability.Strength, SourceSpellDC()));IF(HasPassive('Interdict_12_FlashOfBrimstone',context.Source)):ApplyStatus(SELF,FLASH_OF_BRIMSTONE,100,1);IF(HasPassive('CharmEnemy',context.Source)):ApplyStatus(CHARMED, 100, 600, , , ,not SavingThrow(Ability.Charisma, SourceSpellDC()));IF(HasPassive('MarkedForDeath',context.Source)):ApplyStatus(MARKED_FOR_DEATH,100,-1);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BalefulInterdict:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="BurningSeals" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('IllriggerSeal', 1, 0, false, false, context.Source) and not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
