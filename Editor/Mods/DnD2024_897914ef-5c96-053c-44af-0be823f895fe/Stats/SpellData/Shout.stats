@@ -5416,18 +5416,10 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d2b24012-69d2-4950-9cf9-7bb9f4093f2d" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_ShadowyTendrils" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cfff6156-10b9-4a3c-aab8-77c30b21a38f" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D12Cantrip), Necrotic,Magical);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="58eae2aa-e1fb-4edd-9bc5-3722a27b30a0" />
         <field name="Name" type="NameTableFieldDefinition" value="Rage_Frenzy" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="132e3878-391b-4e1e-967e-ec2fefcfb4b6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_FRENZY,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_FRENZY,100,100);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(RAGE_MUTE,100,100);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_FRENZY,100,100)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca5754b6gfb28gb3d0g1f13g4d6e856ab59f" version="2" />
       </fields>
@@ -5437,7 +5429,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1c9a8666-b8f6-4fc0-9119-6f0d191dcc14" />
         <field name="Name" type="NameTableFieldDefinition" value="Rage_WildMagic" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="618981b6-7e2b-41b8-8b7c-1a7d21bbbf09" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:TriggerRandomCast(1,0,WildMagicBarbarian);IF(ClassLevelHigherOrEqualThan(1,'Barbarian') and not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);ApplyStatus(WILDMAGIC_BARBARIAN_FIRST_TURN,100,1);AI_ONLY:ApplyStatus(AI_HELPER_RAGE,100,100);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:TriggerRandomCast(1,0,WildMagicBarbarian);IF(ClassLevelHigherOrEqualThan(1,'Barbarian') and not ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE,100,100);IF(ClassLevelHigherOrEqualThan(9,'Barbarian')):ApplyStatus(RAGE_2,100,100);ApplyStatus(RAGE_MUTE,100,100);AI_ONLY:ApplyStatus(AI_HELPER_RAGE,100,100);ApplyStatus(WILDMAGIC_BARBARIAN_FIRST_TURN,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE,100,100)" />
       </fields>
     </stat_object>
@@ -5530,7 +5522,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="467ef163-b92b-4672-bff4-a0013b47bb57" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtendRage" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,RAGE_STOP_REMOVE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,RAGE_STOP_REMOVE,100,1);IF(HasPassive('WildMagicRage',context.Source)):TriggerRandomCast(1,0,WildMagicBarbarian);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MindlessRage" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hce3a3d3egac78gf710g10eeg3e502fd96a6c" version="1" />
@@ -6850,191 +6842,6 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;VexingMovement:1;" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="372fe0b3-f35c-486d-a6c3-868ca9790036" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_WildMagic" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16eda368-c0ae-4412-81fc-ef5448f68d96" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_TurnMagic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="18f0b20e-8ff0-4dc4-aff3-c777b945fc79" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1860340d-1194-4b02-bf92-7af61e9de65a" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_CatsAndDogs" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b4ddc5a1-2d5a-4910-b578-aa182bfc8d35" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9086f54f-414a-440b-9e5e-c9d6e60ca313" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_SpeakWithAnimals" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ebf456d7-18f5-4b9c-8714-2ca28f5934cf" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="08089c4f-f9d5-4a76-a148-e742faa023b3" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Entangle" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b6fd4d03-2043-4a3f-a59b-2ec724590576" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7d95b8c0-0503-4a70-b23d-b5e4dd9d4101" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_SpikeGrowth" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="175799c8-2cc9-44a0-a54d-e47ef7916686" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b9e68c57-e318-40d2-859c-f2020367341f" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Slow" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c9c1e614-3b40-4f48-a7b9-2c7deb37209a" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9cc0fc2d-16f0-43da-83a8-d4a1fd6da510" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Cambion" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e37886c8-75d9-450a-a8d3-9499f0208e57" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d28cd4d7-ea75-42fa-8682-65ad835ea121" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Polymorph" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5776bb53-8a30-4187-aa7d-49d849f7cadc" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c28341a9-486c-45ae-a58c-ce06f8ca04a3" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_EnlargeReduce" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="06148ee5-4f69-4dfd-99ac-5bae3406a1b8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(ENLARGE,100,3);IF(not Ally()):ApplyStatus(REDUCE,100,3)" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value=";" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value=";" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value=";" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="634476d4-f10f-4b5e-92c5-ec1d6a31139f" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_ResilientSphere" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc81934-e49e-4be2-bad6-21209d4bfb06" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1fb9bcaf-c4fd-408b-8503-a4fa80e2f976" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Telekinesis" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ab79271a-27ce-4c9c-90b0-0d1383e77e50" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fa9bfd82-2b8d-45e8-b86d-1d763329af2b" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Shield" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a0e80ed5-e721-4dd2-91e4-45078899a351" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="14b95078-669e-47b4-a7ad-4c233f585ea1" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Fly" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="aa3c4eea-f63d-44b0-b0d2-bcd9b18121c9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3adebf19-d29f-40a2-8ae2-251aa432de88" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_ActionSurge" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6bef3d7f-d2f0-433e-a1c2-47aaabca0aa5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="71081e0d-24e6-40b9-af20-0cf570013392" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Swap" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c0ff1604-b696-4bed-bbe7-da297cf4ebdb" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6a65bb4d-6340-4081-8bd5-10a93518df40" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Mephit" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="70e8a41e-6b61-4027-bf0a-3a8eee1e55ea" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a5b47cab-9f19-4a35-97f8-4ab4df060994" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Heal" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6caf785c-a276-498e-8342-a32755fe0e3b" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a62af8f3-4b8f-4bb7-8288-d1b48339cfd6" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Blur" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0759cb9-2fd7-44f8-a929-4e15a967ef1e" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="64e24a23-94ed-486a-87a4-163e269e34c6" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Fog" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7fe7432e-d3ac-4e83-b3d5-f572aad4330d" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7e0bce39-f1af-434f-b6f3-493352c93f93" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_SorceryPoints" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="eb1832dc-c101-46f9-8fcb-7f9d588743e4" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1baa224c-d7ee-4925-aff5-b492a15c7c96" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Enchant" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="fb93c8f7-b849-4af1-b780-e0f3d2756291" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Unarmed() and not Dead() and Ally()" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f15dfce5-2dd6-4233-993e-c500af9b12b0" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Teleport" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bd9c4e03-5c5b-4f66-b5ef-597577973ef2" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9a2ccebd-7fff-4931-998c-0d9e1bee5ed5" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Burning" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="90f3012a-7bbc-4a0f-a327-1e2e989c3109" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() or Item()) and not Dead() not Ally()" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF8B4513" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="72413432-fe45-43fa-ab05-b3d834666b8c" />
@@ -7562,6 +7369,80 @@
         <field name="Name" type="NameTableFieldDefinition" value="Disengage_Metamorph" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be175729-c498-4408-acc6-4c829c11402f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Wild Magic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9431890-5285-43ea-8f78-420c3a2cd5d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_ExplodingFlumph_Activate" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f0471a3-10d9-47a1-ba7a-297681ba706f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN__EXPLODING_FLUMPH,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="674c9830-4f8c-418e-9801-566a9d3544bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_LightBolt_Activate" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb2b48e1-44a7-4c20-85a7-fd2a8d67c414" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN_LIGHT_BOLT,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e5a4b5a-4e6c-40f3-b989-83196d722335" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_MagicRetribution" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f59a533-667d-462f-865a-34139230f429" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN_MAGIC_RETRIBUTION,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd11a4d2-4e98-4932-a6bf-fe398326811a" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_ProtectiveLights" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="44e72356-91a5-488e-a1f4-2ba46221cb3e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2b24012-69d2-4950-9cf9-7bb9f4093f2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_ShadowyTendrils" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cfff6156-10b9-4a3c-aab8-77c30b21a38f" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D12Cantrip), Necrotic,Magical);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Self()):ApplyStatus(SELF,WILD_MAGIC_BARBARIAN_SHADOWY_TENDRILS,100,10);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12, Necrotic);GainTemporaryHitPoints(2*ClassLevel(Barbarian))" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b4bdef1-9397-487f-a545-f38da1899d22" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_Teleport_Activate" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b2652f7d-d1cf-416e-ac34-2ac83848f0f2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN_TELEPORT,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39a332a3-b186-4df0-80e5-95be3ea6ada9" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_VineGrowth" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="deaf4311-7f76-47ab-9130-eb6319561117" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WILD_MAGIC_BARBARIAN_VINE_GROWTH,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45b1989b-8aa5-4d07-ac7d-a7210b09c2b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_WeaponInfusion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c8745194-8a3c-4003-af36-cb8d88871955" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MainHand, WILD_MAGIC_BARBARIAN_WEAPON_INFUSION,100,10);ApplyStatus(SELF,WILD_MAGIC_BARBARIAN_WEAPON_INFUSION_TECHNICAL,100,10);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
