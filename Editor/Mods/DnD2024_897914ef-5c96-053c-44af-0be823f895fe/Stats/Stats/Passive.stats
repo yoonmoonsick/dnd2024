@@ -819,16 +819,15 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c6ae8d3e-b943-4416-a81d-ce76c7d34532" />
         <field name="Name" type="NameTableFieldDefinition" value="FightingStyle_UnarmedFighting" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hca5ca0e1g2bd1g4977g8766g3cd014581c7f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11acaa45gb4a8g7161gbaf6g3a41284335a6" version="4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6e6d96d6g93e5ga1a4g4816g3ed4af779688" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11acaa45gb4a8g7161gbaf6g3a41284335a6" version="6" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_UnarmedAttack" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d8);" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source) and not HasPassive('Altered',context.Source);" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d6);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -1146,15 +1145,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Altered" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h470d8b48g959fge3dcg83bag383250bd4eb0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d3c9d92g9f73g833cg7106g4cf3737c7925" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d3c9d92g9f73g833cg7106g4cf3737c7925" version="4" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h1a9ed105g6f53g496bg99acge94b77ba5677" version="1" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Dexterity);IF(not WearingArmor(context.Source) and IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Constitution);DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Dexterity);IF(not WearingArmor(context.Source) and IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Constitution);DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);CharacterUnarmedDamage(1d4);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source) and IsMeleeUnarmedAttack();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d8,Bludgeoning)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2281,9 +2277,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="MartialArts_UnarmedDamage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35af45a5-74a5-474d-b8db-506e4d92bcdf" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd79caba1g593cg6310g2fedg81643275e017" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa;7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) ):MonkWeaponDamageDiceOverride(LevelMapValue(MartialArts));UnlockSpell(Target_UnarmedStrike_Monk_Action);" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2341,11 +2340,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a12a5a2d-2254-4890-8a66-a0a26546a8ec" />
         <field name="Name" type="NameTableFieldDefinition" value="TavernBrawlerDamage" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
         <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d4);" />
       </fields>
     </stat_object>
@@ -3066,54 +3063,6 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SpiritualWeapon_Maul" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldOfFaith_WarGodsBlessing);UnlockSpell(Target_SpiritualWeapon_WarGodsBlessing)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc67c11fbgdabbgda3dg4224g83a0b71eb7c2" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1);CharacterWeaponDamage(1)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d1d7ac22-f60e-46bd-8a69-174ec7049be5" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(2);CharacterWeaponDamage(2)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="048a2415-e956-4d4a-b4f3-6b477caed3c9" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(3);CharacterWeaponDamage(3)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1e1ea065-beca-4c23-a4b1-87d49088d53a" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(4);CharacterWeaponDamage(4)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ca395674-1878-4ce5-bf4e-5005fd1d4485" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(5);CharacterWeaponDamage(5)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ee7aa3ff-4c9d-419a-bb3e-edcc58889213" />
-        <field name="Name" type="NameTableFieldDefinition" value="Summon_Unarmed_Damage_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3abbda3e-5b0c-41d2-a0a4-a39e8853e779" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(6);CharacterWeaponDamage(6)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4347,10 +4296,12 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b2c86fbg88eegd9aag62e5g270beb421a69" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7cbb902g40b2ga2deg2c63g78661befb554" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):RollBonus(MeleeUnarmedAttack,DexterityModifier+1);IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):Damage(MeleeUnarmedAttack,DexterityModifier+1);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):RollBonus(MeleeUnarmedAttack,DexterityModifier+1);IF(IsDexterityGreaterThanStrength() and not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source)):CharacterUnarmedDamage(LevelMapValue(BardicInspiration)+DexterityModifier);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_UnarmedDamage" />
-        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa;7aadd5cf-d704-44f9-8450-3532a8155c06" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source);" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8177,7 +8128,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92494e1fg293aga95fg5efdg58fdff52d4e6" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_AgonizingBlast" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(BurningSealsCheck()):DamageBonus(max(0,CharismaModifier)*LevelMapValue(AxiomaticSeals));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(BurningSealsCheck()):DamageBonus(CharismaModifier*LevelMapValue(AxiomaticSeals));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9176,18 +9127,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_OfArchery_Gloves_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ba3efe3c-b9bc-4252-92fc-098f17a22214" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(Longbows);Proficiency(Shortbows);IF((HasPassive('Range_Shortow',context.Source) or HasPassive('Range_Longbow',context.Source)) and IsRangedWeaponAttack()):CharacterWeaponDamage(2);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="48e365e1-4cf0-439f-b099-acb6bcf43ad3" />
-        <field name="Name" type="NameTableFieldDefinition" value="TrueName" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3a5221b7-de46-4175-9a4e-2488020552c4" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(BurningSealsCheck()):DamageBonus(2d6);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,IllriggerSeal,1,0)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dfbb60ag7425g6a4dgc7ebge833aeab8053" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
