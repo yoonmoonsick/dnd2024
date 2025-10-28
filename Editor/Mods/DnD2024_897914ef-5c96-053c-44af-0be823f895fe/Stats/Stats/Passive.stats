@@ -871,6 +871,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfFrost);UnlockSpell(Shout_ArmorOfAgathys_Feat);UnlockSpell(Shout_ArmorOfAgathys,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Projectile_IceKnife_Feat);UnlockSpell(Projectile_IceKnife,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeCold() and IsSpell() and not Item() and not Self();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_FROST,100,2);ApplyStatus(MAG_FROST_DURATION_TECHNICAL, 100, 1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -884,6 +885,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MindSliver);UnlockSpell(Target_DissonantWhispers_Feat);UnlockSpell(Target_DissonantWhispers,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_MindWhip_Feat);UnlockSpell(Target_MindWhip,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypePsychic() and IsSpell() and not Item() and not Self();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE, 100, 2);ApplyStatus(MAG_PSYCHIC_MENTAL_FATIGUE_DURATION_TECHNICAL, 100, 1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -897,6 +899,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Concussion);UnlockSpell(Zone_Thunderwave_Feat);UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Target_Shatter_Feat);UnlockSpell(Target_Shatter,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeThunder() and IsSpell() and not Item() and not Self();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_THUNDER_REVERBERATION, 100, 2);ApplyStatus(MAG_THUNDER_REVERBERATION_DURATION_TECHNICAL, 100, 1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -910,6 +913,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ProduceFlame);UnlockSpell(Zone_BurningHands_Feat);UnlockSpell(Zone_BurningHands,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);UnlockSpell(Projectile_ScorchingRay_Feat);UnlockSpell(Projectile_ScorchingRay,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeFire() and IsSpell() and not Item() and not Self();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('MAG_FIRE_HEAT_ONCE_TECHNICAL', context.Source)):ApplyStatus(SELF, MAG_FIRE_HEAT_CHARGE_UP_TECHNICAL,100, 0);ApplyStatus(SELF, MAG_FIRE_HEAT, 100, 2);ApplyStatus(SELF, MAG_FIRE_HEAT_ONCE_TECHNICAL, 100, 0);ApplyStatus(SELF, MAG_FIRE_HEAT_DURATION_TECHNICAL, 100, 1)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -924,6 +928,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1d4);ApplyStatus(PASSIVE_DISCIPLE_OF_LIFE,100,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9022,6 +9027,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="88c82a04-9e85-4709-989a-7522e2fade40" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Items" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae9cf758-935b-4a2b-b0f6-506ef55e9de7" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Fire_HeatOnFireDamage_Gloves_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8f021c05-9158-4956-b9f9-3d993916818e" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
