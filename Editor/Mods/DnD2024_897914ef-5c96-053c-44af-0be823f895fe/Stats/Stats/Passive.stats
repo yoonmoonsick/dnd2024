@@ -57,6 +57,14 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_RANGE_THROW_TECHNICAL,100,-1);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3487aba6-c25f-42bf-9fa0-1dfed5067d3e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DebrisBreaker_NPC" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('DEBRIS_THRESHOLD_LESSER',context.Target) and not HasStatus('ARCANE_LOCK',context.Target)):DamageBonus(10,Force);IF(HasStatus('DEBRIS_THRESHOLD',context.Target) and not HasStatus('ARCANE_LOCK',context.Target)):DamageBonus(22,Force);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2868e82c-08c2-4bfe-a8fc-8099e216a713" />
