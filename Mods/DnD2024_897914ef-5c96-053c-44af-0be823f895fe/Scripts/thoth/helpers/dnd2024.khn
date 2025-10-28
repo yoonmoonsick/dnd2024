@@ -98,7 +98,7 @@ function BarukKhazadDC(fallbackDC)
 end
 
 function BurningSealsCheck()
-    return SpellId('Target_UnleashHell_Necrotic') | SpellId('Target_UnleashHell_Fire') | SpellId('Target_Illrigger_BalefulInterdict') | SpellId('Target_Illrigger_BalefulInterdict_Reapply') | SpellId('Target_BurningSeals_Necrotic') | SpellId('Target_BurningSeals_Fire')
+    return SpellId('Target_BurningSeals_Fire') | SpellId('Target_BurningSeals_Necrotic') | SpellId('Target_UnleashHell_Fire') | SpellId('Target_UnleashHell_Necrotic')
 end
 
 function InfernalConduitCheck()
@@ -174,10 +174,6 @@ end
 
 function IllriggerSpellCheck()
     return SpellId('Shout_Blur') | SpellId('Target_Darkness') | SpellId('Shout_DetectThoughts') | SpellId('Target_HeatMetal') | SpellId('Target_HoldPerson') | SpellId('Target_Invisibility') | SpellId('Target_LesserRestoration') | SpellId('Shout_MirrorImage') | SpellId('Projectile_RayOfEnfeeblement') | SpellId('Projectile_ScorchingRay') | SpellId('Target_Silence') | SpellId('Target_Bane') | SpellId('Zone_BurningHands') | SpellId('Target_CharmPerson') | SpellId('Zone_ColorSpray') | SpellId('Target_Command_Container') | SpellId('Shout_DisguiseSelf') | SpellId('Shout_HellishRebuke') | SpellId('Shout_Shield_Sorcerer') | SpellId('Target_ShieldOfFaith') | SpellId('Target_ChillTouch') | SpellId('Target_DancingLights') | SpellId('Projectile_FireBolt') | SpellId('Target_MinorIllusion') | SpellId('Projectile_RayOfFrost') | SpellId('Target_ShockingGrasp') | SpellId('Shout_Thaumaturgy') | SpellId('Target_VengefulBlade') | SpellId('Target_ViciousMockery') | SpellId('Projectile_Hellfire')
-end
-
-function IllriggerBurnSeals()
-    return SpellId('Target_BurningSeals_Fire') | SpellId('Target_BurningSeals_Necrotic') | SpellId('UnleashHell') | SpellId('UnleashHell_Fire') | SpellId('UnleashHell_Necrotic')
 end
 
 function ChaLvlLessOrEqualThan(value, entity)
