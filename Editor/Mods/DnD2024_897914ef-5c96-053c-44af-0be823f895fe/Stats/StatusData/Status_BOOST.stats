@@ -2674,13 +2674,29 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0ba9b62-4530-4985-8540-66ce03835847" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="218a4646-de60-415b-800c-3a3349fe2a49" />
-        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_WEAPON_INFUSION" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3b036da9-1936-4ee3-8e93-d12137b77d96" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ItemReturnToOwner();WeaponProperty(Thrown);WeaponProperty(Light);WeaponDamage(LevelMapValue(D6Cantrip),Force);" />
+        <field name="UUID" type="IdTableFieldDefinition" value="81f4c47c-f7e7-4c26-9b8e-9409560205f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN__EXPLODING_FLUMPH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="403105dc-6c8c-4305-8960-a9f471427a51" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a28febd-35ce-4b98-b6be-a004b0db8268" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_LIGHT_BOLT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ba0c9a8-faf7-4051-9006-43f69994dc00" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2689,6 +2705,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_MAGIC_RETRIBUTION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ec798289-8989-46b1-a176-bb54a102fd7a" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2697,6 +2715,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="41af8fd5-1d53-4a51-b3f7-9eb7b469c1cc" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE') and not HasStatus('RAGE_2')" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2704,24 +2724,47 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d127647b-012b-4bc7-8323-0a1b2c40c447" />
         <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_PROTECTIVE_LIGHTS_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="580e3e39-cbd4-4f3e-8ced-983c7738674e" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="442296bc-1e50-4b99-a10f-b2a18a35e626" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c5c6a147-10b1-4d08-a490-a8a9ff39f65d" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_SHADOWY_TENDRILS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6ae5e5f4-2cda-4373-a417-5d7d981378db" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(2*ClassLevel(Barbarian));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP() or (not HasStatus('RAGE') and not HasStatus('RAGE_2'))" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2193c475-37fc-475a-911c-102a9e606f3f" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="90306f2b-3acc-47b5-b185-0b1a4e813fd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_TELEPORT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dbe176fd-ed68-4292-99a6-1e01718f5c2b" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="77db67f5-c4e0-4985-a572-cfe5f0479522" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f72b9cf8-577a-4d77-9564-1f8edd257f0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_VINE_GROWTH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56a50aa2-783c-4a82-acdd-a4858034c329" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="218a4646-de60-415b-800c-3a3349fe2a49" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN_WEAPON_INFUSION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b036da9-1936-4ee3-8e93-d12137b77d96" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Force)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFDA70D6" is_substat="false">
@@ -11132,6 +11175,72 @@
         <field name="Name" type="NameTableFieldDefinition" value="PHANTASMAL_KILLER_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb3b118f-e423-4369-a4bc-6f743a12dbf8" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91ea691d-9d17-49bd-ae32-abbfb9a56d5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5660330b-5c02-47b4-b261-b5b24e2234c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb8e58c2-70c0-43af-9cc5-d88be7ba0b4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3ea7770-1436-47ee-8de7-dc2fca14134d" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf2414bd-1e95-41bb-a821-670aa7fa2851" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03055baf-1dbf-4571-b147-30ce21cfd29e" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="311b66dd-fdb3-4d91-850e-2dfdbcce1b69" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5decb18d-65be-4c47-95a5-ab86cb786ab5" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00d7a89b-3e2d-46ca-aeef-238165870c1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ced9440-66c8-4960-ac01-bbda40a7089a" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_14" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cdcf9ed7-9e83-49f7-a288-25bc95560a65" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_15" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

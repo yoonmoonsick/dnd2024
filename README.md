@@ -408,6 +408,13 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 - Level 3: Rage of the Wilds
   - Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the follwing options of your choice.
 
+### Path of the Wild Magic
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagicPath.png?raw=true)
+
+- Level 3: Rage: Wild Magic
+  - Using Extend Rage changes the effects of Wild Magic.
+
 ### Path of the World Tree
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WorldTreePath.png?raw=true)
@@ -1503,6 +1510,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 7: Polymorph, Dimension Door
   - Level 9: Telekinesis, Wall of Stone
 - Level 3: Wild Magic Surge
+  - The chance of a Wild Magic Surge occurring has increased.
 - Level 3: Tides of Chaos
   - Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again (This feature is only enabled in turn-based mode).
 

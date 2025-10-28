@@ -3383,14 +3383,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="91ab2c71-40c1-4eb7-bd94-52bbaee034fa" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="16af3823-46a6-4803-a105-e3029a0b02a7" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(TurnBased(context.Source) and Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(1,,WildMagic);IF(TurnBased(context.Source) and HasStatus('TIDES_OF_CHAOS',context.Source) and not Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(11,,WildMagic,WildMagicTurn);IF(TurnBased(context.Source) and not HasStatus('TIDES_OF_CHAOS',context.Source) and not (HasStatus('WILD_MAGIC_GUARANTEED',context.Source) or Tagged('SORCERER_WILD_MAGIC_SUPRESSED',context.Source))):TriggerRandomCast(20,,WildMagic,WildMagicTurn);IF(HasStatus('TIDES_OF_CHAOS',context.Source)):RemoveStatus(SELF,TIDES_OF_CHAOS)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e4f00b1e-e07a-4457-955c-835aeff50e4a" />
         <field name="Name" type="NameTableFieldDefinition" value="StormSphere" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,STORM_SPHERE_AURA,100,-1)" />
@@ -4553,24 +4545,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="399560ab-900b-42de-8deb-de7091b1d019" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip), Force)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,LevelMapValue(D6Cantrip), Force,Magical);ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="75aafa5d-90bf-4638-b37a-01998a4a5e36" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cacdc6b3-add6-4181-95c1-bc7cb20d90b0" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8c7bd061-f266-40a0-a2e5-a3e2f5ce6e6b" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6846,6 +6820,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c4bb114-4d51-42f7-8a03-88f91a15b2e1" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Sorcerer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91ab2c71-40c1-4eb7-bd94-52bbaee034fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16af3823-46a6-4803-a105-e3029a0b02a7" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(TurnBased(context.Source) and Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(1,,WildMagic);IF(TurnBased(context.Source) and HasStatus('TIDES_OF_CHAOS',context.Source) and not Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(6,,WildMagic,WildMagicTurn);IF(TurnBased(context.Source) and not HasStatus('TIDES_OF_CHAOS',context.Source) and not (HasStatus('WILD_MAGIC_GUARANTEED',context.Source) or Tagged('SORCERER_WILD_MAGIC_SUPRESSED',context.Source))):TriggerRandomCast(16,,WildMagic,WildMagicTurn);IF(HasStatus('TIDES_OF_CHAOS',context.Source)):RemoveStatus(SELF,TIDES_OF_CHAOS)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
