@@ -1572,7 +1572,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - Whenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.
   - Pact of The Chain
   - Pact of the Tome
-    - You always have the Hex spell prepared. You can cast Hex without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest. (Homebrew)
+    - - You always have the Hex spell prepared. You can cast Hex without expending a spell slot a number of times equal to half your Charisma modifier (rounded down, minimum of once), and you regain all expended uses when you finish a long rest.
 - Required Warlock Level 2
   - Book of Ancient Secrets
     - The spell power Level is equal to the Level of the opened Warlock spell slot.
