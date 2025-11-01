@@ -11,25 +11,9 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6f295502-d194-4cb9-aa34-c1cab83e8078" />
-        <field name="Name" type="NameTableFieldDefinition" value="NPC max combat turn time" />
-        <field name="Value" type="FloatTableFieldDefinition" value="3" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 20" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b4bbd8f0-4d27-45cf-b2c3-a4582c6391a0" />
-        <field name="Name" type="NameTableFieldDefinition" value="TraderDonationsRequiredAttitude" />
-        <field name="Value" type="FloatTableFieldDefinition" value="-135" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: -45" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="939d51a7-b639-44d8-a56b-ff1714c93caf" />
         <field name="Name" type="NameTableFieldDefinition" value="CombatCameraEndDelay" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 1 After a spell / projectile hits, how long should the timeline wait before ending" />
       </fields>
     </stat_object>
@@ -37,23 +21,15 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38107f5f-fbc2-42ce-b016-18a875610ab0" />
         <field name="Name" type="NameTableFieldDefinition" value="CameraTakeControlTimer" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 1 The time it takes to return control back to the camera after the player took control by moving it" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c9da9894-2698-49dc-aa48-761cc8b6b441" />
-        <field name="Name" type="NameTableFieldDefinition" value="CameraEnableTakeControlOnEndTurn" />
-        <field name="Value" type="FloatTableFieldDefinition" value="1" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="If &gt; 0 will allow camera to take over control on turn end even if the control timer has not expired yet" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="08efacad-4c70-400e-bddf-4de490948000" />
         <field name="Name" type="NameTableFieldDefinition" value="CombatCameraRangedAttackWait" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 1 How long after a ranged attack hits the camera should wait before moving back to the player" />
       </fields>
     </stat_object>
@@ -61,7 +37,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5b50ac87-6bed-4b02-9619-64d6e727667c" />
         <field name="Name" type="NameTableFieldDefinition" value="CCTurnPauseTime" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 1 The time it'll take before a CC'd character will automatically skip its turn" />
       </fields>
     </stat_object>
@@ -77,7 +53,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a05744f-db1c-43bc-abee-05b787e5ca0d" />
         <field name="Name" type="NameTableFieldDefinition" value="CombatCameraStatusEndTurnWait" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 1 The delay the camera stays on a NPC ending his turn due to a status (like being incapacitated, knocked down...)" />
       </fields>
     </stat_object>
@@ -93,72 +69,16 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3e913dca-cc69-4443-80ff-b76de8e9e108" />
         <field name="Name" type="NameTableFieldDefinition" value="CannotActTimeout" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.1" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 2 Time to pause on characters who cannot act during combat" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c4b37f46-7825-431e-95f1-01141dec8914" />
-        <field name="Name" type="NameTableFieldDefinition" value="PickupObjectMultiplier" />
-        <field name="Value" type="FloatTableFieldDefinition" value="5" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Multiplied by the characters strength to calculate the heaviest object a character can pick up (moving to inventory, or moving to a targets inventory)." />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dcc9a7b2-77a8-4080-9b75-7c7815446277" />
         <field name="Name" type="NameTableFieldDefinition" value="AISwarmMoveGroupMinDistance" />
-        <field name="Value" type="FloatTableFieldDefinition" value="30" />
+        <field name="Value" type="FloatTableFieldDefinition" value="9" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Default: 15 Distance (start and end position) to merge swarm AI into movement groups (any swarm AI that is this distance from the group will be added)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8f14b803-4253-46ad-9356-72f14c67ce7d" />
-        <field name="Name" type="NameTableFieldDefinition" value="PerformerZoneJoinRadius" />
-        <field name="Value" type="FloatTableFieldDefinition" value="16" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 8 Max distance to the main performer to join the zone" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c01ffd5d-4dc3-4d9a-b98e-64bc3ec2b293" />
-        <field name="Name" type="NameTableFieldDefinition" value="PerformerZoneSilenceRadius" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Min distance to create a new different zone" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="89143ef9-d32f-48ce-9583-7cb56c97c3aa" />
-        <field name="Name" type="NameTableFieldDefinition" value="MaxPerformerZones" />
-        <field name="Value" type="FloatTableFieldDefinition" value="8" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 4 Max perfom zone" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8e3d05b6-5a48-4a05-90d5-6adb42cc077b" />
-        <field name="Name" type="NameTableFieldDefinition" value="CameraFlyingZoomDistanceExtra" />
-        <field name="Value" type="FloatTableFieldDefinition" value="20" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 10 Distance in meters. How much further the camera is allowed to zoom out whilst preparing a flying spell." />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8ba28b52-343d-4113-99b4-df5709b004d4" />
-        <field name="Name" type="NameTableFieldDefinition" value="CameraFlyingZoomDistanceRemap" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.5" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Range between 0 -&gt; 1. How much of the new zoom out distance should the user initially zoom to." />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="65482621-764d-4940-a18c-0e18a3fb23e1" />
-        <field name="Name" type="NameTableFieldDefinition" value="EscortStragglerDistance" />
-        <field name="Value" type="FloatTableFieldDefinition" value="10" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 10 Distance where the escort leader will wait for stragglers" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -171,17 +91,9 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="79524570-798e-45da-99ae-471ef54de892" />
-        <field name="Name" type="NameTableFieldDefinition" value="FollowDistance" />
-        <field name="Value" type="FloatTableFieldDefinition" value="70" />
-        <field name="Comment" type="CommentTableFieldDefinition" value="Default: 70" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="877929f7-0786-42cb-9451-388718f00573" />
         <field name="Name" type="NameTableFieldDefinition" value="SurfaceOnMoveDistanceMultiplier" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.75" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.5" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Used in the calculation of the distance threshold AFTER entering a surface. Each time distance threshold reached, status of surface will apply." />
       </fields>
     </stat_object>
@@ -189,7 +101,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39d79da5-ff70-4d0d-b3f0-a6ba61724e59" />
         <field name="Name" type="NameTableFieldDefinition" value="SurfaceOnEnterDistanceMultiplier" />
-        <field name="Value" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Value" type="FloatTableFieldDefinition" value="0.25" />
         <field name="Comment" type="CommentTableFieldDefinition" value="Used in the calculation of the distance threshold when first entering a surface. Only after this first distance is reached will the status of the surface first apply." />
       </fields>
     </stat_object>
