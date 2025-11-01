@@ -7725,9 +7725,12 @@ data "Boosts" "IF(ClassLevelHigherOrEqualThan(2,'Warlock',context.Source)):Unloc
 new entry "RepellingBlast"
 type "PassiveData"
 using "RepellingBlast"
+data "Description" "hc483836fg9c66g7fadge5a8g6ece84bec6a9;2"
+data "DescriptionParams" "Distance(3)"
 data "TooltipPermanentWarnings" "49bf05ea-65bb-4d33-a3f2-6cc34afefb90"
 data "EnabledContext" "OnCreate;OnStatusRemoved;OnStatusApplied;OnStatusRemove;OnStatusApply"
-data "Conditions" "SpellId('Projectile_EldritchBlast') and HasDamageEffectFlag(DamageFlags.Hit);"
+data "Conditions" "TargetSizeEqualOrSmaller(Size.Large) and IsWarlockCantrip() and HasDamageEffectFlag(DamageFlags.Hit) and (IsAttackType(AttackType.MeleeSpellAttack) or IsAttackType(AttackType.RangedSpellAttack));"
+data "StatsFunctors" "ApplyStatus(PASSIVE_REPELLING_BLAST,100,0)"
 
 new entry "ThiefOfFiveFates"
 type "PassiveData"

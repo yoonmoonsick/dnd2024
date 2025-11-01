@@ -620,7 +620,7 @@ type "SpellData"
 data "SpellType" "Projectile"
 using "Projectile_EldritchBlast"
 data "SpellProperties" "IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_ELDRITCHBLAST,100,-1)"
-data "SpellSuccess" "IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Psychic,Magical);IF(HasPassive('RepellingBlast',context.Source)):Force(4.5);"
+data "SpellSuccess" "IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Psychic,Magical);"
 data "SpellFail" "IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Psychic,Magical);"
 
 new entry "Projectile_EldritchCannon_ForceBallista"
