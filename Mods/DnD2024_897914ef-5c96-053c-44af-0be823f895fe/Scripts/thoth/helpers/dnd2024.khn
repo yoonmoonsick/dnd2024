@@ -550,3 +550,16 @@ end
 function SanctuarySpecificSpellCheck()
     return IsHideSpell() | SpellId('Target_Help') | SpellId('Shout_Disengage') | SpellId('Shout_Dodge') | SpellCategoryIs(SpellCategory.Dash) | SpellCategoryIs(SpellCategory.Jump)
 end
+
+function IsMeleeAttack()
+    result = context.HitDescription.AttackType == AttackType.MeleeWeaponAttack or context.HitDescription.AttackType == AttackType.MeleeSpellAttack or context.HitDescription.AttackType == AttackType.MeleeUnarmedAttack or context.HitDescription.AttackType == AttackType.MeleeOffHandWeaponAttack
+	return ConditionResult(result) | SpellId('Target_OffhandAttack_Nick')
+end
+
+function IsWeaponAttack()
+    result = context.HitDescription.AttackType == AttackType.RangedWeaponAttack
+    or context.HitDescription.AttackType == AttackType.MeleeWeaponAttack
+    or context.HitDescription.AttackType == AttackType.RangedOffHandWeaponAttack
+    or context.HitDescription.AttackType == AttackType.MeleeOffHandWeaponAttack
+	return ConditionResult(result) | SpellId('Target_OffhandAttack_Nick')
+end
