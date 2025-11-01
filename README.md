@@ -2647,6 +2647,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Find Steed](https://www.dndbeyond.com/spells/2618879-find-steed)
 - [Flame Blade](https://www.dndbeyond.com/spells/2618899-flame-blade)
 - [Flaming Sphere](https://www.dndbeyond.com/spells/2618919-flaming-sphere)
+- [Gust of Wind](https://www.dndbeyond.com/spells/2619137-gust-of-wind)
 - [Invisibility](https://www.dndbeyond.com/spells/2619116-invisibility)
 - [Lesser Restoration](https://www.dndbeyond.com/spells/2619016-lesser-restoration)
 - [Magic Weapon](https://www.dndbeyond.com/spells/2619024-magic-weapon)
