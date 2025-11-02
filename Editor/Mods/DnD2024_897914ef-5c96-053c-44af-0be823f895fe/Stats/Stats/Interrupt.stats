@@ -2738,6 +2738,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('RiskDie', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'));" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(RiskDie),Force,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_BangYouAreDead" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2761,7 +2762,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43ad471ag2d62g9031g66d2g9dd6812b0207" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0fdcc665g87e9g76f0g95f3ga96776634d7d" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_BonusShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_DeftDeflection" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and IsFlatValueInterruptInteresting(8, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source);" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));UseSpell(OBSERVER_TARGET,Projectile_DeftDeflection,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
@@ -3404,7 +3405,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d975b1ba-8069-49c9-bae7-64a2c44afb27" />
         <field name="Name" type="NameTableFieldDefinition" value="Itrp_WC_FingerGuns" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7b4665d-cadb-42f5-a1a8-a4eccf0eb6e6" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_TelekineticBolt" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_FingerGuns" />
         <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(Projectile_FingerGuns,true,true,true);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5391d1a5g7191g9a43g6763g48c4f4038beb" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd191f60g611bg67ffg8644gfbff7c3dc068" version="1" />
