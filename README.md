@@ -1816,7 +1816,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 1: Quick Draw
   - You have Advantage on Initiative rolls.
-- Level 2: Critical Shot
+- Level 2: Critical Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_CriticalShot.png?raw=true)
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.
 - Level 2: Risk ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Risk.png?raw=true)
   - You can perform incredible feats of daring fueled by special dice called Risk Dice.
@@ -1866,7 +1866,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Fortune is a fickle thing—unless you're a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?
 
-- Level 3: Poker Face ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_RiskyBusiness.png?raw=true)
+- Level 3: Poker Face ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PokerFace.png?raw=true)
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
 - Level 3: Liar's Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
   - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On an 11 or higher, the damage of your next ranged weapon attack is doubled. On a 10 or lower, it's halved.
@@ -1896,11 +1896,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 > Magic and guns aren't so different—arcane power is like gunpowder, a spell is like a bullet, and you are like a gun, directing your spells with precision at unfortunate targets. Spellslingers mix the disciplines of gunplay and spellcasting, sometimes loading arcane charges with your shots and firing bullets enhanced with lighting, frost, or flame.
 
-- Level 3: Bang, You're Dead!
+- Level 3: Bang, You're Dead! ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BangYouAreDead.png?raw=true)
   - You learn the Finger Guns. When you hit a target with a Finger Guns attack, you can expend one Risk Die as a Bonus Action and add it to the damage roll.
-- Level 6: Spellshot
+- Level 6: Spellshot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Spellshot.png?raw=true)
   - When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
-- Level 6: Antimagic Shot
+- Level 6: Antimagic Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_AntimagicShot.png?raw=true)
   - When you score a Critical Hit and the target is affected by your Gut Shot feature, it also impedes the target's ability to cast spells. While the projectile is lodged in the target, it can't cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.
 - Level 10: Inured to Magic
   - When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.
@@ -1915,11 +1915,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Your ranged weapon attacks are not penalized for High Ground Rules.
 - Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Ricochet.png?raw=true)
   - You can take an action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
-- Level 6: Gun Spinning
+- Level 6: Gun Spinning ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GunSpinning.png?raw=true)
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
 - Level 6: Speed Loader
   - On your turn, you can reload a weapon with the Reload property without taking an action or Bonus Action.
-- Level 10: Deft Deflection
+- Level 10: Deft Deflection ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DeftDeflection.png?raw=true)
   - You can shoot projectiles out of the air. When an ally within 30 feet of you is hit by an ranged weapon attack, you can take a Reaction and expend one Risk Die to grant that ally the benefit of the Skin of Your Teeth maneuver against that attack.
 
 ### White Hat
@@ -1949,7 +1949,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range.
   - You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels.
   - If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them.
-  - Burning Seals
+  - Burning Seals ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire.png?raw=true)
     - You can burn a seal you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn't require an action from you, but you can't do so while incapacitated. Once a seal is burned, it immediately vanishes.
   - Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 10th level for a total of 3d6.
 - Level 2: Combat Mastery
@@ -1998,7 +1998,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - You can expend a seal as a bonus action to teleport up to 60 feet to an unoccupied space you can see.
   - Shadow Shroud
     - You can expend a seal as a bonus action to weave a mantle of semisolid shadows around yourself or a creature you touch. The target gains a +2 bonus to AC for 1 minute.
-  - Unleash Hell
+  - Unleash Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire_Big.png?raw=true)
     - When you burn one or more seals on an interdicted creature, you can use your reaction to unleash an explosion of hellish energy around them. Each creature of your choice within 5 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes the same amount and type of damage as the seals dealt to the interdicted creature. On a successful save, a creature takes half as much damage.
   - Vengeful Shot
     - When a creature makes a ranged attack against you or an ally you can see within 30 feet of you, you can expend a seal as a reaction to make a ranged weapon attack against the attacker. If your attack hits, it deals extra damage equal to half your illrigger level (rounded down).
@@ -2587,9 +2587,9 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
 - [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
-- [Concussion](https://www.dndbeyond.com/spells/2840679-concussion)
+- [Concussion](https://www.dndbeyond.com/spells/2840679-concussion) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Concussion.png?raw=true)
 - [Dancing Lights](https://www.dndbeyond.com/spells/2619058-dancing-lights)
-- [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns)
+- [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_FingerGuns.png?raw=true)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
 - [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
 - [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
@@ -2605,7 +2605,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
 - [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
 - [Telekinetic Fling](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
-- [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap)
+- [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Thunderclap.png?raw=true)
 - [True Strike](https://www.dndbeyond.com/spells/2619204-true-strike)
 - [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
 - [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
