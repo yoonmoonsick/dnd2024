@@ -3173,6 +3173,28 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57e68bed-3f5d-4324-95f3-66fa8909cba8" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Items" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b6ee7fb-3832-45ee-9a05-855870981a88" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MAG_WeaponAction_TelekineticBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="34c00d6e-8e26-4e84-911d-3245092ac09e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcced252cg832eg451bg965fg8997714febfd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77d70ef5g47f5g4ee9g82dbgd99b58c62268" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Force)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_TelekineticBolt" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsRangedAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d8,Force,Magical);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('MAG_WEAPON_ACTION_TELEKINETIC_BOLT');" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a8893a9-db5f-49cd-ba05-0aebdfe5bfba" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Warcaster" />
       </fields>

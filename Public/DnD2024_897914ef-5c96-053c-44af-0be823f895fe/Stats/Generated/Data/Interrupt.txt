@@ -2328,6 +2328,22 @@ data "InterruptDefaultValue" "Ask;Enabled"
 data "TooltipDamageList" "DealDamage(LevelMapValue(PsionDie),Force)"
 data "TooltipStatusApply" ""
 
+new entry "YMS_Items"
+type "InterruptData"
+
+new entry "Interrupt_MAG_WeaponAction_TelekineticBolt"
+type "InterruptData"
+using "Interrupt_DivineStrike_RangedWeapon"
+data "DisplayName" "hcced252cg832eg451bg965fg8997714febfd;1"
+data "Description" "h77d70ef5g47f5g4ee9g82dbgd99b58c62268;2"
+data "DescriptionParams" "DealDamage(1d8,Force)"
+data "Icon" "Action_MagicItem_TelekineticBolt"
+data "Conditions" "Self(context.Source,context.Observer) and not Self() and IsWeaponAttack() and IsRangedAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();"
+data "Properties" "DealDamage(1d8,Force,Magical);"
+data "Cost" "BonusActionPoint:1;"
+data "EnableCondition" "not HasStatus('MAG_WEAPON_ACTION_TELEKINETIC_BOLT');"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
+
 new entry "YMS_Warcaster"
 type "InterruptData"
 
