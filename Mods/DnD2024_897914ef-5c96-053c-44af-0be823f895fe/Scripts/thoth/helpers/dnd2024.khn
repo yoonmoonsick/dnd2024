@@ -563,3 +563,7 @@ function IsWeaponAttack()
     or context.HitDescription.AttackType == AttackType.MeleeOffHandWeaponAttack
 	return ConditionResult(result) | SpellId('Target_OffhandAttack_Nick')
 end
+
+function HasBladeWardCondition()
+    return (HasAnyStatus({'BLADE_WARD','MAG_BLADE_WARD','MAG_MONK_MOUNTAIN_BLADE_WARD',}, {}, {},context.Target))
+end
