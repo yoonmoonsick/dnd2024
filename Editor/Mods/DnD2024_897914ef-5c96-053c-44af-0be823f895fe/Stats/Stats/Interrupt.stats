@@ -1536,6 +1536,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52182d0e-e036-4285-9e82-1e879bb4b31c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Countercharm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc894315dg27e6g4019g8755g6bd3c9233130" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h51c96326ga05dg20e4g2d02g8888fb100f53" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_Countercharm" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasInterruptedSavingThrow() and IsRerollInterruptInteresting() and not Enemy(context.Target, context.Observer) and not AnyEntityIsItem() and CountercharmSpells();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e07902a1-e7d2-4c0d-90bc-907c45ddbf6b" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BardicInspiration_Attack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c1c294e4-0896-4bf2-81cc-04c18ae14c53" />
