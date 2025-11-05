@@ -9122,6 +9122,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnorePointBlankDisadvantage(Ammunition);UnlockSpellVariant(BurningSealsCheck(),ModifyTargetRadius(Multiplicative,2));" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Unfettered" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9135,6 +9136,7 @@
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,0-Cause.ProficiencyBonus);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bedevil" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9201,7 +9203,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FlashOfBrimstone);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf351c806g52d6g9917g9a72g997992547d89" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h255f2714g3eedgfad2ga294g10e9b49e4d30" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_ShadowStep" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_FlashOfBrimstone" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9214,7 +9216,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StackId" type="StringTableFieldDefinition" value="SOULS_DOOM" />
         <field name="Passives" type="StringTableFieldDefinition" value="SoulsDoom_Target;" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BestowCurse_ExtraDamage" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_SoulsDoom" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9234,7 +9236,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he59067eagd785g20edgd4b5g025dbb31b3d4" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2feb72efg3627gd149g02b6g5f91a28b6693" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_Countercharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Intransigent" />
         <field name="StackId" type="StringTableFieldDefinition" value="INTRANSIGENT" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Tagged('INANIMATE')):ApplyStatus(INTRANSIGENT_BUFF)" />
@@ -9248,7 +9250,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f8a5ed94-3a88-4693-ab62-8172d1479093" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7bd1eeebg369fgc60cgdafag37c52c73b7ff" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2feb72efg3627gd149g02b6g5f91a28b6693" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_Countercharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Intransigent" />
         <field name="StackId" type="StringTableFieldDefinition" value="INTRANSIGENT" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Charmed);" />
@@ -9389,7 +9391,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21f344f9g639fgb2d4g00c9g0d65aadcbb79" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c138bfagf4e2gd34cg3b3bg07e198ff869e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_EnhanceAbility" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Vitalize" />
         <field name="StackId" type="StringTableFieldDefinition" value="VITALIZE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength);CarryCapacityMultiplier(2.0);Advantage(Ability, Dexterity);FallDamageMultiplier(0.5);Advantage(Ability, Constitution);TemporaryHP(7);Advantage(Ability, Intelligence);Advantage(Ability, Wisdom);Advantage(Ability, Charisma);" />
       </fields>
@@ -9417,6 +9419,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d770e3de-d3ef-48d7-92e2-2d0ba60162e3" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Exsanguinate_Bloodstroke_Full);UnlockSpellVariant(SpellId('Target_Exsanguinate_Bloodstroke_Full'),ModifyIconGlow());" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Exsanguinate_Bloodstroke_Full') or SpellId('Target_Exsanguinate_Bloodstroke_Half')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bloodstroke" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9426,6 +9429,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c17d4e61-7f1e-4b7e-a9e7-256a61151a8c" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Exsanguinate_Bloodstroke_Half);UnlockSpellVariant(SpellId('Target_Exsanguinate_Bloodstroke_Half'),ModifyIconGlow());" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_Exsanguinate_Bloodstroke_Full') or SpellId('Target_Exsanguinate_Bloodstroke_Half')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bloodstroke" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9435,7 +9439,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="448d472c-b2b5-4137-9c54-2c9e6daef5d1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28cad581gf918g6e18g75a2g51cf031b90e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55f4d215g630eg63e7g9793g23624487f067" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bloodstroke" />
         <field name="Passives" type="StringTableFieldDefinition" value="Bloodstroke_Damage;" />
       </fields>
     </stat_object>
@@ -9446,7 +9450,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="35808b51-58c1-4e4a-90ec-7bd60e95032a" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28cad581gf918g6e18g75a2g51cf031b90e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55f4d215g630eg63e7g9793g23624487f067" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bloodstroke" />
         <field name="Passives" type="StringTableFieldDefinition" value="Bloodstroke_Damage;" />
       </fields>
     </stat_object>
