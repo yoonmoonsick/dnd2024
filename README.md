@@ -1954,27 +1954,27 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 10th level for a total of 3d6.
 - Level 2: Combat Mastery
   - Your archdevil grants you uncanny skill in a certain form of combat. Choose one of the following illrigger combat masteries:
-  - Bravado
+  - Bravado ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bravado.png?raw=true)
     - While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.
-  - Brutal
+  - Brutal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Brutal.png?raw=true)
     - Once per turn, when you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 15 feet horizontally. You gain movement speed equal to the distance you push the creature.
-  - Inexorable
+  - Inexorable ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Inexorable.png?raw=true)
     - You gain a +2 bonus to saving throws for each hostile creature within 10 feet of you, to a maximum bonus of +6.
   - Lies
     - When you attack with a any weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.
   - Lissome
     - When you hit a creature with a melee weapon attack, you can move without provoking opportunity attacks.
-  - Unfettered
+  - Unfettered ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Unfettered.png?raw=true)
     - When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch. In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.
 - Level 2: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Abating Seal
+  - Abating Seal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AbatingSeal.png?raw=true)
     - When a creature you can see damages you or an ally within 30 feet of you, you can expend a seal as a reaction to reduce the damage taken by the target by an amount equal to 1d10 + half of your illrigger level (rounded down).
-  - Bedevil
+  - Bedevil ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bedevil.png?raw=true)
     - When you burn a seal on an interdicted creature, you can activate this boon (no action required). The target must subtract a number equal to your proficiency bonus from the result of the next saving throw they make before the end of their next turn.
-  - Soul Eater
+  - Soul Eater ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulEater.png?raw=true)
     - When you burn a seal on an interdicted creature, you can activate this boon (no action required) to regain hit points equal to your illrigger level.
-  - Styx's Apathy
+  - Styx's Apathy ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StyxsApathy.png?raw=true)
     - When you burn a seal on an interdicted creature, you can use your reaction to flood the target with an otherworldly chill. Until the end of the target's next turn, they can't take reactions.
   - Swift Retribution (Passive)
     - When an interdicted creature provokes an opportunity attack from you, you can make that attack without using your reaction, provided you're not incapacitated. Once you benefit from this boon, you can't do so again until the start of your next turn.
@@ -1992,27 +1992,27 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You regain any spent Infernal Conduit dice when you finish a short rest.
 - Level 7: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Acheron's Chain
+  - Acheron's Chain ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AcheronsChain.png?raw=true)
     - When you use a bonus action to place or move a seal on a Large or smaller creature, you can activate this boon (no action required). You conjure infernal chains to grasp the target, forcing them to make a Strength saving throw. On a failed save, you can cause them to be restrained until the end of your next turn (escape DC equal to your interdict save DC).
-  - Conflagrant Channel
+  - Conflagrant Channel ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ConflagrantChannel.png?raw=true)
     - You can expend a seal as a bonus action to teleport up to 60 feet to an unoccupied space you can see.
-  - Shadow Shroud
+  - Shadow Shroud ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ShadowShroud.png?raw=true)
     - You can expend a seal as a bonus action to weave a mantle of semisolid shadows around yourself or a creature you touch. The target gains a +2 bonus to AC for 1 minute.
   - Unleash Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire_Big.png?raw=true)
     - When you burn one or more seals on an interdicted creature, you can use your reaction to unleash an explosion of hellish energy around them. Each creature of your choice within 5 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes the same amount and type of damage as the seals dealt to the interdicted creature. On a successful save, a creature takes half as much damage.
-  - Vengeful Shot
+  - Vengeful Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_VengefulShot.png?raw=true)
     - When a creature makes a ranged attack against you or an ally you can see within 30 feet of you, you can expend a seal as a reaction to make a ranged weapon attack against the attacker. If your attack hits, it deals extra damage equal to half your illrigger level (rounded down).
-- Level 10: Blood Price
+- Level 10: Blood Price ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_BloodPrice.png?raw=true)
   - You can strengthen your defenses at the cost of your vitality. Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.
 - Level 11: Terrorizing Force
   - Your attacks are empowered with devastating might. When you gain this feature, choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type.
 - Level 12: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Dis's Onslaught
+  - Dis's Onslaught ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_DissOnslaught.png?raw=true)
     - Each time you use a bonus action to place or move a seal, you can make one weapon attack as part of the same bonus action.
-  - Flash of Brimstone
+  - Flash of Brimstone ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FlashOfBrimstone.png?raw=true)
     - When you place or move a seal, you can activate this boon (no action required) to magically teleport to an unoccupied space you can see within 5 feet of the target.
-  - Soul's Doom
+  - Soul's Doom ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulsDoom.png?raw=true)
     - When you use a bonus action to place or move a seal, you can scorch the seals into the target's soul. For 1 minute, whenever that interdicted creature takes damage, they take extra damage equal to your proficiency bonus.
 
 ### Architect of Ruin
@@ -2029,13 +2029,13 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Asmodeus's Blessing
   - When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in Arcana, History, Nature, and Religion.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Destructive Spell
+  - Enervating Spell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EnervatingSpell.png?raw=true)
     - When you deal damage to a creature with an Illrigger spell of 1st level or higher, you can expend a seal (no action required) to maximize the damage.
-  - Spellblade
+  - Spellblade ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Spellblade.png?raw=true)
     - You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.
 - Level 7: Hellish Versatility
   - Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.
-- Level 7: Axiomatic Seals
+- Level 7: Axiomatic Seals ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AxiomaticSeals.png?raw=true)
   - Asmodeus's secrets allow you to infuse your seals with manifest power. When you burn one or more seals to deal damage to a creature, you can activate this boon (no action required) to add your Charisma modifier (minimum of 1) to each seal's damage roll.
 - Level 11: Submit
   - When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.
@@ -2057,13 +2057,13 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Charm Enemy
   - When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Honey-Sweet Blades
+  - Honey-Sweet Blades ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_HoneySweetBlades.png?raw=true)
     - When you make a weapon attack against an interdicted creature, If the attack hits, it becomes a critical hit.
-  - Turncoat
+  - Turncoat ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Turncoat.png?raw=true)
     - You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or be driven into madness for 2 turns.
-- Level 7: Red Cant
+- Level 7: Red Cant ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_RedCant.png?raw=true)
   - When you make a Charisma check, you can expend a seal to treat a d20 roll of 9 or lower as a 10.
-- Level 11: Intransigent
+- Level 11: Intransigent ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Intransigent.png?raw=true)
   - You and your allies within 10 feet of you are immune to the charmed condition while you are conscious.
 - Level 11: Let's Make a Deal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_LetsMakeADeal.png?raw=true)
   - As a bonus action, you can offer a willing ally within 60 feet a deal. Within the next 10 minutes, they gain advantage on one attack roll or saving throw. After using this effect, there is a 50% chance they receive a blessing, gaining 12 temporary hit points, or a curse, suffering disadvantage on their next attack roll or saving throw.
@@ -2087,9 +2087,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Grand Strategist ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
     - You can order your allies to follow your formation (no action required). Choose one or more creatures within [1] of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
-  - Punishment
+  - Punishment ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Punishment.png?raw=true)
     - When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
-- Level 7: Telekinetic Seal
+- Level 7: Telekinetic Seal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_TelekineticSeal.png?raw=true)
   - When a creature you can see moves within 5 feet of you, you can use your reaction to place a seal on them. When you do, the target must succeed on a Wisdom saving throw or be either pushed back 15 feet.
 - Level 11: You Die on My Command! ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_YouDieOnMyCommand.png?raw=true)
   - When an ally within 30 feet of you who can hear you is killed, you can use your reaction to shout an order at them, causing them to be revived and regain 1 hit point. Once you use this reaction, you can't do so again until you finish a short or long rest.
@@ -2109,11 +2109,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Exsanguinate ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Exsanguinate.png?raw=true)
   - You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Embolden Allies
+  - Embolden Allies ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EmboldenAllies.png?raw=true)
     - As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.
-  - Vitalize
+  - Vitalize ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Vitalize.png?raw=true)
     - You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains advantage on all ability checks.
-- Level 7: Foul Interchange
+- Level 7: Foul Interchange ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FoulInterchange.png?raw=true)
   - As an action, you choose a creature you can see within 30 feet of you and expend a seal to end one of the following conditions affecting them: blinded, charmed, dazed, frightened, paralyzed, or poisoned. Then, you choose another creature within 60 feet of you, which must succeed on a Constitution saving throw or suffer a random condition until the start of your next turn.
 - Level 11: Bloodstroke ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bloodstroke.png?raw=true)
   - The magic that shields your allies now also saps their enemies' strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes 11 necrotic damage.
@@ -2128,12 +2128,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Marked for Death
   - You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.
-- Level 3: Strike from the Dark
+- Level 3: Strike from the Dark ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StrikeFromTheDark.png?raw=true)
   - You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Master of Disguise
     - As an action, you can cast the disguise self spell without expending a spell slot.
-  - No Escape
+  - No Escape ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_NoEscape.png?raw=true)
     - As a bonus action, you can call upon the shadows to entrap a creature you can see within 30 feet of you. The target must make a Charisma saving throw, with disadvantage if they are in dim light or darkness. On a failed save, the target is slowed. This effect ends if you are incapacitated, die, or if the target moves more than 30 feet away from you.
 - Level 7: Veil of Lies
   - As a bonus action, you can expend a seal to become invisible for 10 minutes or until you attack or cast a spell.
