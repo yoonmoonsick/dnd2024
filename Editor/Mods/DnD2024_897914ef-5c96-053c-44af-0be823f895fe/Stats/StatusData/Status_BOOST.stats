@@ -2367,7 +2367,54 @@
         <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f18e6727-dbfe-4d98-b3fd-33629aecb330" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcba62ea6g346ag4337g6ba3g5b4d15f17a2e" version="3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,RESISTANCE_OSIRIS,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,RESISTANCE_OSIRIS,100,1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RESISTANCE_OSIRIS);RemoveStatus(RESISTANCE_0);RemoveStatus(RESISTANCE_1);RemoveStatus(RESISTANCE_2);RemoveStatus(RESISTANCE_3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="00d4ff78-c073-491e-998f-c254e4bb1d76" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE_OSIRIS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4efa9c9gaae7g402agbd92ga49a5dad4932" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b885d9bf-45ff-40d4-8349-24b69f309df5" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE_0" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RESISTANCE_0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4efa9c9gaae7g402agbd92ga49a5dad4932" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,1);" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c5e3279-f397-4b9a-a8d3-dd85e543ad6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b885d9bf-45ff-40d4-8349-24b69f309df5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d97c9f26-e5aa-4fa6-aa0d-e50a7f30d7a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b885d9bf-45ff-40d4-8349-24b69f309df5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa3c2007-7247-4979-bd6d-9c01abe336f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="RESISTANCE_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b885d9bf-45ff-40d4-8349-24b69f309df5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All,Flat,4);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
