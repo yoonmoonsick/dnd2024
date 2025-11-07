@@ -1307,17 +1307,17 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 3: Steady Aim
   - As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
 - Level 5: Cunning Strike
-  - When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect.
-  - Poison (Cost: 1d6)
+  - When you deal Sneak Attack damage, you can add one of the Cunning Strike effects.
+  - Poison
     - You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.
-  - Trip (Cost: 1d6)
+  - Trip
     - If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.
-  - Withdraw (Cost: 1d6)
+  - Withdraw
     - Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.
 - Level 7: Reliable Talent
   - Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.
 - Level 11: Improved Cunning Strike
-  - You always benefit from the effect of "Withdraw" from Cunning Strike without spending any damage dice.
+  - You can use up to two Cunning Strike effects when you deal Sneak Attack damage.
 - Level 12: Slippery Mind
   - Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.
 
@@ -1364,7 +1364,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Dread Allegiance: Myrkul
     - You gain Resistance to Necrotic damage and learn the Chill Touch cantrip.
 - Level 6: Strike Fear
-  - You gain a new Cunning Strike option: Terrify (Cost: 1d6). The target must succeed on a Wisdom saving throw or become Frightened for 1 minute. A Frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+  - You gain a new Cunning Strike option: Terrify. The target must succeed on a Wisdom saving throw or become Frightened for 1 minute. A Frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 - Level 9: Battle Tyrant
   - You have advantage on attack rolls against any creature that is Frightened.
 - Level 11: Murderous Intent
