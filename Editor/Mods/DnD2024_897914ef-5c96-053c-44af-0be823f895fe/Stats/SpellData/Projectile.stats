@@ -54,9 +54,9 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
-        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_10" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage((MainMeleeWeapon)/2, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Enemy() and not HasStatus('WEAPONMASTERY_CLEAVE_TECHNICAL');" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2,75d615be-9277-6e22-6c17-fa51981d7560,8c00238b-549d-dc71-8fcb-42ba68bae142" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
@@ -69,12 +69,20 @@
         <field name="ShortDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d0cacd4e-0eb2-4573-a6cf-d2371a8a1730" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d8d56665-345a-4224-a754-28c6df93d62f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
