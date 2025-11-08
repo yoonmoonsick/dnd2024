@@ -8596,10 +8596,11 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="46c6f4be-8163-4fbc-8195-06738ba9f70f" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="PsionDie:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CuttingWords" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('PsionDie:1',1,0,false,false,context.Source);" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('PsionDie',1,0,false,false,context.Source);" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck, LevelMapValue(PsionDie), Deception);RollBonus(SkillCheck, LevelMapValue(PsionDie), Intimidation);RollBonus(SkillCheck, LevelMapValue(PsionDie), Performance);RollBonus(SkillCheck, LevelMapValue(PsionDie), Persuasion);RollBonus(RawAbility, LevelMapValue(PsionDie), Charisma);" />
         <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,PsionDie,1,0);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnAbilityCheck;OnInterruptUsed;OnShortRest;OnLongRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
