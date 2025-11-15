@@ -4509,22 +4509,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fe1a86a5-d487-49ed-803c-a465c8b31bb8" />
-        <field name="Name" type="NameTableFieldDefinition" value="DIPPED_BREW_POISON" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="29d5a416-2740-46b6-aac3-0ecfe3382284" />
-        <field name="StackId" type="StringTableFieldDefinition" value="DIPPED_BREW_POISON" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(2d8, Poison)" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_None" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d995461b-e705-4f50-a028-d3d3a3c45d72" />
         <field name="Name" type="NameTableFieldDefinition" value="PRODUCE_FLAME" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="99759959-6a51-4909-a968-48258d86f96b" />
@@ -6247,29 +6231,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="30c3cfbf-efd1-49b5-9362-0eb944f45808" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70e1140bgff78g25dfg224ag7c6604206bcf" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2afeb226gced0g1e8fg3cbbg3cd131e678a3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
         <field name="StackId" type="StringTableFieldDefinition" value="BREW_POISON" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,BREW_POISON_DIPPED,100,10);ApplyEquipmentStatus(MeleeOffHand,BREW_POISON_DIPPED,100,10);ApplyEquipmentStatus(RangedMainHand,BREW_POISON_DIPPED,100,10);ApplyEquipmentStatus(RangedOffHand,BREW_POISON_DIPPED,100,10);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsMiss()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(MeleeOffHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(RangedMainHand,BREW_POISON_REMOVE,100,1);ApplyEquipmentStatus(RangedOffHand,BREW_POISON_REMOVE,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8de8c7f2-4657-4dcd-accf-19607d5874fe" />
-        <field name="Name" type="NameTableFieldDefinition" value="BREW_POISON_DIPPED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8bc70f2c-bad3-46ce-a563-3d934dff3e3c" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he6b17988g758agf02eg21b7gb90c07015076" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="98" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="CharacterWeaponDamage(2d8, Poison);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Toxin_BrewPoison_Passive" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6283,6 +6255,7 @@
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6ea786f5-8fb5-4a00-b731-c50b50b94c70" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ae3e5f8a-acd1-4005-bbe9-d9692ed3239b" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
