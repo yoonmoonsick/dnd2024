@@ -355,7 +355,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 > A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a Steel Defender, a protective companion of their own creation.
 
 - Subclass Spells (Always prepared)
-  - Level 3: Heroism, Sheild
+  - Level 3: Heroism, Shield
   - Level 5: Branding Smite, Warding Bond
   - Level 9: Aura of Vitality, Conjure Barrage
 - Level 3: Arcane Empowerment
@@ -800,9 +800,9 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 7: Fount of Moonlight
   - Level 9: Mass Cure Wounds
 - Level 6: Improved Circle Forms
-  - While in a Wild Shape form, You can add your Wisdom modifier to your Constitution saving throws.
+  - While in a Wild Shape form, you can add your Wisdom modifier to your Constitution saving throws.
 - Level 10: Moonlight Step ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/MoonlightStepCharge.png?raw=true)
-  - YMoonlightStepChargeu magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+  - You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ### Circle of the Sea
 
@@ -1209,7 +1209,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FeyWanderer.png?raw=true)
 
-> Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.
+> A fey mystique surrounds you, thanks to the boon of an archfey, the shining fruit you ate from a talking tree, the magic spring you swam in, or some other auspicious event. However you acquired your fey magic, you are now a Fey Wanderer, a ranger who represents both the mortal and the fey realms. As you wander the multiverse, your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.
 
 - Subclass Spells (Always prepared)
   - Level 3: Charm Person
@@ -1549,7 +1549,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 3: Gust of Wind, Shatter
   - Level 5: Sleet Storm, Call Lightning
   - Level 7: Ice Storm, Storm Sphere
-  - Level 9: Desctructive Wave, Cone of Cold
+  - Level 9: Destructive Wave, Cone of Cold
 - Level 3: Tempestuous Magic
 
 ## Warlock
@@ -1673,7 +1673,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Subclass Spells (Always prepared)
   - Level 3: Hex, Wrathful Smite
-  - Level 3: Arcane VIgor, Magic Weapon
+  - Level 3: Arcane Vigor, Magic Weapon
   - Level 5: Conjure Barrage, Counterspell
   - Level 7: Freedom of Movement, Staggering Smite
   - Level 9: Steel Wind Strike
