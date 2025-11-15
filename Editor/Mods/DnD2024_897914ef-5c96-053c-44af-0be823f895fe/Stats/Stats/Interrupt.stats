@@ -296,7 +296,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h822a0e37g5382g25c4g6291g41f7c1135bfb" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FightingStyle_Protection" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer)) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and ( HasShieldEquipped(context.Observer) or not Unarmed(context.Observer));" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_MainHandAttack_Dummy,true,true,true);AdjustRoll(OBSERVER_TARGET,-(1d10),All);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(1d10),All);ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded')" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
       </fields>
@@ -625,7 +625,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_UnarmoredDefense" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(1d12+context.Target.ConstitutionModifier));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(1d12+context.Target.ConstitutionModifier));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;GiantAncestryCharge:1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
@@ -2278,31 +2278,20 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="36244b88-bb2f-477f-adbb-e79c930953f3" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ProtectiveField" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(0-(LevelMapValue(PsionicPower)+context.Target.IntelligenceModifier));" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionicPower)+IntelligenceModifier));ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionicPower:1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf95a3fd7g238dg4f5fgff02g187fb243aa92" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac9d3bfeg89eagc487ge252g23b4271f96aa" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromEnergy" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (Self(context.Target,context.Observer) or  Ally(context.Target, context.Observer)) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
         <field name="Stack" type="StringTableFieldDefinition" value="ProtectiveField" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('PsionicPower', 0, 0, false, false, context.Source)" />
-        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('PsionicPower', 1, 0, false, false, context.Source);" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="db1e983c-3f73-4f0a-8a6c-3b2959dfcdd6" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ProtectiveField_Ally" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="36244b88-bb2f-477f-adbb-e79c930953f3" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Incapacitated')  and IsFlatValueInterruptInteresting(1, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target)" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(-2);AdjustRoll(-1d6);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2807,7 +2796,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( Self(context.Target,context.Observer) or Ally(context.Target, context.Observer) ) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_TARGET,Target_HellishRebuke_Dummy,true,true,true);AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2),All);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);AdjustRoll(OBSERVER_TARGET,-(1d10+ClassLevel(Illrigger)/2),All);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;IllriggerSeal:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="AbatingSeal" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
@@ -3048,7 +3037,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_PsionicBacklash" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)_IntelligenceModifier),All);ApplyStatus(OBSERVER_SOURCE,PSION_PSIONIC_BACKLASH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));IF(HasPassive('Psion_7_PsionicSurge',context.Source)):ApplyStatus(SELF,PSIONIC_SURGE,100,1);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)_IntelligenceModifier),All);ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_SOURCE,PSION_PSIONIC_BACKLASH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));IF(HasPassive('Psion_7_PsionicSurge',context.Source)):ApplyStatus(SELF,PSIONIC_SURGE,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;PsionicDiscipline:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
