@@ -16,10 +16,8 @@ DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target)
 AND
 HasActiveStatus(_Source, "NON_LETHAL", 0)
 THEN
-ApplyStatus((GUIDSTRING)_Source, "DISENGAGE_NICK", 3.0, 1, _Source);
-UseSpell((GUIDSTRING)_Source, "Target_OffhandAttack_Nick", (GUIDSTRING)_Target,_Target, 1);
+UseSpell((GUIDSTRING)_Source, "Target_Nick", (GUIDSTRING)_Target,_Target, 1);
 NOT DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target);
-
 
 IF
 TimerFinished("NICK_WAITING")
@@ -28,8 +26,7 @@ DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target)
 AND
 HasActiveStatus(_Source, "NON_LETHAL", 1)
 THEN
-ApplyStatus((GUIDSTRING)_Source, "DISENGAGE_NICK", 3.0, 1, _Source);
-UseSpell((GUIDSTRING)_Source, "Target_OffhandAttack_Nick_NonLethal", (GUIDSTRING)_Target,_Target, 1);
+UseSpell((GUIDSTRING)_Source, "Target_Nick_NonLethal", (GUIDSTRING)_Target,_Target, 1);
 NOT DB_NICK_SOURCE_AND_TARGET((GUIDSTRING)_Source, (GUIDSTRING)_Target);
 EXITSECTION
 
