@@ -1061,10 +1061,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="df17fc78-a9ba-4656-98a4-b63a696b1d8a" />
         <field name="Name" type="NameTableFieldDefinition" value="ElvenAccuracy" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h412aec5ege7ccg503fg3072ga38b574bf4f6" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h818241bagd090g8ca0g278dg621279fd66ea" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h818241bagd090g8ca0g278dg621279fd66ea" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Elf_WeaponTraining" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):RollBonus(Attack,2);IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):MinimumRollResult(Attack,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):RollBonus(Attack,1);IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):MinimumRollResult(Attack,2);IF((AttackRollAbility(Ability.Dexterity) or AttackRollAbility(Ability.Intelligence) or AttackRollAbility(Ability.Wisdom) or AttackRollAbility(Ability.Charisma) or TrueStrikeCheck()) and (IsAttack() and HasAdvantage())):ReduceCriticalAttackThreshold(1);" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h67ba676ag79feg0b99g7fceg5edf2e00a1e1" version="3" />
       </fields>
     </stat_object>
@@ -3467,6 +3467,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70e1140bgff78g25dfg224ag7c6604206bcf" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BREW_POISON_CONDITION,100,1, AdvantageOnPoisoned())" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7290,7 +7293,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Gunslinger_2_CriticalShot" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="772b29ee-976a-4833-be79-3f5a4b285a72" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65f08184g23eag472agc42agfbc59ad82bf1" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he5bc89c5g76dbgf59dg59ceg045f5749a096" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80307aaag2ec1ga7f5gef0fgd36ae2903bcf" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):ReduceCriticalAttackThreshold(1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_CriticalShot" />
       </fields>
@@ -7977,7 +7980,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="464ecd46-7225-420a-9e9d-3c7a9497f1cf" />
         <field name="Name" type="NameTableFieldDefinition" value="Interdict_12_DissOnslaught" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h477cf246gaa9eg2b08g555fgeb70b706aa0b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05441293gd034g1ad2gb6fbg84670e80152d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05441293gd034g1ad2gb6fbg84670e80152d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_DissOnslaught" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(12,'Illrigger',context.Source);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
@@ -9032,6 +9035,16 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="88c82a04-9e85-4709-989a-7522e2fade40" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Items" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6583481b-82fe-44ec-a2fe-ba12e99205b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Ranged_ImprovedCritical_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eaa71a59-2587-4af0-af51-4a30582b5a4c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2481ba64g430bgce5bg28c0gf6f4bbcd9443" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80307aaag2ec1ga7f5gef0fgd36ae2903bcf" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsRangedWeaponAttack()):ReduceCriticalAttackThreshold(1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
