@@ -237,7 +237,7 @@ function BreathWeaponCheck()
 end
 
 function ExtraAttackSpellCheck()
-    return ~TrueStrikeCheck() & ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Shove') | SpellId('Target_Trip') | BreathWeaponCheck()
+    return ~TrueStrikeCheck() & ~SpellId('Target_VengefulBlade') & ~SpellId('Target_BoomingBlade_ClassSpell') & ~SpellId('Target_GreenFlameBlade') & HasStringInSpellRoll('WeaponAttack') | HasStringInSpellRoll('UnarmedAttack') | HasStringInSpellRoll('ThrowAttack') | SpellId('Target_CommandersStrike') | SpellId('Target_Shove') | SpellId('Target_Trip') | BreathWeaponCheck() | SpellId('Target_BootOfTheGiants')
 end
 
 function ExtraAttackCheck()
