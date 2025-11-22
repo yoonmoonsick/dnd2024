@@ -2858,7 +2858,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h767b980cg5a95g13c4g43bdgc186f031e85b" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_EnervatingSpell" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (SpellDamageTypeIs(DamageType.Bludgeoning) or SpellDamageTypeIs(DamageType.Piercing)or SpellDamageTypeIs(DamageType.Slashing)or SpellDamageTypeIs(DamageType.Acid)or SpellDamageTypeIs(DamageType.Cold)or SpellDamageTypeIs(DamageType.Fire)or SpellDamageTypeIs(DamageType.Force)or SpellDamageTypeIs(DamageType.Lightning)or SpellDamageTypeIs(DamageType.Necrotic)or SpellDamageTypeIs(DamageType.Poison)or SpellDamageTypeIs(DamageType.Psychic)or SpellDamageTypeIs(DamageType.Radiant)or SpellDamageTypeIs(DamageType.Thunder)) and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,ENERVATING_SPELL,100,1);IF(HasPassive('MAG_Illrigger_LayOnHandsSupport_Gloves_Passive'),context.Source):ApplyStatus(OBSERVER_OBSERVER, HEROISM, 100, 10);" />
         <field name="Cost" type="StringTableFieldDefinition" value="IllriggerSeal:1;InvokeHellCharge:1;" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
       </fields>
@@ -2875,6 +2875,7 @@
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('InvokeHellCharge', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'))" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_HoneySweetBlades" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(20);IF(HasPassive('MAG_Illrigger_LayOnHandsSupport_Gloves_Passive'),context.Source):ApplyStatus(OBSERVER_OBSERVER, HEROISM, 100, 10);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2887,7 +2888,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Punishment),Necrotic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Punishment" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasVerbalComponentBlocked(context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and IsHit() and not AnyEntityIsItem() and HasLastAttackTriggered();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_InvokeHell_Punishment,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(SWAP,Target_InvokeHell_Punishment,true,true,true);IF(HasPassive('MAG_Illrigger_LayOnHandsSupport_Gloves_Passive'),context.Source):ApplyStatus(OBSERVER_OBSERVER, HEROISM, 100, 10);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;InvokeHellCharge:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('InvokeHellCharge', 1, 0, false, false, context.Source) and (not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise'));" />
