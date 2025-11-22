@@ -452,17 +452,17 @@
                     <attribute id="UUID" type="guid" value="2f3126cf-d1a4-4ae8-b121-d90d7044ce56"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons)"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Artificer"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Proficiency_Firearm"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;Proficiency_Firearm;HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(7a1b9f6e-51e6-4a41-993c-7466f7f2dbdc,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSpells(06676813-95e8-462c-8523-6b9b6560adc6,2,0,,,,AlwaysPrepared);AddSpells(4cb84fdc-b4a2-4811-9aec-52a5a86c5b01)"/>
                     <attribute id="TableUUID" type="guid" value="cf57f43c-e205-4a5f-9685-1feed1ada693"/>
                     <attribute id="UUID" type="guid" value="cf57f43c-e205-4a5f-9685-1feed1ada693"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);ActionResource(SpellSlot,2,1);"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)"/>
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Artificer"/>
@@ -473,8 +473,10 @@
                     <attribute id="UUID" type="guid" value="20f6b33f-716d-40b1-8f9f-541a40fc1913"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Artificer"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(5905c872-d84b-48b3-8407-0c51ba3224fb,2,ArtificerPlans);"/>
                     <attribute id="TableUUID" type="guid" value="cf57f43c-e205-4a5f-9685-1feed1ada693"/>
@@ -3362,10 +3364,10 @@
                     <attribute id="UUID" type="guid" value="9ad5051e-0717-4512-9c29-a2949e4cac86"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);ActionResource(SpellSlot,2,1);"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Paladin"/>
-                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine;HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(627af380-2bbb-4a9f-9571-5ec781a6daf4,2);AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831)"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
@@ -3437,10 +3439,11 @@
                     </children>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ActionResource(FreeSmiteCharge,1,0)"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1);ActionResource(FreeSmiteCharge,1,0)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Paladin"/>
                     <attribute id="PassivesAdded" type="LSString" value="PaladinsSmite"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(abaa1e60-b6d6-4388-bd04-86931e0a12d7,,,,AlwaysPrepared);SelectPassives(f8ebba38-932a-4c64-ae55-3df23e2f60fa,1,FightingStyle)"/>
                     <attribute id="TableUUID" type="guid" value="ba2afe85-acba-4ea1-a238-2b4543f47821"/>
@@ -3825,29 +3828,31 @@
                     <attribute id="UUID" type="guid" value="faae223a-9e72-4709-b865-96c39f144bd0"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0);ActionResource(SpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0)"/>
                     <attribute id="IsMulticlass" type="bool" value="true"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="WeaponMastery_Get_WeaponMasteries;UnlockedSpellSlotLevel1;FavoredEnemy"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
                     <attribute id="UUID" type="guid" value="107b5f98-bf4f-4e90-85a1-5be602055b19"/>
                 </node>
                 <node id="Progression">
-                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0);ActionResource(SpellSlot,2,1)"/>
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0)"/>
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
-                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries;HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>
                     <attribute id="UUID" type="guid" value="ad1084b1-b99f-6720-cfdd-cf82ad44345b"/>
                 </node>
                 <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,1)"/>
                     <attribute id="Level" type="uint8" value="2"/>
                     <attribute id="Name" type="LSString" value="Ranger"/>
+                    <attribute id="PassivesRemoved" type="LSString" value="HalfCasterLevelOneSpellSlot"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="Selectors" type="LSString" value="SelectPassives(a0bdb113-1cce-45ac-94fb-72d4c3f207e9,1,FightingStyle);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1)"/>
                     <attribute id="TableUUID" type="guid" value="8f068974-ed32-43fc-a9d9-028be1c01a9c"/>

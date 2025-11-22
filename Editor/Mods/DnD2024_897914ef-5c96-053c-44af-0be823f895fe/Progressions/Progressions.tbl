@@ -615,9 +615,9 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Artificer" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,2,1);ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Constitution);ProficiencyBonus(SavingThrow,Intelligence);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(7a1b9f6e-51e6-4a41-993c-7466f7f2dbdc,2);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);SelectSpells(06676813-95e8-462c-8523-6b9b6560adc6,2,0,,,,AlwaysPrepared);AddSpells(4cb84fdc-b4a2-4811-9aec-52a5a86c5b01)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;Proficiency_Firearm" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;Proficiency_Firearm;HalfCasterLevelOneSpellSlot" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -628,7 +628,7 @@
         <field name="FSName" type="StringTableFieldDefinition" value="Artificer" />
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);ActionResource(SpellSlot,2,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(7a1b9f6e-51e6-4a41-993c-7466f7f2dbdc,1);SelectSpells(06676813-95e8-462c-8523-6b9b6560adc6,2,0,,,,AlwaysPrepared);AddSpells(4cb84fdc-b4a2-4811-9aec-52a5a86c5b01)" />
         <field name="IsMulticlass" type="BoolTableFieldDefinition" value="True" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;Proficiency_Firearm" />
@@ -643,6 +643,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(5905c872-d84b-48b3-8407-0c51ba3224fb,2,ArtificerPlans);" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="HalfCasterLevelOneSpellSlot" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,2,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4281,8 +4283,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(627af380-2bbb-4a9f-9571-5ec781a6daf4,2);AddSpells(fb407d81-3a05-46f1-9153-0fb27dce95b6,,,,AlwaysPrepared);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(c6288ac5-c68b-40ed-bbdd-2ff388575831)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0);ActionResource(SpellSlot,2,1);" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Charisma);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(HeavyArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(LayOnHandsCharge,3,0);ActionResource(ChannelOath,1,0)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="WeaponMastery_Get_WeaponMasteries;ChannelOathRestore;UnlockedSpellSlotLevel1;Smite_Divine;HalfCasterLevelOneSpellSlot" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="b36d247e-d39f-4ae9-9476-3ec315c55789;fcca2e7e-160c-4db8-9b28-c29b9006b05f;eaad98ec-026b-429e-aa24-8274dfd1ecb7;1c761ad0-6f5f-409e-ac1d-ddf6f85c1fc4;8d00526f-2ff6-4085-a5ed-7a97eede0793;b2133b38-c9b6-451c-83f9-5864bc572c11;3cc3d397-c47d-4966-87ae-88827f73f645" />
       </fields>
     </stat_object>
@@ -4311,7 +4313,8 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(abaa1e60-b6d6-4388-bd04-86931e0a12d7,,,,AlwaysPrepared);SelectPassives(f8ebba38-932a-4c64-ae55-3df23e2f60fa,1,FightingStyle)" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="PaladinsSmite" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(FreeSmiteCharge,1,0)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,2,1);ActionResource(FreeSmiteCharge,1,0)" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="HalfCasterLevelOneSpellSlot" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4829,6 +4832,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_508" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ad1084b1-b99f-6720-cfdd-cf82ad44345b" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="8f068974-ed32-43fc-a9d9-028be1c01a9c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Ranger" />
+        <field name="Level" type="ByteTableFieldDefinition" value="1" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries;HalfCasterLevelOneSpellSlot" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_571" />
         <field name="UUID" type="IdTableFieldDefinition" value="107b5f98-bf4f-4e90-85a1-5be602055b19" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="8f068974-ed32-43fc-a9d9-028be1c01a9c" />
@@ -4836,22 +4852,9 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0);ActionResource(SpellSlot,2,1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0)" />
         <field name="IsMulticlass" type="BoolTableFieldDefinition" value="True" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="WeaponMastery_Get_WeaponMasteries;UnlockedSpellSlotLevel1;FavoredEnemy" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_508" />
-        <field name="UUID" type="IdTableFieldDefinition" value="ad1084b1-b99f-6720-cfdd-cf82ad44345b" />
-        <field name="TableUUID" type="GuidTableFieldDefinition" value="8f068974-ed32-43fc-a9d9-028be1c01a9c" />
-        <field name="FSName" type="StringTableFieldDefinition" value="Ranger" />
-        <field name="Level" type="ByteTableFieldDefinition" value="1" />
-        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(9e31661e-4c14-499d-98ca-9e00b20faf07,3);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);AddSpells(54c1f6e2-5b3c-4598-9549-a4ee8d47c241,,,,AlwaysPrepared);AddSpells(458be063-60d4-4548-ae7d-50117fa0226f)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(SavingThrow,Strength);ProficiencyBonus(SavingThrow,Dexterity);Proficiency(LightArmor);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(FavoredEnemyCharge,2,0);ActionResource(SpellSlot,2,1)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="UnlockedSpellSlotLevel1;FavoredEnemy;WeaponMastery_Get_WeaponMasteries" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4863,6 +4866,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="2" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectPassives(a0bdb113-1cce-45ac-94fb-72d4c3f207e9,1,FightingStyle);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1)" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="HalfCasterLevelOneSpellSlot" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,2,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

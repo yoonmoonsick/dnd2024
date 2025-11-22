@@ -44,6 +44,11 @@ type "PassiveData"
 data "Properties" "IsHidden;OncePerTurn"
 data "Boosts" "IF(HasStatus('DEBRIS_THRESHOLD_LESSER',context.Target) and not HasStatus('ARCANE_LOCK',context.Target)):DamageBonus(10,Force);IF(HasStatus('DEBRIS_THRESHOLD',context.Target) and not HasStatus('ARCANE_LOCK',context.Target)):DamageBonus(22,Force);"
 
+new entry "HalfCasterLevelOneSpellSlot"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "Boosts" "ActionResource(SpellSlot,2,1);"
+
 new entry "YMS_RangedWeapon"
 type "PassiveData"
 
