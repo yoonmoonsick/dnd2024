@@ -70,6 +70,12 @@ data "StackType" "Ignore"
 data "Boosts" "Initiative(-7);"
 data "StatusPropertyFlags" "OverheadOnTurn"
 
+new entry "DASH_NPC_FIRST_TURN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Boosts" "ActionResourceMultiplier(Movement,150,0);"
+data "StatusPropertyFlags" "IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
+
 new entry "DASH"
 type "StatusData"
 data "StatusType" "BOOST"
