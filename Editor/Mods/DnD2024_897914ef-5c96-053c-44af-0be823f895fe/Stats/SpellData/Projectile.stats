@@ -1,6 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
   <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4db7fe2-9f06-4e87-9c80-7ad2056963af" />
+        <field name="Name" type="NameTableFieldDefinition" value="DivingStrike_Zevlor" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bc77bc11-8128-4ebd-b4ab-b9c7a21c0d9e" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);DealDamage(2d8,Radiant,Magical);ExecuteWeaponFunctors(MainHand);ApplyStatus(PRONE,100,2);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineSmite" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and YDistanceToTargetGreaterOrEqual(3) and Character();" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="01473afa-3d50-4f81-bdc7-a1692536dade" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;d7741bd3-2ec9-41aa-803b-39d2be52aac5,,;78da379c-5535-4a07-b650-b695831bab9a,,;,,;,,;,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;IsHarmful;HasHighGroundRangeExtension;CombatLogSetSingleLineRoll;ImmediateCast;IsAttack" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b438d63c-2536-4cd5-86f6-aab127816257" />
+        <field name="Name" type="NameTableFieldDefinition" value="RayOfSickness_Goblin" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e6d9b479-acae-48fb-b0cb-91a0ba894c09" />
