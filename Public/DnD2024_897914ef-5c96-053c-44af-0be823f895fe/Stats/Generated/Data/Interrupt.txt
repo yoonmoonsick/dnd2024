@@ -1,3 +1,13 @@
+new entry "Interrupt_DivingStrike_Zevlor"
+type "InterruptData"
+using "Interrupt_HellishRebuke_AsmodeusTiefling"
+data "DisplayName" ""
+data "Description" ""
+data "DescriptionParams" ""
+data "Icon" ""
+data "Conditions" "not HasVerbalComponentBlocked(context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and not AnyEntityIsItem() and HasLastAttackTriggered();"
+data "Properties" "UseSpell(SWAP,Projectile_DivingStrike_Zevlor,true,true,true);"
+
 new entry "Interrupt_MAG_Shield"
 type "InterruptData"
 using "Interrupt_MAG_Shield"
