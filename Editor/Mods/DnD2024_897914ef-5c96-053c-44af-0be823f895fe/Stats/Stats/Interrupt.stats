@@ -1398,13 +1398,68 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8f9dd0e3-bccc-4a28-a136-a5eb04c6ab1f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dbe5cf6g252ag283agf096gf6cbb7ef0871" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c060ad9ga0f9ge78agea13g2bdc8a5723b1" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);IntelligenceModifier" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and (not Self(context.Target,context.Observer) and HasInterruptedSavingThrow() and Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(4, context.Target);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_SOURCE,IntelligenceModifier);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(1, context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;FlashOfGenius:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="FlashOfGenius" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdeae0ceeg6608gdb15gfea4g42fe77ce2e47" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ca6e50a-026c-441a-9566-899bf811d6a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(2);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(2, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb9bd16a-0938-4855-b532-9532762fb069" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(3);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(3, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04c4fb08-39f5-4c13-a77c-0140ae71684c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(4);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(4, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f0eaf6a3-9948-4ee1-986b-efeac900b9a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(5);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(5, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ef00272-efed-4a8d-9aa2-ac0ad2fea28c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(6);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(6, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d06febc9-df5d-4355-8a8d-ad3d063ae921" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlashOfGenius_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="58bd8456-1ef6-428f-b729-e37f3c01ac3c" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(7);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedSavingThrow() and (Self(context.Target,context.Observer) or Ally(context.Target, context.Observer)) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(7, context.Target);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3051,7 +3106,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="TadpoleSuperPower_PsionicBacklash" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)_IntelligenceModifier),All);ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_SOURCE,PSION_PSIONIC_BACKLASH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));IF(HasPassive('Psion_7_PsionicSurge',context.Source)):ApplyStatus(SELF,PSIONIC_SURGE,100,1);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-(LevelMapValue(PsionDie)+LevelMapValue(PsionDie)+IntelligenceModifier),All);ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_SOURCE,PSION_PSIONIC_BACKLASH, 100, 0, , , ,not SavingThrow(Ability.Wisdom, SourceSpellDC()));IF(HasPassive('Psion_7_PsionicSurge',context.Source)):ApplyStatus(SELF,PSIONIC_SURGE,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;PsionDie:1;PsionicDiscipline:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
