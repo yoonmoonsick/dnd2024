@@ -355,6 +355,11 @@ data "Icon" "Action_TransmuterStone_Resistance"
 data "Properties" "IsHidden"
 data "Boosts" "UnlockSpell(Shout_Dragonborn_ChromaticWarding);"
 
+new entry "HalsinSpells"
+type "PassiveData"
+using "HalsinSpells"
+data "Boosts" "IF(Tagged('HALSIN',context.Source)):UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source)):UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source) and ClassLevelHigherOrEqualThan(3,'Druid')):UnlockSpell(Target_MistyStep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source) and ClassLevelHigherOrEqualThan(5,'Druid')):UnlockSpell(Target_CallLightning,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
+
 new entry "YMS_Abjuration"
 type "PassiveData"
 
