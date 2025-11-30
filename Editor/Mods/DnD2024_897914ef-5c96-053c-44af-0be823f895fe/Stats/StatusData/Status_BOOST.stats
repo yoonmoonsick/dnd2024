@@ -4959,16 +4959,6 @@
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="125" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a4717b7c-2eb6-4dc3-8828-11eef64eb719" />
-        <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE_TECHNICAL" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e2464fe1-d863-4f61-8aca-797e5803a59e" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Owner.CharismaModifier+Owner.ClassLevel(Warlock));RollBonus(SavingThrow,Owner.CharismaModifier);AC(4);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;IgnoreResting;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="22588eb3-04b0-47f1-b868-9b510a4091ee" />
@@ -8715,6 +8705,165 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he25d5e9bgd34bg1b31g19a9g336aa36e7bfe" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a0da719g3052gaa71g5dd4g2666837f1ff8" version="3" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c10c30c1-2e27-44a0-88b0-62dc3dc72284" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_WARLOCK_PACTOFTHECHAIN" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d350230-fa49-47ba-a1b3-9f0a0c90f43d" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_PACTOFTHECHAIN_ATTACK" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(Movement);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08063c53-e059-4473-ba98-7f7de79bf223" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_PACTOFTHECHAIN_ATTACK_TARGET" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a4717b7c-2eb6-4dc3-8828-11eef64eb719" />
+        <field name="Name" type="NameTableFieldDefinition" value="EXTRA_ATTACK_THIRSTING_BLADE_TECHNICAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e2464fe1-d863-4f61-8aca-797e5803a59e" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Owner.CharismaModifier+Owner.ClassLevel(Warlock));RollBonus(SavingThrow,Owner.CharismaModifier);AC(4);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;IgnoreResting;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c21b920e-14e7-43e5-8055-e4849fb245f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_CAT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88c31e66-b9a9-4914-93e1-dd31ee010603" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9aa3b3ec-fb8c-44dc-b05a-ce1e8bd504bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_CAT_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="15dee234-bae9-48ce-b877-af4109d388e1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77e2b1ca-2396-4a16-beca-fcccada71bf3" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_CRAB" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="92625bdf-c0f7-4b88-9bb6-f8bcee8d1f60" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f358fe14-44f2-4bd9-8873-d4daacd5dc2c" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_CRAB_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1357d4d7-96c7-4147-a017-f5803681028f" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7c9ef46-23b6-4c75-9e54-c1e08d0ca13b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_FROG" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7328419-4e81-435f-a332-7dff508e7792" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87270e57-b6c8-4bac-a34f-b2584a121078" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_FROG_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56a8973e-4160-4596-a57b-73cf16727ee1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9f6ad7b-f3d6-4884-bee5-269f6522df7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_IMP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47769619-c274-4382-8622-1afb2fe4b436" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f58c5e4-ba94-4846-a75a-1a2c6fdfb74d" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_QUASIT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0ab587f1-b7cc-4c51-8904-0bee985d82c3" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03777e1b-fc37-4d41-a1a2-edec4f772ade" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_RAT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0f92b57d-5325-4dcc-9f4f-d81cdc8883ae" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f92ebc28-f577-4dd5-98c8-f293a6c5eadc" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_RAT_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="15dc424c-479f-439b-a386-37b1fa70eba5" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="576051cc-b3c6-48cf-998a-ef49d70cb1c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_RAVEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="25f6b647-4587-4e7b-96fd-703e810617ec" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3ebb892-5338-45c8-9606-5bc0e46f30e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_RAVEN_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc189030-d7ce-450c-a9b0-31ec9532517a" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a61e9cdc-7de9-4caf-8a85-197879c04ee6" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_SPIDER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="62593086-9d32-4724-9fb8-6d9b9e3a625a" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc0250e4-a867-471f-a584-11335ac1bf32" />
+        <field name="Name" type="NameTableFieldDefinition" value="PACTOFTHECHAIN_SPIDER_RITUAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53c558d9-4548-4751-bc07-c036b4ad5e7e" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
       </fields>
     </stat_object>
     <stat_object color="#FF00008B" is_substat="false">

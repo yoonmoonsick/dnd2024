@@ -7881,6 +7881,12 @@ data "Icon" "PassiveFeature_ThirstingBlade"
 data "Properties" "Highlighted"
 data "Conditions" "(ClassLevelHigherOrEqualThan(5,'Warlock',context.Source) and HasPassive('PactOfTheBlade_Hex',context.Source)) and (context.HasContextFlag(StatsFunctorContext.OnCast) and ExtraAttackSpellCheck() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source) and not HasStatus('SLAYER_PLAYER',context.Source) and not HasStatus('SLAYER_PLAYER_10',context.Source) and TurnBased(context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_TECHNICAL') and TurnBased()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApplied) and StatusId('EXTRA_ATTACK_Q'));"
 
+new entry "PactOfTheChain"
+type "PassiveData"
+using "PactOfTheChain"
+data "ExtraDescription" "h2699f6bfge40agee99ga6f1gad3b1ac17bf3;1"
+data "Boosts" "UnlockSpell(Target_FindFamiliar_Ritual);UnlockSpell(Target_PactOfTheChain_Imp);UnlockSpell(Target_PactOfTheChain_Quasit);UnlockSpell(Teleportation_PactOfTheChain);"
+
 new entry "ChainMaster"
 type "PassiveData"
 data "DisplayName" "h3690ba51gb59dg33beg6a6dg1d7e9789c541;1"
