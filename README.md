@@ -625,6 +625,8 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 9: Telekinesis, Synaptic Static
 - Level 3: Mind Magic
   - You can expend one use of Channel Divinity to cast a prepared spell from the Knowledge Domain Spells table without using a spell slot.
+- Level 6: Unfettered Mind
+  - You gain proficiency in Intelligence saving throws.
 
 ### Life Domain
 
