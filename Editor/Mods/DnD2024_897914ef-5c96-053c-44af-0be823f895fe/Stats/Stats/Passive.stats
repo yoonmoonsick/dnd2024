@@ -6822,13 +6822,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eace0940-c25a-4f6f-8b45-c6326f6c66de" />
         <field name="Name" type="NameTableFieldDefinition" value="DeadThree_3_Bloodthirst" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee611d7g0628g3c3eg953bgfb7c324da640" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13d703fbgb234g14aag3401g402c651c7bf6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13d703fbgb234g14aag3401g402c651c7bf6" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="Rogue_Bloodthirst" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF((not Tagged('CONSTRUCT') and not Tagged('ELEMENTAL') and not Tagged('OOZE') and not Tagged('PLANT') and not Tagged('UNDEAD')) and SneakAttackSpellCheck()):DamageBonus(ClassLevel(Rogue)/2);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasHPLessThan(1) and Enemy() and Character()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_DARK_ONES_BLESSING,100,0);ApplyStatus(SELF,BLOODTHIRST_TELEPORT,100,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_DeadThree_Bloodthirst);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7b086b07g6276gd8c5g3e88gd84cdabec267" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
