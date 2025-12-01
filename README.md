@@ -1289,18 +1289,18 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 - Subclass Spells (Always prepared)
   - Level 3: Ice Knife
-  - Level 5: Rime's Binding Ice
+  - Level 5: Hold Person
   - Level 9: Remove Curse
 - Level 3: Frigid Explorer
-  - You have Resistance to Cold Damage.
+  - Damage from your weapon attacks, Ranger spells, and Ranger features ignores Resistance to Cold damage. You have Resistance to Cold Damage.
 - Level 3: Polar Strike
   - When you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d4 Cold damage.
 - Level 3: Hunter's Rime
   - Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter's Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter's Mark, it can't take the Disengage action.
 - Level 7: Fortifying Soul ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FortifyingSoul.png?raw=true)
-  - You choose a creature. The chosen creature gains temporary hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
+  - You choose a creature. The chosen creature gains temporary hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute.  You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 11: Chilling Retribution ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ChillingRetribution.png?raw=true)
-  - When a creature hits you with an attack roll, you can use a Reaction to force it to make a Wisdom saving throw against your spell save DC; on a failed save, it is Frightened until the end of it's next turn. You can use this a number of times equal to your Wisdom modifier (minimum once), regaining all uses after a Long Rest.
+  - When a creature hits you with an attack roll, you can use a Reaction to force it to make a Wisdom saving throw against your spell save DC; on a failed save, it is Frightened until the end of it's next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ## Rogue
 
