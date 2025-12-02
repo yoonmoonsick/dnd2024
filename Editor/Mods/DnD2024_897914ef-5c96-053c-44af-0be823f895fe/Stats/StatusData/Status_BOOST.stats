@@ -2860,93 +2860,12 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cd3755b0-5221-4e8c-a06e-bb7987630b51" />
-        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_LIFE" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h366cf1ebg8bb1g8c5fg50ffg00728d0c3231" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf262294dg5b79g0594g6afbgb452b4178dfc" version="1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfLife;" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d9d5f74e-49d6-4963-803b-931f25bc7d85" />
-        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_LIFE_HEAL" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cd3755b0-5221-4e8c-a06e-bb7987630b51" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(Cause.LevelMapValue(BardicInspiration));" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c8398f9e-f772-4f1c-ba30-cbca6e092880" />
+        <field name="Name" type="NameTableFieldDefinition" value="BEGUILING_MAGIC" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BeguilingMagic_Charm);UnlockSpell(Target_BeguilingMagic_Fear)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_BeguilingMagic_Charm') or SpellId('Target_BeguilingMagic_Fear')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="64e3af42-03bf-4c44-a551-70258250c474" />
-        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_GLOAM" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a75e2f3g4b1ag900age6b9gac7088e936b7" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he776da4eg3c17g8903g77ffgb864dbe651bb" version="1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfGloam;" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Disengage" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="dc3808a4-d0b7-41e1-860a-1404a0ff3998" />
-        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_GLOAM_UNLOCK" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="64e3af42-03bf-4c44-a551-70258250c474" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Disengage_MoonBard);UnlockSpell(Shout_Hide_MoonBard);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):UnlockSpell(Target_MistyStep_MoonBard);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2b7cb63c-b9f7-4be0-b281-039abaae6aec" />
-        <field name="Name" type="NameTableFieldDefinition" value="MOONSHAEFOLKTALES_MIRTH" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17a35e4g168bg658bgc5fcg7d1161796d35" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8362a45fg49bag34c1g7a9eg125767f203e3" version="1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="MoonCollege_3_TaleOfMirth;" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_CuttingWords_MoonBard);" />
-        <field name="StackId" type="StringTableFieldDefinition" value="MOONSHAEFOLKTALES" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e20e754e-cd47-45ad-962e-47c59af108b5" />
-        <field name="Name" type="NameTableFieldDefinition" value="BLADE_WARD" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9f896acd-ca6f-4554-a39a-1a5a360a2bc3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="3" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:IF(not HasStatus('BLADE_WARD')):ApplyStatus(AI_HELPER_BLADEWARD,100,2);ApplyStatus(WARCASTER_BLADEWARD,100,-1);" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="65e117a8-ee38-4e44-9b65-daa973b1eb20" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_BLADE_WARD" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d57bafcc-50b8-40aa-b3bf-8cd6718233e1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4238a91c-1831-47b7-8b1a-b04bec7cdd02" />
-        <field name="Name" type="NameTableFieldDefinition" value="MAG_MONK_MOUNTAIN_BLADE_WARD" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="281480ec-7797-4920-a5cf-f5d5efa3eeec" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3010,12 +2929,70 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c8398f9e-f772-4f1c-ba30-cbca6e092880" />
-        <field name="Name" type="NameTableFieldDefinition" value="BEGUILING_MAGIC" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BeguilingMagic_Charm);UnlockSpell(Target_BeguilingMagic_Fear)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_BeguilingMagic_Charm') or SpellId('Target_BeguilingMagic_Fear')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e18a268c-25e4-4941-8d2f-f69f49397e9f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONBARD_LUNAR_VITALITY_TRIGGER" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c69837f5-0c62-401c-a3f9-e5ad9ecac60c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MOONBARD_LUNAR_VITALITY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82db8672-b041-4145-a732-c7ebe2ba21d0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h988e346agac66g4744gb06eg213b479dee08" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4daeac1agb014gece8g2cf2g39ba1ae3ee6c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MOONBARD_LUNAR_VITALITY" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(Cause.LevelMapValue(BardicInspiration));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10e74da0-96b4-46f1-9e0d-cef6bd95385e" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLESSING_OF_MOONLIGHT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h518081fag614fg597bg4b20g118cfb7af2c4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca697053gcde0g3846gc061g9512ba3b7c62" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Moonbeam" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLESSING_OF_MOONLIGHT" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Moonbeam_Heal);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc5d0e58-d502-4501-b4cf-8f0742a08c0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Others" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e20e754e-cd47-45ad-962e-47c59af108b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADE_WARD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f896acd-ca6f-4554-a39a-1a5a360a2bc3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="3" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:IF(not HasStatus('BLADE_WARD')):ApplyStatus(AI_HELPER_BLADEWARD,100,2);ApplyStatus(WARCASTER_BLADEWARD,100,-1);" />
+        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65e117a8-ee38-4e44-9b65-daa973b1eb20" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_BLADE_WARD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d57bafcc-50b8-40aa-b3bf-8cd6718233e1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4238a91c-1831-47b7-8b1a-b04bec7cdd02" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_MONK_MOUNTAIN_BLADE_WARD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="281480ec-7797-4920-a5cf-f5d5efa3eeec" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

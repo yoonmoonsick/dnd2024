@@ -485,22 +485,18 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/MoonCollege.png?raw=true)
 
-> The College of the Moon, rooted in the ancient druidic circles of the Moonshae Isles, empowers its Bards to chronicle island stories. These Bards use Fey magic and moonwell power to aid allies, protect nature, and create works based on Moonshae myths like fairy pranks, the Beast, and moonwell mysteries.
+> The College of the Moon traces its origins to the ancient druidic circles of the Moonshae Isles, who entrusted the first Bards of this tradition with chronicling the stories of the islands and their people. Bards of this college draw from the isles’ fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works.
 
-- Level 3: Moonshae Folktales
-  - As a Magic action, you can invoke the power of a folktale, imbuing yourself with primal magic until you use this feature again. When you use this feature, choose which of the following folktales you invoke; your choice gives you certain benefits while this magic is active.
-  - Tale of Life
-    - When you invoke the Tale of Life, you tap into the essence of vitality and the thriving earth. This allows you to enhance your healing magic. Once per turn, when you restore Hit Points to a creature with a spell, you can expend one of your Bardic Inspiration dice. When you do, roll that Bardic Inspiration die, and add the result to the number of Hit Points restored by your spell.
-  - Tale of Gloam
-    - When you invoke the Tale of Gloam, you channel the power of mystery and secrets. This enhances your ability to support allies while remaining elusive. When you use your Bonus Action to give a creature a Bardic Inspiration die, you can also take the Disengage or Hide action as part of that same Bonus Action.
-  - Tale of Mirth
-    - When you invoke the Tale of Mirth, you embody merriment and fey trickery. This allows you to subtly undermine your enemies' successes. When an enemy you can see within 60 feet of you succeeds on a saving throw, you can use your Reaction to expend one of your Bardic Inspiration dice. That creature must then roll the Bardic Inspiration die and subtract the result from their saving throw's total, potentially causing the save to fail.
-- Level 3: Primal Lorist
-  - Nature's Cantrip: You also learn one cantrip of your choice from the Druid spell list. Skilled in the Wilds: You gain proficiency in one of the following skills, reflecting your enhanced connection to the natural world or its inhabitants: Animal Handling, Insight, Medicine, Nature, Perception, or Survival.
-- Level 6: Blessing of the Moonwells
-  - You always have Moonbeam prepared. While you are casting Moonbeam, you can choose another creature you can see within 60 feet to regain Hit Points.
-- Level 12: Bolstered Folktales
-  - When you use your Tale of Life or Tale of Mirth, you restore one expended Bardic Inspiration die. Additionally, when you use your Tale of Gloam, you can teleport up to 30 feet to an unoccupied space you can see as part of the same bonus action.
+- Level 3: Primal Lore
+  - You learn a cantrip from the Druid spell list. It counts as a Bard spell for you but doesn’t count against the number of cantrips you know. Additionally, choose one of the following skills: Animal Handling, Insight, Medicine, Nature, Perception, or Survival. You have proficiency in that skill.
+- Level 3: Inspired Eclipse
+  - When you take a Bonus Action to give a creature a Bardic Inspiration die, you can have the Invisible condition and teleport up to 30 feet to an unoccupied space you can see as part of that Bonus Action. This invisibility lasts until the start of your next turn and ends early immediately after you make an attack roll, deal damage, or cast a spell.
+- Level 3: Lunar Vitality
+  - Once per turn when you restore Hit Points to a creature with a spell, you can expend a Bardic Inspiration die and increase the amount of Hit Points restored by a number equal to a roll of the Bardic Inspiration die. The creature’s Speed also increases by 10 feet until the end of its next turn.
+- Level 6: Blessing of Moonlight
+  - You always have the Moonbeam spell prepared. While concentrating on Moonbeam, you can heal a creature of your choice that you can see within 60 feet of you, allowing them to regain 2d4 hit points once per turn.
+- Level 12: Eventide’s Splendor
+  - When you use Inspired Eclipse, the creature who received the Bardic Inspiration die can also have the Invisible condition. When you use Lunar Vitality, you can roll 1d6 and use the number rolled in place of expending a Bardic Inspiration die.
 
 ### College of Glamour
 
@@ -2089,7 +2085,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
 - Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Grand Strategist ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
-    - You can order your allies to follow your formation (no action required). Choose one or more creatures within [1] of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
+    - You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
   - Punishment ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Punishment.png?raw=true)
     - When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
 - Level 7: Telekinetic Seal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_TelekineticSeal.png?raw=true)

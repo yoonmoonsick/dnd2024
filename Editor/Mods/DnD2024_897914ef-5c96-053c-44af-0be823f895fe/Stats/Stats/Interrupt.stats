@@ -1719,32 +1719,29 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5d27f7ef-0029-42a1-8a2d-c9988141c442" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_TaleOfLife" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ca27db72-1bdb-4818-bb37-182fe379aa15" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MoonCollege_LunarVitality" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h988e346agac66g4744gb06eg213b479dee08" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4daeac1agb014gece8g2cf2g39ba1ae3ee6c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and HealingSpell() and not AnyEntityIsItem();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(MOONSHAEFOLKTALES_LIFE_HEAL,100,0);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):RestoreResource(SELF,BardicInspiration,1,0);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;TaleOfLife:1;" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
-        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Stack" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h366cf1ebg8bb1g8c5fg50ffg00728d0c3231" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf262294dg5b79g0594g6afbgb452b4178dfc" version="1" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('MOONBARD_LUNAR_VITALITY_TRIGGER');" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(MOONBARD_LUNAR_VITALITY,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;Interrupt_MoonCollege_LunarVitality:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="MoonCollege_LunarVitality" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5d658ef0-cbb8-4df4-b2c9-a99b9f50c4e1" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CuttingWords_MoonBard" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="9a743bad-661b-449b-836c-55516e7ccbce" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ((HasInterruptedSavingThrow() and Enemy(context.Target,context.Observer) and ((not ClassLevelHigherOrEqualThan(5,'Bard') and IsFlatValueInterruptInteresting(6)) or (ClassLevelHigherOrEqualThan(5,'Bard') and not ClassLevelHigherOrEqualThan(10,'Bard') and IsFlatValueInterruptInteresting(8)) or (ClassLevelHigherOrEqualThan(10,'Bard') and IsFlatValueInterruptInteresting(10))))) and not AnyEntityIsItem();" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17a35e4g168bg658bgc5fcg7d1161796d35" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8362a45fg49bag34c1g7a9eg125767f203e3" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(BardicInspiration));ApplyStatus(OBSERVER_SOURCE,INTERRUPT_CUTTING_WORDS_TARGET,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_CUTTING_WORDS,100,0);IF(not Self(context.Target, context.Observer)):UseSpell(OBSERVER_SOURCE,Target_CuttingWords,true,true,true);IF(HasPassive('MoonCollege_12_BolsteredFolktales',context.Source)):RestoreResource(SELF,BardicInspiration,1,0);" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e1bce4dc-f198-4410-b7f2-7dbc3324edd6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_MoonCollege_LunarVitality_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca27db72-1bdb-4818-bb37-182fe379aa15" />
+        <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_MoonCollege_LunarVitality:1;" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
