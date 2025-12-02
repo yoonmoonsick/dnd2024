@@ -3975,7 +3975,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and IsDamageTypeAcid()):DamageBonus(IntelligenceModifier,Acid);IF(IsSpell() and IsDamageTypeFire()):DamageBonus(IntelligenceModifier,Fire);IF(IsSpell() and IsDamageTypeNecrotic()):DamageBonus(IntelligenceModifier,Necrotic);IF(IsSpell() and IsDamageTypePoison()):DamageBonus(IntelligenceModifier,Poison);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate')" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(IntelligenceModifier); " />
       </fields>
     </stat_object>
@@ -4430,78 +4430,69 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="791c1bf0-fa89-4f87-9ad9-a3406bc8201d" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_MoonshaeFolktales" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7fa6ac2cg5000gcf1cgde3cg9c87c472e8b3" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h951301c7gf1c9gade8g507ege1be5a29a747" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_RestoreBardicInspiration" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(TaleOfLife,1,0);UnlockSpell(Shout_MoonshaeFolktales);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="af1fad09-651c-496e-9d0a-f3847656112e" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_TaleOfLife" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h366cf1ebg8bb1g8c5fg50ffg00728d0c3231" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf262294dg5b79g0594g6afbgb452b4178dfc" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_TaleOfLife);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="34fed625-c63c-4631-979a-580e3e234b07" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_TaleOfGloam" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5a75e2f3g4b1ag900age6b9gac7088e936b7" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he776da4eg3c17g8903g77ffgb864dbe651bb" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Disengage" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="73ba08a2-01d4-4e7e-86b8-f741811b767f" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BardicInspiration');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,MOONSHAEFOLKTALES_GLOAM_UNLOCK,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="074aa0b1-5ace-4512-be77-91c880b1681a" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_TaleOfMirth" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha17a35e4g168bg658bgc5fcg7d1161796d35" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8362a45fg49bag34c1g7a9eg125767f203e3" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="12374fbf-a6a5-4118-985c-0ba19c3774d3" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_PrimalLorist" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h646396c7ged49ga9f6g3a96g76d50d4b018a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h66bdf810g2dd1g28efg4931gc2400a49067e" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="875b1fad-3876-432f-bcd5-3b127fee59d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_PrimalLore" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdad67ff5geb29g677egc4e1gb39e1fb47c85" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25629dabg4b6fg8c53g9069gc30b01ccb3f9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Nature" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="21ff1280-af38-4fff-93b7-9d68ba84f30a" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_6_BlessingOfTheBoonwells" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff4643ebgf1dbgbf30g2daeg1647f0e9cc90" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he644c4d6g8f1eg6e62g8dfdg360a3f0712ce" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c2efaf0d-1535-434a-bc21-5b2b1a0bbaed" />
+        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_InspiredEclipse" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c7450b4gd2cdgb55ag6b4bg3e7d812b6c0c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2da18444ge149gbd37g8f44g132d76116573" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BardicInspiration');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,INSPIREDE_CLIPSE,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85c06ea8-04de-4ab7-90a3-d992b539ec4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_3_LunarVitality" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d8f4c7dgc412gec04g5c3cgd54c89be202f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4daeac1agb014gece8g2cf2g39ba1ae3ee6c" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MoonCollege_LunarVitality);ActionResource(Interrupt_MoonCollege_LunarVitality,1,0);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnHeal" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HealDoneGreaterThan(0) and IsSpell() and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MOONBARD_LUNAR_VITALITY_TRIGGER,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a5b6a81-c3b6-4044-8f63-bb40a00b6a30" />
+        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_6_BlessingOfMoonlight" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h518081fag614fg597bg4b20g118cfb7af2c4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca697053gcde0g3846gc061g9512ba3b7c62" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Moonbeam" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Moonbeam_Heal);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Moonbeam();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,BLESSING_OF_MOONLIGHT,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="27443a75-6145-4b8e-814a-fc3779e8898b" />
-        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_12_BolsteredFolktales" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8830e3a4ge15fgbaabg1580geb36835699c4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac493dadg37d6ge821g6500ge8a73fe2cd89" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_RestoreBardicInspiration" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b8b26210-c357-4e20-af8f-c0d8da7abec1" />
+        <field name="Name" type="NameTableFieldDefinition" value="MoonCollege_12_EventidesSplendor" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h561b4299gfa91g2fbdg967dgff20b99119a4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4629e4fagc979g57b4g486dg1731a92c46fd" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_GrantBardicInspiration" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MoonCollege_LunarVitality_Free);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BardicInspiration');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(INSPIREDE_CLIPSE,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFA52A2A" is_substat="false">
