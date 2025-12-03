@@ -11313,12 +11313,17 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="959b1f79-0f0d-4502-908c-50f12ce34f04" />
         <field name="Name" type="NameTableFieldDefinition" value="DjinnisEscape" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6ae25cf6-1bb3-40b6-abe9-c66f86baa02b" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:RemoveStatus(SELF,DJINNIS_ESCAPE);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="04acd1a7-f95f-404c-91f4-caa94112f693" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20d93a6g9ec6gc3cdg1890g0e70817191af" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h82b4e323g8955g3a24g7568gcf34d63f6c07" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();GROUND:ApplyStatus(SELF,DJINNIS_ESCAPE_COOLDOWN,100,2);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DJINNIS_ESCAPE_COOLDOWN', context.Source);" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
