@@ -7814,7 +7814,19 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0b7d9eec-7b34-49c1-bbfa-519147714edf" />
         <field name="Name" type="NameTableFieldDefinition" value="DJINNIS_ESCAPE" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DjinnisEscape);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20d93a6g9ec6gc3cdg1890g0e70817191af" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h82b4e323g8955g3a24g7568gcf34d63f6c07" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DjinnisEscape);Resistance(Bludgeoning, Resistant);Resistance(Piercing, Resistant);Resistance(Slashing, Resistant);StatusImmunity(SG_Restrained);StatusImmunity(PRONE);StatusImmunity(PRONE_GREASE);StatusImmunity(PRONE_SEWER);StatusImmunity(PRONE_ICE);StatusImmunity(PRONE_FALLEN);" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DJINNIS_ESCAPE" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,DJINNIS_ESCAPE_COOLDOWN)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="972685f9-b279-4394-b41c-21591101cb94" />
+        <field name="Name" type="NameTableFieldDefinition" value="DJINNIS_ESCAPE_COOLDOWN" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

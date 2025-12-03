@@ -6261,8 +6261,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5285db4b-899f-4153-a467-f3c1816d332f" />
         <field name="Name" type="NameTableFieldDefinition" value="NobleGenies_1_Tenets" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h22185195g1592gcbdagd3aag820ad95931cc" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c5105aeg35ccga019gb761g99d489be7849" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0c5105aeg35ccga019gb761g99d489be7849" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6325,14 +6325,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="55dc614a-1bae-410f-b7f5-5166f42b5569" />
         <field name="Name" type="NameTableFieldDefinition" value="NobleGenies_3_GeniesSplendor" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hae82833bgc7c5g461dged18g477885201c91" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f23e35dg4350gfd3dg3b13gebfe31cd0551" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f23e35dg4350gfd3dg3b13gebfe31cd0551" version="2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dca7f447-0cd0-4c1b-9e97-9a6ed09a44b7" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_LightlyArmored" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasHeavyArmor(context.Source) and not HasMediumArmor(context.Source);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(1);IF(AbilityGreaterThan('Charisma',13,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',15,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',17,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',19,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',21,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',23,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',25,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',27,context.Source)):AC(1);IF(AbilityGreaterThan('Charisma',29,context.Source)):AC(1);" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ACOverrideFormula(10,true,Dexterity,Charisma);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6dc1a6fegaa52g1a70g4510gbd5681b96903" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
