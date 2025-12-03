@@ -7538,11 +7538,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="731ad7b8-4206-406f-961d-c86134ace4c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HATE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a4655c28-b6ac-49c0-ad64-584a3e938a76" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Self() and (Tagged('UNDEAD') or Tagged('FIEND'))):ApplyStatus(AURA_OF_HATE_BUFF)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(max(1, Cause.CharismaModifier),Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="febede38-8719-447f-bf65-e30fd972dfdc" />
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HATE_9" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4655c28-b6ac-49c0-ad64-584a3e938a76" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and not Self() and (Tagged('UNDEAD') or Tagged('FIEND'))):ApplyStatus(AURA_OF_HATE_BUFF)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(max(1, Cause.CharismaModifier),Necrotic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

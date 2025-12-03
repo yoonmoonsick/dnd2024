@@ -1185,6 +1185,21 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 3: Vow of Enmity
   - When you take the Attack action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You have Advantage on attack rolls against the creature for 1 minute or until you use this feature again. If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required).
 
+### Oathbreaker
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Oathbreaker.png?raw=true)
+
+- Oath Spells (Always prepared)
+  - Level 3: Hellish Rebuke, Witch Bolt
+  - Level 5: Crown of Madness, Darkness
+  - Level 9: Fear, Summon Undead
+- Level 3: Conjure Undead
+  - As a bonus action, you can use one charge of your Channel Divinity to summon a number of undead equal to half your Charisma modifier (rounded up, with at least one undead). Each appears in an unoccupied space you can see within 30 feet and can be either a skeleton or a zombie. The undead remain under your control for 1 minute before crumbling into ash.
+- Level 3: Dreadful Aspect  
+  - You can spend one use of your Channel Divinity to unleash a wave of magical menace. Every creature you choose within a 30-foot emanation from you must pass a Wisdom saving throw or become Frightened for 1 minute. A Frightened creature can try again at the end of each of its turns, ending the effect on itself with a successful save.
+- Level 7: Aura of Hate
+  - When you or any allied Fiend or Undead within your Aura of Hate land a melee hit on a creature, that attack deals extra necrotic damage equal to your Charisma modifier.
+
 ## Ranger
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ranger.png?raw=true)

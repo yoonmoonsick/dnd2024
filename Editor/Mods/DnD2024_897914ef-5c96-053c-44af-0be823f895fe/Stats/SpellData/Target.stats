@@ -8428,15 +8428,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a5ee39bf-47e2-433f-a6cc-77a57bdb4c1d" />
-        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="fce48982-d18c-40be-b301-1ee9c3e5c41e" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(CONTROL_UNDEAD, 100, -1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e38dd2a7-0aa1-4247-bda8-21673c7a9aad" />
         <field name="Name" type="NameTableFieldDefinition" value="SurgeonHeal_Nurse" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="db0a5833-8ec5-4ea5-a36c-e9f95742e733" />
@@ -11324,6 +11315,124 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('DJINNIS_ESCAPE_COOLDOWN', context.Source);" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf493f51-5613-4990-8992-f4dbd729c413" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fce48982-d18c-40be-b301-1ee9c3e5c41e" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_ControlUndead_Zombie;Target_ControlUndead_Zombie_2;Target_ControlUndead_Zombie_3;Target_ControlUndead_Skeleton;Target_ControlUndead_Skeleton_2;Target_ControlUndead_Skeleton_3;" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e9c55ecg216ag0e28gab1dgf95b69143553" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96383aedgab8agb715g96f9g3a1a94e8c023" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelOath:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30af2e07-cfed-45e2-8d43-62bc55d221a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Zombie" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83e30cbd-a38e-48bf-918a-dde40884b3a1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ControlUndead" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(c2a2c269-ede8-4887-99f1-e0c044cc0c75, 10,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('');" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_AnimateDead_Zombie" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0eada059gfd23g86cbg2b74g3c6929020a05" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelOath:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;2da41f71-3471-4ac8-a268-63983acbe88c,,;70c2d89d-98bd-4462-82e2-8e30e9c727be,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="48da415b-91d2-49e9-8192-9d1e434b9866" />
+        <field name="TargetGroundEffect" type="GuidObjectTableFieldDefinition" value="a082692d-ad88-44e2-ab4e-f92e69150438" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97e55d7f-1e54-4b4b-8c6a-7c13d68c84c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Zombie_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30af2e07-cfed-45e2-8d43-62bc55d221a9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',17,context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d800839d-936c-4d68-a207-642f1a14bfc6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Zombie_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97e55d7f-1e54-4b4b-8c6a-7c13d68c84c6" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22663eba-ec0f-4433-8fc9-da7f48d3d6d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Skeleton" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a1aa1c9-86cb-453b-92bc-6f0b1c91bfeb" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_ControlUndead" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(6c06cda2-6e13-4663-a6f6-c4bb7564c10f, 10,,,,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('');" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_AnimateDead_Skeleton" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0eada059gfd23g86cbg2b74g3c6929020a05" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ChannelOath:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetGroundEffect" type="GuidObjectTableFieldDefinition" value="a082692d-ad88-44e2-ab4e-f92e69150438" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a565a62-c065-4896-a654-6b0db794f175" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Skeleton_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="22663eba-ec0f-4433-8fc9-da7f48d3d6d8" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',17,context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a738af8-7fb2-4b2e-905d-4dd5950e52b9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlUndead_Skeleton_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9a565a62-c065-4896-a654-6b0db794f175" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
