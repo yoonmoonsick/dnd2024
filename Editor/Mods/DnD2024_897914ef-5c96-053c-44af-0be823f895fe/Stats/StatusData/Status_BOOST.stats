@@ -7113,7 +7113,14 @@
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StackId" type="StringTableFieldDefinition" value="RALLY_TEMPORARY_HP" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d10+Cause.ClassLevel(Fighter)/2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(Cause.LevelMapValue(SuperiorityDie)+Cause.ClassLevel(Fighter)/2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3dbdaf9-350f-4b3d-9941-b0cec1d96932" />
+        <field name="Name" type="NameTableFieldDefinition" value="RALLY_NPC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3991b5d7-47c8-419c-8039-598fffe460b8" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
