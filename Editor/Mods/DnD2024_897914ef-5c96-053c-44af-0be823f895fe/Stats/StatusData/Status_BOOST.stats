@@ -2932,6 +2932,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e18a268c-25e4-4941-8d2f-f69f49397e9f" />
         <field name="Name" type="NameTableFieldDefinition" value="MOONBARD_LUNAR_VITALITY_TRIGGER" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c69837f5-0c62-401c-a3f9-e5ad9ecac60c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2944,6 +2949,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
         <field name="StackId" type="StringTableFieldDefinition" value="MOONBARD_LUNAR_VITALITY" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(Cause.LevelMapValue(BardicInspiration));" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
