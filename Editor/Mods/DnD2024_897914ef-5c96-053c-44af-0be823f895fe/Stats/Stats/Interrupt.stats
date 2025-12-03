@@ -1728,7 +1728,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('MOONBARD_LUNAR_VITALITY_TRIGGER');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('MOONBARD_LUNAR_VITALITY_TRIGGER') and Self(context.Source,context.Observer);" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(MOONBARD_LUNAR_VITALITY,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="BardicInspiration:1;Interrupt_MoonCollege_LunarVitality:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="MoonCollege_LunarVitality" />
