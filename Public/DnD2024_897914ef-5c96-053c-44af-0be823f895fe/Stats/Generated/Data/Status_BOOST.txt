@@ -876,6 +876,12 @@ data "StackId" "GUSTOFWIND_OWNER"
 data "Boosts" "UnlockSpell(Zone_GustOfWind_BonusAction);"
 data "StatusPropertyFlags" "DisableCombatlog"
 
+new entry "GUSTOFWIND_COOLDOWN"
+type "StatusData"
+data "StatusType" "BOOST"
+data "TickType" "EndTurn"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
 new entry "SPIRITUAL_WEAPON"
 type "StatusData"
 data "StatusType" "BOOST"
