@@ -1710,11 +1710,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
 
 - Level 3: Bladesong
-  - You can invoke the Bladesong a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
-  - While the Bladesong is active, you gain the following benefits.
-    - You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet.
-    - Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.
-    - When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.
+  - As a Bonus Action, you invoke an elven magic called the Bladesong, provided you aren’t wearing armor or using a Shield.
+  - The Bladesong lasts for 1 minute and ends early if you have the Incapacitated condition, if you don armor or a Shield, or if you use two hands to make an attack with a weapon. You can dismiss the Bladesong at any time (no action required).
+  - While the Bladesong is active, you gain the following benefits. You can invoke the Bladesong a number of times equal to your Intelligence modifier. You regain all expended uses when you finish a long rest. If you have no uses remaining, you can expend one use of Arcane Recovery to activate it instead..
+  - Agility. You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1), and your Speed increases by 10 feet. In addition, you have Advantage on Dexterity (Acrobatics) checks.
+  - Bladework. Whenever you attack with a weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.
+  - Focus. When you make a Constitution saving throw to maintain Concentration, you can add your Intelligence modifier to the total.
 - Level 6: Extra Attack
   - You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.
 - Level 12: Song of Victory
