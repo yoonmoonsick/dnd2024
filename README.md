@@ -1536,23 +1536,19 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Subclass Spells (Always prepared)
   - Level 3: Cure Wounds, Guiding Bolt, Lesser Restoration, Scorching Ray
-  - Level 5: Aura of Vitality, Counterspell
+  - Level 5: Aura of Vitality, Glyph of Warding 
   - Level 7: Fire Shield, Wall of Fire
   - Level 9: Greater Restoration, Flame Strike
 - Level 3: Spellfire Burst
-  - When you cast a spell of 1st level or higher on your turn, you can spend Sorcery Points to unleash one of the following effects. You can do so only once per turn.
+  - When you spend at least 1 Sorcery Point as part of a Magic action or a Bonus Action on your turn, you can unleash one of the following magical effects of your choice. You can do so only once per turn.
     - Bolstering Flames
-      - You or one creature you can see within 30 feet gains Temporary Hit Points equal to 1d4 + your Charisma modifier.
+      - You or one creature you can see within 30 feet of yourself gains Temporary Hit Points equal to 1d4 plus your Charisma modifier.
     - Radiant Fire
-      - One creature you can see within 30 feet must make a Dexterity saving throw against your spell save DC. On a failed save, they take 1d6 Fire or Radiant damage (your choice).
+      - One creature you can see within 30 feet of yourself takes 1d4 Fire or Radiant damage (your choice).
 - Level 6: Absorb Spells
   - Whenever a target fails the saving throw against a Counterspell you cast, you regain 1d4 Sorcery Points.
 - Level 11: Honed Spellfire
-  - Your Spellfire Burst improves
-    - Bolstering Flames
-      - You add your Sorcerer level to the Temporary Hit Points gained.
-    - Radiant Fire
-      - The damage increases from 1d6 to 3d6.
+  - Your Spellfire Burst improves. You add your Sorcerer level to the Temporary Hit Points gained from Bolstering Flames, and the damage of your Radiant Fire increases to 1d8.
 
 ### Storm Sorcery
 
