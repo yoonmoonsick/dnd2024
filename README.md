@@ -924,26 +924,27 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 12: Bulwark of Force
   - You can shield yourself and others with telekinetic force. As a Bonus Action, you can choose creatures, including yourself, within 30 feet of yourself, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures has +2 bonus to AC and Dexterity saving throws for 1 minute or until you have the Incapacitated condition. Once you use this feature, you can't do so again until you finish a Long Rest unless you expend a Psionic Energy Die (no action required) to restore your use of it.
 
-### Purple Dragon Knight
+### Banneret (Formerly, Purple Dragon Knight)
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PurpleDragonKnight.png?raw=true)
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Banneret.png?raw=true)
 
-> The Purple Dragon Knights are paragons of valor and leadership who ally themselves with amethyst dragons. These knights strive to protect the innocent and inspire their fellow adventurers to champion the causes of justice and freedom.
->
-> Although the Purple Dragons were originally founded in Cormyr, new recruits are now drawn from any realm where chivalry thrives, including the Silver Marches, Damara, and Chessenta.
+> Bannerets are paragons of valor and leadership who protect the innocent and rally fellow adventurers to the causes of justice and freedom. Many are knights serving in Cormyr, the Silver Marches, Damara, Chessenta, or other lands across Faerûn. They wander the realms as knights errant, taking the fight against evil beyond their kingdom’s borders.
+> 
+> A Banneret relies on judgment, bravery, and fidelity to the code of chivalry to guide them in defeating evildoers. A lone Banneret is a skilled warrior, but when leading a band of allies one of these warriors can transform even a poorly equipped militia into a ferocious war band.
 
-- Level 3: Rallying Cry
-  - When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter Level, provided that the creature can see or hear you.
 - Level 3: Knightly Envoy
-  - You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.
-- Level 3: Purple Dragon Companion ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Fighter_PurpleDragonCompanion.png?raw=true)
-  - You are bonded with an amethyst dragon hatchling that serves as your purple dragon companion and uses the Purple Dragon Companion stat block. The purple dragon is Friendly to you and your allies and obeys your commands.
-- Level 7: Dragon Knight
-  - Your Purple Dragon Companion grows mightier, and you can mount your Purple Dragon Companion to fly.
+  - You gain Expertise in the Persuasion skill. You gain proficiency in one of the following skills of your choice: Insight, Intimidation, or Performance.
+- Level 3: Group Recovery
+  - When you use your Second Wind to regain Hit Points, you can choose a number of allies within a 30-foot Emanation originating from yourself, up to a number of allies equal to your Charisma modifier (minimum of one). Each of those allies regains Hit Points equal to 1d4 plus your Fighter level.
+  - Once you use this ability, you can’t use it again until you finish a Short or Long Rest.
+- Level 7: Team Tactics
+  - When you use Group Recovery, each chosen ally has Advantage on attack rolls, and saving throws until the start of your next turn.
 - Level 10: Rallying Surge
-  - When you use your Action Surge feature, you can choose three creatures within 30 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.
-- Level 12: Bulwark
-  - You can extend the benefit of your Indomitable feature to an ally.
+  - When you use your Action Surge, you can choose allies within a 30-foot Emanation originating from yourself, up to a number of allies equal to your Charisma modifier (minimum of one). Each of those allies can take a Reaction to use one of the following options.
+  - Attack. The ally makes one attack with a weapon or an Unarmed Strike.
+  - Move. The ally moves up to half its Speed without provoking Opportunity Attacks.
+- Level 12: Shared Resilience
+  - When an ally you can see within 60 feet of yourself fails a saving throw, you can take a Reaction to expend a use of your Indomitable feature. The ally can immediately reroll the saving throw with a bonus equal to your Fighter level.
 
 ### Rune Knight
 
