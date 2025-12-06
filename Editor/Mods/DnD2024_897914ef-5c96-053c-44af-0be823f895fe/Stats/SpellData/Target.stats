@@ -11068,17 +11068,16 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="15f23686-3451-457e-9679-e7d4e1f7b69f" />
-        <field name="Name" type="NameTableFieldDefinition" value="RallyingCry" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(ClassLevel(Fighter)+CharismaModifier)" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d4+ClassLevel(Fighter));IF(HasPassive('Banneret_7_TeamTactics',context.Source)):ApplyStatus(BANNERET_TEAM_TACTICS,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and not Self()" />
-        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Fighter_Rally" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0139bcd7gba31g9628g0aa7g7269d709e082" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h26d8a59ag829bg6f3cg0ab0gb9f0ad040970" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);RegainHitPoints(ClassLevel(Fighter)+CharismaModifier)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="Distance(18);RegainHitPoints(ClassLevel(Fighter)+CharismaModifier)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d4);RegainHitPoints(ClassLevel(Fighter))" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rally" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rally" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -11086,11 +11085,75 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;2328d637-5cb3-4602-926e-342685b179d0,,;53018038-6fda-4ce0-b98b-6476604768e2,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7a5b19df-0015-44ce-9a06-199d8e681e94" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74a0c9e9-c932-462e-a5f9-3ff2b79834fa" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="eedddf2e-a10d-44b9-b635-278fcf9b81b6" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_GroupRecovery_1;Target_GroupRecovery_2;Target_GroupRecovery_3;Target_GroupRecovery_4;Target_GroupRecovery_5;Target_GroupRecovery_6;" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5f8ed309g7e3cgb375g9ed6g47c2f1551e08" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="15f23686-3451-457e-9679-e7d4e1f7b69f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_GroupRecovery" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4590f5b9-9e9b-45e4-bf80-977c5d1fb8b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',13,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2186540a-2ed6-4f5a-8c51-bb6969c542cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',15,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f487122-a86a-43e3-a984-1e09c5add7a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',17,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6977d04-781f-4a76-8460-a40ea5e9d977" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',19,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c0b6102-2445-4caf-8002-d5f08c00350f" />
+        <field name="Name" type="NameTableFieldDefinition" value="GroupRecovery_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ad4a2a-40b2-4004-9303-013c7e63ad53" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11120,56 +11183,105 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9051bb9c-8f95-46aa-a6b9-5ea7bd3a3a81" />
         <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ACTION_SURGE, 100, 1)" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BANNERET_RALLYING_SURGE_BUFF, 100, 1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Self()" />
-        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23d20fc5g3de7g3667g55c9g7166d51f0458" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f7bd89fg13a7g846bg1d8dg34a627cf9a23" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ACTION_SURGE, 100, 1)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BANNERET_RALLYING_SURGE_BUFF, 100, 1)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_CommandersStrike" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_CommandersStrike" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;92acc934-ecb1-456d-8fc4-6ad4cca12030,,;33040900-718a-47a7-983c-b467e4a88b8d,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="49dd385f-fd25-4372-8628-30b775af7c79" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ae89577b-9458-4ca0-9d37-07d1f381c830" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="1b62a284-e05a-4a26-bd5d-1dda752839a1" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_RallyingSurge_1;Target_RallyingSurge_2;Target_RallyingSurge_3;Target_RallyingSurge_4;Target_RallyingSurge_5;Target_RallyingSurge_6;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bd643d46-ca10-4811-8192-843a4d8b854f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bulwark" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BULWARK, 100, 10)" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Combat()" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Self()" />
+        <field name="UUID" type="IdTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9051bb9c-8f95-46aa-a6b9-5ea7bd3a3a81" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_FightingStyle_Protection" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he58e2033g12ddgd830gfddagccdaed253a3f" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h71e85c01g02d0g3d8dgd598gd63ef2184ea4" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BULWARK, 100, 10)" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Rally" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Rally" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead()" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9122eb08-93f1-4010-a275-f5ae3ec7c76e,,;,,;92acc934-ecb1-456d-8fc4-6ad4cca12030,,;33040900-718a-47a7-983c-b467e4a88b8d,,;5301d674-b7da-47b6-b4cf-2802ba33a9e9,,;,,;86b3cf93-21fb-4a3d-bed9-97d0a567d084,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7a5b19df-0015-44ce-9a06-199d8e681e94" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="74a0c9e9-c932-462e-a5f9-3ff2b79834fa" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="eedddf2e-a10d-44b9-b635-278fcf9b81b6" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Temporary;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_RallyingSurge" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f972d4c8-a652-4628-9b81-bf6f89ad16f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',13,context.Source)" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="613dcaa0-e20b-4742-bc13-68d6d7d1b958" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',15,context.Source);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dadd0e93-e0d9-479c-babf-6fb7b754a5ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',17,context.Source);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2bdf6836-7265-4c25-9d93-4a267733e967" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',19,context.Source);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08bee81d-a68b-465c-9de1-2992677f5dd0" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="707938ce-2f59-45bc-be04-5a2161716b49" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd5e098b-dca7-4663-bcc5-f449124a1b53" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_Attack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" clear_inherited_value="true" value=",,;,,;;,,;,,;,,;,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;CanDualWield;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

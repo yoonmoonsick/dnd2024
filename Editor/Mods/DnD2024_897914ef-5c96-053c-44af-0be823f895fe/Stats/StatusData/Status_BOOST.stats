@@ -7267,15 +7267,28 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="73ee200e-ea90-4663-a67b-7d444a6823cb" />
-        <field name="Name" type="NameTableFieldDefinition" value="RALLYING_CRY" />
+        <field name="Name" type="NameTableFieldDefinition" value="BANNERET_GROUP_RECOVERY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0139bcd7gba31g9628g0aa7g7269d709e082" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h26d8a59ag829bg6f3cg0ab0gb9f0ad040970" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Skill_Fighter_Rally" />
-        <field name="StackId" type="StringTableFieldDefinition" value="RALLYING_CRY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RallyingCry)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_RallyingCry')" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BANNERET_GROUP_RECOVERY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_GroupRecovery)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_GroupRecovery')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);RegainHitPoints(ClassLevel(Fighter)+CharismaModifier)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="262fa9a8-dd29-42b7-b347-cf5dd55e33bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="BANNERET_TEAM_TACTICS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha237430fg5f6bge755g69e5g55bb7aeacd68" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77e4d5f8g57bbg852ag5cb7ge822aef79939" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BANNERET_TEAM_TACTICS" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackRoll);Advantage(SavingThrow, Strength);Advantage(SavingThrow, Dexterity);Advantage(SavingThrow, Constitution);Advantage(SavingThrow, Intelligence);Advantage(SavingThrow, Wisdom);Advantage(SavingThrow, Charisma);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7319,26 +7332,34 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="93628cb7-a924-4d1c-8e1e-c82dbd22c600" />
-        <field name="Name" type="NameTableFieldDefinition" value="INSPIRING_SURGE" />
+        <field name="Name" type="NameTableFieldDefinition" value="BANNERET_RALLYING_SURGE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23d20fc5g3de7g3667g55c9g7166d51f0458" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f7bd89fg13a7g846bg1d8dg34a627cf9a23" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
-        <field name="StackId" type="StringTableFieldDefinition" value="INSPIRING_SURGE" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BANNERET_RALLYING_SURGE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RallyingSurge)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_RallyingSurge')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="300398c4-fb97-4d9c-863f-a58d0612cd94" />
-        <field name="Name" type="NameTableFieldDefinition" value="BULWARK" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he58e2033g12ddgd830gfddagccdaed253a3f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha914f546g9cecgb837g0c8ag248aa352b6fd" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Indomitable" />
-        <field name="StackId" type="StringTableFieldDefinition" value="BULWARK" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Indomitable" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5e957b63-931f-4b87-99b0-0f91059e7761" />
+        <field name="Name" type="NameTableFieldDefinition" value="BANNERET_RALLYING_SURGE_BUFF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23d20fc5g3de7g3667g55c9g7166d51f0458" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f7bd89fg13a7g846bg1d8dg34a627cf9a23" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_CommandersStrike" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BANNERET_RALLYING_SURGE_BUFF" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RallyingSurge_Attack);UnlockSpell(Projectile_RallyingSurge_Attack);UnlockSpell(Shout_RallyingSurge_Move);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92db7653-af0a-4f54-9400-003bed7202eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="BANNERET_RALLYING_SURGE_MOVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec8273bd-c522-49c3-b0bf-c2b833c549eb" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BANNERET_RALLYING_SURGE_MOVE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange();ActionResourceMultiplier(Movement,150,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
