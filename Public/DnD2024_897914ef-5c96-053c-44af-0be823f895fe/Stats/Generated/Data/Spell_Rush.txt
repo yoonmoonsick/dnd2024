@@ -36,6 +36,7 @@ data "SpellType" "Rush"
 using "Rush_Charger_Attack"
 data "Cooldown" "OncePerTurn"
 data "SpellSuccess" "DealDamage((max(0,MainMeleeWeapon+1d8)), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);"
+data "TargetConditions" "(Character() and not Dead()) or Item() and not Ally() and DistanceToTargetGreaterThan(3.0);"
 data "TooltipDamageList" "DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)"
 data "UseCosts" "ActionPoint:1;Rush_Charger:1"
 

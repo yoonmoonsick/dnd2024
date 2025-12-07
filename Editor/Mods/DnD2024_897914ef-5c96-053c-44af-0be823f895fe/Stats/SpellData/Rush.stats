@@ -50,6 +50,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage((max(0,MainMeleeWeapon+1d8)), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+1d8, MainMeleeWeaponDamageType)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;Rush_Charger:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="(Character() and not Dead()) or Item() and not Ally() and DistanceToTargetGreaterThan(3.0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
