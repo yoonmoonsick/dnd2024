@@ -1175,6 +1175,118 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3d9c073-62bf-4432-bbd1-ad84a8006927" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS Feat Heroes of Faerun Feats" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae5ff585-9416-46c4-9d3d-2d51d0790457" />
+        <field name="Name" type="NameTableFieldDefinition" value="DragonsTerror" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="19696062-d315-4792-9159-26d485c30991" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,2);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Frightened" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdcaf26c6g3a27gf5d6g5822g85bd4a1de31c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heef28d8cg1be2gc792gd224g4371cc7ecea1" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Wisdom" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,2);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e397d529-46ff-4100-a015-5ec8b0e6c969" />
+        <field name="Name" type="NameTableFieldDefinition" value="TagTeam" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="54d36d84-d898-4763-bc82-2bc34dedd837" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SG_Sleeping);RemoveStatus(SG_Helpable_Condition);RemoveStatus(BURNING);RemoveStatus(SG_Prone);RemoveStatus(SG_Restrained);RemoveStatus(PRONE);RemoveStatus(SLEEPING);RemoveStatus(SLEEP);RemoveStatus(ENSNARING_STRIKE);RemoveStatus(WEB);RemoveStatus(HYPNOTIC_PATTERN);RemoveStatus(PRONE);RemoveStatus(PRONE_GREASE);RemoveStatus(PRONE_SEWER);RemoveStatus(PRONE_ICE);RemoveStatus(PRONE_FALLEN);RemoveStatus(PRONE_THUNDEROUS_SMITE);RemoveStatus(SLEEP_2);IF(Character()):SwapPlaces();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and (not Enemy() or Player());" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h79a02cb4geb7eg7da5g16ecg82489d2fa5a3" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5e52bb8cg3b01gc5c2g04a2gfa7512b620b2" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af6309b8-6805-480d-a62f-d97d6372e45d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistractingMelody" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c25f4653-5c52-48cf-b4a4-215529ae4118" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1150c16agacb9gcf08g275dgbd7f0409bc5c" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d2bc7b19-03db-43bf-885f-ec24ce5808e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="RallyingCry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acace47d-bbd9-4708-8f74-835dcf81c40b" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(HumanHeroicInspiration,1,0);" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(StandardProficiencyBonusScale)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h659c070agb81bg1d86g442cgad9ff66698a9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hebf1fe81g1c7egc48bg4b1ag345a2fd20fa6" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c97004b4-6473-499f-9712-6d369a6be43a" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee7f2457-6531-43a0-9aa8-8149cf6147ab" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e861fc95-3631-4d97-a982-7401d0f0a294" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5eb27621-b2ac-4407-8040-08767c83f464" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="597b73b8-3e2c-4286-af22-d9194c378bdf" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="52c0a8f0-abac-438d-8262-454e6c103be7" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6b1465e-ed57-4f3d-ade8-6ee24e246056" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5432edcb-c564-46d1-8fc6-48c7a244e94c" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="11cc150b-681a-45ef-8d7f-efa01496d676" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Conjuration" />
       </fields>
@@ -13365,6 +13477,14 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SACREDFLAME,100,-1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f211d98-d5b6-49cf-9486-e0bc1bd7756b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_BonusAction" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellfireFlame:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
