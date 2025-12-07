@@ -2304,9 +2304,120 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When you or a creature you can see within this range misses an attack roll, you can use your Reaction to expend one Psionic Energy Die. Roll the die and add the result to the d20. This can potentially turn a failed check into a miss into a hit.
 
 # Feat
-
-## Origin Feats
+## Feats from *2024 Player's Handbook*
+### Origin Feats from *2024 Player's Handbook*
 - [Alert](https://www.dndbeyond.com/feats/1789101-alert)
+- [Healer](https://www.dndbeyond.com/feats/1789152-healer)
+- [Lucky](https://www.dndbeyond.com/feats/1789160-lucky)
+- [Magic Initiate](https://www.dndbeyond.com/feats/1789162-magic-initiate)
+- [Performer](https://www.dndbeyond.com/feats/1789172-musician)
+- [Savage Attacker](https://www.dndbeyond.com/feats/1789183-savage-attacker)
+- [Skilled](https://www.dndbeyond.com/feats/1789189-skilled)
+- [Tavern Brawler](https://www.dndbeyond.com/feats/1789202-tavern-brawler)
+- [Tough](https://www.dndbeyond.com/feats/1789206-tough)
+
+### General Feats from *2024 Player's Handbook*
+- [Athlete](https://www.dndbeyond.com/feats/1789104-athlete)
+- [Charger](https://www.dndbeyond.com/feats/1789121-charger)
+- [Crossbow Expert](https://www.dndbeyond.com/feats/1789126-crossbow-expert)
+- [Crusher](https://www.dndbeyond.com/feats/1789127-crusher)
+- [Defensive Duelist](https://www.dndbeyond.com/feats/1789129-defensive-duelist)
+- [Dual Wielder](https://www.dndbeyond.com/feats/1789130-dual-wielder)
+- [Durable](https://www.dndbeyond.com/feats/1789132-durable)
+- [Fey Touched](https://www.dndbeyond.com/feats/1874753-fey-touched)
+- [Great Weapon Master](https://www.dndbeyond.com/feats/1789149-great-weapon-master)
+- [Heavy Armor Master](https://www.dndbeyond.com/feats/1789154-heavy-armor-master)
+- [Lightly Armored](https://www.dndbeyond.com/feats/1789159-lightly-armored)
+- [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
+- [Mobile](https://www.dndbeyond.com/feats/1789200-speedy)
+- [Mounted Combatant](https://www.dndbeyond.com/feats/1789171-mounted-combatant)
+- [Piercer](https://www.dndbeyond.com/feats/1789175-piercer)
+- [Poisoner](https://www.dndbeyond.com/feats/1878699-poisoner)
+- [Polearm Master](https://www.dndbeyond.com/feats/1789177-polearm-master)
+- [Ritual Caster](https://www.dndbeyond.com/feats/1789180-ritual-caster)
+- [Shadow Touched](https://www.dndbeyond.com/feats/1874732-shadow-touched)
+- [Sharpshooter](https://www.dndbeyond.com/feats/1789187-sharpshooter)
+- [Shield Master](https://www.dndbeyond.com/feats/1789188-shield-master)
+- [Skill Expert](https://www.dndbeyond.com/feats/1789196-skill-expert)
+- [Skulker](https://www.dndbeyond.com/feats/1789197-skulker)
+- [Slasher](https://www.dndbeyond.com/feats/1789198-slasher)
+- [Spell Sniper](https://www.dndbeyond.com/feats/1789201-spell-sniper)
+- [Telekinetic](https://www.dndbeyond.com/feats/1789203-telekinetic)
+- [War Caster](https://www.dndbeyond.com/feats/1789209-war-caster)
+- [Weapon Master](https://www.dndbeyond.com/feats/1789211-weapon-master)
+
+## Feats from *Xanathar's Guide to Everything*
+### General Feats from *Xanathar's Guide to Everything*
+- [Dragon Fear](https://www.dndbeyond.com/feats/82-dragon-fear)
+- [Dragon Hide](https://www.dndbeyond.com/feats/84-dragon-hide)
+- [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
+- [Elven Accuracy](https://www.dndbeyond.com/feats/89-elven-accuracy)
+- [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
+- [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
+- [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
+- [Infernal Constitution](https://www.dndbeyond.com/feats/93-infernal-constitution)
+- [Orcish Fury](https://www.dndbeyond.com/feats/91-orcish-fury)
+- [Second Chance](https://www.dndbeyond.com/feats/86-second-chance)
+- [Squat Nimbleness](https://www.dndbeyond.com/feats/83-squat-nimbleness)
+
+## Feats from *Tasha's Cauldron of Everything*
+### General Feats from *Tasha's Cauldron of Everything*
+- [Eldritch Adept](https://www.dndbeyond.com/feats/451339-eldritch-adept)
+- [Fighting Initiate](https://www.dndbeyond.com/feats/451309-fighting-initiate)
+- [Metamagic Adept](https://www.dndbeyond.com/feats/452833-metamagic-adept)
+
+## Feats from *Fizban's Treasury of Dragons Digital*
+### General Feats from *Fizban's Treasury of Dragons Digital*
+- [Gift of the Chromatic Dragon](https://www.dndbeyond.com/feats/766446-gift-of-the-chromatic-dragon)
+- [Gift of the Gem Dragon](https://www.dndbeyond.com/feats/766450-gift-of-the-gem-dragon)
+- [Gift of the Metallic Dragon](https://www.dndbeyond.com/feats/766454-gift-of-the-metallic-dragon)
+
+## Feats from *Forgotten Realms: Heroes of Faerûn*
+### Origin Feats from *Forgotten Realms: Heroes of Faerûn*
+- Cult of the Dragon Initiate: You can use a Magic action to frighten a creature within 30 feet unless it succeeds on a Wisdom saving throw. When you cause a creature to be frightened, you can gain Heroic Inspiration.
+- Emerald Enclave Fledgling: You always have Speak with Animals prepared. When you take the Help action, you can swap places with a willing ally within 5 feet without provoking Opportunity Attacks.
+- Harper Agent: You gain proficiency with a Musical Instrument of your choice. You can distract an enemy within 30 feet who can see or hear you, instead of needing to be within 5 feet.
+- Lords’ Alliance Agent: When you score a Critical Hit, you can grant Heroic Inspiration to a nearby ally who lacks it. If an enemy damages an ally within 5 feet of you, you gain Advantage on your next attack against that enemy before your next turn ends.
+- Purple Dragon Rook: You can grant Heroic Inspiration to nearby allies equal to your Proficiency Bonus, once per Short Rest.
+- Spellfire Spark: Once per turn, you can reduce spell or magical damage taken by 1d4 unless incapacitated. You also learn Sacred Flame, and as a Bonus Action a number of times equal to your Proficiency Bonus per Long Rest.
+- Tyro of the Gauntlet: As a Bonus Action, you impose disadvantage on attack rolls against yourself, and you and allies within 5 feet of you cannot be pushed or pulled until the start of your next turn.
+- Zhentarim Ruffian: When you roll damage for an Opportunity Attack, you can roll the damage dice twice and use either result. You can expend Heroic Inspiration to grant yourself or an ally advantage on an Initiative roll.
+
+### General Feats from *Forgotten Realms: Heroes of Faerûn*
+- Cold Caster: You learn Ray of Frost. Once per turn, when you deal Cold damage with an attack, the target subtracts 1d4 from its next saving throw before the end of your next turn.
+- Dragonscarred: You gain Resistance to Acid, Cold, Fire, Lightning, or Poison, chosen when you take this feat. You can activate the Dragon’s Terror benefit of the Cult of the Dragon Initiate feat as a Bonus Action.
+- Enclave Magic: You have advantage on attack rolls and saving throws involving Beasts. You always have Dominate Beast prepared, can cast it once per Long Rest without a slot or concentration, and may also cast it with spell slots.
+- Fairy Trickster: When you Disengage, Difficult Terrain doesn’t slow your movement for the rest of that turn. When you hit a creature, you can force a Wisdom save or give it Disadvantage on saving throws until your next turn, usable a number of times equal to your Proficiency Bonus per Long Rest.
+- Genie Magic: You gain one 1st‑level spell slot. At 11th level, you gain an additional 1st‑level spell slot and one 2nd‑level spell slot.
+- Harper Teamwork: When you Distract a creature, it has disadvantage on its next saving throw before the start of your next turn. If you end the Frightened or Paralyzed condition on yourself with a saving throw, you can also end that condition for one ally within 30 feet of you.
+- Lordly Resolve: As a Bonus Action, you can choose up to three creatures within 60 feet that can see you; each target use its Reaction to stand and end the Prone condition. You always have Calm Emotions prepared, can cast it once per Long Rest without a slot or concentration, and may also cast it with spell slots.
+- Order’s Resilience: When you are Prone, you can stand using only 5 feet of movement. If you are within 5 feet of an ally who isn’t Incapacitated, both you and that ally have advantage on Strength saving throws. You can’t use this benefit while Incapacitated.
+- Purple Dragon Commandant: As a Bonus Action, you can grant an ally within 30 feet Temporary Hit Points equal to 2d6 + your spellcasting ability modifier, usable a number of times equal to your Proficiency Bonus per Long Rest. You have advantage on attack rolls while at or below half of your hit points.
+- Spellfire Adept: Spells you cast and attacks you make ignore Resistance to Radiant damage. In addition, when you deal Radiant damage with a spell, you cannot roll a 1. 
+- Zhentarim Tactics: Immediately after a creature within 5 feet of you hits you with a melee attack, you can make an Opportunity Attack against that creature. Choose one skill; you gain Expertise in that skill.
+
+## Feats from *The Lord of the Rings Roleplaying*
+### General Feats from *The Lord of the Rings Roleplaying*
+- [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
+- [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
+- [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
+- [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
+- [Deadly Archery](https://www.dndbeyond.com/feats/1872970-deadly-archery)
+- [Dragon-Slayer](https://www.dndbeyond.com/feats/1872974-dragon-slayer)
+- [Endurance of the Ranger](https://www.dndbeyond.com/feats/1872979-endurance-of-the-ranger)
+- [Fierce Shot](https://www.dndbeyond.com/feats/1872980-fierce-shot)
+- [Gleam of Wrath](https://www.dndbeyond.com/feats/1872983-gleam-of-wrath)
+- [Hardiness](https://www.dndbeyond.com/feats/1872984-hardiness)
+- [Nimbleness](https://www.dndbeyond.com/feats/1872989-nimbleness)
+- [Tough as Old Tree-Roots](https://www.dndbeyond.com/feats/1873002-tough-as-old-tree-roots)
+
+## Feats from *Valda’s Spire of Secrets*
+### General Feats from *Valda’s Spire of Secrets*
+- [Firearm Specialist](https://www.dndbeyond.com/feats/16938-firearm-specialist)
+- [Focused Critical](https://www.dndbeyond.com/feats/1983842-focused-critical)
+
+## Feats from *The Crooked Moon*
+### Origin Feats from *The Crooked Moon*
 - [Altered](https://www.dndbeyond.com/feats/2048513-altered): You have natural armor (AC 13 + Dex/Con), natural weapons (1d4 damage), and 60‑foot Darkvision.
 - [Charm Twister](https://www.dndbeyond.com/feats/2048514-charm-twister): You can cast Bless once per Long Rest, or more often by spending spell slots.
 - [Crimson Ritualist](https://www.dndbeyond.com/feats/2048515-crimson-ritualist): You gain Blood Bolt Cantrip, and create a healing potion after a long rest.
@@ -2315,82 +2426,16 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Fate Gambler](https://www.dndbeyond.com/feats/2048520-fate-gambler): You gain 1 Heroic Inspiration, regaining it once daily on a critical hit or a failed saving throw you cause.
 - [Ghostlight Medium](https://www.dndbeyond.com/feats/2048521-ghostlight-medium): You have advantage on attack rolls against undead creatures.
 - [Grave Keeper](https://www.dndbeyond.com/feats/2048522-grave-keeper): You gain one use of Channel Divinity to Turn Undead, or add it to an existing class’s Channel Divinity.
-- [Healer](https://www.dndbeyond.com/feats/1789152-healer) (New)
 - [Hunter of Hunters](https://www.dndbeyond.com/feats/2048523-hunter-of-hunters): You have advantage on attack rolls against monstrosities.
-- [Lucky](https://www.dndbeyond.com/feats/1789160-lucky)
-- [Magic Initiate](https://www.dndbeyond.com/feats/1789162-magic-initiate)
 - [Memory Starved](https://www.dndbeyond.com/feats/2048524-memory-starved): You have Advantage on Investigation checks. You have Advantage on saving throws made to avoid or end the Charmed condition.
-- [Performer](https://www.dndbeyond.com/feats/1789172-musician)
 - [Reveling Fool](https://www.dndbeyond.com/feats/2048525-reveling-fool): You can cast Hideous Laughter once per Long Rest (or with spell slots) and gain a Face‑Painting Kit.
-- [Savage Attacker](https://www.dndbeyond.com/feats/1789183-savage-attacker)
-- [Skilled](https://www.dndbeyond.com/feats/1789189-skilled)
-- [Tavern Brawler](https://www.dndbeyond.com/feats/1789202-tavern-brawler)
-- [Tough](https://www.dndbeyond.com/feats/1789206-tough)
 - [Unreflected](https://www.dndbeyond.com/feats/2048528-unreflected): You can fade into the background, becoming invisible for one turn if two humanoids are within 10 feet.
 
-## General Feats (Updated)
-- [Athlete](https://www.dndbeyond.com/feats/1789104-athlete)
-- [Charger](https://www.dndbeyond.com/feats/1789121-charger)
-- [Crossbow Expert](https://www.dndbeyond.com/feats/1789126-crossbow-expert)
-- [Defensive Duelist](https://www.dndbeyond.com/feats/1789129-defensive-duelist)
-- [Dual Wielder](https://www.dndbeyond.com/feats/1789130-dual-wielder)
-- [Durable](https://www.dndbeyond.com/feats/1789132-durable)
-- [Great Weapon Master](https://www.dndbeyond.com/feats/1789149-great-weapon-master)
-- [Heavy Armor Master](https://www.dndbeyond.com/feats/1789154-heavy-armor-master)
-- [Lightly Armored](https://www.dndbeyond.com/feats/1789159-lightly-armored)
-- [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
-- [Mobile](https://www.dndbeyond.com/feats/1789200-speedy)
-- [Polearm Master](https://www.dndbeyond.com/feats/1789177-polearm-master)
-- [Ritual Caster](https://www.dndbeyond.com/feats/1789180-ritual-caster)
-- [Sharpshooter](https://www.dndbeyond.com/feats/1789187-sharpshooter)
-- [Shield Master](https://www.dndbeyond.com/feats/1789188-shield-master)
-- [Spell Sniper](https://www.dndbeyond.com/feats/1789201-spell-sniper)
-- [War Caster](https://www.dndbeyond.com/feats/1789209-war-caster)
-- [Weapon Master](https://www.dndbeyond.com/feats/1789211-weapon-master)
-
-## General Feats (New)
-- [Against the Unseen](https://www.dndbeyond.com/feats/1872959-against-the-unseen)
-- [Art of Disappearing](https://www.dndbeyond.com/feats/1872960-art-of-disappearing)
-- [Baruk Khazâd!](https://www.dndbeyond.com/feats/1872961-baruk-khazad)
-- [Confidence](https://www.dndbeyond.com/feats/1872965-confidence)
-- [Crusher](https://www.dndbeyond.com/feats/1789127-crusher) (Homebrew)
-- [Deadly Archery](https://www.dndbeyond.com/feats/1872970-deadly-archery)
-- [Dragon Fear](https://www.dndbeyond.com/feats/82-dragon-fear)
-- [Dragon Hide](https://www.dndbeyond.com/feats/84-dragon-hide)
-- [Dragon-Slayer](https://www.dndbeyond.com/feats/1872974-dragon-slayer)
-- [Dwarven Fortitude](https://www.dndbeyond.com/feats/87-dwarven-fortitude)
-- [Eldritch Adept](https://www.dndbeyond.com/feats/451339-eldritch-adept)
-- [Elven Accuracy](https://www.dndbeyond.com/feats/89-elven-accuracy)
-- [Endurance of the Ranger](https://www.dndbeyond.com/feats/1872979-endurance-of-the-ranger)
-- [Fade Away](https://www.dndbeyond.com/feats/90-fade-away)
-- [Fey Teleportation ](https://www.dndbeyond.com/feats/92-fey-teleportation)
-- [Fey Touched](https://www.dndbeyond.com/feats/1874753-fey-touched)
-- [Fierce Shot](https://www.dndbeyond.com/feats/1872980-fierce-shot)
-- [Fighting Initiate](https://www.dndbeyond.com/feats/451309-fighting-initiate)
-- [Firearm Specialist](https://www.dndbeyond.com/feats/16938-firearm-specialist)
-- [Flames of Phlegethos](https://www.dndbeyond.com/feats/94-flames-of-phlegethos)
-- [Focused Critical](https://www.dndbeyond.com/feats/1983842-focused-critical)
-- [Gift of the Chromatic Dragon](https://www.dndbeyond.com/feats/766446-gift-of-the-chromatic-dragon)
-- [Gift of the Gem Dragon](https://www.dndbeyond.com/feats/766450-gift-of-the-gem-dragon)
-- [Gift of the Metallic Dragon](https://www.dndbeyond.com/feats/766454-gift-of-the-metallic-dragon)
-- [Gleam of Wrath](https://www.dndbeyond.com/feats/1872983-gleam-of-wrath)
-- [Hardiness](https://www.dndbeyond.com/feats/1872984-hardiness)
-- [Infernal Constitution](https://www.dndbeyond.com/feats/93-infernal-constitution)
-- [Metamagic Adept](https://www.dndbeyond.com/feats/452833-metamagic-adept)
-- [Mounted Combatant](https://www.dndbeyond.com/feats/1789171-mounted-combatant)
-- [Nimbleness](https://www.dndbeyond.com/feats/1872989-nimbleness)
-- [Orcish Fury](https://www.dndbeyond.com/feats/91-orcish-fury)
-- [Piercer](https://www.dndbeyond.com/feats/1789175-piercer) (Homebrew)
-- [Poisoner](https://www.dndbeyond.com/feats/1878699-poisoner)
-- [Second Chance](https://www.dndbeyond.com/feats/86-second-chance)
-- [Shadow Touched](https://www.dndbeyond.com/feats/1874732-shadow-touched)
-- [Skill Expert](https://www.dndbeyond.com/feats/1789196-skill-expert)
-- [Skulker](https://www.dndbeyond.com/feats/1789197-skulker)
-- [Slasher](https://www.dndbeyond.com/feats/1789198-slasher) (Homebrew)
-- [Squat Nimbleness](https://www.dndbeyond.com/feats/83-squat-nimbleness)
+### General Feats from *The Crooked Moon*
 - [Swift Witchcraft](https://www.dndbeyond.com/feats/2048526-swift-witchcraft)
-- [Telekinetic](https://www.dndbeyond.com/feats/1789203-telekinetic) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Telekinetic_Pull.png?raw=true) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Telekinetic_Push.png?raw=true)
-- [Tough as Old Tree-Roots](https://www.dndbeyond.com/feats/1873002-tough-as-old-tree-roots)
+
+## Feats from *Unearthed Arcana*
+### General Feats from *Unearthed Arcana*
 - [Wild Talent](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
 
 ## Fighting Styles
