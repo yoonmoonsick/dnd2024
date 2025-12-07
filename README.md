@@ -74,41 +74,61 @@ An origin feat has been added to each background.
 
 If you choose a newly added background, you gain a spell that can be used once per day to grant inspiration.
 
-## Updated Backgrounds
+## Backgrounds from *2024 Player's Handbook*
 - Acolyte (Feat: Magic Initiate: Cleric)
-- Charlatan (Feat: Charlatan's Trick, Homebrew)
+- Charlatan (Feat: Charlatan's Trick)
 - Criminal (Feat: Alert)
 - Entertainer (Feat: Performer)
+- Farmer (Feat: Tough)
 - Folk Hero (Feat: Tough)
+- Guard (Feat: Alert)
+- Guide (Feat: Magic Initiate: Druid)
 - Guild Artisan (Feat: Skilled)
 - Haunted One (Feat: Alert)
+- Hermit (Feat: Healer)
+- Merchant (Feat: Lucky)
 - Noble (Feat: Skilled)
 - Outlander (Feat: Tough)
 - Sage (Feat: Magic Initiate: Wizard)
+- Sailor (Feat: Tavern Brawler)
+- Scribe (Feat: Skilled)
 - Soldier (Feat: Savage Attacker)
 - Urchin (Feat: Savage Attacker)
+- Wayfarer (Feat: Lucky)
 
-## New Backgrounds
+## Backgrounds from *Forgotten Realms: Heroes of Faerûn*
+- Chondathan Freebooter (Feat: Skilled)
+- Dead Magic Dweller (Feat: Healer)
+- Dragon Cultist (Feat: Cult of the Dragon Initiate)
+- Emerald Enclave Caretaker (Feat: Emerald Enclave Fledgling)
+- Flaming Fist Mercenary (Feat: Tough)
+- Genie Touched (Feat: Magic Initiate (Wizard))
+- Harper (Feat: Harper Agent)
+- Ice Fisher (Feat: Alert)
+- Knight of the Gauntlet (Feat: Tyro of the Gauntlet)
+- Lords’ Alliance Vassal (Feat: Lords’ Alliance Agent)
+- Moonwell Pilgrim (Feat: Magic Initiate (Druid))
+- Mulhorandi Tomb Raider (Feat: Lucky)
+- Mythalkeeper (Feat: Skilled)
+- Purple Dragon Squire (Feat: Purple Dragon Rook)
+- Rashemi Wanderer (Feat: Tough)
+- Shadowmasters Exile (Feat: Savage Attacker)
+- Spellfire Initiate (Feat: Spellfire Spark)
+- Zhentarim Mercenary (Feat: Zhentarim Ruffian)
+
+## Backgrounds from from *The Crooked Moon*
 - Amnesiac (Feat: Memory Starved)
 - Crimson Aspirant (Feat: Crimson Ritualist)
 - Crossroads Gambler (Feat: Fate Gambler)
 - Cultist (Feat: Cult Initiate)
 - Druskenvald Dweller (Feat: Tough)
 - Experiment (Feat: Altered)
-- Farmer (Feat: Tough)
 - Ghostlight Passenger (Feat: Ghostlight Medium)
-- Guard (Feat: Alert)
-- Guide (Feat: Magic Initiate: Druid)
-- Hermit (Feat: Healer)
-- Merchant (Feat: Lucky)
 - Night Stalker (Feat: Hunter of Hunters)
 - Reflected Wanderer (Feat: Unreflected)
 - Rest Warden (Feat: Grave Keeper)
 - Reveler (Feat: Reveling Fool)
-- Sailor (Feat: Tavern Brawler)
 - Scholar of the Forbidden (Feat: Dread Speech)
-- Scribe (Feat: Skilled)
-- Wayfarer (Feat: Lucky)
 - Wicker Weaver (Feat: Charm Twister)
 
 # Races
@@ -208,7 +228,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Half-Elf
 - Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
-  - You gain Heroic Inspiration whenever you finish a Long Rest.
+  - You restore Heroic Inspiration whenever you finish a Short Rest.
 - Level 1: Gain racial spells corresponding to your elven bloodline.
 
 ## Half-Orc
@@ -221,7 +241,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 
 ## Human
 - Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
-  - You gain Heroic Inspiration whenever you finish a Long Rest. 
+  - You restore Heroic Inspiration whenever you finish a Short Rest.
 - Level 1: Versatile
   - You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
 
@@ -2376,12 +2396,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 ### Origin Feats from *Forgotten Realms: Heroes of Faerûn*
 - Cult of the Dragon Initiate: You can use a Magic action to frighten a creature within 30 feet unless it succeeds on a Wisdom saving throw. When you cause a creature to be frightened, you can gain Heroic Inspiration.
 - Emerald Enclave Fledgling: You always have Speak with Animals prepared. When you take the Help action, you can swap places with a willing ally within 5 feet without provoking Opportunity Attacks.
-- Harper Agent: You gain proficiency with a Musical Instrument of your choice. You can distract an enemy within 30 feet who can see or hear you, instead of needing to be within 5 feet.
+- Harper Agent: You gain proficiency with Musical Instruments. You can distract an enemy within 30 feet who can see or hear you, instead of needing to be within 5 feet.
 - Lords’ Alliance Agent: When you score a Critical Hit, you can grant Heroic Inspiration to a nearby ally who lacks it. If an enemy damages an ally within 5 feet of you, you gain Advantage on your next attack against that enemy before your next turn ends.
 - Purple Dragon Rook: You can grant Heroic Inspiration to nearby allies equal to your Proficiency Bonus, once per Short Rest.
-- Spellfire Spark: Once per turn, you can reduce spell or magical damage taken by 1d4 unless incapacitated. You also learn Sacred Flame, and as a Bonus Action a number of times equal to your Proficiency Bonus per Long Rest.
+- Spellfire Spark: Once per turn, you can reduce spell or magical damage taken by 2 unless incapacitated. You also learn Sacred Flame, and as a Bonus Action a number of times equal to your Proficiency Bonus per Long Rest.
 - Tyro of the Gauntlet: As a Bonus Action, you impose disadvantage on attack rolls against yourself, and you and allies within 5 feet of you cannot be pushed or pulled until the start of your next turn.
-- Zhentarim Ruffian: When you roll damage for an Opportunity Attack, you can roll the damage dice twice and use either result. You can expend Heroic Inspiration to grant yourself or an ally advantage on an Initiative roll.
+- Zhentarim Ruffian: When you roll damage for an Opportunity Attack, you can add your Proficiency bonus to the result. You can expend Heroic Inspiration to grant yourself and your allies Advantage on that Initiative roll.
 
 ### General Feats from *Forgotten Realms: Heroes of Faerûn*
 - Cold Caster: You learn Ray of Frost. Once per turn, when you deal Cold damage with an attack, the target subtracts 1d4 from its next saving throw before the end of your next turn.
@@ -2423,7 +2443,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Crimson Ritualist](https://www.dndbeyond.com/feats/2048515-crimson-ritualist): You gain Blood Bolt Cantrip, and create a healing potion after a long rest.
 - [Cult Initiate](https://www.dndbeyond.com/feats/2048516-cult-initiate): You learn Eldritch Blast and Bone Chill, and can cast Hex once per Long Rest or with spell slots.
 - [Dread Speech](https://www.dndbeyond.com/feats/2048519-dread-speech): You can cast Bane once per Long Rest, or more often by spending spell slots.
-- [Fate Gambler](https://www.dndbeyond.com/feats/2048520-fate-gambler): You gain 1 Heroic Inspiration, regaining it once daily on a critical hit or a failed saving throw you cause.
+- [Fate Gambler](https://www.dndbeyond.com/feats/2048520-fate-gambler): You regain all your Heroic Inspiration after a Long or Short Rest. You regain 1 use when you successfully score a critical hit against another creature.
 - [Ghostlight Medium](https://www.dndbeyond.com/feats/2048521-ghostlight-medium): You have advantage on attack rolls against undead creatures.
 - [Grave Keeper](https://www.dndbeyond.com/feats/2048522-grave-keeper): You gain one use of Channel Divinity to Turn Undead, or add it to an existing class’s Channel Divinity.
 - [Hunter of Hunters](https://www.dndbeyond.com/feats/2048523-hunter-of-hunters): You have advantage on attack rolls against monstrosities.
