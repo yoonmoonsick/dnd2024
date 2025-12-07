@@ -2307,26 +2307,26 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Origin Feats
 - [Alert](https://www.dndbeyond.com/feats/1789101-alert)
-- [Altered](https://www.dndbeyond.com/sources/dnd/tcmp1/feats#Altered) (New)
-- [Charm Twister](https://www.dndbeyond.com/sources/dnd/tcmp1/feats#CharmTwister) (New)
-- [Crimson Ritualist](https://www.dndbeyond.com/feats/2048515-crimson-ritualist) (New)
-- [Cult Initiate](https://www.dndbeyond.com/feats/2048516-cult-initiate) (New)
-- [Dread Speech](https://www.dndbeyond.com/feats/2048519-dread-speech) (New)
-- [Fate Gambler](https://www.dndbeyond.com/feats/2048520-fate-gambler) (New)
-- [Ghostlight Medium](https://www.dndbeyond.com/feats/2048521-ghostlight-medium) (New)
-- [Grave Keeper](https://www.dndbeyond.com/feats/2048522-grave-keeper) (New)
+- [Altered](https://www.dndbeyond.com/feats/2048513-altered): You have natural armor (AC 13 + Dex/Con), natural weapons (1d4 damage), and 60‑foot Darkvision.
+- [Charm Twister](https://www.dndbeyond.com/feats/2048514-charm-twister): You can cast Bless once per Long Rest, or more often by spending spell slots.
+- [Crimson Ritualist](https://www.dndbeyond.com/feats/2048515-crimson-ritualist): You gain Blood Bolt Cantrip, and create a healing potion after a long rest.
+- [Cult Initiate](https://www.dndbeyond.com/feats/2048516-cult-initiate): You learn Eldritch Blast and Bone Chill, and can cast Hex once per Long Rest or with spell slots.
+- [Dread Speech](https://www.dndbeyond.com/feats/2048519-dread-speech): You can cast Bane once per Long Rest, or more often by spending spell slots.
+- [Fate Gambler](https://www.dndbeyond.com/feats/2048520-fate-gambler): You gain 1 Heroic Inspiration, regaining it once daily on a critical hit or a failed saving throw you cause.
+- [Ghostlight Medium](https://www.dndbeyond.com/feats/2048521-ghostlight-medium): You have advantage on attack rolls against undead creatures.
+- [Grave Keeper](https://www.dndbeyond.com/feats/2048522-grave-keeper): You gain one use of Channel Divinity to Turn Undead, or add it to an existing class’s Channel Divinity.
 - [Healer](https://www.dndbeyond.com/feats/1789152-healer) (New)
-- [Hunter of Hunters](https://www.dndbeyond.com/feats/2048523-hunter-of-hunters) (New)
+- [Hunter of Hunters](https://www.dndbeyond.com/feats/2048523-hunter-of-hunters): You have advantage on attack rolls against monstrosities.
 - [Lucky](https://www.dndbeyond.com/feats/1789160-lucky)
 - [Magic Initiate](https://www.dndbeyond.com/feats/1789162-magic-initiate)
-- [Memory Starved](https://www.dndbeyond.com/feats/2048524-memory-starved) (New)
+- [Memory Starved](https://www.dndbeyond.com/feats/2048524-memory-starved): You have Advantage on Investigation checks. You have Advantage on saving throws made to avoid or end the Charmed condition.
 - [Performer](https://www.dndbeyond.com/feats/1789172-musician)
-- [Reveling Fool](https://www.dndbeyond.com/feats/2048525-reveling-fool) (New)
+- [Reveling Fool](https://www.dndbeyond.com/feats/2048525-reveling-fool): You can cast Hideous Laughter once per Long Rest (or with spell slots) and gain a Face‑Painting Kit.
 - [Savage Attacker](https://www.dndbeyond.com/feats/1789183-savage-attacker)
 - [Skilled](https://www.dndbeyond.com/feats/1789189-skilled)
 - [Tavern Brawler](https://www.dndbeyond.com/feats/1789202-tavern-brawler)
 - [Tough](https://www.dndbeyond.com/feats/1789206-tough)
-- [Unreflected](https://www.dndbeyond.com/feats/2048528-unreflected/) (New)
+- [Unreflected](https://www.dndbeyond.com/feats/2048528-unreflected): You can fade into the background, becoming invisible for one turn if two humanoids are within 10 feet.
 
 ## General Feats (Updated)
 - [Athlete](https://www.dndbeyond.com/feats/1789104-athlete)
