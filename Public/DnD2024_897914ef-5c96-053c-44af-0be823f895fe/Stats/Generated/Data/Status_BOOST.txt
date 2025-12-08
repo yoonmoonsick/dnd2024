@@ -225,6 +225,17 @@ data "StatusType" "BOOST"
 using "RESURRECTING"
 data "OnApplyFunctors" "IF(HasPassive('GraveDomain_3_ReturnToLife',context.Source)):RegainHitPoints(Cause.ClassLevel(Cleric)*2)"
 
+new entry "YMS_ACT2"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "HAV_SELUNEOINTMENT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "HAV_SELUNEOINTMENT"
+data "Boosts" "Tag(ACT2_SELUNEOINTMENTAPPLIED);"
+data "StatusEffect" ""
+
 new entry "YMS_RACE"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -8856,12 +8867,6 @@ data "AuraStatuses" "IF(not Tagged('INVISIBLE_HELPER')):ApplyStatus(INSECT_PLAGU
 new entry "YMS_VISUAL_EFFECT_TURN_OFF"
 type "StatusData"
 data "StatusType" "BOOST"
-
-new entry "HAV_SELUNEOINTMENT"
-type "StatusData"
-data "StatusType" "BOOST"
-using "HAV_SELUNEOINTMENT"
-data "StatusEffect" ""
 
 new entry "SUMMON_PIXIESHIELD"
 type "StatusData"
