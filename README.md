@@ -2347,6 +2347,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - [Fey Touched](https://www.dndbeyond.com/feats/1874753-fey-touched)
 - [Great Weapon Master](https://www.dndbeyond.com/feats/1789149-great-weapon-master)
 - [Heavy Armor Master](https://www.dndbeyond.com/feats/1789154-heavy-armor-master)
+- [Inspiring Leader](https://www.dndbeyond.com/feats/1789156-inspiring-leader)
 - [Lightly Armored](https://www.dndbeyond.com/feats/1789159-lightly-armored)
 - [Mage Slayer](https://www.dndbeyond.com/feats/1789161-mage-slayer)
 - [Mobile](https://www.dndbeyond.com/feats/1789200-speedy)
