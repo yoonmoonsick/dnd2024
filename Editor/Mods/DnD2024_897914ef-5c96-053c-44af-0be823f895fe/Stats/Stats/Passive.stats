@@ -3517,10 +3517,9 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he771e763g5c5fgd24egb468ge689eee7e5f2" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WarMagic" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and IsSpell() and HasUseCosts('ActionPoint', true) and not Tagged('EXTRA_ATTACK_BLOCKED',context.Source)) or (context.HasContextFlag(StatsFunctorContext.OnStatusRemoved) and StatusId('INITIAL_ATTACK_WAR_MAGIC_TECHNICAL') and TurnBased()) and HasActionResource('BonusActionPoint', 1, 0, false, false, context.Source)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasAnyExtraAttack(context.Source) and not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(SELF,EXTRA_ATTACK_WAR_MAGIC_Q,100,1);IF(not HasAnyExtraAttack(context.Source) and not context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(SELF,EXTRA_ATTACK_WAR_MAGIC,100,1);IF(HasAnyExtraAttack(context.Target) and context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_WAR_MAGIC_Q,100,1);IF(not HasAnyExtraAttack(context.Target) and context.HasContextFlag(StatsFunctorContext.OnStatusRemoved)):ApplyStatus(EXTRA_ATTACK_WAR_MAGIC,100,1)" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="765eaa1a-39b9-42bf-833b-b3ed41241cb8" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,BATTLE_MAGIC,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7553,6 +7552,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heafab62eg9d7fg57d9g4a46g8ef200546d58" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bladesong" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4eee4a03-353e-47c8-b892-a28181426ccd" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and not IsCantrip();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SONG_OF_VICTORY,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
