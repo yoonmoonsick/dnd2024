@@ -2104,7 +2104,7 @@ using "Interrupt_VengefulShot"
 data "DisplayName" "h42661ad5g9eb0gb340g35a1g7740221a710b;1"
 data "Description" "h4c7cf0f3gf08eg9b3fg4345g99d0df3f4afa;1"
 data "Icon" "Gunslinger_LayDowntheLaw"
-data "Conditions" "IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasLastAttackTriggered() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and HasStatus('LAY_DOWN_THE_LAW_ALLY',context.Target);"
+data "Conditions" "IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and not Ally(context.Source, context.Observer) and HasLastAttackTriggered() and not DistanceToEntityGreaterThan(18, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and HasStatus('LAY_DOWN_THE_LAW_ALLY',context.Target);"
 data "Properties" "UseSpell(OBSERVER_SOURCE,Projectile_MainHandAttack,true,true,true);"
 data "Cost" "ReactionActionPoint:1;"
 
