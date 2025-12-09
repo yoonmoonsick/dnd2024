@@ -2612,7 +2612,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-5,All);" />
-        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);" />
+        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(OBSERVER_SOURCE,ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;InstinctiveCharm:1;" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);" />
       </fields>
