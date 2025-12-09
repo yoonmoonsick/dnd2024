@@ -1913,7 +1913,7 @@ data "Description" "h333a62b5g8ab1g6354gf4e8gdfa8ef43e6f5;2"
 data "InterruptContext" "OnPreDamage"
 data "Conditions" "IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);"
 data "Properties" "AdjustRoll(OBSERVER_TARGET,-5,All);"
-data "Success" "DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);"
+data "Success" "DealDamage(OBSERVER_SOURCE,ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);"
 data "Cost" "ReactionActionPoint:1;InstinctiveCharm:1;"
 data "TooltipDamageList" "DealDamage(ClassLevel(Wizard)/2+IntelligenceModifier,Psychic);"
 
