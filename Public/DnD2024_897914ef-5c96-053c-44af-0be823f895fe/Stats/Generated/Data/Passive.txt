@@ -7069,7 +7069,7 @@ data "Icon" "Spell_Evocation_CrusadersMantle"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnDamage"
 data "Conditions" "AttackedWithPassiveSourceWeapon();"
-data "StatsFunctors" "DealDamage(1d10, Radiant);"
+data "StatsFunctors" "IF(ClassLevelHigherOrEqualThan(1,'Paladin',context.Source) and (Tagged('FIEND') or Tagged('UNDEAD'))):DealDamage(1d10, Radiant);"
 
 new entry "FOR_OwlbearCubs_Armor_Passive"
 type "PassiveData"
