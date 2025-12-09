@@ -9796,7 +9796,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d10, Radiant);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Paladin',context.Source) and (Tagged('FIEND') or Tagged('UNDEAD'))):DealDamage(1d10, Radiant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
