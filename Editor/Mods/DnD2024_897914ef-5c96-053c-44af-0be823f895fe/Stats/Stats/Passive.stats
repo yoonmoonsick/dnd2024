@@ -2595,9 +2595,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27f870c6g410dge0adg82cbga51af4b6373d" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TavernBrawler" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnMovedDistance;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TAVERN_BRAWLER_BONUS,100,-1)" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeUnarmedAttack()):Reroll(Damage,1,false);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
       </fields>
@@ -2623,6 +2622,9 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d4);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef59686d-b2ed-484f-b31f-b520def7f333" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
