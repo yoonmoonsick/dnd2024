@@ -1927,8 +1927,7 @@ data "TooltipPermanentWarnings" "7aadd5cf-d704-44f9-8450-3532a8155c06"
 data "Icon" "PassiveFeature_TavernBrawler"
 data "Properties" "Highlighted"
 data "Boosts" "IF(IsMeleeUnarmedAttack()):Reroll(Damage,1,false);"
-data "StatsFunctorContext" "OnCreate"
-data "Conditions" "Self()"
+data "StatsFunctorContext" "OnCreate;OnMovedDistance;OnStatusApplied;OnStatusRemoved"
 data "StatsFunctors" "ApplyStatus(SELF,TAVERN_BRAWLER_BONUS,100,-1)"
 
 new entry "TavernBrawlerForce"
@@ -1943,10 +1942,13 @@ data "StatsFunctors" "ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF,TAVERN_BRAWLER
 
 new entry "TavernBrawlerDamage"
 type "PassiveData"
+using "TavernBrawler"
 data "EnabledContext" "OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest"
 data "Properties" "IsHidden"
 data "BoostContext" "OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest"
 data "Boosts" "CharacterUnarmedDamage(1d4);"
+data "StatsFunctorContext" ""
+data "StatsFunctors" ""
 
 new entry "Gith_MentalDiscipline"
 type "PassiveData"
