@@ -710,6 +710,23 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26feeb63-933c-427d-85ec-ac89c4485149" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Bard" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd56268b-e0f8-45a3-aa7a-082a2378a356" />
+        <field name="Name" type="NameTableFieldDefinition" value="BattleMagic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="716ba791-76e0-44af-bc50-cb41d5c461cf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea58f9f8g6406g1473g534fgf20864204509" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he771e763g5c5fgd24egb468ge689eee7e5f2" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f7a7eee5-ad48-4b07-84a9-bf11adfba38d" />
@@ -736,6 +753,28 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Radiant)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4db1fa7-5d28-43d6-9370-86a1ebe0c0db" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Cleric" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="716ba791-76e0-44af-bc50-cb41d5c461cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="WarPriest" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c1f2f2dg8a14g4391gaf11g78e249692115" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h653e8aa0g68d8g3977ga5afg4a3cf3d3500b" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;WarPriestActionPoint:1;" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF808000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dd67b626-944a-444b-bc58-f8a03dc29ab0" />
@@ -754,7 +793,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(StarryForm)+WisdomModifier,Radiant);" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF8B4513" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b2677074-1cff-4513-b806-24b7e31b0b87" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Fighter" />
