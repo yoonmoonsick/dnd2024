@@ -2348,17 +2348,35 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b44f055e-19ed-4e58-aee6-6a8d4461f22f" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DeadThree_Bloodthirst" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ee611d7g0628g3c3eg953bgfb7c324da640" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13d703fbgb234g14aag3401g402c651c7bf6" version="4" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h13d703fbgb234g14aag3401g402c651c7bf6" version="5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);50" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7b086b07g6276gd8c5g3e88gd84cdabec267" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Rogue_Bloodthirst" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Target) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="TeleportSource();UseSpell(OBSERVER_TARGET,Target_Bloodthirst_Attack,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;BloodthirstCharge:1;" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f107cf28-c231-477d-81dc-472c81084539" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DeadThree_Bloodthirst_30" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b44f055e-19ed-4e58-aee6-6a8d4461f22f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);30" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(30, context.Target) and not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08ac1f6e-a62c-49fd-ab95-621988701e5e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_DeadThree_Bloodthirst_10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b44f055e-19ed-4e58-aee6-6a8d4461f22f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);10" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(10, context.Target) and not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(30, context.Target);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
