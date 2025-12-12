@@ -2211,7 +2211,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Rakish" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="74903a62-b217-4e08-abe6-ef01ef9ed929" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and not IsCritical() and not IsKillingBlow() and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) or (not HasEnemyWithinRange('SG_Incapacitated',1.5, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',1.5, nil,false,context.Source,context.Target))) and not AnyEntityIsItem() and not SpellId('Target_DirtyTrick_Blind') and not SneakAttackSpellCheck();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4+ClassLevel(Rogue), Force,Magical);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4+ClassLevel(Rogue), Force,Magical);ApplyStatus(CUNNING_STRIKE,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2220,7 +2220,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Rakish_Critical" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0c4e380-0593-442f-8d3d-964cf85e194d" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and IsCritical() and not IsKillingBlow() and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) or (not HasEnemyWithinRange('SG_Incapacitated',1.5, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',1.5, nil,false,context.Source,context.Target))) and not AnyEntityIsItem() and not SpellId('Target_DirtyTrick_Blind') and not SneakAttackSpellCheck();" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4+ClassLevel(Rogue), Force,Magical);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack()):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(1d4+ClassLevel(Rogue), Force,Magical);ApplyStatus(CUNNING_STRIKE,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2231,7 +2231,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9cbe3dbeg192cg9810g7ad6gc71d84fce093" version="1" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(CUNNING_STRIKE,100,1);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and HasStatus('CUNNING_STRIKE') and not HasStatus('CUNNING_STRIKE_POISON') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasStatus('CUNNING_STRIKE_POISON') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
         <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, ManeuverSaveDC())" />
         <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(CUNNING_STRIKE_POISON,100,10);" />
@@ -2247,7 +2247,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Trip" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7decf27g8278g2b92gd1cbgb1f333b489d5" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and HasStatus('CUNNING_STRIKE') and not HasStatus('PRONE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasStatus('PRONE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
         <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, ManeuverSaveDC())" />
         <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);" />
       </fields>
@@ -2259,7 +2259,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h497e5b57gf4c9g3626gfc54g8c6f54a9c266" version="1" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(CUNNING_STRIKE,100,1);ApplyStatus(SELF,CUNNING_STRIKE_WITHDRAW,100,1);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and HasStatus('CUNNING_STRIKE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
         <field name="Roll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Success" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
@@ -2270,7 +2270,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Frightened" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e62fe1ag9336gc892g3a92g99fa2fcdf438" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TurnBased() and HasStatus('CUNNING_STRIKE') and not HasStatus('CUNNING_STRIKE_FRIGHTENED') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasStatus('CUNNING_STRIKE_FRIGHTENED') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
         <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, ManeuverSaveDC())" />
         <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(CUNNING_STRIKE_FRIGHTENED,100,10);" />
       </fields>
