@@ -1391,6 +1391,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="707a9f76-ed52-4dfc-b82e-4720c5c731fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="SLOW" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8d50f327-8202-40ad-bcae-7517e8ffb93d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(-2);RollBonus(SavingThrow,0-2,Dexterity);ActionResourceBlock(ReactionActionPoint);ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);AI_IGNORE:Tag(EXTRA_ATTACK_BLOCKED);StatusImmunity(EXTRA_ATTACK);StatusImmunity(EXTRA_ATTACK_2);StatusImmunity(EXTRA_ATTACK_3);StatusImmunity(EXTRA_ATTACK_WAR_MAGIC);StatusImmunity(EXTRA_ATTACK_THIRSTING_BLADE_TECHNICAL);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4c552532-f760-471c-96a0-b92a3d2b5e48" />
         <field name="Name" type="NameTableFieldDefinition" value="LONGSTRIDER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a791531-a55c-4a90-a65b-5aa5ff395ba6" />
@@ -8306,7 +8314,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="73116794-e3c6-41fb-9390-5230b50c0484" />
         <field name="Name" type="NameTableFieldDefinition" value="UNNERVING_AURA_DEBUFF" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EXTRA_ATTACK_BLOCKED);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EXTRA_ATTACK_BLOCKED);StatusImmunity(EXTRA_ATTACK);StatusImmunity(EXTRA_ATTACK_2);StatusImmunity(EXTRA_ATTACK_3);StatusImmunity(EXTRA_ATTACK_WAR_MAGIC);StatusImmunity(EXTRA_ATTACK_THIRSTING_BLADE_TECHNICAL);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Slow_ActionPoint;" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EERIE_AURA_NECROTIC',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Necrotic);IF(HasStatus('EERIE_AURA_POISON',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Poison);IF(HasStatus('EERIE_AURA_PSYCHIC',context.Source)):DealDamage(Cause.ClassLevel(Ranger),Psychic)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1bafcb2gf99agb7fbgf8d1g9bdf4e8f1aca" version="1" />
@@ -9819,7 +9827,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_UmbralCloak" />
         <field name="StackId" type="StringTableFieldDefinition" value="NO_ESCAPE" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AC(-2);RollBonus(SavingThrow,0-2,Dexterity);ActionResourceBlock(ReactionActionPoint);ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);Tag(EXTRA_ATTACK_BLOCKED)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AC(-2);RollBonus(SavingThrow,0-2,Dexterity);ActionResourceBlock(ReactionActionPoint);ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Walk);Tag(EXTRA_ATTACK_BLOCKED);StatusImmunity(EXTRA_ATTACK);StatusImmunity(EXTRA_ATTACK_2);StatusImmunity(EXTRA_ATTACK_3);StatusImmunity(EXTRA_ATTACK_WAR_MAGIC);StatusImmunity(EXTRA_ATTACK_THIRSTING_BLADE_TECHNICAL);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Slow_ActionPoint;Slow_Casting" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('NO_ESCAPE_AURA_VICTIM')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
