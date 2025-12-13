@@ -1328,6 +1328,21 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e5e6deed-cc28-4f33-93a1-e8961b3946fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Retaliate_Zhentarim" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7444d60-f45a-4dbf-8bf6-203acf40af5b" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he87239bega0eeg85dcg0f74gc68d84e94c52" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcfb46672gec40gf808g3ba9gf4485d70506b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Enemy(context.Source,context.Observer) and IsMeleeAttack() and not IsMiss() and not HasStatus('INVISIBILITY') and not AnyEntityIsItem() and not DistanceToEntityGreaterThan(2, context.ObserverPosition, context.Source) and HasLastAttackTriggered();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('Sentinel_ZeroSpeed',context.Source)):UseAttack(SWAP);IF(HasPassive('Sentinel_ZeroSpeed',context.Source)):UseSpell(SWAP,Target_Sentinel_AttackOfOpportunity,true,true,true);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6005fda9-45e7-496b-aa0c-0143b78b8326" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlusteringStrike" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="455eb2b0-df16-4420-8229-920bb9c30ea0" />

@@ -55,6 +55,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h21ba82c9g678fg73c0gcf58g5092449a17ee" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_PsychicLance" />
         <field name="StackId" type="StringTableFieldDefinition" value="PSYCHIC_LANCE" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -82,7 +83,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fab6c955-7fed-4950-aa21-0704d575334e" />
         <field name="Name" type="NameTableFieldDefinition" value="LOW_HOUSEOFGRIEF_MINDFLAYER_STUN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f573c335-5231-473b-b5e7-cb5d5064ebd3" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -103,6 +104,22 @@
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,20)" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="RegainHitPoints(1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78ce1f8b-9fd7-4211-9d38-ccffd377192e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLD_MONSTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37e97b42-f8c0-4855-89fb-ff28d6d1b61b" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d181f69b-0385-4912-aa58-923cbc62a92e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HOLD_PERSON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e487a04-156c-40d7-89d3-7f219ca98fc5" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);" />
       </fields>
     </stat_object>
   </stat_objects>
