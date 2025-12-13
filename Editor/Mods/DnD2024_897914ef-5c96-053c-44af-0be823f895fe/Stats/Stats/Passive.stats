@@ -690,7 +690,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false));" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(NickActionPoint,1,0);AttackSpellOverride(Target_MainHandAttack_Nick,Target_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack'),ModifyUseCosts(Replace,NickActionPoint,1,-1,BonusActionPoint));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_Nick,Target_MainHandAttack);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -764,14 +764,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5df10338-dbfc-4f3d-9b98-1eb62c5bcd44" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Vex_NPC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="38832340-f1f6-4f9f-a005-4016e301ea35" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="14556836-607b-4de9-b66a-9f45b4e3a1ac" />
-        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Nick_NPC" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -10588,7 +10580,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="DualWielder(context.Source);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DualWielderActionPoint,1,0);AttackSpellOverride(Target_MainHandAttack_DualWielder,Target_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack'),ModifyUseCosts(Replace,DualWielderActionPoint,1,-1,BonusActionPoint));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_DualWielder,Target_MainHandAttack);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
