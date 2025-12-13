@@ -6,7 +6,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="20c8f1cd-5f09-4817-94b4-e4ee9b2a9a86" />
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Nick" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="NickActionPoint:1" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);ApplyStatus(SELF,NICK_COOLDOWN, 100, 1);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[IF(not HasStatus('NICK_COOLDOWN',context.Source)):DealDamage(max(0,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);IF(not HasStatus('NICK_COOLDOWN',context.Source):ExecuteWeaponFunctors(OffHand)];" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14,7 +16,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c5ff5325-b1ba-4272-8339-86d30bd755c2" />
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_DualWielder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="20c8f1cd-5f09-4817-94b4-e4ee9b2a9a86" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="DualWielderActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -8645,30 +8646,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="34c87ba1-754a-4700-9178-d939ad7003c6" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType); GROUND:ExecuteWeaponFunctors(OffHand)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2ea9fd6e-cfc2-442b-b060-7d9668766ca7" />
-        <field name="Name" type="NameTableFieldDefinition" value="Nick" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99fe149ag59a3g413bg79f5g76123cfcd1c1" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="092ae0eb-9266-449b-8ab0-8912e2b63e19" />
-        <field name="Name" type="NameTableFieldDefinition" value="Nick_NonLethal" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea9fd6e-cfc2-442b-b060-7d9668766ca7" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType, Magical, Nonlethal);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);ApplyStatus(SELF,NICK_COOLDOWN, 100, 1);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('AI_BLOCKOFFHANDATTACK') and not HasStatus('NICK_COOLDOWN',context.Source);" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied;OnTurn;OnAttack" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8677,6 +8657,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[IF(not HasStatus('NICK_COOLDOWN',context.Source)):DealDamage(max(0,OffhandMeleeWeapon), OffhandMeleeWeaponDamageType);ApplyStatus(SELF,NICK_COOLDOWN, 100, 1);IF(not HasStatus('NICK_COOLDOWN',context.Source):ExecuteWeaponFunctors(OffHand)];" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8710,18 +8691,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ddabd60gb75fgf826g23ccg59b5bc78dcbb" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ChannelOath:0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="176a9e53-def1-4711-ac3a-5157c6c1bc44" />
-        <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack_DuelWielder" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5eb2b17a-63b9-4975-91ac-52c6f0d451ef" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType); GROUND:ExecuteWeaponFunctors(OffHand);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3b04f82ag28deg481agb077gaacc255f4caf" version="3" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="FreeOffhandAttack:1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hfa585b36ge445g2b7bgc866g2661146b3cc8" version="2" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsAttack;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
