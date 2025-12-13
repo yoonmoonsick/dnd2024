@@ -999,15 +999,55 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c79166eg9476g8d3cgaffegc9910a46cb43" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha5c3af6cgc668g42d8gd7c4g4285e93887c6" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfFrost);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeCold() and IsAttack() and not Item() and not Self();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
-        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Acid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0912db1gf1d7gb70cgb961g240b72c3fda3" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hae232751gb581g7d5dg7346gbcb43d54c4f6" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Acid,Resistant)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() or IsSpell();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DRAGONSCARRED,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f3ec80a-af0c-427c-9cee-db92f325b533" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="095fdb9b-acdb-4e83-a8dc-0fe6534568da" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0cc7abf-63ba-49bd-b667-a51dd2d6da32" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Lightning,Resistant);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd3e3e4a-aebe-4609-99ec-8687d9056740" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Poison" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison,Resistant);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1017,6 +1057,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69ea639fg3e34g8cbdgeffcgee37cee52eab" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01a83f79g33efgfe0aga72bg58d8d846a129" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('BEAST', context.Target)):Advantage(AttackRoll);IF(Tagged('BEAST', context.Source)):Advantage(AllSavingThrows);IF(Tagged('BEAST', context.Target)):Advantage(AllAbilities);IF(Tagged('BEAST', context.Target)):Advantage(AllSkills);IF(Tagged('BEAST', context.Target)):Advantage(SourceDialogue);UnlockSpell(Target_DominateBeast_Feat);UnlockSpell(Target_DominateBeast,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1026,6 +1067,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2517c08g67d9gea1egbe32g758622f09e1d" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h922bcd8dg13b0ge6eeg1b7eg63a34444cab5" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FlusteringStrike);ActionResource(Interrupt_FlusteringStrike,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(Interrupt_FlusteringStrike,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(Interrupt_FlusteringStrike,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(Interrupt_FlusteringStrike,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1035,6 +1078,14 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h520aa892g30a6gf9e5ga9e2g73f366335481" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48c74825g9ea8gf45fg1110gbb6f933abdbc" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnLongRest;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);IF(CharacterLevelGreaterThan(10)):ActionResource(SpellSlot,1,1);IF(CharacterLevelGreaterThan(10)):ActionResource(SpellSlot,1,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63ec0e17-780d-4a02-ba64-22d79722cfb3" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
