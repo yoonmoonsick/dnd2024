@@ -2247,7 +2247,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_CunningStrike_Trip" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="35b38063-c522-4b1f-a1d3-bf140a247c70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7decf27g8278g2b92gd1cbgb1f333b489d5" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasStatus('PRONE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('CUNNING_STRIKE') and not HasProneStatus() and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');" />
         <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, ManeuverSaveDC())" />
         <field name="Success" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1);" />
       </fields>

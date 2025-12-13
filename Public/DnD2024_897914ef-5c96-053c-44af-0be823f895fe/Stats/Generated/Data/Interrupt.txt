@@ -1665,7 +1665,7 @@ new entry "Interrupt_CunningStrike_Trip"
 type "InterruptData"
 using "Interrupt_CunningStrike_Poison"
 data "DisplayName" "hb7decf27g8278g2b92gd1cbgb1f333b489d5;1"
-data "Conditions" "HasStatus('CUNNING_STRIKE') and not HasStatus('PRONE') and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');"
+data "Conditions" "HasStatus('CUNNING_STRIKE') and not HasProneStatus() and not HasStatus('YSRSLIDFWWADNIWHWIHLY_YWNK') and not HasStatus('BEGUILING_TWIST_TARGET');"
 data "Roll" "not SavingThrow(Ability.Dexterity, ManeuverSaveDC())"
 data "Success" "ApplyStatus(PRONE,100,1);"
 
