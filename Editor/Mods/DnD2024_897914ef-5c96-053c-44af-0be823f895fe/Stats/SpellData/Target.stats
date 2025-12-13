@@ -2708,7 +2708,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="746595f9-82b1-4579-a6cf-61f019266b21" />
         <field name="Name" type="NameTableFieldDefinition" value="Slam_Slayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="69597014-6233-490c-ac7c-e47959921203" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,4d6+UnarmedMeleeAbilityModifier), Slashing);IF(HasStatus('BLEEDING') and not HasStatus('PRONE')):ApplyStatus(CONTAGION_FLESH_ROT_1,100,3);IF(HasStatus('BLEEDING') and HasStatus('PRONE') and not SavingThrow(Ability.Strength,ManeuverSaveDC())):ApplyStatus(CONTAGION_FLESH_ROT,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,4d6+UnarmedMeleeAbilityModifier), Slashing);IF(HasStatus('BLEEDING') and not HasProneStatus()):ApplyStatus(CONTAGION_FLESH_ROT_1,100,3);IF(HasStatus('BLEEDING') and HasProneStatus() and not SavingThrow(Ability.Strength,ManeuverSaveDC())):ApplyStatus(CONTAGION_FLESH_ROT,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2716,7 +2716,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c3ab0b69-c989-4930-adb8-e41e12ecf4ae" />
         <field name="Name" type="NameTableFieldDefinition" value="Slam_Slayer_10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="07fb1f09-04b6-448e-a09e-b3d8057f6007" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,6d6+UnarmedMeleeAbilityModifier), Slashing);IF(HasStatus('BLEEDING') and not HasStatus('PRONE')):ApplyStatus(CONTAGION_FLESH_ROT_1,100,3);IF(HasStatus('BLEEDING') and HasStatus('PRONE') and not SavingThrow(Ability.Strength,ManeuverSaveDC())):ApplyStatus(CONTAGION_FLESH_ROT,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,6d6+UnarmedMeleeAbilityModifier), Slashing);IF(HasStatus('BLEEDING') and not HasProneStatus()):ApplyStatus(CONTAGION_FLESH_ROT_1,100,3);IF(HasStatus('BLEEDING') and HasProneStatus() and not SavingThrow(Ability.Strength,ManeuverSaveDC())):ApplyStatus(CONTAGION_FLESH_ROT,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8845,7 +8845,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing);Cast2[DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing)]" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing);DealDamage(1d8+UnarmedMeleeAbilityModifier,Piercing);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing);DealDamage(1d8+UnarmedMeleeAbilityModifier,Slashing)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasStatus('SG_Restrained') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasStatus('SG_Restrained') or )" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8862,7 +8862,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2f9ff74f-7942-4e89-b7a7-ed262ed0a468" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtractBrain_Mindflayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="92524b15-478a-48f7-867b-4d946574629c" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}) )" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasProneStatus() )" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8870,7 +8870,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fc0cd1ea-19ac-45f4-ac40-cbd07b2764bd" />
         <field name="Name" type="NameTableFieldDefinition" value="ExtractBrain_Player_Mindflayer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bdbe7cce-80b5-45e5-bc23-d1d8a7de1a6a" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}) or HasStatus('SG_Prone') or HasStatus('SG_Sleeping') or HasStatus('HIDEOUS_LAUGHTER'))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasProneStatus() or HasStatus('SG_Prone') or HasStatus('SG_Sleeping') or HasStatus('HIDEOUS_LAUGHTER'))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8878,7 +8878,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1a9c5753-4a58-4619-b69e-21ee945a6775" />
         <field name="Name" type="NameTableFieldDefinition" value="Multiattack_HookHorror" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="82cca0fe-5f43-4d15-8e1b-5643ef9641b2" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and ( HasStatus('SG_Prone') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and ( HasStatus('SG_Prone') or HasProneStatus())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8886,7 +8886,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5fb623fe-a9cb-43b9-9314-61b9401e1529" />
         <field name="Name" type="NameTableFieldDefinition" value="Multiattack_GiantEagle" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8cf5aaa5-1400-46e1-b46b-0226cabe51c4" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasStatus('SG_Restrained') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasStatus('SG_Restrained') or HasProneStatus())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8894,7 +8894,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="048d5d3b-39e3-4419-81d8-539a57d95cd4" />
         <field name="Name" type="NameTableFieldDefinition" value="UND_Multiattack_Myconid_Glut" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="48999716-ee7e-4c58-beef-cb10703c17d5" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (HasStatus('SG_Prone') or HasProneStatus())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8902,7 +8902,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a7ac6336-f83d-4cbf-9477-a88f88ec5d1a" />
         <field name="Name" type="NameTableFieldDefinition" value="WYR_ExtractBrain_MindFlayer_AlwaysHit" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2f2a78e6-895a-41ed-9633-6f5d4c422247" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasAnyStatus({'PRONE','PRONE_GREASE','PRONE_SEWER','PRONE_ICE','PRONE_FALLEN','COMMAND_GROVEL','PRONE_THUNDEROUS_SMITE'}))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and (HasStatus('SG_Stunned') or HasStatus('SG_Unconscious') or HasProneStatus())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14643,7 +14643,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fb8f21ef-1106-4313-bb16-38cc8e2ba22e" />
         <field name="Name" type="NameTableFieldDefinition" value="JugularStrike_Panther" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f3ed98cc-5633-4fbd-90a3-528f435867bb" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical); IF(HasAnyStatus({'PRONE', 'PRONE_GREASE', 'PRONE_SEWER', 'PRONE_ICE', 'PRONE_FALLEN', 'COMMAND_GROVEL', 'PRONE_THUNDEROUS_SMITE'}, {}, {}, entity)):DealDamage(max(1,2d6+UnarmedMeleeAbilityModifier),Piercing,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(HasProneStatus()):DealDamage(1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier+2d6+UnarmedMeleeAbilityModifier),Piercing,Magical);IF(not HasProneStatus()):DealDamage(1d4+LevelMapValue(WildShapeDamageMedium)+UnarmedMeleeAbilityModifier),Piercing,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14651,7 +14651,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="fd481be1-59f8-4e86-87b6-261ac5f8f571" />
         <field name="Name" type="NameTableFieldDefinition" value="Devour_Ghoul_AnimateDead" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9411012a-8d9d-4977-9bf9-4549dcd2e8ef" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Tagged('UNDEAD') and not Dead()  and (HasStatus('KNOCKED_OUT') or HasAnyStatus({'PRONE', 'PRONE_GREASE', 'PRONE_SEWER', 'PRONE_ICE', 'PRONE_FALLEN', 'COMMAND_GROVEL', 'PRONE_THUNDEROUS_SMITE'}, {}, {}, entity) or HasStatus('SLEEP'))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Tagged('UNDEAD') and not Dead()  and (HasStatus('KNOCKED_OUT') or HasProneStatus()) or HasStatus('SLEEP'))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14659,7 +14659,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="001d3ec2-4f3c-4386-b483-7200ddf2a981" />
         <field name="Name" type="NameTableFieldDefinition" value="JugularStrike_Panther_Gremishka" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57cda338-f2de-4452-b0eb-9add4d4af56f" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and HasAnyStatus({'PRONE', 'PRONE_GREASE', 'PRONE_SEWER', 'PRONE_ICE', 'PRONE_FALLEN', 'COMMAND_GROVEL', 'PRONE_THUNDEROUS_SMITE'}, {}, {}, entity)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and HasProneStatus())" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14667,7 +14667,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="884d6a1e-4d60-4148-b799-d32371fd2ec0" />
         <field name="Name" type="NameTableFieldDefinition" value="SteelWatcher_Greatsword_Quadruped_Multiattack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bbb23730-558c-4ad0-bf66-1e4a4db4c845" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not Ally() and (HasAnyStatus({'PRONE', 'PRONE_GREASE', 'PRONE_SEWER', 'PRONE_ICE', 'PRONE_FALLEN', 'COMMAND_GROVEL', 'PRONE_THUNDEROUS_SMITE'}, {}, {}, entity) or HasStatus('SG_Restrained') or HasStatus('CRIPPLED'))" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and not Ally() and (HasProneStatus()) or HasStatus('SG_Restrained') or HasStatus('CRIPPLED'))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
