@@ -568,6 +568,7 @@
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WM_GET_GRAZE);RemoveStatus(SELF,WM_GET_PUSH);RemoveStatus(SELF,WM_GET_SAP);RemoveStatus(SELF,WM_GET_SLOW);RemoveStatus(SELF,WM_GET_TOPPLE);RemoveStatus(SELF,WM_GET_VEX);RemoveStatus(SELF,WM_GET_NICK);RemoveStatus(SELF,WM_GET_CLEAVE)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d32aed6g0d6agf251gb6edg8c550834d1c0" version="1" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hd3caa2f8gba5dgd5b3g8184g3b4ec7e8cac3" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="WeaponMasteries" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -579,6 +580,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2811c039ga2eeg26cfg84cdg5bf895b78d7e" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WM_GET_NICK,100,-1);ApplyStatus(SELF,WM_GET_SLOW,100,-1);ApplyStatus(SELF,WM_GET_VEX,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WeaponMastery_Rogue" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('WeaponMastery_Get_WeaponMasteries',context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -590,6 +593,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h95248abeg5e8eg2069gbfa2g5126f23fe9b1" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WM_GET_PUSH,100,-1);ApplyStatus(SELF,WM_GET_SLOW,100,-1);ApplyStatus(SELF,WM_GET_VEX,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_Risk" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('WeaponMastery_Get_WeaponMasteries',context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
