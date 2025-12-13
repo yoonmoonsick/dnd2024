@@ -684,13 +684,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Nick" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h861bf672g247fg1f94g2767gaec92d76e2dd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="6" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, true)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, true))) and not IsKillingBlow() and Character() and not AnyEntityIsItem();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TAREGT:IF(Attack(AttackType.MeleeWeaponAttack)):ApplyStatus(NICK_TARGET, 100, 1)" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(NickActionPoint,1,0);AttackSpellOverride(Target_MainHandAttack_Nick,Target_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack'),ModifyUseCosts(Replace,NickActionPoint,1,-1,BonusActionPoint));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -772,7 +771,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="14556836-607b-4de9-b66a-9f45b4e3a1ac" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Nick_NPC" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10507,13 +10506,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9c1dfd82-b018-4591-ad31-92330b671017" />
         <field name="Name" type="NameTableFieldDefinition" value="DualWielder_BonusAC" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75354733gc2dcg47beg8ed5gae0e7f501c75" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd293cf76g45abgb7e6g13a7g51ccf6c7d5cb" version="4" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and not IsKillingBlow() and Character() and not AnyEntityIsItem() and (Tagged('WPN_BATTLEAXE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_CLUB', GetActiveWeapon(context.Source, false)) or Tagged('WPN_FLAIL', GetActiveWeapon(context.Source, false)) or Tagged('WPN_HANDAXE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_JAVELIN', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LONGSWORD', GetActiveWeapon(context.Source, false)) or Tagged('WPN_MACE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_MORNINGSTAR', GetActiveWeapon(context.Source, false)) or Tagged('WPN_RAPIER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SHORTSWORD', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SPEAR', GetActiveWeapon(context.Source, false)) or Tagged('WPN_STAVE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_TRIDENT', GetActiveWeapon(context.Source, false)) or Tagged('WPN_WAR_PICK', GetActiveWeapon(context.Source, false)) or Tagged('WPN_WARHAMMER', GetActiveWeapon(context.Source, false)));" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="-1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TAREGT:IF(Attack(AttackType.MeleeOffHandWeaponAttack)):ApplyStatus(NICK_TARGET, 100, 1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94a6bae6g33c5g12e0gefe4g5683d845ddce" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="DualWielder(context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(DualWielderActionPoint,1,0);AttackSpellOverride(Target_MainHandAttack_DualWielder,Target_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack'),ModifyUseCosts(Replace,DualWielderActionPoint,1,-1,BonusActionPoint));" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10525,7 +10523,6 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('SKILLED_CLEAR',context.Source)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SKILLED_UNLOCK,100,-1)" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

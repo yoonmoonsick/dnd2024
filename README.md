@@ -2637,7 +2637,7 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll plus proficiency bonus. This damage is the same type dealt by the weapon.
 - **Nick**
   - **Dagger, Light hammer, Sickle, Scimitar**
-  - If you attack a creature with this weapon wielded in your main hand, its extra attack can be made once per turn as part of your Attack action and must be made with that weapon, while off-hand Light weapons can still make attacks normally using Two-Weapon Fighting.
+  - When you wield a Nick weapon in your off-hand and `Toggle Dual Wielding` Attacks is enabled, you can make the extra off-hand attack granted by the Nick property as part of the Attack action instead of as a Bonus Action, and you can make this attack only once per turn regardless of resource cost.
 - **Push**
   - **Greatclub, Pike, Warhammer, Heavy Crossbow**
   - If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.
