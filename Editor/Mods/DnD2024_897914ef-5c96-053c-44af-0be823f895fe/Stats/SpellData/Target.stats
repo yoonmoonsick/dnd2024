@@ -1232,9 +1232,37 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="af6309b8-6805-480d-a62f-d97d6372e45d" />
         <field name="Name" type="NameTableFieldDefinition" value="DistractingMelody" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c25f4653-5c52-48cf-b4a4-215529ae4118" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d786ea9-65c3-44a8-b4bc-35579a6d29d2" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1150c16agacb9gcf08g275dgbd7f0409bc5c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h44f955ccg6821g4dbaga1aag7d275b85d47e" version="4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DISTRACTED,100,1);IF(HasPassive('Feat_HarperTeamwork',context.Source)):ApplyStatus(WITHERING_WORDPLAY,100,1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Ally() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Singing" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DISTRACTED,100,1)" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Distract" enumeration_type_name="SpellActionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92c87c38-03c0-4bd4-a5e1-c740af8006f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="InspiringWillpower" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d786ea9-65c3-44a8-b4bc-35579a6d29d2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he893e3d8g8a55gf728g450agcaa10ffb22f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f7c3340gce1cgbaa4gb3a6g30db636980cd" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SG_Paralyzed);RemoveStatus(SG_Frightened);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Enemy() and not Self() and (HasStatus('SG_Paralyzed') or HasStatus('SG_Frightened'));" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Help" enumeration_type_name="SpellActionType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1255,50 +1283,33 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c97004b4-6473-499f-9712-6d369a6be43a" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5c526aa4-8e77-4800-8650-10bb85dc8749" />
+        <field name="Name" type="NameTableFieldDefinition" value="StandardBearer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acace47d-bbd9-4708-8f74-835dcf81c40b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(STANDARD_BEARER,100,1);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h030a8316ga91dg0db0g036agf101f3088645" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5b1d36f0g7eaagcb24gb70bgf1d82a2dfa7b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Help" enumeration_type_name="SpellActionType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ee7f2457-6531-43a0-9aa8-8149cf6147ab" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e861fc95-3631-4d97-a982-7401d0f0a294" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5eb27621-b2ac-4407-8040-08767c83f464" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="597b73b8-3e2c-4286-af22-d9194c378bdf" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="52c0a8f0-abac-438d-8262-454e6c103be7" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e6b1465e-ed57-4f3d-ade8-6ee24e246056" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5432edcb-c564-46d1-8fc6-48c7a244e94c" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ffda3f17-083e-4ae9-8b35-7d4ca88ed179" />
+        <field name="Name" type="NameTableFieldDefinition" value="EncourageAlly" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="acace47d-bbd9-4708-8f74-835dcf81c40b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ENCOURAGE_ALLY,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e4fd9fagdc44g41c2gfa30ge1d631b5dc08" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h86cd46b7g2e1dgc769gc8dbg59b8dd1da438" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ENCOURAGE_ALLY,100,-1);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;EncourageAlly:1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -898,6 +898,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('FRIGHTENED') or StatusId('FEAR') or StatusId('SG_Frightened');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,HumanHeroicInspiration,1,0)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SummonDragon" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -912,6 +913,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Nature" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -923,6 +925,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);Distance(1.5)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DistractingMelody);Proficiency(MusicalInstrument);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_EndGameAlly_HarperSummon" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -936,6 +939,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_ReassertHonor);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):RestoreResource(SELF,HumanHeroicInspiration,1,0)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfDevotion" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -946,6 +950,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1526593ag81degd386g10eag0cdbdb03a8d5" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_RallyingCry);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_GuardTheFaithful" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -956,6 +961,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2f014843gffd3gf383gefb6gdba60dd4753f" version="2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MagicAbsorption);ActionResource(Interrupt_MagicAbsorption,1,0);UnlockSpell(Target_SacredFlame);UnlockSpell(Target_SacredFlame_BonusAction);ActionResource(SpellfireFlame,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(SpellfireFlame,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(SpellfireFlame,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SacredFlame" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -967,6 +973,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Vigilant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_TransmuterStone_Constitution" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -980,6 +987,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsReactionAttack(context.Source);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(StandardProficiencyBonusScale),MainMeleeWeaponDamageType)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_OpportunityAttack" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -999,6 +1007,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeCold() and IsAttack() and not Item() and not Self();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1012,6 +1021,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() or IsSpell();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,DRAGONSCARRED,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1020,6 +1030,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Cold,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1028,6 +1039,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1036,6 +1048,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Lightning,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1044,6 +1057,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Feat_Dragonscarred_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ca75a34-8df5-49d2-a19b-15023b8b03f0" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1054,6 +1068,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h01a83f79g33efgfe0aga72bg58d8d846a129" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(Tagged('BEAST', context.Target)):Advantage(AttackRoll);IF(Tagged('BEAST', context.Source)):Advantage(AllSavingThrows);IF(Tagged('BEAST', context.Target)):Advantage(AllAbilities);IF(Tagged('BEAST', context.Target)):Advantage(AllSkills);IF(Tagged('BEAST', context.Target)):Advantage(SourceDialogue);UnlockSpell(Target_DominateBeast_Feat);UnlockSpell(Target_DominateBeast,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_DominateBeast" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1065,6 +1080,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FlusteringStrike);ActionResource(Interrupt_FlusteringStrike,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(Interrupt_FlusteringStrike,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(Interrupt_FlusteringStrike,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(Interrupt_FlusteringStrike,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FaerieFire" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1076,12 +1092,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnShortRest;OnLongRest;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellSlot,1,1);IF(CharacterLevelGreaterThan(10)):ActionResource(SpellSlot,1,1);IF(CharacterLevelGreaterThan(10)):ActionResource(SpellSlot,1,2);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="63ec0e17-780d-4a02-ba64-22d79722cfb3" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1089,9 +1100,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="bba7c3e2-a7e2-4b82-a9c0-a55bb44a59f7" />
         <field name="Name" type="NameTableFieldDefinition" value="Feat_HarperTeamwork" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h607327f0g8f0cga252g4459g8af8ccd2023a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h70c33174g2075g54fdg1d4cgb399f1fe34c8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h70c33174g2075g54fdg1d4cgb399f1fe34c8" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_EndGameAlly_HarperSummon" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1099,8 +1112,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="57662d46-f1d5-47d7-aa17-201b9709abc1" />
         <field name="Name" type="NameTableFieldDefinition" value="Feat_LordlyResolve" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf204543dg4beagc086g4ac8g391111e0660d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb12190cg8117g2023g65b4g02453a948e5f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb12190cg8117g2023g65b4g02453a948e5f" version="2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CalmEmotions_Feat);UnlockSpell(Target_CalmEmotions,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1108,9 +1124,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="96c11882-05ad-4957-be3a-79751f6a6f2e" />
         <field name="Name" type="NameTableFieldDefinition" value="Feat_OrdersResilience" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h383e83bcga71ege3b8g316bgfa14474c7333" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd8e80f01g8d9eg15ccgee12ge0f543dc3d7c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd8e80f01g8d9eg15ccgee12ge0f543dc3d7c" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(1.5)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnTurn;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,STRONGER_TOGETHER,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1118,9 +1138,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="04059269-3fa0-43d4-9f43-41c1a79f6187" />
         <field name="Name" type="NameTableFieldDefinition" value="Feat_PurpleDragonCommandant" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha1999d09g2f06ge9e3g5bc5g0e178936684e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8cad240g1902g5f73g9395gab4550dc5513" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8cad240g1902g5f73g9395gab4550dc5513" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_EncourageAlly);ActionResource(EncourageAlly,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(EncourageAlly,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(EncourageAlly,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(EncourageAlly,1,0);IF(HasHPPercentageWithoutTemporaryHPLessThan(50, context.Source)):Advantage(AttackRoll);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Fighter_Rally" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1131,6 +1153,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf4a1082g4120g3045g39e0gf21e99fd42d2" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(MainDamageTypeIs(DamageType.Radiant)):MinimumRollResult(Damage,2);IgnoreResistance(Radiant,Resistant);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1141,6 +1165,8 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h29808432g14b1g0d44gb168gcf74ceaa8eee" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27c6b7db-fe39-4cab-ae96-38289cbf194f" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Retaliate_Zhentarim);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_OpportunityAttack" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
