@@ -1328,6 +1328,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6005fda9-45e7-496b-aa0c-0143b78b8326" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FlusteringStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="455eb2b0-df16-4420-8229-920bb9c30ea0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6939cbdagbd17ga2c0g1562ge1ca801e5639" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h686e7a98g232dgbef1gbe4ag1faa4113bfd8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Debuff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and IsAttack() and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not SavingThrow(Ability.Wisdom, SourceSpellDC())):ApplyStatus(FLUSTERING_STRIKE,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_FlusteringStrike:1;" />
+        <field name="Stack" type="StringTableFieldDefinition" value="Interrupt_FlusteringStrike" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FLUSTERING_STRIKE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="419c4966-bc17-4308-ba4b-5428837ea2c2" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FadeAway" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="afb6a7a6-c4e7-4998-a80e-2c6f81e0ec5d" />

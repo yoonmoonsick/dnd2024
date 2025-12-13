@@ -434,6 +434,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="98f7d181-873d-42a7-9534-e0c3d62c0423" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2261,7 +2262,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2aa31496-c4f3-4d0f-9691-7634fcba179f" />
         <field name="Name" type="NameTableFieldDefinition" value="InspiringMovement" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="98f7d181-873d-42a7-9534-e0c3d62c0423" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,INSPIRING_MOVEMENT, 100, 1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,INSPIRING_MOVEMENT, 100, 1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0f018ffg00a8gbaf6g187bg502edaa40e94" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(INSPIRING_MOVEMENT,100,1)" />
@@ -2312,6 +2313,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3477,7 +3479,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2357d605-1d38-4e9c-a8e5-30a57529c512" />
         <field name="Name" type="NameTableFieldDefinition" value="PatientDefense" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4a97e468-7a6b-4ab9-93f5-d613d32ace8d" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,PATIENT_DEFENCE,100,1);ApplyStatus(SELF,DISENGAGE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,PATIENT_DEFENCE,100,1);ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PATIENT_DEFENCE,100,1);ApplyStatus(DISENGAGE,100,1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfbc043d3g5716g1fcbg8580g21b871c0b6bb" version="1" />
       </fields>
@@ -3487,7 +3489,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9575ccf5-38e9-40ab-8893-0051d78e38dd" />
         <field name="Name" type="NameTableFieldDefinition" value="Dash_StepOfTheWind" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3f56de45-417a-4c9a-89c4-2a923fe91599" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DASH,100,1); ApplyStatus(STEP_OF_THE_WIND,100,1);ApplyStatus(SELF,DISENGAGE,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DASH,100,1);ApplyStatus(STEP_OF_THE_WIND,100,1);ApplyStatus(SELF,DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DASH,100,1); ApplyStatus(STEP_OF_THE_WIND,100,1);ApplyStatus(DISENGAGE,100,1)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf6c3b56gaeaag595eg2f67g3ea1bb9ef1f9" version="1" />
       </fields>
@@ -5629,6 +5631,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Immobilized() and HasStatus('RAGE_TOTEM_EAGLE')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6137,6 +6140,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfea88186g9bb3gd4d4gbe61gb1923f8de04f" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SuperiorityDie:1;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EVASIVE_FOOTWORK,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6186,7 +6190,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RallyingSurge_Move" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0fd05f4-0b0d-4663-beec-21d2b5de7928" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BANNERET_RALLYING_SURGE_MOVE,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(BANNERET_RALLYING_SURGE_MOVE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BANNERET_RALLYING_SURGE_MOVE,100,1)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;Stealth;Invisible;NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
@@ -6522,6 +6526,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Disengage" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="98f7d181-873d-42a7-9534-e0c3d62c0423" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Immobilized() and not HasStatus('HUNTERS_RIME_NO_DISENGAGE')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6530,6 +6535,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Disengage_BonusAction" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Immobilized() and not HasStatus('HUNTERS_RIME_NO_DISENGAGE')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6879,6 +6885,7 @@
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;VexingMovement:1;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6941,7 +6948,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="12644fd2-488b-4c9c-a3b3-c63d5950dff8" />
         <field name="Name" type="NameTableFieldDefinition" value="Risk_DodgeRoll" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0fd05f4-0b0d-4663-beec-21d2b5de7928" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DODGE_ROLL,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DODGE_ROLL,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_DodgeRoll" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h651ccbeegd60fg73b8gbae6gc66e7f049004" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had0cc830g806egf37cg06cbg70abaa4b1428" version="1" />
@@ -6958,7 +6965,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hed958873gf839g7b23ga2e0ge927f937b78c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e916f80g2b8dg8533g473fg532bca5293be" version="2" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,CUNNING_STRIKE_WITHDRAW,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,CUNNING_STRIKE_WITHDRAW,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -7417,6 +7424,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Disengage_Metamorph" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="701b4f79-15bf-4da8-a70b-bfe613bee61f" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
