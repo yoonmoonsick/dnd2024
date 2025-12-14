@@ -1016,7 +1016,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 2: Monk's Focus
   - Flurry of Blows. You can expend 1 Ki-Point to make two Unarmed Strikes as a Bonus Action.
   - Patient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and the Dodge actions as a Bonus Action.
-  - Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
+  - Step of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Ki-Point to take both the Disengage and Dash actions as a Bonus Action, and your jump movement cost is halved for the turn.
 - Level 3: Deflect Attacks
   - When a melee attack roll hits you and deals bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage you take. The amount reduced equals 1d10 + your Dexterity modifier + your Monk level. Additionally, you can spend 1 Ki point to redirect some of the attack's force. The attacking creature must succeed on a Dexterity saving throw or take damage equal to your Martial Arts die + your Dexterity modifier.
 - Level 6: Empowered Strikes
@@ -1024,8 +1024,12 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 - Level 10: Stillness of Mind
 - Level 10: Heightened Focus
   - Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.
-  - Flurry of Blows. You can expend 1 Ki-Point to use Flurry of Blows and make three Unarmed Strikes with it instead of two.
-  - Patient Defense. When you expend a Ki-Point to use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.
+  - Flurry of Blows
+    - You can use Flurry of Blows and make three Unarmed Strikes with it instead of two.
+  - Patient Defense
+    - When you use Patient Defense, you gain a number of Temporary Hit Points equal to two rolls of your Martial Arts die.
+  - Step of the Wind
+    - When you use Step of the Wind, you can choose a willing creature within 5 feet of yourself that is Large or smaller. You move the creature with you until the end of your turn. The creature’s movement doesn’t provoke Opportunity Attacks.
 - Level 12: Disciplined Survivor
   - Your physical and mental discipline grant you proficiency in all saving throws.
 
