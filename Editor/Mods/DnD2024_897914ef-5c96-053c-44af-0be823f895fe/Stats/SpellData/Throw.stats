@@ -151,5 +151,25 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(IsLightThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(1d4,Bludgeoning);TARGET:IF(IsMediumThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(2d4,Bludgeoning);TARGET:IF(IsHeavyThrownObject(context.HitDescription.ThrownObject, false)):DealDamage(3d4,Bludgeoning);TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);TARGET:IF(HasWeightGreaterThan(context.Target.Weight/2, context.HitDescription.ThrownObject)):Force(2);TARGET:IF(HasWeightGreaterThan(context.Target.Weight, context.HitDescription.ThrownObject)):ApplyStatus(PRONE,100,1);TARGET:IF(Tagged('BOO',context.HitDescription.ThrownObject)):ApplyStatus(BLINDED,100,1,,,,not SavingThrow(Ability.Dexterity, 15));TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and not SizeEqualOrGreater(Size.Large)):DealDamage(1d8, Bludgeoning,Magical,,0,,true);TARGET:IF(Tagged('DWARF', context.Source) and HasStatus('MAG_DWARVEN_THROWER_TECHNICAL', context.HitDescription.ThrownObject) and SizeEqualOrGreater(Size.Large)):DealDamage(2d8, Bludgeoning,Magical,,0,,true);IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject) and HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6, Force,Magical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_ACID', context.HitDescription.ThrownObject)):DealDamage(1d6,Acid,Nonmagical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_COLD', context.HitDescription.ThrownObject)):DealDamage(1d6,Cold,Nonmagical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_FIRE', context.HitDescription.ThrownObject)):DealDamage(1d6,Fire,Nonmagical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING', context.HitDescription.ThrownObject)):DealDamage(1d6,Lightning,Nonmagical,,0,,true);TARGET:IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER', context.HitDescription.ThrownObject)):DealDamage(1d6,Thunder,Nonmagical,,0,,true);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7164458d-4a5f-4f31-9952-4c4527291302" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImprovisedWeapon_StepOfTheWind" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f71d866e-0352-4843-853f-8b3b45abcc2a" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="Character() and Ally() and not Self() and not Grounded() TargetSizeEqualOrSmaller(Size.Large);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h80ecb018g017dg784cg8b4dg45579994c98d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb33d5c90gbfdagb5f1g5e11g9c1649675a93" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;PickupEntityAndMove;CombatLogSetSingleLineRoll;Temporary;NoAOEDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Control" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellActionType" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

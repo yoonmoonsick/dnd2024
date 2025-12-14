@@ -6275,6 +6275,18 @@ using "STEP_OF_THE_WIND"
 data "Description" "h3675f1d0gb0bdgd514g4977g700bcb9a9516;1"
 data "Boosts" "UnlockSpell(Projectile_Jump_StepOfTheWind);UnlockSpellVariant(SpellId('Projectile_Jump_StepOfTheWind'),ModifyIconGlow());"
 
+new entry "STEP_OF_THE_WIND_MOVE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Boosts" "UnlockSpell(Throw_ImprovisedWeapon_StepOfTheWind);UnlockSpellVariant(SpellId('Throw_ImprovisedWeapon_StepOfTheWind'),ModifyIconGlow());"
+
+new entry "PATIENT_DEFENCE_TEMP_HP"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_TEMPORARY_HP"
+data "StackId" "PATIENT_DEFENCE_TEMP_HP"
+data "Boosts" "TemporaryHP(LevelMapValue(MartialArts)+LevelMapValue(MartialArts));"
+
 new entry "FLURRY_HEALING_HARM"
 type "StatusData"
 data "StatusType" "BOOST"
