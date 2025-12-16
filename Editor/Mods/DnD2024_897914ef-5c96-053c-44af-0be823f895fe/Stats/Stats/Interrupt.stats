@@ -443,7 +443,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Cold)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and ( IsUnarmedAttack() or IsWeaponAttack() ) and not IsKillingBlow() and IsHit() and Character() and not AnyEntityIsItem()" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('ImprovedElementalFury',context.Source)):DealDamage(1d8,Cold,Magical);IF(HasPassive('ImprovedElementalFury',context.Source)):DealDamage(2d8,Cold,Magical);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not HasPassive('ImprovedElementalFury',context.Source)):DealDamage(1d8,Cold,Magical);IF(HasPassive('ImprovedElementalFury',context.Source)):DealDamage(2d8,Cold,Magical);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
         <field name="Cost" type="StringTableFieldDefinition" value="Interrupt_PrimalStrike:1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="HasActionResource('Interrupt_PrimalStrike', 1, 0, false, false, context.Source)" />
         <field name="Stack" type="StringTableFieldDefinition" value="PrimalStrike" />
@@ -619,7 +619,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0e31061g96a8gc1aag9444gc8e2ad24d531" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf3e148a4g0f85g7c39ge274ga6598de68008" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold,Magical);ApplyStatus(RAY_OF_FROST,100,1)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold,Magical);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);ApplyStatus(RAY_OF_FROST,100,1);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold);Distance(3)" />
       </fields>
     </stat_object>
@@ -1963,7 +1963,7 @@
         <field name="Cost" type="StringTableFieldDefinition" value="FireRune:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="Interrupt_RuneKnight_Rune_Fire" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise');" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6, Fire)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RUNEKNIGHT_FIRE,100,10);" />
@@ -1982,7 +1982,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="SetAdvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -1999,7 +1999,7 @@
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasStatus('SG_Polymorph') or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -2012,7 +2012,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Shield" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RunicShield:1;" />
-        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasStatus('SG_Polymorph');" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hefb56862gecabg1101g4eecg92ec5c286a79" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2cae26c8g758cg141cg29c0gc91313582892" version="1" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);" />

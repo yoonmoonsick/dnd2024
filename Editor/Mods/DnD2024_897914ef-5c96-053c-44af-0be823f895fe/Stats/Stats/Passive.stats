@@ -998,7 +998,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RayOfFrost);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsDamageTypeCold() and IsAttack() and not Item() and not Self();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(COLD_CASTER_FROSTBITE,100,2);ApplyStatus(SELF,COLD_CASTER_COOLDOWN,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
       </fields>
     </stat_object>
@@ -6609,7 +6609,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadba9566gd956g2168g7029g5e2150f63f5e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -8390,6 +8390,9 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Cold);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="TerrorizingForce" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8399,6 +8402,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Fire_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Fire);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8408,6 +8412,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Necrotic_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Necrotic);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8417,6 +8422,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="51a2897d-9e8d-4e44-a42f-d0ed46cfd535" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Melee" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):CharacterWeaponDamage(1d8,Poison);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10119,6 +10125,9 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7cd9138-9867-45c3-831f-eca9c04dd70f" />
         <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d4,Cold);IF(IsMeleeUnarmedAttack()):RollBonus(Attack,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeUnarmedAttack() and not IsMiss();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
