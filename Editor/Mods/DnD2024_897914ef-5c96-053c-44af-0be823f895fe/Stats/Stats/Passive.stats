@@ -2186,6 +2186,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c2cfc62-977c-431e-93ee-ee52ca2b6efe" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreatWeaponMaster_BonusDamage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4964fe3a-98f5-4662-a285-38c4b6eef21d" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb43a3e06g133ag2080g130cg2578f6e04cbd" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(GreatWeaponMaster(context.Source)):CharacterWeaponDamage(ProficiencyBonus);Ability(Strength,1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb260b30-d2f6-4e3c-8c99-caf21a340a38" />
         <field name="Name" type="NameTableFieldDefinition" value="HeavyArmorMaster" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b54ee116-9fd6-485c-9c78-d8c0155438df" />
@@ -2255,6 +2265,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2229c16-e0bd-4d27-923f-1a7f4efd84a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Tough" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed66cafd-7d67-412e-8214-e84e259edc9f" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnLongRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(FEAT_TOUGH,100,-1)" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="03eb5a80-8256-4d33-8655-de4b9e9506ae" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7b250da4-8e1c-4888-9f32-a8e410bbec0e" />
         <field name="Name" type="NameTableFieldDefinition" value="WarCaster_OpportunitySpell" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="61b92c36-fa31-4cea-b8fa-f927f8344b19" />
@@ -2289,16 +2310,6 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,BEGUILING_MAGIC,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_FeyPresence" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9c2cfc62-977c-431e-93ee-ee52ca2b6efe" />
-        <field name="Name" type="NameTableFieldDefinition" value="GreatWeaponMaster_BonusDamage" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4964fe3a-98f5-4662-a285-38c4b6eef21d" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb43a3e06g133ag2080g130cg2578f6e04cbd" version="2" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(GreatWeaponMaster(context.Source)):CharacterWeaponDamage(ProficiencyBonus);Ability(Strength,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
