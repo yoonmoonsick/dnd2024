@@ -2794,7 +2794,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(PoisonerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(PoisonerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(PoisonerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(PoisonerCharge,1,0);UnlockSpell(Shout_Poisoner_BrewPoison);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Poison)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(POISONED,100,2)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(POISONED,100,2);ApplyStatus(POISONED_FEAT,100,2)" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -3659,7 +3659,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="72a7fd7d-90b3-400f-b621-2109b2d9c4a3" />
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_Basic_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="910970bc-0d26-4c3c-a8a3-b1669671a259" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1, AdvantageOnPoisoned())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):ApplyStatus(ALCH_TOXIN_BASIC_CONDITION,100,1, AdvantageOnPoisoned());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3667,7 +3667,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cf0ec5ca-8e9c-4c6e-9da0-596cb9ec17d0" />
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_SerpentVenom_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad1fa257-1954-4f03-b250-bb165d8e034f" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):ApplyStatus(ALCH_TOXIN_SERPENTVENOM_CONDITION,100,1, AdvantageOnPoisoned());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3675,7 +3675,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="d3c83d09-71b4-4dfd-965c-4dc988dce6cd" />
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_Wyvern_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="83af11bb-fdc7-4fe9-8b9c-0af4454797c4" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,1, AdvantageOnPoisoned())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):ApplyStatus(ALCH_TOXIN_WYVERN_CONDITION,100,1, AdvantageOnPoisoned());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3683,7 +3683,45 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6271f086-4155-4d4e-8707-e8a50805f757" />
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_PurpleWorm_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a014ce30-5b87-4585-b1d7-56a2a12e0f2f" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):ApplyStatus(ALCH_TOXIN_PURPLEWORM_CONDITION,100,1, AdvantageOnPoisoned())" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):ApplyStatus(ALCH_TOXIN_PURPLEWORM_CONDITION,100,1, AdvantageOnPoisoned());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_Basic_Feat" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63ab1481g071eg45f2ga3ecg8cf903b3cb71" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('ElementalAdept_Poison',context.Source) and IsWeaponAttack();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):DealDamage(1d4,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0dc48af5-81b6-4ece-88ca-4433e41ba9a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_SerpentVenom_Feat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf26bf2b3g964eg44dbga2ccgebf64ffc0bcc" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):DealDamage(1d6,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78b47d4b-6870-4cf4-a1b7-c98706715977" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_Wyvern_Feat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dd30c57gd4e1g4908gaf30g376c206dffb0" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):DealDamage(1d8,Poison)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7534f54b-eea1-4a88-80b9-6c9646f7f0e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxin_PurpleWorm_Feat" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7952da7gee54g48fdg8f17g84ab33e3e4d6" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):DealDamage(1d10,Poison)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

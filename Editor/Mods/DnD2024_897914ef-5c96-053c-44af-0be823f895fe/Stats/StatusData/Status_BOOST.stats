@@ -1590,6 +1590,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ade4152-b432-46f9-b7f9-268f56ada1e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="FEAT_POISONED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c55d0a13-1ef8-48a2-9c94-fba4f93072d3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h378354ddg435fg47a0g3012g41276df9d4d3" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FEAT_POISONED" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Surface;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="01d6d59a-2941-46f9-84ff-d0f365b7000f" />
         <field name="Name" type="NameTableFieldDefinition" value="FEAT_TOUGH" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4b77813cgf03cg457cgb88egcf7141dd03e3" version="2" />
@@ -6456,6 +6467,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ae3e5f8a-acd1-4005-bbe9-d9692ed3239b" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(2d8,Poison)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11235,6 +11247,12 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32d259e3-798e-4f1a-8bac-a7a06a813c80" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_POISON_TOXIN" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b6d58f04-28d5-4a85-a9bd-392f44007934" />
@@ -11369,6 +11387,56 @@
         <field name="UUID" type="IdTableFieldDefinition" value="205d1e79-79ff-47b9-b14d-720b749a3571" />
         <field name="Name" type="NameTableFieldDefinition" value="POISON_MALICE_IMMUNE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4656b64-aab0-4e16-bbcb-615cbc2a152b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f8200ebd-f66b-4f55-a478-66edb6caae5d" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_BASIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a8279e9-79bf-4259-9d12-d9e964b8e17d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Toxin_Basic_Feat;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MainHand,ALCH_TOXIN_BASIC_DIPPED,100,10);AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(OffHand,ALCH_TOXIN_BASIC_DIPPED,100,10);AI_ONLY:ApplyStatus(SELF,AI_HELPER_DIPWEAPON_TOXIN_BASIC,100,4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9fd97632-69cf-4e1d-bca0-8f07a49a438e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_SERPENTVENOM" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ba8600ca-22db-4ddc-9e66-82962cda04d4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TOXIN_BASIC" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Toxin_SerpentVenom_Feat;" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MainHand,TOXIN_SERPENTVENOM_DIPPED,100,10);AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(OffHand,TOXIN_SERPENTVENOM_DIPPED,100,10);AI_ONLY:ApplyStatus(SELF,AI_HELPER_DIPWEAPON_TOXIN_SERPENTVENOM,100,4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16859995-cdde-4fe8-a4b5-e0bf61b199fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_WYVERN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30c3cfbf-efd1-49b5-9362-0eb944f45808" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TOXIN_BASIC" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Toxin_Wyvern_Feat;" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d8,Poison)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MainHand,TOXIN_WYVERN_DIPPED,100,10);AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(OffHand,TOXIN_WYVERN_DIPPED,100,10);AI_ONLY:ApplyStatus(SELF,AI_HELPER_DIPWEAPON_TOXIN_WYVERN,100,4)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e495f27-25a1-47bf-ab33-706634c9dcd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXIN_PURPLEWORM" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="79fa78cc-378e-4132-8fa8-2b885746dd0d" />
+        <field name="StackId" type="StringTableFieldDefinition" value="TOXIN_BASIC" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Toxin_PurpleWorm_Feat;" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(1d10,Poison)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable') and not WieldingWeapon('Torch')):ApplyEquipmentStatus(MainHand,TOXIN_PURPLEWORM_DIPPED,100,10);AI_IGNORE:IF(not HasPassive('ElementalAdept_Poison',context.Source) and WieldingWeapon('Dippable',true) and not WieldingWeapon('Torch',true)):ApplyEquipmentStatus(OffHand,TOXIN_PURPLEWORM_DIPPED,100,10);AI_ONLY:IF(not HasStatus('DIPPED_FIRE',GetActiveWeapon())):ApplyStatus(SELF,AI_HELPER_DIPWEAPON_TOXIN_PURPLE_WORM,100,4)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
