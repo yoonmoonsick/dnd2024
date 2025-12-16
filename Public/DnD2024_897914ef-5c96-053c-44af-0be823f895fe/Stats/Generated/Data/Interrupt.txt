@@ -1749,6 +1749,8 @@ data "Conditions" "not Self(context.Source, context.Observer) and IsAbleToReact(
 data "Properties" "TeleportSource();UseSpell(OBSERVER_TARGET,Target_Bloodthirst_Attack,true,true,true);"
 data "Cost" "ReactionActionPoint:1;BloodthirstCharge:1;"
 data "InterruptDefaultValue" "Ask;Enabled"
+data "EnableCondition" "not HasStatus('SG_Blinded');"
+data "EnableContext" "OnStatusApplied;OnStatusRemoved"
 
 new entry "Interrupt_DeadThree_Bloodthirst_30"
 type "InterruptData"
