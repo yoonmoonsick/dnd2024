@@ -3596,7 +3596,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant);Distance(18)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_LunarSmite" />
         <field name="StackId" type="StringTableFieldDefinition" value="FOUNT_OF_MOONLIGHT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FountOfMoonlight);IF(IsMeleeAttack() and HasDamageEffectFlag(DamageFlags.Hit)):DamageBonus(2d6,Radiant,Magical)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FountOfMoonlight);IF(IsMeleeAttack()):CharacterUnarmedDamage(2d6, Radiant);IF(IsMeleeAttack()):CharacterWeaponDamage(2d6, Radiant);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c15c513d-b7df-43c9-b35d-b3e73b5c51b7" />
       </fields>
     </stat_object>
