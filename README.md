@@ -21,7 +21,6 @@
 ## Bug Report Guidelines
 Following these guidelines will help me focus more efficiently on bug fixes. Reports that do not adhere to the following may be deleted without a separate response.
 * For bug reports, please use either **Nexus Mods** or **GitHub**.
-  * [Nexus Mods](https://www.nexusmods.com/baldursgate3/mods/12727?tab=bugs)
   * [GitHub](https://www.google.com/search?q=https://github.com/yoonmoonsick/dnd2024/issues)
 * **Do not report bugs that occur in conjunction with other mods.** My mod is not developed with compatibility with other mods in mind.
 * **Do not report crashes that occur during respeccing or leveling up as bugs unless the same issue occurs in a new game.**
