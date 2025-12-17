@@ -1885,7 +1885,7 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPreDamage" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Far" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( Self(context.Target,context.Observer) or Ally(context.Target, context.Observer) ) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and ( Self(context.Target,context.Observer) or Ally(context.Target, context.Observer) ) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Target);" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(SENTINELATDEATHSDOOR,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SentinelAtDeathsDoor:1;" />
         <field name="Stack" type="StringTableFieldDefinition" value="SentinelAtDeathsDoor" />
