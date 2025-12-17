@@ -19,6 +19,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1789,6 +1790,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8943,7 +8945,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="73cb352f-6713-4239-9c34-01cd94017190" />
         <field name="Name" type="NameTableFieldDefinition" value="VOID_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="37a29975-269c-4860-835f-6dc3c86b2f02" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(VOID_START,100,-1);TARGET:IF(Character()):ApplyStatus(VOID_END,100,-1);TARGET:IF(Character()):ApplyStatus(DIFFICULT_TERRAIN,100,-1);;" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character()):ApplyStatus(VOID_START,100,-1);TARGET:IF(Character()):ApplyStatus(VOID_END,100,-1);TARGET:IF(Character()):ApplyStatus(DIFFICULT_TERRAIN,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

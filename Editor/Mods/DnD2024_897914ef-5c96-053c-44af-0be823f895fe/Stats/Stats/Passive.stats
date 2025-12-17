@@ -7654,7 +7654,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedWeaponAttack() and not IsMiss() and Character() and not Dead() and TargetSizeEqualOrSmaller(Size.Large);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(GUT_SHOT,100,10);IF(IsCritical() and HasPassive('Spellslinger_10_AntimagicShot',context.Source)):ApplyStatus(ANTIMAGIC_SHOT,100,10);IF(IsCritical() and HasPassive('WhiteHat_6_ReachForTheSkies',context.Source)):ApplyStatus(FRIGHTENED,100,10, , , ,not SavingThrow(Ability.Wisdom, PoisonerSaveDC()))" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):ApplyStatus(GUT_SHOT,100,10);IF(IsCritical() and HasPassive('Spellslinger_10_AntimagicShot',context.Source)):ApplyStatus(ANTIMAGIC_SHOT,100,10);IF(IsCritical() and HasPassive('WhiteHat_6_ReachForTheSkies',context.Source)):ApplyStatus(FRIGHTENED,100,10,,,,not SavingThrow(Ability.Wisdom, PoisonerSaveDC()))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
