@@ -424,7 +424,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Dash_Haste" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e0fd05f4-0b0d-4663-beec-21d2b5de7928" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence;Stealth;Invisible;NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Attack_Haste" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -433,8 +433,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="Disengage_Haste" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="98f7d181-873d-42a7-9534-e0c3d62c0423" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="NoCameraMove;Temporary" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(DISENGAGE,100,1);AI_ONLY:IF(HasStatus('FLANKED')):ApplyStatus(DISENGAGE,100,1);IF(HasPassive('Feat_FairyTrickster'),context.Source):ApplyStatus(FAERIE_TROD_TROTTER,100,1);" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Attack_Haste" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -443,7 +443,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hide_Haste" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="45fab3f5-5c1b-41ba-bd40-0d506eac0f94" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Stealth;ImmediateCast;AllowMoveAndCast;Invisible;UnavailableInDialogs;CombatLogSetSingleLineRoll;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Attack_Haste" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -8572,7 +8572,7 @@
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" clear_inherited_value="true" value=",,;,,;,,;,,;,,;,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" clear_inherited_value="true" value=",,;,,;;,,;,,;,,;,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
