@@ -9,24 +9,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7a38617a-476c-4e2b-82c2-3ced2ac4b01f" />
-        <field name="Name" type="NameTableFieldDefinition" value="ONE_TURN_ONE_SPELL" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_OneTurnOneSpell;LongRangeThrow;" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ONE_TURN_ONE_SPELL" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6e18d3c5-acb7-4e14-ae99-6e0f87b62d95" />
-        <field name="Name" type="NameTableFieldDefinition" value="ONE_TURN_ONE_SPELL_TECHNICAL" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ONE_TURN_ONE_SPELL_TECHNICAL" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellPoint,1,0);UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ONE_SPELL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c93600bg28e3g0f8eg8875gaa24eb146854" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1792,10 +1784,11 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0dd1967e-693e-4d1c-a7c6-9cf23c4b169d" />
         <field name="Name" type="NameTableFieldDefinition" value="SWIFT_WITCHCRAFT" />
-        <field name="StackId" type="StringTableFieldDefinition" value="SWIFT_WITCHCRAFT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(SpellPoint,1,0);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
+        <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

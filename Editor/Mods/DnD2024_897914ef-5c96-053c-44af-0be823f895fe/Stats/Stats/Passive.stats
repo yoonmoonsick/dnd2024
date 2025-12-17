@@ -13,24 +13,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e98ec04a-50f3-4d5a-b787-99e35268fd10" />
         <field name="Name" type="NameTableFieldDefinition" value="DeathSavingThrows" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="190c08b9-8dc1-4d67-b2b7-65cb85c5aeb8" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ONE_TURN_ONE_SPELL,100,-1);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('ONE_TURN_ONE_SPELL');" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="114289a5-15e9-430c-b66d-3624d7d94d41" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_OneTurnOneSpell" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Magical" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c93600bg28e3g0f8eg8875gaa24eb146854" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SpellPoint:1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('ONE_TURN_ONE_SPELL_TECHNICAL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ONE_TURN_ONE_SPELL_TECHNICAL,100,-1);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnCastResolved;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL,100,1);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and not IsCantrip();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -40,21 +26,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,DASH);RemoveStatus(SELF,DASH_STACKED);RemoveStatus(SELF,DASH_STACKED_2)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4cdd150d-348e-4449-8626-14615a0b0d60" />
-        <field name="Name" type="NameTableFieldDefinition" value="LongRangeThrow" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc2b1150g8971g73e1g7e94g227819c7d3ae" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h29da524bg17a5gdc3cg3047gbfdcbc206b4c" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9); Distance(18)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_ThrowWeapon" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="98" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnCombatStarted;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('LONG_RANGE_THROW_TECHNICAL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(LONG_RANGE_THROW_TECHNICAL,100,-1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
