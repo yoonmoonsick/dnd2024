@@ -10,11 +10,11 @@ GetFaction(_Character, _TargetFaction)
 AND
 GetFaction(_Causee, _PlayerFaction)
 THEN
-ApplyStatus(_Character, "SURPRISED_INITIATIVE", 6.0, 1);
+SetCanJoinCombat(_Character, 0);
+SetCanFight(_Character, 0);
 LeaveCombat(_Character);
 SetCanJoinCombat(_Character, 1);
 SetCanFight(_Character, 1);
-EnterCombat(_Character, _Causee);
 SetHostileAndEnterCombat(_PlayerFaction, _TargetFaction, _Causee, _Character);
 EXITSECTION
 
