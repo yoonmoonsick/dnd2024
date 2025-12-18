@@ -1940,7 +1940,7 @@ data "EnabledConditions" "not HasPassive('FightingStyle_UnarmedFighting',context
 data "Properties" "Highlighted;ForceShowInCC"
 data "BoostContext" "OnEquip;OnCreate;OnCombatStarted"
 data "BoostConditions" "not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);"
-data "Boosts" "IF(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) ):MonkWeaponDamageDiceOverride(LevelMapValue(MartialArts));UnlockSpell(Target_UnarmedStrike_Monk_Action);"
+data "Boosts" "IF(not WearingArmor(context.Source) and not HasShieldEquipped(context.Source) and not WieldingWeapon('Twohanded',false,false,context.Source) ):MonkWeaponDamageDiceOverride(LevelMapValue(MartialArts));"
 
 new entry "MartialArts_DextrousUnarmedAttacks"
 type "PassiveData"

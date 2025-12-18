@@ -3230,25 +3230,18 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bdcc03d5-457a-4452-9626-ade32af7bf32" />
-        <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_REACH" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Acid);AttackSpellOverride(Target_UnarmedAttack_Reach, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Reach);UnlockSpell(Target_FlurryOfBlows_Reach)" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Tactical" />
-        <field name="Passives" type="StringTableFieldDefinition" value="ElemMonk_Push_Toggle" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="acdbc98b-44f8-49ad-b014-37a4f7e921c1" />
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_ACID" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="bdcc03d5-457a-4452-9626-ade32af7bf32" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Acid);AttackSpellOverride(Target_UnarmedAttack_Acid, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Acid);UnlockSpell(Target_FlurryOfBlows_Acid)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_UnarmedAttack'),ModifyVisuals(Action_UnarmedAttack_Acid));UnlockSpellVariant(SpellId('Target_FlurryOfBlows'),ModifyVisuals(Action_Monk_FlurryOfBlows_Acid));UnlockSpellVariant(SpellId('Target_UnarmedStrike_Monk'),ModifyVisuals(Action_Monk_FreeUnarmedStrike_Acid));UnlockSpellVariant(SpellId('Target_StunningStrike_Unarmed'),ModifyVisuals(Action_Monk_StunningStrike_Acid));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Yellow" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="ElemMonk_Push_Toggle" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_ATTUNEMENT_ELEMENTAL,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ELEMENTAL_ATTUNEMENT_ELEMENTAL)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3257,8 +3250,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_COLD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="acdbc98b-44f8-49ad-b014-37a4f7e921c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Cold);AttackSpellOverride(Target_UnarmedAttack_Cold, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Cold);UnlockSpell(Target_FlurryOfBlows_Cold)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_UnarmedAttack'),ModifyVisuals(Action_UnarmedAttack_Cold));UnlockSpellVariant(SpellId('Target_FlurryOfBlows'),ModifyVisuals(Action_Monk_FlurryOfBlows_Cold));UnlockSpellVariant(SpellId('Target_UnarmedStrike_Monk'),ModifyVisuals(Action_Monk_FreeUnarmedStrike_Cold));UnlockSpellVariant(SpellId('Target_StunningStrike_Unarmed'),ModifyVisuals(Action_Monk_StunningStrike_Cold));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Water" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3267,8 +3261,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_FIRE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="acdbc98b-44f8-49ad-b014-37a4f7e921c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Fire);AttackSpellOverride(Target_UnarmedAttack_Fire, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Fire);UnlockSpell(Target_FlurryOfBlows_Fire)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_UnarmedAttack'),ModifyVisuals(Action_UnarmedAttack_Fire));UnlockSpellVariant(SpellId('Target_FlurryOfBlows'),ModifyVisuals(Action_Monk_FlurryOfBlows_Fire));UnlockSpellVariant(SpellId('Target_UnarmedStrike_Monk'),ModifyVisuals(Action_Monk_FreeUnarmedStrike_Fire));UnlockSpellVariant(SpellId('Target_StunningStrike_Unarmed'),ModifyVisuals(Action_Monk_StunningStrike_Fire));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3277,8 +3272,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_LIGHTNING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="acdbc98b-44f8-49ad-b014-37a4f7e921c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Lightning);AttackSpellOverride(Target_UnarmedAttack_Lightning, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Lightning);UnlockSpell(Target_FlurryOfBlows_Lightning)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_UnarmedAttack'),ModifyVisuals(Action_UnarmedAttack_Lightning));UnlockSpellVariant(SpellId('Target_FlurryOfBlows'),ModifyVisuals(Action_Monk_FlurryOfBlows_Lightning));UnlockSpellVariant(SpellId('Target_UnarmedStrike_Monk'),ModifyVisuals(Action_Monk_FreeUnarmedStrike_Lightning));UnlockSpellVariant(SpellId('Target_StunningStrike_Unarmed'),ModifyVisuals(Action_Monk_StunningStrike_Lightning));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Air" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3287,19 +3283,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_THUNDER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="acdbc98b-44f8-49ad-b014-37a4f7e921c1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_UnarmedStrike_Monk_Thunder);AttackSpellOverride(Target_UnarmedAttack_Thunder, Target_UnarmedAttack);IF(ClassLevelHigherOrEqualThan(5,'Monk')):UnlockSpell(Target_StunningStrike_Unarmed_Thunder);UnlockSpell(Target_FlurryOfBlows_Thunder)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_UnarmedAttack'),ModifyVisuals(Action_UnarmedAttack_Thunder));UnlockSpellVariant(SpellId('Target_FlurryOfBlows'),ModifyVisuals(Action_Monk_FlurryOfBlows_Thunder));UnlockSpellVariant(SpellId('Target_UnarmedStrike_Monk'),ModifyVisuals(Action_Monk_FreeUnarmedStrike_Thunder));UnlockSpellVariant(SpellId('Target_StunningStrike_Unarmed'),ModifyVisuals(Action_Monk_StunningStrike_Thunder));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Thunder" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Purple" enumeration_type_name="FormatStringColor" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6f7d444d-6629-4189-af69-84ed4e8120af" />
-        <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_BREAK" />
-        <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT" />
-        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bbe22e07-3592-4dd6-9b70-748d55f72048" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_ELEMENTAL" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_ATTUNEMENT_ELEMENTAL" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -2347,13 +2347,13 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a9cc3700-e477-4932-bbda-6afb7387d81e" />
-        <field name="Name" type="NameTableFieldDefinition" value="ElementalAttunement_Reach" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ElementalAttunement" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_ATTUNEMENT_REACH,100,100);IF(ClassLevelHigherOrEqualThan(11,'Monk')):ApplyStatus(FLY_MONK,100,100) " />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7c8bc923-abad-44f1-a8f0-f7b8a94dc24a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalAttunement_Acid" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_ATTUNEMENT_ACID,100,100);IF(ClassLevelHigherOrEqualThan(11,'Monk')):ApplyStatus(FLY_MONK,100,100) " />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf36e42ebg19b3g3e20g83e2ga13556b6c66d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d836884geca8ge4a1g4d9dg5d2662fc8728" version="3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ElementalAttunement" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_HarmonyofFireAndWater_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:1" />
@@ -2363,18 +2363,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="eeb2f0ba-c0fe-4435-864c-17a2847ef9a7" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="efbebd8f-acd0-43ba-823d-0faf14507c6a" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7c8bc923-abad-44f1-a8f0-f7b8a94dc24a" />
-        <field name="Name" type="NameTableFieldDefinition" value="ElementalAttunement_Acid" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a9cc3700-e477-4932-bbda-6afb7387d81e" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_ATTUNEMENT_ACID,100,100);IF(ClassLevelHigherOrEqualThan(11,'Monk')):ApplyStatus(FLY_MONK,100,100) " />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf551601ag6987ge6a0ga8f7g93264eb1536e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d836884geca8ge4a1g4d9dg5d2662fc8728" version="3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2422,7 +2411,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4734ad1e-e0e2-4b47-a8d5-89392e13110d" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalAttunement_Break" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ElementalAttunement" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_ATTUNEMENT_BREAK,100,1);IF(ClassLevelHigherOrEqualThan(11,'Monk')):ApplyStatus(FLY_MONK,100,1) " />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(ELEMENTAL_ATTUNEMENT_ACID);RemoveStatus(ELEMENTAL_ATTUNEMENT_COLD);RemoveStatus(ELEMENTAL_ATTUNEMENT_FIRE);RemoveStatus(ELEMENTAL_ATTUNEMENT_LIGHTNING);RemoveStatus(ELEMENTAL_ATTUNEMENT_THUNDER);RemoveStatus(FLY_MONK);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_HarmonyOfFireAndWater" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h590fb105g695ag6de8g6901g04fe93d60a05" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5021d104geec7g49eag5cb8g443d13e45db7" version="1" />
@@ -2434,6 +2423,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="eeb2f0ba-c0fe-4435-864c-17a2847ef9a7" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="efbebd8f-acd0-43ba-823d-0faf14507c6a" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
