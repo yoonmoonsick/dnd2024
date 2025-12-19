@@ -588,3 +588,8 @@ end
 function HasProneStatus()
     return HasAnyStatus({'COMMAND_GROVEL', 'PRONE', 'PRONE_AFTER_THROW', 'PRONE_FALLEN', 'PRONE_GREASE', 'PRONE_ICE', 'PRONE_SEWER', 'PRONE_THUNDEROUS_SMITE', }, {}, {})
 end
+
+function MeleeUnarmed(entity)
+	entity = entity or context.Target
+    return ~WieldingWeapon('Melee', false, true, entity)
+end
