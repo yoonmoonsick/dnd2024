@@ -107,17 +107,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="075686ed-efe1-412e-b335-f2d0ca011b8e" />
         <field name="Name" type="NameTableFieldDefinition" value="FastHand" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e97c3156-5f9c-4190-b837-70f9e437ec9c" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
         <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="( Tagged('WPN_DAGGER') or Tagged('WPN_LIGHT_HAMMER')  or Tagged('POTION')  or Tagged('GRENADE')  ) and ( CanThrowWeight() and not Grounded() and not IsItemDisabled() and not HasAttribute('InventoryBound')  )" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FastHands" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="ThrownObjectRange" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject)):DealDamage(ThrownWeapon, ThrownWeaponDamageType);IF(HasWeaponProperty(WeaponProperties.Thrown,context.HitDescription.ThrownObject) and HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6, Force,Magical,,0,,true)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf32df104g546agd856g56a7g20387930e80b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18e6e0fcg3e90g9bf4gae8ag9d8cd3b764ff" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6cc84e6ag4decg3d08g357fg6c2f38bea887" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(HasStatus('MAG_SILENCE_THROW',context.HitDescription.ThrownObject)):ApplyStatus(SILENCED,100,2,,,,not SavingThrow(Ability.Constitution,ManeuverSaveDC()))" />
-        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(Character() and Enemy()):ApplyStatus(PRONE_AFTER_THROW,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

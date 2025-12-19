@@ -1344,6 +1344,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 - Level 3: Steady Aim
   - As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
+  - While wielding a finesse weapon as your main-hand melee weapon, you can use Dexterity instead of Strength for the attack and damage rolls of thrown weapon attacks.
 - Level 5: Cunning Strike
   - When you deal Sneak Attack damage, you can add one of the Cunning Strike effects.
   - Poison

@@ -3566,9 +3566,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="76c9b444-2635-4163-be76-4c0503afc6ec" />
         <field name="Name" type="NameTableFieldDefinition" value="FastHands_dnd2024" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e9e92b95-52aa-43b7-8bdd-9227da38fbaf" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0330dc73ge4f9gb26fg11b9gad76a42c17fe" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,SleightOfHand);ExpertiseBonus(SleightOfHand);Advantage(Skill,SleightOfHand);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):MinimumRollResult(RawAbility,2);IF(HasProficiencyBonus(context.CheckedAbility,context.CheckedSkill,context.Source)):MinimumRollResult(SkillCheck,2);IF(IsDexterityGreaterThanStrength()):RollBonus(RangedUnarmedAttack,DexterityModifier+1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0330dc73ge4f9gb26fg11b9gad76a42c17fe" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill,SleightOfHand);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h18e6e0fcg3e90g9bf4gae8ag9d8cd3b764ff" version="1" />
       </fields>
     </stat_object>
@@ -6862,11 +6862,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2580a91cgc91agf0f0g36abg26da8a9f27f8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03339692ga80egc45fga758gafed7b1a3bfc" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Sharpshooter_Bonuses" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SteadyAim)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,STEADY_AIM_BLOCK,100,1)" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Projectile_Jump')" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6874,8 +6872,23 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4b483c78-036b-43ae-9b5e-7ea402d84430" />
         <field name="Name" type="NameTableFieldDefinition" value="SteadyAim_Moveblock" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,STEADY_AIM_BLOCK,100,1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsMovementSpell();" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="12c5c0aa-8fde-467e-8b04-352c17cc72ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="SteadyAim_Throw" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78b9b3be-1bde-400c-b817-7c6935115999" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4c18aac2gbc3eg7e6fgb216g3118fc81fc72" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="IsDexterityGreaterThanStrength()" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsDexterityGreaterThanStrength() and (WieldingFinesseWeaponInSpecificHand(context.Source,false) or MeleeUnarmed())):MonkWeaponAttackOverride();" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
