@@ -17,7 +17,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnCastResolved;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,ONE_SPELL,100,1);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and not IsCantrip();" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('DOWNED_DISABLED')):DownedStatus(DOWNED,0);MinimumRollResult(RawAbility,2);MinimumRollResult(SkillCheck,2);MinimumRollResult(SavingThrow,2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(9) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(12) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(15) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);IF(not HasPassive('FightingStyle_ThrownWeaponFighting',context.Source) and DistanceToTargetGreaterThan(18) and IsRangedUnarmedAttack()):RollBonus(RangedUnarmedAttack,-2);ActionResource(NickActionPoint,1,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -538,7 +538,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_WeaponMastery" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,WM_GET_CLEAVE,100,-1);ApplyStatus(SELF,WM_GET_GRAZE,100,-1);ApplyStatus(SELF,WM_GET_NICK,100,-1);ApplyStatus(SELF,WM_GET_PUSH,100,-1);ApplyStatus(SELF,WM_GET_SAP,100,-1);ApplyStatus(SELF,WM_GET_SLOW,100,-1);ApplyStatus(SELF,WM_GET_TOPPLE,100,-1);ApplyStatus(SELF,WM_GET_VEX,100,-1);" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WM_GET_GRAZE);RemoveStatus(SELF,WM_GET_PUSH);RemoveStatus(SELF,WM_GET_SAP);RemoveStatus(SELF,WM_GET_SLOW);RemoveStatus(SELF,WM_GET_TOPPLE);RemoveStatus(SELF,WM_GET_VEX);RemoveStatus(SELF,WM_GET_NICK);RemoveStatus(SELF,WM_GET_CLEAVE)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,WM_GET_GRAZE);RemoveStatus(SELF,WM_GET_PUSH);RemoveStatus(SELF,WM_GET_SAP);RemoveStatus(SELF,WM_GET_SLOW);RemoveStatus(SELF,WM_GET_TOPPLE);RemoveStatus(SELF,WM_GET_VEX);RemoveStatus(SELF,WM_GET_CLEAVE)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d32aed6g0d6agf251gb6edg8c550834d1c0" version="1" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hd3caa2f8gba5dgd5b3g8184g3b4ec7e8cac3" version="1" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="WeaponMasteries" />
@@ -661,9 +661,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7764d206g13f1ga034ge2bfgb5419e7f54b6" version="6" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he4f9bf2ag2b9fg6e57g50bbg1116e74a6c7b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_OffHandAttack" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false));" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_Nick,Target_MainHandAttack);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_Nick,Target_MainHandAttack);UnlockSpellVariant(SpellId('Projectile_OffhandAttack_Firearm') or SpellId('Projectile_OffhandAttack') or SpellId('Target_OffhandAttack'),ModifyUseCosts(Replace,NickActionPoint,1,-1,BonusActionPoint));" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="d130918e-7ca1-498e-b55a-336a94b3edc8" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
