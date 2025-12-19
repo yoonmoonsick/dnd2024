@@ -6807,6 +6807,14 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "UND_Duergar_ShortswordOfFirstBlood_Passive"
+type "PassiveData"
+using "UND_Duergar_ShortswordOfFirstBlood_Passive"
+data "Boosts" "IF(IsMeleeWeaponAttack() and not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99, context.Target)):DamageBonus(1d6);"
+data "StatsFunctorContext" ""
+data "Conditions" ""
+data "StatsFunctors" ""
+
 new entry "MAG_Illrigger_LayOnHandsSupport_Gloves_Passive"
 type "PassiveData"
 using "MAG_Paladin_LayOnHandsSupport_Gloves_Passive"
