@@ -1,0 +1,644 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+//REGION Triggers
+
+PROC_TriggerRegisterForPlayers(S_DEN_GateOpenArea_de98af21-31c2-4560-a3bf-4956d8ca0618);
+PROC_TriggerRegisterForPlayers(S_DEN_GateOpenControlArea_ce97bfdb-ac89-4cd0-ae20-0fbc85fc7e3c);
+PROC_TriggerRegisterForPlayers(S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494);
+
+
+//END_REGION
+
+//REGION Gate sensitive characters
+
+PROC_SetHasDialogIfChar(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, 0);
+SetCanJoinCombat(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, 0);
+
+PROC_DEN_GateRegisterForCharacter(S_DEN_AdventurerLeader_82d1b843-9e8c-48a5-9d87-caddea5c193c);
+PROC_DEN_GateRegisterForCharacter(S_DEN_RobbedAdventurer_534bceaf-678c-40a0-8ca9-e1134f95ba0d);
+PROC_DEN_GateRegisterForCharacter(S_DEN_RaidAdventurer_4faf77a0-b883-4f7b-acbf-4500973f446d);
+PROC_DEN_GateRegisterForCharacter(S_HAG_Hag_c457d064-83fb-4ec6-b74d-1f30dfafd12d);
+
+//END_REGION
+
+//REGION Gate in use
+
+DB_DEN_GateInUse((ITEM)S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde);
+SetOnStage(S_DEN_RepairedGate_de5708cf-758e-47d2-aef7-b7d7162ba69e, 0);
+
+//END_REGION
+
+SetForceUpdate(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde, 1);
+
+DB_DialogBlockTradeButton((DIALOGRESOURCE)DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c);
+DB_DialogBlockAttackButton((DIALOGRESOURCE)DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c);
+
+SetFlag(DEN_RaidingParty_State_AllEntered_6fd21011-7a8e-48b9-9bd7-711356f3b44b, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+PROC_GLO_DifficultyModes_AddHPBoostedEntity(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde);
+PROC_GLO_DifficultyModes_AddHPBoostedEntity(S_DEN_RepairedGate_de5708cf-758e-47d2-aef7-b7d7162ba69e);
+KBSECTION
+//REGION General gate management
+
+//React when people enter or leave the control areas
+IF
+LeftTrigger(_Player, S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494)
+AND
+DB_DEN_CurrentGatekeeper(_Gatekeeper)
+AND
+DB_GlobalFlag((FLAG)DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49) // flagType: Global
+AND
+NOT DB_InRegion(_, S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494)
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsOpened(_Gate, 1)
+AND
+NOT QRY_DEN_Gate_IsOpeningOrClosing()
+THEN
+SetEntityEvent(_Gatekeeper, "DEN_CloseGate");
+
+IF
+EnteredTrigger(_Player, S_DEN_GateOpenControlArea_ce97bfdb-ac89-4cd0-ae20-0fbc85fc7e3c)
+AND
+DB_DEN_CurrentGatekeeper(_Gatekeeper)
+AND
+DB_GlobalFlag((FLAG)DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49) // flagType: Global
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsOpened(_Gate, 0)
+AND
+NOT QRY_DEN_Gate_IsOpeningOrClosing()
+AND
+DB_DEN_CurrentGatekeeper(_Gatekeeper)
+THEN
+SetEntityEvent(_Gatekeeper, "DEN_OpenGate");
+
+
+//Open or close the gate when the mechanism is used.
+IF
+UseStarted(_Char, S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b)
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsOpened(_Gate, _Opened)
+THEN
+SetCanInteract(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, 0);
+PROC_DEN_Gate_OpenOrCloseGate(_Opened);
+
+
+//Open or close the gate and play animations on the mechanism.
+PROC
+PROC_DEN_Gate_OpenOrCloseGate(0)
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+StopAnimation(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, 0);
+PlayAnimation(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, OBJ_Open_Unused_01_1c8ad609-f780-418e-9fdf-c52f6d749c9f, "");
+Open(_Gate);
+
+
+PROC
+PROC_DEN_Gate_OpenOrCloseGate(1)
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+StopAnimation(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, 0);
+PlayAnimation(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, OBJ_Close_Unused_01_a7078367-8eed-4ba7-a436-196774f68a60, "");
+ClearFlag(DEN_General_State_GateOpened_4b82bf78-2b07-02b4-9f0b-7d179896be2a, NULL_00000000-0000-0000-0000-000000000000, 0);
+Close(_Gate);
+
+//Reactivate lever, adjust DB for NPC pathing and check if gate needs to be closed/opened again when the closed and open events finish.
+
+IF
+Opened(_Gate)
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+SetFlag(DEN_General_State_GateOpened_4b82bf78-2b07-02b4-9f0b-7d179896be2a, NULL_00000000-0000-0000-0000-000000000000, 0);
+DB_DEN_OpenedGate(1);
+TimerLaunch("DEN_Gate_Opened", 500);
+
+
+IF
+Closed(_Gate)
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+NOT DB_DEN_OpenedGate(1);
+TimerLaunch("DEN_Gate_Closed", 500);
+
+
+IF
+TimerFinished("DEN_Gate_Opened")
+THEN
+SetCanInteract(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, 1);
+PROC_DEN_Gate_CheckOpenOrClose(1);
+
+IF
+TimerFinished("DEN_Gate_Closed")
+THEN
+SetCanInteract(S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, 1);
+PROC_DEN_Gate_CheckOpenOrClose(0);
+
+PROC
+PROC_DEN_Gate_CheckOpenOrClose(1)
+AND
+NOT DB_InRegion(_, S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494)
+AND
+DB_DEN_CurrentGatekeeper(_Gatekeeper)
+THEN
+SetEntityEvent(_Gatekeeper, "DEN_CloseGate");
+
+PROC
+PROC_DEN_Gate_CheckOpenOrClose(0)
+AND
+DB_InRegion(_, S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494)
+AND
+DB_DEN_CurrentGatekeeper(_Gatekeeper)
+THEN
+SetEntityEvent(_Gatekeeper, "DEN_OpenGate");
+
+PROC
+PROC_DEN_GateRegisterForCharacter((CHARACTER)_Character)
+THEN
+DB_DEN_GateSensitiveCharacter(_Character);
+
+IF
+DB_DEN_GateSensitiveCharacter(_Character)
+THEN
+TriggerRegisterForCharacter(S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494, _Character);
+TriggerRegisterForCharacter(S_DEN_GateOpenControlArea_ce97bfdb-ac89-4cd0-ae20-0fbc85fc7e3c, _Character);
+
+PROC
+PROC_DEN_GateUnregisterForCharacter((CHARACTER)_Character)
+THEN
+NOT DB_DEN_GateSensitiveCharacter(_Character);
+TriggerUnregisterForCharacter(S_DEN_GateCloseControlArea_d86fff07-bc96-4320-b1e6-e73a1712b494, _Character);
+TriggerUnregisterForCharacter(S_DEN_GateOpenControlArea_ce97bfdb-ac89-4cd0-ae20-0fbc85fc7e3c, _Character);
+
+PROC
+PROC_StateSet_PermaDefeated(_Character)
+AND
+DB_DEN_GateSensitiveCharacter((CHARACTER)_Character)
+THEN
+PROC_DEN_GateUnregisterForCharacter(_Character);
+
+IF
+DestroyedBy(S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde,_,_,_)
+THEN
+SetFlag(DEN_General_State_GateOpened_4b82bf78-2b07-02b4-9f0b-7d179896be2a, NULL_00000000-0000-0000-0000-000000000000, 0);
+DB_DEN_OpenedGate(1);
+NOT DB_DEN_GateInUse((ITEM)S_DEN_Gate_567055bf-ffeb-4236-8a61-e53877397fde);
+
+QRY
+QRY_DEN_Gate_IsOpeningOrClosing()
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsOpening(_Gate, 1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_DEN_Gate_IsOpeningOrClosing()
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsClosing(_Gate, 1)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_BlockUseOfItem(_Character, _Gate)
+AND
+DB_DEN_GateInUse(_Gate)
+THEN
+DB_CustomUseItemResponse(_Character, _Gate, 0);
+//END_REGION
+
+
+//REGION RaidingParty Logic
+
+//Plea at the gate happening. Add an extra blocker for gatekeeper. This is to allow everyone to re-enter before she starts closing the gate down again.
+IF
+DB_DEN_Gate_PendingReturnCharacter(_Character)
+AND
+NOT DB_DEN_Gate_BlockGateOperation(1)
+THEN
+DB_DEN_Gate_BlockGateOperation(1);
+ClearFlag(DEN_RaidingParty_State_AllEntered_6fd21011-7a8e-48b9-9bd7-711356f3b44b, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+IF
+DB_DEN_Gate_BlockGateOperation(1)
+AND
+NOT DB_DEN_Gate_PendingReturnCharacter(_)
+THEN
+SetFlag(DEN_RaidingParty_State_AllEntered_6fd21011-7a8e-48b9-9bd7-711356f3b44b, NULL_00000000-0000-0000-0000-000000000000, 0);
+
+PROC
+PROC_DEN_RaidingParty_StartPleaAtGate((CHARACTER)_Player)
+AND
+DB_DEN_RaidingParty_Adventurers(_Adventurer)
+THEN
+DB_DEN_Gate_PendingReturnCharacter(_Adventurer);
+TriggerRegisterForCharacter(S_DEN_InitialEntranceArea_18d5c6b1-18f9-495b-bf07-5cec38ac0b57,  _Adventurer);
+
+PROC
+PROC_DEN_RaidingParty_StartPleaAtGate((CHARACTER)_Player)
+AND
+DB_DEN_NPC(S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d, _, _)
+THEN
+DB_DEN_Gate_PendingReturnCharacter((CHARACTER)S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+TriggerRegisterForCharacter(S_DEN_InitialEntranceArea_18d5c6b1-18f9-495b-bf07-5cec38ac0b57,  S_Player_Wyll_c774d764-4a17-48dc-b470-32ace9ce447d);
+
+PROC
+PROC_StateSet_PermaDefeated(_Character)
+AND
+DB_DEN_Gate_PendingReturnCharacter((CHARACTER)_Character)
+THEN
+NOT DB_DEN_Gate_PendingReturnCharacter((CHARACTER)_Character);
+TriggerUnregisterForCharacter(S_DEN_InitialEntranceArea_18d5c6b1-18f9-495b-bf07-5cec38ac0b57,  _Character);
+
+IF
+EnteredTrigger(_Character, S_DEN_InitialEntranceArea_18d5c6b1-18f9-495b-bf07-5cec38ac0b57)
+AND
+DB_DEN_Gate_PendingReturnCharacter((CHARACTER)_Character)
+THEN
+NOT DB_DEN_Gate_PendingReturnCharacter((CHARACTER)_Character);
+TriggerUnregisterForCharacter(S_DEN_InitialEntranceArea_18d5c6b1-18f9-495b-bf07-5cec38ac0b57,  _Character);
+
+
+//Mark when gate is opened for the first time and the goblin raid has ended.
+IF
+DB_DEN_OpenedGate(1)
+AND
+DB_GlobalFlag(DEN_RaidingParty_Quest_GoblinRaidOver_98712d90-c46b-20c4-c4df-02c0117e85a5)
+AND
+NOT DB_GlobalFlag((FLAG)DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49) // flagType: Global
+THEN
+SetFlag((FLAG)DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49, NULL_00000000-0000-0000-0000-000000000000, 0); // flagType: Global
+PROC_TriggerUnregisterForPlayers(TRIGGERGUID_S_DEN_GateOpenArea_de98af21-31c2-4560-a3bf-4956d8ca0618);
+
+
+IF
+FlagSet(DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49, _, _) // flagType: Global
+AND
+DB_DEN_RaidingParty_Leaders(_Leader)
+AND
+DB_Defeated(_Leader)
+AND
+QRY_OnlyOnce("DEN_RaidingParty_CheckLeaderDeath")
+THEN
+PROC_DEN_RaidingParty_ConfrontationCompleted();
+
+
+IF
+FlagSet(DEN_RaidingParty_Quest_GoblinRaidOver_98712d90-c46b-20c4-c4df-02c0117e85a5, _, _)
+THEN
+PROC_DEN_RaidingParty_OpenGate();
+
+PROC
+PROC_DEN_RaidingParty_OpenGate()
+AND
+NOT DB_OnlyOnce("DEN_RaidingParty_OpenGate")
+AND
+DB_Defeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+THEN
+PROC_DEN_RaidingParty_OpenGate_JournalHook();
+SetFlag(DEN_RaidingParty_Event_OpenDenGate_1018a5ed-3543-a4c2-9dd7-138517d55e5e, NULL_00000000-0000-0000-0000-000000000000, 0);
+DB_OnlyOnce("RaidingParty_OpenGate");
+
+IF
+FlagSet(DEN_RaidingParty_Event_OpenDenGate_1018a5ed-3543-a4c2-9dd7-138517d55e5e, _, _)
+THEN
+DB_DEN_CurrentGatekeeper((CHARACTER)S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a);
+PROC_DEN_Gate_OpenOrCloseGate(0);
+
+PROC
+PROC_DEN_RaidingParty_OpenGate()
+AND
+NOT DB_OnlyOnce("DEN_RaidingParty_OpenGate")
+AND
+NOT DB_Defeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+AND
+DB_InRegion(_Player, S_DEN_GateOpenArea_de98af21-31c2-4560-a3bf-4956d8ca0618)
+AND
+QRY_SpeakerIsAvailable(_Player, 0, 1)
+AND
+QRY_StartDialog(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a, _Player)
+THEN
+//quest entry given in the dialog directly
+DB_OnlyOnce("RaidingParty_OpenGate");
+
+IF
+DialogStarted(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, _ID)
+THEN
+PROC_DEN_RaidingParty_AddCharactersToOpenGateDialog(_ID);
+
+IF
+DialogEnded(DEN_RaidingParty_OpenGate_0310abff-a694-177e-1aa0-a431556a3f3c, _Inst)
+AND
+DB_DialogPlayers(_Inst, _Player, _)
+THEN
+PROC_UnlockWaypoint("WAYP_DEN_Camp",(CHARACTER)_Player); //force unlocking the waypoint if the player went through Raiding Party normally
+PROC_UnlockWaypoint("WAYP_DEN_Camp_2",(CHARACTER)_Player);
+
+PROC
+PROC_DEN_RaidingParty_AddCharactersToOpenGateDialog((INTEGER)_ID)
+AND
+DB_Players(_Player)
+AND
+DB_InRegion(_Player, S_DEN_GateOpenArea_de98af21-31c2-4560-a3bf-4956d8ca0618)
+AND
+NOT DB_DialogPlayers(_ID, _Player, _)
+AND
+QRY_SpeakerIsAvailable(_Player, 0, 1)
+THEN
+PROC_DialogAddListeningActor(_ID, _Player);
+
+PROC
+PROC_DEN_RaidingParty_OpenGate()
+AND
+NOT DB_OnlyOnce("RaidingParty_OpenGate")
+AND
+NOT DB_Defeated(S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a)
+THEN
+SetFlag((FLAG)DEN_RaidingParty_Event_OpenDenGate_1018a5ed-3543-a4c2-9dd7-138517d55e5e);
+PROC_TryStartAD(DEN_RaidingParty_AD_TieflingLeaderWantsGateOpened_8ec34419-eee3-5d5e-cff7-276ac65b187e, S_DEN_TieflingLeader_475200ee-cc3c-4dbe-84b1-1820c02ea26a);
+PROC_DEN_RaidingParty_OpenGate_JournalHook();
+
+PROC
+PROC_DEN_RaidingParty_OpenGate_JournalHook() //when DEN_RaidingParty_OpenGate fails, otherwise the update is given in that dialog
+THEN
+DB_NOOP(1);
+
+IF
+AutomatedDialogStarted(DEN_RaidingParty_AD_TieflingLeaderWantsGateOpened_8ec34419-eee3-5d5e-cff7-276ac65b187e, _)
+THEN
+DB_OnlyOnce("RaidingParty_OpenGate");
+
+IF
+FlagSet(DEN_RaidingParty_Event_GateIsOpened_735e0e81-bd67-eb67-87ac-40da4c3e6c49, _, _)
+THEN
+PROC_SetHasDialogIfChar(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, 1);
+SetCanJoinCombat(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a, 1);
+
+
+//END_REGION
+
+//REGION AttackOnDen Logic
+
+IF
+DialogEnded(DEN_AttackOnDen_EntranceMeeting_278c9ec1-02f0-c9ae-01d8-cd4507ce40cc, _)
+THEN
+PROC_DEN_Gate_OpenOrCloseGate(0);
+
+//END_REGION
+
+//REGION NPCs leaving den
+
+PROC
+PROC_DEN_LeaveDen((CHARACTER)_Character)
+AND
+QRY_DEN_CanLeaveDen()
+THEN
+PROC_DEN_LeaveDen(_Character, "Run");
+
+PROC
+PROC_DEN_LeaveDen((CHARACTER)_Character,(STRING)_Speed)
+AND
+TriggerGetRandomPosition(S_DEN_LeaveArea_a85d8d3f-3ea6-4e2c-8571-eb998ecfa80f, _X, _Y, _Z)
+THEN
+DB_DEN_Leaving(_Character);
+PROC_DEN_GateRegisterForCharacter(_Character);
+PROC_RemoveDialog(_Character);
+SetFlag(DEN_Gate_State_Leaving_2428f301-b27b-4f75-99b9-45a71f3dba23,_Character);
+PROC_CharacterMoveToPosition(_Character, _X, _Y, _Z, _Speed, "DEN_ReadyToleave");
+
+// We should keep an eye on that: at different points in the grove it doesn't make any sense to allow players to leave den. 
+// Example case: attack on den. Characters are leaving DEN right during the goblin attack - and the gate opens for them
+QRY
+QRY_DEN_CanLeaveDen()
+AND
+NOT DB_State_Current(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", "DEN_State_AttackOnDen")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((CHARACTER)_Character, "DEN_ReadyToLeave")
+THEN
+DB_DEN_WaitingAtGate(_Character);
+PROC_DEN_GateRegisterForCharacter(_Character);
+ObjectTimerLaunch(_Character, "DEN_Gate_BackupOpenGateTimer", 8000);
+
+IF
+ObjectTimerFinished((CHARACTER)_Character, "DEN_Gate_BackupOpenGateTimer")
+AND
+DB_DEN_WaitingAtGate(_Character)
+AND
+NOT DB_DEN_BackupGatekeeper(_)
+THEN
+DB_DEN_BackupGatekeeper(_Character);
+
+//Try again later if someone else was chosen to open the gate.
+IF
+ObjectTimerFinished((CHARACTER)_Character, "DEN_Gate_BackupOpenGateTimer")
+AND
+DB_DEN_WaitingAtGate(_Character)
+AND
+DB_DEN_BackupGatekeeper(_)
+THEN
+ObjectTimerLaunch(_Character, "DEN_Gate_BackupOpenGateTimer", 8000);
+
+IF
+DB_DEN_WaitingAtGate(_Character)
+AND
+DB_DEN_OpenedGate(1)
+AND
+QRY_TriggerEvents_AnyPlayerInTrigger(S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+THEN
+PurgeOsirisQueue(_Character);
+
+IF
+QueuePurged((CHARACTER)_Character)
+AND
+DB_DEN_WaitingAtGate(_Character)
+AND
+TriggerGetRandomPosition(S_DEN_OutsideLeaveArea_bc528607-56ed-4f1b-9ae1-76c391b96d57, _X, _Y, _Z)
+THEN
+NOT DB_DEN_WaitingAtGate(_Character);
+PROC_CharacterMoveToPosition(_Character, _X, _Y, _Z, "Run", "DEN_NPC_OutsideDen");
+
+
+IF
+EntityEvent((CHARACTER)_Character, "DEN_NPC_OutsideDen")
+AND
+DB_DEN_Leaving(_Character)
+THEN
+NOT DB_DEN_Leaving(_Character);
+ClearFlag(DEN_Gate_State_Leaving_2428f301-b27b-4f75-99b9-45a71f3dba23,_Character);
+PROC_DisappearOutOfSightTo(_Character, S_DEN_LeaveDirection_ea27b551-614e-4a2b-be30-eec246744860, "Run", 1, "DEN_NPC_LeftDen");
+
+
+IF
+DB_DEN_WaitingAtGate(_Character)
+AND
+NOT QRY_TriggerEvents_AnyPlayerInTrigger(S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+THEN
+NOT DB_DEN_WaitingAtGate(_Character);
+SetOnStage(_Character, 0);
+SetEntityEvent(_Character, "DEN_NPC_LeftDen");
+
+//Chosen backup gatekeeper attempts to open gate on their own if gate is closed when they try to leave.
+IF
+DB_DEN_BackupGatekeeper(_Character)
+AND
+NOT DB_DEN_OpenedGate(1)
+THEN
+PROC_CharacterMoveTo(_Character, S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, "Run", "");
+Use(_Character, S_DEN_GateMechanism_5564d21c-9033-4958-8cc8-cd3f497bb51b, "");
+
+IF
+DB_DEN_WaitingAtGate(_Character)
+AND
+NOT DB_DEN_CurrentGatekeeper(_)
+AND
+NOT DB_DEN_BackupGatekeeper(_)
+THEN
+DB_DEN_BackupGatekeeper(_Character);
+
+IF
+WentOnStage((CHARACTER)_Character, 0)
+AND
+DB_DEN_CurrentGatekeeper(_Character)
+THEN
+NOT DB_DEN_CurrentGatekeeper(_Character);
+
+IF
+WentOnStage((CHARACTER)_Character, 0)
+AND
+DB_DEN_BackupGatekeeper(_Character)
+THEN
+NOT DB_DEN_BackupGatekeeper(_Character);
+PROC_DEN_Gate_TryGetNewBackupGatekeeper();
+
+PROC
+PROC_StateSet_PermaDefeated((CHARACTER)_Character)
+AND
+DB_DEN_BackupGatekeeper(_Character)
+THEN
+NOT DB_DEN_BackupGatekeeper(_Character);
+PROC_DEN_Gate_TryGetNewBackupGatekeeper();
+
+PROC
+PROC_DEN_Gate_TryGetNewBackupGatekeeper()
+AND
+DB_DEN_WaitingAtGate(_Character)
+AND
+NOT DB_DEN_BackupGatekeeper(_)
+THEN
+DB_DEN_BackupGatekeeper(_Character);
+
+PROC
+PROC_State_Changed(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _State)
+AND
+DB_DEN_OnlyDruidStates(_State)
+THEN
+NOT DB_DEN_CurrentGatekeeper(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a);
+
+PROC
+PROC_State_Changed(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _State)
+AND
+DB_DEN_OnlyDruidStates(_State)
+AND
+NOT DB_PermaDefeated(S_DEN_DruidGuard_001_d1de6b4d-02d1-47f9-8e9e-55a593e3dc71)
+AND
+DB_DEN_NPC(S_DEN_DruidGuard_001_d1de6b4d-02d1-47f9-8e9e-55a593e3dc71, _, _)
+THEN
+DB_DEN_CurrentGatekeeper(S_DEN_DruidGuard_001_d1de6b4d-02d1-47f9-8e9e-55a593e3dc71);
+
+PROC
+PROC_State_Changed(S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211, "DEN", _State)
+AND
+DB_DEN_OnlyDruidStates(_State)
+AND
+NOT DB_DEN_CurrentGatekeeper(_)
+AND
+DB_DEN_GateInUse(_Gate)
+AND
+IsOpened(_Gate, 0)
+THEN
+Open(_Gate);
+
+
+//END_REGION
+
+//REGION Put characters off stage when out of view because players have left.
+
+//Leaving characters get put off stage only when players leave the grove.
+PROC
+PROC_DEN_AllPlayersLeftDen()
+AND
+DB_DEN_Leaving(_Character)
+THEN
+NOT DB_DEN_Leaving(_Character);
+NOT DB_DEN_WaitingAtGate(_Character);
+SetOnStage(_Character, 0);
+SetEntityEvent(_Character, "DEN_NPC_LeftDen");
+ClearFlag(DEN_Gate_State_Leaving_2428f301-b27b-4f75-99b9-45a71f3dba23,_Character);
+
+//Set characters waiting at the gate off stage if players aren't close to the Grove entrance.
+IF
+DB_DEN_WaitingAtGate(_Character)
+AND
+NOT DB_InRegion(_, S_DEN_EntranceArea_27796261-6c41-4fa2-8afe-6616d7d3e176)
+THEN
+NOT DB_DEN_Leaving(_Character);
+NOT DB_DEN_WaitingAtGate(_Character);
+SetOnStage(_Character, 0);
+SetEntityEvent(_Character, "DEN_NPC_LeftDen");
+ClearFlag(DEN_Gate_State_Leaving_2428f301-b27b-4f75-99b9-45a71f3dba23,_Character);
+
+//END_REGION
+
+//REGION Character defeat handling
+
+PROC
+PROC_StateSet_PermaDefeated(_Character)
+AND
+DB_DEN_WaitingAtGate((CHARACTER)_Character)
+THEN
+NOT DB_DEN_WaitingAtGate((CHARACTER)_Character);
+
+PROC
+PROC_StateSet_PermaDefeated(_Character)
+AND
+DB_DEN_Leaving((CHARACTER)_Character)
+THEN
+NOT DB_DEN_Leaving((CHARACTER)_Character);
+
+PROC
+PROC_StateSet_Defeated(_Character)
+AND
+DB_DEN_CurrentGatekeeper((CHARACTER)_Character)
+THEN
+DB_DEN_DefeatedGatekeeper((CHARACTER)_Character);
+NOT DB_DEN_CurrentGatekeeper((CHARACTER)_Character);
+
+PROC
+PROC_StateCleared_Defeated(S_DEN_Gatekeeper_847717b3-82eb-45a7-b875-78665c12ce9a)
+AND
+DB_DEN_DefeatedGatekeeper((CHARACTER)_Character)
+THEN
+DB_DEN_CurrentGatekeeper((CHARACTER)_Character);
+NOT DB_DEN_DefeatedGatekeeper((CHARACTER)_Character);
+
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"
