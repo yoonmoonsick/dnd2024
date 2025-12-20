@@ -7808,7 +7808,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HATE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4655c28-b6ac-49c0-ad64-584a3e938a76" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and (Tagged('UNDEAD') or Tagged('FIEND'))):ApplyStatus(AURA_OF_HATE_BUFF)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageBonus(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(max(1,Cause.CharismaModifier), Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7819,7 +7820,8 @@
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally() and (Tagged('UNDEAD') or Tagged('FIEND'))):ApplyStatus(AURA_OF_HATE_BUFF)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageBonus(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):CharacterWeaponDamage(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(max(1,Cause.CharismaModifier), Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7827,7 +7829,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="525d9c77-97ee-4e25-8319-9c4f70e7a4b4" />
         <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HATE_BUFF" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="928fe843-cf3e-4030-9b98-7d92d5dd57a8" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageBonus(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageBonus(max(1, Cause.CharismaModifier),Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3);DealDamage(max(1,Cause.CharismaModifier), Necrotic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
