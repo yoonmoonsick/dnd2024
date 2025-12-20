@@ -957,7 +957,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="IntellectDevourer_SummonAberration" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2e451beb-da38-4d3a-9f60-1eb78f1cc4b6" />
         <field name="XPReward" type="GuidObjectTableFieldDefinition" value="40806669-8c6b-4068-8bc4-07e4981bb020" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill, Perception); ProficiencyBonus(Skill, Stealth); BlockRegainHP(Undead;Construct);IncreaseMaxHP(34);UnlockSpell(Target_Claws_IntellectDevourer_Colony);UnlockSpell(Projectile_SynapticDischarge_IntDev_Colony);UnlockSpell(Target_DevourIntellect_US)" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill, Perception);ProficiencyBonus(Skill, Stealth);BlockRegainHP(Undead;Construct);UnlockSpell(Target_DevourIntellect_US);" />
         <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
         <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
         <field name="Level" type="IntegerTableFieldDefinition" value="7" />
@@ -970,7 +970,31 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="15" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="40" />
         <field name="UnarmedAttackAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
-        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Blindsight;AttackOfOpportunity;DarknessRules;Darkvision;ExtraAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7821b3e8-9b39-4ee7-bc4a-5452a571a5d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spectator_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8912d0b5-cc32-46cf-aba0-c8ad500cf314" />
+        <field name="XPReward" type="GuidObjectTableFieldDefinition" value="40806669-8c6b-4068-8bc4-07e4981bb020" />
+        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
+        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="9" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:9;ReactionActionPoint:1;EyeStalkActionPoint1" />
+        <field name="Strength" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Dexterity" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="18" />
+        <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Armor" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Vitality" type="IntegerTableFieldDefinition" value="50" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating;FloatingWhileMoving" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;Darkvision;DarknessRules;Spectator_FallResist;ExtraAttack" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -985,32 +1009,13 @@
         <field name="Strength" type="IntegerTableFieldDefinition" value="16" />
         <field name="Dexterity" type="IntegerTableFieldDefinition" value="10" />
         <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
-        <field name="Intelligence" type="IntegerTableFieldDefinition" value="16" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="20" />
         <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
         <field name="Charisma" type="IntegerTableFieldDefinition" value="6" />
         <field name="Armor" type="IntegerTableFieldDefinition" value="17" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="60" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7821b3e8-9b39-4ee7-bc4a-5452a571a5d4" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spectator_SummonAberration" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8912d0b5-cc32-46cf-aba0-c8ad500cf314" />
-        <field name="XPReward" type="GuidObjectTableFieldDefinition" value="40806669-8c6b-4068-8bc4-07e4981bb020" />
-        <field name="PsychicResistance" type="EnumerationListTableFieldDefinition" value="Immune" enumeration_type_name="ResistanceFlags" version="1" />
-        <field name="DifficultyStatuses" type="StringTableFieldDefinition" value="STATUS_EASY:PLAYER_BONUSES_EASYMODE" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="9" />
-        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:12;ReactionActionPoint:1;EyeStalkActionPoint:1" />
-        <field name="Strength" type="IntegerTableFieldDefinition" value="16" />
-        <field name="Dexterity" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Constitution" type="IntegerTableFieldDefinition" value="15" />
-        <field name="Intelligence" type="IntegerTableFieldDefinition" value="16" />
-        <field name="Wisdom" type="IntegerTableFieldDefinition" value="10" />
-        <field name="Charisma" type="IntegerTableFieldDefinition" value="6" />
-        <field name="Armor" type="IntegerTableFieldDefinition" value="16" />
-        <field name="Vitality" type="IntegerTableFieldDefinition" value="50" />
-        <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating;FloatingWhileMoving" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="UnarmedRangedAttackAbility" type="EnumerationTableFieldDefinition" value="Intelligence" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="MagicResistance;AttackOfOpportunity;DarknessRules;ExtraAttack" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1221,6 +1226,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="16" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="40" />
         <field name="Passives" type="StringTableFieldDefinition" value="Darkvision;AttackOfOpportunity;DarknessRules;Summon_Unarmed_Damage_4;ExtraAttack" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:15;ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1232,6 +1238,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="17" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="50" />
         <field name="Passives" type="StringTableFieldDefinition" value="Darkvision;AttackOfOpportunity;DarknessRules;Summon_Unarmed_Damage_5;ExtraAttack" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:15;ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1243,6 +1250,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="18" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="60" />
         <field name="Passives" type="StringTableFieldDefinition" value="Darkvision;AttackOfOpportunity;DarknessRules;Summon_Unarmed_Damage_6;ExtraAttack_2" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:15;ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1262,6 +1270,7 @@
         <field name="Armor" type="IntegerTableFieldDefinition" value="15" />
         <field name="Vitality" type="IntegerTableFieldDefinition" value="30" />
         <field name="Passives" type="StringTableFieldDefinition" value="Darkvision;AttackOfOpportunity;DarknessRules;Summon_Unarmed_Damage_3" />
+        <field name="ActionResources" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;Movement:15;ReactionActionPoint:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

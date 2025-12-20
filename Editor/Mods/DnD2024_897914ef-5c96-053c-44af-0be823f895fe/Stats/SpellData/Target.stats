@@ -2010,6 +2010,64 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb761a95-3e3a-436b-9ea0-9e25c33c025b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Claws_IntellectDevourer_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="14111a5a-c10d-438a-b58c-b9aae612c720" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+UnarmedMeleeAbilityModifier,Slashing)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+UnarmedMeleeAbilityModifier,Slashing)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c282809-e7d8-4270-9273-37fd75cbbd44" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Spectator_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2bc22856-c6df-4c1d-8726-b2091dc32190" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+UnarmedMeleeAbilityModifier,Piercing);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+UnarmedMeleeAbilityModifier,Piercing);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d6f8fa70-3599-4e73-9c32-80ec4f80f5e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ParalyzingRay_Spectator_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d889e272-a92a-495f-a5a0-0c0296ec6113" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_HoldMonster" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f3ced4d0-b329-4f3e-a888-816ff53346ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="FearRay_Spectator_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94b82957-c136-416f-acee-8484dda099f7" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(FRIGHTENED,100,2);DealDamage(1d4+SpellCastingAbilityModifier,Psychic);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((1d4+SpellCastingAbilityModifier)/2,Psychic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d4+SpellCastingAbilityModifier,Psychic);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Fear" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c06b9dc0-915f-4c76-bb13-df667e37f530" />
+        <field name="Name" type="NameTableFieldDefinition" value="WoundingRay_Spectator_SummonAberration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21c521fe-f601-48d9-9c53-d6159ba96530" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10+SpellCastingAbilityModifier,Necrotic);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((1d10+SpellCastingAbilityModifier)/2,Necrotic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10+SpellCastingAbilityModifier,Necrotic);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedSpellAttack" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2fcc5960-8c82-4add-82ac-b63383c1cee3" />
@@ -8400,26 +8458,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d3ac1ac7-8d4f-4c0d-89eb-7b272a87d768" />
-        <field name="Name" type="NameTableFieldDefinition" value="ParalyzingRay_Spectator_Summon" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d889e272-a92a-495f-a5a0-0c0296ec6113" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(PARALYZED_SPECTATOR,100,1)" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fd581701-8948-4d86-964f-c2901f14485a" />
-        <field name="Name" type="NameTableFieldDefinition" value="WoundingRay_Spectator_Summon" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="21c521fe-f601-48d9-9c53-d6159ba96530" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d10)/2,Necrotic);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ae42b8c8-0285-41a7-b35f-66d1f4354941" />
         <field name="Name" type="NameTableFieldDefinition" value="GlobeOfInvulnerability" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="82f6dfe0-8551-4a36-8f2f-e632024a4c6a" />
@@ -14414,17 +14452,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="54e658e8-98a4-4df6-9e36-f2df20fbbd3b" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_NPCs" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b61a624a-73d7-403e-a2e1-9add1f763bf6" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bite_Spectator" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2bc22856-c6df-4c1d-8726-b2091dc32190" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Piercing);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing)" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
