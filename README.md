@@ -280,7 +280,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 - Level 1: Spell casting (1/2 Caster)
 - Level 2: Replicate Magic Item
-  - You have learned arcane plans that you use to make magic items. As you gain levels in the Artificer class, you learn plans for more magic items. At 6th and 10th level, you can replicate more rare magic items. Non-consumable magic items grant permanent effects to you, while consumables are recreated after each long rest.
+  -   Masters of invention, Artificers decode the complex system of magic to unlock extraordinary capabilities in everyday objects. Through this feature, you unlock a specialized set of Arcane Plans to replicate magic items. Based on the plan group you choose, you will be able to craft specific magical gear—ranging from destructive weapons to utility gadgets—at the end of a Long Rest. Choose your field of specialization to determine which instruments you will forge to aid your adventure.
 - Level 6: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
 - Level 7: Flash of Genius ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FlashOfGenius.png?raw=true)
