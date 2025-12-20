@@ -184,6 +184,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c13e1d84-0582-497e-90ff-a48bf904c5fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNI_MistyStep_DrowCommander_Amulet" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18da5e7a-4fa9-4318-98f9-0fca0a1ba97c" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e7bd3108-50af-4c45-b51d-69a342ed43d8" />
         <field name="Name" type="NameTableFieldDefinition" value="UNI_RobeOfSummer_Entangle" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c9536eff-0490-4c3c-9c1e-25f13517c185" />
@@ -201,15 +210,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c6205048-3d20-4423-a3d4-48c2c0658fa5" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;Invisible" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c13e1d84-0582-497e-90ff-a48bf904c5fb" />
-        <field name="Name" type="NameTableFieldDefinition" value="UNI_MistyStep_DrowCommander_Amulet" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="18da5e7a-4fa9-4318-98f9-0fca0a1ba97c" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9370,6 +9370,316 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04945689-3b40-4f66-936f-b0c90c954388" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Attack_Plans" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h625c926bgb1b4ga1c1g3cfdg55d31c25589d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f74817bg2b70gb901ged0bgf5981af37671" version="2" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Attack_MagicWeapon;Target_Artificer_Plans_Attack_WandOfTheWarMage;Target_Artificer_Plans_Attack_WrapsOfUnarmedPower;Target_Artificer_Plans_Attack_ReturningWeapon;Target_Artificer_Plans_Attack_FlameTongue;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_MagicWeapon" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ArtificerMagicItem:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ce49b5f6-5e42-4120-bb41-f10d89805caf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Attack_MagicWeapon" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9509b2e0-05d9-4319-a518-538dea28ea71" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source) and Item()):ApplyStatus(MAGIC_WEAPON,100,-1);IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source) and Item()):ApplyStatus(MAGIC_WEAPON_4,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source) and not Item()):ApplyEquipmentStatus(MainHand,MAGIC_WEAPON_4,100,-1);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArtificerMagicItem:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff246815g7be7g194fgeae9g1e49254a27f8" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hb83297e8gd965g3e5dg0591gc0c0e20b4b09" version="2" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="2;10;1;2" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Attack_Plans" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb7573bc-8715-488d-b93c-cab415a27b7d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Attack_WandOfTheWarMage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce49b5f6-5e42-4120-bb41-f10d89805caf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd6158505g19f0g8ed2g00aeg5f435742999c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6a7f9b37g7213g4328g9bceg352bf62c1c31" version="4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_WAND_OF_THE_WAR_MAGE,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_WAND_OF_THE_WAR_MAGE_2,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_WAND_OF_THE_WAR_MAGE,100,-1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_RadianceOfTheDawn" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cd51fe8-1f76-4f19-82d4-2da098c63005" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Attack_WrapsOfUnarmedPower" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb7573bc-8715-488d-b93c-cab415a27b7d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_WRAPS_OF_UNARMED_POWER,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_WRAPS_OF_UNARMED_POWER_2,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_WRAPS_OF_UNARMED_POWER,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3306c946g091fg48f1g0d7agcd4019b341bd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_UnarmedDamage" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32e5c670g3993g12dag5865g367d66c96be0" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ffcb3c4-247e-46be-9491-f0d41e4e6304" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Attack_ReturningWeapon" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h27d4ab1cg9ee9gb1a1gcf8dg218324440999" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb7573bc-8715-488d-b93c-cab415a27b7d" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedThrow" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_RETURNING_WEAPON,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_RETURNING_WEAPON_2,100,-1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a96fb4fg86f5g3e4ag4260g5b2998c89e86" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="477ab4e0-175d-4373-ab52-46708c6bc571" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Defense_Plans" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he61f925bgfc97g93cfg3696gf33811590cd3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6cb4d966gf8d3g9b1ag45c1ga7131615854e" version="3" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Defense_Shield;Target_Artificer_Plans_Defense_MindSharpener;Target_Artificer_Plans_Defense_Armor;Target_Artificer_Plans_Defense_ArmorOfResistance;Target_Artificer_Plans_Defense_RingOfProtection;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MageArmor" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ArtificerMagicItem:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16c7317a-d897-4e50-8b42-a9012595054c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Defense_Shield" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce49b5f6-5e42-4120-bb41-f10d89805caf" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_MAGIC_SHIELD,100,-1);IF(ClassLevelHigherOrEqualThan(10,'Artificer',context.Source)):ApplyStatus(ARTIFICER_MAGIC_SHIELD_2,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Item() or (Ally() and HasShieldEquipped(context.Target));" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_MAGIC_SHIELD,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h951c5d8fg2a6ag18b5gdeedgf74ef6e5697c" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Defense_Plans" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ShieldOfFaith" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2197f6b1g95fagc8fdg1f4egdcb07ae63376" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a613b5bb-c1f2-4d72-af5d-ad88a2b561d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Defense_MindSharpener" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66753e46g1e71g5e3bg6712g101a8e423f9e" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Artificer',context.Source);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_MIND_SHARPENER,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_MIND_SHARPENER,100,-1);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce49b5f6-5e42-4120-bb41-f10d89805caf" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FocusedConjuration" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9fefa025g9dd3g8329g6520g2b267415ed19" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Defense_Plans" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c6ded44-47ef-401c-9397-70c84cfcf2b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Defense_Armor" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16c7317a-d897-4e50-8b42-a9012595054c" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not ClassLevelHigherOrEqualThan(12,'Artificer',context.Source)):ApplyStatus(ARTIFICER_MAGIC_ARMOR,100,-1);IF(ClassLevelHigherOrEqualThan(12,'Artificer',context.Source)):ApplyStatus(ARTIFICER_MAGIC_ARMOR_2,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_MAGIC_ARMOR,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b4d6621ge94ag2cf3g3091g376bb459148c" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="6;12;1;2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Artificer',context.Source);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_MageArmor" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5978a831gfe06gc604gbe67g760cdff91e4c" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="623e5020-f0e1-4892-b0f4-4cffdfa76a92" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Defense_ArmorOfResistance" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16c7317a-d897-4e50-8b42-a9012595054c" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_ARMOR_OF_RESISTANCE,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ARTIFICER_ARTIFICER_ARMOR_OF_RESISTANCE,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h629794cbg9ed8g77bag3654ga3a5882f3922" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5138494bgfe54ge053g565eg021c47e984eb" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Artificer',context.Source);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_Stoneskin" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8e55364ga67dg1ea5gb723gb899658fba17" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82ba772f-0da7-4671-9c7e-fa0e29b41e27" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Movement_Plans" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42a8d5a4gd01fgfdbfgabb6g03d2742e37c6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6bcb95c7g26afgb7c6g0002gbaaf2aa90445" version="3" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Movement_RingOfStriding;Target_Artificer_Plans_Movement_RingOfJumping;Target_Artificer_Plans_Movement_RingOfFeatherFalling;Target_Artificer_Plans_Movement_RingOfFreeAction;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ArtificerMagicItem:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ad2d549-86e9-40bf-bc14-da4453500bc9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Movement_RingOfStriding" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="101620af-403d-4b13-962e-40ababaab70a" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(ArtificerPlans)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ae579abg23f8ge271g1bd6g2c6e68a4138c" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2e101ba1gea28g2682g6243g1de1a7164c3c" version="2" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArtificerMagicItem:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsMelee;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Movement_Plans" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h437a07bdgdc6bg932ag9872ge5a92600e2e4" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="819faad5-2cd9-4b63-96d1-8fb57b3738f0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Movement_RingOfJumping" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ad2d549-86e9-40bf-bc14-da4453500bc9" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(LONG_JUMP,100,10)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(ArtificerPlans)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LongJump" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf4639d34gf35ag3dc0g0e99ga74b086fb4ed" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(LONG_JUMP,100,10)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArtificerMagicItem:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he172e184gb0a1gbddageda6g8b1d8a758d94" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="adffafd7-8418-4f6e-b15f-9965aa3502ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Movement_RingOfFeatherFalling" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ad2d549-86e9-40bf-bc14-da4453500bc9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FEATHER_FALL,100,10);" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(ArtificerPlans)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_FeatherFall" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65fdfc0cgf56cgc914g1e99g0a74b864a8e0" version="1" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArtificerMagicItem:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he4ff38dfg3e9agaca2gba3dg537a103c5b61" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa49ef7f-dca0-44fd-a842-2c45bce7b9ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Movement_RingOfFreeAction" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd893f3f5gc4f5g6da2gb1c4g738724b697ce" version="2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Artificer',context.Source);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ad2d549-86e9-40bf-bc14-da4453500bc9" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(FREEDOM_OF_MOVEMENT,100,-1);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(FREEDOM_OF_MOVEMENT,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArtificerMagicItem:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Ally()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_FreedomOfMovement" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha76c8001gca01gefd0g8deeg6f3a3ea34149" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e7e0cad2-ec8f-4bf5-ab9e-bfb25eee8fab" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_Plans" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd89edae7gca0agf9f7g0778g207a5e2cc809" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e0879f8ge48cg4b5fgbf12g2e4273f303f7" version="8" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Utility_GogglesOfNight;Target_Artificer_Plans_Utility_LanternOfRevealing;Target_Artificer_Plans_Utility_SpellRefuelingRing;Target_Artificer_Plans_Utility_SpellRefuelingRing_2;Target_Artificer_Plans_Utility_SpellRefuelingRing_3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Wizard_ArcaneRecovery" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ArtificerMagicItem:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="610d3e20-4df1-4012-ad57-7b95b9623c01" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_GogglesOfNight" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aecf7fdd-192d-4ca0-adda-ba1b039213bb" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h21bb5263g163egae22gb056g64a5aa2b2b67" version="1" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArtificerMagicItem:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Artificer_Plans_Utility_Plans" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3e5f7bcbgc8a8g1962g6eeag2ac5c466a2ba" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5e1e864-9b3c-4482-9454-7b6206e43e50" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_LanternOfRevealing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2cd00142gb675g2520g3c84ge2fc0d5528c4" version="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Artificer',context.Source);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="610d3e20-4df1-4012-ad57-7b95b9623c01" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArtificerMagicItem:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_SeeInvisibility" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SEE_INVISIBILITY,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SEE_INVISIBILITY,100,-1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha5cc8172gaeb3g4c06g5a3fg5dc387013b24" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be2d549a-c70b-4399-8cbf-4f580b9dbd5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_SpellRefuelingRing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2964e8f4g3a6fg45b0g2969g481331b92d1d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55bbf5cbg00d0g4cc7gad26g80b943eb819b" version="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;ArtificerMagicItem:1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="610d3e20-4df1-4012-ad57-7b95b9623c01" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Wizard_ArcaneRecovery" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(2,'Artificer',context.Source);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5138494bgfe54ge053g565eg021c47e984eb" version="1" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0212d2ab-8302-4172-8f4d-dbe02492596a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_SpellRefuelingRing_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be2d549a-c70b-4399-8cbf-4f580b9dbd5f" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,2);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(6,'Artificer',context.Source);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97c88a93-5f7e-41f2-b451-4d3e6e77907c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Artificer_Plans_Utility_SpellRefuelingRing_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be2d549a-c70b-4399-8cbf-4f580b9dbd5f" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SpellSlot,1,3);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="ClassLevelHigherOrEqualThan(10,'Artificer',context.Source);" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e9bc651c-e070-4ddc-bf14-442f23b89dfb" />
         <field name="Name" type="NameTableFieldDefinition" value="SpellStoringItem" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9509b2e0-05d9-4319-a518-538dea28ea71" />
@@ -9378,7 +9688,6 @@
         <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SPELL_ITEM_BASE,100,-1);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Legendary_Offensive" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SPELL_ITEM_BASE,100,-1);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
