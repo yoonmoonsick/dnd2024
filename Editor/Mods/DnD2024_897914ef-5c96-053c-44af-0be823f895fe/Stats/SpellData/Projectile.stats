@@ -3021,7 +3021,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier, MainRangedWeaponDamageType);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Physical_Ranged" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(TrueStrike),Radiant)" />
@@ -3030,9 +3029,12 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedWeaponAttack);" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="be75ea00-f753-4d9e-ab04-4993691d099c" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="0198563f-c48b-45e0-afb5-46ef9576adff" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="66bfefab-b458-455f-8ff4-e0546c1579b4" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bf6277b9-90e5-4a66-ac51-9eda41fa9cbf" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TrueStrike" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Druid_LuminousArrow_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Druid_LuminousArrow_L1to3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3056,7 +3058,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="dcf8d47d-776b-49ad-a968-93c3322359f4" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4)):DealDamage(MainRangedWeapon+SpellCastingAbilityModifier-DexterityModifier+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);ApplyStatus(CUNNING_STRIKE,100,0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and (   ( ((HasAdvantage(AttackType.RangedWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.RangedWeaponAttack)) ) or ( not Tagged('INANIMATE') and ((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) or (HasPassive('SneakAttackSwitch',context.Source) and not HasEnemyWithinRange('SG_Incapacitated',1.5, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',1.5, nil,false,context.Source,context.Target))) and not HasDisadvantage(AttackType.RangedWeaponAttack) )   );" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike_Ranged_Sneak" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_SneakAttack_Ranged" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant)" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53ad1006ge033g808fgdcecgcc857a028774" version="1" />
