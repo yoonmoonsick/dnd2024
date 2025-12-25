@@ -9211,7 +9211,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ForcefulSneakAttack_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="602b797d-5748-4bcf-90ea-876b90b17163" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack), Force)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+ClassLevel(Rogue)/2, Force,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Target_TrueStrike_Radiant_Sneak') or SpellId('Projectile_TrueStrike_Radiant_Sneak');" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
