@@ -1473,6 +1473,8 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(1d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1481,7 +1483,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(2d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1490,7 +1493,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(3d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1499,7 +1503,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="ASHARDALONS_STRIDE_DAMAGE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dfe84646-3a5c-4799-a2ea-cbc03721e856" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGED,100, 1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ASHARDALONS_STRIDE_DAMAGE_RECEIVED')):DealDamage(4d6,Fire);ApplyStatus(ASHARDALONS_STRIDE_DAMAGE_RECIEVED,100, 1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2456,8 +2461,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ecd64fb7-6aaf-49f4-bc6e-9e1f50f4c732" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(4d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2466,8 +2471,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="41ca9936-39a4-4821-ac4a-b23bf0949cdf" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(6d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(6d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(6d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2476,8 +2481,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="49440b12-14f2-46ae-b0da-519a69707ab0" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(8d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(8d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(8d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2486,8 +2491,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72e53e2a-4b55-4174-98ea-02821e2fa1ad" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(10d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(10d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(10d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2496,8 +2501,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="CLOUD_OF_DAGGERS_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="64808e48-8413-4da4-b93b-7cb125031a44" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(12d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(12d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('CLOUD_OF_DAGGERS_DAMAGE_RECEIVED')):DealDamage(12d4,Slashing,Magical);ApplyStatus(CLOUD_OF_DAGGERS_DAMAGE_RECEIVED,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
