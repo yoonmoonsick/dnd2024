@@ -9115,6 +9115,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3848a9ba-94ae-4bd2-8ef0-1f1e1db549d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DeadThree_KillRecharge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c370d8bg43c7ge58bg3b51ge30d0856f141" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8eb3264g0b49g242eg73b7g32f49b0f26e9" version="2" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Bloodthirst_Attack') and not Self() and Character() and Enemy() and IsKillingBlow();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,BloodthirstCharge,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b9a3744e-2e44-4bb7-9d52-0d482ceffa6e" />
         <field name="Name" type="NameTableFieldDefinition" value="UND_Duergar_ShortswordOfFirstBlood_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0802e1c0-069c-456d-a325-bdbd775ed6f9" />
@@ -9199,6 +9210,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a82ae6ce-b763-4494-8fb1-a04e5a10fd5b" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ForcefulSneakAttack_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="602b797d-5748-4bcf-90ea-876b90b17163" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack), Force)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+ClassLevel(Rogue)/2, Force,Magical)" />
       </fields>
     </stat_object>
