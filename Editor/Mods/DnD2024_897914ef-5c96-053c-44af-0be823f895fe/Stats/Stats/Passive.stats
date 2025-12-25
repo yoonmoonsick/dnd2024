@@ -1664,7 +1664,7 @@
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PierceTheWeak" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Piercing, Resistant);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Piercing,context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and not (Tagged('CONSTRUCT') or Tagged('ELEMENTAL') or Tagged('OOZE') or Tagged('PLANT') or Tagged('UNDEAD')) and HasDamageDoneForType(DamageType.Piercing,context.Target);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(GAPING_WOUND, 100, 2)" />
       </fields>
     </stat_object>
@@ -1678,7 +1678,7 @@
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_SlashTheWeak" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreResistance(Slashing, Resistant);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and HasDamageDoneForType(DamageType.Slashing,context.Target);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Character() and not (Tagged('CONSTRUCT') or Tagged('ELEMENTAL') or Tagged('OOZE') or Tagged('PLANT') or Tagged('UNDEAD')) and HasDamageDoneForType(DamageType.Piercing,context.Target);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(BLEEDING, 100, 2)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
