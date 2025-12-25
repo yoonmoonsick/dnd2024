@@ -1226,7 +1226,7 @@ data "TooltipSave" "Constitution"
 data "Icon" "Action_MagicItem_SlashTheWeak"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "IgnoreResistance(Slashing, Resistant);"
-data "Conditions" "Character() and not (Tagged('CONSTRUCT') or Tagged('ELEMENTAL') or Tagged('OOZE') or Tagged('PLANT') or Tagged('UNDEAD')) and HasDamageDoneForType(DamageType.Piercing,context.Target);"
+data "Conditions" "Character() and not (Tagged('CONSTRUCT') or Tagged('ELEMENTAL') or Tagged('OOZE') or Tagged('PLANT') or Tagged('UNDEAD')) and HasDamageDoneForType(DamageType.Slashing,context.Target);"
 data "StatsFunctors" "IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(BLEEDING, 100, 2)"
 
 new entry "FocusedCritical"
