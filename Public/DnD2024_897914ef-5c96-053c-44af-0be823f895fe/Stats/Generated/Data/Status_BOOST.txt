@@ -2219,6 +2219,40 @@ data "OnApplyFail" "IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(6d1
 data "OnTickSuccess" "IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(6d10,Radiant,Magical)"
 data "OnTickFail" "IF(not HasStatus('MOONBEAM_DAMAGE_RECEIVED')):DealDamage(6d10/2,Radiant,Magical)"
 
+new entry "MOONBEAM_OWNER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOONBEAM_OWNER"
+data "Boosts" "IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam_Move);IF(Player(context.Source)):UnlockSpell(Throw_Moonbeam);StatusImmunity(SG_Invisible);StatusImmunity(SANCTUARY);"
+
+new entry "MOONBEAM_OWNER_3"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOONBEAM_OWNER_3"
+data "Boosts" "IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam_Move_3);IF(Player(context.Source)):UnlockSpell(Throw_Moonbeam);StatusImmunity(SG_Invisible);StatusImmunity(SANCTUARY);"
+
+new entry "MOONBEAM_OWNER_4"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOONBEAM_OWNER_4"
+data "Boosts" "IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam_Move_4);IF(Player(context.Source)):UnlockSpell(Throw_Moonbeam);StatusImmunity(SG_Invisible);StatusImmunity(SANCTUARY);"
+
+new entry "MOONBEAM_OWNER_5"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOONBEAM_OWNER_5"
+data "Boosts" "IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam_Move_5);IF(Player(context.Source)):UnlockSpell(Throw_Moonbeam);StatusImmunity(SG_Invisible);StatusImmunity(SANCTUARY);"
+
+new entry "MOONBEAM_OWNER_6"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MOONBEAM_OWNER_6"
+data "Boosts" "IF(not Player(context.Source)):UnlockSpell(Target_Moonbeam_Move_6);IF(Player(context.Source)):UnlockSpell(Throw_Moonbeam);StatusImmunity(SG_Invisible);StatusImmunity(SANCTUARY);"
+
+new entry "New_Stat_16"
+type "StatusData"
+data "StatusType" "BOOST"
+
 new entry "MOONBEAM_DAMAGE_RECEIVED"
 type "StatusData"
 data "StatusType" "BOOST"
