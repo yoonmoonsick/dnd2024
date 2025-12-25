@@ -2300,14 +2300,14 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Fire,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Fire,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Fire,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2,Fire,Magical)" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="6e0864cb-3453-4bf7-bc1e-8ab9f1aeb98e" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Fireball" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h43dad996gd155g254cg779fg582f5bc47342" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h04674654gcfb7g3cdfg47a5g1c3264d651ef" version="2" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Fire,Magical)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h04674654gcfb7g3cdfg47a5g1c3264d651ef" version="4" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Fire,Magical)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
@@ -2321,7 +2321,7 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanAreaDamageEvade;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18);Distance(4)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2335,12 +2335,11 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="4" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC()) " />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Acid,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Acid,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Acid,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2 ,Acid,Magical)" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Acid" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h13f803fbg9ec5g6f8agcef4g096c3e21e2da" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Acid,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Acid,Magical)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
@@ -2360,6 +2359,7 @@
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="81b6ad2d-3c22-4e2d-8f3d-036b50f87ee9" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="fb41b1d8-b5b4-492e-9194-be94bf3d43f6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0571b5d0-4f4e-4b81-babc-68c63044a2ab" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2367,11 +2367,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="168c8210-3bab-483b-b313-6298936e578b" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Cold,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Cold,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Cold,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2 ,Cold,Magical)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Cold" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40b5204dg10ffg4ca0gdcb5ge4f9b7121b21" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Cold,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Cold,Magical)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_SphereOfElementalBalanceIce_L1to3" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="c7438204-9e84-4eee-91b4-c3289fbda0b7,,;,,;206575b7-21c0-4dcf-a9c1-a048f76d3126,,;f8469c98-cffd-4c36-8999-7e99879006be,,;36a98c4d-bab0-4302-ae78-d7a75c3bb9e4,,;,,;688653ba-7032-4d40-ac02-ce8b3af93516,,;,,;,," />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="db4f3a99-7c98-4aed-8f15-ab0845bbecfa" />
@@ -2388,11 +2387,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);GROUND:CreateSurface(4,2,Fire);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Fire,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Fire,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Fire,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2,Fire,Magical)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Fire" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa56876age4dcg51fcg6744g85a8358c7a81" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Fire,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Fire,Magical)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_SphereOfElementalBalanceThunder_L1to3" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="c7438204-9e84-4eee-91b4-c3289fbda0b7,,;,,;206575b7-21c0-4dcf-a9c1-a048f76d3126,,;f8469c98-cffd-4c36-8999-7e99879006be,,;36a98c4d-bab0-4302-ae78-d7a75c3bb9e4,,;,,;688653ba-7032-4d40-ac02-ce8b3af93516,,;,,;,," />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="12b395bd-32d7-45d5-b75f-288f1c0f6a7f" />
@@ -2407,11 +2405,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b062a595-ab53-41eb-b9b0-df70c70e004f" />
         <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Lightning,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts))/2 ,Lightning,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Lightning,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2 ,Lightning,Magical)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Lightning" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71ed6d07g7475g39e2gcdceg15bbd2e56a44" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts) +LevelMapValue(MartialArts) +LevelMapValue(MartialArts) ,Lightning,Magical)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Lightning,Magical)" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_SphereOfElementalBalanceLightning_L1to3" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="c7438204-9e84-4eee-91b4-c3289fbda0b7,,;,,;206575b7-21c0-4dcf-a9c1-a048f76d3126,,;f8469c98-cffd-4c36-8999-7e99879006be,,;36a98c4d-bab0-4302-ae78-d7a75c3bb9e4,,;,,;688653ba-7032-4d40-ac02-ce8b3af93516,,;,,;,," />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="21dcbca6-469c-4a63-9d80-c732468623a5" />
@@ -2420,6 +2417,25 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify);GROUND:CreateSurface(4,2,WaterElectrified);ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="09410842-1a06-4457-89ab-607877ccaede" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3998c491-7b47-4449-8781-b9ca26be4a23" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalBurst_Thunder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7649d2d7-af59-45cd-bb24-bdc1e7797c64" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Thunder,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst)/2 ,Thunder,Magical);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="c7cd4b0a-2b2e-47ae-a4e8-849ad5d448f8" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ChromaticOrb_Thunder" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ElementalBurst),Thunder,Magical)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_SphereOfElementalBalanceThunder_L1to3" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="c7438204-9e84-4eee-91b4-c3289fbda0b7,,;,,;206575b7-21c0-4dcf-a9c1-a048f76d3126,,;f8469c98-cffd-4c36-8999-7e99879006be,,;36a98c4d-bab0-4302-ae78-d7a75c3bb9e4,,;,,;688653ba-7032-4d40-ac02-ce8b3af93516,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="b70c0a6b-f58e-4f27-9844-1b3b27e45329" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8bb23006-3e88-45df-a7ff-376a205f0292" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="62c93179-7074-43f1-9fb9-71851615c279" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
