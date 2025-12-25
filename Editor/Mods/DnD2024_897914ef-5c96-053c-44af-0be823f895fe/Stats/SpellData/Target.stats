@@ -11699,38 +11699,6 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="AbilityGreaterThan('Charisma',21,context.Source);" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="198d7ca9-6090-4aa0-8f25-29738ff8afd3" />
-        <field name="Name" type="NameTableFieldDefinition" value="PurpleDragonCompanion" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="fb83c069-4629-47ab-88fb-123821c9c646" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:IF(not ClassLevelHigherOrEqualThan(7,'Fighter')):Summon(c9130c30-0a30-4bca-8c6c-dec2505de88a,Permanent,,,'PurpleDragonCompanion',PURPLEDRAGONCOMPANION,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Fighter')):Summon(821f952f-7876-4b35-bd76-3a9ccb1d35b6,Permanent,,,'PurpleDragonCompanion',PURPLEDRAGONCOMPANION_7,UNSUMMON_ABLE,SHADOWCURSE_SUMMON_CHECK);GROUND:IF(ClassLevelHigherOrEqualThan(7,'Fighter')):ApplyStatus(SELF,DRAGON_OWNER,100,-1);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('c9130c30-0a30-4bca-8c6c-dec2505de88a') and not Character() and not Self();" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SecondWindCharge:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;CannotTargetItems;CannotTargetCharacter" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Fighter_PurpleDragonCompanion" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8791a662-1d09-4a67-92c2-c889b0214da4" />
-        <field name="Name" type="NameTableFieldDefinition" value="PurpleDragonCompanion_Rend" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6cc900b1-dfb1-4ba4-af1f-a08423846d88" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);Cast2[DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);DealDamage(1d6,Force)];" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(max(1,1d6+UnarmedMeleeAbilityModifier),Slashing);&#xD;&#xA;DealDamage(1d6+UnarmedMeleeAbilityModifier,Piercing);&#xD;&#xA;DealDamage(1d6,Force);" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF008000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bf4acc24-9ac8-4fc8-aab0-35a7202629cb" />
