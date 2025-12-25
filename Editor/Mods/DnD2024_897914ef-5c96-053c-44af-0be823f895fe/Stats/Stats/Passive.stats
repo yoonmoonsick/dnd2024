@@ -127,7 +127,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hff3fef16g4dcbg44e3g8bfbg3b15c27102c5" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h19b7bc50g3ddcg5a48ge4dag9929c22898d3" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CrossbowExpert_Loading" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Reload);ActionResource(CrossbowLoadingMainHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source)):UnlockSpellVariant(not SpellId('Projectile_OffhandAttack') and HasStringInSpellRoll('AttackType.RangedWeaponAttack'),ModifyUseCosts(Add,CrossbowLoadingMainHand,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Reload);ActionResource(CrossbowLoadingMainHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading', context.Source) and not HasPassive('FirearmSpecialist', context.Source)):UnlockSpellVariant(not SpellId('Projectile_OffhandAttack') and (SpellId('Projectile_MainHandAttack_Firearm') or HasStringInSpellRoll('AttackType.RangedWeaponAttack'),ModifyUseCosts(Add,CrossbowLoadingMainHand,1,0));" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingMainHand" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
@@ -138,7 +138,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2276ff09-14b6-4715-ae24-68bb5c483da8" />
         <field name="Name" type="NameTableFieldDefinition" value="Crossbow_Loading_OffHand" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fbfac853-0ad4-48b8-b85e-545a69ebfbe7" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading',context.Source)):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(CrossbowLoadingOffHand,1,0);IF(not HasPassive('CrossbowExpert_IgnoreLoading', context.Source) and not HasPassive('FirearmSpecialist', context.Source)):UnlockSpellVariant(SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Add,CrossbowLoadingOffHand,1,0));" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="CrossbowLoadingOffHand" />
       </fields>
     </stat_object>
@@ -1698,7 +1698,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7248386c-713c-45d3-9222-40dce4bd1cf5" />
         <field name="Name" type="NameTableFieldDefinition" value="FirearmSpecialist" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="93e63833-9389-4664-98e0-c637af91976c" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="90cd345a-d5f5-49d1-bfd2-6364a8605b13" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h06007cd3gb73eg265dgf647g932fa171ebea" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc62e020cg071bg1233gba79g98ac32da0aa5" version="5" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Ability(Dexterity,1,20);" />
