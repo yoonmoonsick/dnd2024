@@ -6615,6 +6615,14 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "DeadThree_KillRecharge"
+type "PassiveData"
+data "DisplayName" "h5c370d8bg43c7ge58bg3b51ge30d0856f141;1"
+data "Description" "he8eb3264g0b49g242eg73b7g32f49b0f26e9;2"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "SpellId('Target_Bloodthirst_Attack') and not Self() and Character() and Enemy() and IsKillingBlow();"
+data "StatsFunctors" "RestoreResource(SELF,BloodthirstCharge,1,0)"
+
 new entry "UND_Duergar_ShortswordOfFirstBlood_Passive"
 type "PassiveData"
 using "UND_Duergar_ShortswordOfFirstBlood_Passive"
@@ -6672,6 +6680,7 @@ data "Boosts" "IF(Tagged('ABERRATION', context.Source)):Disadvantage(AttackTarge
 new entry "MAG_ForcefulSneakAttack_Passive"
 type "PassiveData"
 using "MAG_ForcefulSneakAttack_Passive"
+data "DescriptionParams" "DealDamage(LevelMapValue(ForcefulSneakAttack), Force)"
 data "StatsFunctors" "DealDamage(1d4+ClassLevel(Rogue)/2, Force,Magical)"
 
 new entry "MAG_Mobility_JumpOnDash_Passive"
