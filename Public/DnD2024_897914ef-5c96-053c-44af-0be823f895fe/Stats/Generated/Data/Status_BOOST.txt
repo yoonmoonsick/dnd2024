@@ -4883,13 +4883,6 @@ data "StackPriority" "1"
 data "StackType" "Overwrite"
 data "Boosts" "IF(IsMeleeAttack()):Advantage(AttackRoll);IF(IsUnarmedAttack()):Advantage(AttackRoll);IF(IsThrowAttackRoll()):Advantage(AttackRoll);Advantage(AttackTarget)"
 
-new entry "RECKLESS_ATTACK_NO_ADV"
-type "StatusData"
-data "StatusType" "BOOST"
-using "RECKLESS_ATTACK"
-data "StackPriority" "2"
-data "Boosts" "Advantage(AttackTarget);"
-
 new entry "FIRST_ATTACK_TURN"
 type "StatusData"
 data "StatusType" "BOOST"
