@@ -1363,7 +1363,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="22b9130a-2b7b-46d1-a4f5-fcc74078310c" />
         <field name="Name" type="NameTableFieldDefinition" value="FireShield_Warm_Feat" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce77245e-853e-43a8-bcf2-453bde75df8a" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_FIRE_SHIELD_WARM,100,0);ApplyStatus(SELF,PASSIVE_FIRE_SHIELD_WARM_ATTACKER,100,0);DealDamage(SWAP,1d4, Fire,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_FIRE_SHIELD_WARM,100,0);ApplyStatus(SELF,PASSIVE_FIRE_SHIELD_WARM_ATTACKER,100,0);DealDamage(SWAP,1d4,Fire,Magical,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3665,7 +3665,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63ab1481g071eg45f2ga3ecg8cf903b3cb71" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasPassive('ElementalAdept_Poison',context.Source) and IsWeaponAttack();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):DealDamage(1d4,Poison)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(11))):DealDamage(1d4,Poison,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3675,7 +3675,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf26bf2b3g964eg44dbga2ccgebf64ffc0bcc" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):DealDamage(1d6,Poison)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(13))):DealDamage(1d6,Poison,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3684,7 +3684,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_Wyvern_Feat" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8dd30c57gd4e1g4908gaf30g376c206dffb0" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):DealDamage(1d8,Poison)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(15))):DealDamage(1d8,Poison,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3693,7 +3693,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Toxin_PurpleWorm_Feat" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a6b655fc-640a-47f7-adf8-0c6255ff536e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7952da7gee54g48fdg8f17g84ab33e3e4d6" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):DealDamage(1d10,Poison)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Constitution, PoisonerSaveDC(19))):DealDamage(1d10,Poison,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4575,7 +4575,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="WildMagicBarbarian_MagicRetribution_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="399560ab-900b-42de-8deb-de7091b1d019" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip), Force)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,LevelMapValue(D6Cantrip), Force,Magical);ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,LevelMapValue(D6Cantrip),Force,Magical,,0,,true,true,false,true));ApplyStatus(SELF,PASSIVE_WILDMAGIC_MAGICRETRIBUTION_DEFENDER,100,0);ApplyStatus(PASSIVE_WILDMAGIC_MAGICRETRIBUTION_ATTACKER,100,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4979,7 +4979,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasHPPercentageWithoutTemporaryHPLessThan(50,context.Target);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Necrotic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Necrotic,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6341,7 +6341,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadba9566gd956g2168g7029g5e2150f63f5e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold,Magical,,0,,true,true,false,true);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -6499,7 +6499,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic,Magical,,0,,true,true,false,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7479,7 +7479,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_LiarsDice);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsRangedAttack();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIARS_DICE_GOOD',context.Source) and not IsMiss()):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);RemoveStatus(SELF,LIARS_DICE_GOOD)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIARS_DICE_GOOD',context.Source) and not IsMiss()):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType,Magical,,0,,true,true,false,true);RemoveStatus(SELF,LIARS_DICE_GOOD)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8097,7 +8097,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_HEX,100,0);DealDamage(4,Necrotic)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_HEX,100,0);DealDamage(4,Necrotic,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8481,7 +8481,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28cad581gf918g6e18g75a2g51cf031b90e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h55f4d215g630eg63e7g9793g23624487f067" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Illrigger_Bloodstroke" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,11,Necrotic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,11,Necrotic,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9228,7 +9228,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_ForcefulSneakAttack_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="602b797d-5748-4bcf-90ea-876b90b17163" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack), Force)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(LevelMapValue(ForcefulSneakAttack),Force,Magical,,0,,true,true,false,true)" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_SneakAttack') or SpellId('Projectile_SneakAttack') or SpellId('Target_TrueStrike_Radiant_Sneak') or SpellId('Projectile_TrueStrike_Radiant_Sneak');" />
       </fields>
     </stat_object>
@@ -9291,6 +9291,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e58ff70g5cd1g9786g545fgecf368b80499" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(11,Slashing,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9330,7 +9331,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Initiative(5);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(11,Necrotic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(11,Necrotic,Magical,,0,,true,true,false,true)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_SpiritualWeapon_Trident" />
       </fields>
     </stat_object>
@@ -9343,7 +9344,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_PactOfTheBlade_Glaive" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(11,Slashing,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsCritical()):DealDamage(11,Slashing,Magical,,0,,true,true,false,true)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -9369,7 +9370,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Frightened);StatusImmunity(SG_Charmed);DarkvisionRangeMin(9);StatusImmunity(BLINDED_DARKNESS);StatusImmunity(SG_Blinded);IgnoreSurfaceCover(SurfaceDarknessCloud);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and Tagged('UNDEAD');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d10,Necrotic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(SWAP,2d10,Necrotic,Magical,,0,,true,true,false,true)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
@@ -9457,7 +9458,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon();" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Paladin',context.Source) and (Tagged('FIEND') or Tagged('UNDEAD'))):DealDamage(1d10, Radiant);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(1,'Paladin',context.Source) and (Tagged('FIEND') or Tagged('UNDEAD'))):DealDamage(1d10, Radiant,Magical,,0,,true,true,false,true);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9495,7 +9496,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b0bf1d9f-c08e-461f-a058-3a905cfd8250" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsConcentrating(context.Source) and (not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Poison,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Poison,Magical,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9524,7 +9525,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="decc0a7b-0e41-4b65-ac0c-2dca9611118f" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="(StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')) and HasHPPercentageEqualOrLessThan(50, context.Target);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Piercing,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Piercing,Magical,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9552,6 +9553,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="249d3968-ae8f-489a-b34b-5ad77ac99bb1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy() and (HasStatus('SLEEPING') or HasStatus('SG_Sleeping_Magical') or HasStatus('SLEEP') or HasStatus('KNOCKED_OUT'))) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')) and (HasStatus('SLEEPING') or HasStatus('SG_Sleeping_Magical') or HasStatus('SLEEP') or HasStatus('KNOCKED_OUT')));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d4,Necrotic,Magical,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9696,7 +9698,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Cunning_HandCrossbow_Combo_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="05134836-c6a0-4079-98e4-bb4980672218" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF( Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);UseActionResource(SELF,ReactionActionPoint,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="TARGET:IF(Attack(AttackType.MeleeWeaponAttack) and HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source)):DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType,Magical,,0,,true,true,false,true);ExecuteWeaponFunctors(MainHand);UseActionResource(SELF,ReactionActionPoint,1)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and DistanceToTargetLessThan(3);" />
@@ -10059,7 +10061,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e0a60d3-ec8e-4a92-82ae-dfd34c0b6b22" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsMeleeWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and not IsInSunlight(context.Target);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Necrotic,Magical)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Necrotic,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -11170,7 +11172,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(ClassLevelHigherOrEqualThan(9,'Warlock',context.Source)):UnlockSpell(Shout_LifeDrinker);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsMiss() and IsMeleeWeaponAttack() and Character() and not AnyEntityIsItem()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIFEDRINKER_NECROTIC',context.Source)):DealDamage(1d6,Necrotic,Magical);IF(HasStatus('LIFEDRINKER_RADIANT',context.Source)):DealDamage(1d6,Radiant,Magical);IF(HasStatus('LIFEDRINKER_PSYCHIC',context.Source)):DealDamage(1d6,Psychic,Magical);RegainHitPoints(SELF,1d8+ConstitutionModifier);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('LIFEDRINKER_NECROTIC',context.Source)):DealDamage(1d6,Necrotic,Magical,,0,,true,true,false,true);IF(HasStatus('LIFEDRINKER_RADIANT',context.Source)):DealDamage(1d6,Radiant,Magical,,0,,true,true,false,true);IF(HasStatus('LIFEDRINKER_PSYCHIC',context.Source)):DealDamage(1d6,Psychic,Magical,,0,,true,true,false,true);RegainHitPoints(SELF,1d8+ConstitutionModifier);" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h515ea5dbg1802g623cg9f08g72e4125dfbe4" version="2" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="447b9201-9d31-4d6e-b45c-5089359fee40" />
       </fields>
@@ -11203,6 +11205,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="PsychicStrikes_Githyanki" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9952a3ea-df0f-4996-bc7b-a475784c9d88" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Psychic,Magical,,0,,true,true,false,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
