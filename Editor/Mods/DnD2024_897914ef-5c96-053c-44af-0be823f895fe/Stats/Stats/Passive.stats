@@ -9144,10 +9144,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b9a3744e-2e44-4bb7-9d52-0d482ceffa6e" />
         <field name="Name" type="NameTableFieldDefinition" value="UND_Duergar_ShortswordOfFirstBlood_Passive" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0802e1c0-069c-456d-a325-bdbd775ed6f9" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeWeaponAttack() and not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(99, context.Target)):DamageBonus(1d6);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="AttackedWithPassiveSourceWeapon() and not HasHPPercentageWithoutTemporaryHPLessThan(50,context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(1d6,Piercing,Magical,,0,,true,true,false,true)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c9a8811g967cg3ad2g336dg9d9052ad3154" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Piercing)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
