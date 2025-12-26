@@ -6613,6 +6613,17 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "MAG_TheClover_Mainhand_Passive"
+type "PassiveData"
+using "MAG_TheClover_Mainhand_Passive"
+data "StatsFunctors" "ApplyStatus(MAG_BHAALIST_AURA_OF_MURDER, 100, 2)"
+
+new entry "MAG_TheClover_Mainhand_Passive_Scimitar"
+type "PassiveData"
+using "MAG_TheClover_Mainhand_Passive"
+data "Description" "h97a91d22g9d00g7de4ge3d3g159e6f71cb36;1"
+data "StatsFunctors" "ApplyStatus(MAG_BHAALIST_AURA_OF_MURDER_SLASHING, 100, 2)"
+
 new entry "DeadThree_KillRecharge"
 type "PassiveData"
 data "DisplayName" "h5c370d8bg43c7ge58bg3b51ge30d0856f141;1"
@@ -6858,13 +6869,6 @@ type "PassiveData"
 using "MAG_LC_BurnOnDamage_Scimitar_Passive"
 data "StatsFunctorContext" "OnDamage;OnStatusApply"
 data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));"
-
-new entry "MAG_TheClover_Mainhand_Passive"
-type "PassiveData"
-using "MAG_TheClover_Mainhand_Passive"
-data "StatsFunctorContext" "OnDamage;OnStatusApply"
-data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));"
-data "StatsFunctors" "ApplyStatus(MAG_BHAALIST_AURA_OF_MURDER, 100, 2)"
 
 new entry "GOB_PainPriest_Dagger_Passive"
 type "PassiveData"
