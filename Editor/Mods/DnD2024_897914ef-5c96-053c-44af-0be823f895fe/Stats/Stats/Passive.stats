@@ -11221,5 +11221,20 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(SpellPowerLevelEqualTo(6)):RestoreResource(SELF,SpellSlot,1,4);IF(SpellPowerLevelEqualTo(5)):RestoreResource(SELF,SpellSlot,1,4);IF(SpellPowerLevelEqualTo(4)):RestoreResource(SELF,SpellSlot,1,3);IF(SpellPowerLevelEqualTo(3)):RestoreResource(SELF,SpellSlot,1,2);IF(SpellPowerLevelEqualTo(2)):RestoreResource(SELF,SpellSlot,1,1);" />
       </fields>
     </stat_object>
+    <stat_object color="#FF0000FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81f7cd27-a823-4167-864c-0259f28891b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Weapons" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bdbafdd-4dad-4f74-aa97-179d294a4c04" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAG_Ambushing_Attack_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb707318-ae3a-4aba-bdf8-617fb016843c" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8, Necrotic)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Combat(context.Source) and Combat() and not HadTurnInCombat()):CharacterWeaponDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
