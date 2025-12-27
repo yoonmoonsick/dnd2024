@@ -2575,8 +2575,8 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="5" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Strength, SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Psychic);ApplyStatus(PRONE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6/2,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Force);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d6/2,Force);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf556a602g9ee0g102cgf8a0g7d7dd2b1a1d5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he03ecb6cg4be6g6686gc273g4ad877822e09" version="1" />
@@ -2613,8 +2613,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dbb33539-ed52-471c-ad23-3b7c2e00d93e" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ce8f635a-2fee-4fd4-8de7-42dc5aa0a51b" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Psychic);ApplyStatus(PRONE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6/2,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Force);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d6/2,Force);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Force);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush" />
@@ -2626,8 +2626,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="18a9e8d9-5963-4180-9d1e-461cc726e6f4" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbb33539-ed52-471c-ad23-3b7c2e00d93e" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6,Psychic);ApplyStatus(PRONE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6/2,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d6,Force);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d6/2,Force);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Force);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -2638,11 +2638,62 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3c2bca63-4c81-45f0-b938-24a8c58e9c45" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbb33539-ed52-471c-ad23-3b7c2e00d93e" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d6,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d6,Psychic);ApplyStatus(PRONE,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d6/2,Force);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d6/2,Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d6,Force);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d6/2,Force);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d6,Force);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8be33c3a-086e-4d8a-841d-57f61c3f7745" />
+        <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce8f635a-2fee-4fd4-8de7-42dc5aa0a51b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d6/2,Psychic);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="acc1288e-7e60-4c0a-82a8-cadbb37c5a13" />
+        <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_Psychic_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dbb33539-ed52-471c-ad23-3b7c2e00d93e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(6d6/2,Psychic);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic);" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f938486-aade-4392-8fe2-ad8816571d4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_Psychic_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18a9e8d9-5963-4180-9d1e-461cc726e6f4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(7d6/2,Psychic);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic);" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0afe7a4d-ccf6-4f3f-a96c-1cfe51596242" />
+        <field name="Name" type="NameTableFieldDefinition" value="TelekineticCrush_Psychic_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3c2bca63-4c81-45f0-b938-24a8c58e9c45" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d6,Psychic);ApplyStatus(PRONE,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d6/2,Psychic);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d6,Psychic);" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
