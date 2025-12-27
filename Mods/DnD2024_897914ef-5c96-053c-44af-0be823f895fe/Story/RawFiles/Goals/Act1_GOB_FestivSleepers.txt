@@ -1,0 +1,869 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_GOB_FestivSleepers((CHARACTER)S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da);
+DB_GOB_FestivSleepers(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a);
+DB_GOB_FestivSleepers(S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f);
+DB_GOB_FestivSleepers(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54);
+DB_GOB_FestivSleepers(S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1);
+
+// only these have non one-liner dialogs, other festiv sleepers stay asleep when noise happens
+DB_GOB_FestivSleepers_CanReactToNoise((CHARACTER)S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da);
+DB_GOB_FestivSleepers_CanReactToNoise(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a);
+DB_GOB_FestivSleepers_CanReactToNoise(S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f);
+
+DB_DoNotFace(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54);
+DB_DoNotFace(S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1);
+
+DB_GOB_FestivSleepers_Grouped((CHARACTER)S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f, 1);
+DB_GOB_FestivSleepers_Grouped(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54, 1);
+DB_GOB_FestivSleepers_Grouped(S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1, 1);
+DB_GOB_FestivSleepers_Grouped(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a, 2);
+DB_GOB_FestivSleepers_Grouped(S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da, 2);
+
+DB_Dialogs(S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1,GOB_Festivities_GoblinSleeper_00_d0dc102f-9eab-cd19-151b-68b41edf482f);
+DB_Dialogs(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a,GOB_Festivities_GoblinSleeper_01_553ef6f9-ef1a-8f58-7864-2aa6df58133e);
+DB_Dialogs(S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da,GOB_Festivities_GoblinSleeper_02_06788058-a941-b7d8-3d81-1e918897af01);
+DB_Dialogs(S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f,GOB_Festivities_BugbearSleeper_00_7c7970b5-62b0-127e-c1af-59b2e732330f);
+DB_Dialogs(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54,GOB_Festivities_BugbearSleeper_01_5bede260-0d43-b5db-3b14-de2bf4bdfcfc);
+
+DB_GLO_SleepingDialog(GOB_Festivities_GoblinSleeper_00_d0dc102f-9eab-cd19-151b-68b41edf482f);
+DB_GLO_SleepingDialog(GOB_Festivities_GoblinSleeper_01_553ef6f9-ef1a-8f58-7864-2aa6df58133e);
+DB_GLO_SleepingDialog(GOB_Festivities_GoblinSleeper_02_06788058-a941-b7d8-3d81-1e918897af01);
+DB_GLO_SleepingDialog(GOB_Festivities_BugbearSleeper_00_7c7970b5-62b0-127e-c1af-59b2e732330f);
+DB_GLO_SleepingDialog(GOB_Festivities_BugbearSleeper_01_5bede260-0d43-b5db-3b14-de2bf4bdfcfc);
+
+DB_GOB_FestivSleepers_CombatAD((CHARACTER)S_GOB_Festivities_GoblinSleeper_00_3c59b547-7807-43cb-aad4-426467636dd1,(DIALOGRESOURCE)GOB_Festivities_AD_GoblinSleeper_00_EnterCombat_da5dca4e-210b-5b48-b337-390b7ffd1ee2);
+DB_GOB_FestivSleepers_CombatAD(S_GOB_Festivities_GoblinSleeper_01_494cd83b-2621-4e95-8629-f9df17e1ae5a,GOB_Festivities_AD_GoblinSleeper_01_EnterCombat_5a225d8a-a4d2-d9b1-775b-b3d9cdcc11f5);
+DB_GOB_FestivSleepers_CombatAD(S_GOB_Festivities_GoblinSleeper_02_99a48b2b-05dc-42f8-86f1-65c26f9f13da,GOB_Festivities_AD_GoblinSleeper_02_EnterCombat_e6275d20-30a4-6d3a-c8a6-97fb6cab80dd);
+DB_GOB_FestivSleepers_CombatAD(S_GOB_Festivities_BugbearSleeper_00_289953c8-adef-434d-b88b-2f9262b78b1f,GOB_Festivities_AD_BugbearSleeper_00_EnterCombat_480e0f83-4327-36e9-ce05-9e52ed7715d0);
+DB_GOB_FestivSleepers_CombatAD(S_GOB_Festivities_BugbearSleeper_01_3247a67c-8b1c-4429-a3f7-3321e33fae54,GOB_Festivities_AD_BugbearSleeper_01_EnterCombat_7350346a-b807-46d5-6abc-1de06b3260b2);
+
+DB_GOB_FestivSleepers_Wall((ITEM)S_GOB_Festivities_SecretWallToInner_5bc2c700-3fb4-4809-8763-3cd387c69167);
+DB_GOB_FestivSleepers_Door((ITEM)S_GOB_Festivities_SecretEntrance_Door_ddbb3184-e682-47b7-ac0f-94d631b3f3ed);
+
+DB_GOB_FestivSleepers_JumpTrigger((TRIGGER)S_GOB_Festivities_SleeperWake_Jump_52424285-93e4-41e0-b1b7-43e319a7d50e);
+
+DB_OneShotPlayerTrigger(S_GOB_Festivities_PAD_FoundSleepers_277637a9-52d4-4ccc-b2c2-cf7cf776f14c);
+KBSECTION
+//REGION Maintanence
+IF
+DB_GOB_FestivSleepers(_Char)
+AND
+HasAppliedStatus(_Char,"DRUNK",0)
+THEN
+ApplyStatus(_Char,"DRUNK",-1.0,1,_Char);
+
+IF
+DB_GOB_FestivSleepers(_Char)
+AND
+HasAppliedStatus(_Char,"SLEEP_2",0)
+THEN
+ApplyStatus(_Char,"SLEEP_2",-1.0,1,_Char);
+
+IF
+DB_GOB_FestivSleepers(_Char)
+THEN
+DB_GOB_FestivSleepers_DrunkAsleep(_Char);
+
+// Needed so they start dialog when noise event for attacking the wall is sent
+IF
+DB_GOB_FestivSleepers_CanReactToNoise(_Character)
+THEN
+DB_CustomDialogRange(_Character,20);
+
+IF
+StatusApplied(_Sleeper,"SLEEP_2",_,_)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+THEN
+PROC_CharacterDisableCrime(_Sleeper,"Assault_Zero_Damage");
+
+IF
+StatusRemoved(_Sleeper,"SLEEP_2",_,_)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+THEN
+PROC_CharacterEnableCrime(_Sleeper,"Assault_Zero_Damage");
+
+IF
+DB_PermaDefeated(_Sleeper)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+THEN
+NOT DB_GOB_FestivSleepers(_Sleeper);
+
+IF
+DB_PermaDefeated(_Sleeper)
+AND
+DB_GOB_FestivSleepers_Grouped((CHARACTER)_Sleeper, _ID)
+THEN
+NOT DB_GOB_FestivSleepers_Grouped(_Sleeper, _ID);
+
+IF
+DB_PermaDefeated(_Sleeper)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise((CHARACTER)_Sleeper)
+THEN
+NOT DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper);
+
+IF
+DB_GOB_FestivSleepers_Wall(_Wall)
+THEN
+DB_PerceptionSkillCheckADBlocked(_Wall);
+
+PROC
+PROC_HiddenPerceptionCheckSucceeded((CHARACTER)_Character, (CHARACTER)_Player, (GUIDSTRING)_Wall)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Wall)
+AND
+QRY_OnlyOnce("GOB_FestivSleepers_WallPerceptionAD")
+THEN
+PROC_TryStartAD(GOB_Festivities_PAD_LooseWall_b33203ed-cd63-ba5b-ae07-a8fb88d7c9dc,_Player);
+
+IF
+DB_GOB_FestivSleepers_Door(_Door)
+THEN
+SetOnStage(_Door,0);
+
+IF
+DestroyingBy(_Wall,_,_,_)
+AND
+DB_GOB_FestivSleepers_Wall(_Wall)
+AND
+DB_GOB_FestivSleepers_Door(_Door)
+THEN
+SetOnStage(_Door,1);
+
+PROC
+PROC_OneShotTriggerEntered(_Player,S_GOB_Festivities_PAD_FoundSleepers_277637a9-52d4-4ccc-b2c2-cf7cf776f14c)
+AND
+DB_Players(_Player)
+AND
+DB_GOB_FestivSleepers(_Sleeper)
+AND
+DB_Sees(_Player, _Sleeper)
+AND
+HasAppliedStatus(_Sleeper,"SLEEP_2",1)
+THEN
+PROC_TryStartAD(GOB_Festivities_PAD_FoundSleepers_4364873d-4f01-b476-c85e-f114ae227f9e,_Player);
+
+
+//END_REGION Maintanence
+
+
+//REGION Filter out AttackedBy by StoryID to prevent combat when player attacks dual-wielding or other such things
+// with last hit on the wall it is too late to react in AttackedBy, because all statuses (like SILENCED) are cleared
+// so we fail to utilize Silence, hence react earlier to DestroyingBy
+IF
+DestroyingBy(_Wall,_Attacker,_AttackerOwner,_StoryID)
+AND
+DB_GOB_FestivSleepers_Wall(_Wall)
+AND
+NOT DB_GOB_FestivSleepers_AttackRegistered(_StoryID)
+THEN
+DB_GOB_FestivSleepers_AttackRegistered(_StoryID);
+PROC_GOB_FestivSleepers_AttackBy(_Wall,_AttackerOwner,1); // _DmgAmount == 1 cause we can pass any >0 number
+TimerCancel("Timer_GOB_FestivSleepers_ClearStoryID");
+TimerLaunch("Timer_GOB_FestivSleepers_ClearStoryID",500);
+
+IF
+AttackedBy(_Entity,_AttackerOwner,_Attacker,_DmgType,_DmgAmount,_DmgCause,_StoryID)
+AND
+QRY_GOB_FestivSleepers_WallOrSleeper(_Entity)
+AND
+NOT DB_GOB_FestivSleepers_AttackRegistered(_StoryID)
+THEN
+DB_GOB_FestivSleepers_AttackRegistered(_StoryID);
+PROC_GOB_FestivSleepers_AttackBy(_Entity,_AttackerOwner,_DmgAmount);
+TimerCancel("Timer_GOB_FestivSleepers_ClearStoryID");
+TimerLaunch("Timer_GOB_FestivSleepers_ClearStoryID",500);
+
+QRY
+QRY_GOB_FestivSleepers_WallOrSleeper((GUIDSTRING)_Entity)
+AND
+DB_GOB_FestivSleepers_DrunkAsleep((CHARACTER)_Entity)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GOB_FestivSleepers_WallOrSleeper((GUIDSTRING)_Entity)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Entity)
+THEN
+DB_NOOP(1);
+
+IF
+TimerFinished("Timer_GOB_FestivSleepers_ClearStoryID")
+AND
+DB_GOB_FestivSleepers_AttackRegistered(_StoryID)
+THEN
+NOT DB_GOB_FestivSleepers_AttackRegistered(_StoryID);
+//END_REGION Filter out AttackedBy by StoryID to prevent combat when player attacks dual-wielding or other such things
+
+//REGION Register noise
+IF
+DB_GOB_FestivSleepers_JumpTrigger(_Trigger)
+THEN
+PROC_TriggerRegisterForParty(_Trigger);
+
+PROC
+PROC_GOB_FestivSleepers_AttackBy((GUIDSTRING)_Sleeper,(GUIDSTRING)_Player,(INTEGER)_Damage)
+AND
+DB_GOB_FestivSleepers_DrunkAsleep((CHARACTER)_Sleeper)
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+_Damage == 0
+AND
+GetPosition(_Sleeper,_X,_Y,_Z)
+AND
+QRY_GOB_FestivSleepers_SoundOn(_Sleeper)
+THEN
+PROC_GOB_FestivSleepers_NoiseEvent(_Player, _X,_Y,_Z, 0.5);
+
+PROC
+PROC_GOB_FestivSleepers_AttackBy(_Wall,_Player,_)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Wall)
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+GetPosition(_Wall,_X,_Y,_Z)
+AND
+QRY_GOB_FestivSleepers_SoundOn(_Wall)
+THEN
+PROC_GOB_FestivSleepers_NoiseEvent(_Player, _X,_Y,_Z, 18.0);
+
+IF
+UsingSpellAtPosition(_Player, _X, _Y, _Z, "Projectile_Jump", _, _, _StoryID)
+AND
+DB_CurrentLevel("WLD_Main_A")
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_JumpTrigger(_Trigger)
+AND
+DB_InRegion(_Player, _Trigger)
+AND
+PositionIsInTrigger(_X, _Y, _Z, _Trigger, 1)
+THEN
+DB_GOB_FestivSleepers_JumpNear(_Player, _StoryID, _X, _Y, _Z);
+
+IF
+CastedSpell(_Player, "Projectile_Jump", _, _, _StoryID)
+AND
+DB_GOB_FestivSleepers_JumpNear((CHARACTER)_Player, _StoryID, _X, _Y, _Z)
+AND
+QRY_GOB_FestivSleepers_SoundOn(_Player)
+THEN
+NOT DB_GOB_FestivSleepers_JumpNear(_Player, _StoryID, _X, _Y, _Z);
+PROC_GOB_FestivSleepers_NoiseEvent(_Player, _X,_Y,_Z, 5.0);
+//END_REGION Register noise
+
+
+//REGION Choose one to wake up with each noise
+PROC
+PROC_GOB_FestivSleepers_NoiseEvent((CHARACTER)_Player, (REAL)_NoiseX,(REAL)_NoiseY,(REAL)_NoiseZ, (REAL)_Distance)
+THEN
+NOT DB_GOB_FestivSleepers_NoiseEvent_FoundSleeperToWake(1);
+
+PROC
+PROC_GOB_FestivSleepers_NoiseEvent((CHARACTER)_Player, (REAL)_NoiseX,(REAL)_NoiseY,(REAL)_NoiseZ, (REAL)_Distance)
+AND
+DB_GOB_FestivSleepers(_Sleeper)
+AND
+NOT DB_Defeated(_Sleeper)
+AND
+NOT DB_OffStage(_Sleeper)
+AND
+QRY_GOB_FestivSleepers_SoundOn(_Sleeper)
+AND
+NOT DB_GOB_FestivSleepers_NoiseEvent_FoundSleeperToWake(1)
+AND
+NOT DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_,_,_,_)
+AND
+GetDistanceToPosition(_Sleeper,_NoiseX,_NoiseY,_NoiseZ,_Dist)
+AND
+_Dist <= _Distance
+THEN
+DB_GOB_FestivSleepers_NoiseEvent_FoundSleeperToWake(1);
+DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_Player,_NoiseX,_NoiseY,_NoiseZ);
+
+IF
+DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_Player,_NoiseX,_NoiseY,_NoiseZ)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+THEN
+RemoveStatus(_Sleeper,"SLEEP_2");
+NOT DB_GOB_FestivSleepers_DrunkAsleep(_Sleeper);
+SetFlag(GOB_Festivities_Sleeper_WokenByNoise_97d3e68c-1d98-446a-bc08-1e84c53b63c7,_Sleeper);
+ObjectTimerCancel(_Sleeper,"GOB_FestivSleepers_GoBackToSleep");
+
+
+//END_REGION Choose one to wake up with each noise
+
+
+//REGION Woken up starts dialog or waits if sees one already
+
+IF
+StatusRemoved(_Sleeper,"SLEEP_2",_Player,_)
+AND
+NOT DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper, _, _, _, _)
+AND
+DB_GOB_FestivSleepers_DrunkAsleep((CHARACTER)_Sleeper)
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+GetPosition(_Player,_X,_Y,_Z)
+AND
+QRY_GOB_FestivSleepers_SoundOn(_Sleeper)
+THEN
+PROC_GOB_FestivSleepers_NoiseEvent(_Player, _X,_Y,_Z, 5.0);
+
+IF
+StatusRemoved(_Sleeper,"SLEEP_2",_Player,_)
+AND
+NOT DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper, _, _, _, _)
+AND
+DB_GOB_FestivSleepers_DrunkAsleep((CHARACTER)_Sleeper)
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+GetPosition(_Player,_X,_Y,_Z)
+AND
+NOT QRY_GOB_FestivSleepers_SoundOn(_Sleeper)
+THEN
+PROC_GOB_FestivSleepers_NoiseEvent(_Player, _X,_Y,_Z, 0.5);
+
+//If all conflicts are over, the goblins can go back to sleep.
+IF
+DB_GOB_FestivSleepers(_Character)
+AND
+NOT DB_Defeated(_Character)
+AND
+NOT DB_DialogSpeakers(_, _Character, _)
+AND
+NOT DB_DialogRequestCache_SpeakerList_Speakers(_, _, _Character, _)
+AND
+NOT DB_GOB_FestivSleepers_ConflictInProgress(_, _, _)
+AND
+Random(2000, _Random)
+AND
+IntegerSum(_Random, 4000, _Timer)
+THEN
+ObjectTimerLaunch(_Character, "GOB_FestivSleepers_GoBackToSleep", _Timer, 1);
+
+QRY
+QRY_SelectCustomDialog_AfterGenerics(_Player, _Sleeper)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+AND
+NOT DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+AND
+HasActiveStatus(_Sleeper, "SLEEP_2", 0)
+THEN
+PROC_GOB_FestivSleepers_StartFight(_Sleeper, (CHARACTER)_Player);
+
+PROC
+PROC_DialogFlagSetup(_Dialog, _Sleeper, _)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise((CHARACTER)_Sleeper)
+AND
+DB_Dialogs(_Sleeper, _Dialog)
+AND
+HasActiveStatus(_Sleeper, "SLEEP_2", 0)
+THEN
+SetFlag((FLAG)GOB_Festivities_Sleeper_WokenByNoise_97d3e68c-1d98-446a-bc08-1e84c53b63c7, _Sleeper, 0, 1);
+
+PROC
+PROC_DialogFlagSetup(_Dialog, _Sleeper, _)
+AND
+DB_Dialogs(_Sleeper, _Dialog)
+AND
+HasActiveStatus(_Sleeper, "SLEEP_2", 1)
+THEN
+ClearFlag((FLAG)GOB_Festivities_Sleeper_WokenByNoise_97d3e68c-1d98-446a-bc08-1e84c53b63c7, _Sleeper, 0, 1);
+
+IF
+StatusRemoved(_Sleeper,"SLEEP_2",_,_)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,(REAL)_NoiseX,(REAL)_NoiseY,(REAL)_NoiseZ)
+AND
+NOT QRY_GOB_FestivSleepers_WokenSeesConflict(_Sleeper)
+THEN
+PROC_GOB_FestivSleepers_FindNoiseMaker(_Sleeper,_Player);
+
+IF
+StatusRemoved(_Sleeper,"SLEEP_2",_,_)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,(REAL)_NoiseX,(REAL)_NoiseY,(REAL)_NoiseZ)
+AND
+QRY_GOB_FestivSleepers_WokenSeesConflict(_Sleeper)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_OtherSleeper,_Player)
+THEN
+LookAtEntity(_Sleeper,_Player);
+
+// clear DB
+PROC
+PROC_GOB_FestivSleepers_FindNoiseMaker((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_Player)
+THEN
+NOT DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_Player);
+
+// sleeper sees exactly the player who made noise
+PROC
+PROC_GOB_FestivSleepers_FindNoiseMaker((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+AND
+NOT QRY_CharacterIsHidden(_Player)
+THEN
+DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_Player);
+
+// player invisible/couldn't be seen - search another one
+PROC
+PROC_GOB_FestivSleepers_FindNoiseMaker((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+NOT QRY_GOB_FestivSleeper_FoundPlayer((CHARACTER)_Sleeper,(CHARACTER)_Player)
+THEN
+DB_SpotPlayers(_Sleeper, "GOB_FestivSleepers_FindWaker", NULL_00000000-0000-0000-0000-000000000000, NULL_00000000-0000-0000-0000-000000000000);
+
+QRY
+QRY_GOB_FestivSleeper_FoundPlayer((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+NOT QRY_CharacterIsHidden((CHARACTER)_Player)
+AND
+CanSee(_Sleeper,_Player,1)
+THEN
+DB_GOB_FestivSleepers_NoiseMaker(_Sleeper, _Player);
+
+// if the _Sleeper didn't find the player who woke them up, then the _Sleeper looks around and goes back to sleep 5 sec later
+PROC
+PROC_GOB_FestivSleepers_FindNoiseMaker((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,(REAL)_NoiseX,(REAL)_NoiseY,(REAL)_NoiseZ)
+AND
+NOT DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_)
+THEN
+SetEntityEventReal(_Sleeper,"GOB_FestivSleeper_LookAt_X",_NoiseX);
+SetEntityEventReal(_Sleeper,"GOB_FestivSleeper_LookAt_Y",_NoiseY);
+SetEntityEventReal(_Sleeper,"GOB_FestivSleeper_LookAt_Z",_NoiseZ);
+ObjectTimerLaunch(_Sleeper,"GOB_FestivSleepers_GoBackToSleep",5000,1);
+
+PROC
+PROC_SpotPlayers_Spotted(_Sleeper, "GOB_FestivSleepers_FindWaker", _Character)
+THEN
+PROC_GOB_FestivSleepers_WarnOrFight(_Sleeper, _Character);
+
+PROC
+PROC_GOB_FestivSleepers_FindNoiseMaker((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,_NoiseX,_NoiseY,_Noise)
+AND
+DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,(CHARACTER)_NoiseMaker)
+THEN
+PROC_GOB_FestivSleepers_WarnOrFight(_Sleeper,_NoiseMaker);
+
+PROC
+PROC_GOB_FestivSleepers_WarnOrFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+AND
+DB_Dialogs(_Sleeper,_Dialog)
+AND
+QRY_SpeakerIsAvailableAndInDialogRange(_Sleeper,_Player)
+AND
+QRY_StartDialog_Fixed(_Dialog,_Sleeper,_Player)
+THEN
+DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1);
+
+PROC
+PROC_GOB_FestivSleepers_WarnOrFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+AND
+DB_Dialogs(_Sleeper,_Dialog)
+AND
+NOT DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1)
+THEN
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1);
+
+PROC
+PROC_GOB_FestivSleepers_WarnOrFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+NOT DB_GOB_FestivSleepers_CanReactToNoise(_Sleeper)
+THEN
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1);
+
+PROC
+PROC_GOB_FestivSleepers_WarnOrFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+NOT DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1)
+THEN
+ObjectTimerLaunch(_Sleeper,"GOB_FestivSleepers_GoBackToSleep",1000,1);
+
+IF
+ObjectTimerFinished(_Sleeper,"GOB_FestivSleepers_GoBackToSleep")
+THEN
+PROC_GOB_FestivSleepers_GoBackToSleep((CHARACTER)_Sleeper);
+
+PROC
+PROC_GOB_FestivSleepers_WarnOrFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1)
+THEN
+NOT DB_GOB_FestivSleepers_WarnOrFight_Success(_Sleeper,_Player,1);
+
+// if the _Sleeper didn't find the player who woke them up, then the sleeper goes back to sleep 5 sec later
+// however, if the _Sleeper found some other player nearby and started a dialog with them, then
+// we need to cancel the timer
+IF
+DialogActorJoined(_Dialog,_ID,_Sleeper,_Index)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,_,_,_)
+AND
+DB_Dialogs(_Sleeper,_Dialog)
+THEN
+ObjectTimerCancel(_Sleeper,"GOB_FestivSleepers_GoBackToSleep");
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_Player);
+
+QRY
+QRY_GOB_FestivSleepers_WokenSeesConflict((CHARACTER)_Sleeper)
+AND
+DB_GOB_FestivSleepers_StartedFight(_)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GOB_FestivSleepers_WokenSeesConflict((CHARACTER)_Sleeper)
+AND
+NOT DB_GOB_FestivSleepers_StartedFight(_)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_OtherSleeper,_Player)
+AND
+CanSee(_Sleeper,_OtherSleeper,1)
+THEN
+DB_NOOP(1);
+//END_REGION Woken up starts dialog or waits if sees one already
+
+
+//REGION After dialog
+IF
+DialogRequestFailed(_Dialog,_ID)
+AND
+DB_Dialogs(_Sleeper,_Dialog)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,(CHARACTER)_Player,_NoiseX,_NoiseY,_NoiseZ)
+THEN
+NOT DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_Player,_NoiseX,_NoiseY,_NoiseZ);
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+
+IF
+DialogActorLeft(_Dialog,_DlgID,_Sleeper,_)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_,_)
+AND
+NOT DB_GOB_FestivSleepers_FightAfterDialog(_DlgID)
+AND
+DB_GOB_FestivSleepers_WokenByNoise((CHARACTER)_Sleeper,_,_,_,_)
+THEN
+PROC_GOB_FestivSleepers_GoBackToSleep(_Sleeper);
+
+IF
+FlagSet(GOB_Festivities_SleepersFight_32bb1742-7a49-4350-8eb7-9f34a51c6990,_Player,_DlgInst)
+AND
+_DlgInst > 0
+THEN
+DB_GOB_FestivSleepers_FightAfterDialog(_DlgInst);
+
+IF
+DB_OnDialogAttackRequested(_Sleeper,_Player,1)
+AND
+DB_GOB_FestivSleepers(_Sleeper)
+AND
+DB_DialogNPCs(_DlgInst,_Sleeper,_)
+THEN
+DB_GOB_FestivSleepers_FightAfterDialog(_DlgInst);
+
+IF
+DialogEnded(_Dialog,_DlgInst)
+AND
+DB_GOB_FestivSleepers_FightAfterDialog(_DlgInst)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_Player)
+THEN
+NOT DB_GOB_FestivSleepers_FightAfterDialog(_DlgInst);
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+
+IF
+DialogEnded(_Dialog,_ID)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_Player)
+AND
+DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_AnyPlayer)
+THEN
+NOT DB_GOB_FestivSleepers_NoiseMaker(_Sleeper,_AnyPlayer);
+
+IF
+DialogEnded(_Dialog,_ID)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_Player)
+THEN
+NOT DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_Player);
+//END_REGION After dialog
+
+
+//REGION Helpers
+IF
+StatusApplied(_Wall,"SILENCED",_,_)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Wall)
+THEN
+DB_GOB_FestivSleepers_WallSilenced(1);
+
+IF
+StatusRemoved(_Wall,"SILENCED",_,_)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Wall)
+THEN
+NOT DB_GOB_FestivSleepers_WallSilenced(1);
+
+QRY
+QRY_GOB_FestivSleepers_SoundOn((GUIDSTRING)_Object)
+AND
+IsCharacter((CHARACTER)_Object,1)
+AND
+HasAppliedStatus(_Object,"SILENCED",0)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_GOB_FestivSleepers_SoundOn((GUIDSTRING)_Object)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Object)
+AND
+NOT DB_GOB_FestivSleepers_WallSilenced(1)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_GOB_FestivSleepers_GoBackToSleep((CHARACTER)_Sleeper)
+AND
+NOT DB_PermaDefeated(_Sleeper)
+AND
+NOT DB_Is_Banished(_Sleeper)
+THEN
+PROC_SpotPlayers_StopSpotting(_Sleeper, "GOB_FestivSleepers_FindWaker");
+DB_GOB_FestivSleepers_DrunkAsleep(_Sleeper);
+
+PROC
+PROC_GOB_FestivSleepers_GoBackToSleep((CHARACTER)_Sleeper)
+AND
+NOT DB_PermaDefeated(_Sleeper)
+AND
+NOT DB_Is_Banished(_Sleeper)
+AND
+HasAppliedStatus(_Sleeper,"SLEEP_2",0)
+THEN
+ApplyStatus(_Sleeper,"SLEEP_2",-1.0,1,_Sleeper);
+
+PROC
+PROC_GOB_FestivSleepers_GoBackToSleep((CHARACTER)_Sleeper)
+THEN
+ClearFlag(GOB_Festivities_Sleeper_WokenByNoise_97d3e68c-1d98-446a-bc08-1e84c53b63c7,_Sleeper);
+
+PROC
+PROC_GOB_FestivSleepers_GoBackToSleep((CHARACTER)_Sleeper)
+AND
+DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_Player,_NoiseX,_NoiseY,_Noise)
+THEN
+NOT DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_Player,_NoiseX,_NoiseY,_Noise);
+//END_REGION Helpers
+
+//REGION Block using the hatch or attacking the wall
+PROC
+PROC_GOB_FestivSleepers_AttackBy(_Wall,_Player,_)
+AND
+DB_GOB_FestivSleepers_Wall((ITEM)_Wall)
+AND
+DB_PartyMembers((CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_ConflictInProgress(_Dialog,_Sleeper,_OtherPlayer)
+AND
+CanSee(_Sleeper,_Player,1)
+THEN
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+
+// another player tries to slip into the crack while one of sleepers is woken by noise
+PROC
+PROC_BlockUseOfItem(_Player,_Hatch)
+AND
+DB_GOB_FestivSleepers_Door(_Hatch)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_WokenByNoise(_Sleeper,_OtherPlayer,_NoiseX,_NoiseY,_Noise)
+AND
+CanSee(_Sleeper,_Player,1)
+THEN
+DB_CustomUseItemResponse(_Player,_Hatch,0);
+PROC_GOB_FestivSleepers_StartFight(_Sleeper,_Player);
+//END_REGION Block using the hatch or attacking the wall
+
+
+//REGION Start combat
+PROC
+PROC_GOB_FestivSleepers_StartFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+GetFaction(_Sleeper,_Faction)
+AND
+GetFaction(_Player,_PlayerFaction)
+THEN
+PROC_ForceStopDialog(_Sleeper);
+PROC_SetRelationToPlayers(_Faction,0);
+PROC_SetRelation(_Faction,_PlayerFaction,0);
+PROC_EnterCombat(_Sleeper,_Player);
+
+PROC
+PROC_GOB_FestivSleepers_StartFight((CHARACTER)_Sleeper,(CHARACTER)_Player)
+AND
+DB_GOB_FestivSleepers_CombatAD(_Sleeper,_CombatAD)
+AND
+NOT DB_CantTalk(_Sleeper)
+THEN
+PROC_TryStartAD(_CombatAD,_Sleeper);
+
+IF
+EnteredCombat(_Sleeper,_CombatID)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+THEN
+DB_GOB_FestivSleepers_StartedFight(_CombatID);
+ObjectTimerCancel(_Sleeper,"GOB_FestivSleepers_GoBackToSleep");
+
+IF
+CombatEnded(_CombatID)
+AND
+DB_GOB_FestivSleepers_StartedFight(_CombatID)
+THEN
+NOT DB_GOB_FestivSleepers_StartedFight(_CombatID);
+
+IF
+LeftCombat(_Sleeper,_CombatID)
+AND
+DB_GOB_FestivSleepers_StartedFight(_CombatID)
+AND
+DB_GOB_FestivSleepers((CHARACTER)_Sleeper)
+AND
+NOT DB_PermaDefeated(_Sleeper)
+THEN
+ObjectTimerLaunch(_Sleeper,"GOB_FestivSleepers_GoBackToSleep",5000,1);
+//END_REGION Start combat
+
+
+//REGION Combat waking
+IF
+EnteredCombat(_Sleeper,_CombatID)
+AND
+DB_GOB_FestivSleepers_Grouped((CHARACTER)_Sleeper, _Group)
+AND
+DB_GOB_FestivSleepers_Grouped(_OtherSleeper, _Group)
+AND
+_OtherSleeper != _Sleeper
+THEN
+RemoveStatus(_Sleeper,"SLEEP_2");
+NOT DB_GOB_FestivSleepers_DrunkAsleep(_Sleeper);
+
+IF
+FlagSet(GOB_Festivities_Sleeper_TriedWakeFriends_8f668cae-04e8-4179-87bf-651659dec2fe,_,_)
+AND
+DB_GOB_FestivSleepers(_Sleeper)
+THEN
+RemoveStatus(_Sleeper,"SLEEP_2");
+NOT DB_GOB_FestivSleepers_DrunkAsleep(_Sleeper);
+//END_REGION Combat waking
+
+//REGION Booze trade
+IF
+FlagSet(GOB_Festivities_SleeperCheckInventory_aba90e3b-df89-424e-b3ae-539d1eeaf2ea,_Sleeper,_)
+THEN
+SysClear("DB_GOB_FestivSleepers_CheckBooze",1);
+DB_GOB_FestivSleepers_CheckBooze((CHARACTER)_Sleeper);
+PROC_GOB_FestivSleepers_CheckBooze(_Sleeper);
+
+PROC
+PROC_GOB_FestivSleepers_CheckBooze((CHARACTER)_Sleeper)
+THEN
+IterateInventory(_Sleeper,"GOB_FestivSleepers_BoozeCheck","PROC_GOB_FestivSleepers_CheckBooze_Finish");
+
+IF
+EntityEvent(_Item,"GOB_FestivSleepers_BoozeCheck")
+AND
+IsTagged(_Item,(TAG)ALCOHOL_b8496c62-4ecb-45de-860c-ae3aab0ed7da,1)
+THEN
+SetEntityEvent(_Item,"GOB_FestivSleepers_BoozeFound");
+
+// TODO: add booze on init to one of bugbears and check if it's not the same one
+IF
+EntityEvent(_Item,"GOB_FestivSleepers_BoozeFound")
+AND
+DB_GOB_FestivSleepers_CheckBooze(_Sleeper)
+THEN
+SetFlag(GOB_Festivities_SleeperGotBooze_0bc4e4e1-eab6-4a74-9f10-d5aaccdcc659,_Sleeper);
+NOT DB_GOB_FestivSleepers_CheckBooze(_Sleeper);
+//END_REGION Booze trade
+
+
+//REGION Banter
+
+IF
+DB_InRegion(_Player, S_GOB_ThroneRoom_SUB_bb81678b-641c-43fc-bd41-53295d59be03)
+AND
+DB_Players(_Player)
+AND
+NOT DB_GOB_FestivSleepers(_)
+AND
+NOT DB_InRegion(_, S_GOB_Festivities_SleeperWake_Jump_52424285-93e4-41e0-b1b7-43e319a7d50e)
+AND
+QRY_OnlyOnce("GOB_Misc_FestivitiesBalconyBanterTrigger")
+THEN
+PROC_RegisterWorldGossipTrigger(S_PartyBanterTrigger_GOB_CampBalcony_57530931-e7ec-49d8-80e8-a186abbd0b92);
+//END_REGION
+
+
+//REGION Misc
+
+PROC
+PROC_GOB_GoblinHuntAftermath_Pacified()
+THEN
+PROC_RemoveOneShotTrigger(S_GOB_Festivities_PAD_FoundSleepers_277637a9-52d4-4ccc-b2c2-cf7cf776f14c);
+
+//END_REGION Misc
+
+//REGION Closing the goal
+IF
+FlagSet((FLAG)Act2_PointOfNoReturnReached_a3155f30-b8f3-4db5-ac21-d3036f4426e3,_,_)
+THEN
+PROC_GOB_FestivSleepers_CompleteGoal();
+
+PROC
+PROC_GOB_FestivSleepers_CompleteGoal()
+AND
+DB_GOB_FestivSleepers_JumpTrigger(_Trigger)
+THEN
+PROC_TriggerUnregisterForParty((TRIGGER)_Trigger);
+
+PROC
+PROC_GOB_FestivSleepers_CompleteGoal()
+THEN
+GoalCompleted;
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "Act1"
