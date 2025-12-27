@@ -813,7 +813,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8b008cb6gee4cg80b1g94bbg086f0cfc878f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h95c016bfgbdf7g0358g9db5g7910797cb476" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DevilsSight" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="DarkvisionRangeMin(3);StatusImmunity(BLINDED_DARKNESS);IgnoreSurfaceCover(SurfaceDarknessCloud);StatusImmunity(BLINDED);StatusImmunity(SG_Blinded);Tag(BLINDSIGHT)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(Player(context.Source)):DarkvisionRangeMin(3);IF(Player(context.Source)):StatusImmunity(BLINDED_DARKNESS);IF(Player(context.Source)):IgnoreSurfaceCover(SurfaceDarknessCloud);IF(Player(context.Source)):StatusImmunity(BLINDED);IF(Player(context.Source)):StatusImmunity(SG_Blinded);IF(Player(context.Source)):Tag(BLINDSIGHT);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
       </fields>
     </stat_object>
