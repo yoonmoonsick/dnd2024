@@ -3164,7 +3164,10 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he25d5e9bgd34bg1b31g19a9g336aa36e7bfe" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a0da719g3052gaa71g5dd4g2666837f1ff8" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;MetaMagic;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,PSYCHIC_SPELLS,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,PSYCHIC_SPELLS)" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Subtle_HeadFX_01:Dummy_HeadFX" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
