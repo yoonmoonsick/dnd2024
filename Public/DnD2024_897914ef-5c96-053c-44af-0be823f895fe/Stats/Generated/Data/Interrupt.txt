@@ -1344,6 +1344,12 @@ type "InterruptData"
 using "Interrupt_WrathOfTheStorm_Thunder"
 data "EnableCondition" "not HasAnyStatus({'SG_Blinded'}) or HasAnyStatus({'SG_Disguise','WILDSHAPE_STARRY_ARCHER_PLAYER','WILDSHAPE_STARRY_CHALICE_PLAYER','WILDSHAPE_STARRY_DRAGON_PLAYER'});"
 
+new entry "Interrupt_ChannelDivinity_TouchOfDeath"
+type "InterruptData"
+using "Interrupt_ChannelDivinity_TouchOfDeath"
+data "Properties" "DealDamage(LevelMapValue(TouchOfDeath),Necrotic);ApplyStatus(TOUCHOFDEATH_VFX,100,1);"
+data "TooltipDamageList" "DealDamage(LevelMapValue(TouchOfDeath),Necrotic)"
+
 new entry "Interrupt_ArcanaDomain_FortifyingSpell"
 type "InterruptData"
 data "DisplayName" "h143feef3gba42gae15g6fcfg8391c5cd5516;1"
