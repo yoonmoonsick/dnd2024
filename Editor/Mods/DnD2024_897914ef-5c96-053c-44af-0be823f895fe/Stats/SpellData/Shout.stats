@@ -892,208 +892,53 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f45e081b-c247-4569-bcdf-b9691235809e" />
         <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e5c04225-1f14-4bdd-bbd1-b11db127687b" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic;Shout_ArmsOfHadar_Psychic;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f9ed2f28-b8c8-4ed3-806b-0cd08903de87" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cbe47c21-8a7d-4e4f-8ab0-baec281c8513" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic_2;Shout_ArmsOfHadar_Psychic_2;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0ba59f91-7a88-4d3a-8352-fd7b13c5a660" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="271afbe4-ce23-4be6-8200-edcbe0d4cfb1" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic_3;Shout_ArmsOfHadar_Psychic_3;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f73e326b-df2c-440e-92dc-a7c0992ebec2" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dbe176c0-61a2-4ce0-bdba-6a5eeb7568be" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic_4;Shout_ArmsOfHadar_Psychic_4;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="92619a56-080e-472b-b67c-0cc344d5b97e" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="88c8df59-35ed-43a7-96f3-21735dbb7489" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic_5;Shout_ArmsOfHadar_Psychic_5;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3986b3f7-482d-4856-8d0d-f9abea053e33" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d838fb31-44d1-464b-abba-6bbe4fa56751" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic_6;Shout_ArmsOfHadar_Psychic_6;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d5e19dab-ca61-49d8-ba4e-5d53d341c81c" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e5c04225-1f14-4bdd-bbd1-b11db127687b" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(2d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(2d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(2d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(2d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="34b812de-b548-44c0-aeb0-d9ecbbb5536b" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic_2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cbe47c21-8a7d-4e4f-8ab0-baec281c8513" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_2" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4d083ae7-aaf0-4c10-85ae-fcdc84ca055c" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic_3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="271afbe4-ce23-4be6-8200-edcbe0d4cfb1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_3" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e5415a46-6b44-4a17-ab61-0429471456e4" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic_4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dbe176c0-61a2-4ce0-bdba-6a5eeb7568be" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_4" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="674c6c72-a713-457e-b575-c81a5b6b8ceb" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic_5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="88c8df59-35ed-43a7-96f3-21735dbb7489" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_5" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e413db61-5b3a-4419-9a1b-28284df105f4" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Necrotic_6" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d838fb31-44d1-464b-abba-6bbe4fa56751" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_6" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Necrotic" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4cf23144-d326-46f0-99be-c2f71f6bfe6d" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="e5c04225-1f14-4bdd-bbd1-b11db127687b" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6, Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((2d6)/2, Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2c1a5ce8-6fc4-41b8-8a70-ea5a9f30e78a" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cbe47c21-8a7d-4e4f-8ab0-baec281c8513" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_2" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6, Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d6)/2, Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Psychic" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="62683426-6ebe-4e47-bb30-587a4698c8d1" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="271afbe4-ce23-4be6-8200-edcbe0d4cfb1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_3" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6, Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d6)/2, Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Psychic" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6b476740-9898-4d43-a81a-9facd6d7fba9" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dbe176c0-61a2-4ce0-bdba-6a5eeb7568be" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6, Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d6)/2, Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Psychic" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="90c768f8-3267-4e7b-9ec3-fef52c2e0084" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="88c8df59-35ed-43a7-96f3-21735dbb7489" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_5" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d6)/2,Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Psychic" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e6776ffd-d0b1-42e9-be9b-e58e0688081b" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArmsOfHadar_Psychic_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="d838fb31-44d1-464b-abba-6bbe4fa56751" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((7d6)/2,Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic)" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Psychic)" />
-        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArmsOfHadar_Psychic" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('PsychicSpell', context.Source)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6,Psychic,Magical);ApplyStatus(ARMS_OF_HADAR,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d6/2,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
