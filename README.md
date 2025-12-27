@@ -1473,6 +1473,9 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
     - When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a Level 1+ spell on the current turn, nor can you cast a Level 1+ spell on this turn after modifying a spell in this way.
   - Seeking Spell (1 Sorcery Point)
     - If you make an attack roll for a spell and miss, you can spend 1 Sorcery Point to reroll the d20, and you must use the new roll.
+  - Twinned Spell (Cost: 1 Sorcery Point)
+    - When you cast a spell, such as Charm Person, that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell’s effective level by 1.
+      > Animal Friendship, Bane, Banishment, Bless, Blindness, Charm Person, Command, Enhance Ability, Fly, Freedom of Movement , Heroism, Hold Monster, Hold Person, Invisibility, Longstrider, Tasha's Hideous Laughter, Tasha's Mind Whip
 - Level 5: Sorcerous Restoration
   - You can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer Level. Once you use this feature, you can't do so again until you finish a Long Rest.
 - Level 7: Sorcery Incarnate
