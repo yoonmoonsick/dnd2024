@@ -1,0 +1,27 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Shout_Thunderclap", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_THUNDERCLAP", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Shout_ArmsOfHadar", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_ARMS_OF_HADAR", -1.0, 1);
+
+IF
+StatusRemoved(_Character, "PSYCHIC_SPELLS", _, _)
+THEN
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_THUNDERCLAP");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_ARMS_OF_HADAR");
+EXITSECTION
+
+ENDEXITSECTION
