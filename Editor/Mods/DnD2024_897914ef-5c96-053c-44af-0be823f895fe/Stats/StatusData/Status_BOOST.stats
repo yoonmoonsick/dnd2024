@@ -286,6 +286,72 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a020ad65-e376-416f-a613-6a2089f21381" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_PRONE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf436e702gfa14g45aagabaeg6fa3d54c1061" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe0869e3g3954g4eb1g915agd39ade42ecde" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Prone" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="White" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="KO" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="KO" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="UseLyingPickingState" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PRONE" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceConsumeMultiplier(Movement, 2,0);MovementSpeedLimit(Walk)Disadvantage(AttackRoll);Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(HasActionResource('Movement', 50, 0, true) and not (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasPassive('LeapToYourFeet')) or ((HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and HasActionResource('Movement', 1.5, 0)) or (HasActionResource('Movement', 1, 0, true) and (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience'))) or (HasPassive('LeapToYourFeet') and HasActionResource('Movement', 1.5, 0)) or (HasActionResource('Movement', 1, 0, true) and HasPassive('LeapToYourFeet'))" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(Movement, 50%, 0, true);RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="SplatterDirtAmount" type="FloatTableFieldDefinition" value="0.1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="2c522b72-806b-4f32-9b1f-875217de537b" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and not (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasPassive('LeapToYourFeet')):UseActionResource(Movement, 50%, 0, true);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasPassive('LeapToYourFeet') and HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 1.5, 0, true);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasPassive('LeapToYourFeet') and not HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 100%, 0, true);AI_ONLY:ApplyStatus(AI_HELPER_PRONE,100,2);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and HasPassive('LeapToYourFeet') and not (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 1.5, 0, true);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and HasPassive('LeapToYourFeet') and not (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 100%, 0, true);AI_ONLY:ApplyStatus(AI_HELPER_PRONE,100,2);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and HasPassive('LeapToYourFeet') and (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 1.5, 0, true);IF(RemoveCause(StatusRemoveCause.Condition) and TurnBased(context.Source) and HasPassive('LeapToYourFeet') and (HasPassive('Athlete_StandUp') or HasPassive('Feat_OrdersResilience')) and not HasActionResource('Movement', 1.5, 0)):UseActionResource(Movement, 100%, 0, true);AI_ONLY:ApplyStatus(AI_HELPER_PRONE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8637415e-826a-404f-b29f-bc4906906b2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE_GREASE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82535c07-ab13-45e8-a8ff-521976441b40" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE_SEWER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7059bb55-2bfd-4a55-a9d1-f55424f81184" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE_ICE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41dec0e4-37fa-4042-a8df-f48c9cad47d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE_FALLEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b655443-b4b4-46b6-a062-29c80c2ce3e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="PRONE_THUNDEROUS_SMITE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c5bda78-e20e-4cf8-909f-3372820fb9ad" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="59dd8d49-5bf2-4315-b65a-e4a45bd58c6f" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_ACT2" />
       </fields>
