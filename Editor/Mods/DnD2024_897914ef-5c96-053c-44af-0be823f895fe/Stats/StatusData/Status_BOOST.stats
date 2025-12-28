@@ -8095,14 +8095,70 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6337ffd9-ca68-4b94-b2b1-1f23ffd553bf" />
         <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h110df7aag72aag0c23g1509gd61153f7af6d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3a7174d9g78a9gdff5gb8begb8f422ef3831" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3a7174d9g78a9gdff5gb8begb8f422ef3831" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Heroism" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Orange" enumeration_type_name="FormatStringColor" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="INSPRING_SMITE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiringSmite)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_InspiringSmite')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);RegainHitPoints(2d8)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6337ffd9-ca68-4b94-b2b1-1f23ffd553bf" />
+        <field name="StackId" type="StringTableFieldDefinition" value="INSPRING_SMITE_TEMP_HP" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/1);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasTemporaryHP()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6413aedc-33f8-4936-bbf3-8cea3975abce" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="25d3a5cd-adcc-43eb-b902-645788323648" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7ea79a7-e0cb-49e7-befd-b814d0430815" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="4" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="750220b0-28b5-4efa-aa19-61aa32893e78" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8c8430db-40c5-4443-a428-a33ffd23885b" />
+        <field name="Name" type="NameTableFieldDefinition" value="INSPRING_SMITE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d8044428-412e-4044-8bbf-0bdad29bd43d" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP((2d8+Cause.ClassLevel(Cleric))/6);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
