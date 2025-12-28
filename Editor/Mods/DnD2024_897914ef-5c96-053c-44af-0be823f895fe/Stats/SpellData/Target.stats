@@ -2655,6 +2655,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_TelekineticCrush_Psychic" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2668,6 +2669,7 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic);" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2681,6 +2683,7 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d6,Psychic);" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2694,6 +2697,7 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d6,Psychic);" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_TelekineticCrush_Psychic" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;IsHarmful;HasVerbalComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3734,8 +3738,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5f1d8113-4fc2-4185-8f09-61570dcaec03" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1783a003-8146-48a3-a077-5a5182b5b4a6" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d8)/2,Thunder,Magical)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;IsHarmful;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3744,8 +3748,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="783df5d6-bc71-4334-963c-d12a6931f0ff" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9c4ae120-4a7a-4625-be65-6ae3a1fa1760" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Thunder,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d8)/2,Thunder,Magical)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;IsHarmful;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3754,8 +3758,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7aebdaca-f70b-4dca-a569-eca900f59395" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1620a679-b6a9-477c-b488-6c8a3a34380f" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Thunder,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d8)/2,Thunder,Magical)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;IsHarmful;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3764,8 +3768,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1f6f9d78-c503-4cee-80f8-4918a279ab1a" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73275101-62f7-4bb8-82de-3f1e0c1aa2d4" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Thunder,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d8)/2,Thunder,Magical)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;IsHarmful;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
@@ -3774,9 +3778,78 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ee628d03-51cc-4296-bed3-d050dc4234fd" />
         <field name="Name" type="NameTableFieldDefinition" value="Shatter_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c958d54a-2410-4671-afbc-3f8bfa63ed16" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8,Psychic,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(7d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Thunder,Magical);IF(HasStatus('WARPSPACE',context.Source)):Force(-4, TargetToEntity, Neutral, false, true);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((7d8)/2,Thunder,Magical)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;IsHarmful;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="299694bb-8e44-4bdf-bbab-72af324d94ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shatter_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1783a003-8146-48a3-a077-5a5182b5b4a6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((3d8)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Psychic)" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="442ef7c1-238a-4d3e-9ada-ed7aeb8fbcb7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shatter_Psychic_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9c4ae120-4a7a-4625-be65-6ae3a1fa1760" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((4d8)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Shatter_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54dac9e9-3053-4b63-a011-458a666c331f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shatter_Psychic_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1620a679-b6a9-477c-b488-6c8a3a34380f" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((5d8)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Shatter_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8bd6f4d-8e78-44a8-a492-3084919da00c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shatter_Psychic_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="73275101-62f7-4bb8-82de-3f1e0c1aa2d4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((6d8)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Shatter_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="83bcb39e-cc32-4ea5-8d22-69441eecec79" />
+        <field name="Name" type="NameTableFieldDefinition" value="Shatter_Psychic_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c958d54a-2410-4671-afbc-3f8bfa63ed16" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(7d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((7d8)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Shatter_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(7d8,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(7d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Shatter_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4083,8 +4156,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="647a70cc-6341-4841-a09a-41a10f4b936f" />
         <field name="Name" type="NameTableFieldDefinition" value="Blight" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b38a1ef6-a154-40e2-87a2-bc4609f58480" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(8d8,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(64,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(8d8,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(64,Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(8d8/2,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(32,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(8d8/2,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(32,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4092,8 +4163,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eb0cec97-7095-497c-bee7-38ba758a9133" />
         <field name="Name" type="NameTableFieldDefinition" value="Blight_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3d6c29ce-5c7e-4f95-a32d-dfdb1d0e07c8" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(9d8,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(72,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(9d8,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(72,Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(9d8/2,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(36,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(9d8/2,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(36,Psychic,Magical);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4101,8 +4170,44 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4501cc55-8708-4f86-b78a-354a87aa4575" />
         <field name="Name" type="NameTableFieldDefinition" value="Blight_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f58a2710-a2a0-4472-9fe2-0cee28673a85" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(10d8,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(80,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(10d8,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(80,Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(10d8/2,Necrotic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(40,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not Tagged('PLANT')):DealDamage(10d8/2,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and Tagged('PLANT')):DealDamage(40,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15d5c8ec-d63c-496a-998d-75eaf18d2e41" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blight_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b38a1ef6-a154-40e2-87a2-bc4609f58480" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage(8d8,Psychic);IF(Tagged('PLANT')):DealDamage(64,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage((8d8)/2,Psychic,Magical);IF(Tagged('PLANT')):DealDamage(32,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Blight_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,Psychic)" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8781a1a4-75e3-4950-8101-f367a10a0601" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blight_Psychic_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d6c29ce-5c7e-4f95-a32d-dfdb1d0e07c8" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage(9d8,Psychic,Magical);IF(Tagged('PLANT')):DealDamage(72,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage((9d8)/2,Psychic,Magical);IF(Tagged('PLANT')):DealDamage(36,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Blight_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(9d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Blight_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4570dec7-b96f-441d-903d-94f4b0c637c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Blight_Psychic_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f58a2710-a2a0-4472-9fe2-0cee28673a85" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage(10d8,Psychic,Magical);IF(Tagged('PLANT')):DealDamage(80,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not Tagged('PLANT')):DealDamage((10d8)/2,Psychic,Magical);IF(Tagged('PLANT')):DealDamage(40,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Blight_Psychic" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(10d8,Psychic)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Blight_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4181,7 +4286,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="cd8400d3-0e68-4894-8a47-6ab71216d736" />
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a8f2dc3e-6f40-45ff-a346-12354d107254" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4189,7 +4293,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c8c0691c-f518-4cc2-bb38-8744f7177c1b" />
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="83387e4a-00a2-446e-9dcc-f5d3ddf18938" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4197,7 +4300,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a74bc06c-3759-4f01-9178-f71d00a607d0" />
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3b4d6fef-2cbe-4d56-8c46-d055f132c964" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4205,7 +4307,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="886ff62c-05a2-40d5-9697-225d7c27cc6d" />
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7aaef30-b096-4ceb-a8f1-151a61c583c9" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4214,7 +4315,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Free" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="082d9227-a6e4-40fa-8eb5-f45586063c3e" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(3d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4223,7 +4323,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Free_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4a7beee0-315a-42df-8569-69c37498666e" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(4d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4232,7 +4331,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Free_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="08a278cd-ae98-4650-b1e8-59622435cba0" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(5d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4241,7 +4339,117 @@
         <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Free_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8845211f-8a03-4f7d-9815-75c1ea70ca54" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(6d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="547cdb8d-047f-4bcf-a806-622f48814486" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a8f2dc3e-6f40-45ff-a346-12354d107254" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,VAMPIRIC_TOUCH_PSYCHIC,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee;IsConcentration;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b64b5a88-29d4-4eca-b567-e03a5057464c" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83387e4a-00a2-446e-9dcc-f5d3ddf18938" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,VAMPIRIC_TOUCH_PSYCHIC_4,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee;IsConcentration;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VampiricTouch_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e15dc0cd-419e-4dae-94e3-998a3d0b760a" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b4d6fef-2cbe-4d56-8c46-d055f132c964" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,VAMPIRIC_TOUCH_PSYCHIC_5,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee;IsConcentration;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VampiricTouch_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="616b243a-60f0-41dc-b5c1-ca72417a4e7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e7aaef30-b096-4ceb-a8f1-151a61c583c9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,VAMPIRIC_TOUCH_PSYCHIC_6,100,10);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsMelee;IsConcentration;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_VampiricTouch_Psychic" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f68e65f-9eae-4604-9b41-01f5e3cef9d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="082d9227-a6e4-40fa-8eb5-f45586063c3e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="570156df-9ecf-42be-8623-0ac9ed70d2c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_Free_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a7beee0-315a-42df-8569-69c37498666e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b143052-c4dc-4d9c-b8a6-c20641567b94" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_Free_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="08a278cd-ae98-4650-b1e8-59622435cba0" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07621f1b-72d0-4233-8c34-51bafea6d83c" />
+        <field name="Name" type="NameTableFieldDefinition" value="VampiricTouch_Psychic_Free_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8845211f-8a03-4f7d-9815-75c1ea70ca54" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic,Magical);RegainHitPoints(SELF,(DamageDone)/2);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_VampiricTouch_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d6,Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsMelee;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6092,10 +6300,24 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dc1117cf-77de-441e-9722-06e8f5b53610" />
         <field name="Name" type="NameTableFieldDefinition" value="CircleOfDeath" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5940c685-cd68-4d61-a516-d666389ac4bb" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d8,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d8,Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d8/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(8d8/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Necrotic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d8/2,Necrotic,Magical);" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d8, Necrotic)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8, Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae4ab479-4e6c-4dcd-916a-6df27af3b0f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="CircleOfDeath_Psychic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5940c685-cd68-4d61-a516-d666389ac4bb" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(8d8/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_CircleOfDeath_Psychic" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d8, Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8, Psychic)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;IsSpell;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13400,7 +13622,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_CONCUSSION,100,-1);" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip),Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Thunder,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Thunder,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Concussion" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4a5df8ag592cg7004gb832gb818fc6085f0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d54c05eg352bg5606g8bd5g4f3c5135f074" version="1" />
@@ -13513,7 +13735,7 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeSpellAttack" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CHILL_TOUCH,100,2)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;HasHighGroundRangeExtension;IsHarmful;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2, Necrotic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source) and not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2,Necrotic,Magical);IF(HasPassive('PotentCantrip',context.Source) and HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2,Psychic,Magical);" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_CHILLTOUCH,100,-1)" />
       </fields>
     </stat_object>
@@ -13613,6 +13835,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

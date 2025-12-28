@@ -6,9 +6,58 @@ KBSECTION
 IF
 StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
 AND
+HasSpell((CHARACTER)_Character, "Target_BoomingBlade_ClassSpell", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_BOOMING_BLADE", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_ChillTouch", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_CHILLTOUCH", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_Concussion", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_CONCUSSION", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_GreenFlameBlade", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_GREEN_FLAME_BLADE", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
 HasSpell((CHARACTER)_Character, "Shout_Thunderclap", 1)
 THEN
 ApplyStatus(_Character, "PSYCHIC_SPELL_THUNDERCLAP", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_TollTheDead", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_TOLL_THE_DEAD", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_TrueStrike", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_TRUE_STRIKE", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_VengefulBlade", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_VENGEFUL_BLADE", -1.0, 1);
 
 IF
 StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
@@ -18,10 +67,55 @@ THEN
 ApplyStatus(_Character, "PSYCHIC_SPELL_ARMS_OF_HADAR", -1.0, 1);
 
 IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_Shatter", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_SHATTER", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_Blight", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_BLIGHT", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_VampiricTouch", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_VAMPIRIC_TOUCH", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Target_CircleOfDeath", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_CIRCLE_OF_DEATH", -1.0, 1);
+
+IF
+StatusApplied(_Character, "PSYCHIC_SPELLS", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Projectile_WitchBolt", 1)
+THEN
+ApplyStatus(_Character, "PSYCHIC_SPELL_WITCH_BOLT", -1.0, 1);
+
+
+
+
+IF
 StatusRemoved(_Character, "PSYCHIC_SPELLS", _, _)
 THEN
 RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_THUNDERCLAP");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_CONCUSSION");
 RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_ARMS_OF_HADAR");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_SHATTER");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_BLIGHT");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_VAMPIRIC_TOUCH");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_CIRCLE_OF_DEATH");
+RemoveStatus((GUIDSTRING)_Character, "PSYCHIC_SPELL_WITCH_BOLT");
+
 EXITSECTION
 
 ENDEXITSECTION
