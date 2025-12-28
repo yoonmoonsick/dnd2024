@@ -2936,7 +2936,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0fdcc665g87e9g76f0g95f3ga96776634d7d" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_DeftDeflection" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and IsFlatValueInterruptInteresting(8, context.Source) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source);" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));UseSpell(OBSERVER_TARGET,Projectile_DeftDeflection,true,true,true);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,0-LevelMapValue(RiskDie));UseSpell(OBSERVER_SOURCE,Projectile_DeftDeflection,true,true,true);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;RiskDie:1;" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded')" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
