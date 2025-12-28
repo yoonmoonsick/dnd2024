@@ -14,8 +14,3 @@ using "HIDEOUS_LAUGHTER"
 data "Boosts" "Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);"
 data "OnApplyFunctors" "RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);BreakConcentration();"
 
-new entry "New_Stat_0"
-type "StatusData"
-data "StatusType" "KNOCKED_DOWN"
-using "PRONE"
-

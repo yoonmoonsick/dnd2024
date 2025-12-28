@@ -1,0 +1,12 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+StatusRemoved(_Character, "DOWNED", _, _)
+THEN
+ApplyStatus((GUIDSTRING)_Character, "PRONE", 6.0, 1);
+EXITSECTION
+
+ENDEXITSECTION
