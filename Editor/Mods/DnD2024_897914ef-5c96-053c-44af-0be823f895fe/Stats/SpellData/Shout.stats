@@ -1816,6 +1816,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('WITCH_BOLT_BLOCK')" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d12,Lightning,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d12,Psychic,Magical);SetStatusDuration(SELF,WITCH_BOLT_OWNER,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4406,8 +4407,8 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,SourceSpellDC())" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Thunder,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Thunder,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic,Magical);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderclap" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6a0999c9g19f0g4a2bg8247g0c5f78a66703" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb28cd36fg83c2gad4ag8eddge07496510147" version="1" />
@@ -4434,19 +4435,6 @@
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="62c93179-7074-43f1-9fb9-71851615c279" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="62c93179-7074-43f1-9fb9-71851615c279" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ab840161-01c4-4359-81df-7f5f6e023e4b" />
-        <field name="Name" type="NameTableFieldDefinition" value="Thunderclap_Psychic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="37e4fce1-c324-426d-ae91-65e43c3b33ab" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderclap_Psychic" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
