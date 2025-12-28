@@ -2805,3 +2805,119 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Heal](https://www.dndbeyond.com/spells/2618979-heal)
 - [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
 - [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)  ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
+
+## Spell Scroll Restrictions
+
+The use of spell scrolls is restricted based on class. This change is intended to prevent situations where a Barbarian with 8 Intelligence, 8 Wisdom, and 8 Charisma can repeatedly spam Scrolls of Chain Lightning. We hope this adjustment has a positive impact on the overall gameplay experience.
+
+These restrictions are less strict than those found in the original ruleset. However, additional limitations based on spell level may be introduced in the future.
+
+The list below details which classes can use each spell scroll.
+
+At present, full scroll access granted by subclasses has not yet been implemented. As an exception, Eldritch Knight, Arcane Trickster, Spellslinger, and Architect of Ruin are allowed to use Wizard spell scrolls.
+
+* **Scroll of Acid Arrow** → Wizard
+* **Scroll of Chain Lightning** → Sorcerer, Wizard
+* **Scroll of Chromatic Orb** → Sorcerer, Wizard
+* **Scroll of Disintegrate** → Sorcerer, Wizard
+* **Scroll of Fireball** → Sorcerer, Wizard, LightDomain, FiendPatron
+* **Scroll of Fire Bolt** → Sorcerer, Wizard, Artificer
+* **Scroll of Ice Knife** → Druid, Sorcerer, Wizard
+* **Scroll of Magic Missile** → Sorcerer, Wizard
+* **Scroll of Ray of Enfeeblement** → Warlock, Wizard
+* **Scroll of Ray of Frost** → Sorcerer, Wizard, Artificer
+* **Scroll of Ray of Sickness** → Wizard
+* **Scroll of Scorching Ray** → Sorcerer, Wizard, LightDomain, FiendPatron
+* **Scroll of Witch Bolt** → Sorcerer, Warlock, Wizard
+* **Scroll of Blink** → Sorcerer, Wizard, ArchfeyPatron, Artificer
+* **Scroll of Blur** → Sorcerer, Wizard, Artificer
+* **Scroll of Detect Thoughts** → Bard, Sorcerer, Wizard, GreatoldonePatron
+* **Scroll of Disguise Self** → Bard, Sorcerer, Wizard, TrickeryDomain, GloomStalker, Artificer
+* **Scroll of Expeditious Retreat** → Sorcerer, Warlock, Wizard, Artificer
+* **Scroll of False Life** → Sorcerer, Wizard, Artificer
+* **Scroll of Feather Fall** → Bard, Sorcerer, Wizard, Artificer
+* **Scroll of Fire Shield** → Druid, Sorcerer, Wizard, WarDomain, FiendPatron
+* **Scroll of Flame Blade** → Druid, Sorcerer
+* **Scroll of Mirror Image** → Bard, Sorcerer, Wizard
+* **Scroll of See Invisibility** → Bard, Sorcerer, Wizard, Artificer
+* **Scroll of Aid** → Bard, Cleric, Druid, Paladin, Ranger, ClockworkSorcery, CelestialPatron, Artificer
+* **Scroll of Animal Friendship** → Bard, Druid, Ranger, NatureDomain
+* **Scroll of Animate Dead** → Cleric, Wizard, Oathbreaker, CircleofSpores
+* **Scroll of Arcane Lock** → Wizard, Artificer
+* **Scroll of Banishment** → Cleric, Paladin, Sorcerer, Warlock, Wizard, OathofVengeance
+* **Scroll of Bestow Curse** → Bard, Cleric, Wizard, Oathbreaker, OathofConquest
+* **Scroll of Black Tentacles** → Wizard, AberrantSorcery
+* **Scroll of Blight** → Druid, Sorcerer, Warlock, Wizard, Oathbreaker
+* **Scroll of Blindness** → Bard, Cleric, Sorcerer, Wizard
+* **Scroll of Charm Person** → Bard, Druid, Sorcerer, Warlock, Wizard, TrickeryDomain, Feywanderer
+* **Scroll of Chill Touch** → Sorcerer, Warlock, Wizard
+* **Scroll of Circle of Death** → Sorcerer, Warlock, Wizard
+* **Scroll of Cloudkill** → Sorcerer, Wizard, CircleofSpores
+* **Scroll of Cloud of Daggers** → Bard, Sorcerer, Warlock, Wizard
+* **Scroll of Confusion** → Bard, Druid, Sorcerer, Wizard, TrickeryDomain, GreatoldonePatron
+* **Scroll of Conjure Elemental** → Druid, Wizard
+* **Scroll of Conjure Minor Elementals** → Druid, Wizard
+* **Scroll of Crown of Madness** → Bard, Sorcerer, Warlock, Wizard
+* **Scroll of Darkness** → Sorcerer, Warlock, Wizard, Oathbreaker
+* **Scroll of Darkvision** → Druid, Ranger, Sorcerer, Wizard, Artificer
+* **Scroll of Dominate Person** → Bard, Sorcerer, Wizard, TrickeryDomain, ArchfeyPatron, Oathbreaker, OathofConquest
+* **Scroll of Enlarge** → Bard, Druid, Sorcerer, Wizard, Artificer
+* **Scroll of Eyebite** → Bard, Sorcerer, Warlock, Wizard
+* **Scroll of Feign Death** → Bard, Cleric, Druid, Wizard
+* **Scroll of Flaming Sphere** → Druid, Sorcerer, Wizard
+* **Scroll of Flesh to Stone** → Druid, Sorcerer, Wizard
+* **Scroll of Fly** → Sorcerer, Warlock, Wizard, Artificer
+* **Scroll of Fog Cloud** → Druid, Ranger, Sorcerer, Wizard
+* **Scroll of Freezing Sphere** → Sorcerer, Wizard
+* **Scroll of Gaseous Form** → Sorcerer, Warlock, Wizard, CircleofSpores
+* **Scroll of Globe of Invulnerability** → Sorcerer, Wizard
+* **Scroll of Glyph of Warding** → Bard, Cleric, Wizard, Artificer
+* **Scroll of Goodberry** → Druid, Ranger
+* **Scroll of Grease** → Sorcerer, Wizard, Artificer
+* **Scroll of Haste** → Sorcerer, Wizard, OathofGlory, OathofVengeance, Artificer
+* **Scroll of Hideous Laughter** → Bard, Warlock, Wizard, GreatoldonePatron
+* **Scroll of Hold Monster** → Bard, Sorcerer, Warlock, Wizard, WarDomain, CircleofTheSea, OathofVengeance
+* **Scroll of Hold Person** → Bard, Cleric, Druid, Sorcerer, Warlock, Wizard, OathofVengeance
+* **Scroll of Hypnotic Pattern** → Bard, Sorcerer, Warlock, Wizard, TrickeryDomain
+* **Scroll of Ice Storm** → Druid, Sorcerer, Wizard, OathofTheAncients
+* **Scroll of Invisibility** → Bard, Sorcerer, Warlock, Wizard, TrickeryDomain, Artificer
+* **Scroll of Greater Invisibility** → Bard, Sorcerer, Wizard, GloomStalker, ArchfeyPatron
+* **Scroll of Irresistible Dance** → Bard, Wizard
+* **Scroll of Jump** → Druid, Ranger, Sorcerer, Wizard, Artificer
+* **Scroll of Knock** → Bard, Sorcerer, Wizard
+* **Scroll of Longstrider** → Bard, Druid, Ranger, Wizard, Artificer
+* **Scroll of Mage Armor** → Sorcerer, Wizard
+* **Scroll of Magic Weapon** → Paladin, Ranger, Sorcerer, Wizard, WarDomain, Artificer
+* **Scroll of Misty Step** → Sorcerer, Warlock, Wizard, OathofTheAncients, OathofVengeance, Feywanderer, ArchfeyPatron
+* **Scroll of Phantasmal Force** → Bard, Sorcerer, Wizard, ArchfeyPatron, GreatoldonePatron
+* **Scroll of Phantasmal Killer** → Bard, Wizard
+* **Scroll of Planar Binding** → Bard, Cleric, Druid, Warlock, Wizard
+* **Scroll of Polymorph** → Bard, Druid, Sorcerer, Wizard
+* **Scroll of Protection from Energy** → Cleric, Druid, Ranger, Sorcerer, Wizard, OathofGlory, OathofTheAncients, OathofVengeance, Artificer
+* **Scroll of Protection from Evil and Good** → Cleric, Druid, Paladin, Warlock, ClockworkSorcery
+* **Scroll of Remove Curse** → Cleric, Paladin, Warlock, Wizard
+* **Scroll of Resilient Sphere** → Wizard, Artificer
+* **Scroll of Seeming** → Bard, Sorcerer, Wizard, GloomStalker, ArchfeyPatron
+* **Scroll of Shatter** → Bard, Sorcerer, Wizard, CircleofTheSea, TempestDomain
+* **Scroll of Shocking Grasp** → Sorcerer, Wizard, Artificer
+* **Scroll of Sleep** → Bard, Sorcerer, Wizard, ArchfeyPatron
+* **Scroll of Sleet Storm** → Druid, Sorcerer, Wizard
+* **Scroll of Slow** → Bard, Sorcerer, Wizard
+* **Scroll of Speak with Dead** → Bard, Cleric, Wizard
+* **Scroll of Stinking Cloud** → Bard, Sorcerer, Wizard, FiendPatron
+* **Scroll of Stoneskin** → Druid, Ranger, Sorcerer, Wizard, OathofTheAncients, Artificer
+* **Scroll of Vampiric Touch** → Sorcerer, Warlock, Wizard, DeathDomain, GraveDomain
+* **Scroll of Web** → Sorcerer, Wizard, Artificer
+* **Scroll of Dimension Door** → Bard, Sorcerer, Warlock, Wizard, TrickeryDomain, OathofVengeance, Feywanderer
+* **Scroll of Telekinesis** → Sorcerer, Wizard, GreatoldonePatron
+* **Scroll of Wall of Fire** → Druid, Sorcerer, Wizard, LightDomain, CelestialPatron, FiendPatron
+* **Scroll of Wall of Ice** → Wizard
+* **Scroll of Wall of Stone** → Druid, Sorcerer, Wizard, Artificer
+* **Scroll of Burning Hands** → Sorcerer, Wizard, LightDomain, FiendPatron
+* **Scroll of Color Spray** → Bard, Sorcerer, Wizard
+* **Scroll of Cone of Cold** → Druid, Sorcerer, Wizard
+* **Scroll of Fear** → Bard, Sorcerer, Warlock, Wizard, GloomStalker
+* **Scroll of Gust of Wind** → Druid, Ranger, Sorcerer, Wizard
+* **Scroll of Lightning Bolt** → Sorcerer, Wizard, CircleofTheSea
+* **Scroll of Sunbeam** → Cleric, Druid, Sorcerer, Wizard
+* **Scroll of Thunderwave** → Bard, Druid, Sorcerer, Wizard
