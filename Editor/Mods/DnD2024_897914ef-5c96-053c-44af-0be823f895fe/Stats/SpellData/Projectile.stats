@@ -3,6 +3,85 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;CrossbowLoadingOffHand:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4812c1e-295a-4665-8348-bc603dd99c5b" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_NoOffhand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" clear_inherited_value="true" value=",,;,,;;,,;,,;,,;,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a2b0a9c-dc84-4aa8-bf79-1316ceddfa04" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Firearm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a7d89e05-2737-4f96-b136-dbd86a180814" />
+        <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack_Firearm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cff06719-32a6-40ed-9fce-a1b0f1bdf6ff" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_10" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Enemy() and not HasStatus('WEAPONMASTERY_CLEAVE_TECHNICAL');" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2,75d615be-9277-6e22-6c17-fa51981d7560,8c00238b-549d-dc71-8fcb-42ba68bae142" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ShortDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d0cacd4e-0eb2-4573-a6cf-d2371a8a1730" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d8d56665-345a-4224-a754-28c6df93d62f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b4db7fe2-9f06-4e87-9c80-7ad2056963af" />
         <field name="Name" type="NameTableFieldDefinition" value="DivingStrike_Zevlor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bc77bc11-8128-4ebd-b4ab-b9c7a21c0d9e" />
@@ -82,40 +161,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
-        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_10" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and Enemy() and not HasStatus('WEAPONMASTERY_CLEAVE_TECHNICAL');" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2,75d615be-9277-6e22-6c17-fa51981d7560,8c00238b-549d-dc71-8fcb-42ba68bae142" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
-        <field name="ShortDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d0cacd4e-0eb2-4573-a6cf-d2371a8a1730" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
-        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d8d56665-345a-4224-a754-28c6df93d62f" />
-        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_12" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7426005b-6db7-4edb-9e26-21b92f830174" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3f1f0338-81cb-4582-a777-303beb3444aa" />
         <field name="Name" type="NameTableFieldDefinition" value="WardingWind" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceClearLayer(Cloud);SurfaceClearLayer(Cloud);GROUND:CreateSurface(3,0.1,SurfaceClear,false);RemoveStatus(BURNING);" />
@@ -125,29 +170,6 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Character() and not Item();" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="64046453-9e1f-4f1d-a86d-f4dc4acff457,50f2bac9-61a4-489c-c70f-c3881062f2a2,d9e4cf4d-3a9a-d3d5-8ee3-afcf139aa3dc" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreBlindness;RangeIgnoreVerticalThreshold;RangeIgnoreTargetBounds;RangeIgnoreSourceBounds;ImmediateCast;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3a2b0a9c-dc84-4aa8-bf79-1316ceddfa04" />
-        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Firearm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);CastOffhand[DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand)];" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a7d89e05-2737-4f96-b136-dbd86a180814" />
-        <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack_Firearm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="cff06719-32a6-40ed-9fce-a1b0f1bdf6ff" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(OffhandRangedWeapon, OffhandRangedWeaponDamageType);ExecuteWeaponFunctors(OffHand);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -2694,15 +2716,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:ApplyStatus(HORDE_BREAKER_TECHNICAL,100,1);ApplyStatus(SELF,HORDE_BREAKER,100,1);ApplyStatus(SELF,HORDE_BREAKER_TECHNICAL,100,1);AOE:ApplyStatus(HORDE_BREAKER_TARGET,100,1)" />
         <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HORDE_BREAKER_TECHNICAL', context.Source) and HasStatus('HUNTERSPREY_HB',context.Source);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
-        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="dc75f60c-beac-4588-a14a-43834eeb8f8f" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;CrossbowLoadingOffHand:1;" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
