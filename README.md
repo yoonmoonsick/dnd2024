@@ -1425,7 +1425,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Psi-Bolstered Knack
     - If you fail an ability check, you can roll one Soulknife Energy Die and add the number rolled to the check, potentially turning failure into success.
   - Psychic Blades ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Melee.png?raw=true) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Throw.png?raw=true)
-    - You can manifest shimmering blades of psychic energy, allowing you to make a melee or ranged attack with a psychic blade by using your reaction.
+    - You can manifest shimmering blades of psychic energy, allowing you to make a melee or ranged attack with a psychic blade.
 - Level 6: Soul Blades
     - Homing Strikes
       - If you make an attack roll and miss the target, you can roll one Soulknife Energy Die and add the number rolled to the attack roll.

@@ -122,5 +122,14 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa59bd30-fa06-4920-9653-05fe6d14477b" />
+        <field name="Name" type="NameTableFieldDefinition" value="STUNNED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="960dad73-5352-431a-a15e-1b62b1816cd0" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Wisdom, 17)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
