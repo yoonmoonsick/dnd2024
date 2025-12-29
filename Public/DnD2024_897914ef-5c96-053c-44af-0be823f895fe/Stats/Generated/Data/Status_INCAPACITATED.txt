@@ -93,3 +93,10 @@ data "StatusType" "INCAPACITATED"
 using "HOLD_PERSON"
 data "OnRemoveFunctors" "IF(HasPassive('Feat_HarperTeamwork')):ApplyStatus(INSPIRING_WILLPOWER,100,1);"
 
+new entry "STUNNED"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "STUNNED"
+data "RemoveConditions" "SavingThrow(Ability.Wisdom, 17)"
+data "RemoveEvents" "OnTurn"
+

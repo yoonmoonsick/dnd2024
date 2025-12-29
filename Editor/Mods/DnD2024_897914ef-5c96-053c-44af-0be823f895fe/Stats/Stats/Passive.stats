@@ -6698,19 +6698,7 @@
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('SoulknifeEnergy',1,0,false,false,context.Source);" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(SELF,SoulknifeEnergy,1,0) " />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SkillCheck,LevelMapValue(PsychicBlade));RollBonus(RawAbility,LevelMapValue(PsychicBlade));" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;IsHidden;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="726c06f3-00ad-4b3c-a380-69ee893e3f40" />
-        <field name="Name" type="NameTableFieldDefinition" value="PsychicBlades" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h10c5096fg8eeeg1345g2e7eg1d05047dc7fa" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2bf658e7gd07ag07c1g2d6eg909394a9b967" version="2" />
-        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="SoulknifeEnergy:1;ReactionActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Soulknife_Melee" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_PsychicBlade);UnlockSpell(Projectile_PsychicBlade);IF(SpellId('Target_PsychicBlade') or SpellId('Projectile_PsychicBlade')):RollBonus(Attack,max(0,IntelligenceModifier));" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9108,6 +9096,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="88c82a04-9e85-4709-989a-7522e2fade40" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Items" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16c17a92-6b8b-457a-a5ad-2cfc78f40300" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShadowBlade_Passive" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b123f69-5e4f-4152-823b-0138bb871c6d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasObscuredState(ObscuredState.Clear) and (IsMeleeAttack() and IsWeaponAttack()) or IsRangedUnarmedAttack()):Advantage(AttackRoll);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

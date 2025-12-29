@@ -4817,18 +4817,9 @@ data "Description" "h7c25b83dgaeceg868dgfbfbga737ffa697e5;1"
 data "TooltipUseCosts" "SoulknifeEnergy:1"
 data "Icon" "PassiveFeature_ThoughtShield_PsychicResistance"
 data "EnabledConditions" "HasActionResource('SoulknifeEnergy',1,0,false,false,context.Source);"
-data "Properties" "IsToggled;ToggledDefaultAddToHotbar;IsHidden;ForceShowInCC"
+data "Properties" "IsToggled;ToggledDefaultAddToHotbar;ForceShowInCC"
 data "Boosts" "RollBonus(SkillCheck,LevelMapValue(PsychicBlade));RollBonus(RawAbility,LevelMapValue(PsychicBlade));"
 data "StatsFunctors" "UseActionResource(SELF,SoulknifeEnergy,1,0) "
-
-new entry "PsychicBlades"
-type "PassiveData"
-data "DisplayName" "h10c5096fg8eeeg1345g2e7eg1d05047dc7fa;1"
-data "Description" "h2bf658e7gd07ag07c1g2d6eg909394a9b967;2"
-data "TooltipUseCosts" "SoulknifeEnergy:1;ReactionActionPoint:1"
-data "Icon" "Action_Soulknife_Melee"
-data "Properties" "Highlighted;ForceShowInCC"
-data "Boosts" "UnlockSpell(Target_PsychicBlade);UnlockSpell(Projectile_PsychicBlade);IF(SpellId('Target_PsychicBlade') or SpellId('Projectile_PsychicBlade')):RollBonus(Attack,max(0,IntelligenceModifier));"
 
 new entry "SoulBlades"
 type "PassiveData"
@@ -6610,6 +6601,11 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 
 new entry "YMS_Items"
 type "PassiveData"
+
+new entry "ShadowBlade_Passive"
+type "PassiveData"
+using "ShadowBlade_Passive"
+data "Boosts" "IF(not HasObscuredState(ObscuredState.Clear) and (IsMeleeAttack() and IsWeaponAttack()) or IsRangedUnarmedAttack()):Advantage(AttackRoll);"
 
 new entry "MAG_TheClover_Mainhand_Passive"
 type "PassiveData"
