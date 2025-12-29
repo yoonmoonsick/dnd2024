@@ -5400,6 +5400,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c89d9ef0-8949-425a-b316-72865d495f98" />
+        <field name="Name" type="NameTableFieldDefinition" value="NICK" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NICK" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsOffHandSlotEmpty(context.Source) or not (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false)));not (Tagged('WPN_DAGGER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_LIGHT_HAMMER', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SICKLE', GetActiveWeapon(context.Source, false)) or Tagged('WPN_SCIMITAR', GetActiveWeapon(context.Source, false)))" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65a61b0c-936b-4188-889c-e405a46b7d04" />
+        <field name="Name" type="NameTableFieldDefinition" value="NICK_COOLDOWN" />
+        <field name="StackId" type="StringTableFieldDefinition" value="NICK_COOLDOWN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_NoOffhand,Target_MainHandAttack);AttackSpellOverride(Projectile_MainHandAttack_NoOffhand,Projectile_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack') or SpellId('Projectile_OffhandAttack') or SpellId('Throw_FastHand'),ModifyUseCosts(Replace,FakeBonusActionPoint,1,0,BonusActionPoint));" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(BonusActionPoint,1, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a9d6b2ea-1bf2-42d0-8dce-e8deeecc0db6" />
         <field name="Name" type="NameTableFieldDefinition" value="SLOW_WM" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="52deb994-ab2c-448c-b902-32882aa807c9" />
@@ -11061,8 +11083,8 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f45b10cf-2424-4237-ad9d-9676f65e0cf9" />
         <field name="Name" type="NameTableFieldDefinition" value="MAGICAL_HAND_CROSSBOW" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1996d955-6e84-455f-a019-005a09822640" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);UseActionResource(ReactionActionPoint,1);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source)):DealDamage(1d6,Force);IF(HasStatus('HEX_STRENGTH',context.Target,context.Source)):DealDamage(1d6,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK',context.Source)):DealDamage(1d8,Radiant);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_COLD',context.Source)):DealDamage(1d8,Cold);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_FIRE',context.Source)):DealDamage(1d8,Fire);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_NECROTIC',context.Source)):DealDamage(1d8,Necrotic);IF(HasStatus('IMPROVED_DIVINE_SMITE_NICK_POISON',context.Source)):DealDamage(1d8,Poison);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

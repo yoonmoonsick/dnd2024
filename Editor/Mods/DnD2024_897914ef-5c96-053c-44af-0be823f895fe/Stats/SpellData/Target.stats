@@ -3,18 +3,19 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="20c8f1cd-5f09-4817-94b4-e4ee9b2a9a86" />
-        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_Nick" />
+        <field name="UUID" type="IdTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
-        <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" value="NickActionPoint:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand);ApplyStatus(SELF,NICK_COOLDOWN,100,1)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c5ff5325-b1ba-4272-8339-86d30bd755c2" />
-        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_DualWielder" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="20c8f1cd-5f09-4817-94b4-e4ee9b2a9a86" />
+        <field name="UUID" type="IdTableFieldDefinition" value="20c8f1cd-5f09-4817-94b4-e4ee9b2a9a86" />
+        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack_NoOffhand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
+        <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8741,20 +8742,6 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(POLYMORPH_SHEEP,100,100)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="Shapeshifter's Boon" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsConcentration;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5eb2b17a-63b9-4975-91ac-52c6f0d451ef" />
-        <field name="Name" type="NameTableFieldDefinition" value="OffhandAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="34c87ba1-754a-4700-9178-d939ad7003c6" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
-        <field name="Name" type="NameTableFieldDefinition" value="MainHandAttack" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6707901c-81b4-4e77-8b0c-4eb486b44976" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
