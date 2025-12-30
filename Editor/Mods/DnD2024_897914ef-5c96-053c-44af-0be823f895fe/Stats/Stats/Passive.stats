@@ -669,6 +669,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6df28c5c-23a4-415e-8b93-bf97a517340b" />
+        <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Nick_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('BonusActionPoint') and not (SpellId('Target_MainHandAttack') or SpellId('Target_OffhandAttack') or SpellId('Projectile_MainHandAttack'));" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_BONUS_ACTION, 100, 1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3f3a7382-7195-463c-bc47-9426b4236add" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponMastery_Cleave_10" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0fcd084-5fdd-46de-b2ae-62f154517d38" />
