@@ -622,12 +622,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ecb620af-cbab-4acd-b2e7-9768614cc5c2" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="702120a1-cf36-446c-a441-6f275d800d8b" />
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
       </fields>
@@ -1533,7 +1527,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1ababef8-c892-4130-935d-849b8eac396c" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid,Magical);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1619,11 +1613,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f145695-f173-478f-baf2-e52f86fcbe1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="aa4b1cbe-b003-48b2-8eca-4b15d165a04b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Acid,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ac2fa0c2-d897-4f21-ac8a-61ae3170d3a9" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9b29d548-7645-4cb8-ac56-5c4b9880a26b" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Cold,Magical);RemoveStatus(BURNING)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Cold,Magical);RemoveStatus(BURNING);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1709,11 +1711,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="096459f7-df29-4e3d-95f2-7aab17b52b7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Cold_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ac2fa0c2-d897-4f21-ac8a-61ae3170d3a9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Cold,Magical);RemoveStatus(BURNING);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1bd6f1a2-d360-408f-be00-d7763651bf4b" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Fire" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c423acc0-e59d-43b2-8bf4-1cc0d8bf9704" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Fire,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Fire,Magical);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1799,11 +1809,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1b6a589-7b5d-4224-bf54-f6f8703b18af" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Fire_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1bd6f1a2-d360-408f-be00-d7763651bf4b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Fire,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="098adc83-af7b-49fc-9af9-6b864f6894e4" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7b5aa0a-2bf5-4c37-9496-4469e89ca36d" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Lightning,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Lightning,Magical);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1833,7 +1851,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Lightning_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="98024e85-0fc5-4503-a737-c0b48b2361f8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Lightning,Magical);IF(RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_2)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Lightning,Magical);IF(RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1889,11 +1907,19 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ec64748-d8e2-451c-9e53-13e7d0dfa311" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Lightning_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="098adc83-af7b-49fc-9af9-6b864f6894e4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Lightning,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="021ef18d-55c5-496c-9c89-c65830b3efd6" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ab16307-2824-42e2-adde-0074c7331c92" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison,Magical)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison,Magical);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_0);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -1979,6 +2005,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e91baeee-da84-40a0-ad6b-df21beeff2f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="021ef18d-55c5-496c-9c89-c65830b3efd6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Poison,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="632c5897-416c-4245-9088-faca2903f724" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7907fa20-abbf-4712-a06c-629d5ee28b96" />
@@ -1987,6 +2021,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3d3654e7g98a3ge63dgbf62g57ea8d613d24" version="1" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="ExtraProjectileTargetConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead();" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Thunder,Magical);IF(RollDieAgainstDC(DiceType.d20,13)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2056,6 +2091,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="032e012a-6c87-4f67-b64e-d998cb5f5cd1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Thunder_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="632c5897-416c-4245-9088-faca2903f724" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Thunder,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="98fe3bb7-02d7-4081-940f-995e99ca279f" />
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="da1c2219-33b6-482f-9039-d0a1c8400d68" />
@@ -2073,7 +2116,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Acid_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d25b525d-6ffa-47af-8b38-674acb9a584e" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Acid_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Acid)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -2088,7 +2131,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Cold_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="91c61612-0f58-4c5f-a657-978d9413e8c3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Cold,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Cold,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Cold_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Cold)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -2103,7 +2146,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Fire_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="114afd9f-338c-4c3d-a029-80c2c7802ffe" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Fire,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Fire,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Fire_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Fire)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -2118,7 +2161,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Lightning_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="51043426-db4b-4be6-b1b8-6860d09917d1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Electrify)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Lightning,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Lightning,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Lightning_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Lightning)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -2133,7 +2176,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Poison_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a2b24ec-e1e1-478b-b8ae-7ba85f08d47e" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Poison_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Poison)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
@@ -2148,7 +2191,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ChromaticOrb_Thunder_BookOfAncientSecrets" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6cbeeb86-4941-4027-b539-d7bbab099fc8" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_BookOfAncientSecrets);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_BookOfAncientSecrets);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder,Magical);IF(ClassLevelHigherOrEqualThan(3,'Warlock') and not ClassLevelHigherOrEqualThan(5,'Warlock') and RollDieAgainstDC(DiceType.d20,8)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_2);IF(ClassLevelHigherOrEqualThan(5,'Warlock') and not ClassLevelHigherOrEqualThan(7,'Warlock') and RollDieAgainstDC(DiceType.d20,5)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_3);IF(ClassLevelHigherOrEqualThan(7,'Warlock') and not ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,3)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_4);IF(ClassLevelHigherOrEqualThan(9,'Warlock') and RollDieAgainstDC(DiceType.d20,1)):SpawnExtraProjectiles(Projectile_ChromaticOrb_Thunder_5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(WarlockBookChromaticOrb),Thunder)" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcbbcd1e4g4908g055cge53eg8da4cdc62806" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3d3654e7g98a3ge63dgbf62g57ea8d613d24" version="1" />
