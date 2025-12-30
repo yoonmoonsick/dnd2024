@@ -1,113 +1,120 @@
+-- Spell Scroll Usage Rules:
+-- 1. If a spell is NOT listed in SPELL_CLASS_MAP, it can always be used.
+-- 2. If a spell IS listed, it can only be used by characters who meet at least one
+--    of the listed class requirements.
+-- 3. Wizard-list proxy classes (e.g. Arcane Trickster, Eldritch Knight, etc.)
+--    are treated as Wizards for scroll usage when their level requirement is met.
+
 local SPELL_CLASS_MAP = {
     Projectile_AcidArrow = 'Wizard',
-    Projectile_ChainLightning = 'SorcererWizard',
-    Projectile_ChromaticOrb = 'SorcererWizard',
-    Projectile_Disintegrate = 'SorcererWizard',
-    Projectile_Fireball = 'SorcererWizardLightDomainFiendPatron',
-    Projectile_FireBolt = 'SorcererWizardArtificer',
-    Projectile_IceKnife = 'DruidSorcererWizard',
-    Projectile_MagicMissile = 'SorcererWizard',
-    Projectile_RayOfEnfeeblement = 'WarlockWizard',
-    Projectile_RayOfFrost = 'SorcererWizardArtificer',
+    Projectile_ChainLightning = 'Sorcerer Wizard',
+    Projectile_ChromaticOrb = 'Sorcerer Wizard',
+    Projectile_Disintegrate = 'Sorcerer Wizard Psion',
+    Projectile_Fireball = 'Sorcerer Wizard LightDomain Fiend',
+    Projectile_FireBolt = 'Sorcerer Wizard Artificer',
+    Projectile_IceKnife = 'Druid Sorcerer Wizard',
+    Projectile_MagicMissile = 'Sorcerer Wizard',
+    Projectile_RayOfEnfeeblement = 'Warlock Wizard',
+    Projectile_RayOfFrost = 'Sorcerer Wizard Artificer',
     Projectile_RayOfSickness = 'Wizard',
-    Projectile_ScorchingRay = 'SorcererWizardLightDomainFiendPatron',
-    Projectile_WitchBolt = 'SorcererWarlockWizard',
+    Projectile_ScorchingRay = 'Sorcerer Wizard LightDomain Fiend',
+    Projectile_WitchBolt = 'Sorcerer Warlock Wizard',
 
-    Shout_Blink = 'SorcererWizardArchfeyPatronArtificer',
-    Shout_Blur = 'SorcererWizardArtificer',
-    Shout_DetectThoughts = 'BardSorcererWizardGreatoldonePatron',
-    Shout_DisguiseSelf = 'BardSorcererWizardTrickeryDomainGloomStalkerArtificer',
-    Shout_ExpeditiousRetreat = 'SorcererWarlockWizardArtificer',
-    Shout_FalseLife = 'SorcererWizardArtificer',
-    Shout_FeatherFall = 'BardSorcererWizardArtificer',
-    Shout_FireShield_Warm = 'DruidSorcererWizardWarDomainFiendPatron',
-    Shout_FlameBlade = 'DruidSorcerer',
-    Shout_MirrorImage = 'BardSorcererWizard',
-    Shout_SeeInvisibility = 'BardSorcererWizardArtificer',
+    Shout_Blink = 'Sorcerer Wizard Archfey Artificer',
+    Shout_Blur = 'Sorcerer Wizard Artificer',
+    Shout_DetectThoughts = 'Bard Sorcerer Wizard GreatOldOne',
+    Shout_DisguiseSelf = 'Bard Sorcerer Wizard TrickeryDomain Artificer',
+    Shout_ExpeditiousRetreat = 'Sorcerer Warlock Wizard Artificer',
+    Shout_FalseLife = 'Sorcerer Wizard Artificer',
+    Shout_FeatherFall = 'Bard Sorcerer Wizard Artificer Psion',
+    Shout_FireShield_Warm = 'Druid Sorcerer Wizard WarDomain Fiend',
+    Shout_FlameBlade = 'Druid Sorcerer',
+    Shout_MirrorImage = 'Bard Sorcerer Wizard Psion',
+    Shout_SeeInvisibility = 'Bard Sorcerer Wizard Artificer Psion',
 
-    Target_Aid = 'BardClericDruidPaladinRangerClockworkSorceryCelestialPatronArtificer',
-    Target_AnimalFriendship = 'BardDruidRangerNatureDomain',
-    Target_AnimateDead = 'ClericWizardOathbreakerCircleofSpores',
-    Target_ArcaneLock = 'WizardArtificer',
-    Target_Banishment = 'ClericPaladinSorcererWarlockWizardOathofVengeance',
-    Target_BestowCurse = 'BardClericWizardOathbreakerOathofConquest',
-    Target_BlackTentacles = 'WizardAberrantSorcery',
-    Target_Blight = 'DruidSorcererWarlockWizardOathbreaker',
-    Target_Blindness = 'BardClericSorcererWizard',
-    Target_CharmPerson = 'BardDruidSorcererWarlockWizardTrickeryDomainFeywanderer',
-    Target_ChillTouch = 'SorcererWarlockWizard',
-    Target_CircleOfDeath = 'SorcererWarlockWizard',
-    Target_Cloudkill = 'SorcererWizardCircleofSpores',
-    Target_CloudOfDaggers = 'BardSorcererWarlockWizard',
-    Target_Confusion = 'BardDruidSorcererWizardTrickeryDomainGreatoldonePatron',
-    Target_ConjureElemental_Container = 'DruidWizard',
-    Target_ConjureElementals_Minor_Container = 'DruidWizard',
-    Target_CrownOfMadness = 'BardSorcererWarlockWizard',
-    Target_Darkness = 'SorcererWarlockWizardOathbreaker',
-    Target_Darkvision = 'DruidRangerSorcererWizardArtificer',
-    Target_DominatePerson = 'BardSorcererWizardTrickeryDomainArchfeyPatronOathbreakerOathofConquest',
-    Target_Enlarge = 'BardDruidSorcererWizardArtificer',
-    Target_Eyebite = 'BardSorcererWarlockWizard',
-    Target_FeignDeath = 'BardClericDruidWizard',
-    Target_FlamingSphere = 'DruidSorcererWizard',
-    Target_FleshToStone = 'DruidSorcererWizard',
-    Target_Fly = 'SorcererWarlockWizardArtificer',
-    Target_FogCloud = 'DruidRangerSorcererWizard',
-    Target_FreezingSphere = 'SorcererWizard',
-    Target_GaseousForm = 'SorcererWarlockWizardCircleofSpores',
-    Target_GlobeOfInvulnerability = 'SorcererWizard',
-    Target_GlyphOfWarding = 'BardClericWizardArtificer',
-    Target_Goodberry = 'DruidRanger',
-    Target_Grease = 'SorcererWizardArtificer',
-    Target_Haste = 'SorcererWizardOathofGloryOathofVengeanceArtificer',
-    Target_HideousLaughter = 'BardWarlockWizardGreatoldonePatron',
-    Target_HoldMonster = 'BardSorcererWarlockWizardWarDomainCircleofTheSeaOathofVengeance',
-    Target_HoldPerson = 'BardClericDruidSorcererWarlockWizardOathofVengeance',
-    Target_HypnoticPattern = 'BardSorcererWarlockWizardTrickeryDomain',
-    Target_IceStorm = 'DruidSorcererWizardOathofTheAncients',
-    Target_Invisibility = 'BardSorcererWarlockWizardTrickeryDomainArtificer',
-    Target_Invisibility_Greater = 'BardSorcererWizardGloomStalkerArchfeyPatron',
-    Target_IrresistibleDance = 'BardWizard',
-    Target_Jump = 'DruidRangerSorcererWizardArtificer',
-    Target_Knock = 'BardSorcererWizard',
-    Target_Longstrider = 'BardDruidRangerWizardArtificer',
-    Target_MageArmor = 'SorcererWizard',
-    Target_MagicWeapon = 'PaladinRangerSorcererWizardWarDomainArtificer',
-    Target_MistyStep = 'SorcererWarlockWizardOathofTheAncientsOathofVengeanceFeywandererArchfeyPatron',
-    Target_PhantasmalForce = 'BardSorcererWizardArchfeyPatronGreatoldonePatron',
-    Target_PhantasmalKiller = 'BardWizard',
-    Target_PlanarBinding = 'BardClericDruidWarlockWizard',
-    Target_Polymorph = 'BardDruidSorcererWizard',
-    Target_ProtectionFromEnergy = 'ClericDruidRangerSorcererWizardOathofGloryOathofTheAncientsOathofVengeanceArtificer',
-    Target_ProtectionFromEvilAndGood = 'ClericDruidPaladinWarlockClockworkSorcery',
-    Target_RemoveCurse = 'ClericPaladinWarlockWizard',
-    Target_ResilientSphere = 'WizardArtificer',
-    Target_Seeming = 'BardSorcererWizardGloomStalkerArchfeyPatron',
-    Target_Shatter = 'BardSorcererWizardCircleofTheSeaTempestDomain',
-    Target_ShockingGrasp = 'SorcererWizardArtificer',
-    Target_Sleep = 'BardSorcererWizardArchfeyPatron',
-    Target_SleetStorm = 'DruidSorcererWizard',
-    Target_Slow = 'BardSorcererWizard',
-    Target_SpeakWithDead = 'BardClericWizard',
-    Target_StinkingCloud = 'BardSorcererWizardFiendPatron',
-    Target_Stoneskin = 'DruidRangerSorcererWizardOathofTheAncientsArtificer',
-    Target_VampiricTouch = 'SorcererWarlockWizardDeathDomainGraveDomain',
-    Target_Web = 'SorcererWizardArtificer',
+    Target_Aid = 'Bard Cleric Druid Paladin Ranger ClockworkSorcery Celestial Artificer',
+    Target_AnimalFriendship = 'Bard Druid Ranger NatureDomain Psion',
+    Target_AnimateDead = 'Cleric Wizard Oathbreaker CircleOfTheSpores',
+    Target_ArcaneLock = 'Wizard Artificer',
+    Target_Banishment = 'Cleric Paladin Sorcerer Warlock Wizard Vengeance Psion',
+    Target_BestowCurse = 'Bard Cleric Wizard Oathbreaker Conquest Psion',
+    Target_BlackTentacles = 'Wizard AberrantSorcery',
+    Target_Blight = 'Druid Sorcerer Warlock Wizard Oathbreaker',
+    Target_Blindness = 'Bard Cleric Sorcerer Wizard Psion',
+    Target_CharmPerson = 'Bard Druid Sorcerer Warlock Wizard TrickeryDomain FeyWanderer Psion',
+    Target_ChillTouch = 'Sorcerer Warlock Wizard',
+    Target_CircleOfDeath = 'Sorcerer Warlock Wizard',
+    Target_Cloudkill = 'Sorcerer Wizard CircleOfTheSpores',
+    Target_CloudOfDaggers = 'Bard Sorcerer Warlock Wizard',
+    Target_Confusion = 'Bard Druid Sorcerer Wizard TrickeryDomain GreatOldOne Psion',
+    Target_ConjureElemental_Container = 'Druid Wizard',
+    Target_ConjureElementals_Minor_Container = 'Druid Wizard',
+    Target_CrownOfMadness = 'Bard Sorcerer Warlock Wizard Psion',
+    Target_Darkness = 'Sorcerer Warlock Wizard Oathbreaker',
+    Target_Darkvision = 'Druid Ranger Sorcerer Wizard Artificer',
+    Target_DominatePerson = 'Bard Sorcerer Wizard TrickeryDomain Archfey Oathbreaker Conquest Psion',
+    Target_Enlarge = 'Bard Druid Sorcerer Wizard Artificer Psion',
+    Target_Eyebite = 'Bard Sorcerer Warlock Wizard Psion',
+    Target_FeignDeath = 'Bard Cleric Druid Wizard',
+    Target_FlamingSphere = 'Druid Sorcerer Wizard',
+    Target_FleshToStone = 'Druid Sorcerer Wizard',
+    Target_Fly = 'Sorcerer Warlock Wizard Artificer Psion',
+    Target_FogCloud = 'Druid Ranger Sorcerer Wizard',
+    Target_FreezingSphere = 'Sorcerer Wizard',
+    Target_GaseousForm = 'Sorcerer Warlock Wizard CircleOfTheSpores',
+    Target_GlobeOfInvulnerability = 'Sorcerer Wizard',
+    Target_GlyphOfWarding = 'Bard Cleric Wizard Artificer',
+    Target_Goodberry = 'Druid Ranger',
+    Target_Grease = 'Sorcerer Wizard Artificer',
+    Target_Haste = 'Sorcerer Wizard Glory Vengeance Artificer',
+    Target_HideousLaughter = 'Bard Warlock Wizard GreatOldOne Psion',
+    Target_HoldMonster = 'Bard Sorcerer Warlock Wizard WarDomain CircleOfTheSea Vengeance',
+    Target_HoldPerson = 'Bard Cleric Druid Sorcerer Warlock Wizard Vengeance Psion',
+    Target_HypnoticPattern = 'Bard Sorcerer Warlock Wizard TrickeryDomain Psion',
+    Target_IceStorm = 'Druid Sorcerer Wizard Ancients',
+    Target_Invisibility = 'Bard Sorcerer Warlock Wizard TrickeryDomain Artificer Psion',
+    Target_Invisibility_Greater = 'Bard Sorcerer Wizard  Archfey Psion',
+    Target_IrresistibleDance = 'Bard Wizard Psion',
+    Target_Jump = 'Druid Ranger Sorcerer Wizard Artificer Psion',
+    Target_Knock = 'Bard Sorcerer Wizard Psion',
+    Target_Longstrider = 'Bard Druid Ranger Wizard Artificer Psion',
+    Target_MageArmor = 'Sorcerer Wizard Psion',
+    Target_MagicWeapon = 'Paladin Ranger Sorcerer Wizard WarDomain Artificer',
+    Target_MistyStep = 'Sorcerer Warlock Wizard Ancients Vengeance FeyWanderer Archfey',
+    Target_PhantasmalForce = 'Bard Sorcerer Wizard Archfey GreatOldOne Psion',
+    Target_PhantasmalKiller = 'Bard Wizard Psion',
+    Target_PlanarBinding = 'Bard Cleric Druid Warlock Wizard',
+    Target_Polymorph = 'Bard Druid Sorcerer Wizard Psion',
+    Target_ProtectionFromEnergy = 'Cleric Druid Ranger Sorcerer Wizard Glory Ancients Vengeance Artificer',
+    Target_ProtectionFromEvilAndGood = 'Cleric Druid Paladin Warlock ClockworkSorcery',
+    Target_RemoveCurse = 'Cleric Paladin Warlock Wizard',
+    Target_ResilientSphere = 'Wizard Artificer',
+    Target_Seeming = 'Bard Sorcerer Wizard  Archfey Psion',
+    Target_Shatter = 'Bard Sorcerer Wizard CircleOfTheSea TempestDomain Psion',
+    Target_ShockingGrasp = 'Sorcerer Wizard Artificer',
+    Target_Sleep = 'Bard Sorcerer Wizard Archfey Psion',
+    Target_SleetStorm = 'Druid Sorcerer Wizard',
+    Target_Slow = 'Bard Sorcerer Wizard',
+    Target_SpeakWithDead = 'Bard Cleric Wizard',
+    Target_StinkingCloud = 'Bard Sorcerer Wizard Fiend',
+    Target_Stoneskin = 'Druid Ranger Sorcerer Wizard Ancients Artificer',
+    Target_VampiricTouch = 'Sorcerer Warlock Wizard DeathDomain GraveDomain',
+    Target_Web = 'Sorcerer Wizard Artificer',
 
-    Teleportation_DimensionDoor = 'BardSorcererWarlockWizardTrickeryDomainOathofVengeanceFeywanderer',
-    Throw_Telekinesis = 'SorcererWizardGreatoldonePatron',
-    Wall_WallOfFire = 'DruidSorcererWizardLightDomainCelestialPatronFiendPatron',
+    Teleportation_DimensionDoor = 'Bard Sorcerer Warlock Wizard TrickeryDomain Vengeance FeyWanderer Psion',
+    Throw_Telekinesis = 'Sorcerer Wizard GreatOldOne Psion',
+    Wall_WallOfFire = 'Druid Sorcerer Wizard LightDomain Celestial Fiend',
     Wall_WallOfIce = 'Wizard',
-    Wall_WallOfStone = 'DruidSorcererWizardArtificer',
+    Wall_WallOfStone = 'Druid Sorcerer Wizard Artificer',
 
-    Zone_BurningHands = 'SorcererWizardLightDomainFiendPatron',
-    Zone_ColorSpray = 'BardSorcererWizard',
-    Zone_ConeOfCold = 'DruidSorcererWizard',
-    Zone_Fear = 'BardSorcererWarlockWizardGloomStalker',
-    Zone_GustOfWind = 'DruidRangerSorcererWizard',
-    Zone_LightningBolt = 'SorcererWizardCircleofTheSea',
-    Zone_Sunbeam = 'ClericDruidSorcererWizard',
-    Zone_Thunderwave = 'BardDruidSorcererWizard',
+    Zone_BurningHands = 'Sorcerer Wizard LightDomain Fiend',
+    Zone_ColorSpray = 'Bard Sorcerer Wizard',
+    Zone_ConeOfCold = 'Druid Sorcerer Wizard',
+    Zone_Fear = 'Bard Sorcerer Warlock Wizard Psion',
+    Zone_GustOfWind = 'Druid Ranger Sorcerer Wizard',
+    Zone_LightningBolt = 'Sorcerer Wizard CircleOfTheSea',
+    Zone_Sunbeam = 'Cleric Druid Sorcerer Wizard',
+    Zone_Thunderwave = 'Bard Druid Sorcerer Wizard Psion',
 }
 
 local function GetSpellClass(spell)
@@ -121,19 +128,25 @@ end
 function CanUseSpellScroll(spell, entity)
     entity = entity or context.Source
 
+    -- If the spell is not listed, it is always allowed.
+    if SPELL_CLASS_MAP[spell] == nil then
+        return ConditionResult(true)
+    end
+
     local spellClass = GetSpellClass(spell)
     local cls = spellClass:lower()
 
     -- base class access flags
+    local artificer = entity.GetClassLevel('Artificer') >= 1
     local bard      = entity.GetClassLevel('Bard')      >= 1
     local cleric    = entity.GetClassLevel('Cleric')    >= 1
     local druid     = entity.GetClassLevel('Druid')     >= 1
+    local paladin   = entity.GetClassLevel('Paladin')   >= 1
+    local psion     = entity.GetClassLevel('Psion')     >= 1
+    local ranger    = entity.GetClassLevel('Ranger')    >= 1
     local sorcerer  = entity.GetClassLevel('Sorcerer')  >= 1
     local warlock   = entity.GetClassLevel('Warlock')   >= 1
     local wizard    = entity.GetClassLevel('Wizard')    >= 1
-    local artificer = entity.GetClassLevel('Artificer') >= 1
-    local paladin   = entity.GetClassLevel('Paladin')   >= 1
-    local ranger    = entity.GetClassLevel('Ranger')    >= 1
 
     -- wizard-list proxies (tag + level gated)
     local wizardProxy =
@@ -142,15 +155,15 @@ function CanUseSpellScroll(spell, entity)
      or (Tagged('ELDRITCH_KNIGHT', entity).Result and entity.GetClassLevel('Fighter') >= 3)
      or (Tagged('SPELLSLINGER', entity).Result and entity.GetClassLevel('Gunslinger') >= 3)
 
-    -- order-independent allow: any required token + qualification passes
     local canUse =
         (HasToken(cls, 'bard')      and bard)
+     or (HasToken(cls, 'artificer') and artificer)
      or (HasToken(cls, 'cleric')    and cleric)
      or (HasToken(cls, 'druid')     and druid)
-     or (HasToken(cls, 'sorcerer')  and sorcerer)
-     or (HasToken(cls, 'artificer') and artificer)
      or (HasToken(cls, 'paladin')   and paladin)
+     or (HasToken(cls, 'psion')     and psion)
      or (HasToken(cls, 'ranger')    and ranger)
+     or (HasToken(cls, 'sorcerer')  and sorcerer)
      or (HasToken(cls, 'warlock')   and warlock)
      or (HasToken(cls, 'wizard')    and (wizard or wizardProxy))
 
