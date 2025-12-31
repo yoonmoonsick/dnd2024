@@ -6359,8 +6359,9 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadba9566gd956g2168g7029g5e2150f63f5e" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold,Magical,,0,,true,true,false,true);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);ApplyStatus(POLARSTRIKE_DAMAGE_TAKEN,100,1);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(1d4,Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6514,10 +6515,11 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6d5772e8ge541gf8c7g2697gf6d34c24f2bb" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic,Magical,,0,,true,true,false,true);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(DREADFULSTRIKE_DAMAGE_TAKEN,100,1);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(1d4,Psychic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
