@@ -9149,8 +9149,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5c370d8bg43c7ge58bg3b51ge30d0856f141" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8eb3264g0b49g242eg73b7g32f49b0f26e9" version="2" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_Bloodthirst_Attack') and not Self() and Character() and Enemy() and IsKillingBlow();" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('BLOODTHIRST_ATTACK',context.Source) and not Self() and Character() and Enemy() and IsKillingBlow();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,BloodthirstCharge,1,0)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
