@@ -13936,13 +13936,25 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SACREDFLAME,100,-1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SacredFlame_Action;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SacredFlame" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7f211d98-d5b6-49cf-9486-e0bc1bd7756b" />
         <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_BonusAction" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellfireFlame:1" />
       </fields>
     </stat_object>
