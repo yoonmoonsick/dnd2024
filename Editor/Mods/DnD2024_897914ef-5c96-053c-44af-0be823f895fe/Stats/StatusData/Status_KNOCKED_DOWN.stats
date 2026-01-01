@@ -6,10 +6,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ccae785b-bd57-410d-b98f-48c2ca58c0c2" />
         <field name="Name" type="NameTableFieldDefinition" value="COMMAND_GROVEL" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="00089887-ff49-492c-a355-3d17ec7ecdd1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);ActionResourceBlock(Movement);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_CommandGrovel" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);BreakConcentration();" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="AnimationSetOverride" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="66787c98-d470-45a0-b82d-263de495d938" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -18,7 +19,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="HIDEOUS_LAUGHTER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="59bdbebc-ade7-4df6-acb5-9a25c018332f" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SNEAKING);RemoveStatus(SLEEP);RemoveStatus(SG_Sleeping);RemoveStatus(SLEEP_2);BreakConcentration();" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Strength);Disadvantage(SavingThrow, Dexterity);IF(not DistanceToTargetGreaterThan(3)):Advantage(AttackTarget);DetectDisturbancesBlock(false);IF((not SizeEqualOrGreater(Size.Large, context.Target) and DistanceToTargetGreaterThan(3)) and not HasPassive('Deadeye_3_SharpshootersStance',context.Source)):Disadvantage(AttackTarget);ActionResourceBlock(Movement);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="AnimationSetOverride" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="StatusEffectOnTurn" type="GuidObjectTableFieldDefinition" value="b89b7538-2cb3-400f-b1c9-378f61070abb" />
       </fields>
     </stat_object>
   </stat_objects>
