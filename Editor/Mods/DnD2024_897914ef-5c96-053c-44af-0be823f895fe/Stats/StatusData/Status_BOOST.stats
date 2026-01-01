@@ -81,6 +81,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a9a480c-0b7e-46c3-ac92-769d682f7db0" />
+        <field name="Name" type="NameTableFieldDefinition" value="WET" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="986b9c68-6251-4e2e-8d8f-80ea2a08f20f" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,DIPPED_WATER,100,0);ApplyEquipmentStatus(OffHand,DIPPED_WATER,100,0);RemoveStatus(SLEEPING);RemoveStatus(SLEEP);RemoveStatus(SLEEP_2);RemoveStatus(SG_Invisible);RemoveStatus(SG_Sleeping);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h007d1059g90b1g4b20g284bg9e0492729371" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(BURNING);StatusImmunity(WILD_MAGIC_BURNING);Resistance(Fire, Resistant);IF(IsDamageTypeCold() and SpellLevelEqualOrLessThan(1)):DamageTakenBonus(1d4, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(2)):DamageTakenBonus(1d6, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(3)):DamageTakenBonus(1d8, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(4)):DamageTakenBonus(1d10, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(5)):DamageTakenBonus(1d12, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(6)):DamageTakenBonus(1d20, Cold, False);IF(IsDamageTypeLightning() and SpellLevelEqualOrLessThan(1)):DamageTakenBonus(1d4, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(2)):DamageTakenBonus(1d6, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(3)):DamageTakenBonus(1d8, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(4)):DamageTakenBonus(1d10, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(5)):DamageTakenBonus(1d12, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(6)):DamageTakenBonus(1d20, Lightning, False);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb035105-74eb-4aeb-82a9-dca99cb80aed" />
+        <field name="Name" type="NameTableFieldDefinition" value="COL_RESONANCESTONE_BUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bb4e4ecd-dfcb-470b-93cb-0232021804df" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h236d1572gf68bge492g65ebgf0728f8b319d" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength);Advantage(Ability, Constitution);Advantage(Ability, Dexterity);Disadvantage(SavingThrow, Intelligence);Disadvantage(SavingThrow, Wisdom);Disadvantage(SavingThrow, Charisma);IF(IsDamageTypePsychic() and SpellLevelEqualOrLessThan(1)):DamageTakenBonus(1d4, Psychic, False);IF(IsDamageTypePsychic() and SpellLevelEqualTo(2)):DamageTakenBonus(1d6, Psychic, False);IF(IsDamageTypePsychic() and SpellLevelEqualTo(3)):DamageTakenBonus(1d8, Psychic, False);IF(IsDamageTypePsychic() and SpellLevelEqualTo(4)):DamageTakenBonus(1d10, Psychic, False);IF(IsDamageTypePsychic() and SpellLevelEqualTo(5)):DamageTakenBonus(1d12, Psychic, False);IF(IsDamageTypePsychic() and SpellLevelEqualTo(6)):DamageTakenBonus(1d20, Psychic, False);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb4ab025-b20d-457e-aa3c-b94745eb4430" />
         <field name="Name" type="NameTableFieldDefinition" value="DASH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a091efc6-119b-469d-bd80-a54771175ec2" />
@@ -6219,15 +6238,6 @@
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="12" />
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(12)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4a9a480c-0b7e-46c3-ac92-769d682f7db0" />
-        <field name="Name" type="NameTableFieldDefinition" value="WET" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="986b9c68-6251-4e2e-8d8f-80ea2a08f20f" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,DIPPED_WATER,100,0);ApplyEquipmentStatus(OffHand,DIPPED_WATER,100,0);RemoveStatus(SLEEPING);RemoveStatus(SLEEP);RemoveStatus(SLEEP_2);RemoveStatus(SG_Invisible);RemoveStatus(SG_Sleeping);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(BURNING);StatusImmunity(WILD_MAGIC_BURNING);Resistance(Fire, Resistant);IF(IsDamageTypeCold() and SpellLevelEqualOrLessThan(1)):DamageTakenBonus(1d4, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(2)):DamageTakenBonus(1d6, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(3)):DamageTakenBonus(1d8, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(4)):DamageTakenBonus(1d10, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(5)):DamageTakenBonus(1d12, Cold, False);IF(IsDamageTypeCold() and SpellLevelEqualTo(6)):DamageTakenBonus(1d20, Cold, False);IF(IsDamageTypeLightning() and SpellLevelEqualOrLessThan(1)):DamageTakenBonus(1d4, Cold, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(2)):DamageTakenBonus(1d6, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(3)):DamageTakenBonus(1d8, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(4)):DamageTakenBonus(1d10, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(5)):DamageTakenBonus(1d12, Lightning, False);IF(IsDamageTypeLightning() and SpellLevelEqualTo(6)):DamageTakenBonus(1d20, Lightning, False);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
