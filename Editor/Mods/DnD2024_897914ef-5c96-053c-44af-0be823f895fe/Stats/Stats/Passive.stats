@@ -1634,6 +1634,25 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="22af5c38-9b36-4b58-b116-588d7e92974d" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Feats_New_Origin" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37b37ef9-7c1f-46ee-bb76-5f6af990cfc9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Feat_Healer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h238f09c9g07eeg1c14g6c5ag082fbaea8af0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DiscipleOfLife" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4f54783b-a0c4-4cb0-b841-a0d84b809da9" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Feats_New_General" />
       </fields>

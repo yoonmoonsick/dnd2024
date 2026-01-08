@@ -1190,6 +1190,19 @@ data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
 data "StatsFunctorContext" "OnMovedDistance"
 data "StatsFunctors" "IF(not HasStatus('INVISIBILITY_UNREFLECTED',context.Source) and (HasEnemyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 2, context.Target, context.Source) or HasAllyWithinRange('SG_Incapacitated', 3, 'HUMANOID', 3, context.Target, context.Source))):ApplyStatus(SELF,INVISIBILITY_UNREFLECTED,100,1);IF(not HasEnemyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 2, context.Target, context.Source) and not HasAllyWithinRange('SG_Incapacitated', 4, 'HUMANOID', 3, context.Target, context.Source)):RemoveStatus(SELF,INVISIBILITY_UNREFLECTED)"
 
+new entry "YMS_Feats_New_Origin"
+type "PassiveData"
+
+new entry "Feat_Healer"
+type "PassiveData"
+data "DisplayName" "h238f09c9g07eeg1c14g6c5ag082fbaea8af0;1"
+data "Description" "ha8449566g733bg84aeg90d2ga517abb06de9;1"
+data "DescriptionParams" "RegainHitPoints(1d8)"
+data "Icon" "PassiveFeature_DiscipleOfLife"
+data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
+data "BoostContext" "OnStatusApply;OnStatusApplied;OnCreate;OnShortRest"
+data "Boosts" "IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);"
+
 new entry "YMS_Feats_New_General"
 type "PassiveData"
 
