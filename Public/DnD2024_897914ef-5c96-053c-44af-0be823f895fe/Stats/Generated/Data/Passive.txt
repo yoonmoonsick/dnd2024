@@ -7288,14 +7288,20 @@ data "BoostConditions" "not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Sour
 data "Boosts" "IF(not HasStatus('MAGIC_INITIATE_WIZARD_BLOCK',context.Source)):UnlockSpell(Shout_MagicInitiateWizard);UnlockSpellVariant(SpellId('Shout_MagicInitiateWizard'),ModifyIconGlow());"
 data "StatsFunctors" "IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):ApplyStatus(SELF,MAGIC_INITIATE_WIZARD_BLOCK,100,-1);IF(not HasActionResource('LearnCantripPoint', 1, 0, false) and not HasActionResource('LearnSpellPoint', 1, 0, false)):RemoveStatus(SELF,MAGIC_INITIATE_WIZARD)"
 
-new entry "DualWielder_BonusAC"
+new entry "DualWielder_Nick"
 type "PassiveData"
 using "WeaponMastery_Nick"
 data "DisplayName" "h75354733gc2dcg47beg8ed5gae0e7f501c75;1"
 data "Description" "h94a6bae6g33c5g12e0gefe4g5683d845ddce;1"
 data "ExtraDescription" ""
 data "Properties" "Highlighted"
-data "Conditions" "not IsOffHandSlotEmpty(context.Source);"
+data "StatsFunctorContext" "OnEquip;OnCreate;OnTurn"
+data "Conditions" "DualWielder(context.Source)"
+data "StatsFunctors" "ApplyStatus(SELF,NICK_DUALWIELDER, 100, -1)"
+
+new entry "DualWielder_Nick_2"
+type "PassiveData"
+using "WeaponMastery_Nick_2"
 
 new entry "Skilled_OriginFeat"
 type "PassiveData"

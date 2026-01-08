@@ -10128,13 +10128,22 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9c1dfd82-b018-4591-ad31-92330b671017" />
-        <field name="Name" type="NameTableFieldDefinition" value="DualWielder_BonusAC" />
+        <field name="Name" type="NameTableFieldDefinition" value="DualWielder_Nick" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h75354733gc2dcg47beg8ed5gae0e7f501c75" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94a6bae6g33c5g12e0gefe4g5683d845ddce" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d93dcec-961b-4508-a7e1-40168a3525b4" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not IsOffHandSlotEmpty(context.Source);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="DualWielder(context.Source)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,NICK_DUALWIELDER, 100, -1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16f9fa21-b876-44ee-a336-ba2f48e8b261" />
+        <field name="Name" type="NameTableFieldDefinition" value="DualWielder_Nick_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6df28c5c-23a4-415e-8b93-bf97a517340b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -4517,6 +4517,12 @@ data "StackType" "Ignore"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "OnApplyFunctors" "RemoveStatus(SELF,NICK_BONUS_ACTION)"
 
+new entry "NICK_DUALWIELDER"
+type "StatusData"
+data "StatusType" "BOOST"
+using "NICK"
+data "RemoveConditions" "not DualWielder(context.Source)"
+
 new entry "SLOW_WM"
 type "StatusData"
 data "StatusType" "BOOST"
