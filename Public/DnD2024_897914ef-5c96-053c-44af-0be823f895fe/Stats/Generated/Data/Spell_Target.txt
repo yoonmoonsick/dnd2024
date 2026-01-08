@@ -11812,6 +11812,13 @@ data "TooltipDamageList" "DealDamage(1d8+SpellCastingAbilityModifier, Radiant);D
 data "HitCosts" "SneakAttack_Charge:1;"
 data "SpellAnimation" "a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,,"
 
+new entry "Target_MAG_TrueStrike_Radiant"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_TrueStrike_Radiant"
+data "SpellContainerID" ""
+data "SpellProperties" "ApplyStatus(SELF,YMS_TRUE_STRIKE_OWNER,100, -1);"
+
 new entry "Target_BoomingBlade_ClassSpell"
 type "SpellData"
 data "SpellType" "Target"
