@@ -2238,14 +2238,9 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e3cf062g1a9bg1acfga145gfdb4b7f63ac6" version="2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;Highlighted;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
-        <field name="ToggleOffContext" type="EnumerationListTableFieldDefinition" value="OnCastResolved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnStatusApplied;OnStatusRemove;OnStatusRemoved;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(MAG_CQC_RANGED_SPELL, 100, -1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MAG_CQC_RANGED_SPELL)" />
         <field name="ToggleOnEffect" type="StringTableFieldDefinition" value="VFX_Spells_Cast_Sorcerer_Metamagic_Quickened_HeadFX_01:Dummy_HeadFX" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLowGroundPenalty(RangedSpellAttack);" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED', context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(RangedSpellAttackCheck(),ModifySpellRoll('AttackType.RangedSpellAttack','AttackType.MeleeSpellAttack'),ModifyIconGlow(),ModifyTooltipDescription());" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
