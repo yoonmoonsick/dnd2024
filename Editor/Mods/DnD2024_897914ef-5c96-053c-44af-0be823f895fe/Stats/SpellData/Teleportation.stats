@@ -83,18 +83,18 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThunderStep" />
         <field name="Level" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="27" />
         <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource()" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character()" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_ThunderStepExplosion);" />
-        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="OriginTargetConditions" type="StringTableFieldDefinition" value="Ally() and not Grounded() and (Tagged('WEIGHT_MEDIUM') or Tagged('WEIGHT_SMALL') or Tagged('WEIGHT_TINY'))" />
         <field name="TeleportSelf" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="TeleportSurface" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ThunderStep" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fdbc107g6af6gf793g56bbg07ef0f0d114d" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha170e150g72e3g6a83g8efag4b77457b39d6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha170e150g72e3g6a83g8efag4b77457b39d6" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
@@ -114,7 +114,7 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2af907e1-127c-4c83-a117-af18f211c59d" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ee3c85ae-0078-4223-9345-c2594535d1f2" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d10,Thunder)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d10,Thunder);Distance(1.5)" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Big" enumeration_type_name="SpellSoundMagnitude" version="1" />
       </fields>
     </stat_object>
@@ -124,7 +124,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThunderStep_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2d279b9d-879e-426b-9e09-daf9c1f10827" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_ThunderStepExplosion_4);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d10,Thunder)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d10,Thunder);Distance(1.5)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Thunder)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Teleportation_ThunderStep" />
@@ -137,7 +137,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThunderStep_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="65af8660-4874-4f20-a7eb-6aa8d86f7866" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_ThunderStepExplosion_5);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d10,Thunder)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d10,Thunder);Distance(1.5)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Thunder)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
@@ -149,7 +149,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ThunderStep_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="65af8660-4874-4f20-a7eb-6aa8d86f7866" />
         <field name="OriginSpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateExplosion(Projectile_ThunderStepExplosion_6);" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(6d10,Thunder);Distance(1.5)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d10,Thunder)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
@@ -160,7 +160,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e3d4e5e1-e3a9-4bde-8699-42c6d9ff5677" />
         <field name="Name" type="NameTableFieldDefinition" value="DimensionDoor" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f48dfb67-37f1-45aa-9148-74b7c25e28fc" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -168,7 +167,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ba530e1c-5f91-41ef-b666-9f028d932fb0" />
         <field name="Name" type="NameTableFieldDefinition" value="DimensionDoor_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2be65da7-d22d-40ee-9b51-dc74253d32eb" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -176,7 +174,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="709a2471-d618-4ce1-96d2-857909f56768" />
         <field name="Name" type="NameTableFieldDefinition" value="DimensionDoor_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="df621743-3fc5-403b-bfd9-6635d90d265d" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="18" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
