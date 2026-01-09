@@ -9,6 +9,71 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a0b35e9-7718-468f-8229-1a2fe19de52d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortRestUseHitPointDie" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_ShortRestUseHitPointDie_1;Shout_ShortRestUseHitPointDie_2;Shout_ShortRestUseHitPointDie_3;Shout_ShortRestUseHitPointDie_4;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55d8012bg5ec9g171ag63afgd238ef7b0f99" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1b347b1g7e9fg7548g17a6ge2ca4fae7b71" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Healing_Aid_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Healing_Aid_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="414bbf02-2918-4f01-83fb-1ddc7a588d88,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;0c5dcc83-fa78-41da-b6a5-440b5ea30936,,;,,;bea988a0-2ec5-40d8-a67e-ffbd7454bc53,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Combat()" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="a908e49b-b59f-4a20-b487-e25ae198d926" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d6+ConstitutionModifier);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d6+ConstitutionModifier);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30d120c2-ad5e-4588-aeb6-b499ae1c1fc5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortRestUseHitPointDie_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3a0b35e9-7718-468f-8229-1a2fe19de52d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ShortRestUseHitPointDie" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDie6:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b83a1d25-554a-493a-bd22-38029f474cb7" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortRestUseHitPointDie_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30d120c2-ad5e-4588-aeb6-b499ae1c1fc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDie8:1;" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="86edbf51-7dee-4ab5-895f-8cf453e0097d" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortRestUseHitPointDie_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30d120c2-ad5e-4588-aeb6-b499ae1c1fc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDie10:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d10+ConstitutionModifier);" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="68df9ca9-f13d-4a0e-9b53-b0bf709dff55" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortRestUseHitPointDie_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30d120c2-ad5e-4588-aeb6-b499ae1c1fc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+ConstitutionModifier);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HitPointDie12:1;" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d12+ConstitutionModifier);" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2c24b97-edc7-44ee-82c8-e815c70591d6" />
         <field name="Name" type="NameTableFieldDefinition" value="SeeInvisibility_Seek" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="47d091a0-0f19-4376-8409-e741beb74663" />

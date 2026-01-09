@@ -8528,19 +8528,18 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9fa2a5b2-1e2e-4aec-853c-896c873b10aa" />
         <field name="Name" type="NameTableFieldDefinition" value="HealerSpell" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ProficiencyBonus);" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasActionResource('HitPointDie12',1,0,false,false,context.Target)):RegainHitPoints(1d12+ProficiencyBonus);IF(HasActionResource('HitPointDie12',1,0,false,false,context.Target)):ApplyStatus(USE_HITPOINT_DIE_12,100,0);IF(HasActionResource('HitPointDie10',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target)):RegainHitPoints(1d10+ProficiencyBonus);IF(HasActionResource('HitPointDie10',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target)):ApplyStatus(USE_HITPOINT_DIE_10,100,0);IF(HasActionResource('HitPointDie8',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target) and not HasActionResource('HitPointDie10',1,0,false,false,context.Target)):RegainHitPoints(1d8+ProficiencyBonus);IF(HasActionResource('HitPointDie8',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target) and not HasActionResource('HitPointDie10',1,0,false,false,context.Target)):ApplyStatus(USE_HITPOINT_DIE_8,100,0);IF(HasActionResource('HitPointDie6',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target) and not HasActionResource('HitPointDie10',1,0,false,false,context.Target) and not HasActionResource('HitPointDie8',1,0,false,false,context.Target)):RegainHitPoints(1d6+ProficiencyBonus);IF(HasActionResource('HitPointDie6',1,0,false,false,context.Target) and not HasActionResource('HitPointDie12',1,0,false,false,context.Target) and not HasActionResource('HitPointDie10',1,0,false,false,context.Target) and not HasActionResource('HitPointDie8',1,0,false,false,context.Target)):ApplyStatus(USE_HITPOINT_DIE_6,100,0);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and (HasActionResource('HitPointDie12',1,0,false,false,context.Target) or HasActionResource('HitPointDie10',1,0,false,false,context.Target) or HasActionResource('HitPointDie8',1,0,false,false,context.Target) or HasActionResource('HitPointDie6',1,0,false,false,context.Target));" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf658bef5g91b5g72a0g430cge73c354d34ae" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ProficiencyBonus)" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead() and not Tagged('UNDEAD') and not Self()" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HealerCharge:1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Healing" enumeration_type_name="VerbalIntent" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="54d36d84-d898-4763-bc82-2bc34dedd837" />
         <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>

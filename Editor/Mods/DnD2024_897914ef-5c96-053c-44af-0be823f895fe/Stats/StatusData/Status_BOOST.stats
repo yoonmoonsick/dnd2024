@@ -303,6 +303,49 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasPassive('GraveDomain_3_ReturnToLife',context.Source)):RegainHitPoints(Cause.ClassLevel(Cleric)*2)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ce8ab8c-efce-4654-8d27-fe2fa29a9e94" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_HITPOINT_DIE_USE" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63fa7ef1-cfed-4f4e-b3b1-446abf27e66e" />
+        <field name="Name" type="NameTableFieldDefinition" value="USE_HITPOINT_DIE_12" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_HITPOINT_DIE_USE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="12" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(HitPointDie12,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97b2e2ba-a256-4dea-baa3-b89e7f99eccf" />
+        <field name="Name" type="NameTableFieldDefinition" value="USE_HITPOINT_DIE_10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="63fa7ef1-cfed-4f4e-b3b1-446abf27e66e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(HitPointDie10,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31409b44-096f-485d-be65-8037e5021c83" />
+        <field name="Name" type="NameTableFieldDefinition" value="USE_HITPOINT_DIE_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="63fa7ef1-cfed-4f4e-b3b1-446abf27e66e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="8" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(HitPointDie8,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96c3c45d-dade-4cf9-bbe0-b24386909914" />
+        <field name="Name" type="NameTableFieldDefinition" value="USE_HITPOINT_DIE_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="63fa7ef1-cfed-4f4e-b3b1-446abf27e66e" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="6" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseActionResource(HitPointDie6,1,0)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a020ad65-e376-416f-a613-6a2089f21381" />
@@ -12148,7 +12191,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ec667268-9c69-4a44-95e4-bdc7c3e5296d" />
         <field name="Name" type="NameTableFieldDefinition" value="IRRESISTIBLE_DANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="97764827-8e57-4655-a1e0-0ba9a2a25892" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ActionPoint,1) " />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BEGUILING_TWIST_TARGET,100,1);IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ActionPoint, 1, 0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

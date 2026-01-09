@@ -49,6 +49,15 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HALF_CASTER_MULTICLASS_SPELL_SLOT,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac469e50-bf54-4521-95f0-59f38bed5fec" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShortResting" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="359ef9a1-57cc-4ab0-9e44-ff99fe7e7a59" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ShortRestUseHitPointDie);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2868e82c-08c2-4bfe-a8fc-8099e216a713" />
@@ -1643,12 +1652,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="37b37ef9-7c1f-46ee-bb76-5f6af990cfc9" />
         <field name="Name" type="NameTableFieldDefinition" value="Feat_Healer" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h238f09c9g07eeg1c14g6c5ag082fbaea8af0" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(1d8)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8449566g733bg84aeg90d2ga517abb06de9" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DiscipleOfLife" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);ActionResource(HealerCharge,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(HealerCharge,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(HealerCharge,1,0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell() and not IsCantrip() or SpellId('Target_AuraOfVitality_Activate') or SpellId('Target_HealerSpell')):Reroll(Damage,1,true);UnlockSpell(Target_HealerSpell);" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h26ca783bgd076gae63g7f7ege85429eb72a6" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
