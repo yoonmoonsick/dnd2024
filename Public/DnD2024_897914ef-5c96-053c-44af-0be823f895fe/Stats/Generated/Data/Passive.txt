@@ -1639,6 +1639,12 @@ data "Description" "hfe79dff8gf6d0g7fb7g685fga2a559d3711e;1"
 data "Properties" "Highlighted;ForceShowInCC"
 data "Boosts" "Proficiency(HeavyArmor)"
 
+new entry "Lucky_Unlock"
+type "PassiveData"
+using "Lucky_Unlock"
+data "BoostContext" "OnStatusApply;OnStatusApplied;OnShortRest;OnCreate"
+data "Boosts" "UnlockInterrupt(Interrupt_Lucky_RollAdditionalDie);UnlockInterrupt(Interrupt_Lucky_ReplaceAttackersDie);ActionResource(LuckPoint,2,0);IF(CharacterLevelGreaterThan(4)):ActionResource(LuckPoint,1,0);IF(CharacterLevelGreaterThan(8)):ActionResource(LuckPoint,1,0);IF(CharacterLevelGreaterThan(11)):ActionResource(LuckPoint,1,0);"
+
 new entry "MageSlayer_Advantage"
 type "PassiveData"
 using "MageSlayer_Advantage"
