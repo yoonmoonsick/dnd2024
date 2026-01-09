@@ -687,7 +687,7 @@
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Dead(context.Observer) and ( HasInterruptedAttack() and Self(context.Observer,context.Source) and IsRerollInterruptInteresting(context.Source) ) and not AnyEntityIsItem() and (IsSpell() or IsCantrip())" />
-        <field name="Properties" type="StringTableFieldDefinition" value="SetReroll(19,false)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetReroll(19,false);IF(HasPassive('Spellfire_3_SpellfireBurst',context.Source)):ApplyStatus(SELF,SPELLFIRE_BURST,100,1);IF(HasPassive('Spellfire_11_HonedSpellfire',context.Source)):ApplyStatus(SELF,SPELLFIRE_BURST_11,100,1);" />
         <field name="Cost" type="StringTableFieldDefinition" value="SorceryPoint:1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
