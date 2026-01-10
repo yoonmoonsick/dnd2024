@@ -1,0 +1,26 @@
+function ExceptionClassLevelEqual(value, entity)
+    entity = entity or context.Source
+
+    local total = entity.Level
+    local base =
+        entity.GetClassLevel('Artificer') +
+        entity.GetClassLevel('Barbarian') +
+        entity.GetClassLevel('Bard') +
+        entity.GetClassLevel('Cleric') +
+        entity.GetClassLevel('Druid') +
+        entity.GetClassLevel('Fighter') +
+        entity.GetClassLevel('Gunslinger') +
+        entity.GetClassLevel('Illrigger') +
+        entity.GetClassLevel('Monk') +
+        entity.GetClassLevel('Paladin') +
+        entity.GetClassLevel('Psion') +
+        entity.GetClassLevel('Ranger') +
+        entity.GetClassLevel('Rogue') +
+        entity.GetClassLevel('Sorcerer') +
+        entity.GetClassLevel('Warlock') +
+        entity.GetClassLevel('Wizard')
+
+    local exceptionLevel = total - base
+
+    return ConditionResult(exceptionLevel == value)
+end
