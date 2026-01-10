@@ -2661,6 +2661,9 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 - When making a ranged weapon attack against a target more than 18m or 15m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Sharpshooter feat.
 - Crossbows have the Loading property, which can be ignored if you have the Crossbow Expert feat.
 
+## Short Rest
+- Short Rests no longer restore Hit Points. Instead, outside of combat, you can expend Hit Point Dice to regain Hit Points.
+
 ## Thrown Weapon
 - When throwing a weapon at a target more than 9m away, you suffer a penalty to the attack roll. This penalty can be ignored if you have the Throw Fighting Style.
 
