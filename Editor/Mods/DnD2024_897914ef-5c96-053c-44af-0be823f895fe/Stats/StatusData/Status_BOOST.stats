@@ -3142,7 +3142,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="ApplyStatus(RAGE_FRENZY_NO_HEAVY_ARMOUR_VFX,100,10);ApplyStatus(RAGE_STOP_REMOVE,100,1);BreakConcentration()" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RECKLESS_ATTACK,100,1)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -3812,7 +3812,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Radiant);Distance(18)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_LunarSmite" />
         <field name="StackId" type="StringTableFieldDefinition" value="FOUNT_OF_MOONLIGHT" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FountOfMoonlight);IF(IsMeleeAttack()):CharacterUnarmedDamage(2d6, Radiant);IF(IsMeleeAttack()):CharacterWeaponDamage(2d6, Radiant);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_FountOfMoonlight);IF(IsMeleeAttack()):DamageBonus(2d6,Radiant);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c15c513d-b7df-43c9-b35d-b3e73b5c51b7" />
       </fields>
     </stat_object>
