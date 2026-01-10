@@ -1,5 +1,3 @@
-
-
 # DnD PHB 2024 All in One
 
 ## Introduction
@@ -11,62 +9,35 @@
 - Detailed changes can be found below.
   - https://github.com/yoonmoonsick/dnd2024/commits/master/
 
-### 한국어: 개요
-- DnD 2024 플레이어 핸드북 규칙(및 기타 출처)에 맞게 출신 배경, 직업, 재주, 아이템, 종족, 규칙, 주문 등 다양한 콘텐츠를 추가하고 업데이트합니다.
-- 일부 규칙은 게임 플레이 경험을 향상시키기 위해 홈브루 규칙으로 수정되었습니다.
-- 이 모드는 PHB 2024 관련 모드를 개별적으로 다운로드하고 설정해야 하는 번거로움을 줄이는 데 중점을 두고 있습니다. 다른 모드와의 호환성 문제는 고려하지 않습니다.
-- 이 문서의 원본 또는 최신 버전은 아래 링크에서 확인할 수 있습니다.
-  - https://github.com/yoonmoonsick/dnd2024/blob/master/README.md
-- 자세한 변경 내용은 아래에서 확인할 수 있습니다.
-  - https://github.com/yoonmoonsick/dnd2024/commits/master/
-
 ## Bug Report Guidelines
-Following these guidelines will help me focus more efficiently on bug fixes. Reports that do not adhere to the following may be deleted without a separate response.
-* For bug reports, please use [GitHub](https://www.google.com/search?q=https://github.com/yoonmoonsick/dnd2024/issues)
-* **Do not report bugs that occur in conjunction with other mods.** My mod is not developed with compatibility with other mods in mind.
-* **Do not report crashes that occur during respeccing or leveling up as bugs unless the same issue occurs in a new game.**
-* **Do not submit duplicate reports for issues that have already been reported.** Please check bug reports marked as **New issue**, **Being looked at**, or **Needs more info**, and add your experience as a comment to the existing report.
-* Please create a **separate report for each bug**.
-* **Please write "good" bug reports.** A good bug report should meet the following requirements:
-  1. **Title:** Clearly and concisely summarize the bug in one sentence.
-  1. **Reproduction Steps:** Describe the process of how the bug occurs in detail, step by step.
-  1. **Expected vs. Actual Results:** Clearly compare and explain the **expected outcome** versus the **actual outcome** when the bug occurs.
-  1. **Environment:** Include all relevant information about the environment where the bug occurred (e.g., location, class, character, level, etc.).
 
-### 한국어: 버그 리포트 안내
-다음 지침을 준수하시면 버그 수정에 더 효율적으로 집중할 수 있습니다. 아래 지침을 따르지 않는 보고서는 별도의 통보 없이 삭제될 수 있습니다.
+Following these guidelines helps me focus on fixing bugs efficiently.
+Reports that do not follow these rules may be removed without a separate response.
 
-* 버그 리포트는 [깃헙](https://github.com/yoonmoonsick/dnd2024/issues)을 이용바랍니다.
-* **다른 모드와 함께 발생하는 버그는 제보하지 마십시오.** 제 모드는 다른 모드와의 호환성을 전제로 개발되지 않았습니다.
-* **리스펙 또는 레벨업 시 발생하는 크래시는 새 게임에서 동일한 현상이 발생하지 않는 이상 버그로 제보하지 마십시오.**
-* **이미 제보된 내용은 중복으로 제보하지 마십시오.** **New issue**, **Being looked at**, **Needs more info** 등으로 표시된 버그 리포트를 확인하신 후, 해당 리포트에 여러분의 경험을 댓글로 추가해 주시기 바랍니다.
-* 각각의 버그를 **개별 보고서로 작성해 주십시오**.
-* **"좋은" 버그 리포트를 작성해 주십시오.** 좋은 버그 리포트는 다음 요건을 충족해야 합니다.
-  1. **제목:** 버그를 명확하고 간결하게 한 문장으로 요약해 주십시오.
-  1. **재현 단계:** 버그가 발생하는 과정을 상세하게, 단계별로 설명해 주십시오.
-  1. **예상 결과 vs. 실제 결과:** 버그 발생 시 **예상했던 결과**와 **실제로 나타난 결과**를 명확하게 비교하여 설명해 주십시오.
-  1. **환경:** 버그가 발생한 환경에 대한 모든 관련 정보(예: 장소, 직업, 캐릭터, 레벨 등)를 포함해 주십시오.
+* Where to Report
+  * Please report bugs **only via GitHub Issues**:
+  [https://github.com/yoonmoonsick/dnd2024/issues](https://github.com/yoonmoonsick/dnd2024/issues)
 
-## Conflict Mods
+* What **Not** to Report
+  * **Do not report bugs that occur when this mod is used together with other mods.**
+    This mod is not developed with compatibility in mind.
+  * **Do not report crashes that occur during respeccing or leveling up** unless the same issue can be reproduced in a **new game**.
+  * **Do not submit duplicate or very similar bug reports.**
 
-This mod may have potential conflicts with the mods listed below. If any of the following mods are active when the game starts, the **DnD PHB 2024 All in One** will be disabled.
+* Before Creating a New Issue (Important)
+  * **Always search existing issues first.**
+  * If you find an issue that is identical or closely related (including issues marked as **New issue**, **Being looked at**, or **Needs more info**):
+    * **Do NOT create a new issue.**
+    * **Add your findings, reproduction steps, or additional details as a comment on the existing issue instead.**
+  * Creating duplicate issues slows down investigation and may result in the new issue being closed or removed.
 
-- 5eSpells
-- DnD Expanded
-- featsextra modio version
-- Mystra's Spells
-- One DND Backgrounds - PHB 2024
-- OneDnD_SpellListAdditions
-- Rebalance_Cantrips
-- Rebalance_ClassSpells
-- Rebalance_CommonEffects
-- Rebalance_Feats
-- Rebalance_Lvl1_Spells
-- Rebalance_Lvl2_Spells
-- Rebalance_Lvl3_Spells
-- Rebalance_Lvl4_Spells
-- Rebalance_Lvl5_Spells
-- Rebalance_Lvl6_Spells
+* Reporting Rules: Please create **one issue per bug**. Do not combine multiple, unrelated problems into a single report.
+
+* How to Write a “Good” Bug Report
+  1. **Title**: Clearly and concisely summarize the bug in a single sentence.
+  2. **Reproduction Steps**: Describe step by step how the bug occurs so it can be reliably reproduced.
+  3. **Expected vs. Actual Results**: Clearly explain what you expected to happen and what actually happened.
+  4. **Environment**: Include all relevant context, such as location, class, character, level, and any other details that may affect the issue.
 
 ## Table of Contents
 
