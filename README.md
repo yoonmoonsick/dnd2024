@@ -1,6 +1,7 @@
 # DnD PHB 2024 All in One
 
 ## Introduction
+
 - Adds and updates content to align with the DnD 2024 Player's Handbook rules (and other sources), including Backgrounds, Classes, Feats, Items, Races, Rules, Spells and more.
 - Some rules are modified with Homebrew rules to enhance the gameplay experience.
 - This mod is focused on reducing the inconvenience of having to download and set up PHB 2024 related mods individually. It does not consider compatibility issues with other mods.
@@ -11,28 +12,23 @@
 
 ## Bug Report Guidelines
 
-Following these guidelines helps me focus on fixing bugs efficiently.
-Reports that do not follow these rules may be removed without a separate response.
+Following these guidelines helps me focus on fixing bugs efficiently. Reports that do not follow these rules may be removed without a separate response.
 
 * Where to Report
   * Please report bugs **only via GitHub Issues**:
   [https://github.com/yoonmoonsick/dnd2024/issues](https://github.com/yoonmoonsick/dnd2024/issues)
-
 * What **Not** to Report
   * **Do not report bugs that occur when this mod is used together with other mods.**
     This mod is not developed with compatibility in mind.
   * **Do not report crashes that occur during respeccing or leveling up** unless the same issue can be reproduced in a **new game**.
   * **Do not submit duplicate or very similar bug reports.**
-
 * Before Creating a New Issue (Important)
   * **Always search existing issues first.**
   * If you find an issue that is identical or closely related (including issues marked as **New issue**, **Being looked at**, or **Needs more info**):
     * **Do NOT create a new issue.**
     * **Add your findings, reproduction steps, or additional details as a comment on the existing issue instead.**
   * Creating duplicate issues slows down investigation and may result in the new issue being closed or removed.
-
 * Reporting Rules: Please create **one issue per bug**. Do not combine multiple, unrelated problems into a single report.
-
 * How to Write a “Good” Bug Report
   1. **Title**: Clearly and concisely summarize the bug in a single sentence.
   2. **Reproduction Steps**: Describe step by step how the bug occurs so it can be reliably reproduced.
