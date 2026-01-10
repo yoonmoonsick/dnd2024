@@ -3018,21 +3018,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="798cca1c-8b11-4c4e-b48b-abcdfbe70eba" />
-        <field name="Name" type="NameTableFieldDefinition" value="Rage_Frenzy_Boosts" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;DisplayBoostInTooltip" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnShortRest;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_FRENZY',context.Source) and not HasStatus('FRENZY_BONUS_APPLIED',context.Source)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not IsOffHandAttack()):CharacterWeaponDamage(LevelMapValue(RageFrenzyDamage));IF(IsUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(RageFrenzyDamage));IF(not CharacterLevelGreaterThan(8)):EntityThrowDamage(2d6);IF(CharacterLevelGreaterThan(8)):EntityThrowDamage(3d6);" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Enemy() and Character() and (IsMeleeWeaponAttack() or IsUnarmedAttack()) and HasDamageEffectFlag(DamageFlags.Hit)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FRENZY_BONUS_APPLIED,100,1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedStrike" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ce494da-3092-4e69-bf34-131930f525ca" />
         <field name="Name" type="NameTableFieldDefinition" value="MultiattackDefense" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7c7b3982-899e-4b06-8fe3-05971219f958" />
@@ -4592,6 +4577,18 @@
         <field name="Name" type="NameTableFieldDefinition" value="TotemSpirit_Wolf" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bef64409-c9c1-412b-8d4a-5f11eb6cfa52" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PackHowl_Barbarian);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcbfc5ad-06b5-4940-a706-0cb7efe620ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_Frenzy_Boosts" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,FRENZY_DAMAGE_BONUS,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

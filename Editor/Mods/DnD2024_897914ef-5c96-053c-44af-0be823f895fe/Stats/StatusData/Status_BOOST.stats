@@ -3127,18 +3127,43 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="66758bd6-eb52-4352-9a78-1f9641d348bd" />
-        <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_BARBARIAN_FIRST_TURN" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_WildMagicBarbarian_ExplodingFlumph') or SpellId('Target_WildMagicBarbarian_Teleport') or SpellId('WildMagicBarbarian_LightBolt'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyIconGlow());" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_WildMagicBarbarian_ExplodingFlumph') or SpellId('Target_WildMagicBarbarian_Teleport') or SpellId('WildMagicBarbarian_LightBolt')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="42778296-aa02-4bc8-b7e1-f089f8090f72" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRENZY_DAMAGE_BONUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a81972-3735-4010-bd6a-94640e031589" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundStop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusSoundState" type="FixedStringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not IsOffHandAttack()):CharacterWeaponDamage(LevelMapValue(RageFrenzyDamage));IF(IsUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(RageFrenzyDamage));IF(not CharacterLevelGreaterThan(8)):EntityThrowDamage(2d6);IF(CharacterLevelGreaterThan(8)):EntityThrowDamage(3d6);" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f0ba9b62-4530-4985-8540-66ce03835847" />
         <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_BARBARIAN" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66758bd6-eb52-4352-9a78-1f9641d348bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILDMAGIC_BARBARIAN_FIRST_TURN" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_WildMagicBarbarian_ExplodingFlumph') or SpellId('Target_WildMagicBarbarian_Teleport') or SpellId('WildMagicBarbarian_LightBolt'),ModifyUseCosts(Replace,BonusActionPoint,0,-1,BonusActionPoint),ModifyIconGlow());" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="SpellId('Target_WildMagicBarbarian_ExplodingFlumph') or SpellId('Target_WildMagicBarbarian_Teleport') or SpellId('WildMagicBarbarian_LightBolt')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6113,15 +6138,6 @@
         <field name="Name" type="NameTableFieldDefinition" value="BLINK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e7aa6bb4-3c34-4d2b-9870-38fabdfdddbb" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bdcf7dd0-6763-49de-8526-b16afb12a303" />
-        <field name="Name" type="NameTableFieldDefinition" value="FRENZY_BONUS_APPLIED" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c6e1bf1a-3d15-4c12-834c-8d9d181d2655" />
-        <field name="StackId" type="StringTableFieldDefinition" value="FRENZY_BONUS_APPLIED" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

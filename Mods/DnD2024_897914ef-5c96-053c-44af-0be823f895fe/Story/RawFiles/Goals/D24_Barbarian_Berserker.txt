@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+// Remove FRENZY_DAMAGE_BONUS after throw resolution.
+// OnAttack removes the status before projectile hit,
+// preventing Frenzy damage from applying, so Osiris is used.
+
+IF
+CastedSpell((CHARACTER)_Player,"Throw_Throw", _, _, _)
+AND
+HasActiveStatus(_Player, "FRENZY_DAMAGE_BONUS", 1)
+THEN
+RemoveStatus(_Player, "FRENZY_DAMAGE_BONUS", _Player);
+EXITSECTION
+
+ENDEXITSECTION
