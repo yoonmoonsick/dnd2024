@@ -1098,15 +1098,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="TrickShot_Ricochet" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h608550b7g6f0fg448cg1f6egc8643f41d86c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb14c0939g6be0g40e4g800cga9f787fa59a8" version="2" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1073003g3fd8g4b78gb318gf87e358c9862" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_Ricochet" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RiskDie:1;" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetTerrain;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];TARGET:SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
