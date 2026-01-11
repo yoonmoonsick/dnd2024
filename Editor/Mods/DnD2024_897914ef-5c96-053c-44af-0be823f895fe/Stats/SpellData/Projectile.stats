@@ -3277,7 +3277,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c4dae9c-188e-4287-aa5c-4a0ceb42e1c0" />
         <field name="Name" type="NameTableFieldDefinition" value="GreenFlameBlade" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):DealDamage(SpellCastingAbilityModifier,Fire);IF(CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4)):DealDamage(SpellCastingAbilityModifier,Fire);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Fire);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4)):DealDamage(SpellCastingAbilityModifier,Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade)+SpellCastingAbilityModifier,Psychic);" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="DeathType" type="EnumerationTableFieldDefinition" value="Incinerate" enumeration_type_name="Death Type" version="1" />
