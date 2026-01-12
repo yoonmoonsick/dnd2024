@@ -6042,14 +6042,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7126802c-21b6-4c69-8166-309170625608" />
-        <field name="Name" type="NameTableFieldDefinition" value="Smite_Divine" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="eb782976-7c83-4f77-9465-2aa8600761cc" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Divine);UnlockInterrupt(Interrupt_Smite_Divine_Critical)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="68c063ef-b631-473a-ad93-e40e7ef82206" />
         <field name="Name" type="NameTableFieldDefinition" value="PaladinsSmite" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e64f2d67-a53f-4d0f-8e7f-709bea12ca7f" />
@@ -6058,7 +6050,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="FreeSmiteCharge:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_DivineSmite" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('FreeSmiteCharge',1,0,false,false,context.Source)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free'),ModifyIconGlow())" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free'),ModifyIconGlow());UnlockInterrupt(Interrupt_Smite_Divine_Free);UnlockInterrupt(Interrupt_Smite_Divine_Critical_Free);" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -6067,7 +6059,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="689c92a1-5fa8-4688-8ccb-502717ba0f31" />
         <field name="Name" type="NameTableFieldDefinition" value="PaladinsSmite_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="68c063ef-b631-473a-ad93-e40e7ef82206" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free_2);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free_2'),ModifyIconGlow())" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free_2);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free_2'),ModifyIconGlow());UnlockInterrupt(Interrupt_Smite_Divine_2_Free);UnlockInterrupt(Interrupt_Smite_Divine_Critical_2_Free);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6075,7 +6067,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f7679483-788e-43d0-b821-7bc0a630c4a6" />
         <field name="Name" type="NameTableFieldDefinition" value="PaladinsSmite_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="68c063ef-b631-473a-ad93-e40e7ef82206" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free_3);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free_3'),ModifyIconGlow())" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Smite_Divine_Free_3);UnlockSpellVariant(SpellId('Target_Smite_Divine_Free_3'),ModifyIconGlow());UnlockInterrupt(Interrupt_Smite_Divine_3_Free);UnlockInterrupt(Interrupt_Smite_Divine_Critical_3_Free);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6083,7 +6075,27 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9f815d70-2cc6-4e6d-a516-841070fb90a2" />
         <field name="Name" type="NameTableFieldDefinition" value="Smite_Searing" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="eb782976-7c83-4f77-9465-2aa8600761cc" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Searing);UnlockInterrupt(Interrupt_Smite_Searing_Critical);UnlockInterrupt(Interrupt_Smite_Searing_2);UnlockInterrupt(Interrupt_Smite_Searing_Critical_2);UnlockInterrupt(Interrupt_Smite_Searing_3);UnlockInterrupt(Interrupt_Smite_Searing_Critical_3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Searing);UnlockInterrupt(Interrupt_Smite_Searing_Critical);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate;OnShortRest;OnLongRest;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 1, false, false, context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6edbefe5-950d-4f9b-8bcf-709cab492108" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Searing_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f815d70-2cc6-4e6d-a516-841070fb90a2" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 2, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Searing_2);UnlockInterrupt(Interrupt_Smite_Searing_Critical_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e4051798-9554-45df-87c5-cb58206df8ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Searing_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9f815d70-2cc6-4e6d-a516-841070fb90a2" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 3, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Searing_3);UnlockInterrupt(Interrupt_Smite_Searing_Critical_3);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6091,7 +6103,25 @@
         <field name="UUID" type="IdTableFieldDefinition" value="da2d0a4c-6181-4988-8ab4-1e7adab63031" />
         <field name="Name" type="NameTableFieldDefinition" value="Smite_Thunderous" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9f815d70-2cc6-4e6d-a516-841070fb90a2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Thunderous);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical);UnlockInterrupt(Interrupt_Smite_Thunderous_2);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical_2);UnlockInterrupt(Interrupt_Smite_Thunderous_3);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical_3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Thunderous);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="488314f6-5bb6-4f2a-9e48-2516926e0967" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Thunderous_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da2d0a4c-6181-4988-8ab4-1e7adab63031" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 2, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Thunderous_2);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2869e75-18fe-4025-a4fb-cd50916b12a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Thunderous_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da2d0a4c-6181-4988-8ab4-1e7adab63031" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 3, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Thunderous_3);UnlockInterrupt(Interrupt_Smite_Thunderous_Critical_3);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6099,7 +6129,25 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7eefc434-4494-416e-8efc-08a9be627494" />
         <field name="Name" type="NameTableFieldDefinition" value="Smite_Wrathful" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9f815d70-2cc6-4e6d-a516-841070fb90a2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Wrathful);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical);UnlockInterrupt(Interrupt_Smite_Wrathful_2);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical_2);UnlockInterrupt(Interrupt_Smite_Wrathful_3);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical_3);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Wrathful);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cec0d2ef-e740-4153-9c88-e3cfada398a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Wrathful_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7eefc434-4494-416e-8efc-08a9be627494" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 2, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Wrathful_2);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19787ee3-006a-4af0-90fb-31d4c848cb1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Smite_Wrathful_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7eefc434-4494-416e-8efc-08a9be627494" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('SpellSlot', 1, 3, false, false, context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Smite_Wrathful_3);UnlockInterrupt(Interrupt_Smite_Wrathful_Critical_3);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

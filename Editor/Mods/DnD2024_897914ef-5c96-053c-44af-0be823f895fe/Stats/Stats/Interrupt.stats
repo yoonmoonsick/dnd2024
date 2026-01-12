@@ -723,6 +723,26 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3da3c8dd-0470-4e3c-9c77-dc6dccd90bd5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57708032-676f-4aa1-ac71-fd7df8f9940a" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cff0126-3a37-4fdf-b254-e7182ff12ff6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="83df6326-791c-4363-8058-83446a1a700f" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d6f3a1cb-efa6-4a65-93b6-fbcb46631ae1" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="016f22f8-6c0b-4ebf-9843-27892dd6cec0" />
@@ -730,16 +750,6 @@
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1;" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(2d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3da3c8dd-0470-4e3c-9c77-dc6dccd90bd5" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="57708032-676f-4aa1-ac71-fd7df8f9940a" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2;" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(3d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -755,16 +765,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7cff0126-3a37-4fdf-b254-e7182ff12ff6" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_3" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="83df6326-791c-4363-8058-83446a1a700f" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(4d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="05e46c46-778d-43f3-a2ab-3accf7ae0a68" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="620e84a5-089f-4ca2-9d3b-197fe72341e1" />
@@ -776,11 +776,79 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f86f214-b012-47a4-a48b-a2fa4afd07c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca1f0a7a-5953-41fe-aaca-107b14ad3a5e" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d7978e9e-cdcb-46db-96de-4558c1c0f7eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_2_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3da3c8dd-0470-4e3c-9c77-dc6dccd90bd5" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bf9ff310-8b05-4044-8465-3805d9664360" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_3_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7cff0126-3a37-4fdf-b254-e7182ff12ff6" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40fffb9a-6481-4d18-9dd0-b8b1ceed46e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d6f3a1cb-efa6-4a65-93b6-fbcb46631ae1" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0195d008-7201-4bff-a926-3f22e99e367b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_2_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a6e2897f-3964-4a36-b0ef-9940d036af5e" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="953a8741-66ef-453c-9be8-3bc887f74ade" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_3_Free" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="05e46c46-778d-43f3-a2ab-3accf7ae0a68" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;FreeSmiteCharge:1;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d2e3c913-5861-46db-adab-374e4c24254e" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0616be7e-3ec8-4aa1-9adf-78ed02e797a4" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5328eda8-9f63-45bf-9f40-210d1a28c2a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d327c3c-0d35-417d-b92a-62065796741a" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="33d1dc44-eacc-44f7-82f7-354609eeaec6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ac8cd6-b1ff-4586-97a1-3943d0a51610" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
       </fields>
     </stat_object>
@@ -797,16 +865,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5328eda8-9f63-45bf-9f40-210d1a28c2a1" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_5" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5d327c3c-0d35-417d-b92a-62065796741a" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ab877b89-77df-420d-930f-d7be41120897" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_Critical_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cc759922-fd1d-40b1-bf43-b17bc2d7bc24" />
@@ -814,16 +872,6 @@
         <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="33d1dc44-eacc-44f7-82f7-354609eeaec6" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Smite_Divine_6" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a7ac8cd6-b1ff-4586-97a1-3943d0a51610" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and (IsUnarmedAttack() or IsWeaponAttack() ) and not IsCritical() and not IsKillingBlow() and not AnyEntityIsItem() and not HasStatus('ONE_SPELL',context.Observer);" />
-        <field name="Cost" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:6;" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(not UndeadOrFiend(context.Target)):DealDamage(5d8,Radiant,Magical);IF(UndeadOrFiend(context.Target)):DealDamage(6d8,Radiant,Magical);ApplyStatus(INTERRUPT_SMITE_DIVINE_VFX,100,0);IF(HasPassive('InspiringSmite',context.Source)):ApplyStatus(SELF,INSPRING_SMITE,100,1);ApplyStatus(SELF,ONE_SPELL,100,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
