@@ -11821,6 +11821,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11829,7 +11830,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6a35a7bb-7e69-40fa-8936-6cde46310451" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class_Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not WearingArmor(context.Source) and not HasShieldEquipped(context.Source)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage , Bludgeoning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage, Thunder);" />
@@ -11841,6 +11842,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="StunningStrike_Unarmed" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e426bfa6-df42-4df4-9c5b-6dea0e114d8e" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage , Bludgeoning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage, Thunder);IF(not SavingThrow(Ability.Constitution, ManeuverSaveDC())):ApplyStatus(STUNNED,100,1);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11853,6 +11855,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11865,6 +11868,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11877,6 +11881,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="LevelMapValue(FlurryOfBlows)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood;AddFallDamageOnLand;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12241,6 +12246,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="VirulentVenom" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a1eadc7e-10d0-49cd-a9cb-7e5a06db2b7d" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12435,7 +12441,7 @@
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;39daf365-ec06-49a8-81f3-9032640699d7,,;5c400e93-0266-499c-a2e1-75d53358460f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c88e9cfa-df92-477a-ae75-cbfb932350b4" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2f784038-2bea-49ba-b7c1-7b128b16b167" />
@@ -13848,7 +13854,7 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;cd5e5d4a-38e1-4d4d-b346-3fbc1e4c3c90,,;141f48d9-9615-496a-8737-9240f0dba60d,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Intent" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;HasSomaticComponent;IsSpell;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
@@ -13860,7 +13866,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SACREDFLAME,100,-1)" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SacredFlame_Action;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13870,7 +13876,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SacredFlame" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13887,7 +13893,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TollTheDead" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d139555e-88d3-4365-aff5-cbf20e380e44" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_TOLLTHEDEAD,100,-1)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
       </fields>
@@ -13908,7 +13914,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7732eadb-c390-40c0-b4f8-291c903c8566" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Piercing,Magical)" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_THORNWHIP,100,-1)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;AddFallDamageOnLand;RangeIgnoreVerticalThreshold;RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;AddFallDamageOnLand;RangeIgnoreVerticalThreshold;RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
