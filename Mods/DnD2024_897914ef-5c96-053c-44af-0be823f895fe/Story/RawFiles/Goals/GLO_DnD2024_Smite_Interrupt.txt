@@ -3,6 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Add Searing Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -16,6 +17,7 @@ HasPassive(_Player,"Smite_Searing",0)
 THEN
 AddPassive(_Player,"Smite_Searing");
 
+// Remove Searing Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -27,6 +29,7 @@ HasPassive(_Player,"Smite_Searing",1)
 THEN
 RemovePassive(_Player, "Smite_Searing");
 
+// Add Thunderous Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -40,6 +43,7 @@ HasPassive(_Player,"Smite_Thunderous",0)
 THEN
 AddPassive(_Player,"Smite_Thunderous");
 
+// Remove Thunderous Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -51,6 +55,8 @@ HasPassive(_Player,"Smite_Thunderous",1)
 THEN
 RemovePassive(_Player, "Smite_Thunderous");
 
+// Add Warthful Smite
+// - Paladin
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -64,18 +70,7 @@ HasPassive(_Player,"Smite_Wrathful",0)
 THEN
 AddPassive(_Player,"Smite_Wrathful");
 
-IF
-EnteredCombat(_Player, _CombatID)
-AND
-DB_Players((CHARACTER)_Player)
-AND
-IsSpellActive(_Player, "Target_Smite_Wrathful", 0)
-AND
-HasPassive(_Player,"Smite_Wrathful",1)
-THEN
-RemovePassive(_Player, "Smite_Wrathful");
-
-
+// - Ranger
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -89,6 +84,21 @@ HasPassive(_Player,"Smite_Wrathful",0)
 THEN
 AddPassive(_Player,"Smite_Wrathful");
 
+// - Warlock
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsTagged(_Player,(TAG)WARLOCK_5804f55a-93f7-4281-9512-8d548a9e2a22, 1)
+AND
+IsSpellActive(_Player, "Target_Smite_Wrathful", 1)
+AND
+HasPassive(_Player,"Smite_Wrathful",0)
+THEN
+AddPassive(_Player,"Smite_Wrathful");
+
+// Remove Warthful Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
@@ -99,6 +109,7 @@ AND
 HasPassive(_Player,"Smite_Wrathful",1)
 THEN
 RemovePassive(_Player, "Smite_Wrathful");
+
 EXITSECTION
 
 ENDEXITSECTION
