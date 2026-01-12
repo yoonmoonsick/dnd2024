@@ -2684,7 +2684,6 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
 - [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
 - [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
-- [Magic Stone](https://www.dndbeyond.com/spells/2391-magic-stone)
 - [Mind Sliver](https://www.dndbeyond.com/spells/2619037-mind-sliver)
 - [Poison Spray](https://www.dndbeyond.com/spells/2618875-poison-spray)
 - [Prestidigitation](https://www.dndbeyond.com/spells/2618893-prestidigitation)
