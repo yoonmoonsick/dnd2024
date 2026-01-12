@@ -173,9 +173,7 @@ function ChaLvlLessOrEqualThan(value, entity)
     return ConditionResult(entity.Level <= value, {ConditionError("IsNotCharacterLevelGreaterThan")})
 end
 
-function IsWarlockCantrip()
-    return TrueStrikeCheck() | SpellId('Projectile_BloodBolt') | SpellId('Projectile_EldritchBlast') | SpellId('Projectile_Hellfire') | SpellId('Projectile_MagicStone') | SpellId('Projectile_PoisonSpray') | SpellId('Shout_BladeWard') | SpellId('Shout_ConcealedShot') | SpellId('Shout_Prestidigitation') | SpellId('Shout_Thunderclap') | SpellId('Target_BoomingBlade_ClassSpell') | SpellId('Target_ChillTouch') | SpellId('Target_Concussion') | SpellId('Target_Friends') | SpellId('Target_GreenFlameBlade') | SpellId('Target_LightningLure') | SpellId('Target_MageHand') | SpellId('Target_MindSliver') | SpellId('Target_MinorIllusion') | SpellId('Target_SacredFlame') | SpellId('Target_TollTheDead') | SpellId('Target_TrueStrike') | SpellId('Target_VengefulBlade')
-end
+
 
 function DeflectAttackCheck(damageType, entity)
     local entity = entity or context.Target

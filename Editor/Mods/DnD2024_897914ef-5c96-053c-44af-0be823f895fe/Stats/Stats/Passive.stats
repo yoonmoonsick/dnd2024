@@ -10874,10 +10874,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="213e8842-2088-4f06-93bd-1060e83bf727" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="49bf05ea-65bb-4d33-a3f2-6cc34afefb90" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnStatusRemoved;OnStatusApplied;OnStatusRemove;OnStatusApply" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TargetSizeEqualOrSmaller(Size.Large) and IsWarlockCantrip() and HasDamageEffectFlag(DamageFlags.Hit) and (IsAttackType(AttackType.MeleeSpellAttack) or IsAttackType(AttackType.RangedSpellAttack));" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWarlockCantrip() and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc483836fg9c66g7fadge5a8g6ece84bec6a9" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_REPELLING_BLAST,100,0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(TargetSizeEqualOrSmaller(Size.Large)):ApplyStatus(PUSH_30, 100, 0);IF(TargetSizeEqualOrSmaller(Size.Large)):ApplyStatus(PASSIVE_REPELLING_BLAST,100,0);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
