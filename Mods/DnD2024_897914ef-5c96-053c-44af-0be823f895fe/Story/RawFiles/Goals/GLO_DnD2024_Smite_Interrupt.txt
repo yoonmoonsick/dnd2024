@@ -9,8 +9,6 @@ EnteredCombat(_Player, _CombatID)
 AND
 DB_Players((CHARACTER)_Player)
 AND
-IsTagged(_Player,(TAG)PALADIN_6d85ab2d-5c23-498c-a61e-98f05a00177a,1)
-AND
 IsSpellActive(_Player, "Target_Smite_Searing", 1)
 AND
 HasPassive(_Player,"Smite_Searing",0)
@@ -29,13 +27,12 @@ HasPassive(_Player,"Smite_Searing",1)
 THEN
 RemovePassive(_Player, "Smite_Searing");
 
+
 // Add Thunderous Smite
 IF
 EnteredCombat(_Player, _CombatID)
 AND
 DB_Players((CHARACTER)_Player)
-AND
-IsTagged(_Player,(TAG)PALADIN_6d85ab2d-5c23-498c-a61e-98f05a00177a,1)
 AND
 IsSpellActive(_Player, "Target_Smite_Thunderous", 1)
 AND
@@ -55,42 +52,12 @@ HasPassive(_Player,"Smite_Thunderous",1)
 THEN
 RemovePassive(_Player, "Smite_Thunderous");
 
+
 // Add Warthful Smite
-// - Paladin
 IF
 EnteredCombat(_Player, _CombatID)
 AND
 DB_Players((CHARACTER)_Player)
-AND
-IsTagged(_Player,(TAG)PALADIN_6d85ab2d-5c23-498c-a61e-98f05a00177a,1)
-AND
-IsSpellActive(_Player, "Target_Smite_Wrathful", 1)
-AND
-HasPassive(_Player,"Smite_Wrathful",0)
-THEN
-AddPassive(_Player,"Smite_Wrathful");
-
-// - Ranger
-IF
-EnteredCombat(_Player, _CombatID)
-AND
-DB_Players((CHARACTER)_Player)
-AND
-IsTagged(_Player,(TAG)RANGER_37a733c1-a862-4157-b92a-9cff46232c6a,1)
-AND
-IsSpellActive(_Player, "Target_Smite_Wrathful", 1)
-AND
-HasPassive(_Player,"Smite_Wrathful",0)
-THEN
-AddPassive(_Player,"Smite_Wrathful");
-
-// - Warlock
-IF
-EnteredCombat(_Player, _CombatID)
-AND
-DB_Players((CHARACTER)_Player)
-AND
-IsTagged(_Player,(TAG)WARLOCK_5804f55a-93f7-4281-9512-8d548a9e2a22, 1)
 AND
 IsSpellActive(_Player, "Target_Smite_Wrathful", 1)
 AND
