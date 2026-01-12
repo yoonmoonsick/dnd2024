@@ -3033,6 +3033,53 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85425658-4787-4733-b19c-2ad322e0942b" />
+        <field name="Name" type="NameTableFieldDefinition" value="RAGE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="855fb809-8a50-44a1-98fc-911b67ed0f33" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);UnlockSpell(Shout_ExtendRage)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e479bbe-1426-41aa-9218-5911db96cae9" />
+        <field name="Name" type="NameTableFieldDefinition" value="RAGE_FRENZY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a81972-3735-4010-bd6a-94640e031589" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed);UnlockSpell(Shout_ExtendRage)" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42778296-aa02-4bc8-b7e1-f089f8090f72" />
+        <field name="Name" type="NameTableFieldDefinition" value="FRENZY_DAMAGE_BONUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a81972-3735-4010-bd6a-94640e031589" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SoundStop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusSoundState" type="FixedStringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not IsOffHandAttack()):CharacterWeaponDamage(LevelMapValue(RageFrenzyDamage));IF(IsUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(RageFrenzyDamage));IF(not CharacterLevelGreaterThan(8)):EntityThrowDamage(2d6);IF(CharacterLevelGreaterThan(8)):EntityThrowDamage(3d6);" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b11b546-0009-4c4b-9f59-9f63f2bfaba2" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_TOTEM_BEAR" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bfc99d24-1cc1-4a74-9883-c388a1a62db6" />
@@ -3111,43 +3158,6 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="85425658-4787-4733-b19c-2ad322e0942b" />
-        <field name="Name" type="NameTableFieldDefinition" value="RAGE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="855fb809-8a50-44a1-98fc-911b67ed0f33" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);UnlockSpell(Shout_ExtendRage)" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="42778296-aa02-4bc8-b7e1-f089f8090f72" />
-        <field name="Name" type="NameTableFieldDefinition" value="FRENZY_DAMAGE_BONUS" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a81972-3735-4010-bd6a-94640e031589" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SoundStop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusSoundState" type="FixedStringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not IsOffHandAttack()):CharacterWeaponDamage(LevelMapValue(RageFrenzyDamage));IF(IsUnarmedAttack()):CharacterUnarmedDamage(LevelMapValue(RageFrenzyDamage));IF(not CharacterLevelGreaterThan(8)):EntityThrowDamage(2d6);IF(CharacterLevelGreaterThan(8)):EntityThrowDamage(3d6);" />
-        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsMeleeAttack()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatusEvent" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RECKLESS_ATTACK,100,1)" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -5256,17 +5266,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="c997cf09-353b-4a8f-9ece-686dbc02a6b4" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(Shillelagh)+SpellCastingAbility, Force)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponAttackRollAbilityOverride(SpellCastingAbility);Attribute(InventoryBound);WeaponDamageDieOverride(1d12);WeaponDamageTypeOverride(Force)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3e479bbe-1426-41aa-9218-5911db96cae9" />
-        <field name="Name" type="NameTableFieldDefinition" value="RAGE_FRENZY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c2a81972-3735-4010-bd6a-94640e031589" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Frightened);IF(HasPassive('MindlessRage',context.Source)):StatusImmunity(SG_Charmed);UnlockSpell(Shout_ExtendRage)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Rage_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_Frenzy_NoHeavyArmour_VFX;Rage_Frenzy_Boosts" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_STOP_REMOVE')" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value=";" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

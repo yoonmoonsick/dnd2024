@@ -13,6 +13,14 @@ AND
 HasActiveStatus(_Player, "FRENZY_DAMAGE_BONUS", 1)
 THEN
 RemoveStatus(_Player, "FRENZY_DAMAGE_BONUS", _Player);
+
+
+IF
+CastedSpell((CHARACTER)_Player,"Throw_ImprovisedWeapon ", _, _, _)
+AND
+HasActiveStatus(_Player, "FRENZY_DAMAGE_BONUS", 1)
+THEN
+RemoveStatus(_Player, "FRENZY_DAMAGE_BONUS", _Player);
 EXITSECTION
 
 ENDEXITSECTION
