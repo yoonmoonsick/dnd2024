@@ -863,7 +863,7 @@
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamage" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamageClass" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -1474,15 +1474,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fdfc4c6-5f82-4944-a1f7-b1c8bd08b6cd" />
         <field name="Name" type="NameTableFieldDefinition" value="Altered" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h470d8b48g959fge3dcg83bag383250bd4eb0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d3c9d92g9f73g833cg7106g4cf3737c7925" version="4" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h1a9ed105g6f53g496bg99acge94b77ba5677" version="1" />
-        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(not WearingArmor(context.Source) and not IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Dexterity);IF(not WearingArmor(context.Source) and IsConstitutionGreaterThanDexterity()):ACOverrideFormula(13,true,Constitution);DarkvisionRangeMin(18);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);CharacterUnarmedDamage(1d4);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="9" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamage" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2651,7 +2649,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamage" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamageClass" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2688,9 +2686,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeUnarmedAttack()):Reroll(Damage,1,false);CharacterUnarmedDamage(1d4);" />
-        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source) and TargetSizeEqualOrSmaller(Size.Large)" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamage" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4355,7 +4351,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MartialArts_UnarmedDamage" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa;7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('FightingStyle_UnarmedFighting',context.Source);" />
-        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamage" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamageClass" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
