@@ -261,6 +261,13 @@ AND
 HasSpell((CHARACTER)_Character, "Shout_WordOfRadiance", 1)
 THEN
 ApplyStatus(_Character, "HASSPELL_WORDOFRADIANCE", -1.0, 1);
+
+IF
+StatusApplied(_Character, "MAGIC_INITIATE_WIZARD", _Causee, _)
+AND
+HasSpell((CHARACTER)_Character, "Shout_SwordBurst", 1)
+THEN
+ApplyStatus(_Character, "HASSPELL_SWORDBURST", -1.0, 1);
 EXITSECTION
 
 ENDEXITSECTION
