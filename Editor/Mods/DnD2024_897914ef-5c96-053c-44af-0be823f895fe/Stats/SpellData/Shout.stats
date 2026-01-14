@@ -4113,6 +4113,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HOLYAVENGER_AURA,100,-1);" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HOLYAVENGER_AURA') and ClassLevelHigherOrEqualThan(1,'Paladin',context.Source)" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -6491,6 +6492,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="529b1ed0-fa16-4c0c-b0a7-07e96db4a0c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorcerousRestoration" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,SorceryPoint,50%,0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1065f465gd4c3g73ddgd136g7d2b74c12167" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2017b3f0g70fbgc658g11e7ga2af334c3094" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="!Combat()" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fe2d38e8-9144-4808-8979-0d247598fe32" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="df12f579-01f2-4e65-a9bb-68a1ea04721b" />
         <field name="Name" type="NameTableFieldDefinition" value="InnateSorcery" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(INNATE_SORCERY,100,10)" />
@@ -6540,31 +6559,6 @@
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="696cbbf9-b431-4807-8b07-3537ed554e7d" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="529b1ed0-fa16-4c0c-b0a7-07e96db4a0c8" />
-        <field name="Name" type="NameTableFieldDefinition" value="SorcerousRestoration" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(SELF,SorceryPoint,50%,0)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_CreateSorceryPoints_1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1065f465gd4c3g73ddgd136g7d2b74c12167" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2017b3f0g70fbgc658g11e7ga2af334c3094" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_SorcererGen_L1to3_01" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_SorcererGen_L1to3_01" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateSorceryPoint_L1to3" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateSorceryPoint_L1to3" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="9fd22d7d-5d7a-470b-a939-810046915bed,,;,,;4222840e-85c4-41d4-89f3-cf525ab7a2ce,,;d58199b1-9bc5-4715-99d4-43a5b5c1ec16,,;2d19a206-bf18-4f4d-ba95-f83c5fc38fd7,,;,,;57db495b-2467-467b-a599-d7df2fa4d659,,;,,;,," />
-        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
-        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="!Combat()" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="3cb0b265-544a-40f2-918e-2a4fb0860b71" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d822f332-8213-49a1-bc48-4668a89199ad" />
-        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_CreateSorceryPoints" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
