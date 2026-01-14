@@ -137,10 +137,49 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec201828-8583-43e8-9ee9-1413897d2f00" />
+        <field name="Name" type="NameTableFieldDefinition" value="BreakFree_Restrained" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="10bd8d53-d8cb-4642-8092-eff3641604ac" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Dryad_FallenLover" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9d10da4ge2a6gcbb2g2ce1g2cd8748307ec" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had274397g53f2g91b6gaf22g805941e0fcda" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Disengage" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Disengage" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;925779e7-8bf6-4d56-8c4d-42c3bc01c60c,,;50398f4e-dd82-4d6a-ad43-aedd578543d9,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Disengage" enumeration_type_name="SpellActionType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f56fb8e0-815b-41e0-9071-3c2305c93660" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="BreakFreeCheck(12);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(WEB);RemoveStatus(ENSNARING_STRIKE);RemoveStatus(ENSNARING_STRIKE_2);RemoveStatus(ENSNARING_STRIKE_3);RemoveStatus(ENSNARING_STRIKE_4);RemoveStatus(ENSNARING_STRIKE_5);RemoveStatus(ENSNARING_STRIKE_6);RemoveStatus(NET);RemoveStatus(RESTRAINED);RemoveStatus(ENSNARED);RemoveStatus(ENSNARED_VINES);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="331981c1-741d-42a4-9de4-b4e1711ee2a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="StandUp_Prone" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec201828-8583-43e8-9ee9-1413897d2f00" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3baaa07fgb078g49a0g8be9gc35195c68f7d" version="1" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(PRONE);RemoveStatus(PRONE_GREASE);RemoveStatus(PRONE_SEWER);RemoveStatus(PRONE_ICE);RemoveStatus(PRONE_FALLEN);RemoveStatus(PRONE_THUNDEROUS_SMITE);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Athlete_StandUp" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:4.5;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f2c24b97-edc7-44ee-82c8-e815c70591d6" />
         <field name="Name" type="NameTableFieldDefinition" value="SeeInvisibility_Seek" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="47d091a0-0f19-4376-8409-e741beb74663" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="Movement:4.5;" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -3297,29 +3336,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6a93429b-89b2-4634-8f94-f9f98d545f09" />
         <field name="Name" type="NameTableFieldDefinition" value="ComprehendLanguages" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c0c2e56e-71de-44cd-b1b1-c592ac87602d" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ec201828-8583-43e8-9ee9-1413897d2f00" />
-        <field name="Name" type="NameTableFieldDefinition" value="BreakFree_Restrained" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="10bd8d53-d8cb-4642-8092-eff3641604ac" />
-        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Dryad_FallenLover" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9d10da4ge2a6gcbb2g2ce1g2cd8748307ec" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had274397g53f2g91b6gaf22g805941e0fcda" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Start" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Disengage" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Disengage" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;925779e7-8bf6-4d56-8c4d-42c3bc01c60c,,;50398f4e-dd82-4d6a-ad43-aedd578543d9,,;1c343e00-7e6c-4f53-b588-074a3cdb9c7d,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Distract" enumeration_type_name="SpellActionType" version="1" />
-        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f56fb8e0-815b-41e0-9071-3c2305c93660" />
-        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="BreakFreeCheck(12);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="RemoveStatus(WEB);RemoveStatus(ENSNARING_STRIKE);RemoveStatus(ENSNARING_STRIKE_2);RemoveStatus(ENSNARING_STRIKE_3);RemoveStatus(ENSNARING_STRIKE_4);RemoveStatus(ENSNARING_STRIKE_5);RemoveStatus(ENSNARING_STRIKE_6);RemoveStatus(NET);RemoveStatus(RESTRAINED);RemoveStatus(ENSNARED);RemoveStatus(ENSNARED_VINES);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
