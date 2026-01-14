@@ -11343,6 +11343,7 @@ data "TooltipStatusApply" "ApplyStatus(EXSANGUINATE_BLOODSTROKE_HALF_TEMP_HP,100
 new entry "Target_StrikeFromTheDark"
 type "SpellData"
 data "SpellType" "Target"
+data "Cooldown" "OncePerTurn"
 data "SpellProperties" "GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);CastOffhand[GROUND:DealDamage(OffhandMeleeWeapon, OffhandMeleeWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);"
 data "TargetCeiling" "0"
 data "TargetFloor" ".25"
