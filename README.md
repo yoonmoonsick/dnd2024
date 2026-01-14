@@ -1282,6 +1282,37 @@ Formerly, Purple Dragon Knight
 - Level 11: Stalker's Flurry
   - The Psychic damage of your Dreadful Strike becomes 2d8. In addition, when you use the Dreadful Strike effect of your Dread Ambusher feature, the target and each creature within 10 feet of it must make a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn.
 
+### Green Reaper
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreenReaper.png?raw=true)
+
+> Green Reapers are assassins who specialize in harnessing the toxic elements of flora and fauna. These Rangers often work as killers for hire utilizing their extensive knowledge to end lives discreetly or with gory panache, depending on the poison used and the client’s wishes. Green Reapers exhibit a morbid curiosity when encountering a toxin they’re unfamiliar with, typically followed by an enthusiastic application of the substance on their next foe.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Ray of Sickness
+  - Level 5: Hold Person
+  - Level 9: Bestow Curse
+- Level 3: Envenomed Attack
+  - When you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d4 Poison damage.
+- Level 3: Poison Control
+  - You gain Resistance to Poison damage and have Advantage on saving throws to avoid or end the Poisoned condition. In addition, you can cast the Protection from Poison spell without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+- Level 7: Toxic Tradecraft
+  - Once per turn when you deal Poison damage to a creature with a weapon attack, you can expend a spell slot (no action required). The attack deals an extra 1d6 Poison damage and the target gains the Poisoned condition until the end of your next turn. You may also add a Toxin Effect.
+  - Attenuate
+    - While a creature has the Poisoned condition from this toxin, it has Disadvantage on Strength and Dexterity saving throws.
+  - Befuddled
+    - While a creature has the Poisoned condition from this toxin, it can’t speak, read, or write and it has Disadvantage on saving throws made to maintain Concentration on spells.
+  - Uncoordinated
+    - While a creature has the Poisoned condition from this toxin, it can’t take Reactions or the Disengage or Dodge action.
+  - Debilitate
+    - For 1 minute, the creature can’t regain Hit Points.
+  - Suffer
+    - For 1 minute, the first time on each turn the creature takes damage, it takes an extra 1d6 Poison damage.
+  - Vulnerable
+    - For 1 minute, the creature becomes vulnerable to Poison damage.
+- Level 11: Variegated Vexations
+  - You can change the damage dealt by Envenomed Attack to Acid or Necrotic.
+
 ### Hollow Warden
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)

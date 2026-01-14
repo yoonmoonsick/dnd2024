@@ -8822,6 +8822,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Status_Frozen" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8835,7 +8836,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="36a79d9d-5940-4909-8bdf-97fc41f1eed0" />
         <field name="Name" type="NameTableFieldDefinition" value="POLARSTRIKE_DAMAGE_TAKEN" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4f13bb3c-a6da-4966-bc2b-440785c13f99" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15b541db-1532-428f-a2ca-9f8cb6e119ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="ENVENOMEDATTACK_DAMAGE_TAKEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4f13bb3c-a6da-4966-bc2b-440785c13f99" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8923,6 +8931,98 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ecbcde1a-eb06-4ad5-9ad1-32b0dc86befb" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b55bbe6g1a8ege196ge720g60f697de8ed9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_1_ATTENUATE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb39e7377gbfdfgf6e0g6825ga84de97243f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h871c6d3dg13ffgd051g54e4g335df44d356b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BrandTheWeak" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow,Strength);Disadvantage(SavingThrow,Dexterity);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="fa688204-319c-41b2-88d9-7b619d17aed4" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ceeda0ca-0739-4588-a449-d024389f0c2a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a4f6793-9af9-4373-a791-a8bcdeca765a" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_1_BEFUDDLED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19114b36gab59g7310gc910gf3dc8814b290" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a5fcee8g7697g9b4dg5c34gece3beffd661" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MageSlayer_BreakConcentration" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Misc_Status_Silence_Gameobject_Mute" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Misc_Status_Silence_Gameobject_Unmute" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow,Constitution);BlockVerbalComponent();DialogueBlock();SoundsBlocked();" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="0d1f50f9-b164-499a-9829-2ab46810597d" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cdad18c6-02d5-406f-8c3c-3be5e4ccae96" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_1_UNCOORDINATED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17eb2c4ag8a93g9e7fg913dgb4d95e7883e3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87068348ge720g400dg4bccg893f91d70359" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Sentinel_OpportunityAdvantage" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DISENGAGE" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="99" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceBlock(ReactionActionPoint);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f18a01b9-d73c-4888-b710-9789341b5430" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_2_DEBILITATE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9b56e89g76a1gc4dage725g9b65595c40ec" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2033b4bdge761gd41cgb57bg51542060d911" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_ChillTouch" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Weakened" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="BlockRegainHP(Living;Undead);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d24250c-39e7-4d30-ad58-77e07dd29077" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_2_SUFFER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7e3f264ageda5g8e31g6660ge4480670b2e5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2476b397g97a1g86b5gef8bgcadef462dc0a" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Toxictradecraft_2_Suffer;" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_2_SUFFER_TECHNICAL,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5fedf2e-a908-46e1-9b35-f2ea1366f263" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_2_SUFFER_TECHNICAL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageTakenBonus(1d6,Poison);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasDamageDoneForType(DamageType.Poison) or IsDamageTypePoison()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b2ca43a-1be0-4ee1-8800-7129d86704c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="TOXICTRADECRAFT_3_VULNERABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1817a521-4671-45a6-9bee-478554e92d6f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha48f9653gc3f1g984fg1aceg86c6a42ad116" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1a6f61e9g9daag6794g8ef2g70cc63c3ac25" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison, Vulnerable);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">

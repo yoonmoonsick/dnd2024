@@ -2274,6 +2274,91 @@
         <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_1_Attenuate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb39e7377gbfdfgf6e0g6825ga84de97243f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h871c6d3dg13ffgd051g54e4g335df44d356b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_BrandTheWeak" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ca1f0a7a-5953-41fe-aaca-107b14ad3a5e" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsWeaponAttack() and not IsDivineSmite() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and not IsKillingBlow() and not AnyEntityIsItem();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_1_ATTENUATE,100,1);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:1;ToxicTradecraft:1;" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_1_ATTENUATE,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d5ff16d-269e-4545-8299-b8acf7f38a38" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_1_Befuddled" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19114b36gab59g7310gc910gf3dc8814b290" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a5fcee8g7697g9b4dg5c34gece3beffd661" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_MageSlayer_BreakConcentration" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_1_BEFUDDLED,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_1_BEFUDDLED,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a9e7969-8dd9-4e8d-a57e-382efd643766" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_1_Uncoordinated" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17eb2c4ag8a93g9e7fg913dgb4d95e7883e3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87068348ge720g400dg4bccg893f91d70359" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Sentinel_OpportunityAdvantage" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_1_UNCOORDINATED,100,1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_1_UNCOORDINATED,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f8ee98ac-2cf5-4d88-addd-514cf337c942" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_2_Debilitate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd9b56e89g76a1gc4dage725g9b65595c40ec" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2033b4bdge761gd41cgb57bg51542060d911" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_ChillTouch" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;ToxicTradecraft:1;" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_2_DEBILITATE,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_2_DEBILITATE,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16381326-6a20-4b48-bcc2-3e45c18f15c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_2_Suffer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7e3f264ageda5g8e31g6660ge4480670b2e5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2476b397g97a1g86b5gef8bgcadef462dc0a" version="2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:2;ToxicTradecraft:1;" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_2_SUFFER,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_2_SUFFER,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ad5d25d-cbfc-408f-9130-1ffae79fc9e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_ToxicTradecraft_3_Vulnerable" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha48f9653gc3f1g984fg1aceg86c6a42ad116" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1a6f61e9g9daag6794g8ef2g70cc63c3ac25" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ecc5863a-0f10-472b-a8de-f64799aa5852" />
+        <field name="Cost" type="StringTableFieldDefinition" value="SpellSlotsGroup:1:1:3;ToxicTradecraft:1;" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(1d6,Poison,Magical);ApplyStatus(TOXICTRADECRAFT_3_VULNERABLE,100,10);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(TOXICTRADECRAFT_3_VULNERABLE,100,10);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="48b53ba6-34c8-40cd-af07-e9b3b66b62e6" />

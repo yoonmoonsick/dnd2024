@@ -6400,7 +6400,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(OBSERVER_TARGET,COLD_ATTACK_VFX,100,0);ApplyStatus(POLARSTRIKE_DAMAGE_TAKEN,100,1);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):SurfaceChange(Freeze);GROUND:IF(HasPassive('MAG_Frost_GenerateSurfaceOnColdDamage_Ring_Passive',context.Source)):CreateSurface(2,2,WaterFrozen);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(1d4,Cold);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('POLARSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Cold);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6558,7 +6558,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and not IsMiss()" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(OBSERVER_TARGET,MOTH_ATTACK_VFX,100,0);IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):ApplyStatus(DREADFULSTRIKE_DAMAGE_TAKEN,100,1);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(1d4,Psychic);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('DREADFULSTRIKE_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Psychic);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6616,6 +6616,104 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_GatheredSwarm_Bees" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Swarmkeeper_Select);IF(not HasStatus('SWARMKEEPER_SELECT_BEE',context.Source) and not HasStatus('SWARMKEEPER_SELECT_JELLYFISH',context.Source) and not HasStatus('SWARMKEEPER_SELECT_MOTH',context.Source) ):UnlockSpellVariant(SpellId('Shout_Swarmkeeper_Select'),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c90a57c1-b428-4170-8cad-6eccabf4945f" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_3_EnvenomedAttack" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fe44b86-8284-4156-b1c6-274474df1888" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h857058f3gcbe9g7199gddc1g3c1bbe1c78b6" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Poison)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('ENVENOMEDATTACK_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Poison);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('ENVENOMEDATTACK_DAMAGE_TAKEN',context.Target)):ApplyStatus(OBSERVER_TARGET,MAG_POISON_POISON_BLAST_TECHNICAL,100,0);IF(not HasStatus('ENVENOMEDATTACK_DAMAGE_TAKEN',context.Target)):ApplyStatus(ENVENOMEDATTACK_DAMAGE_TAKEN,100,1);" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="GreenReaper_3_EnvenomedAttack" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="729d8f3c-89d9-4077-beb1-8a08a32fa824" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_3_PoisonControl" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0329df0bgeadfga64eg687egc160f8cad2fc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1617707g8f04gf026g4e97g93a16f4537c7" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdaf65038ga462g06afgb6b7gb3cb859f33a7" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ProtectionFromPoison" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Poison,Resistant);UnlockSpell(Target_ProtectionFromPoison_PoisonControl);ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',13,context.Source)):ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',15,context.Source)):ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',17,context.Source)):ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',19,context.Source)):ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',21,context.Source)):ActionResource(ControlPoison,1,0);IF(AbilityGreaterThan('Wisdom',23,context.Source)):ActionResource(ControlPoison,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36e9c6b4-3c90-484b-92c6-16e6b66a641d" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_7_ToxicTradecraft" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h242fa393g5a4dgbc56gadeag3b7be9fa2fef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd0f02781g3498g737ag96fdgcea52841cc19" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineStrike_Poison_Ranged" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(ToxicTradecraft,1,0);UnlockInterrupt(Interrupt_ToxicTradecraft_1_Attenuate);UnlockInterrupt(Interrupt_ToxicTradecraft_1_Befuddled);UnlockInterrupt(Interrupt_ToxicTradecraft_1_Uncoordinated);UnlockInterrupt(Interrupt_ToxicTradecraft_2_Debilitate);UnlockInterrupt(Interrupt_ToxicTradecraft_2_Suffer);UnlockInterrupt(Interrupt_ToxicTradecraft_3_Vulnerable);" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnShortRest;OnCreate;OnEquip;OnProficiencyChange" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe125166-84d5-4770-bf04-dd7806069d93" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_7_ToxicTradecraft_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="36e9c6b4-3c90-484b-92c6-16e6b66a641d" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a717fa9-5dca-4ca3-a1b3-3cf146527c58" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_11_VariegatedVexations" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h999b164ag39b8g20adg4644g45e13557b082" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80b2945cg817eg2005g49aag80f89d32d09d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="424d19f1-5040-414a-a0aa-005f81655f8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_11_VariegatedVexations_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a717fa9-5dca-4ca3-a1b3-3cf146527c58" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9726c51-e93b-4ac8-8281-031429f38a70" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_11_VariegatedVexations_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c90a57c1-b428-4170-8cad-6eccabf4945f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Acid)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Acid" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('ENVENOMEDATTACK_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Acid);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4cf55ac-bfc2-48f2-94c7-1f43da752efc" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenReaper_11_VariegatedVexations_Necrotic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c90a57c1-b428-4170-8cad-6eccabf4945f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Necrotic" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasStatus('ENVENOMEDATTACK_DAMAGE_TAKEN',context.Target)):CharacterWeaponDamage(LevelMapValue(DreadfulStrike_FeyWanderer),Necrotic);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="28fc7f51-18fc-4fc8-a642-39d04a8950cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Toxictradecraft_2_Suffer" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_MagicItem_PoisonLethality" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="OncePerTurn;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,TOXICTRADECRAFT_2_SUFFER_TECHNICAL,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF483D8B" is_substat="false">

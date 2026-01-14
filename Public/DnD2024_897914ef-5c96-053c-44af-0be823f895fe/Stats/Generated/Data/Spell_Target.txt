@@ -10191,6 +10191,13 @@ data "CastEffect" "f3d3763c-1cbb-4d7a-94da-d9f703b7d67a"
 data "TargetEffect" "de333436-aa42-45cc-a3da-14277ca1df60"
 data "DamageType" ""
 
+new entry "Target_ProtectionFromPoison_PoisonControl"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_ProtectionFromPoison"
+data "UseCosts" "ActionPoint:1;ControlPoison:1"
+data "SpellFlags" "HasVerbalComponent;HasSomaticComponent;IsMelee"
+
 new entry "Target_YMS_Rogue"
 type "SpellData"
 data "SpellType" "Target"
