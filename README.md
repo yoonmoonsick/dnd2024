@@ -2637,6 +2637,11 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
   - Abilities granted by race or class are also excluded from this rule (currently being processed as exceptions).
   - Spell scrolls can only be used by characters whose class normally has access to that spell through its class spell list.
 
+## Attunement
+
+- To use spells granted by a magic item, you must be attuned to it.
+- You automatically attune to the item upon completing a Short Rest.
+
 ## Condition
 
 - [Prone](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#ProneCondition)
