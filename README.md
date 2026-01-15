@@ -423,8 +423,8 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 - Level 3: Frenzy
   - If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
-
-### Path of the Wild Heart
+  - Frenzied Strike and Enraged Throw were removed, as these features do not exist in the rules.
+  
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TotemWarriorPath.png?raw=true)
 
