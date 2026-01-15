@@ -6546,7 +6546,9 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Peaceful" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(9)" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasEnemyWithinRange('SG_Incapacitated', 2, nil, 1, context.Target, context.Source);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('FLANKED',context.Source);" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnMove;OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

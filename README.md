@@ -495,7 +495,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 - Level 3: Bardic Damage
   - You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike's normal damage. This roll doesn't expend the die.
 - Level 6: Inspiring Movement
-  - When you start your turn within 5 feet of an enemy you can see, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then, one ally of your choice within 30 feet of you can also use their Reaction to move up to half their Speed.
+  - When you are threatened, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then, one ally of your choice within 30 feet of you can also use their Reaction to move up to half their Speed.
 - Level 6: Extra Attack (Homebrew)
 - Level 6: Tandem Footwork
   - When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.
