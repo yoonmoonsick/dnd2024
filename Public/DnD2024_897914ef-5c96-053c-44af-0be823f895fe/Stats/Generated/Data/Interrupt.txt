@@ -186,6 +186,7 @@ type "InterruptData"
 using "Interrupt_MAG_Counterspell"
 data "Description" "hcdcb863bg10bcg30f1gb9b6gc40da00cd838;1"
 data "Roll" "not SavingThrow(Ability.Constitution, SourceSpellDC(16,context.Observer,Ability.Intelligence),MageHandCheck(),false,context.Source)"
+data "EnableCondition" "HasActionResource('Interrupt_MAG_Counterspell', 1, 0, false, false, context.Source) and not HasStatus('ATTUNING');"
 
 new entry "Interrupt_Shield_Wizard_MI"
 type "InterruptData"
