@@ -879,7 +879,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="CharacterUnarmedDamage(1d6);" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('BardicDamage',context.Source);" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('MartialArts_UnarmedDamage',context.Source) and not HasPassive('DanceCollege_3_BardicDamage',context.Source);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamageClass" />
       </fields>
     </stat_object>
@@ -2665,7 +2665,7 @@
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="4fff12d3-d897-4649-a847-c584c26194aa;7aadd5cf-d704-44f9-8450-3532a8155c06" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('BardicDamage',context.Source);" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('FightingStyle_UnarmedFighting',context.Source) and not HasPassive('DanceCollege_3_BardicDamage',context.Source);" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="UnarmedDamageClass" />
       </fields>
     </stat_object>
@@ -4344,10 +4344,10 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2badc470-131a-4575-ba14-cf2a0b7a777b" />
-        <field name="Name" type="NameTableFieldDefinition" value="AgileStrikes" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bad6d42g696cg853cg4acfgf18e070b09a6" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_3_AgileStrikes" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bad6d42g696cg853cg4acfgf18e070b09a6" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1c05dc72g459ag959bg54fdgc0f3ed81e2cc" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Target_BardicInspiration')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,AGILE_STRIKE,100,1)" />
@@ -4359,8 +4359,8 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="865edfdc-4370-42ee-a0cc-954a84dd8397" />
-        <field name="Name" type="NameTableFieldDefinition" value="BardicDamage" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b2c86fbg88eegd9aag62e5g270beb421a69" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_3_BardicDamage" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b2c86fbg88eegd9aag62e5g270beb421a69" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7cbb902g40b2ga2deg2c63g78661befb554" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusRemove;OnEquip;OnShortRest;OnCreate;OnLongRest;OnInventoryChanged" enumeration_type_name="StatsFunctorContext" version="1" />
@@ -4374,20 +4374,22 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7585fc8f-588a-4c17-a838-2c0de28a2d13" />
-        <field name="Name" type="NameTableFieldDefinition" value="UnarmoredDefense_Bard" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_3_DazzlingFootwork" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b6aa7ecc-5234-4fd1-ac0d-f0b06484574e" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32e015f6gc99egf71dgf65fg9bd5d666c82a" version="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ACOverrideFormula(10,true,Dexterity,Charisma)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd89f888egbbdbgdd6egb66dg4bfbbda77050" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="95587ce0-b738-4f0e-b275-fbf141fb89f8" />
-        <field name="Name" type="NameTableFieldDefinition" value="InspiringMovement" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0f018ffg00a8gbaf6g187bg502edaa40e94" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd481c65fg3d5dg40b4ge0c2g888a543d460d" version="3" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_InspiringMovement)" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_6_InspiringMovement" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd0f018ffg00a8gbaf6g187bg502edaa40e94" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd481c65fg3d5dg40b4ge0c2g888a543d460d" version="4" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DanceCollege_6_InspiringMovement)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_StepOfTheWind_Dash" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);Distance(9)" />
       </fields>
@@ -4395,10 +4397,48 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e564850b-1c41-4764-a1dd-73f67885b0c3" />
-        <field name="Name" type="NameTableFieldDefinition" value="TandemFootwork" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_TandemFootwork);RollBonus(MeleeUnarmedAttack, 1);UnarmedMagicalProperty();" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_6_TandemFootwork" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h156b92d7gb90eg29ecgad4bgd897774d9096" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h17ddbe48g1fffgedf7g4a6cg280bad6f9760" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_DanceCollege_6_TandemFootwork);RollBonus(MeleeUnarmedAttack, 1);UnarmedMagicalProperty();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Fighter_EvasiveFootwork" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7dbcc55-14c0-4fae-8b4c-24d345f849a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_12_LeadingEvasion" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ebbd6a90-d7e3-437f-ba6c-bf4f8966563e" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d2244e1g437bg3d48gfa70gd2f586a90eea" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1ba075a9-96d6-42f4-9498-a068b9260c19" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_6_InspiringMovement_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95587ce0-b738-4f0e-b275-fbf141fb89f8" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7bfc8208-7fdd-405d-9261-6dcfca6bb4c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_6_TandemFootwork_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e564850b-1c41-4764-a1dd-73f67885b0c3" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="800fbeeb-9dd0-4e76-87eb-a74ff94dc1f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="DanceCollege_12_LeadingEvasion_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c7dbcc55-14c0-4fae-8b4c-24d345f849a0" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4408,7 +4448,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdad67ff5geb29g677egc4e1gb39e1fb47c85" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h25629dabg4b6fg8c53g9069gc30b01ccb3f9" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Nature" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
