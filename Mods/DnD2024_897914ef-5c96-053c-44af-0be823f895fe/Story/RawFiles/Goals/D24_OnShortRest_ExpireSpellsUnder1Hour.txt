@@ -69,6 +69,7 @@ RemoveStatus(_Char, "REDUCE_ABERRANT", _Char);
 RemoveStatus(_Char, "SACRED_WEAPON_RADIANT", _Char);
 RemoveStatus(_Char, "SACRED_WEAPON", _Char);
 RemoveStatus(_Char, "SEE_INVISIBILITY", _Char);
+RemoveStatus(_Char, "SHIELD_OF_FAITH", _Char);
 RemoveStatus(_Char, "SPIRIT_GUARDIANS_NECROTIC_AURA_4", _Char);
 RemoveStatus(_Char, "SPIRIT_GUARDIANS_NECROTIC_AURA_5", _Char);
 RemoveStatus(_Char, "SPIRIT_GUARDIANS_NECROTIC_AURA_6", _Char);
@@ -84,6 +85,49 @@ RemoveStatus(_Char, "WILDSHAPE_WRATH_OF_THE_SEA_6", _Char);
 RemoveStatus(_Char, "WILDSHAPE_WRATH_OF_THE_SEA_6", _Char);
 RemoveStatus(_Char, "WILDSHAPE_WRATH_OF_THE_SEA", _Char);
 
+IF
+ShortRested(_Char)
+AND
+DB_PartyMembers(_Char)
+AND
+GetEquippedItem(_Char,"Melee Main Weapon",_Weapon)
+THEN
+RemoveStatus(_Weapon, "MAGIC_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_4", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_6", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+ShortRested(_Char)
+AND
+DB_PartyMembers(_Char)
+AND
+GetEquippedItem(_Char,"Ranged Main Weapon",_Weapon)
+THEN
+RemoveStatus(_Weapon, "MAGIC_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_4", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_6", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+ShortRested(_Char)
+AND
+DB_PartyMembers(_Char)
+AND
+GetEquippedItem(_Char,"Melee Offhand Weapon",_Weapon)
+THEN
+RemoveStatus(_Weapon, "MAGIC_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_4", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_6", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+ShortRested(_Char)
+AND
+DB_PartyMembers(_Char)
+AND
+GetEquippedItem(_Char,"Ranged Offhand Weapon",_Weapon)
+THEN
+RemoveStatus(_Weapon, "MAGIC_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_4", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Weapon, "MAGIC_WEAPON_6", NULL_00000000-0000-0000-0000-000000000000);
 EXITSECTION
 
 ENDEXITSECTION
