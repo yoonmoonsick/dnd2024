@@ -1,0 +1,16 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+Equipped(_Item, _Character)
+AND
+DB_Players(_Character)
+AND
+IsTagged(_Item, (TAG)REQUIRES_ATTUNEMENT_9e997f7f-c1e9-4b35-87d7-b6a5df1960e3, 1)
+THEN
+ApplyStatus(_Character, "ATTUNING", -1.0, 1);
+EXITSECTION
+
+ENDEXITSECTION
