@@ -1552,7 +1552,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 5: Counter Spell, Protection from Energy
   - Level 7: Freedom of Movement, Summon Construct
   - Level 9: Greater Restoration, Wall of Force
-- Level 3: Restore Balance  ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RestoreBalanceCharge.png?raw=true)
+- Level 3: Restore Balance ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RestoreBalanceCharge.png?raw=true)
   - Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage and Disadvantage. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 6: Bastion of Law
   - You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As a Magic action, you can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet of yourself. The ward is represented by a number of d8s equal to the number of Sorcery Points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice. The ward lasts until you finish a Long Rest or until you use this feature again.
@@ -2847,7 +2847,13 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Globe of Invulnerability](https://www.dndbeyond.com/spells/2618950-globe-of-invulnerability)
 - [Heal](https://www.dndbeyond.com/spells/2618979-heal)
 - [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
-- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation)  ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
+- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
+
+# Sangromancy Spells
+
+## Level 1 Spells
+- [Blood Rush](https://www.dndbeyond.com/spells/3014210-blood-rush)![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodRush.png?raw=true)
+- [Bloodbane Rune](https://www.dndbeyond.com/spells/3014207-bloodbane-rune)![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodBaneRune.png?raw=true)
 
 ## Spell Scroll Restrictions
 

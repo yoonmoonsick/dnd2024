@@ -363,6 +363,44 @@ type "PassiveData"
 using "HalsinSpells"
 data "Boosts" "IF(Tagged('HALSIN',context.Source)):UnlockSpell(Target_HealingWord,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source)):UnlockSpell(Zone_Thunderwave,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source) and ClassLevelHigherOrEqualThan(3,'Druid')):UnlockSpell(Target_MistyStep,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);IF(Tagged('HALSIN',context.Source) and ClassLevelHigherOrEqualThan(5,'Druid')):UnlockSpell(Target_CallLightning,AddChildren,03b17647-161a-42e1-9660-5ba517e80ad2);"
 
+new entry "YMS_Sangromancy"
+type "PassiveData"
+
+new entry "BloodBaneRune_1"
+type "PassiveData"
+data "DisplayName" "haeabde55g4315gde68gc178g5cacd6b3367f;1"
+data "Description" "h64ab128fga1ebg77a7geb92g5acb24d2d98e;1"
+data "Icon" "Sangromancy_SLevel1_BloodBaneRune"
+data "Properties" "OncePerTurn"
+data "StatsFunctorContext" "OnAttack"
+data "Conditions" "HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0) and IsWeaponAttack() and not IsMiss();"
+data "StatsFunctors" "DealDamage(1d4,Radiant,Magical,,0,,true,true,false,true)"
+
+new entry "BloodBaneRune_2"
+type "PassiveData"
+using "BloodBaneRune_1"
+data "StatsFunctors" "DealDamage(2d4,Radiant,Magical,,0,,true,true,false,true)"
+
+new entry "BloodBaneRune_3"
+type "PassiveData"
+using "BloodBaneRune_1"
+data "StatsFunctors" "DealDamage(3d4,Radiant,Magical,,0,,true,true,false,true)"
+
+new entry "BloodBaneRune_4"
+type "PassiveData"
+using "BloodBaneRune_1"
+data "StatsFunctors" "DealDamage(4d4,Radiant,Magical,,0,,true,true,false,true)"
+
+new entry "BloodBaneRune_5"
+type "PassiveData"
+using "BloodBaneRune_1"
+data "StatsFunctors" "DealDamage(5d4,Radiant,Magical,,0,,true,true,false,true)"
+
+new entry "BloodBaneRune_6"
+type "PassiveData"
+using "BloodBaneRune_1"
+data "StatsFunctors" "DealDamage(6d4,Radiant,Magical,,0,,true,true,false,true)"
+
 new entry "YMS_Abjuration"
 type "PassiveData"
 
