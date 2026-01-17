@@ -2861,6 +2861,9 @@ Sangromancy Spell: You must expend the listed number of Hit Point Dice.
 - [Crimson Lash](https://www.dndbeyond.com/spells/3014222-crimson-lash) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_CrimsonLash.png?raw=true)
 - [Somnolence](https://www.dndbeyond.com/spells/3014290-somnolence) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Somnolence.png?raw=true)
 
+## Level 2 Spells
+- [Blood Wisp](https://www.dndbeyond.com/spells/3014217-blood-wisp) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_BloodWisp.png?raw=true)
+
 ## Spell Scroll Restrictions
 
 The use of spell scrolls is restricted based on class. This change is intended to prevent situations where a Barbarian with 8 Intelligence, 8 Wisdom, and 8 Charisma can repeatedly spam Scrolls of Chain Lightning. We hope this adjustment has a positive impact on the overall gameplay experience.
