@@ -1971,10 +1971,450 @@
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_BloodWispD12" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cbb69321-5db1-4fa2-b10c-42420271f5cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3807599dgc649g25e5gf7dbg76bef189e19a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h439bf7e1g41f7g1dc1g7f49gef1b33cdeefb" version="2" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Abjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6;Shout_SanguineShieldD8;Shout_SanguineShieldD10;Shout_SanguineShieldD12;Shout_SanguineShield_Dummy;" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D6,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy() and not HasMaxHPWithoutTemporaryHP(context.Target) and not Tagged('CONSTRUCT') and not Tagged('UNDEAD');" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Sangromancy_SLevel2_SanguineShield" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D6,100,-1);" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_MindSpike " />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_MindSpike " />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsLinkedSpellContainer;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="1a4b0423-005b-4577-b376-815a08809675" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d6/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(1d6,Necrotic);GainTemporaryHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic);" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic);" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_BoostMaxHP" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Internal" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="878dfe31-5d87-4a20-b47f-97a8b5742c79" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a8c8b28-d501-47ed-b3b4-3c67230c13cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cbb69321-5db1-4fa2-b10c-42420271f5cb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6_3;Shout_SanguineShieldD8_3;Shout_SanguineShieldD10_3;Shout_SanguineShieldD12_3;Shout_SanguineShield_Dummy_3;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d6/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d6,Necrotic);GainTemporaryHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7a64a842-20cd-47bc-bb0f-5c8b9ab69874" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a8c8b28-d501-47ed-b3b4-3c67230c13cf" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6_4;Shout_SanguineShieldD8_4;Shout_SanguineShieldD10_4;Shout_SanguineShieldD12_4;Shout_SanguineShield_Dummy_4;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d6/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d6,Necrotic);GainTemporaryHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d6,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa1fe113-2bd0-41a9-8079-d41ce8da2aba" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a64a842-20cd-47bc-bb0f-5c8b9ab69874" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6_5;Shout_SanguineShieldD8_5;Shout_SanguineShieldD10_5;Shout_SanguineShieldD12_5;Shout_SanguineShield_Dummy_5;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d6/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d6,Necrotic);GainTemporaryHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d6,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91687db1-7e55-472b-ac0a-7dcb65cf6c51" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa1fe113-2bd0-41a9-8079-d41ce8da2aba" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6_6;Shout_SanguineShieldD8_6;Shout_SanguineShieldD10_6;Shout_SanguineShieldD12_6;Shout_SanguineShield_Dummy_6;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d6/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d6,Necrotic);GainTemporaryHitPoints(2d6)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d6,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd713ba6-005e-49cf-bb1f-7696b513586f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_Dummy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a2c7bd4d-3f9c-413c-a4fc-789abde06120" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f850d7ad-d2e7-41cb-87c7-cd5c76f4a270" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_Dummy_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dc93d6-c816-478a-8413-a1e64f211914" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="722346b1-dedc-4643-b6b3-df9918292209" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_Dummy_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dc93d6-c816-478a-8413-a1e64f211914" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccea82b7-cd0b-4757-ac33-03cdfa4738d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_Dummy_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dc93d6-c816-478a-8413-a1e64f211914" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cdaac12-f960-4e75-8160-d02bb621048b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShield_Dummy_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35dc93d6-c816-478a-8413-a1e64f211914" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4bc35ea5-ce52-467e-ab61-c2675ea524fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cbb69321-5db1-4fa2-b10c-42420271f5cb" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:2;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="742253da-01dc-4109-8154-f6095b401f47" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a8c8b28-d501-47ed-b3b4-3c67230c13cf" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:3;SpellSlotsGroup:1:1:3;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3b36aaa-0d08-44c7-8760-016fdfd62ea9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7a64a842-20cd-47bc-bb0f-5c8b9ab69874" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:4;SpellSlotsGroup:1:1:4;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60ad3930-e067-4895-b230-b3d3bbccaec6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa1fe113-2bd0-41a9-8079-d41ce8da2aba" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:5;SpellSlotsGroup:1:1:5;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9730d60d-a87a-4e48-bb3d-30a71af4528b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91687db1-7e55-472b-ac0a-7dcb65cf6c51" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:6;SpellSlotsGroup:1:1:6;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD6" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_SanguineShield_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="506c2d81-df72-4a0d-88ea-37b0046590ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4bc35ea5-ce52-467e-ab61-c2675ea524fb" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:2;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d8/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(1d8,Necrotic);GainTemporaryHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcfe2da2-5257-41c0-880b-4a8c60fbcf72" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="742253da-01dc-4109-8154-f6095b401f47" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:3;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d8/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d8,Necrotic);GainTemporaryHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a05ea72d-426e-483a-895c-6f0e96d3b2fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3b36aaa-0d08-44c7-8760-016fdfd62ea9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:4;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d8/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d8,Necrotic);GainTemporaryHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c287e1f4-0c85-447f-82ed-17ff460af84d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60ad3930-e067-4895-b230-b3d3bbccaec6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:5;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d8/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d8,Necrotic);GainTemporaryHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35dd9cef-529f-43f9-be5b-6105cf329539" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9730d60d-a87a-4e48-bb3d-30a71af4528b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:6;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d8/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d8,Necrotic);GainTemporaryHitPoints(2d8)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D8,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddece898-a65e-4b21-b401-aaacd1957433" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4bc35ea5-ce52-467e-ab61-c2675ea524fb" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:2;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d10/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(1d10,Necrotic);GainTemporaryHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c82acf71-5955-4a70-8d3b-35fcb408c2d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="742253da-01dc-4109-8154-f6095b401f47" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:3;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD10" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d10/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d10,Necrotic);GainTemporaryHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d10,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="85c87423-98ef-457c-b43f-d82a57963757" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3b36aaa-0d08-44c7-8760-016fdfd62ea9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:4;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD10" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d10/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d10,Necrotic);GainTemporaryHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d10,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa0534e4-4b83-455b-9723-4d628ced7b8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60ad3930-e067-4895-b230-b3d3bbccaec6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:5;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD10" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d10/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d10,Necrotic);GainTemporaryHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d10,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79d05dad-fa81-4099-a272-2baac3d7ad2f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9730d60d-a87a-4e48-bb3d-30a71af4528b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:6;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD10" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d10/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d10,Necrotic);GainTemporaryHitPoints(2d10)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d10,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D10,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d3595498-7afb-4b99-9c79-565ddc8fc2f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4bc35ea5-ce52-467e-ab61-c2675ea524fb" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:2;SpellSlotsGroup:1:1:2;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(1d12/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(1d12,Necrotic);GainTemporaryHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="233729d9-75d4-4130-9c53-62e8c085316b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="742253da-01dc-4109-8154-f6095b401f47" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:3;SpellSlotsGroup:1:1:3;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD12" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(2d12/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d12,Necrotic);GainTemporaryHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d12,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b5ce26ee-9d99-4df3-b147-92decc019e9b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c3b36aaa-0d08-44c7-8760-016fdfd62ea9" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:4;SpellSlotsGroup:1:1:4;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD12" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(3d12/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d12,Necrotic);GainTemporaryHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d12,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b968e4af-2e13-4442-afe7-5a336011a66d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="60ad3930-e067-4895-b230-b3d3bbccaec6" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:5;SpellSlotsGroup:1:1:5;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD12" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(4d12/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d12,Necrotic);GainTemporaryHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d12,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18f2595f-ec2a-4610-bfb1-fe6059006c21" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguineShieldD12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="9730d60d-a87a-4e48-bb3d-30a71af4528b" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:6;SpellSlotsGroup:1:1:6;" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_SanguineShieldD12" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage(5d12/2,Necrotic);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d12,Necrotic);GainTemporaryHitPoints(2d12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d12,Necrotic);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SANGUINE_SHIELD_D12,100,-1);" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d12,Necrotic);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="541a8731-1e55-49a3-ae99-cfeaaf45ae08" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Abjuration" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(2d8,Necrotic);GainTemporaryHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1999,6 +2439,8 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="af787096-8656-4495-a6ce-cbd376578069" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b7fb4cd6-971f-44c0-9447-378092d36b63" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(3d8,Necrotic);GainTemporaryHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2012,6 +2454,8 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3;" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Shout_ArcaneVigor" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(4d8,Necrotic);GainTemporaryHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2024,6 +2468,8 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(4d8+SpellCastingAbilityModifier);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(5d8,Necrotic);GainTemporaryHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2036,6 +2482,8 @@
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5d8+SpellCastingAbilityModifier);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);DealDamage(1d8,Necrotic);GainTemporaryHitPoints(2d8)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
