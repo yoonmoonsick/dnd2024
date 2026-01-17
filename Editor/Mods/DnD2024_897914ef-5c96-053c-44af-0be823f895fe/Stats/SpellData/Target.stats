@@ -920,6 +920,7 @@
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BloodBaneRuneD6;Target_BloodBaneRuneD8;Target_BloodBaneRuneD10;Target_BloodBaneRuneD12;Target_BloodBaneRune_Dummy;" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d4,Radiant)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80294cb1g143dga955g8253g7f7d44e3fbfe" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1390,6 +1391,7 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="1" />
         <field name="InterruptPrototype" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c88e9cfa-df92-477a-ae75-cbfb932350b4" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80294cb1g143dga955g8253g7f7d44e3fbfe" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1854,6 +1856,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="475c57b5-0822-4d84-b546-822a70333387" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80294cb1g143dga955g8253g7f7d44e3fbfe" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2229,6 +2232,461 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Consumption_6" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74fcad35-3d3c-4afc-83e6-683d4c5b4019" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7c87100c-1e7d-47cd-87f3-e91d937e5ed5" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8;Target_SomnolenceD10;Target_SomnolenceD12;Target_Somnolence_Dummy;" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SLEEP_2,100,10);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(22) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Sangromancy_SLevel1_Somnolence" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a9b9735g4f55gb8ecgeed4g569a18a24d4d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h181466e9gba32g4178gbb91g3b89d720124f" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(22)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(SLEEP_2,100,10)" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="22" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80294cb1g143dga955g8253g7f7d44e3fbfe" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a08308c4-bda5-4eb3-93b0-76efa7853bbe" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="74fcad35-3d3c-4afc-83e6-683d4c5b4019" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8_2;Target_SomnolenceD10_2;Target_SomnolenceD12_2;Target_Somnolence_Dummy_2;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(36) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(39)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:2" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="36" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd1b47ef-bff6-4b69-92bd-7f651bd05855" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a08308c4-bda5-4eb3-93b0-76efa7853bbe" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8_3;Target_SomnolenceD10_3;Target_SomnolenceD12_3;Target_Somnolence_Dummy_3;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(51) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(57)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="51" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92e102f7-1048-4edd-a342-ad0367175be8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a08308c4-bda5-4eb3-93b0-76efa7853bbe" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8_4;Target_SomnolenceD10_4;Target_SomnolenceD12_4;Target_Somnolence_Dummy_4;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(66) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(75)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="66" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4730e856-9f26-421a-9041-08d105dfc3c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a08308c4-bda5-4eb3-93b0-76efa7853bbe" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8_5;Target_SomnolenceD10_5;Target_SomnolenceD12_5;Target_Somnolence_Dummy_5;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(81) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(92)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="81" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="340d016e-9a1c-490b-92fb-7be86e1ca31e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a08308c4-bda5-4eb3-93b0-76efa7853bbe" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SomnolenceD6;Target_SomnolenceD8_6;Target_SomnolenceD10_6;Target_SomnolenceD12_6;Target_Somnolence_Dummy_6;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(96) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(110)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="96" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa147714-c35c-4cbf-bceb-11020339cc5e" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="df8c574c-6465-4470-a75a-38b9992a9322" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="766c726a-8a99-48ed-bcfa-4260b0c9b529" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f17ea6d2-41d0-41d6-9591-79c00d3b2365" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fcd83c7d-ac0d-408f-bff5-1676a7ecf578" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5485a294-9f93-42d3-ab43-096e4b896967" />
+        <field name="Name" type="NameTableFieldDefinition" value="Somnolence_Dummy_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6b227e08-6555-47c6-b98c-0a17638dbe19" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="199f2e07-f907-41a3-9d59-2e4411573459" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="74fcad35-3d3c-4afc-83e6-683d4c5b4019" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(22) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(22)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:1;SpellSlotsGroup:1:1:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;HasSomaticComponent;HasHighGroundRangeExtension;IsHarmful;RangeIgnoreVerticalThreshold;IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="22" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="40ab16d6-f4ed-4296-b1a8-808b6f7eeeed" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="199f2e07-f907-41a3-9d59-2e4411573459" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(36) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(36)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:2;SpellSlotsGroup:1:1:2;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="36" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="SomnolenceD6" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccec6433-7de8-4bac-b8a0-93470e8f1e8f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40ab16d6-f4ed-4296-b1a8-808b6f7eeeed" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(51) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(51)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:3;SpellSlotsGroup:1:1:3;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="51" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a76b70c-2a7b-4e9f-b335-7359fca51bed" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40ab16d6-f4ed-4296-b1a8-808b6f7eeeed" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_4" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(66) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(66)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:4;SpellSlotsGroup:1:1:4;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="66" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b40f51b6-a792-4d9f-9221-071ae3c80df2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40ab16d6-f4ed-4296-b1a8-808b6f7eeeed" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(81) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(81)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:5;SpellSlotsGroup:1:1:5;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="81" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67e315f7-f2d4-4302-983b-781abc7c4226" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD6_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="40ab16d6-f4ed-4296-b1a8-808b6f7eeeed" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_6" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(96) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(96)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie6:6;SpellSlotsGroup:1:1:6;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="96" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da844905-06e4-4afd-83ee-f03a3c7937e5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="199f2e07-f907-41a3-9d59-2e4411573459" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(24) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(24)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:1;SpellSlotsGroup:1:1:1;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="24" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="399b8da7-031e-49d9-bd50-c466c43d372f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da844905-06e4-4afd-83ee-f03a3c7937e5" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(40) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(40)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:2;SpellSlotsGroup:1:1:2;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="40" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SomnolenceD8" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0ace5204-efe4-4f06-99eb-fcfc3aff5633" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="399b8da7-031e-49d9-bd50-c466c43d372f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(57) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(57)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:3;SpellSlotsGroup:1:1:3;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="57" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="562dd1d3-5cc4-4ba0-b496-1af077e650a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="399b8da7-031e-49d9-bd50-c466c43d372f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_4" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(73) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(73)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:4;SpellSlotsGroup:1:1:4;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="73" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="41a44a55-5620-473b-b55b-9c9be3c0a4cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="399b8da7-031e-49d9-bd50-c466c43d372f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(90) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(90)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:5;SpellSlotsGroup:1:1:5;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="90" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec614214-017e-414e-b175-9a582d943c2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD8_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="399b8da7-031e-49d9-bd50-c466c43d372f" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_6" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(106) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(106)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie8:6;SpellSlotsGroup:1:1:6;" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="106" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69df89d6-bc80-4888-9ee6-8d8e61bcd0e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="199f2e07-f907-41a3-9d59-2e4411573459" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(25) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(25)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:1;SpellSlotsGroup:1:1:1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="25" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1a0d38ef-f17d-4d50-a997-6c9135910b84" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="69df89d6-bc80-4888-9ee6-8d8e61bcd0e1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(43) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(43)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:2;SpellSlotsGroup:1:1:2" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="43" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SomnolenceD10" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06990f23-5fb6-4cf8-ba5f-61a2f6ab79c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0d38ef-f17d-4d50-a997-6c9135910b84" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(61) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(61)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:3;SpellSlotsGroup:1:1:3" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="61" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c8f0113-e769-45fc-b0e2-1a5d08011ded" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0d38ef-f17d-4d50-a997-6c9135910b84" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_4" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(80) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(80)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:4;SpellSlotsGroup:1:1:4" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="80" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1eabbb7-e213-4d6c-8c86-ede95cd69768" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0d38ef-f17d-4d50-a997-6c9135910b84" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(98) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(98)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:5;SpellSlotsGroup:1:1:5" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="98" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57841421-2338-48e7-bf92-5d69289c6c28" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD10_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0d38ef-f17d-4d50-a997-6c9135910b84" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_6" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(116) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(116)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie10:6;SpellSlotsGroup:1:1:6" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="116" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb4a101c-d4cb-4c6d-8fb2-4832c8214f39" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="199f2e07-f907-41a3-9d59-2e4411573459" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(26) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(26)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:1;SpellSlotsGroup:1:1:1" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="26" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43861aeb-f031-4315-a1b9-5797f4773c72" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bb4a101c-d4cb-4c6d-8fb2-4832c8214f39" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_2" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(46) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(46)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:2;SpellSlotsGroup:1:1:2" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="46" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Target_SomnolenceD12" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f7f6f60f-2339-4bdd-a1b7-3e1a95eb29af" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="43861aeb-f031-4315-a1b9-5797f4773c72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_3" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(66) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(66)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:3;SpellSlotsGroup:1:1:3" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="66" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5fec8b2a-56f0-4adc-acf5-08fa55067888" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="43861aeb-f031-4315-a1b9-5797f4773c72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_4" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(86) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(86)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:4;SpellSlotsGroup:1:1:4" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="86" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="baaaca42-6b34-470f-a479-9f552f6b653a" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="43861aeb-f031-4315-a1b9-5797f4773c72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_5" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(106) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(106)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:5;SpellSlotsGroup:1:1:5" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="106" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="441c4305-ec90-4b97-ad6c-f50284b2f491" />
+        <field name="Name" type="NameTableFieldDefinition" value="SomnolenceD12_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="43861aeb-f031-4315-a1b9-5797f4773c72" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_Somnolence_6" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not HasHPMoreThan(126) and not HasStatus('SG_Unconscious') and not Dead() and Character() and not Ally() and not (not Player(context.Source) and IsCrowdControlled(context.Target)) and not IsImmuneToStatus('SLEEP') and not IsImmuneToStatus('SLEEP_2');" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(126)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;HitPointDie12:6;SpellSlotsGroup:1:1:6" />
+        <field name="MaximumTotalTargetHP" type="IntegerTableFieldDefinition" value="126" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

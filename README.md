@@ -2851,12 +2851,15 @@ The appropriate spells have been added to the class spell list, aligning with th
 
 # Sangromancy Spells
 
+Sangromancy Spell: You must expend the listed number of Hit Point Dice.
+
 ## Level 1 Spells
 - [Blood Rush](https://www.dndbeyond.com/spells/3014210-blood-rush) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodRush.png?raw=true)
 - [Bloodbane Rune](https://www.dndbeyond.com/spells/3014207-bloodbane-rune) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodBaneRune.png?raw=true)
 - [Boil Blood](https://www.dndbeyond.com/spells/3014218-boil-blood) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BoilBlood.png?raw=true)
 - [Consumption](https://www.dndbeyond.com/spells/3014213-consumption) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Consumption.png?raw=true)
 - [Crimson Lash](https://www.dndbeyond.com/spells/3014222-crimson-lash) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_CrimsonLash.png?raw=true)
+- [Somnolence](https://www.dndbeyond.com/spells/3014290-somnolence) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Somnolence.png?raw=true)
 
 ## Spell Scroll Restrictions
 
