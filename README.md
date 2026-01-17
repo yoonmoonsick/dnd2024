@@ -2864,6 +2864,7 @@ Sangromancy Spell: You must expend the listed number of Hit Point Dice.
 ## Level 2 Spells
 - [Blood Wisp](https://www.dndbeyond.com/spells/3014217-blood-wisp) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_BloodWisp.png?raw=true)
 - [Sanguine Shield](https://www.dndbeyond.com/spells/3014284-sanguine-shield) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_SanguineShield.png?raw=true)
+- [Theft of Vitae](https://www.dndbeyond.com/spells/3014234-theft-of-vitae) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_TheftOfVitae.png?raw=true)
 
 ## Spell Scroll Restrictions
 

@@ -1,0 +1,79 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 1)
+AND
+HasActiveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D6", 0)
+AND
+GetActionResourceValuePersonal((CHARACTER)_Player, "HitPointDie6", 0,  _HitPointDie)
+AND
+_HitPointDie > 0
+THEN
+ApplyStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D6", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 1)
+AND
+HasActiveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D8", 0)
+AND
+GetActionResourceValuePersonal((CHARACTER)_Player, "HitPointDie8", 0,  _HitPointDie)
+AND
+_HitPointDie > 0
+THEN
+ApplyStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D8", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 1)
+AND
+HasActiveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", 0)
+AND
+GetActionResourceValuePersonal((CHARACTER)_Player, "HitPointDie10", 0,  _HitPointDie)
+AND
+_HitPointDie > 0
+THEN
+ApplyStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 1)
+AND
+HasActiveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D12", 0)
+AND
+GetActionResourceValuePersonal((CHARACTER)_Player, "HitPointDie12", 0,  _HitPointDie)
+AND
+_HitPointDie > 0
+THEN
+ApplyStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D12", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 0)
+THEN
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D6", _Player);
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D8", _Player);
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", _Player);
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", _Player);
+EXITSECTION
+
+ENDEXITSECTION
