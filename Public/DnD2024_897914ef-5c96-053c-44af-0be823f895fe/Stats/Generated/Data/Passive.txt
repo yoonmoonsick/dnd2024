@@ -401,6 +401,16 @@ type "PassiveData"
 using "BloodBaneRune_1"
 data "StatsFunctors" "DealDamage(6d4,Radiant,Magical,,0,,true,true,false,true)"
 
+new entry "BloodWisp"
+type "PassiveData"
+data "DisplayName" "h253d1f8bg93afg8fa2g230fgf5e2efa0f24d;2"
+data "Description" "hc1ec0ab2g039fg97e3gd7aagdc0b190cee87;1"
+data "Icon" "Sangromancy_SLevel1_BloodWisp"
+data "Properties" "OncePerTurn;OncePerAttack"
+data "StatsFunctorContext" "OnDamage"
+data "Conditions" "IsSpell();"
+data "StatsFunctors" "IF(HasDamageDoneForType(DamageType.Acid)):DealDamage(4,Acid,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Cold)):DealDamage(4,Cold,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Fire)):DealDamage(4,Fire,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Force)):DealDamage(4,Force,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Lightning)):DealDamage(4,Lightning,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Necrotic)):DealDamage(4,Necrotic,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Poison)):DealDamage(4,Poison,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Psychic)):DealDamage(4,Psychic,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Radiant)):DealDamage(4,Radiant,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Thunder)):DealDamage(4,Thunder,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Bludgeoning)):DealDamage(4,Bludgeoning,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Piercing)):DealDamage(4,Piercing,Magical,,0,,true,true,false,true);IF(HasDamageDoneForType(DamageType.Slashing)):DealDamage(4,Slashing,Magical,,0,,true,true,false,true);ApplyStatus(SELF,BLOOD_WISP,100,BLOOD_WISP.Duration-1)"
+
 new entry "YMS_Abjuration"
 type "PassiveData"
 
