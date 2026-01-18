@@ -6405,18 +6405,27 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h42df9318g33e7g30aag02a2g2b2d20c92e25" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_VowOfEnmity" />
         <field name="StackId" type="StringTableFieldDefinition" value="VOW_OF_ENMITY_OWNER" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(VOW_OF_ENMITY_REAPPLY)" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f59491f3-8d7b-4b0e-bae1-6a630d8e6c42" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="92d43128-9c75-475b-b46a-c03e7cd198ef" />
         <field name="Name" type="NameTableFieldDefinition" value="VOW_OF_ENMITY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b1934fcb-647d-4416-a65e-121cd21fe2f6" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KNOCKED_OUT')" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnAttacked" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47737f9a-5518-418e-8d25-4320f6dc2ae8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7b73e4a1g6cd8g429dgad3ag2e92d10c3730" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c69435fg6588g4157g8b88ge1bdf5999f95" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,VOW_OF_ENMITY_REAPPLY,100,-1,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,VOW_OF_ENMITY_REAPPLY,100,-1,,,,,true)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_VowOfEnmity" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="SourceAdvantageOnAttack()" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" value="Negative" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" value="6435c10a-c67d-4f79-8813-b84b0762f92b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6426,17 +6435,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_VowOfEnmity" />
         <field name="StackId" type="StringTableFieldDefinition" value="VOW_OF_ENMITY_REAPPLY" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('VOW_OF_ENMITY_OWNER',context.Source)):UnlockSpell(Target_VowOfEnmity_Reapply);UnlockSpellVariant(SpellId('Target_VowOfEnmity_Reapply'),ModifyIconGlow());UnlockSpellVariant(SpellId('Target_VowOfEnmity'),ModifyUseCosts(Add,ActionPoint,99,0))" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('VOW_OF_ENMITY_OWNER',context.Source)):UnlockSpell(Target_VowOfEnmity_Reapply);UnlockSpellVariant(SpellId('Target_VowOfEnmity_Reapply'),ModifyIconGlow());" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="12d0a8ea-6e99-4100-841c-00ddef5603e0" />
-        <field name="Name" type="NameTableFieldDefinition" value="PUSH_15" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="75ce94c1-66b3-4d79-a1e3-7747715f76e1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="Force(1.5)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e49ce67g0031gb9bbg9478ge16ed13b298b" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
