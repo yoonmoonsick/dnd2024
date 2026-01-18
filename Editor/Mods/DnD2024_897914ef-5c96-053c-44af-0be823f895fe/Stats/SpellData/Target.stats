@@ -870,20 +870,11 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetRadius" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Haste" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Attack_Haste;Projectile_Attack_Haste;Throw_Throw_Haste;Shout_Dash_Haste;Shout_Disengage_Haste;Shout_Hide_Haste;Target_Help_Haste;Throw_Throw_Haste;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Attack_Haste;Projectile_Attack_Haste;" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fce10c7d-571a-455e-8d2b-4015eb7bde37" />
-        <field name="Name" type="NameTableFieldDefinition" value="Help_Haste" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="54d36d84-d898-4763-bc82-2bc34dedd837" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_HasteActions" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;Temporary;Wildshape" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -892,8 +883,29 @@
         <field name="Name" type="NameTableFieldDefinition" value="Attack_Haste" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_HasteActions" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b086d8de-7289-47ab-9ffa-5a2a175dea3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack_Haste" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2c55400b-aaa6-4759-8673-cd465ca2dff3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_HasteActions" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c6da4c06-62f4-4876-b41a-f01e8cb43f75" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bite_Haste" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="062f04c9-4b83-4059-979f-7cd5b2a8cae1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_HasteActions" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('SG_Polymorph_BeastShape');" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="HasteSpellPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFB22222" is_substat="false">
@@ -13764,7 +13776,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+WisdomModifier,Slashing);DealDamage(1d6+WisdomModifier,Piercing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSoundMagnitude" version="1" />
       </fields>
@@ -14196,6 +14208,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="UnarmedAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source) and not HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage , Bludgeoning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_ACID',context.Source)):DealDamage(UnarmedDamage, Acid);IF(HasStatus('ELEMENTAL_ATTUNEMENT_COLD',context.Source)):DealDamage(UnarmedDamage, Cold);IF(HasStatus('ELEMENTAL_ATTUNEMENT_FIRE',context.Source)):DealDamage(UnarmedDamage, Fire);IF(HasStatus('ELEMENTAL_ATTUNEMENT_LIGHTNING',context.Source)):DealDamage(UnarmedDamage, Lightning);IF(HasStatus('ELEMENTAL_ATTUNEMENT_THUNDER',context.Source)):DealDamage(UnarmedDamage, Thunder);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="MeleeUnarmed();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

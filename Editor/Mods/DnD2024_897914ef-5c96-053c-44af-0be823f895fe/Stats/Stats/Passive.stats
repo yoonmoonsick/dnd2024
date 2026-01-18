@@ -59,6 +59,14 @@
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnEquip;OnStatusRemoved;OnCreate;OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81017e93-94fc-49cf-a13d-cddfd71db499" />
+        <field name="Name" type="NameTableFieldDefinition" value="Haste" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnTurn;OnActionResourcesChanged;OnCombatStarted;OnCreate;OnStatusApply;OnCast;OnCastResolved;OnStatusApplied;OnStatusRemove;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not (HasStatus('SG_Polymorph_BeastShape') or HasStatus('SG_Polymorph')) and not HasActionResource('ActionPoint', 1, 0, false, false, context.Source)):UnlockSpellVariant(not HasSpellFlag(SpellFlags.Attack) and not HasSpellFlag(SpellFlags.Spell),ModifyUseCosts(Replace,HasteSpellPoint,1,-1,ActionPoint));IF((HasStatus('SG_Polymorph_BeastShape') or HasStatus('SG_Polymorph')) and not HasActionResource('ActionPoint', 1, 0, false, false, context.Source)):UnlockSpellVariant(not HasSpellFlag(SpellFlags.Spell),ModifyUseCosts(Replace,HasteSpellPoint,1,-1,ActionPoint));" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="175cbaea-5504-4b41-bed3-ec13a98b6c04" />

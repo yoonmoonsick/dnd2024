@@ -580,6 +580,6 @@ function HasProneStatus()
 end
 
 function MeleeUnarmed(entity)
-    entity = entity or context.Target
+    entity = entity or context.Source
     return ~WieldingWeapon('Melee', false, true, entity)
 end
