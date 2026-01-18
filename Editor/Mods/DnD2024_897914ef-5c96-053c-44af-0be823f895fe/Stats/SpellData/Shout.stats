@@ -2419,7 +2419,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h80294cb1g143dga955g8253g7f7d44e3fbfe" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Transmutation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="Shout_TheftOfVitaeD6;Shout_TheftOfVitaeD8;Shout_TheftOfVitaeD10;Shout_TheftOfVitaeD12;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Sangromancy_SLevel2_TheftOfVitae" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(THEFT_OF_VITAE_D6,100,-1);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
@@ -8175,6 +8175,56 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DREAD_ALLEGIANCE_MYRKUL,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dc4e7dfga824gdf3cg3519gdb8a369d5857" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7b211bagee07g5f5fg8d20g861dd741376b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="51854df7-58b1-4996-8fed-27bd8c5f3ecc" />
+        <field name="Name" type="NameTableFieldDefinition" value="SanguinConversion" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SANGUIN_CONVERSION,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Rogue_SanguineThief_3_SanguinConversion" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddaff608g678ag137dgd05dg641459ab5c65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d92f0f1gc22dgfb6eg6fa3g4bf37b98fbd3" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="SangromancyDie8:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8d3895c-afbe-4369-987e-b5370ff5632e" />
+        <field name="Name" type="NameTableFieldDefinition" value="StealBlood" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h96bba6cdg6243gd115g1511gd623624821a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc3fc000ege671g10b4g24c0gaeaa85646e4b" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Rogue_SanguineThief_3_StolenPower" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SANGROMANCY_DIE_8,100,-1);RemoveStatus(STEAL_BLOOD);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="StolenPower:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="5e57443f-284e-47b2-915e-5b6417db269c,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;5bcdefbb-2194-46c2-ac77-0b2d8472a5f7,,;,,;5fdb66be-7506-411a-a7ea-c4783288aac8,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b660a683-61c5-44a0-87c6-84cac5f9201d" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe15452a-8005-4bb0-9124-79901842c8f9" />
+        <field name="Name" type="NameTableFieldDefinition" value="StealBlood_Heal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8d3895c-afbe-4369-987e-b5370ff5632e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);RemoveStatus(STEAL_BLOOD);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(1d8+ConstitutionModifier);" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Source)" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">

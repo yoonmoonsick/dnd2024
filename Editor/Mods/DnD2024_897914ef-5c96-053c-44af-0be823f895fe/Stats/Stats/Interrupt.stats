@@ -2371,7 +2371,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="301888ff-052a-412e-ba25-266340a090fd" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="72661729-cdf5-4b19-8879-80e56bab21a3" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);ApplyStatus(CUNNING_STRIKE,100,0);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical);IF(HasPassive('SanguineThief_3_StealBlood', context.Source)):ApplyStatus(OBSERVER_OBSERVER,STEAL_BLOOD,100,1);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);ApplyStatus(CUNNING_STRIKE,100,0);" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and HasDamageEffectFlag(DamageFlags.Hit) and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and not IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not SneakAttackSpellCheck() and not AnyEntityIsItem();" />
       </fields>
@@ -2381,7 +2381,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="41c9e1b1-b99e-4918-ab55-40acfd29bd52" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SneakAttack_Critical" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="73bc746d-c201-4da7-a561-2f69f26637e5" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);ApplyStatus(CUNNING_STRIKE,100,0);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsMeleeAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainMeleeWeaponDamageType);IF(IsRangedAttack() and not HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack), MainRangedWeaponDamageType);IF(IsMeleeAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainMeleeWeaponDamageType);IF(IsRangedAttack() and HasStatus('SNEAK_ATTACK_BONUS_DAMAGE', context.Source)):DealDamage(LevelMapValue(SneakAttack)+ClassLevel(Rogue), MainRangedWeaponDamageType);IF(HasPassive('MAG_ForcefulSneakAttack_Passive', context.Source)):DealDamage(LevelMapValue(ForcefulSneakAttack), Force,Magical);RemoveStatus(SELF,SNEAK_ATTACK_BONUS_DAMAGE);IF(HasPassive('SanguineThief_3_StealBlood', context.Source)):ApplyStatus(OBSERVER_OBSERVER,STEAL_BLOOD,100,1);ApplyStatus(CUNNING_STRIKE,100,0);" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Self(context.Source,context.Observer) and not Self() and ((WieldingFinesseWeaponInSpecificHand(context.Observer,false) and IsMainHandWeaponAttack()) or (WieldingFinesseWeaponInSpecificHand(context.Observer,true) and IsOffHandAttack()) or IsThrowAttackRoll() or (WieldingWeapon('Ammunition', false, true, context.Observer) and IsRangedWeaponAttack())) and HasDamageEffectFlag(DamageFlags.Hit) and IsCritical() and not IsKillingBlow() and (HasDamageEffectFlag(DamageFlags.AttackAdvantage) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDamageEffectFlag(DamageFlags.AttackDisadvantage) and not SneakAttackSpellCheck() and not AnyEntityIsItem();" />
       </fields>
     </stat_object>
@@ -2571,6 +2571,37 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="b44f055e-19ed-4e58-aee6-6a8d4461f22f" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);10" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not Self(context.Source, context.Observer) and IsAbleToReact(context.Observer) and Enemy(context.Target,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and HasFunctor(StatsFunctorType.DealDamage) and not Dead(context.Target) and not DistanceToEntityGreaterThan(9, context.ObserverPosition, context.Target) and HasHPPercentageWithoutTemporaryHPEqualOrLessThan(10, context.Target) and not HasHPPercentageWithoutTemporaryHPEqualOrLessThan(30, context.Target);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6547cf06-e5e0-4762-b4bc-2c1c2f561cda" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodyExit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h58ce9a95g8ac2g9d97ga8ffg753379ee61cc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h29184f44g1f51g9e12g98b9g3213062a49d8" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Necrotic)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Rogue_SanguineThief_11_BloodyExit" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasInterruptedAttack() and Self(context.Target,context.Observer) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(99, context.Source);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_TARGET,-99,All);ApplyStatus(OBSERVER_OBSERVER,BLOODY_EXIT,100,2);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;HitPointDie8:3;" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3bd678fb-0c60-4372-8980-407fbbcf92f8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodyExit_SangromancyDie" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6547cf06-e5e0-4762-b4bc-2c1c2f561cda" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;SangromancyDie8:3;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="196ca5cd-4a5a-40dc-b5c9-1b7628602316" />
+        <field name="Name" type="NameTableFieldDefinition" value="----------------------------------------" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

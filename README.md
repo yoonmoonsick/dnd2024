@@ -1421,6 +1421,25 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 11: Death Strike
   - You can gain the bonus Sneak Attack damage from Surprising Strikes on every turn, not just the first turn.
 
+### Sanguine Thief
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineThief.png?raw=true)
+
+> In dark alleyways across Etharis, deals are made in coin and blood, but a few enterprising Rogues have posed the question: “Why not both?” Sanguine Thieves are assassins who harness the power of Sangromancy to fuel their abilities, finding new and innovative ways to utilize the blood they see all too frequently in their line of work.
+>
+> Sanguine Thieves learn to draw upon the vita of their victims, extending their ability to use blood magic beyond the limits of their own vitality. When cornered, Sanguine Thieves can unleash this power in a hail of crimson darts or fade before a foe’s blade, leaving nothing behind but a red mist.
+
+- Level 3: Stolen Power
+  - You draw magic from blood. It is represented by your Sangromancy Dice, which fuel powers you have from this subclass. You have a pool of d8s that you can use on Sanguine Thief features. The number of damage dice in the pool equals the number of damage dice as shown in the Sneak Attack column of the Rogue Features table. Your pool regains all expended dice when you finish a Long Rest.
+- Level 3: Steal Blood
+  - When you deal Sneak Attack damage, you can restore 1 Sangromancy Die. If your Hit Points are at or below 50% of your maximum, you can choose to regain Hit Points instead of restoring the die.
+- Level 3: Sanguin Conversion
+  - You can convert a Sangromancy Die into a Hit Point Die. When you do so, you expend one Sangromancy Die and gain one Hit Point Die of the same size.
+- Level 6: Bloody Blades
+  - When you score a Critical Hit with melee weapon, you can cause the weapon to deal 1d8 Necrotic Damage to the target.
+- Level 11: Bloody Exit
+  - When a creature hits you with an attack roll, you can use your Reaction and expend 3 Hit Dice or Sangromancy Dice to turn into bloody mist. The triggering attack automatically misses you, and you assume Gaseous Form. Your next melee weapon attack deals an extra 3d8 Necrotic Damage to the target.
+
 ### Scion of the Three
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ScionThree.png?raw=true)
