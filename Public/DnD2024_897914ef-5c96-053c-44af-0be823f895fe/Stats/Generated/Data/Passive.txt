@@ -7869,12 +7869,6 @@ type "PassiveData"
 using "LOW_Raphael_ArchfiendWill"
 data "Conditions" "HasStatus('PLANAR_BINDING',context.Target) or HasStatus('HOLD_MONSTER',context.Target) or HasStatus('TURN_THE_UNHOLY',context.Target) or HasStatus('TURNED',context.Target) or HasStatus('SG_Dominated',context.Target) or HasStatus('SG_Incapacitated',context.Target) or HasStatus('SG_Restrained',context.Target) or HasStatus('FEARED',context.Target) or HasStatus('HIDEOUS_LAUGHTER',context.Target) or HasStatus('IRRESISTIBLE_DANCE',context.Target);"
 
-new entry "ZarielAlly"
-type "PassiveData"
-data "Properties" "OncePerLongRest"
-data "StatsFunctorContext" "OnCombatStarted"
-data "StatsFunctors" "UseSpell(Shout_Summon_PLA_Refugee,true,true,true)"
-
 new entry "Scar_Fury_Gur"
 type "PassiveData"
 using "Scar_Fury_Gur"
@@ -7883,7 +7877,6 @@ data "StatsFunctors" "UseSpell(Shout_Summon_GiantEagle,true,true,true)"
 
 new entry "ShadowDruidAlly"
 type "PassiveData"
-using "ZarielAlly"
 data "StatsFunctors" "UseSpell(Shout_Summon_ShadowDruidAlly,true,true,true)"
 
 new entry "BodyguardAlly"
