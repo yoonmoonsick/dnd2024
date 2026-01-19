@@ -583,3 +583,32 @@ function MeleeUnarmed(entity)
     entity = entity or context.Source
     return ~WieldingWeapon('Melee', false, true, entity)
 end
+
+function ShoveCheck()
+    local result = Dead() | Item() | Ally()
+   
+    if result.Result then
+        return result
+    end
+
+    local source = context.Source
+    local target = context.Target
+
+    local dc = 8 + GetModifier(source.Strength) + source.ProficiencyBonus
+    if source.GetClassLevel('Monk') >= 1 then
+        dc = 8 + GetModifier(source.Dexterity) + source.ProficiencyBonus
+    end
+
+    local adv = IsSneakingOrInvisible()
+
+    local bonusStr = GetModifier(target.Strength)
+    local bonusDex = GetModifier(target.Dexterity)
+
+    local ability = Ability.Strength
+    if bonusDex > bonusStr then
+        ability = Ability.Dexterity
+    end
+
+    local st = ~SavingThrow(ability, dc, adv)
+    return ConditionResult(st.Result, {}, {}, st.Chance)
+end
