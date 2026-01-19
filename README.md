@@ -1884,6 +1884,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - You've learned more secrets about the nuances of life and death. You can expend a 4th-level or higher spell slot to protect yourself from death. Until you finish your next Long Rest, the first time you would drop to 0 Hit Points, your Hit Points instead become a number equal to ten times the level of the spell slot you expended.
   - Immediately after you take damage and are bloodied after taking that damage but not killed outright, you can take a Reaction and teleport to an unoccupied space up to 60 feet from yourself, and each creature within 10 feet of the space you left takes 2d10 Necrotic damage.
 
+### Sangromancer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromanSangromancercySchool.png?raw=true)
+
+> You study an uncommon school of magic known as Sangromancy or blood magic. Despite its dark reputation, there’s nothing inherently evil about the practice of Sangromancy, though its demands on its practitioners are gruesome. As a Sangromancer, your chosen magic demands more than knowledge: it demands sacrifice. Other Wizards may view you with skepticism or even outright hostility, but none can deny the potency of your art.
+
+- Level 3: Sangromancy Savant
+  - Sangromancy spells count as Wizard spells for you. Choose two Sangromancy spells, each of which must be no higher than level 2, and add them to your spellbook for free. In addition, whenever you gain access to a new level of spell slots in this class, you can add one Sangromancy spell to your spellbook for free. The chosen spell must be of a level for which you have spell slots.
+- Level 3: Full-Blooded
+  - You draw magic from blood. It is represented by your Sangromancy Dice, which fuel powers you have from this subclass. You have a pool of d12s that you can expend instead of a Hit Die when you cast Sangromancy spells. The number of dice in the pool equals 1 plus your Wizard level. You regain one expended Sangromancy Die when you finish a Short Rest, and you regain all expended Sangromancy Dice when you finish a Long Rest.
+- Level 6: Sanguine Vigor
+  - Your Hit Point maximum increases by 6, and it increases by 1 whenever you gain another Wizard level. In addition, whenever you cast a Sangromancy spell with a spell slot, you regain Hit Points equal to the level of the spell slot.
+- Level 10: Blood for Blood
+  - Once on each of your turns when you deal damage to one or more creatures with a Wizard spell you cast, you can spend a Hit Point Die or a Sangromancy Die, roll the die, and deal extra damage to one of those creatures equal to the roll.
+
 ### Transmuter
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TransmutationSchool.png?raw=true)

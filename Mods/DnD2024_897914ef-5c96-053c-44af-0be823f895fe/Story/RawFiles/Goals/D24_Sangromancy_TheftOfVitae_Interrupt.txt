@@ -68,12 +68,28 @@ EnteredCombat(_Player, _CombatID)
 AND
 DB_Players((CHARACTER)_Player)
 AND
+IsSpellActive(_Player, "Shout_TheftOfVitae", 1)
+AND
+HasActiveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_SD12", 0)
+AND
+GetActionResourceValuePersonal((CHARACTER)_Player, "SangromancyDie12", 0,  _HitPointDie)
+AND
+_HitPointDie > 0
+THEN
+ApplyStatus(_Player, "THEFT_OF_VITAE_UNLOCK_SD12", -1.0, 1);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
 IsSpellActive(_Player, "Shout_TheftOfVitae", 0)
 THEN
 RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D6", _Player);
 RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D8", _Player);
 RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", _Player);
-RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D10", _Player);
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_D12", _Player);
+RemoveStatus(_Player, "THEFT_OF_VITAE_UNLOCK_SD12", _Player);
 EXITSECTION
 
 ENDEXITSECTION
