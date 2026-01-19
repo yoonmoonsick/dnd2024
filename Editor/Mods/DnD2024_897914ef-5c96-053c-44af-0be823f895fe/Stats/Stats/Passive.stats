@@ -10490,6 +10490,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_15, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10499,7 +10500,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="12ef101f-2783-4e8d-92e0-e2220b9c987b" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9bceffeg9087gf8a1gf946gbcdc76cde679" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ShieldMaster_Shove" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 0));UseActionResource(SELF,ShieldMasterResource,1,0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1));UseActionResource(SELF,ShieldMasterResource,1,0)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
