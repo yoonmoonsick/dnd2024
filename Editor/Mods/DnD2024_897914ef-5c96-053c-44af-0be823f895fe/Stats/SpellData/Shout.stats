@@ -6501,10 +6501,12 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,ARCANEARMOR_DREADNAUGHT,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(a73fcb4f-5fc8-465a-a394-0bc7bbfcf159,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(8cec7feb-bb5f-4ad0-953f-850a325accfa,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(729047e7-868c-473e-a1c3-804b64314b43,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Mag_OuterEntitySubjugation" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd8a74f0g45d2gb949g408cgf5802c7420b9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52e76c07g23eeg1231g986bg700d852f39dc" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7c6c6884gd54dg07d7g25b8ga197a98aa5ed" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h52e76c07g23eeg1231g986bg700d852f39dc" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7c6c6884gd54dg07d7g25b8ga197a98aa5ed" version="3" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Force)" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Force)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6530,10 +6532,12 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,ARCANEARMOR_GUARDIAN,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(968279f0-aff8-49dc-a34b-71eaf78144f3,Permanent,2,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(c7ea8868-6fd4-47a4-ac9a-fe7f45836d1c,Permanent,2,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(fb48777e-226d-4638-abb1-16780383b43a,Permanent,2,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_ElementalEarth_Slam" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h190d2c4cg9b88g1072ga577g96dc970958f8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h15dd3bf8g0f91g316fg9cb5g8accb396cfcb" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b103696g6484gf30eg329fga8921bd9b53b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h15dd3bf8g0f91g316fg9cb5g8accb396cfcb" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b103696g6484gf30eg329fga8921bd9b53b" version="2" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Thunder)" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d10,Thunder)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6556,6 +6560,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="469505dd-fe63-4940-9b14-7efe9fc320d1" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="469505dd-fe63-4940-9b14-7efe9fc320d1" />
         <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="GrantsResources" enumeration_type_name="AIFlags" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasHPPercentageWithoutTemporaryHPEqualOrLessThan(50, context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6567,10 +6572,12 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,ARCANEARMOR_INFILTRATOR,100,-1);IF(not ClassLevelHigherOrEqualThan(6,'Artificer')):SummonInInventory(6c762051-5795-4355-9e4d-ff1c34b67614,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(6,'Artificer') and not ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(ecedaf0a-9dc2-432b-9fe2-6e97f2de781b,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);IF(ClassLevelHigherOrEqualThan(11,'Artificer')):SummonInInventory(28456b48-8b4f-4bdf-ac77-0adddd6bfe7c,Permanent,1,true,true,true,,,PactBlade,ARCANE_ARMOR_WEAPON);" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThunderboltStrike" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc113b9c2g98bdg1271gfcecg23754c82c1cb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd67f6d3g848bg7d06g4482g8cde38c3daa0" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3a23c7e9g1d07gadf6gc939gbc0a2555bf4e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd67f6d3g848bg7d06g4482g8cde38c3daa0" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3a23c7e9g1d07gadf6gc939gbc0a2555bf4e" version="2" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Lightning)" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d6,Lightning)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
