@@ -305,7 +305,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 5: Flaming Sphere, Melf's Acid Arrow
   - Level 9: Stinking Cloud, Mass Healing Word
 - Level 3: Experimental Potion ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ExperimentalElixir.png?raw=true)
-  - You can create two Potions, each with a randomly determined effect. Any Potions remaining after a long rest disappear, and Potions can be consumed by yourself or given to others as a bonus action. Additionally, you can use a spell slot to create an additional Potion as a magic action, in which case you choose the effect directly. The number of Potions you can create after a long rest increases as you reach certain artificer levels: 3 at level 5, 4 at level 9, and 5 at level 12.
+  - You can create Potions. Any Potions remaining after a long rest disappear, and Potions can be consumed by yourself or given to others as a bonus action. Additionally, you can use a spell slot to create an additional Potion as a magic action, in which case you choose the effect directly. The number of Potions you can create after a long rest increases as you reach certain artificer levels: 3 at level 5, 4 at level 9, and 5 at level 12.
 - Level 5: Alchemical Savant
   - When you cast a Alchemist spell, you add your Intelligence modifier (minimum +1) to the roll that restores hit points or deals acid, fire, necrotic, or poison damage.
 - Level 9: Restorative Reagents: Fortify
