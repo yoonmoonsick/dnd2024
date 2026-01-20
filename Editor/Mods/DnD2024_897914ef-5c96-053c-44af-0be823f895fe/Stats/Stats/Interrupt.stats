@@ -1679,6 +1679,7 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(5, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph');" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h93535cf4ge646g27f3g2e82g594cf309ef06" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
