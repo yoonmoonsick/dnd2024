@@ -397,6 +397,23 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 - Level 11: Improved Defender
   - Your Arcane Jolt and Steel Defender become more powerful. The extra damage and healing from Arcane Jolt both increase to 3d6. Additionally, whenever your Steel Defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 plus your Intelligence modifier.
 
+### Cartographer
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cartographer.png?raw=true)
+
+> A Cartographers is the premier navigator and reconnaissance agent. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations.
+
+- Level 3: Illuminated Cartography
+  - You can cast Faerie Fire without expending a spell slot.
+- Level 3: Portal Jump
+  - On your turn, you can expend movement equal to half your Speed to teleport to an ally within 30 feet of you.
+- Level 3: Adventurer’s Awareness
+  - When you roll Initiative, you can add your Proficiency Bonus to the roll. And can't be Surprised.
+- Level 5: Guided Precision
+  - When you hit a creature affected by Faerie Fire with an attack roll, you can add your Intelligence modifier to damage roll of the attack or spell. In addition, Faerie Fire no longer requires your concentration.
+- Level 9: Ingenious Movement
+  - When you use Flash of Genius, the target creature can, as part of the same reaction, teleport up to 30 feet to an unoccupied space you can see.
+
 ## Barbarian
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Barbarian.png?raw=true)
