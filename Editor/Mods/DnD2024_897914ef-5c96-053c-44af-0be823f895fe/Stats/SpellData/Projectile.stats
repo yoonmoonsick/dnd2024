@@ -1094,6 +1094,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_PartingShot" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1103,39 +1104,45 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h608550b7g6f0fg448cg1f6egc8643f41d86c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1073003g3fd8g4b78gb318gf87e358c9862" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType);IF(HasPassive('FirearmSpecialist',context.Source)):DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_Ricochet" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;RiskDie:1;" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;BonusActionPoint:1;RiskDie:1;" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CannotTargetTerrain;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];TARGET:SpawnExtraProjectiles(Projectile_ArrowOfRicochet_Ricochet);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(MainHand);IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);CastOffhand[GROUND:DealDamage(OffhandRangedWeapon,OffhandRangedWeaponDamageType);GROUND:ExecuteWeaponFunctors(OffHand)];" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_1);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1b87ee6f-03b2-4b52-bc52-4a356ca901f6" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrickShot_Ricochet_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5faa7d93-16e0-463b-bf61-e8881502e5fc" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon/2, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_2);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_2);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8fea1d89-4e37-426d-a941-f8fd30162ebb" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet_2" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrickShot_Ricochet_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="920b06ec-bb92-4b73-9167-bdba19050313" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon/2, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_3);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="SpawnExtraProjectiles(Projectile_TrickShot_Ricochet_3);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8f5732dc-95d9-4b67-b87b-63bce4a2f04a" />
-        <field name="Name" type="NameTableFieldDefinition" value="ArrowOfRicochet_Ricochet_3" />
+        <field name="Name" type="NameTableFieldDefinition" value="TrickShot_Ricochet_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="21252e04-71ca-447d-91b3-7dc76b13979f" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1153,6 +1160,7 @@
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="b45298b5-22fa-43c6-90b6-6c55016492eb,4d15146b-d8e9-47a1-9128-11c54cf99265,db465f8e-38ce-495a-8c50-bd54f08ffa55" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF0000" is_substat="false">
