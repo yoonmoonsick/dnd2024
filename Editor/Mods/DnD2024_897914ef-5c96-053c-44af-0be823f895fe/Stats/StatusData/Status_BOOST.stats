@@ -1397,7 +1397,7 @@
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Yellow" enumeration_type_name="FormatStringColor" version="1" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(CONJURE_MINOR_ELEMENTALS_ACID_DEBUFF);IF(Enemy() and not Dead()):ApplyStatus(DIFFICULT_TERRAIN)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(2d8, Acid, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(2d8, Acid, false);CharacterWeaponDamage(2d8,Acid);CharacterUnarmedDamage(2d8,Acid);" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="4af84976-3160-40e1-b5a3-9d97a30877de" />
       </fields>
@@ -1407,7 +1407,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e079d58f-a5ed-457a-bd39-734a668dc2a2" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_ACID_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="71607b50-10c6-42fc-b8a3-1280f46d9c98" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(3d8, Acid, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(3d8, Acid, false);CharacterWeaponDamage(3d8,Acid);CharacterUnarmedDamage(3d8,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1415,7 +1415,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0a0dd5c6-673d-4de7-925a-be1d9ce149e7" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_ACID_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="71607b50-10c6-42fc-b8a3-1280f46d9c98" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(4d8, Acid, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(4d8, Acid, false);CharacterWeaponDamage(4d8,Acid);CharacterUnarmedDamage(4d8,Acid);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1427,7 +1427,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Cold" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Water" enumeration_type_name="FormatStringColor" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(CONJURE_MINOR_ELEMENTALS_COLD_DEBUFF);IF(Enemy() and not Dead()):ApplyStatus(DIFFICULT_TERRAIN)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(2d8, Cold, false);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(2d8, Cold, false);CharacterWeaponDamage(2d8,Cold);CharacterUnarmedDamage(2d8,Cold);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="350f0024-797e-4f1b-8033-8eec18115d87" />
       </fields>
     </stat_object>
@@ -1436,7 +1436,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1665d269-a25a-4c15-a524-88544828f5a0" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_COLD_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac46f971-189c-42f3-8990-b00d6f00860a" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(3d8, Cold, false);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(3d8, Cold, false);CharacterWeaponDamage(3d8,Cold);CharacterUnarmedDamage(3d8,Cold);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1444,7 +1444,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5da85f41-0eca-4b2b-88ca-e86e4bb79e29" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_COLD_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ac46f971-189c-42f3-8990-b00d6f00860a" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(4d8, Cold, false);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(4d8, Cold, false);CharacterWeaponDamage(4d8,Cold);CharacterUnarmedDamage(4d8,Cold);IF(HasPassive('Feat_ColdCaster',context.Source) and not HasStatus('COLD_CASTER_COOLDOWN',context.Source)):ApplyStatus(COLD_CASTER_FROSTBITE,100,2);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1456,7 +1456,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="FormatStringColor" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(CONJURE_MINOR_ELEMENTALS_FIRE_DEBUFF);IF(Enemy() and not Dead()):ApplyStatus(DIFFICULT_TERRAIN)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(2d8, Fire, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(2d8, Fire, false);CharacterWeaponDamage(2d8,Fire);CharacterUnarmedDamage(2d8,Fire);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="18e7467c-6bde-488a-a7ee-cc02b602371d" />
       </fields>
     </stat_object>
@@ -1465,7 +1465,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e4a03ffb-e511-4f2e-8080-b0ba6f29f40e" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_FIRE_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="362e9f49-5cc6-4fee-9365-a23ca1de9b09" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(3d8, Fire, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(3d8, Fire, false);CharacterWeaponDamage(3d8,Fire);CharacterUnarmedDamage(3d8,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1473,7 +1473,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ac891aef-6cba-4b80-b92e-c4e9820b5382" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_FIRE_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="362e9f49-5cc6-4fee-9365-a23ca1de9b09" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(4d8, Fire, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(4d8, Fire, false);CharacterWeaponDamage(4d8,Fire);CharacterUnarmedDamage(4d8,Fire);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1485,7 +1485,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Lightning" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Air" enumeration_type_name="FormatStringColor" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy() and not Dead()):ApplyStatus(CONJURE_MINOR_ELEMENTALS_LIGHTNING_DEBUFF);IF(Enemy() and not Dead()):ApplyStatus(DIFFICULT_TERRAIN)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(2d8, Lightning, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(2d8, Lightning, false);CharacterWeaponDamage(2d8,Lightning);CharacterUnarmedDamage(2d8,Lightning);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bb829f9f-fc54-4d0b-937f-bdd24f78e0b0" />
       </fields>
     </stat_object>
@@ -1494,7 +1494,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="7a21f54e-db39-49df-9ec9-c2b09d8fb25e" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_LIGHTNING_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c489de4c-f320-4220-9704-ee6ec09826cb" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(3d8, Lightning, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(3d8, Lightning, false);CharacterWeaponDamage(3d8,Lightning);CharacterUnarmedDamage(3d8,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -1502,7 +1502,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f9354053-9071-4795-ba60-1e9433e01897" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURE_MINOR_ELEMENTALS_LIGHTNING_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c489de4c-f320-4220-9704-ee6ec09826cb" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttack()):DamageBonus(4d8, Lightning, false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpellAttack()):DamageBonus(4d8, Lightning, false);CharacterWeaponDamage(4d8,Lightning);CharacterUnarmedDamage(4d8,Lightning);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
