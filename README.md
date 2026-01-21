@@ -403,6 +403,10 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 > A Cartographers is the premier navigator and reconnaissance agent. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations.
 
+- Subclass Spells (Always prepared)
+  - Level 3: Faerie Fire, Guiding Bolt, Healing Word
+  - Level 5: Mind Spike, Misty Step
+  - Level 9: Call Lightning, Sleet Storm
 - Level 3: Illuminated Cartography
   - You can cast Faerie Fire without expending a spell slot.
 - Level 3: Portal Jump
