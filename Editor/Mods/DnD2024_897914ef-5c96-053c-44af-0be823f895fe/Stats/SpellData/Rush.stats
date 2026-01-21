@@ -25,7 +25,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3983e89g92c7g2060gf532g1499fc1d71b2" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,LUNGING_ATTACK);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="MovementSpeed" type="IntegerTableFieldDefinition" value="40000" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon+LevelMapValue(SuperiorityDie), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Ally() and not Dead();" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush" />
@@ -33,6 +32,15 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(SuperiorityDie)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8cf169f2-5b6f-4346-a982-05f91a0e74b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rush_DeepRothe" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b2ddb35-a5e0-4c90-996f-6e82018ddb89" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Piercing);TARGET:IF(not SavingThrow(Ability.Strength,SourceSpellDC())):ApplyStatus(PRONE,100,2);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Piercing);" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
