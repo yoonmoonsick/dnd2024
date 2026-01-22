@@ -99,3 +99,10 @@ using "STUNNED"
 data "RemoveConditions" "SavingThrow(Ability.Wisdom, 17)"
 data "RemoveEvents" "OnTurn"
 
+new entry "SHA_NIGHTSONG_SOULCAGE"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "SHA_NIGHTSONG_SOULCAGE"
+data "AuraRadius" "30"
+data "AuraStatuses" "TARGET:IF(Enemy() and not Dead()):ApplyStatus(SANCTUARY_AURA,100,-1)"
+
