@@ -195,6 +195,30 @@ THEN
 RemoveStatus(_Player, "WARCASTER_POISONSPRAY", _Player);
 
 
+// PrimalSavagery
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_PrimalSavagery", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_PRIMALSAVAGERY", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_PrimalSavagery", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_PRIMALSAVAGERY", _Player);
+
+
 // Produce Flame
 IF
 EnteredCombat(_Player, _CombatID)
