@@ -361,6 +361,30 @@ AND
 IsSpellActive(_Player, "Target_TrueStrike", 0)
 THEN
 RemoveStatus(_Player, "WARCASTER_TRUESTRIKE", _Player);
+
+
+// ViciousMockery
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_ViciousMockery", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_VICIOUSMOCKERY", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_ViciousMockery", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_VICIOUSMOCKERY", _Player);
 EXITSECTION
 
 ENDEXITSECTION

@@ -16599,6 +16599,16 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="59ff677b-5c31-473c-8061-4baeb6fa873f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ViciousMockery" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff31b0b2-53f7-4147-adba-c3e63dbe62f9" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(VICIOUSMOCKERY,100,1);DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical), IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e363a26f-0704-467c-ab1d-3d2544dc7bd0" />
         <field name="Name" type="NameTableFieldDefinition" value="Concussion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fcad2d16-598f-48f4-b47e-07a92010ae31" />
@@ -16781,17 +16791,6 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="59ff677b-5c31-473c-8061-4baeb6fa873f" />
-        <field name="Name" type="NameTableFieldDefinition" value="ViciousMockery" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ff31b0b2-53f7-4147-adba-c3e63dbe62f9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_VICIOUSMOCKERY,100,-1)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(VICIOUSMOCKERY,100,1);DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical), IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL,100,0)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Psychic)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
