@@ -2820,6 +2820,33 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="878fdf44-8e44-47b1-8909-e79e5b973221" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcidSplash" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="169e0c64-52bc-435d-be9b-be25ecab9a1c" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not (HasPassive('SculptSpells', context.Source) and Ally());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2b44f8f2-2255-4f77-8f69-34a85e0d8ada" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchBlast" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ddcb7911-c2a6-4a6d-a3a6-e6456611feef" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Psychic,Magical);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Psychic,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8237de91-f022-4d01-b4c6-5d372730412d" />
+        <field name="Name" type="NameTableFieldDefinition" value="FireBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8a1e2663-731b-4b88-a2ce-d310746ff110" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2,Fire,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="63d9b815-33fa-4f5c-9ab3-1451c59a2f69" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticFling" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
@@ -2888,39 +2915,11 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="878fdf44-8e44-47b1-8909-e79e5b973221" />
-        <field name="Name" type="NameTableFieldDefinition" value="AcidSplash" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="169e0c64-52bc-435d-be9b-be25ecab9a1c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_ACIDSPLASH,100,-1)" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not (HasPassive('SculptSpells', context.Source) and Ally());" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a09b793f-eaee-47eb-92f1-10886b6a83ea" />
         <field name="Name" type="NameTableFieldDefinition" value="RayOfFrost" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="abb7e9e5-6372-4ead-9234-be2c5ae6c5a9" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_RAYOFFROST,100,-1);GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Cold,Magical)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="2b44f8f2-2255-4f77-8f69-34a85e0d8ada" />
-        <field name="Name" type="NameTableFieldDefinition" value="EldritchBlast" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ddcb7911-c2a6-4a6d-a3a6-e6456611feef" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(1d10/2,Psychic,Magical);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Force,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(1d10,Psychic,Magical);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8237de91-f022-4d01-b4c6-5d372730412d" />
-        <field name="Name" type="NameTableFieldDefinition" value="FireBolt" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8a1e2663-731b-4b88-a2ce-d310746ff110" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_FIREBOLT,100,-1);GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D10Cantrip)/2,Fire,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
