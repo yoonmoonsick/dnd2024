@@ -121,6 +121,30 @@ AND
 IsSpellActive(_Player, "Target_LightningLure", 0)
 THEN
 RemoveStatus(_Player, "WARCASTER_LIGHTNINGLURE", _Player);
+
+
+// Mind Sliver
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_MindSliver", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_MINDSLIVER", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_MindSliver", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_MINDSLIVER", _Player);
 EXITSECTION
 
 ENDEXITSECTION
