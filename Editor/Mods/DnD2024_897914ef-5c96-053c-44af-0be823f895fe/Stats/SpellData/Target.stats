@@ -16460,6 +16460,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9519aaac-1355-4957-b63f-0291ca96b472" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThornWhip" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7732eadb-c390-40c0-b4f8-291c903c8566" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Piercing,Magical)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;AddFallDamageOnLand;RangeIgnoreVerticalThreshold;RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e363a26f-0704-467c-ab1d-3d2544dc7bd0" />
         <field name="Name" type="NameTableFieldDefinition" value="Concussion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fcad2d16-598f-48f4-b47e-07a92010ae31" />
@@ -16621,16 +16630,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;IsHarmful;HasVerbalComponent;HasSomaticComponent;IgnorePreviouslyPickedEntities;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D8Cantrip),Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target)):DealDamage(LevelMapValue(D12Cantrip),Psychic,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasHPPercentageEqualOrLessThan(99,context.Target) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D12Cantrip)/2,Psychic,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9519aaac-1355-4957-b63f-0291ca96b472" />
-        <field name="Name" type="NameTableFieldDefinition" value="ThornWhip" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7732eadb-c390-40c0-b4f8-291c903c8566" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D6Cantrip)/2,Piercing,Magical)" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_THORNWHIP,100,-1)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;AddFallDamageOnLand;RangeIgnoreVerticalThreshold;RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;HasHighGroundRangeExtension;HasVerbalComponent;HasSomaticComponent;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
