@@ -2829,6 +2829,29 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="69f2e666-f233-4cd7-9f4e-8e040765e5b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="BloodBolt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);ApplyStatus(SELF,BOOLD_BOLT,100,-1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical);" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="84e22f8f-5dc2-4d7e-95b3-d87247d4d380" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BloodBolt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h082db4e0g8410gf9f0g760bg3bf03eeecf7c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heae2a5f6g7dfdg413egc75cga89aa6fdce89" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOOLD_BOLT,100,-1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4d1d3da-0193-4f35-bd70-44f3a889810c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="465a418c-76df-4bc8-9c99-20c52b36c6c3" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2b44f8f2-2255-4f77-8f69-34a85e0d8ada" />
         <field name="Name" type="NameTableFieldDefinition" value="EldritchBlast" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ddcb7911-c2a6-4a6d-a3a6-e6456611feef" />
@@ -3310,29 +3333,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="45dfe3c2-fe7d-4ba4-b673-8194db6706c3" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D10Cantrip),Fire,Magical);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D10Cantrip))/2,Fire,Magical);IF(not HasPassive('PotentCantrip',context.Source)):ApplyStatus(SAVED_AGAINST_HOSTILE_SPELL, 100, 0);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="69f2e666-f233-4cd7-9f4e-8e040765e5b0" />
-        <field name="Name" type="NameTableFieldDefinition" value="BloodBolt" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5ce1483e-261a-4827-a79a-a2d43ce3cd6d" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Necromancy" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D6Cantrip),Psychic,Magical);ApplyStatus(SELF,BOOLD_BOLT,100,-1);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Necrotic,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage((LevelMapValue(D6Cantrip))/2,Psychic,Magical);" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="84e22f8f-5dc2-4d7e-95b3-d87247d4d380" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_BloodBolt" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h082db4e0g8410gf9f0g760bg3bf03eeecf7c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heae2a5f6g7dfdg413egc75cga89aa6fdce89" version="1" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D6Cantrip),Necrotic)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOOLD_BOLT,100,-1)" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f4d1d3da-0193-4f35-bd70-44f3a889810c" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="465a418c-76df-4bc8-9c99-20c52b36c6c3" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

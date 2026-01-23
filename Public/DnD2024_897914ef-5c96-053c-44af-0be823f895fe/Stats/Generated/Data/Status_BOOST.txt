@@ -5005,6 +5005,12 @@ data "StackType" "Overwrite"
 data "StatusPropertyFlags" "IgnoreResting;DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead"
 data "StatusGroups" "SG_RemoveOnRespec"
 
+new entry "WARCASTER_BLOODBOLT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "WARCASTER"
+data "Boosts" "UnlockInterrupt(Itrp_WC_BloodBolt);"
+
 new entry "WARCASTER_BOOMINGBLADE"
 type "StatusData"
 data "StatusType" "BOOST"

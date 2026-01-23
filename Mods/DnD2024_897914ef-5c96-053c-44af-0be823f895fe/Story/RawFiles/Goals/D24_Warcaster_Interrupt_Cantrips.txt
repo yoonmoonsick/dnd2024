@@ -3,6 +3,30 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Blood Bolt
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_BloodBolt", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_BLOODBOLT", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_BloodBolt", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_BLOODBOLT", _Player);
+
+
 // Booming Blade
 IF
 EnteredCombat(_Player, _CombatID)
