@@ -2872,6 +2872,15 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a09b793f-eaee-47eb-92f1-10886b6a83ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="RayOfFrost" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="abb7e9e5-6372-4ead-9234-be2c5ae6c5a9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Cold,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="63d9b815-33fa-4f5c-9ab3-1451c59a2f69" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticFling" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
@@ -2936,15 +2945,6 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_FingerGuns" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a09b793f-eaee-47eb-92f1-10886b6a83ea" />
-        <field name="Name" type="NameTableFieldDefinition" value="RayOfFrost" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="abb7e9e5-6372-4ead-9234-be2c5ae6c5a9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_RAYOFFROST,100,-1);GROUND:SurfaceChange(Freeze);GROUND:SurfaceChange(Douse)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Cold,Magical)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
