@@ -2881,6 +2881,35 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16aaf972-9a0f-46fc-860e-b83f458e5ecf" />
+        <field name="Name" type="NameTableFieldDefinition" value="StarryWisp" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="DeathType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Death Type" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant,Magical);ApplyStatus(STARRY_WISP,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Radiant,Magical)" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_StarryWisp" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STARRY_WISP,100,2)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0c324f8g0e20g88ebg29ddga4e4139e905f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81feb6f9ga343g15d3g17c1g958173a6a020" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="21ced5ea-35c7-44d2-af54-6219a50ca455" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ebb2ef9f-3239-4996-9977-665576444d3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="StarryWisp_Wild" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16aaf972-9a0f-46fc-860e-b83f458e5ecf" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful;Wildshape" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="63d9b815-33fa-4f5c-9ab3-1451c59a2f69" />
         <field name="Name" type="NameTableFieldDefinition" value="TelekineticFling" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7ce75d8f-8cab-47ee-bf91-49016df67576" />
@@ -3160,36 +3189,6 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="2b284468-04a1-4730-a5c0-8ce54afbd937" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16aaf972-9a0f-46fc-860e-b83f458e5ecf" />
-        <field name="Name" type="NameTableFieldDefinition" value="StarryWisp" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="DeathType" type="EnumerationTableFieldDefinition" value="Radiant" enumeration_type_name="Death Type" version="1" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant,Magical);ApplyStatus(STARRY_WISP,100,2)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D8Cantrip)/2,Radiant,Magical)" />
-        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_StarryWisp" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Radiant)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(STARRY_WISP,100,2)" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_STARRYWISP,100,-1)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0c324f8g0e20g88ebg29ddga4e4139e905f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81feb6f9ga343g15d3g17c1g958173a6a020" version="1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="21ced5ea-35c7-44d2-af54-6219a50ca455" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ebb2ef9f-3239-4996-9977-665576444d3a" />
-        <field name="Name" type="NameTableFieldDefinition" value="StarryWisp_Wild" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="16aaf972-9a0f-46fc-860e-b83f458e5ecf" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;HasSomaticComponent;RangeIgnoreVerticalThreshold;IsHarmful;Wildshape" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -265,6 +265,36 @@ AND
 IsSpellActive(_Player, "Target_ShockingGrasp", 0)
 THEN
 RemoveStatus(_Player, "WARCASTER_SHOCKINGGRASP", _Player);
+
+
+// StarryWisp
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_StarryWisp", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_STARRYWISP", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_StarryWisp", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_STARRYWISP", _Player);
+
+
+
+
+
+
 EXITSECTION
 
 ENDEXITSECTION
