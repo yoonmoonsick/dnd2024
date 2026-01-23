@@ -2871,6 +2871,24 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="feb7352e-68aa-447b-9cc7-88b4f3dfa177" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hellfire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8237de91-f022-4d01-b4c6-5d372730412d" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Fire,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Psychic,Magical);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Fire,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Psychic,Magical);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Hellfire" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D4Cantrip),Fire);DealDamage(LevelMapValue(D4Cantrip),Necrotic)" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Necrotic_ChillTouch_L1to3" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC())" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95d5a02fge991g49c0gdcb1g173a8f2c4875" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Charisma" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="58dff521-05c2-4dee-a5af-1263ac653bb3" />
         <field name="Name" type="NameTableFieldDefinition" value="PoisonSpray" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="27eb7f1e-7aed-4ba7-94e1-4d138721dcab" />
@@ -3053,24 +3071,6 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Somatic" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Gunslinger_FingerGuns" />
         <field name="DualWieldingUseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="feb7352e-68aa-447b-9cc7-88b4f3dfa177" />
-        <field name="Name" type="NameTableFieldDefinition" value="Hellfire" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="8237de91-f022-4d01-b4c6-5d372730412d" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_HELLFIRE,100,-1);GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt);" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Fire,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(LevelMapValue(D4Cantrip),Psychic,Magical);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Fire,Magical);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Necrotic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Psychic,Magical);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and HasPassive('PotentCantrip',context.Source)):DealDamage(LevelMapValue(D4Cantrip)/2,Psychic,Magical);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Hellfire" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D4Cantrip),Fire);DealDamage(LevelMapValue(D4Cantrip),Necrotic)" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Necrotic_ChillTouch_L1to3" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC())" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h95d5a02fge991g49c0gdcb1g173a8f2c4875" version="1" />
-        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Charisma" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
