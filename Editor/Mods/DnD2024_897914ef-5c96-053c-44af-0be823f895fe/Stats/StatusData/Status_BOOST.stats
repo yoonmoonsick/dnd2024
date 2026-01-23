@@ -9769,6 +9769,84 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="TemporaryHP(1d4+Cause.CharismaModifier+Cause.ClassLevel(Sorcerer));" />
       </fields>
     </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35201785-ae76-44cc-a3df-c61c1e132cc4" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagicSorcery_WildMagic_D2024" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_MAGIC " />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3d083e50-c618-433f-919e-a042f5bfc9d7" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,WildMagic_D2024)" />
+        <field name="StackId" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba257aee-0273-4412-b983-44b025fddf1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_HEAL" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(5);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ebe7105gcd70g42a7ga252ga02793105360" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3a148dd4g8761gc333g7b41g87a206fdd3d0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="statIcons_WildMagic_Heal" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcc78bf5-233a-4fa8-9dca-7da7d6124bc7" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_HEIGHTENED_SPELL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(HeightenedSpellCheck(),ModifySavingThrowDisadvantage());" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ebe7105gcd70g42a7ga252ga02793105360" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18ab6846g73e1g3492g288dge5f02e7cd7be" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_HeightenedSpell" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b18575e-d838-468f-9495-a9e03cd1a0b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_QUICKENED_SPELL" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(QuickenedSpellCheck(),ModifyUseCosts(Replace,BonusActionPoint,1,0,ActionPoint));" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ebe7105gcd70g42a7ga252ga02793105360" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18216e68g05abg0568gee02g174fd6e93343" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_Passive_Metamagic_QuickenedSpell" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd43dd2f-aa9c-4c39-8260-558321509cc0" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_MAXIMUM_DAMAGE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsSpell()):MinimumRollResult(Damage,20);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ebe7105gcd70g42a7ga252ga02793105360" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h134649b9g2088gf4eeg9013gf287a84e1a13" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DestructiveWrath" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="87589a1a-911e-48cc-b3bc-a072a1dfccab" />
+        <field name="Name" type="NameTableFieldDefinition" value="WILD_MAGIC_TURN_ALL_RESISTANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(All, Resistant);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="687bf4da-a85f-4b2f-8dfd-68723ebd005f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ebe7105gcd70g42a7ga252ga02793105360" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h46d8691eg0c02ga367ga51dgb05b79066e91" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_WardingBond" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b77a38fb-6a0c-403f-9ae0-27bca189da16" />

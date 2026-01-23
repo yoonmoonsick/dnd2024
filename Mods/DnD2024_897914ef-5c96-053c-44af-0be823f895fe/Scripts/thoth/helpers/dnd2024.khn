@@ -250,10 +250,6 @@ function RangedOffHandWeaponAttackCheck()
     return HasStringInSpellRoll('AttackType.RangedOffHandWeaponAttack')
 end
 
-function TidesOfChaosCheck()
-    return IsSpell() & (HasUseCosts('SpellSlot') | HasUseCosts('WarlockSpellSlot'))
-end
-
 function IsClericCantrip()
 	return SpellId('Target_SacredFlame') | SpellId('Target_TollTheDead') | SpellId('Target_ChillTouch')
 end

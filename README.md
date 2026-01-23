@@ -1618,16 +1618,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagic.png?raw=true)
 
-- Subclass Spells (Always prepared)
-  - Level 3: Magic Missile, Entangle
-  - Level 3: Enlarge/Reduce, Misty Step
-  - Level 5: Blink, Counterspell
-  - Level 7: Polymorph, Dimension Door
-  - Level 9: Telekinesis, Wall of Stone
 - Level 3: Wild Magic Surge
-  - The chance of a Wild Magic Surge occurring has increased.
+  - The Wild Magic Surge is shifted to a d100 table, producing a wide variety of magical effects.
+  - The chance of a Wild Magic Surge occurring increases by 10 percentage points.
 - Level 3: Tides of Chaos
-  - Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again (This feature is only enabled in turn-based mode).
+  - You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the d20. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.
 
 ### Spellfire Sorcery
 

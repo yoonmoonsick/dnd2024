@@ -3686,16 +3686,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0a25db82-815d-4672-a6bf-3535b3a1e546" />
-        <field name="Name" type="NameTableFieldDefinition" value="TidesOfChaos_Unlock" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="3b12cdd1-364d-42c0-8718-d6534e9033f4" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="TidesOfChaosCheck()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(TurnBased(context.Source)):RestoreResource(TidesOfChaos,1,0)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e4f00b1e-e07a-4457-955c-835aeff50e4a" />
         <field name="Name" type="NameTableFieldDefinition" value="StormSphere" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,STORM_SPHERE_AURA,100,-1)" />
@@ -7310,14 +7300,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="91ab2c71-40c1-4eb7-bd94-52bbaee034fa" />
-        <field name="Name" type="NameTableFieldDefinition" value="WildMagic" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="16af3823-46a6-4803-a105-e3029a0b02a7" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(TurnBased(context.Source) and Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(1,,WildMagic);IF(TurnBased(context.Source) and HasStatus('TIDES_OF_CHAOS',context.Source) and not Tagged('SORCERER_WILD_MAGIC_GUARANTEED',context.Source)):TriggerRandomCast(6,,WildMagic,WildMagicTurn);IF(TurnBased(context.Source) and not HasStatus('TIDES_OF_CHAOS',context.Source) and not (HasStatus('WILD_MAGIC_GUARANTEED',context.Source) or Tagged('SORCERER_WILD_MAGIC_SUPRESSED',context.Source))):TriggerRandomCast(16,,WildMagic,WildMagicTurn);IF(HasStatus('TIDES_OF_CHAOS',context.Source)):RemoveStatus(SELF,TIDES_OF_CHAOS)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38fc502b-e637-4df1-8760-732d0a262077" />
         <field name="Name" type="NameTableFieldDefinition" value="DraconicAncestry_Black" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="44b9a747-0f60-4255-8a50-8c41166216e3" />
@@ -7418,6 +7400,97 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Indomitable" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnStatusApply;OnStatusApplied;OnCreate;OnLongRest" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91ab2c71-40c1-4eb7-bd94-52bbaee034fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagic" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16af3823-46a6-4803-a105-e3029a0b02a7" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(Tagged('SORCERER_WILD_MAGIC_GUARANTEED', context.Source)):TriggerRandomCast(1,,WildMagic_D2024);IF(HasStatus('TIDES_OF_CHAOS',context.Source) and not Tagged('SORCERER_WILD_MAGIC_GUARANTEED', context.Source)):TriggerRandomCast(9,,WildMagic_D2024);IF(not HasStatus('TIDES_OF_CHAOS',context.Source) and not (HasStatus('WILD_MAGIC_GUARANTEED',context.Source) or Tagged('SORCERER_WILD_MAGIC_SUPRESSED', context.Source))):TriggerRandomCast(18,,WildMagic_D2024);IF(HasStatus('TIDES_OF_CHAOS',context.Source)):RemoveStatus(SELF,TIDES_OF_CHAOS)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5db64ae1g9e86g7882gb351g70ff61d66e70" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h36a81742g9ed5g60e6ga57eg4c3993e6f3ea" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerTurn" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc749131-decc-4236-b4ac-720ec2413be9" />
+        <field name="Name" type="NameTableFieldDefinition" value="TidesOfChaos" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6bc57c86-b0fb-4e4a-baf3-7b55e46a0e08" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hac1c01b8g6e5ag0772g6b10g7d90e8b92279" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfb0cb10cg4e03g5e19gcf2ag3a1405a4ed79" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0a25db82-815d-4672-a6bf-3535b3a1e546" />
+        <field name="Name" type="NameTableFieldDefinition" value="TidesOfChaos_Unlock" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3b12cdd1-364d-42c0-8718-d6534e9033f4" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not IsCantrip() and HasSpellFlag(SpellFlags.Spell)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,TidesOfChaos,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="980e543e-25ec-4c01-8eb4-693df8d4f19c" />
+        <field name="Name" type="NameTableFieldDefinition" value="BendLuck" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2bc080a5-d28e-4589-abbe-2cb23997ba2c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9f89f900gcf10gf79cg8b33gfd0ff8526217" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92d3632cgad85gddebgb624g552a63f3d410" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_BendLuck_Bonus);UnlockInterrupt(Interrupt_BendLuck_Malus);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45268e52-4e18-48a9-b9ce-608e52e58887" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlledChaos" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1d162eb8-d53d-4bac-9406-d40621dc7fba" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9fed7658g3573g0a48gd14dge4e3c4266c98" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5055f30-796b-452f-b83d-2e38aa818bd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="WildMagic_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91ab2c71-40c1-4eb7-bd94-52bbaee034fa" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bce9c5c2-cc80-4d6b-b9cf-3489a4864a66" />
+        <field name="Name" type="NameTableFieldDefinition" value="TidesOfChaos_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc749131-decc-4236-b4ac-720ec2413be9" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ToggleOnEffect" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f3c1f1e-e0e0-4597-8f5e-7bcd49bf0dda" />
+        <field name="Name" type="NameTableFieldDefinition" value="BendLuck_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="980e543e-25ec-4c01-8eb4-693df8d4f19c" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf8d59d4-d6af-463b-b610-91bb00ecff68" />
+        <field name="Name" type="NameTableFieldDefinition" value="ControlledChaos_Preview" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="45268e52-4e18-48a9-b9ce-608e52e58887" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
