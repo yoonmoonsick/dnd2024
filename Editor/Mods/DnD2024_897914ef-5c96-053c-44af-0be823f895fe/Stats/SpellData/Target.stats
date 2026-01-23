@@ -16423,6 +16423,34 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SacredFlame_Action;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_Action" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SacredFlame" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f211d98-d5b6-49cf-9486-e0bc1bd7756b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_BonusAction" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellfireFlame:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e363a26f-0704-467c-ab1d-3d2544dc7bd0" />
         <field name="Name" type="NameTableFieldDefinition" value="Concussion" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fcad2d16-598f-48f4-b47e-07a92010ae31" />
@@ -16573,35 +16601,6 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Intent" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;HasSomaticComponent;IsSpell;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
-        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="25ce081c-3fdc-45d2-a883-2db61e61d225" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_SACREDFLAME,100,-1)" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SacredFlame_Action;" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;IsLinkedSpellContainer;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
-        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_Action" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="1731bccf-bdfc-4b7e-8c99-46b6a2ba7687" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SacredFlame" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7f211d98-d5b6-49cf-9486-e0bc1bd7756b" />
-        <field name="Name" type="NameTableFieldDefinition" value="SacredFlame_BonusAction" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="a1e7ab5f-80f0-46f9-8be1-b8459602f1c1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellfireFlame:1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
