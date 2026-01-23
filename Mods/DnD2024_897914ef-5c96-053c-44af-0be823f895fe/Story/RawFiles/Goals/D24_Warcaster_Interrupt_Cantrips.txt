@@ -75,6 +75,30 @@ THEN
 RemoveStatus(_Player, "WARCASTER_VICIOUSMOCKERY", _Player);
 
 
+// FingerGuns
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_FingerGuns", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_FIREBOLT", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Projectile_FingerGuns", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_FIREBOLT", _Player);
+
+
 // FireBolt
 IF
 EnteredCombat(_Player, _CombatID)
