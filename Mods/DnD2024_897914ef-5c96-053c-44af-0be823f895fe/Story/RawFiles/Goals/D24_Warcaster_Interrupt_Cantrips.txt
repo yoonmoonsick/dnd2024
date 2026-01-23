@@ -1,0 +1,30 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+// Booming Blade
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_BoomingBlade_ClassSpell", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_BOOMINGBLADE", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_BoomingBlade_ClassSpell", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_BOOMINGBLADE", _Player);
+EXITSECTION
+
+ENDEXITSECTION
