@@ -315,6 +315,28 @@ THEN
 RemoveStatus(_Player, "WARCASTER_THORNWHIP", _Player);
 
 
+// TollTheDead
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_TollTheDead", 1)
+THEN
+ApplyStatus(_Player, "WARCASTER_TOLLTHEDEAD", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+HasPassive(_Player,"WarCaster_OpportunitySpell",1)
+AND
+IsSpellActive(_Player, "Target_TollTheDead", 0)
+THEN
+RemoveStatus(_Player, "WARCASTER_TOLLTHEDEAD", _Player);
 EXITSECTION
 
 ENDEXITSECTION
