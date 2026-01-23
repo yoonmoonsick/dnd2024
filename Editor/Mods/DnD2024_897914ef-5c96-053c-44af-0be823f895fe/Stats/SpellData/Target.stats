@@ -16626,6 +16626,28 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9f73ef07-0a32-451a-bc57-ec2a2a8ce1bd" />
+        <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da404a80-13c0-4805-9629-5f194d298e0f" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):ApplyStatus(VENGEFUL_BLADE,100,1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(VENGEFUL_BLADE_5,100,1);IF(CharacterLevelGreaterThan(10)):ApplyStatus(VENGEFUL_BLADE_11,100,1);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Necrotic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Psychic);ExecuteWeaponFunctors(MainHand);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fc317c4g032cg2afdg16cfg272e0eb83a98" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ca1b476g8979g94a3g07cag376a0fb3b36b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Necrotic);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(BoomingBlade),Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VENGEFUL_BLADE,100,1)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="d49cf296-7f7b-4658-8171-13eeb08c7d88" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VengefulBlade" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="59ff677b-5c31-473c-8061-4baeb6fa873f" />
         <field name="Name" type="NameTableFieldDefinition" value="ViciousMockery" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff31b0b2-53f7-4147-adba-c3e63dbe62f9" />
@@ -16767,29 +16789,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e21007a-76ec-4cc2-a659-3c4c1886a004" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,YMS_TRUE_STRIKE_OWNER,100, -1);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9f73ef07-0a32-451a-bc57-ec2a2a8ce1bd" />
-        <field name="Name" type="NameTableFieldDefinition" value="VengefulBlade" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="da404a80-13c0-4805-9629-5f194d298e0f" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="0" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not CharacterLevelGreaterThan(4)):ApplyStatus(VENGEFUL_BLADE,100,1);IF(CharacterLevelGreaterThan(4) and not CharacterLevelGreaterThan(10)):ApplyStatus(VENGEFUL_BLADE_5,100,1);IF(CharacterLevelGreaterThan(10)):ApplyStatus(VENGEFUL_BLADE_11,100,1);DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Necrotic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(BoomingBlade),Psychic);ExecuteWeaponFunctors(MainHand);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1fc317c4g032cg2afdg16cfg272e0eb83a98" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ca1b476g8979g94a3g07cag376a0fb3b36b" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Necrotic);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);DealDamage(LevelMapValue(BoomingBlade),Necrotic)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(VENGEFUL_BLADE,100,1)" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ec80b3cd-29fd-40d2-a41a-b703db1b6f8e" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="d49cf296-7f7b-4658-8171-13eeb08c7d88" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasPassive('WarCaster_OpportunitySpell',context.Source)):ApplyStatus(SELF,WARCASTER_VENGEFULBLADE,100,-1);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_VengefulBlade" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Necrotic_Gen_L1to3_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spells_Cast_Damage_Psychic_WrathfulSmite_L1to3" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Spells_Impact_Damage_Psychic_WrathfulSmite_L1to3" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
