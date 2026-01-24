@@ -13428,7 +13428,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_PreserveLife" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric));" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and Character()" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() and not Dead() and not Tagged('UNDEAD') and not Tagged('CONSTRUCT') and Character() and HasHPPercentageEqualOrLessThan(50,context.Target);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleric_PreserveLife" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric));" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="662e013d-e5cb-4669-9a4b-771636b24aa2" />
@@ -13444,11 +13444,11 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="df9ffd5a-deb8-4a27-8e37-e7f688579fd4" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89952943-fe61-452d-81af-d0a936544231" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h58347e3dg4eb2g4ed1g9537g4f361e1644db" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4104b247g7085g45dbgba71g8734585d95cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4104b247g7085g45dbgba71g8734585d95cf" version="4" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Ally() and not Dead() and not Tagged('UNDEAD') and not Self()" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnorePreviouslyPickedEntities" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13459,7 +13459,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/2);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/2);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="2" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13470,7 +13469,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/3);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/3);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13481,7 +13479,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/4);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/4);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="4" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13492,7 +13489,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/5);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/5);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="5" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13503,7 +13499,6 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/6);" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RegainHitPoints(5*ClassLevel(Cleric)/6);" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="6" />
-        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
