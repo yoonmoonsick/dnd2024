@@ -3568,7 +3568,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="FavoredEnemyCharge:1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HuntersMark" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('FavoredEnemyCharge',1,0,false,false,context.Source)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_HuntersMark'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemyCharge,1,0))" />
       </fields>
@@ -11358,7 +11358,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1a30153e-ccb2-41a8-8acd-ea9fe68fd71e" />
         <field name="Name" type="NameTableFieldDefinition" value="PactOfTheTome_Replace" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnActionResourcesChanged" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnCast;OnTurn;OnRound;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="BoostConditions" type="StringTableFieldDefinition" value="HasActionResource('PactOfTheTome',1,0,false,false,context.Source);" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_Hex'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,PactOfTheTome,1,0));" />
       </fields>

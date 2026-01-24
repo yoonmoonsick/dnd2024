@@ -2600,7 +2600,7 @@ data "Description" "h0089d036ga5d2g2ad4g5a69gb27fac03e9cd;1"
 data "TooltipUseCosts" "FavoredEnemyCharge:1"
 data "Icon" "PassiveFeature_HuntersMark"
 data "Properties" "Highlighted;ForceShowInCC"
-data "BoostContext" "OnCast;OnTurn;OnRound"
+data "BoostContext" "OnCast;OnTurn;OnRound;OnCreate"
 data "BoostConditions" "HasActionResource('FavoredEnemyCharge',1,0,false,false,context.Source)"
 data "Boosts" "UnlockSpellVariant(SpellId('Target_HuntersMark'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,FavoredEnemyCharge,1,0))"
 
@@ -8115,7 +8115,7 @@ data "Boosts" "ActionResource(PactOfTheTome,1,0);IF(AbilityGreaterThan('Charisma
 new entry "PactOfTheTome_Replace"
 type "PassiveData"
 data "Properties" "IsHidden"
-data "BoostContext" "OnCreate;OnActionResourcesChanged"
+data "BoostContext" "OnCast;OnTurn;OnRound;OnCreate"
 data "BoostConditions" "HasActionResource('PactOfTheTome',1,0,false,false,context.Source);"
 data "Boosts" "UnlockSpellVariant(SpellId('Target_Hex'),ModifyUseCosts(Replace,SpellSlot,0,-1,SpellSlot),ModifyUseCosts(Replace,WarlockSpellSlot,0,-1,WarlockSpellSlot),ModifyUseCosts(Replace,SpellSlotsGroup,0,-1,SpellSlotsGroup),ModifyUseCosts(Add,PactOfTheTome,1,0));"
 
