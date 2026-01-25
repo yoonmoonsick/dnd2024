@@ -2579,6 +2579,8 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
   - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
+- [Bloodshard Trident](https://www.dndbeyond.com/magic-items/9445000-bloodshard-trident) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_BloodshardTrident.png?raw=true)
+  - It can be obtained by killing Gish Umr'a'ac in Crèche Y'llek.
 - [Cape of the Mountebank](https://www.dndbeyond.com/magic-items/9228376-cape-of-the-mountebank)
   - It can be obtained by killing the Dhourn in Underdark.
 - [Cloak of Arachnida](https://www.dndbeyond.com/magic-items/4604-cloak-of-arachnida)

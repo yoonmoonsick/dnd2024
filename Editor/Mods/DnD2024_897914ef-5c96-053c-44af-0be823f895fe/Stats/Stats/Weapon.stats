@@ -4003,22 +4003,6 @@
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e9c92ec1-639c-4b39-a53c-b59adf85fb6e" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_Wave" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4709e26b-54e3-4949-b670-1c1f6a0f81c2" />
-        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="53a7965a-04e4-4fca-8f24-ae0da6975097" />
-        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="3" />
-        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
-        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Wave_GlobeOfInvulnerability);" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Wave_Passive;ThrowWeaponBond_Attack_2;" />
-        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-      </fields>
-    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="305bb91a-c77f-46a6-bf58-12483a7f4acb" />
@@ -5058,6 +5042,53 @@
         <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING,100, 2);ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1);" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(1);WeaponProperty(Magical)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_ChargedLightning_Charge_OnDamage_Passive;ThrowWeaponBond_Attack_1;" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="와우킨의 쉼터" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="258f8af9-0ab5-418a-9143-f75dbf7a605f" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_BloodshardTrident" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="22e59cf8-087a-4da0-87bb-0c438411aab0" />
+        <field name="Damage Type" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
+        <field name="Damage" type="DiceTableFieldDefinition" value="1d8" />
+        <field name="WeaponRange" type="IntegerTableFieldDefinition" value="150" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="81764c3c-c7a9-49a7-b145-d31ffd5aebe1" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="ValueRounding" type="BoolTableFieldDefinition" value="True" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="1.8" />
+        <field name="Slot" type="EnumerationTableFieldDefinition" value="Melee Main Weapon" enumeration_type_name="Itemslot" version="1" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="ApplyStatus(SELF,GOB_PAIN_PRIEST_DAGGER_BLESS,100,2);" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" value="UnlockSpell(Shout_GOB_PainPriest_DaggerSpell);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="GOB_PainPriest_Dagger_Passive;ThrowWeaponBond_Attack_2;" />
+        <field name="InventoryTab" type="EnumerationTableFieldDefinition" value="Equipment" enumeration_type_name="InventoryTabs" version="1" />
+        <field name="ItemColor" type="StringTableFieldDefinition" value="DefaultGray" />
+        <field name="Unique" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Weapon Group" type="EnumerationTableFieldDefinition" value="MartialMeleeWeapon" enumeration_type_name="Weapon Group" version="1" />
+        <field name="VersatileDamage" type="DiceTableFieldDefinition" value="1d10" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="양성소 심문관의방" />
+        <field name="Weapon Properties" type="EnumerationListTableFieldDefinition" value="Thrown;Melee;Dippable;Versatile;Magical" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="Tridents;MartialWeapons" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9c92ec1-639c-4b39-a53c-b59adf85fb6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Wave" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4709e26b-54e3-4949-b670-1c1f6a0f81c2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="53a7965a-04e4-4fca-8f24-ae0da6975097" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d24c441f-7ebe-4229-8522-cf34c257ff20" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponEnchantment(2);WeaponProperty(Magical);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Wave_GlobeOfInvulnerability);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Wave_Passive;ThrowWeaponBond_Attack_2;" />
+        <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="그림자 저주 쿠오토아" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -5095,6 +5126,7 @@
         <field name="VersatileDamage" type="DiceTableFieldDefinition" value="1d10" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_TheThorns_ExplosiveThrowing_Passive;MAG_TheThorns_VeilOfTheWind_Passive;MAG_Light_TheThorns_Passive;ThrowWeaponBond_Attack_3;" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="서커스" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
