@@ -2597,6 +2597,8 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
   - It can be obtained by killing Zarys in Zhentarim Basement.
 - [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_HolyAvenger.png?raw=true)
   - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
+- [Lunar Spear](https://www.dndbeyond.com/magic-items/8806875-lunar-lances) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_LunarSpear.png?raw=true)
+  - It can be obtained by killing Warrior Gronag in Shadow Cursed Land.
 - [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
   - It can be obtained by killing the Wood Woad in the Decrepit Sanctuary.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Oathbow.png?raw=true)
