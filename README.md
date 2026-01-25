@@ -2600,7 +2600,7 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
 - [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
   - It can be obtained by killing the Wood Woad in the Decrepit Sanctuary.
 - [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Oathbow.png?raw=true)
-  - It can be purchased from A'jak'nir Jeera.
+  - It can be obtained by killing Sa'varsh Kethk in Crèche Y'llek.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
   - It can be purchased from Lann Tarv.
 - [Sword of Answering](https://www.dndbeyond.com/magic-items/9229111-sword-of-answering)
