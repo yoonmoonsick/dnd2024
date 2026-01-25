@@ -2614,7 +2614,7 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
 - [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_TrueName.png?raw=true)
   - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
-  - It can be purchased from A'jak'nir Jeera.
+  - It can be obtained by killing A'jak'nir Jeera in Crèche Y'llek.
 - [Wave](https://www.dndbeyond.com/magic-items/9229198-wave)
   - It can be obtained by killing the Cursed Kuo-Toa Chief in the Shadow-Cursed Lands.
 
