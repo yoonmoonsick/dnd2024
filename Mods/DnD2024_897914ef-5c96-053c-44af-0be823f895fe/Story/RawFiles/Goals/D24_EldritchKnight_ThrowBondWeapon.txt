@@ -1,0 +1,95 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_WeaponBond", 1)
+AND
+GetEquippedWeapon(_Player, _Item)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND",1)
+THEN
+ApplyStatus(_Player, "YMS_THROW_BOND_WEAPON", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+IsSpellActive(_Player, "Shout_WeaponBond", 1)
+AND
+GetEquippedWeapon(_Player, _Item)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND_2",1)
+THEN
+ApplyStatus(_Player, "YMS_THROW_BOND_WEAPON_2", -1.0, 1, _Player);
+
+IF
+Equipped(_Item, _Player)
+AND
+DB_Players(_Player)
+AND
+IsSpellActive(_Player, "Shout_WeaponBond", 1)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND",1)
+THEN
+ApplyStatus(_Player, "YMS_THROW_BOND_WEAPON", -1.0, 1, _Player);
+
+IF
+Equipped(_Item, _Player)
+AND
+DB_Players(_Player)
+AND
+IsSpellActive(_Player, "Shout_WeaponBond", 1)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND_2",1)
+THEN
+ApplyStatus(_Player, "YMS_THROW_BOND_WEAPON_2", -1.0, 1, _Player);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+GetEquippedWeapon(_Player, _Item)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND",0)
+THEN
+RemoveStatus(_Player, "YMS_THROW_BOND_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+EnteredCombat(_Player, _CombatID)
+AND
+DB_Players((CHARACTER)_Player)
+AND
+GetEquippedWeapon(_Player, _Item)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND_2",0)
+THEN
+RemoveStatus(_Player, "YMS_THROW_BOND_WEAPON_2", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+Equipped(_Item, _Player)
+AND
+DB_Players(_Player)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND",0)
+THEN
+RemoveStatus(_Player, "YMS_THROW_BOND_WEAPON", NULL_00000000-0000-0000-0000-000000000000);
+
+IF
+Equipped(_Item, _Player)
+AND
+DB_Players(_Player)
+AND
+HasAppliedStatus(_Item,"WEAPON_BOND_2",0)
+THEN
+RemoveStatus(_Player, "YMS_THROW_BOND_WEAPON_2", NULL_00000000-0000-0000-0000-000000000000);
+EXITSECTION
+
+ENDEXITSECTION

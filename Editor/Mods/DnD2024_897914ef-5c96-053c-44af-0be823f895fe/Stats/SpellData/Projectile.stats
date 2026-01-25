@@ -930,6 +930,38 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;Temporary" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0430f824-8f7c-4a26-81a3-6edfa26f2cd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThrowWeaponBond" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.RangedUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(HasStatus('YSRSLIDFWWADNIWHWIHLY')):SpawnExtraProjectiles(Projectile_MainHandAttack);ApplyStatus(YSRSLIDFWWADNIWHWIHLY_YWNK,100,1)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="ff93ba9c-124c-454e-ac8c-436c136bcef2,75d615be-9277-6e22-6c17-fa51981d7560,8c00238b-549d-dc71-8fcb-42ba68bae142" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Barbarian_WeaponInfusion" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="RangedUnarmedAttack" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="e8075d90-9018-4b4a-8b2e-bab0cffe2fbd,,;f2803838-31cf-471b-85d1-92fa2d0eb7c2,,;4be0751c-9fca-4c35-9337-6bf8a321c516,,;86b52093-596c-4054-bb1d-2dbdfcdc4347,,;e1726462-6f35-4551-af40-5247a314f38d,,;,,;,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Throw" enumeration_type_name="SpellActionType" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('YMS_THROW_BOND_WEAPON') or HasStatus('YMS_THROW_BOND_WEAPON_2');" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="ede0c318-7f5d-43b4-bc73-a50e0a528d55" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd8014d7g865egde14gb2ffg39a2329d0bf9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hec45abc8gb0ceg40b7g16ecg07172c471711" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dfbe5a53-1f59-45a1-91ee-90d980725c4a" />
@@ -1017,7 +1049,6 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_MobileFlourish_Melee" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1f4af623g1db3g36d3g7792g5ab11bc74a6b" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_SneakAttackProjectile" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SoulknifeEnergy:1;" />
@@ -3242,12 +3273,12 @@
         <field name="Trajectories" type="StringTableFieldDefinition" value="8c7bb016-4706-45b0-bcf4-5b59011ced12" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Poison" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Poison)" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Prepare_Damage_Poison_Gen_L1to3_Loop" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Poison_PoisonSpray_L0" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="61249cfa-bb68-4fd4-9517-b527fe7dbdce" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="11f94ff7-9c1b-431a-a26b-99e157026dee" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Poison" enumeration_type_name="Damage Type" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Prepare_Damage_Poison_Gen_L1to3" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3263,12 +3294,12 @@
         <field name="Trajectories" type="StringTableFieldDefinition" value="ada4b2b0-5e65-4257-9fea-b7376bd92d5f" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Psychic" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D8Cantrip),Psychic)" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Prepare_Damage_Force_Gen_L1to3_Loop" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Psychic_PhantasmalForce_L1to3" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="752219e2-351d-46ea-9448-3a714b3d3acc" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b24f792d-b7f1-48db-8ad5-e0cbaabdcc3a" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Psychic" enumeration_type_name="Damage Type" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="Spell_Prepare_Damage_Force_Gen_L1to3" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
