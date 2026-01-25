@@ -419,12 +419,13 @@ data "StatsFunctors" "IF(HasDamageDoneForType(DamageType.Acid)):DealDamage(4,Aci
 new entry "YMS_Abjuration"
 type "PassiveData"
 
-new entry "YMS_BladeWard_Attacker"
+new entry "YMS_Divination "
 type "PassiveData"
-data "DisplayName" "h77b9ae20ge545g4842gbe2fg8096e232c118;1"
-data "Description" "h4a6be5e6g7fdcg58fag7034g268819cb8172;3"
-data "Properties" "IsHidden"
-data "Boosts" "IF(HasBladeWardCondition()):RollBonus(Attack, -1d4);"
+
+new entry "YMS_TrueStrike_Owner"
+type "PassiveData"
+data "StatsFunctorContext" "OnAttack;OnCast;OnDamage"
+data "StatsFunctors" "ApplyEquipmentStatus(MeleeMainHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(MeleeOffHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(RangedMainHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(RangedOffHand,YMS_TRUE_STRIKE_OFF,100,0)"
 
 new entry "YMS_Illusion"
 type "PassiveData"
@@ -2774,12 +2775,6 @@ type "PassiveData"
 using "Illusion_Disappear"
 data "StatsFunctorContext" "OnCreate"
 data "StatsFunctors" "ApplyStatus(SANCTUARY_DUPLICITY,100,-1)"
-
-new entry "TrueStrikeOwner"
-type "PassiveData"
-data "DisplayName" "h7ccf8c10gf790g421aga43agdb3994f68bc3;1"
-data "Properties" ""
-data "Boosts" "IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Strength)):RollBonus(Attack,SpellCastingAbilityModifier- max(0,StrengthModifier));IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Dexterity)):RollBonus(Attack,SpellCastingAbilityModifier- max(0,DexterityModifier));"
 
 new entry "YMS_Artificer"
 type "PassiveData"

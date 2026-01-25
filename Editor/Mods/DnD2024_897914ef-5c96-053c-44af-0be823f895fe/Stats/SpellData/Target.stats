@@ -16564,7 +16564,13 @@
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_TrueStrike_Weapon;Target_TrueStrike_Radiant;Target_TrueStrike_Radiant_Sneak;Projectile_TrueStrike_Weapon;Projectile_TrueStrike_Radiant;Projectile_TrueStrike_Radiant_Sneak;" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,YMS_TRUE_STRIKE_OWNER,100, -1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6844153f-e0ff-413b-aa02-a4763577d7bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="015f65c0-c30e-4213-8b98-2a22b317c9b6" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -16579,13 +16585,13 @@
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(WeaponAttackRollAbility(Ability.Dexterity) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier), MainMeleeWeaponDamageType);IF(WeaponAttackRollAbility(Ability.Strength) ):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,StrengthModifier), MainMeleeWeaponDamageType);IF(not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4)):DealDamage(LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Icon" type="StringTableFieldDefinition" value="Target_MainHandAttack" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Melee" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;HasSomaticComponent;IsSpell;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
@@ -16600,7 +16606,6 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="66bfefab-b458-455f-8ff4-e0546c1579b4" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,YMS_TRUE_STRIKE_OWNER,100, -1);" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TrueStrike" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Druid_LuminousArrow_L1to3" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Druid_LuminousArrow_L1to3" />
@@ -16610,12 +16615,12 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3e21007a-76ec-4cc2-a659-3c4c1886a004" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);" />
         <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="MeleeMainWeaponRange" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0),Radiant);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier),Radiant);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon,Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0),Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier),Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon,Psychic);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0)+LevelMapValue(TrueStrike),Radiant);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike),Radiant);IF(not HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike),Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Strength)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(StrengthModifier,0)+LevelMapValue(TrueStrike),Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike),Psychic);IF(HasStatus('PSYCHIC_SPELLS',context.Source) and CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike),Psychic);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike),Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike),Psychic);ExecuteWeaponFunctors(MainHand);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead() and (Character() or Item())" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="0" />
@@ -16625,7 +16630,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h09d8e889g3c82gba35g3ce6ge9c92d81303b" version="1" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Melee" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;6606c30b-be1c-4f17-ae6b-1a591c80b18c,366693ee-d97f-4294-a4dd-a2145ddc4e6a,9f2d32b9-529a-4b75-b3df-6e1ae1395280;f4ac302b-1569-404f-bd52-1fe443e265df,479ee5da-2967-41e1-b7d1-a94e864a5f25,79323098-edb3-4993-ba50-9b5f705e9878;e8a5c57f-855b-4227-acaa-11e8ce8d7d64,b5cb923d-0c08-4c20-89a9-44b9bf98c6cb,6282d127-0c06-4365-9d53-6f32ef350127;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;2b81c18b-9698-4262-a623-932c2bb1296d,ecbf9949-3b33-432c-b735-e47aaed0924a,e71a7c08-fdc1-4a0b-9a90-1c793c58553c;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;HasSomaticComponent;IsSpell;CannotTargetTerrain" enumeration_type_name="SpellFlagList" version="1" />
@@ -16639,7 +16644,6 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="66bfefab-b458-455f-8ff4-e0546c1579b4" />
         <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="3f463e65-07d8-4ece-92fb-0a82cb1d8678" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,YMS_TRUE_STRIKE_OWNER,100, -1);" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_TrueStrike" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Druid_LuminousArrow_L1to3" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Druid_LuminousArrow_L1to3" />
@@ -16650,10 +16654,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4a308920-ad2f-4ff8-842b-e49646b40460" />
         <field name="Name" type="NameTableFieldDefinition" value="TrueStrike_Radiant_Sneak" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e21007a-76ec-4cc2-a659-3c4c1886a004" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ExecuteWeaponFunctors(MainHand);IF(not CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+SpellCastingAbilityModifier-max(0,DexterityModifier)+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);IF(not CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(SneakAttack),Radiant);IF(CharacterLevelGreaterThan(4) and not WeaponAttackRollAbility(Ability.Strength) and not WeaponAttackRollAbility(Ability.Dexterity)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);IF(HasPassive('SanguineThief_3_StealBlood', context.Source)):ApplyStatus(SELF,STEAL_BLOOD,100,1);ApplyStatus(CUNNING_STRIKE,100,0);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Radiant);IF(HasStatus('PSYCHIC_SPELLS',context.Source)):DealDamage(MainMeleeWeapon+LevelMapValue(TrueStrike)+LevelMapValue(SneakAttack),Psychic);ExecuteWeaponFunctors(MainHand);IF(HasPassive('SanguineThief_3_StealBlood', context.Source)):ApplyStatus(SELF,STEAL_BLOOD,100,1);ApplyStatus(CUNNING_STRIKE,100,0);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and ( (((HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5)) and not HasDisadvantage(AttackType.MeleeWeaponAttack)) and not Tagged('INANIMATE')) or (HasPassive('SneakAttackSwitch',context.Source)  and (HasAdvantage(AttackType.MeleeWeaponAttack) or HasAllyWithinRange('SG_Incapacitated',1.5) or (not HasEnemyWithinRange('SG_Incapacitated',1.5, nil, 2,context.Source,context.Target) and not HasAllyWithinRange('SG_Incapacitated',1.5, nil,false,context.Source,context.Target))) and not HasDisadvantage(AttackType.MeleeWeaponAttack) and not Tagged('INANIMATE')));" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_SneakAttack_Melee" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8+SpellCastingAbilityModifier, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, Radiant);DealDamage(LevelMapValue(TrueStrike),Radiant);DealDamage(LevelMapValue(SneakAttack),Radiant);" />
         <field name="HitCosts" type="StringTableFieldDefinition" value="SneakAttack_Charge:1;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53ad1006ge033g808fgdcecgcc857a028774" version="1" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;6dfe95cd-e8f6-4e6f-854b-b7d2886f5dcd,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />

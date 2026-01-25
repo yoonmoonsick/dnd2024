@@ -606,14 +606,18 @@
         <field name="Name" type="NameTableFieldDefinition" value="YMS_Abjuration" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ce2fc00-243a-4b32-808d-27e8f8059d51" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Divination " />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ddc748be-6232-454c-8c8f-0ddc592876ef" />
-        <field name="Name" type="NameTableFieldDefinition" value="YMS_BladeWard_Attacker" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasBladeWardCondition()):RollBonus(Attack, -1d4);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77b9ae20ge545g4842gbe2fg8096e232c118" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="3" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5740824f-2f1c-4f36-a5ed-d9ba217e8c49" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_TrueStrike_Owner" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnCast;OnDamage" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MeleeMainHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(MeleeOffHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(RangedMainHand,YMS_TRUE_STRIKE_OFF,100,0);ApplyEquipmentStatus(RangedOffHand,YMS_TRUE_STRIKE_OFF,100,0)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -3817,15 +3821,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d409d52c-cf4c-4890-bd3c-0917c63a066f" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SANCTUARY_DUPLICITY,100,-1)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="def659cb-9a64-4880-84bd-05b03f0dc74c" />
-        <field name="Name" type="NameTableFieldDefinition" value="TrueStrikeOwner" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7ccf8c10gf790g421aga43agdb3994f68bc3" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Strength)):RollBonus(Attack,SpellCastingAbilityModifier- max(0,StrengthModifier));IF(TrueStrikeCheck() and WeaponAttackRollAbility(Ability.Dexterity)):RollBonus(Attack,SpellCastingAbilityModifier- max(0,DexterityModifier));" />
       </fields>
     </stat_object>
     <stat_object color="#FFB8860B" is_substat="false">

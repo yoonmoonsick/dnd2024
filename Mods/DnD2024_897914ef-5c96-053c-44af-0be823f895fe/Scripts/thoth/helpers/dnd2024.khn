@@ -218,8 +218,16 @@ function IllusionSpellCheck()
     return IsSpellOfSchool(SpellSchool.Illusion)
 end
 
+function TrueStrikeMelee()
+    return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Target_TrueStrike_Radiant_Sneak') | SpellId('Target_MAG_TrueStrike_Radiant')
+end
+
+function TrueStrikeRanged()
+    return SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Radiant_Sneak')
+end
+
 function TrueStrikeCheck()
-    return SpellId('Target_TrueStrike_Weapon') | SpellId('Target_TrueStrike_Radiant') | SpellId('Target_TrueStrike_Radiant_Sneak') | SpellId('Projectile_TrueStrike_Weapon') | SpellId('Projectile_TrueStrike_Radiant') | SpellId('Projectile_TrueStrike_Radiant_Sneak') | SpellId('Target_MAG_TrueStrike_Radiant')
+    return TrueStrikeMelee() | TrueStrikeRanged()
 end
 
 function BreathWeaponCheck()

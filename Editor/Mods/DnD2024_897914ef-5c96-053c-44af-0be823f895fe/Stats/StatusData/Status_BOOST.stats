@@ -689,7 +689,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="YMS_CANTRIP" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFFA500" is_substat="false">
+    <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0f49778-fa25-426c-ac50-7a043f557a72" />
         <field name="Name" type="NameTableFieldDefinition" value="YMS_TRUE_STRIKE_OWNER" />
@@ -698,10 +698,37 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
         <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_OWNER" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_TrueStrike_Weapon);UnlockSpell(Projectile_TrueStrike_Weapon);UnlockSpell(Target_TrueStrike_Radiant);UnlockSpell(Projectile_TrueStrike_Radiant);IF(ClassLevelHigherOrEqualThan(1,'Rogue')):UnlockSpell(Target_TrueStrike_Radiant_Sneak);IF(ClassLevelHigherOrEqualThan(1,'Rogue')):UnlockSpell(Projectile_TrueStrike_Radiant_Sneak);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="Passives" type="StringTableFieldDefinition" value="TrueStrikeOwner" />
-        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="YMS_TrueStrike_Owner;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a0a6e11-8fb5-4aa5-92df-ec351c5e0f19" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_TRUE_STRIKE_ON" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_ON" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponAttackRollAbilityOverride(SpellCastingAbility);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6efcb1c2-c750-43b0-b754-30ea7a8d2077" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_TRUE_STRIKE_ON_RADIANT" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_ON" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponAttackRollAbilityOverride(SpellCastingAbility);WeaponDamageTypeOverride(Radiant);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3452988f-8bb6-4033-9791-b5575b836828" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_TRUE_STRIKE_OFF" />
+        <field name="StackId" type="StringTableFieldDefinition" value="YMS_TRUE_STRIKE_ON" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="3" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3807,7 +3834,8 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="3" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:IF(not HasStatus('BLADE_WARD')):ApplyStatus(AI_HELPER_BLADEWARD,100,2);ApplyStatus(WARCASTER_BLADEWARD,100,-1);" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="30" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead()):ApplyStatus(BLADE_WARD_AURA)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3817,7 +3845,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d57bafcc-50b8-40aa-b3bf-8cd6718233e1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="30" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead()):ApplyStatus(BLADE_WARD_AURA)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3827,7 +3856,26 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="281480ec-7797-4920-a5cf-f5d5efa3eeec" />
         <field name="Boosts" type="StringTableFieldDefinition" value="AC(0);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a6be5e6g7fdcg58fag7034g268819cb8172" version="2" />
-        <field name="Passives" type="StringTableFieldDefinition" value="YMS_BladeWard;" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="30" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Dead()):ApplyStatus(BLADE_WARD_AURA)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dd22000f-1bc3-4e9f-9cb2-72f30c1d9644" />
+        <field name="Name" type="NameTableFieldDefinition" value="BLADE_WARD_AURA" />
+        <field name="StackId" type="StringTableFieldDefinition" value="BLADE_WARD_AURA" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasBladeWardCondition()):RollBonus(Attack, -1d4);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e20e754e-cd47-45ad-962e-47c59af108b5" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Passives" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisablePortraitIndicator;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
