@@ -7346,9 +7346,9 @@ data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusApply
 new entry "GOB_PainPriest_Dagger_Passive"
 type "PassiveData"
 using "GOB_PainPriest_Dagger_Passive"
-data "StatsFunctorContext" "OnDamage;OnStatusApply"
-data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));"
-data "StatsFunctors" "ApplyStatus(SELF,GOB_PAIN_PRIEST_DAGGER_BLESS,100,2)"
+data "StatsFunctorContext" ""
+data "Conditions" ""
+data "StatsFunctors" ""
 
 new entry "MAG_WYR_Orin_Bhaalist_Dagger_Passive"
 type "PassiveData"
