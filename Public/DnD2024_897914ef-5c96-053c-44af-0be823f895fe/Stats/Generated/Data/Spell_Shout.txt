@@ -6396,19 +6396,6 @@ data "SpellProperties" "ApplyStatus(EVASIVE_FOOTWORK,100,1);IF(HasPassive('Feat_
 data "Description" "hfea88186g9bb3gd4d4gbe61gb1923f8de04f;1"
 data "UseCosts" "BonusActionPoint:1;SuperiorityDie:1;"
 
-new entry "Shout_FindSteed_Dismount"
-type "SpellData"
-data "SpellType" "Shout"
-data "SpellProperties" "RemoveStatus(MOUNTING_DRAGON);ApplyStatus(PRONE,100,1);"
-data "TargetConditions" "Player();"
-data "SpellFlags" "ImmediateCast"
-
-new entry "Shout_Dragon_Dismount"
-type "SpellData"
-data "SpellType" "Shout"
-using "Shout_FindSteed_Dismount"
-data "SpellProperties" "RemoveStatus(MOUNTING_KNIGHT);ApplyStatus(PRONE,100,1);"
-
 new entry "Shout_PsiPoweredLeap"
 type "SpellData"
 data "SpellType" "Shout"
@@ -6662,6 +6649,13 @@ type "SpellData"
 data "SpellType" "Shout"
 using "Shout_YMS_Resotre_Oath"
 data "DisplayName" "h77a7c6e9gb938g42dag32d1g4937381df955;1"
+
+new entry "Shout_FindSteed_Dismount"
+type "SpellData"
+data "SpellType" "Shout"
+data "SpellProperties" "RemoveStatus(MOUNTING_DRAGON);ApplyStatus(PRONE,100,1);"
+data "TargetConditions" "Player();"
+data "SpellFlags" "ImmediateCast"
 
 new entry "Shout_Conquest_3_ConqueringPresence"
 type "SpellData"
