@@ -3649,7 +3649,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="57c81a71-acd5-4238-b1d5-632a7497de77" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and HasPassive('PreciseHunter',context.Source)):Advantage(AttackRoll);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsAttack()):DamageBonus(1d6,Force);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and HasPassive('PreciseHunter',context.Source)):Advantage(AttackRoll);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsSpellAttack()):DamageBonus(1d6,Force);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsWeaponAttack()):CharacterWeaponDamage(1d6,Force);IF(HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d6,Force);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('HUNTERS_MARK',context.Target,context.Source) and IsAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerAttack" enumeration_type_name="PassiveFlags" version="1" />
