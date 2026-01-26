@@ -2780,7 +2780,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SavageAttacker" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c2e1908b-68d1-4b58-921f-726d73f30ccc" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he02ea2a4g9616gbffdg8ef0ge35ff9808e8a" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Reroll(MeleeWeaponDamage,20,false);Reroll(RangedWeaponDamage,20,false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack()):Reroll(Damage,20,false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -2791,7 +2791,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27f870c6g410dge0adg82cbga51af4b6373d" version="6" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TavernBrawler" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Reroll(MeleeUnarmedDamage,20,false);Reroll(RangedUnarmedDamage,20,false);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsUnarmedAttack()):Reroll(Damage,20,false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
