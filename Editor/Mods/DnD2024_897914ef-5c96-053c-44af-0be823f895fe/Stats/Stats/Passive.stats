@@ -7255,7 +7255,7 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7b086b07g6276gd8c5g3e88gd84cdabec267" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Rogue_SanguineThief_3_StolenPower" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ForceShowInCC" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_SanguinConversion);Tag(ARCANE_TRICKSTER);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(ARCANE_TRICKSTER);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7887,9 +7887,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="Sangromancer_3_FullBlooded" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a025d214-1102-4153-b585-5ed1039526a5" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_BloodRushD12') or SpellId('Target_BloodBaneRuneD12') or SpellId('Target_BoilBloodD12') or SpellId('Target_ConsumptionD12') or SpellId('Shout_CrimsonLashD12') or SpellId('Target_SomnolenceD12') or SpellId('Shout_BloodWispD12') or SpellId('Shout_SanguineShieldD12') or SpellId('Shout_TheftOfVitaeD12') or SpellId('Target_ExtractIronD12') or SpellId('Target_CircleOfScarletD12'),ModifyUseCosts(Replace,SangromancyDie12,1,-1,HitPointDie12));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Shout_BloodRushD12') or SpellId('Target_BloodBaneRuneD12') or SpellId('Target_BoilBloodD12') or SpellId('Target_ConsumptionD12') or SpellId('Shout_CrimsonLashD12') or SpellId('Target_SomnolenceD12') or SpellId('Shout_BloodWispD12') or SpellId('Shout_SanguineShieldD12') or SpellId('Shout_TheftOfVitaeD12') or SpellId('Target_ExtractIronD12') or SpellId('Target_CircleOfScarletD12'),ModifyUseCosts(Replace,HitPointDie12,1,-1,HitPointDie12));" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnShortRest" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SangromancyDie12,1,0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(HitPointDie12,1,0)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -7900,7 +7900,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IncreaseMaxHP(Level);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('SangromancyDie12') or HasUseCosts('SangromancyDie8') or HasUseCosts('HitPointDie6') or HasUseCosts('HitPointDie8') or HasUseCosts('HitPointDie10') or HasUseCosts('HitPointDie12');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('HitPointDie6') or HasUseCosts('HitPointDie8') or HasUseCosts('HitPointDie10') or HasUseCosts('HitPointDie12');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RegainHitPoints(SELF,SpellPowerLevel);" />
       </fields>
     </stat_object>
