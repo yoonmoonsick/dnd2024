@@ -58,6 +58,17 @@ GetEquippedWeapon(_Player, _Item)
 THEN
 ApplyStatus(_Player, "YMS_TRUE_STRIKE_OWNER", -1.0, 1, _Player);
 ApplyStatus(_Item, "YMS_TRUE_STRIKE_ON_RADIANT", -1.0, 1, _Player);
+
+IF
+StatusApplied(_Item, "YMS_TRUE_STRIKE_OFF", _, _)
+THEN
+RealtimeObjectTimerLaunch((GUIDSTRING)_Item, "TrueStrike_Off_Timer", 500);
+
+IF
+ObjectTimerFinished((GUIDSTRING)_Item, "TrueStrike_Off_Timer")
+THEN
+RemoveStatus(_Item, "YMS_TRUE_STRIKE_ON", NULL_00000000-0000-0000-0000-000000000000);
+RemoveStatus(_Item, "YMS_TRUE_STRIKE_ON_RADIANT", NULL_00000000-0000-0000-0000-000000000000);
 EXITSECTION
 
 ENDEXITSECTION
