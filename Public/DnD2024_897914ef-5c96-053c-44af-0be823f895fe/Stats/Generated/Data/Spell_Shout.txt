@@ -2243,6 +2243,13 @@ data "DescriptionParams" "DealDamage(6d8,Radiant);DealDamage(6d8,Necrotic)"
 data "UseCosts" "ActionPoint:1;SpellSlotsGroup:1:1:6;"
 data "PowerLevel" "6"
 
+new entry "Shout_HeroesFeast"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_HeroesFeast"
+data "SpellProperties" "ApplyStatus(HEROES_FEAST,100,14400);GROUND:Summon(3d8889c6-936b-4009-955c-d1f3aef46df5, 10, , , ,HEROES_FEAST_CHEST);"
+data "TooltipStatusApply" "ApplyStatus(HEROES_FEAST,100,14400)"
+
 new entry "Shout_YMS_Evocation"
 type "SpellData"
 data "SpellType" "Shout"
