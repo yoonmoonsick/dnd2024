@@ -246,7 +246,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
   - You restore Heroic Inspiration whenever you finish a Short Rest.
 - Level 1: Versatile
-  - You gain an Origin feat of your choice: Alert, Healer, Lucky, Magic Initiate, Performer, Savage Attacker, Skilled, Tavern Brawler, Tough
+  - You gain an Origin feat of your choice.
 
 ## [Kalashtar](https://www.dndbeyond.com/sources/dnd/erftlw/character-creation#Kalashtar)
 Choose **Kalashtar** from the list of **Versatile** passives available to **Humans**.

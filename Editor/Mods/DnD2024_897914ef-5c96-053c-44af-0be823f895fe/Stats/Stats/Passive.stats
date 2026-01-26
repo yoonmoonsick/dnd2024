@@ -2776,16 +2776,22 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e2ecbb2-d74e-4e44-878d-991e62721b6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="SavageAttacker" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c2e1908b-68d1-4b58-921f-726d73f30ccc" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he02ea2a4g9616gbffdg8ef0ge35ff9808e8a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Reroll(MeleeWeaponDamage,20,false);Reroll(RangedWeaponDamage,20,false);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ef59686d-b2ed-484f-b31f-b520def7f333" />
         <field name="Name" type="NameTableFieldDefinition" value="TavernBrawler" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1a3b6583g891fg4caag9095g3f557dbee5bd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27f870c6g410dge0adg82cbga51af4b6373d" version="5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27f870c6g410dge0adg82cbga51af4b6373d" version="6" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TavernBrawler" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;ToggledDefaultOn;ToggledDefaultAddToHotbar;IsToggled" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PUSH_15,100,0);ApplyStatus(SELF,TAVERN_BRAWLER_COOLDOWN,100,1)" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeUnarmedAttack()):Reroll(Damage,1,false);CharacterUnarmedDamage(1d4);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="(IsMeleeUnarmedAttack() or SpellId('Throw_ImprovisedWeapon') ) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('TAVERN_BRAWLER_COOLDOWN',context.Source) and TargetSizeEqualOrSmaller(Size.Large)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Reroll(MeleeUnarmedDamage,20,false);Reroll(RangedUnarmedDamage,20,false);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -3193,20 +3199,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="3e687354-b55c-40e4-bc8d-9e9975abaafb" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hae4a4f90g3856gdbe1g4694gab6450632e51" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ACOverrideFormula(10,true,Dexterity,Charisma)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="502f8499-0b1d-41b8-9759-f8a603407d88" />
-        <field name="Name" type="NameTableFieldDefinition" value="SavageAttacker" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c2e1908b-68d1-4b58-921f-726d73f30ccc" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h281fb7fagf645ge849g14d1gb9c8dd5290f1" version="2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(AttackingWithMeleeWeapon(context.Source)):Reroll(Damage,20,false);IF(AttackingWithRangedWeapon(context.Source)):Reroll(Damage,20,false);" />
-        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnStatusRemoved;OnStatusApply;OnStatusApplied;OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasStatus('SAVAGE_ATTACKER_COOLDOWN',context.Source)" />
-        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit)" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,SAVAGE_ATTACKER_COOLDOWN,100,1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
