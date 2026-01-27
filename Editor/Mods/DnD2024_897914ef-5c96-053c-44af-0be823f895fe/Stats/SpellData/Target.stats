@@ -13904,19 +13904,18 @@
         <field name="Name" type="NameTableFieldDefinition" value="Dragonshape_Bite" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="32ffe40f-c5b8-4fec-b926-3733ba711f67" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94118a36ga153g4141ga739g781284040ed6" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h94118a36ga153g4141ga739g781284040ed6" version="1" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="TargetCeiling" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetFloor" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="0" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d12+WisdomModifier, Piercing);" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Piercing);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="AoEConditions" type="StringTableFieldDefinition" value="not Character() and not Dead();" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_VampireBite" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d12+WisdomModifier, Piercing);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Piercing);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="CastSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Alioramus_Bite" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Impact_Alioramus_Bite" />
@@ -13939,12 +13938,12 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="0" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasPassive('DragonCircle_6_ImprovedDragonShape');" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(max(1,2d6+WisdomModifier),Slashing);Cast2[DealDamage(1d6+WisdomModifier,Piercing);];" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Slashing);Cast2[DealDamage(UnarmedDamage,Piercing);];" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="AoEConditions" type="StringTableFieldDefinition" value="not Character() and not Dead();" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d6+WisdomModifier,Slashing);DealDamage(1d6+WisdomModifier,Piercing)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage,Slashing);&#xD;&#xA;Cast2[DealDamage(UnarmedDamage,Piercing)];" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Slashing" enumeration_type_name="Damage Type" version="1" />
