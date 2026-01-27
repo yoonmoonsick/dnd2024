@@ -2688,7 +2688,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts),Necrotic)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Necromancy_Harm" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Item() and IsMeleeAttack() and Self(context.Source,context.Observer) and HasDamageEffectFlag(DamageFlags.Hit) and IsUnarmedAttack() and not IsKillingBlow() and not AnyEntityIsItem()" />
-        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+WisdomModifier,Necrotic);IF(HasPassive('PhysiciansTouch_New',context.Source)):ApplyStatus(POISONED,100,2);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(MartialArts)+WisdomModifier,Necrotic);IF(HasPassive('Mercy_6_PhysiciansTouch',context.Source)):ApplyStatus(POISONED,100,2);" />
         <field name="Cost" type="StringTableFieldDefinition" value="KiPoint:1;Interrupt_HandOfHarm:1" />
         <field name="Stack" type="StringTableFieldDefinition" value="HandOfHarm" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
