@@ -14,34 +14,29 @@ Please confirm the following before creating this issue:
 - [ ] This bug occurs **without using other mods**.
 - [ ] This bug can be reproduced in a **new game** (if related to leveling up or respeccing).
 
----
 
 ## Bug Description
-Provide a clear and concise description of what the bug is.
+> Provide a clear and concise description of what the bug is.
 
----
 
 ## Reproduction Steps
-Describe exactly how to reproduce the bug, step by step.
+> Describe exactly how to reproduce the bug, step by step.
 
 1.  
 2.  
 3.  
 
----
 
 ## Expected Result
-What did you expect to happen?
+> What did you expect to happen?
 
----
 
 ## Actual Result
-What actually happened?
+> What actually happened?
 
----
 
 ## Environment
-Please provide as much relevant information as possible.
+> Please provide as much relevant information as possible.
 
 - Location:
 - Character/Class:
@@ -51,7 +46,6 @@ Please provide as much relevant information as possible.
 - Difficulty:
 - Any other relevant details:
 
----
 
 ## Additional Information
 (Optional) Screenshots, videos, combat logs, or any extra context that may help identify the issue.
