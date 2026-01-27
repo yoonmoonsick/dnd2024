@@ -16,11 +16,11 @@ Please confirm the following before creating this issue:
 
 
 ## Bug Description
-> Provide a clear and concise description of what the bug is.
+<!-- Provide a clear and concise description of what the bug is. -->
 
 
 ## Reproduction Steps
-> Describe exactly how to reproduce the bug, step by step.
+<!-- Describe exactly how to reproduce the bug, step by step. -->
 
 1.  
 2.  
@@ -28,15 +28,15 @@ Please confirm the following before creating this issue:
 
 
 ## Expected Result
-> What did you expect to happen?
+<!-- What did you expect to happen? -->
 
 
 ## Actual Result
-> What actually happened?
+<!-- What actually happened? -->
 
 
 ## Environment
-> Please provide as much relevant information as possible.
+<!-- Please provide as much relevant information as possible. -->
 
 - Location:
 - Character/Class:
