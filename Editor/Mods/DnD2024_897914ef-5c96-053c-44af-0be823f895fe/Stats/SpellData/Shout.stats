@@ -8781,10 +8781,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="97d6f8f8-52ce-4acb-a53a-fd003f468855" />
         <field name="Name" type="NameTableFieldDefinition" value="Bladesong" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c66dd2b3-eab8-40e8-93de-7e6b25a78437" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdda722b6g7ff7g1492gb02agd399ba9301bf" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdda722b6g7ff7g1492gb02agd399ba9301bf" version="4" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;ArcaneRecoveryPoint:1;" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5e4e1fa4gf2e5gad4eg2cfcga149caed72d8" version="1" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5e4e1fa4gf2e5gad4eg2cfcga149caed72d8" version="5" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(3)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not IsWeaponOfProficiencyGroup('Glaives|Greataxes|Greatclubs|Greatswords|Halberds|Mauls|Pikes', GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) and not WearingArmor() and not HasShieldEquipped() and IsProficientWithEquippedWeapon()" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnEquip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
