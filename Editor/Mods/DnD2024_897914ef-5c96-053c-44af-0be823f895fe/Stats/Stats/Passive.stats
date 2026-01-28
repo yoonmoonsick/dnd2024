@@ -10702,7 +10702,7 @@
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ShieldMasterResource" />
         <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_ShieldShove" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not IsKillingBlow() and HasActionResource('ShieldMasterResource', 1, 0, false, false, context.Source) and HasShieldEquipped(context.Source) and not Item() and TargetSizeEqualOrSmaller(Size.Large) and IsMeleeWeaponAttack() and not IsMiss();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PUSH_15, 100, 0);UseActionResource(SELF,ShieldMasterResource,1,0)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="ShieldMaster_Push" />
@@ -10718,7 +10718,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9bceffeg9087gf8a1gf946gbcdc76cde679" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ShieldMaster_Shove" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not SavingThrow(Ability.Strength, ManeuverSaveDC())):ApplyStatus(PRONE, 100, 1));UseActionResource(SELF,ShieldMasterResource,1,0)" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar;Temporary" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
