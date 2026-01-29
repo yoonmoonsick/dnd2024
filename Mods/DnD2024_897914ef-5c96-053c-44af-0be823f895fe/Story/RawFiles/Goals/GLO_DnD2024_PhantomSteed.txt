@@ -28,7 +28,7 @@ RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
 RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
 
 IF
-CastSpell((CHARACTER)_Player, "Shout_PhantomSteed_Dismount",_,_,_)
+StatusApplied((CHARACTER)_Player, "PRONE_FALL_FROM_MOUNT", _Causee, _)
 AND
 DB_DnD2024_FindSteed(_Steed, _Player)
 AND

@@ -4550,7 +4550,7 @@ type "PassiveData"
 data "Properties" "IsHidden;OncePerTurn"
 data "StatsFunctorContext" "OnDamaged"
 data "Conditions" "not HasPassive('MountedCombatant',context.Target);"
-data "StatsFunctors" "IF(not SavingThrow(Ability.Dexterity, 8)):TriggerRandomCast(1,,DismountSteed);"
+data "StatsFunctors" "IF(not SavingThrow(Ability.Dexterity, 8)):ApplyStatus(PRONE_FALL_FROM_MOUNT,100,1);"
 
 new entry "MountedSteed"
 type "PassiveData"
