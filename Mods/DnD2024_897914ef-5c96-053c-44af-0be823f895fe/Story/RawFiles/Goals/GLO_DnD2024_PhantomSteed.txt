@@ -11,6 +11,7 @@ THEN
 DB_DnD2024_FindSteed(_Steed, _Player);
 ApplyStatus(_Player, "MOUNTING_PHANTOM_STEED", -1.0, 1);
 ApplyStatus(_Steed, "STEED_MOUNTED_BY_CHAR", -1.0, 1);
+RemovePartyFollower(_Steed, _Player);
 SetOnStage(_Steed, 0);
 
 IF
@@ -21,6 +22,7 @@ AND
 IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
 THEN
 SetOnStage(_Steed, 1);
+AddPartyFollower(_Steed, _Player);
 TeleportTo(_Steed, _Player);
 RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
 RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
@@ -33,6 +35,7 @@ AND
 IsTagged(_Steed, (TAG)PHANTOM_STEED_5e4a8c54-6c5b-4fe7-87e9-3fe5c2eca9fd, 1)
 THEN
 SetOnStage(_Steed, 1);
+AddPartyFollower(_Steed, _Player);
 TeleportTo(_Steed, _Player);
 RemoveStatus(_Player, "MOUNTING_PHANTOM_STEED");
 RemoveStatus(_Steed, "STEED_MOUNTED_BY_CHAR");
