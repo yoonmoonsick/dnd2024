@@ -6996,6 +6996,18 @@ data "StatsFunctors" "ApplyEquipmentStatus(SELF, RangedMainHand, CONCEALED_SHOT,
 new entry "YMS_Items"
 type "PassiveData"
 
+new entry "GOB_PainPriest_Dagger_Passive"
+type "PassiveData"
+using "GOB_PainPriest_Dagger_Passive"
+data "StatsFunctorContext" ""
+data "Conditions" ""
+data "StatsFunctors" ""
+
+new entry "YMS_BloodshardTrident_Passive"
+type "PassiveData"
+using "GOB_PainPriest_Dagger_Passive"
+data "DisplayName" "h8dd636c7g37a8g4d40gb0afga1722fbaa09c;1"
+
 new entry "MAG_Legendary_PsionicWeapon_Passive"
 type "PassiveData"
 using "MAG_Legendary_PsionicWeapon_Passive"
@@ -7329,13 +7341,6 @@ type "PassiveData"
 using "MAG_LC_BurnOnDamage_Scimitar_Passive"
 data "StatsFunctorContext" "OnDamage;OnStatusApply"
 data "Conditions" "(not context.HasContextFlag(StatsFunctorContext.OnStatusApply) and AttackedWithPassiveSourceWeapon() and Enemy()) or (context.HasContextFlag(StatsFunctorContext.OnStatusApply) and (StatusId('NICK') or StatusId('NICK_ARCANE_SYNERGY') or StatusId('NICK_RAGE') or StatusId('NICK_ARCANE_SYNERGY_RAGE')));"
-
-new entry "GOB_PainPriest_Dagger_Passive"
-type "PassiveData"
-using "GOB_PainPriest_Dagger_Passive"
-data "StatsFunctorContext" ""
-data "Conditions" ""
-data "StatsFunctors" ""
 
 new entry "MAG_WYR_Orin_Bhaalist_Dagger_Passive"
 type "PassiveData"
