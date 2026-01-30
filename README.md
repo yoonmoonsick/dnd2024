@@ -12,28 +12,37 @@
 
 ## Bug Report Guidelines
 
-Following these guidelines helps me focus on fixing bugs efficiently. Reports that do not follow these rules may be removed without a separate response.
+Following these guidelines helps keep bug fixing efficient and focused. Reports that do not follow these rules may be closed or removed without a separate response.
 
-* Where to Report
-  * Please report bugs **only via GitHub Issues**:
-  [https://github.com/yoonmoonsick/dnd2024/issues](https://github.com/yoonmoonsick/dnd2024/issues)
-* What **Not** to Report
-  * **Do not report bugs that occur when this mod is used together with other mods.**
-    This mod is not developed with compatibility in mind.
-  * **Do not report crashes that occur during respeccing or leveling up** unless the same issue can be reproduced in a **new game**.
-  * **Do not submit duplicate or very similar bug reports.**
-* Before Creating a New Issue (Important)
-  * **Always search existing issues first.**
-  * If you find an issue that is identical or closely related (including issues marked as **New issue**, **Being looked at**, or **Needs more info**):
-    * **Do NOT create a new issue.**
-    * **Add your findings, reproduction steps, or additional details as a comment on the existing issue instead.**
-  * Creating duplicate issues slows down investigation and may result in the new issue being closed or removed.
-* Reporting Rules: Please create **one issue per bug**. Do not combine multiple, unrelated problems into a single report.
-* How to Write a “Good” Bug Report
-  1. **Title**: Clearly and concisely summarize the bug in a single sentence.
-  2. **Reproduction Steps**: Describe step by step how the bug occurs so it can be reliably reproduced.
-  3. **Expected vs. Actual Results**: Clearly explain what you expected to happen and what actually happened.
-  4. **Environment**: Include all relevant context, such as location, class, character, level, and any other details that may affect the issue.
+### Where to Report
+
+* Bugs must be reported **only via GitHub Issues**: [https://github.com/yoonmoonsick/dnd2024/issues](https://github.com/yoonmoonsick/dnd2024/issues)
+
+### What Not to Report
+
+* Bugs that occur **when this mod is used together with other mods**. This mod is not developed with compatibility in mind.
+* Crashes or critical issues that occur **only during leveling up or respeccing**, unless the same issue can be reproduced in a **new game**.
+
+### Before Creating a New Issue
+
+* **Always search existing issues first.**
+* If you find an issue that is identical or closely related (including issues marked as *New issue*, *Being looked at*, or *Needs more info*), add your findings, reproduction steps, or additional details **as a comment on the existing issue**. Creating duplicate issues slows down investigation and may result in the new issue being closed.
+* If your report is related to a **closed issue**, create a **new issue** and reference the closed one (e.g., #504).
+
+### Reporting Rules
+
+* **One issue per bug.** Do not combine multiple, unrelated problems into a single report.
+
+### How to Write a Good Bug Report
+
+All bug reports must follow the provided **Bug Report template**. In particular, make sure to include:
+
+* A clear and concise **title**
+* Exact **reproduction steps** that reliably trigger the issue
+* A comparison of **expected vs. actual results**
+* Complete **environment details** (location, class, level, version, etc.)
+
+Reports that lack sufficient information to reproduce the issue may be closed.
 
 ## Table of Contents
 
