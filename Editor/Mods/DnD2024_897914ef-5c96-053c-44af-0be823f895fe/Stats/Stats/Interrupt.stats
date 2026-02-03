@@ -327,7 +327,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_FightingStyle_Protection" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4422dc64-95de-448f-8a58-fca66a269ad0" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and HasShieldEquipped(context.Observer) and not Self(context.Source,context.Observer) and not Self(context.Target,context.Observer) and Ally(context.Target, context.Observer) and HasInterruptedAttack() and not DistanceToEntityGreaterThan(3, context.ObserverPosition, context.Target) and not AnyEntityIsItem() and IsFlatValueInterruptInteresting(context.Observer.ProficiencyBonus+1, context.Source);" />
         <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();ApplyStatus(OBSERVER_TARGET,INTERRUPT_FIGHTINGSTYLE_PROTECTION,100,0);ApplyStatus(OBSERVER_OBSERVER,INTERRUPT_FIGHTINGSTYLE_PROTECTION_2,100,1);" />
       </fields>
     </stat_object>
@@ -2597,6 +2596,30 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_BloodyExit_SangromancyDie" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6547cf06-e5e0-4762-b4bc-2c1c2f561cda" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;HitPointDie8:3;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="038b602e-7b1c-4c9a-9ec1-feb1f862f42f" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Warlock" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bb7cd1be-bc8d-4fe0-994e-7058baddfd8d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_SorcererKing_10_VindictiveRebuke" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="88f0cf38-129e-4fe7-a220-01f63315e1aa" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfbaf8787g7d62g9757gb357ga02807685517" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h73551691g8cf1gf6aag4c6eg48306405cb7d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_ThoughtShield_PsychicReflection" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and not Self(context.Source,context.Observer) and Self(context.Target,context.Observer) and HasInterruptedAttack() and not AnyEntityIsItem() and IsRerollInterruptInteresting(context.Source) and not InterruptHasDisadvantage();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetDisadvantage();" />
+        <field name="Roll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC()))" />
+        <field name="Success" type="StringTableFieldDefinition" value="DealDamage(OBSERVER_SOURCE,ClassLevel(Warlock),Psychic);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;VindictiveRebuke:1;" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -4066,7 +4066,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd096d1b0g63d6g3e24gb01bgbfb5c873fbcf" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Invisible;Stealth" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(WarlockSpellSlot,1,1);RestoreResource(WarlockSpellSlot,1,2);RestoreResource(WarlockSpellSlot,1,3);RestoreResource(WarlockSpellSlot,1,4);RestoreResource(WarlockSpellSlot,2,5);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RestoreResource(WarlockSpellSlot,1,1);RestoreResource(WarlockSpellSlot,1,2);RestoreResource(WarlockSpellSlot,1,3);RestoreResource(WarlockSpellSlot,1,4);RestoreResource(WarlockSpellSlot,2,5);RestoreResource(DecisiveEdict,1,1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -8748,6 +8748,31 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,LIFEDRINKER_RADIANT,100,-1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Radiant" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0049051ag1505g0ea3g30e6g70ee70e9cf19" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d053d2ce-6e69-43da-a97e-dfab689a41ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="SorcererKing_6_DecisiveEdict" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba5ea488g17c5ge893gf52cg776e31563402" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1d78ab3ga716gd650gb280gd48e3dfb9e36" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_WildMagic_Burning" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(EDCISIVE_EDICT_BUFF,100,2);IF(Enemy()):ApplyStatus(FRIGHTENED, 100, 2,,,,not SavingThrow(Ability.Wisdom, SourceSpellDC(),AdvantageOnFrightened(), DisadvantageOnFrightened()));" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Ally() or Enemy();" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Necrotic_ArmsOfHadar_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Necrotic_ArmsOfHadar_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="DecisiveEdict:1;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;7abe77ed-9c77-4eac-872c-5b8caed070b6,,;cb171bda-f065-4520-b470-e447f678ba1f,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('ONE_SPELL');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="80a4c9a2-af28-4ba2-bcab-082c9d2ee0e4" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="104d98d3-1402-4fce-bab8-14df357d660e" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="63def50f-b1fa-4394-81f6-539880d4e8a9" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">

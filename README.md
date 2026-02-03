@@ -1790,12 +1790,40 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Hexblade
 
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HexBlade.png?raw=true)
+
 - Subclass Spells (Always prepared)
   - Level 3: Hex, Wrathful Smite
   - Level 3: Arcane Vigor, Magic Weapon
   - Level 5: Conjure Barrage, Counterspell
   - Level 7: Freedom of Movement, Staggering Smite
   - Level 9: Steel Wind Strike
+
+
+### Sorcerer-King
+
+![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SorcererKing.png?raw=true)
+
+> Your pact draws from the power of a monstrous, tyrannical force akin to a demigod or an overwhelmingly powerful magic-user. Through your pact, you herald this tyrant’s interests in the world, channeling their interests in the world, channeling their influence and mind-bending, psionic power.
+
+- Subclass Spells (Always prepared)
+  - Level 3: Command, Compelled Duel, Hold Person, Mind Spike, Wrathful Smite
+  - Level 5: Bestow Curse, Fear
+  - Level 7: Confusion, Staggering Smite
+  - Level 9: Dominate Person, Synaptic Static
+- Level 3: Intimidating Presence
+  - You gain proficiency in the Intimidation skill if you don’t already have it. You also have Expertise in Intimidation.
+- Level 3: Voice of Tyranny
+  - You can cast Command as a Bonus Action without expending a spell slot.You can cast Command as a Bonus Action without expending a spell slot.
+  - You can do so a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
+- Level 6: Decisive Edict
+  - Your patron’s power surges through you, allowing you to rally your allies and subjugate your enemies. When you cast a spell using a Pact Magic spell slot, you can cause profane power to erupt in a 30-feet Emanation originating from you. For each creature you can see in the Emanation, choose one of the following effects:
+    - Marshal. The creature has Advantage on attack rolls until the end of its next turn.
+    - Oppress. The creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the end of its next turn.
+  - Once you use this feature, you can’t do so again until you finish a Short or Long Rest. You also regain use of this feature when you use Magical Cunning.
+- Level 10: Vindictive Rebuke
+  - You learn to rebuff those who challenge you or the might of your patron. When an enemy makes an attack roll against you, you can take a Reaction to impose Disadvantage on that attack roll. The attacking creature must succeed on a Charisma saving throw against your spell save DC or take Psychic damage equal to your Warlock level.
+  - You can do so a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ## Wizard
 

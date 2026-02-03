@@ -15,7 +15,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe69f09eg2e3eg0ca4g0320gcc165d6fe60b" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="ONE_SPELL" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(LevelSpellCheck(),ModifyUseCosts(Add,SpellPoint,1,0));UnlockSpellVariant(SpellId('Shout_SwiftWitchcraft'),ModifyIconGlow());UnlockSpellVariant(SpellId('Shout_SorcererKing_6_DecisiveEdict'),ModifyIconGlow());" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
@@ -10352,6 +10352,17 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="53c558d9-4548-4751-bc07-c036b4ad5e7e" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(YMS_PACTOFTHECHAIN_ATTACK_TARGET)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ba496d63-2b88-4f7b-bde4-ccb4a59b5217" />
+        <field name="Name" type="NameTableFieldDefinition" value="EDCISIVE_EDICT_BUFF" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hba5ea488g17c5ge893gf52cg776e31563402" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Buff" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EDCISIVE_EDICT_BUFF" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(AttackRoll);" />
       </fields>
     </stat_object>
     <stat_object color="#FF00008B" is_substat="false">
