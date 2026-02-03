@@ -2655,6 +2655,7 @@ new entry "WPN_Pistol_2_A"
 type "Weapon"
 using "WPN_Pistol_2"
 data "RootTemplate" "97fe674a-7074-4942-b89d-967914463798"
+data "WeaponFunctors" "IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING,100, 2);ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1);"
 data "BoostsOnEquipMainHand" ""
 data "PassivesOnEquip" "Firearms;Range_Pistol;MAG_ChargedLightning_Charge_OnDamage_Passive;"
 

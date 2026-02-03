@@ -3763,6 +3763,7 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Firearms;Range_Pistol;MAG_ChargedLightning_Charge_OnDamage_Passive;" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="97fe674a-7074-4942-b89d-967914463798" />
         <field name="BoostsOnEquipMainHand" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="WeaponFunctors" type="StringTableFieldDefinition" value="IF(not HasStatus('MAG_CHARGED_LIGHTNING', context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_LIGHTNING_DAMAGE_ONCE_TECHNICAL,100, 0);IF(Character()):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_GENERATE_CHARGE_FX, 100, 0);IF(Character() and not IsDischargingLightning(context.Source)):ApplyStatus(SELF, MAG_CHARGED_LIGHTNING,100, 2);ApplyStatus(SELF, MAG_CHARGED_LIGHTNING_DURATION_TECHNICAL, 100, 1);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
