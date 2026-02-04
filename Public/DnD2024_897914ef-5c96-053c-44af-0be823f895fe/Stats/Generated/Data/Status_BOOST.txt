@@ -4942,7 +4942,7 @@ data "StatusType" "BOOST"
 data "StackId" "NICK_COOLDOWN"
 data "StackPriority" "20"
 data "StackType" "Ignore"
-data "Boosts" "AttackSpellOverride(Target_MainHandAttack_NoOffhand,Target_MainHandAttack);AttackSpellOverride(Projectile_MainHandAttack_NoOffhand,Projectile_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack') or SpellId('Projectile_OffhandAttack') or SpellId('Throw_FastHand'),ModifyUseCosts(Replace,DualWielderActionPoint,1,0,BonusActionPoint));"
+data "Boosts" "AttackSpellOverride(Target_MainHandAttack_NoOffhand,Target_MainHandAttack);AttackSpellOverride(Projectile_MainHandAttack_NoOffhand,Projectile_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack') or SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Replace,DualWielderActionPoint,1,0,BonusActionPoint));"
 data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
 data "OnApplyFunctors" "RestoreResource(BonusActionPoint,1, 0);RemoveStatus(SELF,NICK_BONUS_ACTION)"
 

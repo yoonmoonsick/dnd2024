@@ -5989,7 +5989,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="NICK_COOLDOWN" />
         <field name="StackId" type="StringTableFieldDefinition" value="NICK_COOLDOWN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_NoOffhand,Target_MainHandAttack);AttackSpellOverride(Projectile_MainHandAttack_NoOffhand,Projectile_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack') or SpellId('Projectile_OffhandAttack') or SpellId('Throw_FastHand'),ModifyUseCosts(Replace,DualWielderActionPoint,1,0,BonusActionPoint));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MainHandAttack_NoOffhand,Target_MainHandAttack);AttackSpellOverride(Projectile_MainHandAttack_NoOffhand,Projectile_MainHandAttack);UnlockSpellVariant(SpellId('Target_OffhandAttack') or SpellId('Projectile_OffhandAttack'),ModifyUseCosts(Replace,DualWielderActionPoint,1,0,BonusActionPoint));" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(BonusActionPoint,1, 0);RemoveStatus(SELF,NICK_BONUS_ACTION)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="20" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
