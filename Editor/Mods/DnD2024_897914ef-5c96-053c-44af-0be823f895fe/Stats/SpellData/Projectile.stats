@@ -977,6 +977,92 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e14c38e0-6865-48da-b66b-cbdcbcf71b7c" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BanishingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7bd0429e-327b-4d8f-aa4a-f85498d33376" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot), Psychic);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Charisma,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(BANISHED_TEMP,100,1);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot), Psychic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7d191f77-a2a0-4274-83bb-e8b9a614ed82" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BeguilingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb378cf1-a013-4732-8f13-63cd4fb4847a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot2), Psychic);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Wisdom,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(CHARMED,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot2),Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot2), Psychic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="93aa8fdd-b0a3-47a3-84f7-3410abfa79cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BurstingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ed81ed64-d9d8-4fa4-8c25-13deef505dc4" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0.8" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot2),Force);Distance(3)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot2),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2db312e6-aa2e-485b-b082-c970335e9051" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_BurstingForce" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="84cde938-5fe0-4a12-803b-2320e9d053cd" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0.8" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot2),Force);Distance(3)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot2),Force)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="26c5a5b7-3146-415a-82c7-15031f17c6a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_EnfeeblingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="82838f0b-147b-42fe-8bfc-697c000736c3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot2), Necrotic);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Constitution,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(ENFEEBLINGARROW,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot2),Necrotic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot2),Necrotic)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee3ba740-6b04-4796-8c9d-a4520ef6493a" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_GraspingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e3b6b541-71c9-49d8-a018-46f46fc8c6d3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot), Slashing);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Strength,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(GRASPINGARROW,100,10);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot),Slashing)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot),Slashing)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ac80d2b-d586-43f0-8acd-a34612195a18" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_SeekingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d65acc5e-fde1-4b6a-9421-1c35e610e2d1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot2), Force);TARGET:ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon/2, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot2)/2, Force);TARGET:ExecuteWeaponFunctors(MainHand);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot),Force)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot2),Force)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f38c1808-2379-422c-8ca4-297dd57aa872" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_ShadowArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c6935136-7747-4615-bfae-e42d1289c5c0" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);TARGET:DealDamage(LevelMapValue(ArcaneShot), Force);TARGET:ExecuteWeaponFunctors(MainHand);IF(not SavingThrow(Ability.Wisdom,SourceSpellDC(10,context.Source,Ability.Intelligence))):ApplyStatus(BLINDED,100,2);ApplyStatus(SELF,ARCANESHOT_USED,100,1);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot),Psychic)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot), Psychic);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dfbe5a53-1f59-45a1-91ee-90d980725c4a" />

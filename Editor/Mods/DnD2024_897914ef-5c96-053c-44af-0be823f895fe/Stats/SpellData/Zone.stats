@@ -1328,11 +1328,23 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead();" />
       </fields>
     </stat_object>
+    <stat_object color="#FF8B4513" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2a0a4bd5-c950-40e4-aed0-e52faf301388" />
+        <field name="Name" type="NameTableFieldDefinition" value="YMS_Fighter" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bfce220c-9a94-4682-b628-66bdaa582bdb" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="c410d220-4896-46ba-8f58-1f0bc0fa3338" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a6a43075-7d3a-4bb0-be46-06e35bade3a4" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneShot_PiercingArrow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3a0011ce-9da5-4198-addf-7bc943127f13" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon+LevelMapValue(ArcaneShot), MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="SpellFail" type="StringTableFieldDefinition" value="DealDamage((MainRangedWeapon+LevelMapValue(ArcaneShot))/2, MainRangedWeaponDamageType);ExecuteWeaponFunctors(MainHand);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(ArcaneShot),Piercing)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon, MainRangedWeaponDamageType);DealDamage(LevelMapValue(ArcaneShot),Piercing)" />
+        <field name="Range" type="IntegerTableFieldDefinition" value="9" />
+        <field name="Base" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
   </stat_objects>
