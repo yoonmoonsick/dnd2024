@@ -6,9 +6,9 @@
 - Some rules are modified with Homebrew rules to enhance the gameplay experience.
 - This mod is focused on reducing the inconvenience of having to download and set up PHB 2024 related mods individually. It does not consider compatibility issues with other mods.
 - The original or latest version of this document can be found at the link below.
-  - https://github.com/yoonmoonsick/dnd2024/blob/master/README.md
+  - https://github.com/yoonmoonsik/dnd2024/blob/master/README.md
 - Detailed changes can be found below.
-  - https://github.com/yoonmoonsick/dnd2024/commits/master/
+  - https://github.com/yoonmoonsik/dnd2024/commits/master/
 
 ## Bug Report Guidelines
 
@@ -16,7 +16,7 @@ Following these guidelines helps keep bug fixing efficient and focused. Reports 
 
 ### Where to Report
 
-* Bugs must be reported **only via GitHub Issues**: [https://github.com/yoonmoonsick/dnd2024/issues](https://github.com/yoonmoonsick/dnd2024/issues)
+* Bugs must be reported **only via GitHub Issues**: [https://github.com/yoonmoonsik/dnd2024/issues](https://github.com/yoonmoonsik/dnd2024/issues)
 
 ### What Not to Report
 
@@ -183,7 +183,7 @@ Choose **Dhampir** from the list of **Versatile** passives available to **Humans
 
 ## Dragonborn
 - Level 1: Darkvision
-- Level 1: Breath Weapon ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/BreathWeaponCharge.png?raw=true)
+- Level 1: Breath Weapon ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/BreathWeaponCharge.png?raw=true)
   - When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character Levels 5 (2d10), 11 (3d10), and 17 (4d10). You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.
 - Level 5: Draconic Flight
   - You can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.
@@ -228,7 +228,7 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 > Goliaths have physical characteristics that are reminiscent of the giants in their family lines. For example, some goliaths look like stone giants, while others resemble fire giants. Whatever giants they count as kin, goliaths have forged their own path in the multiverse—unencumbered by the internecine conflicts that have ravaged giantkind for ages—and seek heights above those reached by their ancestors.
 
 - Level 1: Speed: 35 feet
-- Level 1: Giant Ancestry ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/GiantAncestryCharge.png?raw=true)
+- Level 1: Giant Ancestry ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/GiantAncestryCharge.png?raw=true)
   - You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
   - Cloud's Jaunt. As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.
   - Fire's Burn. When you hit a target with an attack roll and deal damage to it, you can also deal 1d10 Fire damage to that target.
@@ -239,20 +239,20 @@ Choose **Goliath** from the list of **Versatile** passives available to **Humans
 - Level 5: Large Form: You can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.
 
 ## Half-Elf
-- Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
+- Level 1: Resourceful ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
   - You restore Heroic Inspiration whenever you finish a Short Rest.
 - Level 1: Gain racial spells corresponding to your elven bloodline.
 
 ## Half-Orc
 - Level 1: Superior Darkvision
-- Level 1: Adrenaline Rush ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/AdrenalineRushCharge.png?raw=true)
+- Level 1: Adrenaline Rush ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/AdrenalineRushCharge.png?raw=true)
   - You can take the Dash action as a Bonus Action. When you do so, you gain a number of Temporary Hit Points equal to your Proficiency Bonus. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.
 
 ## Halfling
 - Level 1: Speed: 30 feet
 
 ## Human
-- Level 1: Resourceful ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
+- Level 1: Resourceful ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HumanHeroicInspiration.png?raw=true)
   - You restore Heroic Inspiration whenever you finish a Short Rest.
 - Level 1: Versatile
   - You gain an Origin feat of your choice.
@@ -287,7 +287,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Artificer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artificer.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artificer.png?raw=true)
 
 > A Magical Crafter and an Inventor of Wonders. Masters of invention, Artificers use ingenuity and magic to unlock extraordinary capabilities in objects. They see magic as a complex system waiting to be decoded and then harnessed in their spells and inventions.
 
@@ -296,7 +296,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   -   Masters of invention, Artificers decode the complex system of magic to unlock extraordinary capabilities in everyday objects. Through this feature, you unlock a specialized set of Arcane Plans to replicate magic items. Based on the plan group you choose, you will be able to craft specific magical gear—ranging from destructive weapons to utility gadgets—at the end of a Long Rest. Choose your field of specialization to determine which instruments you will forge to aid your adventure.
 - Level 6: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
-- Level 7: Flash of Genius ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FlashOfGenius.png?raw=true)
+- Level 7: Flash of Genius ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FlashOfGenius.png?raw=true)
   - When you or a creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to add a bonus to the roll, potentially turning it into a success. The bonus equals your Intelligence modifier. You can use this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 - Level 10: Expanded Replication
   - You have learned arcane plans that you use to make magic items.
@@ -305,7 +305,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Alchemist
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Alchemist.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Alchemist.png?raw=true)
 
 > An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away.
 
@@ -313,7 +313,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 3: Healing Word, Ray of Sickness
   - Level 5: Flaming Sphere, Melf's Acid Arrow
   - Level 9: Stinking Cloud, Mass Healing Word
-- Level 3: Experimental Potion ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ExperimentalElixir.png?raw=true)
+- Level 3: Experimental Potion ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ExperimentalElixir.png?raw=true)
   - You can create Potions. Any Potions remaining after a long rest disappear, and Potions can be consumed by yourself or given to others as a bonus action. Additionally, you can use a spell slot to create an additional Potion as a magic action, in which case you choose the effect directly. The number of Potions you can create after a long rest increases as you reach certain artificer levels: 3 at level 5, 4 at level 9, and 5 at level 12.
 - Level 5: Alchemical Savant
   - When you cast a Alchemist spell, you add your Intelligence modifier (minimum +1) to the roll that restores hit points or deals acid, fire, necrotic, or poison damage.
@@ -327,7 +327,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Armorer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Armorer.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Armorer.png?raw=true)
 
 > An Artificer who specializes as an Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Artificer's magic, unleash potent attacks, and generate a formidable defense.
 
@@ -354,7 +354,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Artillerist
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artillerist.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Artillerist.png?raw=true)
 
 > An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield.
 
@@ -362,7 +362,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 3: Shield, Thunderwave
   - Level 5: Scorching Ray, Shatter
   - Level 9: Fireball, Slow
-- Level 3: Eldritch Cannon ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/EldritchCannon.png?raw=true)
+- Level 3: Eldritch Cannon ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/EldritchCannon.png?raw=true)
   - You can create a Eldritch Cannon. You can have only one cannon at a time and must finish a Long Rest or expend a spell slot to create another.
   - Arcane Refueling
     - Creates an Eldritch Cannon resource that allows you to summon an additional Eldritch Cannon by expending a spell slot.
@@ -382,7 +382,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Battle Smith
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleSmith.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleSmith.png?raw=true)
 
 > A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a Steel Defender, a protective companion of their own creation.
 
@@ -392,12 +392,12 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 9: Aura of Vitality, Conjure Barrage
 - Level 3: Arcane Empowerment
   - When you make an attack with a weapon, you can use your Intelligence modifier instead of your Strength or Dexterity modifier for the attack and damage rolls.
-- Level 3: Steel Defender ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_LOOT_Underdark_Automaton_Head.png?raw=true)
+- Level 3: Steel Defender ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_LOOT_Underdark_Automaton_Head.png?raw=true)
   - You create a Steel Defender, a mechanical companion.
   - Deflect Attack
     - Impose Disadvantage on an attack against your allies when you are within 10ft.
 - Level 5: Extra Attack
-- Level 9: Arcane Jolt ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ArcaneJolt.png?raw=true)
+- Level 9: Arcane Jolt ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ArcaneJolt.png?raw=true)
   - You and your Steel Defender share Arcane Jolt, allowing you to unleash destructive power and healing ability.
   - Destructive Energy
     - When you hit a target with an attack roll using a weapon, or when your Steel Defender hits a target, you can channel magical energy through the strike, causing the target to take an extra 2d6 force damage.
@@ -408,7 +408,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Cartographer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cartographer.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cartographer.png?raw=true)
 
 > A Cartographers is the premier navigator and reconnaissance agent. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations.
 
@@ -429,7 +429,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Barbarian
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Barbarian.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Barbarian.png?raw=true)
 
 - Level 1: Rage
   - You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. Take a Bonus Action to extend your Rage.
@@ -449,28 +449,28 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Path of the Berserker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BerserkerPath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BerserkerPath.png?raw=true)
 
 - Level 3: Frenzy
   - If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
   - Frenzied Strike and Enraged Throw were removed, as these features do not exist in the rules.
   
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TotemWarriorPath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TotemWarriorPath.png?raw=true)
 
 - Level 3: Rage of the Wilds
   - Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the follwing options of your choice.
 
 ### Path of the Wild Magic
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagicPath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagicPath.png?raw=true)
 
 - Level 3: Rage: Wild Magic
   - Using Extend Rage changes the effects of Wild Magic.
 
 ### Path of the World Tree
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WorldTreePath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WorldTreePath.png?raw=true)
 
 > Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage. This tree grows among the Outer Planes, connecting them to each other and the Material Plane. These Barbarians draw on the tree's magic for vitality and as a means of dimensional travel.
 
@@ -487,7 +487,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Path of the Zealot
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ZealotPath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ZealotPath.png?raw=true)
 
 > Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.
 
@@ -502,7 +502,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Bard
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Bard.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Bard.png?raw=true)
 - Level 1: Bardic Inspiration
   - Number of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 5: Font of Inspiration
@@ -512,7 +512,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of Dance
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DanceCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DanceCollege.png?raw=true)
 
 >Bards of the College of Dance know that the Words of Creation can't be contained within speech or song; the words are uttered by the movements of celestial bodies and flow through the motions of the smallest creatures. These Bards practice a way of being in harmony with the whirling cosmos that emphasizes agility, speed, and grace.
 
@@ -536,7 +536,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of the Moon
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/MoonCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/MoonCollege.png?raw=true)
 
 > The College of the Moon traces its origins to the ancient druidic circles of the Moonshae Isles, who entrusted the first Bards of this tradition with chronicling the stories of the islands and their people. Bards of this college draw from the isles’ fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works.
 
@@ -553,7 +553,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of Glamour
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GlamourCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GlamourCollege.png?raw=true)
 
 - Level 3: Beguiling Magic
   - You always have the Charm Person and Mirror Image spells prepared. Additionally, immediately after casting an Enchantment or Illusion spell using a spell slot, you can expend one use of your Bardic Inspiration to force a creature you can see within 60 feet to make a Wisdom saving throw against your spell save DC. On a failed save, the target is Charmed or Frightened (your choice) for 1 minute.
@@ -562,7 +562,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of Lore
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LoreCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LoreCollege.png?raw=true)
 
 - Level 6: Magical Discoveries
   - You learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class's section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table. You always have the chosen spells prepared, and whenever you gain a Bard Level, you can replace one of the spells with another spell that meets these requirements.
@@ -571,7 +571,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of Sword
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SwordsCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SwordsCollege.png?raw=true)
 
 - Level 3: Blade Flourish
   - Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.
@@ -582,7 +582,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### College of Valor
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ValorCollege.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ValorCollege.png?raw=true)
 
 - Level 6: Extra Attack
   - You can attack twice instead of once whenever you take the Attack action on your turn. In addition, you can cast one of your cantrips that has a casting time of an action in place of one of those attacks.
@@ -591,7 +591,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Cleric
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cleric.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Cleric.png?raw=true)
 
 - Level 1: Divine Order
   - You have dedicated yourself to one of the following sacred roles of your choice.
@@ -612,7 +612,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Arcana Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcanaDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcanaDomain.png?raw=true)
 
 > Magic suffuses the multiverse, fueling both destruction and creation. Clerics with this domain view magical knowledge not as power to be used for personal gain, but as a gift they have a responsibility to share. Gods associated with the Arcana Domain intimately know the secrets and potential of magic. These gods are often connected to knowledge, as learning and arcane power tend to go hand-in-hand, or to secrecy or ultimate power.
 
@@ -636,7 +636,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Death Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DeathDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DeathDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 9: Enervation, Danse Macabre
@@ -645,7 +645,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Grave Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GraveDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GraveDomain.png?raw=true)
 
 > The Grave Domain focuses on the cycle of life and death, viewing death as a natural and unavoidable part of existence. Clerics who draw power from this domain actively combat the Undead and guide spirits to the afterlife, even if the spirits resist. While these clerics can temporarily delay death for those with important tasks, they cannot prevent it entirely, as death ultimately claims everyone.
 
@@ -665,7 +665,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Knowledge Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/KnowledgeDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/KnowledgeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Command, Sleep, Calm Emotions, Mind Spike
@@ -679,7 +679,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Life Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LifeDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LifeDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Bless, Cure Wounds, Aid, Lesser Restoration
@@ -695,21 +695,21 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Light Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LightDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/LightDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility
   - Level 5: Daylight, Fireball
   - Level 7: Arcane Eye, Wall of Fire
   - Level 9: Flame Strike
-- Level 3: Warding Flare ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/WardingFlareCharge.png?raw=true)
+- Level 3: Warding Flare ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/WardingFlareCharge.png?raw=true)
   - When a creature that you can see within 30 feet of yourself makes an attack roll, you can take a Reaction to impose Disadvantage on the attack roll, causing light to flare before it hits or misses. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
 - Level 6: Improved Warding Flare
   - You regain all expended uses of your Warding Flare when you finish a Short or Long Rest. In addition, whenever you use Warding Flare, you can give the target of the triggering attack a number of Temporary Hit Points equal to 2d6 plus your Wisdom modifier.
 
 ### Trickery Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickeryDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickeryDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Charm Person, Disguise Self, Invisibility, Pass without Trace
@@ -725,7 +725,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### War Domain
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WarDomain.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WarDomain.png?raw=true)
 
 - Domain Spells (Always prepared)
   - Level 3: Guiding Bolt, Shield of Faith, Magic Weapon, Spiritual Weapon
@@ -743,7 +743,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Druid
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Druid.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Druid.png?raw=true)
 
 - Level 1: Primal Order
   - You have dedicated yourself to one of the following sacred roles of your choice.
@@ -766,7 +766,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Circle of Dragons
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDragons.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDragons.png?raw=true)
 
 > The Circle of Dragons is an old order of druids steeped in rigid tradition. These honor-bound wardens of nature and draconic heritage are members of a secret society that have influenced governance, war, and culture across the world. High-standing members of this Circle have ties to royal bloodlines that date back generations, a connection that’s subtly showcased in royal family crests and insignia. Druids from this Circle know that dragons, and draconic magic, are as connected to the world as plants or beasts, and utilize that connection to transform into a unique and powerful draconic form all their own.
 
@@ -782,7 +782,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Circle of the Dream
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDreams.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfDreams.png?raw=true)
 
 > Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids' guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.
 
@@ -792,18 +792,18 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 5: Summon Fey, Mass Healing Word
   - Level 7: Confusion, Dimension Door
   - Level 9: Conjure Elemental, Mass Cure Wounds
-- Level 3: Balm of the Summer Court ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/BalmOfTheSummerCourt.png?raw=true)
+- Level 3: Balm of the Summer Court ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/BalmOfTheSummerCourt.png?raw=true)
   - You become imbued with the blessings of the Summer Court. You are a font of energy that offers respite from injuries. You have a pool of fey energy represented by a number of d6s equal to your druid level.
   - As a bonus action, you can choose one creature you can see within 60 feet of you and spend a number of those dice. Roll the spent dice and add them together. The target regains a number of hit points equal to the total. The target also gains 1 hit point per die spent. You regain all expended dice when you finish a long rest.
 - Level 6: Hearth of Moonlight and Shadow
   - Home can be wherever you are. You can invoke the shadowy power of the Gloaming Court to help guard your respite. You and your allies gain the effect of a short rest, and until your next long rest, you gain a +5 bonus to Stealth and Perception checks.
-- Level 10: Hidden Paths ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HiddenPaths.png?raw=true)
+- Level 10: Hidden Paths ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HiddenPaths.png?raw=true)
   - Starting at 10th level, you can use the hidden, magical pathways that some fey use to traverse space in the blink of an eye. As a bonus action on your turn, you can teleport up to 30 feet to an unoccupied space you can see. Alternatively, you can use your action to teleport one willing creature you touch up to 90 feet to an unoccupied space you can see.
   - You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
 
 ### Circle of the Land
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheLand.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheLand.png?raw=true)
 
 - Circle of the Land Spells
   - Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid Level and lower prepared.
@@ -842,7 +842,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Circle of the Moon
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheMoon.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheMoon.png?raw=true)
 
 - Circle Spells (Always prepared)
   - Level 3: Starry Wisp, Cure Wounds
@@ -852,12 +852,12 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
   - Level 9: Mass Cure Wounds
 - Level 6: Improved Circle Forms
   - While in a Wild Shape form, you can add your Wisdom modifier to your Constitution saving throws.
-- Level 10: Moonlight Step ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/MoonlightStepCharge.png?raw=true)
+- Level 10: Moonlight Step ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/MoonlightStepCharge.png?raw=true)
   - You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ### Circle of the Sea
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheSea.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfTheSea.png?raw=true)
 
 > Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds.
 
@@ -879,7 +879,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Circle of the Star
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfStars.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/CircleOfStars.png?raw=true)
 
 - Level 3: Starry Form
   - Dragon
@@ -887,9 +887,9 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ## Fighter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fighter.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fighter.png?raw=true)
 
-- Level 1: Second Wind ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/SecondWindCharge.png?raw=true)
+- Level 1: Second Wind ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/SecondWindCharge.png?raw=true)
   - You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Fighter Level 4, you gain 1 additional use of this feature. At Level 10, you gain 4 uses.
 - Level 2: Tactical Mind
   - You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success.
@@ -900,7 +900,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Battle Master
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleMaster.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BattleMaster.png?raw=true)
 - Level 3: Combat Superiority
   - You can use only one maneuver per attack.
   - Ambush
@@ -924,7 +924,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Champion
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Champion.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Champion.png?raw=true)
 
 - Level 3: Remarkable Athlete
   - Immediately after you score a Critical Hit, you can move up to half your Speed without provoking Opportunity Attacks.
@@ -938,7 +938,7 @@ Choose **Kalashtar** from the list of **Versatile** passives available to **Huma
 
 ### Eldritch Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EldritchKnight.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EldritchKnight.png?raw=true)
 
 Eldritch Knights and Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
 
@@ -951,13 +951,13 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Psi Warrior
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarrior.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarrior.png?raw=true)
 
 > Psi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force.
 
 - Level 3: Psionic Power
   - You harbor a wellspring of psionic energy within yourself. It is represented by your Psionic Energy Dice, which fuel powers you have from this subclass. The Psi Warrior Energy Dice table shows the die size and number of these dice you have when you reach certain Fighter Level. You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
-- Psi Warror Energy Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PsionicPower.png?raw=true)
+- Psi Warror Energy Dice ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PsionicPower.png?raw=true)
     - Fighter Level: 3, Size: D6, Number: 4
     - Fighter Level: 5, Size: D8, Number: 6
     - Fighter Level: 9, Size: D8, Number: 8
@@ -979,7 +979,7 @@ Eldritch Knights and Arcane Tricksters now learn their spells from the wizard sp
 
 ### Banneret 
 Formerly, Purple Dragon Knight
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Banneret.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Banneret.png?raw=true)
 
 > Bannerets are paragons of valor and leadership who protect the innocent and rally fellow adventurers to the causes of justice and freedom. Many are knights serving in Cormyr, the Silver Marches, Damara, Chessenta, or other lands across Faerûn. They wander the realms as knights errant, taking the fight against evil beyond their kingdom’s borders.
 > 
@@ -1001,7 +1001,7 @@ Formerly, Purple Dragon Knight
 
 ### Rune Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/RuneKnight.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/RuneKnight.png?raw=true)
 
 > Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan.
 >
@@ -1009,27 +1009,27 @@ Formerly, Purple Dragon Knight
 
 - Level 3: Rune Carver
   - You can use magic runes to enhance your gear. You learn two runes of your choice. When you reach certain levels in this class, you learn additional runes (Fighter Level 7 and 10).
-  - Cloud Rune ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/CloudRune.png?raw=true)
+  - Cloud Rune ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/CloudRune.png?raw=true)
     - You have advantage on Sleight of Hand checks and Deception checks.
     - When you are hit by an attack roll, you can use your reaction to invoke the rune. For the next 2 turns, the attacker targets the nearest creature other than you.
-  - Fire Rune ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FireRune.png?raw=true)
+  - Fire Rune ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FireRune.png?raw=true)
     - You have advantage on Athletics checks and Perception checks.
     - When you hit a creature with a weapon attack, you can invoke the rune to deal an extra 2d6 fire damage and force the target to make a Strength saving throw. On a failed save, the target is restrained for 1 minute and takes 2d6 fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.
-  - Frost Rune ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FrostRune.png?raw=true)
+  - Frost Rune ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FrostRune.png?raw=true)
     - You have advantage on Animal Handling checks and Intimidation checks.
     - You can use a bonus action to invoke the rune and gain +2 to AC, Strength and Constitution ability checks, and saving throws for 10 minutes.
-  - Stone Rune ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/StoneRune.png?raw=true)
+  - Stone Rune ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/StoneRune.png?raw=true)
     - You have advantage on Insight checks. You have darkvision up to 120 feet.
     - As a bonus action, you can invoke the rune to target one creature within 30 feet.The target must make a Constitution saving throw or be petrified and incapacitated with a speed of 0 for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success.
-  - Hill Rune (Fighter Level 7) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HillRune.png?raw=true)
+  - Hill Rune (Fighter Level 7) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/HillRune.png?raw=true)
     - You have advantage on saving throws against poison and resistance to poison damage.
     - As a bonus action, you can invoke the rune to gain resistance to bludgeoning, piercing, and slashing damage for 1 minute.
-  - Storm Rune (Fighter Level 7) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/StormRune.png?raw=true)
+  - Storm Rune (Fighter Level 7) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/StormRune.png?raw=true)
     - As a bonus action, you can invoke the rune to enter a prophetic state for 1 minute or until you become incapacitated. While in this state, when you or a creature you can see within 60 feet makes an attack roll or a saving throw, you can use your reaction to grant advantage or disadvantage on that roll.
     - You have advantage on Arcana checks. You can't be surprised.
-- Level 3: Giant's Might ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/GiantsMight.png?raw=true)
+- Level 3: Giant's Might ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/GiantsMight.png?raw=true)
   - You can cast Enlarge on yourself up to twice, regaining all uses after a long rest. At fighter level 5, you gain 1 additional use, and at level 9, you have a total of 4 uses.
-- Level 7: Runic Shield ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RunicShield.png?raw=true)
+- Level 7: Runic Shield ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RunicShield.png?raw=true)
   - When a creature you can see within 60 feet is hit by an attack roll, you can use this reaction to impose disadvantage. You can do this three times, and you regain all uses after a long rest. At Fighter level 9, you gain 1 additional use.
 - Level 10: Great Stature
   - The extra damage you deal with your Giant's Might feature increases to 1d8.
@@ -1038,7 +1038,7 @@ Formerly, Purple Dragon Knight
 
 ## Monk
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Monk.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Monk.png?raw=true)
 
 - Level 1: Bonus Unarmed Strike
   - You can make an Unarmed Strike as a Bonus Action.
@@ -1068,7 +1068,7 @@ Formerly, Purple Dragon Knight
 
 ### Warrior of Mercy
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Mercy.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Mercy.png?raw=true)
 
 > Warriors of Mercy manipulate the life force of others. These Monks are wandering physicians, but they bring a swift end to their enemies. They often wear masks, presenting themselves as faceless bringers of life and death.
 
@@ -1088,7 +1088,7 @@ Formerly, Purple Dragon Knight
 
 ### Warrior of Shadow
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadow.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadow.png?raw=true)
 
 - Level 3: Darkness
   - You can expend 1 Ki-Point to cast the Darkness spell without spell components. You can see within the spell's area when you cast it with this feature. While the spell persists, you can move its area of Darkness to a space within 60 feet of yourself at the start of each of your turns.
@@ -1098,7 +1098,7 @@ Formerly, Purple Dragon Knight
 
 ### Warrior of the Elements
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FourElements.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FourElements.png?raw=true)
 
 - Level 3: Elemental Attunement
   - You can expend 1 Ki Point to imbue yourself with elemental energy. The energy lasts for 10 minutes. You gain the following benefits while this feature is active.
@@ -1114,15 +1114,15 @@ Formerly, Purple Dragon Knight
 
 ### Warrior of the Open Hand
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/OpenHand.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/OpenHand.png?raw=true)
 
-- Level 6: Wholeness of Body ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/WholenessOfBody.png?raw=true)
+- Level 6: Wholeness of Body ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/WholenessOfBody.png?raw=true)
   - You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1 Hit Point regained).
   - You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ### Way of the Kensei
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Kensei.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Kensei.png?raw=true)
 
 > Monks of the Way of the Kensei train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons. A kensei sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the kensei views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a kensei a peerless warrior is but a side effect of intense devotion, practice, and study.
 
@@ -1141,7 +1141,7 @@ Formerly, Purple Dragon Knight
 
 ## Paladin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Paladin.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Paladin.png?raw=true)
 
 - Level 1: Spell Casting
 - Level 1: Lay On Hands
@@ -1159,7 +1159,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of Conquest
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Conquest.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Conquest.png?raw=true)
 
 >The Oath of Conquest calls to paladins who seek glory in battle and the subjugation of their enemies. It isn't enough for these paladins to establish order. They must crush the forces of chaos. Sometimes called knight tyrants or iron mongers, those who swear this oath gather into grim orders that serve gods or philosophies of war and well-ordered might.
 >
@@ -1178,7 +1178,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of Devotion
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Devotion.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Devotion.png?raw=true)
 
 - Level 3: Holy Rebuke
   - HolyRebuke now applies to both the target and the caster.
@@ -1187,7 +1187,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of the Ancients
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ancients.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ancients.png?raw=true)
 
 - Level 3: Healing Radiance
 - Level 3: Nature's Wrath
@@ -1197,7 +1197,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of Glory
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Glory.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Glory.png?raw=true)
 
 > Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions, so they're all ready when destiny calls.
 
@@ -1214,7 +1214,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of the Noble Genies
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NobleGenies.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NobleGenies.png?raw=true)
 
 > Paladins sworn to the Oath of the Noble Genies revere the forces of the Elemental Planes. Through taking this oath, Paladins draw power from the four different types of genies—dao, masters of earth; djinn, masters of air; efreet, masters of fire; and marids, masters of water. In Faerûn, many Paladins who swear this oath hail from Calimshan, a land teeming with genies.
 
@@ -1240,7 +1240,7 @@ Formerly, Purple Dragon Knight
 
 ### Oath of Vengeance
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Vengeance.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Vengeance.png?raw=true)
 
 - Level 3: Inquisitors Might
 - Level 3: Vow of Enmity
@@ -1248,7 +1248,7 @@ Formerly, Purple Dragon Knight
 
 ### Oathbreaker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Oathbreaker.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Oathbreaker.png?raw=true)
 
 - Oath Spells (Always prepared)
   - Level 3: Hellish Rebuke, Witch Bolt
@@ -1263,11 +1263,11 @@ Formerly, Purple Dragon Knight
 
 ## Ranger
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ranger.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Ranger.png?raw=true)
 
 - Level 1: Spell Casting
   - You can now learn all Ranger spells and prepare them for use.
-- Level 1: Favored Enemy ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FavoredEnemyCharge.png?raw=true)
+- Level 1: Favored Enemy ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FavoredEnemyCharge.png?raw=true)
   - You always have the Hunter's Mark spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest. When you reach Ranger Level 5, you gain 1 additional use of this feature. At Level 9, you gain 4 uses.
 - Level 2: Deft Explorer
   - Expertise. Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
@@ -1275,14 +1275,14 @@ Formerly, Purple Dragon Knight
   - Your Speed increases by 10 feet while you aren't wearing Heavy armor.
 - Level 9: Deft Explorer
   - Choose Two of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.
-- Level 10: Tireless ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/TirelessCharge.png?raw=true)
+- Level 10: Tireless ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/TirelessCharge.png?raw=true)
   - As a Magic action, you can give yourself a number of Temporary Hit Points equal to 1d8 plus your Wisdom modifier (minimum of 1). You can use this action a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 12: Precise Hunter
   - You have Advantage on attack rolls against the creature currently marked by your Hunter's Mark.
 
 ### Fey Wanderer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FeyWanderer.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/FeyWanderer.png?raw=true)
 
 > A fey mystique surrounds you, thanks to the boon of an archfey, the shining fruit you ate from a talking tree, the magic spring you swam in, or some other auspicious event. However you acquired your fey magic, you are now a Fey Wanderer, a ranger who represents both the mortal and the fey realms. As you wander the multiverse, your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.
 
@@ -1301,12 +1301,12 @@ Formerly, Purple Dragon Knight
 
 ### Gloom Stalker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GloomStalker.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GloomStalker.png?raw=true)
 
 - Level 3: Dread Ambusher
   - Ambusher's Leap
     - At the start of your first turn of each combat, your Speed increases by 10 feet until the end of that turn.
-  - Dreadful Strike ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/DreadfulStrikeCharge.png?raw=true)
+  - Dreadful Strike ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/DreadfulStrikeCharge.png?raw=true)
     - When you attack a creature and hit it with a weapon, you can deal an extra 2d6 Psychic damage. You can use this benefit only once per turn, you can use it a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Short Rest.
   - Initiative Bonus
     - When you roll Initiative, you can add your Wisdom modifier to the roll.
@@ -1317,7 +1317,7 @@ Formerly, Purple Dragon Knight
 
 ### Green Reaper
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreenReaper.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreenReaper.png?raw=true)
 
 > Green Reapers are assassins who specialize in harnessing the toxic elements of flora and fauna. These Rangers often work as killers for hire utilizing their extensive knowledge to end lives discreetly or with gory panache, depending on the poison used and the client’s wishes. Green Reapers exhibit a morbid curiosity when encountering a toxin they’re unfamiliar with, typically followed by an enthusiastic application of the substance on their next foe.
 
@@ -1348,7 +1348,7 @@ Formerly, Purple Dragon Knight
 
 ### Hollow Warden
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
 
 > Legends tell that the most ancient and fearsome terrors lurk deep within the old places of the earth—unfathomable and bloodthirsty entities of fallow soil and sharpened claws. Hollow Wardens venerate and draw power from such beings, transforming themselves into similarly merciless and monstrous guardians that stalk along jagged coastlines, across steep mountain crags, and through other dark and wild places.
 
@@ -1369,7 +1369,7 @@ Formerly, Purple Dragon Knight
 
 ### Hunter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hunter.png?raw=true)
 
 - Level 3: Hunter's Prey
   - You gain one of the following feature options of your choice. Whenever you finish a Short or Long Rest, you can replace the chosen option with the other one.
@@ -1378,14 +1378,14 @@ Formerly, Purple Dragon Knight
 
 ### Swarmkeeper
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Swarmkeeper.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Swarmkeeper.png?raw=true)
 
 - Level 3: Gathered Swarm
   - You can replace the swarm you are interacting with after each long rest.
 
 ### Winter Walker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WinterWalker.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WinterWalker.png?raw=true)
 
 > Forged in the howling winds and endless snows of Icewind Dale, Winter Walkers are rangers who have embraced the unforgiving cold and made it their ally. These hunters become one with the tundra, their breath forming frost and their gaze as piercing as a shard of ice. Over time, they take on an otherworldly aspect, embodying the very blizzards they walk through.
 >
@@ -1401,14 +1401,14 @@ Formerly, Purple Dragon Knight
   - When you hit a creature with an attack roll using a weapon, you can cause the target to take an extra 1d4 Cold damage.
 - Level 3: Hunter's Rime
   - Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter's Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level. Additionally, while a creature is marked by your Hunter's Mark, it can't take the Disengage action.
-- Level 7: Fortifying Soul ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FortifyingSoul.png?raw=true)
+- Level 7: Fortifying Soul ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FortifyingSoul.png?raw=true)
   - You choose a creature. The chosen creature gains temporary hit points equal to 1d10 plus your Ranger level and becomes immune to the Frightened condition for 1 minute.  You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
-- Level 11: Chilling Retribution ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ChillingRetribution.png?raw=true)
+- Level 11: Chilling Retribution ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/ChillingRetribution.png?raw=true)
   - When a creature hits you with an attack roll, you can use a Reaction to force it to make a Wisdom saving throw against your spell save DC; on a failed save, it is Frightened until the end of it's next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
 ## Rogue
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Rogue.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Rogue.png?raw=true)
 
 - Level 3: Steady Aim
   - As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.
@@ -1430,7 +1430,7 @@ Formerly, Purple Dragon Knight
 
 ### Arcane Trickster
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcaneTrickster.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArcaneTrickster.png?raw=true)
 
 Arcane Tricksters now learn their spells from the wizard spell list, without restriction by school of magic.
 
@@ -1440,7 +1440,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Assassin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Assassin.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Assassin.png?raw=true)
 
 - Level 3: Assassinate
   - Initiative
@@ -1448,7 +1448,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Surprising Strikes
     - During the first round of each combat, you have Advantage on attack rolls against any creature that hasn't taken a turn. If your Sneak Attack hits any target during that round, the target takes extra damage of the weapon's type equal to your Rogue level.
 - Level 3: Assassin's Tools
-  - You gain a Disguise Self and Brew Poison. ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PoisonerCharge.png?raw=true)
+  - You gain a Disguise Self and Brew Poison. ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/PoisonerCharge.png?raw=true)
 - Level 6: Roving Aim
   - Your Speed isn't reduced to 0 by using Steady Aim.
 - Level 11: Death Strike
@@ -1456,7 +1456,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Sanguine Thief
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineThief.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineThief.png?raw=true)
 
 > In dark alleyways across Etharis, deals are made in coin and blood, but a few enterprising Rogues have posed the question: “Why not both?” Sanguine Thieves are assassins who harness the power of Sangromancy to fuel their abilities, finding new and innovative ways to utilize the blood they see all too frequently in their line of work.
 >
@@ -1475,11 +1475,11 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Scion of the Three
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ScionThree.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ScionThree.png?raw=true)
 
 > A Scion of the Three draws power from a group of malevolent gods known as the Dead Three: Bane, deity of tyranny; Bhaal, deity of violence and murder; and Myrkul, deity of death. While some Rogues of this subclass pledge themselves ardently to those three macabre gods, others find themselves thrust on this path by a curse. Either way, a scion's power manifests as various occult gifts, as well as an uncanny talent for striking and terrifying foes. Scions of the Three are most common in Baldur's Gate, where the Dead Three have long competed for influence over mortal hearts. Underground cults to Bane, Bhaal, and Myrkul often count Scions of the Three among their most useful agents.
 
-- Level 3: Bloodthirst ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Rogue_Bloodthirst.png?raw=true)
+- Level 3: Bloodthirst ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Rogue_Bloodthirst.png?raw=true)
   - When an enemy you can see within 30 feet of yourself takes damage and is reduced to 50% or less of its hit points, after taking that damage but not killed outright, you can take a Reaction and teleport to an unoccupied space you can see within 5 feet of that enemy. You can then make one melee attack. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 3: Dread Allegiance
   - When you choose one of the Dead Three—Bane, Bhaal, or Myrkul—you gain specific benefits based on your patron. You can change your choice of patron when you finish a Long Rest.
@@ -1498,32 +1498,32 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Soulknife
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Soulknife.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Soulknife.png?raw=true)
 
 >A Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, revealing their full potential only as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power.
 
 - Level 3: Psionic Power
   - Any features in this subclass that use a Soulknife Energy Die use only the dice from this subclass. Some of your powers expend a Soulknife Energy Die, as specified in a power's description, and you can't use a power if it requires you to use a die when your Psionic Energy Dice are all expended. You regain one of your expended Soulknife Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
-  - Soulknife Energy Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/SoulknifeEnergy.png?raw=true)
+  - Soulknife Energy Dice ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/SoulknifeEnergy.png?raw=true)
     - Rogue Level: 3, Size: D6, Number: 4
     - Rogue Level: 5, Size: D8, Number: 6
     - Rogue Level: 9, Size: D8, Number: 8
     - Rogue Level: 11, Size: D10, Number: 8
   - Psi-Bolstered Knack
     - If you fail an ability check, you can roll one Soulknife Energy Die and add the number rolled to the check, potentially turning failure into success.
-  - Psychic Blades ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Melee.png?raw=true) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Throw.png?raw=true)
+  - Psychic Blades ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Melee.png?raw=true) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Throw.png?raw=true)
     - You can manifest shimmering blades of psychic energy, allowing you to make a melee or ranged attack with a psychic blade.
 - Level 6: Soul Blades
     - Homing Strikes
       - If you make an attack roll and miss the target, you can roll one Soulknife Energy Die and add the number rolled to the attack roll.
-    - Psychic Teleportation ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Teleport.png?raw=true)
+    - Psychic Teleportation ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Soulknife_Teleport.png?raw=true)
       - As a Bonus Action, you manifest a Psychic Blade, expend one Soulknife Energy Die, and throw the blade at an unoccupied space you can see up to 60 feet away. You then teleport to that space, and the blade vanishes.
 - Level 11: Rend Mind
   - You unlock the Stun option for Cunning Strike.
 
 ### Thief
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Thief.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Thief.png?raw=true)
 
 - Level 3: Fast Hands
   - You gain expertise in Sleight of Hand and have advantage on your Sleight of Hand checks. Additionally, you do not critically fail on skill checks in which you are proficient.
@@ -1539,7 +1539,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Sorcerer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Sorcerer.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Sorcerer.png?raw=true)
 
 - Level 1: Innate Sorcery
   - As a Bonus Action, you can unleash the magic for 1 minute, during which you gain the following benefits:
@@ -1570,7 +1570,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Aberrant Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AberrantSorcery.png?raw=true)
 
 > An alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you. Will this power shine from you as a hopeful beacon to others? Or will you be a terror to those who feel the stab of your mind?
 > 
@@ -1594,7 +1594,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Clockwork Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ClockworkSorcery.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ClockworkSorcery.png?raw=true)
 
 > The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it—a plane of existence shaped entirely by clockwork efficiency. You or someone from your lineage might have become entangled in the machinations of modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it's part of a vast and glorious system.
 
@@ -1604,7 +1604,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 5: Counter Spell, Protection from Energy
   - Level 7: Freedom of Movement, Summon Construct
   - Level 9: Greater Restoration, Wall of Force
-- Level 3: Restore Balance ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RestoreBalanceCharge.png?raw=true)
+- Level 3: Restore Balance ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RestoreBalanceCharge.png?raw=true)
   - Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of yourself is about to roll a d20 with Advantage or Disadvantage, you can take a Reaction to prevent the roll from being affected by Advantage and Disadvantage. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 - Level 6: Bastion of Law
   - You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As a Magic action, you can expend 1 to 5 Sorcery Points to create a magical ward around yourself or another creature you can see within 30 feet of yourself. The ward is represented by a number of d8s equal to the number of Sorcery Points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice. The ward lasts until you finish a Long Rest or until you use this feature again.
@@ -1613,7 +1613,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Draconic Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DraconicBloodline.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DraconicBloodline.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Chromatic Orb, Command
@@ -1628,7 +1628,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Wildmagic Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagic.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WildMagic.png?raw=true)
 
 - Level 3: Wild Magic Surge
   - The Wild Magic Surge is shifted to a d100 table, producing a wide variety of magical effects.
@@ -1638,7 +1638,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Spellfire Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SpellfireSorcery.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SpellfireSorcery.png?raw=true)
 
 > Your innate power stems from the source of magic itself: the Weave. This connection manifests as a rare ability known as spellfire, and you surge with radiant bursts of this raw magic. Your talent with spellfire allows you to heal allies, sear enemies, and absorb powerful spells.
 
@@ -1660,7 +1660,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Storm Sorcery
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/StormSorcery.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/StormSorcery.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Thunderwave, Create or Destroy Water
@@ -1672,7 +1672,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Warlock
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Warlock.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Warlock.png?raw=true)
 
 - Level 2: Magical Cunning
   - You regain expended a Pact Magic spell slots. Once you use this feature, you can't do so again until you finish a Long Rest.
@@ -1723,7 +1723,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Archfey Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Archfey.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Archfey.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Faerie Fire, Sleep
@@ -1731,7 +1731,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - Level 5: Blink, Plant Growth
   - Level 7: Dominate Beast, Greater Invisibility
   - Level 9: Dominate Person, Seeming
-- Level 3: Steps of the Fey ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FeyStepCharge.png?raw=true)
+- Level 3: Steps of the Fey ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/FeyStepCharge.png?raw=true)
 - Your patron grants you the ability to move between the boundaries of the planes. You can cast Misty Step without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. In addition, whenever you cast that spell, you can choose one of the following additional effects.
   - Refreshing Step: Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains 1d10 Temporary Hit Points.
   - Taunting Step: Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn.
@@ -1741,7 +1741,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Celestial Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Celestial.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Celestial.png?raw=true)
 
 > Your pact draws on the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or another heavenly entity. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience a hint of the holy light that illuminates the multiverse.
 
@@ -1760,7 +1760,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Fiend Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fiend.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Fiend.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Burning Hands, Command
@@ -1773,7 +1773,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Great Old One Patron
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreatOldOne.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/GreatOldOne.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Tasha's Hideous Laughter
@@ -1790,7 +1790,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Hexblade
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HexBlade.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HexBlade.png?raw=true)
 
 - Subclass Spells (Always prepared)
   - Level 3: Hex, Wrathful Smite
@@ -1802,7 +1802,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Sorcerer-King
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SorcererKing.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SorcererKing.png?raw=true)
 
 > Your pact draws from the power of a monstrous, tyrannical force akin to a demigod or an overwhelmingly powerful magic-user. Through your pact, you herald this tyrant’s interests in the world, channeling their interests in the world, channeling their influence and mind-bending, psionic power.
 
@@ -1827,7 +1827,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Wizard
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Wizard.png?raw=true)
 
 - Level 2: Scholar
   - While studying magic, you also specialized in another field of study. Choose one of the following skills in which you have proficiency: Arcana, History, Investigation, Medicine, Nature, or Religion. You have Expertise in the chosen skill.
@@ -1836,14 +1836,14 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Abjurer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AbjurationSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/AbjurationSchool.png?raw=true)
 
 - Level 3: Abjuration Savant
   - You can add an Abjuration spell to your spellbook. It is always prepared and doesn’t count against the number of spells you can prepare.
 
 ### Bladesinging School
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/BladesingingSchool.png?raw=true)
 
 - Level 3: Bladesong
   - As a Bonus Action, you invoke an elven magic called the Bladesong, provided you aren’t wearing armor or using a Shield.
@@ -1859,7 +1859,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Conjurer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ConjurationSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ConjurationSchool.png?raw=true)
 
 > You consider distance and matter flexible guidelines rather than rigid physical laws. Conjurers harness the power of magic to instantly move creatures through space and summon them to fight on their behalf.
 
@@ -1873,7 +1873,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Diviner
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/DivinationSchool.png?raw=true)
 
 > The counsel of a Diviner is sought by those who want a clearer understanding of the past, present, and future. As a Diviner, you strive to part the veils of space, time, and consciousness. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight.
 
@@ -1884,7 +1884,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Enchanter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EnchantmentSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EnchantmentSchool.png?raw=true)
 
 > Your magic clouds or captivates minds. Some Enchanters use their abilities to encourage peace and soften cruelty, while others use their mind- altering magic for selfish ends. Many Enchanters fall somewhere in between.
 
@@ -1899,7 +1899,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Evoker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EvocationSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/EvocationSchool.png?raw=true)
 
 > Your studies focus on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some Evokers find employment in military forces, serving as artillery to blast armies from afar. Others use their power to protect others, while some seek their own gain.
 
@@ -1910,7 +1910,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Illusionist
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/IllusionSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/IllusionSchool.png?raw=true)
 
 > You specialize in magic that dazzles the senses and tricks the mind, and the illusions you craft make the impossible seem real.
 
@@ -1923,7 +1923,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Necromancer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromancySchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromancySchool.png?raw=true)
 
 > You explore the cosmic forces of life, death, and undeath. As a Necromancer, you learn to manipulate the energy that animates all creatures. As you progress, you master magic that can drain the life force from a creature, transforming its vital energy into magical power.
 > 
@@ -1942,7 +1942,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Sangromancer
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromanSangromancercySchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/NecromanSangromancercySchool.png?raw=true)
 
 > You study an uncommon school of magic known as Sangromancy or blood magic. Despite its dark reputation, there’s nothing inherently evil about the practice of Sangromancy, though its demands on its practitioners are gruesome. As a Sangromancer, your chosen magic demands more than knowledge: it demands sacrifice. Other Wizards may view you with skepticism or even outright hostility, but none can deny the potency of your art.
 
@@ -1957,7 +1957,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Transmuter
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TransmutationSchool.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TransmutationSchool.png?raw=true)
 
 > You specialize in spells that modify energy and matter. To you, the world isn't fixed; it's eminently mutable. Your magic gives you the tools to become a smith on reality's forge. Some Transmuters are tinkerers and pranksters, while others pursue their magical studies with deadly seriousness, seeking god-like power to create and destroy worlds.
 
@@ -1973,35 +1973,35 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## [Gunslinger](https://www.dndbeyond.com/sources/dnd/tgc/the-gunslinger-class-valdas-spire-of-secrets)
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Gunslinger.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Gunslinger.png?raw=true)
 
 > Risk is in a Gunslinger's blood. They are bold renegades, bucking tradition and forging a new path with dangerous and inelegant firearms. Gunslingers are infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck to survive.
 
 - Level 1: Quick Draw
   - You have Advantage on Initiative rolls.
-- Level 2: Critical Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_CriticalShot.png?raw=true)
+- Level 2: Critical Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_CriticalShot.png?raw=true)
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 19 or 20 on the d20.
-- Level 2: Risk ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Risk.png?raw=true)
+- Level 2: Risk ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Risk.png?raw=true)
   - You can perform incredible feats of daring fueled by special dice called Risk Dice.
-  - Risk Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RiskDie.png?raw=true)
+  - Risk Dice ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/RiskDie.png?raw=true)
     - Gunslinger Level: 2, Size: D8, Number: 2
     - Gunslinger Level: 3, Size: D8, Number: 3
     - Gunslinger Level: 4, Size: D8, Number: 4
     - Gunslinger Level: 6, Size: D8, Number: 5
     - Gunslinger Level: 10, Size: D10, Number: 5
-  - Bite the Bullet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BiteTheBullet.png?raw=true)
+  - Bite the Bullet ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BiteTheBullet.png?raw=true)
     - As a Bonus Action, you can expend one Risk Die to gain Temporary Hit Points equal to the number rolled on the die plus your Gunslinger level.
-  - Blindfire ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Blindfire.png?raw=true)
+  - Blindfire ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Blindfire.png?raw=true)
     - You can take a Bonus Action and expend one Risk Die to gain Blindsight with a range of 30 feet until the end of the current turn.
-  - Dodge Roll ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DodgeRoll.png?raw=true)
+  - Dodge Roll ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DodgeRoll.png?raw=true)
     - You can expend one Risk Die as a Bonus Action to move up to 15 feet and reload any Ranged weapon you are holding. This movement doesn't provoke Opportunity Attacks and is unaffected by Difficult Terrain.
-  - Grazing Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GrazingShot.png?raw=true)
+  - Grazing Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GrazingShot.png?raw=true)
     - When you miss with a ranged attack roll using a weapon, you can expend one Risk Die to deal damage to that creature. You can only use this maneuver once per turn.
-  - Maverick Spirit ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_MaverickSpirits.png?raw=true)
+  - Maverick Spirit ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_MaverickSpirits.png?raw=true)
     - When you fail an Intelligence, Wisdom, or Charisma ability check or saving throw, you can expend one Risk Die to add it to the roll, potentially turning it into a success. You can only use this maneuver once per turn.
-  - Skin of Your Teeth ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SkinOfYourTeeth.png?raw=true)
+  - Skin of Your Teeth ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SkinOfYourTeeth.png?raw=true)
     - When a creature you can see hits you with an attack roll, you can take a Reaction and expend one Risk Die to dodge out of harm's way. Roll the die and add the number rolled to your AC against this attack, potentially causing it to miss.
-- Level 5: Gut Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GutShot.png?raw=true)
+- Level 5: Gut Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GutShot.png?raw=true)
   - Whenever you score a Critical Hit against a Large or smaller creature with a ranged attack using a weapon, the projectile lodges itself in the target. For 1 minute, its Speed is halved and it has Disadvantage on attack rolls.
 - Level 9: Improved Critical Shot
   - Your attack rolls with Ranged weapons can score a Critical Hit on a roll of 18 or 20 on the d20.
@@ -2010,13 +2010,13 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Deadeye
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Deadeye.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Deadeye.png?raw=true)
 
 > A well-placed bullet is more powerful than a sword, arrow, or spell. Indeed, you believe that every violent conflict should sound like a single loud crack followed by a long silence. Such shots demand perfection, even at range, for when they are done right, they are as deadly for the target as they are stupendous for the audience.
 
-- Level 3: Eagle Eye ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_EagleEye.png?raw=true)
+- Level 3: Eagle Eye ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_EagleEye.png?raw=true)
   - Once per turn, when you miss with a ranged attack roll, you can expend one Risk Die and add it and your Dexterity modifier to the attack roll, potentially causing the attack to hit.
-- Level 3: Sharpshooter's Stance ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SharpshootersStance.png?raw=true)
+- Level 3: Sharpshooter's Stance ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_SharpshootersStance.png?raw=true)
   - You don't have disadvantage on ranged weapon attacks against prone creatures. When you have the Prone condition, you can right yourself and thereby end the condition with only 5 feet of movement.
 - Level 6: Concealed Position
   - You can take the Hide action as a bonus action. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
@@ -2025,13 +2025,13 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### High Roller
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HighRoller.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/HighRoller.png?raw=true)
 
 > Fortune is a fickle thing—unless you're a High Roller. These Gunslingers are master card sharps and dice throwers that mix their love of risk with their talent for gunplay. High Rollers push their luck until it runs out, then push harder. Why settle for a win when you could bet it all and win big?
 
-- Level 3: Poker Face ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PokerFace.png?raw=true)
+- Level 3: Poker Face ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PokerFace.png?raw=true)
   - You gain proficiency with in one of the following skills of your choice: Deception, Insight, or Perception.
-- Level 3: Liar's Dice ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
+- Level 3: Liar's Dice ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LiarsDice.png?raw=true)
   - When you make a damage roll with a ranged weapon, you can expend one Risk Die as a bonus action. Roll a d20. On an 11 or higher, the damage of your next ranged weapon attack is doubled. On a 10 or lower, it's halved.
 - Level 6: Risky Business
   - Once per turn when you make an attack roll against an enemy and the roll doesn't have Disadvantage, you can choose to make the roll with Disadvantage. When you do, you regain one expended Risk Die.
@@ -2040,13 +2040,13 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Secret Agent
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SecretAgent.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SecretAgent.png?raw=true)
 
 > Knowledge is power. The best way to defeat your enemies is by stealing what they know and replacing it with misinformation. To that end, you have been trained in the ways of covert warfare, giving you a broad range of abilities to complement your fearsome gunnery skills.
 
 - Level 3: Operative Training
   - You learn the Concealed Shot and Disguise Self. You gain proficiency in two of these skills of your choice: Deception, Investigation, Persuasion, Sleight of Hand, or Stealth.
-- Level 3: Parting Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PartingShot.png?raw=true)
+- Level 3: Parting Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_PartingShot.png?raw=true)
   - When you take the Dash, Disengage, or Dodge action on your turn, you can expend one Risk Die to make a ranged attack using a weapon as a Bonus Action. Add the Risk Die to the damage roll on a hit.
 - Level 6: Fieldcraft
   - Whenever you make a Deception or Persuasion check, you can treat a d20 roll of 9 or lower as a 10.
@@ -2055,43 +2055,43 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Spellslinger
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Spellslinger.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Spellslinger.png?raw=true)
 
 > Magic and guns aren't so different—arcane power is like gunpowder, a spell is like a bullet, and you are like a gun, directing your spells with precision at unfortunate targets. Spellslingers mix the disciplines of gunplay and spellcasting, sometimes loading arcane charges with your shots and firing bullets enhanced with lighting, frost, or flame.
 
-- Level 3: Bang, You're Dead! ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BangYouAreDead.png?raw=true)
+- Level 3: Bang, You're Dead! ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_BangYouAreDead.png?raw=true)
   - You learn the Finger Guns. When you hit a target with a Finger Guns attack, you can expend one Risk Die as a Bonus Action and add it to the damage roll.
-- Level 6: Spellshot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Spellshot.png?raw=true)
+- Level 6: Spellshot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Spellshot.png?raw=true)
   - When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
-- Level 6: Antimagic Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_AntimagicShot.png?raw=true)
+- Level 6: Antimagic Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_AntimagicShot.png?raw=true)
   - When you score a Critical Hit and the target is affected by your Gut Shot feature, it also impedes the target's ability to cast spells. While the projectile is lodged in the target, it can't cast spells or take the Magic action. Additionally, the target has Disadvantage on Constitution saving throws it makes to maintain Concentration.
 - Level 10: Inured to Magic
   - When you fail a saving throw against a spell or magical effect, you can take a Reaction to roll 1d6 and add it to the roll, potentially turning the failure into a success.
 
 ### Trick Shot
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickShot.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/TrickShot.png?raw=true)
 
 > Accuracy means different things to different people. For you, true accuracy isn't necessarily in hitting a target on the first shot, but might include hitting the mark after the bullet bounces around a dozen times. Your attacks are just as dangerous if they miss, or even after hitting their mark, as others' are while they're still in the air.
 
 - Level 3: Creative Trajectory
   - Your ranged weapon attacks are not penalized for High Ground Rules.
-- Level 3: Ricochet ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Ricochet.png?raw=true)
+- Level 3: Ricochet ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_Ricochet.png?raw=true)
   - You can take an action and expend one Risk Die. Shoot a foe and strike up to two additional targets within 30 feet.
-- Level 6: Gun Spinning ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GunSpinning.png?raw=true)
+- Level 6: Gun Spinning ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_GunSpinning.png?raw=true)
   - When you make a Performance check or a Sleight of Hand check, you can roll a Risk Die and add it to the ability check without expending it.
 - Level 6: Speed Loader
   - On your turn, you can reload a weapon with the Reload property without taking an action or Bonus Action.
-- Level 10: Deft Deflection ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DeftDeflection.png?raw=true)
+- Level 10: Deft Deflection ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_DeftDeflection.png?raw=true)
   - You can shoot projectiles out of the air. When an ally within 30 feet of you is hit by an ranged weapon attack, you can take a Reaction and expend one Risk Die to grant that ally the benefit of the Skin of Your Teeth maneuver against that attack.
 
 ### White Hat
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WhiteHat.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/WhiteHat.png?raw=true)
 
 > Some Gunslingers live by a code and expect others to do the same. These Gunslingers, known as White Hats, sometimes serve as officers of the law but never hesitate to do what's right when the law says otherwise. Despite their affinity for deadly weapons, White Hats prefer to keep their friends safe and subdue their enemies nonviolently—a preference their enemies don't often oblige.
 
-- Level 3: Lay Down the Law ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LayDowntheLaw.png?raw=true)
+- Level 3: Lay Down the Law ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_LayDowntheLaw.png?raw=true)
   - You can take a Bonus Action and expend one Risk Die to keep an eye out for dangers that threaten your companions. Choose an ally that you can see within 60 feet of you. That ally gains Temporary Hit Points equal to the number rolled on the Risk Die. Until the start of your next turn, if the ally is hit by an attack, you can take a Reaction to make a ranged attack using a weapon against the attacker.
 - Level 3: Steely-Eyed Aura
   - An aura of stoic confidence radiates from you in a 10-foot Emanantion. You and allies within the Emanantion have Advantage on saving throws made to avoid or end the Frightened condition. The aura is inactive while you have the Incapacitated condition.
@@ -2102,85 +2102,85 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## [Illrigger](https://www.dndbeyond.com/sources/dnd/tir/the-illrigger-revised#TheIllrigger)
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Illrigger.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Illrigger.png?raw=true)
 
 >The archdevils who rule the Seven Cities of Hell scheme endlessly. Each eternally plots to bring the others to heel—to ascend to the Throne of Hell, unite the Seven Cities and every infernal being living there, and lead an inexhaustible army of devils across the timescape until all worlds burn.
 >
 >These archdevils' elite operatives are the illriggers. Knights, assassins, mages, and terror-commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil's infernal will.
 
-- Level 1: Baleful Interdict ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/IllriggerSeal.png?raw=true)
+- Level 1: Baleful Interdict ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/IllriggerSeal.png?raw=true)
   - You gain the ability to censure creatures with the power of Hell. Once on your turn, you can place a magical seal on a creature within 30 feet of you. You can either place this seal when you hit that target with a weapon attack (no action required), or you can use a bonus action to place this seal on a target you can see within range.
   - You can only place a limited number of seals before resting, and you regain all seals when you finish a short or long rest. The number of seals you can place increases as you gain illrigger levels.
   - If an interdicted creature dies, you can use a bonus action on your turn to move all seals placed on them to a new creature you can see within 30 feet of them.
-  - Burning Seals ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire.png?raw=true)
+  - Burning Seals ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire.png?raw=true)
     - You can burn a seal you placed on them to deal 1d6 fire or necrotic damage (your choice) to that creature per seal burned. You deal this damage immediately after the triggering damage. Burning a seal doesn't require an action from you, but you can't do so while incapacitated. Once a seal is burned, it immediately vanishes.
   - Once you reach 5th level in this class, your connection to your archdevil strengthens. Each burned seal deals an extra 1d6 damage, for a total of 2d6. The damage of each seal increases again by 1d6 when you reach 10th level for a total of 3d6.
 - Level 2: Combat Mastery
   - Your archdevil grants you uncanny skill in a certain form of combat. Choose one of the following illrigger combat masteries:
-  - Bravado ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bravado.png?raw=true)
+  - Bravado ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bravado.png?raw=true)
     - While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Charisma modifier. You can use a shield and still gain this benefit.
-  - Brutal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Brutal.png?raw=true)
+  - Brutal ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Brutal.png?raw=true)
     - Once per turn, when you hit a creature who is no more than one size larger than you with an attack you make with a melee weapon you are wielding with two hands, you can move the target 15 feet horizontally. You gain movement speed equal to the distance you push the creature.
-  - Inexorable ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Inexorable.png?raw=true)
+  - Inexorable ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Inexorable.png?raw=true)
     - You gain a +2 bonus to saving throws for each hostile creature within 10 feet of you, to a maximum bonus of +6.
   - Lies
     - When you attack with a any weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls.
   - Lissome
     - When you hit a creature with a melee weapon attack, you can move without provoking opportunity attacks.
-  - Unfettered ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Unfettered.png?raw=true)
+  - Unfettered ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Unfettered.png?raw=true)
     - When you use your Baleful Interdict to place or burn a seal, its range is 60 feet instead of 30 feet. When you gain the Infernal Conduit feature at 6th level, its range is 30 feet instead of touch. In addition, making a ranged attack while within 5 feet of a hostile creature does not impose disadvantage on the attack roll.
 - Level 2: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Abating Seal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AbatingSeal.png?raw=true)
+  - Abating Seal ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AbatingSeal.png?raw=true)
     - When a creature you can see damages you or an ally within 30 feet of you, you can expend a seal as a reaction to reduce the damage taken by the target by an amount equal to 1d10 + half of your illrigger level (rounded down).
-  - Bedevil ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bedevil.png?raw=true)
+  - Bedevil ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bedevil.png?raw=true)
     - When you burn a seal on an interdicted creature, you can activate this boon (no action required). The target must subtract a number equal to your proficiency bonus from the result of the next saving throw they make before the end of their next turn.
-  - Soul Eater ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulEater.png?raw=true)
+  - Soul Eater ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulEater.png?raw=true)
     - When you burn a seal on an interdicted creature, you can activate this boon (no action required) to regain hit points equal to your illrigger level.
-  - Styx's Apathy ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StyxsApathy.png?raw=true)
+  - Styx's Apathy ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StyxsApathy.png?raw=true)
     - When you burn a seal on an interdicted creature, you can use your reaction to flood the target with an otherworldly chill. Until the end of the target's next turn, they can't take reactions.
   - Swift Retribution (Passive)
     - When an interdicted creature provokes an opportunity attack from you, you can make that attack without using your reaction, provided you're not incapacitated. Once you benefit from this boon, you can't do so again until the start of your next turn.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Your diabolic connection allows you to channel infernal energy to empower magical effects. Your chosen diabolic contract grants you two Invoke Hell options and describes how to use each.
   - You can use this feature twice. You regain one expended use when you finish a short rest, and you regain all expended uses when you finish a long rest. When you reach Illrigger Level 11, you gain 1 additional use of this feature.  - Some Invoke Hell effects require a saving throw. When you use such an effect, the DC equals your interdict save DC.
 - Level 5: Extra Attack
-- Level 6: Infernal Conduit ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InfernalConduitDie.png?raw=true)
+- Level 6: Infernal Conduit ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InfernalConduitDie.png?raw=true)
   - You can strengthen your allies at the cost of yourself—or drain your enemy's life force for your own gain. You have a pool of Infernal Conduit dice, which are d10s. The number of Infernal Conduit dice in your pool increase as you gain illrigger levels, as shown in the Infernal Conduit Dice column of the Illrigger table.
   - As an action, you can touch another creature and spend one or more dice from your pool. The target must make a Constitution saving throw against your interdict save DC. A creature can willingly fail this saving throw. Roll the spent dice and choose one of the following effects:
-    - Invigorate ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Invigorate.png?raw=true)
+    - Invigorate ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Invigorate.png?raw=true)
       - On a failed save, the target regains hit points equal to the total you rolled, and you take necrotic damage equal to that total. On a successful save, the target regains half as many hit points, and you take necrotic damage equal to that total. Save or fail, this necrotic damage can't be reduced in any way, and if this damage reduces you to 0 hit points, you fall unconscious and are stabilized.
-    - Devour ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Devour.png?raw=true)
+    - Devour ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_InfernalConduit_Devour.png?raw=true)
       - On a failed save, the target takes necrotic damage equal to the total you rolled, and you regain hit points equal to that total. On a successful save, the target takes half as much damage, and you regain hit points equal to the damage the target took. Save or fail, or if the target chose to fail their saving throw against this effect, the necrotic damage can't be reduced in any way. When you reach 11th level in this class, the target also gains a level of exhaustion on a failed save against this effect. This level of exhaustion can be reduced as normal, and a creature can't suffer more than three levels of exhaustion combined from all illriggers' Infernal Conduit features.
   - You regain any spent Infernal Conduit dice when you finish a short rest.
 - Level 7: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Acheron's Chain ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AcheronsChain.png?raw=true)
+  - Acheron's Chain ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AcheronsChain.png?raw=true)
     - When you use a bonus action to place or move a seal on a Large or smaller creature, you can activate this boon (no action required). You conjure infernal chains to grasp the target, forcing them to make a Strength saving throw. On a failed save, you can cause them to be restrained until the end of your next turn (escape DC equal to your interdict save DC).
-  - Conflagrant Channel ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ConflagrantChannel.png?raw=true)
+  - Conflagrant Channel ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ConflagrantChannel.png?raw=true)
     - You can expend a seal as a bonus action to teleport up to 60 feet to an unoccupied space you can see.
-  - Shadow Shroud ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ShadowShroud.png?raw=true)
+  - Shadow Shroud ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_ShadowShroud.png?raw=true)
     - You can expend a seal as a bonus action to weave a mantle of semisolid shadows around yourself or a creature you touch. The target gains a +2 bonus to AC for 1 minute.
-  - Unleash Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire_Big.png?raw=true)
+  - Unleash Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Illrigger_BurningSeals_Fire_Big.png?raw=true)
     - When you burn one or more seals on an interdicted creature, you can use your reaction to unleash an explosion of hellish energy around them. Each creature of your choice within 5 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes the same amount and type of damage as the seals dealt to the interdicted creature. On a successful save, a creature takes half as much damage.
-  - Vengeful Shot ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_VengefulShot.png?raw=true)
+  - Vengeful Shot ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_VengefulShot.png?raw=true)
     - When a creature makes a ranged attack against you or an ally you can see within 30 feet of you, you can expend a seal as a reaction to make a ranged weapon attack against the attacker. If your attack hits, it deals extra damage equal to half your illrigger level (rounded down).
-- Level 10: Blood Price ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_BloodPrice.png?raw=true)
+- Level 10: Blood Price ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_BloodPrice.png?raw=true)
   - You can strengthen your defenses at the cost of your vitality. Whenever you fail a saving throw, you can spend one of your Hit Dice, rolling it and adding the number rolled to the result of the save.
 - Level 11: Terrorizing Force
   - Your attacks are empowered with devastating might. When you gain this feature, choose a damage type: cold, fire, necrotic, or poison. When you hit with a weapon attack, you deal an extra 1d8 damage of the chosen type.
 - Level 12: Interdiction
   - You can infuse your seals with hellish magical power, enhancing their effects.
-  - Dis's Onslaught ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_DissOnslaught.png?raw=true)
+  - Dis's Onslaught ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_DissOnslaught.png?raw=true)
     - Each time you use a bonus action to place or move a seal, you can make one weapon attack as part of the same bonus action.
-  - Flash of Brimstone ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FlashOfBrimstone.png?raw=true)
+  - Flash of Brimstone ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FlashOfBrimstone.png?raw=true)
     - When you place or move a seal, you can activate this boon (no action required) to magically teleport to an unoccupied space you can see within 5 feet of the target.
-  - Soul's Doom ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulsDoom.png?raw=true)
+  - Soul's Doom ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_SoulsDoom.png?raw=true)
     - When you use a bonus action to place or move a seal, you can scorch the seals into the target's soul. For 1 minute, whenever that interdicted creature takes damage, they take extra damage equal to your proficiency bonus.
 
 ### Architect of Ruin
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArchitectsOfRuin.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/ArchitectsOfRuin.png?raw=true)
 
 >Architects of Ruin are cool and calculating arcane knights who serve Asmodeus, deploying spells, steel, and subterfuge to win at any cost.
 >
@@ -2191,21 +2191,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Spellcasting (1/3 Caster)
 - Level 3: Asmodeus's Blessing
   - When Asmodeus accepts you as an Architect of Ruin, he grants you access to his infernal knowledge. You gain proficiency in Arcana, History, Nature, and Religion.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Enervating Spell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EnervatingSpell.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+  - Enervating Spell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EnervatingSpell.png?raw=true)
     - When you deal damage to a creature with an Illrigger spell of 1st level or higher, you can expend a seal (no action required) to maximize the damage.
-  - Spellblade ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Spellblade.png?raw=true)
+  - Spellblade ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Spellblade.png?raw=true)
     - You can use an action to both make a melee weapon attack and cast an illrigger spell you know that has a casting time of one action.
 - Level 7: Hellish Versatility
   - Once on each of your turns, you can cast one of your illrigger cantrips in place of one of your attacks granted by your Extra Attack feature.
-- Level 7: Axiomatic Seals ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AxiomaticSeals.png?raw=true)
+- Level 7: Axiomatic Seals ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_AxiomaticSeals.png?raw=true)
   - Asmodeus's secrets allow you to infuse your seals with manifest power. When you burn one or more seals to deal damage to a creature, you can activate this boon (no action required) to add your Charisma modifier (minimum of 1) to each seal's damage roll.
 - Level 11: Submit
   - When you cast an illrigger spell you know, you can burn two seals on an interdicted creature (no action required) to impose disadvantage on their saving throw against the spell.
 
 ### Hellspeaker
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hellspeaker.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Hellspeaker.png?raw=true)
 
 >The charismatic and manipulative Hellspeakers serve Moloch as they slip about the battlefield, coercing enemies into becoming unwitting allies.
 >
@@ -2219,21 +2219,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
   - When Moloch accepts you as his illrigger, he grants you access to his infernal knowledge. You gain expertise in Persuasion and Deception.
 - Level 3: Charm Enemy
   - When you use your bonus action to place a seal on a Humanoid, you can attempt to charm them. The target must succeed on a Charisma saving throw or be charmed by you for 1 hour or until you or your companions do anything harmful to them.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Honey-Sweet Blades ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_HoneySweetBlades.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+  - Honey-Sweet Blades ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_HoneySweetBlades.png?raw=true)
     - When you make a weapon attack against an interdicted creature, If the attack hits, it becomes a critical hit.
-  - Turncoat ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Turncoat.png?raw=true)
+  - Turncoat ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Turncoat.png?raw=true)
     - You choose a number of enemy creatures up to your proficiency bonus within 60 feet of you who can hear you. Each target must succeed on a Charisma saving throw or be driven into madness for 2 turns.
-- Level 7: Red Cant ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_RedCant.png?raw=true)
+- Level 7: Red Cant ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_RedCant.png?raw=true)
   - When you make a Charisma check, you can expend a seal to treat a d20 roll of 9 or lower as a 10.
-- Level 11: Intransigent ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Intransigent.png?raw=true)
+- Level 11: Intransigent ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Intransigent.png?raw=true)
   - You and your allies within 10 feet of you are immune to the charmed condition while you are conscious.
-- Level 11: Let's Make a Deal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_LetsMakeADeal.png?raw=true)
+- Level 11: Let's Make a Deal ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_LetsMakeADeal.png?raw=true)
   - As a bonus action, you can offer a willing ally within 60 feet a deal. Within the next 10 minutes, they gain advantage on one attack roll or saving throw. After using this effect, there is a 50% chance they receive a blessing, gaining 12 temporary hit points, or a curse, suffering disadvantage on their next attack roll or saving throw.
 
 ### Painkiller
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Painkiller.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Painkiller.png?raw=true)
 
 >The heavily armored death troopers of Hell, Painkillers serve Dispater, leading from the front of every major infernal battle.
 >
@@ -2245,21 +2245,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Dispater's Blessing
   - When Dispater accepts you as his illrigger, you gain proficiency with heavy armor.
-- Level 3: Devastator ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Devastator.png?raw=true)
+- Level 3: Devastator ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Devastator.png?raw=true)
   - You invoke the authority of Dispater. You choose a number of willing creatures up to your proficiency bonus who you can see within 30 feet of you. Each creature you choose can use a reaction to make a weapon attack or cast a damage-dealing cantrip with a casting time of 1 action.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Grand Strategist ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+  - Grand Strategist ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_GrandStrategistt.png?raw=true)
     - You can order your allies to follow your formation (no action required). Choose one or more creatures within 60 feet of you who can hear you, up to a number of creatures equal to your proficiency bonus. Each target gains the effects of Dash and Disengage.
-  - Punishment ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Punishment.png?raw=true)
+  - Punishment ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Punishment.png?raw=true)
     - When a creature damages you with an attack, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes Necrotic damage. On a successful save, the attacker takes half as much damage.
-- Level 7: Telekinetic Seal ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_TelekineticSeal.png?raw=true)
+- Level 7: Telekinetic Seal ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_TelekineticSeal.png?raw=true)
   - When a creature you can see moves within 5 feet of you, you can use your reaction to place a seal on them. When you do, the target must succeed on a Wisdom saving throw or be either pushed back 15 feet.
-- Level 11: You Die on My Command! ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_YouDieOnMyCommand.png?raw=true)
+- Level 11: You Die on My Command! ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_YouDieOnMyCommand.png?raw=true)
   - When an ally within 30 feet of you who can hear you is killed, you can use your reaction to shout an order at them, causing them to be revived and regain 1 hit point. Once you use this reaction, you can't do so again until you finish a short or long rest.
 
 ### Sanguine Knight
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineKnight.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/SanguineKnight.png?raw=true)
 
 >The blood-knights of Hell, Sanguine Knights serve Sutekh, Lord of Blood. Their sorceries drain their enemies' life force, pouring this stolen vitality into infernal rituals to turn the tide of battle.
 >
@@ -2269,21 +2269,21 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Sutekh's Blessing
   - When Sutekh accepts you as his illrigger, he grants you access to his sacrilegious command of blood and life. You gain expertise in the Religion skill.
-- Level 3: Exsanguinate ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Exsanguinate.png?raw=true)
+- Level 3: Exsanguinate ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Exsanguinate.png?raw=true)
   - You can drain enemies to embolden your allies. Whenever you burn one or more seals on a creature, you can choose an ally you can see within 30 feet of you. That ally gains temporary hit points equal to the damage dealt by the seals to the interdicted creature.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
-  - Embolden Allies ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EmboldenAllies.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+  - Embolden Allies ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_EmboldenAllies.png?raw=true)
     - As a bonus action, you restore a total number of hit points equal to five times your illrigger level, divided however you choose between yourself and other creatures within 30 feet of you.
-  - Vitalize ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Vitalize.png?raw=true)
+  - Vitalize ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Vitalize.png?raw=true)
     - You can flood your allies with invigorating vivacity (no action required). For 1 minute, each creature of your choice within 30 feet of you gains advantage on all ability checks.
-- Level 7: Foul Interchange ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FoulInterchange.png?raw=true)
+- Level 7: Foul Interchange ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_FoulInterchange.png?raw=true)
   - As an action, you choose a creature you can see within 30 feet of you and expend a seal to end one of the following conditions affecting them: blinded, charmed, dazed, frightened, paralyzed, or poisoned. Then, you choose another creature within 60 feet of you, which must succeed on a Constitution saving throw or suffer a random condition until the start of your next turn.
-- Level 11: Bloodstroke ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bloodstroke.png?raw=true)
+- Level 11: Bloodstroke ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_Bloodstroke.png?raw=true)
   - The magic that shields your allies now also saps their enemies' strength. When an ally who has temporary hit points from your Exsanguinate feature is hit by a melee attack, the attacker takes 11 necrotic damage.
 
 ### Shadowmaster
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadowmaster.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Shadowmaster.png?raw=true)
 
 >Belial rules Gehennom, the City of Darkness. He strives to rule Hell through poison, torture, and assassination. His illriggers strike from the shadows or use deception to earn high-ranking positions close to powerful rulers. Many Shadowmasters run networks of spies and assassins who have no idea of the infernal provenance of their leader.
 >
@@ -2291,12 +2291,12 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 - Level 3: Marked for Death
   - You are particularly skilled against foes you mark for death. You have advantage on your first attack against an interdicted creature on each of your turns.
-- Level 3: Strike from the Dark ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StrikeFromTheDark.png?raw=true)
+- Level 3: Strike from the Dark ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_StrikeFromTheDark.png?raw=true)
   - You understand the power of striking from the shadows. Once per turn, when you hit an interdicted creature with a melee weapon attack and you have advantage on the attack roll, you can roll a number of d4s equal to your proficiency bonus and deal extra damage equal to the total you rolled. This damage increases by 1d4 if the target is in dim light or darkness.
-- Level 3: Invoke Hell ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
+- Level 3: Invoke Hell ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Resources/1_Normal_48/InvokeHellCharge.png?raw=true)
   - Master of Disguise
     - As an action, you can cast the disguise self spell without expending a spell slot.
-  - No Escape ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_NoEscape.png?raw=true)
+  - No Escape ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Illrigger_NoEscape.png?raw=true)
     - As a bonus action, you can call upon the shadows to entrap a creature you can see within 30 feet of you. The target must make a Charisma saving throw, with disadvantage if they are in dim light or darkness. On a failed save, the target is slowed. This effect ends if you are incapacitated, die, or if the target moves more than 30 feet away from you.
 - Level 7: Veil of Lies
   - As a bonus action, you can expend a seal to become invisible for 10 minutes or until you attack or cast a spell.
@@ -2305,7 +2305,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ## Psion
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psion.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psion.png?raw=true)
 
 > Psions weave magic and extraordinary powers through the sheer force of their minds. They develop their minds as fonts of power that manifest spells and grow stronger over the course of their adventuring careers.
 
@@ -2346,7 +2346,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Metamorph
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Metamorph.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Metamorph.png?raw=true)
 
 > Your mastery of psionic powers turns inward. Your own flesh becomes like clay to you, and youmold it to turn it into the perfect vessel of your psionic powers. Experience in manipulating your life energy also enables you to adjust the life force of friends and foes alike.
 
@@ -2358,16 +2358,16 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 - Level 3: Organic Weapons
   - You can reshape your limbs into weapons. As an action, you can transform your hand into one of the following organic weapons: a Bone Blade, Flesh Maul, or Viscera Launcher.
   - Whenever you attack with this weapon, you can use your Intelligence modifier for the attack and damage rolls instead of Strength or Dexterity. Additionally, you can choose to have the weapon deal Psychic damage or its normal damage type.
-  - Bone Blade ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_BoneBlade.png?raw=true)
+  - Bone Blade ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_BoneBlade.png?raw=true)
     - A bone blade springs from your forearm or extends from your hand. This counts as a Simple Melee weapon with the Finesse property, dealing 1d8 Piercing damage on a hit.
     - You have Advantage on attack rolls made with this blade if at least one ally is within 5 feet of the target and isn't Incapacitated.
-  - Flesh Maul ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_FleshMaul.png?raw=true)
+  - Flesh Maul ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_FleshMaul.png?raw=true)
     - You transform your fist and forearm into a dense maul of flesh and bone. This weapon counts as a Simple Melee weapon, dealing 1d10 Bludgeoning damage on impact.
     - Additionally, any creature hit by this maul suffers Disadvantage on the next Strength or Constitution saving throw it makes before the beginning of its next turn.
-  - Viscera Launcher ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_Launcher.png?raw=true)
+  - Viscera Launcher ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_Launcher.png?raw=true)
     - Your hand and forearm transform into a crossbow of muscle and sinew that fires bolts of bile. This Viscera Launcher functions as a Simple Ranged weapon with a normal range of 30 feet and a long range of 90 feet, dealing 1d6 Acid damage on a hit.
     - Once per turn, when you hit a creature with an attack using this launcher, you can deal an extra 1d6 Acid damage to the target.
-- Level 3: Extend Libs ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_ExtendLimbs.png?raw=true)
+- Level 3: Extend Libs ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Psion_ExtendLimbs.png?raw=true)
   - As a bonus action, you can expend one Psionic Energy Die to psionically stretch your limbs for 1 minute. Roll the expended die and gain a number of temporary hit points equal to the number rolled plus your Intelligence modifier (minimum of 1). While this feature is active, you gain the following benefits
     - Reach: Your reach increases by 5 feet.
     - Speed: Your speed increases by 5 feet.
@@ -2387,7 +2387,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Psi Warper
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarper.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/PsiWarper.png?raw=true)
 
 > Psi Warpers tune their psionic powers to manipulating the space between objects. Capable of teleporting across the battlefield and creating vacuums in space, a Psi Warper is never in one place for too long.
 
@@ -2409,7 +2409,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Psykinetic
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psykinetic.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Psykinetic.png?raw=true)
 
 > A Psykinetic controls their psionic powers as a malleable force. They bend their telekinetic energies into sturdy barriers and strike with the force of a battering ram.
 
@@ -2435,7 +2435,7 @@ Arcane Tricksters now learn their spells from the wizard spell list, without res
 
 ### Telepath
 
-![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Telepath.png?raw=true)
+![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/ClassIcons/2_hotbar_140/Telepath.png?raw=true)
 
 > Telepaths are masters of mind magic, wielding their psionic powers for all matters of the mind. They can bolster allies' mental defenses or subtly probe the thoughts of others. A telepath can be a bastion of psionic aid or a crafty manipulator.
 
@@ -2615,11 +2615,11 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
 ## New Items
 - [Axe of the Dwarvish Lords](https://www.dndbeyond.com/magic-items/9228353-axe-of-the-dwarvish-lords)
   - It can be obtained by killing the Stonemason Kith in Grymforge.
-- [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Blackrazor.png?raw=true)
+- [Blackrazor](https://www.dndbeyond.com/magic-items/9228360-blackrazor) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Blackrazor.png?raw=true)
   - It can be obtained by killing the Death Shepherd on the Rosymorn Monastery Trail.
 - [Blackstaff](https://www.dndbeyond.com/magic-items/253576-blackstaff)
   - It can be obtained by Gale upon completing his personal quest at the Stormshore Tabernacle. Alternatively, it can be purchased from Vicar Humbletoes.
-- [Bloodshard Trident](https://www.dndbeyond.com/magic-items/9445000-bloodshard-trident) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_BloodshardTrident.png?raw=true)
+- [Bloodshard Trident](https://www.dndbeyond.com/magic-items/9445000-bloodshard-trident) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_BloodshardTrident.png?raw=true)
   - It can be obtained by killing Gish Umr'a'ac in Crèche Y'llek.
 - [Cape of the Mountebank](https://www.dndbeyond.com/magic-items/9228376-cape-of-the-mountebank)
   - It can be obtained by killing the Dhourn in Underdark.
@@ -2629,19 +2629,19 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
   - It can be obtained by killing the Duergar Corpse Disposer in Grymforge.
 - [Efreeti Chain](https://www.dndbeyond.com/magic-items/9228530-efreeti-chain)
   - It can be obtained by killing the Animated Armour in the Ancient Forge.
-- [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_EnergyBow.png?raw=true)
+- [Energy Bow](https://www.dndbeyond.com/magic-items/9058960-energy-bow) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_EnergyBow.png?raw=true)
   - It can be obtained by killing the Merregon Legionnaire in Grymforge.
 - [Executioner's Handaxe](https://www.dndbeyond.com/magic-items/9228603-executioners-axe)
   - It can be obtained by killing Crusher in Goblin Camp.
 - [Frost Brand](https://www.dndbeyond.com/magic-items/9228651-frost-brand)
   - It can be obtained by killing Zarys in Zhentarim Basement.
-- [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_HolyAvenger.png?raw=true)
+- [Holy Avenger](https://www.dndbeyond.com/magic-items/9228774-holy-avenger) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_HolyAvenger.png?raw=true)
   - It can be obtained by killing the Guardian of Faith in Crèche Y'llek.
-- [Lunar Spear](https://www.dndbeyond.com/magic-items/8806875-lunar-lances) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_LunarSpear.png?raw=true)
+- [Lunar Spear](https://www.dndbeyond.com/magic-items/8806875-lunar-lances) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/YMS_LunarSpear.png?raw=true)
   - It can be obtained by killing Warrior Gronag in Shadow Cursed Land.
 - [Nature's Mantle](https://www.dndbeyond.com/magic-items/2405507-natures-mantle)
   - It can be obtained by killing the Wood Woad in the Decrepit Sanctuary.
-- [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Oathbow.png?raw=true)
+- [Oathbow](https://www.dndbeyond.com/magic-items/9228907-oathbow) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_Oathbow.png?raw=true)
   - It can be obtained by killing Sa'varsh Kethk in Crèche Y'llek.
 - [Shield of the Cavalier](https://www.dndbeyond.com/magic-items/9058943-shield-of-the-cavalier)
   - It can be purchased from Lann Tarv.
@@ -2649,11 +2649,11 @@ Some items in Baldur's Gate 3 that set an ability score to a fixed number (overr
   - It can be obtained by killing Gish Far'aag in Crèche Y'llek.
 - [Sword of Kas](https://www.dndbeyond.com/magic-items/9229112-sword-of-kas)
   - It can be purchased Vicar Humbletoes.
-- [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_SwordOfZariel.png?raw=true)
+- [Sword of Zariel](https://www.dndbeyond.com/magic-items/842321-sword-of-zariel) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_SwordOfZariel.png?raw=true)
   - It can be purchased Vicar Humbletoes.
 - [Thunderous Greatclub](https://www.dndbeyond.com/magic-items/9058872-thunderous-greatclub)
   - It can be obtained by killing Fist Marcus.
-- [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_TrueName.png?raw=true)
+- [True Name](https://www.dndbeyond.com/magic-items/9324386-true-name) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Item_TrueName.png?raw=true)
   - It can be obtained by killing He Who Was in the Shadow-Cursed Lands.
 - [Vorpal Glaive](https://www.dndbeyond.com/magic-items/9229181-vorpal-sword)
   - It can be obtained by killing A'jak'nir Jeera in Crèche Y'llek.
@@ -2710,18 +2710,18 @@ In accordance with the Monster Manual, the enemies listed below have been modifi
 ## Actions
 
 - Attack
-  - Shove ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Shove_Action.png?raw=true)
+  - Shove ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Shove_Action.png?raw=true)
     - The cost has been changed from a Bonus Action to an Action Point.
     - This action can now be used as part of Extra Attack.
-  - Trip ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_statIcons_OffBalanced.png?raw=true)
+  - Trip ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_statIcons_OffBalanced.png?raw=true)
     - New option to knock a target Prone using 1 Action Point.
     - Can be used with Extra Attack.
 - Break Free
   - Attempt to escape from conditions such as Restrained or Grappled.
 - Dash
   - To prevent exploitation, players can no longer enter combat with a movement advantage gained from using the Dash action before combat begins.
-- [Distract](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#HideAction) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Status_Distracted.png?raw=true)
-- [Dodge](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#DodgeAction) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_statIcons_Momentum.png?raw=true)
+- [Distract](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#HideAction) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_Status_Distracted.png?raw=true)
+- [Dodge](https://www.dndbeyond.com/sources/dnd/phb-2024/rules-glossary#DodgeAction) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Action_statIcons_Momentum.png?raw=true)
 - Jump
   - Cost changed from 1 Bonus Action and 3m of movement to movement equal to the jump distance.
   - No longer requires a Bonus Action.
@@ -2808,9 +2808,9 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Bone Chill](https://www.dndbeyond.com/spells/2618965-chill-touch)
 - [Booming Blade](https://www.dndbeyond.com/spells/2410-booming-blade)
 - [Concealed Shot](https://www.dndbeyond.com/spells/2943204-concealed-shot)
-- [Concussion](https://www.dndbeyond.com/spells/2840679-concussion) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Concussion.png?raw=true)
+- [Concussion](https://www.dndbeyond.com/spells/2840679-concussion) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Concussion.png?raw=true)
 - [Dancing Lights](https://www.dndbeyond.com/spells/2619058-dancing-lights)
-- [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_FingerGuns.png?raw=true)
+- [Finger Guns](https://www.dndbeyond.com/spells/2872690-finger-guns) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Gunslinger_FingerGuns.png?raw=true)
 - [Green-Flame Blade](https://www.dndbeyond.com/spells/2411-green-flame-blade)
 - [Hellfire](https://www.dndbeyond.com/spells/2721765-hellfire)
 - [Lightning Lure](https://www.dndbeyond.com/spells/2412-lightning-lure)
@@ -2825,7 +2825,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Spare the Dying](https://www.dndbeyond.com/spells/2619067-spare-the-dying)
 - [Starry Wisp](https://www.dndbeyond.com/spells/2618840-starry-wisp)
 - [Telekinetic Fling](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
-- [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Thunderclap.png?raw=true)
+- [Thunderclap](https://www.dndbeyond.com/spells/2619179-thunderclap) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_Thunderclap.png?raw=true)
 - [True Strike](https://www.dndbeyond.com/spells/2619204-true-strike)
 - [Vengeful Blade](https://www.dndbeyond.com/spells/2721769-vengeful-blade)
 - [Vicious Mockery](https://www.dndbeyond.com/spells/2619216-vicious-mockery)
@@ -2843,7 +2843,7 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Feather Fall](https://www.dndbeyond.com/spells/2618874-feather-fall)
 - [Hail of thorns](https://www.dndbeyond.com/spells/2618975-hail-of-thorns)
 - [Healing Word](https://www.dndbeyond.com/spells/2619143-healing-word)
-- [Hell's Lash](https://www.dndbeyond.com/spells/2721764-hells-lash) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_HellsLash.png?raw=true)
+- [Hell's Lash](https://www.dndbeyond.com/spells/2721764-hells-lash) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_HellsLash.png?raw=true)
 - [Hunter's Mark](https://www.dndbeyond.com/spells/2619166-hunters-mark)
 - [Inflict Wounds](https://www.dndbeyond.com/spells/2619181-inflict-wounds)
 - [Jump](https://www.dndbeyond.com/spells/2618991-jump)
@@ -2852,8 +2852,8 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Sanctuary](https://www.dndbeyond.com/spells/2619003-sanctuary)
 - [Searing Smite](https://www.dndbeyond.com/spells/2619009-searing-smite)
 - [Sleep](https://www.dndbeyond.com/spells/2619064-sleep)
-- [Spellfire Flare ](https://www.dndbeyond.com/spells/3078521-spellfire-flare) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_SpellfireFlare.png?raw=true)
-- [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_CausticBrew.png?raw=true)
+- [Spellfire Flare ](https://www.dndbeyond.com/spells/3078521-spellfire-flare) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_SpellfireFlare.png?raw=true)
+- [Tasha's Caustic Brew](https://www.dndbeyond.com/spells/719953-tashas-caustic-brew) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_CausticBrew.png?raw=true)
 - [Tasha's Hideous Laughter](https://www.dndbeyond.com/spells/2619132-tashas-hideous-laughter)
 - [Thunderous Smite](https://www.dndbeyond.com/spells/2619182-thunderous-smite)
 - [Witch Bolt](https://www.dndbeyond.com/spells/2619215-witch-bolt)
@@ -2878,19 +2878,19 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Phantasmal Force](https://www.dndbeyond.com/spells/2618854-phantasmal-force)
 - [Prayer of Healing](https://www.dndbeyond.com/spells/2618892-prayer-of-healing)
 - [Ray of Enfeeblement](https://www.dndbeyond.com/spells/2618926-ray-of-enfeeblement)
-- [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BindingIce.png?raw=true)
+- [Rime's Binding Ice](https://www.dndbeyond.com/spells/1183867-rimes-binding-ice) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BindingIce.png?raw=true)
 - [Shadow Blade](https://www.dndbeyond.com/spells/14595-shadow-blade)
 - [Snilloc's Snowball Swarm](https://www.dndbeyond.com/spells/2399-snillocs-snowball-swarm)
 - [Spiritual Weapon](https://www.dndbeyond.com/spells/2619081-spiritual-weapon)
 - [Summon Beast](https://www.dndbeyond.com/spells/2619106-summon-beast)
-- [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_MindWhip.png?raw=true)
+- [Tasha's Mind Whip](https://www.dndbeyond.com/spells/719959-tashas-mind-whip) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_MindWhip.png?raw=true)
 - [Warding Bond](https://www.dndbeyond.com/spells/2619203-warding-bond)
 - [Warding Wind](https://www.dndbeyond.com/spells/2407-warding-wind)
 - [Web](https://www.dndbeyond.com/spells/2619208-web)
 
 ## Level 3 spells
 - [Animate Dead](https://www.dndbeyond.com/spells/2618853-animate-dead)
-- [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_AshardalonsStride.png?raw=true)
+- [Ashardalon's Stride](https://www.dndbeyond.com/spells/1183862-ashardalons-stride) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_AshardalonsStride.png?raw=true)
 - [Blinding Smite](https://www.dndbeyond.com/spells/2618936-blinding-smite)
 - [Conjure Barrage](https://www.dndbeyond.com/spells/2619045-conjure-barrage)
 - [Counterspell](https://www.dndbeyond.com/spells/2619072-counterspell)
@@ -2900,12 +2900,12 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Hypnotic Pattern](https://www.dndbeyond.com/spells/2619168-hypnotic-pattern)
 - [Lightning Arrow](https://www.dndbeyond.com/spells/2618997-lightning-arrow)
 - [Mass Healing Word](https://www.dndbeyond.com/spells/2619028-mass-healing-word)
-- [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Divination_MindSpike.png?raw=true)
+- [Mind Spike](https://www.dndbeyond.com/spells/2619038-mind-spike) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Divination_MindSpike.png?raw=true)
 - [Phantom Steed](https://www.dndbeyond.com/spells/2618859-phantom-steed)
 - [Spirit Guardian](https://www.dndbeyond.com/spells/2619078-spirit-guardians)
 - [Summon Fey](https://www.dndbeyond.com/spells/2619115-summon-fey)
 - [Telekinetic Crush](https://www.dndbeyond.com/sources/dnd/ua/the-psion)
-- [Thunder Step](https://www.dndbeyond.com/spells/14613-thunder-step) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_ThunderStep.png?raw=true)
+- [Thunder Step](https://www.dndbeyond.com/spells/14613-thunder-step) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_ThunderStep.png?raw=true)
 - [Warden of Vitality](https://www.dndbeyond.com/spells/2618891-aura-of-vitality)
 
 ## Level 4 spells
@@ -2914,58 +2914,58 @@ The appropriate spells have been added to the class spell list, aligning with th
 - [Grasping Vine](https://www.dndbeyond.com/spells/2618955-grasping-vine)
 - [Ice Storm](https://www.dndbeyond.com/spells/2619178-ice-storm)
 - [Phantasmal Killer](https://www.dndbeyond.com/spells/2618857-phantasmal-killer)
-- [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_PsychicLance.png?raw=true)
+- [Raulothim's Psychic Lance](https://www.dndbeyond.com/spells/1183866-raulothims-psychic-lance) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_PsychicLance.png?raw=true)
 - [Staggering Smite](https://www.dndbeyond.com/spells/2619084-staggering-smite)
 - [Stoneskin](https://www.dndbeyond.com/spells/2619095-stoneskin)
 - [Storm Sphere](https://www.dndbeyond.com/spells/2400-storm-sphere)
 - [Summon Aberration](https://www.dndbeyond.com/spells/2619105-summon-aberration)
 - [Summon Construct](https://www.dndbeyond.com/spells/2619111-summon-construct)
-- [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_VitriolicSphere.png?raw=true)
+- [Vitriolic Sphere](https://www.dndbeyond.com/spells/2619219-vitriolic-sphere) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_VitriolicSphere.png?raw=true)
 
 ## Level 5 spells
 - [Banishing Smite](https://www.dndbeyond.com/spells/2618904-banishing-smite)
-- [Bigby's Hand](https://www.dndbeyond.com/spells/2618928-bigbys-hand) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BigbysHand.png?raw=true)
+- [Bigby's Hand](https://www.dndbeyond.com/spells/2618928-bigbys-hand) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_BigbysHand.png?raw=true)
 - [Cloudkill](https://www.dndbeyond.com/spells/2618976-cloudkill)
 - [Conjure Elementals](https://www.dndbeyond.com/spells/2619113-summon-elemental)
 - [Contagion](https://www.dndbeyond.com/spells/2619063-contagion)
 - [Danse Macabre](https://www.dndbeyond.com/spells/14830-danse-macabre)
-- [Enervation](https://www.dndbeyond.com/spells/14869-enervation) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Necromancy_Enervation.png?raw=true)
-- [Maelstrom](https://www.dndbeyond.com/spells/2390-maelstrom) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_Maelstrom.png?raw=true)
+- [Enervation](https://www.dndbeyond.com/spells/14869-enervation) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Necromancy_Enervation.png?raw=true)
+- [Maelstrom](https://www.dndbeyond.com/spells/2390-maelstrom) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_Maelstrom.png?raw=true)
 - [Mass Cure Wounds](https://www.dndbeyond.com/spells/2619026-mass-cure-wounds)
 - [Steel Wind Strike](https://www.dndbeyond.com/spells/2619087-steel-wind-strike)
-- [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_SummonDragon.png?raw=true)
-- [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_SynapticStatic.png?raw=true)
-- [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_WallofForce.png?raw=true)
+- [Summon Dragon](https://www.dndbeyond.com/spells/2618843-summon-dragon) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Conjuration_SummonDragon.png?raw=true)
+- [Synaptic Static](https://www.dndbeyond.com/spells/2619129-synaptic-static) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Enchantment_SynapticStatic.png?raw=true)
+- [Wall of Force](https://www.dndbeyond.com/spells/2619194-wall-of-force) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Evocation_WallofForce.png?raw=true)
 
 ## Level 6 spells
 - [Circle of Death](https://www.dndbeyond.com/spells/2618969-circle-of-death)
 - [Globe of Invulnerability](https://www.dndbeyond.com/spells/2618950-globe-of-invulnerability)
 - [Heal](https://www.dndbeyond.com/spells/2618979-heal)
 - [Fizban's Platinum Shield](https://www.dndbeyond.com/spells/1183864-fizbans-platinum-shield)
-- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
+- [Tenser's Transformation](https://www.dndbeyond.com/spells/14612-tensers-transformation) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Spell_Transmutation_TensersTransformation.png?raw=true)
 
 # Sangromancy Spells
 
 Sangromancy Spell: You must expend the listed number of Hit Point Dice.
 
 ## Level 1 Spells
-- [Blood Rush](https://www.dndbeyond.com/spells/3014210-blood-rush) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodRush.png?raw=true)
-- [Bloodbane Rune](https://www.dndbeyond.com/spells/3014207-bloodbane-rune) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodBaneRune.png?raw=true)
-- [Boil Blood](https://www.dndbeyond.com/spells/3014218-boil-blood) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BoilBlood.png?raw=true)
-- [Consumption](https://www.dndbeyond.com/spells/3014213-consumption) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Consumption.png?raw=true)
-- [Crimson Lash](https://www.dndbeyond.com/spells/3014222-crimson-lash) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_CrimsonLash.png?raw=true)
-- [Somnolence](https://www.dndbeyond.com/spells/3014290-somnolence) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Somnolence.png?raw=true)
+- [Blood Rush](https://www.dndbeyond.com/spells/3014210-blood-rush) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodRush.png?raw=true)
+- [Bloodbane Rune](https://www.dndbeyond.com/spells/3014207-bloodbane-rune) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BloodBaneRune.png?raw=true)
+- [Boil Blood](https://www.dndbeyond.com/spells/3014218-boil-blood) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_BoilBlood.png?raw=true)
+- [Consumption](https://www.dndbeyond.com/spells/3014213-consumption) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Consumption.png?raw=true)
+- [Crimson Lash](https://www.dndbeyond.com/spells/3014222-crimson-lash) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_CrimsonLash.png?raw=true)
+- [Somnolence](https://www.dndbeyond.com/spells/3014290-somnolence) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel1_Somnolence.png?raw=true)
 
 ## Level 2 Spells
-- [Blood Wisp](https://www.dndbeyond.com/spells/3014217-blood-wisp) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_BloodWisp.png?raw=true)
-- [Sanguine Shield](https://www.dndbeyond.com/spells/3014284-sanguine-shield) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_SanguineShield.png?raw=true)
-- [Theft of Vitae](https://www.dndbeyond.com/spells/3014234-theft-of-vitae) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_TheftOfVitae.png?raw=true)
+- [Blood Wisp](https://www.dndbeyond.com/spells/3014217-blood-wisp) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_BloodWisp.png?raw=true)
+- [Sanguine Shield](https://www.dndbeyond.com/spells/3014284-sanguine-shield) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_SanguineShield.png?raw=true)
+- [Theft of Vitae](https://www.dndbeyond.com/spells/3014234-theft-of-vitae) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel2_TheftOfVitae.png?raw=true)
 
 ## Level 3 Spells
-- [Extract Iron](https://www.dndbeyond.com/spells/3014231-extract-iron) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel3_ExtractIron.png?raw=true)
+- [Extract Iron](https://www.dndbeyond.com/spells/3014231-extract-iron) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel3_ExtractIron.png?raw=true)
 
 ## Level 4 Spells
-- [Circle of Scarlet](https://www.dndbeyond.com/spells/3014233-circle-of-scarlet) ![](https://github.com/yoonmoonsick/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel4_CircleOfScarlet.png?raw=true)
+- [Circle of Scarlet](https://www.dndbeyond.com/spells/3014233-circle-of-scarlet) ![](https://github.com/yoonmoonsik/dnd2024/blob/master/%EC%95%84%EC%9D%B4%EC%BD%98/Skills/4_Readme_48/Sangromancy_SLevel4_CircleOfScarlet.png?raw=true)
 
 ## Spell Scroll Restrictions
 

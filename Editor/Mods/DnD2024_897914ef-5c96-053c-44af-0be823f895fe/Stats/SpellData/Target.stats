@@ -6054,6 +6054,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d8aaaf53-c3fa-4fd9-a0f7-6f7873d9d3f5" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerRest" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,600);ApplyStatus(HEX_STRENGTH,100,600);RemoveStatus(SELF,HEX_REAPPLY);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,600)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6078,10 +6080,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="48774061-9ba9-4405-a4aa-7e1a11feb707" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="82be50d6-1f94-4659-a5c6-d2ec12c0e065" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,600);ApplyStatus(HUNTERS_MARK,100,600);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,600)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6089,10 +6093,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f8cca88f-3f4c-41d7-941f-7e154acc2bc8" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="452ffde7-db68-4724-90cd-c3f10873fd12" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_2,100,2400);ApplyStatus(HUNTERS_MARK_2,100,2400);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,2400)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6100,10 +6106,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4264dfed-458f-419d-adb3-23417ef43226" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cfcdb001-7110-4ce2-8995-884e149028b9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_2,100,2400);ApplyStatus(HUNTERS_MARK_2,100,2400);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,2400)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6111,10 +6119,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="be05bfd0-0f8a-4aa2-8135-4ad3f078d1bc" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_4" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8580ce62-077e-4bd4-9929-7c20913eca95" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_4,100,4800);ApplyStatus(HUNTERS_MARK_4,100,4800);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,4800)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6122,10 +6132,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e523360a-f87f-4f3e-aeb5-44c737f225ee" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bbbb3051-4c92-4c57-813d-e9a0182785ca" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_4,100,4800);ApplyStatus(HUNTERS_MARK_4,100,4800);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,4800)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6133,10 +6145,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6bf876ee-4706-4ebd-a2d9-3f96213cdbdd" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="dd3f7ad1-0aa6-4fd6-915c-9b121a4f234c" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_4,100,4800);ApplyStatus(HUNTERS_MARK_4,100,4800);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,4800)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6144,11 +6158,30 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0398baf7-ba25-4bbf-8a71-a492b7e82c58" />
         <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_Reapply" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="518050c6-db9b-4964-b0f7-3032a2ea10bb" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1,,,,,true);ApplyStatus(HUNTERS_MARK,100,-1,,,,,true);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1,,,,,true);RemoveStatus(SELF,HUNTERS_MARK_REAPPLY);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,600,,,,,true);ApplyStatus(HUNTERS_MARK,100,600,,,,,true);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1,,,,,true);RemoveStatus(SELF,HUNTERS_MARK_REAPPLY);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,600)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfdafbaa-61e7-47e2-841a-737f5c6f432a" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_Reapply_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0398baf7-ba25-4bbf-8a71-a492b7e82c58" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_2,100,2400,,,,,true);ApplyStatus(HUNTERS_MARK_2,100,2400,,,,,true);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1,,,,,true);RemoveStatus(SELF,HUNTERS_MARK_REAPPLY_2);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,2400)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae699df6-6745-43f4-b690-7dff64ef1960" />
+        <field name="Name" type="NameTableFieldDefinition" value="HuntersMark_Reapply_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0398baf7-ba25-4bbf-8a71-a492b7e82c58" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER_4,100,4800,,,,,true);ApplyStatus(HUNTERS_MARK_4,100,4800,,,,,true);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1,,,,,true);RemoveStatus(SELF,HUNTERS_MARK_REAPPLY_4);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,4800)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6160,6 +6193,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,600);ApplyStatus(HUNTERS_MARK,100,600);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,600)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -6167,11 +6202,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="71dc50e5-5e19-4b61-8c61-7312febe14fe" />
         <field name="Name" type="NameTableFieldDefinition" value="MAG_HuntersMark_Grymskull" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9d15e27e-230d-4c57-8f30-a0a223ac4b07" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,-1);ApplyStatus(HUNTERS_MARK,100,-1);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HUNTERS_MARK_OWNER,100,600);ApplyStatus(HUNTERS_MARK,100,600);IF(HasPassive('WinterWalker_3_HuntersRime',context.Source)):ApplyStatus(HUNTERS_RIME_NO_DISENGAGE,100,-1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Force)" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Force,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasHighGroundRangeExtension;IsConcentration;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HUNTERS_MARK,100,600)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9715,7 +9751,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hex" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,600);ApplyStatus(HEX_STRENGTH,100,600);RemoveStatus(SELF,HEX_REAPPLY);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
@@ -9724,8 +9760,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h05570273g6234g5a8bga508gb111fe5392b3" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,-1)" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,600)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Debuff_Hex_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_Hex_L1to3" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Curse" />
@@ -9980,7 +10016,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hex_2" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,2400);ApplyStatus(HEX_STRENGTH_2,100,2400);RemoveStatus(SELF,HEX_REAPPLY_2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
@@ -9989,8 +10025,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic)" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h05570273g6234g5a8bga508gb111fe5392b3" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d6,Necrotic,,,,ad727a13-c6f0-4b5b-aefd-aac79c6ed46e)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,-1)" />
-        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="6ff1780a-855a-414c-a8bf-811251537206" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,2400)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="b14d6c0c-f1bd-4433-a57a-858b4f6669bd" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Debuff_Hex_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Debuff_Hex_L1to3" />
         <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_Curse" />
@@ -10018,7 +10054,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffa17532-385d-440d-8890-ff93e5d82035" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,2400);ApplyStatus(HEX_STRENGTH_2,100,2400);RemoveStatus(SELF,HEX_REAPPLY_2);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
@@ -10033,12 +10069,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffa17532-385d-440d-8890-ff93e5d82035" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,4800);ApplyStatus(HEX_STRENGTH_4,100,4800);RemoveStatus(SELF,HEX_REAPPLY_4);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1; SpellSlotsGroup:1:1:4" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,4800)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10048,12 +10085,13 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffa17532-385d-440d-8890-ff93e5d82035" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,4800);ApplyStatus(HEX_STRENGTH_4,100,4800);RemoveStatus(SELF,HEX_REAPPLY_4);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1; SpellSlotsGroup:1:1:5" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,4800)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -10063,12 +10101,67 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ffa17532-385d-440d-8890-ff93e5d82035" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH,100,-1);RemoveStatus(SELF,HEX_REAPPLY)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,4800);ApplyStatus(HEX_STRENGTH_4,100,4800);RemoveStatus(SELF,HEX_REAPPLY_4);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Enchantment_Hex" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1; SpellSlotsGroup:1:1:6" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,4800)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="209cd31c-eb50-4d9d-8eaa-9a80086ab8a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="37f7f5f5-222d-4613-a4b5-e31b6865d419" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,600,,,,,true);ApplyStatus(HEX_STRENGTH,100,600,,,,,true);RemoveStatus(SELF,HEX_REAPPLY);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,600)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="688dad59-4348-4e7a-b46d-394cf6403ac6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="209cd31c-eb50-4d9d-8eaa-9a80086ab8a2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,2400,,,,,true);ApplyStatus(HEX_STRENGTH_2,100,2400,,,,,true);RemoveStatus(SELF,HEX_REAPPLY_2);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,2400)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03411370-061d-4dc7-a2ee-552af9c1b83a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="688dad59-4348-4e7a-b46d-394cf6403ac6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0391fce1-eaf6-4b45-b5b1-d1c09fbe491b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="688dad59-4348-4e7a-b46d-394cf6403ac6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,4800,,,,,true);ApplyStatus(HEX_STRENGTH_4,100,4800,,,,,true);RemoveStatus(SELF,HEX_REAPPLY_4);" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,4800)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecdc13a5-8a34-4950-b8aa-5f1e6594dfcd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0391fce1-eaf6-4b45-b5b1-d1c09fbe491b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="396a4f40-74fe-4d10-a459-165f5ef8d941" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0391fce1-eaf6-4b45-b5b1-d1c09fbe491b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -11410,11 +11503,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="952c51a1-bec7-429b-b3de-f5fc7ad083ae" />
         <field name="Name" type="NameTableFieldDefinition" value="EldritchHex" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d8aaaf53-c3fa-4fd9-a0f7-6f7873d9d3f5" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1);ApplyStatus(HEX_STRENGTH_ELDRITCH,100,-1);RemoveStatus(SELF,HEX_REAPPLY_ELDRITCH)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,600);ApplyStatus(HEX_STRENGTH_ELDRITCH,100,600);RemoveStatus(SELF,HEX_REAPPLY_ELDRITCH);" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH_ELDRITCH,100,-1)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;EldritchHexCharge:1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65a476b1g7a3ag0836ga351gc6f132942eac" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf7b8cc70g3415g5ef8g804bg09b0c8328c85" version="2" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -12015,21 +12109,6 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:ApplyStatus(HORDE_BREAKER_TECHNICAL,100,1);ApplyStatus(SELF,HORDE_BREAKER,100,1);ApplyStatus(SELF,HORDE_BREAKER_TECHNICAL,100,1);GROUND:DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType);AOE:ApplyStatus(HORDE_BREAKER_TARGET,100,1)" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('HORDE_BREAKER_TECHNICAL', context.Source) and HasStatus('HUNTERSPREY_HB',context.Source);" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="209cd31c-eb50-4d9d-8eaa-9a80086ab8a2" />
-        <field name="Name" type="NameTableFieldDefinition" value="Hex_Reapply" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="37f7f5f5-222d-4613-a4b5-e31b6865d419" />
-        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,HEX_OWNER,100,-1,,,,,true);ApplyStatus(HEX_STRENGTH,100,-1,,,,,true);RemoveStatus(SELF,HEX_REAPPLY);" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="27" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(HEX_STRENGTH,100,-1)" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsHarmful;Temporary" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Necrotic" enumeration_type_name="Damage Type" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

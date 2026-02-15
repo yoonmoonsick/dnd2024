@@ -4226,10 +4226,47 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KNOCKED_OUT')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttacked;OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HEX_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HEX_REAPPLY,100,-1,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HEX_REAPPLY,100,-1,,,,,true)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HEX_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HEX_REAPPLY,100,600,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HEX_REAPPLY,100,600,,,,,true)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Cursed" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="54d3e1a2-7513-4f46-bb46-53dec4e83b8d" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="372f12fd-d95c-43ca-9cc6-096ecf421704" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1dfcfb7b-7f3e-4a3b-9282-454a1073b7f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_STRENGTH_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3fdc0b9d-9ab3-4a32-942a-314dcdd179fd" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HEX_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HEX_REAPPLY_2,100,2400,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HEX_REAPPLY_2,100,2400,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf2d2347-1db5-4934-9028-6bd06c7e95f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_STRENGTH_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1dfcfb7b-7f3e-4a3b-9282-454a1073b7f2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f894fde-8209-4342-82d2-6718743d50a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_STRENGTH_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1dfcfb7b-7f3e-4a3b-9282-454a1073b7f2" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HEX_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HEX_REAPPLY_4,100,4800,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HEX_REAPPLY_4,100,4800,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1aed981-c7cc-45a3-8705-54ece7111834" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_STRENGTH_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f894fde-8209-4342-82d2-6718743d50a0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="455939b0-4cd7-46ae-b2ba-ef4ed4990df8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_STRENGTH_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5f894fde-8209-4342-82d2-6718743d50a0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -4245,6 +4282,22 @@
         <field name="Name" type="NameTableFieldDefinition" value="HEX_REAPPLY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fd7a3832-554a-4a0d-b44b-ea4f1e1801c4" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="056af209-5df5-4065-98b0-4658b4ab8b91" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_REAPPLY_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c433cc1a-6928-48f6-8fc0-bdf2b7cf7dda" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Hex_Reapply_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13415b6d-49cd-4d29-82c7-dfee41d0a821" />
+        <field name="Name" type="NameTableFieldDefinition" value="HEX_REAPPLY_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c433cc1a-6928-48f6-8fc0-bdf2b7cf7dda" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Hex_Reapply_4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9238,6 +9291,23 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dec2441c-c606-481e-895c-601115507265" />
         <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="47737f9a-5518-418e-8d25-4320f6dc2ae8" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HUNTERS_MARK_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY,100,600,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY,100,600,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cf5cb758-b811-473e-9f52-7ae01bdeb156" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dec2441c-c606-481e-895c-601115507265" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HUNTERS_MARK_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY_2,100,2400,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY_2,100,2400,,,,,true)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7587ef94-0674-4645-af33-d3c7f64c5f6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="dec2441c-c606-481e-895c-601115507265" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF,HUNTERS_MARK_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY_4,100,4800,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF,HUNTERS_MARK_REAPPLY_4,100,4800,,,,,true)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -9247,6 +9317,43 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f59491f3-8d7b-4b0e-bae1-6a630d8e6c42" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasPassive('HollowWarden_3_AncientArmor',context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',13,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',15,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',17,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',19,context.Source)):AC(1);IF(HasPassive('HollowWarden_3_AncientArmor',context.Source) and AbilityGreaterThan('Wisdom',21,context.Source)):AC(1);" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1d0ee01a-2497-42f6-b67c-e06376d60735" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_OWNER_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c97ef66a-d88e-4c4a-ab0a-d731a91df262" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c886e4a-6c81-4523-bc1c-b8a222e1a3c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_OWNER_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1d0ee01a-2497-42f6-b67c-e06376d60735" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="171eabe6-d123-4dd9-b22a-8ac640e99ba2" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_REAPPLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3653643b-a812-4e61-91af-684a25fb0854" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_REAPPLY_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HuntersMark_Reapply_2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a9ec0cf2-f1e1-4b83-936a-10a8b7222b72" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTERS_MARK_REAPPLY_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HuntersMark_Reapply_4);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -4815,7 +4815,7 @@ data "Icon" "PassiveFeature_Lifedrinker"
 data "Properties" "Highlighted;ForceShowInCC;OncePerTurn"
 data "Boosts" "RollBonus(SavingThrow,WisdomModifier,Constitution);"
 data "StatsFunctorContext" "OnAttack"
-data "Conditions" "IsWeaponAttack() and not IsMiss() and HasHPPercentageWithoutTemporaryHPLessThan(50,context.Source) and HasStatus('HUNTERS_MARK_OWNER',context.Source);"
+data "Conditions" "IsWeaponAttack() and not IsMiss() and HasHPPercentageWithoutTemporaryHPLessThan(50,context.Source) and (HasStatus('HUNTERS_MARK_OWNER',context.Source) or HasStatus('HUNTERS_MARK_OWNER_2',context.Source) or HasStatus('HUNTERS_MARK_OWNER_4',context.Source));"
 data "StatsFunctors" "RegainHitPoints(SELF,1d10+WisdomModifier); "
 
 new entry "HollowWarden_11_EerieAura_Necrotic"
